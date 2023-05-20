@@ -1,0 +1,7 @@
+- content_for(:instructions) do
+  .card.bg-soft-info.mt-5
+    .card-body
+      .card-title= t('instructions')
+      p.card-text== t('.guidelines')
+
+= render 'teach/tasks/text/forms/form', task: task, form: form

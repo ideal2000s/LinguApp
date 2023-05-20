@@ -1,0 +1,21 @@
+doctype html
+html.fontawesome-i2svg-active.chrome.osx.fontawesome-i2svg-complete dir="ltr" lang=("#{I18n.locale}")
+  head
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    title= page_title
+    = render 'layouts/shared/favicon'
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_packs_with_chunks_tag 'school', media: 'all'
+    = render 'layouts/shared/hotjar' unless current_user&.admin?
+  body
+    main#top.main
+      .d-flex data-layout="container"
+        .content.w-100
+          = render 'layouts/shared/flash'
+          = yield
+      = render 'layouts/shared/modal'
+    = render 'layouts/shared/hubspot'
+    = javascript_packs_with_chunks_tag 'school'

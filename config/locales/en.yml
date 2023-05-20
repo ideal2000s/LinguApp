@@ -1,0 +1,2830 @@
+---
+en:
+  actions: Actions
+  activerecord:
+    attributes:
+      activity:
+        assignment:
+          receive: received assignment from %{user_name} with deadline %{deadline_date}
+        lesson:
+          complete: Passed lesson <strong>%{lesson_link}</strong>
+        license:
+          create: was assigned <strong>%{plan_name}</strong> by %{user_name}
+          create_student: assigned license for %{student}
+          removed_expiration: "%{user_name} removed license end date"
+          removed_expiration_student: removed end date for license belonging to %{student}
+          revoke: "%{user_name} revoked license"
+          update: "%{user_name} set license to end at <strong>%{expire_date}</strong>"
+          update_student: set %{date} as end date for license belonging to %{student}
+        student:
+          create: account created by %{user_name}
+          import: was imported to <strong>%{team_name}</strong> by %{user_name}
+        team_group:
+          archive: class <strong>%{group}</strong> was archived by %{user}
+          course_assign: assigned course <strong>%{course}</strong> to %{group}
+          create: created class <strong>%{group_name}</strong> for %{language}
+          import: imported %{count} students from Excel
+        team_student:
+          archive: was archived by %{user_name}
+          course_assign: was assigned to <strong>%{course}</strong> by %{user_name}
+          create: was added to <strong>%{team_name}</strong> by %{user_name}
+          discard: was flagged for deletion by %{user_name}
+          group_assign: was added to group <strong>%{group_name}</strong> by %{user_name}
+          joined_group: joined class %{group_name} from invitation link
+          restore: was restored by %{user_name}
+          undiscard: was undiscarded by %{user_name}
+        team_user:
+          create: was added to <strong>%{team_name}</strong> by %{user_name}
+          self_registered: self-registered from invitation link
+        undo:
+          reassign_license: Reassign license
+          remove_end_date: Remove end date
+          revoke_license: Revoke license
+          unarchive_student: Unarchive
+      assignment:
+        statuses:
+          pending: Pending
+          reviewed: Reviewed
+      language:
+        code: Code
+        name: Name
+        system_name: System name
+      lesson:
+        kind: Type
+        kinds:
+          storyline: Storyline
+          tet: Teach-Engage-Test
+        level: Level
+        levels:
+          a1: A1 - Beginner
+          a2: A2 - Elementary
+          b1: B1 - Intermediate
+          b2: B2 - Upper-intermediate
+          c1: C1 - Advanced
+          c2: C2 - Native
+          undefined: Undefined
+          zero_level: 0 - Absolute beginner
+        levels_for_target:
+          a1: Elementary level
+          a2: Pre intermediate level
+          b1: Intermediate level
+          b2: Upper intermediate level
+          c1: Advanced level
+          zero_level: No knowledge
+        short_kinds:
+          storyline: Story
+          tet: TET
+        short_levels:
+          a1: A1
+          a2: A2
+          b1: B1
+          b2: B2
+          c1: C1
+          c2: C2
+          undefined: "?"
+          zero_level: A0
+        status: Status
+        statuses:
+          approved: Approved
+          draft: Draft
+          pending: Pending
+        tags:
+          academic: Academic
+          art: Art & literature
+          business: Business
+          fashion: Fashion
+          food: Food & drink
+          general: General
+          health: Health
+          legal: Legal
+          nature: Animals & nature
+          religion: Religion
+          sport: Sport
+          travel: Travel
+        target_statuses:
+          approved: Approve
+          draft: Set to draft
+          pending_review: Request reviews
+        title: Title
+      lesson_review:
+        statuses:
+          approved: Approved
+          rejected: Rejected
+      plan:
+        plan_interval: Interval
+        plan_intervals:
+          month: month
+          quarter: quarter
+          week: week
+          year: year
+        price: Price
+        price_currency: Currency
+      student:
+        email: Email address
+        fname: First name
+        gender: Gender
+        genders:
+          female: Female
+          male: Male
+          unknown: Unknown
+        lname: Last name
+        locale: Language
+        mobile: Mobile number
+        ssn: Social security number
+      task:
+        subjects:
+          engage: Engage
+          teach: Teach
+          test: Test
+      team:
+        name: Name
+        statuses:
+          enterprise: Enterprise
+          personal: Personal
+          school: School
+      team_user:
+        roles:
+          manager: Manager
+          member: Member
+          owner: Administrator
+      user:
+        about: About
+        avatar: Profile picture
+        created_at: Created at
+        email: Email address
+        fname: First name
+        lname: Last name
+        mobile: Mobile number
+        password: Unique code
+        role: Role
+        roles:
+          admin: Administrator
+          basic: None
+          editor: Editor
+      word:
+        body: Body
+        description: Description
+        prefix: Prefix
+        translate: Translate
+        word_classes:
+          adjective: Adjective
+          adverb: Adverb
+          conjunction: Conjunction
+          determiner: Determiner
+          interjection: Interjection
+          noun: Noun
+          other: Other
+          phrase: Phrase
+          preposition: Preposition
+          pronoun: Pronoun
+          subjunction: Subjunction
+          unknown: Unknown
+          verb: Verb
+        word_classes_abbr:
+          adjective: adj
+          adverb: adv
+          conjunction: conj
+          determiner: det
+          interjection: int
+          noun: n
+          other: other
+          phrase: phrase
+          preposition: prep
+          pronoun: pron
+          subjunction: subj
+          unknown: "?"
+          verb: v
+      word_games:
+        game_types:
+          flashcard: Flashcards
+          match: Match words
+          match_single: Match words single
+          nodes: Nodes
+          recall: Recall
+          waterfall: Waterfall
+    devise:
+      registrations:
+        edit:
+          update: Update
+      shared:
+        links:
+          back: Back
+    errors:
+      models:
+        task:
+          attributes:
+            image:
+              invalid: Specify a image file or a url, not both
+        task_item_session:
+          attributes:
+            attempts_count:
+              cannot_be_lower_than: Cannot be lower than %{attempts_count}
+    models:
+      crawler: Collection job
+  add_audio: Add audio
+  add_student: Add student
+  admin:
+    contexts:
+      index:
+        context_management: Manage contexts
+    courses:
+      index:
+        reset_phrases_count: Reset phrases count
+      reset_phrases_count_notice: The phrases count of courses has been successfully
+        reset.
+    crawlers:
+      index:
+        completed_at: Completed
+        crawlers: Word collection tasks for websites
+        download_csv: Download CSV
+        started_at: Started
+      new:
+        view_crawlers: View crawlers
+    dashboard:
+      index:
+        active: Active
+        add_student_text: Add students to assign test, lessons, and assignments
+        add_student_title: Add your first students
+        add_teacher_text: They'll help you in lesson creation and student management
+        add_teacher_title: Add your colleagues
+        expired: Expired
+        inactive: Inactive
+        no_data_text: There is no data to see yet, let’s get you set up!
+        student_by_level: Students by level
+        title: School dashboard
+        top_lessons: Top lessons
+        top_scorer: Top scorer
+        total_visits: Total visits
+        view_all: View all
+    dictionary:
+      languages:
+        collections:
+          edit:
+            edit_collection: Edit collection
+          index:
+            any_level: Any level
+            new_collection: New collection
+            tags: Tags
+            word_count: Word count
+          show:
+            add_new_word: Add word
+            new_word: New word
+            remove_from_collection: Remove from collection
+            search_words: Search for words...
+        words:
+          add_to_collection_form:
+            add_words_to_collection:
+              one: "%{count} word to collection"
+              other: "%{count} words to collection"
+            confirm: Confirm
+          add_to_collection_post:
+            add_to_collection_success:
+              one: "%{count} word was added to %{collection} collection successfully."
+              other: "%{count} words were added to %{collection} collection successfully."
+          csv_import:
+            csv_import: Import from CSV
+            import_from_text: Import from text
+            import_to_lang: Import new words to %{lang}
+            parse_text: Parse text
+            paste_text: Paste the text you want to collect words from
+            recalculate_frequency: Recalculate word frequencies
+            required_columns: 'Required CSV column headers:'
+            select_source_file: Select file
+          edit_translation_form:
+            translation: Translation
+            update_success: Translation was updated successfully.
+            update_translation: Update translation
+            word: Word
+          form:
+            select_word_class: Select word class
+          index:
+            add_new_word: Add word
+            add_to_existing_collection: Add to existing collection
+            any_frequency: Any frequency
+            any_time_source: Any time and source
+            audio_recorded: Audio
+            bulk_actions: Bulk actions
+            collections: Collections
+            count_collections:
+              one: "%{count} collection"
+              other: "%{count} collections"
+            count_phrases: "%{count} words"
+            create_collection: Create collection
+            description: Description
+            export_csv: Export CSV
+            filter: Filter
+            frequency: Frequency
+            illustrated: Illustrated
+            import: Import
+            import_from_website: Scan a website
+            missing_audio: Missing audio
+            missing_illustration: Missing illustration
+            not_used_in_collections: Not used in collections
+            not_used_in_lessons: Not used in lessons
+            upload: Upload
+            used_in_collections: Used in collections
+            used_in_lessons: Used in lessons
+            word: Word
+            word_class: Word class
+          recalculate_frequency:
+            job_performing: Word frequencies are now being recalculated
+    discard_msg: The record was marked as deleted
+    languages:
+      edit:
+        add_character: Add character
+        available_as_target_language: Available as target language
+        available_for_support: Available as support language
+        edit_language: Edit %{name}
+        localization_note: Information about UI localization
+        restricted: Restricted unless licensed
+      inactive:
+        inactive_languages: Inactive languages
+        supported: Supported?
+      list:
+        active_languages: Activated languages
+        language_code: Language code
+    lesson_sessions:
+      create_failed: Could not create lesson session
+    lessons:
+      index:
+        count_lessons: "%{count} lessons"
+        limited_entries_scope: 'You''re only seeing records related to: %{lang}'
+      show:
+        by_author: by %{author}
+      split:
+        error: Cannot split lesson
+        success: The tasks were successfully moved to a new lesson
+    plans:
+      create:
+        created_plan: Successfully created plan
+      form:
+        system_name: System name
+      index:
+        create_new_plan: Create new plan
+      list:
+        all: All plans
+    rewards:
+      form:
+        choose_image: Choose image file
+        description_placeholder: Enter the description for your reward.
+        update_success: Reward was successfully updated
+      index:
+        all_rewards: All rewards
+        confirm_reward_delete: Are you sure you want to delete this reward?
+        count_rewards: "%{count} rewards"
+        create_new_reward: Create new reward
+        dimension: Dimension
+        kind: Kind
+        title: Rewards
+        update_reward: Update reward
+        value: Value
+    search:
+      search_result: "%{type}: %{result}"
+    skills:
+      skill_form:
+        enter_name: Enter skill...
+    students:
+      edit:
+        personal_data: Personal data
+      edit_student: Rediger %{name}
+      form:
+        select_native_language: Select native language
+        select_target_language: Select active target language
+      index:
+        create_new_student: Create new student
+        new_class: New class
+        student_management: Student management
+        teacher_management: Teacher management
+      list:
+        active_students: Active students
+        native_language: Native language
+        target_language: Target language
+      list_row:
+        last_seen_at: Last seen %{date}
+      new:
+        select_gender: Select gender
+        select_locale: Select language
+      show:
+        learning_time: Learning time
+    team_invitations:
+      create:
+        failure: There was some error while joining a team
+        joined: You have successfully joined a team
+      show:
+        already_member: You are already member of this team
+        join_button: Join team
+        join_heading: Join this team's workspace on lingu.com
+        profile: Profile
+        profile_link: Go to your %{link} to manage teams
+        reject: No, thank you
+        set_as_default: Set as my default team
+    teams:
+      create:
+        created_team: Successfully created team
+      edit:
+        action: Edit
+      index:
+        columns:
+          members: Members
+        create_new_team: Create new team
+        most_recent_first: Most recent first
+        oldest_first: Oldest first
+      list:
+        docs: Docs
+        followers: Followers
+        teams: Teams
+      show:
+        sign_into_school: Sign in to school
+    update_msg: The record was successfully updated
+    users:
+      edit:
+        about_me_placeholder: A few sentences about me
+        delete_account: Delete this account
+        manage_profile_for: Manage profile for %{name}
+        mobile: Mobile number
+        personal_data: Personal data
+        select_language_scope: Select target language for editor role
+        teams: Teams
+      index:
+        create_new_user: Create new user
+        user_management: User management
+      list:
+        active_users: Active users
+  amount: Amount
+  answer: Answer
+  app_name: Lingu
+  assigned_to: Assigned to
+  associated_with: Associated with
+  authorization_error: You are not authorized to perform this action.
+  back: Back
+  cancel: Cancel
+  change: Change
+  close: Close
+  collections: Collections
+  comment: Comment
+  common:
+    buttons:
+      save: Save
+      save_and_continue: Save and continue
+      update: Update
+  configure: Configure
+  correct: Correct
+  correct_answer: Correct answer
+  correct_word_order: Correct word order
+  count_error_message_model:
+    one: One error prevented this %{model} from being saved.
+    other: "%{count} errors prevented this %{model} from being saved."
+  course_mailer:
+    course_assigned_notification:
+      button: Start the course
+      click_start_lesson: Click 'Start lesson'
+      follow_course_link: Click the button to open the course
+      footer_text: Come back to Lingu to learn something new every day!
+      get_started_line: 'This is how you get started:'
+      notification_link: Notification settings
+      open_lesson: Open the first lesson
+      or_paste_this_link: or paste this link in your browser
+      sign_in_with_email: Log in with your email address (%{email})
+      support_link: Support
+      title: Getting started with %{course}
+    otp:
+      ignore_msg: If you did not make this request, just ignore the email.
+      subject_line: Your unique code for Lingu
+      unique_code_for_lingu: Here is your unique code for Lingu
+  course_mailer2:
+    new_document_comment:
+      author_text: "%{author} left a review of your assignment"
+      button_text: Check it out
+      button_url_helper: 'or paste this link in your browser:'
+      footer_text: There is a lot more to learn...
+      notification_link: Notification settings
+      subject_line: New assignment comment
+      support_link: Support
+  courses: Courses
+  create: Create
+  create_student: Create student
+  created: Created
+  created_by: Created by
+  danger_zone: Danger zone
+  deactivate_account: Deactivate account
+  delete: Delete
+  delete_record_confirmation: Are you sure you want to delete this item?
+  delete_this_item: Delete this item?
+  deleted: Deleted
+  description: Description
+  devise:
+    account_login: Sign in
+    confirmations:
+      confirmed: Your email address has been successfully confirmed.
+      send_instructions: >-
+        You will receive an email with instructions for how to confirm your email
+        address in a few minutes.
+      send_paranoid_instructions: >-
+        If your email address exists in our database, you will receive an email with
+        instructions for how to confirm your email address in a few minutes.
+    enter_email_receive_link: Enter your email and we'll send you a reset link.
+    errors:
+      messages:
+        already_confirmed: was already confirmed, please try signing in
+        confirmation_period_expired: needs to be confirmed within %{period}, please
+          request a new one
+        expired: has expired, please request a new one
+        not_found: not found
+        not_locked: was not locked
+        not_saved:
+          one: '1 error prohibited this %{resource} from being saved:'
+          other: "%{count} errors prohibited this %{resource} from being saved:"
+    failure:
+      already_authenticated: You are already signed in.
+      inactive: Your account is not activated yet.
+      invalid: Invalid code or unknown e-mail address
+      last_attempt: You have one more attempt before your account is locked.
+      locked: Your account is locked.
+      not_found_in_database: Could not find user with this email address
+      timeout: Your session expired. Please sign in again to continue.
+      unauthenticated: You need to sign in or sign up before continuing.
+      unconfirmed: You have to confirm your email address before continuing.
+    mailer:
+      confirmation_instructions:
+        subject: Confirmation instructions
+      email_changed:
+        subject: Email Changed
+      unlock_instructions:
+        subject: Unlock instructions
+    omniauth_callbacks:
+      failure: Could not authenticate you from %{kind} because "%{reason}".
+      success: Successfully authenticated from %{kind} account.
+    otp:
+      check_email_for_code: Check your email for a code
+      did_not_receive_a_code: Didn't receive a code?
+      invalid_code: That code wasn't valid. Give it another go!
+      more_login_options: More login options
+      otp_instruction: >-
+        We've sent a 6-digit code to <strong>%{email}</strong>. The code expires shortly,
+        so please enter it soon.
+      resend_code: Recend code
+      sign_in: Please sign in
+    registrations:
+      destroyed: >-
+        Bye! Your account has been successfully cancelled. We hope to see you again
+        soon.
+      edit:
+        about_me_placeholder: About me
+        change_password: Save password
+        update_profile: Update profile
+        upload_signature: Upload signature
+      new:
+        create_account: Create account
+        enter_first_name: Enter first name
+        enter_last_name: Enter last name
+      signed_up: Welcome! You have signed up successfully.
+      signed_up_but_inactive: >-
+        You have signed up successfully. However, we could not sign you in because
+        your account is not yet activated.
+      signed_up_but_locked: >-
+        You have signed up successfully. However, we could not sign you in because
+        your account is locked.
+      signed_up_but_unconfirmed: >-
+        A message with a confirmation link has been sent to your email address. Please
+        follow the link to activate your account.
+      update_needs_confirmation: >-
+        You updated your account successfully, but we need to verify your new email
+        address. Please check your email and follow the confirm link to confirm your
+        new email address.
+      updated: Your account has been updated successfully.
+    send_reset_link: Send me reset link
+    sessions:
+      already_signed_out: Signed out successfully.
+      signed_in: Signed in successfully.
+      signed_out: Signed out successfully.
+    unlocks:
+      send_instructions: >-
+        You will receive an email with instructions for how to unlock your account
+        in a few minutes.
+      send_paranoid_instructions: >-
+        If your account exists, you will receive an email with instructions for how
+        to unlock it in a few minutes.
+      unlocked: Your account has been unlocked successfully. Please sign in to continue.
+  disabled: Disabled
+  domains: Domains
+  edit: Edit
+  email: Email
+  embed_script: Paste embed script
+  enabled: Enabled
+  enter_statement: Enter statement here
+  error: error
+  errors:
+    not_found:
+      not_found: Page not found (404)
+      page_not_found: The page you're looking for is not found.
+  example: Example
+  expires_at: Expires at
+  'false': 'False'
+  filter: Filter
+  first_name: First name
+  form:
+    level_updated: The level was successfully updated
+    locales:
+      af: Afrikaans
+      am: Amharic
+      ar: Arabic
+      az: Azerbaijani
+      be: Belarusian
+      bg: Bulgarian
+      bn: Bengali
+      bs: Bosnian
+      ca: Catalan
+      ceb: Cebuano
+      co: Corsican
+      cs: Czech
+      cy: Welsh
+      da: Danish
+      de: German
+      el: Greek
+      en: English
+      eo: Esperanto
+      es: Spanish
+      et: Estonian
+      eu: Basque
+      fa: Persian
+      'false': Norwegian
+      fi: Finnish
+      fr: French
+      fy: Frisian
+      ga: Irish
+      gd: Scots Gaelic
+      gl: Galician
+      gu: Gujarati
+      ha: Hausa
+      haw: Hawaiian
+      he: Hebrew
+      hi: Hindi
+      hmn: Hmong
+      hr: Croatian
+      ht: Haitian Creole
+      hu: Hungarian
+      hy: Armenian
+      id: Indonesian
+      ig: Igbo
+      is: Icelandic
+      it: Italian
+      ja: Japanese
+      jv: Javanese
+      ka: Georgian
+      kk: Kazakh
+      km: Khmer
+      kn: Kannada
+      ko: Korean
+      ku: Kurdish
+      ky: Kyrgyz
+      la: Latin
+      lb: Luxembourgish
+      lo: Lao
+      lt: Lithuanian
+      lv: Latvian
+      mg: Malagasy
+      mi: Maori
+      mk: Macedonian
+      ml: Malayalam
+      mn: Mongolian
+      mr: Marathi
+      ms: Malay
+      mt: Maltese
+      my: Myanmar (Burmese)
+      nb: Norwegian
+      ne: Nepali
+      nl: Dutch
+      ny: Nyanja (Chichewa)
+      or: Odia (Oriya)
+      pa: Punjabi
+      pl: Polish
+      ps: Pashto
+      pt: Portuguese
+      ro: Romanian
+      rs: Serbian
+      ru: Russian
+      rw: Kinyarwanda
+      sd: Sindhi
+      si: Sinhala (Sinhalese)
+      sk: Slovak
+      sl: Slovenian
+      sm: Samoan
+      sn: Shona
+      so: Somali
+      sq: Albanian
+      st: Sesotho
+      su: Sundanese
+      sv: Swedish
+      sw: Swahili
+      ta: Tamil
+      te: Telugu
+      tg: Tajik
+      th: Thai
+      tk: Turkmen
+      tl: Tagalog (Filipino)
+      tr: Turkish
+      tt: Tatar
+      ua: Ukrainian
+      ug: Uyghur
+      ur: Urdu
+      uz: Uzbek
+      vi: Vietnamese
+      xh: Xhosa
+      yi: Yiddish
+      yo: Yoruba
+      zh: Chinese
+      zu: Zulu
+  frontend:
+    auth:
+      already_have_acc_question: Already have an account?
+      back: Back
+      back_to_sign_in: Back to Sign in
+      check_your_email_for_a_code: Check your email for your code
+      continue: Continue
+      continue_with_email: Continue with email
+      continue_with_provider: Continue with %{provider}
+      did_not_receive_a_code: Didn't receive a code?
+      email_address: Email address
+      first_name: First name
+      get_unique_code: Get a unique login code
+      join_lingu: Join Lingu
+      last_name: Last name
+      more_login_options: More login options
+      no_account_question: Don't have an account?
+      or: or
+      resend_code: Resend code
+      sign_in: Sign in
+      sign_up: Sign up
+      want_to_receive_marketing_messages: I want to receive marketing messages from
+        Lingu
+      we_ve_sent_a_code: >-
+        We've sent a 6-digit code to <strong>{{email}}</strong>. The code expires
+        in 15 minutes, so please enter it soon.
+    cookie_agreement:
+      agree: Agree
+      condition: >-
+        We use cookies to analyze site performance and deliver personalized content.
+        By clicking “Agree”, you consent to our conditions.
+    course:
+      accredited_course_provider: Accredited course provider
+      apply: Apply
+      apply_filters: Apply filters
+      by: By
+      cancel: Cancel
+      categories: "%{count} categories"
+      category: Category
+      clear: Clear
+      clear_filters: Clear filters
+      contact_us: Contact us
+      could_not_find_match_for: 'Sorry, we couldn''t find any match for '
+      course_language: Course language
+      duration: Duration
+      filter_settings:
+        categories:
+          academic: Academic
+          business: Business
+          fashion: Fashion
+          food_drink: Food & drink
+          for_kids: For kids
+          general: General
+          health: Health
+          legal: Legal
+          sport: Sport
+          travel: Travel
+        durations:
+          t0_600: "<10 minutes"
+          t1800_3600: 30-60 minutes
+          t3600_86400: 1+ hour
+          t600_1800: 10-30 minutes
+        focus_on:
+          conversation: Conversation
+          grammar: Grammar
+          listening: Listening
+          pronunciation: Pronunciation
+          reading: Reading
+          speaking: Speaking
+          writing: Writing
+        levels:
+          long:
+            advanced: Advanced level
+            elementary: Elementary level
+            intermediate: Intermediate level
+            no_knowledge: No knowledge
+            pre_intermediate: Pre intermediate level
+            upper_intermediate: Upper intermediate level
+          short:
+            advanced: Advanced
+            beginner: Beginner
+            intermediate: Intermediate
+        sort_by:
+          most_rated: Most rated
+          newest: Newest
+          popularity: Popularity
+      filters: Filters
+      focus_on: Focus on
+      focus_on_title: I want to focus on
+      hide_lessons: Hide lessons
+      hours: Hours
+      i_understand: I understand
+      i_want_to_learn: I want to learn
+      in_language: in %{language}
+      language: Language
+      learn_more: Learn more
+      less_settings: Less settings
+      lessons: Lessons
+      lessons_available: "%{number} lessons available"
+      lessons_catalog_page_subtitle: Become language hero.
+      lessons_catalog_page_title: Expand your horizons with a language course
+      level: Level
+      min: Min
+      more_settings: More settings
+      navbar:
+        close: Close menu
+        menu: Menu
+        select_language: Select language
+      need_to_buy_course: You need to book a course first
+      no_description: No description provided
+      no_results: No results
+      or: or
+      per_month: per month
+      plans: Plans
+      privacy_policy: Privacy policy
+      rating: Rating
+      remove_all_filters: Remove all filters
+      reviews: Reviews
+      save: Save
+      search: Search
+      select_dots: Select...
+      select_languages: Select langauges
+      select_num_languages: Select %{number} languages
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Show all
+      show_all_lessons: Show all lessons
+      show_lessons: Show %{number} lessons
+      show_more: Show more
+      sign_up_with_lingu_for: Sign up with Lingu Norway for
+      skills: "%{count} skills"
+      sort_by: Sort by
+      start_typing_here: Start typing here
+      teach: Teach
+      terms_and_conditions: Terms and Conditions
+      time_range: Time range
+      try_adjusting_your_search: Try adjusting your search by changing your filters
+      try_this_course: Start learning
+      website_language: Website language
+      words: Words
+    games:
+      finished:
+        go_to_next_exercise: Well done! Go to the next exercise
+      flashcard:
+        buttons:
+          finish: Finish
+          next: Next
+          previous: Previous
+        check_out_new_words: Check out the new words you will learn in this lesson
+        frequency_of_word_usage: Frequency of word usage in %{language}
+        keep_practice_to_learn_all_words: Review the %{count} words and let's play
+          some games!
+        word_frequency:
+          level1: Rarely used
+          level2: Rarely used
+          level3: Word frequency – medium
+          level4: Word frequency – medium
+          level5: Common
+          level6: Very common
+      match_word:
+        click_and_move_each_word_to_counterpart: Click and move each word to its counterpart
+        start_heading: Match words to make a pair
+        time_is_up: Time's up!
+      skip_tutorial: Skip
+      time_is_up: Time's up!
+      word_nodes:
+        match_letters_to_form_word: Match letters to form a word
+      word_waterfall:
+        do_not_hesitate: Let's speed up!
+        go_to_next_exercise: Go to the next exercise
+        select_correct_translation: Select correct match
+        start_heading: Read task word and match it with one of the falling options
+        well_done: Well done!
+    home_page:
+      hello: Hello,
+      popular_lessons: Popular lessons
+      show_more: Show more
+      time: "%{count} min"
+      today_lesson: Your lesson for today
+      user_name: "%{name}!"
+      words: "%{count} words"
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Continue lesson
+      exit: Exit
+      idle_message: You’ve been idle for some time...
+    lesson_page:
+      back_to_course_page: Back to course page
+      close: Close
+      continue_lesson: Continue lesson
+      followed: Followed
+      hamburger_menu_btn: Hamburger menu
+      lesson_given: lessons
+      not_started: not started
+      or: Or
+      part_complete: "%{percent}% complete"
+      restart_lesson: Restart
+      section_check: Check
+      section_check_info: "%{count} tests"
+      section_learn: Learn
+      section_learn_info: "%{count} min to watch and read"
+      section_play: Play
+      section_play_info: "%{count} words to practice"
+      start_lesson: Start lesson
+      step_progress: "%{percent}%"
+      subscribe: Follow
+      subscribed: Followed
+      subscribers: followers
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Unfollow
+      webview_error_title: Something went wrong...
+      words_number: "%{wordsNumber} new words"
+    lesson_task:
+      cancel_button: Cancel
+      check:
+        navigation_next: Next
+        navigation_previous: Previous
+        navigation_skip: Skip
+      controls_panel:
+        font_size_button: Font size
+        high_contrast_button:
+          origin: High contrast
+          short: Contrast
+        hints_button: Hints
+        music_playback_button:
+          origin: Music playback
+          short: Music
+        sound_effects_button:
+          origin: Sound effects
+          short: Sound
+      exit_button: Exit
+      finish_button: Finish
+      finished:
+        back_to_learn: Back to learn
+        back_to_lesson_page: Back to the lesson page
+        back_to_results_page: Back on result page
+        bad_result_message: Hmm... try to take the lesson one more time
+        close_lesson: Close lesson
+        correct_answers_list: Correct answers list
+        good_result_message: I can see you've made an effort!
+        great_result_message: Well done! These are great results!
+        next_course_lesson: Go to next lesson in course
+        no_results: You have no test results yet
+        no_results_text: Please, complete the lesson and pass the test to get the
+          results
+        see_correct_answers_list: See correct answers list
+        train_more: Practice more and you will achieve better results next time!
+        you_finished_lesson: Great! You finished the lesson
+      go_back: Go back
+      next_button: Next
+      not_available_task: This task is not available yet
+      start_button: Start
+      tasks:
+        check:
+          assignment:
+            accept: Accept
+            author_will_check_your_answer: "%{author} will review your answer and
+              typically give feedback within 1-2 days"
+            continue_writing: Continue writing
+            copy: Copy
+            delete: Delete
+            delete_record: Delete record
+            edit: Edit
+            essay_does_not_have_enough_words: >-
+              Your answer should contain at least %{minWordsNumber} words. Your answer
+              is currently %{currentWordsNumber} words.
+            followers_count: "%{followersCount} followers"
+            lessons_count: "%{lessonsCount} lessons"
+            minimal_recording_time: Minimal recording time - %{minimalRecordingTime}
+            minimum_characters_amount: Minimum characters - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum words - %{minimumAmount}
+            record_again: Record again
+            record_voice: Record voice
+            send_anyway: Send anyway
+            send_to_review: Send to review
+            skip: Skip
+            too_short_answer: Too short answer
+            type_your_answer: Type your answer
+            unknown_task_type: Unknown task type
+            upgrade_licence: Upgrade licence
+            upgrade_your_plan: Upgrade your plan to try assignments with teachers
+              reviews
+            upload_files: Upload files
+            write_essay: Write essay
+            you_have_used_amount_of_assignments: You have used %{amountOfAssignments}
+              assignment credits
+          fill_in_blanks:
+            sentence_gap: Sentence gap
+          fill_in_table:
+            column_answer_placeholder: Answer
+            column_question_placeholder: Question
+            example: Example
+          true_false:
+            'false': 'False'
+            'true': 'True'
+        learn:
+          translatable_text:
+            show_original: Show original
+            translate_into: Translate with Google into %{languageName}
+            translate_into_your_lang: Translate with Google into your language
+        play:
+          arrange_words:
+            start_screen:
+              heading: Make a sentence out of the given words
+          audition:
+            start_screen:
+              heading: Listen to the audio and tap on the word you just heard
+          dictation:
+            get_help: Get help
+            i_do_not_know: I don't know
+            input_placeholder: Enter what you heard here
+            start_screen:
+              heading: Listen and write what you hear
+          fill_gap:
+            start_screen:
+              heading: Match the word and its meaning
+          finish_screen:
+            go_to_next_exercise: Well done! Go to the next exercise
+          image_hotspot:
+            start_screen:
+              heading: Name the objects in the picture correctly
+          image_object:
+            start_screen:
+              heading: Pick the right object from the next picture
+          inline_dropdown:
+            start_screen:
+              heading: Pick the words that match the sentence
+          mark_word:
+            start_screen:
+              heading: Read the text and select the word that matches the image
+          minimal_pairs:
+            start_screen:
+              heading: Watch the video and select correct option
+    locale:
+      currency_switcher_title: Currency switcher
+      lang_switcher_title: Language switcher
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: English
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio is loading
+        aria_pause_button: Pause
+        aria_play_button: Play
+        aria_reload_button: Reload
+        aria_stop_button: Stop
+        reload_message: Failed to load audio. Please click the button to reload.
+    mobile_modal:
+      apply: Apply
+      cancel: Cancel
+      clear: Clear
+      save: Save
+    page404:
+      goToStartLessonPage: Go to the start lesson page
+      ooops: Oooops...
+      sorry_message: Sorry, Tor couldn't find this page
+    profile:
+      navigation:
+        log_out: Log out
+        my_profile: My profile
+        settings: Settings
+      onboarding:
+        choose_native_language: Choose your native language or language you understand
+        do_you_understand_english: Do you understand English?
+        hello: Hello
+        language_levels:
+          a1: Elementary level
+          a2: Pre-intermediate level
+          b1: Intermediate level
+          b2: Upper Intermediate level
+          c1: Advanced level
+          no_knowledge: No knowledge
+        language_not_supported:
+          note: We will notify you as soon as the language will be available
+          title: Sorry, but we don’t support this language yet
+          try_another_language: Try another language
+        'no': 'No'
+        search_placeholder: Search...
+        show_more_languages: Other languages
+        target_language_question: What language do you want to learn?
+        what_is_language_level: How would you rate your %{languageName} level?
+        'yes': 'Yes'
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu's privacy policy
+        support: Support
+      logout: Logout
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Receive updates from teachers and schools you follow
+              sections:
+                app_notifications: App notifications
+                email: E-mail
+              title: Learning assistance
+            marketing:
+              description: Stay informed about all promotions, updates, and inspiration
+                from Lingu
+              sections:
+                browser_notifications: Browser notifications
+                email: E-mail
+              title: Marketing
+          title: Contact preferences
+        personal_information:
+          delete_photo: Delete photo
+          email: Email
+          first_name: First name
+          last_name: Last name
+          social_accounts:
+            connected: Connected
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Not connected
+            title: Social accounts
+          title: Personal information
+          update_photo: Update photo
+        school:
+          active_licence: Active license
+          active_status: Active
+          delete_profile: Delete my profile
+          delete_profile_modal:
+            body: |-
+              You obliterate all your data—forever. There's no undo button, and we can't get it back for you after.
+              Are you sure you want to permanently delete your Lingu profile and all your data?
+            cancel: Cancel
+            confirm: Yes, delete it
+            i_understand_the_consequences: I understand the consequences
+            title: Delete your profile?
+          expired: Expired %{expire_date}
+          expires: Expires %{expire_date}
+          inactive_status: Inactive
+          revoke_access: Revoke read access
+          sections:
+            contact_school: Contact school
+            export_my_data: Export my data
+            read_school_privacy_policy: Read School Privacy policy
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Music playback
+              sound_effects: Sound effects
+              title: Sound
+            visual:
+              dark_theme: Dark theme
+              font_size:
+                test_text: The grass is always greener on the other side of the fence
+                title: Font size
+              high_contrast: High contrast
+              hints: Hints
+              title: Visual
+          title: Sound & Visual
+        training_settings:
+          sections:
+            i_understand: I understand
+            i_want_to_learn: I want to learn
+            target_language_level: "%{language_name} level"
+          title: Training settings
+      settings_title: Settings
+    teacher_card:
+      followers_count:
+        one: 1 follower
+        other: "%{count} followers"
+      lessons_count:
+        one: 1 lesson
+        other: "%{count} lessons"
+  gameplays:
+    errors:
+      finish_params: Invalid params for gameplay finish
+      not_created: Gameplay was not created
+      not_updated: Gameplay was not updated
+  hidden: Hidden
+  incomplete_profile_information: Incomplete profile, please update your information.
+  incorrect: Incorrect
+  instructions: Instructions
+  invalid_score_method: Invalid scoring method for this task type
+  last_name: Last name
+  layouts:
+    admin:
+      profile_menu:
+        admin_area: Admin area
+        my_profile: My profile
+      sidebar:
+        crawlers: Word collection tasks
+        dashboard: Dashboard
+        dictionary: Dictionary
+        gamification: Gamification
+        languages: Languages
+        lessons: Lessons
+        personal_team: Personal account
+        plans: Plans
+        tasks: Tasks
+      workspace_header:
+        overview: Overview
+    application:
+      search: Search...
+      sign_in_with_google: Sign in with Google
+      thanks_linguer: Thank you for being a linguer
+    authoring:
+      sidebar:
+        back_to_lesson: Back to lesson
+    school:
+      assignments:
+        ready_for_review: Ready for review
+        responses:
+          audio: Audio response
+          file: File response
+          text: Text response
+      sidebar:
+        activities: Activity log
+        assignments: Assignments
+        courses: Courses
+        dashboard: Dashboard
+        gdpr: GDPR
+        lessons: Lessons
+        school_settings: School settings
+        search: Search
+        students: Students
+        support: Support
+        teachers: Teachers
+        tests: Tests
+    teach:
+      sidebar:
+        courses: Courses
+        followers: My followers
+        school_admin: Manage school
+  lesson_mailer:
+    new_lesson_review:
+      button: View lesson
+      preheader: "%{user} reviewed your lesson"
+      review: Review
+      statuses:
+        approved: Approved - you can now publish the lesson!
+        rejected: Changes requested
+      title: New review
+      user_reviewed_lesson: "%{user} has reviewed %{lesson}"
+  lessons: Lessons
+  levels: Levels
+  licenses: Licenses
+  locales:
+    af: Afrikaans
+    am: Amharic
+    ar: Arabic
+    az: Azerbaijani
+    be: Belarusian
+    bg: Български
+    bn: Bengali
+    bs: Bosnian
+    ca: Catalan
+    ceb: Cebuano
+    co: Corsican
+    cs: Czech
+    cy: Welsh
+    da: Danish
+    de: Deutsch
+    el: Greek
+    en: English
+    eo: Esperanto
+    es: Español
+    et: Estonian
+    eu: Basque
+    fa: Persian
+    'false': Norwegian
+    fi: Finnish
+    fr: Français
+    fy: Frisian
+    ga: Irish
+    gd: Scots Gaelic
+    gl: Galician
+    gu: Gujarati
+    ha: Hausa
+    haw: Hawaiian
+    he: Hebrew
+    hi: Hindi
+    hmn: Hmong
+    hr: Croatian
+    ht: Haitian Creole
+    hu: Hungarian
+    hy: Armenian
+    id: Indonesian
+    ig: Igbo
+    is: Icelandic
+    it: Italiano
+    ja: Japanese
+    jv: Javanese
+    ka: Georgian
+    kk: Kazakh
+    km: Khmer
+    kn: Kannada
+    ko: Korean
+    ku: Kurdish
+    ky: Kyrgyz
+    la: Latin
+    lb: Luxembourgish
+    lo: Lao
+    lt: Lietuvių kalba
+    lv: Latviešu valoda
+    mg: Malagasy
+    mi: Maori
+    mk: Macedonian
+    ml: Malayalam
+    mn: Mongolian
+    mr: Marathi
+    ms: Malay
+    mt: Maltese
+    my: Myanmar (Burmese)
+    nb: Norsk
+    ne: Nepali
+    nl: Nederlands
+    ny: Nyanja (Chichewa)
+    or: Odia (Oriya)
+    pa: Punjabi
+    pl: Polski
+    ps: Pashto
+    pt: Português
+    ro: Limba română
+    rs: Сербский
+    ru: Русский язык
+    rw: Kinyarwanda
+    sd: Sindhi
+    si: Sinhala (Sinhalese)
+    sk: Slovak
+    sl: Slovenian
+    sm: Samoan
+    sn: Shona
+    so: af Soomaali
+    sq: Albanian
+    st: Sesotho
+    su: Sundanese
+    sv: Swedish
+    sw: kiSwahili
+    ta: Tamil
+    te: Telugu
+    tg: Tajik
+    th: Thai
+    tk: Turkmen
+    tl: Tagalog (Filipino)
+    tr: Türkçe
+    tt: Tatar
+    ua: Українська
+    ug: Uyghur
+    ur: Urdu
+    uz: Uzbek
+    vi: Vietnamese
+    xh: Xhosa
+    yi: Yiddish
+    yo: Yoruba
+    zh: Chinese
+    zu: Zulu
+  mailers:
+    demo_msg: >-
+      This is a demo access that shows the functionality of the test. You will not
+      receive feedback on your test response.
+  mobile:
+    errors:
+      cant_open_external_link: Can't open the link.
+  mobile_number: Mobile number
+  move_down: Move down
+  move_up: Move up
+  name: Name
+  nok: NOK
+  none: None
+  oauth:
+    scopes:
+      profile: Email, full name and profile picture.
+  org_number: Organisation number
+  platform_role: Platform role
+  preview: Preview
+  profiles:
+    profile_form:
+      select_default_language: Select default language
+    show:
+      choose_image: Choose image
+      update_profile: Update my profile
+  public_activity:
+    team_student:
+      course_assign:
+        unknown_course: a course
+  published: Published
+  published_tasks: Published tasks
+  remove: Remove
+  restore_group: Restore group
+  result_type_label: Show test results
+  rewards: Rewards
+  role: Role
+  roles: Roles and abilities
+  save: Save
+  save_changes: Save changes
+  school:
+    activities:
+      are_you_sure: Are you sure?
+      by_teacher: By user
+      event_type: Event type
+      failed: The activity could not be undone
+      item:
+        change: CHANGE
+        date: DATE
+        student: USER
+      title: Activity log
+    activity_types:
+      license:
+        create: License created
+        removed_expiration: End date removed
+        revoke: License revoked
+        update: End date set
+      team_student:
+        archive: Student archived
+        create: Student created
+        restore: Student restored
+    assignments:
+      assginments_management: Assignments management
+      assignments_stats:
+        assignments_reviewed: Assignments reviewed
+        avg_rating: Average rating
+        avg_response_time: Average response time (30 days)
+        no_assignment_stats: No stats to show yet...
+        submissions_per_week: Submissions per week
+      index:
+        assignments_from_course: Assignments from courses
+        no_documents_msg: Your students have not submitted any assignments yet
+      newest_first: Newest first
+      ready_for_review: Ready for review
+      reviewed: Reviewed
+      school_assignments: School assignments
+    course_mailer:
+      course_assigned_notification:
+        click_start_lesson: Click 'Start lesson'
+        follow_course_link: Click the button to open the course
+        get_started_line: 'Here''s how you get started:'
+        open_lesson: Open the first lesson
+        sign_in_with_email: Log in with your email address (%{email})
+    course_sections:
+      classroom: Classroom
+      self_study: Self-study
+    courses:
+      assign_team_group:
+        assigned: The course was successfully assigned to groups %{group}
+      errors:
+        team_group_not_selected: Group is not selected
+      list:
+        assign_course: Assign course to group
+        assign_to_group: Assign to group
+        by_last_modified: By last modified
+        created_at: on %{created_at}
+      show:
+        content_overview: Content overview
+        count_lessons: "%{count} lessons"
+        course_components: Course components
+        course_duration: "~%{hours} hours"
+        course_lessons: "%{count} lessons"
+        course_popularity: Course popularity
+        per_month: Per month
+        per_week: Per week
+        per_year: Per year
+    current_teams:
+      general_profile:
+        select_default_school_language: Default target language (classes)
+    dashboard:
+      agreement_success: Data processing agreement was successfully created.
+      confirm_agreement: Confirm agreement
+      confirm_gdpr: Please read and confirm the GDPR terms below.
+      empty:
+        create_gdpr_agreement: Set up agreement
+      gdpr_confirm_success: Data processing agreement was successfully confirmed
+      gdpr_confirmation: To start using Lingu, please confirm you have read and agree
+        to our GDPR.
+      get_agreement: Download signed agreement (PDF)
+      previous_month: previous month
+      processor_name: Contact persone at %{team}
+      this_month: this month
+    gdpr_agreements:
+      gdpr_subcontractors:
+        company: Company
+        data_location: Data storage location
+        purpose: Purpose
+        sub-contractors_heading: Sub-contractors
+      notification: Please sign the Data Processing Agreement agreement first (GDPR
+        requirement)
+      notification_button_content: Read and sign agreement
+    licenses:
+      remove_end_date:
+        removed_end_date: Removed end date for license
+    mobile:
+      index:
+        log_out: Log out
+        mobile_support_will_be_available_at: Mobile support for schools will be available
+          spring 2021.
+        sorry_for_inconvenience: We’re sorry for the inconvenience
+        too_small_screen: Too small screen...
+    profile:
+      api_access:
+        add_new_app: Add new app
+        app_name: App name
+        create_app: Create an app to generate an API key. Then follow the
+        delete_confirm: Are you sure you want to delete this app?
+        documentation: documentation
+        give_students_access: >-
+          With our API you can seamlessly give students access to world-class learning
+          resources and language tests.
+        integrate_services: Integrate our services into your website
+        redirect_url: Redirect URL
+        title: API access
+        to_start_your_process: to start your integration process.
+      billing:
+        business_address: Business address
+        business_registration_id: Business registration ID
+        city: City
+        country: Country
+        postal_code: Postal code
+        state: State
+        title: Billing
+      general:
+        remove_image: Remove image
+        upload_new_image: Upload new image
+      privacy:
+        data_processor_agreement: Data processor agreement
+        destroy_user_after: Destroy user data after (days)
+        download_signed_agreement: Download signed agreement
+        gdpr_contact_name: GDPR contact person
+        privacy_url: School's privacy policy url
+        title: Privacy policy
+      tests:
+        agree_to: I agree to the
+        agree_to_terms: I accept the %{link} for language tests.
+        disabled: Disabled
+        enable_test: Enable test module
+        enable_test_note: >-
+          Assign language tests for assessment, level placement and level achievement
+          to evaluate the candidate's language skills.
+        enabled: Enabled
+        for_testing_service: for testing service
+        pay_note: Pay per completed test only
+        terms_and_conditions: terms and conditions
+        test_module: Test module
+    school_assignments:
+      assign_to_student: Assign to student
+      create_assignment: Create assignment
+      form:
+        assign_to: Assign to
+        deadline: Deadline
+        empty_form_error: Insert comment content or record audio
+        pass_date: Submitted
+        select_student: Select student
+      new_assignment: Create new assignment
+      responses:
+        audio: Audio response
+        file: File response
+        text: Text response
+      school_assignments_management: School assignments management
+      student_assignment:
+        statuses:
+          pending: Pending
+          reviewed: Reviewed
+          skipped: Skipped
+      student_assignment_info:
+        service_provider_note: >-
+          This service is delivered by Lingutest AS, business registration id NO 913
+          628 934.
+        submitted_at: Submitted
+    search:
+      index:
+        search_fallback: Type something to start searching
+        search_school_data: Search school data
+    shared:
+      document_review:
+        add_comment: add a comment...
+        leave_comment: Leave comment
+        use_quote: Use as quote
+      onboarding:
+        change_team: 'Please change to one of the following accounts:'
+        complete_profile: Complete your profile
+        contact_info: >-
+          Please contact support via school@lingu.com or use the support chat in the
+          lower right corner
+        follow_invitation_link: School users should follow an invitation link to register
+          the first time.
+        signed_in_personal_team: You are signed in to a personal account.
+        wrong_place: Oops, you'are in a wrong place
+      school_response:
+        response_placeholder: Leave your text or record audio...
+        use_quote: Use as quote
+    teachers:
+      default: Default
+      import:
+        import_count_users: Add %{count} teachers
+        import_in_progress: Teacher accounts are being created. Please wait for a
+          minute.
+        items_count: "%{count} items"
+      invite:
+        import_users: Import teachers
+        invite_users: Invite teachers
+      item:
+        archive: Delete teacher account
+        edit: Edit teacher account
+        email: EMAIL
+        followers: FOLLOWERS
+        language: LANGUAGE
+        lessons: LESSONS
+        name: NAME
+        role: ROLE
+      language_placeholder: Search language...
+      list:
+        add_teacher: New user account
+        all_roles: All roles
+        by_last_added: By last added
+        by_name_az: By name A to Z
+        by_name_za: By name Z to A
+        custom: Custom
+        delete_confirm: Are you sure you want to delete this user? This cannot be
+          undone
+        no_teachers: >-
+          You don't have any users yet. Invite your team to assign tests, lessons,
+          and assignments.
+      new:
+        created_successfully: The teacher has been created successfully.
+        failed_create_teacher: Failed create teacher.
+        general: General
+        import_from: Import from Excel/CSV
+        language: Language
+        teach_languages: Language abilities
+      role:
+        administrator: Administrator
+        editor: Editor
+        teacher: Teacher
+      set_as_default: Set as default
+      spot: ","
+    team_groups:
+      assign_course:
+        assigned: "%{course} was successfully assigned to %{group}"
+      create:
+        unique_name_error: Class name should be unique
+      create_group: Create New Class
+      edit:
+        general: General
+        members: Members
+        remove_member: Remove
+        title: Edit Class
+      edit_group: Edit Class
+      edit_plan:
+        new_license_for_group: Assign license to the group
+      errors:
+        course_not_selected: Course is not selected
+      item:
+        archive: Archive class
+        assign_lesson: Assign lesson on class
+        assign_test: Assign test on class
+        class: Class
+        confirm_archive: Are you sure you want to archive this class?
+        confirm_destroy: Are you sure you want to delete this class?
+        destroy: Delete
+        edit: Edit class
+        invite_students: Invite more students to join this group
+        invite_students_link: 'Invite students:'
+        no_students: No students
+        set_joinable: Let students join by link
+        waiting_note: Please wait...
+      new:
+        language: Language
+        level: Level
+        select_language: Select language
+        select_level: Select level
+        sub_title: Create a new class to group your students
+        title: New class
+      update:
+        archive_msg: The class was marked as archived
+        discard_msg: The class was marked as deleted
+        success: Class was successfully updated
+    team_students:
+      analyze_imported_file:
+        import_count_students: Import %{count} students
+        items_count: "%{count} items"
+      archived_students:
+        by_last_archived: By last archived
+        clear_archive: Delete archived students
+        clear_archive_confirm: Are you sure you want to delete all archived students?
+          This cannot be undone.
+        notification_content: >-
+          As per %{school_name}’s privacy policy, archived student records will be
+          cleared %{days} days after license ends.
+        student_last_name: Student last name
+        table_headers:
+          data_deletion_date: Data deletion date
+          date_in: in %{date}
+          email: E-mail
+          level: Level
+          name: Name
+          native: Native
+          remove_student_confirm: Are you sure you want to delete this student?
+          restore_student_confirm: Are you sure you want to restore this student?
+          target: Target
+        title: Archived students
+      archived_students_list_row:
+        archived_at: Archived  %{date}
+        delete_student: Delete student
+        restore_student: Restore student
+      assign_course:
+        assign_to_student: Assign course to student
+        assigned: "%{course} was successfully assigned to %{student}"
+      courses:
+        assigned_course: Assigned course
+        other_courses: Other courses
+      edit:
+        personal_data: Personal data
+      form:
+        active: Active
+        add_new_student: Add new student
+        class: Class
+        confirm_close_popup: >-
+          You have unsaved changes that will be lost if you decide to continue. Are
+          you sure you want to close?
+        import_students: import students
+        inactive: Set as active
+        language_select_placeholder: Start typing the language to add new ...
+        native: Native
+        nonnative: Set as native
+        personal_data: Personal data
+        plan: Plan
+        select_class: Select group
+        select_language: Select language
+        send_invitation: send invitation
+        set_active_state: Set as active
+        student_import_links: You can also %{import_link} or %{invitation_link}
+        support_languages: Support languages
+        target_languages: Target languages
+      import_students:
+        add_manually: add manually
+        add_or_invite_links: You can also %{add} or %{invite}
+        analyze_failed: Cannot analyze this file
+        browser_link: browse
+        failed: Failed
+        import_failed: The import could not be completed
+        import_in_progress: Students are being imported. Please wait for a minute.
+        not_recognize: Email not recognized
+        read_more: Read more how to import
+        select_plan: No plan
+        title: Import students
+        upload_text: Drag and drop XLS / CSV file or
+        wrong_format: Wrong format
+      import_students_form:
+        send_invites: send invites
+      index:
+        add_manually: Add manually
+        archive: Archive
+        clear: Clear
+        create_failed: Could not create student
+        import_students: Import from Excel / CSV
+        invite: Invite
+        invite_students: Invite students
+        license: License
+        new_class: New class
+        self_plan: Self-study plan
+        sort_by_date: By date
+        sort_by_name: By name
+      invite_students:
+        accept_invitation: Accept invitation and create my account
+        add_manually: add manually
+        add_new_class: Add new class
+        add_or_import_links: You can also %{add} or %{import}
+        already_account: Already have an account? Start learning!
+        already_student: You have already joined this team.
+        also_you_can: Also you can
+        class_name: Class name...
+        copy_link: Copy link
+        create_account: Create your account
+        create_student_failed: Failed create new student
+        created_student_successfully: You have been added to the team successfully.
+        emails: Emails
+        follow_link_to_join_team: Please follow the link below to get started and
+          to set up your profile.
+        get_back_into: Be sure to get back into Lingu to try them out yourself.
+        import_students: import students
+        invitation_request: Welcome to the School!
+        invite_by_email: Invite by email
+        invite_by_link: Invite by link
+        invite_more: Invite more
+        invited_to_join_team: You've been invited to join the Lingu school.
+        join_school: Join your school
+        join_team_group_error: Something went wrong. You can't join this team group.
+        lots_more_to_learn: There’s lots more what you can to learn.
+        no_plan: No plan
+        notification_settings: Notification settings
+        or: or
+        paste_invite_link: 'or paste this link in browser:'
+        privacy_policy: Privacy Policy
+        profile_link: Go to your %{link} to manage schools
+        quick_student_setup: Quick student setup
+        receive_marketing_messages: I want to receive marketing messages
+        select_class: Select class
+        send_invitation_failed: Failed send invitations
+        send_invitations: Send invitations
+        send_invitations_successfully: Invitations have been sent successfully
+        support: Support
+        title: Invite students
+        we_process_your_data: We'll process your data as set forth in our
+      lessons:
+        assign_lesson: Assign lessons
+        by_date: By date
+        by_level: By level
+        earned_xp: Earned xp
+        progress: Progress
+        recent_lessons: Recent lesson activity
+        search_lesson: Search lesson
+      list:
+        native: Native
+        native_language: Native language
+        target: Target
+        target_language: Target language
+      list_row:
+        archive: Archive
+        are_you_sure_archiving: Are you sure you want to archive this student?
+        assign_course: Assign course
+        assign_lesson: Assign lesson
+        assign_test: Assign test
+        edit: Edit student
+        move_to_class: Move to class ...
+        unarchive: Unarchive
+      move_class:
+        submit: Submit
+        title: Move to class
+      profile:
+        change_license: Change license
+        expires_at: Expires %{expires_at}
+        license_failed: The licenses could not be created
+        license_in_progress: Licenses are now being issued. Please wait for a minute.
+        no_license: No license
+        perpetual_license: Perpetual license
+        plan_is_not_selected: Plan is not selected
+        plan_price: "%{price} per %{interval}"
+        remove_end_date: Remove end date
+        revoke_license: Revoke license
+        revoke_license_confirm: Do you really want to deactivate the license right
+          now?
+        revoke_license_now: Revoke license now
+        set_end_date: Set end date
+    team_users:
+      form:
+        edit_user: Edit user account
+      lessons:
+        created_on: Created on
+        followers_count:
+          one: 1 follower
+          other: "%{count} followers"
+          zero: No followers
+        lessons_count:
+          one: 1 lesson
+          other: "%{count} lessons"
+          zero: 0 lesson
+        playthroughs: Playthroughs
+        teaches: Teaches
+      list_row:
+        you: YOU
+    users:
+      form:
+        avatar: Picture
+        remove_image: Remove image
+        upload_image: Upload new image
+  score: Score
+  search_student: Search student
+  select: Select
+  select_date: Select date
+  select_status: Select status
+  shared:
+    activity: Activity
+    assignment: Assignment
+    audio_upload:
+      add_audio: Add audio
+      choose_audio: Choose audio
+      update_audio: Update audio
+    author: Author
+    available_date: Launches spring 2021
+    cancel: Cancel
+    category: Category
+    classes: Classes
+    clear: Clear
+    confirm: Confirm
+    copy: Copy
+    count_followers:
+      one: "%{count} follower"
+      other: "%{count} followers"
+    count_lessons:
+      one: "%{count} lesson"
+      other: "%{count} lessons"
+    count_students:
+      one: "%{count} student"
+      other: "%{count} students"
+    count_users:
+      one: "%{count} user"
+      other: "%{count} users"
+    earned_xp: Earned XP
+    edit: Edit
+    email_lcase: e-mail address
+    enter_code: Enter one-time code from e-mail
+    icon: Icon
+    image_upload:
+      add_illustration: Add illustration
+      choose_animation: Choose animation
+      choose_image: Choose image
+      update_illustration: Update illustration
+    inactive: Inactive
+    instructions: Instructions
+    language: Language
+    level: Level
+    next: Next
+    rating: Rating
+    school: School
+    send: Send
+    skill: Skills
+    stats: Stats
+    student: Student
+    tags: Content tags
+    team: Team
+    time_spent: Time spent
+    unknown: unknown
+  show: Show
+  sign_in_facebook: Sign in with Facebook
+  sign_in_google: Sign in with Google
+  sign_in_microsoft: Sign in with Microsoft
+  sign_out: Sign out
+  skills: Skills
+  sort_by: Sort by
+  special_characters: Special characters
+  ssn: Social security number
+  status: Status
+  student_solution: The student's solution
+  students: Students
+  subject: Subject
+  success_signed_in: Successfully signed in
+  success_signed_out: Successfully signed out
+  task_guidelines: Task guidelines
+  task_item_session:
+    errors:
+      create: Cannot create new task item session
+  task_items:
+    record: Record
+    video:
+      errors:
+        unsupported_url_format: Unsupported video link format. Try Youtube or Wistia
+          link.
+  task_scoring_label: Task scoring method
+  tasks:
+    complexities:
+      high: High
+      low: Low
+      medium: Medium
+    errors:
+      failure: There was some error while uploading file
+    score_methods:
+      automatic: Automatic
+      fractional: Fractional
+      manual: Manual
+      no_score: No score
+      true_false: True/false
+    types:
+      tasks/arrange_words: Arrange Words
+      tasks/audio: Audio
+      tasks/audio_dialogue: Audio Dialogue
+      tasks/audition: Audition
+      tasks/dictation: Dictation
+      tasks/email: Email
+      tasks/embed: Embedded content
+      tasks/essay: Essay
+      tasks/fill_gap: Fill sentence gap
+      tasks/fill_in_blanks: Fill In Blanks
+      tasks/fill_in_table: Fill in Table
+      tasks/image_hotspot: Image hotspot
+      tasks/image_object: Image object
+      tasks/inline_dropdown: Inline Dropdown
+      tasks/mark_word: Mark Words
+      tasks/mark_word_audio: Mark Word Audio
+      tasks/select_image: Select Image
+      tasks/select_text: Multiple Choice
+      tasks/select_video: Minimal Pairs
+      tasks/sms: SMS
+      tasks/speaking: Listen & repeat
+      tasks/text: Read & listen
+      tasks/translatable_text: Autotranslate
+      tasks/true_false: True/False
+      tasks/video: Video
+      tasks/webpage: External webpage
+      tasks/word_games: Word games
+  teach:
+    course_sections:
+      lesson_row:
+        session_count: "%{count} views"
+        unpublished: Not published yet
+        word_count:
+          one: One word
+          other: "%{count} words"
+          zero: No words
+      section:
+        add_lesson: Add lesson
+        chapter_no: Chapter %{no}
+        delete_section: Are you sure you want to delete this section?
+        select_lesson: Select lesson
+    courses:
+      confirm_course_delete: Are you sure you want to delete this course?
+      create:
+        success: Course was successfully created.
+      destroy:
+        failure: Could not delete the course
+        success: The course was deleted
+      edit:
+        edit_course: Edit course
+      form:
+        choose_image: Choose image
+        description_placeholder: Enter the description for your course.
+        prohibited_saving_form: prohibited saving
+        select_language: Select Language
+      index:
+        all_courses: All Courses
+        my_courses: My Courses
+        no_courses: No courses
+        title: Courses
+      level_words:
+        count_missing_words: "%{count} words from %{level} are omitted"
+        coverage_of_level: >-
+          This course covers %{percent} of the frequency word list for this level,
+          with %{count} words.
+        list_of_omitted_words: 'The frequency word list for %{level} contains also
+          these words:'
+      list:
+        count_chapters: "%{count} chapters"
+        count_words: "%{count} words and phrases"
+      new:
+        title: New Course
+      show:
+        add_new_chapter: Add new chapter
+        remove_image: Remove image
+      update:
+        success: Course was successfully updated.
+      words:
+        compare_with_frequency_wordlist: Compare with the frequency wordlist
+    lessons:
+      confirm_lesson_delete: Are you sure you want to delete this lesson?
+      count_approved_lessons:
+        one: One approved lesson
+        other: "%{count} approved lessons"
+        zero: No approved lessons
+      count_draft_lessons:
+        one: One lesson under development
+        other: "%{count} lessons under development"
+        zero: No lessons under development
+      count_pending_lessons:
+        one: One lesson pending review
+        other: "%{count} pending lessons"
+        zero: No lessons pending review
+      count_published_lessons: "%{count} published lessons"
+      create:
+        success: Lesson was successfully created
+      destroy:
+        failure: Could not delete the lesson
+        success: The lesson was deleted
+      draft:
+        all_lessons: All Lessons
+        columns:
+          last_updated: Last updated
+        draft_lessons: Developing
+        lessons_pending_review: Lessons pending review
+        my_lessons: My lessons
+        no_lessons: No lessons
+        reviewable_lessons: Pending review
+        select_course: Select course
+        title: Lessons
+      edit:
+        choose_image: Select image
+      edit_lesson: Edit %{lesson}
+      form:
+        credits_placeholder: Enter names of authors who's content has been reused
+          here.
+        prohibited_saving_form: prohibited saving
+        select_language: Select language
+        select_level: Select level
+        select_parent_lesson: Select parent lesson
+        select_skill: Select skill
+        select_support_language: Select support language
+        select_tag: Select category
+        select_target_language: Select target language
+        select_target_language_active: Active
+        select_target_language_level: Select target language level
+        select_team: Select team
+        team_image: Logo
+      lesson_header:
+        glossary: Glossary
+        live_page: See lesson
+        more: More
+        more_actions: More actions
+      list:
+        columns:
+          last_updated: Last updated
+          title: Title
+        count_lessons:
+          one: One lesson
+          other: "%{count} lessons"
+        level: Level
+      new:
+        title: New Lesson
+      publishable:
+        lesson_approval:
+          'false': Needs to be reviewed and approved by another instructor
+          'true': Reviewed and approved by another instructor
+        lesson_glossary:
+          'false': Please add lesson glossary (10 words minimum)
+          'true': Added glossary keywords
+        user_credits:
+          'false': Please review another instructor's lesson to get credits
+          'true': Reviewed another instructor's lesson
+        user_profile:
+          'false': Please complete your profile
+          'true': Profile is completed
+      review:
+        actions:
+          draft: Set to draft
+          pending: Send to review
+          publish: Publish lesson
+        publication_error: Lesson cannot be published
+        published: Lesson was successfully published
+        publishing_status: Publishing status
+        status_updates:
+          draft: Lesson status was set to draft
+          pending: Lesson status was set to review
+        unpublication_error: Lesson cannot be unpublished
+        unpublished: Lesson was unpublished
+      reviewable_lessons:
+        author: Author
+      select_color: Select the background color
+      show:
+        add_objective: Add
+        cover: Cover image
+        move_tasks: Move tasks
+        no_cover: No cover uploaded
+        split: Split
+        title: Lesson details
+      split:
+        error: New lesson was not created
+        new_lesson_title: New lesson title
+        split_lesson: Split lesson
+        success: New Lesson successfully created
+      storyline:
+        children_lessons: Subsidiary lessons
+        define_learning_objectives): Define learning objectives
+        lesson_content: Content
+        parent_lesson: Previous lesson
+      task_row:
+        delete: Delete
+      tasks:
+        no_tasks: No tasks here yet
+      tet:
+        count_words: "%{count} words will be used in games."
+        enter_learning_objective: Enter learning objective
+        games: Games
+        go_to_glossary: Go to glossary
+      update:
+        success: Lesson was successfully updated
+    phrases:
+      add_phrase: Add phrase
+      form:
+        enter_phrase: Enter a word or phrase...
+      heading: Lesson glossary
+      index:
+        confirm_reload_phrases: Are you sure? This will clear existing words and import
+          new from lesson.
+        contextual_wordlist: Contextual Wordlist
+        delete_all: Delete All
+        generate_glossary: Generate glossary
+        glossary_count: The glossary contains %{count} words
+        independent_wordlist: Independent Wordlist
+        recommended_glossary_text: >-
+          The learning platform will generate games for the student based on this
+          word list. Your word list should contain between 10 and 20 words.
+        waiting_note: Please wait...
+      list:
+        confirm_phrase_delete: Are you sure you want to delete this phrase?
+        no_phrases: No phrases defined yet. Please generate or add words manually.
+      title: Lesson glossary
+    posts:
+      confirm_post_delete: Are you sure to delete this post?
+      create:
+        success: Post was successfully created.
+      destroy:
+        failure: Cound not delete this post.
+        success: The post was deleted.
+      edit:
+        edit_post: Edit post
+      form:
+        content_placeholder: Enter the content for your post.
+        prohibited_saving_form: prohibited saving
+        select_lesson: Select lesson
+      index:
+        all_posts: All Posts
+        my_posts: My Posts
+        no_posts: No posts
+        posts: Posts
+        title: Posts
+      list:
+        content: Content
+        lesson: Lesson
+      new:
+        title: New Post
+      update:
+        success: Post was successfully updated.
+    reviewable_lessons:
+      count_pending_review:
+        one: One lesson is pending review
+        other: "%{count} lessons are pending review"
+    reviews:
+      form:
+        approve: Approved for publishing
+        changes_requested: Changes requested
+        submit_review: Submit review
+      index:
+        no_learning_objectives: No defined learning objectives...
+        objectives: Learning objectives
+      items:
+        approved_at: Approved on %{time}
+        changes_requested_at: Changes requested, %{time}
+        confirm_delete: Are you sure you want to delete this review?
+        no_reviews: No reviews
+      navbar:
+        post_review: Post review
+      reviews:
+        reviews: Reviews
+    task_item_options:
+      auditions:
+        option_form:
+          add_answer: Add answer
+          enter_answer: Enter answer
+      select_image:
+        option_form:
+          item_option_image: Item option image
+    task_items:
+      arrange_words:
+        arrange_words:
+          additional_words: Mix in additional incorrect words
+          click_set_incorrect_words: "(Click to add)"
+          enter_correct_sentence: Enter correct sentence
+          hint: Hint
+        forms:
+          form:
+            leave_blank_for_translations: Leave blank to use Google Translate
+      audition:
+        forms:
+          form:
+            minute: Minute
+            second: Second
+            select_word: Select word
+      dictation:
+        forms:
+          form:
+            enter_expected_response: Enter expected response from student
+      email:
+        email:
+          email_body: Email message
+          from_email: Sender's email
+          from_name: Sender name
+      embed:
+        embed:
+          accepted_sources: Acceptable sources
+      image_hotspot:
+        forms:
+          form:
+            add_hotspot: Add hotspot
+            associate_with: Associated with
+            new_hotspot: New hotspot
+            select_word: Select word
+      image_object:
+        forms:
+          form:
+            add_object: Add image object
+            instruction: What should the student click on?
+            leave_blank_for_audio: Text instructions (leave blank for audio only)
+            new_object: New image object
+        image_object:
+          audio_only: "(audio only)"
+      inline_dropdown:
+        forms:
+          form:
+            add_block: Add block
+      mark_word:
+        mark_word:
+          associate_with: Associate with
+          link_word: Connect word
+      select_image:
+        forms:
+          form:
+            enter_question: Enter task question here
+        select_image:
+          delete_question: Delete question
+          find_image: Upload image
+      select_text:
+        forms:
+          form:
+            add_question: Add question
+            enter_question: Enter task question here
+            new_question: New question
+        select_text:
+          add_answer: Add answer
+          enter_answer: Enter answer
+          select_text_guide: >-
+            Multiple choice tasks let you ask a question, and provide one or more
+            correct answers.
+      select_video:
+        select_video_guide: >-
+          Create a question, then record a short video. Save the video by clicking
+          the Floppy disc icon. Then add answers.
+      sms:
+        forms:
+          form:
+            message: SenderMessage
+            sender_name: Sender's name
+      speaking:
+        forms:
+          form:
+            add_sentence: Add sentence
+            instruction: Please enter anticipated answer from student
+            new_sentence: New sentence
+      translatable_text:
+        translatable_text:
+          write_in_language: >-
+            Write in %{language}. The article will be translated to the student's
+            native language.
+      true_false:
+        forms:
+          form:
+            add_statement: Add statement
+            new_statement: New statement
+      video:
+        video:
+          accepted_sources: Accepts Youtube and Wistia videos
+          caption: Captions / transcript
+      webpage:
+        webpage:
+          url_label: Webpage URL
+    task_list_row:
+      confirm_publish: Are you sure you want to change published status?
+    task_moves:
+      move_tasks: Move tasks
+      select_lesson: Select lesson
+    tasks:
+      arrange_words:
+        forms:
+          form:
+            arrange_words_guidelines: Type a grammatically correct sentence, and record
+              your own pronunciation.
+            sentences: Sentences
+      audio:
+        audio:
+          input_minimum_duration: Input minimum audio duration
+          minimum_duration: Minimum duration
+      audio_dialogue:
+        forms:
+          form:
+            enter_name_of_partner: Enter partner name
+            input_answers_select: Upload audio dialogue parts
+            partner_name: Dialogue partner name
+      audition:
+        errors:
+          start_interference: There should be at least %{seconds} seconds between
+            prompts
+          task_audio_duration: Timestamp should not exceed audio duration
+          task_audio_presence: Please upload audio to task form uploader
+        forms:
+          form:
+            audition_guidelines: >-
+              Start with uploading an audio file of 30 seconds to 2 minutes. Then
+              add timestamps from audio playback, and connect that timestamp to a
+              word from the dictionary.
+            per_30s: per 30 seconds audio.
+      convert_text_task_confirm: Are you sure you want to convert task type?
+      convert_text_task_msg: The task type was successfully changed.
+      delete_task_confirm: Are you sure you want to remove this task?
+      deleted_task_msg: The task was deleted
+      dictation:
+        forms:
+          form:
+            guidelines: >-
+              The student will write what he hears in the audio. Enter expected response
+              from student, and add audio recording.
+            sentences: Sentences
+        name: Tasks
+      email:
+        forms:
+          form:
+            email_task_guidelines: >-
+              Fill out the sender, subject and message fields if you want the student
+              to reply to your email. Else, the student will se a new email form.
+      enter_help_text_for_student: Enter help text for student
+      enter_instruction: Enter instruction...
+      enter_title: Enter title
+      essay:
+        essay:
+          input_minimum_words: Input minimum words length
+          minimum_words: Minimum words
+      fill_gap:
+        forms:
+          form:
+            fill_gap_guidelines: >-
+              The *select* will be replaced by an empty space with the different answer
+              options below. The first alternative is correct.
+      fill_in_blanks:
+        forms:
+          form:
+            fill_in_blanks: Fill in blanks
+            fill_in_blanks_example: I *love *this city
+            fill_in_blanks_guidelines: >-
+              Put the correct word or phrase inside two asterisks. Separate correct
+              alternatives with colon (:).
+      fill_in_table:
+        forms:
+          form:
+            column: Column
+            columns: Columns
+            fill_in_tables_guidelines: >-
+              The candidate will see first column of the table and needs to input
+              columns two and three. Separate correct alternatives with comma (:).
+            question_format: Question format
+      giphy_modal:
+        results: search results
+        search_giphy: Search images from Giphy
+      headline: Task headline
+      hints_placeholder: Enter hints to help solve the task
+      image_hotspot:
+        forms:
+          form:
+            hotspots: Hotspots
+            image_hotspot_guidelines: >-
+              Start by uploading an image. Then find a word from the dictionary and
+              drag the corresponding hotspot to the correct position in the image.
+      image_object:
+        forms:
+          form:
+            clickable_image_areas: Clickable image areas
+            image_object_guidelines: >-
+              Start by uploading an image. Then add text or audio instruction on which
+              part of the image the student should click on. Grab the lower right
+              corner of the yellow area to resize and cover the described object.
+      index:
+        all_states: All states
+        all_subjects: All subjects
+        all_task: All tasks
+        search_name: Search by name
+        task_base: Task base
+      inline_dropdown:
+        forms:
+          form:
+            inline_dropdown_guidelines: >-
+              The *select* will be replaced by a dropdown field with the different
+              options. The first alternative is correct.
+      instructions_for_student: Start page instructions
+      introduction_task_placeholder: Introduction text for task
+      list:
+        count_tasks: "%{count} tasks"
+        last_updated: Last updated
+        settings: Settings
+      main_form:
+        save_and_continue: Save and continue
+      mark_word:
+        forms:
+          form:
+            mark_words_guide: Mark each word or phrase the student is supposed to
+              click with asterisks (*).
+            sentences: Sentence
+            statements: Sentences
+      mark_word_audio:
+        forms:
+          form:
+            mark_word_audio_guide: >-
+              Mark each word the student is supposed to click with asterisks (*) immediately
+              before and after. After creating statement you can create audio instructions
+              to tell the student which words to click on.
+            statements: Sentences
+      new:
+        new_task: Create new task
+        save_and_continue: Save and continue
+        select_task_type: Select task type
+        task_name: Headline
+      overview:
+        count: Count
+        no_level: Undefined level
+        tasks_by_level: Tasks by levels
+        tasks_count:
+          one: One task
+          other: "%{count} tasks"
+          zero: No tasks
+      preview:
+        back_to_task: Back to the task
+      required_count_msg: This task type requires minimum %{count} items
+      select_image:
+        forms:
+          form:
+            upload_and_select_correct: Upload images and select correct answer
+      select_text:
+        fields:
+          hints_or_help: Hints or help for students
+        forms:
+          form:
+            questions: Questions
+      select_video:
+        fields:
+          hints_or_help: Hints or help for students
+        forms:
+          form:
+            questions: Questions
+      settings:
+        content: Configure content
+        task_settings_for: Update task settings for %{name}
+        task_type: Task type
+      shared_task_fields:
+        accepted_video_sources: Accepts Youtube and Wistia videos
+        choose_audio_file: Choose audio file
+        choose_file: Choose file
+        choose_giphy_image: Choose image from Giphy
+        choose_image: Choose image file
+        complexity: Complexity
+        delete_attachment: Remove attachment
+        internal_name: Admin name
+        remove_audio: Remove audio
+        remove_image: Remove image
+        score_fractional_label: Fractional (automatic), for example 4 out of 5 points.
+        score_manual_label: Manual scoring
+        score_no_score_label: No score
+        score_true_false_label: True/false (automatic), if answered 100% correct
+        stretch_image_label: Stretch image to fill page
+        task_content: Task content
+        upload_audio: Upload audio file
+      shared_task_header:
+        convert_text_task_type: Convert type
+        last_updated_at_date_by: Last updated %{date} by %{user}
+      size_requirements: Scope
+      sms:
+        forms:
+          form:
+            define_sms_dialogue: Configure SMS dialogue
+        sms:
+          input_minimum_duration: Input minimum SMS duration
+          minimum_duration: Minimum duration
+      speaking:
+        forms:
+          form:
+            instruction: Task instruction
+            sentences: Sentences
+            speaking_guide: >-
+              Type a sentence, and record your own pronunciation or upload audio file.
+              The student's response will be compared with the text sentence.
+      task_introduction: Task description
+      task_text_title: Reading content
+      translatable_text:
+        forms:
+          form:
+            guidelines: >-
+              This text should be written in the target language for the lesson, and
+              will be automaticall translated to the student's native language. Mark
+              elements which should not be translated with the tag tool.
+      true_false:
+        forms:
+          form:
+            statements: Statements
+            true_false_guidelines: In this task type you will add statements and mark
+              them as true or false.
+      upload_audio: Upload audio file
+      upload_demo_audio: Upload demo audio file
+      video:
+        form:
+          embed:
+            label: Video embed code
+            placeholder: Input video embed code
+          url:
+            label: Video link
+            placeholder: https://www.youtube.com/watch?v=IDHERE
+        forms:
+          form:
+            video_guidelines: >-
+              Paste in a URL to a Youtube or Wistia video, and write a transcription
+              or summary in the text field.
+    team_domains:
+      form:
+        add: Add
+        add_domain: Add an email domain for auto invites
+      list:
+        delete:
+          action: Remove
+          confirm: Are you sure you want to delete this domain?
+    team_users:
+      index:
+        back_to_profile: Back to profile
+      list:
+        columns:
+          actions: Actions
+          role: Role
+          user: Member name
+        delete:
+          action: Remove
+          confirm: Are you sure you want to delete this member from team?
+        leave:
+          action: Leave
+          confirm: Are you sure you want to leave this team?
+      team_link:
+        copy: Copy
+        invitation_url: Share this link to invite users to your team
+        invite_cta: Invite new members to your team
+        invite_heading: Invite
+        members:
+          one: One member
+          other: "%{count} members"
+      team_members:
+        team_members: Team members
+    teams:
+      delete:
+        action: Delete team
+        confirm: Are you sure you want to delete a team?
+      edit:
+        action: Edit
+        choose_image: Upload logo
+        heading: Edit team
+      form:
+        team_image: Team logo
+      index:
+        columns:
+          actions: Actions
+          members: Members
+          name: Team name
+        default_team: DEFAULT
+        heading: My teams
+        set_default_team: SET DEFAULT
+        teams: Teams
+      instruction:
+        select_ability_title: How would you like to use the Lingu platform?
+      new:
+        action: New team
+        heading: New team
+      onboarding:
+        authoring: Create and publish lessons / e-learning for students
+        licensing: Give my students access to e-learning, games and tests
+        other: Manage students and teachers
+        submit: Let's begin
+        teaching: Provide tutoring services (one to one)
+  team_domain_invitations:
+    list:
+      accept: Accept
+      actions: Actions
+      decline: Decline
+      team_invitations: Team Invitations
+      team_name: Team name
+  team_invitations:
+    create:
+      joined: You have successfully joined %{team}
+    show:
+      team_not_found: Team is not found
+  time:
+    formats:
+      activity: "%d %b, %Y %H:%M"
+      date: "%d/%m/%Y"
+      default: "%d.%m.%Y at %H:%M"
+      long: "%A, %e. %B %Y, %H:%M"
+      pdf: "%d. %B %Y"
+      short: "%e %b, %H:%M"
+  time_spent: Time spent
+  title: Title
+  'true': 'True'
+  type: Type
+  update: Update
+  upload: Upload
+  users: Users
+  view: View
+  views:
+    pagination:
+      first: first
+      last: last
+      next: next
+      previous: previous
+      truncate: "..."
+  welcome:
+    signin:
+      enter_email: Enter email
+      welcome_title: Welcome to Lingu
+  will_paginate:
+    next_label: Next <i class="fa fa-angle-right"></i>
+    previous_label: <i class="fa fa-angle-left"></i> Previous
+  word: Word
+  words: Words

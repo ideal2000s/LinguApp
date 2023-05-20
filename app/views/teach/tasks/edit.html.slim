@@ -1,0 +1,8 @@
+- set_page_title task.name
+
+.task_preview
+  .task_preview_header
+    i.fas.fa-times-circle#task_preview_close
+  iframe src=teach_task_preview_path(task) frameborder="0" width="320" height="568"
+
+= render form, task: task

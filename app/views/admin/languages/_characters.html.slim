@@ -1,0 +1,8 @@
+.row
+  - language.characters.each_with_index do |character, i|
+    .col-sm-3
+      .card
+        .card-body.d-flex.justify-content-between
+          h3.card-title.pb-0.mb-0= character
+          = button_to remove_character_admin_language_path(language, index: i), remote: true, method: :delete, class: 'btn btn-white btn-sm px-0' do
+            i.fas.fa-times.text-danger

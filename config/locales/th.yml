@@ -1,0 +1,601 @@
+---
+th:
+  course_mailer:
+    course_assigned_notification:
+      button: เริ่มต้นหลักสูตร
+      click_start_lesson: คลิก 'เริ่มบทเรียน'
+      follow_course_link: คลิกปุ่มเพื่อเปิดหลักสูตร
+      footer_text: กลับมาที่ Lingu เพื่อเรียนรู้สิ่งใหม่ ๆ ทุกวัน!
+      get_started_line: 'นี่คือวิธีเริ่มต้น:'
+      notification_link: การตั้งค่าการแจ้งเตือน
+      open_lesson: เปิดบทเรียนแรก
+      or_paste_this_link: หรือวางลิงค์นี้ในเบราว์เซอร์ของคุณ
+      sign_in_with_email: เข้าสู่ระบบด้วยที่อยู่อีเมลของคุณ (%{email})
+      support_link: สนับสนุน
+      title: เริ่มต้นกับ %{course}
+    new_document_comment:
+      author_text: "%{author} เขียนรีวิวงานของคุณ"
+      button_text: ลองดูสิ
+      button_url_helper: 'หรือวางลิงค์นี้ลงในเบราว์เซอร์ของคุณ:'
+      footer_text: มีอะไรให้เรียนรู้อีกเยอะ ...
+      notification_link: การตั้งค่าการแจ้งเตือน
+      subject_line: ความคิดเห็นงานใหม่
+      support_link: สนับสนุน
+    otp:
+      ignore_msg: หากคุณไม่ได้ส่งคำขอนี้ให้เพิกเฉยต่ออีเมล
+      subject_line: รหัสเฉพาะของคุณสำหรับ Lingu
+      unique_code_for_lingu: นี่คือรหัสเฉพาะของคุณสำหรับ Lingu
+  frontend:
+    auth:
+      already_have_acc_question: มีบัญชีอยู่แล้ว?
+      back: กลับ
+      back_to_sign_in: กลับไปที่ลงชื่อเข้าใช้
+      check_your_email_for_a_code: ตรวจสอบอีเมลของคุณสำหรับรหัสของคุณ
+      continue: ดำเนินการต่อ
+      continue_with_email: ดำเนินการต่อด้วยอีเมล
+      continue_with_provider: ดำเนินการต่อด้วย %{provider}
+      did_not_receive_a_code: ไม่ได้รับรหัส?
+      email_address: ที่อยู่อีเมล
+      first_name: ชื่อจริง
+      get_unique_code: รับรหัสเข้าสู่ระบบที่ไม่ซ้ำใคร
+      join_lingu: เข้าร่วม Lingu
+      last_name: นามสกุล
+      more_login_options: ตัวเลือกการเข้าสู่ระบบเพิ่มเติม
+      no_account_question: ยังไม่มีบัญชี?
+      or: หรือ
+      resend_code: ส่งรหัสอีกครั้ง
+      sign_in: เข้าสู่ระบบ
+      sign_up: ลงชื่อ
+      want_to_receive_marketing_messages: ฉันต้องการรับข้อความทางการตลาดจาก Lingu
+      we_ve_sent_a_code: >-
+        เราได้ส่งรหัส 6 หลักไปที่ <strong> {{email}} </strong> รหัสจะหมดอายุใน 15
+        นาทีดังนั้นโปรดป้อนโดยเร็ว
+    cookie_agreement:
+      agree: ตกลง
+      condition: >-
+        เราใช้คุกกี้เพื่อวิเคราะห์ประสิทธิภาพของไซต์และนำเสนอเนื้อหาส่วนบุคคล การคลิก
+        "ตกลง" แสดงว่าคุณยอมรับเงื่อนไขของเรา
+    course:
+      accredited_course_provider: ผู้ให้บริการหลักสูตรที่ได้รับการรับรอง
+      apply: สมัคร
+      apply_filters: ใช้ตัวกรอง
+      by: โดย
+      cancel: ยกเลิก
+      categories: "%{count} หมวดหมู่"
+      category: ประเภท
+      clear: ชัดเจน
+      clear_filters: ล้างตัวกรอง
+      contact_us: ติดต่อเรา
+      could_not_find_match_for: ขออภัยเราไม่พบรายการที่ตรงกันสำหรับ
+      course_language: ภาษาของหลักสูตร
+      duration: ระยะเวลา
+      filter_settings:
+        categories:
+          academic: วิชาการ
+          business: ธุรกิจ
+          fashion: แฟชั่น
+          food_drink: อาหารเครื่องดื่ม
+          for_kids: สำหรับเด็ก
+          general: ทั่วไป
+          health: สุขภาพ
+          legal: กฎหมาย
+          sport: กีฬา
+          travel: การท่องเที่ยว
+        durations:
+          t0_600: "<10 นาที"
+          t1800_3600: 30-60 นาที
+          t3600_86400: 1+ ชั่วโมง
+          t600_1800: 10-30 นาที
+        focus_on:
+          conversation: การสนทนา
+          grammar: ไวยากรณ์
+          listening: การฟัง
+          pronunciation: การออกเสียง
+          reading: กำลังอ่าน
+          speaking: การพูด
+          writing: การเขียน
+        levels:
+          long:
+            advanced: ระดับสูง
+            elementary: ระดับประถมศึกษา
+            intermediate: ระดับกลาง
+            no_knowledge: ไม่มีความรู้
+            pre_intermediate: ระดับกลางตอนต้น
+            upper_intermediate: ระดับกลางตอนบน
+          short:
+            advanced: ขั้นสูง
+            beginner: มือใหม่
+            intermediate: ระดับกลาง
+        sort_by:
+          most_rated: ได้รับคะแนนสูงสุด
+          newest: ใหม่ล่าสุด
+          popularity: ความนิยม
+      filters: ฟิลเตอร์
+      focus_on: มุ่งเน้นไปที่
+      focus_on_title: ฉันต้องการเน้น
+      hide_lessons: ซ่อนบทเรียน
+      hours: ชั่วโมง
+      i_understand: ฉันเข้าใจ
+      i_want_to_learn: ฉันต้องการที่จะเรียนรู้
+      in_language: ใน %{language}
+      language: ภาษา
+      learn_more: เรียนรู้เพิ่มเติม
+      less_settings: การตั้งค่าน้อยลง
+      lessons: บทเรียน
+      lessons_available: มีบทเรียน %{number}
+      lessons_catalog_page_subtitle: กลายเป็นฮีโร่ด้านภาษา
+      lessons_catalog_page_title: ขยายขอบเขตของคุณด้วยหลักสูตรภาษา
+      level: ระดับ
+      min: นาที
+      more_settings: การตั้งค่าเพิ่มเติม
+      navbar:
+        close: ปิดเมนู
+        menu: เมนู
+        select_language: เลือกภาษา
+      need_to_buy_course: คุณต้องจองหลักสูตรก่อน
+      no_description: ไม่มีคำอธิบาย
+      no_results: ขออภัยเราไม่พบรายการที่ตรงกันสำหรับ
+      or: หรือ
+      per_month: ต่อเดือน
+      plans: แผน
+      privacy_policy: นโยบายความเป็นส่วนตัว
+      rating: คะแนน
+      remove_all_filters: ลบตัวกรองทั้งหมด
+      reviews: บทวิจารณ์
+      save: บันทึก
+      search: ค้นหา
+      select_dots: เลือก...
+      select_languages: เลือกภาษา
+      select_num_languages: เลือกภาษา %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: แสดงทั้งหมด
+      show_all_lessons: แสดงบทเรียนทั้งหมด
+      show_lessons: แสดงบทเรียน %{number}
+      show_more: แสดงมากขึ้น
+      sign_up_with_lingu_for: ลงทะเบียนกับ Lingu Norway สำหรับ
+      skills: "%{count} ทักษะ"
+      sort_by: เรียงตาม
+      start_typing_here: เริ่มพิมพ์ที่นี่
+      teach: สั่งสอน
+      terms_and_conditions: ข้อกำหนดและเงื่อนไข
+      time_range: ช่วงเวลา
+      try_adjusting_your_search: ลองปรับการค้นหาของคุณโดยเปลี่ยนตัวกรองของคุณ
+      try_this_course: ลองใช้หลักสูตรนี้
+      website_language: ภาษาของเว็บไซต์
+      words: คำ
+    games:
+      finished:
+        go_to_next_exercise: ทำได้ดี! ไปที่การออกกำลังกายครั้งต่อไป
+      flashcard:
+        buttons:
+          finish: เสร็จสิ้น
+          next: ต่อไป
+          previous: ก่อนหน้า
+        check_out_new_words: ตรวจสอบคำศัพท์ใหม่ที่คุณจะได้เรียนรู้ในบทเรียนนี้
+        frequency_of_word_usage: ความถี่ของการใช้คำใน %{language}
+        keep_practice_to_learn_all_words: ทบทวนคำศัพท์ %{count} แล้วมาเล่นเกมกันเถอะ!
+        word_frequency:
+          level1: ไม่ค่อยได้ใช้
+          level2: ไม่ค่อยได้ใช้
+          level3: ความถี่ของคำ - ปานกลาง
+          level4: ความถี่ของคำ - ปานกลาง
+          level5: เรื่องธรรมดา
+          level6: ธรรมดามาก
+      match_word:
+        click_and_move_each_word_to_counterpart: คลิกและย้ายแต่ละคำไปที่คู่ของมัน
+        start_heading: จับคู่คำเพื่อสร้างคู่
+        time_is_up: หมดเวลา!
+      skip_tutorial: ข้าม
+      time_is_up: หมดเวลา!
+      word_nodes:
+        match_letters_to_form_word: จับคู่ตัวอักษรเพื่อสร้างคำ
+      word_waterfall:
+        do_not_hesitate: มาเร่งกันเถอะ!
+        go_to_next_exercise: ไปที่การออกกำลังกายครั้งต่อไป
+        select_correct_translation: เลือกการจับคู่ที่ถูกต้อง
+        well_done: ทำได้ดี!
+    home_page:
+      hello: สวัสดี,
+      popular_lessons: บทเรียนยอดนิยม
+      show_more: แสดงมากขึ้น
+      time: "%{count} นาที"
+      today_lesson: บทเรียนของคุณสำหรับวันนี้
+      user_name: "%{name}!"
+      words: "%{count} คำ"
+    idle_screen:
+      by_author: โดย %{authorName}
+      continue_lesson: ทำบทเรียนต่อ
+      exit: ออก
+      idle_message: คุณไม่ได้ใช้งานมาระยะหนึ่ง ...
+    lesson_page:
+      back_to_course_page: กลับไปที่หน้าหลักสูตร
+      close: ปิด
+      continue_lesson: ทำบทเรียนต่อ
+      followed: ตามมา
+      hamburger_menu_btn: เมนูแฮมเบอร์เกอร์
+      lesson_given: บทเรียน
+      not_started: ยังไม่เริ่ม
+      or: หรือ
+      part_complete: "%{percent}% เสร็จสมบูรณ์"
+      restart_lesson: เริ่มต้นใหม่
+      section_check: ตรวจสอบ
+      section_check_info: การทดสอบ %{count}
+      section_learn: เรียนรู้
+      section_learn_info: zxzxzx 0 นาทีในการดูและอ่าน
+      section_play: เล่น
+      section_play_info: "%{count} คำฝึก"
+      start_lesson: เริ่มบทเรียน
+      step_progress: "%{percent}%"
+      subscribe: ติดตาม
+      subscribed: ตามมา
+      subscribers: ผู้ติดตาม
+      time_min: "%{minutesNumber} นาที"
+      unsubscribe: เลิกติดตาม
+      webview_error_title: อะไรบางอย่างผิดปกติ...
+      words_number: "%{wordsNumber} คำศัพท์ใหม่"
+    lesson_task:
+      cancel_button: ยกเลิก
+      check:
+        navigation_next: ต่อไป
+        navigation_previous: ก่อนหน้า
+        navigation_skip: ข้าม
+      controls_panel:
+        font_size_button: ขนาดตัวอักษร
+        high_contrast_button:
+          origin: ความคมชัดสูง
+          short: ความคมชัด
+        hints_button: คำแนะนำ
+        music_playback_button:
+          origin: การเล่นเพลง
+          short: เพลง
+        sound_effects_button:
+          origin: เสียงประกอบ
+          short: เสียง
+      exit_button: ออก
+      finish_button: เสร็จสิ้น
+      finished:
+        back_to_learn: กลับไปเรียนรู้
+        back_to_lesson_page: กลับไปที่หน้าบทเรียน
+        back_to_results_page: กลับไปที่หน้าผลลัพธ์
+        bad_result_message: อืม ... ลองเข้าบทเรียนอีกครั้ง
+        close_lesson: ปิดบทเรียน
+        correct_answers_list: รายการคำตอบที่ถูกต้อง
+        good_result_message: ฉันเห็นว่าคุณพยายามแล้ว!
+        great_result_message: ทำได้ดี! นี่คือผลลัพธ์ที่ยอดเยี่ยม!
+        next_course_lesson: ไปที่บทเรียนถัดไปในหลักสูตร
+        no_results: คุณยังไม่มีผลการทดสอบ
+        no_results_text: กรุณากรอกบทเรียนและผ่านการทดสอบเพื่อให้ได้ผลลัพธ์
+        see_correct_answers_list: ดูรายการคำตอบที่ถูกต้อง
+        train_more: ฝึกฝนให้มากขึ้นและคุณจะได้ผลลัพธ์ที่ดีขึ้นในครั้งต่อไป!
+        you_finished_lesson: เยี่ยมมาก! คุณเรียนจบบทเรียนแล้ว
+      go_back: กลับไป
+      next_button: ต่อไป
+      not_available_task: งานนี้ยังไม่พร้อมใช้งาน
+      start_button: เริ่ม
+      tasks:
+        check:
+          assignment:
+            accept: ยอมรับ
+            author_will_check_your_answer: "%{author} จะตรวจสอบคำตอบของคุณและโดยทั่วไปจะให้ข้อเสนอแนะภายใน
+              1-2 วัน"
+            continue_writing: เขียนต่อ
+            copy: สำเนา
+            delete: ลบ
+            delete_record: ลบบันทึก
+            edit: แก้ไข
+            essay_does_not_have_enough_words: >-
+              คำตอบของคุณควรมีอย่างน้อย %{minWordsNumber} คำ คำตอบของคุณคือ %{currentWordsNumber}
+              คำ
+            followers_count: "%{followersCount} ผู้ติดตาม"
+            lessons_count: "%{lessonsCount} บทเรียน"
+            minimal_recording_time: เวลาบันทึกน้อยที่สุด - %{minimalRecordingTime}
+            minimum_characters_amount: อักขระขั้นต่ำ - %{minimumCharactersAmount}
+            minimum_words_amount: คำต่ำสุด - %{minimumAmount}
+            record_again: บันทึกอีกครั้ง
+            record_voice: บันทึกเสียง
+            send_anyway: ส่งต่อไป
+            send_to_review: ส่งไปตรวจสอบ
+            skip: ข้าม
+            too_short_answer: คำตอบสั้นเกินไป
+            type_your_answer: พิมพ์คำตอบของคุณ
+            unknown_task_type: ประเภทงานที่ไม่รู้จัก
+            upgrade_licence: อัพเกรดใบอนุญาต
+            upgrade_your_plan: อัปเกรดแผนของคุณเพื่อลองใช้งานที่มอบหมายโดยครูทบทวน
+            upload_files: อัพโหลดไฟล์
+            write_essay: เขียนเรียงความ
+            you_have_used_amount_of_assignments: คุณได้ใช้เครดิตการมอบหมาย %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: ช่องว่างของประโยค
+          fill_in_table:
+            column_answer_placeholder: ตอบ
+            column_question_placeholder: คำถาม
+            example: ตัวอย่าง
+          true_false:
+            'false': เท็จ
+            'true': จริง
+        learn:
+          translatable_text:
+            show_original: แสดงต้นฉบับ
+            translate_into: แปลด้วย Google เป็น %{languageName}
+            translate_into_your_lang: แปลด้วย Google เป็นภาษาของคุณ
+        play:
+          arrange_words:
+            start_screen:
+              heading: สร้างประโยคจากคำที่กำหนด
+          audition:
+            start_screen:
+              heading: ฟังเสียงและแตะคำที่คุณเพิ่งได้ยิน
+          dictation:
+            get_help: ขอความช่วยเหลือ
+            i_do_not_know: ฉันไม่รู้
+            input_placeholder: ป้อนสิ่งที่คุณได้ยินที่นี่
+            start_screen:
+              heading: ฟังและเขียนสิ่งที่คุณได้ยิน
+          fill_gap:
+            start_screen:
+              heading: จับคู่คำและความหมาย
+          finish_screen:
+            go_to_next_exercise: ทำได้ดี! ไปที่การออกกำลังกายครั้งต่อไป
+          image_hotspot:
+            start_screen:
+              heading: ตั้งชื่อวัตถุในภาพให้ถูกต้อง
+          image_object:
+            start_screen:
+              heading: เลือกวัตถุที่เหมาะสมจากภาพถัดไป
+          inline_dropdown:
+            start_screen:
+              heading: เลือกคำที่ตรงกับประโยค
+          mark_word:
+            start_screen:
+              heading: อ่านข้อความและเลือกคำที่ตรงกับภาพ
+          minimal_pairs:
+            start_screen:
+              heading: ดูวิดีโอและเลือกตัวเลือกที่ถูกต้อง
+    locale:
+      currency_switcher_title: ตัวสลับสกุลเงิน
+      lang_switcher_title: ตัวสลับภาษา
+      locales:
+        af: แอฟริกัน
+        am: อัมฮาริก
+        ar: อาหรับ
+        az: อาเซอร์ไบจัน
+        be: เบลารุส
+        bg: Български
+        bn: เบงกาลี
+        bs: บอสเนีย
+        ca: คาตาลัน
+        ceb: Cebuano
+        co: คอร์ซิกา
+        cs: เช็ก
+        cy: เวลส์
+        da: เดนมาร์ก
+        de: Deutsch
+        el: กรีก
+        en: ภาษาอังกฤษ
+        eo: ภาษาเอสเปรันโต
+        es: Español
+        et: เอสโตเนีย
+        eu: บาสก์
+        fa: เปอร์เซีย
+        fi: ภาษาฟินแลนด์
+        fr: Français
+        fy: Frisian
+        ga: ไอริช
+        gd: สก็อตเกลิค
+        gl: กาลิเซีย
+        gu: คุชราต
+        ha: เฮาซา
+        haw: ฮาวาย
+        he: ฮีบรู
+        hi: ภาษาฮินดี
+        hmn: ม้ง
+        hr: โครเอเชีย
+        ht: ครีโอลชาวเฮติ
+        hu: ฮังการี
+        hy: อาร์เมเนีย
+        id: ชาวอินโดนีเซีย
+        ig: อิกโบ
+        is: ไอซ์แลนด์
+        it: Italiano
+        ja: ญี่ปุ่น
+        jv: ภาษาชวา
+        ka: จอร์เจีย
+        kk: คาซัค
+        km: เขมร
+        kn: กันนาดา
+        ko: เกาหลี
+        ku: เคิร์ด
+        ky: คีร์กีซ
+        la: ละติน
+        lb: ลักเซมเบิร์ก
+        lo: ลาว
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: มาลากาซี
+        mi: เมารี
+        mk: มาซิโดเนีย
+        ml: มาลายาลัม
+        mn: มองโกเลีย
+        mr: มราฐี
+        ms: มาเลย์
+        mt: มอลตา
+        my: เมียนมาร์ (พม่า)
+        nb: นอร์ส
+        ne: เนปาล
+        nl: Nederlands
+        ny: Nyanja (ชิเชวา)
+        or: โอเดีย (โอริยา)
+        pa: ปัญจาบ
+        pl: Polski
+        ps: Pashto
+        pt: โปรตุเกส
+        ro: Limba română
+        ru: Русскийязык
+        rw: คินยาร์วันดา
+        sd: สินธุ
+        si: สิงหล
+        sk: สโลวัก
+        sl: สโลเวเนีย
+        sm: ซามัว
+        sn: โชนา
+        so: af Soomaali
+        sq: แอลเบเนีย
+        sr: Сербский
+        st: เซโซโท
+        su: ซุนดา
+        sv: สวีเดน
+        sw: kiSwahili
+        ta: ทมิฬ
+        te: กู
+        tg: ทาจิก
+        th: ไทย
+        tk: เติร์กเมน
+        tl: ภาษาตากาล็อก
+        tr: Türkçe
+        tt: ตาตาร์
+        ug: อุยกูร์
+        uk: Українська
+        ur: ภาษาอูรดู
+        uz: อุซเบก
+        vi: เวียดนาม
+        xh: Xhosa
+        yi: ยิดดิช
+        yo: โยรูบา
+        zh: ชาวจีน
+        zu: ซูลู
+    media_player:
+      audio_player:
+        aria_loading_button: กำลังโหลดเสียง
+        aria_pause_button: หยุด
+        aria_play_button: เล่น
+        aria_reload_button: โหลดซ้ำ
+        aria_stop_button: หยุด
+        reload_message: โหลดเสียงไม่สำเร็จ โปรดคลิกปุ่มเพื่อโหลดซ้ำ
+    mobile_modal:
+      apply: สมัคร
+      cancel: ยกเลิก
+      clear: ชัดเจน
+      save: บันทึก
+    page404:
+      goToStartLessonPage: ไปที่หน้าบทเรียนเริ่มต้น
+      ooops: อ๊ะ ...
+      sorry_message: ขออภัย Tor ไม่พบหน้านี้
+    profile:
+      navigation:
+        log_out: ออกจากระบบ
+        my_profile: ประวัติของฉัน
+        settings: การตั้งค่า
+      onboarding:
+        choose_native_language: เลือกภาษาแม่ของคุณหรือภาษาที่คุณเข้าใจ
+        do_you_understand_english: คุณเข้าใจภาษาอังกฤษไหม?
+        hello: สวัสดี
+        language_levels:
+          a1: ระดับประถมศึกษา
+          a2: ระดับกลางตอนต้น
+          b1: ระดับกลาง
+          b2: ระดับกลางตอนบน
+          c1: ระดับสูง
+          no_knowledge: ไม่มีความรู้
+        language_not_supported:
+          note: เราจะแจ้งให้คุณทราบทันทีที่ภาษานั้นพร้อมใช้งาน
+          title: ขออภัยเรายังไม่รองรับภาษานี้
+          try_another_language: ลองใช้ภาษาอื่น
+        'no': ไม่
+        search_placeholder: ค้นหา...
+        show_more_languages: ภาษาอื่น ๆ
+        target_language_question: คุณอยากเรียนภาษาอะไร
+        what_is_language_level: คุณจะให้คะแนนระดับ %{languageName} ของคุณอย่างไร?
+        'yes': ใช่
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: นโยบายความเป็นส่วนตัวของ Lingu
+        support: สนับสนุน
+      logout: ออกจากระบบ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: รับข้อมูลอัปเดตจากครูและโรงเรียนที่คุณติดตาม
+              sections:
+                app_notifications: การแจ้งเตือนแอป
+                email: อีเมล์
+              title: ความช่วยเหลือด้านการเรียนรู้
+            marketing:
+              description: รับข่าวสารเกี่ยวกับโปรโมชั่นการอัปเดตและแรงบันดาลใจทั้งหมดจาก
+                Lingu
+              sections:
+                browser_notifications: การแจ้งเตือนของเบราว์เซอร์
+                email: อีเมล์
+              title: การตลาด
+          title: การตั้งค่าการติดต่อ
+        personal_information:
+          delete_photo: ลบรูปภาพ
+          email: อีเมล์
+          first_name: ชื่อจริง
+          last_name: นามสกุล
+          social_accounts:
+            connected: เชื่อมต่อแล้ว
+            facebook: เฟสบุ๊ค
+            google: Google
+            microsoft: ไมโครซอฟต์
+            not_connected: ไม่ได้เชื่อมต่อ
+            title: บัญชีโซเชียล
+          title: ข้อมูลส่วนบุคคล
+          update_photo: อัปเดตรูปภาพ
+        school:
+          active_licence: ใบอนุญาตที่ใช้งานอยู่
+          active_status: คล่องแคล่ว
+          delete_profile: ลบโปรไฟล์ของฉัน
+          delete_profile_modal:
+            body: |-
+              คุณลบข้อมูลทั้งหมดของคุณไปตลอดกาล ไม่มีปุ่มเลิกทำและเราจะคืนให้คุณไม่ได้ในภายหลัง
+              แน่ใจไหมว่าต้องการลบโปรไฟล์ Lingu และข้อมูลทั้งหมดของคุณอย่างถาวร
+            cancel: ยกเลิก
+            confirm: ใช่ลบมัน
+            i_understand_the_consequences: ฉันเข้าใจผลที่ตามมา
+            title: ลบโปรไฟล์ของคุณ?
+          expired: หมดอายุ %{expire_date}
+          expires: หมดอายุ %{expire_date}
+          inactive_status: ไม่ใช้งาน
+          revoke_access: เพิกถอนสิทธิ์การอ่าน
+          sections:
+            contact_school: ติดต่อโรงเรียน
+            export_my_data: ส่งออกข้อมูลของฉัน
+            read_school_privacy_policy: อ่านนโยบายความเป็นส่วนตัวของโรงเรียน
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: การเล่นเพลง
+              sound_effects: เสียงประกอบ
+              title: เสียง
+            visual:
+              dark_theme: ธีมสีเข้ม
+              font_size:
+                test_text: หญ้าจะเขียวกว่าเสมอที่อีกด้านหนึ่งของรั้ว
+                title: ขนาดตัวอักษร
+              high_contrast: ความคมชัดสูง
+              hints: คำแนะนำ
+              title: ภาพ
+          title: เสียงและภาพ
+        training_settings:
+          sections:
+            i_understand: ฉันเข้าใจ
+            i_want_to_learn: ฉันต้องการที่จะเรียนรู้
+            target_language_level: ระดับภาษาอังกฤษ
+          title: การตั้งค่าการฝึกอบรม
+      settings_title: การตั้งค่า
+    teacher_card:
+      followers_count:
+        one: ผู้ติดตาม 1 คน
+        other: "%{count} ผู้ติดตาม"
+      lessons_count:
+        one: 1 บทเรียน
+        other: "%{count} บทเรียน"

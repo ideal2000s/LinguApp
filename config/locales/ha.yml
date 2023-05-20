@@ -1,0 +1,606 @@
+---
+ha:
+  course_mailer:
+    course_assigned_notification:
+      button: Fara hanya
+      click_start_lesson: Danna 'Fara darasi'
+      follow_course_link: Danna maballin don buɗe hanyar
+      footer_text: Dawowa zuwa Lingu don koyon sabon abu kowace rana!
+      get_started_line: 'Ga yadda kuka fara:'
+      notification_link: Saitunan sanarwa
+      open_lesson: Bude darasi na farko
+      or_paste_this_link: ko liƙa wannan mahaɗin a burauzarku
+      sign_in_with_email: Shiga tare da adireshin imel ɗinka (%{email})
+      support_link: Tallafi
+      title: Farawa da %{course}
+    new_document_comment:
+      author_text: "%{author} bar bar aikinku"
+      button_text: Duba shi
+      button_url_helper: 'ko liƙa wannan mahaɗin a cikin burauz ɗinka:'
+      footer_text: Akwai abubuwa da yawa don koyo ...
+      notification_link: Saitunan sanarwa
+      subject_line: Sabon bayanin aiki
+      support_link: Tallafi
+    otp:
+      ignore_msg: Idan ba ku yi wannan buƙatar ba, kawai ku yi watsi da imel ɗin.
+      subject_line: Lambar ku ta musamman don Lingu
+      unique_code_for_lingu: Ga keɓaɓɓiyar lambarku don Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Dama kuna da asusu?
+      back: Baya
+      back_to_sign_in: Komawa don shiga
+      check_your_email_for_a_code: Duba adireshin imel don lambar ku
+      continue: Ci gaba
+      continue_with_email: Ci gaba da email
+      continue_with_provider: Ci gaba da %{provider}
+      did_not_receive_a_code: Ba a karɓi lamba ba?
+      email_address: Adireshin i-mel
+      first_name: Sunan rana
+      get_unique_code: Samu lambar shiga ta musamman
+      join_lingu: Shiga Lingu
+      last_name: Sunan mahaifa
+      more_login_options: Optionsarin zaɓuɓɓukan shiga
+      no_account_question: Ba ku da asusu?
+      or: ko
+      resend_code: Sake aika lambar
+      sign_in: Shiga ciki
+      sign_up: Yi rajista
+      want_to_receive_marketing_messages: Ina so in karɓi saƙonnin talla daga Lingu
+      we_ve_sent_a_code: >-
+        Mun aika da lamba 6 zuwa <strong> {{email}} </strong>. Lambar ta ƙare a cikin
+        mintina 15, don haka da fatan za a shigar da ita ba da daɗewa ba.
+    cookie_agreement:
+      agree: Yarda
+      condition: >-
+        Muna amfani da kukis don nazarin aikin yanar gizo da isar da keɓaɓɓun abun
+        ciki. Ta danna "Amince", kun yarda da yanayinmu.
+    course:
+      accredited_course_provider: Mai ba da izini mai ba da izini
+      apply: Aiwatar
+      apply_filters: Aiwatar da filtata
+      by: Daga
+      cancel: Soke
+      categories: "%{count} nau'ikan"
+      category: Nau'i
+      clear: Bayyanannu
+      clear_filters: Share bayyanannu
+      contact_us: Tuntube mu
+      could_not_find_match_for: Yi haƙuri, ba za mu iya samun wani wasa da shi ba
+      course_language: Harshen koyaushe
+      duration: Tsawon Lokaci
+      filter_settings:
+        categories:
+          academic: Ilimi
+          business: Kasuwanci
+          fashion: Fashion
+          food_drink: Abinci & abin sha
+          for_kids: Ga yara
+          general: Janar
+          health: Lafiya
+          legal: Doka
+          sport: Wasanni
+          travel: Tafiya
+        durations:
+          t0_600: "<Minti 10"
+          t1800_3600: 30-60 mintuna
+          t3600_86400: 1+ awa
+          t600_1800: 10-30 minti
+        focus_on:
+          conversation: Tattaunawa
+          grammar: Nahawu
+          listening: Sauraro
+          pronunciation: Sanarwa
+          reading: Karatu
+          speaking: Magana
+          writing: Rubutawa
+        levels:
+          long:
+            advanced: Matsayi na ci gaba
+            elementary: Matakan farko
+            intermediate: Matsakaici matsakaici
+            no_knowledge: Babu ilimi
+            pre_intermediate: Pre matsakaici matakin
+            upper_intermediate: Matsakaicin matsakaici
+          short:
+            advanced: Na ci gaba
+            beginner: Mafari
+            intermediate: Matsakaici
+        sort_by:
+          most_rated: Mafi kimantawa
+          newest: Mafi sabo
+          popularity: Farin jini
+      filters: Matatu
+      focus_on: Mai da hankali kan
+      focus_on_title: Ina so in maida hankali kan
+      hide_lessons: Boye darussa
+      hours: Awanni
+      i_understand: na gane
+      i_want_to_learn: Ina so in koya
+      in_language: a cikin %{language}
+      language: Harshe
+      learn_more: Moreara koyo
+      less_settings: Settingsananan saituna
+      lessons: Darussa
+      lessons_available: darussan %{number} akwai
+      lessons_catalog_page_subtitle: Zama gwarzo na harshe.
+      lessons_catalog_page_title: Ku faɗaɗa hankalinku tare da darasi na yare
+      level: Mataki
+      min: Min
+      more_settings: Settingsarin saituna
+      navbar:
+        close: Rufe menu
+        menu: Menu
+        select_language: Zaɓi yare
+      need_to_buy_course: Kuna buƙatar yin ajiyar hanya da farko
+      no_description: Babu bayanin da aka bayar
+      no_results: Yi haƙuri, ba za mu iya samun wani wasa da shi ba
+      or: ko
+      per_month: kowane wata
+      plans: Shirye-shirye
+      privacy_policy: Takardar kebantawa
+      rating: Kimantawa
+      remove_all_filters: Cire duk matatun
+      reviews: Bayani
+      save: Ajiye
+      search: Bincika
+      select_dots: Zaɓi ...
+      select_languages: Zaɓi langauges
+      select_num_languages: Zaɓi yare %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Nuna duk
+      show_all_lessons: Nuna duk darussa
+      show_lessons: Nuna darussan %{number}
+      show_more: Nuna ƙari
+      sign_up_with_lingu_for: Yi rajista tare da Lingu Norway don
+      skills: "%{count} basira"
+      sort_by: Kasa
+      start_typing_here: Fara bugawa a nan
+      teach: Koyarwa
+      terms_and_conditions: Sharuɗɗa da Sharuɗɗa
+      time_range: Yawan lokaci
+      try_adjusting_your_search: Gwada gwada binciken ku ta hanyar sauya filtarku
+      try_this_course: Gwada wannan kwas ɗin
+      website_language: Yaren Yanar Gizo
+      words: Kalmomi
+    games:
+      finished:
+        go_to_next_exercise: Sannu da aikatawa! Je zuwa motsa jiki na gaba
+      flashcard:
+        buttons:
+          finish: Gama
+          next: Na gaba
+          previous: Na baya
+        check_out_new_words: Duba sababbin kalmomin da zaku koya a wannan darasin
+        frequency_of_word_usage: Yanayin amfani da kalma a cikin %{language}
+        keep_practice_to_learn_all_words: Yi nazarin kalmomin %{count} kuma bari muyi
+          wasu wasanni!
+        word_frequency:
+          level1: Da wuya ake amfani da shi
+          level2: Da wuya ake amfani da shi
+          level3: Mitar magana - matsakaici
+          level4: Mitar magana - matsakaici
+          level5: Na kowa
+          level6: Na kowa sosai
+      match_word:
+        click_and_move_each_word_to_counterpart: Danna ka motsa kowace kalma zuwa
+          takwaranta
+        start_heading: Daidaita kalmomi don yin ma'aurata
+        time_is_up: Lokaci ya kure!
+      skip_tutorial: Tsallake
+      time_is_up: Lokaci ya kure!
+      word_nodes:
+        match_letters_to_form_word: Haɗa haruffa don ƙirƙirar kalma
+      word_waterfall:
+        do_not_hesitate: Mu hanzarta!
+        go_to_next_exercise: Je zuwa motsa jiki na gaba
+        select_correct_translation: Zaɓi wasa daidai
+        well_done: Sannu da aikatawa!
+    home_page:
+      hello: Barka dai,
+      popular_lessons: Popular darussa
+      show_more: Nuna ƙari
+      time: zxzzz00 min
+      today_lesson: Darasin ku na yau
+      user_name: zxxzx00!
+      words: "%{count} kalmomi"
+    idle_screen:
+      by_author: by Tsakar Gida
+      continue_lesson: Ci gaba darasi
+      exit: Mafita
+      idle_message: Kun kasance ba aiki a wani lokaci ...
+    lesson_page:
+      back_to_course_page: Koma zuwa shafi na hanya
+      close: Kusa
+      continue_lesson: Ci gaba darasi
+      followed: An bi
+      hamburger_menu_btn: Hamburger menu
+      lesson_given: darussa
+      not_started: ba'a fara ba
+      or: Ko
+      part_complete: "%{percent}% cikakke"
+      restart_lesson: Sake kunnawa
+      section_check: Duba
+      section_check_info: "%{count} gwaje-gwaje"
+      section_learn: Koyi
+      section_learn_info: "%{count} min don kallo da karantawa"
+      section_play: Kunna
+      section_play_info: "%{count} kalmomi don aiwatarwa"
+      start_lesson: Fara darasi
+      step_progress: tsakar gida
+      subscribe: Bi
+      subscribed: An bi
+      subscribers: mabiya
+      time_min: zxzzz00 min
+      unsubscribe: Buga
+      webview_error_title: Wani abu ya faru ...
+      words_number: "%{wordsNumber} sabbin kalmomi"
+    lesson_task:
+      cancel_button: Soke
+      check:
+        navigation_next: Na gaba
+        navigation_previous: Na baya
+        navigation_skip: Tsallake
+      controls_panel:
+        font_size_button: Girman rubutu
+        high_contrast_button:
+          origin: Babban bambanci
+          short: Bambanci
+        hints_button: Alamu
+        music_playback_button:
+          origin: Sake kunnawa na kiɗa
+          short: Waƙa
+        sound_effects_button:
+          origin: Tasirin sauti
+          short: Sauti
+      exit_button: Mafita
+      finish_button: Gama
+      finished:
+        back_to_learn: Koma koya
+        back_to_lesson_page: Koma zuwa shafin darasi
+        back_to_results_page: Koma kan shafin sakamako
+        bad_result_message: Hmm ... kiyi kokarin daukar darasin sau daya
+        close_lesson: Rufe darasi
+        correct_answers_list: Jerin amsoshi daidai
+        good_result_message: Na ga kun yi ƙoƙari!
+        great_result_message: Sannu da aikatawa! Waɗannan manyan sakamako ne!
+        next_course_lesson: Je zuwa darasi na gaba a hanya
+        no_results: Ba ku da sakamako na gwaji tukuna
+        no_results_text: Da fatan za a kammala karatun kuma a ci jarabawar don samun
+          sakamako
+        see_correct_answers_list: Duba jerin amsoshi daidai
+        train_more: Yi aiki sosai kuma zaku sami kyakkyawan sakamako a gaba!
+        you_finished_lesson: Babban! Ka gama darasi
+      go_back: Koma baya
+      next_button: Na gaba
+      not_available_task: Babu wannan aikin har yanzu
+      start_button: Fara
+      tasks:
+        check:
+          assignment:
+            accept: Yarda
+            author_will_check_your_answer: "%{author} zai bincika amsarku kuma yawanci
+              ya ba da amsa cikin kwanaki 1-2"
+            continue_writing: Ci gaba da rubutu
+            copy: Kwafa
+            delete: Share
+            delete_record: Share rikodin
+            edit: Shirya
+            essay_does_not_have_enough_words: >-
+              Amsar ku ya kamata ta ƙunshi aƙalla kalmomin %{minWordsNumber}. Amsar
+              ku a halin yanzu %{currentWordsNumber} kalmomi ne.
+            followers_count: "%{followersCount} mabiya"
+            lessons_count: "%{lessonsCount} darussa"
+            minimal_recording_time: Mafi qarancin lokacin rikodi - %{minimalRecordingTime}
+            minimum_characters_amount: Mafi qarancin haruffa - %{minimumCharactersAmount}
+            minimum_words_amount: Mafi qarancin kalmomi - %{minimumAmount}
+            record_again: Yi rikodin sake
+            record_voice: Yi rikodin murya
+            send_anyway: Aika duk da haka
+            send_to_review: Aika don sake dubawa
+            skip: Tsallake
+            too_short_answer: Amsar takaice
+            type_your_answer: Rubuta amsarku
+            unknown_task_type: Nau'in aikin da ba a sani ba
+            upgrade_licence: Lasisin haɓakawa
+            upgrade_your_plan: Haɓaka shirinku don gwada ayyuka tare da bitar malamai
+            upload_files: Loda fayiloli
+            write_essay: Rubuta rubutu
+            you_have_used_amount_of_assignments: Kun yi amfani da ƙididdigar %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Ramin jimla
+          fill_in_table:
+            column_answer_placeholder: Amsa
+            column_question_placeholder: Tambaya
+            example: Misali
+          true_false:
+            'false': Karya
+            'true': Gaskiya
+        learn:
+          translatable_text:
+            show_original: Nuna na asali
+            translate_into: Fassara tare da Google zuwa %{languageName}
+            translate_into_your_lang: Fassara tare da Google zuwa yarenku
+        play:
+          arrange_words:
+            start_screen:
+              heading: Yi jumla daga kalmomin da aka bayar
+          audition:
+            start_screen:
+              heading: Saurari sautin kuma taɓa kalmar da kuka ji kawai
+          dictation:
+            get_help: Nemi taimako
+            i_do_not_know: Ban sani ba
+            input_placeholder: Shigar da abin da kuka ji a nan
+            start_screen:
+              heading: Saurara ka rubuta abin da ka ji
+          fill_gap:
+            start_screen:
+              heading: Haɗa kalmar da ma'anarta
+          finish_screen:
+            go_to_next_exercise: Sannu da aikatawa! Je zuwa motsa jiki na gaba
+          image_hotspot:
+            start_screen:
+              heading: Sanya abubuwan da suke cikin hoton daidai
+          image_object:
+            start_screen:
+              heading: Auki abin da ya dace daga hoto na gaba
+          inline_dropdown:
+            start_screen:
+              heading: Nemi kalmomin da suka dace da jumlar
+          mark_word:
+            start_screen:
+              heading: Karanta rubutun ka zabi kalmar da tayi daidai da hoton
+          minimal_pairs:
+            start_screen:
+              heading: Duba bidiyo kuma zaɓi madaidaicin zaɓi
+    locale:
+      currency_switcher_title: Canjin canji
+      lang_switcher_title: Mai sauya harshe
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Turanci
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Fransais
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Yankin Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: ".Країнська"
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio tana lodi
+        aria_pause_button: Dakata
+        aria_play_button: Kunna
+        aria_reload_button: Sake lodi
+        aria_stop_button: Tsaya
+        reload_message: Ba a yi nasarar loda sauti ba. Da fatan za a danna maballin
+          don sake loda.
+    mobile_modal:
+      apply: Aiwatar
+      cancel: Soke
+      clear: Bayyanannu
+      save: Ajiye
+    page404:
+      goToStartLessonPage: Je zuwa shafin darasi na farko
+      ooops: Oooops ...
+      sorry_message: Yi haƙuri, Tor bai sami wannan shafin ba
+    profile:
+      navigation:
+        log_out: Fita
+        my_profile: Bayanina
+        settings: Saituna
+      onboarding:
+        choose_native_language: Zaɓi yarenku na asali ko yare da kuka fahimta
+        do_you_understand_english: Kuna jin Turanci?
+        hello: Barka dai
+        language_levels:
+          a1: Matakan farko
+          a2: Pre-matsakaici matakin
+          b1: Matsakaici matsakaici
+          b2: Matsakaiciyar Matsakaici
+          c1: Matsayi na ci gaba
+          no_knowledge: Babu ilimi
+        language_not_supported:
+          note: Za mu sanar da ku da zarar harshen ya samu
+          title: Yi haƙuri, amma ba mu goyi bayan wannan harshen ba tukuna
+          try_another_language: Gwada wani yare
+        'no': A'a
+        search_placeholder: Binciko ...
+        show_more_languages: Sauran harsuna
+        target_language_question: Wane yare kuke so ku koya?
+        what_is_language_level: Yaya zaku kimanta matakin %{languageName} ɗin ku?
+        'yes': Ee
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Dokar sirri na Lingu
+        support: Tallafi
+      logout: Logout
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Karɓi sabuntawa daga malamai da makarantun da kuke bi
+              sections:
+                app_notifications: Sanarwa na aikace-aikace
+                email: E-mail
+              title: Taimakon karatu
+            marketing:
+              description: Kasance cikin sanarwa game da duk cigaba, ɗaukakawa, da
+                kuma wahayi daga Lingu
+              sections:
+                browser_notifications: Sanarwar burauza
+                email: E-mail
+              title: Talla
+          title: Sadarwar tuntuɓi
+        personal_information:
+          delete_photo: Share hoto
+          email: Imel
+          first_name: Sunan rana
+          last_name: Sunan mahaifa
+          social_accounts:
+            connected: An haɗa
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ba a haɗa ba
+            title: Asusun zamantakewa
+          title: Bayanin mutum
+          update_photo: Sabunta hoto
+        school:
+          active_licence: Lasisi mai aiki
+          active_status: Na aiki
+          delete_profile: Share bayanin martaba na
+          delete_profile_modal:
+            body: |-
+              Ka shafe dukkan bayanan ka-har abada. Babu maɓallin maɓallin cirewa, kuma ba za mu iya dawo muku da shi ba bayan haka.
+              Shin kun tabbata kuna son share bayanan Harshen ku da duk bayanan ku har abada?
+            cancel: Soke
+            confirm: Ee, share shi
+            i_understand_the_consequences: Na fahimci sakamakon
+            title: Share bayaninka?
+          expired: "%{expire_date} ya kare"
+          expires: Ya ƙare %{expire_date}
+          inactive_status: Ba ya aiki
+          revoke_access: Soke damar karantawa
+          sections:
+            contact_school: Saduwa da makaranta
+            export_my_data: Fitar da bayanan na
+            read_school_privacy_policy: Karanta manufofin Sirrin Makaranta
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Sake kunnawa na kiɗa
+              sound_effects: Tasirin sauti
+              title: Sauti
+            visual:
+              dark_theme: Duhu taken
+              font_size:
+                test_text: Ciyawar koyaushe tana cikin korewa daga ɗayan gefen shingen
+                title: Girman rubutu
+              high_contrast: Babban bambanci
+              hints: Alamu
+              title: Kayayyaki
+          title: Sauti & Kayayyaki
+        training_settings:
+          sections:
+            i_understand: na gane
+            i_want_to_learn: Ina so in koya
+            target_language_level: Matsayin Ingilishi
+          title: Saitunan horo
+      settings_title: Saituna
+    teacher_card:
+      followers_count:
+        one: 1 mabiyi
+        other: "%{count} mabiya"
+      lessons_count:
+        one: 1 darasi
+        other: "%{count} darussa"

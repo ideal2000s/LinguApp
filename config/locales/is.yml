@@ -1,0 +1,608 @@
+---
+is:
+  course_mailer:
+    course_assigned_notification:
+      button: Byrjaðu námskeiðið
+      click_start_lesson: Smelltu á 'Byrja kennslustund'
+      follow_course_link: Smelltu á hnappinn til að opna námskeiðið
+      footer_text: Komdu aftur til Lingu til að læra eitthvað nýtt á hverjum degi!
+      get_started_line: 'Hér er hvernig þú byrjar:'
+      notification_link: Tilkynningarstillingar
+      open_lesson: Opnaðu fyrstu kennslustundina
+      or_paste_this_link: eða límdu þennan hlekk í vafrann þinn
+      sign_in_with_email: Skráðu þig inn með netfanginu þínu (%{email})
+      support_link: Stuðningur
+      title: Að byrja með %{course}
+    new_document_comment:
+      author_text: "%{author} skildi eftir umsögn um verkefnið þitt"
+      button_text: Skoðaðu þetta
+      button_url_helper: 'eða límdu þennan hlekk í vafrann þinn:'
+      footer_text: Það er margt fleira að læra ...
+      notification_link: Tilkynningarstillingar
+      subject_line: Ný umsögn um verkefni
+      support_link: Stuðningur
+    otp:
+      ignore_msg: Ef þú hefur ekki lagt fram þessa beiðni skaltu bara hunsa tölvupóstinn.
+      subject_line: Sérstaki kóðinn þinn fyrir Lingu
+      unique_code_for_lingu: Hérna er þinn einstaki kóði fyrir Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Ertu þegar með reikning?
+      back: Aftur
+      back_to_sign_in: Aftur í Innskráning
+      check_your_email_for_a_code: Athugaðu netfangið þitt fyrir kóðann þinn
+      continue: Haltu áfram
+      continue_with_email: Haltu áfram með tölvupóst
+      continue_with_provider: Haltu áfram með %{provider}
+      did_not_receive_a_code: Fékkstu ekki kóða?
+      email_address: Netfang
+      first_name: Fyrsta nafn
+      get_unique_code: Fáðu sérstæðan innskráningarkóða
+      join_lingu: Vertu með Lingu
+      last_name: Eftirnafn
+      more_login_options: Fleiri valkostir fyrir innskráningu
+      no_account_question: Ertu ekki með reikning?
+      or: eða
+      resend_code: Senda kóða aftur
+      sign_in: Skráðu þig inn
+      sign_up: Skráðu þig
+      want_to_receive_marketing_messages: Ég vil fá markaðsskilaboð frá Lingu
+      we_ve_sent_a_code: >-
+        Við höfum sent 6 stafa kóða til <strong> {{email}} </strong>. Kóðinn rennur
+        út eftir 15 mínútur, svo vinsamlegast sláðu hann inn fljótlega.
+    cookie_agreement:
+      agree: Sammála
+      condition: >-
+        Við notum vafrakökur til að greina frammistöðu síðunnar og afhenda persónulegt
+        efni. Með því að smella á „Sammála“ samþykkir þú skilyrði okkar.
+    course:
+      accredited_course_provider: Viðurkenndur námskeiðsstjóri
+      apply: Sækja um
+      apply_filters: Notaðu síur
+      by: Eftir
+      cancel: Hætta við
+      categories: "%{count} flokkar"
+      category: Flokkur
+      clear: Hreinsa
+      clear_filters: Hreinsaðu síur
+      contact_us: Hafðu samband við okkur
+      could_not_find_match_for: Því miður fundum við enga samsvörun fyrir
+      course_language: Mál námskeiðs
+      duration: Lengd
+      filter_settings:
+        categories:
+          academic: Fræðileg
+          business: Viðskipti
+          fashion: Tíska
+          food_drink: Matur & drykkur
+          for_kids: Fyrir börn
+          general: Almennt
+          health: Heilsa
+          legal: Löglegt
+          sport: Íþrótt
+          travel: Ferðalög
+        durations:
+          t0_600: "<10 mínútur"
+          t1800_3600: 30-60 mínútur
+          t3600_86400: 1+ klukkustund
+          t600_1800: 10-30 mínútur
+        focus_on:
+          conversation: Samtal
+          grammar: Málfræði
+          listening: Hlustun
+          pronunciation: Framburður
+          reading: Lestur
+          speaking: Talandi
+          writing: Ritun
+        levels:
+          long:
+            advanced: Framhaldsstig
+            elementary: Grunnstig
+            intermediate: Millistig
+            no_knowledge: Engin þekking
+            pre_intermediate: Fyrir miðstig
+            upper_intermediate: Efri miðstig
+          short:
+            advanced: Lengra komnir
+            beginner: Byrjandi
+            intermediate: Millistig
+        sort_by:
+          most_rated: Flestir metnir
+          newest: Nýjasta
+          popularity: Vinsældir
+      filters: Síur
+      focus_on: Einbeittu þér að
+      focus_on_title: Ég vil einbeita mér að
+      hide_lessons: Fela kennslustundir
+      hours: Klukkutímar
+      i_understand: ég skil
+      i_want_to_learn: ég vil læra
+      in_language: í %{language}
+      language: Tungumál
+      learn_more: Læra meira
+      less_settings: Minni stillingar
+      lessons: Kennslustundir
+      lessons_available: "%{number} kennslustundir í boði"
+      lessons_catalog_page_subtitle: Verða tungumál hetja.
+      lessons_catalog_page_title: Stækkaðu sjóndeildarhringinn með tungumálanámskeiði
+      level: Stig
+      min: Mín
+      more_settings: Fleiri stillingar
+      navbar:
+        close: Loka matseðli
+        menu: Matseðill
+        select_language: Veldu tungumál
+      need_to_buy_course: Þú þarft að bóka námskeið fyrst
+      no_description: Engin lýsing gefin
+      no_results: Því miður fundum við enga samsvörun fyrir
+      or: eða
+      per_month: á mánuði
+      plans: Áætlanir
+      privacy_policy: Friðhelgisstefna
+      rating: Einkunn
+      remove_all_filters: Fjarlægðu allar síur
+      reviews: Umsagnir
+      save: Vista
+      search: Leitaðu
+      select_dots: Veldu ...
+      select_languages: Veldu langauges
+      select_num_languages: Veldu %{number} tungumál
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Sýna allt
+      show_all_lessons: Sýnið alla kennslustundir
+      show_lessons: Sýnið %{number} kennslustundir
+      show_more: Sýndu meira
+      sign_up_with_lingu_for: Skráðu þig með Lingu Noregi fyrir
+      skills: "%{count} færni"
+      sort_by: Raða eftir
+      start_typing_here: Byrjaðu að slá hér
+      teach: Kenna
+      terms_and_conditions: Skilmálar
+      time_range: Tímabil
+      try_adjusting_your_search: Prófaðu að laga leitina með því að breyta síunum
+      try_this_course: Prófaðu þetta námskeið
+      website_language: Tungumál vefsíðu
+      words: Orð
+    games:
+      finished:
+        go_to_next_exercise: Vel gert! Farðu á næstu æfingu
+      flashcard:
+        buttons:
+          finish: Klára
+          next: Næst
+          previous: Fyrri
+        check_out_new_words: Skoðaðu nýju orðin sem þú munt læra í þessari kennslustund
+        frequency_of_word_usage: Tíðni orðanotkunar í %{language}
+        keep_practice_to_learn_all_words: Farðu yfir %{count} orðin og spilum nokkra
+          leiki!
+        word_frequency:
+          level1: Sjaldan notað
+          level2: Sjaldan notað
+          level3: Orðartíðni - miðlungs
+          level4: Orðartíðni - miðlungs
+          level5: Sameiginlegt
+          level6: Mjög algengt
+      match_word:
+        click_and_move_each_word_to_counterpart: Smelltu og færðu hvert orð til hliðstæðu
+          þess
+        start_heading: Passaðu orð til að búa til par
+        time_is_up: Tíminn er búinn!
+      skip_tutorial: Slepptu
+      time_is_up: Tíminn er búinn!
+      word_nodes:
+        match_letters_to_form_word: Passaðu stafina til að mynda orð
+      word_waterfall:
+        do_not_hesitate: Flýtum okkur!
+        go_to_next_exercise: Farðu á næstu æfingu
+        select_correct_translation: Veldu rétta samsvörun
+        well_done: Vel gert!
+    home_page:
+      hello: Halló,
+      popular_lessons: Vinsælar kennslustundir
+      show_more: Sýndu meira
+      time: "%{count} mín"
+      today_lesson: Kennslustund þín í dag
+      user_name: "%{name}!"
+      words: "%{count} orð"
+    idle_screen:
+      by_author: eftir %{authorName}
+      continue_lesson: Halda áfram kennslustund
+      exit: Útgangur
+      idle_message: Þú hefur verið aðgerðalaus í nokkurn tíma ...
+    lesson_page:
+      back_to_course_page: Aftur á námskeiðssíðuna
+      close: Lokaðu
+      continue_lesson: Halda áfram kennslustund
+      followed: Fylgdist með
+      hamburger_menu_btn: Hamborgaramatseðill
+      lesson_given: kennslustundir
+      not_started: ekki byrjuð
+      or: Eða
+      part_complete: "%{percent}% lokið"
+      restart_lesson: Endurræsa
+      section_check: Athugaðu
+      section_check_info: "%{count} próf"
+      section_learn: Læra
+      section_learn_info: "%{count} mín að horfa og lesa"
+      section_play: Leika
+      section_play_info: "%{count} orð til að æfa sig"
+      start_lesson: Byrjaðu kennslustund
+      step_progress: "%{percent}%"
+      subscribe: Fylgja
+      subscribed: Fylgdist með
+      subscribers: fylgjendur
+      time_min: "%{minutesNumber} mín"
+      unsubscribe: Hætta við
+      webview_error_title: Eitthvað fór úrskeiðis...
+      words_number: "%{wordsNumber} ný orð"
+    lesson_task:
+      cancel_button: Hætta við
+      check:
+        navigation_next: Næst
+        navigation_previous: Fyrri
+        navigation_skip: Slepptu
+      controls_panel:
+        font_size_button: Leturstærð
+        high_contrast_button:
+          origin: Mikil andstæða
+          short: Andstæða
+        hints_button: Vísbendingar
+        music_playback_button:
+          origin: Tónlist spilun
+          short: Tónlist
+        sound_effects_button:
+          origin: Hljóðbrellur
+          short: Hljóð
+      exit_button: Útgangur
+      finish_button: Klára
+      finished:
+        back_to_learn: Aftur til að læra
+        back_to_lesson_page: Aftur á kennslustundarsíðuna
+        back_to_results_page: Aftur á útkomusíðu
+        bad_result_message: Hmm ... reyndu að taka kennslustundina enn einu sinni
+        close_lesson: Loka kennslustund
+        correct_answers_list: Réttur svaralisti
+        good_result_message: Ég sé að þú hefur lagt þig fram!
+        great_result_message: Vel gert! Þetta eru frábær árangur!
+        next_course_lesson: Farðu í næstu kennslustund á námskeiðinu
+        no_results: Þú hefur engar prófaniðurstöður ennþá
+        no_results_text: Vinsamlegast klárið kennslustundina og standist prófið til
+          að fá niðurstöðurnar
+        see_correct_answers_list: Sjá réttan svaralista
+        train_more: Æfðu meira og þú nærð betri árangri næst!
+        you_finished_lesson: Frábært! Þú kláraðir kennslustundina
+      go_back: Farðu til baka
+      next_button: Næst
+      not_available_task: Þetta verkefni er ekki í boði ennþá
+      start_button: Byrjaðu
+      tasks:
+        check:
+          assignment:
+            accept: Samþykkja
+            author_will_check_your_answer: "%{author} mun fara yfir svar þitt og yfirleitt
+              gefa viðbrögð innan 1-2 daga"
+            continue_writing: Haltu áfram að skrifa
+            copy: Afrita
+            delete: Eyða
+            delete_record: Eyða skrá
+            edit: Breyta
+            essay_does_not_have_enough_words: >-
+              Svar þitt ætti að innihalda að minnsta kosti %{minWordsNumber} orð.
+              Svar þitt er eins og er %{currentWordsNumber} orð.
+            followers_count: "%{followersCount} fylgjendur"
+            lessons_count: "%{lessonsCount} kennslustundir"
+            minimal_recording_time: Lágmarks upptökutími - %{minimalRecordingTime}
+            minimum_characters_amount: Lágmarksstafir - %{minimumCharactersAmount}
+            minimum_words_amount: Lágmarksorð - %{minimumAmount}
+            record_again: Taktu upp aftur
+            record_voice: Taktu upp rödd
+            send_anyway: Senda í burtu
+            send_to_review: Senda til umsagnar
+            skip: Slepptu
+            too_short_answer: Of stutt svar
+            type_your_answer: Sláðu inn svarið þitt
+            unknown_task_type: Óþekkt tegund verkefna
+            upgrade_licence: Uppfærsluleyfi
+            upgrade_your_plan: Uppfærðu áætlunina þína til að prófa verkefni með umsögnum
+              kennara
+            upload_files: Sendu skrár inn
+            write_essay: Skrifaðu ritgerð
+            you_have_used_amount_of_assignments: Þú hefur notað %{amountOfAssignments}
+              verkefnaeiningar
+          fill_in_blanks:
+            sentence_gap: Setningabil
+          fill_in_table:
+            column_answer_placeholder: Svaraðu
+            column_question_placeholder: Spurning
+            example: Dæmi
+          true_false:
+            'false': Rangt
+            'true': Satt
+        learn:
+          translatable_text:
+            show_original: Sýna frumrit
+            translate_into: Þýddu með Google yfir á %{languageName}
+            translate_into_your_lang: Þýddu með Google yfir á þitt tungumál
+        play:
+          arrange_words:
+            start_screen:
+              heading: Gerðu setningu úr gefnum orðum
+          audition:
+            start_screen:
+              heading: Hlustaðu á hljóðið og bankaðu á orðið sem þú heyrðir
+          dictation:
+            get_help: Fá hjálp
+            i_do_not_know: Ég veit ekki
+            input_placeholder: Sláðu inn það sem þú heyrðir hér
+            start_screen:
+              heading: Hlustaðu og skrifaðu það sem þú heyrir
+          fill_gap:
+            start_screen:
+              heading: Passaðu orðið og merkingu þess
+          finish_screen:
+            go_to_next_exercise: Vel gert! Farðu á næstu æfingu
+          image_hotspot:
+            start_screen:
+              heading: Nefndu hlutina á myndinni rétt
+          image_object:
+            start_screen:
+              heading: Veldu réttan hlut úr næstu mynd
+          inline_dropdown:
+            start_screen:
+              heading: Veldu orðin sem passa við setninguna
+          mark_word:
+            start_screen:
+              heading: Lestu textann og veldu orðið sem passar við myndina
+          minimal_pairs:
+            start_screen:
+              heading: Horfðu á myndbandið og veldu réttan valkost
+    locale:
+      currency_switcher_title: Gjaldeyrisskiptir
+      lang_switcher_title: Tungumálaskipti
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Enska
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Franska
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Portúgalska
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Hljóð er að hlaðast inn
+        aria_pause_button: Hlé
+        aria_play_button: Leika
+        aria_reload_button: Endurhlaða
+        aria_stop_button: Hættu
+        reload_message: Mistókst að hlaða hljóð. Vinsamlegast smelltu á hnappinn til
+          að endurhlaða.
+    mobile_modal:
+      apply: Sækja um
+      cancel: Hætta við
+      clear: Hreinsa
+      save: Vista
+    page404:
+      goToStartLessonPage: Farðu á upphafssíðu síðunnar
+      ooops: Úfff ...
+      sorry_message: Því miður gat Tor ekki fundið þessa síðu
+    profile:
+      navigation:
+        log_out: Að skrá þig út
+        my_profile: Prófílinn minn
+        settings: Stillingar
+      onboarding:
+        choose_native_language: Veldu móðurmál þitt eða tungumál sem þú skilur
+        do_you_understand_english: Skilurðu ensku?
+        hello: Halló
+        language_levels:
+          a1: Grunnstig
+          a2: Fyrir millistig
+          b1: Millistig
+          b2: Efri millistig
+          c1: Framhaldsstig
+          no_knowledge: Engin þekking
+        language_not_supported:
+          note: Við munum láta þig vita um leið og tungumálið verður til
+          title: Því miður en við styðjum ekki þetta tungumál ennþá
+          try_another_language: Prófaðu annað tungumál
+        'no': Nei
+        search_placeholder: Leita ...
+        show_more_languages: Önnur tungumál
+        target_language_question: Hvaða tungumál viltu læra?
+        what_is_language_level: Hvernig myndir þú meta %{languageName} stigið þitt?
+        'yes': Já
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Persónuverndarstefna Lingu
+        support: Stuðningur
+      logout: Að skrá þig út
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Fáðu uppfærslur frá kennurum og skólum sem þú fylgist með
+              sections:
+                app_notifications: Tilkynningar um forrit
+                email: Tölvupóstur
+              title: Aðstoð við nám
+            marketing:
+              description: Vertu upplýstur um allar kynningar, uppfærslur og innblástur
+                frá Lingu
+              sections:
+                browser_notifications: Tilkynningar um vafra
+                email: Tölvupóstur
+              title: Markaðssetning
+          title: Stillingar tengiliða
+        personal_information:
+          delete_photo: Eyða ljósmynd
+          email: Tölvupóstur
+          first_name: Fyrsta nafn
+          last_name: Eftirnafn
+          social_accounts:
+            connected: Tengdur
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ekki tengdur
+            title: Félagsreikningar
+          title: Persónuupplýsingar
+          update_photo: Uppfæra mynd
+        school:
+          active_licence: Virkt leyfi
+          active_status: Virkur
+          delete_profile: Eyða prófílnum mínum
+          delete_profile_modal:
+            body: |-
+              Þú eyðir öllum gögnum þínum - að eilífu. Það er enginn afturkallunarhnappur og við getum ekki fengið hann aftur fyrir þig eftir það.
+              Ertu viss um að þú viljir eyða Lingu prófílnum þínum og öllum gögnum þínum fyrir fullt og allt?
+            cancel: Hætta við
+            confirm: Já, eytt því
+            i_understand_the_consequences: Ég skil afleiðingarnar
+            title: Eyða prófílnum þínum?
+          expired: Útrunnið %{expire_date}
+          expires: Rennur út %{expire_date}
+          inactive_status: Óvirkt
+          revoke_access: Afturkalla lesaðgang
+          sections:
+            contact_school: Hafðu samband við skólann
+            export_my_data: Flytja út gögnin mín
+            read_school_privacy_policy: Lestu persónuverndarstefnu skólans
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Tónlist spilun
+              sound_effects: Hljóðbrellur
+              title: Hljóð
+            visual:
+              dark_theme: Dökkt þema
+              font_size:
+                test_text: Grasið er alltaf grænna hinum megin við girðinguna
+                title: Leturstærð
+              high_contrast: Mikil andstæða
+              hints: Vísbendingar
+              title: Sjónrænt
+          title: Hljóð og sjón
+        training_settings:
+          sections:
+            i_understand: ég skil
+            i_want_to_learn: ég vil læra
+            target_language_level: Ensku stigi
+          title: Þjálfunarstillingar
+      settings_title: Stillingar
+    teacher_card:
+      followers_count:
+        one: 1 fylgjandi
+        other: "%{count} fylgjendur"
+      lessons_count:
+        one: 1 kennslustund
+        other: "%{count} kennslustundir"

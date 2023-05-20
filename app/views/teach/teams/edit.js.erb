@@ -1,0 +1,5 @@
+$("#right_modal .modal-body").html("<%= j render partial: 'teach/teams/form', locals: { team: team } %>");
+$("#right_modal .modal-title").html("<%= t('teach.teams.edit.heading') %>");
+$('#right_modal').modal('show');
+
+uppyUtils.initUploadInputs($('#right_modal'));

@@ -1,0 +1,48 @@
+= search_form_for @search, url: school_documents_path, class: 'assignment-search-form' do |f|
+  .assignments-filter.d-flex.justify-content-between.align-items-center
+    div
+      .btn-group.custom-dropdown.status-by-filter
+        = f.hidden_field :status_include, class: 'filter-values'
+        button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+          span.mr-2= t('status')
+          i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-left.mt-1.p-3
+          .status-container
+            - Document.statuses.each do |status, _val|
+              .custom-control.custom-checkbox.mb-3
+                input.custom-control-input.status-select type='checkbox' id="#{status}_check" data-filter-val="#{status}"
+                label.custom-control-label.d-flex.align-items-center for="#{status}_check"
+                  span.ml-2= t(status, scope: 'activerecord.attributes.assignment.statuses')
+          hr
+          .d-flex.justify-content-between
+            button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+              = t('shared.clear')
+            button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+              = t('save')
+      .btn-group.custom-dropdown.type-by-filter.ml-2
+        = f.hidden_field :types_include, class: 'filter-values'
+        button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+          span.mr-2= t('type')
+          i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-left.mt-1.p-3
+          .status-container
+            - Document::AVAILABLE_ITEMS.each do |val|
+              .custom-control.custom-checkbox.mb-3
+                input.custom-control-input.status-select type='checkbox' id="#{val}_check" data-filter-val="#{val}"
+                label.custom-control-label.d-flex.align-items-center for="#{val}_check"
+                  span.ml-2= t(val.split('::').last.downcase, scope: 'activerecord.attributes.assignment.types')
+          hr
+          .d-flex.justify-content-between
+            button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+              = t('shared.clear')
+            button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+              = t('save')
+    .school-info-sort
+      .dropdown-toggle.cursor-pointer data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+        span.mr-2.selected-sort-item = t('school.assignments.newest_first')
+        i.fa.fa-angle-down
+      .dropdown-menu.dropdown-menu-right.mt-1.p-0
+        .custom-filter-item.px-3.pb-2.pt-3 data-filter-by='created_at desc'
+          button.d-flex.justify-content-between.align-items-center.border-0.w-100
+            = sort_link(@search, 'created_at desc', t('school.assignments.types.newest_first'))
+            i.fa.fa-check.active-check.mr-2.color-transparent

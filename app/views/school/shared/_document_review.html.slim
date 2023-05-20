@@ -1,0 +1,29 @@
+- if document
+  - student = document.student
+  .document-review.pt-4.px-3.position-relative
+    .chat-review
+      .student-response.d-flex
+        = custom_profile_tag(student)
+        .student-response-detail.ml-2
+          .student-full-name
+            = student.full_name
+          .response-time.mb-3
+            = l(document.created_at, format: :default)
+          - if document.audio
+            - audio_size = JSON.parse(document.audio_data)['metadata']['size']/1048576.to_f
+            = react_component('components/WaveAudioPlayer', { url: document.audio_url, size: audio_size.round(1), isDownloadable: true, id: "document_#{document.id}" })
+          - else
+            p.mt-1#student_response_text
+              = simple_format document.comment_contents ? document.comment_contents : document.content
+    .school-response-chat-container
+      = render partial: 'school/comments/response_message', collection: comments, as: :comment, cached: true
+    = render 'school/shared/school_response', comment: comment, document: document
+  .review-tooltip.d-none
+    .review-comment.d-flex.align-items-center.cursor-pointer
+      = image_tag('icons/comment.svg', class: 'mr-2')
+      = t('.leave_comment')
+    .separator
+    .review-quote.d-flex.cursor-pointer
+      = image_tag('icons/quote.svg', class: 'mr-2')
+      = t('.use_quote')
+  = render 'school/shared/school_comment'

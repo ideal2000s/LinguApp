@@ -1,0 +1,59 @@
+- set_page_title student.full_name
+
+.student-info-container.d-flex.justify-content-between
+  .student-info-details.flex-grow-1
+    = render 'student_header', student: student, active_tab: 'lessons'
+    = button_to assign_course_school_student_path(student), class: 'btn btn-primary student-assign-lesson mt-3', method: :get, remote: true do
+      = t('school.team_students.assign_course.assign_to_student')
+    .assigned-course-block
+      - if course
+        = render partial: 'assigned_course_block', locals: {course: course}
+    - if course
+      h2.student-heading2.mt-4= t('.recent_lessons')
+      = search_form_for @search, url: lessons_school_student_path(student), class: 'lesson-search-form' do |f|
+        .school-info-sort
+          button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+            span.mr-2= t('.by_date')
+            i.fa.fa-angle-down
+          .dropdown-menu.dropdown-menu-right.mt-1.p-0
+            .custom-filter-item.px-3.pb-2.pt-3.filter-item-active data-filter-by='created_at'
+              i.fa.fa-check.active-check.mr-2.color-transparent
+              = sort_link(@search, :created_at, t('.by_date'))
+            .custom-filter-item.px-3.pt-2.pb-3 data-filter-by='lesson_level'
+              i.fa.fa-check.active-check.mr-2.color-transparent
+              = sort_link(@search, :lesson_level, t('.by_level'))
+    .student-lessons-list.mt-4
+      table.table
+        thead
+          tr
+            th= t('shared.level')
+            th= t('name')
+            th= t('shared.time_spent')
+            th.text-center XP
+            th= t('.progress')
+        tbody
+          = render partial: 'student_lesson_item', collection: lesson_sessions, as: :lesson_session, cached: true
+  = render 'student_profile', student: student
+.modal.fade id='assign-lesson-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content.pb-3
+      h1= t('.assign_lesson')
+      = form_tag search_lessons_school_student_path(student), method: :get, remote: true
+        .input-group.mt-3
+          span.input-group-prepend
+            .input-group-text.border-0
+              i.fa.fa-search
+          = search_field_tag :title, '',
+                  class: 'form-control pl-0',
+                  placeholder: t('.search_lesson'),
+                  id: 'search_lesson_input'
+      .search-lesson-list.mt-3
+        = render 'search_lessons_list', lessons: search_lessons
+      .modal-footer.p-0.pt-3
+        = form_tag assign_lessons_school_student_path(student), class: 'w-100'
+          = hidden_field_tag :lesson_ids
+          button.btn.bg-200.m-0#clear_btn type='button'
+            = t('shared.clear')
+          button.btn.btn-primary.m-0.float-right#assign_student_lessons
+            = t('.assign_lesson')
+

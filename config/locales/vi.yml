@@ -1,0 +1,615 @@
+---
+vi:
+  course_mailer:
+    course_assigned_notification:
+      button: Bắt đầu khóa học
+      click_start_lesson: Nhấp vào 'Bắt đầu bài học'
+      follow_course_link: Nhấp vào nút để mở khóa học
+      footer_text: Hãy quay lại Lingu để học những điều mới mỗi ngày!
+      get_started_line: 'Đây là cách bạn bắt đầu:'
+      notification_link: Thiết lập thông báo
+      open_lesson: Mở bài đầu tiên
+      or_paste_this_link: hoặc dán liên kết này vào trình duyệt của bạn
+      sign_in_with_email: Đăng nhập bằng địa chỉ email của bạn (%{email})
+      support_link: Ủng hộ
+      title: Bắt đầu với %{course}
+    new_document_comment:
+      author_text: "%{author} đã để lại đánh giá về bài tập của bạn"
+      button_text: Kiểm tra nó ra
+      button_url_helper: 'Hoặc, dán liên kết này vào trình duyệt của bạn:'
+      footer_text: Còn rất nhiều điều để học ...
+      notification_link: Thiết lập thông báo
+      subject_line: Nhận xét bài tập mới
+      support_link: Ủng hộ
+    otp:
+      ignore_msg: Nếu bạn không thực hiện yêu cầu này, chỉ cần bỏ qua email.
+      subject_line: Mã duy nhất của bạn cho Lingu
+      unique_code_for_lingu: Đây là mã duy nhất của bạn cho Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Bạn co săn san để tạo một tai khoản?
+      back: Trở lại
+      back_to_sign_in: Quay lại Đăng nhập
+      check_your_email_for_a_code: Kiểm tra email của bạn để biết mã của bạn
+      continue: Tiếp tục
+      continue_with_email: Tiếp tục với email
+      continue_with_provider: Tiếp tục với %{provider}
+      did_not_receive_a_code: Không nhận được mã?
+      email_address: Địa chỉ email
+      first_name: Tên đầu tiên
+      get_unique_code: Nhận mã đăng nhập duy nhất
+      join_lingu: Tham gia Lingu
+      last_name: Họ
+      more_login_options: Các tùy chọn đăng nhập khác
+      no_account_question: Không có tài khoản?
+      or: hoặc là
+      resend_code: Mã gửi lại
+      sign_in: Đăng nhập
+      sign_up: Đăng ký
+      want_to_receive_marketing_messages: Tôi muốn nhận tin nhắn tiếp thị từ Lingu
+      we_ve_sent_a_code: >-
+        Chúng tôi đã gửi một mã gồm 6 chữ số tới <strong> {{email}} </strong>. Mã
+        sẽ hết hạn sau 15 phút nữa, vì vậy vui lòng nhập mã này sớm.
+    cookie_agreement:
+      agree: Đồng ý
+      condition: >-
+        Chúng tôi sử dụng cookie để phân tích hiệu suất trang web và cung cấp nội
+        dung được cá nhân hóa. Bằng cách nhấp vào “Đồng ý”, bạn đồng ý với các điều
+        kiện của chúng tôi.
+    course:
+      accredited_course_provider: Nhà cung cấp khóa học được công nhận
+      apply: Ứng dụng
+      apply_filters: Áp dụng các bộ lọc
+      by: Bởi
+      cancel: Huỷ bỏ
+      categories: danh mục %{count}
+      category: thể loại
+      clear: Thông thoáng
+      clear_filters: Xóa bộ lọc
+      contact_us: Liên hệ chúng tôi
+      could_not_find_match_for: Xin lỗi, chúng tôi không thể tìm thấy bất kỳ kết quả
+        phù hợp nào cho
+      course_language: Ngôn ngữ khóa học
+      duration: Thời lượng
+      filter_settings:
+        categories:
+          academic: Thuộc về lý thuyết
+          business: Kinh doanh
+          fashion: Thời trang
+          food_drink: Đồ ăn thức uống
+          for_kids: Cho trẻ em
+          general: Chung
+          health: Sức khỏe
+          legal: Hợp pháp
+          sport: Thể thao
+          travel: Du lịch
+        durations:
+          t0_600: "<10 phút"
+          t1800_3600: 30-60 phút
+          t3600_86400: Hơn 1 giờ
+          t600_1800: 10-30 phút
+        focus_on:
+          conversation: Cuộc hội thoại
+          grammar: Ngữ pháp
+          listening: Lắng nghe
+          pronunciation: Cách phát âm
+          reading: đọc hiểu
+          speaking: Nói
+          writing: Viết
+        levels:
+          long:
+            advanced: Trình độ cao
+            elementary: Trình độ sơ cấp
+            intermediate: Trình độ trung cấp
+            no_knowledge: Không có kiến thức
+            pre_intermediate: Sơ cấp trung cấp
+            upper_intermediate: Trung cấp trên
+          short:
+            advanced: Nâng cao
+            beginner: Người bắt đầu
+            intermediate: Trung gian
+        sort_by:
+          most_rated: Được đánh giá cao nhất
+          newest: Mới nhất
+          popularity: Phổ biến
+      filters: Bộ lọc
+      focus_on: Tập trung vào
+      focus_on_title: Tôi muốn tập trung vào
+      hide_lessons: Ẩn bài học
+      hours: Giờ
+      i_understand: tôi hiểu
+      i_want_to_learn: tôi muốn học
+      in_language: trong %{language}
+      language: Ngôn ngữ
+      learn_more: Tìm hiểu thêm
+      less_settings: Ít cài đặt hơn
+      lessons: Những bài học
+      lessons_available: "%{number} bài học có sẵn"
+      lessons_catalog_page_subtitle: Trở thành anh hùng ngôn ngữ.
+      lessons_catalog_page_title: Mở rộng tầm nhìn của bạn với một khóa học ngôn ngữ
+      level: Cấp độ
+      min: Min
+      more_settings: Cài đặt khác
+      navbar:
+        close: Đóng menu
+        menu: Thực đơn
+        select_language: Chọn ngôn ngữ
+      need_to_buy_course: Bạn cần đặt một khóa học trước
+      no_description: Không có mô tả được cung cấp
+      no_results: Xin lỗi, chúng tôi không thể tìm thấy bất kỳ kết quả phù hợp nào
+        cho
+      or: hoặc là
+      per_month: mỗi tháng
+      plans: Các kế hoạch
+      privacy_policy: Chính sách bảo mật
+      rating: Xếp hạng
+      remove_all_filters: Xóa tất cả các bộ lọc
+      reviews: Nhận xét
+      save: Tiết kiệm
+      search: Tìm kiếm
+      select_dots: Lựa chọn...
+      select_languages: Chọn ngôn ngữ
+      select_num_languages: Chọn ngôn ngữ %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Hiển thị tất cả
+      show_all_lessons: Hiển thị tất cả các bài học
+      show_lessons: Hiển thị các bài học %{number}
+      show_more: Cho xem nhiều hơn
+      sign_up_with_lingu_for: Đăng ký với Lingu Na Uy cho
+      skills: kỹ năng %{count}
+      sort_by: Sắp xếp theo
+      start_typing_here: Bắt đầu nhập ở đây
+      teach: Dạy
+      terms_and_conditions: Các điều khoản và điều kiện
+      time_range: Khoảng thời gian
+      try_adjusting_your_search: Hãy thử điều chỉnh tìm kiếm của bạn bằng cách thay
+        đổi bộ lọc của bạn
+      try_this_course: Hãy thử khóa học này
+      website_language: Ngôn ngữ trang web
+      words: Từ ngữ
+    games:
+      finished:
+        go_to_next_exercise: Làm tốt! Đến bài tập tiếp theo
+      flashcard:
+        buttons:
+          finish: Hoàn thành
+          next: Kế tiếp
+          previous: Trước
+        check_out_new_words: Kiểm tra các từ mới bạn sẽ học trong bài học này
+        frequency_of_word_usage: Tần suất sử dụng từ trong %{language}
+        keep_practice_to_learn_all_words: Xem lại các từ %{count} và chúng ta hãy
+          chơi một số trò chơi!
+        word_frequency:
+          level1: Hiếm khi được sử dụng
+          level2: Hiếm khi được sử dụng
+          level3: Tần suất từ - trung bình
+          level4: Tần suất từ - trung bình
+          level5: Chung
+          level6: Rất phổ biến
+      match_word:
+        click_and_move_each_word_to_counterpart: Nhấp và di chuyển từng từ đến đối
+          của nó
+        start_heading: Nối các từ để thành một cặp
+        time_is_up: Hết giờ rồi!
+      skip_tutorial: Nhảy
+      time_is_up: Hết giờ rồi!
+      word_nodes:
+        match_letters_to_form_word: Ghép các chữ cái để tạo thành một từ
+      word_waterfall:
+        do_not_hesitate: Hãy tăng tốc!
+        go_to_next_exercise: Đến bài tập tiếp theo
+        select_correct_translation: Chọn kết quả phù hợp
+        well_done: Làm tốt!
+    home_page:
+      hello: Xin chào,
+      popular_lessons: Bài học phổ biến
+      show_more: Cho xem nhiều hơn
+      time: "%{count} phút"
+      today_lesson: Bài học của bạn cho ngày hôm nay
+      user_name: "%{name}!"
+      words: "%{count} từ"
+    idle_screen:
+      by_author: bởi %{authorName}
+      continue_lesson: Tiếp tục bài học
+      exit: Lối ra
+      idle_message: Bạn đã nhàn rỗi trong một thời gian ...
+    lesson_page:
+      back_to_course_page: Quay lại trang khóa học
+      close: Đóng
+      continue_lesson: Tiếp tục bài học
+      followed: Đã theo dõi
+      hamburger_menu_btn: Thực đơn bánh hamburger
+      lesson_given: Những bài học
+      not_started: chưa bắt đầu
+      or: Hoặc là
+      part_complete: "%{percent}% hoàn thành"
+      restart_lesson: Khởi động lại
+      section_check: Kiểm tra
+      section_check_info: kiểm tra %{count}
+      section_learn: Học hỏi
+      section_learn_info: "%{count} phút để xem và đọc"
+      section_play: Chơi
+      section_play_info: "%{count} từ để luyện tập"
+      start_lesson: Bắt đầu bài học
+      step_progress: "%{percent}%"
+      subscribe: Theo
+      subscribed: Đã theo dõi
+      subscribers: người theo dõi
+      time_min: "%{minutesNumber} phút"
+      unsubscribe: Bỏ theo dõi
+      webview_error_title: Đã xảy ra lỗi ...
+      words_number: "%{wordsNumber} từ mới"
+    lesson_task:
+      cancel_button: Huỷ bỏ
+      check:
+        navigation_next: Kế tiếp
+        navigation_previous: Trước
+        navigation_skip: Nhảy
+      controls_panel:
+        font_size_button: Cỡ chữ
+        high_contrast_button:
+          origin: Độ tương phản cao
+          short: Tương phản
+        hints_button: Gợi ý
+        music_playback_button:
+          origin: Phát lại nhạc
+          short: Âm nhạc
+        sound_effects_button:
+          origin: Hiệu ứng âm thanh
+          short: Âm thanh
+      exit_button: Lối ra
+      finish_button: Hoàn thành
+      finished:
+        back_to_learn: Quay lại học
+        back_to_lesson_page: Quay lại trang bài học
+        back_to_results_page: Quay lại trang kết quả
+        bad_result_message: Hừm ... cố gắng làm bài một lần nữa
+        close_lesson: Kết thúc bài học
+        correct_answers_list: Danh sách câu trả lời đúng
+        good_result_message: Tôi có thể thấy bạn đã nỗ lực!
+        great_result_message: Làm tốt! Đây là những kết quả tuyệt vời!
+        next_course_lesson: Chuyển sang bài học tiếp theo trong khóa học
+        no_results: Bạn chưa có kết quả kiểm tra
+        no_results_text: Xin vui lòng, hoàn thành bài và vượt qua bài kiểm tra để
+          có kết quả
+        see_correct_answers_list: Xem danh sách câu trả lời đúng
+        train_more: Thực hành nhiều hơn và bạn sẽ đạt được kết quả tốt hơn vào lần
+          sau!
+        you_finished_lesson: Tuyệt quá! Bạn đã hoàn thành bài học
+      go_back: Quay lại
+      next_button: Kế tiếp
+      not_available_task: Tác vụ này chưa khả dụng
+      start_button: Khởi đầu
+      tasks:
+        check:
+          assignment:
+            accept: Chấp nhận
+            author_will_check_your_answer: >-
+              %{author} sẽ xem xét câu trả lời của bạn và thường đưa ra phản hồi trong
+              vòng 1-2 ngày
+            continue_writing: Viết tiếp
+            copy: Sao chép
+            delete: Xóa bỏ
+            delete_record: Xóa hồ sơ
+            edit: Biên tập
+            essay_does_not_have_enough_words: >-
+              Câu trả lời của bạn phải chứa ít nhất từ %{minWordsNumber}. Câu trả
+              lời của bạn hiện là từ %{currentWordsNumber}.
+            followers_count: "%{followersCount} người theo dõi"
+            lessons_count: "%{lessonsCount} bài học"
+            minimal_recording_time: Thời gian ghi tối thiểu - %{minimalRecordingTime}
+            minimum_characters_amount: Ký tự tối thiểu - %{minimumCharactersAmount}
+            minimum_words_amount: Từ tối thiểu - %{minimumAmount}
+            record_again: Ghi lại
+            record_voice: Ghi âm giọng nói
+            send_anyway: Gửi bằng mọi cách
+            send_to_review: Gửi để xem xét
+            skip: Nhảy
+            too_short_answer: Câu trả lời quá ngắn
+            type_your_answer: Gõ câu trả lời của bạn
+            unknown_task_type: Loại nhiệm vụ không xác định
+            upgrade_licence: Nâng cấp giấy phép
+            upgrade_your_plan: Nâng cấp kế hoạch của bạn để thử các bài tập với đánh
+              giá của giáo viên
+            upload_files: Tải tệp lên
+            write_essay: Viết luận
+            you_have_used_amount_of_assignments: Bạn đã sử dụng tín dụng bài tập %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Khoảng trống câu
+          fill_in_table:
+            column_answer_placeholder: Câu trả lời
+            column_question_placeholder: Câu hỏi
+            example: Thí dụ
+          true_false:
+            'false': Sai
+            'true': Thật
+        learn:
+          translatable_text:
+            show_original: Hiển thị nguyên bản
+            translate_into: Dịch bằng Google sang %{languageName}
+            translate_into_your_lang: Dịch với Google sang ngôn ngữ của bạn
+        play:
+          arrange_words:
+            start_screen:
+              heading: Đặt một câu trong số các từ đã cho
+          audition:
+            start_screen:
+              heading: Nghe âm thanh và nhấn vào từ bạn vừa nghe
+          dictation:
+            get_help: Được trợ giúp
+            i_do_not_know: Tôi không biết
+            input_placeholder: Nhập những gì bạn đã nghe ở đây
+            start_screen:
+              heading: Nghe và viết những gì bạn nghe được
+          fill_gap:
+            start_screen:
+              heading: Ghép từ và nghĩa của nó
+          finish_screen:
+            go_to_next_exercise: Làm tốt! Đến bài tập tiếp theo
+          image_hotspot:
+            start_screen:
+              heading: Gọi tên chính xác các đồ vật trong hình
+          image_object:
+            start_screen:
+              heading: Chọn đối tượng phù hợp từ bức tranh tiếp theo
+          inline_dropdown:
+            start_screen:
+              heading: Chọn các từ phù hợp với câu
+          mark_word:
+            start_screen:
+              heading: Đọc văn bản và chọn từ phù hợp với hình ảnh
+          minimal_pairs:
+            start_screen:
+              heading: Xem video và chọn tùy chọn chính xác
+    locale:
+      currency_switcher_title: Bộ chuyển đổi tiền tệ
+      lang_switcher_title: Trình chuyển đổi ngôn ngữ
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Tiếng Anh
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Liệtuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Đang tải âm thanh
+        aria_pause_button: Tạm ngừng
+        aria_play_button: Chơi
+        aria_reload_button: Nạp lại
+        aria_stop_button: Dừng lại
+        reload_message: Không tải được âm thanh. Vui lòng nhấp vào nút để tải lại.
+    mobile_modal:
+      apply: Ứng dụng
+      cancel: Huỷ bỏ
+      clear: Thông thoáng
+      save: Tiết kiệm
+    page404:
+      goToStartLessonPage: Đi đến trang bắt đầu bài học
+      ooops: Rất tiếc ...
+      sorry_message: Xin lỗi, Tor không tìm thấy trang này
+    profile:
+      navigation:
+        log_out: Đăng xuất
+        my_profile: Thông tin của tôi
+        settings: Cài đặt
+      onboarding:
+        choose_native_language: Chọn ngôn ngữ mẹ đẻ của bạn hoặc ngôn ngữ bạn hiểu
+        do_you_understand_english: Bạn có hiểu tiêng Anh không?
+        hello: xin chào
+        language_levels:
+          a1: Trình độ sơ cấp
+          a2: Trình độ sơ cấp
+          b1: Trình độ trung cấp
+          b2: Trung cấp trên
+          c1: Trình độ cao
+          no_knowledge: Không có kiến thức
+        language_not_supported:
+          note: Chúng tôi sẽ thông báo cho bạn ngay khi có ngôn ngữ
+          title: Xin lỗi, nhưng chúng tôi chưa hỗ trợ ngôn ngữ này
+          try_another_language: Thử một ngôn ngữ khác
+        'no': Không
+        search_placeholder: Tìm kiếm...
+        show_more_languages: Những ngôn ngữ khác
+        target_language_question: Bạn muốn học ngôn ngữ nào?
+        what_is_language_level: Bạn đánh giá mức độ %{languageName} của mình như thế
+          nào?
+        'yes': Đúng
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Chính sách bảo mật của Lingu
+        support: Ủng hộ
+      logout: Đăng xuất
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Nhận thông tin cập nhật từ giáo viên và trường học mà bạn
+                theo dõi
+              sections:
+                app_notifications: Thông báo ứng dụng
+                email: E-mail
+              title: Hỗ trợ học tập
+            marketing:
+              description: >-
+                Cập nhật thông tin về tất cả các chương trình khuyến mãi, cập nhật
+                và nguồn cảm hứng từ Lingu
+              sections:
+                browser_notifications: Thông báo trình duyệt
+                email: E-mail
+              title: Tiếp thị
+          title: Tùy chọn liên hệ
+        personal_information:
+          delete_photo: Xóa ảnh
+          email: E-mail
+          first_name: Tên đầu tiên
+          last_name: Họ
+          social_accounts:
+            connected: Đã kết nối
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Không kết nối
+            title: Tài khoản xã hội
+          title: Thông tin cá nhân
+          update_photo: Cập nhật ảnh
+        school:
+          active_licence: Giấy phép hoạt động
+          active_status: Hoạt động
+          delete_profile: Xóa hồ sơ của tôi
+          delete_profile_modal:
+            body: |-
+              Bạn xóa tất cả dữ liệu của mình — mãi mãi. Không có nút hoàn tác và chúng tôi không thể lấy lại cho bạn sau.
+              Bạn có chắc chắn muốn xóa vĩnh viễn hồ sơ Lingu và tất cả dữ liệu của mình không?
+            cancel: Huỷ bỏ
+            confirm: Có, xóa nó
+            i_understand_the_consequences: Tôi hiểu hậu quả
+            title: Xóa hồ sơ của bạn?
+          expired: "%{expire_date} hết hạn"
+          expires: Hết hạn %{expire_date}
+          inactive_status: Không hoạt động
+          revoke_access: Thu hồi quyền truy cập đã đọc
+          sections:
+            contact_school: Liên hệ với trường
+            export_my_data: Xuất dữ liệu của tôi
+            read_school_privacy_policy: Chính sách quyền riêng tư của Read School
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Phát lại nhạc
+              sound_effects: Hiệu ứng âm thanh
+              title: Âm thanh
+            visual:
+              dark_theme: Chủ đề tối
+              font_size:
+                test_text: Cỏ luôn xanh hơn ở bên kia hàng rào
+                title: Cỡ chữ
+              high_contrast: Độ tương phản cao
+              hints: Gợi ý
+              title: Trực quan
+          title: Âm thanh & Hình ảnh
+        training_settings:
+          sections:
+            i_understand: tôi hiểu
+            i_want_to_learn: tôi muốn học
+            target_language_level: trình độ tiếng Anh
+          title: Cài đặt đào tạo
+      settings_title: Cài đặt
+    teacher_card:
+      followers_count:
+        one: 1 người theo dõi
+        other: "%{count} người theo dõi"
+      lessons_count:
+        one: 1 buổi học
+        other: "%{count} bài học"

@@ -1,0 +1,14 @@
+- set_page_title lesson.title
+
+= form_tag teach_lesson_split_path(lesson), method: :post do |f|
+  .card
+    .card-header
+      .form-group
+        = label_tag 'lesson[title]', t('teach.lessons.split.new_lesson_title'), required: true
+        = text_field_tag 'lesson[title]', lesson.title, class: 'form-control'
+    table.table.thead-light.table-hover.mb-0
+      tbody
+        = render partial: 'task_row', collection: tasks, as: :task
+    .card-footer
+      = submit_tag t('teach.lessons.split.split_lesson'), class: 'btn btn-primary'
+      = link_to t('back'), teach_lessons_path(lesson), class: 'btn btn-falcon-default ml-2'

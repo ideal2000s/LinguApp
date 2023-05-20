@@ -1,0 +1,9 @@
+= link_to '/auth/google_student', class: 'btn school-otp-button py-3', target: '_blank' do
+  = image_tag('icons/google_icon.svg')
+  = t('frontend.auth.continue_with_provider', provider: 'Google')
+= link_to '/auth/microsoft_student', class: 'btn school-otp-button py-3 mt-3', target: '_blank' do
+  = image_tag('icons/microsoft_icon.svg')
+  = t('frontend.auth.continue_with_provider', provider: 'Microsoft')
+= link_to '/auth/facebook_student', class: 'btn school-otp-button py-3 mt-3', target: '_blank' do
+  = image_tag('icons/facebook_icon.svg')
+  = t('frontend.auth.continue_with_provider', provider: 'Facebook')

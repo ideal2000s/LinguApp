@@ -1,0 +1,16 @@
+- set_page_title t('.title')
+.archived-students-container.school-info-container
+  .archived-students-header.mb-4.d-flex.align-items-center.justify-content-between
+    h1.mb-0.pb-3= t('school.team_students.archived_students.title')
+    = button_to clear_archive_school_students_path, class: 'btn rounded-capsule', id: 'clear_archive_btn', method: :get, remote: true, data: {confirm: t('.clear_archive_confirm')} do
+      i.fas.fa-trash.text-danger.fa-fw
+      span.ml-1.text-danger= t('.clear_archive')
+  = render 'list_header'
+  .archive-notification.d-flex.align-items-center.mt-4
+    = image_tag('icons/announcement.svg', class: 'ml-4')
+    span.ml-3
+      = t('.notification_content', school_name: team.name, days: current_team.destroy_user_data_after || TeamStudent::DESTRUCTION_DAYS)
+  - if team_students.any?
+    = render 'archived_list_filters'
+  .archived-students-list.mt-3
+    = render 'archived_students_list', team_students: team_students

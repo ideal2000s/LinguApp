@@ -1,0 +1,43 @@
+.modal-dialog.modal-dialog-centered role="document" data-controller="user-profile"
+  .modal-content.user-profile-modal-content
+    .modal-header.d-flex
+      h2.modal-title = t('layouts.admin.profile_menu.my_profile')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+        span.font-weight-light aria-hidden="true" == '&times'
+    .modal-body data-target='user-profile.body'
+      = form_for user, url: school_current_profile_path, method: :put, remote: true, html: { id: 'user_update_form' } do |f|
+        = f.label :avatar, t('activerecord.attributes.user.avatar')
+        .form-group.d-flex.upload-container data-upload-container="true"
+          = f.hidden_field :avatar, "data-upload-hidden" => "true", value: ''
+          = file_field_tag nil, accept: "image/svg+xml,image/png", "data-upload" => "image", class: "upload-file"
+          .avatar.avatar-3xl.mr-2 data-upload-preview-container="true" data-target='user-profile.preview'
+            = image_tag(user.avatar_url, class: 'preview img-thumbnail', width: '150px') if user.avatar
+          a.upload-action-button.align-self-center.mr-2 data-upload-trigger="true" = t('.upload_image')
+          div.align-self-center.d-flex data-upload-remove-trigger="true"
+            = f.check_box :remove_avatar, class: '', value: 'true'
+            = f.label :remove_avatar, t('.remove_image'), class: 'align-self-center mb-0 ml-2 remove-action-button'
+        .form-group.d-flex
+          .mr-4
+            = f.label :fname, t('activerecord.attributes.student.fname')
+            = f.text_field :fname, class: 'form-control', required: true
+            = error_for f.object, :fname
+          div
+            = f.label :lname, t('activerecord.attributes.student.lname')
+            = f.text_field :lname, class: 'form-control', required: true
+            = error_for f.object, :lname
+        .form-group
+          = f.label :email, t('email')
+          = f.text_field :email, class: 'form-control', required: true
+          = error_for f.object, :email
+        .form-group
+          - country_code = user.mobile.blank? && current_team.country.present? ? current_team.country : ''
+          = f.label :mobile, t('mobile_number')
+          = f.text_field :mobile, class: 'form-control', 'data-target' => 'user-profile.mobile', 'data-code' => country_code
+          = error_for f.object, :mobile
+        .form-group
+          = f.label :language_scope, t('profiles.profile_form.select_default_language')
+          = f.select :language_scope, options_for_select(Language.active.map {|e| [asset_path("flags/#{language_to_flag_code(e.code)}.svg").to_s + ', ' + e.name, e.id]}, f.object.language_scope), {include_blank: ''}, class: 'form-control select-country', 'data-target' => 'user-profile.language'
+          = error_for f.object, :language_scope
+        .d-flex.action-group
+          button.btn.btn-cancel.ml-auto type='button' data-dismiss="modal" = t('shared.cancel')
+          = f.submit t('save_changes'), class: 'btn btn-primary ml-3'

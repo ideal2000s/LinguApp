@@ -1,0 +1,30 @@
+- set_page_title t('layouts.admin.sidebar.languages')
+
+.card
+  .card-header
+    h3.mb-0
+      = t('.inactive_languages')
+      = " (#{languages.count})"
+  .card-body
+    table.table
+      thead
+        tr
+          th= t('admin.languages.list.language_code')
+          th= t('activerecord.attributes.language.system_name')
+          th= t('name')
+          th= t('.supported')
+          th
+      tbody
+        - languages.each do |language|
+          tr
+            td= language.code
+            td.font-weight-bold= language.system_name
+            td= language.name
+            td
+              - if language.support?
+                i.fas.fa-check-circle.text-success
+              - else
+                i.fas.fa-times-circle.text-warning
+            td
+              - if policy(language).update?
+                = link_to t('edit'), edit_admin_language_path(language), class: 'btn btn-falcon-default btn-sm'

@@ -1,0 +1,3 @@
+$("#reward-modal .modal-body").html("<%= j render partial: 'admin/rewards/item', locals: { reward: reward }%>");
+$("#reward-modal .modal-title").html('<%= reward.name %>');
+$('#reward-modal').modal('show');

@@ -1,0 +1,17 @@
+= form_tag school_current_team_path, method: :put, remote: true
+  .mb-3
+    = label_tag 'privacy_url', t('school.profile.privacy.privacy_url')
+    = text_field_tag 'privacy_url', team.privacy_url, class: 'form-control', autocomplete: 'off', required: true
+  .mb-3
+    = label_tag 'gdpr_contact_name', t('school.profile.privacy.gdpr_contact_name')
+    = text_field_tag 'gdpr_contact_name', team.gdpr_contact_name, class: 'form-control', autocomplete: 'off', required: true
+  .mb-3
+    = label_tag 'destroy_user_data_after', t('school.profile.privacy.destroy_user_after')
+    = text_field_tag 'destroy_user_data_after', team.destroy_user_data_after || 365, class: 'form-control', autocomplete: 'off', required: true
+  .mb-5.text-right
+    = submit_tag t('common.buttons.save'), class: 'btn btn-primary'
+  .gdpr-agreement
+    h5= t('school.profile.privacy.data_processor_agreement')
+    = link_to team.gdpr_agreement_url, class: 'd-inline-flex align-items-center font-weight-bold ml-3' do
+      = image_tag('icons/download.svg', class: 'mr-1')
+      = t('school.profile.privacy.download_signed_agreement')

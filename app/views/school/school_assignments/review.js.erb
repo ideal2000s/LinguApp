@@ -1,0 +1,12 @@
+$("#<%= dom_id(student_assignment) %>").addClass('active').siblings().removeClass('active');
+$('.school-assignment-info').removeClass('d-none');
+$('.school-assignment-details').css('margin-right', '464px');
+$('.school-assignment-info').html("<%= j render 'student_assignment_info', student_assignment: student_assignment, comment: comment, document: document, comments: comments %>");
+
+setAutosize();
+setSchoolCustomSummernote();
+schoolComment();
+schoolQuote();
+schoolAudioRecord();
+ReactRailsUJS.mountComponents();
+preventEmptyCommentFormSubmit("<%= I18n.t('school.school_assignments.form.empty_form_error') %>");

@@ -1,0 +1,13 @@
+- set_page_title t('admin.teams.index.create_new_team')
+
+.card.mb-3
+  .card-header
+    h5.mb-0= t('admin.teams.index.create_new_team')
+  .card-body
+    = form_for team, url: admin_teams_path, html: { id: 'team_form' } do |f|
+      = render partial: 'form', locals: { team: team, f: f }
+
+      .col-12.d-flex.mt-3
+        = f.hidden_field :status, value: :school
+        = f.submit t('create'), class: 'btn btn-primary mr-1'
+        = link_to t('back'), admin_teams_path, class: 'btn btn-falcon-default mr-1'

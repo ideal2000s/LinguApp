@@ -1,0 +1,6 @@
+- lesson.objectives.each_with_index do |objective, i|
+  .card.mb-2
+    .card-body.d-flex.justify-content-between
+      span.font-weight-bold= "#{i + 1}. #{objective}"
+      = button_to remove_objective_teach_lesson_path(lesson, index: i), remote: true, method: :delete, class: 'btn btn-white btn-sm' do
+        i.fas.fa-times.text-danger

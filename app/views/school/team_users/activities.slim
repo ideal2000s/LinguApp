@@ -1,0 +1,8 @@
+- set_page_title team_user.user.full_name
+
+.student-info-container.d-flex.justify-content-between
+  .student-info-details.flex-grow-1
+    = render 'school/team_users/team_user_header', team_user: team_user
+    - if activities.present?
+      = render partial: 'school/activities/activities', locals: { activities: activities }
+  = render 'school/team_users/team_user_profile', team_user: team_user

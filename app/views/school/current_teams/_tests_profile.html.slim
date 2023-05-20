@@ -1,0 +1,30 @@
+= form_tag school_current_team_path, method: :put, remote: true, class: 'text-center'
+  - if team.lingutest_enabled
+    .my-2= image_tag("lingutest_logo.svg", width: 200, height: 160)
+    .mb-4.pl-3.test-module-toggle
+      h4 = t('school.profile.tests.test_module')
+      = hidden_field_tag 'lingutest_enabled', true, data: { target: 'school-profile.enabledTest' }
+      .form-group
+        .custom-control.custom-switch
+          = check_box_tag :lingutest_enabled_check, '1', team.lingutest_enabled, class: 'custom-control-input', data: { action: 'change->school-profile#enabledTestChanged', on: t('school.profile.tests.enabled'), off: t('school.profile.tests.disabled') }
+          = label_tag :lingutest_enabled_check, t('school.profile.tests.enabled'), class: 'custom-control-label', data: { target: 'school-profile.enabledTestCheck' }
+    .mb-3.enable-test-note.pl-3.text-left
+      p.mb-3= t('school.profile.tests.enable_test_note')
+      p
+        = t('school.profile.tests.pay_note')
+        =< t('school.profile.tests.service_provider_note')
+    = submit_tag t('common.buttons.save'), class: 'btn btn-primary float-right'
+  - else
+    .mt-2.mb-2= image_tag("lingutest_logo.svg", width: 200, height: 160)
+    .mb-3.enable-test-note
+      p.mb-3= t('school.profile.tests.enable_test_note')
+      p
+        = t('school.profile.tests.pay_note')
+        =< t('school.profile.tests.service_provider_note')
+    .agree-testing-service.d-flex.justify-content-center.align-items-center.mb-3
+      = check_box_tag :agree_service, '1', false, class: 'mr-2', data: { action: 'change->school-profile#agreeTermsAndConditionsChanged' }
+      == t('school.profile.tests.agree_to_terms', link: link_to(t('school.profile.tests.terms_and_conditions'), "https://lingutesten.no/betingelser", target: '_blank', class: 'ml-1 mr-1'))
+      = hidden_field_tag 'lingutest_enabled', true
+    .enable-test-btn
+      = submit_tag t('school.profile.tests.enable_test'), class: 'btn btn-primary btn-lg', disabled: 'disabled', data: { target: 'school-profile.enableTestBtn' }
+

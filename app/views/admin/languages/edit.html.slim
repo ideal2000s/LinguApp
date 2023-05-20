@@ -1,0 +1,53 @@
+- set_page_title language.system_name
+
+.card.mb-3
+  .card-header
+    h5.mb-0= t('.edit_language', name: language.system_name + " (#{language.code})")
+  = form_for language, url: admin_language_path(language), method: :patch, html: { id: 'language_form' } do |f|
+    .card-body.bg-light
+      .form-group
+        - enabled_locales.each_with_index do |locale, i|
+          .row.align-items-center
+            .col-1
+              = image_tag("flags/#{language_to_flag_code(locale.to_s)}.svg", style: 'height: 15px;')
+            .col-5
+              .form-groups
+                = f.label :"name_#{locale.to_s}", t('name'),
+                        class: "form-control-label #{ locale == :en ? 'required' : '' }"
+                = f.text_field "name_#{locale.to_s}", class: 'form-control', autocomplete: 'off'
+                = error_for f.object, :name
+            .col-5
+              .form-group
+                = f.label :"slug_#{locale.to_s}", 'URL',
+                        class: "form-control-label #{ locale == :en ? 'required' : '' }"
+                = f.text_field "slug_#{locale.to_s}", class: 'form-control'
+                = error_for f.object, :slug
+      .form-group
+        .custom-control.custom-switch
+          = f.check_box :active, class: 'custom-control-input'
+          = f.label :active, t('.available_as_target_language'), class: 'custom-control-label'
+        .custom-control.custom-switch
+          = f.check_box :support, class: 'custom-control-input'
+          = f.label :support, t('.available_for_support'), class: 'custom-control-label'
+        .custom-control.custom-switch
+          = f.check_box :restricted, class: 'custom-control-input'
+          = f.label :restricted, t('.restricted'), class: 'custom-control-label'
+      .form-group
+        = f.label :translation_note, t('.localization_note')
+        = f.text_area :translation_note, rows: 5, class: 'form-control'
+        = error_for f.object, :translation_note
+      .form-group
+        = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+        = link_to t('back'), admin_languages_path, class: 'btn btn-falcon-default mr-1'
+
+  .card-footer
+    .form-group
+      .row
+        .col-sm-12.col-md-8
+          h3.font-weight-bold.mb-3= t('special_characters')
+          = form_with scope: :language, url: add_character_admin_language_path(language), method: :post, html: {id: 'add_character_form'} do |f|
+            .row.mb-3
+              .col-sm-7= f.text_field :character, class: 'form-control'
+              .col-sm-5= f.submit t('.add_character'), class: 'btn btn-falcon-default btn-block'
+          #characters
+            = render 'characters', language: language

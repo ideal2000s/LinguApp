@@ -1,0 +1,10 @@
+- set_page_title t('.title')
+
+.content
+  .row
+    .col-lg-12
+      .card.mb-3
+        .card-header
+          h2= t('.title')
+        .card-body
+          = render partial: 'form', locals: { post: post, lessons: lessons }

@@ -1,0 +1,12 @@
+$("#edit-student-modal").find(".modal-content").html("<%= j render 'form', path: school_student_path(student), student: student, method: :put, action_name: 'edit' %>");
+$("#edit-student-modal").modal('show');
+setIntlTelInput();
+$("#edit-student-modal .select2").select2({ theme: 'bootstrap4', dropdownParent: $('#edit-student-modal .modal-content'), minimumResultsForSearch: -1 })
+
+$(document).on('click', '.active-status', function () {
+  $(this).closest('.student-language-info').find('.active-status').removeClass('active').addClass('inactive')
+    .find('input[type=hidden]').val(false).end()
+    .find('span').text($(this).data('scope') === 'target' ? "<%= t('school.team_students.form.inactive') %>" : "<%= t('school.team_students.form.nonnative') %>");
+  $(this).removeClass('inactive').addClass('active').find('input[type=hidden]').val(true).end()
+    .find('span').text($(this).data('scope') === 'target' ? "<%= t('school.team_students.form.active') %>" : "<%= t('school.team_students.form.native') %>");
+})

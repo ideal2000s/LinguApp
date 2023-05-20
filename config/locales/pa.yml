@@ -1,0 +1,614 @@
+---
+pa:
+  course_mailer:
+    course_assigned_notification:
+      button: ਕੋਰਸ ਸ਼ੁਰੂ ਕਰੋ
+      click_start_lesson: "'ਸਬਕ ਅਰੰਭ ਕਰੋ' ਤੇ ਕਲਿਕ ਕਰੋ"
+      follow_course_link: ਕੋਰਸ ਖੋਲ੍ਹਣ ਲਈ ਬਟਨ ਤੇ ਕਲਿਕ ਕਰੋ
+      footer_text: ਹਰ ਰੋਜ਼ ਕੁਝ ਨਵਾਂ ਸਿੱਖਣ ਲਈ ਲੈਂਗੂ ਤੇ ਵਾਪਸ ਆਓ!
+      get_started_line: 'ਤੁਸੀਂ ਕਿਵੇਂ ਸ਼ੁਰੂਆਤ ਕਰਦੇ ਹੋ ਇਹ ਇੱਥੇ ਹੈ:'
+      notification_link: ਸੂਚਨਾ ਸੈਟਿੰਗਜ਼
+      open_lesson: ਪਹਿਲਾ ਪਾਠ ਖੋਲ੍ਹੋ
+      or_paste_this_link: ਜਾਂ ਇਸ ਲਿੰਕ ਨੂੰ ਆਪਣੇ ਬ੍ਰਾ .ਜ਼ਰ ਵਿੱਚ ਚਿਪਕਾਓ
+      sign_in_with_email: ਆਪਣੇ ਈਮੇਲ ਪਤੇ ਨਾਲ ਲੌਗ ਇਨ ਕਰੋ (%{email})
+      support_link: ਸਹਾਇਤਾ
+      title: "%{course} ਨਾਲ ਸ਼ੁਰੂ ਕਰਨਾ"
+    new_document_comment:
+      author_text: "%{author} ਨੇ ਤੁਹਾਡੇ ਕੰਮ ਦੀ ਸਮੀਖਿਆ ਛੱਡ ਦਿੱਤੀ ਹੈ"
+      button_text: ਇਸ ਦੀ ਜਾਂਚ ਕਰੋ
+      button_url_helper: 'ਜਾਂ ਇਸ ਲਿੰਕ ਨੂੰ ਆਪਣੇ ਬ੍ਰਾ browserਜ਼ਰ ਵਿੱਚ ਚਿਪਕਾਓ:'
+      footer_text: ਸਿੱਖਣ ਲਈ ਬਹੁਤ ਕੁਝ ਹੋਰ ਹੈ ...
+      notification_link: ਸੂਚਨਾ ਸੈਟਿੰਗਜ਼
+      subject_line: ਨਵੀਂ ਜ਼ਿੰਮੇਵਾਰੀ ਟਿੱਪਣੀ
+      support_link: ਸਹਾਇਤਾ
+    otp:
+      ignore_msg: ਜੇ ਤੁਸੀਂ ਇਹ ਬੇਨਤੀ ਨਹੀਂ ਕੀਤੀ, ਸਿਰਫ ਈਮੇਲ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਕਰੋ.
+      subject_line: Lingu ਲਈ ਤੁਹਾਡਾ ਵਿਲੱਖਣ ਕੋਡ
+      unique_code_for_lingu: ਇਹ Lingu ਲਈ ਤੁਹਾਡਾ ਵਿਲੱਖਣ ਕੋਡ ਹੈ
+  frontend:
+    auth:
+      already_have_acc_question: ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਕੋਈ ਖਾਤਾ ਹੈ?
+      back: ਵਾਪਸ
+      back_to_sign_in: ਸਾਈਨ ਇਨ ਤੇ ਵਾਪਸ ਜਾਓ
+      check_your_email_for_a_code: ਆਪਣੇ ਕੋਡ ਲਈ ਆਪਣੀ ਈਮੇਲ ਵੇਖੋ
+      continue: ਜਾਰੀ ਰੱਖੋ
+      continue_with_email: ਈਮੇਲ ਨਾਲ ਜਾਰੀ ਰੱਖੋ
+      continue_with_provider: "%{provider} ਨਾਲ ਜਾਰੀ ਰੱਖੋ"
+      did_not_receive_a_code: ਕੋਈ ਕੋਡ ਨਹੀਂ ਮਿਲਿਆ?
+      email_address: ਈਮੇਲ ਖਾਤਾ
+      first_name: ਪਹਿਲਾ ਨਾਂ
+      get_unique_code: ਇੱਕ ਵਿਲੱਖਣ ਲੌਗਿਨ ਕੋਡ ਪ੍ਰਾਪਤ ਕਰੋ
+      join_lingu: Lingu ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ
+      last_name: ਆਖੀਰਲਾ ਨਾਂਮ
+      more_login_options: ਹੋਰ ਲੌਗਇਨ ਵਿਕਲਪ
+      no_account_question: ਕੀ ਤੁਹਾਡਾ ਕੋਈ ਖਾਤਾ ਨਹੀਂ ਹੈ?
+      or: ਜਾਂ
+      resend_code: ਕੋਡ ਦੁਬਾਰਾ ਭੇਜੋ
+      sign_in: ਸਾਈਨ - ਇਨ
+      sign_up: ਸਾਇਨ ਅਪ
+      want_to_receive_marketing_messages: ਮੈਂ ਲੈਂਗੂ ਤੋਂ ਮਾਰਕੀਟਿੰਗ ਸੰਦੇਸ਼ ਪ੍ਰਾਪਤ ਕਰਨਾ
+        ਚਾਹੁੰਦਾ ਹਾਂ
+      we_ve_sent_a_code: >-
+        ਅਸੀਂ <strong> {{ਈਮੇਲ} </ strong> 'ਤੇ 6-ਅੰਕਾਂ ਦਾ ਕੋਡ ਭੇਜਿਆ ਹੈ. ਕੋਡ ਦੀ ਮਿਆਦ
+        15 ਮਿੰਟਾਂ ਵਿੱਚ ਖਤਮ ਹੋ ਰਹੀ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਜਲਦੀ ਦਾਖਲ ਕਰੋ.
+    cookie_agreement:
+      agree: ਸਹਿਮਤ
+      condition: >-
+        ਅਸੀਂ ਸਾਈਟ ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨ ਅਤੇ ਨਿੱਜੀ ਸਮਗਰੀ ਨੂੰ ਪ੍ਰਦਾਨ ਕਰਨ ਲਈ
+        ਕੂਕੀਜ਼ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ. "ਸਹਿਮਤ" ਤੇ ਕਲਿਕ ਕਰਕੇ, ਤੁਸੀਂ ਸਾਡੀਆਂ ਸ਼ਰਤਾਂ ਨਾਲ ਸਹਿਮਤ
+        ਹੋ.
+    course:
+      accredited_course_provider: ਪ੍ਰਵਾਨਿਤ ਕੋਰਸ ਪ੍ਰਦਾਤਾ
+      apply: ਲਾਗੂ ਕਰੋ
+      apply_filters: ਫਿਲਟਰ ਲਾਗੂ ਕਰੋ
+      by: ਨਾਲ
+      cancel: ਰੱਦ ਕਰੋ
+      categories: "%{count} ਸ਼੍ਰੇਣੀਆਂ"
+      category: ਸ਼੍ਰੇਣੀ
+      clear: ਸਾਫ
+      clear_filters: ਫਿਲਟਰ ਸਾਫ਼ ਕਰੋ
+      contact_us: ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ
+      could_not_find_match_for: ਮੁਆਫ ਕਰਨਾ, ਸਾਨੂੰ ਇਸ ਲਈ ਕੋਈ ਮੇਲ ਨਹੀਂ ਮਿਲ ਸਕਿਆ
+      course_language: ਕੋਰਸ ਦੀ ਭਾਸ਼ਾ
+      duration: ਅਵਧੀ
+      filter_settings:
+        categories:
+          academic: ਅਕਾਦਮਿਕ
+          business: ਕਾਰੋਬਾਰ
+          fashion: ਫੈਸ਼ਨ
+          food_drink: ਭੋਜਨ ਅਤੇ ਪੀ
+          for_kids: ਬੱਚਿਆਂ ਲਈ
+          general: ਜਨਰਲ
+          health: ਸਿਹਤ
+          legal: ਕਾਨੂੰਨੀ
+          sport: ਖੇਡ
+          travel: ਯਾਤਰਾ
+        durations:
+          t0_600: "<10 ਮਿੰਟ"
+          t1800_3600: 30-60 ਮਿੰਟ
+          t3600_86400: 1+ ਘੰਟੇ
+          t600_1800: 10-30 ਮਿੰਟ
+        focus_on:
+          conversation: ਗੱਲਬਾਤ
+          grammar: ਵਿਆਕਰਣ
+          listening: ਸੁਣ ਰਿਹਾ ਹੈ
+          pronunciation: ਉਚਾਰਨ
+          reading: ਪੜ੍ਹ ਰਿਹਾ ਹੈ
+          speaking: ਬੋਲ ਰਿਹਾ
+          writing: ਲਿਖਣਾ
+        levels:
+          long:
+            advanced: ਐਡਵਾਂਸਡ ਲੈਵਲ
+            elementary: ਐਲੀਮੈਂਟਰੀ ਪੱਧਰ
+            intermediate: ਵਿਚਕਾਰਲਾ ਪੱਧਰ
+            no_knowledge: ਕੋਈ ਗਿਆਨ ਨਹੀਂ
+            pre_intermediate: ਪੂਰਵ ਵਿਚਕਾਰਲਾ ਪੱਧਰ
+            upper_intermediate: ਅੱਧ ਵਿਚਕਾਰਲਾ ਪੱਧਰ
+          short:
+            advanced: ਐਡਵਾਂਸਡ
+            beginner: ਸ਼ੁਰੂਆਤ ਕਰਨ ਵਾਲਾ
+            intermediate: ਵਿਚਕਾਰਲਾ
+        sort_by:
+          most_rated: ਜ਼ਿਆਦਾ ਦਰਜਾ ਦਿੱਤਾ ਗਿਆ
+          newest: ਨਵੀਨਤਮ
+          popularity: ਪ੍ਰਸਿੱਧੀ
+      filters: ਫਿਲਟਰ
+      focus_on: ਉੱਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ
+      focus_on_title: ਮੈਂ ਧਿਆਨ ਕੇਂਦਰਤ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹਾਂ
+      hide_lessons: ਸਬਕ ਲੁਕਾਓ
+      hours: ਘੰਟੇ
+      i_understand: ਮੈਂ ਸੱਮਝਦਾ ਹਾਂ
+      i_want_to_learn: ਮੈਂ ਸਿੱਖਣਾ ਚਾਹੁੰਦਾ ਹਾਂ
+      in_language: "%{language} ਵਿੱਚ"
+      language: ਭਾਸ਼ਾ
+      learn_more: ਜਿਆਦਾ ਜਾਣੋ
+      less_settings: ਘੱਟ ਸੈਟਿੰਗਾਂ
+      lessons: ਸਬਕ
+      lessons_available: "%{number} ਪਾਠ ਉਪਲਬਧ ਹਨ"
+      lessons_catalog_page_subtitle: ਭਾਸ਼ਾ ਦੇ ਨਾਇਕ ਬਣੋ.
+      lessons_catalog_page_title: ਇੱਕ ਭਾਸ਼ਾ ਦੇ ਕੋਰਸ ਦੇ ਨਾਲ ਆਪਣੇ ਦ੍ਰਿਸ਼ਾਂ ਦਾ ਵਿਸਤਾਰ
+        ਕਰੋ
+      level: ਪੱਧਰ
+      min: ਮਿਨ
+      more_settings: ਹੋਰ ਸੈਟਿੰਗਾਂ
+      navbar:
+        close: ਮੀਨੂੰ ਬੰਦ ਕਰੋ
+        menu: ਮੀਨੂ
+        select_language: ਭਾਸ਼ਾ ਚੁਣੋ
+      need_to_buy_course: ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਇੱਕ ਕੋਰਸ ਬੁੱਕ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ
+      no_description: ਕੋਈ ਵੇਰਵਾ ਪ੍ਰਦਾਨ ਨਹੀਂ ਕੀਤਾ ਗਿਆ
+      no_results: ਮੁਆਫ ਕਰਨਾ, ਸਾਨੂੰ ਇਸ ਲਈ ਕੋਈ ਮੇਲ ਨਹੀਂ ਮਿਲ ਸਕਿਆ
+      or: ਜਾਂ
+      per_month: ਪ੍ਰਤੀ ਮਹੀਨਾ
+      plans: ਯੋਜਨਾਵਾਂ
+      privacy_policy: ਪਰਾਈਵੇਟ ਨੀਤੀ
+      rating: ਰੇਟਿੰਗ
+      remove_all_filters: ਸਾਰੇ ਫਿਲਟਰ ਹਟਾਓ
+      reviews: ਸਮੀਖਿਆਵਾਂ
+      save: ਸੇਵ
+      search: ਖੋਜ
+      select_dots: ਚੁਣੋ ...
+      select_languages: ਲੰਗੇਜਾਂ ਦੀ ਚੋਣ ਕਰੋ
+      select_num_languages: ਜ਼ੇਕਸਜੈਕਸਜ਼ੈਕਸ0 ਭਾਸ਼ਾਵਾਂ ਚੁਣੋ
+      short_levels:
+        a1: ਏ 1
+        a2: ਏ 2
+        b1: ਬੀ 1
+        b2: ਬੀ 2
+        c1: ਸੀ 1
+        c2: ਸੀ 2
+        zero_level: ਏ0
+      show_all: ਸਾਰੇ ਦਿਖਾਓ
+      show_all_lessons: ਸਾਰੇ ਸਬਕ ਦਿਖਾਓ
+      show_lessons: "%{number} ਪਾਠ ਦਿਖਾਓ"
+      show_more: ਹੋਰ ਦਿਖਾਓ
+      sign_up_with_lingu_for: ਲਈ ਲੈਂਗੂ ਨਾਰਵੇ ਨਾਲ ਸਾਈਨ ਅਪ ਕਰੋ
+      skills: "%{count} ਹੁਨਰ"
+      sort_by: ਦੇ ਨਾਲ ਕ੍ਰਮਬੱਧ
+      start_typing_here: ਇਥੇ ਟਾਈਪ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ
+      teach: ਸਿਖਾਓ
+      terms_and_conditions: ਨਿਬੰਧਨ ਅਤੇ ਸ਼ਰਤਾਂ
+      time_range: ਸਮਾਂ ਸੀਮਾ
+      try_adjusting_your_search: ਆਪਣੇ ਫਿਲਟਰਾਂ ਨੂੰ ਬਦਲ ਕੇ ਆਪਣੀ ਖੋਜ ਨੂੰ ਵਿਵਸਥਤ ਕਰਨ ਦੀ
+        ਕੋਸ਼ਿਸ਼ ਕਰੋ
+      try_this_course: ਇਸ ਕੋਰਸ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ
+      website_language: ਵੈੱਬਸਾਈਟ ਭਾਸ਼ਾ
+      words: ਸ਼ਬਦ
+    games:
+      finished:
+        go_to_next_exercise: ਬਹੁਤ ਖੂਬ! ਅਗਲੀ ਕਸਰਤ ਤੇ ਜਾਓ
+      flashcard:
+        buttons:
+          finish: ਮੁਕੰਮਲ
+          next: ਅਗਲਾ
+          previous: ਪਿਛਲਾ
+        check_out_new_words: ਨਵੇਂ ਸ਼ਬਦਾਂ ਦੀ ਜਾਂਚ ਕਰੋ ਜੋ ਤੁਸੀਂ ਇਸ ਪਾਠ ਵਿਚ ਸਿੱਖੋਗੇ
+        frequency_of_word_usage: "%{language} ਵਿੱਚ ਸ਼ਬਦ ਦੀ ਵਰਤੋਂ ਦੀ ਬਾਰੰਬਾਰਤਾ"
+        keep_practice_to_learn_all_words: "%{count} ਸ਼ਬਦਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰੋ ਅਤੇ ਆਓ ਕੁਝ
+          ਗੇਮਜ਼ ਖੇਡੀਏ!"
+        word_frequency:
+          level1: ਘੱਟ ਵਰਤੋਂ ਕੀਤੀ ਜਾਂਦੀ ਹੈ
+          level2: ਘੱਟ ਵਰਤੋਂ ਕੀਤੀ ਜਾਂਦੀ ਹੈ
+          level3: ਸ਼ਬਦ ਦੀ ਬਾਰੰਬਾਰਤਾ - ਦਰਮਿਆਨੀ
+          level4: ਸ਼ਬਦ ਦੀ ਬਾਰੰਬਾਰਤਾ - ਦਰਮਿਆਨੀ
+          level5: ਆਮ
+          level6: ਬਹੁਤ ਆਮ
+      match_word:
+        click_and_move_each_word_to_counterpart: ਕਲਿਕ ਕਰੋ ਅਤੇ ਹਰ ਇੱਕ ਸ਼ਬਦ ਨੂੰ ਇਸਦੇ
+          ਹਮਰੁਤਬਾ ਵਿੱਚ ਭੇਜੋ
+        start_heading: ਜੋੜਾ ਬਣਾਉਣ ਲਈ ਸ਼ਬਦਾਂ ਦਾ ਮੇਲ ਕਰੋ
+        time_is_up: ਸਮਾਂ ਪੂਰਾ!
+      skip_tutorial: ਛੱਡੋ
+      time_is_up: ਸਮਾਂ ਪੂਰਾ!
+      word_nodes:
+        match_letters_to_form_word: ਇੱਕ ਸ਼ਬਦ ਬਣਾਉਣ ਲਈ ਅੱਖਰਾਂ ਦਾ ਮੇਲ ਕਰੋ
+      word_waterfall:
+        do_not_hesitate: ਆਓ ਗਤੀ ਕਰੀਏ!
+        go_to_next_exercise: ਅਗਲੀ ਕਸਰਤ ਤੇ ਜਾਓ
+        select_correct_translation: ਸਹੀ ਮੈਚ ਚੁਣੋ
+        well_done: ਬਹੁਤ ਖੂਬ!
+    home_page:
+      hello: ਸਤ ਸ੍ਰੀ ਅਕਾਲ,
+      popular_lessons: ਪ੍ਰਸਿੱਧ ਸਬਕ
+      show_more: ਹੋਰ ਦਿਖਾਓ
+      time: "%{count} ਮਿੰਟ"
+      today_lesson: ਤੁਹਾਡੇ ਲਈ ਅੱਜ ਦਾ ਸਬਕ
+      user_name: "%{name}!"
+      words: "%{count} ਸ਼ਬਦ"
+    idle_screen:
+      by_author: "%{authorName} ਦੁਆਰਾ"
+      continue_lesson: ਪਾਠ ਜਾਰੀ ਰੱਖੋ
+      exit: ਨਿਕਾਸ
+      idle_message: ਤੁਸੀਂ ਕੁਝ ਸਮੇਂ ਲਈ ਵਿਹਲੇ ਹੋ ...
+    lesson_page:
+      back_to_course_page: ਕੋਰਸ ਪੇਜ ਤੇ ਵਾਪਸ
+      close: ਬੰਦ ਕਰੋ
+      continue_lesson: ਪਾਠ ਜਾਰੀ ਰੱਖੋ
+      followed: ਦੀ ਪਾਲਣਾ ਕੀਤੀ
+      hamburger_menu_btn: ਹੈਮਬਰਗਰ ਮੇਨੂ
+      lesson_given: ਸਬਕ
+      not_started: ਸ਼ੁਰੂ ਨਹੀ ਕੀਤਾ
+      or: ਜਾਂ
+      part_complete: "%{percent}% ਪੂਰਾ"
+      restart_lesson: ਮੁੜ ਚਾਲੂ ਕਰੋ
+      section_check: ਚੈਕ
+      section_check_info: "%{count} ਟੈਸਟ"
+      section_learn: ਸਿੱਖੋ
+      section_learn_info: "%{count} ਮਿੰਟ ਦੇਖਣ ਅਤੇ ਪੜ੍ਹਨ ਲਈ"
+      section_play: ਖੇਡੋ
+      section_play_info: ਅਭਿਆਸ ਕਰਨ ਲਈ %{count} ਸ਼ਬਦ
+      start_lesson: ਪਾਠ ਸ਼ੁਰੂ ਕਰੋ
+      step_progress: "%{percent}%"
+      subscribe: ਅਨੁਸਰਣ ਕਰੋ
+      subscribed: ਦੀ ਪਾਲਣਾ ਕੀਤੀ
+      subscribers: ਚੇਲੇ
+      time_min: "%{minutesNumber} ਮਿੰਟ"
+      unsubscribe: ਅਣਜਾਣ
+      webview_error_title: ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ...
+      words_number: "%{wordsNumber} ਨਵੇਂ ਸ਼ਬਦ"
+    lesson_task:
+      cancel_button: ਰੱਦ ਕਰੋ
+      check:
+        navigation_next: ਅਗਲਾ
+        navigation_previous: ਪਿਛਲਾ
+        navigation_skip: ਛੱਡੋ
+      controls_panel:
+        font_size_button: ਫੋਂਟ ਅਕਾਰ
+        high_contrast_button:
+          origin: ਉੱਚ ਵਿਪਰੀਤ
+          short: ਇਸ ਦੇ ਉਲਟ
+        hints_button: ਸੰਕੇਤ
+        music_playback_button:
+          origin: ਸੰਗੀਤ ਪਲੇਅਬੈਕ
+          short: ਸੰਗੀਤ
+        sound_effects_button:
+          origin: ਧੁਨੀ ਪ੍ਰਭਾਵ
+          short: ਆਵਾਜ਼
+      exit_button: ਨਿਕਾਸ
+      finish_button: ਮੁਕੰਮਲ
+      finished:
+        back_to_learn: ਵਾਪਸ ਸਿੱਖਣ ਲਈ
+        back_to_lesson_page: ਪਾਠ ਦੇ ਪੇਜ ਤੇ ਵਾਪਸ
+        back_to_results_page: ਨਤੀਜਾ ਪੇਜ 'ਤੇ ਵਾਪਸ
+        bad_result_message: ਹੰ ... ਇਕ ਵਾਰ ਫਿਰ ਸਬਕ ਲੈਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ
+        close_lesson: ਪਾਠ ਬੰਦ ਕਰੋ
+        correct_answers_list: ਸਹੀ ਜਵਾਬਾਂ ਦੀ ਸੂਚੀ
+        good_result_message: ਮੈਂ ਵੇਖ ਸਕਦਾ ਹਾਂ ਤੁਸੀਂ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਹੈ!
+        great_result_message: ਬਹੁਤ ਖੂਬ! ਇਹ ਵਧੀਆ ਨਤੀਜੇ ਹਨ!
+        next_course_lesson: ਕੋਰਸ ਵਿਚ ਅਗਲੇ ਪਾਠ ਤੇ ਜਾਓ
+        no_results: ਤੁਹਾਡੇ ਕੋਲ ਅਜੇ ਕੋਈ ਟੈਸਟ ਨਤੀਜੇ ਨਹੀਂ ਹਨ
+        no_results_text: ਕਿਰਪਾ ਕਰਕੇ ਪਾਠ ਨੂੰ ਪੂਰਾ ਕਰੋ ਅਤੇ ਨਤੀਜੇ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਟੈਸਟ
+          ਪਾਸ ਕਰੋ
+        see_correct_answers_list: ਸਹੀ ਜਵਾਬਾਂ ਦੀ ਸੂਚੀ ਵੇਖੋ
+        train_more: ਵਧੇਰੇ ਅਭਿਆਸ ਕਰੋ ਅਤੇ ਅਗਲੀ ਵਾਰ ਤੁਸੀਂ ਵਧੀਆ ਨਤੀਜੇ ਪ੍ਰਾਪਤ ਕਰੋਗੇ!
+        you_finished_lesson: ਮਹਾਨ! ਤੁਸੀਂ ਪਾਠ ਪੂਰਾ ਕੀਤਾ
+      go_back: ਵਾਪਸ ਜਾਓ
+      next_button: ਅਗਲਾ
+      not_available_task: ਇਹ ਕੰਮ ਅਜੇ ਉਪਲਬਧ ਨਹੀਂ ਹੈ
+      start_button: ਸ਼ੁਰੂ ਕਰੋ
+      tasks:
+        check:
+          assignment:
+            accept: ਸਵੀਕਾਰ ਕਰੋ
+            author_will_check_your_answer: >-
+              %{author} ਤੁਹਾਡੇ ਜਵਾਬਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰੇਗਾ ਅਤੇ ਆਮ ਤੌਰ 'ਤੇ 1-2 ਦਿਨਾਂ ਦੇ
+              ਅੰਦਰ ਅੰਦਰ ਫੀਡਬੈਕ ਦੇਵੇਗਾ
+            continue_writing: ਲਿਖਣਾ ਜਾਰੀ ਰੱਖੋ
+            copy: ਕਾੱਪੀ
+            delete: ਮਿਟਾਓ
+            delete_record: ਰਿਕਾਰਡ ਮਿਟਾਓ
+            edit: ਸੰਪਾਦਿਤ ਕਰੋ
+            essay_does_not_have_enough_words: >-
+              ਤੁਹਾਡੇ ਜਵਾਬ ਵਿੱਚ ਘੱਟੋ ਘੱਟ %{minWordsNumber} ਸ਼ਬਦ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ. ਤੁਹਾਡਾ
+              ਜਵਾਬ ਇਸ ਵੇਲੇ %{currentWordsNumber} ਸ਼ਬਦ ਹੈ.
+            followers_count: "%{followersCount} ਅਨੁਯਾਈ"
+            lessons_count: "%{lessonsCount} ਪਾਠ"
+            minimal_recording_time: ਘੱਟੋ ਘੱਟ ਰਿਕਾਰਡਿੰਗ ਸਮਾਂ - %{minimalRecordingTime}
+            minimum_characters_amount: ਘੱਟੋ ਘੱਟ ਅੱਖਰ - %{minimumCharactersAmount}
+            minimum_words_amount: ਘੱਟੋ ਘੱਟ ਸ਼ਬਦ - %{minimumAmount}
+            record_again: ਦੁਬਾਰਾ ਰਿਕਾਰਡ ਕਰੋ
+            record_voice: ਆਵਾਜ਼ ਰਿਕਾਰਡ ਕਰੋ
+            send_anyway: ਫਿਰ ਵੀ ਭੇਜੋ
+            send_to_review: ਸਮੀਖਿਆ ਲਈ ਭੇਜੋ
+            skip: ਛੱਡੋ
+            too_short_answer: ਬਹੁਤ ਛੋਟਾ ਜਵਾਬ
+            type_your_answer: ਆਪਣਾ ਜਵਾਬ ਲਿਖੋ
+            unknown_task_type: ਅਣਜਾਣ ਕਾਰਜ ਕਿਸਮ
+            upgrade_licence: ਅਪਗ੍ਰੇਡ ਲਾਇਸੈਂਸ
+            upgrade_your_plan: ਅਧਿਆਪਕਾਂ ਦੀਆਂ ਸਮੀਖਿਆਵਾਂ ਨਾਲ ਅਸਾਈਨਮੈਂਟ ਅਜ਼ਮਾਉਣ ਲਈ ਆਪਣੀ
+              ਯੋਜਨਾ ਨੂੰ ਅਪਗ੍ਰੇਡ ਕਰੋ
+            upload_files: ਫਾਈਲਾਂ ਅਪਲੋਡ ਕਰੋ
+            write_essay: ਲੇਖ ਲਿਖੋ
+            you_have_used_amount_of_assignments: ਤੁਸੀਂ %{amountOfAssignments} ਅਸਾਈਨਮੈਂਟ
+              ਕ੍ਰੈਡਿਟ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਹੈ
+          fill_in_blanks:
+            sentence_gap: ਵਾਕ ਪਾੜਾ
+          fill_in_table:
+            column_answer_placeholder: ਜਵਾਬ
+            column_question_placeholder: ਪ੍ਰਸ਼ਨ
+            example: ਉਦਾਹਰਣ
+          true_false:
+            'false': ਗਲਤ
+            'true': ਸਚੁ
+        learn:
+          translatable_text:
+            show_original: ਅਸਲੀ ਦਿਖਾਓ
+            translate_into: ਗੂਗਲ ਦੇ ਨਾਲ %{languageName} ਵਿੱਚ ਅਨੁਵਾਦ ਕਰੋ
+            translate_into_your_lang: ਗੂਗਲ ਨਾਲ ਆਪਣੀ ਭਾਸ਼ਾ ਵਿਚ ਅਨੁਵਾਦ ਕਰੋ
+        play:
+          arrange_words:
+            start_screen:
+              heading: ਦਿੱਤੇ ਸ਼ਬਦਾਂ ਵਿਚੋਂ ਇਕ ਵਾਕ ਬਣਾਓ
+          audition:
+            start_screen:
+              heading: ਆਡੀਓ ਸੁਣੋ ਅਤੇ ਉਸ ਸ਼ਬਦ 'ਤੇ ਟੈਪ ਕਰੋ ਜੋ ਤੁਸੀਂ ਹੁਣੇ ਸੁਣਿਆ ਹੈ
+          dictation:
+            get_help: ਮਦਦ ਲਵੋ
+            i_do_not_know: ਮੈਨੂੰ ਨਹੀਂ ਪਤਾ
+            input_placeholder: ਜੋ ਤੁਸੀਂ ਇੱਥੇ ਸੁਣਿਆ ਹੈ ਉਹ ਦਰਜ ਕਰੋ
+            start_screen:
+              heading: ਸੁਣੋ ਅਤੇ ਲਿਖੋ ਜੋ ਤੁਸੀਂ ਸੁਣਦੇ ਹੋ
+          fill_gap:
+            start_screen:
+              heading: ਸ਼ਬਦ ਅਤੇ ਇਸਦੇ ਅਰਥਾਂ ਨੂੰ ਮੇਲ ਕਰੋ
+          finish_screen:
+            go_to_next_exercise: ਬਹੁਤ ਖੂਬ! ਅਗਲੀ ਕਸਰਤ ਤੇ ਜਾਓ
+          image_hotspot:
+            start_screen:
+              heading: ਤਸਵੀਰ ਵਿਚਲੀਆਂ ਵਸਤੂਆਂ ਦਾ ਸਹੀ ਨਾਮ ਦਿਓ
+          image_object:
+            start_screen:
+              heading: ਅਗਲੀ ਤਸਵੀਰ ਤੋਂ ਸਹੀ ਵਸਤੂ ਚੁਣੋ
+          inline_dropdown:
+            start_screen:
+              heading: ਉਹ ਵਾਕ ਚੁਣੋ ਜੋ ਵਾਕ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੈ
+          mark_word:
+            start_screen:
+              heading: ਟੈਕਸਟ ਨੂੰ ਪੜ੍ਹੋ ਅਤੇ ਉਹ ਸ਼ਬਦ ਚੁਣੋ ਜੋ ਚਿੱਤਰ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੈ
+          minimal_pairs:
+            start_screen:
+              heading: ਵੀਡੀਓ ਦੇਖੋ ਅਤੇ ਸਹੀ ਵਿਕਲਪ ਚੁਣੋ
+    locale:
+      currency_switcher_title: ਮੁਦਰਾ ਸਵਿੱਚਰ
+      lang_switcher_title: ਭਾਸ਼ਾ ਬਦਲਣ ਵਾਲਾ
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ਡਯੂਸ਼ੇ
+        el: Greek
+        en: ਅੰਗਰੇਜ਼ੀ
+        eo: Esperanto
+        es: ਐਸਪੋਲ
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ਫ੍ਰਾਂਸਾਇਸ
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ਇਤਾਲਵੀ
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: ਲਿਟੂਵੀਅ ਕਲਬਾ
+        lv: ਲਾਤਵੀਯੂ ਵਲੌਡਾ
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: ਨੌਰਸਕ
+        ne: Nepali
+        nl: ਨੀਡਰਲੈਂਡਜ਼
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: ਪੋਲਸਕੀ
+        ps: Pashto
+        pt: ਪੋਰਟੁਗਸ
+        ro: ਲਿਮਬਾ ਰੋਮਨੀ
+        ru: К язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af ਸੋਮਾਲੀ
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: ਕੀਸਵਾਹਿਲੀ
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: ਟਰਕੀ
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ਆਡੀਓ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ
+        aria_pause_button: ਰੋਕੋ
+        aria_play_button: ਖੇਡੋ
+        aria_reload_button: ਮੁੜ ਲੋਡ ਕਰੋ
+        aria_stop_button: ਰੂਕੋ
+        reload_message: ਆਡੀਓ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ. ਮੁੜ ਲੋਡ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਬਟਨ ਤੇ ਕਲਿਕ
+          ਕਰੋ.
+    mobile_modal:
+      apply: ਲਾਗੂ ਕਰੋ
+      cancel: ਰੱਦ ਕਰੋ
+      clear: ਸਾਫ
+      save: ਸੇਵ
+    page404:
+      goToStartLessonPage: ਸ਼ੁਰੂਆਤੀ ਪਾਠ ਪੇਜ ਤੇ ਜਾਓ
+      ooops: ਓਹਫ ...
+      sorry_message: ਮੁਆਫ ਕਰਨਾ, ਟੋਰ ਇਹ ਪੰਨਾ ਨਹੀਂ ਲੱਭ ਸਕਿਆ
+    profile:
+      navigation:
+        log_out: ਲਾੱਗ ਆਊਟ, ਬਾਹਰ ਆਉਣਾ
+        my_profile: ਮੇਰੀ ਪ੍ਰੋਫਾਈਲ
+        settings: ਸੈਟਿੰਗਜ਼
+      onboarding:
+        choose_native_language: ਆਪਣੀ ਮਾਤ ਭਾਸ਼ਾ ਜਾਂ ਭਾਸ਼ਾ ਚੁਣੋ ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਸਮਝਦੇ
+          ਹੋ
+        do_you_understand_english: ਕੀ ਤੁਸੀਂ ਅੰਗ੍ਰੇਜੀ ਸਮਝਦੇ ਹੋ?
+        hello: ਸਤ ਸ੍ਰੀ ਅਕਾਲ
+        language_levels:
+          a1: ਐਲੀਮੈਂਟਰੀ ਪੱਧਰ
+          a2: ਪੂਰਵ-ਵਿਚਕਾਰਲੇ ਪੱਧਰ
+          b1: ਵਿਚਕਾਰਲਾ ਪੱਧਰ
+          b2: ਅੱਧ ਵਿਚਕਾਰਲਾ ਪੱਧਰ
+          c1: ਐਡਵਾਂਸਡ ਲੈਵਲ
+          no_knowledge: ਕੋਈ ਗਿਆਨ ਨਹੀਂ
+        language_not_supported:
+          note: ਜਿਵੇਂ ਹੀ ਭਾਸ਼ਾ ਉਪਲਬਧ ਹੋਵੇਗੀ ਅਸੀਂ ਤੁਹਾਨੂੰ ਸੂਚਿਤ ਕਰਾਂਗੇ
+          title: ਮੁਆਫ ਕਰਨਾ, ਪਰ ਅਸੀਂ ਅਜੇ ਇਸ ਭਾਸ਼ਾ ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦੇ
+          try_another_language: ਕਿਸੇ ਹੋਰ ਭਾਸ਼ਾ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ
+        'no': ਨਹੀਂ
+        search_placeholder: ਖੋਜੋ ...
+        show_more_languages: ਹੋਰ ਭਾਸ਼ਾਵਾਂ
+        target_language_question: ਤੁਸੀਂ ਕਿਹੜੀ ਭਾਸ਼ਾ ਸਿੱਖਣੀ ਚਾਹੁੰਦੇ ਹੋ?
+        what_is_language_level: ਤੁਸੀਂ ਆਪਣੇ %{languageName} ਪੱਧਰ ਨੂੰ ਕਿਵੇਂ ਰੇਟ ਕਰੋਗੇ?
+        'yes': ਹਾਂ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: ਲੈਂਗੂ ਦੀ ਗੋਪਨੀਯਤਾ ਨੀਤੀ
+        support: ਸਹਾਇਤਾ
+      logout: ਲਾੱਗ ਆਊਟ, ਬਾਹਰ ਆਉਣਾ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: ਉਹਨਾਂ ਅਧਿਆਪਕਾਂ ਅਤੇ ਸਕੂਲਾਂ ਦੇ ਅਪਡੇਟਾਂ ਪ੍ਰਾਪਤ ਕਰੋ ਜਿਨ੍ਹਾਂ
+                ਦੀ ਤੁਸੀਂ ਪਾਲਣਾ ਕਰਦੇ ਹੋ
+              sections:
+                app_notifications: ਐਪ ਦੀਆਂ ਸੂਚਨਾਵਾਂ
+                email: ਈ - ਮੇਲ
+              title: ਸਿਖਲਾਈ ਸਹਾਇਤਾ
+            marketing:
+              description: ਸਾਰੇ ਤਰੱਕੀਆਂ, ਅਪਡੇਟਾਂ ਅਤੇ ਲੈਂਗੂ ਤੋਂ ਪ੍ਰੇਰਣਾ ਬਾਰੇ ਜਾਣੂ ਰਹੋ
+              sections:
+                browser_notifications: ਬ੍ਰਾ .ਜ਼ਰ ਨੋਟੀਫਿਕੇਸ਼ਨ
+                email: ਈ - ਮੇਲ
+              title: ਮਾਰਕੀਟਿੰਗ
+          title: ਸੰਪਰਕ ਪਸੰਦ
+        personal_information:
+          delete_photo: ਫੋਟੋ ਮਿਟਾਓ
+          email: ਈ - ਮੇਲ
+          first_name: ਪਹਿਲਾ ਨਾਂ
+          last_name: ਆਖੀਰਲਾ ਨਾਂਮ
+          social_accounts:
+            connected: ਜੁੜਿਆ
+            facebook: ਫੇਸਬੁੱਕ
+            google: ਗੂਗਲ
+            microsoft: ਮਾਈਕ੍ਰੋਸਾੱਫਟ
+            not_connected: ਜੁੜਿਆ ਨਹੀਂ
+            title: ਸਮਾਜਿਕ ਖਾਤੇ
+          title: ਵਿਅਕਤੀਗਤ ਜਾਣਕਾਰੀ
+          update_photo: ਫੋਟੋ ਨੂੰ ਅਪਡੇਟ ਕਰੋ
+        school:
+          active_licence: ਐਕਟਿਵ ਲਾਇਸੈਂਸ
+          active_status: ਕਿਰਿਆਸ਼ੀਲ
+          delete_profile: ਮੇਰਾ ਪ੍ਰੋਫਾਈਲ ਮਿਟਾਓ
+          delete_profile_modal:
+            body: |-
+              ਤੁਸੀਂ ਆਪਣੇ ਸਾਰੇ ਡੇਟਾ ਨੂੰ ਹਮੇਸ਼ਾ ਲਈ ਖਤਮ ਕਰ ਦਿੰਦੇ ਹੋ. ਇੱਥੇ ਕੋਈ ਵਾਪਸ ਕੀਤੇ ਬਟਨ ਨਹੀਂ ਹਨ, ਅਤੇ ਅਸੀਂ ਤੁਹਾਡੇ ਲਈ ਇਹ ਵਾਪਸ ਨਹੀਂ ਲੈ ਸਕਦੇ.
+              ਕੀ ਤੁਸੀਂ ਪੱਕੇ ਤੌਰ ਤੇ ਆਪਣੀ ਲੈਂਗੂ ਪ੍ਰੋਫਾਈਲ ਅਤੇ ਆਪਣੇ ਸਾਰੇ ਡੇਟਾ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?
+            cancel: ਰੱਦ ਕਰੋ
+            confirm: ਹਾਂ, ਇਸ ਨੂੰ ਮਿਟਾਓ
+            i_understand_the_consequences: ਮੈਂ ਇਸ ਦੇ ਨਤੀਜੇ ਨੂੰ ਸਮਝਦਾ ਹਾਂ
+            title: ਆਪਣਾ ਪ੍ਰੋਫਾਈਲ ਮਿਟਾਓ?
+          expired: ਮਿਆਦ ਪੁੱਗੀ %{expire_date}
+          expires: "%{expire_date} ਦੀ ਮਿਆਦ ਖਤਮ"
+          inactive_status: ਨਾ-ਸਰਗਰਮ
+          revoke_access: ਪੜ੍ਹਨ ਦੀ ਪਹੁੰਚ ਨੂੰ ਰੱਦ ਕਰੋ
+          sections:
+            contact_school: ਸੰਪਰਕ ਸਕੂਲ
+            export_my_data: ਮੇਰਾ ਡੇਟਾ ਐਕਸਪੋਰਟ ਕਰੋ
+            read_school_privacy_policy: ਸਕੂਲ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਪੜ੍ਹੋ
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: ਸੰਗੀਤ ਪਲੇਅਬੈਕ
+              sound_effects: ਧੁਨੀ ਪ੍ਰਭਾਵ
+              title: ਆਵਾਜ਼
+            visual:
+              dark_theme: ਡਾਰਕ ਥੀਮ
+              font_size:
+                test_text: ਘਾਹ ਹਮੇਸ਼ਾ ਵਾੜ ਦੇ ਦੂਜੇ ਪਾਸੇ ਹਰੇ ਹੁੰਦੇ ਹਨ
+                title: ਫੋਂਟ ਅਕਾਰ
+              high_contrast: ਉੱਚ ਵਿਪਰੀਤ
+              hints: ਸੰਕੇਤ
+              title: ਵਿਜ਼ੂਅਲ
+          title: ਧੁਨੀ ਅਤੇ ਵਿਜ਼ੂਅਲ
+        training_settings:
+          sections:
+            i_understand: ਮੈਂ ਸੱਮਝਦਾ ਹਾਂ
+            i_want_to_learn: ਮੈਂ ਸਿੱਖਣਾ ਚਾਹੁੰਦਾ ਹਾਂ
+            target_language_level: ਅੰਗਰੇਜ਼ੀ ਪੱਧਰ
+          title: ਸਿਖਲਾਈ ਸੈਟਿੰਗਜ਼
+      settings_title: ਸੈਟਿੰਗਜ਼
+    teacher_card:
+      followers_count:
+        one: 1 ਅਨੁਯਾਈ
+        other: "%{count} ਅਨੁਯਾਈ"
+      lessons_count:
+        one: 1 ਪਾਠ
+        other: "%{count} ਪਾਠ"

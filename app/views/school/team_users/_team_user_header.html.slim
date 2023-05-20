@@ -1,0 +1,9 @@
+= link_to school_team_users_path, class: 'd-inline-flex align-items-center' do
+  = image_tag('icons/arrow_left.svg')
+  span= t('layouts.school.sidebar.teachers')
+.teacher-header-sections
+  = link_to school_team_user_path(team_user), class: params[:action] == 'show' ? 'active' : ''
+    = t('lessons')
+  = link_to activities_school_team_user_path(team_user), class: params[:action] == 'activities' ? 'active' : ''
+    = t('shared.activity')
+.student-header-bottom

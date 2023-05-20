@@ -1,0 +1,14 @@
+- set_page_title t('welcome.signin.welcome_title')
+
+- set_page_title t('welcome.signin.welcome_title')
+.d-flex.justify-content-center.flex-column
+  .join-school-header = image_tag('lingu-logo.svg', class: '', width: 90, height: 51)
+  .d-flex.align-items-center.justify-content-center.flex-column.mt-5
+    .school-sign-in.text-center style="background: url(#{image_path('bg/school-illustration.svg')}) no-repeat center center / contain white;"
+      h3.font-weight-bold class="#{request.subdomain == 'school' ? 'my-8' : 'my-6'}"
+        = t('devise.otp.sign_in')
+      = render "devise/sessions/oauth_links/#{resource_name}"
+      = link_to email_otp_path(resource), class: 'btn school-otp-button py-3 mt-3' do
+        = image_tag('icons/email_icon.svg')
+        = t('frontend.auth.continue_with_provider', provider: t('shared.email_lcase'))
+

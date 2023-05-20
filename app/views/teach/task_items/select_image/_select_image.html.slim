@@ -1,0 +1,17 @@
+div id=dom_id(item)
+  .card.mb-3
+    .card-header
+      .row
+        .col-9
+          h5= best_in_place item, :question, url: teach_task_item_path(task, item), param: :task_item, inner_class: "form-control"
+        .col-3.text-right
+          = link_to teach_task_item_path(task, item), method: :delete, remote: true, class: 'btn btn-danger text-white btn-sm', data: { confirm: 'Delete this item?' } do
+            i.fas.fa-times.mr-2
+            span= t('.delete_question')
+    .card-body
+      .task_item_options
+        - item.options.each do |option|
+          = render 'teach/task_item_options/select_image/select_image', option: option, item: item
+      #option_form
+        - option = item.options.new
+        = render option.to_partial_path(prefix: :teach, partial: :option_form), item: item, option: option

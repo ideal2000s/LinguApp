@@ -1,0 +1,38 @@
+.row
+  .col-lg-6
+    .form-group
+      = f.label :fname, t('first_name')
+      = f.text_field :fname, class: 'form-control'
+      = error_for f.object, :fname
+  .col-lg-6
+    .form-group
+      = f.label :lname, t('last_name')
+      = f.text_field :lname, class: 'form-control'
+      = error_for f.object, :lname
+.form-group
+  = f.label :email, t('email')
+  = f.email_field :email, class: 'form-control'
+  = error_for f.object, :email
+.row
+  .col-lg-6
+    .form-group
+      = f.label :mobile, t('admin.users.edit.mobile')
+      = f.text_field :mobile, class: 'form-control'
+  .col-lg-6
+.row
+  .col-lg-6
+    .form-group
+      = f.label :language_scope, t('profiles.profile_form.select_default_language')
+      = f.select :language_scope, options_for_select(Language.active.select(:system_name, :id).map { |d| [d.system_name, d.id] }, f.object.language_scope), {include_blank: t('teach.lessons.form.select_language')}, {class: 'form-control select2'}
+      = error_for f.object, :language_scope
+  .col-lg-6
+    .form-group
+      = f.label :locale, t('frontend.course.website_language')
+      - enabled_locales.each do |l|
+        .custom-control.custom-radio
+          = f.radio_button :locale, l, class: 'custom-control-input'
+          = f.label "locale_#{l}".to_sym, t(l, scope: 'form.locales'), class: 'custom-control-label'
+  .col-lg-12
+    .form-group
+      = f.label :team_ids, t('admin.teams.list.teams')
+      = f.select :team_ids, options_for_select(Team.school.select(:name, :status, :id).map { |s| [s.name, s.id] }, f.object.team_ids), {}, {class: 'form-control select2', multiple: true}

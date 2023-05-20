@@ -1,0 +1,618 @@
+---
+haw:
+  course_mailer:
+    course_assigned_notification:
+      button: E hoʻomaka i ka papa
+      click_start_lesson: Kaomi 'aʻo hoʻomaka'
+      follow_course_link: Kaomi i ke pihi e wehe i ka papa
+      footer_text: E hoʻi hou iā Lingu e aʻo i kahi mea hou i kēlā me kēia lā!
+      get_started_line: 'Eia pehea ʻoe e hoʻomaka ai:'
+      notification_link: Nā hoʻonohonoho hoʻolaha
+      open_lesson: Wehe i ka haʻawina mua
+      or_paste_this_link: a kāpili paha i kēia loulou i kāu polokalamu kele pūnaewele
+      sign_in_with_email: E ʻeʻe me kāu leka uila (%{email})
+      support_link: Kākoʻo
+      title: Hoʻomaka me %{course}
+    new_document_comment:
+      author_text: Ua haʻalele ʻo %{author} i kahi loiloi o kāu hana
+      button_text: Nānā iā ia
+      button_url_helper: a kāpili paha i kēia loulou i kāu polokalamu kele pūnaewele.
+      footer_text: Nui aʻe nā mea e aʻo ai ...
+      notification_link: Nā hoʻonohonoho hoʻolaha
+      subject_line: Manaʻo manaʻo hou
+      support_link: Kākoʻo
+    otp:
+      ignore_msg: Inā ʻaʻole ʻoe i hana i kēia noi, e nānā wale i ka leka uila.
+      subject_line: ʻO kāu pāʻālua kū hoʻokahi no Lingu
+      unique_code_for_lingu: Eia kāu code kū hoʻokahi no Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Loaʻa kahi moʻokāki?
+      back: Hope
+      back_to_sign_in: E hoʻi i ka ʻeʻe
+      check_your_email_for_a_code: E hōʻoia i kāu leka uila no kāu code
+      continue: Hoʻomau
+      continue_with_email: E hoʻomau me ka leka uila
+      continue_with_provider: E hoʻomau me %{provider}
+      did_not_receive_a_code: ʻAʻole i loaʻa kahi pāʻālua?
+      email_address: Helu leka uila
+      first_name: Inoa mua
+      get_unique_code: E kiʻi i kahi leka uila ʻokoʻa
+      join_lingu: Hui iā Lingu
+      last_name: Inoa hope
+      more_login_options: Nā koho ʻeʻe hou aʻe
+      no_account_question: ʻAʻohe kau waihona?
+      or: a i ʻole
+      resend_code: Hoʻouna hou i ke code
+      sign_in: Eʻe
+      sign_up: Kau inoa
+      want_to_receive_marketing_messages: Makemake wau e loaʻa nā leka kālepa mai
+        Lingu
+      we_ve_sent_a_code: >-
+        Ua hoʻouna mākou i kahi pāʻālua hua helu 6 iā <strong> {{leka uila}} </strong>.
+        Pau ke code i loko o 15 mau minuke, no laila e ʻoluʻolu e hoʻokomo koke iā
+        ia.
+    cookie_agreement:
+      agree: ʻAe
+      condition: >-
+        Hoʻohana mākou i nā kuki e kālailai i ka hana pūnaewele a hāʻawi i nā ʻike
+        pilikino. Ma ke kaomi ʻana iā "Agree", ʻae ʻoe i kā mākou kūlana.
+    course:
+      accredited_course_provider: Hāʻawi i ka papa hoʻohanohano
+      apply: Pili
+      apply_filters: Pili i nā kānana
+      by: Na
+      cancel: Hoʻopau
+      categories: "%{count} waeʻano"
+      category: Māhele
+      clear: Maopopo
+      clear_filters: Wehe i nā kānana
+      contact_us: Kāhea iā mā ˚ ou
+      could_not_find_match_for: E kala mai, ʻaʻole i hiki iā māua ke ʻike i kekahi
+        hoʻokūkū no
+      course_language: ʻ Courselelo papa
+      duration: Duration
+      filter_settings:
+        categories:
+          academic: Kālaiʻike
+          business: ʻOihana
+          fashion: Makahiki
+          food_drink: Meaʻai & mea inu
+          for_kids: No nā keiki
+          general: Generala
+          health: Ola
+          legal: Loio
+          sport: Pāʻani
+          travel: Huakaʻi
+        durations:
+          t0_600: "<10 mau minuke"
+          t1800_3600: 30-60 minuke
+          t3600_86400: 1+ hola
+          t600_1800: 10-30 mau minuke
+        focus_on:
+          conversation: Kamailio
+          grammar: Grammar
+          listening: Hoʻolohe ʻana
+          pronunciation: ʻUnciationlelo hoʻopuka
+          reading: Heluhelu ʻana
+          speaking: ʻLelo
+          writing: Ke kākau ʻana
+        levels:
+          long:
+            advanced: Pae kiʻekiʻe
+            elementary: Papa pae haʻahaʻa
+            intermediate: Pae waena
+            no_knowledge: ʻAʻohe ʻike
+            pre_intermediate: Pae waena mua
+            upper_intermediate: Pae waena waena
+          short:
+            advanced: Pae holomua
+            beginner: Mea hoʻomaka
+            intermediate: Kuwaena
+        sort_by:
+          most_rated: Loiloi ʻia ka hapa nui
+          newest: Hou Loa
+          popularity: Kaulana
+      filters: Kānana
+      focus_on: Kālele ana
+      focus_on_title: Makemake au e nānā
+      hide_lessons: Hūnā i nā haʻawina
+      hours: Nā hola
+      i_understand: maopopo iaʻu
+      i_want_to_learn: Makemake wau e aʻo
+      in_language: i ka %{language}
+      language: ʻLelo
+      learn_more: Aʻo hou mai
+      less_settings: Hoʻonohonoho liʻiliʻi
+      lessons: Nā Haʻawina
+      lessons_available: Loaʻa nā haʻawina %{number}
+      lessons_catalog_page_subtitle: Lilo i kanaka koa ʻōlelo.
+      lessons_catalog_page_title: Hoʻonui i kou mau maka i kahi papa ʻōlelo
+      level: Papa pae
+      min: Min
+      more_settings: Nā hoʻonohonoho hou aʻe
+      navbar:
+        close: Papa kuhikuhi pani
+        menu: Papaaina
+        select_language: Wae ʻōlelo
+      need_to_buy_course: Pono ʻoe e puke i kahi papa ma mua
+      no_description: ʻAʻohe hōʻike i hāʻawi ʻia
+      no_results: E kala mai, ʻaʻole i hiki iā māua ke ʻike i kekahi pāʻani no
+      or: a i ʻole
+      per_month: no ka mahina
+      plans: Nā Hoʻolālā
+      privacy_policy: Kulekele pilikino
+      rating: Heluhelu
+      remove_all_filters: Wehe i nā kānana āpau
+      reviews: Loiloi
+      save: Mālama
+      search: Huli
+      select_dots: Koho ...
+      select_languages: Koho i nā langauges
+      select_num_languages: Koho i nā ʻōlelo %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Hōʻike i nā mea āpau
+      show_all_lessons: Hōʻike i nā haʻawina āpau
+      show_lessons: Hōʻike i nā haʻawina %{number}
+      show_more: Hōʻike hou aʻe
+      sign_up_with_lingu_for: E kau inoa me Lingu Nolewai no
+      skills: mākau %{count}
+      sort_by: Hoʻokaʻina e
+      start_typing_here: E hoʻomaka e kikokiko ma aneʻi
+      teach: Aʻo
+      terms_and_conditions: Nā ʻ Termslelo a me nā Kūlana
+      time_range: Laulā manawa
+      try_adjusting_your_search: E hoʻāʻo e hoʻoponopono i kāu ʻimi ma ka hoʻololi
+        ʻana i kāu mau kānana
+      try_this_course: E hoʻāʻo i kēia papa
+      website_language: ʻLelo pūnaewele
+      words: ʻLelo
+    games:
+      finished:
+        go_to_next_exercise: Hana maikaʻi! E hele i ka hoʻolālā aʻe
+      flashcard:
+        buttons:
+          finish: Pau
+          next: Aʻe aʻe
+          previous: Mua
+        check_out_new_words: E nānā i nā huaʻōlelo hou āu e aʻo ai i kēia haʻawina
+        frequency_of_word_usage: ʻO ka pinepine o ka hoʻohana ʻana i ka huaʻōlelo
+          ma %{language}
+        keep_practice_to_learn_all_words: Loiloi i nā huaʻōlelo %{count} a e pāʻani
+          kākou i kekahi mau pāʻani!
+        word_frequency:
+          level1: Hoʻohana liʻiliʻi
+          level2: Hoʻohana liʻiliʻi
+          level3: Alapine pinepine - waena
+          level4: Alapine pinepine - waena
+          level5: Kaulana
+          level6: Kaulana loa
+      match_word:
+        click_and_move_each_word_to_counterpart: Kaomi a neʻe i kēlā me kēia huaʻōlelo
+          i kāna hoa
+        start_heading: Pākuʻi i nā huaʻōlelo e hana i kahi pālua
+        time_is_up: Pau ka manawa!
+      skip_tutorial: Skip
+      time_is_up: Pau ka manawa!
+      word_nodes:
+        match_letters_to_form_word: Pākuʻi i nā leka e hana i kahi huaʻōlelo
+      word_waterfall:
+        do_not_hesitate: E wikiwiki kākou!
+        go_to_next_exercise: E hele i ka hoʻolālā aʻe
+        select_correct_translation: Koho i ka match pono
+        well_done: Hana maikaʻi!
+    home_page:
+      hello: Aloha,
+      popular_lessons: Nā haʻawina kaulana
+      show_more: Hōʻike hou aʻe
+      time: "%{count} min"
+      today_lesson: ʻO kāu haʻawina no kēia lā
+      user_name: "%{name}!"
+      words: "%{count} huaʻōlelo"
+    idle_screen:
+      by_author: e %{authorName}
+      continue_lesson: E hoʻomau i ka haʻawina
+      exit: Puka
+      idle_message: Ua moloā ʻoe no kekahi manawa ...
+    lesson_page:
+      back_to_course_page: E hoʻi i ka ʻaoʻao papa
+      close: Pani
+      continue_lesson: E hoʻomau i ka haʻawina
+      followed: Hahai ʻia
+      hamburger_menu_btn: Papa kuhikuhi Hamburger
+      lesson_given: haʻawina
+      not_started: ʻaʻole i hoʻomaka
+      or: A i ʻole
+      part_complete: "%{percent}% piha"
+      restart_lesson: Hoʻomaka hou
+      section_check: Nānā
+      section_check_info: "%{count} hoʻāʻo"
+      section_learn: Aʻo
+      section_learn_info: "%{count} min e nānā a heluhelu"
+      section_play: Pāʻani
+      section_play_info: "%{count} mau huaʻōlelo e hoʻomaʻamaʻa"
+      start_lesson: Hoʻomaka haʻawina
+      step_progress: "%{percent}%"
+      subscribe: Hahai
+      subscribed: Hahai ʻia
+      subscribers: ukali
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Hoʻopau
+      webview_error_title: Ua hewa kekahi mea ...
+      words_number: "%{wordsNumber} mau huaʻōlelo hou"
+    lesson_task:
+      cancel_button: Hoʻopau
+      check:
+        navigation_next: Aʻe aʻe
+        navigation_previous: Mua
+        navigation_skip: Skip
+      controls_panel:
+        font_size_button: Ka nui o ka hua paʻi
+        high_contrast_button:
+          origin: Kūlike kiʻekiʻe
+          short: Kūlike ʻole
+        hints_button: Kukuna ʻlelo
+        music_playback_button:
+          origin: Pāʻani mele
+          short: Mele
+        sound_effects_button:
+          origin: Nā hopena kani
+          short: Kani
+      exit_button: Puka
+      finish_button: Pau
+      finished:
+        back_to_learn: Hoʻi i ke aʻo
+        back_to_lesson_page: Hoʻi i ka ʻaoʻao haʻawina
+        back_to_results_page: E hoʻi ma ka ʻaoʻao hopena
+        bad_result_message: Hmm ... hoʻāʻo e lawe hou i ka haʻawina
+        close_lesson: Pani aʻo
+        correct_answers_list: Papa inoa pane pololei
+        good_result_message: ʻIke wau ua hoʻoikaika ʻoe!
+        great_result_message: Hana maikaʻi! He hopena maikaʻi loa kēia!
+        next_course_lesson: E hele i ka haʻawina aʻe ma ka papa
+        no_results: ʻAʻohe āu hopena hoʻāʻo
+        no_results_text: E ʻoluʻolu, e hoʻopihapiha i ka haʻawina a holo i ka hoʻāʻo
+          e loaʻa nā hopena
+        see_correct_answers_list: E ʻike i ka papa inoa pane pololei
+        train_more: E hoʻomaʻamaʻa hou aʻe a e loaʻa nā hopena maikaʻi aʻe i ka manawa
+          aʻe!
+        you_finished_lesson: Nui! Ua pau ka haʻawina
+      go_back: Hoʻi aku
+      next_button: Aʻe aʻe
+      not_available_task: ʻAʻole i loaʻa kēia hana
+      start_button: Hoʻomaka
+      tasks:
+        check:
+          assignment:
+            accept: ʻAe
+            author_will_check_your_answer: "%{author} e nānā i kāu pane a hāʻawi maʻamau
+              i ka pane i loko o 1-2 mau lā"
+            continue_writing: E hoʻomau i ke kākau ʻana
+            copy: Kope
+            delete: Holoi
+            delete_record: Holoi i ka moʻolelo
+            edit: Hoʻoponopono
+            essay_does_not_have_enough_words: >-
+              Pono e loaʻa i kāu pane nā hua ʻōlelo %{minWordsNumber} ma ka liʻiliʻi.
+              ʻO kāu pane i kēia manawa %{currentWordsNumber} mau huaʻōlelo.
+            followers_count: "%{followersCount} mau ukali"
+            lessons_count: "%{lessonsCount} haʻawina"
+            minimal_recording_time: Ka manawa hoʻopaʻa leo liʻiliʻi - %{minimalRecordingTime}
+            minimum_characters_amount: Nā huapalapala liʻiliʻi - %{minimumCharactersAmount}
+            minimum_words_amount: Nā huaʻōlelo liʻiliʻi - %{minimumAmount}
+            record_again: Hoʻopaʻa hou
+            record_voice: Leo leo
+            send_anyway: E hoʻouna nō
+            send_to_review: E hoʻouna e loiloi
+            skip: Skip
+            too_short_answer: Pane pōkole loa
+            type_your_answer: Kikokiko i kāu pane
+            unknown_task_type: ʻAno hana ʻike ʻole ʻia
+            upgrade_licence: Laikini hoʻonui
+            upgrade_your_plan: E hoʻonui i kāu hoʻolālā e hoʻāʻo i nā hana me nā loiloi
+              kumu
+            upload_files: Hoʻouka i nā faile
+            write_essay: Kākau moʻolelo
+            you_have_used_amount_of_assignments: Ua hoʻohana ʻoe i nā hōʻaiʻē hoʻokau
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: ʻĀpana huaʻōlelo
+          fill_in_table:
+            column_answer_placeholder: Pane
+            column_question_placeholder: Ninau
+            example: Laʻana
+          true_false:
+            'false': Wahaheʻe
+            'true': ʻOiaʻiʻo
+        learn:
+          translatable_text:
+            show_original: Hōʻike kumu
+            translate_into: Unuhi me Google i loko o %{languageName}
+            translate_into_your_lang: Unuhi me Google i kāu ʻōlelo
+        play:
+          arrange_words:
+            start_screen:
+              heading: E hana i kahi huaʻōlelo no nā huaʻōlelo i hāʻawi ʻia
+          audition:
+            start_screen:
+              heading: E hoʻolohe i ka leo a kāomi i ka ʻōlelo āu i lohe ai
+          dictation:
+            get_help: E kōkua i ke kōkua
+            i_do_not_know: ʻAʻole maopopo iaʻu
+            input_placeholder: E hoʻokomo i ka mea āu i lohe ai ma aneʻi
+            start_screen:
+              heading: E hoʻolohe a kākau i nā mea āu e lohe ai
+          fill_gap:
+            start_screen:
+              heading: Hoʻohālikelike i ka huaʻōlelo a me ke ʻano
+          finish_screen:
+            go_to_next_exercise: Hana maikaʻi! E hele i ka hoʻolālā aʻe
+          image_hotspot:
+            start_screen:
+              heading: E inoa pololei i nā mea i ke kiʻi
+          image_object:
+            start_screen:
+              heading: Koho i ka mea kūpono mai ke kiʻi aʻe
+          inline_dropdown:
+            start_screen:
+              heading: Koho i nā huaʻōlelo i kūlike i ka huaʻōlelo
+          mark_word:
+            start_screen:
+              heading: E heluhelu i ka huaʻōlelo a koho i ka huaʻōlelo i kūlike i
+                ke kiʻi
+          minimal_pairs:
+            start_screen:
+              heading: E nānā i ke wikiō a koho i ke koho pololei
+    locale:
+      currency_switcher_title: Mea hoʻololi kālā
+      lang_switcher_title: Mea kuapo ʻōlelo
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Pelekania
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ʻO Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Ikaliao
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: ʻO Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: ʻO Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Ke hoʻouka nei ʻo Audio
+        aria_pause_button: Hoʻomaha
+        aria_play_button: Pāʻani
+        aria_reload_button: Hoʻouka hou
+        aria_stop_button: Kū
+        reload_message: ʻAʻole hiki ke hoʻouka i ke kani. E ʻoluʻolu e kaomi i ke
+          pihi e hoʻouka hou.
+    mobile_modal:
+      apply: Pili
+      cancel: Hoʻopau
+      clear: Maopopo
+      save: Mālama
+    page404:
+      goToStartLessonPage: E hele i ka ʻaoʻao haʻawina hoʻomaka
+      ooops: Oooops ...
+      sorry_message: E kala mai, ʻaʻole i loaʻa iā Tor kēia ʻaoʻao
+    profile:
+      navigation:
+        log_out: Lele
+        my_profile: ʻO kaʻu ʻikepili
+        settings: Nā koho
+      onboarding:
+        choose_native_language: Koho i kāu 'ōlelo' ōiwi a 'ōlelo paha āu e maopopo
+          ai
+        do_you_understand_english: Maopopo iā ʻoe i ka ʻōlelo Pelekania?
+        hello: aloha
+        language_levels:
+          a1: Papa pae haʻahaʻa
+          a2: Pae pae waena
+          b1: Pae waena
+          b2: Pae waena waena
+          c1: Pae kiʻekiʻe
+          no_knowledge: ʻAʻohe ʻike
+        language_not_supported:
+          note: E haʻi aku mākou iā ʻoe ke loaʻa ke ʻōlelo
+          title: E kala mai, akā ʻaʻole mākou e kākoʻo i kēia ʻōlelo i kēia manawa
+          try_another_language: E hoʻāʻo i kahi ʻōlelo ʻē aʻe
+        'no': Aʻole
+        search_placeholder: Huli ...
+        show_more_languages: Nā ʻōlelo ʻē aʻe
+        target_language_question: He aha kāu ʻōlelo e makemake ai e aʻo?
+        what_is_language_level: Pehea ʻoe e helu ai i kāu pae %{languageName}?
+        'yes': ae
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Kulekele pilikino o Lingu
+        support: Kākoʻo
+      logout: Lele
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: E loaʻa nā hoʻohou mai nā kumu a me nā kula āu e ukali
+                ai
+              sections:
+                app_notifications: Hoʻomaopopo hoʻolaha
+                email: Leka uila
+              title: Kōkua aʻo
+            marketing:
+              description: >-
+                E hoʻomaopopo e pili ana i nā hoʻolaha a pau, nā hoʻohou, a me ka
+                hoʻouluulu mai Lingu
+              sections:
+                browser_notifications: Nā hoʻolaha a ka polokalamu mākaʻikaʻi
+                email: Leka uila
+              title: Ke kūʻai aku ʻana
+          title: Nā koho makemake
+        personal_information:
+          delete_photo: Holoi i ke kiʻi
+          email: Leka uila
+          first_name: Inoa mua
+          last_name: Inoa hope
+          social_accounts:
+            connected: Hoʻohui
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Pili ʻole ʻia
+            title: Nā moʻokāki kaiaulu
+          title: ʻIke pilikino
+          update_photo: Hoʻohou kiʻi
+        school:
+          active_licence: Laikini hana
+          active_status: ʻEleu
+          delete_profile: Holoi i koʻu pili pili
+          delete_profile_modal:
+            body: |-
+              Hoʻopau ʻoe i kāu ʻikepili āpau — a mau loa aku. ʻAʻohe pihi hoʻihoʻi, a ʻaʻole hiki iā mākou ke hoʻihoʻi iā ʻoe ma hope.
+              Makemake ʻoe e holoi paʻa i kāu pili Lingu a me kāu ʻike?
+            cancel: Hoʻopau
+            confirm: ʻAe, holoi iā ia
+            i_understand_the_consequences: Maopopo iaʻu ka hopena
+            title: Holoi i kāu pili?
+          expired: Pau ka %{expire_date}
+          expires: Pau nā %{expire_date}
+          inactive_status: Hoʻoikaika ʻole
+          revoke_access: Holoi i ka loaʻa ʻana o ka heluhelu
+          sections:
+            contact_school: Kula pili
+            export_my_data: E hoʻokuʻu aku i kaʻu ʻikepili
+            read_school_privacy_policy: Heluhelu i ke kulekele pilikino Kulekele
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Pāʻani mele
+              sound_effects: Nā hopena kani
+              title: Kani
+            visual:
+              dark_theme: Kumuhana pouli
+              font_size:
+                test_text: ʻOi mau ka mauʻu o ka mauʻu ma kekahi ʻaoʻao o ka pā
+                title: Ka nui o ka hua paʻi
+              high_contrast: Kūlike kiʻekiʻe
+              hints: Kukuna ʻlelo
+              title: ʻIʻike
+          title: Kani & ʻIʻike
+        training_settings:
+          sections:
+            i_understand: maopopo iaʻu
+            i_want_to_learn: Makemake wau e aʻo
+            target_language_level: Pae Pelekane
+          title: Nā hoʻonohonoho hoʻomaʻamaʻa
+      settings_title: Nā koho
+    teacher_card:
+      followers_count:
+        one: 1 ukali
+        other: "%{count} mau ukali"
+      lessons_count:
+        one: 1 haʻawina
+        other: "%{count} haʻawina"

@@ -1,0 +1,17 @@
+h1#hello Hi, #{current_student.fname}!
+p
+  strong=<> application.name
+  | from
+  strong=<> team.name
+  | want's to use your login information to authenticate.
+  .row
+    .col= button_to t('.accept', default: 'Accept'),
+            accept_students_oauth_login_path,
+            method: :put,
+            class: 'btn btn-success btn-block',
+            params: { login_challenge: params[:login_challenge] }
+    .col= button_to t('.reject', default: 'Reject'),
+            reject_students_oauth_login_path,
+            method: :delete,
+            class: 'btn btn-danger btn-block',
+            params: { login_challenge: params[:login_challenge] }

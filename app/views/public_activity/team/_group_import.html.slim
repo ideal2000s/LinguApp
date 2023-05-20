@@ -1,0 +1,4 @@
+- if activity.parameters[:students_count]
+  == t('activerecord.attributes.activity.team_group.import', count: activity.parameters[:students_count])
+- else
+  == t('activerecord.attributes.activity.team_group.import')

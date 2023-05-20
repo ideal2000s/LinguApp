@@ -1,0 +1,5 @@
+(function(){
+  var $container = $('#task_items_container');
+  $container.html('<%= render partial: task.items, as: :item, locals: { task: task } %>');
+  $container.find('.best_in_place').best_in_place();
+})();

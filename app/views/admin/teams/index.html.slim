@@ -1,0 +1,20 @@
+- set_page_title t('admin.teams.list.teams')
+
+.card.overflow-hidden.rounded-bottom-0
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner3.png')});"
+  .card-body
+    h3.mb-0
+      = t('admin.teams.list.teams')
+      =< "(#{teams.total_count})"
+    = search_form_for @search, url: admin_teams_path do |f|
+      .lessons-filter.p-3
+        .row
+          .col-sm
+            = f.select :status_eq, options_for_select(Team.statuses, @search.status_eq), {include_blank: t('activerecord.attributes.team.status')}, {class: 'form-control js-submit-on-change'}
+          .col-sm
+            = f.select :s, options_for_select({ t('.most_recent_first') => "created_at desc", t('.oldest_first') => "created_at asc" }, "#{@search.sorts[0]&.name} #{@search.sorts[0]&.dir}"), {include_blank: t('sort_by')}, {class: 'form-control js-submit-on-change'}
+  .card-body.pt-0.z-index-10
+    = link_to new_admin_team_path, class: 'card-link' do
+      = t('.create_new_team')
+      i.fas.fa-chevron-right.fa-fw
+= render partial: 'admin/teams/list', locals: { teams: teams }

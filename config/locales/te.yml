@@ -1,0 +1,612 @@
+---
+te:
+  course_mailer:
+    course_assigned_notification:
+      button: కోర్సు ప్రారంభించండి
+      click_start_lesson: "'ప్రారంభ పాఠం' క్లిక్ చేయండి"
+      follow_course_link: కోర్సు తెరవడానికి బటన్ క్లిక్ చేయండి
+      footer_text: ప్రతిరోజూ క్రొత్తదాన్ని నేర్చుకోవడానికి లింగుకు తిరిగి రండి!
+      get_started_line: 'మీరు ఎలా ప్రారంభించాలో ఇక్కడ ఉంది:'
+      notification_link: నోటిఫికేషన్ సెట్టింగులు
+      open_lesson: మొదటి పాఠాన్ని తెరవండి
+      or_paste_this_link: లేదా మీ బ్రౌజర్‌లో ఈ లింక్‌ను అతికించండి
+      sign_in_with_email: మీ ఇమెయిల్ చిరునామాతో లాగిన్ అవ్వండి (%{email})
+      support_link: మద్దతు
+      title: "%{course} తో ప్రారంభించడం"
+    new_document_comment:
+      author_text: "%{author} మీ నియామకాన్ని సమీక్షించింది"
+      button_text: దాన్ని తనిఖీ చేయండి
+      button_url_helper: 'లేదా ఈ లింక్‌ను మీ బ్రౌజర్‌లో అతికించండి:'
+      footer_text: నేర్చుకోవడానికి ఇంకా చాలా ఉంది ...
+      notification_link: నోటిఫికేషన్ సెట్టింగులు
+      subject_line: క్రొత్త నియామక వ్యాఖ్య
+      support_link: మద్దతు
+    otp:
+      ignore_msg: మీరు ఈ అభ్యర్థన చేయకపోతే, ఇమెయిల్‌ను విస్మరించండి.
+      subject_line: లింగు కోసం మీ ప్రత్యేక కోడ్
+      unique_code_for_lingu: లింగు కోసం మీ ప్రత్యేక కోడ్ ఇక్కడ ఉంది
+  frontend:
+    auth:
+      already_have_acc_question: ఖాతా కలిగి ఉన్నారా?
+      back: తిరిగి
+      back_to_sign_in: సైన్ ఇన్ చేయడానికి తిరిగి వెళ్ళు
+      check_your_email_for_a_code: మీ కోడ్ కోసం మీ ఇమెయిల్‌ను తనిఖీ చేయండి
+      continue: కొనసాగించండి
+      continue_with_email: ఇమెయిల్‌తో కొనసాగించండి
+      continue_with_provider: "%{provider} తో కొనసాగించండి"
+      did_not_receive_a_code: కోడ్ రాలేదా?
+      email_address: ఇమెయిల్ చిరునామా
+      first_name: మొదటి పేరు
+      get_unique_code: ప్రత్యేకమైన లాగిన్ కోడ్‌ను పొందండి
+      join_lingu: లింగులో చేరండి
+      last_name: చివరి పేరు
+      more_login_options: మరిన్ని లాగిన్ ఎంపికలు
+      no_account_question: ఖాతా లేదా?
+      or: లేదా
+      resend_code: మళ్ళీ పంపు కోడ్
+      sign_in: సైన్ ఇన్ చేయండి
+      sign_up: చేరడం
+      want_to_receive_marketing_messages: నేను లింగు నుండి మార్కెటింగ్ సందేశాలను స్వీకరించాలనుకుంటున్నాను
+      we_ve_sent_a_code: >-
+        మేము <strong> {{ఇమెయిల్}} </ strong> కు 6 అంకెల కోడ్‌ను పంపాము. కోడ్ 15 నిమిషాల్లో
+        ముగుస్తుంది, కాబట్టి దయచేసి దీన్ని వెంటనే నమోదు చేయండి.
+    cookie_agreement:
+      agree: అంగీకరిస్తున్నారు
+      condition: >-
+        సైట్ పనితీరును విశ్లేషించడానికి మరియు వ్యక్తిగతీకరించిన కంటెంట్‌ను అందించడానికి
+        మేము కుకీలను ఉపయోగిస్తాము. “అంగీకరిస్తున్నాను” క్లిక్ చేయడం ద్వారా, మీరు మా
+        షరతులకు అంగీకరిస్తున్నారు.
+    course:
+      accredited_course_provider: గుర్తింపు పొందిన కోర్సు ప్రొవైడర్
+      apply: వర్తించు
+      apply_filters: ఫిల్టర్లను వర్తించండి
+      by: ద్వారా
+      cancel: రద్దు చేయండి
+      categories: "%{count} వర్గాలు"
+      category: వర్గం
+      clear: క్లియర్
+      clear_filters: ఫిల్టర్‌లను క్లియర్ చేయండి
+      contact_us: మమ్మల్ని సంప్రదించండి
+      could_not_find_match_for: క్షమించండి, మేము దీనికి సరిపోలలేదు
+      course_language: కోర్సు భాష
+      duration: వ్యవధి
+      filter_settings:
+        categories:
+          academic: విద్యా
+          business: వ్యాపారం
+          fashion: ఫ్యాషన్
+          food_drink: ఆహారం & పానీయం
+          for_kids: పిల్లల కోసం
+          general: జనరల్
+          health: ఆరోగ్యం
+          legal: చట్టపరమైన
+          sport: క్రీడ
+          travel: ప్రయాణం
+        durations:
+          t0_600: "<10 నిమిషాలు"
+          t1800_3600: 30-60 నిమిషాలు
+          t3600_86400: 1+ గంట
+          t600_1800: 10-30 నిమిషాలు
+        focus_on:
+          conversation: సంభాషణ
+          grammar: వ్యాకరణం
+          listening: వింటూ
+          pronunciation: ఉచ్చారణ
+          reading: పఠనం
+          speaking: మాట్లాడుతూ
+          writing: రాయడం
+        levels:
+          long:
+            advanced: అధునాతన స్థాయి
+            elementary: ప్రాథమిక స్థాయి
+            intermediate: మధ్యంతర స్థాయి
+            no_knowledge: జ్ఞానం లేదు
+            pre_intermediate: ప్రీ ఇంటర్మీడియట్ స్థాయి
+            upper_intermediate: ఎగువ ఇంటర్మీడియట్ స్థాయి
+          short:
+            advanced: ఆధునిక
+            beginner: బిగినర్స్
+            intermediate: ఇంటర్మీడియట్
+        sort_by:
+          most_rated: చాలా రేట్ చేయబడింది
+          newest: సరికొత్త
+          popularity: ప్రజాదరణ
+      filters: ఫిల్టర్లు
+      focus_on: దృష్టి
+      focus_on_title: నేను దృష్టి పెట్టాలనుకుంటున్నాను
+      hide_lessons: పాఠాలను దాచండి
+      hours: గంటలు
+      i_understand: నాకు అర్థమైనది
+      i_want_to_learn: నాకు నేర్చుకోవాలని ఉంది
+      in_language: "%{language} లో"
+      language: భాష
+      learn_more: ఇంకా నేర్చుకో
+      less_settings: తక్కువ సెట్టింగులు
+      lessons: పాఠాలు
+      lessons_available: "%{number} పాఠాలు అందుబాటులో ఉన్నాయి"
+      lessons_catalog_page_subtitle: భాషా హీరో అవ్వండి.
+      lessons_catalog_page_title: భాషా కోర్సుతో మీ పరిధులను విస్తరించండి
+      level: స్థాయి
+      min: కనిష్ట
+      more_settings: మరిన్ని సెట్టింగ్‌లు
+      navbar:
+        close: మెనుని మూసివేయండి
+        menu: మెను
+        select_language: భాషను ఎంచుకోండి
+      need_to_buy_course: మీరు మొదట ఒక కోర్సును బుక్ చేసుకోవాలి
+      no_description: వివరణ ఇవ్వబడలేదు
+      no_results: క్షమించండి, దీని కోసం మాకు ఏ సరిపోలిక కనుగొనబడలేదు
+      or: లేదా
+      per_month: ఒక నెలకి
+      plans: ప్రణాళికలు
+      privacy_policy: గోప్యతా విధానం
+      rating: రేటింగ్
+      remove_all_filters: అన్ని ఫిల్టర్లను తొలగించండి
+      reviews: సమీక్షలు
+      save: సేవ్ చేయండి
+      search: వెతకండి
+      select_dots: ఎంచుకోండి...
+      select_languages: భాషలను ఎంచుకోండి
+      select_num_languages: "%{number} భాషలను ఎంచుకోండి"
+      short_levels:
+        a1: ఎ 1
+        a2: ఎ 2
+        b1: బి 1
+        b2: బి 2
+        c1: సి 1
+        c2: సి 2
+        zero_level: A0
+      show_all: అన్నీ చూపండి
+      show_all_lessons: అన్ని పాఠాలు చూపించు
+      show_lessons: "%{number} పాఠాలను చూపించు"
+      show_more: ఇంకా చూపించు
+      sign_up_with_lingu_for: కోసం లింగు నార్వేతో సైన్ అప్ చేయండి
+      skills: "%{count} నైపుణ్యాలు"
+      sort_by: ఆమరిక
+      start_typing_here: ఇక్కడ టైప్ చేయడం ప్రారంభించండి
+      teach: నేర్పండి
+      terms_and_conditions: నిబంధనలు మరియు షరతులు
+      time_range: సమయ పరిధి
+      try_adjusting_your_search: మీ ఫిల్టర్‌లను మార్చడం ద్వారా మీ శోధనను సర్దుబాటు
+        చేయడానికి ప్రయత్నించండి
+      try_this_course: ఈ కోర్సును ప్రయత్నించండి
+      website_language: వెబ్‌సైట్ భాష
+      words: పదాలు
+    games:
+      finished:
+        go_to_next_exercise: బాగా చేసారు! తదుపరి వ్యాయామానికి వెళ్ళండి
+      flashcard:
+        buttons:
+          finish: ముగించు
+          next: తరువాత
+          previous: మునుపటి
+        check_out_new_words: ఈ పాఠంలో మీరు నేర్చుకునే కొత్త పదాలను చూడండి
+        frequency_of_word_usage: "%{language} లో పద వినియోగం యొక్క ఫ్రీక్వెన్సీ"
+        keep_practice_to_learn_all_words: "%{count} పదాలను సమీక్షించండి మరియు కొన్ని
+          ఆటలను ఆడుదాం!"
+        word_frequency:
+          level1: అరుదుగా ఉపయోగించబడుతుంది
+          level2: అరుదుగా ఉపయోగించబడుతుంది
+          level3: పద పౌన frequency పున్యం - మధ్యస్థం
+          level4: పద పౌన frequency పున్యం - మధ్యస్థం
+          level5: సాధారణం
+          level6: చాలా సాధారణం
+      match_word:
+        click_and_move_each_word_to_counterpart: ప్రతి పదాన్ని క్లిక్ చేసి దాని ప్రతిరూపానికి
+          తరలించండి
+        start_heading: జత చేయడానికి పదాలను సరిపోల్చండి
+        time_is_up: సమయం దాటిపోయింది!
+      skip_tutorial: దాటవేయి
+      time_is_up: సమయం దాటిపోయింది!
+      word_nodes:
+        match_letters_to_form_word: ఒక పదాన్ని రూపొందించడానికి అక్షరాలను సరిపోల్చండి
+      word_waterfall:
+        do_not_hesitate: వేగవంతం చేద్దాం!
+        go_to_next_exercise: తదుపరి వ్యాయామానికి వెళ్ళండి
+        select_correct_translation: సరైన సరిపోలికను ఎంచుకోండి
+        well_done: బాగా చేసారు!
+    home_page:
+      hello: హలో,
+      popular_lessons: ప్రసిద్ధ పాఠాలు
+      show_more: ఇంకా చూపించు
+      time: "%{count} నిమి"
+      today_lesson: ఈ రోజు మీ పాఠం
+      user_name: "%{name}!"
+      words: "%{count} పదాలు"
+    idle_screen:
+      by_author: "%{authorName} ద్వారా"
+      continue_lesson: పాఠం కొనసాగించండి
+      exit: బయటకి దారి
+      idle_message: మీరు కొంతకాలంగా పనిలేకుండా ఉన్నారు ...
+    lesson_page:
+      back_to_course_page: కోర్సు పేజీకి తిరిగి వెళ్ళు
+      close: దగ్గరగా
+      continue_lesson: పాఠం కొనసాగించండి
+      followed: అనుసరించారు
+      hamburger_menu_btn: హాంబర్గర్ మెను
+      lesson_given: పాఠాలు
+      not_started: మొదలవలేదు
+      or: లేదా
+      part_complete: "%{percent}% పూర్తయింది"
+      restart_lesson: పున art ప్రారంభించండి
+      section_check: తనిఖీ
+      section_check_info: "%{count} పరీక్షలు"
+      section_learn: నేర్చుకోండి
+      section_learn_info: చూడటానికి మరియు చదవడానికి %{count} నిమి
+      section_play: ప్లే
+      section_play_info: సాధన చేయడానికి %{count} పదాలు
+      start_lesson: పాఠం ప్రారంభించండి
+      step_progress: "%{percent}%"
+      subscribe: అనుసరించండి
+      subscribed: అనుసరించారు
+      subscribers: అనుచరులు
+      time_min: "%{minutesNumber} నిమి"
+      unsubscribe: అనుసరించవద్దు
+      webview_error_title: ఎక్కడో తేడ జరిగింది...
+      words_number: "%{wordsNumber} క్రొత్త పదాలు"
+    lesson_task:
+      cancel_button: రద్దు చేయండి
+      check:
+        navigation_next: తరువాత
+        navigation_previous: మునుపటి
+        navigation_skip: దాటవేయి
+      controls_panel:
+        font_size_button: ఫాంట్ పరిమాణం
+        high_contrast_button:
+          origin: అధిక కాంట్రాస్ట్
+          short: విరుద్ధంగా
+        hints_button: సూచనలు
+        music_playback_button:
+          origin: మ్యూజిక్ ప్లేబ్యాక్
+          short: సంగీతం
+        sound_effects_button:
+          origin: ధ్వని ప్రభావాలు
+          short: ధ్వని
+      exit_button: బయటకి దారి
+      finish_button: ముగించు
+      finished:
+        back_to_learn: తెలుసుకోవడానికి తిరిగి
+        back_to_lesson_page: పాఠం పేజీకి తిరిగి వెళ్ళు
+        back_to_results_page: ఫలిత పేజీకి తిరిగి వెళ్ళు
+        bad_result_message: హ్మ్ ... మరోసారి పాఠం తీసుకోవడానికి ప్రయత్నించండి
+        close_lesson: పాఠం మూసివేయి
+        correct_answers_list: సరైన సమాధానాల జాబితా
+        good_result_message: మీరు ప్రయత్నం చేశారని నేను చూడగలను!
+        great_result_message: బాగా చేసారు! ఇవి గొప్ప ఫలితాలు!
+        next_course_lesson: కోర్సులో తదుపరి పాఠానికి వెళ్ళండి
+        no_results: మీకు ఇంకా పరీక్షా ఫలితాలు లేవు
+        no_results_text: దయచేసి, పాఠం పూర్తి చేసి, ఫలితాలను పొందడానికి పరీక్షలో ఉత్తీర్ణత
+          సాధించండి
+        see_correct_answers_list: సరైన సమాధానాల జాబితాను చూడండి
+        train_more: మరింత ప్రాక్టీస్ చేయండి మరియు మీరు తదుపరిసారి మంచి ఫలితాలను సాధిస్తారు!
+        you_finished_lesson: గొప్పది! మీరు పాఠం పూర్తి చేసారు
+      go_back: వెనక్కి వెళ్ళు
+      next_button: తరువాత
+      not_available_task: ఈ పని ఇంకా అందుబాటులో లేదు
+      start_button: ప్రారంభించండి
+      tasks:
+        check:
+          assignment:
+            accept: అంగీకరించు
+            author_will_check_your_answer: >-
+              %{author} మీ జవాబును సమీక్షిస్తుంది మరియు సాధారణంగా 1-2 రోజుల్లో అభిప్రాయాన్ని
+              ఇస్తుంది
+            continue_writing: రాయడం కొనసాగించండి
+            copy: కాపీ
+            delete: తొలగించు
+            delete_record: రికార్డును తొలగించండి
+            edit: సవరించండి
+            essay_does_not_have_enough_words: >-
+              మీ జవాబులో కనీసం %{minWordsNumber} పదాలు ఉండాలి. మీ సమాధానం ప్రస్తుతం
+              %{currentWordsNumber} పదాలు.
+            followers_count: "%{followersCount} అనుచరులు"
+            lessons_count: "%{lessonsCount} పాఠాలు"
+            minimal_recording_time: కనిష్ట రికార్డింగ్ సమయం - %{minimalRecordingTime}
+            minimum_characters_amount: కనిష్ట అక్షరాలు - %{minimumCharactersAmount}
+            minimum_words_amount: కనిష్ట పదాలు - %{minimumAmount}
+            record_again: మళ్ళీ రికార్డ్ చేయండి
+            record_voice: వాయిస్ రికార్డ్ చేయండి
+            send_anyway: ఏదేమైనా పంపు
+            send_to_review: సమీక్షకు పంపండి
+            skip: దాటవేయి
+            too_short_answer: చాలా చిన్న సమాధానం
+            type_your_answer: మీ సమాధానం టైప్ చేయండి
+            unknown_task_type: తెలియని పని రకం
+            upgrade_licence: లైసెన్స్ అప్‌గ్రేడ్ చేయండి
+            upgrade_your_plan: ఉపాధ్యాయుల సమీక్షలతో పనులను ప్రయత్నించడానికి మీ ప్రణాళికను
+              అప్‌గ్రేడ్ చేయండి
+            upload_files: ఫైల్లను అప్లోడ్ చేయండి
+            write_essay: వ్యాసం రాయండి
+            you_have_used_amount_of_assignments: మీరు %{amountOfAssignments} అసైన్‌మెంట్
+              క్రెడిట్‌లను ఉపయోగించారు
+          fill_in_blanks:
+            sentence_gap: వాక్య అంతరం
+          fill_in_table:
+            column_answer_placeholder: సమాధానం
+            column_question_placeholder: ప్రశ్న
+            example: ఉదాహరణ
+          true_false:
+            'false': తప్పుడు
+            'true': నిజం
+        learn:
+          translatable_text:
+            show_original: అసలైనదాన్ని చూపించు
+            translate_into: Google తో %{languageName} లోకి అనువదించండి
+            translate_into_your_lang: Google తో మీ భాషలోకి అనువదించండి
+        play:
+          arrange_words:
+            start_screen:
+              heading: ఇచ్చిన పదాల నుండి ఒక వాక్యాన్ని తయారు చేయండి
+          audition:
+            start_screen:
+              heading: ఆడియో వినండి మరియు మీరు విన్న పదం నొక్కండి
+          dictation:
+            get_help: సహాయం పొందు
+            i_do_not_know: నాకు తెలియదు
+            input_placeholder: మీరు విన్నదాన్ని ఇక్కడ నమోదు చేయండి
+            start_screen:
+              heading: మీరు విన్నది వినండి మరియు రాయండి
+          fill_gap:
+            start_screen:
+              heading: పదం మరియు దాని అర్ధాన్ని సరిపోల్చండి
+          finish_screen:
+            go_to_next_exercise: బాగా చేసారు! తదుపరి వ్యాయామానికి వెళ్ళండి
+          image_hotspot:
+            start_screen:
+              heading: చిత్రంలోని వస్తువులకు సరిగ్గా పేరు పెట్టండి
+          image_object:
+            start_screen:
+              heading: తదుపరి చిత్రం నుండి సరైన వస్తువును ఎంచుకోండి
+          inline_dropdown:
+            start_screen:
+              heading: వాక్యానికి సరిపోయే పదాలను ఎంచుకోండి
+          mark_word:
+            start_screen:
+              heading: వచనాన్ని చదివి చిత్రానికి సరిపోయే పదాన్ని ఎంచుకోండి
+          minimal_pairs:
+            start_screen:
+              heading: వీడియో చూడండి మరియు సరైన ఎంపికను ఎంచుకోండి
+    locale:
+      currency_switcher_title: కరెన్సీ స్విచ్చర్
+      lang_switcher_title: భాషా స్విచ్చర్
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: డ్యూచ్
+        el: Greek
+        en: ఆంగ్ల
+        eo: Esperanto
+        es: ఎస్పానోల్
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ఫ్రాంకైస్
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ఇటాలియానో
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: లిటువిక్ కల్బా
+        lv: లాట్వియు వలోడా
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: నోర్స్క్
+        ne: Nepali
+        nl: నెదర్లాండ్స్
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: పోల్స్కి
+        ps: Pashto
+        pt: పోర్చుగీస్
+        ro: లింబా română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af సూమాలి
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: కిస్వాహిలి
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: టర్కీ
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ఆడియో లోడ్ అవుతోంది
+        aria_pause_button: పాజ్ చేయండి
+        aria_play_button: ప్లే
+        aria_reload_button: రీలోడ్ చేయండి
+        aria_stop_button: ఆపు
+        reload_message: ఆడియో లోడ్ చేయడంలో విఫలమైంది. రీలోడ్ చేయడానికి దయచేసి బటన్
+          క్లిక్ చేయండి.
+    mobile_modal:
+      apply: వర్తించు
+      cancel: రద్దు చేయండి
+      clear: క్లియర్
+      save: సేవ్ చేయండి
+    page404:
+      goToStartLessonPage: ప్రారంభ పాఠం పేజీకి వెళ్ళండి
+      ooops: అయ్యో ...
+      sorry_message: క్షమించండి, టోర్ ఈ పేజీని కనుగొనలేకపోయాడు
+    profile:
+      navigation:
+        log_out: లాగ్ అవుట్
+        my_profile: నా జీవన వివరణ
+        settings: సెట్టింగులు
+      onboarding:
+        choose_native_language: మీరు అర్థం చేసుకున్న మీ స్థానిక భాష లేదా భాషను ఎంచుకోండి
+        do_you_understand_english: నీకు ఆంగ్లము అర్థమవుతుందా?
+        hello: హలో
+        language_levels:
+          a1: ప్రాథమిక స్థాయి
+          a2: ప్రీ-ఇంటర్మీడియట్ స్థాయి
+          b1: మధ్యంతర స్థాయి
+          b2: ఎగువ ఇంటర్మీడియట్ స్థాయి
+          c1: అధునాతన స్థాయి
+          no_knowledge: జ్ఞానం లేదు
+        language_not_supported:
+          note: భాష అందుబాటులోకి వచ్చిన వెంటనే మేము మీకు తెలియజేస్తాము
+          title: క్షమించండి, కానీ మేము ఇంకా ఈ భాషకు మద్దతు ఇవ్వలేదు
+          try_another_language: మరొక భాషను ప్రయత్నించండి
+        'no': లేదు
+        search_placeholder: వెతకండి...
+        show_more_languages: ఇతర భాషలు
+        target_language_question: మీరు ఏ భాష నేర్చుకోవాలనుకుంటున్నారు?
+        what_is_language_level: మీరు మీ %{languageName} స్థాయిని ఎలా రేట్ చేస్తారు?
+        'yes': అవును
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: లింగు గోప్యతా విధానం
+        support: మద్దతు
+      logout: లాగ్ అవుట్
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: మీరు అనుసరించే ఉపాధ్యాయులు మరియు పాఠశాలల నుండి నవీకరణలను
+                స్వీకరించండి
+              sections:
+                app_notifications: అనువర్తనాల ప్రకటనలు
+                email: ఇ-మెయిల్
+              title: అభ్యాస సహాయం
+            marketing:
+              description: అన్ని ప్రమోషన్లు, నవీకరణలు మరియు లింగు నుండి ప్రేరణ గురించి
+                సమాచారం ఉండండి
+              sections:
+                browser_notifications: బ్రౌజర్ నోటిఫికేషన్‌లు
+                email: ఇ-మెయిల్
+              title: మార్కెటింగ్
+          title: సంప్రదింపు ప్రాధాన్యతలు
+        personal_information:
+          delete_photo: ఫోటోను తొలగించండి
+          email: ఇమెయిల్
+          first_name: మొదటి పేరు
+          last_name: చివరి పేరు
+          social_accounts:
+            connected: కనెక్ట్ చేయబడింది
+            facebook: ఫేస్బుక్
+            google: గూగుల్
+            microsoft: మైక్రోసాఫ్ట్
+            not_connected: కనెక్ట్ కాలేదు
+            title: సామాజిక ఖాతాలు
+          title: వ్యక్తిగత సమాచారం
+          update_photo: ఫోటోను నవీకరించండి
+        school:
+          active_licence: యాక్టివ్ లైసెన్స్
+          active_status: యాక్టివ్
+          delete_profile: నా ప్రొఫైల్‌ను తొలగించండి
+          delete_profile_modal:
+            body: |-
+              మీరు మీ డేటా మొత్తాన్ని ఎప్పటికీ తొలగిస్తారు. అన్డు బటన్ లేదు మరియు మేము మీ కోసం దాన్ని తిరిగి పొందలేము.
+              మీరు మీ భాషా ప్రొఫైల్ మరియు మీ మొత్తం డేటాను శాశ్వతంగా తొలగించాలనుకుంటున్నారా?
+            cancel: రద్దు చేయండి
+            confirm: అవును, దాన్ని తొలగించండి
+            i_understand_the_consequences: పరిణామాలను నేను అర్థం చేసుకున్నాను
+            title: మీ ప్రొఫైల్‌ను తొలగించాలా?
+          expired: గడువు ముగిసిన %{expire_date}
+          expires: "%{expire_date} ముగుస్తుంది"
+          inactive_status: క్రియారహితం
+          revoke_access: రీడ్ యాక్సెస్‌ను ఉపసంహరించుకోండి
+          sections:
+            contact_school: పాఠశాలను సంప్రదించండి
+            export_my_data: నా డేటాను ఎగుమతి చేయండి
+            read_school_privacy_policy: పాఠశాల గోప్యతా విధానాన్ని చదవండి
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: మ్యూజిక్ ప్లేబ్యాక్
+              sound_effects: ధ్వని ప్రభావాలు
+              title: ధ్వని
+            visual:
+              dark_theme: డార్క్ థీమ్
+              font_size:
+                test_text: కంచె యొక్క అవతలి వైపు గడ్డి ఎల్లప్పుడూ పచ్చగా ఉంటుంది
+                title: ఫాంట్ పరిమాణం
+              high_contrast: అధిక కాంట్రాస్ట్
+              hints: సూచనలు
+              title: దృశ్య
+          title: సౌండ్ & విజువల్
+        training_settings:
+          sections:
+            i_understand: నాకు అర్థమైనది
+            i_want_to_learn: నాకు నేర్చుకోవాలని ఉంది
+            target_language_level: ఇంగ్లీష్ స్థాయి
+          title: శిక్షణ సెట్టింగులు
+      settings_title: సెట్టింగులు
+    teacher_card:
+      followers_count:
+        one: 1 అనుచరుడు
+        other: "%{count} అనుచరులు"
+      lessons_count:
+        one: 1 పాఠం
+        other: "%{count} పాఠాలు"

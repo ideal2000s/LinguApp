@@ -1,0 +1,10 @@
+table.table
+  tbody
+    - team_domains.each do |domain|
+      = link_to teach_team_team_domain_path(team, domain),
+              class: 'btn btn-sm btn-primary mr-1 mb-1',
+              method: :delete,
+              remote: true,
+              data: { confirm: t('.delete.confirm') } do
+        span.mr-1= domain.domain
+        i.fa.fa-times

@@ -1,0 +1,39 @@
+- unless team.gdpr_consented?
+  .gdpr-confirmation.w-100.py-3.d-flex.justify-content-center.mb-5
+    = image_tag('icons/confirmation.svg', class: 'mr-2')
+    => t('school.dashboard.gdpr_confirmation')
+    button.btn.ml-1#gdpr_confirm_btn data={toggle: 'modal', target: '#gdpr-agreement-modal'}
+      =< t('.create_gdpr_agreement')
+h1.font-weight-bold= t('admin.dashboard.index.title')
+p.fs-1= t('admin.dashboard.index.no_data_text')
+.row.mt-6
+  .col-sm-6.col-lg-6.mb-4
+    .card.bg-light.h-100
+      .row.card-body
+        .col-sm-7
+          .card-title.fs-lg-3.mt-2.text-black= t('admin.dashboard.index.add_student_title')
+          p.card-text.fs-1.text-black= t('admin.dashboard.index.add_student_text')
+        .col-sm-5.text-right
+          = image_tag 'dashboard/add-student.svg', class: 'img-fluid', alt: t('school.team_students.index.invite_students')
+      .card-footer
+        = link_to school_students_path, class: 'btn btn-info rounded-capsule btn-lg text-white' do
+          = t('school.team_students.index.invite_students')
+  -# if current_team.team_users.kept.count > 1
+  .col-sm-6.col-lg-6.mb-4
+    .card.bg-light.h-100
+      .row.card-body
+        .col-sm-7
+          .card-title.fs-lg-3.mt-2.text-black= t('admin.dashboard.index.add_teacher_title')
+          p.card-text.fs-1.text-black= t('admin.dashboard.index.add_teacher_text')
+          = render 'school/team_users/invite_link'
+        .col-sm-5.text-right
+          = image_tag 'dashboard/add-teacher.svg', class: 'img-fluid', alt: t('school.teachers.invite.invite_users')
+      .card-footer
+        = link_to school_team_users_path, class: 'btn btn-info rounded-capsule btn-lg text-white' do
+          = t('school.teachers.invite.invite_users')
+- if team.gdpr_consented?
+  .gdpr-confirm-success.p-3.d-flex.align-items-center.mt-3
+    = t('school.dashboard.gdpr_confirm_success')
+    = link_to team.gdpr_agreement_url, class: 'd-inline-flex align-items-center font-weight-bold ml-3' do
+      = image_tag('icons/download.svg', class: 'mr-1')
+      = t('school.dashboard.get_agreement')

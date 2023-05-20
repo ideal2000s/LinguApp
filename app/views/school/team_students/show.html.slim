@@ -1,0 +1,6 @@
+- set_page_title student.full_name
+
+.school-info-container.d-flex.justify-content-between
+  .student-info-details.flex-grow-1
+    = render 'student_header', student: student, active_tab: 'lessons'
+  = render 'student_profile', student: student

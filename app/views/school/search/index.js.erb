@@ -1,0 +1,4 @@
+$('#students').html("<%= j render('school/team_students/list', team_students: TeamStudent.where(student_id: results['Student']&.pluck(:searchable_id), team: current_team).includes(:student)) %>")
+$('#students_count').html("<%= results['Student']&.count.to_i %>")
+$('#teachers').html("<%= j render('school/team_users/list', team_users: TeamUser.where(user_id: results['User']&.pluck(:searchable_id), team: current_team).includes(:user)) %>")
+$('#teachers_count').html("<%= results['User']&.count.to_i %>")

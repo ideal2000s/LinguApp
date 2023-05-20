@@ -1,0 +1,36 @@
+.student-license-action-panel
+  .dropdown-menu.py-0
+    .card.shadow-none
+      .card-body
+        - active_license = team_student.active_license
+        - if active_license
+          .dropdown-item.d-flex.align-items-baseline.pl-0
+            i.fa.fa-check.active-check.mr-2
+            .license-content.license-overflow.ml-0
+              p.license-label.license-overflow= active_license.plan.name
+              span.expire-label= plan_price(active_license.plan)
+        - team_student.available_plans.each do |plan|
+          = link_to school_team_student_licenses_path(team_student, plan_id: plan.id), method: :post, class: "dropdown-item d-flex align-items-baseline" do
+            .license-content.license-overflow.ml-3
+              p.license-label.license-overflow= plan.name
+              span.expire-label= plan_price(plan)
+        - if active_license
+          .dropdown-divider
+          .dropdown-item.d-block
+            .license-action-button
+              = image_tag asset_path("icons/set-end-date.svg"), width: 22, height: 22, class: 'mr-2'
+              span = t('school.team_students.profile.set_end_date')
+            = form_for active_license, url: school_team_student_license_path(team_student, active_license), method: :patch, html: {class: 'd-flex'} do |f|
+              = f.date_field :expiration_date, class: 'form-control mr-1 p-1', required: true, value: active_license.expires_at&.strftime("%Y-%m-%d"), min: Time.zone.today.strftime("%Y-%m-%d")
+              = f.submit t('common.buttons.update'), class: 'btn btn-sm btn-info'
+          .dropdown-divider
+          - if active_license.expires_at
+            .dropdown-item
+              = link_to remove_end_date_school_team_student_license_path(team_student, active_license), method: :put, class: 'license-action-button' do
+                i.fas.fa-times-circle.ml-1.mr-2.text-white
+                span.text-danger= t('school.team_students.profile.remove_end_date')
+          .dropdown-item
+            = button_to revoke_license_school_team_student_licenses_path(team_student), method: :get, remote: true, class: 'license-action-button btn shadow-none border-0 px-0' do
+              i.fas.fa-times-circle.ml-1.mr-2.text-white
+              span.text-danger= t('school.team_students.profile.revoke_license_now')
+

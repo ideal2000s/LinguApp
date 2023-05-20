@@ -1,0 +1,25 @@
+h1#hello Hi, #{current_student.fname}!
+p
+  strong=<> application.name
+  | from
+  strong=<> team.name
+  | requests access to the following information:
+  .row
+    .col
+      ul
+        - scope.each do |listed_scope|
+          - next if %[offline_access openid offline].include?(listed_scope)
+          li= t(listed_scope, scope: 'oauth.scopes')
+  .row
+    .col
+      = button_to t('.accept', default: 'Accept'),
+              accept_students_oauth_consent_path,
+              method: :put,
+              class: 'btn btn-success btn-block',
+              params: { consent_challenge: params[:consent_challenge] }
+    .col
+      = button_to t('.reject', default: 'Reject'),
+              reject_students_oauth_consent_path,
+              method: :delete,
+              class: 'btn btn-danger btn-block',
+              params: { consent_challenge: params[:consent_challenge] }

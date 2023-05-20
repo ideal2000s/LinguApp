@@ -1,0 +1,12 @@
+.card.mb-3
+  .card-header.d-flex.justify-content-between
+    h5.card-title.mb-0.pb-0= task.name
+    = t(task.type.underscore, scope: 'tasks.types')
+  .card-body
+    - lesson = task.lesson
+    - lesson.phrases.each do |phrase|
+      - phrase_division = phrase_division(phrase, lesson)
+      .badge.badge-pill.px-3.py-2.mr-2.my-1 class=phrase_division[0] data-toggle="tooltip" title=phrase_division[1]
+        span.text-black= phrase.prefixed_body
+        =< "(#{t(phrase.word_class, scope: 'activerecord.attributes.word.word_classes_abbr')})"
+

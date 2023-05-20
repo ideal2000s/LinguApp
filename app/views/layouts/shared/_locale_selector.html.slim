@@ -1,0 +1,10 @@
+= link_to '#', class: 'dropdown-toggle nav-link', id: 'locale_selector', role: 'button', data: { toggle: 'dropdown', target: '#' } do
+  = image_tag("flags/#{language_to_flag_code(I18n.locale.to_s)}.svg", class: 'mr-2 ', style: 'width: 30px; height: auto;')
+.dropdown-menu.py-0 aria-labelledby="locale_selector"
+  .bg-white.rounded-soft.py-2
+    - enabled_locales.sort.each do |locale|
+      = link_to({ locale: locale.to_s }, class: 'dropdown-item') do
+        .avatar.mr-3
+          = image_tag("flags/#{language_to_flag_code(locale.to_s)}.svg", class: 'mr-2 ', style: 'max-width: 22px; height: auto;') rescue nil
+        strong= t(locale.to_s, scope: 'locales')
+

@@ -1,0 +1,83 @@
+.profile-details data-controller="school-license"
+  .position-relative
+    .profile-avatar-container.d-table.m-auto
+      = custom_profile_tag(student)
+    .student-authentication-wrapper.d-flex data-toggle="tooltip" title=(t('admin.students.list_row.last_seen_at', date: l(student.current_sign_in_at)) if student.sign_in_count.positive?)
+      - student.student_identities.each do |identity|
+        = social_icon_for(identity.provider_code)
+      = social_icon_for('email') if student.student_identities.empty? && student.sign_in_count.positive?
+  .edit-student-profile.d-inline-block.position-absolute.cursor-pointer
+    = button_to edit_school_student_path(student), class: 'btn border-0 shadow-none', method: :get, remote: true do
+      = image_tag('icons/edit.svg')
+  .profile-info.mt-4.d-flex.flex-column.align-items-center
+    h1= student.full_name
+    h2.mb-4= student.email
+    .language-info
+      - if student.native_language
+        = image_tag("flags/#{language_to_flag_code(student.native_language.code)}.svg", class: 'language-flag mr-1')
+        span.native-language= student.native_language.system_name
+        .language-separator.mx-2.d-inline-block
+      - if student.active_target_language
+        = image_tag("flags/#{language_to_flag_code(student.active_target_language.code)}.svg", class: 'language-flag mr-1')
+        span.active-language= student.active_target_language.system_name
+        =< student.target_language_level&.upcase
+    .license-dropdown.mt-5
+      - active_license = team_student.active_license
+      button.btn.dropdown-toggle.align-items-center data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+        .license-content.license-overflow.ml-0
+          - if active_license
+            p.license-label.license-overflow = active_license.plan.name
+            - if active_license.expires_at
+              span.expire-label = t('school.team_students.profile.expires_at', expires_at: active_license.expires_at.strftime("%d %b %Y"))
+            - else
+              span.expire-label = t('school.team_students.profile.perpetual_license')
+          - else
+            p.license-label.license-overflow= t('school.team_students.import_students.select_plan')
+        .license-caret
+          i.fa.fa-angle-down
+      .dropdown-menu.dropdown-menu-right data-target="student-profile.licenseDropdown"
+        - if active_license
+          .dropdown-item.d-flex.align-items-baseline.active
+            i.fa.fa-check.active-check.mr-2
+            .license-content.license-overflow.ml-0
+              p.license-label.license-overflow = active_license.plan.name
+              span.expire-label= plan_price(active_license.plan)
+        - team_student.available_plans.each do |plan|
+          = link_to school_team_student_licenses_path(team_student, plan_id: plan.id), method: :post, class: "dropdown-item d-flex align-items-baseline" do
+            .license-content.license-overflow
+              p.license-label.license-overflow = plan.name
+              span.expire-label= plan_price(plan)
+        - if active_license
+          .dropdown-divider
+          .dropdown-item data-action="click->student-profile#licenseDropdownSelected"
+            .license-action-button
+              = image_tag asset_path("icons/set-end-date.svg"), width: 22, height: 22, class: 'mr-2'
+              span = t('school.team_students.profile.set_end_date')
+            = form_for team_student.active_license, url: school_team_student_license_path(team_student, active_license), method: :patch, html: { class: 'd-flex' } do |f|
+              = f.date_field :expiration_date, class: 'form-control mr-1 p-1', required: true, value: active_license.expires_at&.strftime("%Y-%m-%d"), min: Time.zone.today.strftime("%Y-%m-%d")
+              = f.submit t('common.buttons.update'), class: 'btn btn-sm btn-info'
+          .dropdown-divider
+          - if active_license.expires_at
+            .dropdown-item
+              = link_to remove_end_date_school_team_student_license_path(team_student, active_license), method: :put, class: 'license-action-button' do
+                i.fas.fa-times-circle.ml-1.mr-2.text-white
+                span.text-danger= t('school.team_students.profile.remove_end_date')
+          .dropdown-item
+            = button_to revoke_license_school_team_student_licenses_path(team_student), method: :get, remote: true, class: 'license-action-button text-danger btn shadow-none border-0' do
+              i.fas.fa-times-circle.ml-1.mr-2
+              span= t('school.team_students.profile.revoke_license')
+    .language-info.mt-3
+      strong.text-black
+        = t('admin.students.show.learning_time') + ':'
+        =< student.lesson_time_human
+    .mt-4.d-flex.justify-content-between
+      .badge-info-container
+        = image_tag('icons/xp-badge.svg')
+        span.mt-1
+          | 0 XP
+      .badge-info-container.ml-2
+        = image_tag('icons/word-badge.svg')
+        span.mt-1= "#{student.student_words_count} #{t('words').downcase}"
+      .badge-info-container.ml-2
+        = image_tag('icons/reward-badge.svg')
+        span.mt-1= "#{student.student_rewards_count} #{t('rewards').downcase}"

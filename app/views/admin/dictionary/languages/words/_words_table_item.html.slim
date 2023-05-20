@@ -1,0 +1,32 @@
+tr id=dom_id(phrase)
+  td
+    input type='checkbox' name='phrase_ids' value=phrase.id
+  td= link_to phrase.prefixed_body, edit_admin_language_word_path(language, phrase, collection_id: collection&.id), remote: true, data: {toggle: 'modal', target: '#new-phrase-modal'}, class: 'font-weight-bold'
+  td= word_class_tag(phrase)
+  td= truncate(phrase.description, length: 18)
+  td.align-middle
+    .circle-rating style='display: flex'
+      - for i in (1..phrase.frequency)
+        .circle-rating-blue.mt-1
+      - for i in (1..(6 - phrase.frequency))
+        .circle-rating-grey.mt-1
+      small.badge.mt-0.pt-0= "(#{phrase.occurrences})"
+  td
+    - unless language&.code == I18n.locale.to_s
+      .d-flex
+        = phrase.translations[I18n.locale.to_s]
+        = link_to edit_translation_admin_language_word_path(language, phrase, collection_id: collection&.id), remote: true, data: {toggle: 'modal', target: '#right_modal'}, class: 'small ml-auto' do
+          i.fas.fa-pencil-alt.fa-fw
+  td.align-middle.px-1.text-center
+    = link_to edit_admin_language_word_path(language, phrase, record: 'audio', collection_id: collection&.id), remote: true, data: {toggle: 'modal', target: '#new-phrase-modal'} do
+      - if phrase.audio
+        small.fas.fa-check.text-success
+      - else
+        small.fas.fa-circle.text-danger
+  td.align-middle.px-1.text-center
+    = link_to edit_admin_language_word_path(language, phrase, record: 'image', collection_id: collection&.id), remote: true, data: {toggle: 'modal', target: '#new-phrase-modal'} do
+      - if phrase.image
+        small.fas.fa-check.text-success
+      - else
+        small.fas.fa-circle.text-danger
+  td.align-middle.px-1.text-center= phrase.collections.length

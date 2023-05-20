@@ -1,0 +1,9 @@
+.school-assignments-list.thead-block-list
+  table.table
+    thead
+      tr
+        th= t('name')
+        th= t('type')
+        th= t('shared.language')
+    tbody
+      = render partial: 'assignment_list_row', collection: assignments, as: :assignment, cached: true

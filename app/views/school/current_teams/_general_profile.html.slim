@@ -1,0 +1,26 @@
+= form_tag school_current_team_path, method: :put, remote: true
+  .mb-3 data-target = "school-profile.body"
+    = label_tag 'logo-image', t('teach.lessons.form.team_image')
+    .d-flex.justify-content-end.align-items-center.upload-container data-upload-container="true"
+      .image-preview.flex-grow-1 data-upload-preview-container="true" data-target='school-profile.preview'
+        - if team.image_url
+          = image_tag(team.image_url(:brand) || team.image_url, class: 'preview')
+      .upload-image-field.mr-2
+        = hidden_field_tag 'image', '', "data-upload-hidden" => "true"
+        a.upload-action-button.align-self-center.mr-2 data-upload-trigger="true"
+          = t('school.users.form.upload_image')
+      = file_field_tag nil, accept: "image/svg+xml,image/png", "data-upload" => "image", class: "upload-file"
+      .remove-action-field.d-flex.align-items-center data-upload-remove-trigger="true"
+        = check_box_tag 'remove_image', '1', team.remove_image, class: 'mr-2'
+        = label_tag 'remove_image', t('school.profile.general.remove_image'), class: 'remove-action-button'
+  .d-flex.justify-content-between.mb-2
+    .name-field.w-50.mr-3
+      = label_tag 'name', t('activerecord.attributes.team.name')
+      = text_field_tag 'name', team.name, class: 'form-control', autocomplete: 'off', required: true
+    .language-field.w-50
+      = label_tag 'default_language_id', t('.select_default_school_language')
+      = select_tag 'default_language_id', options_for_select(Language.active.map { |e| [asset_path("flags/#{language_to_flag_code(e.code)}.svg").to_s + ', ' + e.name.strip, e.id]}, team.default_language_id),
+              class: 'form-control',
+              data: { target: 'school-profile.selectLanguage', placeholder: t('profiles.profile_form.select_default_language') },
+              prompt: ''
+  = submit_tag t('common.buttons.save'), class: 'btn btn-primary float-right mt-3'

@@ -1,0 +1,48 @@
+button.close.position-absolute type='button' data-dismiss='modal' aria-label='Close' style='top: 19px; right: 19px'
+  span.font-weight-light aria-hidden='true' &times;
+= form_for student, url: path, method: method, html: { id: 'student_form' }, remote: true do |f|
+  - is_new_student = student.new_record?
+  h1.mb-3
+    = is_new_student ? t('.add_new_student') : t('admin.students.edit_student', name: student.full_name)
+  .content-separator.d-flex.align-items-center
+    span.mr-2
+      = t('.personal_data')
+    .separator-line.flex-grow-1
+  .row.mb-2
+    .col-6
+      = f.label :fname, t('first_name')
+      = f.text_field :fname, class: 'form-control'
+      = error_for f.object, :fname
+    .col-6
+      = f.label :lname, t('last_name')
+      = f.text_field :lname, class: 'form-control'
+      = error_for f.object, :lname
+  .row.mb-2
+    .col-6
+      = f.label :email, t('email')
+      = f.text_field :email, class: 'form-control'
+      = error_for f.object, :email
+    .col-6
+      - country_code = student.mobile.blank? && current_team.country.present? ? current_team.country : ''
+      = f.label :mobile, t('admin.users.edit.mobile')
+      = f.text_field :mobile, id: "mobile_number_input_#{action_name}", class: 'form-control', 'data-code' => country_code
+      = error_for f.object, :mobile
+  .row.mb-2
+    .col-6
+      = f.label :gender, t('activerecord.attributes.student.gender')
+      = f.select :gender, options_for_select(Student.genders.keys.map { |key| [t(key, scope: 'activerecord.attributes.student.genders'), key] }, f.object.gender), {}, {class: 'form-control select2'}
+      = error_for f.object, :gender
+  - if is_new_student
+    = render 'create_form_language_info', f: f
+  - else
+    = render 'edit_form_language_info', f: f, student: student
+  .col-12.d-flex.mt-4.submit-content.p-0 class="#{is_new_student ? 'flex-column align-items-center' : 'flex-row justify-content-end'}"
+    - if is_new_student
+      = f.submit t('add_student'), class: 'btn btn-primary mr-1'
+      .mt-4
+        == t('.student_import_links', import_link: link_to(t('school.team_students.invite_students.import_students'), import_students_school_students_path, remote: true), invitation_link: link_to(t('.send_invitation'), invite_students_school_students_path, remote: true))
+    - else
+      .modal-footer.pt-4.w-100.px-0
+        button.btn.btn-light.close type='button' data-dismiss='modal' aria-label='Close'
+          span= t('shared.cancel')
+        = f.submit t('save_changes'), class: 'btn btn-primary px-4 ml-3'

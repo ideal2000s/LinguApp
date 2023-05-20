@@ -1,0 +1,23 @@
+- lesson = lesson_session.lesson
+tr
+  td
+    .lesson-info.d-inline-flex.align-items-center
+      = image_tag("flags/#{language_to_flag_code(lesson.language&.code)}.svg")
+      span.ml-1= t(lesson.level, scope: 'activerecord.attributes.lesson.short_levels')
+  td
+    div data-toggle="tooltip" title=l(lesson_session.updated_at)
+      = lesson.title
+  td= lesson_session.duration_human
+  td
+    -# TODO: Add lesson XP
+    -# if lesson_session.earned_xp > 0
+    -# span.mr-1
+  td.w-100
+    .progress.d-inline-block
+      .progress-bar role='progressbar' aria-valuemin='0' aria-valuemax='100' style="width: #{lesson_session.progress_percent}%"
+    span.ml-1 class="#{lesson_session.progress_percent < 100 ? 'font-weight-bold' : ''}"
+      | #{lesson_session.progress_percent}%
+
+    - unless lesson_session.completed?
+      .badge class=(lesson_session.active? ? 'badge-soft-success' : 'badge-soft-warning')
+        = lesson_session.status

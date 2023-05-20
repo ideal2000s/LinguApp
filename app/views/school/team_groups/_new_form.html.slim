@@ -1,0 +1,27 @@
+.modal-dialog.modal-new-team-group role="document"
+  .modal-content
+    .modal-header
+      h5.modal-title = t('school.team_groups.new.title')
+      h6.modal-sub-title = t('school.team_groups.new.sub_title')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+    .modal-body.team-group-information
+      = form_for team_group, url: school_team_groups_path, method: 'POST', html: { id: 'team_group_form' } do |f|
+        - if f.object.errors.key?(:name)
+          .alert.alert-warning
+            p.my-0= t('school.team_groups.create.unique_name_error')
+        .form-group.team-group-errors
+        .form-group
+          = f.label :name, t('name')
+          = f.text_field :name, class: 'form-control', required: true
+          = error_for f.object, :name
+        .form-group
+          = f.label :language_id, t('shared.language')
+          = f.select :language_id, options_for_select(Language.active.map { |e| [asset_path("flags/#{language_to_flag_code(e.code)}.svg").to_s + ', ' + e.name, e.id]}, current_user.language_scope.presence || current_team.default_language_id), {include_blank: t('school.team_groups.new.select_language')}, { class: 'form-control select-country', required: true }
+          = error_for f.object, :language_id
+        .form-group
+          = f.label :level, t('shared.level')
+          = f.select :level, options_for_select(TeamGroup.levels_for_target_language, f.object.level), {prompt: t('school.team_groups.new.select_level')}, { class: 'form-control select2', required: true }
+          = error_for f.object, :level
+        .d-flex.action-group.mt-4
+          = f.submit t('create'), class: 'btn btn-primary ml-2 flex-fill'
+          button.btn.btn-light.flex-fill type='button' data-dismiss="modal" = t('shared.cancel')

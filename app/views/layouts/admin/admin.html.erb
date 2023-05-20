@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="<%= I18n.locale %>" dir="ltr" class="fontawesome-i2svg-active chrome osx fontawesome-i2svg-complete">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= page_title %></title>
+
+  <%= render 'layouts/shared/favicon' %>
+
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_packs_with_chunks_tag 'application', media: 'all' %>
+</head>
+
+<body>
+<main class="main" id="top">
+  <div class="container" data-layout="container">
+    <%= render 'layouts/admin/sidebar' %>
+    <div class="content" id="admin">
+      <%= render 'layouts/admin/header' %>
+      <% if notice %>
+        <div class="alert alert-success"><%== notice %></div>
+      <% elsif alert %>
+        <div class="alert alert-danger"><%== alert %></div>
+      <% end %>
+      <%= yield %>
+      <div class="my-4"></div>
+      <%-#= render 'layouts/admin/footer' %>
+    </div>
+  </div>
+  <%= render 'layouts/shared/modal' %>
+</main>
+
+<%= javascript_packs_with_chunks_tag 'application' %>
+</body>
+</html>

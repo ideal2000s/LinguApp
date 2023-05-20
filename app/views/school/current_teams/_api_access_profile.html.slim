@@ -1,0 +1,44 @@
+.apps-header.mb-3
+  h3 = t('school.profile.api_access.integrate_services')
+  p.mt-3 = t('school.profile.api_access.give_students_access')
+  p
+    = t('school.profile.api_access.create_app')
+    = link_to t('school.profile.api_access.documentation'), nil, class: 'ml-1 mr-1'
+    = t('school.profile.api_access.to_start_your_process')
+.apps-content
+  - team.oauth_apps.each do |oauth_app|
+    = form_tag school_oauth_app_path(oauth_app), method: :put, remote: true, class: 'oauth-app-form'
+      .remove-app-field
+        = link_to school_oauth_app_path(oauth_app), method: :delete, remote: true, data: {confirm: t('school.profile.api_access.delete_confirm')} do
+          i.fas.fa-times
+      .mb-2
+        = label_tag 'name', t('school.profile.api_access.app_name')
+        = text_field_tag 'name', oauth_app.name, class: 'form-control', autocomplete: 'off', required: true
+      .mb-3
+        = label_tag 'redirect_uris[]', t('school.profile.api_access.redirect_url')
+        = text_field_tag 'redirect_uris[]', oauth_app.redirect_uris[0], class: 'form-control', autocomplete: 'off', required: true
+      .mb-2.d-flex.align-items-center.secret-form
+        = text_field_tag 'secret', oauth_app.secret, class: 'form-control secret-field', autocomplete: 'off', required: true
+        = link_to refresh_secret_school_oauth_app_path(oauth_app), class: 'sync-link', method: :put, remote: true do
+          i.fas.fa-sync
+        button.btn.btn-primary.ml-2.copy-link-btn data-action="click->school-profile#copySecretCode"
+          = t('admin.team_users.team_link.copy')
+      .mb-1.text-center
+        = submit_tag t('common.buttons.save'), class: 'btn btn-primary'
+= form_tag school_oauth_apps_path, method: :post, remote: true
+  .oauth-app-form
+    .mb-2
+      = label_tag 'name', t('school.profile.api_access.app_name')
+      = text_field_tag 'name', '', class: 'form-control', autocomplete: 'off', required: true
+    .mb-3
+      = label_tag 'redirect_uris[]', t('school.profile.api_access.redirect_url')
+      = text_field_tag 'redirect_uris[]', '', class: 'form-control', autocomplete: 'off', required: true
+    .mb-2.d-flex.align-items-center.secret-form
+      = text_field_tag 'secret', '', class: 'form-control secret-field', autocomplete: 'off', required: true
+      button.btn.btn-primary.ml-2.copy-link-btn data-action="click->school-profile#copySecretCode"
+        = t('admin.team_users.team_link.copy')
+  button.btn.btn-cancel.btn-lg.app-save-btn type="submit"
+    i.fas.fa.fa-plus.mr-2
+    = t('school.profile.api_access.add_new_app')
+
+

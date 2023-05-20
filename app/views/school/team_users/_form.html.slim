@@ -1,0 +1,65 @@
+.modal-header.d-flex
+  - is_new_team_user = team_user.new_record?
+  h2.modal-title = is_new_team_user ? t('school.teachers.list.add_teacher') : t('.edit_user')
+  button.close type="button" data-dismiss="modal" aria-label="Close"
+    span.font-weight-light aria-hidden="true" == ("&times")
+.modal-body data-controller="teacher-form"
+  = form_for team_user, url: path, method: method, remote: true, html: { id: 'team_user_form' } do |f|
+    = f.fields_for :user do |user_form|
+      h1.mb-3
+        .d-flex.justify-content-between.mb-2
+          .first-name-field.mr-2
+            = user_form.label :fname, t('activerecord.attributes.student.fname')
+            = user_form.text_field :fname, class: 'form-control', autocomplete: 'off'
+            = error_for user_form.object, :fname
+          .last-name-field
+            = user_form.label :lname, t('activerecord.attributes.student.lname')
+            = user_form.text_field :lname, class: 'form-control', autocomplete: 'off'
+            = error_for user_form.object, :lname
+        .mb-2
+          = user_form.label :email, t('activerecord.attributes.student.email')
+          = user_form.text_field :email, class: 'form-control', autocomplete: 'off'
+          = error_for user_form.object, :email
+        .w-50.mb-2
+          - country_code = team_user.user.mobile.blank? && current_team.country.present? ? current_team.country : ''
+          = user_form.label :mobile, t('activerecord.attributes.student.mobile')
+          = user_form.text_field :mobile, class: 'form-control mobile_number_input', data: { target: 'teacher-form.userMobileSelect', code: country_code}
+          = error_for user_form.object, :mobile
+    h1.mb-3
+      .mb-2
+        - role = team_user.role || 'member'
+        = f.label :role
+        = f.hidden_field :role, data: { target: 'teacher-form.roleInput' }, value: role
+        ul.teacher-role-select.nav.nav-pills role="tablist"
+          - TeamUser.roles.each do |k, v|
+            li.nav-item
+              a.nav-link aria-selected="true" data-toggle="tab" href="#" role="tab" class="#{role == k ? 'active' : ''}" data-action="click->teacher-form#roleChanged" data-value="#{k}"
+                = t(k, scope: 'activerecord.attributes.team_user.roles')
+    .mb-2
+      = label_tag 'language-input', t('school.teachers.new.teach_languages')
+      = hidden_field_tag 'language_scope', team_user.user.language_scope, data: { target: 'teacher-form.languageScope' }
+      = text_field_tag 'language-input', '', class: 'form-control', autocomplete: 'off', placeholder: t('school.teachers.language_placeholder'), data: { target: 'teacher-form.userLanguagesSelect', value: Language.support.map { |e| [asset_path("flags/#{language_to_flag_code(e.code)}.svg").to_s + ', ' + e.system_name.strip, e.id]} }
+    .mb-2.selected-languages
+      = hidden_field_tag 'is_new_record', is_new_team_user, data: {target: 'teacher-form.isNewInput'}
+      = hidden_field_tag 'has_user_languages', team_user.user.user_languages.present?, data: {target: 'teacher-form.hasUserLanguage'}
+      - team_user.user.user_languages.each_with_index do |user_language, index|
+        - language = Language.support.find_by(id: user_language.language_id)
+        - if language.present?
+          .d-flex.align-items-baseline.language-suggestion
+            .language-select
+              = hidden_field_tag "user_languages[]", user_language.language_id
+              = image_tag asset_path("flags/#{language_to_flag_code(language.code)}.svg"), class: 'dropdown-item-flag'
+              span.flag-text.ml-3= language.name.presence || language.system_name
+            .language-action
+              span.default-language class="#{(team_user.user.language_scope.blank? && index == 0) || (language.id == team_user.user.language_scope.to_i) ? '' : 'd-none'}"
+                i.mr-2.fas.fa-check
+                = t('school.teachers.default')
+              a.set-language.ml-3.mr-2.cursor-pointer.text-right class="#{(team_user.user.language_scope.blank? && index == 0) || (language.id == team_user.user.language_scope.to_i) ? 'd-none' : ''}" data-value="#{language.id}" data-action="click->teacher-form#defaultLanguageSelected"
+                = t('school.teachers.set_as_default')
+              i.ml-3.cursor-pointer.fas.fa-times data-action="click->teacher-form#languageSelectCanceled"
+
+    = f.submit is_new_team_user ? t('create') : t('save'), class: 'add-teacher-btn btn btn-primary btn-block'
+
+    /*.d-flex.justify-content-center
+      = t('school.team_students.import_students.also_you_can')
+      = link_to t('school.teachers.invite.import_teachers'), new_school_team_user_path, class: 'ml-2 mr-2'

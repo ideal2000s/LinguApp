@@ -1,0 +1,614 @@
+---
+st:
+  course_mailer:
+    course_assigned_notification:
+      button: Qala thupelo
+      click_start_lesson: Tobetsa 'Qala thuto'
+      follow_course_link: Tobetsa konopo ho bula thupelo
+      footer_text: Khutlela Lingu ho ithuta ntho e ncha letsatsi le leng le le leng!
+      get_started_line: 'Tsela eo u qalang ka eona ke ena:'
+      notification_link: Litlhophiso tsa tsebiso
+      open_lesson: Bula thuto ea pele
+      or_paste_this_link: kapa hokela khokahano ena ka har'a sebatli sa hau
+      sign_in_with_email: Kena ka aterese ea hau ea lengolo tsoibila (%{email})
+      support_link: Ts'ehetso
+      title: Ho qala ka %{course}
+    new_document_comment:
+      author_text: "%{author} e siile tlhahlobo ea kabelo ea hau"
+      button_text: Lekola
+      button_url_helper: 'kapa hokela sehokelo sena ka har''a sebatli sa hau:'
+      footer_text: Ho na le ho hongata haholo ho ithuta ...
+      notification_link: Litlhophiso tsa tsebiso
+      subject_line: Tlhaloso e ncha ea kabelo
+      support_link: Ts'ehetso
+    otp:
+      ignore_msg: Haeba u sa etsa kopo ena, hlokomoloha lengolo tsoibila.
+      subject_line: Khoutu ea hau e ikhethang bakeng sa Lingu
+      unique_code_for_lingu: Khoutu ea hau e ikhethang ea Lingu ke ena
+  frontend:
+    auth:
+      already_have_acc_question: U se u ntse u na le ak'haonte?
+      back: Ka morao
+      back_to_sign_in: Khutlela ho Kena
+      check_your_email_for_a_code: Sheba lengolo-tsoibila la hau bakeng sa khoutu
+        ea hau
+      continue: Tsoela pele
+      continue_with_email: Tsoela pele ka lengolo-tsoibila
+      continue_with_provider: Tsoela pele ka %{provider}
+      did_not_receive_a_code: Ha oa fumana khoutu?
+      email_address: Aterese ea imeile
+      first_name: Lebitso la pele
+      get_unique_code: Fumana khoutu e ikhethang ea ho kena
+      join_lingu: Join Lingu
+      last_name: Fane
+      more_login_options: Likhetho tse ling tsa ho kena
+      no_account_question: Ha u na ak'haonte?
+      or: kapa
+      resend_code: Khutlisa khoutu
+      sign_in: kena
+      sign_up: ngolisa
+      want_to_receive_marketing_messages: Ke batla ho amohela melaetsa ea papatso
+        ho tsoa ho Lingu
+      we_ve_sent_a_code: >-
+        Re rometse khoutu ea linomoro tse 6 ho <strong> {{email}} </strong>. Khoutu
+        e felloa ke nako ka mor'a metsotso e 15, kahoo ka kopo e kenye haufinyane.
+    cookie_agreement:
+      agree: Lumellana
+      condition: >-
+        Re sebelisa li-cookie ho sekaseka ts'ebetso ea sebaka sa marang-rang le ho
+        fana ka litaba tse ikhethileng. Ka ho tobetsa "Lumellana", u lumela maemo
+        a rona.
+    course:
+      accredited_course_provider: Mofani oa thuto ea netefalitsoeng
+      apply: Etsa kopo
+      apply_filters: Sebelisa lihlopha
+      by: Ka
+      cancel: Hlakola
+      categories: "%{count} mekhahlelo"
+      category: Sehlopha
+      clear: E hlakile
+      clear_filters: Hlakola lihlopha
+      contact_us: Iteanye le rona
+      could_not_find_match_for: Tšoarelo, ha rea fumana papali efe kapa efe bakeng
+        sa
+      course_language: Puo ea thupelo
+      duration: Nako
+      filter_settings:
+        categories:
+          academic: Thuto
+          business: Khoebo
+          fashion: Feshene
+          food_drink: Lijo le lino
+          for_kids: Bakeng sa bana
+          general: Kakaretso
+          health: Bophelo bo botle
+          legal: Molao
+          sport: Lipapali
+          travel: Tsamaea
+        durations:
+          t0_600: "<Metsotso e 10"
+          t1800_3600: Metsotso e 30-60
+          t3600_86400: Hora e 1+
+          t600_1800: Metsotso e 10-30
+        focus_on:
+          conversation: Moqoqo
+          grammar: Sebōpeho-puo
+          listening: Ho mamela
+          pronunciation: Ho bitsa mantsoe
+          reading: Ho bala
+          speaking: Antseng a bua
+          writing: Ho ngola
+        levels:
+          long:
+            advanced: Boemo bo phahameng
+            elementary: Boemo ba mantlha
+            intermediate: Boemo ba lipakeng
+            no_knowledge: Ha ho tsebo
+            pre_intermediate: Pele boemong ba lipakeng
+            upper_intermediate: Boemo bo kaholimo ba lipakeng
+          short:
+            advanced: E tsoetse pele
+            beginner: Simololang
+            intermediate: Lipakeng
+        sort_by:
+          most_rated: Tse ngata li filoe lintlha
+          newest: Tse ncha
+          popularity: Ho Tuma
+      filters: Metlhotlo
+      focus_on: Tsepamisa maikutlo ho
+      focus_on_title: Ke batla ho tsepamisa maikutlo ho
+      hide_lessons: Pata lithuto
+      hours: Lihora
+      i_understand: kea utloisisa
+      i_want_to_learn: Ke batla ho ithuta
+      in_language: ka %{language}
+      language: Puo
+      learn_more: Ithute haholoanyane
+      less_settings: Litlhophiso tse fokolang
+      lessons: Lithuto
+      lessons_available: lithuto tsa %{number} li teng
+      lessons_catalog_page_subtitle: Eba mohale oa puo.
+      lessons_catalog_page_title: Eketsa maikutlo a hau ka thuto ea puo
+      level: Boemo
+      min: Min
+      more_settings: Litlhophiso tse ling
+      navbar:
+        close: Koala menu
+        menu: Lenaneo
+        select_language: Khetha puo
+      need_to_buy_course: U hloka ho etsa buka pele
+      no_description: Ha ho tlhaloso e fanoeng
+      no_results: Tšoarelo, ha rea fumana papali efe kapa efe bakeng sa
+      or: kapa
+      per_month: ka khoeli
+      plans: Merero
+      privacy_policy: Leano la Lekunutu
+      rating: Tekanyo
+      remove_all_filters: Tlosa lihlopha tsohle
+      reviews: Litlhahlobo
+      save: Boloka
+      search: Batla
+      select_dots: Khetha ...
+      select_languages: Khetha lipuo
+      select_num_languages: Khetha lipuo tsa %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Bontsha tsohle
+      show_all_lessons: Bontša lithuto tsohle
+      show_lessons: Bontša lithuto tsa %{number}
+      show_more: Bontša tse ling
+      sign_up_with_lingu_for: Ingolise le Lingu Norway bakeng sa
+      skills: tsebo ea %{count}
+      sort_by: Hlophisa ka
+      start_typing_here: Qala ho ngola mona
+      teach: Ruta
+      terms_and_conditions: Lipallo le lipehelo
+      time_range: Nako ea nako
+      try_adjusting_your_search: Leka ho hlophisa patlo ea hau ka ho fetola li-filter
+      try_this_course: Leka thupelo ena
+      website_language: Puo ea webosaete
+      words: Mantsoe
+    games:
+      finished:
+        go_to_next_exercise: Mosebetsi o motle! E-ea boikoetlisong bo latelang
+      flashcard:
+        buttons:
+          finish: Qetella
+          next: E 'ngoe
+          previous: E fetileng
+        check_out_new_words: Lekola mantsoe a macha ao u tla ithuta ona thutong ena
+        frequency_of_word_usage: Khafetsa tšebeliso ea lentsoe ho %{language}
+        keep_practice_to_learn_all_words: Hlahloba mantsoe a %{count} 'me re bapale
+          lipapali!
+        word_frequency:
+          level1: E sebelisoa hangata
+          level2: E sebelisoa hangata
+          level3: Kakaretso ya lentswe - mahareng
+          level4: Kakaretso ya lentswe - mahareng
+          level5: Tloaelehileng
+          level6: E atile haholo
+      match_word:
+        click_and_move_each_word_to_counterpart: Tobetsa ebe u tsamaisa lentsoe ka
+          leng ho molekane oa lona
+        start_heading: Bapisa mantswe ho etsa para
+        time_is_up: Nako e felile!
+      skip_tutorial: Tlola
+      time_is_up: Nako e felile!
+      word_nodes:
+        match_letters_to_form_word: Bapisa litlhaku ho theha lentsoe
+      word_waterfall:
+        do_not_hesitate: Ha re potlake!
+        go_to_next_exercise: E-ea boikoetlisong bo latelang
+        select_correct_translation: Khetha papali e nepahetseng
+        well_done: Mosebetsi o motle!
+    home_page:
+      hello: Lumela,
+      popular_lessons: Lithuto tse tsebahalang
+      show_more: Bontša tse ling
+      time: "%{count} mets"
+      today_lesson: Thuto ea hau ea kajeno
+      user_name: Lerato
+      words: "%{count} mantsoe"
+    idle_screen:
+      by_author: by petrose taole
+      continue_lesson: Tsoela pele ho ithuta
+      exit: Etsoa
+      idle_message: O qetile nako e itseng o sa sebetse ...
+    lesson_page:
+      back_to_course_page: Khutlela leqepheng la thupelo
+      close: Haufi
+      continue_lesson: Tsoela pele ho ithuta
+      followed: E lateloa
+      hamburger_menu_btn: Lenaneo la Hamburger
+      lesson_given: lithuto
+      not_started: ha e qale
+      or: Kapa
+      part_complete: "%{percent}% e felletse"
+      restart_lesson: Qala hape
+      section_check: Lekola
+      section_check_info: liteko tsa %{count}
+      section_learn: Ithute
+      section_learn_info: "%{count} min ho shebella le ho bala"
+      section_play: Bapala
+      section_play_info: "%{count} mantsoe ho itloaetsa"
+      start_lesson: Qala thuto
+      step_progress: leratokganya
+      subscribe: Latela
+      subscribed: E lateloa
+      subscribers: balateli
+      time_min: "%{minutesNumber} mets"
+      unsubscribe: Se latele
+      webview_error_title: Ho na le phoso e etsahetseng ...
+      words_number: "%{wordsNumber} mantsoe a macha"
+    lesson_task:
+      cancel_button: Hlakola
+      check:
+        navigation_next: E 'ngoe
+        navigation_previous: E fetileng
+        navigation_skip: Tlola
+      controls_panel:
+        font_size_button: Boholo ba fonte
+        high_contrast_button:
+          origin: Phapang e phahameng
+          short: Phapang
+        hints_button: Malebela
+        music_playback_button:
+          origin: Ho bapala 'mino
+          short: "'Mino"
+        sound_effects_button:
+          origin: Liphello tsa molumo
+          short: Modumo
+      exit_button: Etsoa
+      finish_button: Qetella
+      finished:
+        back_to_learn: Khutlela ho ithuta
+        back_to_lesson_page: Khutlela leqepheng la thuto
+        back_to_results_page: Khutlela leqepheng la sephetho
+        bad_result_message: Hmm ... leka ho nka thuto hape
+        close_lesson: Koala thuto
+        correct_answers_list: Lethathamo la likarabo tse nepahetseng
+        good_result_message: Kea bona hore u entse boiteko!
+        great_result_message: Mosebetsi o motle! Tsena ke litholoana tse ntle!
+        next_course_lesson: Eya thutong e latelang ehlile
+        no_results: Ha o na liphetho tsa liteko hajoale
+        no_results_text: Ka kopo, phethela thuto ebe u pasa tlhahlobo ho fumana liphetho
+        see_correct_answers_list: Sheba lenane le nepahetseng la likarabo
+        train_more: Itloaetse haholoanyane 'me u tla fumana litholoana tse ntle nakong
+          e tlang!
+        you_finished_lesson: E ntle haholo! U qetile thuto
+      go_back: Leba morao
+      next_button: E 'ngoe
+      not_available_task: Mosebetsi ona ha o so fumanehe
+      start_button: Qala
+      tasks:
+        check:
+          assignment:
+            accept: Amohela
+            author_will_check_your_answer: >-
+              %{author} e tla lekola karabo ea hau 'me hangata e fane ka maikutlo
+              nakong ea matsatsi a 1-2
+            continue_writing: Tsoela pele ho ngola
+            copy: Kopitsa
+            delete: Tlosa
+            delete_record: Hlakola rekoto
+            edit: Edita
+            essay_does_not_have_enough_words: >-
+              Karabo ea hau e lokela ho ba le bonyane mantsoe a %{minWordsNumber}.
+              Karabo ea hau hajoale ke mantsoe a %{currentWordsNumber}.
+            followers_count: "%{followersCount} balateli"
+            lessons_count: lithuto tsa %{lessonsCount}
+            minimal_recording_time: Nako e nyane ea ho rekota - %{minimalRecordingTime}
+            minimum_characters_amount: Bonyane ba litlhaku - %{minimumCharactersAmount}
+            minimum_words_amount: Bonyane mantsoe - %{minimumAmount}
+            record_again: Ngola hape
+            record_voice: Rekota lentsoe
+            send_anyway: Romella joalo
+            send_to_review: Romella ho hlahloba
+            skip: Tlola
+            too_short_answer: Karabo e khutšoane haholo
+            type_your_answer: Ngola karabo ea hau
+            unknown_task_type: Mofuta oa mosebetsi o sa tsejoeng
+            upgrade_licence: Ntlafatsa laesense
+            upgrade_your_plan: Ntlafatsa moralo oa hau ho leka likabelo le litlhahlobo
+              tsa matichere
+            upload_files: Kenya lifaele
+            write_essay: Ngola moqoqo
+            you_have_used_amount_of_assignments: U sebelisitse likoloto tsa kabelo
+              ea %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Lekhalo la polelo
+          fill_in_table:
+            column_answer_placeholder: Karabo
+            column_question_placeholder: Potso
+            example: Mohlala
+          true_false:
+            'false': Bohata
+            'true': Ke 'nete
+        learn:
+          translatable_text:
+            show_original: Hlahisa ea mantlha
+            translate_into: Fetolela le Google ho %{languageName}
+            translate_into_your_lang: Fetolela le Google ka puo ea hau
+        play:
+          arrange_words:
+            start_screen:
+              heading: Etsa polelo ka mantsoe a fanoeng
+          audition:
+            start_screen:
+              heading: Mamela molumo ebe u tlanya lentsoe leo u sa tsoa le utloa
+          dictation:
+            get_help: Fumana thuso
+            i_do_not_know: Ha ke tsebe
+            input_placeholder: Kenya seo u se utloileng mona
+            start_screen:
+              heading: Mamela 'me u ngole seo u se utloang
+          fill_gap:
+            start_screen:
+              heading: Nyalanya lentsoe le moelelo oa lona
+          finish_screen:
+            go_to_next_exercise: Mosebetsi o motle! E-ea boikoetlisong bo latelang
+          image_hotspot:
+            start_screen:
+              heading: Bolela lintho tse setšoantšong ka nepo
+          image_object:
+            start_screen:
+              heading: Khetha ntho e nepahetseng setšoantšong se latelang
+          inline_dropdown:
+            start_screen:
+              heading: Kgetha mantswe a tshwanang le polelo
+          mark_word:
+            start_screen:
+              heading: Bala sengoloa ebe u khetha lentsoe le lumellanang le setšoantšo
+          minimal_pairs:
+            start_screen:
+              heading: Shebella video ebe u khetha khetho e nepahetseng
+    locale:
+      currency_switcher_title: Fetola chelete
+      lang_switcher_title: Phetoho ea puo
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Senyesemane
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Setaliana
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio e ea jarisoa
+        aria_pause_button: Khefutsa
+        aria_play_button: Bapala
+        aria_reload_button: Khutlisetsa hape
+        aria_stop_button: Ema
+        reload_message: E hlolehile ho kenya molumo. Ka kopo, tobetsa konopo ho kenya
+          hape.
+    mobile_modal:
+      apply: Etsa kopo
+      cancel: Hlakola
+      clear: E hlakile
+      save: Boloka
+    page404:
+      goToStartLessonPage: E-ea leqepheng la thuto ea qalo
+      ooops: Oooops ...
+      sorry_message: Tšoarelo, Tor ha a ka a fumana leqephe lena
+    profile:
+      navigation:
+        log_out: Tsoa
+        my_profile: Boemo ba ka
+        settings: Litlhophiso
+      onboarding:
+        choose_native_language: Khetha puo ea heno kapa puo eo u e utloisisang
+        do_you_understand_english: Na u utloisisa Senyesemane?
+        hello: Lumela
+        language_levels:
+          a1: Boemo ba mantlha
+          a2: Boemo ba pele ho lipakeng
+          b1: Boemo ba lipakeng
+          b2: Boemo bo ka Holimo ba Mahareng
+          c1: Boemo bo phahameng
+          no_knowledge: Ha ho tsebo
+        language_not_supported:
+          note: Re tla u tsebisa hang ha puo e se e fumaneha
+          title: Tšoarelo, empa ha re sebelise puo ena hajoale
+          try_another_language: Leka puo e 'ngoe
+        'no': Che
+        search_placeholder: Batla ...
+        show_more_languages: Lipuo tse ling
+        target_language_question: U batla ho ithuta puo efe?
+        what_is_language_level: U ka lekanya boemo ba hau ba %{languageName} joang?
+        'yes': Ho joalo
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Leano la lekunutu la Lingu
+        support: Ts'ehetso
+      logout: Ho tsoa
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Fumana lintlha tse ncha ho tsoa ho matichere le likolo
+                tseo u li latelang
+              sections:
+                app_notifications: Litsebiso tsa App
+                email: Imeile
+              title: Thuso ea ho ithuta
+            marketing:
+              description: Lula u tseba ka lipapatso tsohle, lintlafatso le khothatso
+                e tsoang ho Lingu
+              sections:
+                browser_notifications: Litsebiso tsa sebatli
+                email: Imeile
+              title: Ho bapatsa
+          title: Likhetho tsa ho ikopanya
+        personal_information:
+          delete_photo: Hlakola foto
+          email: Imeile
+          first_name: Lebitso la pele
+          last_name: Fane
+          social_accounts:
+            connected: Hokahane
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ha e amane
+            title: Litlaleho tsa kahisano
+          title: Lintlha tse amanang le uena
+          update_photo: Nchafatsa foto
+        school:
+          active_licence: Laesense e sebetsang
+          active_status: E sebetsa
+          delete_profile: Hlakola boemo ba ka
+          delete_profile_modal:
+            body: |-
+              O felisa dintlha tsohle tsa hau-ka ho sa feleng. Ha ho na konopo ea ho etsolla, 'me re ke ke ra u khutlisetsa eona hamorao.
+              Na u na le bonnete ba hore u batla ho hlakola boemo ba hau ba Lingu le data ea hau kaofela?
+            cancel: Hlakola
+            confirm: E, e hlakole
+            i_understand_the_consequences: Ke utloisisa litlamorao
+            title: Tlosa boemo ba hau?
+          expired: Li-%{expire_date} tse felileng
+          expires: E felloa ke nako %{expire_date}
+          inactive_status: Ha e sebetse
+          revoke_access: Khutlisa phihlello ea ho bala
+          sections:
+            contact_school: Ikopanye le sekolo
+            export_my_data: Romella data ea ka
+            read_school_privacy_policy: Bala leano la lekunutu la Sekolo
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Ho bapala 'mino
+              sound_effects: Liphello tsa molumo
+              title: Modumo
+            visual:
+              dark_theme: Sehlooho se lefifi
+              font_size:
+                test_text: Joang bo lula bo le botala ka lehlakoreng le leng la terata
+                title: Boholo ba fonte
+              high_contrast: Phapang e phahameng
+              hints: Malebela
+              title: E bonts'ang
+          title: Modumo le Pono
+        training_settings:
+          sections:
+            i_understand: kea utloisisa
+            i_want_to_learn: Ke batla ho ithuta
+            target_language_level: Boemo ba Senyesemane
+          title: Litlhophiso tsa koetliso
+      settings_title: Litlhophiso
+    teacher_card:
+      followers_count:
+        one: 1 molateli
+        other: "%{count} balateli"
+      lessons_count:
+        one: 1 thuto
+        other: lithuto tsa %{count}

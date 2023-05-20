@@ -1,0 +1,13 @@
+nav.navbar.navbar-vertical.navbar-expand-xl.navbar-light.navbar-glass
+  = link_to admin_dashboard_index_path, class: 'navbar-brand text-left' do
+    .d-flex= image_tag('lingu-logo.svg', class: 'mr-2 float-left', style: 'width: 146px; margin: 0 20px; height: 82px;')
+
+  #navbarVerticalCollapse.collapse.navbar-collapse
+    ul.navbar-nav.flex-column
+      li.nav-item.mt-3
+        .d-flex.align-items-center
+          - if content_for(:back)
+            = yield(:back)
+
+  - if content_for?(:student)
+    = yield(:student)

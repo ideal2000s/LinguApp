@@ -1,0 +1,122 @@
+version: '3.6'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .dockerenv/development.dockerfile
+    image: lingu_app:development
+    working_dir: /app
+    volumes:
+      - .:/app:cached
+      - ./.dockerenv/webpacker.yml:/app/config/webpacker.yml:cached
+      - node_modules:/app/node_modules:cached
+      - bundler_cache:/usr/local/bundle
+      - common_cache:/app/tmp/cache
+      - /app/tmp/pids
+      - /app/tmp/sockets
+#    command: bash -c "rm -f /app/tmp/pids/server.pid; bundle exec rails server -p 3000 -b '0.0.0.0'"
+    command: bash -c "rm -f /app/tmp/pids/server.pid; bundle exec puma -C config/puma.rb"
+    environment:
+      - USE_SSL=1
+      - RAILS_ENV=development
+      - MAIN_HOST=lvh.me
+      - DB_HOST=database
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=p@ssw0rd
+      - PGUSER=postgres
+      - PGPASSWORD=p@ssw0rd
+      - PGDATABASE=lingu_development
+      - PGHOST=database
+      - MAILHOG_MAILER=1
+      - MAILHOG_HOST=mailhog
+      - REDIS_URL=redis://redis:6379
+      - SECRET_KEY_BASE=0966bd93add7acaeb4600f2e2cf347f779936a69ef9121d8a10c97a55399c387dbbc8c38be274fc8c69fdddc660748d2d702ed551744e770e0fa0a6eab7afa49
+      - GOOGLE_AUTH_ID=718937732580-kir40n97ifhcl9qkv191dh1v4ioolko6.apps.googleusercontent.com
+      - GOOGLE_AUTH_SECRET=H8MMnrmUC8yCzJOAOUxSpoSz
+      - PDF_GENERATOR_BASIC_AUTH='api:LYLhjBICv3q0k9Yg'
+      - GOOGLE_API_KEY=$GOOGLE_API_KEY
+    links:
+      - database
+      - redis
+      - webpack
+#      - hydra
+      - mailhog
+    depends_on:
+      - database
+    ports:
+      - 3000:3000
+      - 3443:3443
+  redis:
+    image: redis:5-alpine
+    volumes:
+    - redis_data:/data
+  database:
+    image: postgres:11-alpine
+    restart: unless-stopped
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=lingu_development
+      - POSTGRES_PASSWORD=p@ssw0rd
+
+  webpack:
+    build:
+      context: .
+      dockerfile: .dockerenv/development.dockerfile
+    image: lingu_app:development
+    restart: always
+    working_dir: /app
+    command: bash -c "rm -rf /app/public/packs/*; /app/bin/webpack-dev-server"
+    volumes:
+      - .:/app:cached
+      - ./.dockerenv/webpacker.yml:/app/config/webpacker.yml:cached
+      - node_modules:/app/node_modules:cached
+      - bundler_cache:/usr/local/bundle
+      - common_cache:/app/tmp/cache
+    ports:
+      - 3035:3035
+
+#  hydra:
+#    image: oryd/hydra:v1.7.4
+#    ports:
+#      - "4444:4444" # Public port
+#      - "4445:4445" # Admin port
+#      - "5555:5555" # Port for hydra token user
+#    command:
+#      serve all --dangerous-force-http
+#    environment:
+#      - URLS_SELF_ISSUER=http://auth.lvh.me:4444
+#      - URLS_CONSENT=http://app.lvh.me:3000/oauth/consent
+#      - URLS_LOGIN=http://app.lvh.me:3000/oauth/login
+#      - URLS_LOGOUT=http://app.lvh.me:3000/oauth/logout
+#      - DSN=postgres://postgres:password@hydra_database/hydradb
+#      - SECRETS_SYSTEM=youReallyNeedToChangeThis
+#      - OIDC_SUBJECT_IDENTIFIERS_PAIRWISE_SALT=youReallyNeedToChangeThis
+#      - SERVE_COOKIES_SAME_SITE_MODE=Lax
+#      - OIDC_SUBJECT_IDENTIFIERS_ENABLED=pairwise
+#    restart: unless-stopped
+#
+#  hydra_database:
+#    image: postgres:11-alpine
+#    restart: unless-stopped
+#    volumes:
+#      - hydra_data:/var/lib/postgresql/data
+#    environment:
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_DB=hydradb
+#      - POSTGRES_PASSWORD=password
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    restart: unless-stopped
+    ports:
+      - 8025:8025
+volumes:
+  pgdata:
+  redis_data:
+  hydra_data:
+  node_modules:
+  bundler_cache:
+  common_cache:

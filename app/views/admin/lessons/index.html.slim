@@ -1,0 +1,65 @@
+- set_page_title t('teach.lessons.draft.all_lessons')
+
+.card.rounded-bottom-0
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner2.png')});"
+  .card-header
+    h3.mb-0= t('.count_lessons', count: lessons.total_count)
+    = search_form_for @search, url: school_lessons_path, class: 'lesson-filter-form' do |f|
+      .lessons-filter.p-3
+        h5.mb-3
+          = t('admin.dictionary.languages.words.index.filter')
+          - if @search.conditions.length > 0
+            button.btn.btn-falcon-default.btn-sm.ml-2 aria-label="Close" type="button" onclick="window.location = '#{admin_lessons_path}';"
+              i.fas.fa-times.fa-fw
+        .row
+          .col-sm-12.col-md
+            = f.select :course_title_eq, options_for_select(courses.map{ |e| e.title }, @search.course_title_eq), { include_blank: t('layouts.teach.sidebar.courses') }, { class: 'form-control js-submit-on-change' }
+          .col-sm-12.col-md
+            = f.select :team_id_eq, options_for_select(Team.school.map{ |e| [e.name, e.id] }, @search.team_id_eq), { include_blank: t('shared.team') }, { class: 'form-control js-submit-on-change' }
+          .col-sm-12.col-md
+            = f.select :level_eq, options_for_select(Course.levels_for_filter, @search.level_eq), { include_blank: t('shared.level') }, { class: 'form-control js-submit-on-change' }
+          .col-sm-12.col-md
+            = f.select :language_id_eq, options_for_select(Language.active.select(:name_translations, :id).map { |d| [d.name, d.id] }, @search.language_id_eq), { include_blank: t('shared.language') }, { class: 'form-control js-submit-on-change' }
+          .col-sm-12.col-md
+            = f.select :status_eq, options_for_select(Lesson.statuses, @search.status_eq), { include_blank: t('activerecord.attributes.lesson.status') }, { class: 'form-control js-submit-on-change' }
+          .col-sm-12.col-md
+            = f.select :published_true, options_for_select([[t('teach.course_sections.lesson_row.unpublished'), 0], [t('published'), 1]], params.dig(:q, :published_true)), { include_blank: t('teach.lessons.review.publishing_status') }, {class: 'form-control js-submit-on-change'}
+  .card-footer.pt-0
+    == paginate lessons
+.card.rounded-top-0
+  table.table.thead-light.table-hover.mb-0
+    thead
+      tr.vertical
+        th
+        th= t('title')
+        th= t('teach.lessons.list.level')
+        th= t('activerecord.models.team')
+        th
+    tbody
+      - lessons.each do |lesson|
+        tr
+          td.align-middle
+            .fas.fa-circle class="#{lesson.published? ? 'text-success' : 'text-muted'}"
+          td
+            = link_to lesson.title, admin_lesson_path(lesson), class: 'text-primary font-weight-bold'
+            small.d-flex.align-items-center
+              = user_avatar_with_name lesson.author, 'avatar-s'
+              |,
+              =< l(lesson.updated_at, format: :short)
+          td.align-middle
+            = lesson_level_tag(lesson)
+            span.ml-2= lesson_kind_tag(lesson)
+          td.align-middle= lesson.team&.name
+          td.align-middle.text-right
+            .btn-group
+              = link_to admin_lesson_path(lesson), class: 'btn btn-falcon-default btn-sm' do
+                i.fas.fa-eye.fa-fw
+              = link_to edit_admin_lesson_path(lesson), class: 'btn btn-falcon-default btn-sm' do
+                i.fas.fa-pencil-alt.fa-fw
+              - if policy(lesson).destroy?
+                = link_to admin_lesson_path(lesson), class: 'btn btn-falcon-danger btn-sm', method: :delete, data: {confirm: t('teach.lessons.confirm_lesson_delete')} do
+                  i.fas.fa-times.fa-fw
+
+  - unless current_user.language_scope.blank?
+    .card-footer
+      = render 'shared/scoped_records'

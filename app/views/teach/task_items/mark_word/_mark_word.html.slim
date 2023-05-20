@@ -1,0 +1,50 @@
+div id=dom_id(item)
+  .card.mb-3 class="#{item.functional? && 'corner-success' || 'corner-warning'}"
+    .card-body
+      .row.justify-content-between
+        .col-md-auto
+          pre.card-text.mb-3
+            = best_in_place item,
+              :statement,
+              as: :textarea,
+              url: teach_task_item_path(task, item),
+              param: :task_item,
+              inner_class: "form-control"
+        - if item.task_item_words.first&.word&.image.present?
+          .col-md-auto
+            = image_tag item.task_item_words.first.word.image_url, class: 'img-fluid mr-3 rounded', width: '70'
+        .col-md-auto
+          .btn-group.float-right
+            - unless item.last?
+              = link_to move_down_teach_task_item_path(task, item), method: :patch, remote: true,
+              class: 'btn btn-sm move_down', aria: { label: t('move_down') } do
+                span.fas.fa-chevron-down
+            - unless item.first?
+              = link_to move_up_teach_task_item_path(task, item), method: :patch, remote: true,
+              class: 'btn btn-sm move_up', aria: { label: t('move_up') } do
+                span.fas.fa-chevron-up
+            = link_to teach_task_item_path(task, item), method: :delete, remote: true,
+            class: 'btn btn-sm text-danger', data: { confirm: t('delete_this_item') } do
+              span.fas.fa-times
+
+      - if item.task_item_words.empty?
+        .row
+          .col-sm-6
+            = form_for TaskItemWord.new, url: teach_task_item_words_path(task, item), id: "task_item_#{dom_id(item)}", remote: true do |f|
+              .input-group.input-group-sm
+                .input-group-prepend
+                  .input-group-text= t('.associate_with') + ':'
+                = f.select :word_id, options_for_select([]), {},
+                  class: 'form-control select2-remote words-search', multiple: false, data: { url: teach_task_item_words_path(task, item, language_id: task.lesson.language_id) }, id: "word_#{dom_id(item)}"
+                .input-group-append
+                  = f.submit t('.link_word'), class: 'btn btn-outline-secondary border-300 btn-sm'
+      - else
+        - item.task_item_words.each do |item_word|
+          .row.justify-content-between
+            .col-md-auto
+              = t('associated_with') + ':'
+              - word = item_word.word
+              strong<= word.body
+              = " (#{t(word.word_class, scope: 'activerecord.attributes.word.word_classes_abbr')}) "
+              = link_to teach_task_item_word_path(task, item, item_word), method: :delete, remote: true do
+                i.fa.fa-times.text-danger.pl-2

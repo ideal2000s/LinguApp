@@ -1,0 +1,615 @@
+---
+uz:
+  course_mailer:
+    course_assigned_notification:
+      button: Kursni boshlang
+      click_start_lesson: '"Darsni boshlash" tugmasini bosing'
+      follow_course_link: Kursni ochish uchun tugmani bosing
+      footer_text: Har kuni yangi narsalarni o'rganish uchun Linguga qaytib keling!
+      get_started_line: 'Siz qanday boshlaysiz:'
+      notification_link: Bildirishnoma sozlamalari
+      open_lesson: Birinchi darsni oching
+      or_paste_this_link: yoki ushbu havolani brauzeringizga joylashtiring
+      sign_in_with_email: Elektron pochta manzilingiz bilan kiring (%{email})
+      support_link: Qo'llab-quvvatlash
+      title: "%{course} bilan ishlashni boshlash"
+    new_document_comment:
+      author_text: "%{author} sizning topshiriqingizni ko'rib chiqishni qoldirdi"
+      button_text: Tekshirib ko'r
+      button_url_helper: 'yoki ushbu havolani brauzeringizga joylashtiring:'
+      footer_text: O'rganish uchun juda ko'p narsa bor ...
+      notification_link: Bildirishnoma sozlamalari
+      subject_line: Yangi topshiriq sharhi
+      support_link: Qo'llab-quvvatlash
+    otp:
+      ignore_msg: >-
+        Agar siz ushbu so'rovni amalga oshirmagan bo'lsangiz, shunchaki elektron pochtani
+        e'tiborsiz qoldiring.
+      subject_line: Linguga oid noyob kodingiz
+      unique_code_for_lingu: Bu erda sizning Linguga oid noyob kodingiz
+  frontend:
+    auth:
+      already_have_acc_question: Hisobingiz bormi?
+      back: Orqaga
+      back_to_sign_in: Kirishga qaytish
+      check_your_email_for_a_code: Kodingizni elektron pochta orqali tekshiring
+      continue: Davom eting
+      continue_with_email: Elektron pochta orqali davom eting
+      continue_with_provider: "%{provider} bilan davom eting"
+      did_not_receive_a_code: Kod olmadingizmi?
+      email_address: Elektron pochta manzili
+      first_name: Ism
+      get_unique_code: Noyob kirish kodini oling
+      join_lingu: Linguga qo'shiling
+      last_name: Familiya
+      more_login_options: Kirishning boshqa variantlari
+      no_account_question: Hisobingiz yo'qmi?
+      or: yoki
+      resend_code: Kodni qayta yuboring
+      sign_in: tizimga kirish
+      sign_up: Ro'yxatdan o'tish
+      want_to_receive_marketing_messages: Men Lingvindan marketing xabarlarini olmoqchiman
+      we_ve_sent_a_code: >-
+        Biz <strong> {{email}} </strong> manziliga 6 xonali kodni yubordik. Kodning
+        amal qilish muddati 15 daqiqada tugaydi, shuning uchun uni tezroq kiriting.
+    cookie_agreement:
+      agree: Qabul qilaman
+      condition: >-
+        Sayt ish faoliyatini tahlil qilish va shaxsiy tarkibni etkazib berish uchun
+        biz cookie-fayllardan foydalanamiz. "Roziman" tugmasini bosish orqali siz
+        bizning shartlarimizga rozilik bildirasiz.
+    course:
+      accredited_course_provider: Akkreditatsiyadan o'tgan kurs provayderi
+      apply: Ariza berish
+      apply_filters: Filtrlarni qo'llang
+      by: By
+      cancel: Bekor qilish
+      categories: "%{count} toifalari"
+      category: Turkum
+      clear: Aniq
+      clear_filters: Filtrlarni tozalash
+      contact_us: Biz bilan bog'lanish
+      could_not_find_match_for: Kechirasiz, biz uchun mos keladigan topilmadi
+      course_language: Kurs tili
+      duration: Muddati
+      filter_settings:
+        categories:
+          academic: Akademik
+          business: Biznes
+          fashion: Moda
+          food_drink: Oziq-ovqat va ichimliklar
+          for_kids: Bolalar uchun
+          general: Umumiy
+          health: Sog'liqni saqlash
+          legal: Huquqiy
+          sport: Sport
+          travel: Sayohat
+        durations:
+          t0_600: "<10 daqiqa"
+          t1800_3600: 30-60 daqiqa
+          t3600_86400: 1+ soat
+          t600_1800: 10-30 daqiqa
+        focus_on:
+          conversation: Suhbat
+          grammar: Grammatika
+          listening: Tinglash
+          pronunciation: Talaffuz
+          reading: O'qish
+          speaking: Gapirmoqda
+          writing: Yozish
+        levels:
+          long:
+            advanced: Ilg'or daraja
+            elementary: Boshlang'ich daraja
+            intermediate: Oraliq daraja
+            no_knowledge: Ma'lumot yo'q
+            pre_intermediate: O'rta darajadan oldingi daraja
+            upper_intermediate: Yuqori o'rta daraja
+          short:
+            advanced: Ilg'or
+            beginner: Boshlovchi
+            intermediate: O'rta
+        sort_by:
+          most_rated: Eng baholangan
+          newest: Eng yangi
+          popularity: Ommaboplik
+      filters: Filtrlar
+      focus_on: Diqqatni qaratish
+      focus_on_title: Men diqqatimni qaratmoqchiman
+      hide_lessons: Darslarni yashirish
+      hours: Soatlar
+      i_understand: Tushundim
+      i_want_to_learn: Men o'rganmoqchiman
+      in_language: "%{language} da"
+      language: Til
+      learn_more: Ko'proq ma'lumot olish
+      less_settings: Kamroq sozlamalar
+      lessons: Darslar
+      lessons_available: "%{number} darslari mavjud"
+      lessons_catalog_page_subtitle: Til qahramoniga aylaning.
+      lessons_catalog_page_title: Til kursi bilan ufqingizni kengaytiring
+      level: Daraja
+      min: Min
+      more_settings: Boshqa sozlamalar
+      navbar:
+        close: Menyuni yoping
+        menu: Menyu
+        select_language: Tilni tanlang
+      need_to_buy_course: Avval kursni bron qilishingiz kerak
+      no_description: Hech qanday tavsif berilmagan
+      no_results: Kechirasiz, biz uchun mos keladigan topilmadi
+      or: yoki
+      per_month: oyiga
+      plans: Rejalar
+      privacy_policy: Maxfiylik siyosati
+      rating: Reyting
+      remove_all_filters: Barcha filtrlarni olib tashlang
+      reviews: Sharhlar
+      save: Saqlash
+      search: Qidirmoq
+      select_dots: Tanlang ...
+      select_languages: Tilni tanlang
+      select_num_languages: "%{number} tillarini tanlang"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Hammasini ko'rsatish
+      show_all_lessons: Barcha darslarni ko'rsating
+      show_lessons: "%{number} darslarini ko'rsating"
+      show_more: Ko'proq ko'rsatish
+      sign_up_with_lingu_for: Lingu Norvegiyada ro'yxatdan o'ting
+      skills: "%{count} qobiliyatlari"
+      sort_by: Saralash turi
+      start_typing_here: Bu erda yozishni boshlang
+      teach: O'rgating
+      terms_and_conditions: Foydalanish shartlari
+      time_range: Vaqt oralig'i
+      try_adjusting_your_search: Filtrlaringizni o'zgartirib, qidiruvni o'zgartirishga
+        harakat qiling
+      try_this_course: Ushbu kursni sinab ko'ring
+      website_language: Veb-sayt tili
+      words: So'zlar
+    games:
+      finished:
+        go_to_next_exercise: Barakalla! Keyingi mashqqa o'ting
+      flashcard:
+        buttons:
+          finish: Tugatish
+          next: Keyingi
+          previous: Oldingi
+        check_out_new_words: Ushbu darsda o'rganadigan yangi so'zlarni tekshiring
+        frequency_of_word_usage: "%{language} da so'zlardan foydalanish chastotasi"
+        keep_practice_to_learn_all_words: "%{count} so'zlarini ko'rib chiqing va keling,
+          bir nechta o'yin o'ynaymiz!"
+        word_frequency:
+          level1: Kamdan kam ishlatiladi
+          level2: Kamdan kam ishlatiladi
+          level3: So'z chastotasi - o'rtacha
+          level4: So'z chastotasi - o'rtacha
+          level5: Umumiy
+          level6: Juda keng tarqalgan
+      match_word:
+        click_and_move_each_word_to_counterpart: Har bir so'zni bosing va o'z sherigiga
+          o'tkazing
+        start_heading: Juftlik hosil qilish uchun so'zlarni moslashtiring
+        time_is_up: Vaqt tugadi!
+      skip_tutorial: O'tkazib yuborish
+      time_is_up: Vaqt tugadi!
+      word_nodes:
+        match_letters_to_form_word: So'z hosil qilish uchun harflarni moslashtiring
+      word_waterfall:
+        do_not_hesitate: Tezlashaylik!
+        go_to_next_exercise: Keyingi mashqqa o'ting
+        select_correct_translation: To'g'ri moslikni tanlang
+        well_done: Barakalla!
+    home_page:
+      hello: Salom,
+      popular_lessons: Ommabop darslar
+      show_more: Ko'proq ko'rsatish
+      time: "%{count} min"
+      today_lesson: Bugungi darsingiz
+      user_name: "%{name}!"
+      words: "%{count} so'zlar"
+    idle_screen:
+      by_author: tomonidan %{authorName}
+      continue_lesson: Darsni davom eting
+      exit: Chiqish
+      idle_message: Siz bir muncha vaqt ishsiz edingiz ...
+    lesson_page:
+      back_to_course_page: Kurs sahifasiga qaytish
+      close: Yoping
+      continue_lesson: Darsni davom eting
+      followed: Kuzatildi
+      hamburger_menu_btn: Gamburger menyusi
+      lesson_given: darslar
+      not_started: boshlanmadi
+      or: Yoki
+      part_complete: "%{percent}% bajarildi"
+      restart_lesson: Qayta ishga tushirish
+      section_check: Tekshiring
+      section_check_info: "%{count} sinovlari"
+      section_learn: O'rganing
+      section_learn_info: "%{count} minut tomosha qilish va o'qish"
+      section_play: O'ynang
+      section_play_info: mashq qilish uchun %{count} so'z
+      start_lesson: Darsni boshlang
+      step_progress: "%{percent}%"
+      subscribe: Kuzatib boring
+      subscribed: Kuzatildi
+      subscribers: izdoshlari
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Obunani bekor qilish
+      webview_error_title: Nimadir noto'g'ri bajarildi...
+      words_number: "%{wordsNumber} yangi so'zlar"
+    lesson_task:
+      cancel_button: Bekor qilish
+      check:
+        navigation_next: Keyingi
+        navigation_previous: Oldingi
+        navigation_skip: O'tkazib yuborish
+      controls_panel:
+        font_size_button: Shrift hajmi
+        high_contrast_button:
+          origin: Yuqori kontrast
+          short: Kontrast
+        hints_button: Maslahatlar
+        music_playback_button:
+          origin: Musiqani ijro etish
+          short: Musiqa
+        sound_effects_button:
+          origin: Ovoz effektlari
+          short: Ovoz
+      exit_button: Chiqish
+      finish_button: Tugatish
+      finished:
+        back_to_learn: O'rganishga qaytish
+        back_to_lesson_page: Dars sahifasiga qaytish
+        back_to_results_page: Natija sahifasiga qaytish
+        bad_result_message: Hmm ... darsni yana bir bor olishga harakat qiling
+        close_lesson: Yaqin dars
+        correct_answers_list: To'g'ri javoblar ro'yxati
+        good_result_message: Ko'rishimcha, siz harakat qildingiz!
+        great_result_message: Barakalla! Bu ajoyib natijalar!
+        next_course_lesson: Kursda keyingi darsga o'ting
+        no_results: Sizda hali test natijalari yo'q
+        no_results_text: Iltimos, darsni yakunlang va natijani olish uchun testdan
+          o'ting
+        see_correct_answers_list: To'g'ri javoblar ro'yxatiga qarang
+        train_more: Ko'proq mashq qiling va keyingi safar yaxshi natijalarga erishasiz!
+        you_finished_lesson: Ajoyib! Siz darsni tugatdingiz
+      go_back: Ortga qaytish
+      next_button: Keyingi
+      not_available_task: Bu vazifa hozircha mavjud emas
+      start_button: Boshlang
+      tasks:
+        check:
+          assignment:
+            accept: Qabul qiling
+            author_will_check_your_answer: >-
+              %{author} sizning javobingizni ko'rib chiqadi va odatda 1-2 kun ichida
+              fikr bildiradi
+            continue_writing: Yozishni davom eting
+            copy: Nusxalash
+            delete: O'chirish
+            delete_record: Yozuvni o'chirish
+            edit: Tahrirlash
+            essay_does_not_have_enough_words: >-
+              Javobingizda kamida %{minWordsNumber} so'z bo'lishi kerak. Sizning javobingiz
+              hozirda %{currentWordsNumber} so'zlardan iborat.
+            followers_count: "%{followersCount} izdoshlari"
+            lessons_count: "%{lessonsCount} darslari"
+            minimal_recording_time: Minimal ro'yxatga olish vaqti - %{minimalRecordingTime}
+            minimum_characters_amount: Minimal belgilar - %{minimumCharactersAmount}
+            minimum_words_amount: Minimal so'zlar - %{minimumAmount}
+            record_again: Qayta yozib oling
+            record_voice: Ovoz yozish
+            send_anyway: Baribir yuboring
+            send_to_review: Ko'rib chiqish uchun yuboring
+            skip: O'tkazib yuborish
+            too_short_answer: Juda qisqa javob
+            type_your_answer: Javobingizni kiriting
+            unknown_task_type: Noma'lum vazifa turi
+            upgrade_licence: Litsenziyani yangilash
+            upgrade_your_plan: >-
+              O'qituvchilarning sharhlari bilan topshiriqlarni sinab ko'rish uchun
+              rejangizni yangilang
+            upload_files: Fayllarni yuklang
+            write_essay: Insho yozing
+            you_have_used_amount_of_assignments: Siz %{amountOfAssignments} tayinlash
+              kreditlaridan foydalangansiz
+          fill_in_blanks:
+            sentence_gap: Gapdagi bo'shliq
+          fill_in_table:
+            column_answer_placeholder: Javob
+            column_question_placeholder: Savol
+            example: Misol
+          true_false:
+            'false': Yolg'on
+            'true': To'g'ri
+        learn:
+          translatable_text:
+            show_original: Aslini ko'rsatish
+            translate_into: Google bilan %{languageName} ga tarjima qiling
+            translate_into_your_lang: Google bilan o'z tilingizga tarjima qiling
+        play:
+          arrange_words:
+            start_screen:
+              heading: Berilgan so'zlardan gap tuzing
+          audition:
+            start_screen:
+              heading: Ovozni tinglang va eshitgan so'zingizni bosing
+          dictation:
+            get_help: Yordam oling
+            i_do_not_know: Bilmadim
+            input_placeholder: Bu erda eshitganlaringizni kiriting
+            start_screen:
+              heading: Tinglang va eshitganlaringizni yozing
+          fill_gap:
+            start_screen:
+              heading: So'z va uning ma'nosini moslashtiring
+          finish_screen:
+            go_to_next_exercise: Barakalla! Keyingi mashqqa o'ting
+          image_hotspot:
+            start_screen:
+              heading: Rasmdagi narsalarni to'g'ri nomlang
+          image_object:
+            start_screen:
+              heading: Keyingi rasmdan kerakli narsani tanlang
+          inline_dropdown:
+            start_screen:
+              heading: Gapga mos keladigan so'zlarni tanlang
+          mark_word:
+            start_screen:
+              heading: Matnni o'qing va rasmga mos keladigan so'zni tanlang
+          minimal_pairs:
+            start_screen:
+              heading: Videoni tomosha qiling va to'g'ri variantni tanlang
+    locale:
+      currency_switcher_title: Valyutani almashtirish
+      lang_switcher_title: Tilni almashtirish
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Balgarski
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Ingliz tili
+        eo: Esperanto
+        es: Ispanol
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Frantsuzlar
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Portugues
+        ro: Limba romană
+        ru: Russkiy yazyk
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Serbskiy
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: suvaxili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: O'zbekcha
+        tt: Tatar
+        ug: Uyghur
+        uk: Ukraínska
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio yuklanmoqda
+        aria_pause_button: Pauza
+        aria_play_button: O'ynang
+        aria_reload_button: Qayta yuklang
+        aria_stop_button: To'xta
+        reload_message: Ovoz yuklanmadi. Qayta yuklash uchun tugmani bosing.
+    mobile_modal:
+      apply: Ariza bering
+      cancel: Bekor qilish
+      clear: Aniq
+      save: Saqlash
+    page404:
+      goToStartLessonPage: Darsni boshlash sahifasiga o'ting
+      ooops: Ooo ...
+      sorry_message: Kechirasiz, Tor ushbu sahifani topa olmadi
+    profile:
+      navigation:
+        log_out: Chiqish
+        my_profile: Mening profilim
+        settings: Sozlamalar
+      onboarding:
+        choose_native_language: Ona tilingizni yoki tushunadigan tilingizni tanlang
+        do_you_understand_english: Siz ingliz tlini tushunasizmi?
+        hello: Salom
+        language_levels:
+          a1: Boshlang'ich daraja
+          a2: O'rta darajadan oldingi daraja
+          b1: Oraliq daraja
+          b2: Yuqori o'rta daraja
+          c1: Ilg'or daraja
+          no_knowledge: Ma'lumot yo'q
+        language_not_supported:
+          note: Til mavjud bo'lganda biz sizga xabar beramiz
+          title: Kechirasiz, lekin biz bu tilni hozircha qo'llab-quvvatlamaymiz
+          try_another_language: Boshqa tilni sinab ko'ring
+        'no': Yo'q
+        search_placeholder: Qidirmoq...
+        show_more_languages: Boshqa tillar
+        target_language_question: Qaysi tilni o'rganmoqchisiz?
+        what_is_language_level: "%{languageName} darajangizni qanday baholaysiz?"
+        'yes': Ha
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Linguening maxfiylik siyosati
+        support: Qo'llab-quvvatlash
+      logout: Chiqish
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: O'zingiz kuzatadigan o'qituvchilar va maktablardan yangiliklarni
+                oling
+              sections:
+                app_notifications: Ilova haqidagi bildirishnomalar
+                email: Elektron pochta
+              title: O'quv yordami
+            marketing:
+              description: >-
+                Linguening barcha reklama aktsiyalari, yangilanishlari va ilhomlari
+                to'g'risida xabardor bo'lib turing
+              sections:
+                browser_notifications: Brauzer haqida bildirishnomalar
+                email: Elektron pochta
+              title: Marketing
+          title: Aloqa parametrlari
+        personal_information:
+          delete_photo: Suratni o'chirish
+          email: Elektron pochta
+          first_name: Ism
+          last_name: Familiya
+          social_accounts:
+            connected: Ulangan
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ulanmagan
+            title: Ijtimoiy hisoblar
+          title: Shaxsiy ma'lumot
+          update_photo: Suratni yangilang
+        school:
+          active_licence: Faol litsenziya
+          active_status: Faol
+          delete_profile: Profilimni o'chirib tashlang
+          delete_profile_modal:
+            body: |-
+              Siz barcha ma'lumotlaringizni abadiy yo'q qilasiz. Orqaga qaytarish tugmasi mavjud emas, keyin biz uni qaytarib ololmaymiz.
+              Lingu profilingizni va barcha ma'lumotlaringizni butunlay o'chirib tashlamoqchimisiz?
+            cancel: Bekor qilish
+            confirm: Ha, uni o'chirib tashlang
+            i_understand_the_consequences: Buning oqibatlarini tushunaman
+            title: Profilingiz o'chirilsinmi?
+          expired: Muddati tugagan %{expire_date}
+          expires: "%{expire_date} muddati tugaydi"
+          inactive_status: Faol emas
+          revoke_access: O'qish huquqini bekor qiling
+          sections:
+            contact_school: Maktab bilan bog'laning
+            export_my_data: Ma'lumotlarimni eksport qiling
+            read_school_privacy_policy: Maktabning maxfiylik siyosatini o'qing
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musiqani ijro etish
+              sound_effects: Ovoz effektlari
+              title: Ovoz
+            visual:
+              dark_theme: Qorong'u mavzu
+              font_size:
+                test_text: Devorning narigi tomonida o'tlar har doim yashilroq bo'ladi
+                title: Shrift hajmi
+              high_contrast: Yuqori kontrast
+              hints: Maslahatlar
+              title: Vizual
+          title: Ovozli va vizual
+        training_settings:
+          sections:
+            i_understand: Tushundim
+            i_want_to_learn: Men o'rganmoqchiman
+            target_language_level: Ingliz tili darajasi
+          title: O'qitish sozlamalari
+      settings_title: Sozlamalar
+    teacher_card:
+      followers_count:
+        one: 1 ta kuzatuvchi
+        other: "%{count} izdoshlari"
+      lessons_count:
+        one: 1 dars
+        other: "%{count} darslari"

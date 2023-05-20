@@ -1,0 +1,25 @@
+.card-header
+  .d-flex.justify-content-between.align-items-center
+    h3.mb-1= task.name
+    .btn-group
+      = link_to teach_task_preview_path(task), class: 'btn btn-falcon-default btn-sm preview-task-btn' do
+        i.fas.fa-eye.mr-1
+        = t('preview')
+      - if policy(task.lesson).edit?
+        - if task.type === 'Tasks::Text'
+          = link_to convert_type_teach_lesson_task_path(task.lesson, task), class: 'btn btn-falcon-default btn-sm', data: { confirm: t('teach.tasks.convert_text_task_confirm') } do
+            i.fas.fa-language.mr-1
+            span= t('.convert_text_task_type')
+        = link_to teach_lesson_task_path(task.lesson, task), class: 'btn btn-falcon-danger btn-sm', method: :delete, data: { confirm: t('teach.tasks.delete_task_confirm') } do
+          i.fas.fa-times.mr-1
+          span= t('delete')
+  p.card-text
+    span.badge.badge-pill.badge-soft-dark.mr-2= t(task.type.underscore, scope: 'tasks.types')
+    - if task.published?
+      span.badge.badge-pill.badge-soft-success
+        i.fas.fa-eye.fa-fw.mr-1
+        = t('published')
+    - else
+      span.badge.badge-pill.badge-soft-warning
+        i.fas.fa-eye-slash.fa-fw.mr-1
+        = t('hidden')

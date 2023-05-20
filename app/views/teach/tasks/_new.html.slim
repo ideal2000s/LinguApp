@@ -1,0 +1,21 @@
+= form_for form, as: :task, url: teach_lesson_tasks_path(lesson), remote: true do |f|
+  - subject = params.fetch(:subject, params.dig(:task, :subject))
+  .form-group
+    = f.label :name, t('.task_name'), required: true
+    = f.text_field :name, class: 'form-control', autofocus: true
+    = error_for(form, :name)
+    = f.hidden_field :subject
+  .form-group
+    .row
+      - Task.types_for_select(f.object.subject).sort.each do |k, v|
+        .col-sm-6.mb-3
+          label.padded.custom-radio-block.w-100
+            = f.radio_button :type, v, class: 'custom-radio-plan', aria: { label: k }
+            .card
+              .card-body.px-0.text-center
+                i.fas.fa-2x class="#{task_icon_class(Task.new(type: v))}"
+                .clearfix
+                small= k
+    = error_for(form, :type)
+  .form-group
+    = f.submit t('common.buttons.save_and_continue'), class: 'btn btn-primary'

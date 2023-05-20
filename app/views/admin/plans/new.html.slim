@@ -1,0 +1,22 @@
+- set_page_title t('admin.plans.index.create_new_plan')
+
+.card.mb-3
+  .card-header
+    h5.mb-0= t('admin.plans.index.create_new_plan')
+  .card-body
+    = form_for plan, url: admin_plans_path, html: { id: 'plan_form' } do |f|
+      - if plan.errors.any?
+        .alert.alert-warning#error_explanation
+          h5
+            = t('count_error_message_model', count: plan.errors.count, model: plan.model_name.human)
+          ul
+            - plan.errors.full_messages.each do |message|
+              li= message
+      = render 'admin/plans/form', plan: plan, f: f
+        .form-group
+          = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+          = link_to t('back'), admin_plans_path, class: 'btn btn-falcon-default mr-1'
+
+      .col-12.d-flex.mt-3
+        = f.submit t('create'), class: 'btn btn-primary mr-1'
+        = link_to t('back'), admin_plans_path, class: 'btn btn-falcon-default mr-1'

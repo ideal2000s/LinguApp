@@ -1,0 +1,6 @@
+- if resource.errors.any?
+  .alert.alert-warning#error_explanation
+    h5= t('count_error_message_model', count: resource.errors.count, model: resource.model_name.human)
+    ul
+      - resource.errors.full_messages.each do |message|
+        li= message

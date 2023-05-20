@@ -1,0 +1,12 @@
+.card
+  .card-body
+    h3 OAuth Applications
+    table.table
+      thead.thead-light
+        tr
+          th App ID
+          th App Name
+          th Secret Key
+      tbody data-container='oauth_apps'
+        = render partial: 'admin/teams/oauth/apps/list_row', collection: oauth_apps, as: :oauth_app, cached: true
+

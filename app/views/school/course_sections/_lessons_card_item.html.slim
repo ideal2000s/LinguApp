@@ -1,0 +1,42 @@
+.section-lesson-card-item.cursor-pointer
+  .card-item-wrapper.h-100.d-flex.flex-column
+    = lesson.image ? image_tag(lesson.image_url(:card_image), class: 'lesson-image w-100') : image_tag('uploader/defaults/lesson/original.png', class: 'lesson-image bg-400 w-100')
+    .lesson-item-header.mt-3.d-flex.align-items-center
+      = image_tag('icons/clock.svg', class: 'mr-1')
+      span.mr-4
+        = lesson.average_duration ? lesson.average_duration_human : '0 m'
+      = image_tag('icons/message-circle.svg', class: 'mr-1')
+      span.mr-4
+        = t('teach.course_sections.lesson_row.word_count', count: lesson.phrases_count)
+      = image_tag('icons/star.svg', class: 'mr-1')
+      span
+        span= lesson.rating.to_i
+        span.text-500=< "(#{lesson.ratings_count})"
+    h5.lesson-title.font-weight-semi-bold.mt-2
+      = lesson.title
+    .lesson-category-skills.d-flex.flex-column.justify-content-between
+      - if lesson.tags.reject(&:empty?).any?
+        .d-flex.align-items-center.flex-wrap.mt-3
+          == lesson_tags_container(lesson.tags.reject(&:empty?), 'category')
+      - if lesson.skills.any?
+        .d-flex.align-items-center.flex-wrap.mt-2
+          == lesson_tags_container(lesson.skills.map(&:name), 'skill')
+      p.fs--1.mt-3
+        - if lesson.objectives.blank?
+          span.text-danger= t('teach.reviews.index.no_learning_objectives')
+        - else
+          - lesson.objectives.each_with_index do |objective, i|
+            = "#{i + 1}. #{objective}"
+            br
+      .lesson-author
+        span.text-500
+          = "#{t('created_by')}:"
+        =< lesson.author_name
+    .lesson-item-actions.mt-3.collapse
+      .d-flex.justify-content-between
+        button.btn.btn-primary.mr-2.d-inline-flex.align-items-center.px-2 data-toggle='tooltip' data-placement='bottom' title=t('shared.available_date')
+          = image_tag('icons/classroom.svg', class: 'mr-1')
+          = t('school.course_sections.classroom')
+        = link_to students_lesson_url(lesson, subdomain: nil, host: ENV.fetch('MAIN_HOST', 'lingu.com')), class: 'btn btn-primary d-inline-flex align-items-center px-2' do
+          = image_tag('icons/self-study.svg', class: 'mr-1')
+          = t('school.course_sections.self_study')

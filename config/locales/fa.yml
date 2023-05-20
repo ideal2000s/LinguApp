@@ -1,0 +1,609 @@
+---
+fa:
+  course_mailer:
+    course_assigned_notification:
+      button: دوره را شروع کنید
+      click_start_lesson: روی "شروع درس" کلیک کنید
+      follow_course_link: برای باز کردن دوره ، روی دکمه کلیک کنید
+      footer_text: به لینگو برگردید تا هر روز چیز جدیدی یاد بگیرید!
+      get_started_line: 'نحوه شروع کار در اینجا است:'
+      notification_link: تنظیمات اعلان
+      open_lesson: اولین درس را باز کنید
+      or_paste_this_link: یا این پیوند را در مرورگر خود جایگذاری کنید
+      sign_in_with_email: با آدرس ایمیل خود وارد شوید (%{email})
+      support_link: حمایت کردن
+      title: شروع کار با %{course}
+    new_document_comment:
+      author_text: "%{author} مروری بر تکلیف شما گذاشت"
+      button_text: بررسی کنید
+      button_url_helper: 'یا این پیوند را در مرورگر خود جایگذاری کنید:'
+      footer_text: چیزهای بیشتری برای یادگیری وجود دارد ...
+      notification_link: تنظیمات اعلان
+      subject_line: نظر تکلیف جدید
+      support_link: پشتیبانی
+    otp:
+      ignore_msg: اگر این درخواست را نکردید ، فقط ایمیل را نادیده بگیرید.
+      subject_line: کد منحصر به فرد شما برای Lingu
+      unique_code_for_lingu: این کد منحصر به فرد شما برای زبان لینگو است
+  frontend:
+    auth:
+      already_have_acc_question: قبلاً حساب دارید؟
+      back: بازگشت
+      back_to_sign_in: بازگشت به سیستم ورود به سیستم
+      check_your_email_for_a_code: ایمیل خود را برای کد خود بررسی کنید
+      continue: ادامه هید
+      continue_with_email: با ایمیل ادامه دهید
+      continue_with_provider: با %{provider} ادامه دهید
+      did_not_receive_a_code: کدی دریافت نکردید؟
+      email_address: آدرس ایمیل
+      first_name: نام کوچک
+      get_unique_code: یک کد ورود به سیستم منحصر به فرد دریافت کنید
+      join_lingu: به لینگو بپیوندید
+      last_name: نام خانوادگی
+      more_login_options: گزینه های ورود بیشتر
+      no_account_question: حساب ندارید؟
+      or: یا
+      resend_code: دوباره کد را ارسال کنید
+      sign_in: ورود
+      sign_up: ثبت نام
+      want_to_receive_marketing_messages: من می خواهم پیام های بازاریابی را از زبان
+        لینگو دریافت کنم
+      we_ve_sent_a_code: >-
+        ما یک کد 6 رقمی به <strong> {{email}} </strong> ارسال کرده ایم. کد در 15 دقیقه
+        منقضی می شود ، بنابراین لطفاً آن را به زودی وارد کنید.
+    cookie_agreement:
+      agree: موافق
+      condition: >-
+        ما از کوکی ها برای تجزیه و تحلیل عملکرد سایت و ارائه محتوای شخصی استفاده می
+        کنیم. با کلیک روی "موافق" ، شما با شرایط ما موافقت می کنید.
+    course:
+      accredited_course_provider: ارائه دهنده دوره معتبر
+      apply: درخواست دادن
+      apply_filters: فیلترها را اعمال کنید
+      by: توسط
+      cancel: لغو
+      categories: دسته های %{count}
+      category: دسته بندی
+      clear: پاک کردن
+      clear_filters: فیلترها را پاک کنید
+      contact_us: با ما تماس بگیرید
+      could_not_find_match_for: متأسفیم ، هیچ مطابقی برای آن پیدا نکردیم
+      course_language: زبان دوره
+      duration: مدت زمان
+      filter_settings:
+        categories:
+          academic: علمی
+          business: کسب و کار
+          fashion: روش
+          food_drink: غذا نوشیدنی
+          for_kids: برای بچه ها
+          general: عمومی
+          health: سلامتی
+          legal: مجاز
+          sport: ورزش
+          travel: مسافرت رفتن
+        durations:
+          t0_600: "<10 دقیقه"
+          t1800_3600: 30-60 دقیقه
+          t3600_86400: 1+ ساعت
+          t600_1800: 10-30 دقیقه
+        focus_on:
+          conversation: گفتگو
+          grammar: دستور زبان
+          listening: استماع
+          pronunciation: تلفظ
+          reading: خواندن
+          speaking: صحبت كردن
+          writing: نوشتن
+        levels:
+          long:
+            advanced: سطح پیشرفته
+            elementary: سطح مقدماتی
+            intermediate: سطح متوسط
+            no_knowledge: بدون دانش
+            pre_intermediate: سطح متوسط
+            upper_intermediate: سطح متوسط به بالا
+          short:
+            advanced: پیشرفته
+            beginner: مبتدی
+            intermediate: حد واسط
+        sort_by:
+          most_rated: دارای بیشترین امتیاز
+          newest: جدیدترین
+          popularity: محبوبیت
+      filters: فیلترها
+      focus_on: تمرکز بر
+      focus_on_title: من می خواهم روی
+      hide_lessons: پنهان کردن درس ها
+      hours: ساعت ها
+      i_understand: من میفهمم
+      i_want_to_learn: می خواهم یاد بگیرم
+      in_language: در %{language}
+      language: زبان
+      learn_more: بیشتر بدانید
+      less_settings: تنظیمات کمتر
+      lessons: درس ها
+      lessons_available: دروس %{number} موجود است
+      lessons_catalog_page_subtitle: قهرمان زبان شوید.
+      lessons_catalog_page_title: با یک دوره زبان ، افق دید خود را گسترش دهید
+      level: مرحله
+      min: حداقل
+      more_settings: تنظیمات بیشتر
+      navbar:
+        close: بستن منو
+        menu: منو
+        select_language: زبان را انتخاب کنید
+      need_to_buy_course: ابتدا باید یک دوره رزرو کنید
+      no_description: هیچ توضیحی ارائه نشده است
+      no_results: متأسفیم ، هیچ مطابقی برای آن پیدا نکردیم
+      or: یا
+      per_month: هر ماه
+      plans: برنامه ها
+      privacy_policy: سیاست حفظ حریم خصوصی
+      rating: رتبه بندی
+      remove_all_filters: همه فیلترها را بردارید
+      reviews: بررسی ها
+      save: صرفه جویی
+      search: جستجو کردن
+      select_dots: انتخاب کنید...
+      select_languages: زبانها را انتخاب کنید
+      select_num_languages: "%{number} زبان را انتخاب کنید"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: نمایش همه
+      show_all_lessons: نمایش همه درسها
+      show_lessons: نمایش درس های %{number}
+      show_more: بیشتر نشان بده، اطلاعات بیشتر
+      sign_up_with_lingu_for: با Lingu نروژ ثبت نام کنید
+      skills: مهارت های %{count}
+      sort_by: مرتب سازی بر اساس
+      start_typing_here: در اینجا شروع به تایپ کنید
+      teach: تعلیم دادن
+      terms_and_conditions: شرایط و ضوابط
+      time_range: دامنه زمانی
+      try_adjusting_your_search: با تغییر دادن فیلترها ، جستجوی خود را تنظیم کنید
+      try_this_course: این دوره را امتحان کنید
+      website_language: زبان وب سایت
+      words: کلمات
+    games:
+      finished:
+        go_to_next_exercise: آفرین! به تمرین بعدی بروید
+      flashcard:
+        buttons:
+          finish: تمام کردن
+          next: بعد
+          previous: قبلی
+        check_out_new_words: کلمات جدیدی که در این درس خواهید آموخت را بررسی کنید
+        frequency_of_word_usage: فراوانی استفاده از کلمات در %{language}
+        keep_practice_to_learn_all_words: کلمات %{count} را مرور کنید و اجازه دهید
+          چند بازی انجام دهیم!
+        word_frequency:
+          level1: به ندرت استفاده می شود
+          level2: به ندرت استفاده می شود
+          level3: فرکانس کلمه - متوسط
+          level4: فرکانس کلمه - متوسط
+          level5: مشترک
+          level6: بسیار رایج
+      match_word:
+        click_and_move_each_word_to_counterpart: کلیک کنید و هر کلمه را به همتای خود
+          منتقل کنید
+        start_heading: برای ایجاد یک جفت کلمات را مطابقت دهید
+        time_is_up: زمان به پایان رسیده است!
+      skip_tutorial: پرش
+      time_is_up: زمان به پایان رسیده است!
+      word_nodes:
+        match_letters_to_form_word: مطابقت حروف برای تشکیل یک کلمه
+      word_waterfall:
+        do_not_hesitate: بیایید سرعت را افزایش دهیم!
+        go_to_next_exercise: به تمرین بعدی بروید
+        select_correct_translation: مطابقت صحیح را انتخاب کنید
+        well_done: آفرین!
+    home_page:
+      hello: سلام،
+      popular_lessons: دروس محبوب
+      show_more: بیشتر نشان بده، اطلاعات بیشتر
+      time: "%{count} دقیقه"
+      today_lesson: درس شما برای امروز
+      user_name: "%{name}!"
+      words: "%{count} کلمه"
+    idle_screen:
+      by_author: توسط %{authorName}
+      continue_lesson: ادامه درس
+      exit: خروج
+      idle_message: شما مدتی بیکار بوده اید ...
+    lesson_page:
+      back_to_course_page: بازگشت به صفحه دوره
+      close: نزدیک
+      continue_lesson: ادامه درس
+      followed: دنبال کرد
+      hamburger_menu_btn: منوی همبرگر
+      lesson_given: درس ها
+      not_started: شروع نشده است
+      or: یا
+      part_complete: "%{percent}٪ کامل است"
+      restart_lesson: راه اندازی مجدد
+      section_check: بررسی
+      section_check_info: آزمونهای %{count}
+      section_learn: فرا گرفتن
+      section_learn_info: "%{count} دقیقه برای تماشا و خواندن"
+      section_play: بازی
+      section_play_info: "%{count} کلمات برای تمرین"
+      start_lesson: شروع درس
+      step_progress: "%{percent}٪"
+      subscribe: دنبال کردن
+      subscribed: دنبال کرد
+      subscribers: پیروان
+      time_min: "%{minutesNumber} دقیقه"
+      unsubscribe: دنبال نکردن
+      webview_error_title: مشکلی پیش آمد ...
+      words_number: "%{wordsNumber} کلمات جدید"
+    lesson_task:
+      cancel_button: لغو
+      check:
+        navigation_next: بعد
+        navigation_previous: قبلی
+        navigation_skip: پرش
+      controls_panel:
+        font_size_button: اندازه فونت
+        high_contrast_button:
+          origin: کنتراست بالا
+          short: تضاد
+        hints_button: نکات
+        music_playback_button:
+          origin: پخش موسیقی
+          short: موسیقی
+        sound_effects_button:
+          origin: جلوه های صوتی
+          short: صدا
+      exit_button: خروج
+      finish_button: تمام کردن
+      finished:
+        back_to_learn: بازگشت به یادگیری
+        back_to_lesson_page: بازگشت به صفحه درس
+        back_to_results_page: بازگشت به صفحه نتیجه
+        bad_result_message: هوم ... سعی کنید یک بار دیگر درس را بخوانید
+        close_lesson: بستن درس
+        correct_answers_list: لیست پاسخ های صحیح
+        good_result_message: می بینم که شما تلاشی کرده اید!
+        great_result_message: آفرین! این نتایج عالی است!
+        next_course_lesson: البته به درس بعدی بروید
+        no_results: شما هنوز هیچ نتیجه آزمایشی ندارید
+        no_results_text: لطفاً ، برای به دست آوردن نتیجه ، درس را کامل کنید و در آزمون
+          قبول شوید
+        see_correct_answers_list: به لیست پاسخ های صحیح مراجعه کنید
+        train_more: بیشتر تمرین کنید و دفعه بعد به نتایج بهتری خواهید رسید!
+        you_finished_lesson: عالی! شما درس را تمام کردید
+      go_back: برگرد
+      next_button: بعد
+      not_available_task: این کار هنوز در دسترس نیست
+      start_button: شروع کنید
+      tasks:
+        check:
+          assignment:
+            accept: تایید کنید
+            author_will_check_your_answer: "%{author} پاسخ شما را بررسی می کند و معمولاً
+              طی 1-2 روز بازخورد می دهد"
+            continue_writing: ادامه نوشتن
+            copy: "کپی \U0001F004"
+            delete: حذف
+            delete_record: حذف رکورد
+            edit: ویرایش کنید
+            essay_does_not_have_enough_words: >-
+              پاسخ شما باید حداقل شامل %{minWordsNumber} کلمه باشد. پاسخ شما در حال
+              حاضر %{currentWordsNumber} کلمه است.
+            followers_count: دنبال کنندگان %{followersCount}
+            lessons_count: درس %{lessonsCount}
+            minimal_recording_time: حداقل زمان ضبط - %{minimalRecordingTime}
+            minimum_characters_amount: حداقل نویسه ها - %{minimumCharactersAmount}
+            minimum_words_amount: حداقل کلمات - %{minimumAmount}
+            record_again: دوباره ضبط کنید
+            record_voice: ضبط صدا
+            send_anyway: به هر حال ارسال کنید
+            send_to_review: ارسال برای بررسی
+            skip: پرش
+            too_short_answer: پاسخ خیلی کوتاه
+            type_your_answer: پاسخ خود را تایپ کنید
+            unknown_task_type: نوع کار ناشناخته
+            upgrade_licence: مجوز را ارتقا دهید
+            upgrade_your_plan: برای امتحان تکالیف با مرور معلمان ، برنامه خود را ارتقا
+              دهید
+            upload_files: پرونده ها را بارگذاری کنید
+            write_essay: انشا بنویسید
+            you_have_used_amount_of_assignments: شما از اعتبارات انتساب %{amountOfAssignments}
+              استفاده کرده اید
+          fill_in_blanks:
+            sentence_gap: شکاف جمله
+          fill_in_table:
+            column_answer_placeholder: پاسخ
+            column_question_placeholder: سوال
+            example: مثال
+          true_false:
+            'false': نادرست
+            'true': درست است، واقعی
+        learn:
+          translatable_text:
+            show_original: نمایش نسخه اصلی
+            translate_into: با Google به %{languageName} ترجمه کنید
+            translate_into_your_lang: با Google به زبان خود ترجمه کنید
+        play:
+          arrange_words:
+            start_screen:
+              heading: از کلمات داده شده جمله بسازید
+          audition:
+            start_screen:
+              heading: به صوت گوش دهید و روی کلمه ای که به تازگی شنیده اید ضربه بزنید
+          dictation:
+            get_help: کمک بگیر
+            i_do_not_know: من نمی دانم
+            input_placeholder: آنچه را که شنیده اید اینجا وارد کنید
+            start_screen:
+              heading: آنچه می شنوید گوش دهید و بنویسید
+          fill_gap:
+            start_screen:
+              heading: کلمه و معنی آن را مطابقت دهید
+          finish_screen:
+            go_to_next_exercise: آفرین! به تمرین بعدی بروید
+          image_hotspot:
+            start_screen:
+              heading: اشیا in موجود در تصویر را به درستی نامگذاری کنید
+          image_object:
+            start_screen:
+              heading: شی right مناسب را از تصویر بعدی انتخاب کنید
+          inline_dropdown:
+            start_screen:
+              heading: کلمات متناسب با جمله را انتخاب کنید
+          mark_word:
+            start_screen:
+              heading: متن را بخوانید و کلمه متناسب با تصویر را انتخاب کنید
+          minimal_pairs:
+            start_screen:
+              heading: فیلم را مشاهده کنید و گزینه صحیح را انتخاب کنید
+    locale:
+      currency_switcher_title: تعویض ارز
+      lang_switcher_title: تعویض زبان
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: آلمانی
+        el: Greek
+        en: انگلیسی
+        eo: Esperanto
+        es: اسپانول
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ایتالیاییو
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: لیتوویچ کالبا
+        lv: لاتویو والودا
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: نورسك
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: پولسکی
+        ps: Pashto
+        pt: پرتغالی
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: صربستان
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: تورکچه
+        tt: Tatar
+        ug: Uyghur
+        uk: اوکراین
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: صدا در حال بارگیری است
+        aria_pause_button: مکث
+        aria_play_button: بازی
+        aria_reload_button: بارگیری مجدد
+        aria_stop_button: متوقف کردن
+        reload_message: صدا بارگیری نشد. لطفاً برای بارگیری مجدد دکمه را کلیک کنید.
+    mobile_modal:
+      apply: درخواست دادن
+      cancel: لغو
+      clear: پاک کردن
+      save: صرفه جویی
+    page404:
+      goToStartLessonPage: به صفحه درس شروع بروید
+      ooops: اوه ...
+      sorry_message: متأسفیم ، تور این صفحه را پیدا نکرد
+    profile:
+      navigation:
+        log_out: خروج
+        my_profile: پروفایل من
+        settings: تنظیمات
+      onboarding:
+        choose_native_language: زبان مادری یا زبانی را که می فهمید انتخاب کنید
+        do_you_understand_english: آیا شما انگلیسی می فهمید؟
+        hello: سلام
+        language_levels:
+          a1: سطح مقدماتی
+          a2: سطح قبل از متوسط
+          b1: سطح متوسط
+          b2: سطح متوسط به بالا
+          c1: سطح پیشرفته
+          no_knowledge: بدون دانش
+        language_not_supported:
+          note: ما به محض در دسترس بودن زبان به شما اطلاع خواهیم داد
+          title: متأسفیم ، اما ما هنوز از این زبان پشتیبانی نمی کنیم
+          try_another_language: زبان دیگری را امتحان کنید
+        'no': نه
+        search_placeholder: جستجو کردن...
+        show_more_languages: زبان های دیگر
+        target_language_question: می خواهید چه زبانی را یاد بگیرید؟
+        what_is_language_level: سطح %{languageName} خود را چگونه ارزیابی می کنید؟
+        'yes': آره
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: سیاست حفظ حریم خصوصی زبان
+        support: حمایت کردن
+      logout: خروج
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: از معلمان و مدارسی که دنبال می کنید به روزرسانی دریافت
+                کنید
+              sections:
+                app_notifications: اعلان های برنامه
+                email: پست الکترونیک
+              title: کمک یادگیری
+            marketing:
+              description: در مورد همه تبلیغات ، به روزرسانی ها و الهامات از زبان
+                لینگو مطلع باشید
+              sections:
+                browser_notifications: اعلان های مرورگر
+                email: پست الکترونیک
+              title: بازار یابی
+          title: تنظیمات برگزیده تماس بگیرید
+        personal_information:
+          delete_photo: حذف عکس
+          email: پست الکترونیک
+          first_name: نام کوچک
+          last_name: نام خانوادگی
+          social_accounts:
+            connected: متصل
+            facebook: فیس بوک
+            google: گوگل
+            microsoft: مایکروسافت
+            not_connected: متصل نیست
+            title: حسابهای اجتماعی
+          title: اطلاعات شخصی
+          update_photo: عکس را به روز کنید
+        school:
+          active_licence: مجوز فعال
+          active_status: فعال
+          delete_profile: نمایه من را حذف کنید
+          delete_profile_modal:
+            body: |-
+              شما تمام داده های خود را برای همیشه از بین می برید. دکمه واگرد وجود ندارد و پس از آن نمی توانیم آن را برای شما پس بگیریم.
+              آیا مطمئن هستید که می خواهید نمایه Lingu و همه داده های خود را برای همیشه حذف کنید؟
+            cancel: لغو
+            confirm: بله ، آن را حذف کنید
+            i_understand_the_consequences: من عواقب آن را می فهمم
+            title: نمایه خود را حذف کنید؟
+          expired: تاریخ انقضا %{expire_date}
+          expires: "%{expire_date} منقضی می شود"
+          inactive_status: غیر فعال
+          revoke_access: دسترسی خواندن را لغو کنید
+          sections:
+            contact_school: با مدرسه تماس بگیرید
+            export_my_data: داده های من صادر شود
+            read_school_privacy_policy: سیاست حفظ حریم خصوصی مدرسه را بخوانید
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: پخش موسیقی
+              sound_effects: جلوه های صوتی
+              title: صدا
+            visual:
+              dark_theme: تم تاریک
+              font_size:
+                test_text: چمن ها در طرف دیگر حصار همیشه سبزتر هستند
+                title: اندازه فونت
+              high_contrast: کنتراست بالا
+              hints: نکات
+              title: دیداری
+          title: صدا و بصری
+        training_settings:
+          sections:
+            i_understand: من میفهمم
+            i_want_to_learn: می خواهم یاد بگیرم
+            target_language_level: سطح انگلیسی
+          title: تنظیمات آموزش
+      settings_title: تنظیمات
+    teacher_card:
+      followers_count:
+        one: 1 دنبال کننده
+        other: دنبال کنندگان %{count}
+      lessons_count:
+        one: 1 درس
+        other: درس %{count}

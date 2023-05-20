@@ -1,0 +1,40 @@
+- content_for(:instructions) do
+  .card.bg-soft-info.mt-5
+    .card-body
+      .card-title= t('instructions')
+      p.card-text= t('teach.task_items.select_video.select_video.select_video_guide')
+    .card-footer.bg-soft-info
+      .card-title= t('teach.tasks.size_requirements')
+      p.card-text= t('teach.tasks.required_count_msg', count: Tasks::SelectText::MIN_ITEMS_SIZE)
+= render 'teach/tasks/shared_task_form', task: task, form: form
+
+#task_items.mt-5
+  h2= t('layouts.admin.sidebar.tasks')
+  #task_items_container
+    = render partial: task.items, as: :item, locals: { task: task }
+.links
+  = render task.items.form.new, task: task
+
+javascript:
+  window.addEventListener('DOMContentLoaded', () => {
+    class PipeRecorder extends HTMLElement {
+      connectedCallback() {
+        var pipeParams = {size:{width:640,height:430}, qualityurl:"avq/720p.xml", accountHash:this.dataset.accounthash, eid:this.dataset.eid, mrt:120, asv:0, dup:1};
+        PipeSDK.insert(this.id, pipeParams, (recorder) => {
+          recorder.onSaveOk = (recorderId, streamName, streamDuration, cameraName,
+                    micName, audioCodec, videoCodec, fileType, videoId, audioOnly, location) => {
+            let videoData = $(`#${recorderId}`).siblings('[name="task_item[video_data]"]');
+            videoData.val(JSON.stringify({streamName, videoId, location}));
+            videoData.change();
+          }
+          recorder.onDesktopVideoUploadSuccess = (recorderId, streamName, filetype, videoId, audioOnly, location) => {
+            let videoData = $(`#${recorderId}`).siblings('[name="task_item[video_data]"]');
+            videoData.val(JSON.stringify({streamName, videoId, location}));
+            videoData.change();
+          }
+        })
+      }
+    }
+
+    customElements.define('pipe-recorder', PipeRecorder);
+  })

@@ -1,0 +1,34 @@
+- if team
+  .row.flex-center.no-gutters.school-onboarding style="background: url(#{image_path('bg/school-illustration.svg')}) no-repeat center center / contain white;"
+    .col-lg-6
+      .mt-2.mb-10
+        h4.font-weight-bold.text-center.mt-5= team.name
+        .media.mt-5
+          - if team.image_url
+            .pr-3= image_tag team.image_url(:thumbnail) || team.image_url, class: 'rounded-soft'
+
+          .media-body.position-relative
+            - if member
+              .text-center
+                h5.font-weight-bold= t('admin.team_invitations.show.already_member')
+                br
+                p.mb-0= raw t('admin.team_invitations.show.profile_link', link: link_to(t('admin.team_invitations.show.profile'), profile_path))
+            - else
+              h5.font-weight-bold.text-center.mb-6= t('admin.team_invitations.show.join_heading')
+
+              = form_for team_team_invitations_path(team.to_gid_param) do |f|
+                .row.form-group
+                  .col-6.small
+                    = label_tag 'user[fname]', t('first_name')
+                    = text_field_tag 'user[fname]', '', class: 'form-control', required: true
+                  .col-6.small
+                    = label_tag 'user[lname]', t('last_name')
+                    = text_field_tag 'user[lname]', '', class: 'form-control', required: true
+                .form-group.small
+                  .custom-control.custom-checkbox
+                    = check_box_tag :default, '1', true, class: 'custom-control-input'
+                    = label_tag t('admin.team_invitations.show.set_as_default'), nil, class: 'custom-control-label', for: :default
+
+                .text-center.mt-6
+                  = f.submit t('admin.team_invitations.show.join_button'), class: 'btn btn-primary mr-3'
+                  = link_to t('admin.team_invitations.show.reject'), root_path

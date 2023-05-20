@@ -1,0 +1,74 @@
+- set_page_title @language.name
+
+= search_form_for @search, url: admin_language_words_path(@language), class: 'phrase-search-form' do |f|
+  .card
+    .card-header
+      .btn-group.float-right.mt-2
+        = link_to new_admin_language_word_path(@language), remote: true, class: 'btn btn-outline-dark', id: 'new_phrase_button', data: {toggle: 'modal', target: '#new-phrase-modal'} do
+          i.fas.fa-plus.fa-fw.mr-1
+          = t('.add_new_word')
+        = link_to t('.import'), csv_import_admin_language_words_path(@language), class: 'btn btn-outline-dark'
+        = link_to t('.import_from_website'), new_admin_crawler_path, class: 'btn btn-outline-dark'
+      h1 = @language.name
+      = link_to admin_language_words_path(@language), class: 'card-link' do
+        = t('.count_phrases', count: @language.words_count)
+      = link_to admin_language_collections_path(@language), class: 'card-link' do
+        = t('.count_collections', count: @language.collections_count)
+    .card-body.bg-light
+      .phrase-filter
+        h5.mb-3
+          = t('.filter')
+          - if @search_condition_count > 0
+            button.btn.btn-falcon-default.btn-sm.ml-2 aria-label="Close" type="button" onclick="window.location = '#{admin_language_words_path(@language)}';"
+              i.fas.fa-times.fa-fw
+        .row.mb-3
+          .col-sm-12.col-md
+            = f.select :frequency_eq, options_for_select({"Frequency: 1" => 1, "Frequency: 2" => 2, "Frequency: 3" => 3, "Frequency: 4" => 4, "Frequency: 5" => 5, "Frequency: 6" => 6}, @search.frequency_eq),
+                  {include_blank: t('.any_frequency')}, {class: 'form-control js-submit-on-change'}
+          .col-sm-12.col-md
+            = f.select :imports_name_eq, options_for_select(@all_words.map { |w| w.imports.pluck(:name, :created_at) }.flatten(1).uniq.sort_by {|k| k[1]}.map {|e| e[0]}, @search.imports_name_eq),
+                    {include_blank: t('.any_time_source')}, {class: 'form-control js-submit-on-change'}
+          .col-sm-12.col-md
+            .hidden#collection_select_data
+            = f.select :collections_id_not_null, options_for_select({t('.used_in_collections') => true, t('.not_used_in_collections') => false, t('.missing_audio') => 'missing_audio', t('.missing_illustration') => 'missing_illustration'}, @search.collections_id_not_null), {include_blank: ''}, {class: 'form-control'}
+          .col-sm-12.col-md
+            .hidden#lesson_select_data
+            = f.select :lessons_id_not_null, options_for_select({t('.used_in_lessons') => true, t('.not_used_in_lessons') => false, t('.missing_audio') => 'missing_audio', t('.missing_illustration') => 'missing_illustration'}, @search.lessons_id_not_null),{include_blank: ""}, {class: 'form-control'}
+          .col-sm-12.col-md
+            = f.search_field :body_start, class: 'form-control', placeholder: t('layouts.application.search'), id: 'language_search'
+        .row
+          .col-sm-12
+            .btn-group.w-100
+              - Dictionary::Word.word_classes_for_filter(0).each do |key, value|
+                = link_to key.humanize, '#', data: { wordclass: value }, class: "btn btn-sm btn-outline-dark px-1 js-search-word-class #{@search.word_class_eq == value ? 'active' : ''}"
+            = f.hidden_field :word_class_eq
+        .row.mt-3
+          .col-12
+            .btn-group.w-100
+              - ('A'..'Z').each do |letter|
+                = link_to letter, '#', data: { letter: letter }, class: "btn btn-outline-dark btn-sm px-1 js-search-phrase-letter #{@search.body_alphabetic_start == letter ? 'active' : ''}"
+            = f.hidden_field :body_alphabetic_start
+        = f.hidden_field :with_empty_audio
+        = f.hidden_field :with_empty_image
+
+.card.mt-3
+  .card-body
+    .float-left.mt-1= t('.count_phrases', count: @words.total_count)
+    .float-right
+      a.btn.btn-outline-dark.btn-sm.mb-3#words_csv_export[data-url= admin_language_words_path(format: 'csv')]
+        = t('.export_csv')
+    == paginate @words
+    = render partial: 'words_table', locals: { language: @language, words: @words, collection: nil, translate: false }
+    .dropdown
+      button#dropdownMenuButton.btn.btn-falcon-secondary.dropdown-toggle.disabled aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
+        = t('.bulk_actions')
+      .dropdown-menu aria-labelledby="dropdownMenuButton"
+        = link_to t('.create_collection'), new_admin_language_collection_path(language_id: @language.id), remote: true, class: 'dropdown-item', id: 'btn_new_collection', data: { toggle: 'modal', target: '#new-phrase-modal' }
+        = link_to t('.add_to_existing_collection'), add_to_collection_admin_language_words_path, remote: true, class: 'dropdown-item', id: 'add_to_collection_btn', data: { toggle: 'modal', target: '#new-phrase-modal' }
+        = link_to t('delete'), destroy_multiple_admin_language_words_path(), data: {confirm: 'Are you sure?'}, remote: true, method: :delete, class: 'dropdown-item', id: 'btn_delete_phrase'
+  .card-footer
+    = button_to recalculate_frequency_admin_language_words_path(@language), method: :post, class: 'btn btn-white float-right', data: { disable_with: '...recalculating' } do
+      = t('admin.dictionary.languages.words.csv_import.recalculate_frequency')
+.modal id='new-phrase-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog role="document"
+    .modal-content

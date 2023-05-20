@@ -1,0 +1,47 @@
+.student-language-info.student-target-languages
+  .content-separator.d-flex.align-items-center.mt-3
+    span.mr-2
+      = t('school.team_students.form.target_languages')
+    .separator-line.flex-grow-1
+  .student-target-language-input
+    = render 'student_language_input', student: student, scope: 'target'
+  = f.fields_for :student_target_languages do |lang_form|
+    - language = lang_form.object.language
+    = lang_form.hidden_field :_destroy, class: 'student-target-language-remove'
+    .student-target-language-item.row.w-100.mb-1.ml-0.py-1 data-language_id=language.id
+      .language-details.d-flex.align-items-center.col-5
+        = image_tag("flags/#{language_to_flag_code(language.code)}.svg", class: 'mr-2')
+        span= language.name.presence || language.system_name
+      .col-3.text-black
+        = lang_form.select :level, Lesson.short_levels_select, {}, class: 'form-control select2'
+      .col-4.d-flex.align-items-center.justify-content-end
+        .active-status class="#{lang_form.object.active? ? 'active' : 'inactive'}" data-scope='target'
+          = lang_form.hidden_field :active
+          i.fa.fa-check.mr-1.d-none
+          span= lang_form.object.active? ? t('school.team_students.form.active') : t('school.team_students.form.set_active_state')
+        .ml-4
+          = link_to remove_language_school_student_path(student, language_id: language.id, scope: 'target'), remote: true, class: 'text-1000'
+            i.fa.fa-times.remove-target-language.cursor-pointer.hover-opacity-change
+.student-language-info.student-support-languages
+  .content-separator.d-flex.align-items-center.mt-3
+    span.mr-2
+      = t('school.team_students.form.support_languages')
+    .separator-line.flex-grow-1
+  .student-support-language-input
+    = render 'student_language_input', student: student, scope: 'support'
+  = f.fields_for :student_support_languages do |lang_form|
+    - language = lang_form.object.language
+    = lang_form.hidden_field :_destroy, class: 'student-support-language-remove'
+    .student-support-language-item.w-100.mb-1.ml-0.py-3.row data-language_id=language.id
+      .language-details.d-flex.align-items-center.col-5
+        = image_tag("flags/#{language_to_flag_code(language.code)}.svg", class: 'mr-2')
+        span= language.name.presence || language.system_name
+      .col-3
+      .col-4.d-flex.align-items-center.justify-content-end
+        .active-status class="#{lang_form.object.native? ? 'active' : 'inactive'}" data-scope='support'
+          = lang_form.hidden_field :native
+          i.fa.fa-check.mr-1.d-none
+          span= lang_form.object.native? ? t('school.team_students.form.native') : t('school.team_students.form.nonnative')
+        .ml-4
+          = link_to remove_language_school_student_path(student, language_id: language.id, scope: 'support'), remote: true, class: 'text-1000'
+            i.fa.fa-times.remove-support-language.cursor-pointer.hover-opacity-change

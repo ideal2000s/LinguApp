@@ -1,0 +1,19 @@
+- content_for :name do
+  = skill.name
+
+.row
+  .col-lg-8.pr-lg-2
+    = form_for [:admin, skill], method: :patch, html: { id: 'skill_form' } do |f|
+      .card.mb-3
+        .card-header
+          h5.mb-0= skill.name
+        .card-body.bg-light
+          - I18n.available_locales.each_with_index do |locale, i|
+            .form-group
+              = f.label :"name_#{locale.to_s}", t(locale, scope: 'form.locales'),
+                      class: "form-control-label #{ locale == :en ? 'required' : '' }"
+              = f.text_field "name_#{locale.to_s}", class: 'form-control'
+              = error_for f.object, :name
+          .d-flex.mt-3
+            = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+            = link_to t('back'), admin_skills_path, class: 'btn btn-falcon-default mr-1'

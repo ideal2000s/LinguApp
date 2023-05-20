@@ -1,0 +1,8 @@
+= form_for team_domain, html: { id: dom_id(team, :team_domain_form), class: 'mb-2' }, as: :team_domain,
+remote: true, url: teach_team_team_domains_path(team) do |f|
+  label= t('.add_domain')
+  .input-group
+    = f.text_field :domain, class: 'form-control', required: true
+    .input-group-append
+      = f.submit t('.add'), class: 'input-group-text'
+  = error_for team_domain, :domain

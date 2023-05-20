@@ -1,0 +1,24 @@
+.mr-3= custom_profile_tag(student)
+.student-full-name= student.full_name
+.student-license-action-panel
+  .dropdown-menu.py-0
+    .card.bg-white.shadow-none.p-2
+      .card-body
+        .d-flex.align-items-center
+          .student-avatar= custom_profile_tag(student)
+          .student-info.ml-3.pt-2
+            = link_to student.full_name, school_student_path(student), class: 'student-full-name'
+            br
+            = student.email
+            .student-language.d-flex.align-items-center
+              .d-flex.mt-2
+                = render partial: 'school/team_students/language_info', locals: {student: student}
+        .student-license-info.mt-2
+          - active_license = team_student(student)&.active_license
+          - if active_license.present?
+            h6.font-weight-bold= t('school.team_students.index.license')
+            .plan-label= active_license.plan.name
+          - if active_license&.expires_at
+            .badge.badge-soft-warning
+              i.fas.fa-exclamation-circle.fa-fw.mr-1
+              = t('school.team_students.profile.expires_at', expires_at: l(active_license.expires_at, format: :date))

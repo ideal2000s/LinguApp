@@ -1,0 +1,608 @@
+---
+eo:
+  course_mailer:
+    course_assigned_notification:
+      button: Komencu la kurson
+      click_start_lesson: Alklaku 'Komenci lecionon'
+      follow_course_link: Alklaku la butonon por malfermi la kurson
+      footer_text: Revenu al Lingu por lerni ion novan ĉiutage!
+      get_started_line: 'Jen kiel vi komencas:'
+      notification_link: Sciigaj agordoj
+      open_lesson: Malfermu la unuan lecionon
+      or_paste_this_link: aŭ algluu ĉi tiun ligon en via retumilo
+      sign_in_with_email: Ensalutu per via retpoŝta adreso (%{email})
+      support_link: Subteno
+      title: Komenci kun %{course}
+    new_document_comment:
+      author_text: "%{author} lasis recenzon pri via tasko"
+      button_text: Rigardu
+      button_url_helper: 'aŭ algluu ĉi tiun ligon en vian retumilon:'
+      footer_text: Estas multe pli por lerni ...
+      notification_link: Sciigaj agordoj
+      subject_line: Nova tasko komento
+      support_link: Subteno
+    otp:
+      ignore_msg: Se vi ne faris ĉi tiun peton, simple ignoru la retpoŝton.
+      subject_line: Via unika kodo por Lingu
+      unique_code_for_lingu: Jen via unika kodo por Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Ĉu vi jam havas konton?
+      back: Reen
+      back_to_sign_in: Reen al Ensaluti
+      check_your_email_for_a_code: Kontrolu vian retpoŝton pri via kodo
+      continue: Daŭrigu
+      continue_with_email: Daŭrigu per retpoŝto
+      continue_with_provider: Daŭrigu per %{provider}
+      did_not_receive_a_code: Ĉu vi ne ricevis kodon?
+      email_address: Retpoŝta adreso
+      first_name: Antaŭnomo
+      get_unique_code: Akiru unikan ensalutan kodon
+      join_lingu: Aliĝu al Lingu
+      last_name: Familia nomo
+      more_login_options: Pli da ensalutaj opcioj
+      no_account_question: Ĉu vi ne havas konton?
+      or: aŭ
+      resend_code: Resendi kodon
+      sign_in: Ensaluti
+      sign_up: Registriĝu
+      want_to_receive_marketing_messages: Mi volas ricevi merkatajn mesaĝojn de Lingu
+      we_ve_sent_a_code: >-
+        Ni sendis 6-ciferan kodon al <strong> {{retpoŝto}} </strong>. La kodo eksvalidiĝas
+        post 15 minutoj, do bonvolu enigi ĝin baldaŭ.
+    cookie_agreement:
+      agree: Konsentu
+      condition: >-
+        Ni uzas kuketojn por analizi la rendimenton de la retejo kaj liveri personigitan
+        enhavon. Alklakante "Konsentu", vi konsentas niajn kondiĉojn.
+    course:
+      accredited_course_provider: Akreditita kurso-provizanto
+      apply: Apliki
+      apply_filters: Apliki filtrilojn
+      by: De
+      cancel: Nuligi
+      categories: "%{count}-kategorioj"
+      category: Kategorio
+      clear: Klara
+      clear_filters: Forigi filtrilojn
+      contact_us: Kontaktu nin
+      could_not_find_match_for: Pardonu, ni ne trovis ajnan kongruaĵon por
+      course_language: Kurslingvo
+      duration: Daŭro
+      filter_settings:
+        categories:
+          academic: Akademiulo
+          business: Komerco
+          fashion: Modo
+          food_drink: Manĝaĵo kaj trinkaĵo
+          for_kids: Por infanoj
+          general: Ĝenerala
+          health: Sano
+          legal: Laŭleĝa
+          sport: Sporto
+          travel: Vojaĝado
+        durations:
+          t0_600: "<10 minutoj"
+          t1800_3600: 30-60 minutoj
+          t3600_86400: 1+ horo
+          t600_1800: 10-30 minutoj
+        focus_on:
+          conversation: Konversacio
+          grammar: Gramatiko
+          listening: Aŭskultanta
+          pronunciation: Prononco
+          reading: Legado
+          speaking: Parolante
+          writing: Skribado
+        levels:
+          long:
+            advanced: Altnivela nivelo
+            elementary: Elementa nivelo
+            intermediate: Meza nivelo
+            no_knowledge: Neniu scio
+            pre_intermediate: Antaŭa meza nivelo
+            upper_intermediate: Supera meza nivelo
+          short:
+            advanced: Altnivela
+            beginner: Komencanto
+            intermediate: Meza
+        sort_by:
+          most_rated: Plej taksitaj
+          newest: Plej nova
+          popularity: Populareco
+      filters: Filtriloj
+      focus_on: Fokusiĝu pri
+      focus_on_title: Mi volas fokusiĝi
+      hide_lessons: Kaŝu lecionojn
+      hours: Horoj
+      i_understand: mi komprenas
+      i_want_to_learn: mi volas lerni
+      in_language: en %{language}
+      language: Lingvo
+      learn_more: Lernu pli
+      less_settings: Malpli agordoj
+      lessons: Lecionoj
+      lessons_available: "%{number} lecionoj disponeblaj"
+      lessons_catalog_page_subtitle: Fariĝu lingva heroo.
+      lessons_catalog_page_title: Pligrandigu viajn horizontojn per lingva kurso
+      level: Nivelo
+      min: Min
+      more_settings: Pli da agordoj
+      navbar:
+        close: Fermi menuon
+        menu: Menuo
+        select_language: Elektu lingvon
+      need_to_buy_course: Vi devas mendi kurson unue
+      no_description: Neniu priskribo provizita
+      no_results: Pardonu, ni ne trovis ajnan kongruaĵon por
+      or: aŭ
+      per_month: monate
+      plans: Planoj
+      privacy_policy: Privateca politiko
+      rating: Taksado
+      remove_all_filters: Forigu ĉiujn filtrilojn
+      reviews: Recenzoj
+      save: Savi
+      search: Serĉu
+      select_dots: Elektu ...
+      select_languages: Elektu langojn
+      select_num_languages: Elektu %{number}-lingvojn
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Montru ĉion
+      show_all_lessons: Montru ĉiujn lecionojn
+      show_lessons: Montri %{number}-lecionojn
+      show_more: Montru pli
+      sign_up_with_lingu_for: Registriĝu kun Lingu Norway por
+      skills: "%{count} kapabloj"
+      sort_by: Ordigi laŭ
+      start_typing_here: Komencu tajpi ĉi tie
+      teach: Instruu
+      terms_and_conditions: Terminoj kaj Kondiĉoj
+      time_range: Tempintervalo
+      try_adjusting_your_search: Provu agordi vian serĉon ŝanĝante viajn filtrilojn
+      try_this_course: Provu ĉi tiun kurson
+      website_language: Reteja lingvo
+      words: Vortojn
+    games:
+      finished:
+        go_to_next_exercise: Bone farita! Iru al la sekva ekzerco
+      flashcard:
+        buttons:
+          finish: Fini
+          next: Poste
+          previous: Antaŭa
+        check_out_new_words: Rigardu la novajn vortojn, kiujn vi lernos en ĉi tiu
+          leciono
+        frequency_of_word_usage: Ofteco de vortuzo en %{language}
+        keep_practice_to_learn_all_words: Revizii la %{count}-vortojn kaj ni ludu!
+        word_frequency:
+          level1: Malofte uzata
+          level2: Malofte uzata
+          level3: Vortofteco - meza
+          level4: Vortofteco - meza
+          level5: Komuna
+          level6: Tre ofta
+      match_word:
+        click_and_move_each_word_to_counterpart: Alklaku kaj movu ĉiun vorton al sia
+          ekvivalento
+        start_heading: Parigu vortojn por fari paron
+        time_is_up: Tempo finiĝis!
+      skip_tutorial: Saltu
+      time_is_up: Tempo finiĝis!
+      word_nodes:
+        match_letters_to_form_word: Kongruu literojn por formi vorton
+      word_waterfall:
+        do_not_hesitate: Ni rapidu!
+        go_to_next_exercise: Iru al la sekva ekzerco
+        select_correct_translation: Elektu ĝustan kongruon
+        well_done: Bone farita!
+    home_page:
+      hello: Saluton,
+      popular_lessons: Popularaj lecionoj
+      show_more: Montru pli
+      time: "%{count} min"
+      today_lesson: Via leciono por hodiaŭ
+      user_name: "%{name}!"
+      words: "%{count} vortoj"
+    idle_screen:
+      by_author: de %{authorName}
+      continue_lesson: Daŭrigu lecionon
+      exit: Eliru
+      idle_message: Vi estis senaktiva dum kelka tempo ...
+    lesson_page:
+      back_to_course_page: Reen al kurso-paĝo
+      close: Fermu
+      continue_lesson: Daŭrigu lecionon
+      followed: Sekvis
+      hamburger_menu_btn: Hamburga menuo
+      lesson_given: lecionoj
+      not_started: ne komenciĝis
+      or: Aŭ
+      part_complete: "%{percent}% kompletigita"
+      restart_lesson: Rekomenci
+      section_check: Kontrolu
+      section_check_info: "%{count} testoj"
+      section_learn: Lernu
+      section_learn_info: "%{count} min por rigardi kaj legi"
+      section_play: Ludu
+      section_play_info: "%{count} vortoj por praktiki"
+      start_lesson: Komencu lecionon
+      step_progress: "%{percent}%"
+      subscribe: Sekvu
+      subscribed: Sekvis
+      subscribers: sekvantoj
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Forĵeti
+      webview_error_title: Io fuŝiĝis ...
+      words_number: "%{wordsNumber} novaj vortoj"
+    lesson_task:
+      cancel_button: Nuligi
+      check:
+        navigation_next: Poste
+        navigation_previous: Antaŭa
+        navigation_skip: Saltu
+      controls_panel:
+        font_size_button: Tiparo
+        high_contrast_button:
+          origin: Alta kontrasto
+          short: Kontrasto
+        hints_button: Konsiloj
+        music_playback_button:
+          origin: Muzika reprodukto
+          short: Muziko
+        sound_effects_button:
+          origin: Sonefektoj
+          short: Sono
+      exit_button: Eliru
+      finish_button: Fini
+      finished:
+        back_to_learn: Reen por lerni
+        back_to_lesson_page: Reen al la leciona paĝo
+        back_to_results_page: Reen al rezultpaĝo
+        bad_result_message: Hmm ... provu preni la lecionon ankoraŭ unu fojon
+        close_lesson: Fermu lecionon
+        correct_answers_list: Ĝusta listo de respondoj
+        good_result_message: Mi vidas, ke vi penis!
+        great_result_message: Bone farita! Jen bonegaj rezultoj!
+        next_course_lesson: Iru al la sekva leciono en kurso
+        no_results: Vi ankoraŭ ne havas testrezultojn
+        no_results_text: Bonvolu kompletigi la lecionon kaj pasigi la teston por akiri
+          la rezultojn
+        see_correct_answers_list: Vidu liston de ĝustaj respondoj
+        train_more: Praktiku pli kaj vi atingos pli bonajn rezultojn la venontan fojon!
+        you_finished_lesson: Bonege! Vi finis la lecionon
+      go_back: Reiru
+      next_button: Poste
+      not_available_task: Ĉi tiu tasko ankoraŭ ne haveblas
+      start_button: Komencu
+      tasks:
+        check:
+          assignment:
+            accept: Akceptu
+            author_will_check_your_answer: "%{author} revizios vian respondon kaj
+              kutime donos reagojn ene de 1-2 tagoj"
+            continue_writing: Daŭre Skribu
+            copy: Kopiu
+            delete: Forigi
+            delete_record: Forigi registron
+            edit: Redaktu
+            essay_does_not_have_enough_words: >-
+              Via respondo devas enhavi almenaŭ %{minWordsNumber}-vortojn. Via respondo
+              estas nuntempe %{currentWordsNumber}-vortoj.
+            followers_count: "%{followersCount} sekvantoj"
+            lessons_count: "%{lessonsCount} lecionoj"
+            minimal_recording_time: Minimuma registra tempo - %{minimalRecordingTime}
+            minimum_characters_amount: Minimumaj signoj - %{minimumCharactersAmount}
+            minimum_words_amount: Minimumaj vortoj - %{minimumAmount}
+            record_again: Registri denove
+            record_voice: Registru voĉon
+            send_anyway: Sendu ĉiuokaze
+            send_to_review: Sendu al recenzo
+            skip: Saltu
+            too_short_answer: Tro mallonga respondo
+            type_your_answer: Tajpu vian respondon
+            unknown_task_type: Nekonata taskospeco
+            upgrade_licence: Altgradiga permesilo
+            upgrade_your_plan: Ĝisdatigu vian planon por provi taskojn kun recenzoj
+              de instruistoj
+            upload_files: Alŝutu dosierojn
+            write_essay: Skribu eseon
+            you_have_used_amount_of_assignments: Vi uzis %{amountOfAssignments}-atribuajn
+              kreditojn
+          fill_in_blanks:
+            sentence_gap: Frazinterspaco
+          fill_in_table:
+            column_answer_placeholder: Respondo
+            column_question_placeholder: Demando
+            example: Ekzemplo
+          true_false:
+            'false': Falsa
+            'true': Vere
+        learn:
+          translatable_text:
+            show_original: Montri originalon
+            translate_into: Traduku per Google al %{languageName}
+            translate_into_your_lang: Traduki per Google al via lingvo
+        play:
+          arrange_words:
+            start_screen:
+              heading: Faru frazon el la donitaj vortoj
+          audition:
+            start_screen:
+              heading: Aŭskultu la sonon kaj frapu la vorton, kiun vi ĵus aŭdis
+          dictation:
+            get_help: Akiru helpon
+            i_do_not_know: Mi ne scias
+            input_placeholder: Enigu tion, kion vi aŭdis ĉi tie
+            start_screen:
+              heading: Aŭskultu kaj skribu tion, kion vi aŭdas
+          fill_gap:
+            start_screen:
+              heading: Kongruu la vorton kaj ĝian signifon
+          finish_screen:
+            go_to_next_exercise: Bone farita! Iru al la sekva ekzerco
+          image_hotspot:
+            start_screen:
+              heading: Nomu la objektojn en la bildo ĝuste
+          image_object:
+            start_screen:
+              heading: Elektu la ĝustan objekton el la sekva bildo
+          inline_dropdown:
+            start_screen:
+              heading: Elektu la vortojn, kiuj kongruas kun la frazo
+          mark_word:
+            start_screen:
+              heading: Legu la tekston kaj elektu la vorton, kiu kongruas kun la bildo
+          minimal_pairs:
+            start_screen:
+              heading: Spektu la filmeton kaj elektu ĝustan opcion
+    locale:
+      currency_switcher_title: Monerŝanĝilo
+      lang_switcher_title: Lingvoŝanĝilo
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Angla
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlandoj
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: de Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Aŭdio ŝarĝas
+        aria_pause_button: Paŭzo
+        aria_play_button: Ludu
+        aria_reload_button: Reŝargi
+        aria_stop_button: Haltu
+        reload_message: Malsukcesis ŝarĝi sonon. Bonvolu alklaki la butonon por reŝargi.
+    mobile_modal:
+      apply: Apliki
+      cancel: Nuligi
+      clear: Klara
+      save: Savi
+    page404:
+      goToStartLessonPage: Iru al la paĝo pri komenca leciono
+      ooops: Oooops ...
+      sorry_message: Pardonu, Tor ne povis trovi ĉi tiun paĝon
+    profile:
+      navigation:
+        log_out: Elsaluti
+        my_profile: Mia profilo
+        settings: Agordoj
+      onboarding:
+        choose_native_language: Elektu vian denaskan lingvon aŭ lingvon, kiun vi komprenas
+        do_you_understand_english: Ĉu vi komprenas la anglan?
+        hello: Saluton
+        language_levels:
+          a1: Elementa nivelo
+          a2: Antaŭ-meza nivelo
+          b1: Meza nivelo
+          b2: Supera Meza nivelo
+          c1: Altnivela nivelo
+          no_knowledge: Neniu scio
+        language_not_supported:
+          note: Ni sciigos vin tuj kiam la lingvo estos disponebla
+          title: Pardonu, sed ni ankoraŭ ne subtenas ĉi tiun lingvon
+          try_another_language: Provu alian lingvon
+        'no': Ne
+        search_placeholder: Serĉu ...
+        show_more_languages: Aliaj lingvoj
+        target_language_question: Kiun lingvon vi volas lerni?
+        what_is_language_level: Kiel vi taksus vian %{languageName}-nivelon?
+        'yes': Jes
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Privateca politiko de Lingu
+        support: Subteno
+      logout: Elsaluti
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Ricevu ĝisdatigojn de instruistoj kaj lernejoj, kiujn vi
+                sekvas
+              sections:
+                app_notifications: Sciigoj pri programoj
+                email: Retpoŝto
+              title: Lerna helpo
+            marketing:
+              description: Restu informita pri ĉiuj promocioj, ĝisdatigoj kaj inspiro
+                de Lingu
+              sections:
+                browser_notifications: Sciigoj pri retumilo
+                email: Retpoŝto
+              title: Merkatado
+          title: Kontaktaj preferoj
+        personal_information:
+          delete_photo: Forigi foton
+          email: Retpoŝto
+          first_name: Antaŭnomo
+          last_name: Familia nomo
+          social_accounts:
+            connected: Konektis
+            facebook: Fejsbuko
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ne konektita
+            title: Sociaj kontoj
+          title: Personaj informoj
+          update_photo: Ĝisdatigu foton
+        school:
+          active_licence: Aktiva licenco
+          active_status: Aktiva
+          delete_profile: Forigu mian profilon
+          delete_profile_modal:
+            body: |-
+              Vi detruas ĉiujn viajn datumojn - por ĉiam. Ne estas malfara butono, kaj ni ne povas retrovi ĝin por vi poste.
+              Ĉu vi certas, ke vi volas forigi definitive vian lingvan profilon kaj ĉiujn viajn datumojn?
+            cancel: Nuligi
+            confirm: Jes, forigu ĝin
+            i_understand_the_consequences: Mi komprenas la konsekvencojn
+            title: Ĉu forigi vian profilon?
+          expired: Eksvalidiĝis %{expire_date}
+          expires: Eksvalidiĝas %{expire_date}
+          inactive_status: Neaktiva
+          revoke_access: Revoki legaliron
+          sections:
+            contact_school: Kontaktu lernejon
+            export_my_data: Eksportu miajn datumojn
+            read_school_privacy_policy: Legu la privatecan politikon pri lernejo
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Muzika reprodukto
+              sound_effects: Sonefektoj
+              title: Sono
+            visual:
+              dark_theme: Malhela temo
+              font_size:
+                test_text: La herbo estas ĉiam pli verda aliflanke de la barilo
+                title: Tiparo
+              high_contrast: Alta kontrasto
+              hints: Konsiloj
+              title: Vida
+          title: Sono kaj Vido
+        training_settings:
+          sections:
+            i_understand: mi komprenas
+            i_want_to_learn: mi volas lerni
+            target_language_level: Angla nivelo
+          title: Trejnaj agordoj
+      settings_title: Agordoj
+    teacher_card:
+      followers_count:
+        one: 1 sekvanto
+        other: "%{count} sekvantoj"
+      lessons_count:
+        one: 1 leciono
+        other: "%{count} lecionoj"

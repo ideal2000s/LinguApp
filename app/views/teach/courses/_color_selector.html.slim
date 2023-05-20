@@ -1,0 +1,6 @@
+= form_for course, url: teach_course_path(course), method: :put, html: { id: 'set_color_form' } do |f|
+  = f.hidden_field :frontend_color, class: 'frontend-color-input'
+  .d-flex
+    - Course::COLOR_ARRAY.each do |e|
+      .lingu-color-border.rounded-circle class="#{course.meta['frontend_color'] == e ? 'lingu-color-selected' : ''}"
+        .lingu-color.rounded-circle style="background-color: #{e}" color-name="#{e}"

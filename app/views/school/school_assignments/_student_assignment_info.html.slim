@@ -1,0 +1,38 @@
+- student = student_assignment.student
+.assignment-student-info-header.p-4
+  = link_to school_student_path(student_assignment.student) do
+    .student-info.d-flex
+      = custom_profile_tag(student)
+      div.ml-3
+        h1= student.full_name
+        .d-flex
+          .target-language-level.mr-2.d-flex.justify-content-center
+            = student.target_language_level ? student.target_language_level.upcase : '?'
+          .language-info
+            - native_language = student.native_language
+            - active_target_language = student.active_target_language
+            - if native_language
+              = image_tag("flags/#{language_to_flag_code(native_language.code)}.svg", class: 'language-flag mr-1')
+              span.font-weight-bold
+                = native_language.name.presence || native_language.system_name
+              span.fas.fa-long-arrow-alt-right.mx-2
+            - if active_target_language
+              = image_tag("flags/#{language_to_flag_code(active_target_language.code)}.svg", class: 'language-flag mr-1')
+              span.font-weight-bold
+                = active_target_language.name.presence || active_target_language.system_name
+  table.mt-4
+    tr
+      th= t('school.school_assignments.form.deadline')
+      td.ml-3
+        = l(student_assignment.deadline, format: :default) if student_assignment.deadline
+    tr
+      th= t('.submitted_at')
+      td
+        - if student_assignment.document
+          = l(student_assignment.document.created_at, format: :short)
+    tr
+      th= t('status')
+      td
+        = student_assignment_status_tag(student_assignment)
+.assignment-student-info-separator
+= render 'school/shared/document_review', document: document, comment: comment, comments: comments

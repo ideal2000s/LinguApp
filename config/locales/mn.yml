@@ -1,0 +1,611 @@
+---
+mn:
+  course_mailer:
+    course_assigned_notification:
+      button: Хичээлээ эхлээрэй
+      click_start_lesson: "'Хичээл эхлэх' дээр дарна уу"
+      follow_course_link: Сургалтыг нээхийн тулд товчлуур дээр дарна уу
+      footer_text: Өдөр бүр шинэ зүйл сурахын тулд Lingu дээр эргэж ирээрэй!
+      get_started_line: Яаж эхлэхээ эндээс харна уу.
+      notification_link: Мэдэгдлийн тохиргоо
+      open_lesson: Эхний хичээлийг нээ
+      or_paste_this_link: эсвэл энэ холбоосыг хөтөчдөө оруулна уу
+      sign_in_with_email: Имэйл хаягаараа нэвтэрнэ үү (%{email})
+      support_link: Дэмжлэг
+      title: "%{course}-ийг эхлүүлэх"
+    new_document_comment:
+      author_text: "%{author} таны өгсөн даалгаврын тоймыг үлдээв"
+      button_text: Үүнийг шалгаж үзээрэй
+      button_url_helper: 'эсвэл энэ холбоосыг хөтөчдөө оруулна уу:'
+      footer_text: Сурах зүйл их байна ...
+      notification_link: Мэдэгдлийн тохиргоо
+      subject_line: Шинэ даалгаврын тайлбар
+      support_link: Дэмжлэг
+    otp:
+      ignore_msg: Хэрэв та энэ хүсэлтийг гаргаагүй бол имэйлийг үл тоомсорлох хэрэгтэй.
+      subject_line: Таны хэлний өвөрмөц код
+      unique_code_for_lingu: Таны Лингвигийн өвөрмөц код энд байна
+  frontend:
+    auth:
+      already_have_acc_question: Данстай юу?
+      back: Буцах
+      back_to_sign_in: Нэвтрэх рүү буцах
+      check_your_email_for_a_code: Кодоо имэйлээ шалгана уу
+      continue: Үргэлжлүүлэх
+      continue_with_email: Имэйлээр үргэлжлүүлээрэй
+      continue_with_provider: "%{provider} дээр үргэлжлүүлээрэй"
+      did_not_receive_a_code: Код хүлээж аваагүй юу?
+      email_address: Имэйл хаяг
+      first_name: Нэр
+      get_unique_code: Өвөрмөц нэвтрэх кодыг аваарай
+      join_lingu: Lingu-д элсээрэй
+      last_name: Овог
+      more_login_options: Нэвтрэх бусад сонголтууд
+      no_account_question: Танд данс байхгүй юу?
+      or: эсвэл
+      resend_code: Кодыг дахин илгээх
+      sign_in: Нэвтрэх
+      sign_up: Бүртгүүлэх
+      want_to_receive_marketing_messages: Би Лингингээс маркетингийн мессеж авахыг
+        хүсч байна
+      we_ve_sent_a_code: >-
+        Бид 6 оронтой кодыг <strong> {{email}} </strong> руу илгээсэн. Кодын хугацаа
+        15 минутын дараа дуусах тул удахгүй оруулна уу.
+    cookie_agreement:
+      agree: Зөвшөөрч байна
+      condition: >-
+        Бид сайтын гүйцэтгэлд дүн шинжилгээ хийх, хувийн агуулгыг хүргэх зорилгоор
+        күүкийг ашигладаг. "Зөвшөөрөх" товчийг дарснаар та манай нөхцлийг зөвшөөрч
+        байгаа болно.
+    course:
+      accredited_course_provider: Итгэмжлэгдсэн сургалт дамжуулагч
+      apply: Өргөдөл гаргах
+      apply_filters: Шүүлтүүр хэрэглэх
+      by: Гэхэд
+      cancel: Цуцлах
+      categories: "%{count} ангилал"
+      category: Ангилал
+      clear: Тодорхой
+      clear_filters: Шүүлтүүрийг арилгах
+      contact_us: Бидэнтэй холбоо бариарай
+      could_not_find_match_for: Уучлаарай, бид таарах тохирох зүйл олдсонгүй
+      course_language: Хичээлийн хэл
+      duration: Үргэлжлэх хугацаа
+      filter_settings:
+        categories:
+          academic: Эрдмийн
+          business: Бизнес
+          fashion: Загвар
+          food_drink: Хоол хүнс ба ундаа
+          for_kids: Хүүхдэд зориулсан
+          general: Ерөнхий
+          health: Эрүүл мэнд
+          legal: Хууль ёсны
+          sport: Спорт
+          travel: Аялал
+        durations:
+          t0_600: "<10 минут"
+          t1800_3600: 30-60 минут
+          t3600_86400: 1+ цаг
+          t600_1800: 10-30 минут
+        focus_on:
+          conversation: Яриа
+          grammar: Дүрэм
+          listening: Сонсох
+          pronunciation: Дуудлага
+          reading: Унших
+          speaking: Ярьж байна
+          writing: Бичих
+        levels:
+          long:
+            advanced: Ахисан түвшин
+            elementary: Анхан шатны түвшин
+            intermediate: Дунд шатны
+            no_knowledge: Мэдлэг байхгүй
+            pre_intermediate: Урьдчилсан дунд түвшин
+            upper_intermediate: Дунд түвшний дээд түвшин
+          short:
+            advanced: Дэвшилтэт
+            beginner: Эхлэгч
+            intermediate: Дунд
+        sort_by:
+          most_rated: Хамгийн их үнэлэгдсэн
+          newest: Хамгийн сүүлийн үеийн
+          popularity: Алдартай байдал
+      filters: Шүүлтүүрүүд
+      focus_on: Анхаарлаа төвлөрүүл
+      focus_on_title: Би анхаарлаа төвлөрүүлэхийг хүсч байна
+      hide_lessons: Хичээлийг нуух
+      hours: Цаг
+      i_understand: Би ойлгож байна
+      i_want_to_learn: Би сурахыг хүсэж байна
+      in_language: "%{language} дээр"
+      language: Хэл
+      learn_more: Илүү их судла
+      less_settings: Бага тохиргоо
+      lessons: Хичээл
+      lessons_available: "%{number} хичээл авах боломжтой"
+      lessons_catalog_page_subtitle: Хэлний баатар болоорой.
+      lessons_catalog_page_title: Хэлний дамжаагаар мэдлэгийн хүрээгээ тэлээрэй
+      level: Түвшин
+      min: Мин
+      more_settings: Бусад тохиргоо
+      navbar:
+        close: Цэсийг хаах
+        menu: Цэс
+        select_language: Хэл сонгох
+      need_to_buy_course: Эхлээд та курс захиалах хэрэгтэй
+      no_description: Тодорхойлолт өгөөгүй
+      no_results: Уучлаарай, бид таарах тохирох зүйл олдсонгүй
+      or: эсвэл
+      per_month: сар бүр
+      plans: Төлөвлөгөө
+      privacy_policy: Нууцлалын бодлого
+      rating: Үнэлгээ
+      remove_all_filters: Бүх шүүлтүүрийг арилгах
+      reviews: Тойм
+      save: Хадгалах
+      search: Хайх
+      select_dots: Сонгох ...
+      select_languages: Лангауг сонго
+      select_num_languages: "%{number} хэлийг сонгоно уу"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Бүгдийг харуулах
+      show_all_lessons: Бүх хичээлийг үзүүл
+      show_lessons: "%{number} хичээлүүдийг үзүүлэх"
+      show_more: Дэлгэрэнгүй харуулах
+      sign_up_with_lingu_for: Lingu Норвегид бүртгүүлнэ үү
+      skills: "%{count} чадвар"
+      sort_by: Эрэмбэлэх
+      start_typing_here: Эндээс бичиж эхэлнэ үү
+      teach: Заах
+      terms_and_conditions: Нөхцөл
+      time_range: Цаг хугацааны хязгаар
+      try_adjusting_your_search: Шүүлтүүрээ сольж хайлтаа тохируулж үзээрэй
+      try_this_course: Энэ сургалтыг туршиж үзээрэй
+      website_language: Вэбсайтын хэл
+      words: Үг
+    games:
+      finished:
+        go_to_next_exercise: Сайн хийлээ! Дараагийн дасгал руу яв
+      flashcard:
+        buttons:
+          finish: Дуусах
+          next: Дараачийн
+          previous: Өмнөх
+        check_out_new_words: Энэ хичээлээр сурах шинэ үгсийг шалгаж үзээрэй
+        frequency_of_word_usage: "%{language}-д үг ашиглах давтамж"
+        keep_practice_to_learn_all_words: "%{count} үгсийг хянаж үзээд тоглоом тоглуулцгаая!"
+        word_frequency:
+          level1: Ховор тохиолдолд ашигладаг
+          level2: Ховор тохиолдолд ашигладаг
+          level3: Үгийн давтамж - дунд
+          level4: Үгийн давтамж - дунд
+          level5: Нийтлэг
+          level6: Маш нийтлэг
+      match_word:
+        click_and_move_each_word_to_counterpart: Үг бүр дээр товшоод хамтрагч руугаа
+          шилжүүлээрэй
+        start_heading: Хос болгох үгсийг тааруул
+        time_is_up: Цаг дууслаа!
+      skip_tutorial: Алгасах
+      time_is_up: Цаг дууслаа!
+      word_nodes:
+        match_letters_to_form_word: Үг үүсгэхийн тулд үсгүүдийг тааруул
+      word_waterfall:
+        do_not_hesitate: Хурдлуулъя!
+        go_to_next_exercise: Дараагийн дасгал руу яв
+        select_correct_translation: Зөв тохирохыг сонгоно уу
+        well_done: Сайн хийлээ!
+    home_page:
+      hello: Сайн уу,
+      popular_lessons: Алдартай хичээлүүд
+      show_more: Дэлгэрэнгүй харуулах
+      time: "%{count} мин"
+      today_lesson: Өнөөдрийн хичээл
+      user_name: "%{name}!"
+      words: "%{count} үгс"
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Хичээлээ үргэлжлүүлээрэй
+      exit: гарах
+      idle_message: Та хэсэг хугацаанд ажилгүй байсан ...
+    lesson_page:
+      back_to_course_page: Курсын хуудас руу буцах
+      close: Хаах
+      continue_lesson: Хичээлээ үргэлжлүүлээрэй
+      followed: Дагасан
+      hamburger_menu_btn: Гамбургерын цэс
+      lesson_given: хичээлүүд
+      not_started: эхлээгүй
+      or: Эсвэл
+      part_complete: "%{percent}% дууссан"
+      restart_lesson: Дахин ачааллах
+      section_check: Шалгах
+      section_check_info: "%{count} тестүүд"
+      section_learn: Сурах
+      section_learn_info: "%{count} минут үзэх, унших"
+      section_play: Тогло
+      section_play_info: "%{count} дасгал хийх"
+      start_lesson: Хичээл эхлэх
+      step_progress: "%{percent}%"
+      subscribe: Дагах
+      subscribed: Дагасан
+      subscribers: дагалдагчид
+      time_min: "%{minutesNumber} мин"
+      unsubscribe: Буцах
+      webview_error_title: Ямар нэгэн зүйл буруугаар эргэсэн...
+      words_number: "%{wordsNumber} шинэ үгс"
+    lesson_task:
+      cancel_button: Цуцлах
+      check:
+        navigation_next: Дараачийн
+        navigation_previous: Өмнөх
+        navigation_skip: Алгасах
+      controls_panel:
+        font_size_button: Үсгийн хэмжээ
+        high_contrast_button:
+          origin: Өндөр ялгаатай байдал
+          short: Ялгаатай байдал
+        hints_button: Санамж
+        music_playback_button:
+          origin: Хөгжим тоглуулах
+          short: Хөгжим
+        sound_effects_button:
+          origin: Дууны эффект
+          short: Дуу
+      exit_button: гарах
+      finish_button: Дуусах
+      finished:
+        back_to_learn: Сурахаар буцаж ирэв
+        back_to_lesson_page: Хичээлийн хуудас руу буцах
+        back_to_results_page: Үр дүнгийн хуудас руу буцах
+        bad_result_message: Хмм ... дахин нэг удаа хичээл заалгахыг хичээ
+        close_lesson: Хичээлийг хаах
+        correct_answers_list: Зөв хариултын жагсаалт
+        good_result_message: Таныг хүчин чармайлт гаргасныг би харж байна!
+        great_result_message: Сайн хийлээ! Эдгээр нь гайхалтай үр дүн юм!
+        next_course_lesson: Мэдээжийн хэрэг дараагийн хичээл рүү явна уу
+        no_results: Танд одоогоор шинжилгээний хариу алга байна
+        no_results_text: Хичээлээ дуусгаад шалгалтаа өгөөд дүнгээ гаргуулна уу
+        see_correct_answers_list: Зөв хариултын жагсаалтыг үзнэ үү
+        train_more: Илүү их дасгал хий, дараа дараагийн удаа илүү сайн үр дүнд хүрэх
+          болно!
+        you_finished_lesson: Агуу их! Та хичээлээ дуусгалаа
+      go_back: Буцах
+      next_button: Дараачийн
+      not_available_task: Энэ даалгавар хараахан бэлэн болоогүй байна
+      start_button: Эхлэ
+      tasks:
+        check:
+          assignment:
+            accept: Хүлээн зөвшөөр
+            author_will_check_your_answer: "%{author} нь таны хариултыг хянаж үзээд
+              1-2 хоногийн дотор хариу өгөх болно"
+            continue_writing: Бичихээ үргэлжлүүлээрэй
+            copy: Хуулах
+            delete: Устгах
+            delete_record: Бичлэгийг устгах
+            edit: Засах
+            essay_does_not_have_enough_words: >-
+              Таны хариулт дор хаяж %{minWordsNumber} үг агуулсан байх ёстой. Таны
+              хариулт одоогоор %{currentWordsNumber} үг байна.
+            followers_count: "%{followersCount} дагагч"
+            lessons_count: "%{lessonsCount} хичээлүүд"
+            minimal_recording_time: Хамгийн бага бичлэг хийх хугацаа - %{minimalRecordingTime}
+            minimum_characters_amount: Хамгийн бага тэмдэгтүүд - %{minimumCharactersAmount}
+            minimum_words_amount: Хамгийн бага үгс - %{minimumAmount}
+            record_again: Дахин тэмдэглэ
+            record_voice: Дуу хоолой бичих
+            send_anyway: Ямар ч байсан илгээх
+            send_to_review: Шалгахаар илгээнэ үү
+            skip: Алгасах
+            too_short_answer: Хэт богино хариулт
+            type_your_answer: Хариултаа бичнэ үү
+            unknown_task_type: Тодорхойгүй даалгаврын төрөл
+            upgrade_licence: Лицензийг шинэчлэх
+            upgrade_your_plan: Багш нарын тоймтой даалгаврыг туршиж үзэх төлөвлөгөөгөө
+              сайжруул
+            upload_files: Файл байршуулах
+            write_essay: Эссе бичих
+            you_have_used_amount_of_assignments: Та %{amountOfAssignments} даалгаврын
+              кредит ашигласан
+          fill_in_blanks:
+            sentence_gap: Өгүүлбэрийн ялгаа
+          fill_in_table:
+            column_answer_placeholder: Хариулт
+            column_question_placeholder: Асуулт
+            example: Жишээ
+          true_false:
+            'false': Худал
+            'true': Үнэн
+        learn:
+          translatable_text:
+            show_original: Эх хувийг харуулах
+            translate_into: Google-тэй %{languageName} руу орчуулах
+            translate_into_your_lang: Google-тэй хэлээрээ орчуулаарай
+        play:
+          arrange_words:
+            start_screen:
+              heading: Өгөгдсөн үгсээс өгүүлбэр зохио
+          audition:
+            start_screen:
+              heading: Аудио сонсоод саяхан сонссон үгээ товшино уу
+          dictation:
+            get_help: Туслах
+            i_do_not_know: Би мэдэхгүй байна
+            input_placeholder: Энд сонссон зүйлээ оруулна уу
+            start_screen:
+              heading: Сонсож, сонссон зүйлээ бичээрэй
+          fill_gap:
+            start_screen:
+              heading: Үг болон утгыг нь тааруулаарай
+          finish_screen:
+            go_to_next_exercise: Сайн хийлээ! Дараагийн дасгал руу яв
+          image_hotspot:
+            start_screen:
+              heading: Зурган дээрх объектуудыг зөв нэрлэ
+          image_object:
+            start_screen:
+              heading: Дараагийн зургаас зөв зүйлийг сонгоно уу
+          inline_dropdown:
+            start_screen:
+              heading: Өгүүлбэрт тохирох үгсийг сонгоно уу
+          mark_word:
+            start_screen:
+              heading: Текстийг уншаад зурагтай тохирох үгийг сонго
+          minimal_pairs:
+            start_screen:
+              heading: Видеог үзээд зөв сонголтыг сонго
+    locale:
+      currency_switcher_title: Валютын шилжүүлэгч
+      lang_switcher_title: Хэл солих
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Дойч
+        el: Greek
+        en: Англи
+        eo: Esperanto
+        es: Эспаньол
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Франц
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Италио
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Латвиешу валода
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Норск
+        ne: Nepali
+        nl: Недерланд
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Полски
+        ps: Pashto
+        pt: Португу
+        ro: Limba românâ
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Аудио ачаалж байна
+        aria_pause_button: Түр зогсоох
+        aria_play_button: Тогло
+        aria_reload_button: Дахин ачаалах
+        aria_stop_button: Зогс
+        reload_message: Аудиог ачаалж чадсангүй. Дахин ачаалахын тулд товчлуур дээр
+          дарна уу.
+    mobile_modal:
+      apply: Өргөдөл гаргах
+      cancel: Цуцлах
+      clear: Тодорхой
+      save: Хадгалах
+    page404:
+      goToStartLessonPage: Хичээл эхлэх хуудас руу очно уу
+      ooops: Өө ...
+      sorry_message: Уучлаарай, Тор энэ хуудсыг олж чадсангүй
+    profile:
+      navigation:
+        log_out: Гарах
+        my_profile: Миний намтар
+        settings: Тохиргоо
+      onboarding:
+        choose_native_language: Төрөлх хэлээ эсвэл ойлгосон хэлээ сонгоорой
+        do_you_understand_english: Та англи хэл ойлгодог уу?
+        hello: Сайн уу
+        language_levels:
+          a1: Анхан шатны түвшин
+          a2: Дунд түвшний өмнөх түвшин
+          b1: Дунд шатны
+          b2: Дунд түвшний дээд түвшин
+          c1: Ахисан түвшин
+          no_knowledge: Мэдлэг байхгүй
+        language_not_supported:
+          note: Хэл бэлэн болмогц бид танд мэдэгдэх болно
+          title: Уучлаарай, гэхдээ бид энэ хэлийг хараахан дэмжихгүй байна
+          try_another_language: Өөр хэлээр оролдож үзээрэй
+        'no': Үгүй
+        search_placeholder: Хайх ...
+        show_more_languages: Бусад хэл
+        target_language_question: Та ямар хэл сурахыг хүсч байна вэ?
+        what_is_language_level: Та %{languageName} түвшинг хэрхэн үнэлэх вэ?
+        'yes': Тийм ээ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu-ийн нууцлалын бодлого
+        support: Дэмжлэг
+      logout: Гарах
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Өөрийн дагаж мөрддөг багш, сургуулиудаас мэдээлэл авна
+                уу
+              sections:
+                app_notifications: Апп мэдэгдлүүд
+                email: И-мэйл
+              title: Сургалтын тусламж
+            marketing:
+              description: >-
+                Лингингээс гаргасан бүх сурталчилгаа, шинэчлэлт, урам зоригийн талаар
+                мэдээлэлтэй байгаарай
+              sections:
+                browser_notifications: Хөтчийн мэдэгдэл
+                email: И-мэйл
+              title: Маркетинг
+          title: Холбоо барих тохиргоо
+        personal_information:
+          delete_photo: Зургийг устгах
+          email: Имэйл
+          first_name: Нэр
+          last_name: Овог
+          social_accounts:
+            connected: Холбогдсон
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Холбогдоогүй
+            title: Нийгмийн данс
+          title: Хувийн мэдээлэл
+          update_photo: Зураг шинэчлэх
+        school:
+          active_licence: Идэвхтэй лиценз
+          active_status: Идэвхтэй
+          delete_profile: Миний профайлыг устгах
+          delete_profile_modal:
+            body: |-
+              Та бүх өгөгдлөө үүрд устгадаг. Буцаах товчлуур байхгүй тул бид танд буцааж өгөх боломжгүй.
+              Lingu профайл болон бүх өгөгдлөө бүрмөсөн устгахдаа итгэлтэй байна уу?
+            cancel: Цуцлах
+            confirm: Тийм ээ, устга
+            i_understand_the_consequences: Үүний үр дагаврыг би ойлгож байна
+            title: Профайлаа устгах уу?
+          expired: Хугацаа нь дууссан %{expire_date}
+          expires: "%{expire_date} хугацаа дуусна"
+          inactive_status: Идэвхгүй
+          revoke_access: Унших хандалтыг хүчингүй болгох
+          sections:
+            contact_school: Сургуультай холбоо бариарай
+            export_my_data: Миний өгөгдлийг экспортлох
+            read_school_privacy_policy: Сургуулийн нууцлалын бодлогыг уншина уу
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Хөгжим тоглуулах
+              sound_effects: Дууны эффект
+              title: Дуу
+            visual:
+              dark_theme: Харанхуй сэдэв
+              font_size:
+                test_text: Хашааны нөгөө талд өвс үргэлж ногоон байдаг
+                title: Үсгийн хэмжээ
+              high_contrast: Өндөр ялгаатай байдал
+              hints: Санамж
+              title: Visual
+          title: Дуу, дүрс
+        training_settings:
+          sections:
+            i_understand: Би ойлгож байна
+            i_want_to_learn: Би сурахыг хүсэж байна
+            target_language_level: Англи хэлний түвшин
+          title: Сургалтын тохиргоо
+      settings_title: Тохиргоо
+    teacher_card:
+      followers_count:
+        one: 1 дагагч
+        other: "%{count} дагагч"
+      lessons_count:
+        one: 1 хичээл
+        other: "%{count} хичээлүүд"

@@ -1,0 +1,142 @@
+@import 'frontend/theme/scss/user-variables';
+
+.checkbox {
+  input {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .checkmark {
+    display: table-cell;
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    box-sizing: border-box;
+    vertical-align: middle;
+
+    &__border {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #BDBDCB;
+      border-radius: 6px;
+      background: #fff;
+      border-radius: 6px;
+      position: relative;
+      //margin: 20px 15px;
+      .check {
+        display: none;
+      }
+    }
+
+    @media (min-width: $lingu-bpt-md) {
+      width: 26px;
+      height: 26px;
+      
+      &__border {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+
+  label {
+    vertical-align: middle;
+    color: #4c5972;
+    line-height: 20px;
+    //padding: 20px 40px;
+    padding-left: 20px;
+    // cursor: pointer;
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  &.checked {
+    .checkmark {
+      &__border {
+        border: none;
+        background: linear-gradient(95.74deg, #00BCE8 0.64%, #0082B2 99.16%);
+        padding: 6px;
+        //margin: 20px 15px;
+        display: flex;
+        justify-content: center;
+        .check {
+          display: block;
+          color: white;
+          position: absolute;
+          left: 7px;
+          top: 4px;
+          width: 6px;
+          height: 10px;
+          transform: rotate(45deg);
+          border: solid white;
+          border-width: 0 2px 2px 0;
+
+          @media (min-width: $lingu-bpt-md) {
+            left: 9px;
+            top: 5px;
+            width: 8px;
+            height: 12px;
+          }
+        }
+
+        @media (min-width: $lingu-bpt-md) {
+          background: #00A5D7;
+        }
+      }
+
+    }
+  }
+
+  &.crossed {
+    label {
+      &:before, &::after {
+        position: absolute;
+        content: ' ';
+        height: 18px;
+        width: 2px;
+        background-color: #ec6492;
+        border: none;
+      }
+
+      &:before {
+        left: 5px;
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        left: 20px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &.result {
+    label {
+      color: #b5bfce;
+    }
+
+    &.checked {
+      label {
+        color: #b0d45f;
+
+        &::after {
+          border-color: #b0d45f;
+        }
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+
+    &.crossed {
+      label {
+        color: #ec6492;
+      }
+    }
+  }
+}

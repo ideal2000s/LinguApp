@@ -1,0 +1,10 @@
+- set_page_title t('layouts.admin.sidebar.languages')
+
+.card.pb-0
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner4-sm.png')});"
+  .card-header.pb-0
+    h3.mb-0
+      = t('admin.languages.list.active_languages')
+      = " (#{languages.total_count})"
+.card
+  = render partial: 'admin/languages/list', locals: { languages: languages }

@@ -1,0 +1,19 @@
+.card.mb-3
+  .card-header.d-flex.justify-content-between
+    h5.card-title.mb-0.pb-0= task.name
+    = link_to teach_task_preview_path(task), class: 'btn btn-falcon-primary btn-sm', target: '_blank' do
+      i.fas.fa-eye.fa-fw.mr-1
+      = t(task.type.underscore, scope: 'tasks.types')
+  .card-body
+    .lesson-review-content.d-flex.flex-column
+      - video_url = task.items[0].url
+      - if video_url
+        - if video_categorize(video_url) == 'youtube'
+          iframe[width="502" height="275" src="http://www.youtube.com/embed/#{get_youtube_id(video_url)}" frameborder="10"]
+        - else
+          script[src="https://fast.wistia.com/embed/medias/#{video_url.split('/').last}.jsonp" async]
+          script[src='https://fast.wistia.com/assets/external/E-v1.js' async]
+          div[class="wistia_embed wistia_async_#{video_url.split('/').last}" style="height:275px;width:498px"]
+      h5.card-title.mt-3= task.name
+      - task.items.each do |item|
+        p= item.caption.to_s.html_safe

@@ -1,0 +1,4 @@
+- if controller.controller_name == 'team_users'
+  == t('activerecord.attributes.activity.license.revoke_student', student: activity.recipient.student.full_name)
+- else
+  == t('activerecord.attributes.activity.license.revoke', user_name: activity.owner.full_name)

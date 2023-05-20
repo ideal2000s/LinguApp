@@ -1,0 +1,9 @@
+.card
+  = render 'teach/tasks/shared_task_header', task: task
+  = form_for form, as: :task, url: teach_lesson_task_path(task.lesson, task), method: :patch do |f|
+    = render 'teach/tasks/shared_task_fields', f: f
+  - if task.type == 'Tasks::WordGames'
+    .card-footer
+      p
+        = t('teach.lessons.tet.count_words', count: task.lesson.phrases.size)
+        =< link_to t('teach.lessons.tet.go_to_glossary'), teach_lesson_phrases_path(task.lesson)

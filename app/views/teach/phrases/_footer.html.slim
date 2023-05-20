@@ -1,0 +1,3 @@
+.flex-shrink-1.pt-1 = t('teach.phrases.index.glossary_count',count: phrases.count)
+= link_to t('teach.phrases.index.delete_all'), teach_lesson_phrases_path(lesson) + '/destroy_batch', {class: 'btn btn-falcon-danger ml-auto', remote: true, method: :delete}
+  

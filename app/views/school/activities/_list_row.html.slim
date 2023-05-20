@@ -1,0 +1,20 @@
+tr
+  td.fs--1= l(activity.created_at, format: :activity)
+  td.student-active-license
+    .d-flex.align-items-center.student-license.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+      - if activity.trackable.is_a?(TeamStudent)
+        = render 'student_profile', student: activity.trackable.student
+      - elsif activity.recipient.is_a?(TeamStudent)
+        = render 'student_profile', student: activity.recipient.student
+      - elsif activity.trackable.is_a?(TeamUser)
+        = render 'user_profile', user: activity.trackable.user
+      - elsif activity.owner
+        = render 'user_profile', user: activity.owner
+  td
+    - cache [activity, I18n.locale] do
+      = render_activity(activity)
+  td
+    .student-actions
+      - if policy(activity).undo_activity?
+        = link_to undo_activity_school_activity_path(activity), class: 'd-flex undo-action', data: {confirm: t('school.activities.are_you_sure')}, method: :put do
+          = undo_activity_message(activity)

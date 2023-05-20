@@ -1,0 +1,31 @@
+- content_for(:instructions) do
+  .card.bg-soft-info.mt-5
+    .card-body
+      .card-title= t('instructions')
+      p.card-text= t('.audition_guidelines')
+    .card-footer.bg-soft-info
+      .card-title= t('teach.tasks.size_requirements')
+      p.card-text
+        = t('teach.tasks.required_count_msg', count: Tasks::Audition::MIN_ITEMS_SIZE)
+        =< t('.per_30s')
+
+.card
+  = render 'teach/tasks/shared_task_header', task: task
+  = form_for form, as: :task, url: teach_lesson_task_path(task.lesson, task), method: :patch,
+  html: { class: 'js-fill-audio-duration' } do |f|
+    = render layout: 'teach/tasks/shared_task_fields', locals: { f: f } do
+      .row.ml-1.mb-4
+        = f.upload_helper_for(:audio, resource: f.object.task, accept: 'audio/*', data: { upload: 'audio' }) do |h|
+          - h.button do
+            i.fas.fa-headphones.fa-fw.mr-2
+            = t('teach.tasks.shared_task_fields.upload_audio')
+          - h.preview do |resource|
+            .col-md-6.mr-2
+              = audio_tag(resource.audio_url, class: 'preview', controls: true) if resource.audio
+      = f.hidden_field :audio_duration
+
+#task_items.mt-5
+  #task_items_container
+    = render partial: task.items, as: :item, locals: { task: task }
+.links
+  = render task.items.form.new(task: task), task: task

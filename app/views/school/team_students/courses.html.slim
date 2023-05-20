@@ -1,0 +1,54 @@
+- set_page_title student.full_name
+
+.student-info-container.d-flex.justify-content-between
+  .student-info-details.flex-grow-1
+    = render 'student_header', student: student, active_tab: 'courses'
+    - course = @assigned_course
+    - if course
+      = render partial: 'assigned_course_block', locals: { course: course }
+      h2.student-heading2.mt-4= t('.other_courses') if @other_courses.any?
+    - if @other_courses.any?
+      .student-courses-list.mt-4
+        table.table.table-borderless.bg-white
+          thead
+            tr
+              th= t('shared.level')
+              th= t('name')
+              th.text-right = t('shared.time_spent')
+              th.text-right = t('shared.earned_xp')
+              th
+          tbody
+            - @other_courses.each do |course|
+              tr.student-course-row
+                td.align-middle
+                  .d-inline-block.language-info
+                    span.student-course-level
+                      = course.level&.upcase unless course.undefined?
+                    = image_tag("flags/#{language_to_flag_code(course.language.code)}.svg", class: 'language-flag ml-1 align-middle')
+                td.align-middle
+                  button.btn.btn-light.collapsed.student-course-title data-target="#collapseCourse#{course.id}" data-toggle="collapse" aria-expanded="false"
+                    = course.title
+                td.align-middle
+                  = humanize_seconds(student.lesson_sessions.where(lesson: course.lessons).sum(:duration))
+                td.align-middle
+                  -# TODO: Add lesson XP
+                  | 0
+                  =< image_tag('icons/xp-badge.svg')
+                td.align-middle
+                  .d-flex.justify-content-between
+                    .course-lessons-count
+                      = course.lessons_count || 0
+                      =< t('lessons').downcase
+                    button.btn.btn-light.collapsed.course-expander data-target="#collapseCourse#{course.id}" data-toggle="collapse" aria-expanded="false"
+                      i.fas.fa-angle-down.fa-fw
+                      i.fas.fa-angle-up.fa-fw
+              tr.student-course-row
+                td.p-0 colspan="5"
+                  div.collapse id="collapseCourse#{course.id}"
+                    - course.course_sections.each do |cs|
+                      strong.h5.text-black.pl-3.mt-2= cs.name
+                      table.table.table-hover.table-course-lessons
+                        tbody
+                          = render partial: 'course_lesson_item', collection: cs.lessons, as: :lesson
+
+  = render 'student_profile', student: student

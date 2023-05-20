@@ -1,0 +1,62 @@
+- set_page_title course.title
+.school-course-container.d-flex.flex-column.min-vh-100
+  = render 'course_header', course: course
+  .course-info.flex-grow-1.d-flex
+    .w-25
+      = render 'course_overview_list', course: course
+    .course-overview-detail.w-75
+      .row
+        .col-7.text-center
+          = course.image ? image_tag(course.image_url, class: 'course-image img-fluid rounded-sm') : image_tag('uploader/defaults/course/original.png', class: 'course-image img-fluid rounded-sm')
+        .col-5.d-flex.flex-wrap.justify-content-between.align-content-between
+          .course-overview-item
+            = image_tag('icons/course_lesson.svg')
+            .mt-3.font-weight-bold
+              = t('school.courses.show.count_lessons', count: course.lessons_count)
+          .course-overview-item
+            = image_tag('icons/course_hour.svg')
+            .mt-3.font-weight-bold
+              = t('.course_duration', hours: course.estimated_time.to_i)
+          .course-overview-item
+            = image_tag('icons/course_word.svg')
+            .mt-3.font-weight-bold
+              = t('admin.dictionary.languages.words.index.count_phrases', count: course.phrases_count.to_i)
+          .course-overview-item
+            = image_tag('icons/course_rate.svg')
+            .mt-3
+              span.font-weight-bold= course.lessons_avg_rating.to_i
+              span=< "(#{course.ratings_count})"
+      .course-description.mt-4
+        == course.description
+      - unless current_user.basic?
+        .course-stats.row.mt-4
+          .col-7
+            .d-flex.align-items-baseline
+              h4.font-weight-bold.mb-3.mr-4
+                = t('.course_popularity')
+              ul.course-popularity-list.nav.nav-pills role="tablist"
+                li.nav-item
+                  a#per_week_tab.nav-link.active aria-controls="per-week-chart" aria-selected="true" data-toggle="tab" href="#per-week-chart" role="tab"
+                    = t('.per_week')
+                li.nav-item
+                  a#per_month_tab.nav-link aria-controls="per-month-chart" aria-selected="false" data-toggle="tab" href="#per-month-chart" role="tab"
+                    = t('.per_month')
+                li.nav-item
+                  a#per_year_tab.nav-link aria-controls="per-year-chart" aria-selected="false" data-toggle="tab" href="#per-year-chart" role="tab"
+                    = t('.per_year')
+            .tab-content
+              #per-week-chart.tab-pane.fade.show.active aria-labelledby="per-week-chart" role="tabpanel"
+                canvas#course_per_week_chart
+              #per-month-chart.tab-pane.fade aria-labelledby="per-month-chart" role="tabpanel"
+                canvas#course_per_month_chart
+              #per-year-chart.tab-pane.fade aria-labelledby="per-year-chart" role="tabpanel"
+                canvas#course_per_year_chart
+          .col-5.tasks-chart-panel
+            h4.font-weight-bold.mb-3
+              = t('.course_components')
+            .doughnut-chart-wrapper.py-4
+              canvas.my-auto#chart_course_by_tasks
+javascript:
+  window.courseTasksChartData = #{raw course.task_items_hash_by_subject.to_json}
+  window.courseTime = #{course.estimated_time.to_i}
+  window.courseDurations = #{raw course_duration_stats.to_json}

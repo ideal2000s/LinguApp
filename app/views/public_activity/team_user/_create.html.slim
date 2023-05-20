@@ -1,0 +1,6 @@
+- if activity.owner == activity.trackable&.user
+  == t('activerecord.attributes.activity.team_user.self_registered')
+- else
+  == t('activerecord.attributes.activity.team_user.create',
+          team_name: activity.trackable&.team&.name,
+          user_name: activity.owner&.full_name || 'unknown user')

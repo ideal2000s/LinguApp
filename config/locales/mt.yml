@@ -1,0 +1,615 @@
+---
+mt:
+  course_mailer:
+    course_assigned_notification:
+      button: Ibda l-kors
+      click_start_lesson: Ikklikkja fuq "Ibda l-lezzjoni"
+      follow_course_link: Ikklikkja l-buttuna biex tiftaħ il-kors
+      footer_text: Erġa lura għand Lingu biex titgħallem xi ħaġa ġdida kuljum!
+      get_started_line: 'Ara kif tibda:'
+      notification_link: L-issettjar tan-notifika
+      open_lesson: Iftaħ l-ewwel lezzjoni
+      or_paste_this_link: jew paste din il-link fil-browser tiegħek
+      sign_in_with_email: Idħol bl-indirizz tal-email tiegħek (%{email})
+      support_link: Appoġġ
+      title: Kif tibda bi %{course}
+    new_document_comment:
+      author_text: "%{author} ħalla reviżjoni tal-inkarigu tiegħek"
+      button_text: Iċċekkjaha
+      button_url_helper: 'jew paste din il-link fil-browser tiegħek:'
+      footer_text: Hemm ħafna iktar x'nitgħallmu ...
+      notification_link: Is-settings tan-notifika
+      subject_line: Kumment ġdid tal-assenjazzjoni
+      support_link: Appoġġ
+    otp:
+      ignore_msg: Jekk ma għamiltx din it-talba, sempliċement tinjora l-email.
+      subject_line: Il-kodiċi uniku tiegħek għal Lingu
+      unique_code_for_lingu: Hawn hu l-kodiċi uniku tiegħek għal Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Diġà għandek kont?
+      back: Lura
+      back_to_sign_in: Lura biex Tiffirma
+      check_your_email_for_a_code: Iċċekkja l-email tiegħek għall-kodiċi tiegħek
+      continue: Kompli
+      continue_with_email: Kompli bl-email
+      continue_with_provider: Kompli bi %{provider}
+      did_not_receive_a_code: Ma rċevejtx kodiċi?
+      email_address: Indirizz elettroniku
+      first_name: Isem
+      get_unique_code: Ikseb kodiċi ta 'login uniku
+      join_lingu: Ingħaqad ma 'Lingu
+      last_name: Kunjom
+      more_login_options: Aktar għażliet ta 'login
+      no_account_question: M'għandekx kont?
+      or: jew
+      resend_code: Ibgħat mill-ġdid il-kodiċi
+      sign_in: Iffirma
+      sign_up: Irregistra
+      want_to_receive_marketing_messages: Irrid nirċievi messaġġi ta 'kummerċjalizzazzjoni
+        minn Lingu
+      we_ve_sent_a_code: >-
+        Aħna bgħatt kodiċi b'6 ċifri lil <strong> {{email}} </strong>. Il-kodiċi jiskadi
+        fi 15-il minuta, għalhekk jekk jogħġbok daħħalha dalwaqt.
+    cookie_agreement:
+      agree: Naqbel
+      condition: >-
+        Aħna nużaw cookies biex janalizzaw il-prestazzjoni tas-sit u nwasslu kontenut
+        personalizzat. Billi tikklikkja "Naqbel", inti taqbel mal-kundizzjonijiet
+        tagħna.
+    course:
+      accredited_course_provider: Fornitur tal-kors akkreditat
+      apply: Applika
+      apply_filters: Applika filtri
+      by: Permezz ta '
+      cancel: Ikkanċella
+      categories: kategoriji %{count}
+      category: Kategorija
+      clear: Ċara
+      clear_filters: Iffiltra ċari
+      contact_us: Ikkuntatjana
+      could_not_find_match_for: Jiddispjacini, ma stajna nsibu l-ebda taqbila għaliha
+      course_language: Lingwa tal-kors
+      duration: Tul ta 'żmien
+      filter_settings:
+        categories:
+          academic: Akkademiku
+          business: Negozju
+          fashion: Moda
+          food_drink: Ikel u xorb
+          for_kids: Għat-tfal
+          general: Ġenerali
+          health: Saħħa
+          legal: Legali
+          sport: Sport
+          travel: Ivvjaġġar
+        durations:
+          t0_600: "<10 minuti"
+          t1800_3600: 30-60 minuta
+          t3600_86400: 1 + siegħa
+          t600_1800: 10-30 minuta
+        focus_on:
+          conversation: Konversazzjoni
+          grammar: Grammatika
+          listening: Smigħ
+          pronunciation: Pronunzja
+          reading: Qari
+          speaking: Taħdit
+          writing: Kitba
+        levels:
+          long:
+            advanced: Livell avvanzat
+            elementary: Livell elementari
+            intermediate: Livell intermedju
+            no_knowledge: Ebda għarfien
+            pre_intermediate: Livell intermedju ta 'qabel
+            upper_intermediate: Livell intermedju superjuri
+          short:
+            advanced: Avvanzat
+            beginner: Bidu
+            intermediate: Intermedju
+        sort_by:
+          most_rated: L-iktar ratati
+          newest: L-aktar ġodda
+          popularity: Popolarità
+      filters: Filtri
+      focus_on: Iffoka fuq
+      focus_on_title: Irrid niffoka fuq
+      hide_lessons: Aħbi l-lezzjonijiet
+      hours: Sigħat
+      i_understand: nifhem
+      i_want_to_learn: Irrid nitgħallem
+      in_language: fi %{language}
+      language: Lingwa
+      learn_more: Itagħllem iżjed
+      less_settings: Inqas settings
+      lessons: Lezzjonijiet
+      lessons_available: "%{number} lezzjonijiet disponibbli"
+      lessons_catalog_page_subtitle: Issir eroj tal-lingwa.
+      lessons_catalog_page_title: Espandi l-orizzonti tiegħek b'kors tal-lingwa
+      level: Livell
+      min: Min
+      more_settings: Aktar settings
+      navbar:
+        close: Agħlaq il-menu
+        menu: Menu
+        select_language: Agħżel lingwa
+      need_to_buy_course: L-ewwel trid tibbukkja kors
+      no_description: L-ebda deskrizzjoni pprovduta
+      no_results: Jiddispjacini, ma stajna nsibu l-ebda taqbila għaliha
+      or: jew
+      per_month: kull xahar
+      plans: Pjanijiet
+      privacy_policy: Regoli tal-privatezza
+      rating: Klassifikazzjoni
+      remove_all_filters: Neħħi l-filtri kollha
+      reviews: Reviżjonijiet
+      save: Ħlief
+      search: Fittex
+      select_dots: Agħżel ...
+      select_languages: Agħżel langauges
+      select_num_languages: Agħżel lingwi %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Uri kollox
+      show_all_lessons: Uri l-lezzjonijiet kollha
+      show_lessons: Uri lezzjonijiet %{number}
+      show_more: Uri aktar
+      sign_up_with_lingu_for: Irreġistra ma 'Lingu Norway għal
+      skills: ħiliet %{count}
+      sort_by: Irranġa skond
+      start_typing_here: Ibda ttajpja hawn
+      teach: Jgħallmu
+      terms_and_conditions: Termini u Kundizzjonijiet
+      time_range: Firxa ta 'ħin
+      try_adjusting_your_search: Ipprova aġġusta t-tfittxija tiegħek billi tbiddel
+        il-filtri tiegħek
+      try_this_course: Ipprova dan il-kors
+      website_language: Lingwa tal-websajt
+      words: Kliem
+    games:
+      finished:
+        go_to_next_exercise: Proset! Mur għall-eżerċizzju li jmiss
+      flashcard:
+        buttons:
+          finish: Spiċċa
+          next: Li jmiss
+          previous: Preċedenti
+        check_out_new_words: Iċċekkja l-kliem il-ġdid li titgħallem f'din il-lezzjoni
+        frequency_of_word_usage: Frekwenza tal-użu tal-kelma fiż-%{language}
+        keep_practice_to_learn_all_words: Irrevedi l-kliem %{count} u ejja nilagħbu
+          xi logħob!
+        word_frequency:
+          level1: Rarament użat
+          level2: Rarament użat
+          level3: Frekwenza tal-kelma - medja
+          level4: Frekwenza tal-kelma - medja
+          level5: Komuni
+          level6: Komuni ħafna
+      match_word:
+        click_and_move_each_word_to_counterpart: Ikklikkja u mexxi kull kelma għall-kontroparti
+          tagħha
+        start_heading: Qabbel kliem biex tagħmel par
+        time_is_up: Wasal iż-żmien!
+      skip_tutorial: Aqbeż
+      time_is_up: Wasal iż-żmien!
+      word_nodes:
+        match_letters_to_form_word: Qabbel ittri biex tifforma kelma
+      word_waterfall:
+        do_not_hesitate: Ejja nħaffu!
+        go_to_next_exercise: Mur għall-eżerċizzju li jmiss
+        select_correct_translation: Agħżel logħba korretta
+        well_done: Proset!
+    home_page:
+      hello: Bongu,
+      popular_lessons: Lezzjonijiet popolari
+      show_more: Uri aktar
+      time: "%{count} min"
+      today_lesson: Il-lezzjoni tiegħek għal-lum
+      user_name: "%{name}!"
+      words: "%{count} kliem"
+    idle_screen:
+      by_author: minn %{authorName}
+      continue_lesson: Kompli l-lezzjoni
+      exit: Ħruġ
+      idle_message: Ilek inattiv għal xi żmien ...
+    lesson_page:
+      back_to_course_page: Lura għall-paġna tal-kors
+      close: Agħlaq
+      continue_lesson: Kompli l-lezzjoni
+      followed: Segwit
+      hamburger_menu_btn: Menu tal-Hamburger
+      lesson_given: lezzjonijiet
+      not_started: mhux beda
+      or: Jew
+      part_complete: "%{percent}% komplut"
+      restart_lesson: Erġa ibda
+      section_check: Iċċekkja
+      section_check_info: testijiet %{count}
+      section_learn: Tgħallem
+      section_learn_info: "%{count} min biex tara u taqra"
+      section_play: Iddoqq
+      section_play_info: "%{count} kliem biex tipprattika"
+      start_lesson: Ibda l-lezzjoni
+      step_progress: "%{percent}%"
+      subscribe: Segwi
+      subscribed: Segwit
+      subscribers: segwaċi
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Twarrab
+      webview_error_title: Xi ħaġa marret ħażin...
+      words_number: "%{wordsNumber} kliem ġdid"
+    lesson_task:
+      cancel_button: Ikkanċella
+      check:
+        navigation_next: Li jmiss
+        navigation_previous: Preċedenti
+        navigation_skip: Aqbeż
+      controls_panel:
+        font_size_button: Daqs tat-tipa
+        high_contrast_button:
+          origin: Kuntrast għoli
+          short: Kuntrast
+        hints_button: Ħjiel
+        music_playback_button:
+          origin: Daqq tal-mużika
+          short: Mużika
+        sound_effects_button:
+          origin: Effetti tal-ħoss
+          short: Ħoss
+      exit_button: Ħruġ
+      finish_button: Spiċċa
+      finished:
+        back_to_learn: Lura biex titgħallem
+        back_to_lesson_page: Lura għall-paġna tal-lezzjoni
+        back_to_results_page: Lura fuq il-paġna tar-riżultat
+        bad_result_message: Hmm ... ipprova ħu l-lezzjoni darba oħra
+        close_lesson: Lezzjoni mill-qrib
+        correct_answers_list: Lista ta 'tweġibiet korretti
+        good_result_message: Nista nara li għamilt sforz!
+        great_result_message: Proset! Dawn huma riżultati mill-aqwa!
+        next_course_lesson: Mur fil-lezzjoni li jmiss fil-kors
+        no_results: Għad m'għandekx riżultati tat-test
+        no_results_text: Jekk jogħġbok, imla l-lezzjoni u għaddi t-test biex tikseb
+          ir-riżultati
+        see_correct_answers_list: Ara l-lista tat-tweġibiet korretti
+        train_more: Ipprattika aktar u int se tikseb riżultati aħjar id-darba d-dieħla!
+        you_finished_lesson: Kbira! Int spiċċajt il-lezzjoni
+      go_back: Mur lura
+      next_button: Li jmiss
+      not_available_task: Dan il-kompitu għadu mhux disponibbli
+      start_button: Ibda
+      tasks:
+        check:
+          assignment:
+            accept: Aċċetta
+            author_will_check_your_answer: >-
+              %{author} jirrevedi t-tweġiba tiegħek u tipikament jagħti feedback fi
+              żmien 1-2 ijiem
+            continue_writing: Kompli bil-miktub
+            copy: Ikkopja
+            delete: Ħassar
+            delete_record: Ħassar ir-rekord
+            edit: Editja
+            essay_does_not_have_enough_words: >-
+              It-tweġiba tiegħek għandu jkun fiha mill-inqas %{minWordsNumber} kliem.
+              It-tweġiba tiegħek bħalissa hija %{currentWordsNumber} kliem.
+            followers_count: "%{followersCount} segwaċi"
+            lessons_count: "%{lessonsCount} lezzjonijiet"
+            minimal_recording_time: Ħin minimu ta 'reġistrazzjoni - %{minimalRecordingTime}
+            minimum_characters_amount: Karattri minimi - %{minimumCharactersAmount}
+            minimum_words_amount: Kliem minimu - %{minimumAmount}
+            record_again: Irrekordja mill-ġdid
+            record_voice: Irreġistra l-vuċi
+            send_anyway: Ibgħat l'hemm
+            send_to_review: Ibgħat għal reviżjoni
+            skip: Aqbeż
+            too_short_answer: Tweġiba qasira wisq
+            type_your_answer: Ikteb it-tweġiba tiegħek
+            unknown_task_type: Tip ta 'kompitu mhux magħruf
+            upgrade_licence: Liċenzja ta 'aġġornament
+            upgrade_your_plan: Aġġorna l-pjan tiegħek biex tipprova inkarigi bir-reviżjonijiet
+              tal-għalliema
+            upload_files: Tella 'fajls
+            write_essay: Ikteb esej
+            you_have_used_amount_of_assignments: Int użajt krediti ta 'assenjazzjoni
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Distakk tas-sentenza
+          fill_in_table:
+            column_answer_placeholder: Tweġiba
+            column_question_placeholder: Mistoqsija
+            example: Eżempju
+          true_false:
+            'false': Falz
+            'true': Veru
+        learn:
+          translatable_text:
+            show_original: Uri l-oriġinal
+            translate_into: Ittraduċi bil-Google għal %{languageName}
+            translate_into_your_lang: Ittraduċi bil-Google fil-lingwa tiegħek
+        play:
+          arrange_words:
+            start_screen:
+              heading: Agħmel sentenza mill-kliem mogħti
+          audition:
+            start_screen:
+              heading: Isma 'l-awdjo u taptap fuq il-kelma li għadek kif smajt
+          dictation:
+            get_help: Ġib għajnuna
+            i_do_not_know: Ma nafx
+            input_placeholder: Daħħal dak li smajt hawn
+            start_screen:
+              heading: Isma 'u ikteb dak li tisma'
+          fill_gap:
+            start_screen:
+              heading: Qabbel il-kelma u t-tifsira tagħha
+          finish_screen:
+            go_to_next_exercise: Proset! Mur għall-eżerċizzju li jmiss
+          image_hotspot:
+            start_screen:
+              heading: Semmi l-oġġetti fl-istampa b'mod korrett
+          image_object:
+            start_screen:
+              heading: Agħżel l-oġġett it-tajjeb mill-istampa li jmiss
+          inline_dropdown:
+            start_screen:
+              heading: Agħżel il-kliem li jaqblu mas-sentenza
+          mark_word:
+            start_screen:
+              heading: Aqra t-test u agħżel il-kelma li taqbel ma 'l-immaġni
+          minimal_pairs:
+            start_screen:
+              heading: Ara l-vidjow u agħżel l-għażla korretta
+    locale:
+      currency_switcher_title: Switcher tal-munita
+      lang_switcher_title: Switcher tal-lingwa
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Ingliż
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Franċiż
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: L-awdjo qed jitgħabba
+        aria_pause_button: Nieqaf
+        aria_play_button: Iddoqq
+        aria_reload_button: Reload
+        aria_stop_button: Waqfa
+        reload_message: >-
+          Ma rnexxilekx tgħabbi l-awdjo. Jekk jogħġbok ikklikkja l-buttuna biex terġa
+          'tgħabbi.
+    mobile_modal:
+      apply: Applika
+      cancel: Ikkanċella
+      clear: Ċara
+      save: Ħlief
+    page404:
+      goToStartLessonPage: Mur fil-paġna tal-bidu tal-lezzjoni
+      ooops: Oooops ...
+      sorry_message: Jiddispjacini, Tor ma setax isib din il-paġna
+    profile:
+      navigation:
+        log_out: Oħroġ
+        my_profile: Il-profil Tiegħi
+        settings: Settings
+      onboarding:
+        choose_native_language: Agħżel il-lingwa nattiva tiegħek jew il-lingwa li
+          tifhem
+        do_you_understand_english: Tifhem bl-Ingliż?
+        hello: Bongu
+        language_levels:
+          a1: Livell elementari
+          a2: Livell pre-intermedju
+          b1: Livell intermedju
+          b2: Livell Intermedju Superjuri
+          c1: Livell avvanzat
+          no_knowledge: Ebda għarfien
+        language_not_supported:
+          note: Aħna ninfurmawk hekk kif il-lingwa tkun disponibbli
+          title: Jiddispjacini, imma għadna ma nappoġġjawx din il-lingwa
+          try_another_language: Ipprova lingwa oħra
+        'no': Le
+        search_placeholder: Fittex ...
+        show_more_languages: Lingwi oħra
+        target_language_question: Liema lingwa trid titgħallem?
+        what_is_language_level: Kif tikklassifika l-livell %{languageName} tiegħek?
+        'yes': Iva
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Politika ta 'privatezza ta' Lingu
+        support: Appoġġ
+      logout: Oħroġ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Irċievi aġġornamenti minn għalliema u skejjel li ssegwi
+              sections:
+                app_notifications: Notifiki tal-applikazzjoni
+                email: E-mail
+              title: Għajnuna fit-tagħlim
+            marketing:
+              description: >-
+                Ibqa 'infurmat dwar il-promozzjonijiet, l-aġġornamenti u l-ispirazzjoni
+                kollha minn Lingu
+              sections:
+                browser_notifications: Notifiki tal-browser
+                email: E-mail
+              title: Kummerċjalizzazzjoni
+          title: Preferenzi ta 'kuntatt
+        personal_information:
+          delete_photo: Ħassar ritratt
+          email: Email
+          first_name: Isem
+          last_name: Kunjom
+          social_accounts:
+            connected: Imqabbad
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Mhux imqabbad
+            title: Kontijiet soċjali
+          title: Informazzjoni personali
+          update_photo: Aġġorna r-ritratt
+        school:
+          active_licence: Liċenzja attiva
+          active_status: Attiv
+          delete_profile: Ħassar il-profil tiegħi
+          delete_profile_modal:
+            body: |-
+              Tħassar id-dejta kollha tiegħek - għal dejjem. M'hemm l-ebda buttuna li tħoll, u ma nistgħux niksbuha lura għalik wara.
+              Int żgur li trid tħassar b'mod permanenti l-profil Lingu tiegħek u d-data kollha tiegħek?
+            cancel: Ikkanċella
+            confirm: Iva, ħassarha
+            i_understand_the_consequences: Nifhem il-konsegwenzi
+            title: Ħassar il-profil tiegħek?
+          expired: Skadut %{expire_date}
+          expires: Jiskadi %{expire_date}
+          inactive_status: Inattivi
+          revoke_access: Irrevoka l-aċċess għall-qari
+          sections:
+            contact_school: Ikkuntattja l-iskola
+            export_my_data: Esporta d-dejta tiegħi
+            read_school_privacy_policy: Aqra l-Politika tal-Privatezza tal-Iskola
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Daqq tal-mużika
+              sound_effects: Effetti tal-ħoss
+              title: Ħoss
+            visual:
+              dark_theme: Tema skura
+              font_size:
+                test_text: Il-ħaxix huwa dejjem aktar aħdar fuq in-naħa l-oħra tal-ħajt
+                title: Daqs tat-tipa
+              high_contrast: Kuntrast għoli
+              hints: Ħjiel
+              title: Viżwali
+          title: Ħoss u Viżwali
+        training_settings:
+          sections:
+            i_understand: nifhem
+            i_want_to_learn: Irrid nitgħallem
+            target_language_level: Livell Ingliż
+          title: L-issettjar tat-taħriġ
+      settings_title: Settings
+    teacher_card:
+      followers_count:
+        one: 1 segwaċi
+        other: "%{count} segwaċi"
+      lessons_count:
+        one: 1 lezzjoni
+        other: "%{count} lezzjonijiet"

@@ -1,0 +1,6 @@
+(function(){
+  var $item = $('#<%= dom_id(item) %>');
+  $item.replaceWith('<%= j render partial: item, as: :item, locals: { task: task } %>');
+
+  select2Utils.initSearchSelect();
+})();

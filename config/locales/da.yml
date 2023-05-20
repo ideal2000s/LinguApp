@@ -1,0 +1,605 @@
+---
+da:
+  course_mailer:
+    course_assigned_notification:
+      button: Start kurset
+      click_start_lesson: Klik på 'Start lektion'
+      follow_course_link: Klik på knappen for at åbne kurset
+      footer_text: Kom tilbage til Lingu for at lære noget nyt hver dag!
+      get_started_line: 'Sådan kommer du i gang:'
+      notification_link: Meddelelsesindstillinger
+      open_lesson: Åbn den første lektion
+      or_paste_this_link: eller indsæt dette link i din browser
+      sign_in_with_email: Log ind med din e-mail-adresse (%{email})
+      support_link: Support
+      title: Kom godt i gang med %{course}
+    new_document_comment:
+      author_text: "%{author} efterlod en anmeldelse af din opgave"
+      button_text: Tjek det ud
+      button_url_helper: 'eller indsæt dette link i din browser:'
+      footer_text: Der er meget mere at lære ...
+      notification_link: Meddelelsesindstillinger
+      subject_line: Ny opgavekommentar
+      support_link: Support
+    otp:
+      ignore_msg: Hvis du ikke fremsatte denne anmodning, skal du bare ignorere e-mailen.
+      subject_line: Din unikke kode til Lingu
+      unique_code_for_lingu: Her er din unikke kode til Lingu
+  frontend:
+    auth:
+      already_have_acc_question: har du allerede en bruger?
+      back: Tilbage
+      back_to_sign_in: Tilbage til Log ind
+      check_your_email_for_a_code: Tjek din e-mail for din kode
+      continue: Blive ved
+      continue_with_email: Fortsæt med e-mail
+      continue_with_provider: Fortsæt med %{provider}
+      did_not_receive_a_code: Modtog du ikke en kode?
+      email_address: Email adresse
+      first_name: Fornavn
+      get_unique_code: Få en unik login-kode
+      join_lingu: Deltag i Lingu
+      last_name: Efternavn
+      more_login_options: Flere loginmuligheder
+      no_account_question: Har du ikke en konto?
+      or: eller
+      resend_code: Gensend kode
+      sign_in: Log ind
+      sign_up: Tilmelde
+      want_to_receive_marketing_messages: Jeg vil gerne modtage marketingbeskeder
+        fra Lingu
+      we_ve_sent_a_code: >-
+        Vi har sendt en 6-cifret kode til <strong> {{email}} </strong>. Koden udløber
+        om 15 minutter, så indtast den snart.
+    cookie_agreement:
+      agree: Enig
+      condition: >-
+        Vi bruger cookies til at analysere webstedsydelse og levere personligt indhold.
+        Ved at klikke på "Enig" accepterer du vores betingelser.
+    course:
+      accredited_course_provider: Akkrediteret kursusudbyder
+      apply: ansøge
+      apply_filters: Anvend filtre
+      by: Ved
+      cancel: Afbestille
+      categories: "%{count} kategorier"
+      category: Kategori
+      clear: Klar
+      clear_filters: Ryd filtre
+      contact_us: Kontakt os
+      could_not_find_match_for: Vi kunne desværre ikke finde nogen match for
+      course_language: Kursus sprog
+      duration: Varighed
+      filter_settings:
+        categories:
+          academic: Akademisk
+          business: Forretning
+          fashion: Mode
+          food_drink: Mad og drikke
+          for_kids: For børn
+          general: Generel
+          health: Sundhed
+          legal: gyldige
+          sport: Sport
+          travel: Rejse
+        durations:
+          t0_600: "<10 minutter"
+          t1800_3600: 30-60 minutter
+          t3600_86400: 1+ time
+          t600_1800: 10-30 minutter
+        focus_on:
+          conversation: Samtale
+          grammar: Grammatik
+          listening: Hører efter
+          pronunciation: Udtale
+          reading: Læsning
+          speaking: Taler
+          writing: Skrivning
+        levels:
+          long:
+            advanced: Avanceret niveau
+            elementary: Elementært niveau
+            intermediate: Mellemniveau
+            no_knowledge: Ingen viden
+            pre_intermediate: Før mellemniveau
+            upper_intermediate: Øvre mellemniveau
+          short:
+            advanced: Fremskreden
+            beginner: Nybegynder
+            intermediate: Mellemliggende
+        sort_by:
+          most_rated: Mest bedømt
+          newest: Nyeste
+          popularity: Popularitet
+      filters: Filtre
+      focus_on: Fokuser på
+      focus_on_title: Jeg vil fokusere på
+      hide_lessons: Skjul lektioner
+      hours: Timer
+      i_understand: jeg forstår
+      i_want_to_learn: Jeg ønsker at lære
+      in_language: i %{language}
+      language: Sprog
+      learn_more: Lær mere
+      less_settings: Mindre indstillinger
+      lessons: Lektioner
+      lessons_available: "%{number} lektioner til rådighed"
+      lessons_catalog_page_subtitle: Bliv sproghelt.
+      lessons_catalog_page_title: Udvid dine horisonter med et sprogkursus
+      level: Niveau
+      min: Min
+      more_settings: Flere indstillinger
+      navbar:
+        close: Luk menu
+        menu: Menu
+        select_language: Vælg sprog
+      need_to_buy_course: Du skal booke et kursus først
+      no_description: Ingen beskrivelse angivet
+      no_results: Vi kunne desværre ikke finde nogen match for
+      or: eller
+      per_month: om måneden
+      plans: Planer
+      privacy_policy: Fortrolighedspolitik
+      rating: Bedømmelse
+      remove_all_filters: Fjern alle filtre
+      reviews: Anmeldelser
+      save: Gemme
+      search: Søg
+      select_dots: Vælg...
+      select_languages: Vælg sprog
+      select_num_languages: Vælg %{number} sprog
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Vis alt
+      show_all_lessons: Vis alle lektioner
+      show_lessons: Vis %{number} lektioner
+      show_more: Vis mere
+      sign_up_with_lingu_for: Tilmeld dig Lingu Norge for
+      skills: "%{count} færdigheder"
+      sort_by: Sorter efter
+      start_typing_here: Begynd at skrive her
+      teach: Underviser
+      terms_and_conditions: Vilkår og betingelser
+      time_range: Tidsinterval
+      try_adjusting_your_search: Prøv at justere din søgning ved at ændre dine filtre
+      try_this_course: Prøv dette kursus
+      website_language: Websteds sprog
+      words: Ord
+    games:
+      finished:
+        go_to_next_exercise: Godt klaret! Gå til næste øvelse
+      flashcard:
+        buttons:
+          finish: Afslut
+          next: Næste
+          previous: Tidligere
+        check_out_new_words: Tjek de nye ord, du vil lære i denne lektion
+        frequency_of_word_usage: Hyppighed af ordbrug i %{language}
+        keep_practice_to_learn_all_words: Gennemgå %{count}-ordene, og lad os spille
+          nogle spil!
+        word_frequency:
+          level1: Sjældent brugt
+          level2: Sjældent brugt
+          level3: Ordfrekvens - medium
+          level4: Ordfrekvens - medium
+          level5: almindelige
+          level6: Meget normal
+      match_word:
+        click_and_move_each_word_to_counterpart: Klik og flyt hvert ord til dets modstykke
+        start_heading: Match ord for at skabe et par
+        time_is_up: Tiden er gået!
+      skip_tutorial: Springe
+      time_is_up: Tiden er gået!
+      word_nodes:
+        match_letters_to_form_word: Match bogstaver for at danne et ord
+      word_waterfall:
+        do_not_hesitate: Lad os fremskynde!
+        go_to_next_exercise: Gå til næste øvelse
+        select_correct_translation: Vælg det rigtige match
+        well_done: Godt klaret!
+    home_page:
+      hello: Hej,
+      popular_lessons: Populære lektioner
+      show_more: Vis mere
+      time: "%{count} min"
+      today_lesson: Din lektion for i dag
+      user_name: "%{name}!"
+      words: "%{count} ord"
+    idle_screen:
+      by_author: af %{authorName}
+      continue_lesson: Fortsæt lektionen
+      exit: Afslut
+      idle_message: Du har været inaktiv i nogen tid ...
+    lesson_page:
+      back_to_course_page: Tilbage til kursussiden
+      close: Tæt
+      continue_lesson: Fortsæt lektionen
+      followed: Følges
+      hamburger_menu_btn: Hamburger-menu
+      lesson_given: lektioner
+      not_started: ikke startet
+      or: Eller
+      part_complete: "%{percent}% komplet"
+      restart_lesson: Genstart
+      section_check: Kontrollere
+      section_check_info: "%{count} test"
+      section_learn: Lære
+      section_learn_info: "%{count} min at se og læse"
+      section_play: Spil
+      section_play_info: "%{count} ord at øve på"
+      start_lesson: Start lektion
+      step_progress: "%{percent}%"
+      subscribe: Følge efter
+      subscribed: Følges
+      subscribers: tilhængere
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Følg ikke
+      webview_error_title: Noget gik galt...
+      words_number: "%{wordsNumber} nye ord"
+    lesson_task:
+      cancel_button: Afbestille
+      check:
+        navigation_next: Næste
+        navigation_previous: Tidligere
+        navigation_skip: Springe
+      controls_panel:
+        font_size_button: Skriftstørrelse
+        high_contrast_button:
+          origin: Høj kontrast
+          short: Kontrast
+        hints_button: Tips
+        music_playback_button:
+          origin: Musikafspilning
+          short: musik
+        sound_effects_button:
+          origin: Lydeffekter
+          short: Lyd
+      exit_button: Afslut
+      finish_button: Afslut
+      finished:
+        back_to_learn: Tilbage for at lære
+        back_to_lesson_page: Tilbage til lektionssiden
+        back_to_results_page: Tilbage på resultatsiden
+        bad_result_message: Hmm ... prøv at tage lektionen en gang til
+        close_lesson: Luk lektion
+        correct_answers_list: Liste over korrekte svar
+        good_result_message: Jeg kan se, du har gjort en indsats!
+        great_result_message: Godt klaret! Dette er gode resultater!
+        next_course_lesson: Gå til næste lektion i løbet
+        no_results: Du har ingen testresultater endnu
+        no_results_text: Gennemfør lektionen og bestå testen for at få resultaterne
+        see_correct_answers_list: Se listen over korrekte svar
+        train_more: Øv mere, så opnår du bedre resultater næste gang!
+        you_finished_lesson: Store! Du er færdig med lektionen
+      go_back: Gå tilbage
+      next_button: Næste
+      not_available_task: Denne opgave er ikke tilgængelig endnu
+      start_button: Start
+      tasks:
+        check:
+          assignment:
+            accept: Acceptere
+            author_will_check_your_answer: "%{author} gennemgår dit svar og giver
+              typisk feedback inden for 1-2 dage"
+            continue_writing: Fortsæt med at skrive
+            copy: Kopi
+            delete: Slet
+            delete_record: Slet post
+            edit: Redigere
+            essay_does_not_have_enough_words: >-
+              Dit svar skal indeholde mindst %{minWordsNumber} ord. Dit svar er i
+              øjeblikket %{currentWordsNumber} ord.
+            followers_count: "%{followersCount} følgere"
+            lessons_count: "%{lessonsCount} lektioner"
+            minimal_recording_time: Minimal optagetid - %{minimalRecordingTime}
+            minimum_characters_amount: Minimumstegn - %{minimumCharactersAmount}
+            minimum_words_amount: Mindste ord - %{minimumAmount}
+            record_again: Optag igen
+            record_voice: Optag stemme
+            send_anyway: Send alligevel
+            send_to_review: Send til anmeldelse
+            skip: Springe
+            too_short_answer: For kort svar
+            type_your_answer: Indtast dit svar
+            unknown_task_type: Ukendt opgavetype
+            upgrade_licence: Opgrader licens
+            upgrade_your_plan: Opgrader din plan for at prøve opgaver med læreranmeldelser
+            upload_files: Upload filer
+            write_essay: Skriv essay
+            you_have_used_amount_of_assignments: Du har brugt %{amountOfAssignments}
+              tildelingskreditter
+          fill_in_blanks:
+            sentence_gap: Sætningsgab
+          fill_in_table:
+            column_answer_placeholder: Svar
+            column_question_placeholder: Spørgsmål
+            example: Eksempel
+          true_false:
+            'false': Falsk
+            'true': Rigtigt
+        learn:
+          translatable_text:
+            show_original: Vis originalen
+            translate_into: Oversæt med Google til %{languageName}
+            translate_into_your_lang: Oversæt med Google til dit sprog
+        play:
+          arrange_words:
+            start_screen:
+              heading: Lav en sætning ud af de givne ord
+          audition:
+            start_screen:
+              heading: Lyt til lyden, og tryk på det ord, du lige har hørt
+          dictation:
+            get_help: Få hjælp
+            i_do_not_know: Jeg ved ikke
+            input_placeholder: Indtast det, du hørte her
+            start_screen:
+              heading: Lyt og skriv, hvad du hører
+          fill_gap:
+            start_screen:
+              heading: Match ordet og dets betydning
+          finish_screen:
+            go_to_next_exercise: Godt klaret! Gå til næste øvelse
+          image_hotspot:
+            start_screen:
+              heading: Navngiv objekterne på billedet korrekt
+          image_object:
+            start_screen:
+              heading: Vælg det rigtige objekt fra det næste billede
+          inline_dropdown:
+            start_screen:
+              heading: Vælg de ord, der matcher sætningen
+          mark_word:
+            start_screen:
+              heading: Læs teksten, og vælg det ord, der passer til billedet
+          minimal_pairs:
+            start_screen:
+              heading: Se videoen, og vælg den korrekte mulighed
+    locale:
+      currency_switcher_title: Valutaomskifter
+      lang_switcher_title: Sprogomskifter
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: engelsk
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio indlæses
+        aria_pause_button: Pause
+        aria_play_button: Spil
+        aria_reload_button: Genindlæs
+        aria_stop_button: Hold op
+        reload_message: Kunne ikke indlæse lyd. Klik på knappen for at genindlæse.
+    mobile_modal:
+      apply: ansøge
+      cancel: Afbestille
+      clear: Klar
+      save: Gemme
+    page404:
+      goToStartLessonPage: Gå til start lektionssiden
+      ooops: Oooops ...
+      sorry_message: Undskyld, Tor kunne ikke finde denne side
+    profile:
+      navigation:
+        log_out: Log ud
+        my_profile: Min profil
+        settings: Indstillinger
+      onboarding:
+        choose_native_language: Vælg dit modersmål eller sprog, du forstår
+        do_you_understand_english: Forstår du engelsk?
+        hello: Hej
+        language_levels:
+          a1: Elementært niveau
+          a2: Før-mellemniveau
+          b1: Mellemniveau
+          b2: Øvre mellemniveau
+          c1: Avanceret niveau
+          no_knowledge: Ingen viden
+        language_not_supported:
+          note: Vi giver dig besked, så snart sproget vil være tilgængeligt
+          title: Vi beklager, men vi understøtter ikke dette sprog endnu
+          try_another_language: Prøv et andet sprog
+        'no': Ingen
+        search_placeholder: Søg...
+        show_more_languages: Andre sprog
+        target_language_question: Hvilket sprog vil du lære?
+        what_is_language_level: Hvordan vil du bedømme dit %{languageName}-niveau?
+        'yes': Ja
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu's privatlivspolitik
+        support: Support
+      logout: Log ud
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Modtag opdateringer fra lærere og skoler, du følger
+              sections:
+                app_notifications: Appunderretninger
+                email: E-mail
+              title: Læringsassistance
+            marketing:
+              description: Bliv informeret om alle kampagner, opdateringer og inspiration
+                fra Lingu
+              sections:
+                browser_notifications: Browserunderretninger
+                email: E-mail
+              title: Marketing
+          title: Kontaktpræferencer
+        personal_information:
+          delete_photo: Slet foto
+          email: E-mail
+          first_name: Fornavn
+          last_name: Efternavn
+          social_accounts:
+            connected: Forbundet
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ikke forbundet
+            title: Sociale konti
+          title: Personlig information
+          update_photo: Opdater foto
+        school:
+          active_licence: Aktiv licens
+          active_status: Aktiv
+          delete_profile: Slet min profil
+          delete_profile_modal:
+            body: |-
+              Du udsletter alle dine data - for evigt. Der er ingen fortrydelsesknap, og vi kan ikke få den tilbage til dig efter.
+              Er du sikker på, at du permanent vil slette din Lingu-profil og alle dine data?
+            cancel: Afbestille
+            confirm: Ja, slet det
+            i_understand_the_consequences: Jeg forstår konsekvenserne
+            title: Slet din profil?
+          expired: Udløbet %{expire_date}
+          expires: Udløber %{expire_date}
+          inactive_status: Inaktiv
+          revoke_access: Tilbagekald læseadgang
+          sections:
+            contact_school: Kontakt skolen
+            export_my_data: Eksportér mine data
+            read_school_privacy_policy: Læs skolens fortrolighedspolitik
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musikafspilning
+              sound_effects: Lydeffekter
+              title: Lyd
+            visual:
+              dark_theme: Mørkt tema
+              font_size:
+                test_text: Græsset er altid grønnere på den anden side af hegnet
+                title: Skriftstørrelse
+              high_contrast: Høj kontrast
+              hints: Tips
+              title: Visuel
+          title: Lyd & Visual
+        training_settings:
+          sections:
+            i_understand: jeg forstår
+            i_want_to_learn: Jeg ønsker at lære
+            target_language_level: Engelsk niveau
+          title: Træningsindstillinger
+      settings_title: Indstillinger
+    teacher_card:
+      followers_count:
+        one: 1 tilhænger
+        other: "%{count} følgere"
+      lessons_count:
+        one: 1 lektion
+        other: "%{count} lektioner"

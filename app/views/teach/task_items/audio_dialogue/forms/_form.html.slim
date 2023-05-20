@@ -1,0 +1,16 @@
+= form_for form, html: {id: dom_id(task, :item_form)}, as: :task_item, remote: true, url: teach_task_items_path(task) do |f|
+  .card.mb-3
+    .card-body
+      .row
+        .col-6.form-group
+          = f.label :partner_name, t('teach.tasks.audio_dialogue.forms.form.partner_name')
+          = f.text_field :partner_name, placeholder: t('teach.tasks.audio_dialogue.forms.form.enter_name_of_partner'), class: 'form-control'
+        .col-6.form-group
+          = f.label :audio, t('teach.tasks.upload_audio')
+          = f.upload_helper_for(:audio, resource: f.object.item, accept: 'audio/*', data: { upload: 'audio' }) do |h|
+            - h.button do
+              i.fas.fa-headphones.fa-fw.mr-2
+              = t('teach.tasks.shared_task_fields.upload_audio')
+            - h.preview do |resource|
+              = audio_tag(resource.audio_url, class: 'preview', controls: true) if resource.audio
+      = f.submit t('save_changes'), class: 'btn btn-success'

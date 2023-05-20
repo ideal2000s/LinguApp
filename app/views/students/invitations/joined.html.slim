@@ -1,0 +1,5 @@
+.flex-center
+  - if errors.blank?
+    .alert.alert-success= t('school.team_students.invite_students.created_student_successfully')
+  - else
+    .alert.alert-danger= errors[0]

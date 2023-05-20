@@ -1,0 +1,16 @@
+- set_page_title t('devise.account_login')
+.d-flex.justify-content-center.flex-column
+  .join-school-header = image_tag('lingu-logo.svg', class: '', width: 90, height: 51)
+  .d-flex.align-items-center.justify-content-center.flex-column.mt-5
+    .school-sign-in.text-center.d-flex.flex-column style="background: url(#{image_path('bg/school-illustration.svg')}) no-repeat center center / contain white;"
+      h3.my-7.font-weight-bold=t('devise.account_login')
+      .d-flex.flex-column.align-items-center
+        = form_for(resource, as: resource_name, url: request_otp_path(resource_name), method: :post, html: { class: 'w-50' }) do |f|
+          .form-group.w-100
+            = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: t('activerecord.attributes.user.email')
+            = error_for(f.object, :email)
+          .form-group.actions.w-100
+            = f.submit t('frontend.auth.get_unique_code'), class: 'btn btn-block btn-primary font-weight-bold btn-lg py-3'
+      = link_to sign_in_otp_path(resource), class: 'text-700 mt-4'
+        i.fa.fa-arrow-left.mr-2
+        = t('devise.otp.more_login_options')

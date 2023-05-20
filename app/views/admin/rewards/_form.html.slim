@@ -1,0 +1,52 @@
+.row
+  .col-lg-12
+    .form-group
+      = f.label :name, t('name')
+      = f.text_field :name, class: 'form-control'
+      = error_for f.object, :name
+.row
+  .col-lg-12
+    .form-group
+      = f.label :description, t('description')
+      = f.rich_text_area :description, placeholder: t('.description_placeholder')
+      = error_for f.object, :description
+.row
+  .col-lg-12
+    .form-group
+      = f.label :value, t('admin.rewards.index.value')
+      = f.number_field :value, class: 'form-control'
+      = error_for f.object, :value
+.row
+  .col-lg-12
+    .form-group
+      = f.label :kind, required: true
+      - Reward.kinds.keys.each do |kind|
+        .custom-control.custom-radio
+          = f.radio_button :kind, kind, class: 'custom-control-input'
+          = f.label "kind_#{kind}".to_sym, t(kind, scope: 'activerecord.attributes.reward.kinds'), class: 'custom-control-label'
+.row
+  .col-lg-12
+    .form-group
+      = f.label :dimension, required: true
+      - Reward.dimensions.keys.each do |dimension|
+        .custom-control.custom-radio
+          = f.radio_button :dimension, dimension, class: 'custom-control-input'
+          = f.label "dimension_#{dimension}".to_sym, t(dimension, scope: 'activerecord.attributes.reward.dimensions'), class: 'custom-control-label'
+.row
+  .col-lg-12
+    .form-group
+      = f.upload_helper_for(:image, resource: f.object, accept: 'image/svg+xml,image/png', data: {upload: 'image'}) do |h|
+        - h.button do
+          i.fas.fa-image.fa-fw.mr-2
+          = t('.choose_image')
+        - h.preview do |resource|
+          = image_tag(resource.image_url, class: 'preview img-thumbnail', width: '150px') if resource.image
+          = image_tag(JSON.parse(resource.image_remote_url), class: 'preview img-thumbnail') if resource.image_remote_url.present?
+
+      = f.hidden_field(:image_remote_url, class: 'input-remote-url')
+.row
+  .col-lg-12
+    .form-group
+      = f.label :language_id, t('teach.lessons.form.select_target_language')
+      = f.select :language_id, options_for_select(Language.active.select(:system_name, :id).map { |d| [d.system_name, d.id] }, f.object.language_id || current_user.language_scope), { include_blank: t('admin.rewards.form.select_language') }, { class: 'form-control select2'}
+      = error_for f.object, :language_id

@@ -1,0 +1,32 @@
+h2.student-heading2.mt-4 = t('school.team_students.courses.assigned_course')
+table.table.table-borderless.bg-white
+  tbody
+    tr.student-course-row
+      td.align-middle
+        .d-inline-block.language-info
+          = image_tag("flags/#{language_to_flag_code(course.language.code)}.svg", class: 'language-flag mr-1 align-middle')
+          span.student-course-level
+            = course.level&.upcase unless course.undefined?
+      td.align-middle
+        button.btn.btn-light.collapsed.student-course-title data-target="#collapseCourse#{course.id}" data-toggle="collapse" aria-expanded="false"
+          = course.title
+      td.align-middle
+        = humanize_seconds(student.lesson_sessions.where(lesson: course.lessons).sum(:duration))
+      td.align-middle
+        -# TODO: Add lesson XP
+        | 0
+        =< image_tag('icons/xp-badge.svg')
+      td.align-middle
+        .d-flex.justify-content-between
+          .course-lessons-count= t('school.team_users.lessons.lessons_count', count: course.lessons_count)
+          button.btn.btn-light.collapsed.course-expander data-target="#collapseCourse#{course.id}" data-toggle="collapse" aria-expanded="false"
+            i.fas.fa-angle-down.fa-fw
+            i.fas.fa-angle-up.fa-fw
+    tr.student-course-row
+      td.p-0 colspan="5"
+        div.collapse id="collapseCourse#{course.id}"
+          - course.course_sections.each do |cs|
+            strong.h5.text-black.pl-3.mt-2= cs.name
+            table.table.table-hover.table-course-lessons
+              tbody
+                = render partial: 'school/team_students/course_lesson_item', collection: cs.lessons.order(:title), as: :lesson

@@ -1,0 +1,16 @@
+.modal-dialog.modal-move-team-group role="document"
+  .modal-content
+    .modal-header
+      h5.modal-title = t('school.courses.list.assign_to_group')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+    .modal-body
+      = form_with scope: :course, url: assign_team_group_school_course_path(course) do |f|
+        .team-groups-list
+          = f.collection_check_boxes(:team_group_ids, team_groups, :id, :name) do |t|
+            .d-flex.team-group-select-wrapper
+              = t.check_box class: 'team-group-item-radio'
+              = t.label class: 'flex-fill mb-0 pt-2'
+
+        .d-flex.action-group.mt-4
+          = f.submit t('save'), class: 'btn btn-primary ml-2 flex-fill'
+          button.btn.btn-light.flex-fill type='button' data-dismiss="modal" = t('shared.cancel')

@@ -1,0 +1,13 @@
+#language_list
+  -#== paginate languages
+  table.table.thead-light.table-hover
+    thead
+      tr
+        th= t('.language_code')
+        th= t('activerecord.attributes.language.system_name')
+        th= t('name')
+        th= t('words')
+        th= t('collections')
+        th
+    tbody
+      = render partial: 'list_row', collection: languages, as: :language, cached: true

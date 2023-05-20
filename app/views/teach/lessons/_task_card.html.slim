@@ -1,0 +1,18 @@
+.card-body.p-0.m-0 id=dom_id(task)
+  .float-right
+  .notification.rounded-0.border-x-0.border.border-300 href="#!"
+    .notification-avatar
+      .avatar.avatar-xl.mr-3
+        .avatar-emoji.rounded-circle
+          i.fas.fa-fw.mr-1.fa-1x.text-secondary class=task_icon_class(task)
+    .notification-body
+      p.mb-1
+        strong= link_to task.name, edit_teach_lesson_task_path(task.lesson, task), class: 'text-black'
+      = link_to toggle_published_teach_lesson_task_path(task.lesson, task), method: :patch, remote: :true, data: { confirm: t('teach.task_list_row.confirm_publish') }, class: "float-right badge badge rounded-capsule badge-soft-#{task.published? ? 'success' : 'warning' }" do
+        - if task.published?
+          i.fas.fa-eye.fa-fw.mr-1
+          = t('published')
+        - else
+          i.fas.fa-eye-slash.fa-fw.mr-1
+          = t('hidden')
+      span.notification-time.mr-4= t(task.type.underscore, scope: 'tasks.types')

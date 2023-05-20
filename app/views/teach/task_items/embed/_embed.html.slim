@@ -1,0 +1,13 @@
+
+= form_for item, as: :task_item, remote: true, url: teach_task_item_path(item.task, item) do |f|
+  .card.mb-3
+    .card-body
+      .form-group
+        = f.label :url, t('embed_script'), class: 'w-100 sentence required'
+        small
+          => t('.accepted_sources') + ':'
+          | h5p.org, facebook.com, embed.ly, quizlet.com
+        = f.text_area :url, placeholder: t('teach.tasks.video.form.url.placeholder'), class: 'form-control question'
+        = error_for f.object, :url
+      .form-group
+        = f.submit t('save_changes'), class: 'btn btn-success'

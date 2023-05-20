@@ -1,0 +1,29 @@
+- set_page_title student.full_name
+
+.content
+  .row
+    .col-lg-12
+      .card.mb-3
+        .card-header
+          h5.mb-0= student.full_name
+  .row
+    .col-lg-8.pr-lg-2
+      .card.mb-3
+        .card-header
+          h5.mb-0= t('.personal_data')
+        .card-body.bg-light
+          = form_for student, url: admin_student_path(student), method: :patch, html: { id: 'student_form' } do |f|
+            = render 'admin/students/form', student: student, f: f
+            .form-group
+              = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+              = link_to t('back'), admin_students_path, class: 'btn btn-falcon-default mr-1'
+
+    .col-lg-4.pl-lg-2
+      .sticky-top.sticky-sidebar
+        .card.mb-3.overflow-hidden
+          .card-header
+            h5.mb-0= t('danger_zone')
+          .card-body
+            = link_to admin_student_path(student), class: 'btn btn-falcon-danger d-block', method: :delete, data: { confirm: 'Are you sure you want to delete this student?' } do
+              i.fas.fa-times.fa-fw
+              span= t('deactivate_account')

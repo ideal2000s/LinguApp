@@ -1,0 +1,15 @@
+# == Schema Information
+#
+# Table name: skills
+#
+#  id                :bigint           not null, primary key
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#  name_translations :jsonb            not null
+#
+reading:
+  name_translations: { "en": "Reading" }
+writing:
+  name_translations: { "en": "Writing" }
+listening:
+  name_translations: { "en": "Listening" }

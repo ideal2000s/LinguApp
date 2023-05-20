@@ -1,0 +1,3 @@
+$("#right_modal .modal-body").html("<%= j render partial: 'teach/tasks/new', locals: { form: form, lesson: lesson }%>");
+$("#right_modal .modal-title").html("<%= t('teach.tasks.new.new_task') %>");
+$('#right_modal').modal('show');

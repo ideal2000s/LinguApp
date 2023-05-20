@@ -1,0 +1,595 @@
+---
+ja:
+  course_mailer:
+    course_assigned_notification:
+      button: コースを開始する
+      click_start_lesson: "「レッスン開始」をクリックします"
+      follow_course_link: ボタンをクリックしてコースを開きます
+      footer_text: 毎日新しいことを学ぶためにLinguに戻ってきてください！
+      get_started_line: 開始方法は次のとおりです。
+      notification_link: 通知設定
+      open_lesson: 最初のレッスンを開く
+      or_paste_this_link: または、このリンクをブラウザに貼り付けます
+      sign_in_with_email: メールアドレス（%{email}）でログインします
+      support_link: サポート
+      title: "%{course}の使用を開始する"
+    new_document_comment:
+      author_text: "%{author}があなたの課題のレビューを残しました"
+      button_text: 見てみな
+      button_url_helper: または、このリンクをブラウザに貼り付けます。
+      footer_text: 学ぶべきことがもっとたくさんあります...
+      notification_link: 通知設定
+      subject_line: 新しい割り当てコメント
+      support_link: サポート
+    otp:
+      ignore_msg: このリクエストを行わなかった場合は、メールを無視してください。
+      subject_line: Linguの独自のコード
+      unique_code_for_lingu: これがLinguのユニークなコードです
+  frontend:
+    auth:
+      already_have_acc_question: すでにアカウントをお持ちですか？
+      back: バック
+      back_to_sign_in: サインインに戻る
+      check_your_email_for_a_code: メールでコードを確認してください
+      continue: 継続する
+      continue_with_email: メールを続ける
+      continue_with_provider: "%{provider}に進む"
+      did_not_receive_a_code: コードを受け取りませんでしたか？
+      email_address: 電子メールアドレス
+      first_name: ファーストネーム
+      get_unique_code: 一意のログインコードを取得する
+      join_lingu: Linguに参加する
+      last_name: 苗字
+      more_login_options: その他のログインオプション
+      no_account_question: アカウントをお持ちではありませんか？
+      or: または
+      resend_code: コードを再送する
+      sign_in: サインイン
+      sign_up: サインアップ
+      want_to_receive_marketing_messages: Linguからマーケティングメッセージを受け取りたい
+      we_ve_sent_a_code: "<strong> {{email}} </ strong>に6桁のコードを送信しました。コードの有効期限は15分ですので、お早めにご入力ください。"
+    cookie_agreement:
+      agree: 同意する
+      condition: >-
+        Cookieを使用してサイトのパフォーマンスを分析し、パーソナライズされたコンテンツを配信します。 「同意する」をクリックすると、当社の条件に同意したことになります。
+    course:
+      accredited_course_provider: 認定コースプロバイダー
+      apply: 適用する
+      apply_filters: フィルタを適用する
+      by: 沿って
+      cancel: キャンセル
+      categories: "%{count}カテゴリ"
+      category: カテゴリー
+      clear: 晴れ
+      clear_filters: フィルターをクリアする
+      contact_us: お問い合わせ
+      could_not_find_match_for: 申し訳ありませんが、一致するものが見つかりませんでした
+      course_language: コース言語
+      duration: デュレーション
+      filter_settings:
+        categories:
+          academic: アカデミック
+          business: ビジネス
+          fashion: ファッション
+          food_drink: 食べ物飲み物
+          for_kids: 子供のための
+          general: 一般
+          health: 健康
+          legal: 法的
+          sport: スポーツ
+          travel: トラベル
+        durations:
+          t0_600: "<10分"
+          t1800_3600: 30〜60分
+          t3600_86400: 1時間以上
+          t600_1800: 10〜30分
+        focus_on:
+          conversation: 会話
+          grammar: 文法
+          listening: 聞いている
+          pronunciation: 発音
+          reading: 読書
+          speaking: 話し中
+          writing: 書き込み
+        levels:
+          long:
+            advanced: 上級レベル
+            elementary: 初級
+            intermediate: 中間レベル
+            no_knowledge: 知識がない
+            pre_intermediate: 初中級レベル
+            upper_intermediate: 上中間レベル
+          short:
+            advanced: 高度な
+            beginner: 初心者
+            intermediate: 中級
+        sort_by:
+          most_rated: 最も評価された
+          newest: 最新
+          popularity: 人気
+      filters: フィルター
+      focus_on: 焦点を合わせる
+      focus_on_title: 集中したい
+      hide_lessons: レッスンを隠す
+      hours: 時間
+      i_understand: わかります
+      i_want_to_learn: 学びたい
+      in_language: "%{language}で"
+      language: 言語
+      learn_more: もっと詳しく知る
+      less_settings: 少ない設定
+      lessons: レッスン
+      lessons_available: "%{number}レッスンあり"
+      lessons_catalog_page_subtitle: 言語のヒーローになります。
+      lessons_catalog_page_title: 語学コースで視野を広げる
+      level: レベル
+      min: 最小
+      more_settings: その他の設定
+      navbar:
+        close: メニューを閉じる
+        menu: メニュー
+        select_language: 言語を選択する
+      need_to_buy_course: 最初にコースを予約する必要があります
+      no_description: 説明はありません
+      no_results: 申し訳ありませんが、一致するものが見つかりませんでした
+      or: または
+      per_month: 月額
+      plans: 予定
+      privacy_policy: 個人情報保護方針
+      rating: 評価
+      remove_all_filters: すべてのフィルターを削除します
+      reviews: レビュー
+      save: 保存する
+      search: 探す
+      select_dots: 選択する...
+      select_languages: 言語を選択する
+      select_num_languages: "%{number}言語を選択します"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: すべて表示する
+      show_all_lessons: すべてのレッスンを表示
+      show_lessons: "%{number}のレッスンを表示する"
+      show_more: もっと見せる
+      sign_up_with_lingu_for: LinguNorwayにサインアップして
+      skills: "%{count}スキル"
+      sort_by: 並び替え
+      start_typing_here: ここから入力を開始します
+      teach: 教える
+      terms_and_conditions: 規約と条件
+      time_range: 時間範囲
+      try_adjusting_your_search: フィルタを変更して検索を調整してみてください
+      try_this_course: このコースをお試しください
+      website_language: ウェブサイトの言語
+      words: 言葉
+    games:
+      finished:
+        go_to_next_exercise: よくやった！次の演習に進みます
+      flashcard:
+        buttons:
+          finish: 終了
+          next: 次
+          previous: 前
+        check_out_new_words: このレッスンで学ぶ新しい単語をチェックしてください
+        frequency_of_word_usage: "%{language}での単語の使用頻度"
+        keep_practice_to_learn_all_words: "%{count}の単語を確認して、いくつかのゲームをプレイしましょう！"
+        word_frequency:
+          level1: ほとんど使われません
+          level2: ほとんど使われません
+          level3: 単語の頻度–中
+          level4: 単語の頻度–中
+          level5: 一般
+          level6: ごく普通
+      match_word:
+        click_and_move_each_word_to_counterpart: クリックして、各単語を対応する単語に移動します
+        start_heading: 単語を一致させてペアを作る
+        time_is_up: 時間切れ！
+      skip_tutorial: スキップ
+      time_is_up: 時間切れ！
+      word_nodes:
+        match_letters_to_form_word: 文字を一致させて単語を形成する
+      word_waterfall:
+        do_not_hesitate: スピードアップしましょう！
+        go_to_next_exercise: 次の演習に進みます
+        select_correct_translation: 正しい一致を選択してください
+        well_done: よくやった！
+    home_page:
+      hello: こんにちは、
+      popular_lessons: 人気のレッスン
+      show_more: もっと見せる
+      time: "%{count}分"
+      today_lesson: 今日のあなたのレッスン
+      user_name: "%{name}！"
+      words: "%{count}ワード"
+    idle_screen:
+      by_author: "%{authorName}によって"
+      continue_lesson: レッスンを続ける
+      exit: 出口
+      idle_message: あなたはしばらくアイドル状態でした...
+    lesson_page:
+      back_to_course_page: コースページに戻る
+      close: 閉じる
+      continue_lesson: レッスンを続ける
+      followed: フォローしました
+      hamburger_menu_btn: ハンバーガーメニュー
+      lesson_given: レッスン
+      not_started: 始まっていない
+      or: または
+      part_complete: "%{percent}％完了"
+      restart_lesson: 再起動
+      section_check: 小切手
+      section_check_info: "%{count}テスト"
+      section_learn: 学ぶ
+      section_learn_info: "%{count}分視聴して読む"
+      section_play: 演奏する
+      section_play_info: 練習する%{count}単語
+      start_lesson: レッスン開始
+      step_progress: "%{percent}％"
+      subscribe: フォローする
+      subscribed: フォローしました
+      subscribers: フォロワー
+      time_min: "%{minutesNumber}分"
+      unsubscribe: フォロー解除
+      webview_error_title: 何かがうまくいかなかった...
+      words_number: "%{wordsNumber}新しい単語"
+    lesson_task:
+      cancel_button: キャンセル
+      check:
+        navigation_next: 次
+        navigation_previous: 前
+        navigation_skip: スキップ
+      controls_panel:
+        font_size_button: フォントサイズ
+        high_contrast_button:
+          origin: ハイコントラスト
+          short: コントラスト
+        hints_button: ヒント
+        music_playback_button:
+          origin: 音楽の再生
+          short: 音楽
+        sound_effects_button:
+          origin: 音響効果
+          short: 音
+      exit_button: 出口
+      finish_button: 終了
+      finished:
+        back_to_learn: 学ぶために戻る
+        back_to_lesson_page: レッスンページに戻る
+        back_to_results_page: 結果ページに戻る
+        bad_result_message: うーん...もう一度レッスンを受けてみてください
+        close_lesson: レッスンを閉じる
+        correct_answers_list: 正解リスト
+        good_result_message: あなたが努力したことがわかります！
+        great_result_message: よくやった！これらは素晴らしい結果です！
+        next_course_lesson: コースの次のレッスンに進みます
+        no_results: まだテスト結果はありません
+        no_results_text: レッスンを完了し、テストに合格して結果を取得してください
+        see_correct_answers_list: 正解リストを見る
+        train_more: もっと練習すれば、次回はより良い結果が得られます！
+        you_finished_lesson: すごい！レッスンを終了しました
+      go_back: 戻る
+      next_button: 次
+      not_available_task: このタスクはまだ利用できません
+      start_button: 開始
+      tasks:
+        check:
+          assignment:
+            accept: 受け入れる
+            author_will_check_your_answer: "%{author}は回答を確認し、通常1〜2日以内にフィードバックを提供します"
+            continue_writing: 書き続ける
+            copy: コピー
+            delete: 削除
+            delete_record: レコードを削除する
+            edit: 編集
+            essay_does_not_have_enough_words: 回答には少なくとも%{minWordsNumber}語が含まれている必要があります。あなたの答えは現在%{currentWordsNumber}ワードです。
+            followers_count: "%{followersCount}フォロワー"
+            lessons_count: "%{lessonsCount}レッスン"
+            minimal_recording_time: 最小の記録時間-%{minimalRecordingTime}
+            minimum_characters_amount: 最小文字数-%{minimumCharactersAmount}
+            minimum_words_amount: 最小単語-%{minimumAmount}
+            record_again: もう一度録音する
+            record_voice: 音声を録音する
+            send_anyway: とにかく送る
+            send_to_review: レビューに送信
+            skip: スキップ
+            too_short_answer: 短すぎる答え
+            type_your_answer: あなたの答えを入力
+            unknown_task_type: 不明なタスクタイプ
+            upgrade_licence: アップグレードライセンス
+            upgrade_your_plan: 計画をアップグレードして、教師のレビューで課題を試してください
+            upload_files: ファイルをアップロードする
+            write_essay: エッセイを書く
+            you_have_used_amount_of_assignments: "%{amountOfAssignments}割り当てクレジットを使用しました"
+          fill_in_blanks:
+            sentence_gap: 文のギャップ
+          fill_in_table:
+            column_answer_placeholder: 回答
+            column_question_placeholder: 質問
+            example: 例
+          true_false:
+            'false': 誤り
+            'true': 本当
+        learn:
+          translatable_text:
+            show_original: オリジナルを表示
+            translate_into: Googleで%{languageName}に翻訳する
+            translate_into_your_lang: Googleであなたの言語に翻訳する
+        play:
+          arrange_words:
+            start_screen:
+              heading: 与えられた単語から文を作る
+          audition:
+            start_screen:
+              heading: 音声を聞いて、聞いたばかりの単語をタップします
+          dictation:
+            get_help: 助けを得ます
+            i_do_not_know: 知りません
+            input_placeholder: ここに聞いたことを入力してください
+            start_screen:
+              heading: あなたが聞いたことを聞いて書く
+          fill_gap:
+            start_screen:
+              heading: 単語とその意味を一致させる
+          finish_screen:
+            go_to_next_exercise: よくやった！次の演習に進みます
+          image_hotspot:
+            start_screen:
+              heading: 画像内のオブジェクトに正しく名前を付ける
+          image_object:
+            start_screen:
+              heading: 次の写真から適切なオブジェクトを選択してください
+          inline_dropdown:
+            start_screen:
+              heading: 文に一致する単語を選択してください
+          mark_word:
+            start_screen:
+              heading: テキストを読み、画像に一致する単語を選択します
+          minimal_pairs:
+            start_screen:
+              heading: ビデオを見て、正しいオプションを選択してください
+    locale:
+      currency_switcher_title: 通貨スイッチャー
+      lang_switcher_title: 言語スイッチャー
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ドイツ語
+        el: Greek
+        en: 英語
+        eo: Esperanto
+        es: スペイン語
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: フランス語
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: イタリア語
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: リトアニア語kalba
+        lv: Latviešuvaloda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: オランダ
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: ポルスキ
+        ps: Pashto
+        pt: ポルトガル語
+        ro: Limbaromână
+        ru: Русскийязык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: afソマリ語
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: スワヒリ語
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: オーディオが読み込まれています
+        aria_pause_button: 一時停止
+        aria_play_button: 演奏する
+        aria_reload_button: リロード
+        aria_stop_button: やめる
+        reload_message: オーディオの読み込みに失敗しました。ボタンをクリックしてリロードしてください。
+    mobile_modal:
+      apply: 適用する
+      cancel: キャンセル
+      clear: 晴れ
+      save: セーブ
+    page404:
+      goToStartLessonPage: レッスン開始ページに移動します
+      ooops: おっと...
+      sorry_message: 申し訳ありませんが、Torはこのページを見つけることができませんでした
+    profile:
+      navigation:
+        log_out: ログアウト
+        my_profile: 私のプロフィール
+        settings: 設定
+      onboarding:
+        choose_native_language: 母国語または理解できる言語を選択してください
+        do_you_understand_english: あなたは英語を理解していますか？
+        hello: こんにちは
+        language_levels:
+          a1: 初級
+          a2: 初中級レベル
+          b1: 中間レベル
+          b2: 上中間レベル
+          c1: 上級レベル
+          no_knowledge: 知識がない
+        language_not_supported:
+          note: 言語が利用可能になり次第お知らせします
+          title: 申し訳ありませんが、この言語はまだサポートされていません
+          try_another_language: 別の言語を試す
+        'no': 番号
+        search_placeholder: 探す...
+        show_more_languages: 他の言語
+        target_language_question: どんな言語を学びたいですか？
+        what_is_language_level: "%{languageName}レベルをどのように評価しますか？"
+        'yes': はい
+    settings_page:
+      footer:
+        buttons_separator: "・"
+        privacy_policy: Linguのプライバシーポリシー
+        support: サポート
+      logout: ログアウト
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: フォローしている教師や学校から最新情報を受け取る
+              sections:
+                app_notifications: アプリの通知
+                email: Eメール
+              title: 学習支援
+            marketing:
+              description: Linguからのすべてのプロモーション、アップデート、インスピレーションについての情報を入手してください
+              sections:
+                browser_notifications: ブラウザ通知
+                email: Eメール
+              title: マーケティング
+          title: 連絡先の設定
+        personal_information:
+          delete_photo: 写真を削除する
+          email: Eメール
+          first_name: ファーストネーム
+          last_name: 苗字
+          social_accounts:
+            connected: 接続済み
+            facebook: フェイスブック
+            google: グーグル
+            microsoft: マイクロソフト
+            not_connected: 接続されていません
+            title: ソーシャルアカウント
+          title: 個人情報
+          update_photo: 写真を更新
+        school:
+          active_licence: アクティブライセンス
+          active_status: アクティブ
+          delete_profile: プロフィールを削除する
+          delete_profile_modal:
+            body: |-
+              すべてのデータを永久に消去します。元に戻すボタンはありません。後で元に戻すことはできません。
+              Linguプロファイルとすべてのデータを完全に削除してもよろしいですか？
+            cancel: キャンセル
+            confirm: はい、削除します
+            i_understand_the_consequences: 私は結果を理解しています
+            title: プロファイルを削除しますか？
+          expired: 期限切れの%{expire_date}
+          expires: "%{expire_date}の有効期限が切れます"
+          inactive_status: 非活性
+          revoke_access: 読み取りアクセスを取り消す
+          sections:
+            contact_school: 学校に連絡する
+            export_my_data: データをエクスポートする
+            read_school_privacy_policy: 学校のプライバシーポリシーを読む
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: 音楽の再生
+              sound_effects: 音響効果
+              title: 音
+            visual:
+              dark_theme: 暗いテーマ
+              font_size:
+                test_text: フェンスの向こう側の草は常に緑です
+                title: フォントサイズ
+              high_contrast: ハイコントラスト
+              hints: ヒント
+              title: ビジュアル
+          title: サウンド＆ビジュアル
+        training_settings:
+          sections:
+            i_understand: わかります
+            i_want_to_learn: 学びたい
+            target_language_level: 英語能力
+          title: トレーニング設定
+      settings_title: 設定
+    teacher_card:
+      followers_count:
+        one: 1人のフォロワー
+        other: "%{count}フォロワー"
+      lessons_count:
+        one: 1レッスン
+        other: "%{count}レッスン"

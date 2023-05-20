@@ -1,0 +1,9 @@
+.teachers-list.thead-block-list
+  table.table.table-hover.m-0
+    thead
+      tr
+        - %w[name email language lessons role].each do |e|
+          th = t(e, scope: 'school.teachers.item')
+        th
+    tbody
+      = render partial: 'school/team_users/list_row', collection: team_users, as: :team_user

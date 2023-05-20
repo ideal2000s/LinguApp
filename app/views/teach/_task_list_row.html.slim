@@ -1,0 +1,29 @@
+tr id=dom_id(task)
+  td.align-middle
+    i.fas.fa-fw.mr-1.fa-1x class=(task_icon_class(task))
+  td.align-middle
+    = link_to task.name, edit_admin_lesson_task_path(task.lesson, task), class: 'text-black'
+    br
+    small= t(task.type.underscore, scope: 'tasks.types')
+  td.align-middle= t(task.subject, scope: 'exam_subjects')
+  td.align-middle
+    = link_to toggle_published_admin_lesson_task_path(task.lesson, task), method: :patch, remote: :true, data: { confirm: t('.confirm_publish')}, class: "badge badge rounded-capsule badge-soft-#{task.published? ? 'success' : 'warning' }" do
+      - if task.published?
+        i.fas.fa-eye.fa-fw.mr-1
+        = t('published')
+      - else
+        i.fas.fa-eye-slash.fa-fw.mr-1
+        = t('hidden')
+  td.align-middle
+    - unless task.author_name.blank?
+      small= task.author_name
+      br
+    small= l(task.updated_at)
+  td.align-middle.text-right
+    = link_to preview_admin_lesson_task_path(task.lesson, task), class: 'btn btn-falcon-primary btn-sm' do
+      i.fas.fa-eye.fa-fw
+    = link_to edit_admin_lesson_task_path(task.lesson, task), class: 'btn btn-falcon-default btn-sm' do
+      i.fas.fa-pencil-alt.fa-fw
+    - if policy(task.lesson).edit?
+      = link_to admin_lesson_task_path(task.lesson, task), class: 'btn btn-falcon-danger btn-sm', method: :delete, data: { confirm: t('admin.tasks.delete_task_confirm') } do
+        i.fas.fa-times.fa-fw

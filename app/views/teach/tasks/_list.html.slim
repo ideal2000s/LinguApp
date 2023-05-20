@@ -1,0 +1,14 @@
+.card-body
+  == paginate tasks
+  table.table.thead-light.table-hover
+    thead
+      tr.vertical
+        th colspan="2"
+          = t('name')
+        th= t('subject')
+        th Status
+        th= t('.last_updated')
+        th
+    tbody
+      - tasks.each do |task|
+        = render 'teach/task_list_row', task: task, lesson: lesson

@@ -1,0 +1,13 @@
+= form_for option, as: :item_option, html: {id: dom_id(item, :option_form)}, url: teach_item_options_path(item), remote: true do |f|
+  .form-inline
+    .form-group.mr-2
+      = f.check_box :correct, class: 'form-control'
+    .form-group.mr-2
+      = f.upload_helper_for(:image, accept: 'image/*', data: { upload: 'image' }, button: { class: 'btn btn-sm' }, aria: { label: t('.item_option_image') }) do |h|
+        - h.button do
+          i.fas.fa-image.fa-fw.mr-2
+          = t('teach.tasks.shared_task_fields.choose_image')
+        - h.preview do |resource|
+          = image_tag(resource.image_url(:lesson_ui), class: 'preview img-thumbnail') if resource.image
+    .form-group
+      = f.submit t('save'), class: 'btn btn-success btn-sm mt-0'

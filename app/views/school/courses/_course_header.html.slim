@@ -1,0 +1,15 @@
+.course-header.p-4.d-flex.justify-content-between.bg-white
+  .d-flex.align-items-center
+    = link_to school_courses_path
+      = image_tag('icons/arrow_left.svg', class: 'mr-3')
+    h1.mb-0
+      = course.title
+    .language-info.d-flex.align-items-center.ml-3.py-2
+      = image_tag("flags/#{language_to_flag_code(course.language.code)}.svg", class: 'language-flag mr-1')
+      span.font-weight-bold.ml-2
+        = course.language.name
+        =< t(course.level&.upcase, scope: 'activerecord.attributes.course.level')
+  = link_to students_course_url(course, subdomain: nil, host: ENV.fetch('MAIN_HOST', 'lingu.com')), class: 'btn course-view-btn d-flex.align-items-center py-2' do
+    = image_tag('icons/view.svg', class: 'mr-2')
+    span.text-primary.font-weight-bold
+      = t('view')

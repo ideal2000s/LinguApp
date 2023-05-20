@@ -1,0 +1,615 @@
+---
+cy:
+  course_mailer:
+    course_assigned_notification:
+      button: Dechreuwch y cwrs
+      click_start_lesson: Cliciwch 'Start gwers'
+      follow_course_link: Cliciwch y botwm i agor y cwrs
+      footer_text: Dewch yn ôl i Lingu i ddysgu rhywbeth newydd bob dydd!
+      get_started_line: 'Dyma sut rydych chi''n cychwyn arni:'
+      notification_link: Gosodiadau hysbysu
+      open_lesson: Agorwch y wers gyntaf
+      or_paste_this_link: neu gludwch y ddolen hon yn eich porwr
+      sign_in_with_email: Mewngofnodi gyda'ch cyfeiriad e-bost (%{email})
+      support_link: Cefnogaeth
+      title: Dechrau arni gyda %{course}
+    new_document_comment:
+      author_text: Gadawodd %{author} adolygiad o'ch aseiniad
+      button_text: Edrychwch arno
+      button_url_helper: 'neu gludwch y ddolen hon i''ch porwr:'
+      footer_text: Mae llawer mwy i'w ddysgu ...
+      notification_link: Gosodiadau hysbysu
+      subject_line: Sylw aseiniad newydd
+      support_link: Cefnogaeth
+    otp:
+      ignore_msg: Os na wnaethoch y cais hwn, anwybyddwch yr e-bost yn unig.
+      subject_line: Eich cod unigryw ar gyfer Lingu
+      unique_code_for_lingu: Dyma'ch cod unigryw ar gyfer Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Eisoes â chyfrif?
+      back: Yn ôl
+      back_to_sign_in: Yn ôl i Mewngofnodi
+      check_your_email_for_a_code: Gwiriwch eich e-bost am eich cod
+      continue: Parhewch
+      continue_with_email: Parhewch ag e-bost
+      continue_with_provider: Parhewch â %{provider}
+      did_not_receive_a_code: Heb dderbyn cod?
+      email_address: Cyfeiriad ebost
+      first_name: Enw cyntaf
+      get_unique_code: Cael cod mewngofnodi unigryw
+      join_lingu: Ymunwch â Lingu
+      last_name: Enw olaf
+      more_login_options: Mwy o opsiynau mewngofnodi
+      no_account_question: Peidiwch â chael cyfrif?
+      or: neu
+      resend_code: Cod ail-anfon
+      sign_in: Mewngofnodi
+      sign_up: Cofrestru
+      want_to_receive_marketing_messages: Rwyf am dderbyn negeseuon marchnata gan
+        Lingu
+      we_ve_sent_a_code: >-
+        Rydyn ni wedi anfon cod 6 digid i <strong> {{email}} </strong>. Daw'r cod
+        i ben mewn 15 munud, felly nodwch ef yn fuan.
+    cookie_agreement:
+      agree: Cytuno
+      condition: >-
+        Rydym yn defnyddio cwcis i ddadansoddi perfformiad gwefan a darparu cynnwys
+        wedi'i bersonoli. Trwy glicio “Cytuno”, rydych chi'n cydsynio i'n hamodau.
+    course:
+      accredited_course_provider: Darparwr cwrs achrededig
+      apply: Ymgeisiwch
+      apply_filters: Cymhwyso hidlwyr
+      by: Gan
+      cancel: Canslo
+      categories: categorïau %{count}
+      category: Categori
+      clear: Clir
+      clear_filters: Hidlwyr clir
+      contact_us: Cysylltwch â ni
+      could_not_find_match_for: Mae'n ddrwg gennym, ni allem ddod o hyd i unrhyw ornest
+        ar gyfer
+      course_language: Iaith y cwrs
+      duration: Hyd
+      filter_settings:
+        categories:
+          academic: Academaidd
+          business: Busnes
+          fashion: Ffasiwn
+          food_drink: Bwyd a diod
+          for_kids: I blant
+          general: Cyffredinol
+          health: Iechyd
+          legal: Cyfreithiol
+          sport: Chwaraeon
+          travel: Teithio
+        durations:
+          t0_600: "<10 munud"
+          t1800_3600: 30-60 munud
+          t3600_86400: 1+ awr
+          t600_1800: 10-30 munud
+        focus_on:
+          conversation: Sgwrs
+          grammar: Gramadeg
+          listening: Gwrando
+          pronunciation: Ynganiad
+          reading: Darllen
+          speaking: Siarad
+          writing: Ysgrifennu
+        levels:
+          long:
+            advanced: Lefel uwch
+            elementary: Lefel elfennol
+            intermediate: Lefel ganolradd
+            no_knowledge: Dim gwybodaeth
+            pre_intermediate: Lefel cyn canolradd
+            upper_intermediate: Lefel ganolradd uchaf
+          short:
+            advanced: Uwch
+            beginner: Dechreuwr
+            intermediate: Canolradd
+        sort_by:
+          most_rated: Graddiwyd fwyaf
+          newest: Newyddaf
+          popularity: Poblogrwydd
+      filters: Hidlau
+      focus_on: Canolbwyntiwch ar
+      focus_on_title: Rwyf am ganolbwyntio ar
+      hide_lessons: Cuddio gwersi
+      hours: Oriau
+      i_understand: Rwy'n deall
+      i_want_to_learn: Rydw i eisiau dysgu
+      in_language: yn %{language}
+      language: Iaith
+      learn_more: Dysgu mwy
+      less_settings: Llai o leoliadau
+      lessons: Gwersi
+      lessons_available: gwersi %{number} ar gael
+      lessons_catalog_page_subtitle: Dewch yn arwr iaith.
+      lessons_catalog_page_title: Ehangwch eich gorwelion gyda chwrs iaith
+      level: Lefel
+      min: Munud
+      more_settings: Mwy o leoliadau
+      navbar:
+        close: Caewch y ddewislen
+        menu: Dewislen
+        select_language: Dewis iaith
+      need_to_buy_course: Mae angen i chi archebu cwrs yn gyntaf
+      no_description: Ni ddarparwyd disgrifiad
+      no_results: Mae'n ddrwg gennym, ni allem ddod o hyd i unrhyw ornest ar gyfer
+      or: neu
+      per_month: y mis
+      plans: Cynlluniau
+      privacy_policy: Polisi preifatrwydd
+      rating: Ardrethu
+      remove_all_filters: Tynnwch yr holl hidlwyr
+      reviews: Adolygiadau
+      save: Arbedwch
+      search: Chwilio
+      select_dots: Dewiswch ...
+      select_languages: Dewiswch langauges
+      select_num_languages: Dewiswch ieithoedd %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Dangos popeth
+      show_all_lessons: Dangoswch bob gwers
+      show_lessons: Dangos gwersi %{number}
+      show_more: Dangos mwy
+      sign_up_with_lingu_for: Cofrestrwch gyda Lingu Norwy ar gyfer
+      skills: sgiliau %{count}
+      sort_by: Trefnu yn ôl
+      start_typing_here: Dechreuwch deipio yma
+      teach: Dysgu
+      terms_and_conditions: Telerau ac Amodau
+      time_range: Ystod amser
+      try_adjusting_your_search: Ceisiwch addasu'ch chwiliad trwy newid eich hidlwyr
+      try_this_course: Rhowch gynnig ar y cwrs hwn
+      website_language: Iaith y wefan
+      words: Geiriau
+    games:
+      finished:
+        go_to_next_exercise: Da iawn! Ewch i'r ymarfer nesaf
+      flashcard:
+        buttons:
+          finish: Gorffen
+          next: Nesaf
+          previous: Blaenorol
+        check_out_new_words: Edrychwch ar y geiriau newydd y byddwch chi'n eu dysgu
+          yn y wers hon
+        frequency_of_word_usage: Amlder defnyddio geiriau yn %{language}
+        keep_practice_to_learn_all_words: Adolygwch y geiriau %{count} a gadewch i
+          ni chwarae rhai gemau!
+        word_frequency:
+          level1: Yn cael ei ddefnyddio'n anaml
+          level2: Yn cael ei ddefnyddio'n anaml
+          level3: Amledd geiriau - canolig
+          level4: Amledd geiriau - canolig
+          level5: Cyffredin
+          level6: Cyffredin iawn
+      match_word:
+        click_and_move_each_word_to_counterpart: Cliciwch a symud pob gair i'w gymar
+        start_heading: Cydweddwch eiriau i wneud pâr
+        time_is_up: Amser i fyny!
+      skip_tutorial: Neidio
+      time_is_up: Amser i fyny!
+      word_nodes:
+        match_letters_to_form_word: Cydweddwch lythrennau i ffurfio gair
+      word_waterfall:
+        do_not_hesitate: Gadewch i ni gyflymu!
+        go_to_next_exercise: Ewch i'r ymarfer nesaf
+        select_correct_translation: Dewiswch y cyfatebiad cywir
+        well_done: Da iawn!
+    home_page:
+      hello: Helo,
+      popular_lessons: Gwersi poblogaidd
+      show_more: Dangos mwy
+      time: "%{count} min"
+      today_lesson: Eich gwers ar gyfer heddiw
+      user_name: "%{name}!"
+      words: geiriau %{count}
+    idle_screen:
+      by_author: gan %{authorName}
+      continue_lesson: Parhewch â'r wers
+      exit: Allanfa
+      idle_message: Rydych chi wedi bod yn segur ers cryn amser ...
+    lesson_page:
+      back_to_course_page: Yn ôl i dudalen y cwrs
+      close: Caewch
+      continue_lesson: Parhewch â'r wers
+      followed: Dilyn
+      hamburger_menu_btn: Bwydlen Hamburger
+      lesson_given: gwersi
+      not_started: heb ddechrau
+      or: Neu
+      part_complete: "%{percent}% wedi'i gwblhau"
+      restart_lesson: Ail-ddechrau
+      section_check: Gwiriwch
+      section_check_info: profion %{count}
+      section_learn: Dysgu
+      section_learn_info: "%{count} min i wylio a darllen"
+      section_play: Chwarae
+      section_play_info: geiriau %{count} i ymarfer
+      start_lesson: Dechreuwch y wers
+      step_progress: "%{percent}%"
+      subscribe: Dilynwch
+      subscribed: Dilyn
+      subscribers: dilynwyr
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Dad-ddadlennu
+      webview_error_title: Aeth rhywbeth o'i le ...
+      words_number: "%{wordsNumber} geiriau newydd"
+    lesson_task:
+      cancel_button: Canslo
+      check:
+        navigation_next: Nesaf
+        navigation_previous: Blaenorol
+        navigation_skip: Neidio
+      controls_panel:
+        font_size_button: Maint y ffont
+        high_contrast_button:
+          origin: Cyferbyniad uchel
+          short: Cyferbyniad
+        hints_button: Awgrymiadau
+        music_playback_button:
+          origin: Chwarae cerddoriaeth
+          short: Cerddoriaeth
+        sound_effects_button:
+          origin: Effeithiau sain
+          short: Sain
+      exit_button: Allanfa
+      finish_button: Gorffen
+      finished:
+        back_to_learn: Yn ôl i ddysgu
+        back_to_lesson_page: Yn ôl i dudalen y wers
+        back_to_results_page: Yn ôl ar dudalen canlyniad
+        bad_result_message: Hmm ... ceisiwch gymryd y wers unwaith yn rhagor
+        close_lesson: Gwers agos
+        correct_answers_list: Rhestr atebion cywir
+        good_result_message: Gallaf weld eich bod wedi gwneud ymdrech!
+        great_result_message: Da iawn! Mae'r rhain yn ganlyniadau gwych!
+        next_course_lesson: Ewch i'r wers nesaf wrth gwrs
+        no_results: Nid oes gennych unrhyw ganlyniadau profion eto
+        no_results_text: Os gwelwch yn dda, cwblhewch y wers a phasio'r prawf i gael
+          y canlyniadau
+        see_correct_answers_list: Gweler y rhestr atebion cywir
+        train_more: Ymarfer mwy a byddwch yn sicrhau canlyniadau gwell y tro nesaf!
+        you_finished_lesson: Gwych! Fe wnaethoch chi orffen y wers
+      go_back: Mynd yn ôl
+      next_button: Nesaf
+      not_available_task: Nid yw'r dasg hon ar gael eto
+      start_button: Dechrau
+      tasks:
+        check:
+          assignment:
+            accept: Derbyn
+            author_will_check_your_answer: >-
+              Bydd %{author} yn adolygu'ch ateb ac yn nodweddiadol yn rhoi adborth
+              cyn pen 1-2 ddiwrnod
+            continue_writing: Parhewch i ysgrifennu
+            copy: Copi
+            delete: Dileu
+            delete_record: Dileu cofnod
+            edit: Golygu
+            essay_does_not_have_enough_words: >-
+              Dylai eich ateb gynnwys o leiaf geiriau %{minWordsNumber}. Geiriau %{currentWordsNumber}
+              yw eich ateb ar hyn o bryd.
+            followers_count: dilynwyr %{followersCount}
+            lessons_count: gwersi %{lessonsCount}
+            minimal_recording_time: Amser recordio lleiaf - %{minimalRecordingTime}
+            minimum_characters_amount: Cymeriadau lleiaf - %{minimumCharactersAmount}
+            minimum_words_amount: Geiriau lleiaf - %{minimumAmount}
+            record_again: Cofnodwch eto
+            record_voice: Llais recordio
+            send_anyway: Anfonwch beth bynnag
+            send_to_review: Anfon i adolygiad
+            skip: Neidio
+            too_short_answer: Ateb rhy fyr
+            type_your_answer: Teipiwch eich ateb
+            unknown_task_type: Math o dasg anhysbys
+            upgrade_licence: Trwydded uwchraddio
+            upgrade_your_plan: Uwchraddio'ch cynllun i roi cynnig ar aseiniadau gydag
+              adolygiadau athrawon
+            upload_files: Llwytho ffeiliau i fyny
+            write_essay: Ysgrifennu traethawd
+            you_have_used_amount_of_assignments: Rydych wedi defnyddio credydau aseiniad
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Bwlch brawddeg
+          fill_in_table:
+            column_answer_placeholder: Ateb
+            column_question_placeholder: Cwestiwn
+            example: Enghraifft
+          true_false:
+            'false': Anghywir
+            'true': Gwir
+        learn:
+          translatable_text:
+            show_original: Dangos gwreiddiol
+            translate_into: Cyfieithwch gyda Google yn %{languageName}
+            translate_into_your_lang: Cyfieithwch gyda Google i'ch iaith
+        play:
+          arrange_words:
+            start_screen:
+              heading: Gwnewch frawddeg allan o'r geiriau a roddir
+          audition:
+            start_screen:
+              heading: Gwrandewch ar y sain a thapio ar y gair rydych chi newydd ei
+                glywed
+          dictation:
+            get_help: Cael Help
+            i_do_not_know: Dydw i ddim yn gwybod
+            input_placeholder: Rhowch yr hyn a glywsoch yma
+            start_screen:
+              heading: Gwrando ac ysgrifennu'r hyn rydych chi'n ei glywed
+          fill_gap:
+            start_screen:
+              heading: Cydweddwch y gair a'i ystyr
+          finish_screen:
+            go_to_next_exercise: Da iawn! Ewch i'r ymarfer nesaf
+          image_hotspot:
+            start_screen:
+              heading: Enwch y gwrthrychau yn y llun yn gywir
+          image_object:
+            start_screen:
+              heading: Dewiswch y gwrthrych cywir o'r llun nesaf
+          inline_dropdown:
+            start_screen:
+              heading: Dewiswch y geiriau sy'n cyfateb i'r frawddeg
+          mark_word:
+            start_screen:
+              heading: Darllenwch y testun a dewiswch y gair sy'n cyfateb i'r ddelwedd
+          minimal_pairs:
+            start_screen:
+              heading: Gwyliwch y fideo a dewis yr opsiwn cywir
+    locale:
+      currency_switcher_title: Switcher arian cyfred
+      lang_switcher_title: Switcher iaith
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Saesneg
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwlarus
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Mae sain yn llwytho
+        aria_pause_button: Saib
+        aria_play_button: Chwarae
+        aria_reload_button: Ail-lwytho
+        aria_stop_button: Stopiwch
+        reload_message: Wedi methu llwytho sain. Cliciwch y botwm i ail-lwytho.
+    mobile_modal:
+      apply: Ymgeisiwch
+      cancel: Canslo
+      clear: Clir
+      save: Arbedwch
+    page404:
+      goToStartLessonPage: Ewch i dudalen cychwyn y wers
+      ooops: Oooops ...
+      sorry_message: Mae'n ddrwg gennym, ni allai Tor ddod o hyd i'r dudalen hon
+    profile:
+      navigation:
+        log_out: Allgofnodi
+        my_profile: Fy mhroffil
+        settings: Gosodiadau
+      onboarding:
+        choose_native_language: Dewiswch eich iaith frodorol neu iaith rydych chi'n
+          ei deall
+        do_you_understand_english: Wyt ti'n deall Saesneg?
+        hello: Helo
+        language_levels:
+          a1: Lefel elfennol
+          a2: Lefel cyn-ganolradd
+          b1: Lefel ganolradd
+          b2: Lefel Ganolradd Uchaf
+          c1: Lefel uwch
+          no_knowledge: Dim gwybodaeth
+        language_not_supported:
+          note: Byddwn yn eich hysbysu cyn gynted ag y bydd yr iaith ar gael
+          title: Mae'n ddrwg gennym, ond nid ydym yn cefnogi'r iaith hon eto
+          try_another_language: Rhowch gynnig ar iaith arall
+        'no': Na
+        search_placeholder: Chwilio ...
+        show_more_languages: Ieithoedd eraill
+        target_language_question: Pa iaith ydych chi am ei dysgu?
+        what_is_language_level: Sut fyddech chi'n graddio'ch lefel %{languageName}?
+        'yes': Ydw
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Polisi preifatrwydd Lingu
+        support: Cefnogaeth
+      logout: Allgofnodi
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Derbyn diweddariadau gan athrawon ac ysgolion rydych chi'n
+                eu dilyn
+              sections:
+                app_notifications: Hysbysiadau ap
+                email: E-bost
+              title: Cymorth dysgu
+            marketing:
+              description: >-
+                Arhoswch yn wybodus am yr holl hyrwyddiadau, diweddariadau ac ysbrydoliaeth
+                gan Lingu
+              sections:
+                browser_notifications: Hysbysiadau porwr
+                email: E-bost
+              title: Marchnata
+          title: Dewisiadau cyswllt
+        personal_information:
+          delete_photo: Dileu llun
+          email: E-bost
+          first_name: Enw cyntaf
+          last_name: Enw olaf
+          social_accounts:
+            connected: Cysylltiedig
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Heb gysylltiad
+            title: Cyfrifon cymdeithasol
+          title: Gwybodaeth personol
+          update_photo: Diweddariad llun
+        school:
+          active_licence: Trwydded weithredol
+          active_status: Egnïol
+          delete_profile: Dileu fy mhroffil
+          delete_profile_modal:
+            body: |-
+              Rydych chi'n dileu'ch holl ddata - am byth. Nid oes botwm dadwneud, ac ni allwn ei gael yn ôl i chi ar ôl.
+              Ydych chi'n siŵr eich bod chi am ddileu'ch proffil Lingu a'ch holl ddata yn barhaol?
+            cancel: Canslo
+            confirm: Ie, ei ddileu
+            i_understand_the_consequences: Rwy'n deall y canlyniadau
+            title: Dileu eich proffil?
+          expired: Wedi dod i ben %{expire_date}
+          expires: Yn dod i ben %{expire_date}
+          inactive_status: Anactif
+          revoke_access: Dirymu mynediad darllen
+          sections:
+            contact_school: Cysylltwch â'r ysgol
+            export_my_data: Allforio fy data
+            read_school_privacy_policy: Darllenwch bolisi Preifatrwydd Ysgol
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Chwarae cerddoriaeth
+              sound_effects: Effeithiau sain
+              title: Sain
+            visual:
+              dark_theme: Thema dywyll
+              font_size:
+                test_text: Mae'r glaswellt bob amser yn wyrddach yr ochr arall i'r
+                  ffens
+                title: Maint y ffont
+              high_contrast: Cyferbyniad uchel
+              hints: Awgrymiadau
+              title: Gweledol
+          title: Sain a Gweledol
+        training_settings:
+          sections:
+            i_understand: Rwy'n deall
+            i_want_to_learn: Rydw i eisiau dysgu
+            target_language_level: Lefel Saesneg
+          title: Lleoliadau hyfforddi
+      settings_title: Gosodiadau
+    teacher_card:
+      followers_count:
+        one: 1 dilynwr
+        other: dilynwyr %{count}
+      lessons_count:
+        one: 1 wers
+        other: gwersi %{count}

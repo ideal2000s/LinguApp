@@ -1,0 +1,55 @@
+= form_for user, url: profile_path, as: :profile, method: :patch, html: { id: 'user_form' } do |f|
+  .card-header
+    h4.mb-0.font-weight-bold= t('profiles.show.update_profile')
+  .card-body.bg-light
+    .row
+      .col-lg-8
+
+        .form-group
+          = f.label :fname, t('first_name')
+          = f.text_field :fname, class: 'form-control'
+          = error_for f.object, :fname
+
+        .form-group
+          = f.label :lname, t('last_name')
+          = f.text_field :lname, class: 'form-control'
+          = error_for f.object, :lname
+
+        .form-group
+          = f.label :email, t('email')
+          = f.email_field :email, class: 'form-control'
+          = error_for f.object, :email
+
+        .form-group
+          = f.label :mobile, t('mobile_number')
+          = f.text_field :mobile, class: 'form-control'
+          = error_for f.object, :mobile
+
+        .form-group
+          = f.label :language_scope, t('.select_default_language')
+          = f.select :language_scope, options_for_select(Language.active.select(:system_name, :id).map { |d| [d.system_name, d.id] }, f.object.language_scope), {include_blank: t('teach.lessons.form.select_language')}, {class: 'form-control select2'}
+          = error_for f.object, :language_scope
+
+      .col-lg-4
+        .form-group
+          = f.label :avatar
+
+          = f.upload_helper_for(:avatar, accept: 'image/*',
+                  data: { upload: 'image' },
+                  button: { class: 'btn btn-sm form-control' },
+                  aria: { label: t('activerecord.attributes.user.avatar') }) do |h|
+
+            - h.button do
+              i.fas.fa-image.fa-fw.mr-2
+              = t('profiles.show.choose_image')
+
+            - h.preview do |resource|
+              .mt-2
+                = image_tag(resource.avatar(:thumbnail).url, class: 'preview img-thumbnail') if resource.avatar.present?
+
+    .form-group
+      = f.label :about
+      = f.text_area :about, rows: "4", class: 'form-control', placeholder: t('admin.users.edit.about_me_placeholder')
+
+    .form-group
+      = f.submit t('save_changes'), class: 'btn btn-primary mr-1'

@@ -1,0 +1,57 @@
+= search_form_for @search, url: school_team_groups_path, class: 'team-groups-search-form' do |f|
+  .d-flex.justify-content-between
+    .team-groups-filter
+      .btn-group.custom-dropdown.language-by-filter
+        = f.hidden_field :language_include, class: 'filter-values'
+        button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+          span.mr-2= t('shared.language')
+          i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-left.mt-1.p-3
+          .language-container.overflow-auto
+            - Language.active.each do |language|
+              .custom-control.custom-checkbox.mb-3
+                input.custom-control-input.language-select type='checkbox' id="#{language.code}_check" data-filter-val="#{language.id}"
+                label.custom-control-label.d-flex.align-items-center for="#{language.code}_check"
+                  = image_tag("flags/#{language_to_flag_code(language.code)}.svg", class: 'mx-2')
+                  span= language.name
+          hr
+          .d-flex.justify-content-between
+            button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+              = t('school.team_students.index.clear')
+            button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+              = t('save')
+      .btn-group.custom-dropdown.ml-2.level-by-filter
+        = f.hidden_field :level_include, class: 'filter-values'
+        button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+          span.mr-2= t('shared.level')
+          i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-left.mt-1.p-3
+          - Lesson.levels_for_target_language.each do |detail, level|
+            .custom-control.custom-checkbox.mb-3
+              input.custom-control-input.language-select type='checkbox' id="#{level}_check" data-filter-val="#{level}"
+              label.custom-control-label.d-flex.align-items-center for="#{level}_check"
+                strong.ml-2.mr-1
+                  = detail
+          hr
+          .d-flex.justify-content-between
+            button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+              = t('school.team_students.index.clear')
+            button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+              = t('save')
+    .school-info-sort
+      .dropdown-toggle.cursor-pointer data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+        span.mr-2.selected-sort-item = t('school.teachers.list.by_name_az')
+        i.fa.fa-angle-down
+      .dropdown-menu.dropdown-menu-right.mt-1.p-0
+        .custom-filter-item.px-3.pb-2.pt-3 data-filter-by='created_at desc'
+          button.d-flex.justify-content-between.align-items-center.border-0.w-100
+            = sort_link(@search, 'created_at desc', t('school.teachers.list.by_last_added'))
+            i.fa.fa-check.active-check.mr-2.color-transparent
+        .custom-filter-item.px-3.filter-item-active data-filter-by='name asc'
+          button.d-flex.justify-content-between.align-items-center.border-0.w-100
+            = sort_link(@search, 'name asc', t('school.teachers.list.by_name_az'))
+            i.fa.fa-check.active-check.mr-2.color-transparent
+        .custom-filter-item.px-3.pt-2.pb-3 data-filter-by='name desc'
+          button.d-flex.justify-content-between.align-items-center.border-0.w-100
+            = sort_link(@search, 'name desc', t('school.teachers.list.by_name_za'))
+            i.fa.fa-check.active-check.mr-2.color-transparent

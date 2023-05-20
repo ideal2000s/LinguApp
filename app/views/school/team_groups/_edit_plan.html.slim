@@ -1,0 +1,18 @@
+.modal-dialog.modal-edit-plan role="document" data-controller="school-license"
+  .modal-content
+    .modal-header
+      h5.modal-title = t('.new_license_for_group')
+      button.close.text-right type="button" data-dismiss="modal" aria-label="Close"
+        span.font-weight-light aria-hidden="true" == ("&times")
+    .modal-body
+      = form_with url: update_plan_school_team_group_path(team_group), data: { remote: false }, method: :put do |f|
+        - plans.each do |plan|
+          .d-flex.align-items-center.justify-content-between.cursor-pointer.plan-panel data-value="#{plan.id}" data-target="school-license.planItem" data-action="click->school-license#planSelected"
+            .license-content.license-overflow
+              p.license-label.license-overflow= plan.name
+              span.expire-label
+            i.fa.fa-check.d-none.mr-2.active_check
+        = hidden_field_tag 'plan_id', '', data: {target: 'school-license.activePlanInput'}
+        .d-flex.justify-content-between.action-group.mt-4
+          = f.submit t('common.buttons.save'), class: 'btn btn-primary ml-2 flex-fill'
+          button.btn.btn-light.flex-fill type='button' data-dismiss="modal" = t('shared.cancel')

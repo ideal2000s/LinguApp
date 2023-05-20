@@ -1,0 +1,613 @@
+---
+ps:
+  course_mailer:
+    course_assigned_notification:
+      button: کورس پیل کړئ
+      click_start_lesson: د 'درس پیل' کلیک وکړئ
+      follow_course_link: د کورس خلاصولو لپاره ت theۍ کلیک وکړئ
+      footer_text: ژبې ته بیرته راشئ ترڅو هره ورځ یو څه نوي زده کړئ!
+      get_started_line: 'دلته د پیل کولو څرنګوالی دی:'
+      notification_link: د خبرتیا امستنې
+      open_lesson: لومړی درس خلاص کړئ
+      or_paste_this_link: یا دا لینک په خپل براوزر کې پیسټ کړئ
+      sign_in_with_email: د خپل بریښنالیک پتې (%{email}) سره ننوتل
+      support_link: ملاتړ
+      title: د %{course} سره پیل کول
+    new_document_comment:
+      author_text: "%{author} ستاسو د ګمارنې بیاکتنه پریښوده"
+      button_text: ویې ګوره
+      button_url_helper: 'یا دا لینک په خپل براوزر کې پیسټ کړئ:'
+      footer_text: د زده کړې لپاره نور ډیر څه شتون لري ...
+      notification_link: د خبرتیا امستنې
+      subject_line: نوی ټاکل شوی تفسیر
+      support_link: ملاتړ
+    otp:
+      ignore_msg: که تاسو دا غوښتنه نه وي کړې ، یوازې بریښنالیک ته پام وکړئ.
+      subject_line: ستاسو د ژبې لپاره ځانګړی کوډ
+      unique_code_for_lingu: دلته ستاسو د ژبې لپاره ځانګړي کوډ شتون لري
+  frontend:
+    auth:
+      already_have_acc_question: دمخه یو حساب لرئ؟
+      back: شاته
+      back_to_sign_in: بېرته ننوتل
+      check_your_email_for_a_code: د خپل کوډ لپاره خپل بریښنالیک وګورئ
+      continue: دوام ورکړئ
+      continue_with_email: د بریښنالیک سره دوام ورکړئ
+      continue_with_provider: د %{provider} سره دوام ورکړئ
+      did_not_receive_a_code: کوډ نه دی ترلاسه کړی؟
+      email_address: بریښنالیک
+      first_name: اول نوم
+      get_unique_code: د ننوتلو ځانګړی کوډ ترلاسه کړئ
+      join_lingu: په ژبو کې ګډون وکړئ
+      last_name: تخلص
+      more_login_options: د ننوتلو نور اختیارونه
+      no_account_question: ګ ؟ون نه لری؟
+      or: یا
+      resend_code: کوډ بیا ولېږئ
+      sign_in: ننوزئ
+      sign_up: ګډون کول
+      want_to_receive_marketing_messages: زه غواړم د Lingu څخه د بازارموندنې پیغامونه
+        ترلاسه کړم
+      we_ve_sent_a_code: >-
+        موږ {عددي کوډ </ strong> {{بریښنالیک}} </ strong> ته استولی دی. کوډ په 15
+        دقیقو کې پای ته رسي ، نو مهرباني وکړئ ژر یې دننه کړئ.
+    cookie_agreement:
+      agree: موافق دی
+      condition: >-
+        موږ د سایټ فعالیت تحلیل کولو او شخصي کولو مینځپانګې وړاندې کولو لپاره کوکیز
+        کاروو. د "موافق" کلیک کولو سره ، تاسو زموږ شرایطو ته موافق یاست.
+    course:
+      accredited_course_provider: د اعتبار وړ کورس چمتو کونکی
+      apply: غوښتنه وکړئ
+      apply_filters: فلټرونه تطبیق کړئ
+      by: لخوا
+      cancel: لغوه کول
+      categories: "%{count} کټګورۍ"
+      category: کټګورۍ
+      clear: پاک
+      clear_filters: فلټرونه پاک کړئ
+      contact_us: موږ سره اړیکه ونیسئ
+      could_not_find_match_for: بښنه غواړو ، موږ لپاره هیڅ جوړه نشو موندلی
+      course_language: د کورس ژبه
+      duration: دوره
+      filter_settings:
+        categories:
+          academic: علمي
+          business: سوداګري
+          fashion: فیشن
+          food_drink: خواړه او څښل
+          for_kids: د ماشومانو لپاره
+          general: عمومي
+          health: روغتیا
+          legal: قانوني
+          sport: سپورت
+          travel: سفر
+        durations:
+          t0_600: "<10 دقیقې"
+          t1800_3600: 30-60 دقیقې
+          t3600_86400: 1+ ساعت
+          t600_1800: 10-30 دقیقې
+        focus_on:
+          conversation: خبرې اترې
+          grammar: ګرامر
+          listening: اورېدل
+          pronunciation: تلفظ
+          reading: لوستل
+          speaking: خبری کوی
+          writing: لیکنه
+        levels:
+          long:
+            advanced: پرمختللې کچه
+            elementary: ابتدایی کچه
+            intermediate: منځمهاله کچه
+            no_knowledge: نه پوهه
+            pre_intermediate: د مینځنۍ دورې نه مخکې
+            upper_intermediate: د منځنۍ کچې کچه
+          short:
+            advanced: پرمختللی
+            beginner: نوښتګر
+            intermediate: منځمهاله
+        sort_by:
+          most_rated: ډیر ارزښت لري
+          newest: نوی
+          popularity: شهرت
+      filters: فلټرونه
+      focus_on: تمرکز وکړئ
+      focus_on_title: زه غواړم چې تمرکز وکړم
+      hide_lessons: درسونه پټ کړئ
+      hours: ساعتونه
+      i_understand: زه پوهیږم
+      i_want_to_learn: زه غواړم زده کړه وکړم
+      in_language: په %{language} کې
+      language: ژبه
+      learn_more: نور زده کړئ
+      less_settings: لږ امستنې
+      lessons: درسونه
+      lessons_available: "%{number} درسونه شتون لري"
+      lessons_catalog_page_subtitle: د ژبې اتل شئ.
+      lessons_catalog_page_title: خپل افقونه د ژبې کورس سره پراخه کړئ
+      level: کچه
+      min: من
+      more_settings: نور امستنې
+      navbar:
+        close: غورنۍ بند کړئ
+        menu: مینو
+        select_language: ژبه غوره کړئ
+      need_to_buy_course: تاسو اړتیا لرئ لومړی یو کورس بوک کړئ
+      no_description: توضیحات ندي ورکړل شوي
+      no_results: بښنه غواړو ، موږ لپاره هیڅ جوړه نشو موندلی
+      or: یا
+      per_month: هره میاشت
+      plans: پلانونه
+      privacy_policy: د پټتیا تګلاره
+      rating: درجه ورکول
+      remove_all_filters: ټول فلټرونه لرې کړئ
+      reviews: بیاکتنې
+      save: خوندي کړئ
+      search: لټون
+      select_dots: وټاکئ ...
+      select_languages: لانګوجونه غوره کړئ
+      select_num_languages: "%{number} ژبې غوره کړئ"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: ټول ښکاره کړه
+      show_all_lessons: ټول درسونه وښایاست
+      show_lessons: د %{number} درسونه ښودل
+      show_more: نور وښیه
+      sign_up_with_lingu_for: لپاره د لینگو ناروې سره لاسلیک وکړئ
+      skills: "%{count} مهارتونه"
+      sort_by: ترتیب یی کړه په
+      start_typing_here: دلته ټایپ کول پیل کړئ
+      teach: ښوونه
+      terms_and_conditions: شرایط او مقررات
+      time_range: د وخت لړ
+      try_adjusting_your_search: د خپل فلټرونو بدلولو سره خپل لټون تنظیم کولو هڅه
+        وکړئ
+      try_this_course: پدې کورس کې هڅه وکړئ
+      website_language: د ویب پا languageې ژبه
+      words: ټکي
+    games:
+      finished:
+        go_to_next_exercise: ډیر ښه! راتلونکي تمرین ته لاړشئ
+      flashcard:
+        buttons:
+          finish: پای
+          next: بل
+          previous: تېر
+        check_out_new_words: نوي ټکي چیک کړئ چې تاسو به پدې لوست کې زده کړئ
+        frequency_of_word_usage: په %{language} کې د ټکي کارولو فریکوینسي
+        keep_practice_to_learn_all_words: د %{count} ټکي بیاکتنه وکړئ او راځئ چې ځینې
+          لوبې وکړو!
+        word_frequency:
+          level1: په ندرت سره کارول کیږي
+          level2: په ندرت سره کارول کیږي
+          level3: د کلمې فریکوینسي - منځنۍ
+          level4: د کلمې فریکوینسي - منځنۍ
+          level5: عام
+          level6: ډیر عام
+      match_word:
+        click_and_move_each_word_to_counterpart: هر کلمه خپل سیال ته کلیک او حرکت
+          کړئ
+        start_heading: ټکي د جوړه کولو لپاره ولیکئ
+        time_is_up: د وخت وخت!
+      skip_tutorial: پرېښودل
+      time_is_up: د وخت وخت!
+      word_nodes:
+        match_letters_to_form_word: د ټکي د جوړولو لپاره توري سره برابر کړئ
+      word_waterfall:
+        do_not_hesitate: راځئ چې ګړندی شو!
+        go_to_next_exercise: راتلونکي تمرین ته لاړشئ
+        select_correct_translation: سمه لوبه وټاکئ
+        well_done: ډیر ښه!
+    home_page:
+      hello: سلام،
+      popular_lessons: مشهور درسونه
+      show_more: نور وښیه
+      time: "%{count} دقیقې"
+      today_lesson: د نن ورځې لپاره ستاسو درس
+      user_name: "%{name}!"
+      words: "%{count} ټکي"
+    idle_screen:
+      by_author: د %{authorName} لخوا
+      continue_lesson: لوست ته دوام ورکړئ
+      exit: وتون
+      idle_message: تاسو د یو څه وخت لپاره بیکاره اوسئ ...
+    lesson_page:
+      back_to_course_page: بېرته د کورس پا toې ته
+      close: بندول
+      continue_lesson: لوست ته دوام ورکړئ
+      followed: تعقیب شوی
+      hamburger_menu_btn: د هامبرګر مینو
+      lesson_given: درسونه
+      not_started: ندی پیل شوی
+      or: یا
+      part_complete: "%{percent}٪ بشپړ"
+      restart_lesson: بیا روښانه کول
+      section_check: چیک
+      section_check_info: "%{count} ازموینې"
+      section_learn: زده کړه
+      section_learn_info: "%{count} دقیقې د لیدو او لوستلو لپاره"
+      section_play: لوبه وکړه
+      section_play_info: د عمل کولو لپاره %{count} ټکي
+      start_lesson: لوست پیل کړئ
+      step_progress: "%{percent}٪"
+      subscribe: تعقیب کړئ
+      subscribed: تعقیب شوی
+      subscribers: پلویان
+      time_min: "%{minutesNumber} دقیقې"
+      unsubscribe: بې لارې کول
+      webview_error_title: کومه تیروتنه وشوه...
+      words_number: "%{wordsNumber} نوې ټکي"
+    lesson_task:
+      cancel_button: لغوه کول
+      check:
+        navigation_next: بل
+        navigation_previous: تېر
+        navigation_skip: پرېښودل
+      controls_panel:
+        font_size_button: د لیکب .ې اندازه
+        high_contrast_button:
+          origin: لوړ تناقض
+          short: برعکس
+        hints_button: اشارې
+        music_playback_button:
+          origin: د موسیقی غږ
+          short: میوزیک
+        sound_effects_button:
+          origin: غږ اغیزې
+          short: غږ
+      exit_button: وتون
+      finish_button: پای
+      finished:
+        back_to_learn: بېرته زده کړې ته
+        back_to_lesson_page: بېرته درسي پا pageې ته
+        back_to_results_page: بیرته د پا pageې پا Backه
+        bad_result_message: حم ... هڅه وکړئ یوځل بیا درس واخلئ
+        close_lesson: درس بند کړئ
+        correct_answers_list: د سم ځوابونو لیست
+        good_result_message: زه وینم چې تاسو یوه هڅه کړې!
+        great_result_message: ډیر ښه! دا عالي پایلې دي!
+        next_course_lesson: په راتلونکي کې درس ته لاړشئ
+        no_results: تاسو تراوسه د ازموینې پایلې نه لرئ
+        no_results_text: مهرباني وکړئ درس بشپړ کړئ او د پایلو ترلاسه کولو لپاره ازموینه
+          تیره کړئ
+        see_correct_answers_list: د سم ځوابونو لیست وګورئ
+        train_more: ډیر تمرین وکړئ او بل ځل به تاسو ښې پایلې ترلاسه کړئ!
+        you_finished_lesson: غوره! تاسو درس ختم کړ
+      go_back: بيرته لاړ شه
+      next_button: بل
+      not_available_task: دا دنده لاهم شتون نلري
+      start_button: پیل
+      tasks:
+        check:
+          assignment:
+            accept: ومنه
+            author_will_check_your_answer: >-
+              %{author} به ستاسو ځواب بیاکتنه وکړي او عموما د 1-2 ورځو په اوږدو کې
+              خپل نظر ورکړي
+            continue_writing: لیکلو ته دوام ورکړئ
+            copy: کاپي
+            delete: ړنګول
+            delete_record: ریکارډ حذف کړئ
+            edit: سمول
+            essay_does_not_have_enough_words: >-
+              ستاسو ځواب باید لږترلږه %{minWordsNumber} ټکي ولري. ستاسو ځواب دا مهال
+              %{currentWordsNumber} ټکي دي.
+            followers_count: "%{followersCount} پیروان"
+            lessons_count: "%{lessonsCount} درسونه"
+            minimal_recording_time: د ثبت کولو لږترلږه وخت - %{minimalRecordingTime}
+            minimum_characters_amount: لږترلږه حروف - %{minimumCharactersAmount}
+            minimum_words_amount: لږترلږه ټکي - %{minimumAmount}
+            record_again: بیا ثبت کړئ
+            record_voice: غږ ثبت کړئ
+            send_anyway: بیا هم ولېږئ
+            send_to_review: بیاکتنې ته واستوئ
+            skip: پرېښودل
+            too_short_answer: ډیر لنډ ځواب
+            type_your_answer: خپل ځواب ولیکئ
+            unknown_task_type: د نامعلوم ډول ډول
+            upgrade_licence: د جواز لوړول
+            upgrade_your_plan: د ښوونکو بیاکتنو سره د دندې هڅه کولو لپاره خپل پلان
+              لوړ کړئ
+            upload_files: فایلونه اپلوډ کړئ
+            write_essay: مقاله ولیکئ
+            you_have_used_amount_of_assignments: تاسو د %{amountOfAssignments} تفویض
+              کریډیټ کارولی
+          fill_in_blanks:
+            sentence_gap: د جملې تشه
+          fill_in_table:
+            column_answer_placeholder: ځواب
+            column_question_placeholder: پوښتنه
+            example: مثال
+          true_false:
+            'false': غلط
+            'true': ریښتیا
+        learn:
+          translatable_text:
+            show_original: اصلي ښودل
+            translate_into: ګوګل سره %{languageName} کې وژباړئ
+            translate_into_your_lang: ګوګل سره خپلې ژبې ته وژباړئ
+        play:
+          arrange_words:
+            start_screen:
+              heading: د ورکړل شویو جملو څخه یوه جمله جوړه کړئ
+          audition:
+            start_screen:
+              heading: آډیو ته غوږ شئ او په هغه کلمه چې تاسو یې واوریدل ټیپ کړئ
+          dictation:
+            get_help: مرسته ترلاسه کړئ
+            i_do_not_know: زه نه پوهیږم
+            input_placeholder: هغه څه چې تاسو دلته واورئ داخل کړئ
+            start_screen:
+              heading: هغه څه واورئ او ولیکئ چې تاسو یې اورئ
+          fill_gap:
+            start_screen:
+              heading: د ټکي او معنی سره مسابقه وکړئ
+          finish_screen:
+            go_to_next_exercise: ډیر ښه! راتلونکي تمرین ته لاړشئ
+          image_hotspot:
+            start_screen:
+              heading: په انځور کې شیان په سم ډول وټاکئ
+          image_object:
+            start_screen:
+              heading: له راتلونکي انځور څخه سم شی وټاکئ
+          inline_dropdown:
+            start_screen:
+              heading: هغه ټکي غوره کړئ چې له جملې سره ورته وي
+          mark_word:
+            start_screen:
+              heading: متن ولولئ او هغه کلمه وټاکئ چې د عکس سره سمون خوري
+          minimal_pairs:
+            start_screen:
+              heading: ویډیو وګورئ او سم انتخاب غوره کړئ
+    locale:
+      currency_switcher_title: د اسعارو بدلونکی
+      lang_switcher_title: ژبه ژبه
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: دویچ
+        el: Greek
+        en: انګلیسي
+        eo: Esperanto
+        es: ایسپول
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: فرانسس
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ایټالیو
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: لتویو ویلډا
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: نورسک
+        ne: Nepali
+        nl: نیډرلینډز
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: پولسکي
+        ps: Pashto
+        pt: پرتګالي
+        ro: لیما română
+        ru: к кык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: اف سومالی
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: کیسو واله
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: آډیو پورته کیږي
+        aria_pause_button: وقفه
+        aria_play_button: لوبه وکړه
+        aria_reload_button: بیا ولولئ
+        aria_stop_button: درېدل
+        reload_message: >-
+          د آډیو په پورته کولو کې پاتې راغی. مهرباني وکړئ بیا د پورته کولو لپاره ت
+          buttonۍ کښیکاږئ
+    mobile_modal:
+      apply: غوښتنه وکړئ
+      cancel: لغوه کول
+      clear: پاک
+      save: خوندي کړئ
+    page404:
+      goToStartLessonPage: د پیل درس پا toې ته لاړشئ
+      ooops: اوه ...
+      sorry_message: بښنه غواړو ، تور دا پا pageه ونه موندله
+    profile:
+      navigation:
+        log_out: وتل
+        my_profile: زما پېژنيال
+        settings: امستنې
+      onboarding:
+        choose_native_language: خپله اصلي ژبه یا هغه ژبه غوره کړئ چې تاسو پرې پوهیږئ
+        do_you_understand_english: ایا ته په انګلیسي پوهیږې؟
+        hello: سلام
+        language_levels:
+          a1: ابتدایی کچه
+          a2: د منځنۍ دورې نه مخکې
+          b1: منځمهاله کچه
+          b2: د منځنۍ کچې کچه
+          c1: پرمختللې کچه
+          no_knowledge: نه پوهه
+        language_not_supported:
+          note: موږ به تاسو ته خبر درکړو څومره ژر چې ژبه شتون ولري
+          title: بښنه غواړو ، مګر موږ لاهم د دې ژبې ملاتړ نه کوو
+          try_another_language: بله ژبه هڅه وکړئ
+        'no': نه
+        search_placeholder: لټون ...
+        show_more_languages: نورې ژبې
+        target_language_question: تاسو کومه ژبه زده کول غواړئ؟
+        what_is_language_level: تاسو به د خپل %{languageName} کچه درجه څنګه کوئ؟
+        'yes': هو
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: د ژبې د محرمیت تګلاره
+        support: ملاتړ
+      logout: وتل
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: د ښوونکو او ښوونځیو تازه معلومات ترلاسه کړئ چې تاسو یې
+                تعقیب کوئ
+              sections:
+                app_notifications: د اپلیکیشن خبرتیاوې
+                email: بریښنالیک
+              title: د زده کړې مرستې
+            marketing:
+              description: د ژبې څخه د ټولو هڅونو ، تازه معلوماتو ، او الهام په اړه
+                خبر اوسئ
+              sections:
+                browser_notifications: د لټونګر خبرتیاوې
+                email: بریښنالیک
+              title: بازارموندنه
+          title: د اړیکې غوره توبونه
+        personal_information:
+          delete_photo: عکس ړنګ کړئ
+          email: بریښنالیک
+          first_name: اول نوم
+          last_name: تخلص
+          social_accounts:
+            connected: پیوست شو
+            facebook: فېسبوک
+            google: Google
+            microsoft: مایکروسافټ
+            not_connected: ندی تړلی
+            title: ټولنیز حسابونه
+          title: شخصي معلومات
+          update_photo: عکس تازه کړئ
+        school:
+          active_licence: چارنده جواز
+          active_status: چارند
+          delete_profile: زما پروفایل حذف کړئ
+          delete_profile_modal:
+            body: |-
+              تاسو خپل ټول معلومات - د تل لپاره ختم کړئ. دلته هیڅ نه کړکۍ ت buttonۍ شتون نلري ، او موږ یې وروسته ستاسو لپاره نشو ترلاسه کولی.
+              ایا تاسو باوري یاست چې غواړئ د تل لپاره د خپل لینگو پروفایل او خپل ټول معلومات حذف کړئ؟
+            cancel: لغوه کول
+            confirm: هو ، دا حذف کړئ
+            i_understand_the_consequences: زه په پایلو پوهیږم
+            title: خپل پروفایل حذف کړئ؟
+          expired: ختم شوی %{expire_date}
+          expires: "%{expire_date} پای ته رسي"
+          inactive_status: غیر فعال
+          revoke_access: د لوستلو لاسرسی رد کړئ
+          sections:
+            contact_school: د ښوونځي سره اړیکه
+            export_my_data: زما ډاټا صادر کړئ
+            read_school_privacy_policy: د ښوونځي د محرمیت تګلاره ولولئ
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: د موسیقی غږ
+              sound_effects: غږ اغیزې
+              title: غږ
+            visual:
+              dark_theme: تیاره موضوع
+              font_size:
+                test_text: واښه تل د کندې په بل اړخ کې شین وي
+                title: د لیکب .ې اندازه
+              high_contrast: لوړ تناقض
+              hints: اشارې
+              title: لید
+          title: غږ او لید
+        training_settings:
+          sections:
+            i_understand: زه پوهیږم
+            i_want_to_learn: زه غواړم زده کړه وکړم
+            target_language_level: انګلیسي کچه
+          title: د روزنې تنظیمات
+      settings_title: امستنې
+    teacher_card:
+      followers_count:
+        one: follow پیروي کونکی
+        other: "%{count} پیروان"
+      lessons_count:
+        one: 1 درس
+        other: "%{count} درسونه"

@@ -1,0 +1,622 @@
+---
+fr:
+  course_mailer:
+    course_assigned_notification:
+      button: Commencer le cours
+      click_start_lesson: Cliquez sur "Démarrer le cours"
+      follow_course_link: Cliquez sur le bouton pour ouvrir le cours
+      footer_text: Revenez à Lingu pour apprendre quelque chose de nouveau chaque
+        jour!
+      get_started_line: 'Voici comment commencer:'
+      notification_link: Paramètres de notification
+      open_lesson: Ouvrez la première leçon
+      or_paste_this_link: ou collez ce lien dans votre navigateur
+      sign_in_with_email: Connectez-vous avec votre adresse e-mail (%{email})
+      support_link: Soutien
+      title: Premiers pas avec %{course}
+    new_document_comment:
+      author_text: "%{author} a laissé un avis sur votre mission"
+      button_text: Vérifiez-le
+      button_url_helper: 'ou collez ce lien dans votre navigateur:'
+      footer_text: Il y a encore beaucoup à apprendre ...
+      notification_link: Paramètres de notification
+      subject_line: Nouveau commentaire sur le devoir
+      support_link: Soutien
+    otp:
+      ignore_msg: Si vous n'avez pas fait cette demande, ignorez simplement l'e-mail.
+      subject_line: Votre code unique pour Lingu
+      unique_code_for_lingu: Voici votre code unique pour Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Vous avez déjà un compte?
+      back: Retour
+      back_to_sign_in: Retour à la connexion
+      check_your_email_for_a_code: Vérifiez votre email pour votre code
+      continue: Continuer
+      continue_with_email: Continuer avec l'email
+      continue_with_provider: Continuez avec %{provider}
+      did_not_receive_a_code: Vous n'avez pas reçu de code?
+      email_address: Adresse e-mail
+      first_name: Prénom
+      get_unique_code: Obtenez un code de connexion unique
+      join_lingu: Rejoignez Lingu
+      last_name: Nom de famille
+      more_login_options: Plus d'options de connexion
+      no_account_question: Vous n'avez pas de compte?
+      or: ou
+      resend_code: Renvoyer le code
+      sign_in: se connecter
+      sign_up: S'inscrire
+      want_to_receive_marketing_messages: Je souhaite recevoir des messages marketing
+        de Lingu
+      we_ve_sent_a_code: >-
+        Nous avons envoyé un code à 6 chiffres à <strong> {{email}} </strong>. Le
+        code expire dans 15 minutes, veuillez donc le saisir bientôt.
+    cookie_agreement:
+      agree: Se mettre d'accord
+      condition: >-
+        Nous utilisons des cookies pour analyser les performances du site et fournir
+        un contenu personnalisé. En cliquant sur «J'accepte», vous acceptez nos conditions.
+    course:
+      accredited_course_provider: Fournisseur de cours accrédité
+      apply: Appliquer
+      apply_filters: Appliquer des filtres
+      by: Par
+      cancel: Annuler
+      categories: "%{count} catégories"
+      category: Catégorie
+      clear: Clair
+      clear_filters: Effacer les filtres
+      contact_us: Nous contacter
+      could_not_find_match_for: Désolé, nous n'avons trouvé aucune correspondance
+        pour
+      course_language: Langue du cours
+      duration: Durée
+      filter_settings:
+        categories:
+          academic: Académique
+          business: Affaires
+          fashion: Mode
+          food_drink: Nourriture boisson
+          for_kids: Pour les enfants
+          general: Général
+          health: Santé
+          legal: Légal
+          sport: sport
+          travel: Voyage
+        durations:
+          t0_600: "<10 minutes"
+          t1800_3600: 30 à 60 minutes
+          t3600_86400: 1+ heure
+          t600_1800: 10 à 30 minutes
+        focus_on:
+          conversation: Conversation
+          grammar: Grammaire
+          listening: Écoute
+          pronunciation: Prononciation
+          reading: En train de lire
+          speaking: Parlant
+          writing: L'écriture
+        levels:
+          long:
+            advanced: Niveau avancé
+            elementary: Niveau élémentaire
+            intermediate: Niveau intermédiaire
+            no_knowledge: Pas de connaissances
+            pre_intermediate: Niveau pre-intermédiaire
+            upper_intermediate: Niveau intermédiaire supérieur
+          short:
+            advanced: Avancée
+            beginner: Débutant
+            intermediate: Intermédiaire
+        sort_by:
+          most_rated: Les plus notés
+          newest: Plus récent
+          popularity: Popularité
+      filters: Filtres
+      focus_on: Se concentrer sur
+      focus_on_title: Je veux me concentrer sur
+      hide_lessons: Masquer les leçons
+      hours: Heures
+      i_understand: je comprends
+      i_want_to_learn: je veux apprendre
+      in_language: dans %{language}
+      language: Langue
+      learn_more: Apprendre encore plus
+      less_settings: Moins de paramètres
+      lessons: Cours
+      lessons_available: "%{number} leçons disponibles"
+      lessons_catalog_page_subtitle: Cours en ligne pour parler couramment et en toute
+        confiance
+      lessons_catalog_page_title: Apprenez les langues facilement et efficacement
+        avec Lingu
+      level: Niveau
+      min: Min
+      more_settings: Plus de réglages
+      navbar:
+        close: Fermer le menu
+        menu: Menu
+        select_language: Choisir la langue
+      need_to_buy_course: Vous devez d'abord réserver un cours
+      no_description: Aucune description fournie
+      no_results: Désolé, nous n'avons trouvé aucune correspondance pour
+      or: ou
+      per_month: par mois
+      plans: Des plans
+      privacy_policy: Politique de confidentialité
+      rating: Évaluation
+      remove_all_filters: Supprimer tous les filtres
+      reviews: Commentaires
+      save: sauver
+      search: Chercher
+      select_dots: Sélectionner...
+      select_languages: Sélectionnez les langues
+      select_num_languages: Sélectionnez les langues %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Afficher tout
+      show_all_lessons: Afficher toutes les leçons
+      show_lessons: Afficher les leçons %{number}
+      show_more: Montre plus
+      sign_up_with_lingu_for: Inscrivez-vous avec Lingu Norway pour
+      skills: compétences %{count}
+      sort_by: Trier par
+      start_typing_here: Commencez à taper ici
+      teach: Enseigner
+      terms_and_conditions: Termes et conditions
+      time_range: Intervalle de temps
+      try_adjusting_your_search: Essayez d'ajuster votre recherche en modifiant vos
+        filtres
+      try_this_course: Essayez ce cours
+      website_language: Langue du site Web
+      words: Mots
+    games:
+      finished:
+        go_to_next_exercise: Bien joué! Passez à l'exercice suivant
+      flashcard:
+        buttons:
+          finish: terminer
+          next: Prochain
+          previous: précédent
+        check_out_new_words: Découvrez les nouveaux mots que vous apprendrez dans
+          cette leçon
+        frequency_of_word_usage: Fréquence d'utilisation des mots dans %{language}
+        keep_practice_to_learn_all_words: Passez en revue les mots %{count} et jouons
+          à quelques jeux!
+        word_frequency:
+          level1: Rarement utilisé
+          level2: Rarement utilisé
+          level3: Fréquence des mots - moyenne
+          level4: Fréquence des mots - moyenne
+          level5: Commun
+          level6: Très commun
+      match_word:
+        click_and_move_each_word_to_counterpart: Cliquez et déplacez chaque mot vers
+          son homologue
+        skip_tutorial: Hopp over
+        start_heading: Faites correspondre les mots pour former une paire
+        time_is_up: Opp med farta!
+      skip_tutorial: Sauter
+      time_is_up: Le temps est écoulé!
+      word_nodes:
+        match_letters_to_form_word: Faites correspondre les lettres pour former un
+          mot
+      word_waterfall:
+        do_not_hesitate: Accélérons!
+        go_to_next_exercise: Passez à l'exercice suivant
+        select_correct_translation: Sélectionnez la correspondance correcte
+        well_done: Bien joué!
+    home_page:
+      hello: Bonjour,
+      popular_lessons: Cours populaires
+      show_more: Montre plus
+      time: "%{count} min"
+      today_lesson: Votre leçon pour aujourd'hui
+      user_name: "%{name}!"
+      words: "%{count} mots"
+    idle_screen:
+      by_author: par %{authorName}
+      continue_lesson: Continuer la leçon
+      exit: Sortie
+      idle_message: Vous êtes inactif depuis un certain temps ...
+    lesson_page:
+      back_to_course_page: Retour à la page du cours
+      close: Fermer
+      continue_lesson: Continuer la leçon
+      followed: Suivi
+      hamburger_menu_btn: Menu hamburger
+      lesson_given: cours
+      not_started: pas commencé
+      or: Ou
+      part_complete: "%{percent}% terminé"
+      restart_lesson: Redémarrer
+      section_check: Vérifier
+      section_check_info: tests %{count}
+      section_learn: Apprendre
+      section_learn_info: "%{count} min pour regarder et lire"
+      section_play: Jouer
+      section_play_info: "%{count} mots à pratiquer"
+      start_lesson: Commencer le cours
+      step_progress: "%{percent}%"
+      subscribe: Suivre
+      subscribed: Suivi
+      subscribers: suiveurs
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Se désabonner
+      webview_error_title: Une erreur s'est produite ...
+      words_number: "%{wordsNumber} nouveaux mots"
+    lesson_task:
+      cancel_button: Annuler
+      check:
+        navigation_next: Prochain
+        navigation_previous: précédent
+        navigation_skip: Sauter
+      controls_panel:
+        font_size_button: Taille de police
+        high_contrast_button:
+          origin: Contraste élevé
+          short: Contraste
+        hints_button: Astuces
+        music_playback_button:
+          origin: Lecture de musique
+          short: La musique
+        sound_effects_button:
+          origin: Effets sonores
+          short: Du son
+      exit_button: Sortie
+      finish_button: terminer
+      finished:
+        back_to_learn: Retour pour apprendre
+        back_to_lesson_page: Retour à la page du cours
+        back_to_results_page: Retour sur la page de résultats
+        bad_result_message: Hmm ... essaie de reprendre la leçon une fois de plus
+        close_lesson: Fermer la leçon
+        correct_answers_list: Liste des réponses correctes
+        good_result_message: Je vois que tu as fait un effort!
+        great_result_message: Bien joué! Ce sont d'excellents résultats!
+        next_course_lesson: Aller à la prochaine leçon du cours
+        no_results: Vous n'avez pas encore de résultats de test
+        no_results_text: S'il vous plaît, terminez la leçon et passez le test pour
+          obtenir les résultats
+        see_correct_answers_list: Voir la liste des bonnes réponses
+        train_more: Pratiquez davantage et vous obtiendrez de meilleurs résultats
+          la prochaine fois!
+        you_finished_lesson: Génial! Vous avez terminé la leçon
+      go_back: Retourner
+      next_button: Prochain
+      not_available_task: Cette tâche n'est pas encore disponible
+      start_button: Début
+      tasks:
+        check:
+          assignment:
+            accept: J'accepte
+            author_will_check_your_answer: >-
+              %{author} passera en revue votre réponse et donnera généralement des
+              commentaires dans les 1-2 jours
+            continue_writing: Continuez à écrire
+            copy: Copie
+            delete: Effacer
+            delete_record: Supprimer l'enregistrement
+            edit: Éditer
+            essay_does_not_have_enough_words: >-
+              Votre réponse doit contenir au moins %{minWordsNumber} mots. Votre réponse
+              est actuellement de %{currentWordsNumber} mots.
+            followers_count: "%{followersCount} abonné"
+            lessons_count: "%{lessonsCount} leçons"
+            minimal_recording_time: Durée d'enregistrement minimale - %{minimalRecordingTime}
+            minimum_characters_amount: Caractères minimum - %{minimumCharactersAmount}
+            minimum_words_amount: Mots minimum - %{minimumAmount}
+            record_again: Enregistrer à nouveau
+            record_voice: Enregistrer la voix
+            send_anyway: Envoyez quand même
+            send_to_review: Envoyer pour examen
+            skip: Sauter
+            too_short_answer: Réponse trop courte
+            type_your_answer: Tapez votre réponse
+            unknown_task_type: Type de tâche inconnu
+            upgrade_licence: Licence de mise à niveau
+            upgrade_your_plan: >-
+              Mettez à niveau votre plan pour essayer les devoirs avec les avis des
+              enseignants
+            upload_files: Télécharger des fichiers
+            write_essay: Rédiger un essai
+            you_have_used_amount_of_assignments: Vous avez utilisé les crédits d'affectation
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Écart de phrase
+          fill_in_table:
+            column_answer_placeholder: Répondre
+            column_question_placeholder: Question
+            example: Exemple
+          true_false:
+            'false': Faux
+            'true': Vrai
+        learn:
+          translatable_text:
+            show_original: Afficher l'original
+            translate_into: Traduire avec Google en %{languageName}
+            translate_into_your_lang: Traduisez avec Google dans votre langue
+        play:
+          arrange_words:
+            start_screen:
+              heading: Faites une phrase à partir des mots donnés
+          audition:
+            start_screen:
+              heading: Écoutez l'audio et appuyez sur le mot que vous venez d'entendre
+          dictation:
+            get_help: Obtenir de l'aide
+            i_do_not_know: Je ne sais pas
+            input_placeholder: Entrez ce que vous avez entendu ici
+            start_screen:
+              heading: Écoutez et écrivez ce que vous entendez
+          fill_gap:
+            start_screen:
+              heading: Faites correspondre le mot et sa signification
+          finish_screen:
+            go_to_next_exercise: Bien joué! Passez à l'exercice suivant
+          image_hotspot:
+            start_screen:
+              heading: Nommez correctement les objets de l'image
+          image_object:
+            start_screen:
+              heading: Choisissez le bon objet de l'image suivante
+          inline_dropdown:
+            start_screen:
+              heading: Choisissez les mots qui correspondent à la phrase
+          mark_word:
+            start_screen:
+              heading: Lisez le texte et sélectionnez le mot qui correspond à l'image
+          minimal_pairs:
+            start_screen:
+              heading: Regardez la vidéo et sélectionnez la bonne option
+    locale:
+      currency_switcher_title: Commutateur de devises
+      lang_switcher_title: Changeur de langue
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Anglais
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: L'audio est en cours de chargement
+        aria_pause_button: Pause
+        aria_play_button: Jouer
+        aria_reload_button: Recharger
+        aria_stop_button: Arrêtez
+        reload_message: Échec du chargement de l'audio. Veuillez cliquer sur le bouton
+          pour recharger.
+    mobile_modal:
+      apply: Appliquer
+      cancel: Annuler
+      clear: Clair
+      save: sauver
+    page404:
+      goToStartLessonPage: Aller à la page de démarrage de la leçon
+      ooops: Oops ...
+      sorry_message: Désolé, Tor n'a pas pu trouver cette page
+    profile:
+      navigation:
+        log_out: Se déconnecter
+        my_profile: Mon profil
+        settings: Réglages
+      onboarding:
+        choose_native_language: Choisissez votre langue maternelle ou la langue que
+          vous comprenez
+        do_you_understand_english: Comprenez-vous l'anglais?
+        hello: Bonjour
+        language_levels:
+          a1: Niveau élémentaire
+          a2: Niveau pre-intermédiaire
+          b1: Niveau intermédiaire
+          b2: Niveau intermédiaire supérieur
+          c1: Niveau avancé
+          no_knowledge: Pas de connaissances
+        language_not_supported:
+          note: Nous vous informerons dès que la langue sera disponible
+          title: Désolé, mais nous ne prenons pas encore en charge cette langue
+          try_another_language: Essayez une autre langue
+        'no': Non
+        search_placeholder: Chercher...
+        show_more_languages: Autres langues
+        target_language_question: Quelle langue voulez-vous apprendre?
+        what_is_language_level: Comment évalueriez-vous votre niveau %{languageName}?
+        'yes': Oui
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Politique de confidentialité de Lingu
+        support: Soutien
+      logout: Se déconnecter
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Recevez des mises à jour des enseignants et des écoles
+                que vous suivez
+              sections:
+                app_notifications: Notifications d'application
+                email: Email
+              title: Aide à l'apprentissage
+            marketing:
+              description: Restez informé de toutes les promotions, mises à jour et
+                inspiration de Lingu
+              sections:
+                browser_notifications: Notifications du navigateur
+                email: Email
+              title: Commercialisation
+          title: Préférences de contact
+        personal_information:
+          delete_photo: Supprimer la photo
+          email: Email
+          first_name: Prénom
+          last_name: Nom de famille
+          social_accounts:
+            connected: Connecté
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Pas connecté
+            title: Comptes sociaux
+          title: Informations personnelles
+          update_photo: Mettre à jour la photo
+        school:
+          active_licence: Licence active
+          active_status: actif
+          delete_profile: Supprimer mon profil
+          delete_profile_modal:
+            body: |-
+              Vous effacez toutes vos données - pour toujours. Il n'y a pas de bouton d'annulation, et nous ne pouvons pas le récupérer après.
+              Êtes-vous sûr de vouloir supprimer définitivement votre profil Lingu et toutes vos données?
+            cancel: Annuler
+            confirm: Oui, supprimez-le
+            i_understand_the_consequences: Je comprends les conséquences
+            title: Supprimer votre profil?
+          expired: "%{expire_date} expiré"
+          expires: Expire le %{expire_date}
+          inactive_status: Inactif
+          revoke_access: Révoquer l'accès en lecture
+          sections:
+            contact_school: Contacter l'école
+            export_my_data: Exporter mes données
+            read_school_privacy_policy: Lire la politique de confidentialité de l'école
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Lecture de musique
+              sound_effects: Effets sonores
+              title: Du son
+            visual:
+              dark_theme: Thème sombre
+              font_size:
+                test_text: L'herbe est toujours plus verte de l'autre côté de la clôture
+                title: Taille de police
+              high_contrast: Contraste élevé
+              hints: Astuces
+              title: Visuel
+          title: Son et visuel
+        training_settings:
+          sections:
+            i_understand: je comprends
+            i_want_to_learn: je veux apprendre
+            target_language_level: niveau d'anglais
+          title: Paramètres d'entraînement
+      settings_title: Réglages
+    teacher_card:
+      followers_count:
+        one: 1 abonné
+        other: "%{count} abonné"
+      lessons_count:
+        one: 1 cours
+        other: "%{count} leçons"

@@ -1,0 +1,612 @@
+---
+sn:
+  course_mailer:
+    course_assigned_notification:
+      button: Kutanga kosi
+      click_start_lesson: Dzvanya 'Kutanga chidzidzo'
+      follow_course_link: Dzvanya bhatani kuti uvhure iyo kosi
+      footer_text: Dzoka kuLingu kuti udzidze chimwe chinhu chitsva mazuva ese!
+      get_started_line: 'Heano maitiro aunotanga:'
+      notification_link: Zvirongwa zvekuzivisa
+      open_lesson: Vhura chidzidzo chekutanga
+      or_paste_this_link: kana kunama iyi link mubrowser yako
+      sign_in_with_email: Pinda ne email yako kero (%{email})
+      support_link: Tsigiro
+      title: Kutanga ne %{course}
+    new_document_comment:
+      author_text: "%{author} yakasiya wongororo yeako basa"
+      button_text: Itarise
+      button_url_helper: 'kana kunama iyi link mubrowser yako:'
+      footer_text: Pane zvakawanda zvekudzidza ...
+      notification_link: Zvirongwa zvekuzivisa
+      subject_line: Mutsva wekupa hurukuro
+      support_link: Tsigiro
+    otp:
+      ignore_msg: Kana iwe usina kuita ichi chikumbiro, ingo hanya neiyo email.
+      subject_line: Yako yakasarudzika kodhi yeLingu
+      unique_code_for_lingu: Iyi ndiyo kodhi yako yakasarudzika yeLingu
+  frontend:
+    auth:
+      already_have_acc_question: Watova neakaundi?
+      back: Kudzoka
+      back_to_sign_in: Dzokera kuChiratidzo
+      check_your_email_for_a_code: Tarisa yako email kune yako kodhi
+      continue: Enderera
+      continue_with_email: Enderera neemail
+      continue_with_provider: Enderera ne %{provider}
+      did_not_receive_a_code: Hauna kugamuchira kodhi?
+      email_address: Chikero chetsamba yemumhepo
+      first_name: Zita rokutanga
+      get_unique_code: Tora yakasarudzika kodhi kodhi
+      join_lingu: Joinha Lingu
+      last_name: Zita rokupedzisa
+      more_login_options: Dzimwe sarudzo dzekupinda
+      no_account_question: Hauna account?
+      or: kana
+      resend_code: Dzorerazve kodhi
+      sign_in: Nyorera mu
+      sign_up: Nyorera
+      want_to_receive_marketing_messages: Ndiri kuda kugamuchira mameseji ekutengesa
+        kubva kuLingu
+      we_ve_sent_a_code: >-
+        Tatumira kodhi ine manhamba matanhatu ku <strong> {{email}} </strong>. Iyo
+        kodhi inopera mumaminetsi gumi nemashanu, saka ndokumbirawo uiise munguva
+        pfupi.
+    cookie_agreement:
+      agree: Bvumiranai
+      condition: >-
+        Isu tinoshandisa makuki kuongorora saiti mashandiro uye kuendesa zvakagadzirirwa
+        zvemukati. Nekudzvanya "Bvumirana", unobvuma kune edu mamiriro.
+    course:
+      accredited_course_provider: Yakagamuchirwa kosi mupi
+      apply: Nyorera
+      apply_filters: Isa mafirita
+      by: Na
+      cancel: Kanzura
+      categories: "%{count} zvikamu"
+      category: Chikamu
+      clear: Zvakajeka
+      clear_filters: Bvisa mafirita
+      contact_us: Taura nesu
+      could_not_find_match_for: Tine urombo, hatina kuwana chero mechi ye
+      course_language: Kosi mutauro
+      duration: Nguva
+      filter_settings:
+        categories:
+          academic: Dzidzo
+          business: Bhizinesi
+          fashion: Fashoni
+          food_drink: Chikafu & chinwiwa
+          for_kids: Zvevana
+          general: General
+          health: Hutano
+          legal: Zvepamutemo
+          sport: Sport
+          travel: Kufamba
+        durations:
+          t0_600: "<Maminitsi gumi"
+          t1800_3600: 30-60 maminitsi
+          t3600_86400: 1+ awa
+          t600_1800: 10-30 maminetsi
+        focus_on:
+          conversation: Kukurukurirana
+          grammar: Grammar
+          listening: Kuteerera
+          pronunciation: Kududzwa
+          reading: Kuverenga
+          speaking: Kutaura
+          writing: Kunyora
+        levels:
+          long:
+            advanced: Yepamberi nhanho
+            elementary: Chikamu chekutanga
+            intermediate: Pakati pepakati
+            no_knowledge: Hapana ruzivo
+            pre_intermediate: Pre yepakati nhanho
+            upper_intermediate: Chikamu chepamusoro chepakati
+          short:
+            advanced: Yepamberi
+            beginner: Kutanga
+            intermediate: Zvepakati
+        sort_by:
+          most_rated: Yakawanda yakarongwa
+          newest: Zvitsva
+          popularity: Mukurumbira
+      filters: Mafirita
+      focus_on: Tarisa pane
+      focus_on_title: Ndinoda kutarisa
+      hide_lessons: Vigai zvidzidzo
+      hours: Maawa
+      i_understand: Ndinonzwisisa
+      i_want_to_learn: Ndinoda kudzidza
+      in_language: mu %{language}
+      language: Mutauro
+      learn_more: Dzidza ZVIMWE
+      less_settings: Zvishoma marongero
+      lessons: Zvidzidzo
+      lessons_available: "%{number} zvidzidzo zviripo"
+      lessons_catalog_page_subtitle: Iva gamba remutauro.
+      lessons_catalog_page_title: Wedzera mahwindo ako nekosi yemitauro
+      level: Chikamu
+      min: Min
+      more_settings: Mamwe marongero
+      navbar:
+        close: Vhura menyu
+        menu: Menyu
+        select_language: Sarudza mutauro
+      need_to_buy_course: Iwe unofanirwa kutora kosi kutanga
+      no_description: Hapana tsananguro yakapihwa
+      no_results: Tine urombo, hatina kuwana chero mechi ye
+      or: kana
+      per_month: pamwedzi
+      plans: Zvirongwa
+      privacy_policy: Yakavanzika mutemo
+      rating: Kuyera
+      remove_all_filters: Bvisa mafirita ese
+      reviews: Ongororo
+      save: Sevha
+      search: Tsvaga
+      select_dots: Sarudza ...
+      select_languages: Sarudza mitauro
+      select_num_languages: Sarudza %{number} mitauro
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Ratidza zvese
+      show_all_lessons: Ratidza zvese zvidzidzo
+      show_lessons: Ratidza %{number} zvidzidzo
+      show_more: Ratidza zvimwe
+      sign_up_with_lingu_for: Saina neLingu Norway ye
+      skills: "%{count} hunyanzvi"
+      sort_by: Ronga ne
+      start_typing_here: Kutanga kutaipa apa
+      teach: Dzidzisa
+      terms_and_conditions: Mitemo nemamiriro
+      time_range: Nguva yenguva
+      try_adjusting_your_search: Edza kugadzirisa kutsvaga kwako nekushandura mafirita
+      try_this_course: Edza kosi iyi
+      website_language: Mutauro wewebhusaiti
+      words: Mashoko
+    games:
+      finished:
+        go_to_next_exercise: Kuita zvakanaka! Endai kuchiitwa chinotevera
+      flashcard:
+        buttons:
+          finish: Pedza
+          next: Inotevera
+          previous: Kare
+        check_out_new_words: Tarisa uone mazwi matsva auchadzidza muchidzidzo chino
+        frequency_of_word_usage: Kakawanda kushandiswa kweshoko mu %{language}
+        keep_practice_to_learn_all_words: Wongorora mazwi e-%{count} uye ngatitambe
+          mimwe mitambo!
+        word_frequency:
+          level1: Kazhinji zvinoshandiswa
+          level2: Kazhinji zvinoshandiswa
+          level3: Izwi frequency - yepakati
+          level4: Izwi frequency - yepakati
+          level5: Zvakajairika
+          level6: Zvakajairika
+      match_word:
+        click_and_move_each_word_to_counterpart: Dzvanya uye fambisa izwi rimwe nerimwe
+          kune mumwe wake
+        start_heading: Fanisa mazwi kugadzira vaviri
+        time_is_up: Nguva yakwana!
+      skip_tutorial: Darika
+      time_is_up: Nguva yakwana!
+      word_nodes:
+        match_letters_to_form_word: Matanisa mavara kuumba izwi
+      word_waterfall:
+        do_not_hesitate: Ngatikurumidzei!
+        go_to_next_exercise: Endai kuchiitwa chinotevera
+        select_correct_translation: Sarudza chaiyo match
+        well_done: Kuita zvakanaka!
+    home_page:
+      hello: Mhoro,
+      popular_lessons: Zvidzidzo zvakakurumbira
+      show_more: Ratidza zvimwe
+      time: "%{count} min"
+      today_lesson: Chidzidzo chako chanhasi
+      user_name: "%{name}!"
+      words: "%{count} mazwi"
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Enderera chidzidzo
+      exit: Buda
+      idle_message: Iwe wave nenguva usina basa ...
+    lesson_page:
+      back_to_course_page: Dzokera kukosi peji
+      close: Vhara
+      continue_lesson: Enderera chidzidzo
+      followed: Kuteverwa
+      hamburger_menu_btn: Hamburger menyu
+      lesson_given: zvidzidzo
+      not_started: kwete kutanga
+      or: Kana
+      part_complete: "%{percent}% yakwana"
+      restart_lesson: Tangazve
+      section_check: Tarisa
+      section_check_info: "%{count} bvunzo"
+      section_learn: Dzidza
+      section_learn_info: "%{count} min kutarisa uye kuverenga"
+      section_play: Tamba
+      section_play_info: "%{count} mazwi ekudzidzira"
+      start_lesson: Tanga chidzidzo
+      step_progress: "%{percent}%"
+      subscribe: Tevera
+      subscribed: Kuteverwa
+      subscribers: vateveri
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Tevera
+      webview_error_title: Chinhu chakatadza ...
+      words_number: "%{wordsNumber} mazwi matsva"
+    lesson_task:
+      cancel_button: Kanzura
+      check:
+        navigation_next: Inotevera
+        navigation_previous: Kare
+        navigation_skip: Darika
+      controls_panel:
+        font_size_button: Saizi yefonti
+        high_contrast_button:
+          origin: Musiyano wepamusoro
+          short: Kusiyanisa
+        hints_button: Mazano
+        music_playback_button:
+          origin: Music playback
+          short: Mumhanzi
+        sound_effects_button:
+          origin: Mhedzisiro
+          short: Inzwi
+      exit_button: Buda
+      finish_button: Pedza
+      finished:
+        back_to_learn: Dzokera kunodzidza
+        back_to_lesson_page: Dzokera kune peji rechidzidzo
+        back_to_results_page: Kudzoka pane peji peji
+        bad_result_message: Hmm ... edza kutora chidzidzo ichozve imwe nguva
+        close_lesson: Vhara chidzidzo
+        correct_answers_list: Yakarurama mhinduro rondedzero
+        good_result_message: Ndiri kuona kuti waita nhamburiko!
+        great_result_message: Kuita zvakanaka! Iyi mibairo mikuru!
+        next_course_lesson: Enda kuchidzidzo chinotevera mune kosi
+        no_results: Hausati wave nemhinduro dzekuyedza izvozvi
+        no_results_text: Ndokumbirawo mupedze chidzidzo uye pasai bvunzo kuti muwane
+          mhedzisiro
+        see_correct_answers_list: Ona rakakodzera mhinduro runyorwa
+        train_more: Dzidzira zvakawanda uye iwe uchawana zvibodzwa zvirinani nguva
+          inotevera!
+        you_finished_lesson: Hukuru! Wapedza chidzidzo
+      go_back: Dzokera
+      next_button: Inotevera
+      not_available_task: Iri basa harisati ravapo
+      start_button: Kutanga
+      tasks:
+        check:
+          assignment:
+            accept: Gamuchira
+            author_will_check_your_answer: >-
+              %{author} ichaongorora mhinduro yako uye kazhinji inopa mhinduro mukati
+              memazuva 1-2
+            continue_writing: Enderera kunyora
+            copy: Kopa
+            delete: Delete
+            delete_record: Delete zvinyorwa
+            edit: Hora
+            essay_does_not_have_enough_words: >-
+              Mhinduro yako inofanira kunge iine angangoita %{minWordsNumber} mazwi.
+              Mhinduro yako parizvino %{currentWordsNumber} mazwi.
+            followers_count: "%{followersCount} vateveri"
+            lessons_count: "%{lessonsCount} zvidzidzo"
+            minimal_recording_time: Nguva diki yekurekodha - %{minimalRecordingTime}
+            minimum_characters_amount: Mavara mashoma - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum mazwi - %{minimumAmount}
+            record_again: Nyora zvakare
+            record_voice: Rekodha izwi
+            send_anyway: Tumira zvakadaro
+            send_to_review: Tumira kuongorora
+            skip: Darika
+            too_short_answer: Mhinduro pfupi
+            type_your_answer: Nyora mhinduro yako
+            unknown_task_type: Rusingazivikanwe basa mhando
+            upgrade_licence: Ndiwedzere rezinesi
+            upgrade_your_plan: Ndiwedzere chirongwa chako kuti uedze migove pamwe
+              nevadzidzisi ongororo
+            upload_files: Isa mafaera
+            write_essay: Nyora rondedzero
+            you_have_used_amount_of_assignments: Iwe wakashandisa %{amountOfAssignments}
+              kupihwa kiredhiti
+          fill_in_blanks:
+            sentence_gap: Mutsara wepakati
+          fill_in_table:
+            column_answer_placeholder: Pindura
+            column_question_placeholder: Mubvunzo
+            example: Semuenzaniso
+          true_false:
+            'false': Nhema
+            'true': Chokwadi
+        learn:
+          translatable_text:
+            show_original: Ratidza chepakutanga
+            translate_into: Dudzira neGoogle kupinda %{languageName}
+            translate_into_your_lang: Shandura neGoogle mumutauro wako
+        play:
+          arrange_words:
+            start_screen:
+              heading: Gadzira mutsara kubva mumashoko akapihwa
+          audition:
+            start_screen:
+              heading: Teerera kune odhiyo uye tora pane izwi iwe uchangobva kunzwa
+          dictation:
+            get_help: Tsvaga rubatsiro
+            i_do_not_know: Handizivi
+            input_placeholder: Isa izvo zvawakanzwa pano
+            start_screen:
+              heading: Teerera uye nyora zvaunonzwa
+          fill_gap:
+            start_screen:
+              heading: Fanisa izwi uye zvarinoreva
+          finish_screen:
+            go_to_next_exercise: Kuita zvakanaka! Endai kuchiitwa chinotevera
+          image_hotspot:
+            start_screen:
+              heading: Taura zvinhu zviri mumufananidzo nemazvo
+          image_object:
+            start_screen:
+              heading: Sarudza chinhu chakakodzera kubva pamufananidzo unotevera
+          inline_dropdown:
+            start_screen:
+              heading: Sarudza mazwi anoenderana nemutsara
+          mark_word:
+            start_screen:
+              heading: Verenga zvinyorwa uye sarudza izwi rinoenderana nemufananidzo
+          minimal_pairs:
+            start_screen:
+              heading: Tarisa vhidhiyo uye sarudza chaiyo sarudzo
+    locale:
+      currency_switcher_title: Mari inoshandura
+      lang_switcher_title: Shanduro yemutauro
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Chirungu
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio kurodha
+        aria_pause_button: Mira zvishoma
+        aria_play_button: Tamba
+        aria_reload_button: Dzokazve
+        aria_stop_button: Mira
+        reload_message: Atadza kutakura odhiyo. Ndokumbirawo ubaye bhatani kuti utorazve.
+    mobile_modal:
+      apply: Nyorera
+      cancel: Kanzura
+      clear: Zvakajeka
+      save: Sevha
+    page404:
+      goToStartLessonPage: Enda kune yekutanga chidzidzo peji
+      ooops: Oooops ...
+      sorry_message: Ndine urombo, Tor haana kuwana iri peji
+    profile:
+      navigation:
+        log_out: Kubuda
+        my_profile: Mbiri yangu
+        settings: Zvirongwa
+      onboarding:
+        choose_native_language: Sarudza mutauro wako wekuzvarwa kana mutauro waunonzwisisa
+        do_you_understand_english: Unonzwisisa Chirungu here?
+        hello: mhoro
+        language_levels:
+          a1: Chikamu chekutanga
+          a2: Pre-yepakati nhanho
+          b1: Pakati pepakati
+          b2: Chikamu chepamusoro chepakati
+          c1: Yepamberi nhanho
+          no_knowledge: Hapana ruzivo
+        language_not_supported:
+          note: Isu tinokuzivisa iwe nekukurumidza kana mutauro uchinge wave kuwanikwa
+          title: Ndine urombo, asi hatisati tatsigira mutauro uyu
+          try_another_language: Edza mumwe mutauro
+        'no': Aihwa
+        search_placeholder: Tsvaga ...
+        show_more_languages: Mimwe mitauro
+        target_language_question: Ndeupi mutauro waunoda kudzidza?
+        what_is_language_level: Ungaita sei kuyera %{languageName} yako nhanho?
+        'yes': Ehe
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu's zvakavanzika mutemo
+        support: Tsigiro
+      logout: Kubuda
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Gamuchira zvigadziriso kubva kuvadzidzisi uye zvikoro zvaunotevera
+              sections:
+                app_notifications: App Notices
+                email: E-mail
+              title: Kudzidza rubatsiro
+            marketing:
+              description: >-
+                Gara uine ruzivo nezve zvese kukwidziridzwa, kugadzirisa, uye kurudziro
+                kubva kuLingu
+              sections:
+                browser_notifications: Browser notices
+                email: E-mail
+              title: Kushambadzira
+          title: Bata zvaunofarira
+        personal_information:
+          delete_photo: Delete foto
+          email: Email
+          first_name: Zita rokutanga
+          last_name: Zita rokupedzisa
+          social_accounts:
+            connected: Yakabatana
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Kwete kubatana
+            title: Nhoroondo dzezvemagariro
+          title: Ruzivo rwemunhu
+          update_photo: Gadziridza pikicha
+        school:
+          active_licence: Inoshanda rezinesi
+          active_status: Kushanda
+          delete_profile: Delete yangu mbiri
+          delete_profile_modal:
+            body: |-
+              Iwe unobvisa yako yese data-zvachose. Iko hakuna rekusunungura bhatani, uye isu hatigone kukudzosera iwe iwe mushure me.
+              Iwe une chokwadi here kuti unoda kudzima zvachose chimiro chako cheLingu uye data rako rese?
+            cancel: Kanzura
+            confirm: Ehe, ibvise
+            i_understand_the_consequences: Ini ndinonzwisisa mhedzisiro
+            title: Delete yako mbiri?
+          expired: Yakapera %{expire_date}
+          expires: Inopera %{expire_date}
+          inactive_status: Kushanda
+          revoke_access: Dzorera kuverenga kuverenga
+          sections:
+            contact_school: Bata chikoro
+            export_my_data: Tumira kunze data rangu
+            read_school_privacy_policy: Verenga Chikoro Chakavanzika mutemo
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Music playback
+              sound_effects: Mhedzisiro
+              title: Inzwi
+            visual:
+              dark_theme: Musoro werima
+              font_size:
+                test_text: Huswa hunogara hwakasvibira kune rimwe divi reruzhowa
+                title: Saizi yefonti
+              high_contrast: Musiyano wepamusoro
+              hints: Mazano
+              title: Kutaridzika
+          title: Ruzha & Kutaridzika
+        training_settings:
+          sections:
+            i_understand: Ndinonzwisisa
+            i_want_to_learn: Ndinoda kudzidza
+            target_language_level: Chikamu cheChirungu
+          title: Zvirongwa zvekudzidzisa
+      settings_title: Zvirongwa
+    teacher_card:
+      followers_count:
+        one: 1 muteveri
+        other: "%{count} vateveri"
+      lessons_count:
+        one: 1 chidzidzo
+        other: "%{count} zvidzidzo"

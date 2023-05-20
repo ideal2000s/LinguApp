@@ -1,0 +1,2915 @@
+---
+es:
+  actions: Acciones
+  activerecord:
+    attributes:
+      activity:
+        assignment:
+          receive: recibió asignación de %{user_name} con fecha límite %{deadline_date}
+        lesson:
+          complete: Lección superada <strong> %{lesson_link} </strong>
+        license:
+          create: fue asignado <strong> %{plan_name} </strong> por %{user_name}
+          create_student: licencia asignada para %{student}
+          removed_expiration: "%{user_name} eliminó la fecha de finalización de la
+            licencia"
+          removed_expiration_student: fecha de finalización eliminada para la licencia
+            que pertenece a %{student}
+          revoke: "%{user_name} licencia revocada"
+          update: >-
+            %{user_name} configura la licencia para que finalice en <strong> %{expire_date}
+            </strong>
+          update_student: >-
+            establecer %{date} como fecha de finalización para la licencia que pertenece
+            a %{student}
+        student:
+          create: cuenta creada por %{user_name}
+          import: fue importado a <strong> %{team_name} </strong> por %{user_name}
+        team_group:
+          archive: la clase <strong> %{group} </strong> fue archivada por %{user}
+          course_assign: curso asignado <strong> %{course} </strong> a %{group}
+          create: creó la clase <strong> %{group_name} </strong> para %{language}
+          import: estudiantes %{count} importados de Excel
+        team_student:
+          archive: fue archivado por %{user_name}
+          course_assign: fue asignado a <strong> %{course} </strong> por %{user_name}
+          create: fue agregado a <strong> %{team_name} </strong> por %{user_name}
+          discard: fue descartado por %{user_name}
+          group_assign: fue agregado al grupo <strong> %{group_name} </strong> por
+            %{user_name}
+          joined_group: se unió a la clase %{group_name} desde el enlace de invitación
+          restore: fue restaurado por %{user_name}
+          undiscard: no fue descartado por %{user_name}
+        team_user:
+          create: fue agregado a <strong> %{team_name} </strong> por %{user_name}
+          self_registered: autoregistrado
+        undo:
+          reassign_license: Reasignar licencia
+          remove_end_date: Eliminar fecha de finalización
+          revoke_license: Revocar licencia
+          unarchive_student: Desarchivar
+      assignment:
+        statuses:
+          pending: Pendiente
+          reviewed: Revisados
+      language:
+        code: Código
+        name: Nombre
+        system_name: Nombre del sistema
+      lesson:
+        kind: Tipo
+        kinds:
+          storyline: Argumento
+          tet: Enseñar-Involucrar-Examinar
+        level: Nivel
+        levels:
+          a1: A1 - Principiante
+          a2: A2 - Elemental
+          b1: B1 - Intermedio
+          b2: B2 - Intermedio alto
+          c1: C1 - Avanzado
+          c2: C2 - Nativo
+          undefined: Sin definir
+          zero_level: 0 - Principiante absoluto
+        levels_for_target:
+          a1: Nivel elemental
+          a2: Nivel preintermedio
+          b1: Nivel intermedio
+          b2: Nivel intermedio alto
+          c1: Nivel avanzado
+          zero_level: Sin conocimientos
+        short_kinds:
+          storyline: Historia
+          tet: EIE
+        short_levels:
+          a1: A1
+          a2: A2
+          b1: B1
+          b2: B2
+          c1: C1
+          c2: C2
+          undefined: "?"
+          zero_level: A0
+        status: Estado
+        statuses:
+          approved: Aprobado
+          draft: Borrador
+          pending: Pendiente
+        tags:
+          academic: Entorno académico
+          art: Arte y literatura
+          business: Negocios
+          fashion: Moda
+          food: Comida y bebida
+          general: General
+          health: Salud
+          legal: Legal
+          nature: Animales y naturaleza
+          religion: Religión
+          sport: Deportes
+          travel: Viajes
+        target_statuses:
+          approved: Aprobar
+          draft: Poner en borrador
+          pending_review: Solicitar revisiones
+        title: Título
+      lesson_review:
+        statuses:
+          approved: Aprobado
+          rejected: Rechazado
+      plan:
+        plan_interval: Intervalo
+        plan_intervals:
+          month: mes
+          quarter: trimestre
+          week: semana
+          year: año
+        price: Precio
+        price_currency: Moneda
+      student:
+        email: Dirección de correo electrónico
+        fname: Nombre
+        gender: Sexo
+        genders:
+          female: Mujer
+          male: Hombre
+          unknown: Desconocido
+        lname: Apellidos
+        locale: Idioma
+        mobile: Número de móvil
+        ssn: Número de la Seguridad Social
+      task:
+        subjects:
+          engage: Involucrar
+          teach: Enseñar
+          test: Examinar
+      team:
+        name: Nombre
+        statuses:
+          common: Organización
+          enterprise: Empresa
+          personal: Personal
+          school: Colegio
+      team_user:
+        roles:
+          admin: Admin
+          manager: Gerente
+          member: Miembro
+          owner: Propietario
+      user:
+        about: Datos
+        avatar: Foto de perfil
+        created_at: 'Creación:'
+        email: Dirección de correo electrónico
+        fname: Nombre
+        lname: Apellidos
+        mobile: Número de móvil
+        password: Contraseña
+        role: Rol
+        roles:
+          admin: Administrador
+          basic: Ninguna
+          editor: Editor
+      word:
+        body: Cuerpo
+        description: Descripción
+        prefix: Prefijo
+        translate: Traducir
+        word_classes:
+          adjective: Adjetivo
+          adverb: Adverbio
+          conjunction: Conjunción
+          determiner: Determinante
+          interjection: Interjección
+          noun: Sustantivo
+          other: Otro
+          phrase: Frase
+          preposition: Preposición
+          pronoun: Pronombre
+          subjunction: Subjunción
+          unknown: Desconocido
+          verb: Verbo
+        word_classes_abbr:
+          adjective: adj
+          adverb: adv
+          conjunction: conj
+          determiner: det
+          interjection: int
+          noun: sust
+          other: otro
+          phrase: frase
+          preposition: prep
+          pronoun: pron
+          subjunction: subj
+          unknown: "?"
+          verb: v
+      word_games:
+        game_types:
+          flashcard: Tarjetas didácticas
+          match: Asociar palabras
+          match_single: Emparejar palabras individuales
+          nodes: Nodos
+          recall: Recordar
+          waterfall: Cascada
+    devise:
+      registrations:
+        edit:
+          update: Actualizar
+      shared:
+        links:
+          back: Volver
+    errors:
+      models:
+        task:
+          attributes:
+            image:
+              invalid: Especifica un archivo de imagen o una URL, no los dos
+        task_item_session:
+          attributes:
+            attempts_count:
+              cannot_be_lower_than: No puede ser inferior a %{attempts_count}
+    models:
+      crawler: Trabajo de recopilación
+  add_audio: Añadir audio
+  add_student: Añadir estudiante
+  admin:
+    contexts:
+      index:
+        context_management: Gestionar contextos
+    courses:
+      index:
+        reset_phrases_count: Restablecer el recuento de frases
+      reset_phrases_count_notice: El recuento de frases de los cursos se ha restablecido
+        correctamente.
+    crawlers:
+      index:
+        completed_at: Completado
+        crawlers: Tareas de recopilación de palabras para sitios web
+        download_csv: Descargar CSV
+        started_at: Empezado
+      new:
+        view_crawlers: Ver indexadores
+    dashboard:
+      index:
+        active: Activo
+        add_data_text: Añade a estudiantes y profesores, y comienza a aprender a gestionar
+        add_student_text: Añade estudiantes para asignar pruebas, lecciones y trabajos
+        add_student_title: Añade a tus primeros estudiantes
+        add_teacher_text: Te ayudarán a crear lecciones y a gestionar a estudiantes
+        add_teacher_title: Añade a tus profesores
+        expired: Caducado
+        inactive: Inactivo
+        invite_student: Invitar a estudiantes
+        invite_teacher: Invitar a profesores
+        no_data_text: Todavía no hay datos para visualizar, así que empecemos con
+          ello
+        student_by_level: Estudiantes por nivel
+        title: Panel de la escuela
+        top_lessons: Mejores lecciones
+        top_scorer: Mejor puntuación
+        total_visits: Visitas totales
+        view_all: Ver todo
+    dictionary:
+      languages:
+        collections:
+          edit:
+            edit_collection: Editar recopilación
+          index:
+            any_level: Cualquier nivel
+            new_collection: Nueva recopilación
+            tags: Etiquetas
+            word_count: Recuento de palabras
+          show:
+            add_new_word: Añadir palabras
+            new_word: Palabra nueva
+            remove_from_collection: Eliminar de recopilación
+            search_words: Buscar palabras...
+        words:
+          add_to_collection_form:
+            add_words_to_collection:
+              one: "%{count} palabra a la recopilación"
+              other: "%{count} palabras a la recopilación"
+            confirm: Confirmar
+          add_to_collection_post:
+            add_to_collection_success:
+              one: Se ha añadido %{count} palabra a la recopilación %{collection}
+                correctamente.
+              other: Se han añadido %{count} palabras a la recopilación %{collection}
+                correctamente.
+          csv_import:
+            csv_import: Importar desde CSV
+            import_from_text: Importar desde texto
+            import_to_lang: Importar palabras nuevas a %{lang}
+            parse_text: Analizar texto
+            paste_text: Pega el texto desde el cual quieres recopilar palabras
+            recalculate_frequency: Recalcular frecuencias de palabras
+            required_columns: 'Encabezados de columna CSV obligatorios:'
+            select_source_file: Seleccionar archivo
+          edit_translation_form:
+            translation: Traducción
+            update_success: La traducción se ha actualizado correctamente.
+            update_translation: Actualizar traducción
+            word: Palabra
+          form:
+            select_word_class: Seleccionar clase de palabra
+          index:
+            add_new_word: Añadir palabras
+            add_to_existing_collection: Añadir a recopilación existente
+            any_frequency: Cualquier frecuencia
+            any_time_source: Cualquier hora y fuente
+            audio_recorded: Audio
+            bulk_actions: Acciones masivas
+            collections: Recopilaciones
+            count_collections:
+              one: "%{count} recopilación"
+              other: "%{count} recopilaciones"
+            count_phrases: "%{count} palabras"
+            create_collection: Crear recopilación
+            description: Descripción
+            export_csv: Exportar CSV
+            filter: Filtrar
+            frequency: Frecuencia
+            illustrated: Ilustrado
+            import: Importar
+            import_from_website: Analizar un sitio web
+            missing_audio: Audio ausente
+            missing_illustration: Ilustración ausente
+            not_used_in_collections: No usado en recopilaciones
+            not_used_in_lessons: No usado en lecciones
+            upload: Cargar
+            used_in_collections: Usado en recopilaciones
+            used_in_lessons: Usado en lecciones
+            word: Palabra
+            word_class: Clase de palabra
+          recalculate_frequency:
+            job_performing: Las frecuencias de las palabras se están recalculando.
+    discard_msg: El registro se ha marcado como eliminado
+    languages:
+      edit:
+        add_character: Agregar personaje
+        available_as_target_language: Disponible como idioma objetivo
+        available_for_support: Disponible como idioma secundario
+        edit_language: Editar %{name}
+        localization_note: Información sobre la localización de la interfaz de usuario
+        restricted: Restringido a menos que tenga licencia
+      inactive:
+        inactive_languages: Idiomas inactivos
+        supported: "¿Compatible?"
+      list:
+        active_languages: Idiomas activados
+        language_code: Código de idioma
+    lesson_sessions:
+      create_failed: No se pudo crear la sesión de la lección
+    lessons:
+      index:
+        count_lessons: "%{count} lecciones"
+        limited_entries_scope: 'Solo estás viendo los registros relacionados con:
+          %{lang}'
+      show:
+        by_author: por %{author}
+      split:
+        error: No se puede dividir la lección
+        success: Las tareas se han movido correctamente a una lección nueva
+    plans:
+      create:
+        created_plan: Plan creado con éxito
+      form:
+        system_name: Nombre del sistema
+      index:
+        create_new_plan: Crear nuevo plan
+      list:
+        all: Todos los planes
+    rewards:
+      form:
+        choose_image: Seleccionar archivo de imagen
+        description_placeholder: Escribe la descripción de la recompensa.
+        update_success: La recompensa se ha actualizado correctamente
+      index:
+        all_rewards: Todas las recompensas
+        confirm_reward_delete: "¿Seguro que quieres eliminar esta recompensa?"
+        count_rewards: "%{count} recompensas"
+        create_new_reward: Crear nueva recompensa
+        dimension: Dimensión
+        kind: Tipo
+        title: Recompensas
+        update_reward: Actualizar recompensa
+        value: Valor
+    search:
+      search_result: "%{type}: %{result}"
+    skills:
+      skill_form:
+        enter_name: Introducir competencia...
+    students:
+      edit:
+        personal_data: Datos personales
+      edit_student: Redirigir %{name}
+      form:
+        select_native_language: Seleccionar idioma nativo
+        select_target_language: Seleccionar idioma objetivo activo
+      index:
+        create_new_student: Crear nuevo estudiante
+        new_class: Nueva clase
+        student_management: Gestión de estudiantes
+        teacher_management: Gestión de profesores
+      list:
+        active_students: Estudiantes activos
+        native_language: Idioma nativo
+        target_language: Idioma meta
+      list_row:
+        last_seen_at: Visto por última vez %{date}
+      new:
+        select_gender: Seleccionar sexo
+        select_locale: Seleccionar idioma
+      show:
+        learning_time: Tiempo de aprendizaje
+    team_invitations:
+      create:
+        failure: Se ha producido un error al unirse a un equipo
+        joined: Te has unido correctamente a un equipo
+      show:
+        already_member: Ya eres miembro de este equipo
+        join_button: Unirse a un equipo
+        join_heading: Unirse al espacio de trabajo de este equipo en lingu.com
+        profile: Perfil
+        profile_link: Ve a tu %{link} para gestionar equipos
+        reject: No, gracias
+        set_as_default: Establecer como mi equipo predeterminado
+    teams:
+      create:
+        created_team: Equipo creado con éxito
+      edit:
+        action: Editar
+      index:
+        columns:
+          members: Miembros
+        create_new_team: Crear nuevo equipo
+        most_recent_first: Lo mas reciente primero
+        oldest_first: Los más viejos primero
+      list:
+        docs: Docs
+        followers: Seguidores
+        teams: Organizaciones
+      show:
+        sign_into_school: Iniciar sesión en la escuela
+    update_msg: El registro se ha actualizado correctamente
+    users:
+      edit:
+        about_me_placeholder: Unas palabras sobre mí
+        delete_account: Eliminar esta cuenta
+        manage_profile_for: Gestionar perfil de %{name}
+        mobile: Número de móvil
+        personal_data: Datos personales
+        select_language_scope: Seleccionar idioma objetivo para rol de editor
+        teams: Equipos
+      index:
+        create_new_user: Crear nuevo usuario
+        user_management: Gestión de usuarios
+      list:
+        active_users: Usuarios activos
+  amount: Importe
+  answer: Respuesta
+  app_name: Lingu
+  assigned_to: Asignado a
+  associated_with: Asociado con
+  authorization_error: No tienes autorización para realizar esta acción.
+  back: Volver
+  cancel: Cancelar
+  change: Cambiar
+  close: Cerrar
+  collections: Recopilaciones
+  comment: Comentar
+  common:
+    buttons:
+      save: Guardar
+      save_and_continue: Guardar y continuar
+      update: Actualizar
+  configure: Configurar
+  correct: Correcto
+  correct_answer: Respuesta correcta
+  correct_word_order: Orden correcto de palabras
+  count_error_message_model:
+    one: Un error ha impedido guardar este %{model}.
+    other: "%{count} errores han impedido guardar este %{model}."
+  course_mailer:
+    course_assigned_notification:
+      button: Iniciar el curso
+      click_start_lesson: Haga clic en 'Iniciar lección'
+      follow_course_link: Haga clic en el botón para abrir el curso
+      footer_text: >-
+        Hay mucho más que puedes aprender. Asegúrese de volver a Lingu para probar
+        nuevas lecciones todos los días
+      get_started_line: 'Así es como empiezas:'
+      notification_link: Configuración de las notificaciones
+      open_lesson: Abra la primera lección
+      or_paste_this_link: o pegue este enlace en su navegador
+      sign_in_with_email: Inicie sesión con su dirección de correo electrónico (%{email})
+      support_link: Apoyo
+      title: Empezando con %{course}
+    new_document_comment:
+      author_text: "%{author} dejó una reseña de su tarea"
+      button_text: Echale un vistazo
+      button_url_helper: 'o pegue este enlace en su navegador:'
+      footer_text: Hay mucho más que aprender ...
+      notification_link: Configuración de las notificaciones
+      subject_line: Nuevo comentario de tarea
+      support_link: Apoyo
+    otp:
+      ignore_msg: Si no hizo esta solicitud, simplemente ignore el correo electrónico.
+      subject_line: Tu código único para Lingu
+      unique_code_for_lingu: Aquí está su código único para Lingu
+  course_mailer2:
+    new_document_comment:
+      author_text: "%{author} dejó una reseña de su tarea"
+      button_text: Echale un vistazo
+      button_url_helper: 'o pegue este enlace en su navegador:'
+      footer_text: Hay mucho más que aprender ...
+      notification_link: Configuración de las notificaciones
+      subject_line: Nuevo comentario de tarea
+      support_link: Apoyo
+  courses: Cursos
+  create: Crear
+  create_student: Crear estudiante
+  created: 'Creación:'
+  created_by: Creado por
+  danger_zone: Zona de peligro
+  deactivate_account: Desactivar cuenta
+  delete: Eliminar
+  delete_record_confirmation: "¿Seguro que quieres eliminar este elemento?"
+  delete_this_item: "¿Eliminar este elemento?"
+  deleted: Eliminado
+  description: Descripción
+  devise:
+    account_login: Iniciar sesión
+    confirmations:
+      confirmed: Tu dirección de correo electrónico se ha confirmado correctamente.
+      send_instructions: >-
+        Recibirás un correo electrónico con instrucciones sobre cómo confirmar tu
+        dirección de correo electrónico en unos minutos.
+      send_paranoid_instructions: >-
+        Si tu dirección de correo electrónico ya está en nuestra base de datos, recibirás
+        un correo electrónico con instrucciones sobre cómo confirmar tu dirección
+        de correo electrónico en unos minutos.
+    enter_email_receive_link: >-
+      Introduce tu correo electrónico para que te enviemos un enlace de restablecimiento.
+    errors:
+      messages:
+        already_confirmed: ya estaba confirmado. Intenta iniciar sesión.
+        confirmation_period_expired: debe confirmarse en %{period}, request a new
+          one
+        expired: ha caducado; solicita uno nuevo.
+        not_found: no encontrado
+        not_locked: no estaba bloqueado
+        not_saved:
+          one: '1 error ha impedido guardar este %{resource}:'
+          other: "%{count} errores han impedido guardar este %{resource}:"
+    failure:
+      already_authenticated: Ya has iniciado sesión.
+      inactive: Tu cuenta todavía no está activada.
+      invalid: Dirección de correo electrónico o contraseña no válidos.
+      last_attempt: Tienes un intento más antes de que se bloquee tu cuenta.
+      locked: Tu cuenta está bloqueada.
+      not_found_in_database: >-
+        No se ha podido encontrar ningún usuario con esta dirección de correo electrónico
+      timeout: Tu sesión ha caducado. Vuelve a iniciar sesión para continuar.
+      unauthenticated: Tienes que iniciar sesión o registrarte para continuar.
+      unconfirmed: Tienes que confirmar tu dirección de correo electrónico para continuar.
+    forgot_password: "¿Has olvidado la contraseña?"
+    mailer:
+      confirmation_instructions:
+        subject: Instrucciones de confirmación
+      email_changed:
+        subject: Correo electrónico cambiado
+      password_change:
+        subject: Contraseña cambiada
+      reset_password_instructions:
+        subject: Instrucciones de restablecimiento de contraseña
+      unlock_instructions:
+        subject: Instrucciones de desbloqueo
+    omniauth_callbacks:
+      failure: 'No se te ha podido autenticar desde %{kind} por este motivo: \"%{reason}\".'
+      success: Autenticación correcta desde la cuenta %{kind}.
+    passwords:
+      no_token: >-
+        No puedes acceder a esta página sin venir de un correo electrónico de restablecimiento
+        de contraseña. Si vienes de un correo electrónico de restablecimiento de contraseña,
+        asegúrate de usar toda la URL proporcionada.
+      send_instructions: >-
+        Recibirás un correo electrónico con instrucciones sobre cómo restablecer tu
+        contraseña en unos minutos.
+      send_paranoid_instructions: >-
+        Si tu dirección de correo electrónico ya está en nuestra base de datos, te
+        enviaremos un enlace de recuperación de contraseña a tu dirección de correo
+        electrónico en unos minutos.
+      updated: La contraseña se ha cambiado correctamente. Ya has iniciado sesión.
+      updated_not_active: La contraseña se ha cambiado correctamente.
+    registrations:
+      destroyed: "¡Adiós! Tu cuenta se ha cancelado correctamente. Esperamos verte
+        pronto."
+      edit:
+        about_me_placeholder: Quién soy
+        change_password: Cambiar la contraseña
+        enter_new_password: Introducir contraseña nueva
+        enter_old_password: Introducir contraseña actual
+        enter_password_again: Escribir la contraseña de nuevo
+        update_profile: Actualizar perfil
+        upload_signature: Cargar firma
+      new:
+        create_account: Crear cuenta
+        enter_first_name: Introducir nombre
+        enter_last_name: Introducir apellidos
+      signed_up: "¡Bienvenido/a! Te has registrado correctamente."
+      signed_up_but_inactive: >-
+        Te has registrado correctamente. No obstante, no has podido iniciar sesión
+        porque tu cuenta no está activada todavía.
+      signed_up_but_locked: >-
+        Te has registrado correctamente. No obstante, no has podido iniciar sesión
+        porque tu cuenta está bloqueada.
+      signed_up_but_unconfirmed: >-
+        Se ha enviado un mensaje con un enlace de confirmación a tu dirección de correo
+        electrónico.   Abre el enlace para activar tu cuenta.
+      update_needs_confirmation: >-
+        Has actualizado tu cuenta correctamente, pero debes verificar tu dirección
+        de correo nueva. Comprueba tu bandeja de entrada y abre el enlace de confirmación
+        para confirmar tu nueva dirección de correo electrónico.
+      updated: Tu cuenta se ha actualizado correctamente.
+      updated_but_not_signed_in: >-
+        Tu cuenta se ha actualizado correctamente, pero, como cambiaste la contraseña,
+        tienes que iniciar sesión de nuevo
+    send_reset_link: Enviar enlace de restablecimiento
+    sessions:
+      already_signed_out: Has cerrado sesión correctamente.
+      signed_in: Has iniciado sesión correctamente.
+      signed_out: Has cerrado sesión correctamente.
+    unlocks:
+      send_instructions: >-
+        Recibirás un correo electrónico con instrucciones sobre cómo desbloquear tu
+        cuenta en unos minutos.
+      send_paranoid_instructions: >-
+        Si tu cuenta existe, recibirás un correo electrónico con instrucciones sobre
+        cómo desbloquearla en unos minutos.
+      unlocked: Tu cuenta se ha bloqueado correctamente. Inicia sesión para continuar.
+  disabled: Discapacitado
+  domains: Dominios
+  edit: Editar
+  email: Correo electrónico
+  embed_script: Pegar script incrustado
+  enabled: Habilitado
+  enter_statement: Introducir comentarios aquí
+  error: error
+  errors:
+    not_found:
+      not_found: Página no encontrada (404)
+      page_not_found: La página que buscabas no se ha podido encontrar.
+  example: Ejemplo
+  expires_at: 'Caducidad:'
+  'false': Falso
+  filter: Filtrar
+  first_name: Nombre
+  form:
+    level_updated: El nivel se ha actualizado correctamente
+    locales:
+      af: Afrikaans
+      am: Amharic
+      ar: Arabic
+      az: Azerbaijani
+      be: Belarusian
+      bg: Búlgaro
+      bn: Bengali
+      bs: Bosnian
+      ca: Catalan
+      ceb: Cebuano
+      co: Corsican
+      cs: Czech
+      cy: Welsh
+      da: Danish
+      de: Alemán
+      el: Greek
+      en: Inglés
+      eo: Esperanto
+      es: Español
+      et: Estonian
+      eu: Basque
+      fa: Persian
+      'false': Norwegian
+      fi: Finnish
+      fr: Francés
+      fy: Frisian
+      ga: Irish
+      gd: Scots Gaelic
+      gl: Galician
+      gu: Gujarati
+      ha: Hausa
+      haw: Hawaiian
+      he: Hebrew
+      hi: Hindi
+      hmn: Hmong
+      hr: Croatian
+      ht: Haitian Creole
+      hu: Hungarian
+      hy: Armenian
+      id: Indonesian
+      ig: Igbo
+      is: Icelandic
+      it: Italiano
+      ja: Japanese
+      jv: Javanese
+      ka: Georgian
+      kk: Kazakh
+      km: Khmer
+      kn: Kannada
+      ko: Korean
+      ku: Kurdish
+      ky: Kyrgyz
+      la: Latin
+      lb: Luxembourgish
+      lo: Lao
+      lt: Lituano
+      lv: Letón
+      mg: Malagasy
+      mi: Maori
+      mk: Macedonian
+      ml: Malayalam
+      mn: Mongolian
+      mr: Marathi
+      ms: Malay
+      mt: Maltese
+      my: Myanmar (Burmese)
+      nb: Noruego
+      ne: Nepali
+      nl: Neerlandés
+      ny: Nyanja (Chichewa)
+      or: Odia (Oriya)
+      pa: Punjabi
+      pl: Polaco
+      ps: Pashto
+      pt: Portugués
+      ro: Rumano
+      rs: Serbio
+      ru: Ruso
+      rw: Kinyarwanda
+      sd: Sindhi
+      si: Sinhala (Sinhalese)
+      sk: Slovak
+      sl: Slovenian
+      sm: Samoan
+      sn: Shona
+      so: Somalí
+      sq: Albanian
+      st: Sesotho
+      su: Sundanese
+      sv: Swedish
+      sw: Suajili
+      ta: Tamil
+      te: Telugu
+      tg: Tajik
+      th: Thai
+      tk: Turkmen
+      tl: Tagalog (Filipino)
+      tr: Turco
+      tt: Tatar
+      ua: Ucraniano
+      ug: Uyghur
+      ur: Urdu
+      uz: Uzbek
+      vi: Vietnamese
+      xh: Xhosa
+      yi: Yiddish
+      yo: Yoruba
+      zh: Chinese
+      zu: Zulu
+  frontend:
+    auth:
+      already_have_acc_question: "¿Ya tienes una cuenta?"
+      back: atrás
+      back_to_sign_in: Volver a iniciar sesión
+      check_your_email_for_a_code: Verifique su correo electrónico para su código
+      continue: Continuar
+      continue_with_email: Continuar con correo electrónico
+      continue_with_provider: Continuar con %{provider}
+      did_not_receive_a_code: "¿No recibiste un código?"
+      email_address: Dirección de correo electrónico
+      first_name: Nombre
+      forgot_password: "¿Has olvidado la contraseña?"
+      get_unique_code: Obtenga un código de inicio de sesión único
+      join_lingu: Unirse a Lingu
+      last_name: Apellidos
+      more_login_options: Más opciones de inicio de sesión
+      no_account_question: "¿No tienes una cuenta?"
+      or: o
+      password: Contraseña
+      resend_code: Reenviar codigo
+      reset_password: Restablecer contraseña
+      send_reset_link: Enviar enlace de restablecimiento
+      sign_in: Iniciar sesión
+      sign_up: Registrarse
+      want_to_receive_marketing_messages: Quiero recibir mensajes de marketing de
+        Lingu
+      we_ve_sent_a_code: >-
+        Enviamos un código de 6 dígitos a <strong> {{email}} </strong>. El código
+        caduca en 15 minutos, así que ingréselo pronto.
+    cookie_agreement:
+      agree: De acuerdo
+      condition: >-
+        Utilizamos cookies para analizar el rendimiento del sitio y ofrecer contenido
+        personalizado. Al hacer clic en "Aceptar", acepta nuestras condiciones.
+    course:
+      accredited_course_provider: Proveedor de formación acreditado
+      apply: Apliki
+      apply_filters: Aplicar filtros
+      by: Por
+      cancel: Cancelar
+      categories: categorías %{count}
+      category: Categoría
+      clear: Claro
+      clear_filters: Filtros claros
+      contact_us: Contáctanos
+      could_not_find_match_for: Lo sentimos, no pudimos encontrar ninguna coincidencia
+        para
+      course_language: Idioma del curso
+      duration: Duración
+      filter_settings:
+        categories:
+          academic: Académico
+          business: Negocio
+          fashion: Moda
+          food_drink: Comida y bebida
+          for_kids: Para niños
+          general: General
+          health: Salud
+          legal: Legal
+          sport: Deporte
+          travel: Viaje
+        durations:
+          t0_600: "<10 minutos"
+          t1800_3600: 30-60 minutos
+          t3600_86400: 1 hora o más
+          t600_1800: 10-30 minutos
+        focus_on:
+          conversation: Conversacion
+          grammar: Gramática
+          listening: Escuchando
+          pronunciation: Pronunciación
+          reading: Leyendo
+          speaking: Hablando
+          writing: Escritura
+        levels:
+          long:
+            advanced: Nivel avanzado
+            elementary: Nivel de primaria
+            intermediate: Nivel intermedio
+            no_knowledge: Sin conocimiento
+            pre_intermediate: Nivel pre-intermedio
+            upper_intermediate: Nivel superior intermedio
+          short:
+            advanced: Avanzado
+            beginner: Principiante
+            intermediate: Intermedio
+        sort_by:
+          most_rated: Más votados
+          newest: El más nuevo
+          popularity: Popularidad
+      filters: Filtros
+      focus_on: Concentrarse en
+      focus_on_title: Quiero centrarme en
+      hide_lessons: Ocultar lecciones
+      hours: Horas
+      i_understand: entiendo
+      i_want_to_learn: quiero aprender
+      in_language: en %{language}
+      language: Idioma
+      learn_more: Aprende más
+      less_settings: Menos configuraciones
+      lessons: Lecciones
+      lessons_available: "%{number} lecciones disponibles"
+      lessons_catalog_page_subtitle: Conviértete en un héroe del lenguaje.
+      lessons_catalog_page_title: Expande tus horizontes con un curso de idiomas
+      level: Nivel
+      min: Min.
+      more_settings: Más ajustes
+      navbar:
+        close: Cerrar menú
+        menu: Menú
+        select_language: Seleccione el idioma
+      need_to_buy_course: Primero necesitas reservar un curso
+      no_description: No se proporcionó descripción
+      no_results: Lo sentimos, no pudimos encontrar ninguna coincidencia para %{searchQuery}
+      or: o
+      per_month: por mes
+      plans: Planes
+      privacy_policy: Política de privacidad
+      rating: Clasificación
+      remove_all_filters: Quitar todos los filtros
+      reviews: Revisiones
+      save: Salvar
+      search: Buscar
+      select_dots: Seleccione...
+      select_languages: Seleccionar idiomas
+      select_num_languages: Seleccione %{number} idiomas
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Mostrar todo
+      show_all_lessons: Mostrar todas las lecciones
+      show_lessons: Mostrar lecciones %{number}
+      show_more: Mostrar más
+      sign_up_with_lingu_for: Regístrese con Lingu Norway para
+      skills: habilidades %{count}
+      sort_by: Ordenar por
+      start_typing_here: Empiece a escribir aquí
+      teach: Enseñar
+      terms_and_conditions: Términos y condiciones
+      time_range: Intervalo de tiempo
+      try_adjusting_your_search: Intente ajustar su búsqueda cambiando sus filtros
+      try_this_course: Probar este curso
+      website_language: Idioma del sitio web
+      words: Palabras
+    games:
+      finished:
+        go_to_next_exercise: "¡Bien hecho! Ir al siguiente ejercicio"
+      flashcard:
+        buttons:
+          finish: Terminar
+          next: próximo
+          previous: Anterior
+        check_out_new_words: Mira las palabras que aprenderás en esta lección
+        frequency_of_word_usage: Frecuencia de uso de palabras en %{language}
+        keep_practice_to_learn_all_words: Revisar las %{count} palabras y jugar some
+          games!
+        word_frequency:
+          level1: Uso poco frecuente
+          level2: Uso poco frecuente
+          level3: Frecuencia de palabra media
+          level4: Frecuencia de palabra media
+          level5: Común
+          level6: Muy común
+      match_word:
+        click_and_move_each_word_to_counterpart: Haz clic y mueve las palabras para
+          emparejarlas
+        start_heading: Empareja palabras para hacer un par
+        time_is_up: "¡Se acabó el tiempo!"
+      skip_tutorial: Omitir
+      time_is_up: "¡Se acabó el tiempo!"
+      word_nodes:
+        match_letters_to_form_word: Ordena las letras para formar una palabra
+      word_waterfall:
+        do_not_hesitate: "¡Métele caña!"
+        go_to_next_exercise: Ve al siguiente ejercicio
+        select_correct_translation: Selecciona el equivalente correcto
+        well_done: "¡Bien hecho!"
+    home_page:
+      hello: Hola,
+      popular_lessons: Lecciones populares
+      show_more: Mostrar más
+      time: "%{count} min"
+      today_lesson: Tu lección de hoy
+      user_name: "%{name}!"
+      words: "%{count} palabras"
+    idle_screen:
+      by_author: de %{authorName}
+      continue_lesson: Continuar lección
+      exit: Salir
+      idle_message: No ha habido mucha actividad...
+    lesson_page:
+      back_to_course_page: Volver a la página del curso
+      close: Cerca
+      continue_lesson: Continuar lección
+      followed: Seguido
+      hamburger_menu_btn: Menú hamburguesa
+      lesson_given: lecciones
+      not_started: sin empezar
+      or: O
+      part_complete: "%{percent}% completado"
+      restart_lesson: Reiniciar
+      section_check: Comprobar
+      section_check_info: pruebas %{count}
+      section_learn: Aprender
+      section_learn_info: "%{count} minutos para mirar y leer"
+      section_play: Jugar
+      section_play_info: "%{count} palabras para practicar"
+      start_lesson: Empezar lección
+      step_progress: "%{percent}%"
+      subscribe: Seguir
+      subscribed: Seguido
+      subscribers: seguidores
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Dejar de seguir
+      webview_error_title: Algo salió mal...
+      words_number: "%{wordsNumber} palabras nuevas"
+    lesson_task:
+      cancel_button: Cancelar
+      check:
+        navigation_next: Siguiente
+        navigation_previous: Anterior
+        navigation_skip: Omitir
+      controls_panel:
+        font_size_button: Tamaño de fuente
+        high_contrast_button:
+          origin: Alto contraste
+          short: Contraste
+        hints_button: Sugerencias
+        music_playback_button:
+          origin: Reproducción de música
+          short: Música
+        sound_effects_button:
+          origin: Efectos de sonido
+          short: Sonido
+      exit_button: Salir
+      exit_question: "¿Seguro que quieres salir?"
+      finish_button: Terminar
+      finished:
+        back_to_learn: Volver a aprender
+        back_to_lesson_page: Volver a la página de la lección
+        back_to_results_page: Volver a la página de resultados
+        bad_result_message: Hmm ... intenta tomar la lección una vez más
+        close_lesson: Cerrar lección
+        correct_answers_list: Lista de respuestas correctas
+        good_result_message: Veo que has hecho un esfuerzo.
+        great_result_message: "¡Bien hecho! ¡Estos son excelentes resultados!"
+        next_course_lesson: Ir a la siguiente lección del curso
+        no_results: Aún no tienes resultados de prueba
+        no_results_text: Por favor, complete la lección y apruebe la prueba para obtener
+          los resultados.
+        see_correct_answers_list: Ver lista de respuestas correctas
+        train_more: "¡Practique más y obtendrá mejores resultados la próxima vez!"
+        you_finished_lesson: "¡Genial! Has acabado la lección"
+      go_back: Regresa
+      next_button: Siguiente
+      not_available_task: La tarea todavía no está disponible
+      start_button: Empezar
+      tasks:
+        check:
+          assignment:
+            accept: Aceptar
+            author_will_check_your_answer: >-
+              %{author} revisará su respuesta y, por lo general, brindará comentarios
+              en un plazo de 1-2 días
+            continue_writing: Continúa escribiendo
+            copy: Copiar
+            delete: Eliminar
+            delete_record: Eliminar el registro
+            edit: Editar
+            essay_does_not_have_enough_words: >-
+              Su respuesta debe contener al menos %{minWordsNumber} palabras. Su respuesta
+              es actualmente %{currentWordsNumber} palabras.
+            followers_count: "%{followersCount} seguidores"
+            lessons_count: lecciones %{lessonsCount}
+            minimal_recording_time: Tiempo de grabación mínimo - %{minimalRecordingTime}
+            minimum_characters_amount: 'Caracteres mínimos: %{minimumCharactersAmount}'
+            minimum_words_amount: Palabras mínimas - %{minimumAmount}
+            record_again: Grabar de nuevo
+            record_voice: Grabar voz
+            send_anyway: Enviar de todos modos
+            send_to_review: Enviar a revisión
+            skip: Omitir
+            too_short_answer: Respuesta demasiado corta
+            type_your_answer: Escribe tu respuesta
+            unknown_task_type: Tipo de tarea desconocido
+            upgrade_licence: Actualizar licencia
+            upgrade_your_plan: Actualice su plan para probar las tareas con las revisiones
+              de los profesores
+            upload_files: Subir archivos
+            write_essay: Escribir ensayo
+            you_have_used_amount_of_assignments: Ha utilizado créditos de asignación
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Brecha de oración
+          fill_in_table:
+            column_answer_placeholder: Responder
+            column_question_placeholder: Pregunta
+            example: Ejemplo
+          true_false:
+            'false': Falso
+            'true': Cierto
+        learn:
+          translatable_text:
+            show_original: Mostrar original
+            translate_into: Traducir con Google a %{languageName}
+            translate_into_your_lang: Traduce con Google a tu idioma
+        play:
+          arrange_words:
+            start_screen:
+              heading: Forma una oración con las palabras que te damos
+          audition:
+            start_screen:
+              heading: Escuche el audio y toque la palabra que acaba de escuchar
+          dictation:
+            get_help: Consigue ayuda
+            i_do_not_know: No lo sé
+            input_placeholder: Ingrese lo que escuchó aquí
+            start_screen:
+              heading: Escucha y escribe lo que escuchas
+          fill_gap:
+            start_screen:
+              heading: Empareja la palabra con su significado
+          finish_screen:
+            go_to_next_exercise: "¡Bien hecho! Ir al siguiente ejercicio"
+          image_hotspot:
+            start_screen:
+              heading: Nombra los objetos en la imagen correctamente.
+          image_object:
+            item_screen:
+              heading: Selecciona “{{instruction}}” en la foto
+            start_screen:
+              heading: Elige el objeto correcto en la imagen
+          inline_dropdown:
+            start_screen:
+              heading: Elige las palabras que coinciden con la oración
+          mark_word:
+            start_screen:
+              heading: Lee el texto y selecciona la palabra que coincide con la imagen
+          minimal_pairs:
+            start_screen:
+              heading: Mira el video y selecciona la opción correcta
+    locale:
+      currency_switcher_title: Convertidor de divisas
+      lang_switcher_title: Convertidor de idiomas
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Inglés
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: El audio se está cargando
+        aria_pause_button: Pausar
+        aria_play_button: Reproducir
+        aria_reload_button: Volver a cargar
+        aria_stop_button: Detener
+        reload_message: Error al cargar el audio. Haz clic en el botón para volver
+          a cargar.
+    mobile_modal:
+      apply: Aplicar
+      cancel: Cancelar
+      clear: Claro
+      save: Salvar
+    page404:
+      goToStartLessonPage: Ir a la página de inicio de la lección
+      ooops: "¡Vaya!"
+      sorry_message: Lo sentimos, Tor no ha podido encontrar esta página
+    profile:
+      navigation:
+        log_out: Cerrar sesión
+        my_profile: Mi perfil
+        settings: Configuración
+      onboarding:
+        choose_native_language: Escoge tu idioma nativo o el idioma que entiendes
+        do_you_understand_english: "¿Entiendes inglés?"
+        hello: Hola
+        language_levels:
+          a1: Nivel elemental
+          a2: Nivel preintermedio
+          b1: Nivel intermedio
+          b2: Nivel intermedio alto
+          c1: Nivel avanzado
+          no_knowledge: Sin conocimientos
+        language_not_supported:
+          note: Le notificaremos tan pronto como el idioma esté disponible
+          title: Lo sentimos, pero todavía no admitimos este idioma
+          try_another_language: Prueba otro idioma
+        'no': 'No'
+        search_placeholder: Buscar...
+        show_more_languages: Otros idiomas
+        target_language_question: "¿Qué idioma quieres aprender?"
+        what_is_language_level: "¿Cómo calificas tu nivel de %{languageName}?"
+        'yes': Sí
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Política de privacidad de Lingu
+        support: Apoyo
+      logout: Cerrar sesión
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Reciba actualizaciones de los profesores y las escuelas
+                que sigue
+              sections:
+                app_notifications: Notificaciones de aplicación
+                email: Email
+              title: Ayuda al aprendizaje
+            marketing:
+              description: >-
+                Manténgase informado sobre todas las promociones, actualizaciones
+                e inspiración de Lingu
+              sections:
+                browser_notifications: Notificaciones del navegador
+                email: Email
+              title: Márketing
+          title: Preferencias de contacto
+        personal_information:
+          delete_photo: Borrar foto
+          email: Email
+          first_name: Primer nombre
+          last_name: Apellido
+          social_accounts:
+            connected: Conectado
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: No conectado
+            title: Cuentas sociales
+          title: Informacion personal
+          update_photo: Actualizar foto
+        school:
+          active_licence: Licencia activa
+          active_status: Activo
+          delete_profile: Borrar mi perfil
+          delete_profile_modal:
+            body: |-
+              Borra todos sus datos, para siempre. No hay botón para deshacer y no podemos recuperarlo después.
+              ¿Está seguro de que desea eliminar permanentemente su perfil de Lingu y todos sus datos?
+            cancel: Cancelar
+            confirm: Si, bórralo
+            i_understand_the_consequences: Entiendo las consecuencias
+            title: "¿Eliminar tu perfil?"
+          expired: Caducó %{expire_date}
+          expires: Caduca %{expire_date}
+          inactive_status: Inactivo
+          revoke_access: Revocar el acceso de lectura
+          sections:
+            contact_school: Contactar con la escuela
+            export_my_data: Exportar mis datos
+            read_school_privacy_policy: Leer la política de privacidad de la escuela
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Reproducción de música
+              sound_effects: Efectos de sonido
+              title: Sonido
+            visual:
+              dark_theme: Tema oscuro
+              font_size:
+                test_text: La hierba siempre es más verde al otro lado de la valla.
+                title: Tamaño de fuente
+              high_contrast: Alto contraste
+              hints: Sugerencias
+              title: Visual
+          title: Sonido y visual
+        training_settings:
+          sections:
+            i_understand: entiendo
+            i_want_to_learn: quiero aprender
+            target_language_level: nivel de inglés
+          title: Configuración de entrenamiento
+      settings_title: Configuraciones
+    teacher_card:
+      followers_count:
+        one: 1 seguidor
+        other: "%{count} seguidores"
+      lessons_count:
+        one: 1 lección
+        other: lecciones %{count}
+  gameplays:
+    errors:
+      finish_params: Parámetros no válidos para finalizar el juego
+      not_created: El juego no se ha creado
+      not_updated: El juego no se ha actualizado
+  hidden: Oculto
+  incomplete_profile_information: Perfil incompleto, actualice su información.
+  incorrect: Incorrecto
+  instructions: Instrucciones
+  invalid_score_method: Método de puntuación no válido para este tipo de tarea
+  last_name: Apellidos
+  layouts:
+    admin:
+      profile_menu:
+        admin_area: Área de administración
+        my_profile: Mi perfil
+      sidebar:
+        crawlers: Tareas de recopilación de palabras
+        dashboard: Panel
+        dictionary: Diccionario
+        gamification: Gamificación
+        languages: Idiomas
+        lessons: Lecciones
+        personal_team: Cuenta personal
+        plans: Planes
+        tasks: Tareas
+      workspace_header:
+        overview: Resumen
+    application:
+      search: Buscar...
+      sign_in_with_google: Iniciar sesión con Google
+      thanks_linguer: Gracias por ser parte de Lingu
+    authoring:
+      sidebar:
+        back_to_lesson: Volver a la lección
+    school:
+      assignments:
+        ready_for_review: Listo para revisión
+        responses:
+          audio: Respuesta de audio
+          file: Respuesta de archivo
+          text: Respuesta de texto
+      sidebar:
+        activities: Registro de actividades
+        assignments: Trabajos
+        courses: Cursos
+        dashboard: Panel
+        gdpr: RGPD
+        lessons: Lecciones
+        school_settings: Configuración de la escuela
+        search: Buscar
+        students: Estudiantes
+        support: Asistencia
+        teachers: Profesores
+        tests: Pruebas
+    teach:
+      sidebar:
+        courses: Cursos
+        followers: Mis seguidores
+        school_admin: Gestionar escuela
+  lesson_mailer:
+    new_lesson_review:
+      button: Ver lección
+      preheader: "%{user} revisó su lección"
+      review: revisión
+      statuses:
+        approved: 'Aprobado: ¡ahora puede publicar la lección!'
+        rejected: Cambios solicitados
+      title: Nueva reseña
+      user_reviewed_lesson: "%{user} ha revisado %{lesson}"
+  lessons: Lecciones
+  levels: Niveles
+  licenses: Licencias
+  locales:
+    af: Afrikaans
+    am: Amharic
+    ar: Arabic
+    az: Azerbaijani
+    be: Belarusian
+    bg: Български
+    bn: Bengali
+    bs: Bosnian
+    ca: Catalan
+    ceb: Cebuano
+    co: Corsican
+    cs: Czech
+    cy: Welsh
+    da: Danish
+    de: Deutsch
+    el: Greek
+    en: Inglés
+    eo: Esperanto
+    es: Español
+    et: Estonian
+    eu: Basque
+    fa: Persian
+    'false': Norwegian
+    fi: Finnish
+    fr: Français
+    fy: Frisian
+    ga: Irish
+    gd: Scots Gaelic
+    gl: Galician
+    gu: Gujarati
+    ha: Hausa
+    haw: Hawaiian
+    he: Hebrew
+    hi: Hindi
+    hmn: Hmong
+    hr: Croatian
+    ht: Haitian Creole
+    hu: Hungarian
+    hy: Armenian
+    id: Indonesian
+    ig: Igbo
+    is: Icelandic
+    it: Italiano
+    ja: Japanese
+    jv: Javanese
+    ka: Georgian
+    kk: Kazakh
+    km: Khmer
+    kn: Kannada
+    ko: Korean
+    ku: Kurdish
+    ky: Kyrgyz
+    la: Latin
+    lb: Luxembourgish
+    lo: Lao
+    lt: Lietuvių kalba
+    lv: Latviešu valoda
+    mg: Malagasy
+    mi: Maori
+    mk: Macedonian
+    ml: Malayalam
+    mn: Mongolian
+    mr: Marathi
+    ms: Malay
+    mt: Maltese
+    my: Myanmar (Burmese)
+    nb: Norsk
+    ne: Nepali
+    nl: Nederlands
+    ny: Nyanja (Chichewa)
+    or: Odia (Oriya)
+    pa: Punjabi
+    pl: Polski
+    ps: Pashto
+    pt: Português
+    ro: Limba română
+    rs: Сербский
+    ru: Русский язык
+    rw: Kinyarwanda
+    sd: Sindhi
+    si: Sinhala (Sinhalese)
+    sk: Slovak
+    sl: Slovenian
+    sm: Samoan
+    sn: Shona
+    so: af Soomaali
+    sq: Albanian
+    st: Sesotho
+    su: Sundanese
+    sv: Swedish
+    sw: kiSwahili
+    ta: Tamil
+    te: Telugu
+    tg: Tajik
+    th: Thai
+    tk: Turkmen
+    tl: Tagalog (Filipino)
+    tr: Türkçe
+    tt: Tatar
+    ua: Українська
+    ug: Uyghur
+    ur: Urdu
+    uz: Uzbek
+    vi: Vietnamese
+    xh: Xhosa
+    yi: Yiddish
+    yo: Yoruba
+    zh: Chinese
+    zu: Zulu
+  mailers:
+    demo_msg: >-
+      Este es un acceso de demostración que muestra la funcionalidad de la prueba.
+      No recibirás comentarios sobre tu prueba.
+  mobile:
+    errors:
+      cant_open_external_link: No puedo abrir el enlace.
+  mobile_number: Número de móvil
+  move_down: Bajar
+  move_up: Subir
+  name: Nombre
+  nok: NOK
+  none: Ninguna
+  oauth:
+    scopes:
+      profile: Correo electrónico, nombre completo e imagen de perfil.
+  org_number: Número de organización
+  platform_role: Rol de la plataforma
+  preview: Previsualizar
+  profiles:
+    profile_form:
+      select_default_language: Seleccionar idioma predeterminado
+    show:
+      choose_image: Seleccionar imagen
+      update_profile: Actualizar mi perfil
+  public_activity:
+    team_student:
+      course_assign:
+        unknown_course: un curso
+  published: Publicado
+  published_tasks: Tareas publicadas
+  remove: Eliminar
+  restore_group: Restaurar grupo
+  result_type_label: Mostrar resultados de la prueba
+  rewards: Recompensas
+  role: Rol
+  roles: Roles y habilidades
+  save: Guardar
+  save_changes: Guardar cambios
+  school:
+    activities:
+      are_you_sure: "¿Estás seguro?"
+      by_teacher: Por usuario
+      event_type: Tipo de evento
+      failed: La actividad no se pudo deshacer
+      item:
+        change: CAMBIO
+        date: FECHA
+        student: ESTUDIANTE
+      title: Registro de actividades
+    activity_types:
+      license:
+        create: Licencia creada
+        removed_expiration: Fecha de finalización eliminada
+        revoke: Licencia revocada
+        update: Fecha de finalización establecida
+      team_student:
+        archive: Estudiante archivado
+        create: Estudiante creado
+        restore: Estudiante restaurado
+    assignments:
+      assginments_management: Gestión de asignaciones
+      assignments_stats:
+        assignments_reviewed: Tareas revisadas
+        avg_rating: Puntuación media
+        avg_response_time: Tiempo medio de respuesta (30 días)
+        no_assignment_stats: Aún no hay estadísticas para mostrar ...
+        submissions_per_week: Envíos por semana
+      index:
+        assignments_from_course: Tareas de cursos
+        no_documents_msg: Tus alumnos aún no han enviado ninguna tarea
+      newest_first: El más reciente primero
+      ready_for_review: Listo para revisión
+      reviewed: Revisado
+      school_assignments: Tareas escolares
+      statuses:
+        pending: Pendiente
+        reviewed: Revisado
+      types:
+        audio: Audio
+        essay: Ensayo
+        file: Archivo
+        newest_first: El más reciente primero
+        text: Texto
+    course_mailer:
+      course_assigned_notification:
+        click_start_lesson: Haga clic en 'Iniciar lección'
+        follow_course_link: Haga clic en el botón para abrir el curso
+        get_started_line: 'Así es como empiezas:'
+        open_lesson: Abra la primera lección
+        sign_in_with_email: Inicie sesión con su dirección de correo electrónico (%{email})
+    course_sections:
+      classroom: Aula
+      self_study: Autoestudio
+    courses:
+      assign_team_group:
+        assigned: El curso se asignó con éxito a %{group}
+      errors:
+        team_group_not_selected: El grupo no está seleccionado
+      list:
+        assign_course: Asignar curso a grupo
+        assign_to_group: Asignar a grupo
+        by_last_modified: Por última modificación
+        created_at: en %{created_at}
+      show:
+        content_overview: Resumen de contenido
+        count_lessons: lecciones %{count}
+        course_components: Componentes del curso
+        course_duration: "~ %{hours} horas"
+        course_lessons: lecciones %{count}
+        course_popularity: Popularidad del curso
+        per_month: Por mes
+        per_week: Por semana
+        per_year: Por año
+    current_teams:
+      general_profile:
+        select_default_school_language: Idioma de destino predeterminado (clases)
+    dashboard:
+      agreement_success: El acuerdo de procesamiento de datos se creó con éxito.
+      confirm_agreement: Confirmar acuerdo
+      confirm_gdpr: Lea y confirme los términos del RGPD a continuación.
+      empty:
+        create_gdpr_agreement: Configurar acuerdo
+      gdpr_confirm_success: El acuerdo de procesamiento de datos se confirmó con éxito
+      gdpr_confirmation: Para empezar a utilizar Lingu, confirme que ha leído y acepta
+        nuestro RGPD.
+      get_agreement: Descargar acuerdo firmado (PDF)
+      previous_month: mes anterior
+      processor_name: Póngase en contacto con persone en %{team}
+      this_month: este mes
+    gdpr_agreements:
+      gdpr_subcontractors:
+        company: Empresa
+        data_location: Ubicación de almacenamiento de datos
+        purpose: Propósito
+        sub-contractors_heading: Subcontratistas
+      notification: Primero firme el Acuerdo de procesamiento de datos (requisito
+        de GDPR)
+      notification_button_content: Leer y firmar acuerdo
+    licenses:
+      remove_end_date:
+        removed_end_date: Fecha de finalización eliminada de la licencia
+    mobile:
+      index:
+        log_out: Cerrar sesión
+        mobile_support_will_be_available_at: El soporte móvil para escuelas estará
+          disponible en la primavera de 2021.
+        sorry_for_inconvenience: Lamentamos las molestias.
+        too_small_screen: Pantalla demasiado pequeña ...
+    profile:
+      api_access:
+        add_new_app: Agregar nueva aplicación
+        app_name: Nombre de la aplicación
+        create_app: Cree una aplicación para generar una clave API. Entonces sigue
+          el
+        delete_confirm: "¿Estás seguro de que deseas eliminar esta aplicación?"
+        documentation: documentación
+        give_students_access: >-
+          Con nuestra API, puede brindar a los estudiantes acceso sin problemas a
+          recursos de aprendizaje y pruebas de idioma de primer nivel.
+        integrate_services: Integre nuestros servicios en su sitio web
+        redirect_url: Redireccionar URL
+        title: Acceso a la API
+        to_start_your_process: para iniciar su proceso de integración.
+      billing:
+        business_address: Dirección de Negocios
+        business_registration_id: ID de registro comercial
+        city: Ciudad
+        country: País
+        postal_code: código postal
+        state: Estado
+        title: Facturación
+      general:
+        remove_image: Quita la imagen
+        upload_new_image: Subir nueva imagen
+      privacy:
+        data_processor_agreement: Acuerdo de procesador de datos
+        destroy_user_after: Destruir los datos del usuario después de (días)
+        download_signed_agreement: Descargar acuerdo firmado
+        gdpr_contact_name: Persona de contacto del RGPD
+        privacy_url: URL de la política de privacidad de la escuela
+        title: Política de privacidad
+      tests:
+        agree_to: Estoy de acuerdo con la
+        agree_to_terms: Acepto el %{link} para pruebas de idioma.
+        disabled: Discapacitado
+        enable_test: Habilitar módulo de prueba
+        enable_test_note: >-
+          Asigne pruebas de idioma para evaluación, ubicación de nivel y logro de
+          nivel para evaluar las habilidades lingüísticas del candidato.
+        enabled: Habilitado
+        for_testing_service: para servicio de prueba
+        pay_note: Paga solo por prueba completa
+        terms_and_conditions: términos y Condiciones
+        test_module: Módulo de prueba
+    school_assignments:
+      assign_to_student: Asignar a alumno
+      create_assignment: Crear tarea
+      form:
+        assign_to: Asignar a
+        deadline: Fecha límite
+        empty_form_error: Insertar contenido de comentario o grabar audio
+        pass_date: Presentada
+        select_student: Seleccionar alumno
+      new_assignment: Crear nueva tarea
+      responses:
+        audio: Respuesta de audio
+        file: Respuesta de archivo
+        text: Respuesta de texto
+      school_assignments_management: Gestión de asignaciones escolares
+      student_assignment:
+        statuses:
+          pending: Pendiente
+          reviewed: Revisado
+          skipped: Omitido
+      student_assignment_info:
+        service_provider_note: >-
+          Este servicio es brindado por Lingutest AS, identificación de registro comercial
+          NO 913628934.
+        submitted_at: Presentada
+    search:
+      index:
+        search_fallback: Escribe algo para comenzar a buscar
+        search_school_data: Buscar datos escolares
+    shared:
+      document_review:
+        add_comment: añadir un comentario...
+        leave_comment: Deje un comentario
+        use_quote: Utilizar como cotización
+      onboarding:
+        change_team: 'Cambie a una de las siguientes cuentas:'
+        complete_profile: completa tu perfil
+        contact_info: >-
+          Comuníquese con el soporte a través de school@lingu.com o use el chat de
+          soporte en la esquina inferior derecha
+        follow_invitation_link: >-
+          Los usuarios de la escuela deben seguir un enlace de invitación para registrarse
+          por primera vez.
+        signed_in_personal_team: Ha iniciado sesión en una cuenta personal.
+        wrong_place: Vaya, estás en el lugar equivocado
+      school_response:
+        response_placeholder: Deja tu texto o graba audio ...
+        use_quote: Usar como cotización
+    teachers:
+      default: Predeterminado
+      import:
+        import_count_users: Agregar profesores %{count}
+        import_in_progress: Se están creando cuentas de profesores. Espere un minuto.
+        items_count: "%{count} artículos"
+      invite:
+        import_users: Importar usuarios
+        invite_users: Invitar usuarios
+      item:
+        archive: Eliminar cuenta de profesor
+        edit: Editar cuenta de profesor
+        email: CORREO ELECTRÓNICO
+        followers: SEGUIDORES
+        language: IDIOMA
+        lessons: LECCIONES
+        name: NOMBRE
+        role: ROL
+      language_placeholder: Buscar idioma...
+      list:
+        add_teacher: Cuenta de usuario nueva
+        all_roles: Todos los roles
+        by_last_added: Por último añadido
+        by_name_az: Por nombre (A a Z)
+        by_name_za: Por nombre (Z a A)
+        custom: Personalizado
+        delete_confirm: "¿Seguro que quieres eliminar este usuario? No puede ser undone"
+        no_teachers: >-
+          No tienes ningún usuario por ahora. Invita a tu equipo a asignar pruebas,
+          lecciones y trabajos.
+      new:
+        created_successfully: El profesor se ha creado correctamente.
+        failed_create_teacher: Error al crear al profesor.
+        general: General
+        import_from: Importar desde Excel/CSV
+        language: Idioma
+        teach_languages: Competencias lingüísticas
+      role:
+        administrator: Administrador
+        editor: Editor
+        teacher: Profesor
+      set_as_default: Establecer como predeterminado
+      spot: ","
+    team_groups:
+      assign_course:
+        assigned: "%{course} se asignó correctamente a %{group}"
+      create:
+        unique_name_error: El nombre de la clase debe ser único
+      create_group: Crear nueva clase
+      edit:
+        general: General
+        members: Miembros
+        remove_member: Eliminar
+        title: Editar clase
+      edit_group: Editar clase
+      edit_plan:
+        new_license_for_group: Asignar licencia al grupo
+      errors:
+        course_not_selected: El curso no está seleccionado
+      item:
+        archive: Archivar
+        assign_lesson: Asignar lección en clase
+        assign_test: Asignar examen en clase
+        class: Clase
+        confirm_archive: "¿Seguro que quieres archivar esta clase?"
+        confirm_destroy: "¿Seguro que quieres eliminar esta clase?"
+        destroy: Eliminar
+        edit: Editar
+        invite_students: Invite a más estudiantes a unirse a este grupo
+        invite_students_link: 'Enlace:'
+        no_students: Sin estudiantes
+        set_joinable: Permitir que los alumnos se unan mediante un enlace
+        waiting_note: Espera...
+      new:
+        language: Idioma
+        level: Nivel
+        select_language: Seleccionar idioma
+        select_level: Seleccionar nivel
+        sub_title: Crear una clase nueva para agrupar a los estudiantes
+        title: Nueva clase
+      update:
+        archive_msg: La clase se ha marcado como archivada
+        discard_msg: La clase se ha marcado como eliminada
+        success: La clase se ha actualizado correctamente
+    team_students:
+      analyze_imported_file:
+        import_count_students: Importar %{count} estudiantes
+        items_count: "%{count} elementos"
+      archived_students:
+        by_last_archived: Por último archivado
+        clear_archive: Eliminar alumnos archivados
+        clear_archive_confirm: >-
+          ¿Está seguro de que desea eliminar todos los alumnos archivados? Esto no
+          se puede deshacer.
+        notification_content: >-
+          Según la política de privacidad de %{school_name}, los registros de estudiantes
+          archivados se borrarán %{days} días después de que finalice la licencia.
+        student_last_name: Apellido del estudiante
+        table_headers:
+          data_deletion_date: Fecha de eliminación de datos
+          date_in: en %{date}
+          email: Email
+          level: Nivel
+          name: Nombre
+          native: Nativo
+          remove_student_confirm: "¿Estás seguro de que deseas eliminar a este alumno?"
+          restore_student_confirm: "¿Estás seguro de que deseas restaurar a este alumno?"
+          target: Objetivo
+        title: Estudiantes archivados
+      archived_students_list_row:
+        archived_at: Archivado %{date}
+        delete_student: Eliminar alumno
+        restore_student: Restaurar estudiante
+      assign_course:
+        assign_to_student: Asignar curso a alumno
+        assigned: "%{course} se asignó correctamente a %{student}"
+      courses:
+        assigned_course: Curso asignado
+        other_courses: Otros cursos
+      edit:
+        personal_data: Datos personales
+      form:
+        active: Activo
+        add_new_student: Añadir nuevo estudiante
+        class: Clase
+        confirm_close_popup: >-
+          Tiene cambios sin guardar que se perderán si decide continuar. ¿Seguro que
+          quieres cerrar?
+        import_students: importar estudiantes
+        inactive: Establecer como activo
+        language_select_placeholder: Comience a escribir el idioma para agregar nuevo
+          ...
+        native: Nativo
+        nonnative: Establecer como nativo
+        personal_data: Datos personales
+        plan: Plan
+        select_class: Seleccionar grupo
+        select_language: Seleccionar idioma
+        send_invitation: enviar invitación
+        set_active_state: Establecer como activo
+        student_import_links: También puedes %{import_link} o %{invitation_link}
+        support_languages: Idiomas de soporte
+        target_languages: Idiomas de destino
+      import_students:
+        add_manually: añadir manualmente
+        add_or_invite_links: También puede %{add} o %{invite}
+        also_you_can: También puedes
+        analyze_failed: No se puede analizar este archivo
+        browser_link: navegar
+        failed: Error
+        import_failed: No se ha podido completar la importación
+        import_in_progress: Los estudiantes se están importando. Espera un minuto.
+        not_recognize: Correo electrónico no reconocido
+        or: o
+        read_more: Más información sobre cómo importar
+        select_plan: Sin plan
+        title: Importar estudiantes
+        upload_text: Arrastrar y soltar archivo XLS/CSV o
+        wrong_format: Formato incorrecto
+      import_students_form:
+        send_invites: enviar invitaciones
+      index:
+        add_manually: Añadir manualmente
+        archive: Archivo
+        clear: Borrar
+        create_failed: No se pudo crear al alumno
+        import_students: Importar desde Excel/CSV
+        invite: Invitar
+        invite_students: Invitar a estudiantes
+        license: Licencia
+        new_class: Nueva clase
+        self_plan: Plan de autoaprendizaje
+        sort_by_date: Por fecha
+        sort_by_name: Por nombre
+      invite_students:
+        accept_invitation: Aceptar invitación y crear mi cuenta
+        add_manually: agregar manualmente
+        add_new_class: Agregar nueva clase
+        add_or_import_links: También puede %{add} o %{import}
+        already_account: "¿Ya tienes una cuenta? Registrarse"
+        already_student: Ya te has unido a este equipo.
+        also_you_can: Tambien usted puede
+        class_name: Nombre de la clase...
+        copy_link: Copiar link
+        create_account: Crea tu cuenta
+        create_student_failed: Error al crear un nuevo alumno
+        created_student_successfully: Ha sido agregado al equipo con éxito.
+        emails: Correos electrónicos
+        follow_link_to_join_team: Siga el enlace a continuación para comenzar y configurar
+          su perfil.
+        get_back_into: Asegúrese de volver a Lingu para probarlos usted mismo.
+        import_students: importar estudiantes
+        invitation_request: "¡Bienvenida a la escuela!"
+        invite_by_email: Invitar por correo electrónico
+        invite_by_link: Invitar por enlace
+        invite_more: Invitar más
+        invited_to_join_team: Le han invitado a unirse a la escuela Lingu.
+        join_school: Únete
+        join_team_group_error: No puedes unirte al grupo de equipo.
+        lots_more_to_learn: Hay mucho más de lo que puede aprender.
+        no_plan: Ningún plan
+        notification_settings: Configuración de las notificaciones
+        or: o
+        paste_invite_link: 'o pegue este enlace en el navegador:'
+        privacy_policy: Política de privacidad
+        profile_link: Vaya a su %{link} para administrar escuelas
+        quick_student_setup: Configuración rápida para estudiantes
+        receive_marketing_messages: Quiero recibir mensajes de marketing
+        select_class: Seleccionar clase
+        send_invitation_failed: No se pudieron enviar las invitaciones
+        send_invitations: Enviar invitaciones
+        send_invitations_successfully: Las invitaciones se han enviado correctamente
+        support: Apoyo
+        title: Invitar a los estudiantes
+        we_process_your_data: Procesaremos sus datos como se establece en nuestro
+      lessons:
+        assign_lesson: Asignar lecciones
+        by_date: Por fecha
+        by_level: Por nivel
+        earned_xp: XP ganados
+        progress: Progreso
+        recent_lessons: Actividad reciente de la lección
+        search_lesson: Buscar lección
+      list:
+        native: Nativo
+        native_language: Idioma nativo
+        target: Objetivo
+        target_language: Idioma objetivo
+      list_row:
+        archive: Archivar
+        are_you_sure_archiving: "¿Seguro que quieres archivar este estudiante?"
+        assign_course: Asignar curso
+        assign_lesson: Asignar lección
+        assign_test: Asignar prueba
+        edit: Editar alumno
+        move_to_class: Mover a clase ...
+        unarchive: Desarchivar
+      move_class:
+        submit: Enviar
+        title: Mover a clase
+      profile:
+        change_license: Cambiar licencia
+        expires_at: Caduca %{expires_at}
+        license_failed: No se pudieron crear las licencias
+        license_in_progress: Ahora se están emitiendo licencias. Espere un minuto.
+        no_license: Sin licencia
+        perpetual_license: Licencia perpetua
+        plan_is_not_selected: El plan no está seleccionado
+        plan_price: "%{price} por %{interval}"
+        remove_end_date: Eliminar fecha de finalización
+        revoke_license: Revocar licencia
+        revoke_license_confirm: "¿Realmente quieres desactivar la licencia ahora mismo?"
+        revoke_license_now: Revocar la licencia ahora
+        set_end_date: Establecer fecha de finalización
+      student_header:
+        activity: Actividad
+    team_users:
+      form:
+        edit_user: Editar cuenta de usuario
+      lessons:
+        created_on: Creado en
+        followers_count:
+          one: 1 seguidor
+          other: "%{count} seguidores"
+          zero: Sin seguidores
+        lessons_count:
+          one: 1 lección
+          other: lecciones %{count}
+          zero: 0 lección
+        playthroughs: Playthroughs
+        teaches: Enseña
+      list_row:
+        you: TÚ
+    users:
+      form:
+        avatar: Imagen
+        remove_image: Quita la imagen
+        upload_image: Subir nueva imagen
+  score: Puntuación
+  search_student: Buscar estudiante
+  select: Seleccionar
+  select_date: Seleccionar fecha
+  select_status: Seleccionar estado
+  sessions:
+    create: Crear
+  shared:
+    activity: Actividad
+    assignment: Asignación
+    audio_upload:
+      add_audio: Añadir audio
+      choose_audio: Escoger audio
+      update_audio: Actualizar audio
+    author: Autor
+    available_date: Lanzamiento en primavera de 2021
+    cancel: Cancelar
+    category: Categoría
+    classes: Clases
+    clear: Claro
+    confirm: Confirmar
+    copy: Copiar
+    count_followers:
+      one: "%{count} seguidor"
+      other: "%{count} seguidores"
+    count_lessons:
+      one: lección %{count}
+      other: lecciones %{count}
+    count_students:
+      one: estudiante %{count}
+      other: estudiantes %{count}
+    count_users:
+      one: usuario %{count}
+      other: usuarios de %{count}
+    earned_xp: XP ganado
+    edit: Editar
+    email_lcase: correo electrónico
+    enter_code: Ingrese el código de un solo uso del correo electrónico
+    icon: Icono
+    image_upload:
+      add_illustration: Añadir ilustración
+      choose_animation: Escoger animación
+      choose_image: Seleccionar imagen
+      update_illustration: Actualizar ilustración
+    inactive: Inactivo
+    instructions: Instrucciones
+    language: Idioma
+    level: Nivel
+    next: Siguiente
+    rating: Puntuación
+    school: Escuela
+    send: Enviar
+    skill: Habilidades
+    stats: Estadísticas
+    student: Estudiante
+    tags: Etiquetas de contenido
+    team: Equipo
+    time_spent: Tiempo invertido
+    unknown: desconocido
+  show: Mostrar
+  sign_in_facebook: Iniciar sesión con Facebook
+  sign_in_google: Iniciar sesión con Google
+  sign_in_microsoft: Iniciar sesión con Microsoft
+  sign_out: Cerrar sesión
+  skills: Competencias
+  sort_by: Ordenar por
+  special_characters: Caracteres especiales
+  ssn: Número de la Seguridad Social
+  status: Estado
+  student_solution: La solución del estudiante
+  students: Estudiantes
+  subject: Sujeto
+  success_signed_in: Has iniciado sesión correctamente
+  success_signed_out: Has cerrado sesión correctamente
+  t:
+    collect_words_from_website: Recopilar palabras de sitio web
+  task_guidelines: Pautas de la tarea
+  task_item_session:
+    errors:
+      create: No se puede crear sesión de elemento de nueva tarea
+  task_items:
+    record: Grabar
+    video:
+      errors:
+        unsupported_url_format: Formato de enlace de vídeo no compatible. Probar YouTube
+          o Wistia link.
+  task_scoring_label: Método de puntuación de tarea
+  tasks:
+    complexities:
+      high: Alta
+      low: Baja
+      medium: Media
+    errors:
+      failure: Hubo un error al cargar el archivo.
+    score_methods:
+      automatic: Automática
+      fractional: Fraccional
+      manual: Manual
+      no_score: Sin puntuación
+      true_false: Verdadero/falso
+    types:
+      tasks/arrange_words: Ordenar palabras
+      tasks/audio: Audio
+      tasks/audio_dialogue: Diálogo del audio
+      tasks/audition: Audición
+      tasks/dictation: Dictado
+      tasks/email: Correo electrónico
+      tasks/embed: Contenido incrustado
+      tasks/essay: Disertación
+      tasks/fill_gap: Rellenar los espacios de las oraciones
+      tasks/fill_in_blanks: Rellenar los espacios
+      tasks/fill_in_table: Rellenar la tabla
+      tasks/image_hotspot: Punto de acceso de imagen
+      tasks/image_object: Objeto de imagen
+      tasks/inline_dropdown: Desplegable en línea
+      tasks/mark_word: Marcar palabras
+      tasks/mark_word_audio: Marcar audio de palabras
+      tasks/select_image: Seleccionar imagen
+      tasks/select_text: Varias opciones
+      tasks/select_video: Parejas mínimas
+      tasks/sms: SMS
+      tasks/speaking: Escuchar y repetir
+      tasks/text: Leer y escuchar
+      tasks/translatable_text: Traducir automáticamente
+      tasks/true_false: Verdadero/falso
+      tasks/video: Vídeo
+      tasks/webpage: Página web externa
+      tasks/word_games: Juegos de palabras
+  teach:
+    course_sections:
+      lesson_row:
+        session_count: "%{count} vistas"
+        unpublished: Sin publicar
+        word_count:
+          one: Una palabra
+          other: "%{count} palabras"
+          zero: Sin palabras
+      section:
+        add_lesson: Añadir lección
+        chapter_no: Capítulo %{no}
+        delete_section: "¿Seguro que quieres eliminar esta sección?"
+        select_lesson: Seleccionar lección
+    courses:
+      confirm_course_delete: "¿Seguro que quieres eliminar este curso?"
+      create:
+        success: El curso se ha creado correctamente.
+      destroy:
+        failure: No se puede eliminar el curso
+        success: El curso se ha eliminado
+      edit:
+        edit_course: Editar curso
+      form:
+        choose_image: Seleccionar imagen
+        description_placeholder: Escribe la descripción de tu curso.
+        prohibited_saving_form: acción de guardar no permitida
+        select_language: Seleccionar idioma
+      index:
+        all_courses: Todos los cursos
+        my_courses: Mis cursos
+        no_courses: Sin cursos
+        title: Cursos
+      level_words:
+        count_missing_words: Se han suprimido %{count} palabras de %{level}
+        coverage_of_level: >-
+          Este curso cubre el %{percent} de la lista de palabras de frecuencia de
+          este nivel, con %{count} palabras.
+        list_of_omitted_words: 'La lista de palabras de frecuencia de %{level} también
+          contiene these words:'
+      list:
+        count_chapters: "%{count} capítulos"
+        count_words: "%{count} palabras y frases"
+      new:
+        title: Curso nuevo
+      show:
+        add_new_chapter: Añadir nuevo capítulo
+        remove_image: Eliminar imagen
+      update:
+        success: El curso se ha actualizado correctamente.
+      words:
+        compare_with_frequency_wordlist: Comparar con la lista de palabras de frecuencia
+    lessons:
+      confirm_lesson_delete: "¿Seguro que quieres eliminar esta lección?"
+      count_approved_lessons:
+        one: Una lección aprobada
+        other: "%{count} lecciones aprobadas"
+        zero: Ninguna lección aprobada
+      count_draft_lessons:
+        one: Una lección en curso
+        other: "%{count} lecciones en curso"
+        zero: Ninguna lección en curso
+      count_pending_lessons:
+        one: Una lección pendiente de revisión
+        other: "%{count} lecciones pendientes"
+        zero: Ninguna lección pendiente de revisión
+      count_published_lessons: "%{count} lecciones publicadas"
+      create:
+        success: La lección se ha creado correctamente
+      destroy:
+        failure: No se puede eliminar la lección
+        success: La lección se ha eliminado
+      draft:
+        all_lessons: Todas las lecciones
+        columns:
+          last_updated: Última actualización
+        draft_lessons: En desarrollo
+        lessons_pending_review: Lecciones pendientes de revisión
+        my_lessons: Mis lecciones
+        no_lessons: Sin lecciones
+        reviewable_lessons: Revisión pendiente
+        select_course: Seleccionar curso
+        title: Lecciones
+      edit:
+        choose_image: Seleccionar imagen
+      edit_lesson: Editar %{lesson}
+      form:
+        credits_placeholder: Introduce los nombres de los autores cuyo contenido se
+          ha reutilizado here.
+        prohibited_saving_form: acción de guardar no permitida
+        select_language: Seleccionar idioma
+        select_level: Seleccionar nivel
+        select_parent_lesson: Seleccionar lección principal
+        select_skill: Seleccionar competencia
+        select_support_language: Seleccionar idioma secundario
+        select_tag: Seleccionar categoría
+        select_target_language: Seleccionar idioma objetivo
+        select_target_language_active: Activo
+        select_target_language_level: Seleccionar nivel de idioma meta
+        select_team: Seleccionar equipo
+        team_image: Logotipo
+      lesson_header:
+        glossary: Glosario
+        live_page: Ver lección
+        more: Más
+        more_actions: Más acciones
+      list:
+        columns:
+          last_updated: Última actualización
+          title: Título
+        count_lessons:
+          one: Una lección
+          other: "%{count} lecciones"
+        level: Nivel
+      new:
+        title: Lección nueva
+      publishable:
+        lesson_approval:
+          'false': Necesita ser revisada y aprobada por otro instructor
+          'true': Revisada y aprobada por otro instructor
+        lesson_glossary:
+          'false': Añade el glosario de la lección (10 palabras como mínimo)
+          'true': Glosario de palabras clave añadido
+        user_credits:
+          'false': Revisa la lección de otro instructor para obtener créditos
+          'true': Se ha revisado la lección de otro instructor
+        user_profile:
+          'false': Completa tu perfil
+          'true': Tu perfil está completo
+      review:
+        actions:
+          draft: Poner en borrador
+          pending: Enviar a revisión
+          publish: Publicar lección
+        publication_error: La lección no se puede publicar
+        published: La lección se ha publicado correctamente
+        publishing_status: Estado de publicación
+        status_updates:
+          draft: El estado de la lección se ha puesto en borrador
+          pending: El estado de la lección se ha puesto en revisión
+        unpublication_error: No se puede anular la publicación de la lección
+        unpublished: Se ha anulado la publicación de la lección
+      reviewable_lessons:
+        author: Autor
+      select_color: Seleccionar color de fondo
+      show:
+        add_objective: Añadir
+        cover: Imagen de portada
+        move_tasks: Mover tareas
+        no_cover: No se ha cargado la portada
+        split: Dividir
+        title: Detalles de la lección
+      split:
+        error: La nueva lección no se ha creado
+        new_lesson_title: Título de nueva lección
+        split_lesson: Dividir lección
+        success: Nueva lección creada correctamente
+      storyline:
+        children_lessons: Lecciones complementarias
+        define_learning_objectives): Definir objetivos de aprendizaje
+        lesson_content: Contenido
+        parent_lesson: Lección anterior
+      task_row:
+        delete: Eliminar
+      tasks:
+        no_tasks: Todavía no hay tareas aquí
+      tet:
+        count_words: Se usarán %{count} palabras en los juegos.
+        enter_learning_objective: Especificar objetivo de aprendizaje
+        games: Juegos
+        go_to_glossary: Ir al glosario
+      update:
+        success: La lección se ha actualizado correctamente
+    phrases:
+      add_phrase: Añadir frase
+      form:
+        enter_phrase: Introducir una palabra o frase...
+      heading: Glosario de la lección
+      index:
+        confirm_reload_phrases: >-
+          ¿Seguro? Esto borrará las palabras existentes y realizará una importación
+          new from lesson.
+        contextual_wordlist: Lista de palabras contextual
+        delete_all: Eliminar todo
+        generate_glossary: Generar glosario
+        glossary_count: El glosario contiene %{count} palabras
+        independent_wordlist: Lista de palabras independiente
+        recommended_glossary_text: >-
+          La plataforma de aprendizaje generará juegos para el estudiante en función
+          de esta lista de palabras. La lista de palabras debe contener entre 10 y
+          20 palabras.
+        waiting_note: Espera...
+      list:
+        confirm_phrase_delete: "¿Seguro que quieres eliminar esta frase?"
+        no_phrases: Todavía no se ha definido ninguna frase. Genera o añade palabras
+          manualmente.
+      title: Glosario de la lección
+    posts:
+      confirm_post_delete: "¿Seguro que quieres eliminar esta publicación?"
+      create:
+        success: La publicación se ha creado correctamente.
+      destroy:
+        failure: No se puede eliminar esta publicación.
+        success: La publicación se ha eliminado.
+      edit:
+        edit_post: Editar publicación
+      form:
+        content_placeholder: Introduce el contenido de tu publicación.
+        prohibited_saving_form: acción de guardar no permitida
+        select_lesson: Seleccionar lección
+      index:
+        all_posts: Todas las publicación
+        my_posts: Mis publicaciones
+        no_posts: Sin publicaciones
+        posts: Publicaciones
+        title: Publicaciones
+      list:
+        content: Contenido
+        lesson: Lección
+      new:
+        title: Nueva publicación
+      update:
+        success: La publicación se ha actualizado correctamente.
+    reviewable_lessons:
+      count_pending_review:
+        one: Una lección está pendiente de revisión
+        other: "%{count} lecciones están pendientes de revisión"
+    reviews:
+      form:
+        approve: Aprobada para publicar
+        changes_requested: Cambios solicitados
+        submit_review: Enviar revisión
+      index:
+        no_learning_objectives: Objetivos de aprendizaje no definidos...
+        objectives: Objetivos de aprendizaje
+      items:
+        approved_at: 'Aprobación: %{time}'
+        changes_requested_at: Cambios solicitados, %{time}
+        confirm_delete: "¿Seguro que quieres eliminar esta revisión?"
+        no_reviews: Sin revisiones
+      navbar:
+        post_review: Publicar revisión
+      reviews:
+        reviews: Revisiones
+    task_item_options:
+      auditions:
+        option_form:
+          add_answer: Añadir respuesta
+          enter_answer: Escribir respuesta
+      select_image:
+        option_form:
+          item_option_image: Imagen de elemento de opción
+    task_items:
+      arrange_words:
+        arrange_words:
+          additional_words: Mezcla las palabras incorrectas adicionales
+          click_set_incorrect_words: "(Haga clic para agregar)"
+          enter_correct_sentence: Escribe la oración correcta
+          hint: Insinuación
+        forms:
+          form:
+            leave_blank_for_translations: Déjelo en blanco para usar Google Translate
+      audition:
+        forms:
+          form:
+            minute: Minuto
+            second: Segundo
+            select_word: Seleccionar palabra
+      dictation:
+        forms:
+          form:
+            enter_expected_response: Escribe la respuesta esperada del estudiante
+      email:
+        email:
+          email_body: Mensaje de correo electrónico
+          from_email: Correo electrónico del remitente
+          from_name: Nombre del remitente
+      embed:
+        embed:
+          accepted_sources: Fuentes aceptables
+      image_hotspot:
+        forms:
+          form:
+            add_hotspot: Añadir punto de acceso
+            associate_with: Asociado con
+            new_hotspot: Nuevo punto de acceso
+            select_word: Seleccionar palabra
+      image_object:
+        forms:
+          form:
+            add_object: Añadir objeto de imagen
+            instruction: "¿Dónde debe hacer clic el estudiante?"
+            leave_blank_for_audio: Instrucciones de texto (déjalas en blanco solo
+              en caso de audio)
+            new_object: Nuevo objeto de imagen
+        image_object:
+          audio_only: "(solo audio)"
+      inline_dropdown:
+        forms:
+          form:
+            add_block: Añadir bloque
+      mark_word:
+        mark_word:
+          associate_with: Asociarse con
+          link_word: Conectar palabra
+      select_image:
+        forms:
+          form:
+            enter_question: Escribe la pregunta de la tarea aquí
+        select_image:
+          delete_question: Eliminar pregunta
+          find_image: Cargar imagen
+      select_text:
+        forms:
+          form:
+            add_question: Añadir pregunta
+            enter_question: Escribe la pregunta de la tarea aquí
+            new_question: Pregunta nueva
+        select_text:
+          add_answer: Añadir respuesta
+          enter_answer: Escribir respuesta
+          select_text_guide: >-
+            Las tareas de varias opciones te permiten formular una pregunta y proporcionar
+            una o más respuestas correctas.
+      select_video:
+        select_video_guide: >-
+          Crea una pregunta y, después, graba un vídeo breve. Guarda el vídeo haciendo
+          clic en el icono del disquete. Después, añade las respuestas.
+      sms:
+        forms:
+          form:
+            message: Mensaje
+            sender_name: Nombre del remitente
+      speaking:
+        forms:
+          form:
+            add_sentence: Añadir oración
+            instruction: Introduce la respuesta anticipada del estudiante
+            new_sentence: Oración nueva
+      translatable_text:
+        translatable_text:
+          write_in_language: >-
+            Escribe en %{language}. El artículo se traducirá al idioma nativo del
+            estudiante.
+      true_false:
+        forms:
+          form:
+            add_statement: Añadir comentario
+            new_statement: Nuevo comentario
+      video:
+        video:
+          accepted_sources: Acepta vídeos de YouTube y Wistia
+          caption: Subtítulos/transcripción
+      webpage:
+        webpage:
+          url_label: URL de la página web
+    task_list_row:
+      confirm_publish: "¿Seguro que quieres cambiar el estado publicado?"
+    task_moves:
+      move_tasks: Mover tareas
+      select_lesson: Seleccionar lección
+    tasks:
+      arrange_words:
+        forms:
+          form:
+            arrange_words_guidelines: Escribe una oración sintácticamente correcta
+              y grábala your own pronunciation.
+            sentences: Oraciones
+      audio:
+        audio:
+          input_minimum_duration: Introducir duración mínima del audio
+          minimum_duration: Duración mínima
+      audio_dialogue:
+        forms:
+          form:
+            enter_name_of_partner: Escribir el nombre de la otra persona
+            input_answers_select: Cargar partes del diálogo de audio
+            partner_name: Nombre de la otra persona del diálogo
+      audition:
+        errors:
+          start_interference: Tiene que haber un mínimo de %{seconds} segundos entre
+            prompts
+          task_audio_duration: La marca de tiempo no debe exceder la duración del
+            audio
+          task_audio_presence: Carga el audio a la tarea desde la herramienta de carga
+        forms:
+          form:
+            audition_guidelines: >-
+              Comienza cargando un archivo de audio de entre 30 segundos y 2 minutos.
+              Luego, añade las marcas de tiempo en función del audio y vincúlalas
+              a las palabras del diccionario.
+            per_30s: por audio de 30 segundos.
+      convert_text_task_confirm: "¿Seguro que quieres convertir el tipo de tarea?"
+      convert_text_task_msg: El tipo de tarea se ha cambiado correctamente.
+      delete_task_confirm: "¿Seguro que quieres eliminar esta tarea?"
+      deleted_task_msg: La tarea se ha eliminado
+      dictation:
+        forms:
+          form:
+            guidelines: >-
+              El alumno escribirá lo que escuche en el audio. Escribe la respuesta
+              esperada del estudiante y añade la grabación del audio.
+            sentences: Oraciones
+        name: Tareas
+      email:
+        forms:
+          form:
+            email_task_guidelines: >-
+              Rellena los campos del remitente, el asunto y el mensaje si quieres
+              que el estudiante responda a tu correo electrónico. De lo contrario,
+              el estudiante verá un formulario de correo electrónico nuevo.
+      enter_help_text_for_student: Escribe un texto de ayuda para el estudiante
+      enter_instruction: Escribe instrucciones...
+      enter_title: Escribe el título
+      essay:
+        essay:
+          input_minimum_words: Introducir longitud mínima de las palabras
+          minimum_words: Palabras mínimas
+      fill_gap:
+        forms:
+          form:
+            fill_gap_guidelines: >-
+              Al *select*, se reemplazará con un espacio vacío con opciones de respuesta
+              diferentes abajo. La primera alternativa es correcta.
+      fill_in_blanks:
+        forms:
+          form:
+            fill_in_blanks: Rellenar los espacios
+            fill_in_blanks_example: Me *love* esta ciudad
+            fill_in_blanks_guidelines: >-
+              Pon la palabra o frase correcta entre dos asteriscos. Separa las alternativas
+              correctas con dos puntos (:).
+      fill_in_table:
+        forms:
+          form:
+            column: Columna
+            columns: Columnas
+            fill_in_tables_guidelines: >-
+              El candidato verá la primera columna de la tabla y deberá rellenar las
+              columnas dos y tres. Separa las alternativas correctas con dos puntos
+              (:).
+            question_format: Formato de la pregunta
+      giphy_modal:
+        results: buscar resultados
+        search_giphy: Buscar imágenes en Giphy
+      headline: Título de la tarea
+      hints_placeholder: Añade sugerencias para ayudar a resolver la tarea
+      image_hotspot:
+        forms:
+          form:
+            hotspots: Puntos de acceso
+            image_hotspot_guidelines: >-
+              Comienza cargando una imagen. Luego, busca una palabra en el diccionario
+              y arrastra el punto de acceso correspondiente a la posición correcta
+              en la imagen.
+      image_object:
+        forms:
+          form:
+            clickable_image_areas: Áreas de imagen en las que se puede hacer clic
+            image_object_guidelines: >-
+              Comienza cargando una imagen. Luego, añade instrucciones de texto o
+              audio en la parte de la imagen en la que debe hacer clic el estudiante.
+              Coge la esquina inferior derecha de la zona amarilla para cambiar el
+              tamaño y cubrir el objeto descrito.
+      index:
+        all_states: Todos los estados
+        all_subjects: Todos los asuntos
+        all_task: Todas las tareas
+        search_name: Buscar por nombre
+        task_base: Base de la tarea
+      inline_dropdown:
+        forms:
+          form:
+            inline_dropdown_guidelines: >-
+              Al *select*, se reemplazará con un campo desplegable con diferentes
+              opciones. La primera alternativa es correcta.
+      instructions_for_student: Instrucciones de la página de inicio
+      introduction_task_placeholder: Texto de introducción de la tarea
+      list:
+        count_tasks: "%{count} tareas"
+        last_updated: Última actualización
+        settings: Configuración
+      main_form:
+        save_and_continue: Guardar y continuar
+      mark_word:
+        forms:
+          form:
+            mark_words_guide: Marca cada palabra o frase que el estudiante debe click
+              with asterisks (*).
+            sentences: Oración
+            statements: Oraciones
+      mark_word_audio:
+        forms:
+          form:
+            mark_word_audio_guide: >-
+              Marca cada palabra en la que el estudiante debe hacer clic con asteriscos
+              (*) inmediatamente antes y después. Tras crear el comentario, puedes
+              crear instrucciones en audio para decirle al estudiante en qué palabras
+              hacer clic.
+            statements: Oraciones
+      new:
+        new_task: Crear nueva tarea
+        save_and_continue: Guardar y continuar
+        select_task_type: Seleccionar tipo de tarea
+        task_name: Título
+      overview:
+        count: Recuento
+        no_level: Nivel sin definir
+        tasks_by_level: Tareas por niveles
+        tasks_count:
+          one: Una tarea
+          other: "%{count} tareas"
+          zero: Sin tareas
+      preview:
+        back_to_task: Volver a la tarea
+      required_count_msg: Este tipo de tarea requiere un mínimo de %{count} elementos
+      select_image:
+        forms:
+          form:
+            upload_and_select_correct: Cargar imágenes y seleccionar respuesta correcta
+      select_text:
+        fields:
+          hints_or_help: Consejos o ayuda para los estudiantes
+        forms:
+          form:
+            questions: Preguntas
+      select_video:
+        fields:
+          hints_or_help: Consejos o ayuda para los estudiantes
+        forms:
+          form:
+            questions: Preguntas
+      settings:
+        content: Configurar contenido
+        task_settings_for: Actualizar configuración de tareas de %{name}
+        task_type: Tipo de tarea
+      shared_task_fields:
+        accepted_video_sources: Acepta videos de Youtube y Wistia
+        choose_audio_file: Escoger archivo de audio
+        choose_file: Escoger archivo
+        choose_giphy_image: Escoger imagen de Giphy
+        choose_image: Seleccionar archivo de imagen
+        complexity: Complejidad
+        delete_attachment: Eliminar adjunto
+        internal_name: Nombre de admin
+        remove_audio: Eliminar audio
+        remove_image: Eliminar imagen
+        score_fractional_label: Fraccional (automático); por ejemplo, 4 de 5 puntos.
+        score_manual_label: Puntuación manual
+        score_no_score_label: Sin puntuación
+        score_true_false_label: Verdadero/falso (automático), si se responde el 100 %
+          correctamente
+        stretch_image_label: Estirar la imagen para llenar la página
+        task_content: Contenido de la tarea
+        upload_audio: Cargar archivo de audio
+      shared_task_header:
+        convert_text_task_type: Tipo de conversión
+        last_updated_at_date_by: 'Última actualización: %{date} por %{user}'
+      size_requirements: Alcance
+      sms:
+        forms:
+          form:
+            define_sms_dialogue: Configurar diálogo de SMS
+        sms:
+          input_minimum_duration: Introducir duración mínima del SMS
+          minimum_duration: Duración mínima
+      speaking:
+        forms:
+          form:
+            instruction: Instrucción de la tarea
+            sentences: Oraciones
+            speaking_guide: >-
+              Escribe una oración y grábala con tu propia pronunciación, o carga un
+              archivo de audio. La respuesta del estudiante se comparará con la oración
+              del texto.
+      task_introduction: Descripción de la tarea
+      task_text_title: Contenido de lectura
+      translatable_text:
+        forms:
+          form:
+            guidelines: >-
+              Este texto debe estar escrito en el idioma objetivo de la lección y
+              se traducirá automáticamente al idioma nativo del estudiante. Marca
+              los elementos que no se deben traducir con la herramienta de etiquetado.
+      true_false:
+        forms:
+          form:
+            statements: Comentarios
+            true_false_guidelines: En esta tarea, puedes añadir comentarios y evaluarla
+              them as true or false.
+      upload_audio: Cargar archivo de audio
+      upload_demo_audio: Cargar archivo de audio de demostración
+      video:
+        form:
+          embed:
+            label: Código de inserción de vídeo
+            placeholder: Introducir código de inserción de vídeo
+          url:
+            label: Enlace al vídeo
+            placeholder: https://www.youtube.com/watch?v=IDHERE
+        forms:
+          form:
+            video_guidelines: >-
+              Pega una URL a un vídeo de YouTube o Wistia, y escribe una transcripción
+              o un resumen en el campo de texto.
+    team_domains:
+      form:
+        add: Añadir
+        add_domain: Añadir un dominio de correo electrónico para invitaciones automáticas
+      list:
+        delete:
+          action: Eliminar
+          confirm: "¿Seguro que quieres eliminar este dominio?"
+    team_users:
+      index:
+        back_to_profile: Volver al perfil
+      list:
+        columns:
+          actions: Acciones
+          role: Rol
+          user: Nombre del miembro
+        delete:
+          action: Eliminar
+          confirm: "¿Seguro que quieres eliminar a este miembro del equipo?"
+        leave:
+          action: Salir
+          confirm: "¿Seguro que quieres salirte del equipo?"
+      team_link:
+        copy: Copiar
+        invitation_url: Comparte este enlace para invitar a usuarios a tu equipo
+        invite_cta: Invitar a nuevos miembros al equipo
+        invite_heading: Invitar
+        members:
+          one: Un miembro
+          other: "%{count} miembros"
+      team_members:
+        team_members: Miembros del equipo
+    teams:
+      delete:
+        action: Eliminar equipo
+        confirm: "¿Seguro que quieres eliminar un equipo?"
+      edit:
+        action: Editar
+        choose_image: Cargar logotipo
+        heading: Editar equipo
+      form:
+        team_image: Logotipo del equipo
+      index:
+        columns:
+          actions: Acciones
+          members: Miembros
+          name: Nombre del equipo
+        default_team: PREDETERMINADO
+        heading: Mis equipos
+        set_default_team: ESTABLECER COMO PREDETERMINADO
+        teams: Equipos
+      instruction:
+        select_ability_title: "¿Cómo te gustaría usar la plataforma Lingu?"
+      new:
+        action: Equipo nuevo
+        heading: Equipo nuevo
+      onboarding:
+        authoring: Crear y publicar lecciones y/o contenido de e-learning para estudiantes
+        licensing: Dar a mis alumnos acceso a contenido de e-learning, juegos y pruebas
+        other: Gestionar estudiantes y profesores
+        submit: Empecemos
+        teaching: Proporcionar servicios de tutoría individualizadas
+  team_domain_invitations:
+    list:
+      accept: Aceptar
+      actions: Acciones
+      decline: Rechazar
+      team_invitations: Invitaciones a equipos
+      team_name: Nombre del equipo
+  team_invitations:
+    create:
+      joined: Te has unido con éxito a %{team}
+    show:
+      team_not_found: No se encuentra el equipo
+  time:
+    formats:
+      activity: "% d% b,% Y% H:% M"
+      date: "%d/%m/%Y"
+      default: "%d.%m.%Y a las %H:%M"
+      long: "%A, %e. %B %Y, %H:%M"
+      pdf: "%d. %B %Y"
+      short: "%e %b, %H:%M"
+  time_spent: Tiempo invertido
+  title: Título
+  'true': Verdadero
+  type: Tipo
+  update: Actualizar
+  upload: Cargar
+  users: Usuarios
+  view: Ver
+  views:
+    pagination:
+      first: primero
+      last: último
+      next: siguiente
+      previous: anterior
+      truncate: "..."
+  welcome:
+    signin:
+      enter_email: Escribe el correo electrónico
+      welcome_title: Bienvenido/a a Lingu
+  will_paginate:
+    next_label: Siguiente <i class=\"fa fa-angle-right\"></i>
+    previous_label: <i class=\"fa fa-angle-left»></i> Anterior
+  word: Palabra
+  words: Palabras

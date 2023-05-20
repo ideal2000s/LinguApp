@@ -1,0 +1,19 @@
+tr
+  td= lesson.image ? image_tag(lesson.image_url) : image_tag('uploader/defaults/lesson/original.png', class: 'bg-400')
+  td
+    strong= link_to lesson.title, public_url(lesson)
+    br
+    small= l(lesson.created_at, format: :default)
+  td.text-center= lesson.sessions.completed.count
+  td.text-center
+    .d-flex.justify-content-center
+      .language-info
+        = image_tag("flags/#{language_to_flag_code(lesson.language.code)}.svg", class: 'language-flag mr-1')
+        = t(lesson.level, scope: 'activerecord.attributes.lesson.short_levels')
+  td
+    .teacher-actions
+      - if policy(team_user).update?
+        a
+          = image_tag('icons/assign_student.svg')
+        a
+          = image_tag('icons/preview.svg')

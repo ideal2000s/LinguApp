@@ -1,0 +1,608 @@
+---
+la:
+  course_mailer:
+    course_assigned_notification:
+      button: Decursu incipere
+      click_start_lesson: Click Start lectio,
+      follow_course_link: Click felis cursus aperire
+      footer_text: Lingu venite ad discere aliquid novi quotidie?
+      get_started_line: Hic est quam vos adepto coepi,
+      notification_link: occasus Notification
+      open_lesson: Aperi primam lectionem
+      or_paste_this_link: vel crustulum is in tuo navigatro interretiali
+      sign_in_with_email: Log in tua electronica inscriptio (%{email})
+      support_link: Support
+      title: Questus coepi cum %{course}
+    new_document_comment:
+      author_text: "%{author} relicto recensionem tui assignment"
+      button_text: Reprehendo eam
+      button_url_helper: 'vel crustulum in vestri pasco quod links:'
+      footer_text: Illic est multus discere more ...
+      notification_link: occasus Notification
+      subject_line: Novi comment assignment
+      support_link: Support
+    otp:
+      ignore_msg: Si ista non modo ignarus quis.
+      subject_line: Unique ut vestri codice Lingu
+      unique_code_for_lingu: Hic est unique pro codice Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Habesne iam rationem?
+      back: Back
+      back_to_sign_in: Sign in Ad
+      check_your_email_for_a_code: Reprehendo tuum in codice inscriptio
+      continue: continue
+      continue_with_email: Continue in inscriptio
+      continue_with_provider: Continue in %{provider}
+      did_not_receive_a_code: Codicem non accepisti?
+      email_address: Electronicus Nuntium
+      first_name: Praenomen
+      get_unique_code: Login codice adepto a unique
+      join_lingu: iungere Lingu
+      last_name: Cognomen
+      more_login_options: More options login
+      no_account_question: An non?
+      or: uel
+      resend_code: Resend codice
+      sign_in: Inscribe
+      sign_up: subscribere sursum
+      want_to_receive_marketing_messages: Volo ut sermo Lingu ipsum
+      we_ve_sent_a_code: >-
+        Diximus autem misit ad VI-digit Code <strong> {{EMAIL}} </ strong>. Et cadit
+        in codice XV minutes, obsecro, ne intraveritis primum illud.
+    cookie_agreement:
+      agree: conveniunt
+      condition: >-
+        Crustularum necessitatem utimur analyze perficientur et situ libera personalized
+        contentus. Strepitando "Conveniunt", et consensus ad condiciones.
+    course:
+      accredited_course_provider: Utique fidelis provisor
+      apply: Applicare
+      apply_filters: Applicare Filtra
+      by: a
+      cancel: Cancel
+      categories: genera %{count}
+      category: genus
+      clear: liquet
+      clear_filters: patet Filtra
+      contact_us: Nobis loquere
+      could_not_find_match_for: Nos paenitet, si non possit invenire par est
+      course_language: utique linguae
+      duration: tempus
+      filter_settings:
+        categories:
+          academic: academic
+          business: Negotium
+          fashion: fashion
+          food_drink: Cibum & potum
+          for_kids: pro haedos
+          general: Generalis
+          health: salutem
+          legal: Legal
+          sport: ludo
+          travel: Travel
+        durations:
+          t0_600: "<X minutes"
+          t1800_3600: 30-60 minutes
+          t3600_86400: 1 + hora
+          t600_1800: 10-30 minutes
+        focus_on:
+          conversation: colloquium
+          grammar: grammatica
+          listening: marialis
+          pronunciation: Appellatio
+          reading: Lectio
+          speaking: loquens
+          writing: scripturam
+        levels:
+          long:
+            advanced: provectus campester
+            elementary: De campester
+            intermediate: Medium
+            no_knowledge: nulla scientia
+            pre_intermediate: Mediocritate pre-
+            upper_intermediate: Superioribus mediocritate
+          short:
+            advanced: provectus
+            beginner: Inceptor
+            intermediate: medium
+        sort_by:
+          most_rated: most rated
+          newest: New
+          popularity: popularis
+      filters: Filtra
+      focus_on: focus in
+      focus_on_title: Ego vis ad focus
+      hide_lessons: lectiones celare
+      hours: horae
+      i_understand: intelligo
+      i_want_to_learn: volo discere
+      in_language: in %{language}
+      language: Lingua
+      learn_more: Discere plus
+      less_settings: minus occasus
+      lessons: lessons
+      lessons_available: Lectiones praesto %{number}
+      lessons_catalog_page_subtitle: Linguam fieri heros.
+      lessons_catalog_page_title: Cum utique verbis veluti prospectus patefaciat Inuestiga
+      level: Level
+      min: min
+      more_settings: magis occasus
+      navbar:
+        close: claudere
+        menu: Menu
+        select_language: Lego lingua
+      need_to_buy_course: Opus est sane libri primi
+      no_description: No description provisum
+      no_results: Nos paenitet, si non possit invenire par est
+      or: uel
+      per_month: per mensis
+      plans: consilia
+      privacy_policy: Privacy policy
+      rating: rating
+      remove_all_filters: Remove omnia Filtra
+      reviews: Recensiones
+      save: salvare
+      search: Quaerere
+      select_dots: Select ...
+      select_languages: Lego langauges
+      select_num_languages: 'Lego %{number} linguis:'
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: D2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Ostende omnes
+      show_all_lessons: Ostende omnes lessons
+      show_lessons: Ostende Lectiones %{number}
+      show_more: Show More
+      sign_up_with_lingu_for: Subscribere sursum pro Lingu Norway
+      skills: "%{count} artes"
+      sort_by: digerere
+      start_typing_here: Satus typing hic,
+      teach: doceo
+      terms_and_conditions: Terms and Conditions
+      time_range: Tempus range
+      try_adjusting_your_search: Try adjusting tua changing vestri per Filtra
+      try_this_course: Scilicet haec tempta,
+      website_language: website lingua
+      words: verba
+    games:
+      finished:
+        go_to_next_exercise: Bene factum! Ad altera exercitium
+      flashcard:
+        buttons:
+          finish: consummavi
+          next: deinde
+          previous: priorem
+        check_out_new_words: Reprehendo sicco novus verbis et in ipsa lectione cognoscere
+        frequency_of_word_usage: Frequency de verbo usus est in %{language}
+        keep_practice_to_learn_all_words: Aliquos ludos ludere a review %{count} verba
+          lets '!
+        word_frequency:
+          level1: raro usus est
+          level2: raro usus est
+          level3: Word frequency - medium
+          level4: Word frequency - medium
+          level5: communia
+          level6: usitatissimum
+      match_word:
+        click_and_move_each_word_to_counterpart: Click et inter se movere ad aliud
+          contrarium
+        start_heading: Congruit verbis, ut par
+        time_is_up: Tempus est scriptor!
+      skip_tutorial: Skip
+      time_is_up: Tempus est scriptor!
+      word_nodes:
+        match_letters_to_form_word: Litteris inserere formare verbum
+      word_waterfall:
+        do_not_hesitate: Sit celeritas in s?
+        go_to_next_exercise: Ad altera exercitium
+        select_correct_translation: Lego rectam par
+        well_done: Bene factum!
+    home_page:
+      hello: Salve,
+      popular_lessons: lectiones popular
+      show_more: Show More
+      time: min %{count}
+      today_lesson: Documento erunt tibi hodie
+      user_name: "%{name}!"
+      words: verba %{count}
+    idle_screen:
+      by_author: per %{authorName}
+      continue_lesson: Lectio continue
+      exit: exitus
+      idle_message: Tu cessat aliquamdiu ...
+    lesson_page:
+      back_to_course_page: Ad utique page
+      close: prope
+      continue_lesson: Lectio continue
+      followed: sequitur
+      hamburger_menu_btn: frustrum assae menu
+      lesson_given: lessons
+      not_started: non started
+      or: aut
+      part_complete: "%{percent} completum%"
+      restart_lesson: Sileo
+      section_check: represserat
+      section_check_info: "%{count} probat"
+      section_learn: Disce
+      section_learn_info: "%{count} min in vigilia et legere"
+      section_play: ludere
+      section_play_info: "%{count} verba usu"
+      start_lesson: initio lectionis
+      step_progress: "%{percent}%"
+      subscribe: sequantur
+      subscribed: sequitur
+      subscribers: sectatores
+      time_min: min %{minutesNumber}
+      unsubscribe: Unfollow
+      webview_error_title: Aliquid abiit iniuriam ...
+      words_number: verbis novis %{wordsNumber}
+    lesson_task:
+      cancel_button: Cancel
+      check:
+        navigation_next: deinde
+        navigation_previous: priorem
+        navigation_skip: Skip
+      controls_panel:
+        font_size_button: font magnitudine
+        high_contrast_button:
+          origin: excelsum antithesis
+          short: contra
+        hints_button: innuit
+        music_playback_button:
+          origin: música
+          short: musica
+        sound_effects_button:
+          origin: sonus effectus
+          short: sana
+      exit_button: exitus
+      finish_button: consummavi
+      finished:
+        back_to_learn: Discere tergum
+        back_to_lesson_page: Ad lectionem page
+        back_to_results_page: Super exitum page
+        bad_result_message: Hmm ... accipere disciplinam semel capto
+        close_lesson: Lectio prope
+        correct_answers_list: Responsa rectam album
+        good_result_message: Non possum videre te factum est conatus!
+        great_result_message: Bene factum! Hi sunt magni eventus!
+        next_course_lesson: Ire post cursum lectionis
+        no_results: Nullas adhuc test results
+        no_results_text: Quaeso, perficere autem lectiones et eventus ut transire
+          experimentum
+        see_correct_answers_list: Responsa rectam videre album
+        train_more: Praxin sermo erit amplius et iterum eventus consequi bonum!
+        you_finished_lesson: Magna! Vos enim lectio ipsa consummavi
+      go_back: Revertere
+      next_button: deinde
+      not_available_task: Hoc negotium est non available tamen,
+      start_button: initium
+      tasks:
+        check:
+          assignment:
+            accept: suscipe
+            author_will_check_your_answer: "%{author} mos typically et responsum dat
+              feedback in 1-2 diebus vestris review"
+            continue_writing: scribo continue
+            copy: exemplum
+            delete: Delete
+            delete_record: Delete record
+            edit: recensere
+            essay_does_not_have_enough_words: >-
+              Tuum responsum continere debet saltem %{minWordsNumber} verba. Responsum
+              tuum sit amet %{currentWordsNumber} verba.
+            followers_count: sectatores %{followersCount}
+            lessons_count: lectiones %{lessonsCount}
+            minimal_recording_time: Default recording vicis - %{minimalRecordingTime}
+            minimum_characters_amount: Minimum characteres - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum verbis - %{minimumAmount}
+            record_again: iterum recordarentur
+            record_voice: vox record
+            send_anyway: mitte usquam
+            send_to_review: Mitte ad recensionem
+            skip: Skip
+            too_short_answer: Nimis brevis respondere
+            type_your_answer: Typus responsum tuum
+            unknown_task_type: Negotium genus ignotum
+            upgrade_licence: Upgrade licentiam
+            upgrade_your_plan: Phasellus in officio magistrorum consilium experiri
+              Libri
+            upload_files: fasciculos oneres
+            write_essay: Write medica inauguralis,
+            you_have_used_amount_of_assignments: Frustra %{amountOfAssignments} credit
+              assignment
+          fill_in_blanks:
+            sentence_gap: gap damnationem
+          fill_in_table:
+            column_answer_placeholder: Et respondendum est,
+            column_question_placeholder: Quaeritur
+            example: exemplum
+          true_false:
+            'false': falsus
+            'true': verum
+        learn:
+          translatable_text:
+            show_original: Originem monstrare
+            translate_into: Googles transferendum in %{languageName}
+            translate_into_your_lang: Googles in lingua tuum transferendum
+        play:
+          arrange_words:
+            start_screen:
+              heading: Facies et damnationem ex datis verba,
+          audition:
+            start_screen:
+              heading: Audi verbum audio de te et sicut audistis ICTUS
+          dictation:
+            get_help: Ut auxilium
+            i_do_not_know: Nescio
+            input_placeholder: Intra quod hic audivit
+            start_screen:
+              heading: Et audire quæ auditis scribere,
+          fill_gap:
+            start_screen:
+              heading: Et verbum eius significatio congruit
+          finish_screen:
+            go_to_next_exercise: Bene factum! Ad altera exercitium
+          image_hotspot:
+            start_screen:
+              heading: Nomen imaginis ad res recte
+          image_object:
+            start_screen:
+              heading: Ius id sequens tabula tollere
+          inline_dropdown:
+            start_screen:
+              heading: Delige verba sunt damnationem, quod congruit
+          mark_word:
+            start_screen:
+              heading: Verbum legunt illud, et eligere quae quaestionem aequet ad
+                imaginem
+          minimal_pairs:
+            start_screen:
+              heading: Vigilo video et eligere rectam optionem
+    locale:
+      currency_switcher_title: monetæ switcher
+      lang_switcher_title: lingua switcher
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: English
+        el: Greek
+        en: anglicus
+        eo: Esperanto
+        es: español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Español
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Latina
+        ps: Pashto
+        pt: Latina
+        ro: limba Romana
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: ap Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio enim loading
+        aria_pause_button: Blogs
+        aria_play_button: ludere
+        aria_reload_button: Reload
+        aria_stop_button: prohibere
+        reload_message: Deficio ad onus audio. Please click in puga pyga Reload.
+    mobile_modal:
+      apply: Applicare
+      cancel: Cancel
+      clear: liquet
+      save: salvare
+    page404:
+      goToStartLessonPage: Ad initium lectio page
+      ooops: Oooops ...
+      sorry_message: Nos paenitet, ne Tor pagina reperies hanc
+    profile:
+      navigation:
+        log_out: Log sunt
+        my_profile: mea profile
+        settings: Optiones
+      onboarding:
+        choose_native_language: Elige tibi lingua vel linguis intellegis
+        do_you_understand_english: Intelligis Anglicus?
+        hello: Salve
+        language_levels:
+          a1: De campester
+          a2: Pre-gradu medium
+          b1: Medium
+          b2: Superiorem gradum medium
+          c1: provectus campester
+          no_knowledge: nulla scientia
+        language_not_supported:
+          note: Nos non certiorem te praesto esse et simul in lingua
+          title: Nos paenitet, sed tamen non favent ipsius linguae translitterandi
+          try_another_language: Conare aliis verbis
+        'no': nullum
+        search_placeholder: Quaerere...
+        show_more_languages: other languages
+        target_language_question: Quid vis discere linguam?
+        what_is_language_level: Quid vis tibi %{languageName} campester rate?
+        'yes': Ita
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu secretum consilium scriptor
+        support: Support
+      logout: PP
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Accipite, et ex magistris scholarum updates sequi te,
+              sections:
+                app_notifications: Acta Vicimediorum Communium app
+                email: E-mail
+              title: doctrina auxilium
+            marketing:
+              description: Omnes moraris cercior promotionum updates et inspiratione
+                Lingu
+              sections:
+                browser_notifications: pasco Acta Vicimediorum Communium
+                email: E-mail
+              title: ipsum
+          title: Contact optiones
+        personal_information:
+          delete_photo: Delete photo
+          email: Email
+          first_name: Praenomen
+          last_name: Cognomen
+          social_accounts:
+            connected: iunctus
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Non connected
+            title: rationum socialium
+          title: personalia
+          update_photo: Update photo
+        school:
+          active_licence: Active licentiam
+          active_status: Active
+          delete_profile: Delere mea profile
+          delete_profile_modal:
+            body: |-
+              Et data, delendis rit conferatur omnia saecula saeculorum. Illic 'nulla undo puga pyga, quod non potest non adepto vos post eam.
+              Esne certus vos volo ut delete in perpetuum vestri profile Lingu et data vobis?
+            cancel: Cancel
+            confirm: Ita, ita delere
+            i_understand_the_consequences: Consequenter intelligo
+            title: Delere vestri profile?
+          expired: expired %{expire_date}
+          expires: Vivamus %{expire_date}
+          inactive_status: Ut ultrices vestibulum
+          revoke_access: Revoke legit obvius
+          sections:
+            contact_school: scholam contactus
+            export_my_data: Mihi data export
+            read_school_privacy_policy: School legere Privacy policy
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: música
+              sound_effects: sonus effectus
+              title: sana
+            visual:
+              dark_theme: theme tenebris
+              font_size:
+                test_text: Herba est semper viridius trans vallum
+                title: font magnitudine
+              high_contrast: excelsum antithesis
+              hints: innuit
+              title: Visual
+          title: "& Sana Visual"
+        training_settings:
+          sections:
+            i_understand: intelligo
+            i_want_to_learn: volo discere
+            target_language_level: anglicus campester
+          title: Lorem occasus
+      settings_title: Optiones
+    teacher_card:
+      followers_count:
+        one: I autem de discipulis eius
+        other: sectatores %{count}
+      lessons_count:
+        one: Lectio I
+        other: lectiones %{count}

@@ -1,0 +1,30 @@
+.card.rounded-top-0
+  #team_list.bg-light
+    == paginate teams
+    table.table.thead-light.table-hover
+      thead
+        tr
+          th
+          th= sort_link(@search, :name)
+          th= sort_link(@search, :lessons_count, t('lessons'))
+          th= sort_link(@search, :team_users_count, t('users'))
+          th= sort_link(@search, :active_students_count, t('students'))
+          th= sort_link(@search, :followers_count, t('.followers'))
+          th= sort_link(@search, :documents_count, t('.docs'))
+          td
+      tbody
+        - teams.each do |team|
+          tr id=dom_id(team)
+            td= image_tag team.image_url(:tiny), class: 'rounded-soft' rescue nil
+            td
+              strong= link_to team.name, admin_team_path(team)
+              - if team.personal?
+                .badge.badge-soft-warning.ml-2= t('activerecord.attributes.team.statuses.personal')
+            td= team.lessons_count
+            td= team.team_users.size
+            td= team.active_students_count
+            td= team.followers_count
+            td= team.documents.count
+            td
+              = link_to edit_admin_team_path(team), class: 'btn btn-sm btn-falcon-default' do
+                i.fas.fa-pencil-alt

@@ -1,0 +1,607 @@
+---
+yo:
+  course_mailer:
+    course_assigned_notification:
+      button: Bẹrẹ iṣẹ naa
+      click_start_lesson: Tẹ 'Bẹrẹ ẹkọ'
+      follow_course_link: Tẹ bọtini lati ṣii iṣẹ naa
+      footer_text: Pada wa si Lingu lati kọ nkan titun ni gbogbo ọjọ!
+      get_started_line: 'Eyi ni bi o ṣe bẹrẹ:'
+      notification_link: Awọn eto iwifunni
+      open_lesson: Ṣii ẹkọ akọkọ
+      or_paste_this_link: tabi lẹẹ mọ ọna asopọ yii ninu ẹrọ aṣawakiri rẹ
+      sign_in_with_email: Wọle pẹlu adirẹsi imeeli rẹ (%{email})
+      support_link: Atilẹyin
+      title: Bibẹrẹ pẹlu %{course}
+    new_document_comment:
+      author_text: "%{author} fi atunyẹwo ti iṣẹ rẹ silẹ"
+      button_text: Ṣayẹwo
+      button_url_helper: 'tabi lẹẹ ọna asopọ yii sinu ẹrọ aṣawakiri rẹ:'
+      footer_text: Pupo diẹ sii wa lati kọ ẹkọ ...
+      notification_link: Awọn eto iwifunni
+      subject_line: Ọrọìwòye iṣẹ iyansilẹ titun
+      support_link: Atilẹyin
+    otp:
+      ignore_msg: Ti o ko ba ṣe ibere yii, kan foju imeeli naa.
+      subject_line: Koodu alailẹgbẹ rẹ fun Lingu
+      unique_code_for_lingu: Eyi ni koodu alailẹgbẹ rẹ fun Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Ṣe o ti ni akọọlẹ kan?
+      back: Pada
+      back_to_sign_in: Pada si Wọle
+      check_your_email_for_a_code: Ṣayẹwo imeeli rẹ fun koodu rẹ
+      continue: Tẹsiwaju
+      continue_with_email: Tẹsiwaju pẹlu imeeli
+      continue_with_provider: Tẹsiwaju pẹlu %{provider}
+      did_not_receive_a_code: Ko gba koodu?
+      email_address: Adirẹsi imeeli
+      first_name: Orukọ akọkọ
+      get_unique_code: Gba koodu iwọle oto
+      join_lingu: Darapọ mọ Lingu
+      last_name: Oruko idile
+      more_login_options: Awọn aṣayan iwọle diẹ sii
+      no_account_question: Ko ni akọọlẹ kan?
+      or: tabi
+      resend_code: Tun koodu ranṣẹ
+      sign_in: wọle
+      sign_up: forukọsilẹ
+      want_to_receive_marketing_messages: Mo fẹ gba awọn ifiranṣẹ titaja lati Lingu
+      we_ve_sent_a_code: >-
+        A ti fi koodu oni-nọmba mẹfa ranṣẹ si <strong> {{imeeli}} </strong>. Koodu
+        naa dopin ni iṣẹju 15, nitorinaa jọwọ tẹ sii laipe.
+    cookie_agreement:
+      agree: Gba
+      condition: >-
+        A lo awọn kuki lati ṣe itupalẹ iṣẹ aaye ati fi akoonu ti ara ẹni ranṣẹ. Nipa
+        titẹ “Gba”, o gba awọn ipo wa.
+    course:
+      accredited_course_provider: Ti gba iṣẹ olupese iṣẹ
+      apply: Waye
+      apply_filters: Waye awọn asẹ
+      by: Nipasẹ
+      cancel: Fagilee
+      categories: awọn isori %{count}
+      category: Ẹka
+      clear: Mu kuro
+      clear_filters: Ko awọn asẹ kuro
+      contact_us: Pe wa
+      could_not_find_match_for: Ma binu, a ko le rii ibaramu kankan fun
+      course_language: Ede papa
+      duration: Àkókò
+      filter_settings:
+        categories:
+          academic: Omowe
+          business: Iṣowo
+          fashion: Njagun
+          food_drink: Ounje & ohun mimu
+          for_kids: Fun awọn ọmọde
+          general: Gbogbogbo
+          health: Ilera
+          legal: Ofin
+          sport: Idaraya
+          travel: Irin-ajo
+        durations:
+          t0_600: Awọn iṣẹju 10
+          t1800_3600: Awọn iṣẹju 30-60
+          t3600_86400: 1 + wakati
+          t600_1800: Awọn iṣẹju 10-30
+        focus_on:
+          conversation: Ifọrọwerọ
+          grammar: Grammar
+          listening: Gbigbọ
+          pronunciation: Pipepe
+          reading: Kika
+          speaking: Nsoro
+          writing: Kikọ
+        levels:
+          long:
+            advanced: Ipele ilọsiwaju
+            elementary: Ipele akọkọ
+            intermediate: Ipele agbedemeji
+            no_knowledge: Ko si imoye
+            pre_intermediate: Ipele agbedemeji tẹlẹ
+            upper_intermediate: Ipele agbedemeji Oke
+          short:
+            advanced: To ti ni ilọsiwaju
+            beginner: Alakobere
+            intermediate: Agbedemeji
+        sort_by:
+          most_rated: Julọ won won
+          newest: Hunting
+          popularity: Gbale
+      filters: Awọn Ajọ
+      focus_on: Foju si
+      focus_on_title: Mo fẹ lati dojukọ
+      hide_lessons: Tọju awọn ẹkọ
+      hours: Awọn wakati
+      i_understand: O ye mi
+      i_want_to_learn: Mo fẹ kọ ẹkọ
+      in_language: ni %{language}
+      language: Ede
+      learn_more: Kọ ẹkọ diẹ si
+      less_settings: Awọn eto to kere
+      lessons: Awọn ẹkọ
+      lessons_available: awọn ẹkọ %{number} wa
+      lessons_catalog_page_subtitle: Di akọni ede.
+      lessons_catalog_page_title: Faagun awọn iwoye rẹ pẹlu papa ede kan
+      level: Ipele
+      min: Min
+      more_settings: Awọn eto diẹ sii
+      navbar:
+        close: Pa akojọ aṣayan
+        menu: Akojọ aṣyn
+        select_language: Yan ede
+      need_to_buy_course: O nilo lati kọ ẹkọ ni akọkọ
+      no_description: Ko si apejuwe ti a pese
+      no_results: Ma binu, a ko le rii ibaramu kankan fun
+      or: tabi
+      per_month: fun osu kan
+      plans: Awọn eto
+      privacy_policy: Eto imulo ipamọ
+      rating: Igbelewọn
+      remove_all_filters: Yọ gbogbo awọn awoṣe kuro
+      reviews: Awọn atunyẹwo
+      save: Fipamọ
+      search: Ṣawari
+      select_dots: Yan ...
+      select_languages: Yan awọn ede
+      select_num_languages: Yan awọn ede %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Fihan gbogbo rẹ
+      show_all_lessons: Fi gbogbo awọn ẹkọ han
+      show_lessons: Ṣe afihan awọn ẹkọ %{number}
+      show_more: Ṣe afihan diẹ sii
+      sign_up_with_lingu_for: Wọle pẹlu Lingu Norway fun
+      skills: "%{count} ogbon"
+      sort_by: Sa pelu
+      start_typing_here: Bẹrẹ titẹ nibi
+      teach: Kọ
+      terms_and_conditions: Awọn ofin ati ipo
+      time_range: Akoko akoko
+      try_adjusting_your_search: Gbiyanju lati ṣatunṣe wiwa rẹ nipa yiyipada awọn
+        awoṣe rẹ
+      try_this_course: Gbiyanju ẹkọ yii
+      website_language: Ede oju opo wẹẹbu
+      words: Awọn ọrọ
+    games:
+      finished:
+        go_to_next_exercise: Kú isé! Lọ si adaṣe atẹle
+      flashcard:
+        buttons:
+          finish: Pari
+          next: Itele
+          previous: Tẹlẹ
+        check_out_new_words: Ṣayẹwo awọn ọrọ tuntun ti iwọ yoo kọ ninu ẹkọ yii
+        frequency_of_word_usage: Igba igbohunsafẹfẹ ti lilo ọrọ ni %{language}
+        keep_practice_to_learn_all_words: Ṣe atunyẹwo awọn ọrọ %{count} ki o jẹ ki
+          a ṣe diẹ ninu awọn ere!
+        word_frequency:
+          level1: Ṣọwọn lo
+          level2: Ṣọwọn lo
+          level3: Ọrọ igbohunsafẹfẹ - alabọde
+          level4: Ọrọ igbohunsafẹfẹ - alabọde
+          level5: Wọpọ
+          level6: Wọpọ pupọ
+      match_word:
+        click_and_move_each_word_to_counterpart: Tẹ ki o gbe ọrọ kọọkan si ẹlẹgbẹ
+          rẹ
+        start_heading: Baramu awọn ọrọ lati ṣe bata
+        time_is_up: Akoko ti pari!
+      skip_tutorial: Foo
+      time_is_up: Akoko ti pari!
+      word_nodes:
+        match_letters_to_form_word: Awọn lẹta ibaamu lati dagba ọrọ kan
+      word_waterfall:
+        do_not_hesitate: Jẹ ki a yara!
+        go_to_next_exercise: Lọ si adaṣe atẹle
+        select_correct_translation: Yan ibamu to pe
+        well_done: Kú isé!
+    home_page:
+      hello: Pẹlẹ o,
+      popular_lessons: Awọn ẹkọ ti o gbajumọ
+      show_more: Ṣe afihan diẹ sii
+      time: "%{count} min"
+      today_lesson: Ẹkọ rẹ fun oni
+      user_name: ojoji
+      words: "%{count} ọrọ"
+    idle_screen:
+      by_author: nipasẹ %{authorName}
+      continue_lesson: Tẹsiwaju ẹkọ
+      exit: Jade
+      idle_message: O ti wa ni isinmi fun igba diẹ ...
+    lesson_page:
+      back_to_course_page: Pada si oju-iwe oju-iwe
+      close: Pade
+      continue_lesson: Tẹsiwaju ẹkọ
+      followed: Tẹle
+      hamburger_menu_btn: Hamburger akojọ
+      lesson_given: awọn ẹkọ
+      not_started: ko bẹrẹ
+      or: Tabi
+      part_complete: "%{percent}% ti pari"
+      restart_lesson: Tun bẹrẹ
+      section_check: Ṣayẹwo
+      section_check_info: awọn idanwo %{count}
+      section_learn: Kọ ẹkọ
+      section_learn_info: "%{count} min lati wo ati ka"
+      section_play: Mu ṣiṣẹ
+      section_play_info: Awọn ọrọ %{count} si adaṣe
+      start_lesson: Ibẹrẹ ẹkọ
+      step_progress: zxzzx0%
+      subscribe: Tẹle
+      subscribed: Tẹle
+      subscribers: awọn ọmọlẹhin
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Ṣafihan
+      webview_error_title: Nnkan o lo daadaa...
+      words_number: "%{wordsNumber} awọn ọrọ tuntun"
+    lesson_task:
+      cancel_button: Fagilee
+      check:
+        navigation_next: Itele
+        navigation_previous: Tẹlẹ
+        navigation_skip: Foo
+      controls_panel:
+        font_size_button: Iwọn font
+        high_contrast_button:
+          origin: Iyatọ giga
+          short: Iyatọ
+        hints_button: Awọn itọkasi
+        music_playback_button:
+          origin: Sisisẹsẹhin orin
+          short: Orin
+        sound_effects_button:
+          origin: Awọn ipa didun ohun
+          short: Ohun
+      exit_button: Jade
+      finish_button: Pari
+      finished:
+        back_to_learn: Pada lati ko eko
+        back_to_lesson_page: Pada si oju-iwe ẹkọ
+        back_to_results_page: Pada si oju-iwe abajade
+        bad_result_message: Hmm ... gbiyanju lati mu ẹkọ ni akoko diẹ sii
+        close_lesson: Ẹkọ ti o sunmọ
+        correct_answers_list: Atunse atokọ awọn idahun
+        good_result_message: Mo le rii pe o ti ṣe igbiyanju!
+        great_result_message: Kú isé! Iwọnyi jẹ awọn abajade nla!
+        next_course_lesson: Lọ si ẹkọ ti o tẹle ni ẹkọ
+        no_results: O ko ni awọn abajade idanwo sibẹsibẹ
+        no_results_text: Jọwọ, pari ẹkọ naa ki o kọja idanwo lati gba awọn abajade
+        see_correct_answers_list: Wo atokọ awọn idahun ti o tọ
+        train_more: Ṣe adaṣe diẹ sii ati pe iwọ yoo ṣe aṣeyọri awọn esi to dara nigbamii!
+        you_finished_lesson: Nla! O pari ẹkọ naa
+      go_back: Pada
+      next_button: Itele
+      not_available_task: Iṣẹ yii ko si sibẹsibẹ
+      start_button: Bẹrẹ
+      tasks:
+        check:
+          assignment:
+            accept: Gba
+            author_will_check_your_answer: "%{author} yoo ṣe ayẹwo idahun rẹ ati ni
+              igbagbogbo fun esi laarin awọn ọjọ 1-2"
+            continue_writing: Tẹsiwaju kikọ
+            copy: Daakọ
+            delete: Paarẹ
+            delete_record: Pa igbasilẹ rẹ
+            edit: Ṣatunkọ
+            essay_does_not_have_enough_words: >-
+              Idahun rẹ yẹ ki o ni o kere ju awọn ọrọ %{minWordsNumber}. Idahun rẹ
+              Lọwọlọwọ awọn ọrọ %{currentWordsNumber}.
+            followers_count: awọn ọmọlẹyìn %{followersCount}
+            lessons_count: "%{lessonsCount} awọn ẹkọ"
+            minimal_recording_time: Akoko gbigbasilẹ to kere - %{minimalRecordingTime}
+            minimum_characters_amount: Awọn ohun kikọ ti o kere ju - %{minimumCharactersAmount}
+            minimum_words_amount: Awọn ọrọ to kere julọ - %{minimumAmount}
+            record_again: Ṣe igbasilẹ lẹẹkansi
+            record_voice: Gba ohun silẹ
+            send_anyway: Firanṣẹ lonakona
+            send_to_review: Firanṣẹ lati ṣe atunyẹwo
+            skip: Foo
+            too_short_answer: Idahun kuru ju
+            type_your_answer: Tẹ idahun rẹ
+            unknown_task_type: Iru iṣẹ-ṣiṣe aimọ
+            upgrade_licence: Igbesoke iwe-aṣẹ
+            upgrade_your_plan: Ṣe igbesoke ero rẹ lati gbiyanju awọn iṣẹ iyansilẹ
+              pẹlu awọn atunyẹwo awọn olukọ
+            upload_files: Po si awọn faili
+            write_essay: Kọ esee
+            you_have_used_amount_of_assignments: O ti lo awọn kirediti iṣẹ %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Aafo gbolohun ọrọ
+          fill_in_table:
+            column_answer_placeholder: Idahun
+            column_question_placeholder: Ibeere
+            example: Apẹẹrẹ
+          true_false:
+            'false': Eke
+            'true': Otitọ
+        learn:
+          translatable_text:
+            show_original: Ṣafihan atilẹba
+            translate_into: Tumọ pẹlu Google sinu %{languageName}
+            translate_into_your_lang: Tumọ pẹlu Google sinu ede rẹ
+        play:
+          arrange_words:
+            start_screen:
+              heading: Ṣe gbolohun kan ninu awọn ọrọ ti a fifun
+          audition:
+            start_screen:
+              heading: Tẹtisi ohun naa ki o tẹ ọrọ ti o ṣẹṣẹ gbọ
+          dictation:
+            get_help: Wa iranlọwọ
+            i_do_not_know: Emi ko mọ
+            input_placeholder: Tẹ ohun ti o gbọ si ibi
+            start_screen:
+              heading: Gbọ ki o kọ ohun ti o gbọ
+          fill_gap:
+            start_screen:
+              heading: Baramu ọrọ naa ati itumọ rẹ
+          finish_screen:
+            go_to_next_exercise: Kú isé! Lọ si adaṣe atẹle
+          image_hotspot:
+            start_screen:
+              heading: Darukọ awọn ohun ti o wa ninu aworan naa ni pipe
+          image_object:
+            start_screen:
+              heading: Mu ohun ọtun lati aworan atẹle
+          inline_dropdown:
+            start_screen:
+              heading: Mu awọn ọrọ ti o baamu gbolohun naa mu
+          mark_word:
+            start_screen:
+              heading: Ka ọrọ naa ki o yan ọrọ ti o ba aworan naa mu
+          minimal_pairs:
+            start_screen:
+              heading: Wo fidio ki o yan aṣayan to tọ
+    locale:
+      currency_switcher_title: Oluyipada owo
+      lang_switcher_title: Oluyipada ede
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: ".Арски"
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Gẹẹsi
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio ti wa ni ikojọpọ
+        aria_pause_button: Sinmi
+        aria_play_button: Mu ṣiṣẹ
+        aria_reload_button: Tun gbee
+        aria_stop_button: Duro
+        reload_message: Kuna lati gbe ohun. Jọwọ tẹ bọtini lati tun gbee.
+    mobile_modal:
+      apply: Waye
+      cancel: Fagilee
+      clear: Mu kuro
+      save: Fipamọ
+    page404:
+      goToStartLessonPage: Lọ si oju-iwe ẹkọ ibẹrẹ
+      ooops: Oooops ...
+      sorry_message: Ma binu, Tor ko ri oju-iwe yii
+    profile:
+      navigation:
+        log_out: Jade
+        my_profile: Profaili mi
+        settings: Ètò
+      onboarding:
+        choose_native_language: Yan ede abinibi tabi ede ti o ye
+        do_you_understand_english: Ṣe o ye Gẹẹsi?
+        hello: Pẹlẹ o
+        language_levels:
+          a1: Ipele akọkọ
+          a2: Ipele agbedemeji
+          b1: Ipele agbedemeji
+          b2: Ipele Agbedemeji Oke
+          c1: Ipele ilọsiwaju
+          no_knowledge: Ko si imoye
+        language_not_supported:
+          note: A yoo sọ fun ọ ni kete ti ede yoo wa
+          title: Ma binu, ṣugbọn a ko ṣe atilẹyin ede yii sibẹsibẹ
+          try_another_language: Gbiyanju ede miiran
+        'no': Rara
+        search_placeholder: Wa ...
+        show_more_languages: Awọn ede miiran
+        target_language_question: Ede wo ni o fẹ kọ?
+        what_is_language_level: Bawo ni iwọ yoo ṣe oṣuwọn ipele %{languageName} rẹ?
+        'yes': Bẹẹni
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Eto imulo aṣiri ti Lingu
+        support: Atilẹyin
+      logout: Logout
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Gba awọn imudojuiwọn lati ọdọ awọn olukọ ati awọn ile-iwe
+                ti o tẹle
+              sections:
+                app_notifications: Awọn iwifunni ohun elo
+                email: Imeeli
+              title: Iranlọwọ ẹkọ
+            marketing:
+              description: Duro si alaye nipa gbogbo awọn igbega, awọn imudojuiwọn,
+                ati awokose lati Lingu
+              sections:
+                browser_notifications: Awọn iwifunni burausa
+                email: Imeeli
+              title: Titaja
+          title: Kan si awọn ayanfẹ
+        personal_information:
+          delete_photo: Pa aworan rẹ
+          email: Imeeli
+          first_name: Orukọ akọkọ
+          last_name: Oruko idile
+          social_accounts:
+            connected: Ti sopọ
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ko sopọmọ
+            title: Awọn iroyin awujo
+          title: Oro iroyin nipa re
+          update_photo: Ṣe imudojuiwọn fọto
+        school:
+          active_licence: Iwe-aṣẹ ti nṣiṣe lọwọ
+          active_status: Ti n ṣiṣẹ
+          delete_profile: Pa profaili mi rẹ
+          delete_profile_modal:
+            body: |-
+              O parẹ gbogbo data rẹ-lailai. Ko si bọtini titọ, ati pe a ko le gba pada fun ọ lẹhin.
+              Ṣe o da ọ loju pe o fẹ paarẹ profaili Lingu rẹ ati gbogbo data rẹ patapata?
+            cancel: Fagilee
+            confirm: Bẹẹni, paarẹ
+            i_understand_the_consequences: Mo loye awọn abajade
+            title: Pa profaili rẹ rẹ?
+          expired: Ti pari %{expire_date}
+          expires: Dopin %{expire_date}
+          inactive_status: Ti ko ṣiṣẹ
+          revoke_access: Fagile wiwọle ka
+          sections:
+            contact_school: Kan si ile-iwe
+            export_my_data: Gbe data mi jade
+            read_school_privacy_policy: Ka Eto Asiri Ile-iwe
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Sisisẹsẹhin orin
+              sound_effects: Awọn ipa didun ohun
+              title: Ohun
+            visual:
+              dark_theme: Akori okunkun
+              font_size:
+                test_text: Koriko nigbagbogbo jẹ alawọ ewe ni apa keji ti odi naa
+                title: Iwọn font
+              high_contrast: Iyatọ giga
+              hints: Awọn itọkasi
+              title: Wiwo
+          title: Ohun & Wiwo
+        training_settings:
+          sections:
+            i_understand: O ye mi
+            i_want_to_learn: Mo fẹ kọ ẹkọ
+            target_language_level: Ipele Gẹẹsi
+          title: Awọn eto ikẹkọ
+      settings_title: Ètò
+    teacher_card:
+      followers_count:
+        one: 1 atẹle
+        other: awọn ọmọlẹyìn %{count}
+      lessons_count:
+        one: 1 ẹkọ
+        other: "%{count} awọn ẹkọ"

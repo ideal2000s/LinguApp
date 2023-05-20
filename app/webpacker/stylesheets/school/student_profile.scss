@@ -1,0 +1,51 @@
+.profile-details {
+  .license-dropdown {
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 300px;
+    .dropdown-toggle {
+      display: flex;
+      text-align: left;
+      &::after {
+        display: none;
+      }
+    }
+    .dropdown-item {
+      cursor: pointer;
+    }
+    .active-check {
+      color: $blue1;
+    }
+    .license-content {
+      margin-left: 20px;
+      width: 240px;
+      .license-label {
+        color: $black1;
+        font-size: 16px;
+        margin: 0;
+      }
+      .expire-label {
+        color: $grey3;
+        font-size: 14px;
+      }
+    }
+    .license-action-button {
+      align-items: center;
+      display: flex;
+      color: $black1;
+      line-height: 20px;
+      padding-bottom: 5px;
+      text-decoration: none;
+      i {
+        background: #5E5D71;
+        border: 1px solid #5E5D71;
+        border-radius: 50%;
+        color: white;
+        font-size: 16px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}

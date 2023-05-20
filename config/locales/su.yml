@@ -1,0 +1,614 @@
+---
+su:
+  course_mailer:
+    course_assigned_notification:
+      button: Mimitian kursus
+      click_start_lesson: Pencét 'Start pelajaran'
+      follow_course_link: Pencét tombol pikeun muka kursus
+      footer_text: Datang deui ka Lingu pikeun diajar anu anyar unggal dinten!
+      get_started_line: 'Kieu kumaha anjeun ngamimitian:'
+      notification_link: Setélan béwara
+      open_lesson: Buka pelajaran kahiji
+      or_paste_this_link: atanapi nempelkeun tautan ieu dina panyungsi anjeun
+      sign_in_with_email: Asup sareng alamat surélék anjeun (%{email})
+      support_link: Ngarojong
+      title: Ngamimitian %{course}
+    new_document_comment:
+      author_text: "%{author} tinggaleun ulasan ngeunaan tugas anjeun"
+      button_text: Parios éta
+      button_url_helper: 'atanapi nempelkeun tautan ieu kana panyungsi anjeun:'
+      footer_text: Aya seueur deui anu kedah diajar ...
+      notification_link: Setélan béwara
+      subject_line: Koméntar tugas anyar
+      support_link: Ngarojong
+    otp:
+      ignore_msg: Upami anjeun henteu kéngingkeun pamundut ieu, hungkul henteu malire
+        email na.
+      subject_line: Kodeu unik anjeun pikeun Lingu
+      unique_code_for_lingu: Ieu kode unik anjeun pikeun Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Parantos gaduh akun?
+      back: Balik deui
+      back_to_sign_in: Balik deui ka Asup
+      check_your_email_for_a_code: Pariksa email anjeun pikeun kode anjeun
+      continue: Teraskeun
+      continue_with_email: Teraskeun sareng email
+      continue_with_provider: Teraskeun sareng %{provider}
+      did_not_receive_a_code: Henteu nampi kode?
+      email_address: Alamat email
+      first_name: Nami payun
+      get_unique_code: Kéngingkeun kode login anu unik
+      join_lingu: Miluan Lingu
+      last_name: Nami pengker
+      more_login_options: Pilihan login langkung seueur
+      no_account_question: Teu gaduh akun?
+      or: atawa
+      resend_code: Kirimkeun deui kode
+      sign_in: Daptar
+      sign_up: Daptar
+      want_to_receive_marketing_messages: Abdi hoyong nampi pesen pamasaran ti Lingu
+      we_ve_sent_a_code: >-
+        Kami parantos ngirim kode 6 angka ka <strong> {{email}} </strong>. Kodeu na
+        kadaluarsana dina 15 menit, janten punten lebetkeun waé.
+    cookie_agreement:
+      agree: Satuju
+      condition: >-
+        Kami nganggo cookies kanggo nganalisis kinerja situs sareng nganteurkeun eusi
+        anu dipersonalisasi. Ku ngaklik "Satuju", anjeun satuju kana kaayaan kami.
+    course:
+      accredited_course_provider: Panyadia kursus anu diakreditasi
+      apply: Ngalamar
+      apply_filters: Larapkeun saringan
+      by: Ku
+      cancel: Ngabatalkeun
+      categories: kategori %{count}
+      category: Kategori
+      clear: Jelas
+      clear_filters: Saring jelas
+      contact_us: Taros Kami
+      could_not_find_match_for: Hapunten, kami henteu mendakan pertandingan anu cocog
+      course_language: Bahasa kursus
+      duration: Durasi
+      filter_settings:
+        categories:
+          academic: Akademis
+          business: Usaha
+          fashion: Pantun
+          food_drink: Dahareun & inuman
+          for_kids: Pikeun murangkalih
+          general: Umum
+          health: Kaséhatan
+          legal: Hukum
+          sport: Olahraga
+          travel: Wisata
+        durations:
+          t0_600: "<10 menit"
+          t1800_3600: 30-60 menit
+          t3600_86400: 1+ jam
+          t600_1800: 10-30 menit
+        focus_on:
+          conversation: Paguneman
+          grammar: Tatabasa
+          listening: Ngupingkeun
+          pronunciation: Lafal
+          reading: Maca
+          speaking: Nyarios
+          writing: Nulis
+        levels:
+          long:
+            advanced: Tingkat maju
+            elementary: Tingkat SD
+            intermediate: Tingkat panengah
+            no_knowledge: Henteu aya elmuna
+            pre_intermediate: Tingkat panengah sateuacanna
+            upper_intermediate: Tingkat panengah luhur
+          short:
+            advanced: Cangehgar
+            beginner: Pamula
+            intermediate: Panganteur
+        sort_by:
+          most_rated: Paling dipeunteun
+          newest: Pangénggalna
+          popularity: Popularitas
+      filters: Saringan
+      focus_on: Fokus kana
+      focus_on_title: Abdi hoyong fokus
+      hide_lessons: Nyumput pelajaran
+      hours: Jam
+      i_understand: Abdi ngartos
+      i_want_to_learn: Abdi hoyong diajar
+      in_language: dina %{language}
+      language: Bahasa
+      learn_more: Diajar deui
+      less_settings: Setélan kirang
+      lessons: Pangajaran
+      lessons_available: pelajaran %{number} aya
+      lessons_catalog_page_subtitle: Janten pahlawan bahasa.
+      lessons_catalog_page_title: Dilegakeun cakrawala anjeun sareng kursus bahasa
+      level: Tingkat
+      min: Min
+      more_settings: Langkung sétting
+      navbar:
+        close: Ménu nutup
+        menu: Ménu
+        select_language: Pilih basa
+      need_to_buy_course: Anjeun kedah mesen kursus heula
+      no_description: Teu aya pedaran anu disayogikeun
+      no_results: Hapunten, kami henteu mendakan pertandingan anu cocog
+      or: atawa
+      per_month: per bulan
+      plans: Rencana
+      privacy_policy: Kabijakan privasi
+      rating: Peunteun
+      remove_all_filters: Dipiceun sadayana saringan
+      reviews: Tinjauan
+      save: Ngahémat
+      search: Milarian
+      select_dots: Pilih ...
+      select_languages: Pilih langauges
+      select_num_languages: Pilih basa %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Tingalikeun sadayana
+      show_all_lessons: Tingalikeun sagala pelajaran
+      show_lessons: Tembongkeun pelajaran %{number}
+      show_more: Tembongkeun deui
+      sign_up_with_lingu_for: Ngadaptarkeun sareng Lingu Norwegia pikeun
+      skills: kaahlian %{count}
+      sort_by: Diurutkeun dumasarkeun
+      start_typing_here: Mimitian ngetikkeun didieu
+      teach: Ngajarkeun
+      terms_and_conditions: Syarat sareng katangtuan
+      time_range: Rentang waktos
+      try_adjusting_your_search: Coba saluyukeun pamilarian anjeun ku ngarobih saringan
+        anjeun
+      try_this_course: Coba tangtu ieu
+      website_language: Bahasa halaman wéb
+      words: Kecap
+    games:
+      finished:
+        go_to_next_exercise: Saé! Buka latihan salajengna
+      flashcard:
+        buttons:
+          finish: Bérés
+          next: Teras
+          previous: Sateuacanna
+        check_out_new_words: Pariksa kecap-kecap anyar anu anjeun bakal pelajari dina
+          palajaran ieu
+        frequency_of_word_usage: Frékuénsi panggunaan kecap dina %{language}
+        keep_practice_to_learn_all_words: Tingali kecap %{count} sareng hayu urang
+          maénkeun sababaraha kaulinan!
+        word_frequency:
+          level1: Jarang dianggo
+          level2: Jarang dianggo
+          level3: Frékuénsi kecap - sedeng
+          level4: Frékuénsi kecap - sedeng
+          level5: Biasa
+          level6: Biasa pisan
+      match_word:
+        click_and_move_each_word_to_counterpart: Pencét sareng ngalihkeun unggal kecap
+          kana réncangna
+        start_heading: Kecocokan kecap pikeun nyieun pasangan
+        time_is_up: Waktos parantos réngsé!
+      skip_tutorial: Ngalangkungan
+      time_is_up: Waktos parantos réngsé!
+      word_nodes:
+        match_letters_to_form_word: Cocogkeun hurup pikeun ngawangun kecap
+      word_waterfall:
+        do_not_hesitate: Hayu urang gancang!
+        go_to_next_exercise: Buka latihan salajengna
+        select_correct_translation: Pilih pertandingan anu leres
+        well_done: Saé!
+    home_page:
+      hello: Halo,
+      popular_lessons: Pelajaran populér
+      show_more: Tembongkeun deui
+      time: "%{count} mnt"
+      today_lesson: Pelajaran anjeun kanggo dinten ayeuna
+      user_name: "%{name}!"
+      words: kecap %{count}
+    idle_screen:
+      by_author: ku %{authorName}
+      continue_lesson: Teraskeun pelajaran
+      exit: Kaluar
+      idle_message: Anjeun parantos cicing teu lami ...
+    lesson_page:
+      back_to_course_page: Balik deui ka halaman kursus
+      close: Tutup
+      continue_lesson: Teraskeun pelajaran
+      followed: Dituturkeun
+      hamburger_menu_btn: Ménu Hamburger
+      lesson_given: pelajaran
+      not_started: henteu ngamimitian
+      or: Atanapi
+      part_complete: "%{percent}% lengkep"
+      restart_lesson: Uihan deui
+      section_check: Cék
+      section_check_info: tés %{count}
+      section_learn: Diajar
+      section_learn_info: "%{count} mnt kanggo nonton sareng maca"
+      section_play: Ulin
+      section_play_info: "%{count} kecap pikeun latihan"
+      start_lesson: Mimitian pelajaran
+      step_progress: "%{percent}%"
+      subscribe: Tuturkeun
+      subscribed: Dituturkeun
+      subscribers: pengikutna
+      time_min: "%{minutesNumber} mnt"
+      unsubscribe: Ngaleungitkeun
+      webview_error_title: Aya anu lepat ...
+      words_number: "%{wordsNumber} kecap anyar"
+    lesson_task:
+      cancel_button: Ngabatalkeun
+      check:
+        navigation_next: Teras
+        navigation_previous: Sateuacanna
+        navigation_skip: Ngalangkungan
+      controls_panel:
+        font_size_button: Ukuran font
+        high_contrast_button:
+          origin: Kontras luhur
+          short: Kontras
+        hints_button: Pitunjuk
+        music_playback_button:
+          origin: Muterkeun deui musik
+          short: Musik
+        sound_effects_button:
+          origin: Pangaruh sora
+          short: Sora
+      exit_button: Kaluar
+      finish_button: Bérés
+      finished:
+        back_to_learn: Balik diajar
+        back_to_lesson_page: Balik deui ka halaman pelajaran
+        back_to_results_page: Balik kana halaman hasil
+        bad_result_message: Hmm ... cobi candak pelajaran deui
+        close_lesson: Pangajaran nutup
+        correct_answers_list: Daptar waleran anu leres
+        good_result_message: Abdi tiasa ningali anjeun parantos ngupayakeun!
+        great_result_message: Saé! Ieu hasil anu saé!
+        next_course_lesson: Buka pelajaran salajengna waé
+        no_results: Anjeun teu acan gaduh hasil tés
+        no_results_text: Punten, lengkepan pelajaran sareng lulus tés pikeun kéngingkeun
+          hasilna
+        see_correct_answers_list: Tingali daptar waleran anu leres
+        train_more: >-
+          Prakték langkung seueur sareng anjeun bakal ngahontal hasil anu langkung
+          saé dina waktos salajengna!
+        you_finished_lesson: Hébat! Anjeun réngsé pelajaran
+      go_back: Uih deui
+      next_button: Teras
+      not_available_task: Tugas ieu henteu sayogi
+      start_button: Mimitian
+      tasks:
+        check:
+          assignment:
+            accept: Narima
+            author_will_check_your_answer: >-
+              %{author} bakal marios waleran anjeun sareng biasana masihan tanggapan
+              dina 1-2 dinten
+            continue_writing: Teraskeun nyerat
+            copy: Nyalin
+            delete: Mupus
+            delete_record: Hapus rékaman
+            edit: Édit
+            essay_does_not_have_enough_words: >-
+              Waleran anjeun kedah ngandung sahenteuna kecap %{minWordsNumber}. Waleran
+              anjeun ayeuna %{currentWordsNumber} kecap.
+            followers_count: "%{followersCount} pengikut"
+            lessons_count: palajaran %{lessonsCount}
+            minimal_recording_time: Waktu rékaman minimal - %{minimalRecordingTime}
+            minimum_characters_amount: Karakter minimum - %{minimumCharactersAmount}
+            minimum_words_amount: Kecap minimum - %{minimumAmount}
+            record_again: Catetan deui
+            record_voice: Ngarékam sora
+            send_anyway: Ngirim waé
+            send_to_review: Kirim pikeun marios
+            skip: Ngalangkungan
+            too_short_answer: Jawaban pondok teuing
+            type_your_answer: Ketik jawaban anjeun
+            unknown_task_type: Jenis tugas anu teu dikenal
+            upgrade_licence: Lisénsi ningkatkeun
+            upgrade_your_plan: Ningkatkeun rencana anjeun pikeun nyobaan tugas ku
+              ulasan guru
+            upload_files: Unggah file
+            write_essay: Nulis karangan
+            you_have_used_amount_of_assignments: Anjeun parantos nganggo kiridit tugas
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Kalangkang kalimat
+          fill_in_table:
+            column_answer_placeholder: Waleranana
+            column_question_placeholder: Patarosan
+            example: Conto
+          true_false:
+            'false': Salah
+            'true': Leres
+        learn:
+          translatable_text:
+            show_original: Tembongkeun aslina
+            translate_into: Tarjamahkeun sareng Google kana %{languageName}
+            translate_into_your_lang: Tarjamahkeun sareng Google kana basa anjeun
+        play:
+          arrange_words:
+            start_screen:
+              heading: Ngadamel kalimat tina kecap-kecap anu dipasihkeun
+          audition:
+            start_screen:
+              heading: Dangukeun audio teras ketuk kecap anu nembé didangu
+          dictation:
+            get_help: Milarian bantosan
+            i_do_not_know: Abdi henteu terang
+            input_placeholder: Lebetkeun naon anu anjeun nguping di dieu
+            start_screen:
+              heading: Dangukeun sareng nyerat naon anu anjeun nguping
+          fill_gap:
+            start_screen:
+              heading: Cocogkeun kecap sareng artina
+          finish_screen:
+            go_to_next_exercise: Saé! Buka latihan salajengna
+          image_hotspot:
+            start_screen:
+              heading: Sebutkeun obyék dina gambar leres
+          image_object:
+            start_screen:
+              heading: Pilih obyék anu leres tina gambar salajengna
+          inline_dropdown:
+            start_screen:
+              heading: Pilih kecap anu cocog sareng kalimahna
+          mark_word:
+            start_screen:
+              heading: Maca téks teras pilih kecap anu cocog sareng gambar
+          minimal_pairs:
+            start_screen:
+              heading: Lalajo pidéo sareng pilih pilihan anu leres
+    locale:
+      currency_switcher_title: Parobihan mata uang
+      lang_switcher_title: Parantos ngalih basa
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Inggris
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italio
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Koréd
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Країнська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio nuju dimuat
+        aria_pause_button: Reureuh sakeudeung
+        aria_play_button: Ulin
+        aria_reload_button: Muatkeun deui
+        aria_stop_button: Eureun
+        reload_message: Gagal pikeun muka audio. Punten pencét tombol kanggo ngamuat
+          deui.
+    mobile_modal:
+      apply: Ngalamar
+      cancel: Ngabatalkeun
+      clear: Jelas
+      save: Ngahémat
+    page404:
+      goToStartLessonPage: Buka halaman pelajaran mimiti
+      ooops: Aduh ...
+      sorry_message: Hapunten, Tor henteu tiasa mendakan halaman ieu
+    profile:
+      navigation:
+        log_out: Kaluar
+        my_profile: Profil abdi
+        settings: Setélan
+      onboarding:
+        choose_native_language: Pilih basa asli atanapi bahasa anu anjeun ngartos
+        do_you_understand_english: Naha anjeun ngartos basa Inggris?
+        hello: Halo
+        language_levels:
+          a1: Tingkat SD
+          a2: Tingkat pra-panengah
+          b1: Tingkat panengah
+          b2: Tingkat Panganteur Luhur
+          c1: Tingkat maju
+          no_knowledge: Henteu aya elmuna
+        language_not_supported:
+          note: Kami wartosan iyeu anjeun pas bahasa na tos sayogi
+          title: Hapunten, tapi kami henteu acan ngadukung basa ieu
+          try_another_language: Coba basa anu sanés
+        'no': Henteu
+        search_placeholder: Milarian ...
+        show_more_languages: Bahasa anu sanés
+        target_language_question: Basa naon anu anjeun hoyong pelajari?
+        what_is_language_level: Kumaha anjeun meunteun tingkat %{languageName} anjeun?
+        'yes': Leres
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Kawijakan privasi Lingu
+        support: Ngarojong
+      logout: Kaluar
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Nampi pembaruan ti guru sareng sakola anu anjeun turutan
+              sections:
+                app_notifications: Bewara aplikasi
+                email: E-mail
+              title: Bantosan diajar
+            marketing:
+              description: Tetep informasi ngeunaan sadaya promosi, pembaruan, sareng
+                inspirasi ti Lingu
+              sections:
+                browser_notifications: Bewara peramban
+                email: E-mail
+              title: Pamasaran
+          title: Préferénsi kontak
+        personal_information:
+          delete_photo: Hapus poto
+          email: Surélék
+          first_name: Nami payun
+          last_name: Nami pengker
+          social_accounts:
+            connected: Nyambung
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Teu nyambung
+            title: Rekening sosial
+          title: Inpo pribadi
+          update_photo: Apdet poto
+        school:
+          active_licence: Lisénsi aktip
+          active_status: Aktip
+          delete_profile: Hapus profil abdi
+          delete_profile_modal:
+            body: |-
+              Anjeun ngaleungitkeun sadaya data anjeun — salamina. Teu aya tombol batalkeun, sareng kami moal tiasa kéngingkeun deui kanggo anjeun saatos.
+              Naha anjeun yakin hoyong ngahapus permanén profil Lingu anjeun sareng sadaya data anjeun?
+            cancel: Ngabatalkeun
+            confirm: Leres, hapus
+            i_understand_the_consequences: Abdi ngartos akibatna
+            title: Hapus profil anjeun?
+          expired: Kadaluwarsa %{expire_date}
+          expires: Kadaluarsa %{expire_date}
+          inactive_status: Henteu aktip
+          revoke_access: Nyabut aksés dibaca
+          sections:
+            contact_school: Sakola kontak
+            export_my_data: Ékspor data abdi
+            read_school_privacy_policy: Maca kabijakan Privasi Sakola
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Muterkeun deui musik
+              sound_effects: Pangaruh sora
+              title: Sora
+            visual:
+              dark_theme: Téma poék
+              font_size:
+                test_text: Jukut sok héjo di sisi pager
+                title: Ukuran font
+              high_contrast: Kontras luhur
+              hints: Pitunjuk
+              title: Visual
+          title: Sora & Visual
+        training_settings:
+          sections:
+            i_understand: Abdi ngartos
+            i_want_to_learn: Abdi hoyong diajar
+            target_language_level: Tingkat Inggris
+          title: Setélan latihan
+      settings_title: Setélan
+    teacher_card:
+      followers_count:
+        one: 1 pengikut
+        other: "%{count} pengikut"
+      lessons_count:
+        one: 1 pelajaran
+        other: palajaran %{count}

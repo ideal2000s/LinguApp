@@ -1,0 +1,617 @@
+---
+el:
+  course_mailer:
+    course_assigned_notification:
+      button: Ξεκινήστε το μάθημα
+      click_start_lesson: Κάντε κλικ στην επιλογή "Έναρξη μαθήματος"
+      follow_course_link: Κάντε κλικ στο κουμπί για να ανοίξετε το μάθημα
+      footer_text: Επιστρέψτε στο Lingu για να μάθετε κάτι νέο κάθε μέρα!
+      get_started_line: 'Δείτε πώς ξεκινάτε:'
+      notification_link: Ρυθμίσεις ειδοποιήσεων
+      open_lesson: Ανοίξτε το πρώτο μάθημα
+      or_paste_this_link: ή επικολλήστε αυτόν τον σύνδεσμο στο πρόγραμμα περιήγησής
+        σας
+      sign_in_with_email: Συνδεθείτε με τη διεύθυνση email σας (%{email})
+      support_link: Υποστήριξη
+      title: Ξεκινώντας με το %{course}
+    new_document_comment:
+      author_text: Ο χρήστης %{author} άφησε μια κριτική για την εργασία σας
+      button_text: Τσέκαρέ το
+      button_url_helper: 'ή επικολλήστε αυτόν τον σύνδεσμο στο πρόγραμμα περιήγησής
+        σας:'
+      footer_text: Υπάρχουν πολλά περισσότερα να μάθουν ...
+      notification_link: Ρυθμίσεις ειδοποιήσεων
+      subject_line: Νέο σχόλιο ανάθεσης
+      support_link: Υποστήριξη
+    otp:
+      ignore_msg: Εάν δεν υποβάλατε αυτό το αίτημα, απλώς αγνοήστε το email.
+      subject_line: Ο μοναδικός κωδικός σας για το Lingu
+      unique_code_for_lingu: Εδώ είναι ο μοναδικός κωδικός σας για το Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Έχετε ήδη λογαριασμό?
+      back: Πίσω
+      back_to_sign_in: Επιστροφή στην είσοδο
+      check_your_email_for_a_code: Ελέγξτε το email σας για τον κωδικό σας
+      continue: Να συνεχίσει
+      continue_with_email: Συνεχίστε με email
+      continue_with_provider: Συνεχίστε με το %{provider}
+      did_not_receive_a_code: Δεν λάβατε κωδικό;
+      email_address: Διεύθυνση ηλεκτρονικού ταχυδρομείου
+      first_name: Ονομα
+      get_unique_code: Λάβετε έναν μοναδικό κωδικό σύνδεσης
+      join_lingu: Γίνετε μέλος της Lingu
+      last_name: Επίθετο
+      more_login_options: Περισσότερες επιλογές σύνδεσης
+      no_account_question: Δεν έχετε λογαριασμό;
+      or: ή
+      resend_code: Ξαναστείλε τον κωδικό
+      sign_in: Συνδεθείτε
+      sign_up: Εγγραφείτε
+      want_to_receive_marketing_messages: Θέλω να λαμβάνω μηνύματα μάρκετινγκ από
+        τη Lingu
+      we_ve_sent_a_code: >-
+        Στείλαμε έναν 6ψήφιο κωδικό στη διεύθυνση <strong> {{email}} </strong>. Ο
+        κωδικός λήγει σε 15 λεπτά, οπότε εισαγάγετέ τον σύντομα.
+    cookie_agreement:
+      agree: Συμφωνώ
+      condition: >-
+        Χρησιμοποιούμε cookies για την ανάλυση της απόδοσης του ιστότοπου και την
+        παράδοση εξατομικευμένου περιεχομένου. Κάνοντας κλικ στο "Συμφωνώ", αποδέχεστε
+        τους όρους μας.
+    course:
+      accredited_course_provider: Διαπιστευμένος πάροχος μαθημάτων
+      apply: Ισχύουν
+      apply_filters: Εφαρμόστε φίλτρα
+      by: Με
+      cancel: Ματαίωση
+      categories: "%{count} κατηγορίες"
+      category: Κατηγορία
+      clear: Σαφή
+      clear_filters: Διαγραφή φίλτρων
+      contact_us: Επικοινωνήστε μαζί μας
+      could_not_find_match_for: Δυστυχώς, δεν μπορέσαμε να βρούμε κανένα αγώνα για
+      course_language: Γλώσσα μαθήματος
+      duration: Διάρκεια
+      filter_settings:
+        categories:
+          academic: Ακαδημαϊκός
+          business: Επιχείρηση
+          fashion: Μόδα
+          food_drink: Φαγητο ΠΟΤΟ
+          for_kids: Για παιδιά
+          general: Γενικός
+          health: Υγεία
+          legal: Νομικός
+          sport: Αθλημα
+          travel: Ταξίδι
+        durations:
+          t0_600: "<10 λεπτά"
+          t1800_3600: 30-60 λεπτά
+          t3600_86400: 1+ ώρα
+          t600_1800: 10-30 λεπτά
+        focus_on:
+          conversation: Συνομιλία
+          grammar: Γραμματική
+          listening: Ακούγοντας
+          pronunciation: Προφορά
+          reading: ΑΝΑΓΝΩΣΗ
+          speaking: Ομιλία
+          writing: Γραφή
+        levels:
+          long:
+            advanced: Προχωρημένο επίπεδο
+            elementary: Στοιχειώδες επίπεδο
+            intermediate: Ενδιάμεσο επίπεδο
+            no_knowledge: Χωρίς γνώση
+            pre_intermediate: Προ ενδιάμεσο επίπεδο
+            upper_intermediate: Ανώτερο ενδιάμεσο επίπεδο
+          short:
+            advanced: Προχωρημένος
+            beginner: Αρχάριος
+            intermediate: Ενδιάμεσος
+        sort_by:
+          most_rated: Με την μεγαλύτερη βαθμολογία
+          newest: Νεότερο
+          popularity: Δημοτικότητα
+      filters: Φίλτρα
+      focus_on: Επικεντρωνομαι σε
+      focus_on_title: Θέλω να επικεντρωθώ
+      hide_lessons: Απόκρυψη μαθημάτων
+      hours: Ωρες
+      i_understand: καταλαβαίνω
+      i_want_to_learn: Θέλω να μάθω
+      in_language: σε %{language}
+      language: Γλώσσα
+      learn_more: Μάθε περισσότερα
+      less_settings: Λιγότερες ρυθμίσεις
+      lessons: Μαθήματα
+      lessons_available: "%{number} μαθήματα διαθέσιμα"
+      lessons_catalog_page_subtitle: Γίνετε ήρωας γλώσσας.
+      lessons_catalog_page_title: Επεκτείνετε τους ορίζοντές σας με ένα μάθημα γλωσσών
+      level: Επίπεδο
+      min: Ελάχ
+      more_settings: Περισσότερες ρυθμίσεις
+      navbar:
+        close: Κλείσιμο μενού
+        menu: Μενού
+        select_language: Επιλέξτε γλώσσα
+      need_to_buy_course: Πρέπει πρώτα να κλείσετε ένα μάθημα
+      no_description: Δεν παρέχεται περιγραφή
+      no_results: Δυστυχώς, δεν μπορέσαμε να βρούμε κανένα αγώνα για
+      or: ή
+      per_month: κάθε μήνα
+      plans: Σχέδια
+      privacy_policy: Πολιτική απορρήτου
+      rating: Εκτίμηση
+      remove_all_filters: Αφαιρέστε όλα τα φίλτρα
+      reviews: Κριτικές
+      save: Σώσει
+      search: Αναζήτηση
+      select_dots: Επιλέγω...
+      select_languages: Επιλέξτε γλώσσες
+      select_num_languages: Επιλέξτε γλώσσες %{number}
+      short_levels:
+        a1: Α'1
+        a2: Α2
+        b1: Β1
+        b2: Β2
+        c1: Γ1
+        c2: Γ2
+        zero_level: Α0
+      show_all: Προβολή όλων
+      show_all_lessons: Εμφάνιση όλων των μαθημάτων
+      show_lessons: Εμφάνιση μαθημάτων %{number}
+      show_more: Δείτε περισσότερα
+      sign_up_with_lingu_for: Εγγραφείτε στο Lingu Norway για
+      skills: δεξιότητες %{count}
+      sort_by: Ταξινόμηση κατά
+      start_typing_here: Ξεκινήστε να πληκτρολογείτε εδώ
+      teach: Διδάσκω
+      terms_and_conditions: Οροι και Προϋποθέσεις
+      time_range: Εύρος χρόνου
+      try_adjusting_your_search: Δοκιμάστε να προσαρμόσετε την αναζήτησή σας αλλάζοντας
+        τα φίλτρα σας
+      try_this_course: Δοκιμάστε αυτό το μάθημα
+      website_language: Γλώσσα ιστότοπου
+      words: Λόγια
+    games:
+      finished:
+        go_to_next_exercise: Μπράβο! Πηγαίνετε στην επόμενη άσκηση
+      flashcard:
+        buttons:
+          finish: Φινίρισμα
+          next: Επόμενο
+          previous: Προηγούμενος
+        check_out_new_words: Δείτε τις νέες λέξεις που θα μάθετε σε αυτό το μάθημα
+        frequency_of_word_usage: Συχνότητα χρήσης λέξεων σε %{language}
+        keep_practice_to_learn_all_words: Ελέγξτε τις λέξεις %{count} και ας παίξουμε
+          μερικά παιχνίδια!
+        word_frequency:
+          level1: Σπάνια χρησιμοποιούμενο
+          level2: Σπάνια χρησιμοποιούμενο
+          level3: Συχνότητα λέξεων - μεσαία
+          level4: Συχνότητα λέξεων - μεσαία
+          level5: Κοινός
+          level6: Πολύ κοινό
+      match_word:
+        click_and_move_each_word_to_counterpart: Κάντε κλικ και μετακινήστε κάθε λέξη
+          στο αντίστοιχό της
+        start_heading: Ταιριάξτε τις λέξεις για να φτιάξετε ένα ζευγάρι
+        time_is_up: ΤΕΛΟΣ ΧΡΟΝΟΥ!
+      skip_tutorial: Παραλείπω
+      time_is_up: ΤΕΛΟΣ ΧΡΟΝΟΥ!
+      word_nodes:
+        match_letters_to_form_word: Ταιριάξτε τα γράμματα για να σχηματίσετε μια λέξη
+      word_waterfall:
+        do_not_hesitate: Ας επιταχύνουμε!
+        go_to_next_exercise: Πηγαίνετε στην επόμενη άσκηση
+        select_correct_translation: Επιλέξτε τη σωστή αντιστοίχιση
+        well_done: Μπράβο!
+    home_page:
+      hello: Χαίρετε,
+      popular_lessons: Δημοφιλή μαθήματα
+      show_more: Δείτε περισσότερα
+      time: "%{count} λεπτό"
+      today_lesson: Το μάθημά σας για σήμερα
+      user_name: "%{name}!"
+      words: "%{count} λέξεις"
+    idle_screen:
+      by_author: από %{authorName}
+      continue_lesson: Συνεχίστε το μάθημα
+      exit: Εξοδος
+      idle_message: Είστε αδρανής για αρκετό καιρό ...
+    lesson_page:
+      back_to_course_page: Επιστροφή στη σελίδα του μαθήματος
+      close: Κλείσε
+      continue_lesson: Συνεχίστε το μάθημα
+      followed: Ακολούθησε
+      hamburger_menu_btn: Μενού χάμπουργκερ
+      lesson_given: μαθήματα
+      not_started: δεν ξεκίνησε
+      or: Ή
+      part_complete: "%{percent}% ολοκληρωμένο"
+      restart_lesson: Επανεκκίνηση
+      section_check: Ελεγχος
+      section_check_info: δοκιμές %{count}
+      section_learn: Μαθαίνω
+      section_learn_info: "%{count} λεπτό για παρακολούθηση και ανάγνωση"
+      section_play: Παίζω
+      section_play_info: "%{count} λέξεις για εξάσκηση"
+      start_lesson: Ξεκινήστε το μάθημα
+      step_progress: "%{percent}%"
+      subscribe: Ακολουθηστε
+      subscribed: Ακολούθησε
+      subscribers: ακόλουθοι
+      time_min: "%{minutesNumber} λεπτό"
+      unsubscribe: Κατάργηση παρακολούθησης
+      webview_error_title: Κάτι πήγε στραβά...
+      words_number: "%{wordsNumber} νέες λέξεις"
+    lesson_task:
+      cancel_button: Ματαίωση
+      check:
+        navigation_next: Επόμενο
+        navigation_previous: Προηγούμενος
+        navigation_skip: Παραλείπω
+      controls_panel:
+        font_size_button: Μέγεθος γραμματοσειράς
+        high_contrast_button:
+          origin: Υψηλή αντίθεση
+          short: Αντίθεση
+        hints_button: Συμβουλές
+        music_playback_button:
+          origin: Αναπαραγωγή μουσικής
+          short: ΜΟΥΣΙΚΗ
+        sound_effects_button:
+          origin: ΗΧΗΤΙΚΑ εφε
+          short: Ήχος
+      exit_button: Εξοδος
+      finish_button: Φινίρισμα
+      finished:
+        back_to_learn: Επιστροφή για να μάθετε
+        back_to_lesson_page: Επιστροφή στη σελίδα του μαθήματος
+        back_to_results_page: Επιστροφή στη σελίδα αποτελεσμάτων
+        bad_result_message: Χμμ ... προσπαθήστε να πάρετε το μάθημα για άλλη μια φορά
+        close_lesson: Κλείσιμο μαθήματος
+        correct_answers_list: Σωστή λίστα απαντήσεων
+        good_result_message: Μπορώ να δω ότι έχετε κάνει μια προσπάθεια!
+        great_result_message: Μπράβο! Αυτά είναι εξαιρετικά αποτελέσματα!
+        next_course_lesson: Μετάβαση στο επόμενο μάθημα
+        no_results: Δεν έχετε ακόμη αποτελέσματα δοκιμών
+        no_results_text: >-
+          Παρακαλώ, ολοκληρώστε το μάθημα και περάστε το τεστ για να λάβετε τα αποτελέσματα
+        see_correct_answers_list: Δείτε τη σωστή λίστα απαντήσεων
+        train_more: Εξασκηθείτε περισσότερο και θα επιτύχετε καλύτερα αποτελέσματα
+          την επόμενη φορά!
+        you_finished_lesson: Μεγάλος! Τελειώσατε το μάθημα
+      go_back: Πήγαινε πίσω
+      next_button: Επόμενο
+      not_available_task: Αυτή η εργασία δεν είναι ακόμη διαθέσιμη
+      start_button: Αρχή
+      tasks:
+        check:
+          assignment:
+            accept: Αποδέχομαι
+            author_will_check_your_answer: >-
+              Το %{author} θα ελέγξει την απάντησή σας και θα δώσει συνήθως σχόλια
+              εντός 1-2 ημερών
+            continue_writing: Συνεχίστε να γράφετε
+            copy: αντίγραφο
+            delete: Διαγράφω
+            delete_record: Διαγραφή εγγραφής
+            edit: Επεξεργασία
+            essay_does_not_have_enough_words: >-
+              Η απάντησή σας θα πρέπει να περιέχει τουλάχιστον %{minWordsNumber} λέξεις.
+              Η απάντησή σας είναι επί του παρόντος %{currentWordsNumber} λέξεις.
+            followers_count: "%{followersCount} ακόλουθοι"
+            lessons_count: "%{lessonsCount} μαθήματα"
+            minimal_recording_time: Ελάχιστος χρόνος εγγραφής - %{minimalRecordingTime}
+            minimum_characters_amount: Ελάχιστοι χαρακτήρες - %{minimumCharactersAmount}
+            minimum_words_amount: Ελάχιστες λέξεις - %{minimumAmount}
+            record_again: Εγγραφή ξανά
+            record_voice: Εγγραφή φωνής
+            send_anyway: Στείλτε ούτως ή άλλως
+            send_to_review: Αποστολή σε κριτική
+            skip: Παραλείπω
+            too_short_answer: Πολύ σύντομη απάντηση
+            type_your_answer: Πληκτρολογήστε την απάντησή σας
+            unknown_task_type: Άγνωστος τύπος εργασίας
+            upgrade_licence: Αναβάθμιση άδειας
+            upgrade_your_plan: Αναβαθμίστε το σχέδιό σας για να δοκιμάσετε εργασίες
+              με κριτικές εκπαιδευτικών
+            upload_files: Μεταφόρτωση αρχείων
+            write_essay: Γράψτε δοκίμιο
+            you_have_used_amount_of_assignments: Έχετε χρησιμοποιήσει πιστώσεις ανάθεσης
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Χάσμα ποινών
+          fill_in_table:
+            column_answer_placeholder: Απάντηση
+            column_question_placeholder: Ερώτηση
+            example: Παράδειγμα
+          true_false:
+            'false': Ψευδής
+            'true': Αληθής
+        learn:
+          translatable_text:
+            show_original: Εμφάνιση πρωτότυπου
+            translate_into: Μετάφραση με το Google σε %{languageName}
+            translate_into_your_lang: Μεταφράστε με το Google στη γλώσσα σας
+        play:
+          arrange_words:
+            start_screen:
+              heading: Δημιουργήστε μια πρόταση από τις δεδομένες λέξεις
+          audition:
+            start_screen:
+              heading: Ακούστε τον ήχο και πατήστε στη λέξη που μόλις ακούσατε
+          dictation:
+            get_help: Ζήτα βοήθεια
+            i_do_not_know: Δεν γνωρίζω
+            input_placeholder: Εισαγάγετε αυτό που ακούσατε εδώ
+            start_screen:
+              heading: Ακούστε και γράψτε αυτό που ακούτε
+          fill_gap:
+            start_screen:
+              heading: Ταιριάξτε τη λέξη και τη σημασία της
+          finish_screen:
+            go_to_next_exercise: Μπράβο! Πηγαίνετε στην επόμενη άσκηση
+          image_hotspot:
+            start_screen:
+              heading: Ονομάστε τα αντικείμενα της εικόνας σωστά
+          image_object:
+            start_screen:
+              heading: Επιλέξτε το σωστό αντικείμενο από την επόμενη εικόνα
+          inline_dropdown:
+            start_screen:
+              heading: Επιλέξτε τις λέξεις που ταιριάζουν με την πρόταση
+          mark_word:
+            start_screen:
+              heading: Διαβάστε το κείμενο και επιλέξτε τη λέξη που ταιριάζει με την
+                εικόνα
+          minimal_pairs:
+            start_screen:
+              heading: Παρακολουθήστε το βίντεο και επιλέξτε τη σωστή επιλογή
+    locale:
+      currency_switcher_title: Εναλλαγή νομισμάτων
+      lang_switcher_title: Εναλλαγή γλώσσας
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Αγγλικά
+        eo: Esperanto
+        es: Εσπανόλ
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Νόρσκ
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Πολτσκι
+        ps: Pashto
+        pt: Portugês
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Τουρκία
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Φορτώνεται ο ήχος
+        aria_pause_button: Παύση
+        aria_play_button: Παίζω
+        aria_reload_button: Φορτώνω πάλι
+        aria_stop_button: Να σταματήσει
+        reload_message: Αποτυχία φόρτωσης ήχου. Κάντε κλικ στο κουμπί για επαναφόρτωση.
+    mobile_modal:
+      apply: Ισχύουν
+      cancel: Ματαίωση
+      clear: Σαφή
+      save: Αποθηκεύσετε
+    page404:
+      goToStartLessonPage: Μεταβείτε στη σελίδα έναρξης μαθήματος
+      ooops: Ωχ ...
+      sorry_message: Δυστυχώς, ο Tor δεν μπόρεσε να βρει αυτήν τη σελίδα
+    profile:
+      navigation:
+        log_out: Αποσύνδεση
+        my_profile: Το ΠΡΟΦΙΛ μου
+        settings: Ρυθμίσεις
+      onboarding:
+        choose_native_language: Επιλέξτε τη μητρική σας γλώσσα ή τη γλώσσα που κατανοείτε
+        do_you_understand_english: Καταλαβαίνεις αγγλικά?
+        hello: Χαίρετε
+        language_levels:
+          a1: Στοιχειώδες επίπεδο
+          a2: Προ-ενδιάμεσο επίπεδο
+          b1: Ενδιάμεσο επίπεδο
+          b2: Ανώτερο ενδιάμεσο επίπεδο
+          c1: Προχωρημένο επίπεδο
+          no_knowledge: Χωρίς γνώση
+        language_not_supported:
+          note: Θα σας ειδοποιήσουμε μόλις η γλώσσα θα είναι διαθέσιμη
+          title: Λυπούμαστε, αλλά δεν υποστηρίζουμε αυτήν τη γλώσσα ακόμη
+          try_another_language: Δοκιμάστε μια άλλη γλώσσα
+        'no': Οχι
+        search_placeholder: Αναζήτηση...
+        show_more_languages: Άλλες γλώσσες
+        target_language_question: Τί γλώσσα θέλεις να μάθεις;
+        what_is_language_level: Πώς θα αξιολογούσατε το επίπεδο %{languageName};
+        'yes': Ναί
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Πολιτική απορρήτου της Lingu
+        support: Υποστήριξη
+      logout: Αποσύνδεση
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Λάβετε ενημερώσεις από καθηγητές και σχολεία που παρακολουθείτε
+              sections:
+                app_notifications: Ειδοποιήσεις εφαρμογών
+                email: ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ
+              title: Μαθησιακή βοήθεια
+            marketing:
+              description: >-
+                Μείνετε ενημερωμένοι για όλες τις προσφορές, ενημερώσεις και έμπνευση
+                από τη Lingu
+              sections:
+                browser_notifications: Ειδοποιήσεις προγράμματος περιήγησης
+                email: ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ
+              title: Εμπορία
+          title: Προτιμήσεις επικοινωνίας
+        personal_information:
+          delete_photo: Διαγραφή φωτογραφίας
+          email: ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ
+          first_name: Ονομα
+          last_name: Επίθετο
+          social_accounts:
+            connected: Συνδεδεμένος
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Μη συνδεδεμένο
+            title: Κοινωνικοί λογαριασμοί
+          title: Προσωπικές πληροφορίες
+          update_photo: Ενημέρωση φωτογραφίας
+        school:
+          active_licence: Ενεργή άδεια
+          active_status: Ενεργός
+          delete_profile: Διαγραφή του προφίλ μου
+          delete_profile_modal:
+            body: |-
+              Εξαλείφετε όλα τα δεδομένα σας - για πάντα. Δεν υπάρχει κουμπί αναίρεσης και δεν μπορούμε να το λάβουμε ξανά μετά.
+              Είστε βέβαιοι ότι θέλετε να διαγράψετε οριστικά το προφίλ σας Lingu και όλα τα δεδομένα σας;
+            cancel: Ματαίωση
+            confirm: Ναι, διαγράψτε το
+            i_understand_the_consequences: Καταλαβαίνω τις συνέπειες
+            title: Διαγραφή του προφίλ σας;
+          expired: Έληξε %{expire_date}
+          expires: Λήγει %{expire_date}
+          inactive_status: Αδρανής
+          revoke_access: Ανάκληση πρόσβασης ανάγνωσης
+          sections:
+            contact_school: Επικοινωνήστε με το σχολείο
+            export_my_data: Εξαγωγή των δεδομένων μου
+            read_school_privacy_policy: Διαβάστε την πολιτική απορρήτου του σχολείου
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Αναπαραγωγή μουσικής
+              sound_effects: ΗΧΗΤΙΚΑ εφε
+              title: Ήχος
+            visual:
+              dark_theme: Σκούρο θέμα
+              font_size:
+                test_text: Το γρασίδι είναι πάντα πιο πράσινο στην άλλη πλευρά του
+                  φράχτη
+                title: Μέγεθος γραμματοσειράς
+              high_contrast: Υψηλή αντίθεση
+              hints: Συμβουλές
+              title: Οπτικός
+          title: Ήχος & Οπτική
+        training_settings:
+          sections:
+            i_understand: καταλαβαίνω
+            i_want_to_learn: Θέλω να μάθω
+            target_language_level: επίπεδο αγγλικών
+          title: Ρυθμίσεις εκπαίδευσης
+      settings_title: Ρυθμίσεις
+    teacher_card:
+      followers_count:
+        one: 1 ακόλουθος
+        other: "%{count} ακόλουθοι"
+      lessons_count:
+        one: 1 μάθημα
+        other: "%{count} μαθήματα"

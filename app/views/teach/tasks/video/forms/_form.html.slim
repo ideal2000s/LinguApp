@@ -1,0 +1,17 @@
+- content_for(:instructions) do
+  .card.bg-soft-info.mt-5.hidden-sm-down
+    .card-body
+      .card-title= t('instructions')
+      p.card-text= t('.video_guidelines')
+      p.card-text.font-italic
+        = t('example') + ': '
+        | https://www.youtube.com/watch?v=ID_HERE
+.card
+  = render 'teach/tasks/shared_task_header', task: task
+  = form_for form, as: :task, url: teach_lesson_task_path(task.lesson, task), method: :patch do |f|
+    = render 'teach/tasks/shared_task_fields', f: f
+
+#task_items.mt-5
+  h2= t('configure')
+  #task_items_container
+    = render partial: task.items.first_or_create, as: :item, locals: { task: task }

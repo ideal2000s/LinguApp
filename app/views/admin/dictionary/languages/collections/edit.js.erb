@@ -1,0 +1,3 @@
+$("#new-collection-modal").find(".modal-content").html("<%= j (render 'form', collection: collection, language: language, header_title: t('.edit_collection'), btn_title: t('common.buttons.save'), path: admin_language_collection_path(language, collection), sub_title: '') %>");
+$("#new-collection-modal").find('.select2').select2({ theme: 'bootstrap4', dropdownParent: $('#new-collection-modal .modal-content') });
+$("#new-collection-modal").modal('show');

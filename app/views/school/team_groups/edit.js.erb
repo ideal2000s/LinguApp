@@ -1,0 +1,9 @@
+$("#team-group-modal").html("<%= j render partial: 'school/team_groups/edit_form', locals: { team_group: team_group, students: students } %>");
+$('#team-group-modal').modal('show');
+$('#team-group-modal').off('hidden.bs.modal');
+$('#team-group-modal').on('hidden.bs.modal', function (e) {
+  if($("#team-group-modal .modal-dialog.modal-edit-team-group").data('changed')){
+    // If data is changed, we reload the page.
+    window.location.reload();
+  }
+});

@@ -1,0 +1,26 @@
+.card.mb-3
+  .card-header.d-flex.justify-content-between
+    h5.card-title.mb-0.pb-0= task.name
+    = link_to teach_task_preview_path(task), class: 'btn btn-falcon-primary btn-sm', target: '_blank' do
+      i.fas.fa-eye.fa-fw.mr-1
+      = t(task.type.underscore, scope: 'tasks.types')
+  .card-body
+    - task.items.each do |item|
+      .w-100.d-flex.align-items-center.justify-content-between.mb-3
+        .correct-sentence.p-3
+          - item.arrange_words&.split(' ') do |w|
+            .badge.badge-pill.badge-soft-success.mr-1.my-1
+              span.text-black= w
+          br
+          .additional-words
+            - item.additional_words&.split(' ') do |w|
+              .badge.badge-pill.badge-soft-danger.mr-1.my-1
+                span.text-black= w
+        .hint
+          - if item.hint.present?
+            .badge.strong= t('teach.task_items.arrange_words.arrange_words.hint') + ':'
+            .badge.text-black= item.hint
+          - else
+            = image_tag('logos/google-translate.svg', class: 'mr-2 float-left', width: 150, height: 56)
+
+        = audio_tag(item.audio_url, class: 'preview', controls: true, style: 'width: 210px; height: 60px') if item.audio

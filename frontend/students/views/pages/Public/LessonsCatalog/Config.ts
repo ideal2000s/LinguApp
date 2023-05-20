@@ -1,0 +1,9 @@
+export const FILTER_LANGUAGE = 'q[language_id_eq]';
+export const FILTER_LEVEL = 'q[with_level][]';
+export const FILTER_CATEGORY = 'q[tagged_with][]';
+export const FILTER_FOCUS = 'q[skills_id_in][]';
+export const FILTER_SUPPORT_LANGUAGE = 'q[with_support_language][]';
+export const FILTER_SEARCH = 'q[title_cont]';
+export const FILTER_DURATION = 'q[average_duration_between_any][]';
+export const FILTER_RATING = 'q[_rating][]';
+export const FILTER_SORT = 'q[s]';

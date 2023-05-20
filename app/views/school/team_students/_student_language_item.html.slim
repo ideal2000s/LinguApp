@@ -1,0 +1,18 @@
+.row.w-100.mb-1.ml-0 data-language_id=language.id data-new_record='true' class="student-#{scope}-language-item #{scope == 'target' ? 'py-1' : 'py-3'}"
+  = hidden_field_tag "student[student_#{scope}_languages_attributes][#{next_id}][_destroy]", false
+  .language-details.d-flex.align-items-center.col-3
+    = image_tag("flags/#{language_to_flag_code(language.code)}.svg", class: 'mr-2')
+    span= language.system_name
+  .col-5.text-black
+    - if scope == 'target'
+      = select_tag "student[student_target_languages_attributes][#{next_id}][level]", options_for_select(Lesson.levels_for_select[1..-2]), class: 'form-control select2 target-language-level'
+  .col-4.d-flex.align-items-center.justify-content-end
+    .active-status.inactive
+      = hidden_field_tag "student[student_#{scope}_languages_attributes][#{next_id}][#{scope == 'target' ? 'active' : 'native'}]", false
+      i.fa.fa-check.mr-1.d-none
+      span
+        = scope == 'target' ? t('school.team_students.form.inactive') : t('school.team_students.form.nonnative')
+    .ml-4
+      = link_to remove_language_school_student_path(student, language_id: language.id, scope: scope), remote: true, class: 'text-1000'
+        i.fa.fa-times.cursor-pointer.hover-opacity-change
+  = hidden_field_tag "student[student_#{scope}_languages_attributes][#{next_id}][language_id]", language.id

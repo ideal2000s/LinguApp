@@ -1,0 +1,12 @@
+= form_for form, html: {id: dom_id(task, :item_form)}, as: :task_item, remote: true, url: teach_task_items_path(task) do |f|
+  .card.mb-3
+    .card-body
+      .row
+        .col-3.form-group
+          = f.label :partner_name, t('.sender_name')
+          = f.text_field :partner_name, placeholder: t('admin.skills.skill_form.enter_name'), class: 'form-control'
+        .col-9.form-group
+          = f.label :message, t('.message')
+          = f.text_field :message, placeholder: t('.message'), class: 'form-control'
+
+      = f.submit t('save_changes'), class: 'btn btn-success'

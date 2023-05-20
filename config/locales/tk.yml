@@ -1,0 +1,607 @@
+---
+tk:
+  course_mailer:
+    course_assigned_notification:
+      button: Kursy başlaň
+      click_start_lesson: "'Başlangyç sapagy' basyň"
+      follow_course_link: Kursy açmak üçin düwmä basyň
+      footer_text: Her gün täze bir zat öwrenmek üçin Lingu gaýdyp geliň!
+      get_started_line: 'Ine, nädip başlamaly:'
+      notification_link: Duýduryş sazlamalary
+      open_lesson: Birinji sapagy açyň
+      or_paste_this_link: ýa-da bu baglanyşygy brauzeriňize goýuň
+      sign_in_with_email: E-poçta salgyňyz bilen giriň (%{email})
+      support_link: Goldaw
+      title: "%{course} bilen başlamak"
+    new_document_comment:
+      author_text: "%{author} tabşyrygyňyzy gözden geçirdi"
+      button_text: Barlap görüň
+      button_url_helper: 'ýa-da bu baglanyşygy brauzeriňize goýuň:'
+      footer_text: Öwrenmeli köp zat bar ...
+      notification_link: Duýduryş sazlamalary
+      subject_line: Täze tabşyryk düşündiriş
+      support_link: Goldaw
+    otp:
+      ignore_msg: Bu haýyşy etmedik bolsaňyz, e-poçta üns bermäň.
+      subject_line: Lingu üçin özboluşly koduňyz
+      unique_code_for_lingu: Ine, Lingu üçin özboluşly koduňyz
+  frontend:
+    auth:
+      already_have_acc_question: Eýýäm hasabyňyz barmy?
+      back: Yzyna
+      back_to_sign_in: Giriş
+      check_your_email_for_a_code: E-poçtaňyzy koduňyzy barlaň
+      continue: Dowam et
+      continue_with_email: E-poçta bilen dowam ediň
+      continue_with_provider: "%{provider} bilen dowam ediň"
+      did_not_receive_a_code: Kod almadyňyzmy?
+      email_address: Email adres
+      first_name: Ady
+      get_unique_code: Üýtgeşik giriş koduny alyň
+      join_lingu: Lingu-a goşulyň
+      last_name: Familiýasy
+      more_login_options: Has köp giriş opsiýalary
+      no_account_question: Hasabyňyz ýokmy?
+      or: ýa-da
+      resend_code: Kod iber
+      sign_in: Giriň
+      sign_up: Hasaba giriň
+      want_to_receive_marketing_messages: Lingu-dan marketing habarlaryny alasym gelýär
+      we_ve_sent_a_code: >-
+        <strong> {{e-poçta}} </strong> -a 6 sanly kod iberdik. Kod 15 minutda gutarýar,
+        basym giriziň.
+    cookie_agreement:
+      agree: Razy
+      condition: >-
+        Sahypanyň işleýşini seljermek we şahsylaşdyrylan mazmuny bermek üçin gutapjyklary
+        ulanýarys. "Razy" düwmesine basyp, şertlerimize razy bolýarsyňyz.
+    course:
+      accredited_course_provider: Akkreditlenen kurs üpjün edijisi
+      apply: Giriş
+      apply_filters: Süzgüçleri ulanyň
+      by: Byazan
+      cancel: Elatyr
+      categories: "%{count} kategoriýalary"
+      category: Kategoriýa
+      clear: Arassala
+      clear_filters: Süzgüçleri arassalaň
+      contact_us: Biz bilen habarlaşyň
+      could_not_find_match_for: Bagyşlaň, gabat gelýänini tapyp bilmedik
+      course_language: Kurs dili
+      duration: Dowamlylygy
+      filter_settings:
+        categories:
+          academic: Akademik
+          business: Işewürlik
+          fashion: Moda
+          food_drink: Iýmit we içgi
+          for_kids: Çagalar üçin
+          general: General
+          health: Saglyk
+          legal: Hukuk
+          sport: Sport
+          travel: Syýahat
+        durations:
+          t0_600: "<10 minut"
+          t1800_3600: 30-60 minut
+          t3600_86400: 1+ sagat
+          t600_1800: 10-30 minut
+        focus_on:
+          conversation: Söhbet
+          grammar: Grammatika
+          listening: Diňlemek
+          pronunciation: Aňlatma
+          reading: Okamak
+          speaking: Geplemek
+          writing: Itingazmak
+        levels:
+          long:
+            advanced: Ösen dereje
+            elementary: Başlangyç dereje
+            intermediate: Aralyk dereje
+            no_knowledge: Bilim ýok
+            pre_intermediate: Öňki aralyk derejesi
+            upper_intermediate: Upperokarky orta dereje
+          short:
+            advanced: Ösen
+            beginner: Başlangyç
+            intermediate: Aralyk
+        sort_by:
+          most_rated: Iň köp baha berlen
+          newest: Iň täze
+          popularity: Meşhurlyk
+      filters: Süzgüçler
+      focus_on: Üns beriň
+      focus_on_title: Ünsümi jemlemek isleýärin
+      hide_lessons: Sapaklary gizläň
+      hours: Sagatlar
+      i_understand: men düşündim
+      i_want_to_learn: Öwrenesim gelýär
+      in_language: "%{language}"
+      language: Dil
+      learn_more: Köpräk oka
+      less_settings: Az sazlamalar
+      lessons: Sapaklar
+      lessons_available: "%{number} sapaklary bar"
+      lessons_catalog_page_subtitle: Dil gahrymany boluň.
+      lessons_catalog_page_title: Dil kursy bilen gözýetimleriňizi giňeldiň
+      level: Dereje
+      min: Min
+      more_settings: Has köp sazlamalar
+      navbar:
+        close: Menýu ýapyň
+        menu: Menýu
+        select_language: Dil saýlaň
+      need_to_buy_course: Ilki bilen kursy bron etmeli
+      no_description: Düşündiriş ýok
+      no_results: Bagyşlaň, gabat gelýänini tapyp bilmedik
+      or: ýa-da
+      per_month: aýlyk
+      plans: Meýilnamalar
+      privacy_policy: Gizlinlik syýasaty
+      rating: Reýting
+      remove_all_filters: Filhli süzgüçleri aýyryň
+      reviews: Synlar
+      save: Saklaň
+      search: Gözlemek
+      select_dots: Saýlaň ...
+      select_languages: Langauglary saýlaň
+      select_num_languages: "%{number} dilleri saýlaň"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Hemmesini görkez
+      show_all_lessons: Lessonshli sapaklary görkeziň
+      show_lessons: "%{number} sapaklaryny görkeziň"
+      show_more: Has köp görkez
+      sign_up_with_lingu_for: Norwegiýa üçin Lingu bilen ýazylyň
+      skills: "%{count} başarnyklary"
+      sort_by: Tertipleşdir
+      start_typing_here: Şu ýere ýazyp başlaň
+      teach: Okat
+      terms_and_conditions: Şertler we şertler
+      time_range: Wagt aralygy
+      try_adjusting_your_search: Filtrleriňizi üýtgedip gözlegiňizi sazlap görüň
+      try_this_course: Bu kursy synap görüň
+      website_language: Web sahypasy
+      words: Sözler
+    games:
+      finished:
+        go_to_next_exercise: Berekella! Indiki maşklara geçiň
+      flashcard:
+        buttons:
+          finish: Tamamla
+          next: Indiki
+          previous: Öňki
+        check_out_new_words: Bu sapakda öwrenjek täze sözleriňizi gözden geçiriň
+        frequency_of_word_usage: "%{language}-de söz ulanylyşynyň ýygylygy"
+        keep_practice_to_learn_all_words: "%{count} sözlerini gözden geçiriň we käbir
+          oýunlar oýnalyň!"
+        word_frequency:
+          level1: Seýrek ulanylýar
+          level2: Seýrek ulanylýar
+          level3: Söz ýygylygy - orta
+          level4: Söz ýygylygy - orta
+          level5: Adaty
+          level6: Örän adaty
+      match_word:
+        click_and_move_each_word_to_counterpart: Her sözi basyň we kärdeşine geçiriň
+        start_heading: Jübüt etmek üçin sözleri deňeşdiriň
+        time_is_up: Wagt gutardy!
+      skip_tutorial: Geçmek
+      time_is_up: Wagt gutardy!
+      word_nodes:
+        match_letters_to_form_word: Söz döretmek üçin harplary deňeşdiriň
+      word_waterfall:
+        do_not_hesitate: Geliň, çaltlaşalyň!
+        go_to_next_exercise: Indiki maşklara geçiň
+        select_correct_translation: Dogry gabat gelmegi saýlaň
+        well_done: Berekella!
+    home_page:
+      hello: Salam,
+      popular_lessons: Meşhur sapaklar
+      show_more: Has köp görkez
+      time: "%{count} min"
+      today_lesson: Bu günki sapagyňyz
+      user_name: "%{name}!"
+      words: "%{count} söz"
+    idle_screen:
+      by_author: "%{authorName} tarapyndan"
+      continue_lesson: Sapagy dowam etdiriň
+      exit: Çyk
+      idle_message: Birnäçe wagt bäri işsiz bolduň ...
+    lesson_page:
+      back_to_course_page: Kurs sahypasyna dolan
+      close: ".Akyn"
+      continue_lesson: Sapagy dowam etdiriň
+      followed: Yzyna
+      hamburger_menu_btn: Gamburg menýusy
+      lesson_given: sapaklar
+      not_started: başlamady
+      or: ".A-da .a-da"
+      part_complete: "%{percent}% gutardy"
+      restart_lesson: Gaýtadan açyň
+      section_check: Barlaň
+      section_check_info: "%{count} synaglary"
+      section_learn: Öwreniň
+      section_learn_info: "%{count} min görmek we okamak üçin"
+      section_play: Oýna
+      section_play_info: "%{count} amal etmek üçin sözler"
+      start_lesson: Sapagy başlaň
+      step_progress: "%{percent}%"
+      subscribe: Yzarla
+      subscribed: Yzyna
+      subscribers: yzarlaýanlar
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Göçür
+      webview_error_title: Bir zat ýalňyşdy ...
+      words_number: "%{wordsNumber} täze sözler"
+    lesson_task:
+      cancel_button: Elatyr
+      check:
+        navigation_next: Indiki
+        navigation_previous: Öňki
+        navigation_skip: Geçmek
+      controls_panel:
+        font_size_button: Şriftiň ululygy
+        high_contrast_button:
+          origin: Contrastokary kontrast
+          short: Kontrast
+        hints_button: Maslahat
+        music_playback_button:
+          origin: Aýdym-saz çalmak
+          short: Saz
+        sound_effects_button:
+          origin: Ses effektleri
+          short: Ses
+      exit_button: Çyk
+      finish_button: Tamamla
+      finished:
+        back_to_learn: Öwrenmek üçin gaýdyp geliň
+        back_to_lesson_page: Sapak sahypasyna dolan
+        back_to_results_page: Netije sahypasyna dolan
+        bad_result_message: Hmm ... sapagy ýene bir gezek almaga synanyşyň
+        close_lesson: Closeakyn sapak
+        correct_answers_list: Dogry jogaplaryň sanawy
+        good_result_message: Synanyşandygyňyzy görýärin!
+        great_result_message: Berekella! Bu ajaýyp netijeler!
+        next_course_lesson: Indiki sapaga geçiň
+        no_results: Synag netijeleriňiz ýok
+        no_results_text: Netijeleri almak üçin sapagy tamamlaň we synagdan geçiň
+        see_correct_answers_list: Dogry jogaplaryň sanawyna serediň
+        train_more: Has köp tejribe ediň we indiki gezek has gowy netijelere ýetersiňiz!
+        you_finished_lesson: Gowy! Sapagy gutardyňyz
+      go_back: Yzyňa dolan
+      next_button: Indiki
+      not_available_task: Bu wezipe entek elýeterli däl
+      start_button: Başla
+      tasks:
+        check:
+          assignment:
+            accept: Kabul et
+            author_will_check_your_answer: "%{author} jogabyňyzy gözden geçirer we
+              adatça 1-2 günüň içinde jogap berer"
+            continue_writing: Writingazmagy dowam ediň
+            copy: Göçüriň
+            delete: Öçür
+            delete_record: Recordazgyny poz
+            edit: Redaktirläň
+            essay_does_not_have_enough_words: >-
+              Jogabyňyzda azyndan %{minWordsNumber} söz bolmaly. Jogabyňyz häzirki
+              wagtda %{currentWordsNumber} söz.
+            followers_count: "%{followersCount} yzarlaýjylar"
+            lessons_count: "%{lessonsCount} sapaklary"
+            minimal_recording_time: Minimal ýazgy wagty - %{minimalRecordingTime}
+            minimum_characters_amount: Iň pes nyşan - %{minimumCharactersAmount}
+            minimum_words_amount: Iň az sözler - %{minimumAmount}
+            record_again: Againene ýazga al
+            record_voice: Ses ýazga al
+            send_anyway: Her niçigem bolsa iber
+            send_to_review: Gözden geçirmek üçin iberiň
+            skip: Geçmek
+            too_short_answer: Gaty gysga jogap
+            type_your_answer: Jogabyňyzy ýazyň
+            unknown_task_type: Näbelli mesele görnüşi
+            upgrade_licence: Ygtyýarnamany ýokarlandyrmak
+            upgrade_your_plan: Mugallymlaryň synlary bilen tabşyryklary synap görmek
+              üçin meýilnamaňyzy täzeläň
+            upload_files: Faýllary ýükläň
+            write_essay: Düzme ýaz
+            you_have_used_amount_of_assignments: "%{amountOfAssignments} tabşyryk
+              karzlaryny ulandyňyz"
+          fill_in_blanks:
+            sentence_gap: Jümle boşlugy
+          fill_in_table:
+            column_answer_placeholder: Jogap
+            column_question_placeholder: Sorag
+            example: Mysal
+          true_false:
+            'false': Sealňyş
+            'true': Dogry
+        learn:
+          translatable_text:
+            show_original: Asyl nusgasyny görkez
+            translate_into: Google bilen %{languageName} terjime ediň
+            translate_into_your_lang: Google bilen diliňize terjime ediň
+        play:
+          arrange_words:
+            start_screen:
+              heading: Berlen sözlerden sözlem düzüň
+          audition:
+            start_screen:
+              heading: Ses diňläň we ýaňy eşiden sözüňize basyň
+          dictation:
+            get_help: Kömek alyň
+            i_do_not_know: Bilmedim
+            input_placeholder: Eşiden zatlaryňyzy şu ýere giriziň
+            start_screen:
+              heading: Eşidýänleriňizi diňläň we ýazyň
+          fill_gap:
+            start_screen:
+              heading: Söz we manysyna gabat geliň
+          finish_screen:
+            go_to_next_exercise: Berekella! Indiki maşklara geçiň
+          image_hotspot:
+            start_screen:
+              heading: Suratdaky obýektlere dogry at beriň
+          image_object:
+            start_screen:
+              heading: Indiki suratdan dogry zady saýlaň
+          inline_dropdown:
+            start_screen:
+              heading: Sözleme gabat gelýän sözleri saýlaň
+          mark_word:
+            start_screen:
+              heading: Teksti okaň we şekile gabat gelýän sözi saýlaň
+          minimal_pairs:
+            start_screen:
+              heading: Wideony görüň we dogry warianty saýlaň
+    locale:
+      currency_switcher_title: Walýuta kommutatory
+      lang_switcher_title: Dil kommutatory
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Doýçe
+        el: Greek
+        en: Iňlis
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Fransuz
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italýan
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Somaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Ses ýüklenýär
+        aria_pause_button: Arakesme
+        aria_play_button: Oýna
+        aria_reload_button: Gaýtadan ýükläň
+        aria_stop_button: Dur
+        reload_message: Ses ýükläp bilmedi Gaýtadan ýüklemek üçin düwmä basmagyňyzy
+          haýyş edýäris.
+    mobile_modal:
+      apply: Giriş
+      cancel: Elatyr
+      clear: Arassala
+      save: Saklaň
+    page404:
+      goToStartLessonPage: Başlangyç sapak sahypasyna geçiň
+      ooops: Oooops ...
+      sorry_message: Bagyşlaň, Tor bu sahypany tapyp bilmedi
+    profile:
+      navigation:
+        log_out: Hasapdan çykmak
+        my_profile: Meniň profilim
+        settings: Sazlamalar
+      onboarding:
+        choose_native_language: Öz ene diliňizi ýa-da düşünýän diliňizi saýlaň
+        do_you_understand_english: Sen iňlisçä düşünýaňmi?
+        hello: Salam
+        language_levels:
+          a1: Başlangyç dereje
+          a2: Orta aralyk derejesi
+          b1: Aralyk dereje
+          b2: Upperokarky orta dereje
+          c1: Ösen dereje
+          no_knowledge: Bilim ýok
+        language_not_supported:
+          note: Dil elýeterli bolansoň size habar bereris
+          title: Bagyşlaň, ýöne entek bu dili goldamaýarys
+          try_another_language: Başga bir dili synap görüň
+        'no': ".Ok"
+        search_placeholder: Gözleg ...
+        show_more_languages: Beýleki diller
+        target_language_question: Haýsy dili öwrenmek isleýärsiňiz?
+        what_is_language_level: "%{languageName} derejäňize nähili baha bererdiňiz?"
+        'yes': Hawa
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu-nyň gizlinlik syýasaty
+        support: Goldaw
+      logout: Hasapdan çykmak
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Özüňiziň yzarlaýan mugallymlaryňyzdan we mekdepleriňizden
+                täzelikleri alyň
+              sections:
+                app_notifications: Programma habarnamalary
+                email: E-poçta
+              title: Okuw kömegi
+            marketing:
+              description: Lingu-dan ähli mahabatlar, täzelenmeler we ylham barada
+                habarly boluň
+              sections:
+                browser_notifications: Brauzer habarnamalary
+                email: E-poçta
+              title: Marketing
+          title: Aragatnaşyk saýlawlary
+        personal_information:
+          delete_photo: Suraty pozuň
+          email: E-poçta iberiň
+          first_name: Ady
+          last_name: Familiýasy
+          social_accounts:
+            connected: Birikdirildi
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Baglanmadyk
+            title: Sosial hasaplar
+          title: Şahsy maglumatlar
+          update_photo: Suraty täzeläň
+        school:
+          active_licence: Işjeň ygtyýarnama
+          active_status: Işjeň
+          delete_profile: Profilimi poz
+          delete_profile_modal:
+            body: |-
+              Datahli maglumatlaryňyzy hemişelik ýok edýärsiňiz. Yza gaýtarmak düwmesi ýok, soňundan ony yzyna alyp bilmeris.
+              Lingu profiliňizi we ähli maglumatlaryňyzy hemişelik ýok etmek isleýändigiňize ynanýarsyňyzmy?
+            cancel: Elatyr
+            confirm: Hawa, pozuň
+            i_understand_the_consequences: Netijelerine düşünýärin
+            title: Profiliňizi pozuň?
+          expired: Möhleti %{expire_date}
+          expires: "%{expire_date} möhleti gutarýar"
+          inactive_status: Işjeň däl
+          revoke_access: Okamak mümkinçiligini ýatyryň
+          sections:
+            contact_school: Mekdep bilen habarlaşyň
+            export_my_data: Maglumatlary eksport ediň
+            read_school_privacy_policy: Mekdep gizlinlik syýasatyny okaň
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Aýdym-saz çalmak
+              sound_effects: Ses effektleri
+              title: Ses
+            visual:
+              dark_theme: Garaňky tema
+              font_size:
+                test_text: Çitiň beýleki tarapynda otlar hemişe ýaşyl bolýar
+                title: Şriftiň ululygy
+              high_contrast: Contrastokary kontrast
+              hints: Maslahat
+              title: Visual
+          title: Ses we wizual
+        training_settings:
+          sections:
+            i_understand: men düşündim
+            i_want_to_learn: Öwrenesim gelýär
+            target_language_level: Iňlis derejesi
+          title: Okuw sazlamalary
+      settings_title: Sazlamalar
+    teacher_card:
+      followers_count:
+        one: 1 yzarlaýjy
+        other: "%{count} yzarlaýjylar"
+      lessons_count:
+        one: 1 sapak
+        other: "%{count} sapaklary"

@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    title= page_title
+    = render 'layouts/shared/favicon'
+    = csp_meta_tag
+  body
+    span style="text-align: center;" You may close this window now.
+    = render 'students/omniauth/oauth_message', authenticity_token: authenticity_token, jwt_token: jwt_token

@@ -1,0 +1,12 @@
+tr.team-group-member-card id="team-group-member-card-#{student.id}"
+  td
+    .flex-fill.student-full-name= student.full_name
+  td.align-middle
+    .student-email= student.email
+  td.align-middle
+    = button_to t('school.team_groups.edit.remove_member'),
+      revoke_team_group_school_student_url(student),
+      remote: true,
+      method: 'delete',
+      class: 'btn btn-sm text-danger float-right',
+      data: { 'disable-with' => t('school.team_groups.item.waiting_note') }

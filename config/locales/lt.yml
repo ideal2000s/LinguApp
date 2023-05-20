@@ -1,0 +1,612 @@
+---
+lt:
+  course_mailer:
+    course_assigned_notification:
+      button: Pradėkite kursą
+      click_start_lesson: Spustelėkite „Pradėti pamoką“
+      follow_course_link: Spustelėkite mygtuką, kad atidarytumėte kursą
+      footer_text: Grįžkite į „Lingu“ ir sužinokite kiekvieną dieną ką nors naujo!
+      get_started_line: 'Štai kaip jūs pradedate:'
+      notification_link: Pranešimų nustatymai
+      open_lesson: Atidarykite pirmąją pamoką
+      or_paste_this_link: arba įklijuokite šią nuorodą į savo naršyklę
+      sign_in_with_email: Prisijunkite naudodami savo el. Pašto adresą (%{email})
+      support_link: Parama
+      title: Darbo su %{course} pradžia
+    new_document_comment:
+      author_text: "%{author} paliko jūsų užduoties apžvalgą"
+      button_text: Pasižiūrėk
+      button_url_helper: 'arba įklijuokite šią nuorodą į savo naršyklę:'
+      footer_text: Dar daug ko reikia išmokti ...
+      notification_link: Pranešimų nustatymai
+      subject_line: Naujas užduoties komentaras
+      support_link: Parama
+    otp:
+      ignore_msg: Jei nepateikėte šios užklausos, tiesiog nepaisykite el.
+      subject_line: Jūsų unikalus „Lingu“ kodas
+      unique_code_for_lingu: Čia yra jūsų unikalus „Lingu“ kodas
+  frontend:
+    auth:
+      already_have_acc_question: Jau turite paskyrą?
+      back: Atgal
+      back_to_sign_in: Grįžti į Prisijungti
+      check_your_email_for_a_code: Patikrinkite savo el. Paštą, ar nėra kodo
+      continue: Tęsti
+      continue_with_email: Tęskite el. Paštu
+      continue_with_provider: Tęskite naudodami %{provider}
+      did_not_receive_a_code: Negavote kodo?
+      email_address: Elektroninio pašto adresas
+      first_name: Pirmas vardas
+      get_unique_code: Gaukite unikalų prisijungimo kodą
+      join_lingu: Prisijunkite prie „Lingu“
+      last_name: Pavardė
+      more_login_options: Daugiau prisijungimo parinkčių
+      no_account_question: Neturite paskyros?
+      or: arba
+      resend_code: Atsiųskite kodą dar kartą
+      sign_in: Prisijungti
+      sign_up: Registruotis
+      want_to_receive_marketing_messages: Noriu gauti rinkodaros pranešimus iš „Lingu“
+      we_ve_sent_a_code: >-
+        Išsiuntėme 6 skaitmenų kodą į <strong> {{email}} </strong>. Kodo galiojimo
+        laikas baigsis po 15 minučių, todėl įveskite jį netrukus.
+    cookie_agreement:
+      agree: Sutikite
+      condition: >-
+        Mes naudojame slapukus, kad analizuotume svetainės našumą ir pateiktų suasmenintą
+        turinį. Spustelėdami „Sutinku“ sutinkate su mūsų sąlygomis.
+    course:
+      accredited_course_provider: Akredituotas kursų teikėjas
+      apply: Taikyti
+      apply_filters: Taikyti filtrus
+      by: Iki
+      cancel: Atšaukti
+      categories: "%{count} kategorijos"
+      category: Kategorija
+      clear: Aišku
+      clear_filters: Išvalyti filtrus
+      contact_us: Susisiekite su mumis
+      could_not_find_match_for: Deja, nepavyko rasti atitikties
+      course_language: Kurso kalba
+      duration: Trukmė
+      filter_settings:
+        categories:
+          academic: Akademinis
+          business: Verslas
+          fashion: Mada
+          food_drink: Maistas ir gėrimai
+          for_kids: Vaikams
+          general: Generolas
+          health: Sveikata
+          legal: Teisėta
+          sport: Sportas
+          travel: Kelionė
+        durations:
+          t0_600: "<10 minučių"
+          t1800_3600: 30-60 minučių
+          t3600_86400: 1+ valanda
+          t600_1800: 10–30 minučių
+        focus_on:
+          conversation: Pokalbis
+          grammar: Gramatika
+          listening: Klausymas
+          pronunciation: Tarimas
+          reading: Skaitymas
+          speaking: Kalbėjimas
+          writing: Rašymas
+        levels:
+          long:
+            advanced: Pažengęs lygis
+            elementary: Pradinis lygis
+            intermediate: Vidutinio lygio
+            no_knowledge: Jokių žinių
+            pre_intermediate: Pasirengimas tarpiniam lygiui
+            upper_intermediate: Viršutinis tarpinis lygis
+          short:
+            advanced: Išplėstinė
+            beginner: Pradedantysis
+            intermediate: Tarpinis
+        sort_by:
+          most_rated: Labiausiai įvertinta
+          newest: Naujausias
+          popularity: Populiarumas
+      filters: Filtrai
+      focus_on: Susitelkite į
+      focus_on_title: Noriu susitelkti
+      hide_lessons: Slėpti pamokas
+      hours: Valandos
+      i_understand: aš suprantu
+      i_want_to_learn: aš noriu mokytis
+      in_language: "%{language}"
+      language: Kalba
+      learn_more: Sužinokite daugiau
+      less_settings: Mažiau nustatymų
+      lessons: Pamokos
+      lessons_available: galimos %{number} pamokos
+      lessons_catalog_page_subtitle: Internetinės pamokos sklandžiam ir užtikrintam
+        kalbėjimui
+      lessons_catalog_page_title: Su „Lingu“ lengvai ir efektyviai mokykitės kalbų
+      level: Lygis
+      min: Min
+      more_settings: Daugiau nustatymų
+      navbar:
+        close: Uždaryti meniu
+        menu: Meniu
+        select_language: Pasirinkite kalbą
+      need_to_buy_course: Pirmiausia turite užsisakyti kursą
+      no_description: Aprašymas nepateiktas
+      no_results: Deja, nepavyko rasti atitikties
+      or: arba
+      per_month: per mėnesį
+      plans: Planai
+      privacy_policy: Privatumo politika
+      rating: Įvertinimas
+      remove_all_filters: Pašalinkite visus filtrus
+      reviews: Atsiliepimai
+      save: Sutaupyti
+      search: Paieška
+      select_dots: Pasirinkite ...
+      select_languages: Pasirinkite langauges
+      select_num_languages: Pasirinkite %{number} kalbas
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Rodyti viską
+      show_all_lessons: Rodyti visas pamokas
+      show_lessons: Rodyti %{number} pamokas
+      show_more: Rodyti daugiau
+      sign_up_with_lingu_for: Užsiregistruokite „Lingu Norway“
+      skills: "%{count} įgūdžių"
+      sort_by: Rūšiuoti pagal
+      start_typing_here: Pradėkite rašyti čia
+      teach: Mokyk
+      terms_and_conditions: Terminai ir sąlygos
+      time_range: Laiko diapazonas
+      try_adjusting_your_search: Pabandykite pakoreguoti paiešką keisdami filtrus
+      try_this_course: Išbandykite šį kursą
+      website_language: Svetainės kalba
+      words: Žodžiai
+    games:
+      finished:
+        go_to_next_exercise: Šauniai padirbėta! Eikite į kitą pratimą
+      flashcard:
+        buttons:
+          finish: Baigti
+          next: Kitas
+          previous: Ankstesnis
+        check_out_new_words: Peržiūrėkite naujus žodžius, kuriuos išmoksite šioje
+          pamokoje
+        frequency_of_word_usage: Žodžių vartojimo dažnis %{language}
+        keep_practice_to_learn_all_words: Peržiūrėkite „%{count}“ žodžius ir žaisime
+          keletą žaidimų!
+        word_frequency:
+          level1: Retai naudojamas
+          level2: Retai naudojamas
+          level3: Žodžio dažnis - vidutinis
+          level4: Žodžio dažnis - vidutinis
+          level5: Dažnas
+          level6: Labai dažnas
+      match_word:
+        click_and_move_each_word_to_counterpart: Spustelėkite ir perkelkite kiekvieną
+          žodį į jo atitikmenį
+        skip_tutorial: Apynių
+        start_heading: Suderinkite žodžius, kad sukurtumėte porą
+        time_is_up: Opp med farta!
+      skip_tutorial: Praleisti
+      time_is_up: Laikas baigėsi!
+      word_nodes:
+        match_letters_to_form_word: Suderinkite raides, kad susidarytumėte žodį
+      word_waterfall:
+        do_not_hesitate: Paspartinkime!
+        go_to_next_exercise: Eikite į kitą pratimą
+        select_correct_translation: Pasirinkite teisingą atitiktį
+        well_done: Šauniai padirbėta!
+    home_page:
+      hello: Sveiki,
+      popular_lessons: Populiarios pamokos
+      show_more: Rodyti daugiau
+      time: "%{count} min"
+      today_lesson: Jūsų šios dienos pamoka
+      user_name: "%{name}!"
+      words: "%{count} žodžių"
+    idle_screen:
+      by_author: pateikė %{authorName}
+      continue_lesson: Tęskite pamoką
+      exit: Išeiti
+      idle_message: Jau kurį laiką tu neveiki ...
+    lesson_page:
+      back_to_course_page: Grįžti į kurso puslapį
+      close: Uždaryti
+      continue_lesson: Tęskite pamoką
+      followed: Sekė
+      hamburger_menu_btn: Hamburgerio meniu
+      lesson_given: pamokas
+      not_started: nepradėjau
+      or: Arba
+      part_complete: "%{percent}% baigta"
+      restart_lesson: Perkrauti
+      section_check: Patikrinti
+      section_check_info: "%{count} testai"
+      section_learn: Mokytis
+      section_learn_info: "%{count} min žiūrėti ir skaityti"
+      section_play: žaisti
+      section_play_info: "%{count} žodžių praktikai"
+      start_lesson: Pradėkite pamoką
+      step_progress: "%{percent}%"
+      subscribe: Sekite
+      subscribed: Sekė
+      subscribers: pasekėjų
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Nesekti
+      webview_error_title: Kažkas nepavyko ...
+      words_number: "%{wordsNumber} naujų žodžių"
+    lesson_task:
+      cancel_button: Atšaukti
+      check:
+        navigation_next: Kitas
+        navigation_previous: Ankstesnis
+        navigation_skip: Praleisti
+      controls_panel:
+        font_size_button: Šrifto dydis
+        high_contrast_button:
+          origin: Didelis kontrastas
+          short: Kontrastas
+        hints_button: Užuominos
+        music_playback_button:
+          origin: Muzikos atkūrimas
+          short: Muzika
+        sound_effects_button:
+          origin: Garso efektai
+          short: Garsas
+      exit_button: Išeiti
+      finish_button: Baigti
+      finished:
+        back_to_learn: Grįžti mokytis
+        back_to_lesson_page: Grįžti į pamokos puslapį
+        back_to_results_page: Atgal į rezultatų puslapį
+        bad_result_message: Hmm ... pabandyk dar kartą pamokyti
+        close_lesson: Uždaryti pamoką
+        correct_answers_list: Teisingų atsakymų sąrašas
+        good_result_message: Matau, kad jūs pasistengėte!
+        great_result_message: Šauniai padirbėta! Tai puikūs rezultatai!
+        next_course_lesson: Eikite į kitą kurso pamoką
+        no_results: Dar neturite testo rezultatų
+        no_results_text: Prašome užpildyti pamoką ir išlaikyti testą, kad gautumėte
+          rezultatus
+        see_correct_answers_list: Žiūrėkite teisingų atsakymų sąrašą
+        train_more: Praktikuok daugiau ir kitą kartą pasieksi geresnių rezultatų!
+        you_finished_lesson: Puiku! Jūs baigėte pamoką
+      go_back: Eik atgal
+      next_button: Kitas
+      not_available_task: Ši užduotis dar negalima
+      start_button: Pradėti
+      tasks:
+        check:
+          assignment:
+            accept: Priimti
+            author_will_check_your_answer: >-
+              „%{author}“ peržiūrės jūsų atsakymą ir paprastai pateiks atsiliepimą
+              per 1–2 dienas
+            continue_writing: Tęskite rašymą
+            copy: Kopijuoti
+            delete: Ištrinti
+            delete_record: Ištrinti įrašą
+            edit: Redaguoti
+            essay_does_not_have_enough_words: >-
+              Jūsų atsakyme turėtų būti bent %{minWordsNumber} žodžių. Šiuo metu jūsų
+              atsakymas yra %{currentWordsNumber} žodis.
+            followers_count: "%{followersCount} pasekėjų"
+            lessons_count: "%{lessonsCount} pamokos"
+            minimal_recording_time: Mažiausias įrašymo laikas - %{minimalRecordingTime}
+            minimum_characters_amount: Minimalūs simboliai - %{minimumCharactersAmount}
+            minimum_words_amount: Minimalūs žodžiai - %{minimumAmount}
+            record_again: Įrašykite dar kartą
+            record_voice: Įrašyti balsą
+            send_anyway: Siųsti vistiek
+            send_to_review: Siųsti atsiliepimui
+            skip: Praleisti
+            too_short_answer: Per trumpas atsakymas
+            type_your_answer: Įveskite savo atsakymą
+            unknown_task_type: Nežinomas užduoties tipas
+            upgrade_licence: Atnaujinti licenciją
+            upgrade_your_plan: Atnaujinkite planą, kad išbandytumėte užduotis su mokytojų
+              apžvalgomis
+            upload_files: Įkelti failus
+            write_essay: Parašykite esė
+            you_have_used_amount_of_assignments: Panaudojote „%{amountOfAssignments}“
+              užduočių kreditus
+          fill_in_blanks:
+            sentence_gap: Sakinio atotrūkis
+          fill_in_table:
+            column_answer_placeholder: Atsakymas
+            column_question_placeholder: Klausimas
+            example: Pavyzdys
+          true_false:
+            'false': Klaidinga
+            'true': Tiesa
+        learn:
+          translatable_text:
+            show_original: Rodyti originalą
+            translate_into: Versti su „Google“ į %{languageName}
+            translate_into_your_lang: Versti su „Google“ į jūsų kalbą
+        play:
+          arrange_words:
+            start_screen:
+              heading: Iš pateiktų žodžių padarykite sakinį
+          audition:
+            start_screen:
+              heading: Klausykitės garso ir palieskite ką tik girdėtą žodį
+          dictation:
+            get_help: Gaukite pagalbos
+            i_do_not_know: Nežinau
+            input_placeholder: Čia įveskite tai, ką girdėjote
+            start_screen:
+              heading: Klausyk ir rašyk, ką girdi
+          fill_gap:
+            start_screen:
+              heading: Derinkite žodį ir jo reikšmę
+          finish_screen:
+            go_to_next_exercise: Šauniai padirbėta! Eikite į kitą pratimą
+          image_hotspot:
+            start_screen:
+              heading: Teisingai pavadinkite paveikslėlyje esančius objektus
+          image_object:
+            start_screen:
+              heading: Pasirinkite kitą objektą iš kito paveikslėlio
+          inline_dropdown:
+            start_screen:
+              heading: Pasirinkite žodžius, kurie atitinka sakinį
+          mark_word:
+            start_screen:
+              heading: Perskaitykite tekstą ir pasirinkite vaizdą atitinkantį žodį
+          minimal_pairs:
+            start_screen:
+              heading: Žiūrėkite vaizdo įrašą ir pasirinkite teisingą variantą
+    locale:
+      currency_switcher_title: Valiutos keitiklis
+      lang_switcher_title: Kalbos keitiklis
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Anglų
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlandsas
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Garso įrašas įkeliamas
+        aria_pause_button: Pauzė
+        aria_play_button: žaisti
+        aria_reload_button: Įkelkite iš naujo
+        aria_stop_button: Sustabdyti
+        reload_message: Nepavyko įkelti garso įrašo. Jei norite iš naujo įkelti, spustelėkite
+          mygtuką.
+    mobile_modal:
+      apply: Taikyti
+      cancel: Atšaukti
+      clear: Aišku
+      save: Sutaupyti
+    page404:
+      goToStartLessonPage: Eikite į pradinį pamokos puslapį
+      ooops: Oi ...
+      sorry_message: Deja, Toras negalėjo rasti šio puslapio
+    profile:
+      navigation:
+        log_out: Atsijungti
+        my_profile: Mano profilis
+        settings: Nustatymai
+      onboarding:
+        choose_native_language: Pasirinkite gimtąją ar suprantamą kalbą
+        do_you_understand_english: Ar tu supranti angliškai?
+        hello: Sveiki
+        language_levels:
+          a1: Pradinis lygis
+          a2: Prieš vidurinį lygį
+          b1: Vidutinio lygio
+          b2: Viršutinis tarpinis lygis
+          c1: Pažengęs lygis
+          no_knowledge: Jokių žinių
+        language_not_supported:
+          note: Mes jums apie tai pranešime, kai tik bus prieinama kalba
+          title: Deja, bet mes dar nepalaikome šios kalbos
+          try_another_language: Išbandykite kitą kalbą
+        'no': Ne
+        search_placeholder: Paieška...
+        show_more_languages: Kitos kalbos
+        target_language_question: Kokią kalbą norite išmokti?
+        what_is_language_level: Kaip įvertintumėte savo %{languageName} lygį?
+        'yes': Taip
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: "„Lingu“ privatumo politika"
+        support: Parama
+      logout: Atsijungti
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Gaukite naujienas iš mokytojų ir mokyklų, kurias stebite
+              sections:
+                app_notifications: Programėlės pranešimai
+                email: Elektroniniu paštu
+              title: Pagalba mokymuisi
+            marketing:
+              description: Būkite informuotas apie visas „Lingu“ akcijas, atnaujinimus
+                ir įkvėpimą
+              sections:
+                browser_notifications: Naršyklės pranešimai
+                email: Elektroniniu paštu
+              title: Rinkodara
+          title: Kontaktų nuostatos
+        personal_information:
+          delete_photo: Ištrinti nuotrauką
+          email: El
+          first_name: Pirmas vardas
+          last_name: Pavardė
+          social_accounts:
+            connected: Prisijungta
+            facebook: Facebook
+            google: "„Google“"
+            microsoft: "„Microsoft“"
+            not_connected: Neprisijungęs
+            title: Socialinės sąskaitos
+          title: Asmeninė informacija
+          update_photo: Atnaujinti nuotrauką
+        school:
+          active_licence: Aktyvi licencija
+          active_status: Aktyvus
+          delete_profile: Ištrinti mano profilį
+          delete_profile_modal:
+            body: |-
+              Tu sunaikinsi visus savo duomenis - amžinai. Nėra anuliavimo mygtuko ir negalime jo jums atgauti.
+              Ar tikrai norite visam laikui ištrinti „Lingu“ profilį ir visus duomenis?
+            cancel: Atšaukti
+            confirm: Taip, ištrinkite
+            i_understand_the_consequences: Aš suprantu pasekmes
+            title: Ištrinti savo profilį?
+          expired: Pasibaigęs „%{expire_date}“
+          expires: Galiojimo laikas baigiasi %{expire_date}
+          inactive_status: Neaktyvus
+          revoke_access: Anuliuoti skaitymo prieigą
+          sections:
+            contact_school: Susisiekite su mokykla
+            export_my_data: Eksportuoti mano duomenis
+            read_school_privacy_policy: Perskaitykite mokyklos privatumo politiką
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Muzikos atkūrimas
+              sound_effects: Garso efektai
+              title: Garsas
+            visual:
+              dark_theme: Tamsi tema
+              font_size:
+                test_text: Žolė visada žalesnė kitoje tvoros pusėje
+                title: Šrifto dydis
+              high_contrast: Didelis kontrastas
+              hints: Užuominos
+              title: Vaizdinis
+          title: Garsas ir vaizdas
+        training_settings:
+          sections:
+            i_understand: aš suprantu
+            i_want_to_learn: aš noriu mokytis
+            target_language_level: Anglų kalba
+          title: Treniruočių nustatymai
+      settings_title: Nustatymai
+    teacher_card:
+      followers_count:
+        one: 1 sekėjas
+        other: "%{count} pasekėjų"
+      lessons_count:
+        one: 1 pamoka
+        other: "%{count} pamokos"

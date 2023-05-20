@@ -1,0 +1,9 @@
+.assignment-students-list.thead-block-list
+  table.table
+    thead
+      tr
+        th= t('shared.student')
+        th= t('school.school_assignments.form.deadline')
+        th= t('status')
+    tbody
+      = render partial: 'student_assignment_list_row', collection: student_assignments, as: :student_assignment, cached: true

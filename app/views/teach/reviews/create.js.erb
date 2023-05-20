@@ -1,0 +1,5 @@
+var form = document.querySelector('#review__form');
+if (form) form.reset();
+$('#review_content').summernote('code', '');
+$('#review__items').html("<%= j render 'items', lesson: lesson, reviews: reviews %>")
+$('#meta').collapse('hide');

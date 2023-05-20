@@ -1,0 +1,13 @@
+.onboarding-container
+  h1= t('welcome.signin.welcome_title')
+  .team-ability.mt-5
+    h2= t('.select_ability_title')
+
+    = form_for team, url: instruction_teach_team_path(refer: refer), method: :post, html: { class: 'd-flex flex-column' } do |f|
+      - Team::ABILITIES_ARRAY.each_with_index do |e, i|
+        .bg-soft-secondary.p-4.mt-3.rounded-sm
+          .custom-control.custom-checkbox.pl-4
+            = check_box_tag 'team[abilities][]', e, false, class: 'custom-control-input team-ability-check', id: "team_abilities_#{e}"
+            label[class="custom-control-label pl-3" id="team_abilities_#{e}_label" for="team_abilities_#{e}"]
+              span= t(e, scope: 'teach.teams.onboarding')
+      = f.submit t('teach.teams.onboarding.submit'), class: 'btn btn-primary mt-5 px-6 py-3 align-self-center', id: 'onboarding_submit', disabled: true, style: 'font-size: 20px'

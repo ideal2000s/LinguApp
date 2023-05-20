@@ -1,0 +1,7 @@
+tr
+  td.align-middle.text-center.py-1
+    = check_box_tag 'lesson[task_ids][]', task.id
+  td.align-middle.text-center.py-1
+    i.fas.fa-fw.mr-1 class=(task_icon_class(task))
+  td.align-middle.py-1
+    span.text-primary.font-weight-bold= task.name

@@ -1,0 +1,8 @@
+.student-header-sections
+  - controller_name = controller.controller_name
+  - action_name = controller.action_name
+  = link_to t('students'), school_students_path, class: "#{controller_name == 'team_students' && action_name == 'index' ? 'active' : ''}"
+  = link_to t('shared.classes'), school_team_groups_path, class: "#{controller_name == 'team_groups' && action_name == 'index' ? 'active' : ''}"
+  = link_to t('school.team_students.index.archive'), archived_students_school_students_path, class: "#{controller_name == 'team_students' && action_name == 'archived_students' ? 'active' : ''}", id: 'archived_students_link'
+  = link_to t('school.activities.title'), activity_logs_school_activities_path, class: "#{controller.controller_name == 'activities' ? 'active' : ''}"
+.student-header-bottom

@@ -1,0 +1,2 @@
+$('#teams__list').html("<%= j render 'admin/teams/list', teams: user.actual_team_users %>")
+$('#team_invitations_list').html("<%= j render 'list', invitations: user.team_invitations.pending %>")

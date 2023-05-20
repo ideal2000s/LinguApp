@@ -1,0 +1,29 @@
+.flex-center
+  .card.join-school-content style="background: url(#{image_path('bg/school-illustration.svg')}) no-repeat center center / contain white;"
+    .card-body.m-3
+      - if errors.present?
+        .alert.alert-danger= errors[0]
+        span.mt-5= link_to t('school.team_students.invite_students.already_account'), root_path, class: 'sign-in-link'
+      - else
+        = form_tag join_students_invitation_path(team.to_gid_param), method: :post, class: 'd-flex flex-column align-items-center'
+        h3.join-school-title= t('school.team_students.invite_students.join_school')
+        .school-name= team.name
+        = hidden_field_tag 'team_group_id', team_group_id
+        = hidden_field_tag 'email', email.blank? ? user.email : email
+        .student-join-form
+          - if email.present? || !user.valid?
+            .d-flex.justify-content-between
+              .school-first-name.mr-3
+                = text_field_tag 'fname', nil, class: 'form-control', required: true, placeholder: t('first_name')
+              .school-last-name
+                = text_field_tag 'lname', nil, class: 'form-control', required: true, placeholder: t('last_name')
+            .custom-control.custom-checkbox.receive-marketing-messages-check
+              = check_box_tag 'receive-messages-check', '0', false, class: 'custom-control-input'
+              label[class="custom-control-label pl-1" for='receive-messages-check']
+                = t('school.team_students.invite_students.receive_marketing_messages')
+          button.btn.btn-primary.w-100.accept-invitation-btn
+            = t('school.team_students.invite_students.accept_invitation')
+        .join-school-footer
+          - if team.privacy_url
+            span= t('school.team_students.invite_students.we_process_your_data')
+            = link_to t('school.team_students.invite_students.privacy_policy'), team.privacy_url, class: 'privacy-link'

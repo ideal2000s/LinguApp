@@ -1,0 +1,11 @@
+(function () {
+  var $container = $('#<%= dom_id(item) %> #option_form');
+  $container.html('<%= j render option.to_partial_path(prefix: :teach, partial: :option_form), item: item, option: option %>');
+  const inputs = $container.find('input[type=file][data-upload]')
+  if(inputs.length > 0)
+    inputs.each(function(_i, input){
+      input.dispatchEvent(
+        new CustomEvent('upload:input_available', { bubbles: true, cancelable: true })
+      );
+    });
+})();

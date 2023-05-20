@@ -1,0 +1,18 @@
+- student = document.student
+- assignable = document.assignable
+- is_reviewed = document.reviewed?
+tr class="#{is_reviewed ? 'reviewed' : ''}" onclick="javascript:assignmentRowClick('#{school_document_path(document)}')" id=dom_id(document)
+  td
+    .d-flex.align-items-center
+      = custom_profile_tag(student)
+      .student-full-name.ml-3
+        = student.full_name
+  td
+    .d-flex.align-items-center
+      - if assignable.kind_of?(Task)
+        = image_tag("#{document.assignable.type == 'Tasks::Essay' ? 'icons/text_assignment.svg' : 'icons/audio_assignment.svg'}")
+      - elsif assignable.kind_of?(StudentAssignment)
+        = image_tag("#{assignable.assignment.context}_assignment.svg")
+      .ml-3
+        = assignable.name
+  td= document_status_tag(document)

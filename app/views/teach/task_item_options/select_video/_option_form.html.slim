@@ -1,0 +1,9 @@
+= form_for option, as: :item_option, html: { id: dom_id(item, :option_form) }, url: teach_item_options_path(item), remote: true do |f|
+  .form-inline
+    .form-group.mr-3
+      = f.check_box :correct, class: 'form-control'
+    .form-group.mr-3
+      = f.text_field :answer, class: 'form-control text-option', placeholder: t('teach.task_items.select_text.select_text.enter_answer')
+    .form-group
+      = f.submit t('teach.task_items.select_text.select_text.add_answer'), class: 'btn btn-falcon-default'
+    = error_for f.object, :text_option

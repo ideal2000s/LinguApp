@@ -1,0 +1,610 @@
+---
+mr:
+  course_mailer:
+    course_assigned_notification:
+      button: कोर्स सुरू करा
+      click_start_lesson: "'प्रारंभ धडा' क्लिक करा"
+      follow_course_link: कोर्स उघडण्यासाठी बटणावर क्लिक करा
+      footer_text: दररोज काहीतरी नवीन शिकण्यासाठी लिंगूवर परत या!
+      get_started_line: 'आपण कसे प्रारंभ करता ते येथे आहे:'
+      notification_link: सूचना सेटिंग्ज
+      open_lesson: पहिला धडा उघडा
+      or_paste_this_link: किंवा आपल्या ब्राउझरमध्ये हा दुवा पेस्ट करा
+      sign_in_with_email: आपल्या ईमेल पत्त्यासह लॉग इन करा (%{email})
+      support_link: आधार
+      title: "%{course} सह प्रारंभ करणे"
+    new_document_comment:
+      author_text: "%{author} नी आपल्या असाइनमेंटचे पुनरावलोकन सोडले"
+      button_text: हे तपासा
+      button_url_helper: 'किंवा आपल्या ब्राउझरमध्ये हा दुवा पेस्ट करा:'
+      footer_text: अजून बरेच काही शिकण्यासारखे आहे ...
+      notification_link: सूचना सेटिंग्ज
+      subject_line: नवीन असाइनमेंट टिप्पणी
+      support_link: आधार
+    otp:
+      ignore_msg: आपण ही विनंती केली नसेल तर फक्त ईमेलकडे दुर्लक्ष करा.
+      subject_line: भाषेसाठी आपला अद्वितीय कोड
+      unique_code_for_lingu: भाषेसाठी आपला अद्वितीय कोड येथे आहे
+  frontend:
+    auth:
+      already_have_acc_question: आधीपासूनच एक खाते आहे?
+      back: मागे
+      back_to_sign_in: साइन इन वर परत
+      check_your_email_for_a_code: आपल्या कोडसाठी आपला ईमेल तपासा
+      continue: सुरू
+      continue_with_email: ईमेलसह सुरू ठेवा
+      continue_with_provider: "%{provider} सह सुरू ठेवा"
+      did_not_receive_a_code: कोड प्राप्त झाला नाही?
+      email_address: ईमेल पत्ता
+      first_name: पहिले नाव
+      get_unique_code: एक अद्वितीय लॉगिन कोड मिळवा
+      join_lingu: भाषेत सामील व्हा
+      last_name: आडनाव
+      more_login_options: अधिक लॉगिन पर्याय
+      no_account_question: खाते नाही?
+      or: किंवा
+      resend_code: कोड पुन्हा पाठवा
+      sign_in: साइन इन करा
+      sign_up: साइन अप करा
+      want_to_receive_marketing_messages: मला Lingu वरून विपणन संदेश प्राप्त करायचे
+        आहेत
+      we_ve_sent_a_code: >-
+        आम्ही <strong> {{ईमेल}} </ strong> वर 6-अंकी कोड पाठविला आहे. कोड 15 मिनिटांत
+        कालबाह्य होईल, म्हणून कृपया तो लवकरच प्रविष्ट करा.
+    cookie_agreement:
+      agree: सहमत
+      condition: >-
+        आम्ही साइट कामगिरीचे विश्लेषण करण्यासाठी आणि वैयक्तिकृत सामग्री वितरीत करण्यासाठी
+        कुकीज वापरतो. “सहमत आहे” वर क्लिक करून आपण आमच्या शर्तींना सहमती देता.
+    course:
+      accredited_course_provider: मान्यताप्राप्त अभ्यासक्रम प्रदाता
+      apply: अर्ज करा
+      apply_filters: फिल्टर लागू करा
+      by: द्वारा
+      cancel: रद्द करा
+      categories: "%{count} श्रेणी"
+      category: वर्ग
+      clear: साफ
+      clear_filters: फिल्टर साफ करा
+      contact_us: आमच्याशी संपर्क साधा
+      could_not_find_match_for: क्षमस्व, यासाठी आम्हाला कोणतीही जुळवणी सापडली नाही
+      course_language: कोर्स भाषा
+      duration: कालावधी
+      filter_settings:
+        categories:
+          academic: शैक्षणिक
+          business: व्यवसाय
+          fashion: फॅशन
+          food_drink: अन्न आणि पेय
+          for_kids: मुलांसाठी
+          general: सामान्य
+          health: आरोग्य
+          legal: कायदेशीर
+          sport: खेळ
+          travel: प्रवास
+        durations:
+          t0_600: "<10 मिनिटे"
+          t1800_3600: 30-60 मिनिटे
+          t3600_86400: 1+ तास
+          t600_1800: 10-30 मिनिटे
+        focus_on:
+          conversation: संभाषण
+          grammar: व्याकरण
+          listening: ऐकत आहे
+          pronunciation: उच्चारण
+          reading: वाचन
+          speaking: बोलणे
+          writing: लेखन
+        levels:
+          long:
+            advanced: प्रगत पातळी
+            elementary: प्राथमिक पातळी
+            intermediate: दरम्यानचे पातळी
+            no_knowledge: ज्ञान नाही
+            pre_intermediate: पूर्व मध्यम पातळी
+            upper_intermediate: अप्पर इंटरमीडिएट लेव्हल
+          short:
+            advanced: प्रगत
+            beginner: नवशिक्या
+            intermediate: मध्यवर्ती
+        sort_by:
+          most_rated: सर्वाधिक रेट केलेले
+          newest: नवीनतम
+          popularity: लोकप्रियता
+      filters: फिल्टर
+      focus_on: यावर लक्ष द्या
+      focus_on_title: मला यावर लक्ष केंद्रित करायचं आहे
+      hide_lessons: धडे लपवा
+      hours: तास
+      i_understand: मला समजले
+      i_want_to_learn: मला शिकायचे आहे
+      in_language: "%{language} मध्ये"
+      language: इंग्रजी
+      learn_more: अधिक जाणून घ्या
+      less_settings: कमी सेटिंग्ज
+      lessons: धडे
+      lessons_available: "%{number} धडे उपलब्ध"
+      lessons_catalog_page_subtitle: भाषेचा नायक बना.
+      lessons_catalog_page_title: भाषेच्या कोर्ससह आपली क्षितिजे विस्तृत करा
+      level: पातळी
+      min: मि
+      more_settings: अधिक सेटिंग्ज
+      navbar:
+        close: मेनू बंद करा
+        menu: मेनू
+        select_language: भाषा निवडा
+      need_to_buy_course: आपल्याला प्रथम कोर्स बुक करणे आवश्यक आहे
+      no_description: कोणतेही वर्णन प्रदान केलेले नाही
+      no_results: क्षमस्व, यासाठी आम्हाला कोणतीही जुळवणी सापडली नाही
+      or: किंवा
+      per_month: दर महिन्याला
+      plans: योजना
+      privacy_policy: गोपनीयता धोरण
+      rating: रेटिंग
+      remove_all_filters: सर्व फिल्टर काढा
+      reviews: पुनरावलोकने
+      save: जतन करा
+      search: शोधा
+      select_dots: निवडा ...
+      select_languages: लॅग्गेज निवडा
+      select_num_languages: "%{number} भाषा निवडा"
+      short_levels:
+        a1: ए 1
+        a2: ए 2
+        b1: बी 1
+        b2: बी 2
+        c1: सी 1
+        c2: सी 2
+        zero_level: ए 0
+      show_all: सगळं दाखवा
+      show_all_lessons: सर्व धडे दर्शवा
+      show_lessons: "%{number} धडे दर्शवा"
+      show_more: अजून दाखवा
+      sign_up_with_lingu_for: साठी भाषा नॉर्वे सह साइन अप करा
+      skills: "%{count} कौशल्ये"
+      sort_by: यानुसार क्रमवारी लावा
+      start_typing_here: येथे टाइप करणे प्रारंभ करा
+      teach: शिकवा
+      terms_and_conditions: नियम आणि अटी
+      time_range: वेळ श्रेणी
+      try_adjusting_your_search: आपले फिल्टर बदलून आपला शोध समायोजित करण्याचा प्रयत्न
+        करा
+      try_this_course: हा कोर्स करून पहा
+      website_language: वेबसाइट भाषा
+      words: शब्द
+    games:
+      finished:
+        go_to_next_exercise: छान! पुढील व्यायामावर जा
+      flashcard:
+        buttons:
+          finish: समाप्त
+          next: पुढे
+          previous: मागील
+        check_out_new_words: या धड्यात आपण नवीन शब्द शिकू शकता
+        frequency_of_word_usage: "%{language} मध्ये शब्दाच्या वापराची वारंवारता"
+        keep_practice_to_learn_all_words: "%{count} शब्दांचे पुनरावलोकन करा आणि चला
+          काही गेम खेळू!"
+        word_frequency:
+          level1: क्वचितच वापरले
+          level2: क्वचितच वापरले
+          level3: शब्द वारंवारता - मध्यम
+          level4: शब्द वारंवारता - मध्यम
+          level5: सामान्य
+          level6: खूप सामान्य
+      match_word:
+        click_and_move_each_word_to_counterpart: प्रत्येक शब्द त्याच्या प्रतिभाकडे
+          क्लिक करा आणि हलवा
+        start_heading: जोडी करण्यासाठी शब्द जुळवा
+        time_is_up: वेळ संपली!
+      skip_tutorial: वगळा
+      time_is_up: वेळ संपली!
+      word_nodes:
+        match_letters_to_form_word: शब्द तयार करण्यासाठी अक्षरे जुळवा
+      word_waterfall:
+        do_not_hesitate: चला वेग वाढवूया!
+        go_to_next_exercise: पुढील व्यायामावर जा
+        select_correct_translation: योग्य सामना निवडा
+        well_done: छान!
+    home_page:
+      hello: नमस्कार,
+      popular_lessons: लोकप्रिय धडे
+      show_more: अजून दाखवा
+      time: "%{count} मि"
+      today_lesson: आजचा आपला धडा
+      user_name: "%{name}!"
+      words: "%{count} शब्द"
+    idle_screen:
+      by_author: "%{authorName} द्वारा"
+      continue_lesson: धडा सुरू ठेवा
+      exit: बाहेर पडा
+      idle_message: आपण काही काळासाठी निष्क्रिय आहात ...
+    lesson_page:
+      back_to_course_page: कोर्स पेजवर परत
+      close: बंद
+      continue_lesson: धडा सुरू ठेवा
+      followed: अनुसरण केले
+      hamburger_menu_btn: हॅमबर्गर मेनू
+      lesson_given: धडे
+      not_started: सुरू झाले नाही
+      or: किंवा
+      part_complete: "%{percent}% पूर्ण"
+      restart_lesson: पुन्हा सुरू करा
+      section_check: तपासा
+      section_check_info: "%{count} चाचण्या"
+      section_learn: जाणून घ्या
+      section_learn_info: "%{count} मिनिट पाहण्यासाठी आणि वाचण्यासाठी"
+      section_play: खेळा
+      section_play_info: सराव करण्यासाठी %{count} शब्द
+      start_lesson: पाठ सुरू करा
+      step_progress: "%{percent}%"
+      subscribe: अनुसरण करा
+      subscribed: अनुसरण केले
+      subscribers: अनुयायी
+      time_min: "%{minutesNumber} मि"
+      unsubscribe: अनुसरण करणे रद्द करा
+      webview_error_title: काहीतरी चूक झाली...
+      words_number: "%{wordsNumber} नवीन शब्द"
+    lesson_task:
+      cancel_button: रद्द करा
+      check:
+        navigation_next: पुढे
+        navigation_previous: मागील
+        navigation_skip: वगळा
+      controls_panel:
+        font_size_button: अक्षराचा आकार
+        high_contrast_button:
+          origin: उच्च तीव्रता
+          short: कॉन्ट्रास्ट
+        hints_button: इशारे
+        music_playback_button:
+          origin: संगीत प्लेबॅक
+          short: संगीत
+        sound_effects_button:
+          origin: ध्वनी प्रभाव
+          short: आवाज
+      exit_button: बाहेर पडा
+      finish_button: समाप्त
+      finished:
+        back_to_learn: परत शिकण्यासाठी
+        back_to_lesson_page: पाठ पृष्ठाकडे परत
+        back_to_results_page: परिणाम पृष्ठावर परत
+        bad_result_message: हं ... आणखी एकदा धडा घेण्याचा प्रयत्न करा
+        close_lesson: धडा बंद करा
+        correct_answers_list: बरोबर उत्तरे यादी
+        good_result_message: मी प्रयत्न करतो ते मी पाहू शकतो!
+        great_result_message: छान! हे चांगले परिणाम आहेत!
+        next_course_lesson: अर्थात पुढील पाठात जा
+        no_results: आपल्याकडे अद्याप चाचणी परिणाम नाहीत
+        no_results_text: कृपया धडा पूर्ण करा आणि निकाल मिळविण्यासाठी चाचणी पास करा
+        see_correct_answers_list: योग्य उत्तरे यादी पहा
+        train_more: अधिक सराव करा आणि आपण पुढच्या वेळी चांगले परिणाम साध्य कराल!
+        you_finished_lesson: मस्त! आपण धडा संपवला
+      go_back: परत जा
+      next_button: पुढे
+      not_available_task: हे कार्य अद्याप उपलब्ध नाही
+      start_button: प्रारंभ करा
+      tasks:
+        check:
+          assignment:
+            accept: स्वीकारा
+            author_will_check_your_answer: "%{author} आपल्या उत्तराचे पुनरावलोकन करेल
+              आणि सामान्यत: 1-2 दिवसात अभिप्राय देईल"
+            continue_writing: लेखन सुरू ठेवा
+            copy: कॉपी करा
+            delete: हटवा
+            delete_record: रेकॉर्ड हटवा
+            edit: सुधारणे
+            essay_does_not_have_enough_words: >-
+              आपल्या उत्तरामध्ये किमान %{minWordsNumber} शब्द असावेत. आपले उत्तर सध्या
+              %{currentWordsNumber} शब्द आहे.
+            followers_count: "%{followersCount} अनुयायी"
+            lessons_count: "%{lessonsCount} धडे"
+            minimal_recording_time: किमान रेकॉर्डिंग वेळ - %{minimalRecordingTime}
+            minimum_characters_amount: किमान वर्ण - %{minimumCharactersAmount}
+            minimum_words_amount: किमान शब्द - %{minimumAmount}
+            record_again: पुन्हा रेकॉर्ड करा
+            record_voice: आवाज रेकॉर्ड करा
+            send_anyway: जाऊ दे, पाठव
+            send_to_review: पुनरावलोकनासाठी पाठवा
+            skip: वगळा
+            too_short_answer: खूपच लहान उत्तर
+            type_your_answer: आपले उत्तर टाइप करा
+            unknown_task_type: अज्ञात टास्क प्रकार
+            upgrade_licence: परवाना श्रेणीसुधारित करा
+            upgrade_your_plan: शिक्षकांच्या पुनरावलोकनांसह असाइनमेंट वापरण्याची आपली
+              योजना श्रेणीसुधारित करा
+            upload_files: फायली अपलोड करा
+            write_essay: निबंध लिहा
+            you_have_used_amount_of_assignments: आपण %{amountOfAssignments} असाइनमेंट
+              क्रेडिट्स वापरली आहेत
+          fill_in_blanks:
+            sentence_gap: वाक्यातील अंतर
+          fill_in_table:
+            column_answer_placeholder: उत्तर
+            column_question_placeholder: प्रश्न
+            example: उदाहरण
+          true_false:
+            'false': खोटे
+            'true': खरे
+        learn:
+          translatable_text:
+            show_original: मूळ दाखवा
+            translate_into: Google मध्ये %{languageName} मध्ये अनुवाद करा
+            translate_into_your_lang: Google सह आपल्या भाषेत अनुवाद करा
+        play:
+          arrange_words:
+            start_screen:
+              heading: दिलेल्या शब्दांपैकी एक वाक्य बनवा
+          audition:
+            start_screen:
+              heading: ऑडिओ ऐका आणि आपण नुकताच ऐकलेल्या शब्दांवर टॅप करा
+          dictation:
+            get_help: मदत मिळवा
+            i_do_not_know: मला माहित नाही
+            input_placeholder: आपण येथे जे ऐकले ते प्रविष्ट करा
+            start_screen:
+              heading: आपण जे ऐकता ते ऐका आणि लिहा
+          fill_gap:
+            start_screen:
+              heading: शब्द आणि त्याचा अर्थ जुळवा
+          finish_screen:
+            go_to_next_exercise: छान! पुढील व्यायामावर जा
+          image_hotspot:
+            start_screen:
+              heading: चित्रातील वस्तूंची नावे योग्यरित्या द्या
+          image_object:
+            start_screen:
+              heading: पुढील चित्रातून योग्य ऑब्जेक्ट निवडा
+          inline_dropdown:
+            start_screen:
+              heading: वाक्याशी जुळणारे शब्द निवडा
+          mark_word:
+            start_screen:
+              heading: मजकूर वाचा आणि प्रतिमेशी जुळणारा शब्द निवडा
+          minimal_pairs:
+            start_screen:
+              heading: व्हिडिओ पहा आणि योग्य पर्याय निवडा
+    locale:
+      currency_switcher_title: चलन स्विचर
+      lang_switcher_title: भाषा स्विचर
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: जर्मन
+        el: Greek
+        en: इंग्रजी
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: फ्रान्सिस
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: इटालिनो
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: लाटवियू वोलोडा
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: नॉर्स्क
+        ne: Nepali
+        nl: नेदरलँड्स
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: पोल्स्की
+        ps: Pashto
+        pt: पोर्तुगीज
+        ro: लिंबा रोमिनो
+        ru: К кык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: एफ सोमाली
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: कीस्वाहेली
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ऑडिओ लोड होत आहे
+        aria_pause_button: विराम द्या
+        aria_play_button: खेळा
+        aria_reload_button: रीलोड करा
+        aria_stop_button: थांबा
+        reload_message: ऑडिओ लोड करण्यात अयशस्वी. कृपया रीलोड करण्यासाठी बटणावर क्लिक
+          करा.
+    mobile_modal:
+      apply: अर्ज करा
+      cancel: रद्द करा
+      clear: साफ
+      save: जतन करा
+    page404:
+      goToStartLessonPage: प्रारंभ पाठ पृष्ठावर जा
+      ooops: अरेरे ...
+      sorry_message: क्षमस्व, तो हे पृष्ठ शोधू शकला नाही
+    profile:
+      navigation:
+        log_out: बाहेर पडणे
+        my_profile: माझे प्रोफाइल
+        settings: सेटिंग्ज
+      onboarding:
+        choose_native_language: आपली मूळ भाषा किंवा आपण समजत असलेली भाषा निवडा
+        do_you_understand_english: तुम्हाला इंग्रजी समजते का?
+        hello: नमस्कार
+        language_levels:
+          a1: प्राथमिक पातळी
+          a2: पूर्व-मध्यम स्तर
+          b1: दरम्यानचे पातळी
+          b2: अप्पर इंटरमीडिएट लेव्हल
+          c1: प्रगत पातळी
+          no_knowledge: ज्ञान नाही
+        language_not_supported:
+          note: भाषा उपलब्ध होताच आम्ही आपल्याला सूचित करू
+          title: क्षमस्व, परंतु आम्ही अद्याप या भाषेस समर्थन देत नाही
+          try_another_language: दुसर्‍या भाषेचा प्रयत्न करा
+        'no': नाही
+        search_placeholder: शोधा ...
+        show_more_languages: इतर भाषा
+        target_language_question: आपल्याला कोणती भाषा शिकायची आहे?
+        what_is_language_level: आपण आपल्या %{languageName} पातळीला कसे रेटिंग द्याल?
+        'yes': होय
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: भाषेचे गोपनीयता धोरण
+        support: आधार
+      logout: बाहेर पडणे
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: आपण अनुसरण करीत असलेल्या शिक्षक आणि शाळांकडील अद्यतने प्राप्त
+                करा
+              sections:
+                app_notifications: अ‍ॅप सूचना
+                email: ई-मेल
+              title: सहाय्य शिकणे
+            marketing:
+              description: भाषेच्या सर्व जाहिराती, अद्यतने आणि प्रेरणा याबद्दल माहिती
+                ठेवा
+              sections:
+                browser_notifications: ब्राउझर सूचना
+                email: ई-मेल
+              title: विपणन
+          title: संपर्क प्राधान्ये
+        personal_information:
+          delete_photo: फोटो हटवा
+          email: ईमेल
+          first_name: पहिले नाव
+          last_name: आडनाव
+          social_accounts:
+            connected: जोडलेले
+            facebook: फेसबुक
+            google: गूगल
+            microsoft: मायक्रोसॉफ्ट
+            not_connected: कनेक्ट केलेले नाही
+            title: सामाजिक खाती
+          title: वैयक्तिक माहिती
+          update_photo: फोटो अद्यतनित करा
+        school:
+          active_licence: सक्रिय परवाना
+          active_status: सक्रिय
+          delete_profile: माझे प्रोफाइल हटवा
+          delete_profile_modal:
+            body: |-
+              आपण आपला सर्व डेटा कायमचा नष्ट करा. तेथे पूर्ववत बटण नाही आणि आम्ही आपल्यासाठी ते परत मिळवू शकत नाही.
+              आपली खात्री आहे की आपण आपले भाषा प्रोफाइल आणि आपला सर्व डेटा कायमचा हटवू इच्छिता?
+            cancel: रद्द करा
+            confirm: होय, ते हटवा
+            i_understand_the_consequences: मला त्याचे परिणाम समजले
+            title: आपले प्रोफाइल हटवायचे?
+          expired: कालबाह्य झालेले %{expire_date}
+          expires: "%{expire_date} कालबाह्य होते"
+          inactive_status: निष्क्रिय
+          revoke_access: वाचन प्रवेश मागे घ्या
+          sections:
+            contact_school: संपर्क शाळा
+            export_my_data: माझा डेटा निर्यात करा
+            read_school_privacy_policy: शाळा गोपनीयता धोरण वाचा
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: संगीत प्लेबॅक
+              sound_effects: ध्वनी प्रभाव
+              title: आवाज
+            visual:
+              dark_theme: गडद थीम
+              font_size:
+                test_text: कुंपणाच्या दुसर्‍या बाजूला गवत नेहमीच हिरव्यागार असतो
+                title: अक्षराचा आकार
+              high_contrast: उच्च तीव्रता
+              hints: इशारे
+              title: व्हिज्युअल
+          title: ध्वनी आणि व्हिज्युअल
+        training_settings:
+          sections:
+            i_understand: मला समजले
+            i_want_to_learn: मला शिकायचे आहे
+            target_language_level: इंग्रजी पातळी
+          title: प्रशिक्षण सेटिंग्ज
+      settings_title: सेटिंग्ज
+    teacher_card:
+      followers_count:
+        one: 1 अनुयायी
+        other: "%{count} अनुयायी"
+      lessons_count:
+        one: 1 धडा
+        other: "%{count} धडे"

@@ -1,0 +1,12 @@
+.modal-dialog.modal-move-team-group role="document"
+  .modal-content
+    .modal-header
+      h5.modal-title = t('school.school_assignments.assign_to_student')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+    .modal-body
+      = form_with scope: :team_student, url: assign_course_school_student_path(student) do |f|
+        .team-groups-list
+          = render partial: 'school/courses/assign_course_item', collection: courses, as: :course, locals: { current_course_id: current_course_id }
+        .d-flex.action-group.mt-4
+          = f.submit t('save'), class: 'btn btn-primary ml-2 flex-fill'
+          button.btn.btn-light.flex-fill type='button' data-dismiss="modal" = t('shared.cancel')

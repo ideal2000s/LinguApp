@@ -1,0 +1,617 @@
+---
+mi:
+  course_mailer:
+    course_assigned_notification:
+      button: Me tiimata te akoranga
+      click_start_lesson: Paatohia te 'Akoranga tiimata'
+      follow_course_link: Paatohia te paatene hei whakatuwhera i te akoranga
+      footer_text: Hoki mai ki a Lingu ki te ako i nga mea hou ia ra!
+      get_started_line: 'Anei me penei te tiimata:'
+      notification_link: Tautuhinga whakamohio
+      open_lesson: Whakatuwherahia te akoranga tuatahi
+      or_paste_this_link: whakapiri ranei i tenei hono ki to tirotiro
+      sign_in_with_email: Takiuru me to wahitau imeera (%{email})
+      support_link: Tautoko
+      title: Te tiimata me te %{course}
+    new_document_comment:
+      author_text: I waihohia e %{author} tetahi arotake mo to mahi
+      button_text: Tirohia atu
+      button_url_helper: whakapiri ranei i tenei hono ki to kaitirotiro.
+      footer_text: He nui ake nga mea hei ako ...
+      notification_link: Tautuhinga whakamohio
+      subject_line: He korero hou mo te taumahi
+      support_link: Tautoko
+    otp:
+      ignore_msg: Mena kaore koe i tono i tenei tono, kaua noa e aro ki te imeera.
+      subject_line: To tohu motuhake mo te Reo
+      unique_code_for_lingu: Anei to tohu ahurei mo te Reo
+  frontend:
+    auth:
+      already_have_acc_question: Kua whai kaute?
+      back: Hoki
+      back_to_sign_in: Hoki ki te Waitohu
+      check_your_email_for_a_code: Tirohia to imeera mo to waehere
+      continue: Haere tonu
+      continue_with_email: Haere tonu me te imeera
+      continue_with_provider: Haere tonu ki te %{provider}
+      did_not_receive_a_code: Kaore i riro he waehere?
+      email_address: Wāhitau īmera
+      first_name: Ingoa Tuatahi
+      get_unique_code: Tikina he waehere takiuru ahurei
+      join_lingu: Hono atu ki a Lingu
+      last_name: Ingoa whakamutunga
+      more_login_options: He maha atu ano nga whiringa takiuru
+      no_account_question: Kaore he kaute?
+      or: ranei
+      resend_code: Tukuna te waehere
+      sign_in: Whakauru mai
+      sign_up: Waitohu
+      want_to_receive_marketing_messages: Kei te hiahia au ki te whiwhi i nga karere
+        tauhokohoko mai i a Lingu
+      we_ve_sent_a_code: >-
+        Kua tukuna e matou he tohu 6-tau ki a <strong> {{imeera}} </strong>. Ka pau
+        te waehere i roto i te 15 meneti, no reira tena koa whakauruhia atu
+    cookie_agreement:
+      agree: Whakaae
+      condition: >-
+        Ka whakamahia e matou nga pihikete ki te wetewete i te mahinga o te papaanga
+        me te kawe i nga korero whai kiko. Ma te paatene "Whakaaetia", ka whakaae
+        koe ki o maatau whakaritenga.
+    course:
+      accredited_course_provider: Kaiwhakarato akoranga kua whakamanahia
+      apply: Hoatu
+      apply_filters: Hoatu nga taatari
+      by: Na
+      cancel: Whakakore
+      categories: "%{count} kāwai"
+      category: Kāwai
+      clear: Maama
+      clear_filters: Maama nga whiriwhiringa
+      contact_us: Whakapā mai
+      could_not_find_match_for: Aroha mai, kaore i kitea e maatau tetahi whakataetae
+        mo
+      course_language: Reo akoranga
+      duration: Roanga
+      filter_settings:
+        categories:
+          academic: Akoranga
+          business: Pakihi
+          fashion: Hangarau
+          food_drink: Kai me te inu
+          for_kids: Mo nga tamariki
+          general: Whanui
+          health: Hauora
+          legal: Ture
+          sport: Hākinakina
+          travel: Haerere
+        durations:
+          t0_600: "<10 meneti"
+          t1800_3600: 30-60 meneti
+          t3600_86400: 1+ haora
+          t600_1800: 10-30 meneti
+        focus_on:
+          conversation: Korero
+          grammar: Wetereo
+          listening: Whakarongo
+          pronunciation: Tuhinga
+          reading: Panui
+          speaking: Korero
+          writing: Tuhi
+        levels:
+          long:
+            advanced: Taumata matatau
+            elementary: Taumata tuatahi
+            intermediate: Taumata takawaenga
+            no_knowledge: Kaore he matauranga
+            pre_intermediate: Taumata takawaenga o mua
+            upper_intermediate: Te reanga takawaenga o runga
+          short:
+            advanced: Arā Atu Anō
+            beginner: Timata
+            intermediate: Takawaenga
+        sort_by:
+          most_rated: Te nuinga kua tohua
+          newest: Hou rawa
+          popularity: Rongonui
+      filters: Tātari
+      focus_on: Te arotahi ki runga
+      focus_on_title: Kei te pirangi au ki te aro atu
+      hide_lessons: Huna akoranga
+      hours: Haora
+      i_understand: Kei te maarama ahau
+      i_want_to_learn: Kei te hiahia au ki te ako
+      in_language: i roto i te %{language}
+      language: Reo
+      learn_more: Ako atu
+      less_settings: He iti ake te tautuhinga
+      lessons: Akoranga
+      lessons_available: "%{number} akoranga e waatea ana"
+      lessons_catalog_page_subtitle: Riro i te reo rangatira.
+      lessons_catalog_page_title: Whakarahihia o pae ki te akoranga reo
+      level: Taumata
+      min: Min
+      more_settings: He tautuhinga ano
+      navbar:
+        close: Katia te tahua
+        menu: Tahua
+        select_language: Whiriwhiria te reo
+      need_to_buy_course: Me matua tono e koe tetahi akoranga
+      no_description: Kaore he whakaaturanga i hoatuhia
+      no_results: Aroha mai, kaore i kitea e maatau tetahi whakataetae mo
+      or: ranei
+      per_month: ia marama
+      plans: Mahere
+      privacy_policy: Kaupapahere tūmataiti
+      rating: Whakatauranga
+      remove_all_filters: Tangohia nga taatari katoa
+      reviews: Arotake
+      save: Penapena
+      search: Rapu
+      select_dots: Tīpako ...
+      select_languages: Whiriwhiria nga langauges
+      select_num_languages: Tohua nga reo %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Whakaatu katoa
+      show_all_lessons: Whakaatuhia nga akoranga katoa
+      show_lessons: Whakaatuhia nga akoranga %{number}
+      show_more: Whakaatu mai ano
+      sign_up_with_lingu_for: Waitohu me Lingu Norway mo
+      skills: pūkenga %{count}
+      sort_by: Kōmakahia e
+      start_typing_here: Me tiimata te patopato i konei
+      teach: Whakaako
+      terms_and_conditions: Ture me nga Tikanga
+      time_range: Awhe awhe
+      try_adjusting_your_search: Ngana ki te whakatika i to rapunga ma te huri i o
+        taatari
+      try_this_course: Whakamātauria tenei akoranga
+      website_language: Reo paetukutuku
+      words: Kupu
+    games:
+      finished:
+        go_to_next_exercise: Kia ora! Haere ki te whakangungu ka whai ake
+      flashcard:
+        buttons:
+          finish: Mutu
+          next: Panuku
+          previous: Tuhinga o mua
+        check_out_new_words: Tirohia nga kupu hou ka ako koe i tenei akoranga
+        frequency_of_word_usage: Auautanga o te kupu whakamahi i te %{language}
+        keep_practice_to_learn_all_words: Arotakehia nga kupu %{count} ka purei i
+          etahi keemu!
+        word_frequency:
+          level1: He uaua te whakamahi
+          level2: He uaua te whakamahi
+          level3: Auau kupu - reo
+          level4: Auau kupu - reo
+          level5: Momo
+          level6: He tino noa
+      match_word:
+        click_and_move_each_word_to_counterpart: Paatohia ka neke i ia kupu ki tona
+          hoa
+        start_heading: Whakataurite i nga kupu kia takirua
+        time_is_up: Kua pau te waa!
+      skip_tutorial: Hūpeke
+      time_is_up: Kua pau te waa!
+      word_nodes:
+        match_letters_to_form_word: Whakataurite i nga reta hei hanga kupu
+      word_waterfall:
+        do_not_hesitate: Kia tere o tatou!
+        go_to_next_exercise: Haere ki te whakangungu ka whai ake
+        select_correct_translation: Tīpakohia te tukinga tika
+        well_done: Kia ora!
+    home_page:
+      hello: Kia ora,
+      popular_lessons: Akoranga rongonui
+      show_more: Whakaatu mai ano
+      time: "%{count} min"
+      today_lesson: To akoranga mo tenei ra
+      user_name: "%{name}!"
+      words: "%{count} kupu"
+    idle_screen:
+      by_author: e %{authorName}
+      continue_lesson: Haere tonu te akoranga
+      exit: Putanga
+      idle_message: Kua roa koe e noho mangere ana ...
+    lesson_page:
+      back_to_course_page: Hoki ki te whaarangi akoranga
+      close: Katia
+      continue_lesson: Haere tonu te akoranga
+      followed: Whai ana
+      hamburger_menu_btn: Tahua Hamburger
+      lesson_given: akoranga
+      not_started: kaore i tiimata
+      or: Ranei
+      part_complete: "%{percent}% oti"
+      restart_lesson: Tīmata Anō
+      section_check: Tirohia
+      section_check_info: "%{count} whakamātautau"
+      section_learn: Ako
+      section_learn_info: "%{count} min hei matakitaki me te panui"
+      section_play: Purei
+      section_play_info: "%{count} kupu hei whakaharatau"
+      start_lesson: Akomanga akoranga
+      step_progress: "%{percent}%"
+      subscribe: Whaia
+      subscribed: Whai ana
+      subscribers: Tuhinga ka whai mai
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Whakahoki
+      webview_error_title: I hapa tetahi mea ...
+      words_number: "%{wordsNumber} kupu hou"
+    lesson_task:
+      cancel_button: Whakakore
+      check:
+        navigation_next: Panuku
+        navigation_previous: Tuhinga o mua
+        navigation_skip: Hūpeke
+      controls_panel:
+        font_size_button: Rahinga momotuhi
+        high_contrast_button:
+          origin: Te rereke rereke
+          short: Whakataurite
+        hints_button: He Tohutohu
+        music_playback_button:
+          origin: Purei ano i te puoro
+          short: Waiata
+        sound_effects_button:
+          origin: Puta oro
+          short: Oro
+      exit_button: Putanga
+      finish_button: Mutu
+      finished:
+        back_to_learn: Hoki ki te ako
+        back_to_lesson_page: Hoki ki te whaarangi ako
+        back_to_results_page: Hoki ki te whaarangi hua
+        bad_result_message: Hmm ... ngana ki te tango ano i tenei akoranga
+        close_lesson: Akoranga kati
+        correct_answers_list: Rarangi whakautu tika
+        good_result_message: Ka kite ahau kua whakapau kaha koe!
+        great_result_message: Kia ora! He hua pai enei!
+        next_course_lesson: Haere ki te akoranga o muri mai
+        no_results: Kaore ano o hua whakamatautau
+        no_results_text: >-
+          Tena koa, whakaotihia te akoranga ka paahitia te whakamatautau kia puta
+          ai nga hua
+        see_correct_answers_list: Tirohia te raarangi whakautu tika
+        train_more: Mahia kia nui ake ka pai ake ai nga hua ka whai ake!
+        you_finished_lesson: Pai rawa atu! Kua oti i a koe te akoranga
+      go_back: Hoki atu
+      next_button: Panuku
+      not_available_task: Kaore ano tenei mahi kia waatea
+      start_button: Timata
+      tasks:
+        check:
+          assignment:
+            accept: Whakaae
+            author_will_check_your_answer: Ka arotake a %{author} i o whakautu me
+              te urupare i roto i nga ra 1-2
+            continue_writing: Haere tonu ki te tuhi
+            copy: Tārua
+            delete: Mukua
+            delete_record: Mukua te rekoata
+            edit: Whakatika
+            essay_does_not_have_enough_words: >-
+              Ko te tikanga o te whakautu he kupu %{minWordsNumber} neke atu ranei.
+              Ko to whakautu %{currentWordsNumber} kupu i tenei wa.
+            followers_count: Tuhinga o mua
+            lessons_count: "%{lessonsCount} akoranga"
+            minimal_recording_time: Te wa tuhi iti - %{minimalRecordingTime}
+            minimum_characters_amount: Nga tohu iti - %{minimumCharactersAmount}
+            minimum_words_amount: Kupu iti - %{minimumAmount}
+            record_again: Tuhia ano
+            record_voice: Tuhia te reo
+            send_anyway: Tukuna tonu
+            send_to_review: Tukuna kia arotake
+            skip: Hūpeke
+            too_short_answer: He poto rawa te whakautu
+            type_your_answer: Patohia to whakautu
+            unknown_task_type: Momo mahi kaore e mohiotia
+            upgrade_licence: Raihana whakapai ake
+            upgrade_your_plan: >-
+              Whakapai ake i to mahere hei whakamatautau i nga mahi me nga arotake
+              a nga kaiako
+            upload_files: Tukuna nga konae
+            write_essay: Tuhia tuhinga roa
+            you_have_used_amount_of_assignments: Kua whakamahia e koe nga whiwhinga
+              mahi %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Putanga rerenga korero
+          fill_in_table:
+            column_answer_placeholder: Whakautu
+            column_question_placeholder: Patai
+            example: Tauira
+          true_false:
+            'false': Hape
+            'true': Pono
+        learn:
+          translatable_text:
+            show_original: Whakaatuhia te taketake
+            translate_into: Whakamaorihia me Google ki te %{languageName}
+            translate_into_your_lang: Whakamaorihia me Google ki to reo
+        play:
+          arrange_words:
+            start_screen:
+              heading: Hangaia he rerenga korero mo nga kupu kua homai
+          audition:
+            start_screen:
+              heading: Whakarongo ki te oro ka pa ki te kupu i rongo noa koe
+          dictation:
+            get_help: Rapua he awhina
+            i_do_not_know: Kaore au e mohio
+            input_placeholder: Whakauruhia nga mea i rongo koe i konei
+            start_screen:
+              heading: Whakarongo me te tuhi i nga mea e rongo ana koe
+          fill_gap:
+            start_screen:
+              heading: Whakaōritehia te kupu me tōna tikanga
+          finish_screen:
+            go_to_next_exercise: Kia ora! Haere ki te whakangungu ka whai ake
+          image_hotspot:
+            start_screen:
+              heading: Whakaingoatia tika nga taonga o te pikitia
+          image_object:
+            start_screen:
+              heading: Kohia te mea tika mai i te pikitia e whai ake nei
+          inline_dropdown:
+            start_screen:
+              heading: Kohia nga kupu e rite ana ki te rerenga
+          mark_word:
+            start_screen:
+              heading: Panuihia te tuhinga me te tohu i te kupu e rite ana ki te ahua
+          minimal_pairs:
+            start_screen:
+              heading: Maataki i te riipene ataata ka kowhiri i te waahanga tika
+    locale:
+      currency_switcher_title: Whakawhiti Moni
+      lang_switcher_title: Whakawhiti reo
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Ъъъгрс
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Tiamana
+        el: Greek
+        en: Ingarihi
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Itariana
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Koretake
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Kei te utaina Ororongo
+        aria_pause_button: Okioki
+        aria_play_button: Purei
+        aria_reload_button: Uta ano
+        aria_stop_button: Kati
+        reload_message: I rahua te uta ororongo. Tena koa paatohia te paatene hei
+          uta ano.
+    mobile_modal:
+      apply: Hoatu
+      cancel: Whakakore
+      clear: Maama
+      save: Penapena
+    page404:
+      goToStartLessonPage: Haere ki te whaarangi akoranga timatanga
+      ooops: Oooops ...
+      sorry_message: Aroha mai, kaore i kitea e Tor tenei whaarangi
+    profile:
+      navigation:
+        log_out: Takiuru
+        my_profile: Taku kōtaha
+        settings: Tautuhinga
+      onboarding:
+        choose_native_language: Whiriwhiria to reo taketake, to reo ranei e maarama
+          ana koe
+        do_you_understand_english: Kei te maarama koe i te reo Ingarihi?
+        hello: Kia ora
+        language_levels:
+          a1: Taumata tuatahi
+          a2: Taumata takawaenga o mua
+          b1: Taumata takawaenga
+          b2: Te reanga takawaenga o runga
+          c1: Taumata matatau
+          no_knowledge: Kaore he matauranga
+        language_not_supported:
+          note: Ka whakamohio atu maatau ki a koe i te wa ka watea mai te reo
+          title: Aroha mai, engari kaore ano maatau kia tautoko i tenei reo
+          try_another_language: Ngana ki tetahi atu reo
+        'no': No.
+        search_placeholder: Rapu ...
+        show_more_languages: Othertahi atu reo
+        target_language_question: He aha te reo e hiahia ana koe ki te ako?
+        what_is_language_level: Me pehea te whakatau i to taumata %{languageName}?
+        'yes': Ae
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Kaupapahere muna a Lingu
+        support: Tautoko
+      logout: Putaara
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Whiwhi whakahoutanga mai i nga kaiako me nga kura e whai
+                ana koe
+              sections:
+                app_notifications: Panui Panui
+                email: Imeera
+              title: He awhina akoranga
+            marketing:
+              description: >-
+                Noho maarama mo nga whakatairanga katoa, whakahoutanga, me nga korero
+                whakaaweawe mai i a Lingu
+              sections:
+                browser_notifications: Nga whakamohiotanga a te kaitirotiro
+                email: Imeera
+              title: Hokohoko
+          title: Nga manakohanga whakapā
+        personal_information:
+          delete_photo: Mukua te whakaahua
+          email: Imeera
+          first_name: Ingoa Tuatahi
+          last_name: Ingoa whakamutunga
+          social_accounts:
+            connected: Kua honoa
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Kaore i te hono
+            title: Nga kaute hapori
+          title: Nga korero a te tangata ake
+          update_photo: Whakahoutanga whakaahua
+        school:
+          active_licence: Raihana kaha
+          active_status: Hohe
+          delete_profile: Mukua taku tohu
+          delete_profile_modal:
+            body: |-
+              Ka whakakorehia e koe o tuhinga katoa — mo ake tonu atu. Kaore he paatene whakakore, a kaore e taea e taatau te whakahoki mai ki a koe i muri.
+              E tino hiahia ana koe ki te muku tuturu i to tohu Reo me o raraunga katoa?
+            cancel: Whakakore
+            confirm: Ae, whakakorea
+            i_understand_the_consequences: Kei te maarama au ki nga paanga
+            title: Mukua to tohu?
+          expired: Kua pau te %{expire_date}
+          expires: Ka pau te %{expire_date}
+          inactive_status: Korekore
+          revoke_access: Whakakorehia te uru mai ki te panui
+          sections:
+            contact_school: Kura whakapā
+            export_my_data: Kaweake aku raraunga
+            read_school_privacy_policy: Panuihia te Kaupapahere Tūmataiti Kura
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Purei ano i te puoro
+              sound_effects: Puta oro
+              title: Oro
+            visual:
+              dark_theme: Kaupapa pouri
+              font_size:
+                test_text: Ko te tarutaru ka tipu tonu i tera taha o te taiapa
+                title: Rahinga momotuhi
+              high_contrast: Te rereke rereke
+              hints: He Tohutohu
+              title: Tirohanga
+          title: Oro & Whakaata
+        training_settings:
+          sections:
+            i_understand: Kei te maarama ahau
+            i_want_to_learn: Kei te hiahia au ki te ako
+            target_language_level: Taumata Ingarihi
+          title: Tautuhinga whakangungu
+      settings_title: Tautuhinga
+    teacher_card:
+      followers_count:
+        one: 1 akonga
+        other: Tuhinga o mua
+      lessons_count:
+        one: 1 akoranga
+        other: "%{count} akoranga"

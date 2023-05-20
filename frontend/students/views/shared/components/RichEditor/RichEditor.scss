@@ -1,0 +1,92 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates. All rights reserved.
+ *
+ * This file provided by Facebook is for non-commercial testing and evaluation
+ * purposes only. Facebook reserves all rights not expressly granted.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * FACEBOOK BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+@import 'draft-js/dist/Draft.css';
+@import "../../../../../theme/scss/user-variables";
+// TODO CHECK PATH
+.RichEditor-root {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.RichEditor-editor {
+  cursor: text;
+  font-size: 1rem;
+
+  .public-DraftEditorPlaceholder-root,
+  .public-DraftEditor-content {
+    margin: 0 -15px -15px;
+    padding: 15px;
+    color: $gray-700;
+  }
+  .public-DraftEditorPlaceholder-hasFocus {
+    color: $gray-400;
+  }
+
+  .public-DraftEditor-content {
+    min-height: 100px;
+  }
+
+  .RichEditor-blockquote {
+    border-left: 5px solid #eee;
+    color: #666;
+    font-family: 'Hoefler Text', 'Georgia', serif;
+    font-style: italic;
+    margin: 16px 0;
+    padding: 10px 20px;
+  }
+
+  .public-DraftStyleDefault-pre {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  &.RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+    display: none;
+  }
+
+  .RichEditor-activeButton {
+    transform: scale(1.05);
+    transform-origin: bottom;
+    color: $primary;
+    code {
+      color: $primary;
+    }
+  }
+}
+
+.RichEditor-controls {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  user-select: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.RichEditor-styleButton {
+  color: $gray-700;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 2px 0;
+  display: inline-block;
+
+  code {
+    color: $gray-700;
+  }
+}

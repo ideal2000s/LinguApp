@@ -1,0 +1,59 @@
+.modal-invite-students {
+  min-width: 640px !important;
+  .modal-header {
+    border: none;
+    padding-top: 0 !important;
+  }
+  .modal-title {
+    color: $black1;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .invite-students-tabs {
+    border-bottom: 1px solid $grey6;
+    .nav-link {
+      color: $grey3;
+      &.active {
+        color: $blue1;
+        border-bottom: 3px solid $blue1;
+        font-weight: bold;
+      }
+    }
+  }
+  .tab-pane:first-child {
+    margin-bottom: 20px;
+  }
+  .team-group-select, .email-fields, .plan-select {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    input {
+      margin-bottom: 8px;
+    }
+  }
+  .copy-link-field {
+    margin-top: 20px;
+    button {
+      font-weight: bold;
+      font-size: 16px;
+      margin-left: 10px;
+      min-width: 110px;
+    }
+  }
+  .more-invite-btn {
+    cursor: pointer;
+    color: $blue1;
+    font-size: 14px;
+  }
+  .panel-divider {
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .send-invitation-btn {
+    width: 50%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px auto;
+    text-align: center;
+  }
+}

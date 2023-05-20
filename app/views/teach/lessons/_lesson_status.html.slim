@@ -1,0 +1,14 @@
+.card.mb-3
+  .card-header
+    .btn-toolbar.justify-content-between
+      h3.font-weight-bold.mb-0= t('teach.lessons.review.publishing_status')
+
+      .float-right
+        = render "lesson_status_#{lesson.status}", lesson: lesson, publishable: publishable
+
+  .card-body
+    ul.list-group.mb-3
+      - statuses.each do |status, value|
+        li.list-group-item
+          i.fa.fa-lg.mr-2 class=done_class(value)
+          = t(value, scope: "teach.lessons.publishable.#{status}")

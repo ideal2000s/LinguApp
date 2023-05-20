@@ -1,0 +1,30 @@
+- set_page_title t('welcome.signin.welcome_title')
+
+.row.min-vh-100.flex-center.no-gutters
+  .col-lg-8.col-xxl-5.py-3
+    - if notice
+      .alert.alert-success.mb-3= notice
+    - if alert
+      .alert.alert-danger.mb-3= alert
+    .card
+      .card-body.p-0
+        .row.no-gutters.h-100
+          .col-md-5.text-center.bg-secondary
+            .position-relative.p-4.pt-md-5.pb-md-7
+              .align-items-center.text-center
+                img.pl-4.mt-3 alt="" src="#{image_path('lingu-logo-white.svg')}" width="200"
+              h4.text-white.mt-5= t('welcome.signin.welcome_title')
+              -#p= link_to "Sign up", new_registration_path(resource_name), class: 'text-white'
+
+          .col-md-7
+            .float-right= render 'layouts/shared/locale_selector'
+            .p-4.p-md-5.flex-grow-1
+              h3= t('devise.account_login')
+              = form_for(resource, as: resource_name, url: request_otp_path(resource_name), method: :post) do |f|
+                .form-group
+                  = f.label :email, class: 'control-label'
+                  = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control'
+                .form-group.actions
+                  = f.submit t('devise.account_login'), class: 'btn btn-block btn-primary'
+
+              = render "devise/sessions/oauth_links/#{resource_name}"

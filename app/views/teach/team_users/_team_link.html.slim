@@ -1,0 +1,14 @@
+.card.mb-5
+  .card-header
+    h4.card-title.font-weight-bold= t('.invite_cta')
+
+  .card-body.bg-light
+    label= t('.invitation_url')
+    .input-group.mb-2
+      = text_field_tag 'invitation', team_team_invitations_url(team.to_gid_param), class: 'form-control'
+      .input-group-append
+        a.input-group-text.clipboard data-clipboard-target="#invitation" href="#"=t('.copy')
+
+    - if policy(TeamDomain).create?
+      #team_domain_form= render 'teach/team_domains/form', team: team, team_domain: TeamDomain.new(team: team)
+      #team_domain_list= render 'teach/team_domains/list', team: team, team_domains: team.team_domains

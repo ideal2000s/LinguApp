@@ -1,0 +1,7 @@
+- if team_group.errors.any?
+  .alert.alert-warning#error_explanation
+    h5
+      = t('count_error_message_model', count: team_group.errors.count, model: team_group.model_name.human)
+    ul
+      - team_group.errors.full_messages.each do |message|
+        li= message

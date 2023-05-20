@@ -1,0 +1,73 @@
+- is_image_task = %w(Tasks::ImageHotspot Tasks::ImageObject).include?(@task.type)
+.card-body
+  .row
+    div class=("col-lg-#{f.object.skip_introduction? ? 7 : 12}")
+      .form-group
+        = f.label :name, t('teach.tasks.headline'), required: true
+        = f.text_field :name, class: 'form-control', placeholder: t('teach.tasks.enter_title')
+        = error_for f.object, :name
+      - if f.object.respond_to?(:instruction)
+        .form-group
+          = f.label :instruction, t('teach.tasks.instructions_for_student'), required: true
+          = f.text_field :instruction, class: 'form-control', placeholder: t('teach.tasks.enter_instruction')
+          = error_for f.object, :instruction
+      - if f.object.subject == 'test'
+        .form-group
+          = f.label :video_url, t('teach.tasks.video.form.url.label'), class: 'w-100 sentence'
+          small= t('.accepted_video_sources')
+          = f.text_field :video_url, placeholder: t('teach.tasks.video.form.url.placeholder'), class: 'form-control question'
+          = error_for f.object, :video_url
+      - unless f.object.skip_introduction?
+        - unless %w(Tasks::Text Tasks::ImageHotspot Tasks::ImageObject Tasks::TranslatableText).include?(@task.type)
+          .form-group
+            = f.label :introduction, t('teach.tasks.task_introduction')
+            = f.text_area :introduction, placeholder: t('teach.tasks.introduction_task_placeholder'), data: { editor: 'summernote' }
+            = error_for f.object, :introduction
+
+          .form-group.mr-2
+            = f.upload_helper_for(:audio, resource: f.object.task, accept: 'audio/*', data: { upload: 'audio' }) do |h|
+              - h.button do
+                i.fas.fa-headphones.fa-fw.mr-2
+                = t('teach.tasks.shared_task_fields.upload_audio')
+              - h.preview do |resource|
+                = audio_tag(resource.audio_url, class: 'preview', controls: true) if resource.audio
+
+        .form-group.mr-2
+          = f.upload_helper_for(:image, resource: f.object.task, accept: 'image/*', data: { upload: is_image_task ? 'hotspot/image' : 'image' }, remove_uploaded: { enabled: true }) do |h|
+            - h.button do
+              i.fas.fa-image.fa-fw.mr-2
+              = t('teach.tasks.shared_task_fields.choose_image')
+
+            - h.preview do |resource|
+              - image_url = is_image_task ? resource.image_url : resource.image_url(:thumbnail)
+              = image_tag(image_url, class: "preview img-thumbnail") if resource.image
+              = image_tag(JSON.parse(resource.image_remote_link)['thumbnail'], class: 'preview img-thumbnail') if resource.image_remote_link.present?
+              - if is_image_task
+                - @task.items.each_with_index do |item, idx|
+                  = render partial: "teach/task_items/#{@task.type == 'Tasks::ImageHotspot' ? 'image_hotspot/draggable_hotspot' : 'image_object/draggable_image_object'}",
+                          locals: { task: @task, item: item, idx: idx }
+              - if resource.image && !is_image_task
+                .form-group
+                  .custom-control.custom-switch
+                    = f.check_box :cover_img, class: 'custom-control-input'
+                    = f.label :cover_img, t('.stretch_image_label'), class: 'custom-control-label'
+            - h.remove_uploaded do |resource|
+              = f.check_box :remove_image, class: 'form-check-input', value: 'true'
+              = f.label :remove_image, t('.remove_image'), class: 'form-check-label'
+
+          - unless is_image_task
+            = f.hidden_field(:image_remote_link, class: 'input-remote-url')
+            = button_tag(class: 'btn btn-info btn--giphy mt-2', type: 'button', data: { toggle: 'modal', target: '#giphy-modal-dlg' }) do
+              i.fas.fa-search.fa-fw.mr-2
+              = t('teach.tasks.shared_task_fields.choose_giphy_image')
+            = render partial: 'teach/tasks/giphy_modal', locals: { modal_id: 'giphy-modal-dlg' }
+
+    #settings class=("col-lg-#{f.object.skip_introduction? ? 5 : 12}")
+      .form-group
+        = f.label :published, t('status')
+        .custom-control.custom-switch
+          = f.check_box :published, class: 'custom-control-input'
+          = f.label :published, t('published'), class: 'custom-control-label'
+  = yield
+  .form-group
+    = f.submit t('save_changes'), class: 'btn btn-primary'

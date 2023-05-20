@@ -1,0 +1,94 @@
+- set_page_title user.full_name
+
+.card.mb-3
+  .card-header
+    h5.mb-0= t('.manage_profile_for', name: user.full_name)
+
+.row
+  .col-lg-8.pr-lg-2
+    = form_for user, url: admin_user_path(user), method: :patch, html: { id: 'user_form' } do |f|
+      .card.mb-3
+        .card-header
+          h5.mb-0= t('.personal_data')
+        .card-body.bg-light
+          .row
+            .col-lg-6
+              .form-group
+                = f.label :fname, t('first_name')
+                = f.text_field :fname, class: 'form-control'
+                = error_for f.object, :fname
+
+            .col-lg-6
+              .form-group
+                = f.label :lname, t('last_name')
+                = f.text_field :lname, class: 'form-control'
+                = error_for f.object, :lname
+
+            .col-lg-6
+              = f.label :email, t('email')
+              = f.email_field :email, class: 'form-control'
+
+            .col-lg-6
+              .form-group
+                = f.label :mobile, t('.mobile')
+                = f.text_field :mobile, class: 'form-control'
+
+            .col-lg-6
+              .form-group
+                = f.label :language_scope, t('.select_language_scope')
+                = f.select :language_scope, options_for_select(Language.active.select(:system_name, :id).map { |d| [d.system_name, d.id] }, f.object.language_scope), {include_blank: t('teach.lessons.form.select_language')}, {class: 'form-control select2'}
+                = error_for f.object, :language_scope
+            .col-lg-6
+              .form-group
+                = f.label :locale, t('frontend.course.website_language')
+                - enabled_locales.each do |l|
+                  .custom-control.custom-radio
+                    = f.radio_button :locale, l, class: 'custom-control-input'
+                    = f.label "locale_#{l}".to_sym, t(l, scope: 'form.locales'), class: 'custom-control-label'
+            .col-12
+              .form-group
+                = f.label :team_ids, t('.teams')
+                = f.select :team_ids, options_for_select(Team.kept.select(:name, :status, :id, :owner_id).map { |s| [s.name, s.id] }, f.object.team_ids), {}, {class: 'form-control select2', multiple: true}
+
+            .col-12.d-flex.mt-3
+              = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+              = link_to t('back'), admin_users_path, class: 'btn btn-falcon-default mr-1'
+    .card.mb-3
+      .card-header
+        h5.mb-0= t('.teams')
+      table.table.bg-light.pb-0.mb-0
+        tbody
+          - user.team_users.each do |team_user|
+            tr
+              td
+                = link_to team_user.team.name, admin_team_path(team_user.team)
+                - if team_user.team.personal?
+                  .badge.badge-soft-warning.ml-2= t('activerecord.attributes.team.statuses.personal')
+              td= t(team_user.role, scope: 'activerecord.attributes.team_user.roles')
+
+  .col-lg-4.pl-lg-2
+    .sticky-top.sticky-sidebar
+      - if current_user.admin?
+        .card.mb-3.overflow-hidden
+          = form_for user, url: admin_user_path(user), method: :patch, html: { id: 'roles_form' } do |f|
+            .card-header
+              h5.mb-0= t('roles')
+            .card-body.bg-light
+              h6.font-weight-bold
+                = t('platform_role')
+              .pl-2
+                - User.roles.keys.each do |r|
+                  .custom-control.custom-radio
+                    = f.radio_button :role, r, class: 'custom-control-input'
+                    = f.label "role_#{r}".to_sym, t(r, scope: 'activerecord.attributes.user.roles'), class: 'custom-control-label'
+            .card-footer
+              = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+
+        .card.mb-3.overflow-hidden
+          .card-header
+            h5.mb-0= t('danger_zone')
+          .card-body.bg-light
+            h5.fs-0= t('.delete_account')
+            = link_to admin_user_path(user), class: 'btn btn-falcon-danger d-block', method: :delete, data: { confirm: 'Are you sure you want to delete this user?' } do
+              i.fas.fa-times.fa-fw
+              span= t('deactivate_account')

@@ -1,0 +1,176 @@
+.student-lesson-actions {
+ .student-assign-lesson {
+   background: #00A5D7;
+   border-radius: 100px;
+   font-family: Encode Sans;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   color: #FFFFFF;
+   padding-top: 11px;
+   padding-bottom: 11px;
+ }
+}
+
+#assign-lesson-modal {
+  .modal-dialog {
+    max-width: 540px;
+    .input-group-text {
+      border-radius: 10px 0 0 10px;
+      background: #F0F0F3;
+      color: #807F91;
+      font-size: 20px;
+    }
+    #search_lesson_input {
+      border-radius: 0 10px 10px 0;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .custom-control-label:before, .custom-control-label:after{
+      width: 20px;
+      height: 20px;
+      border: 2px solid #E6E6F0;
+      border-radius: 6px;
+      top: 0;
+    }
+    .search-lesson-list {
+      height: 375px;
+      overflow: scroll;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+      }
+      .search-lessons-item {
+        padding: 11px 8px 11px 14px;
+        border-bottom: 1px solid rgba(230, 230, 240, 0.8);
+        span {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          color: #2D2D3A;
+        }
+      }
+      .active {
+        background: #F0F0F3;
+        border-radius: 10px;
+      }
+      .search-lessons-item:last-child {
+        border: 0;
+        margin-bottom: 13px;
+      }
+    }
+    .modal-footer {
+      z-index: 10;
+      margin-top: -13px;
+      background: rgba(255, 255, 255, 0.8);
+      button {
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        border-radius: 8px;
+        padding: 11px 20px;
+        min-width: 136px;
+      }
+      #clear_btn {
+        display: none;
+      }
+    }
+  }
+}
+
+.lesson-info {
+  padding: 4px 10px;
+  background: #EAECF1;
+  border-radius: 20px;
+  span {
+    font-size: 12px !important;
+    color: #5E5D71 !important;
+  }
+  img {
+    border-radius: 3px;
+    width: 17px;
+    height: 13px;
+  }
+}
+
+.student-lessons-list {
+  table {
+    thead {
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #807F91;
+      th {
+        border: 0;
+        &:nth-child(2) {
+          width: 65%;
+        }
+        &:last-child {
+          width: 12%;
+        }
+      }
+    }
+    tbody tr {
+      font-size: 14px;
+      line-height: 18px;
+      border-top-color: rgba(230, 230, 240, 0.8);
+      color: #2D2D3A;
+      td {
+        vertical-align: middle;
+      }
+      td:nth-child(2) {
+        font-weight: bold;
+      }
+      td:last-child {
+        .progress, .progress-bar {
+          height: 8px;
+          border-radius: 10px;
+        }
+        font-size: 12px;
+        .progress {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+.school-info-sort {
+  button {
+    font-size: 14px;
+    line-height: 18px;
+    color: #2D2D3A;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .dropdown-menu {
+    width: 180px;
+    a {
+      font-size: 14px;
+      line-height: 20px;
+      color: #2D2D3A;
+    }
+  }
+  .dropdown-toggle:after {
+    display: none;
+  }
+  .custom-filter-item {
+    background: #F6F6F6;
+  }
+  .filter-item-active {
+    background: white;
+    .active-check {
+      color: #00A5D7;
+    }
+  }
+  .color-transparent {
+    color: transparent;
+  }
+}

@@ -1,0 +1,4 @@
+.d-flex.team-group-select-wrapper
+  input.team-group-item-radio id="team-group-item-selector-#{team_group.id}" type='radio' name='team_group_id' value="#{team_group.id}" checked=(team_group.id == current_team_group_id)
+  label.flex-fill.mb-0.pt-2 for="team-group-item-selector-#{team_group.id}"
+    = team_group.name

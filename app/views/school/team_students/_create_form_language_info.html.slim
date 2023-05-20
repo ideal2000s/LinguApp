@@ -1,0 +1,29 @@
+.content-separator.d-flex.align-items-center.mt-3
+  span.mr-2
+    = t('shared.language')
+  .separator-line.w-100
+= f.fields_for :student_target_languages do |target_lang_form|
+  = target_lang_form.hidden_field :active
+  .row.mb-2
+    .col
+      = f.fields_for :student_support_languages do |support_lang_form|
+        = support_lang_form.hidden_field :native
+        = support_lang_form.label :language_id, t('admin.students.form.select_native_language')
+        = support_lang_form.select :language_id, options_for_select(Language.support.ordered.map { |e| [asset_path("flags/#{language_to_flag_code(e.code)}.svg").to_s + ', ' + e.system_name.strip, e.id]}, support_lang_form.object.language_id), {include_blank: ''}, class: 'form-control select-support-language', data: {placeholder: t('admin.students.form.select_native_language')}
+        = error_for support_lang_form.object, :language_id
+    .col
+      = target_lang_form.label :language_id, t('teach.lessons.form.select_target_language')
+      = target_lang_form.select :language_id, options_for_select(Language.active.ordered.map { |e| [asset_path("flags/#{language_to_flag_code(e.code)}.svg").to_s + ', ' + e.name, e.id]}, target_lang_form.object.language_id.presence || current_user.language_scope.presence || current_team.default_language_id.presence), {include_blank: t('school.team_students.form.select_class')}, class: 'form-control select-country', data: {placeholder: t('school.team_students.form.select_class')}
+      = error_for target_lang_form.object, :language_id
+  .row.mb-2
+    .col-6
+      = label_tag :class, t('school.team_students.form.class')
+      = select_tag :class, options_for_select(current_team.team_groups.order(:name).pluck(:name, :id)), class: 'form-control select2', prompt: '',  data: {placeholder: t('school.team_students.form.select_class')}
+    .col-6
+      = target_lang_form.label :level, t('shared.level')
+      = target_lang_form.select :level, Lesson.levels_for_select[1..-2], {include_blank: ''}, class: 'form-control select2', data: {placeholder: t('school.team_groups.new.select_level')}
+      = error_for target_lang_form.object, :level
+  .row
+    .col-6
+      = label_tag :plan_id, t('school.team_students.form.plan')
+      = select_tag :plan_id, options_for_select(Plan.select(:id, :name_translations).map { |plan| [plan.name, plan.id] }), class: 'form-control select2', prompt: '', data: {placeholder: t('school.team_students.import_students.select_plan')}

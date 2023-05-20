@@ -1,0 +1,8 @@
+
+- set_page_title t('welcome.signin.welcome_title')
+
+.jumbotron
+  .card.mb-3
+    .card-header
+      h2 Welcome to Lingu, Student!
+      p= link_to t('sign_out'), destroy_student_session_path, method: :delete

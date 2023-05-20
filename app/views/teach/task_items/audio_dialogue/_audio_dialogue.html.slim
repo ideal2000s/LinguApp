@@ -1,0 +1,23 @@
+div id=dom_id(item)
+  .card.mb-3
+    .card-body
+      .row
+        .col-1.btn-group-vertical
+          .d-block.flex-end-center= item.position
+        .col-4
+          - if item.audio
+            = audio_tag(item.audio_url, controls: true)
+        .col-4.btn-group-vertical
+          - if item.audio
+            .d-block.flex-end-center= item.audio.original_filename
+
+        .col-2.float-right
+          - unless item.first?
+            = link_to move_up_teach_task_item_path(task, item), method: :patch, remote: true, class: 'btn move_up', aria: { label: t('move_up') } do
+              span.fas.fa-chevron-up
+          - unless item.last?
+            = link_to move_down_teach_task_item_path(task, item), method: :patch, remote: true, class: 'btn move_down', aria: { label: t('move_down') } do
+              span.fas.fa-chevron-down
+        .col-1.float-right
+          = link_to teach_task_item_path(task, item), method: :delete, remote: true, class: 'btn btn-danger', data: { confirm: t('delete_this_item') } do
+            span.fas.fa-times

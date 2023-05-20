@@ -1,0 +1,42 @@
+- set_page_title lesson.title
+- lesson_color_index = lesson.frontend_color ? Lesson::COLOR_ARRAY.find_index(lesson.frontend_color) : 0
+.card
+  .card-header
+    h2.font-weight-bold= lesson.title
+    .d-flex.justify-content-between
+      .badge.badge-light.d-inline-flex.align-items-center
+        - if lesson.support_language
+          = image_tag("flags/#{language_to_flag_code(lesson.support_language&.code)}.svg", style: 'max-height: 20px;')
+          i.fa.fa-caret-right.fa-fw.mx-2
+        = image_tag("flags/#{language_to_flag_code(lesson.language&.code)}.svg", style: 'max-height: 20px;')
+        span.ml-1= t(lesson.level, scope: 'activerecord.attributes.lesson.short_levels')
+        strong.mx-3= t('.by_author', author: lesson.author.name)
+        - if lesson.team.school?
+          =< link_to lesson.team.name, admin_team_path(lesson.team)
+      .btn-group.float-right
+        = link_to edit_admin_lesson_path(lesson), class: 'btn btn-falcon-default btn-sm' do
+          i.fas.fa-pencil-alt.fa-fw.mr-2
+          = t('edit')
+        - if lesson.published?
+          = link_to public_url(lesson), class: 'btn btn-falcon-default btn-sm' do
+            i.fas.fa-eye.fa-fw.mr-2
+            = t('view')
+.card.mb-3.py-5 style="background: linear-gradient(180deg, #{Lesson::PREVIEW_COLOR_ARRAY[lesson_color_index][0]} 0%, #{Lesson::PREVIEW_COLOR_ARRAY[lesson_color_index][1]} 100%)"
+  .lesson-review-content
+    .card-body
+      .row
+        .col-sm-12.col-md-6
+          .d-flex.justify-content-between
+            .lesson-objectives
+              h5.font-weight-bold.mb-3= t('teach.reviews.index.objectives')
+              - if lesson.objectives.blank?
+                h5.text-danger= t('teach.reviews.index.no_learning_objectives')
+              - else
+                - lesson.objectives.each_with_index do |objective, i|
+                  h5.mb-3= "#{i + 1}. #{objective}"
+        .col-sm-12.col-md-6
+          - if lesson.image
+            = image_tag(lesson.image_url, class: 'img-fluid')
+
+- lesson.tasks.kept.published.each do |task|
+  = render task.to_partial_path(prefix: 'teach/reviews'), task: task

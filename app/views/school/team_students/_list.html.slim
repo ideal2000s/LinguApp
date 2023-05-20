@@ -1,0 +1,5 @@
+-#= paginate team_students, remote: true
+.students_list
+  table.table.table-hover.m-0
+    tbody
+      = render partial: 'school/team_students/list_row', collection: team_students, as: :team_student

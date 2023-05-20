@@ -1,0 +1,64 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle id="elmContainer" opacity="0.3" cx="40.9258" cy="40.5703" r="40" fill="#574CA7" />
+    <circle id="elmProgress" opacity="0.9" cx="40.9258" cy="40.5703" r="0" fill="url(#lgProgress)" />
+    <g id="gIcon" opacity="0">
+        <g id="gIconBgColor">
+            <path id="elmIconBgColor" d="M34.6996 53.121L22.5476 41.0125C21.8175 40.2851 21.8175 39.1057 22.5476 38.3782L25.1914 35.7437C25.9215 35.0161 27.1053 35.0161 27.8354 35.7437L36.0216 43.9004L52.7078 27.5456C53.4379 26.8181 54.6217 26.8181 55.3518 27.5456L57.9956 30.18C58.7257 30.9075 58.7257 32.087 57.9956 32.8145L37.3436 53.1211C36.6134 53.8486 35.4297 53.8486 34.6996 53.121Z" fill="#333963" />
+        </g>
+        <g id="gIconBgGradient">
+            <path id="elIconBgGradient" d="M34.6996 53.121L22.5476 41.0125C21.8175 40.2851 21.8175 39.1057 22.5476 38.3782L25.1914 35.7437C25.9215 35.0161 27.1053 35.0161 27.8354 35.7437L36.0216 43.9004L52.7078 27.5456C53.4379 26.8181 54.6217 26.8181 55.3518 27.5456L57.9956 30.18C58.7257 30.9075 58.7257 32.087 57.9956 32.8145L37.3436 53.1211C36.6134 53.8486 35.4297 53.8486 34.6996 53.121Z" fill="url(#lgIcon)" />
+        </g>
+    </g>
+
+    <defs>
+        <linearGradient id="lgProgress" x1="40.9258" y1="28.5703" x2="40.9258" y2="52.5703" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E8EEFD"/>
+            <stop offset="1" stop-color="white"/>
+        </linearGradient>
+        <linearGradient id="lgIcon" x1="36.2608" y1="51.8275" x2="36.2608" y2="28.3793" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#39B54A"/>
+            <stop offset="1" stop-color="#27A939"/>
+        </linearGradient>
+    </defs>
+
+    <animate
+        xlink:href="#elmProgress"
+        id="anmProgress"
+        attributeName="r" from="0" to="40" repeatCount="1" dur="0.5s" fill="freeze"
+    />
+    <animate
+        xlink:href="#gIcon"
+        begin="anmProgress.begin + 0.3s"
+        attributeName="opacity" from="0" to="1" dur="0.2s" fill="freeze"
+    />
+    <animate
+        xlink:href="#elmProgress"
+        begin="anmProgress.begin + 1s"
+        attributeName="r" from="40" to="25" dur="0.5s" fill="freeze"
+    />
+    <animate
+        xlink:href="#elmContainer"
+        begin="anmProgress.begin + 1s"
+        attributeName="r" from="40" to="25" dur="0.5s" fill="freeze"
+    />
+    <animateTransform
+        xlink:href="#gIconBgColor"
+        begin="anmProgress.begin + 1s"
+        attributeName="transform" type="translate" from="0 0" to="8 10" dur="0.5s" fill="freeze"
+    />
+    <animateTransform
+        xlink:href="#gIconBgGradient"
+        begin="anmProgress.begin + 1s"
+        attributeName="transform" type="translate" from="0 0" to="8 10" dur="0.5s" fill="freeze"
+    />
+    <animateTransform
+        xlink:href="#elmIconBgColor"
+        begin="anmProgress.begin + 1s"
+        attributeName="transform" type="scale" from="1 1" to="0.8 0.8" dur="0.5s" fill="freeze"
+    />
+    <animateTransform
+        xlink:href="#elIconBgGradient"
+        begin="anmProgress.begin + 1s"
+        attributeName="transform" type="scale" from="1 1" to="0.8 0.8" dur="0.5s" fill="freeze"
+    />
+</svg>

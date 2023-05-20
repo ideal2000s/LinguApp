@@ -1,0 +1,24 @@
+table.table.table-dashboard
+  thead
+    tr
+      th
+        input type='checkbox' id='check_all_phrase'
+      th= t('activerecord.models.word')
+      th= t('activerecord.attributes.word.word_class')
+      th= t('activerecord.attributes.word.description')
+      th= t('activerecord.attributes.word.frequency')
+      th
+        - unless language&.code == I18n.locale.to_s
+          = image_tag("flags/#{language_to_flag_code(I18n.locale.to_s)}.svg", class: 'mr-2 ', style: 'max-width: 26px; height: auto;')
+          - if translate
+            = link_to t('activerecord.attributes.word.translate'), translate_words_admin_language_collection_path(language, collection), method: :put
+          - else
+            = t('activerecord.attributes.word.translate')
+      th.px-1.text-center
+        i.fas.fa-volume-up
+      th.px-1.text-center
+        i.fas.fa-image
+      th.px-1.text-center
+        i.fas.fa-dot-circle
+  tbody
+    = render partial: 'admin/dictionary/languages/words/words_table_item', collection: words, as: :phrase, locals: {language: language, collection: collection}, cached: true

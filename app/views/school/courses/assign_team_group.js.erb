@@ -1,0 +1,7 @@
+<% if request.post? %>
+  $('#assign-to-group-modal').modal('hide');
+  $('#flash').replaceWith("<%= j(render('layouts/shared/flash', flash: flash )) %>");
+<% else %>
+  $("#assign-to-group-modal").html("<%= j render 'assign_team_group_form', course: course, team_groups: team_groups %>");
+  $('#assign-to-group-modal').modal('show');
+<% end %>

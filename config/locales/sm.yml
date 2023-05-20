@@ -1,0 +1,614 @@
+---
+sm:
+  course_mailer:
+    course_assigned_notification:
+      button: Amata le vasega
+      click_start_lesson: Kiliki 'Amata lesona'
+      follow_course_link: Kiliki le faʻamau e tatala ai le vasega
+      footer_text: Foi mai i Lingu e aʻoaʻo ai se mea fou i aso uma!
+      get_started_line: 'Ole ala lea e te amata ai:'
+      notification_link: Faʻasilasilaga tulaga
+      open_lesson: Tatala le lesona muamua
+      or_paste_this_link: pe faʻapipiʻi lenei fesoʻotaʻiga i lau browser
+      sign_in_with_email: Alu i totonu ma lau imeli tuatusi (%{email})
+      support_link: Lagolago
+      title: Amata i le %{course}
+    new_document_comment:
+      author_text: "%{author} tuua se toe iloiloga o lau galuega atofaina"
+      button_text: Siaki atu
+      button_url_helper: 'pe faʻapipiʻi lenei fesoʻotaʻiga i lau browser:'
+      footer_text: E tele isi mea e ao ona aʻoaʻo ...
+      notification_link: Faʻasilasilaga tulaga
+      subject_line: Faʻamatalaga fou mo tofiga
+      support_link: Lagolago
+    otp:
+      ignore_msg: Afai e te leʻi faia lenei talosaga, na ona le amanaiaina le imeli.
+      subject_line: Lau numera tulaga ese mo Lingu
+      unique_code_for_lingu: Lenei lau numera tulaga ese mo Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Ua iai sau teuga tupe?
+      back: Tua i tua
+      back_to_sign_in: Toe foi e saini i totonu
+      check_your_email_for_a_code: Siaki lau imeli mo lau numera
+      continue: Faaauau
+      continue_with_email: Faʻaauau i imeli
+      continue_with_provider: Faʻaauau i le %{provider}
+      did_not_receive_a_code: E leʻi mauaina se faʻailoga?
+      email_address: Imeli tuatusi
+      first_name: Igoa muamua
+      get_unique_code: Maua se faʻailoga tulaga ese
+      join_lingu: Auai i le Lingu
+      last_name: Igoa mulimuli
+      more_login_options: Sili atu filifiliga login
+      no_account_question: E leai sau tala?
+      or: pe
+      resend_code: Toe lafo code
+      sign_in: Saini ese j
+      sign_up: Saini loa
+      want_to_receive_marketing_messages: Ou te manaʻo e maua ni feʻau tau maketi
+        mai le Lingu
+      we_ve_sent_a_code: >-
+        Ua matou lafoina le 6-digit code i le <strong> {{imeli}} </strong>. O le tulafono
+        faʻamuta i le 15 minute, o lea faʻamolemole ulufale vave mai.
+    cookie_agreement:
+      agree: Maliega
+      condition: >-
+        Matou te faʻaaogaina kuki e suʻesuʻe ai galuega a le 'upega tafaʻilagi ma
+        tuʻuina atu i totonu mea taua. I le kilikiina o le "Agree", oe malie i a matou
+        tuutuuga.
+    course:
+      accredited_course_provider: Aʻoaʻoina vasega faʻapitoa
+      apply: Apalai
+      apply_filters: Faʻaoga ni faʻamama
+      by: Saunia e
+      cancel: Faalēaogāina
+      categories: "%{count} vaega"
+      category: Vaega
+      clear: Manino
+      clear_filters: Faamama faamama
+      contact_us: Faafesootai matou
+      could_not_find_match_for: Faʻamalie atu, matou te leʻi maua se mea tutusa
+      course_language: Gagana gagana
+      duration: Umi o le taimi
+      filter_settings:
+        categories:
+          academic: Aʻoaʻoga
+          business: Pisinisi
+          fashion: Fausaga
+          food_drink: Meaʻai ma vai inu
+          for_kids: Mo tamaiti
+          general: Lautele
+          health: Soifua Maloloina
+          legal: Faʻatulafono
+          sport: Taʻaloga
+          travel: Malaga
+        durations:
+          t0_600: "<10 minute"
+          t1800_3600: 30-60 minute
+          t3600_86400: 1+ itula
+          t600_1800: 10-30 minute
+        focus_on:
+          conversation: Talanoaga
+          grammar: Kalama
+          listening: Faalogo
+          pronunciation: Faaleoga
+          reading: Faitauga
+          speaking: Tautala
+          writing: Tusitusiga
+        levels:
+          long:
+            advanced: Tulaga maualuga
+            elementary: Tulaga maualuga
+            intermediate: Laʻasaga ogatotonu
+            no_knowledge: Leai se poto
+            pre_intermediate: Laʻasaga muamua tulaga
+            upper_intermediate: Luga tulaga ogatotonu
+          short:
+            advanced: Alualu i luma
+            beginner: Amata
+            intermediate: Feololo
+        sort_by:
+          most_rated: Sili ona togiina
+          newest: Fou
+          popularity: Lauiloa
+      filters: Faamama
+      focus_on: Taulaʻi atu i
+      focus_on_title: Ou te fia taulaʻi i ai
+      hide_lessons: Nana lesona
+      hours: Itula
+      i_understand: ou te malamalama
+      i_want_to_learn: Ou te fia aʻoaʻo
+      in_language: i le %{language}
+      language: Gagana
+      learn_more: Aoao atili
+      less_settings: Laʻititi tulaga
+      lessons: Lesona
+      lessons_available: "%{number} lesona avanoa"
+      lessons_catalog_page_subtitle: Avea ma toa toa i le gagana.
+      lessons_catalog_page_title: Faalautele ou tafailagi ma se gagana vasega
+      level: Tulaga
+      min: Min
+      more_settings: Sili atu tulaga
+      navbar:
+        close: Tapuni lisi
+        menu: Lisi
+        select_language: Filifili gagana
+      need_to_buy_course: Oe manaʻomia muamua tusi se vasega
+      no_description: Leai se faʻamatalaga saunia
+      no_results: Faʻamalie atu, matou te leʻi maua se mea tutusa
+      or: pe
+      per_month: masina
+      plans: Fuafuaga
+      privacy_policy: Faiga faʻalilolilo
+      rating: Fuafuaina
+      remove_all_filters: Aveese uma faamama
+      reviews: Iloiloga
+      save: Sefe
+      search: Saili
+      select_dots: Filifili ...
+      select_languages: Filifili langauges
+      select_num_languages: Filifili gagana %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: I1
+        c2: I2
+        zero_level: A0
+      show_all: Faʻaali uma
+      show_all_lessons: Faʻaali uma lesona
+      show_lessons: Faʻaali lesona %{number}
+      show_more: Faʻaali atili
+      sign_up_with_lingu_for: Saini ma Lingu Nouei mo
+      skills: "%{count} tomai"
+      sort_by: Faʻavasega e
+      start_typing_here: Amata tusitusi ii
+      teach: Aʻoaʻo
+      terms_and_conditions: Tuutuuga ma Aiaiga
+      time_range: Taimi taimi
+      try_adjusting_your_search: Taumafai e fetuunai lau sailiga e ala i le suia o
+        au filiga
+      try_this_course: Taumafai lenei vasega
+      website_language: Upega tafaʻilagi gagana
+      words: Upu
+    games:
+      finished:
+        go_to_next_exercise: Malo lava! Alu i le isi faʻamalositino
+      flashcard:
+        buttons:
+          finish: Maea
+          next: Le isi
+          previous: Talu ai
+        check_out_new_words: Siaki upu fou o le a e aʻoaʻoina i lenei lesona
+        frequency_of_word_usage: Tele taimi o upu faʻaaoga ile %{language}
+        keep_practice_to_learn_all_words: Toe iloilo upu %{count} ma tatou taʻalo
+          i nisi taʻaloga!
+        word_frequency:
+          level1: Seasea faʻaaogaina
+          level2: Seasea faʻaaogaina
+          level3: Upu masani - feololo
+          level4: Upu masani - feololo
+          level5: Masani
+          level6: Masani tele
+      match_word:
+        click_and_move_each_word_to_counterpart: Kiliki ma aveese upu taʻitasi i lana
+          paga
+        start_heading: Faʻafetaui upu e fai ai se paga
+        time_is_up: Ua uma le taimi!
+      skip_tutorial: Faapasi
+      time_is_up: Ua uma le taimi!
+      word_nodes:
+        match_letters_to_form_word: Faafetaui mataitusi e fausia ai se upu
+      word_waterfall:
+        do_not_hesitate: Tatou faavave!
+        go_to_next_exercise: Alu i le isi faʻamalositino
+        select_correct_translation: Filifili saʻo afitusi
+        well_done: Malo lava!
+    home_page:
+      hello: Talofa,
+      popular_lessons: Lesona lauiloa
+      show_more: Faʻaali atili
+      time: "%{count} min"
+      today_lesson: Lau lesona mo le aso
+      user_name: "%{name}!"
+      words: "%{count} upu"
+    idle_screen:
+      by_author: saunia e %{authorName}
+      continue_lesson: Faʻaauau lesona
+      exit: Tuʻua i fafo
+      idle_message: Ua fai sina leva ona e paie ...
+    lesson_page:
+      back_to_course_page: Toe foi i le itulau kosi
+      close: Tapuni
+      continue_lesson: Faʻaauau lesona
+      followed: Mulimuli ai
+      hamburger_menu_btn: Hamburger lisi
+      lesson_given: lesona
+      not_started: e leʻi amataina
+      or: Poʻo
+      part_complete: "%{percent}% maeʻa"
+      restart_lesson: Toe amata
+      section_check: Siaki
+      section_check_info: "%{count} suʻega"
+      section_learn: Aʻoaʻo
+      section_learn_info: "%{count} min e matamata ma faitau"
+      section_play: Taalo
+      section_play_info: "%{count} upu e faʻataʻitaʻi ai"
+      start_lesson: Amata le lesona
+      step_progress: "%{percent}%"
+      subscribe: Mulimuli
+      subscribed: Mulimuli ai
+      subscribers: soo
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Aveese
+      webview_error_title: Sa i ai se mea na tupu ...
+      words_number: "%{wordsNumber} upu fou"
+    lesson_task:
+      cancel_button: Faalēaogāina
+      check:
+        navigation_next: Le isi
+        navigation_previous: Talu ai
+        navigation_skip: Faapasi
+      controls_panel:
+        font_size_button: Font tele
+        high_contrast_button:
+          origin: Faʻatusatusaga maualuga
+          short: Faʻatusatusaga
+        hints_button: Fautuaga
+        music_playback_button:
+          origin: Toe tata musika
+          short: Musika
+        sound_effects_button:
+          origin: Leo aafiaga
+          short: Leo
+      exit_button: Tuʻua i fafo
+      finish_button: Maea
+      finished:
+        back_to_learn: Toe foi e aʻoaʻo
+        back_to_lesson_page: Toe foi i le lesona itulau
+        back_to_results_page: Toe foi i le iuga itulau
+        bad_result_message: Hmm ... taumafai e toe fai le lesona tasi
+        close_lesson: Faaiu le lesona
+        correct_answers_list: Lisi tali saʻo
+        good_result_message: Ou te vaʻai atu ua e faia se taumafaiga!
+        great_result_message: Malo lava! Nei o ni iʻuga sili!
+        next_course_lesson: Alu i le isi lesona i le vasega
+        no_results: E leai sau suʻega iʻuga
+        no_results_text: Faʻamolemole, faʻamaeʻa le lesona ma pasi le suʻega e maua
+          ai iʻuga
+        see_correct_answers_list: Vaʻai lisi saʻo tali
+        train_more: Faʻataʻitaʻi sili atu ma o le a e mauaina lelei sili atu i le
+          isi taimi!
+        you_finished_lesson: Matagofie! Ua uma lau lesona
+      go_back: Toe alu
+      next_button: Le isi
+      not_available_task: Lenei galuega e le o avanoa
+      start_button: Amata
+      tasks:
+        check:
+          assignment:
+            accept: Talia
+            author_will_check_your_answer: >-
+              %{author} o le a iloiloina lau tali ma masani ona tuʻuina mai manatu
+              i totonu ole 1-2 aso
+            continue_writing: Faʻaauau tusitusiga
+            copy: Kopi
+            delete: Aveese
+            delete_record: Aveese faamaumauga
+            edit: Faʻatonutonu
+            essay_does_not_have_enough_words: >-
+              Lau tali e tatau ona aofia ai le sili atu %{minWordsNumber} upu. Lau
+              tali o %{currentWordsNumber} upu nei.
+            followers_count: "%{followersCount} mulimuli"
+            lessons_count: "%{lessonsCount} lesona"
+            minimal_recording_time: Laʻititi taimi puʻeina - %{minimalRecordingTime}
+            minimum_characters_amount: Maualalo mataitusi - %{minimumCharactersAmount}
+            minimum_words_amount: Maualalo upu - %{minimumAmount}
+            record_again: Toe faʻamaumau
+            record_voice: Leo leo
+            send_anyway: Lafo atu
+            send_to_review: Lafo e iloilo
+            skip: Faapasi
+            too_short_answer: Tali tele tali
+            type_your_answer: Taʻu lau tali
+            unknown_task_type: Ituaiga galuega le iloa
+            upgrade_licence: Laisene faʻalelei
+            upgrade_your_plan: Faʻaleleia lau fuafuaga e faʻataʻitaʻi tofitofiga ma
+              faiaoga iloiloina
+            upload_files: Tuʻu i luga faila
+            write_essay: Tusi tala
+            you_have_used_amount_of_assignments: Ua e faʻaaogaina togi a le %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Faʻamatalaga va
+          fill_in_table:
+            column_answer_placeholder: Tali
+            column_question_placeholder: Fesili
+            example: Faʻataʻitaʻiga
+          true_false:
+            'false': Sese
+            'true': Moni
+        learn:
+          translatable_text:
+            show_original: Faʻaali le ata muamua
+            translate_into: Faʻaliliu ma Google i le %{languageName}
+            translate_into_your_lang: Faʻaliliu ma Google i lau gagana
+        play:
+          arrange_words:
+            start_screen:
+              heading: Fai se fuaiupu mai le upu tuʻuina atu
+          audition:
+            start_screen:
+              heading: Faʻalogo ile leo ma tata le upu na e faʻalogo
+          dictation:
+            get_help: Saili se fesoasoani
+            i_do_not_know: Ou te le iloa
+            input_placeholder: Ulufale mea na e faʻalogo ii
+            start_screen:
+              heading: Faʻalogo ma tusi mea e te faʻalogo ai
+          fill_gap:
+            start_screen:
+              heading: Faʻafetauia le upu ma lona uiga
+          finish_screen:
+            go_to_next_exercise: Malo lava! Alu i le isi faʻamalositino
+          image_hotspot:
+            start_screen:
+              heading: Taʻu saʻo mea i le ata
+          image_object:
+            start_screen:
+              heading: Filifili le mea saʻo mai le isi ata
+          inline_dropdown:
+            start_screen:
+              heading: Filifili upu e fetaui ma le fuaiupu
+          mark_word:
+            start_screen:
+              heading: Faitau le tusitusiga ma filifili le upu e fetaui ma le ata
+          minimal_pairs:
+            start_screen:
+              heading: Matamata i le vitio ma filifili filifiliga saʻo
+    locale:
+      currency_switcher_title: Fesuiaʻi tupe
+      lang_switcher_title: Suiga gagana
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Siamani
+        el: Greek
+        en: Igilisi
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italia
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Країнська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Leo ua utaina
+        aria_pause_button: Malolo
+        aria_play_button: Taalo
+        aria_reload_button: Toe fai
+        aria_stop_button: Taofi
+        reload_message: Ua le mafai ona utaina leo Faʻamolemole kiliki le faʻamau
+          e toe uta.
+    mobile_modal:
+      apply: Apalai
+      cancel: Faalēaogāina
+      clear: Manino
+      save: Sefe
+    page404:
+      goToStartLessonPage: Alu i le amataga lesona itulau
+      ooops: Oi
+      sorry_message: Faʻamalie atu, e leʻi maua e Tor lenei itulau
+    profile:
+      navigation:
+        log_out: Saini ese j
+        my_profile: Loʻu talaaga otooto
+        settings: Tulaga
+      onboarding:
+        choose_native_language: Filifili lau oe lava gagana poʻo lau gagana e te malamalama
+          ai
+        do_you_understand_english: E te malamalama ile Igilisi?
+        hello: talofa
+        language_levels:
+          a1: Tulaga maualuga
+          a2: Laʻasaga muamua
+          b1: Laʻasaga ogatotonu
+          b2: Maualuga Maualuga tulaga
+          c1: Tulaga maualuga
+          no_knowledge: Leai se poto
+        language_not_supported:
+          note: Matou te logoina oe ile taimi lava e maua ai le gagana
+          title: Faʻamalie atu, ae matou te leʻo lagolagoina lenei gagana
+          try_another_language: Faʻataʻitaʻi seisi gagana
+        'no': leai
+        search_placeholder: Saili ...
+        show_more_languages: Isi gagana
+        target_language_question: O le a le gagana e te fia aʻoaʻoina?
+        what_is_language_level: Faʻafefea ona e fuaina lau tulaga %{languageName}?
+        'yes': ioe
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu's privacy policy
+        support: Lagolago
+      logout: Saini ese j
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Mauaina faʻamatalaga lata mai mai faiaoga ma aʻoga e te
+                mulimuli ai
+              sections:
+                app_notifications: Faasilasilaga polokalama
+                email: Imeli
+              title: Fesoasoani mo le aʻoaʻoina
+            marketing:
+              description: Tumau faʻamatalaga e uiga i faʻalauiloa uma, faʻafouga,
+                ma musumusuga mai Lingu
+              sections:
+                browser_notifications: Faʻasilasilaga a le browser
+                email: Imeli
+              title: Maketiga
+          title: Fesoʻotaʻiga fiafia
+        personal_information:
+          delete_photo: Aveese le ata
+          email: Imeli
+          first_name: Igoa muamua
+          last_name: Igoa mulimuli
+          social_accounts:
+            connected: Fesoʻotaʻi
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Le fesoʻotaʻi
+            title: Faʻamatalaga lautele
+          title: Faʻamatalaga a le tagata lava ia
+          update_photo: Faʻafouina le ata
+        school:
+          active_licence: Laisene malosi
+          active_status: Toaga
+          delete_profile: Tape laʻu talaaga otooto
+          delete_profile_modal:
+            body: |-
+              Ua e faʻaleaogaina au faʻamatalaga uma - faavavau. E leai se toe faʻamau, ma e le mafai ona matou toe aumaia mo oe pe a maeʻa.
+              O e mautinoa e te manaʻo e aveese tumau lau Lingu profile ma au faʻamatalaga uma?
+            cancel: Faalēaogāina
+            confirm: Ioe, aveese
+            i_understand_the_consequences: Ou te malamalama i lona iʻuga
+            title: Aveese lau talaʻaga?
+          expired: Ua uma le aoga %{expire_date}
+          expires: Faʻamutaina %{expire_date}
+          inactive_status: Le toaga
+          revoke_access: Faʻaleaoga le faitau
+          sections:
+            contact_school: Faʻafesoʻotaʻi le aʻoga
+            export_my_data: Auina atu i fafo aʻu faʻamatalaga
+            read_school_privacy_policy: Faitau ile aoga a le aoga
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Toe tata musika
+              sound_effects: Leo aafiaga
+              title: Leo
+            visual:
+              dark_theme: Autu pogisa
+              font_size:
+                test_text: E ola lauusiusi le mutia i le isi itu o le pa
+                title: Font tele
+              high_contrast: Faʻatusatusaga maualuga
+              hints: Fautuaga
+              title: Faʻaaliga
+          title: Leo & Faʻaaliga
+        training_settings:
+          sections:
+            i_understand: ou te malamalama
+            i_want_to_learn: Ou te fia aʻoaʻo
+            target_language_level: Igilisi tulaga
+          title: Nofoaga mo toleniga
+      settings_title: Tulaga
+    teacher_card:
+      followers_count:
+        one: 1 mulimuli
+        other: "%{count} mulimuli"
+      lessons_count:
+        one: 1 lesona
+        other: "%{count} lesona"

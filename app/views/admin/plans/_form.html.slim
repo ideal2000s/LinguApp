@@ -1,0 +1,37 @@
+
+.form-group
+  = f.label :language_id, t('shared.language')
+  = f.select :language_id, options_for_select(Language.active.select(:system_name, :id).map { |d| [d.system_name, d.id] }, f.object.language_id), {}, {class: 'form-control select2'}
+  = error_for f.object, :language_id
+
+.form-group
+  = f.label :system_name, t('.system_name')
+  = f.text_field :system_name, class: 'form-control'
+  = error_for f.object, :system_name
+
+.form-group
+  - enabled_locales.each_with_index do |locale, i|
+    .row.align-items-center
+      .col-1
+        = image_tag("flags/#{language_to_flag_code(locale.to_s)}.svg", style: 'height: 15px;')
+      .col-5
+        .form-groups
+          = f.label :"name_#{locale.to_s}", t('name'),
+                  class: "form-control-label #{ locale == :en ? 'required' : '' }"
+          = f.text_field "name_#{locale.to_s}", class: 'form-control', autocomplete: 'off'
+          = error_for f.object, :name
+
+.form-group
+  = f.label :price
+  = f.text_field :price, class: 'form-control'
+  = error_for f.object, :price
+
+.form-group
+  = f.label :price_currency
+  = f.select :price_currency, options_for_select(Plan.price_currencies_for_select, f.object.price_currency), {}, {class: 'form-control select2'}
+  = error_for f.object, :price_currency
+
+.form-group
+  = f.label :plan_interval
+  = f.select :plan_interval, options_for_select(Plan.plan_intervals_for_select, f.object.plan_interval), {}, {class: 'form-control select2'}
+  = error_for f.object, :plan_interval

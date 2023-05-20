@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ClassMethods	lib/devise/models/otp_authenticatable.rb	/^    module ClassMethods$/;"	m	class:Devise.OtpAuthenticatable
+Controllers	lib/devise_auto_otp.rb	/^  module Controllers$/;"	m	class:DeviseAutoOtp
+Controllers	lib/devise_auto_otp/controllers/helpers.rb	/^  module Controllers$/;"	m	class:DeviseAutoOtp
+Controllers	lib/devise_auto_otp/controllers/url_helpers.rb	/^  module Controllers$/;"	m	class:DeviseAutoOtp
+Devise	lib/devise/models/otp_authenticatable.rb	/^module Devise::Models$/;"	m
+Devise	lib/devise/strategies/otp_authenticatable.rb	/^module Devise$/;"	m
+Devise	lib/devise_auto_otp.rb	/^module Devise$/;"	m
+DeviseAutoOtp	lib/devise_auto_otp.rb	/^module DeviseAutoOtp$/;"	m
+DeviseAutoOtp	lib/devise_auto_otp/controllers/helpers.rb	/^module DeviseAutoOtp$/;"	m
+DeviseAutoOtp	lib/devise_auto_otp/controllers/url_helpers.rb	/^module DeviseAutoOtp$/;"	m
+DeviseAutoOtp	lib/devise_auto_otp/engine.rb	/^module DeviseAutoOtp$/;"	m
+DeviseAutoOtp	lib/devise_auto_otp/mailer.rb	/^module DeviseAutoOtp$/;"	m
+DeviseAutoOtp	lib/devise_auto_otp/mapping.rb	/^module DeviseAutoOtp$/;"	m
+DeviseAutoOtp	lib/devise_auto_otp/routes.rb	/^module DeviseAutoOtp$/;"	m
+DeviseAutoOtp	lib/devise_auto_otp/version.rb	/^module DeviseAutoOtp$/;"	m
+Engine	lib/devise_auto_otp/engine.rb	/^  class Engine < ::Rails::Engine$/;"	c	class:DeviseAutoOtp
+Helpers	lib/devise_auto_otp/controllers/helpers.rb	/^    module Helpers$/;"	m	class:DeviseAutoOtp.Controllers
+Mailer	lib/devise_auto_otp/mailer.rb	/^  module Mailer$/;"	m	class:DeviseAutoOtp
+Mapping	lib/devise_auto_otp/mapping.rb	/^  module Mapping$/;"	m	class:DeviseAutoOtp
+Models	lib/devise_auto_otp.rb	/^  module Models$/;"	m	class:DeviseAutoOtp
+OtpAuthenticatable	lib/devise/models/otp_authenticatable.rb	/^  module OtpAuthenticatable$/;"	m	class:Devise
+OtpAuthenticatable	lib/devise/strategies/otp_authenticatable.rb	/^    class OtpAuthenticatable < Devise::Strategies::DatabaseAuthenticatable$/;"	c	class:Devise.Strategies
+Routes	lib/devise_auto_otp/routes.rb	/^  module Routes$/;"	m	class:DeviseAutoOtp
+Strategies	lib/devise/strategies/otp_authenticatable.rb	/^  module Strategies$/;"	m	class:Devise
+UrlHelpers	lib/devise_auto_otp/controllers/url_helpers.rb	/^    module UrlHelpers$/;"	m	class:DeviseAutoOtp.Controllers
+after_database_authentication	lib/devise/models/otp_authenticatable.rb	/^    def after_database_authentication$/;"	f	class:Devise.OtpAuthenticatable
+authenticate_scope!	lib/devise_auto_otp/controllers/helpers.rb	/^      def authenticate_scope!$/;"	f	class:DeviseAutoOtp.Controllers.Helpers
+default_controllers	lib/devise_auto_otp/mapping.rb	/^    def default_controllers(options)$/;"	f	class:DeviseAutoOtp.Mapping
+devise_otp	lib/devise_auto_otp/routes.rb	/^    def devise_otp(_mapping, _controllers)$/;"	f	class:DeviseAutoOtp.Routes
+ensure_resource!	lib/devise_auto_otp/controllers/helpers.rb	/^      def ensure_resource!$/;"	f	class:DeviseAutoOtp.Controllers.Helpers
+find_for_database_authentication	lib/devise/models/otp_authenticatable.rb	/^      def find_for_database_authentication(conditions)$/;"	f	class:Devise.OtpAuthenticatable.ClassMethods
+last_otp_at!	lib/devise/models/otp_authenticatable.rb	/^    def last_otp_at!$/;"	f	class:Devise.OtpAuthenticatable
+last_otp_at_valid?	lib/devise/models/otp_authenticatable.rb	/^    def last_otp_at_valid?$/;"	f	class:Devise.OtpAuthenticatable
+locale_for_resource	lib/devise_auto_otp/mailer.rb	/^    def locale_for_resource(record)$/;"	f	class:DeviseAutoOtp.Mailer
+otp	lib/devise/models/otp_authenticatable.rb	/^    def otp$/;"	f	class:Devise.OtpAuthenticatable
+otp_instructions	lib/devise_auto_otp/mailer.rb	/^    def otp_instructions(record, otp, opts = {})$/;"	f	class:DeviseAutoOtp.Mailer
+otp_service	lib/devise/models/otp_authenticatable.rb	/^    def otp_service$/;"	f	class:Devise.OtpAuthenticatable
+request_otp_path	lib/devise_auto_otp/controllers/url_helpers.rb	/^      def request_otp_path(resource_or_scope, opts = {})$/;"	f	class:DeviseAutoOtp.Controllers.UrlHelpers
+required_fields	lib/devise/models/otp_authenticatable.rb	/^    def self.required_fields(klass)$/;"	F	class:Devise.OtpAuthenticatable
+send_otp_instructions	lib/devise/models/otp_authenticatable.rb	/^    def send_otp_instructions$/;"	f	class:Devise.OtpAuthenticatable
+sign_in_otp_path	lib/devise_auto_otp/controllers/url_helpers.rb	/^      def sign_in_otp_path(resource_or_scope, opts = {})$/;"	f	class:DeviseAutoOtp.Controllers.UrlHelpers
+sign_out_otp_path	lib/devise_auto_otp/controllers/url_helpers.rb	/^      def sign_out_otp_path(resource_or_scope, opts = {})$/;"	f	class:DeviseAutoOtp.Controllers.UrlHelpers
+valid_password?	lib/devise/models/otp_authenticatable.rb	/^    def valid_password?(password)$/;"	f	class:Devise.OtpAuthenticatable
+verify_otp!	lib/devise/models/otp_authenticatable.rb	/^    def verify_otp!(code)$/;"	f	class:Devise.OtpAuthenticatable
+verify_otp_path	lib/devise_auto_otp/controllers/url_helpers.rb	/^      def verify_otp_path(resource_or_scope, opts = {})$/;"	f	class:DeviseAutoOtp.Controllers.UrlHelpers

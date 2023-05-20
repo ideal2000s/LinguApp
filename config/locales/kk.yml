@@ -1,0 +1,609 @@
+---
+kk:
+  course_mailer:
+    course_assigned_notification:
+      button: Курсты бастаңыз
+      click_start_lesson: "'Сабақты бастау' батырмасын басыңыз"
+      follow_course_link: Курсты ашу үшін батырманы басыңыз
+      footer_text: Күн сайын жаңа нәрсе білу үшін Lingu-ге оралыңыз!
+      get_started_line: 'Мұны қалай бастауға болады:'
+      notification_link: Хабарландыру параметрлері
+      open_lesson: Бірінші сабақты ашыңыз
+      or_paste_this_link: немесе осы сілтемені шолғышқа салыңыз
+      sign_in_with_email: Электрондық пошта мекен-жайымен кіріңіз (%{email})
+      support_link: Қолдау
+      title: "%{course} жұмысына кірісу"
+    new_document_comment:
+      author_text: "%{author} сіздің тапсырмаңызға шолу қалдырды"
+      button_text: Мынаны көр
+      button_url_helper: 'немесе осы сілтемені браузеріңізге салыңыз:'
+      footer_text: Білуге болатын көп нәрсе бар ...
+      notification_link: Хабарландыру параметрлері
+      subject_line: Жаңа тапсырма туралы түсініктеме
+      support_link: Қолдау
+    otp:
+      ignore_msg: Егер сіз бұл сұранысты жасамаған болсаңыз, жай электрондық поштаны
+        елемеңіз.
+      subject_line: Сіздің Лингвингке арналған ерекше кодыңыз
+      unique_code_for_lingu: Міне, сіздің Лингвингке арналған ерекше кодыңыз
+  frontend:
+    auth:
+      already_have_acc_question: Есептік жазбаңыз бар ма?
+      back: Артқа
+      back_to_sign_in: Кіру дегенге қайта келу
+      check_your_email_for_a_code: Электрондық поштаңыздың кодын тексеріңіз
+      continue: Жалғастыру
+      continue_with_email: Электрондық пошта арқылы жалғастырыңыз
+      continue_with_provider: "%{provider} арқылы жалғастырыңыз"
+      did_not_receive_a_code: Код алған жоқсыз ба?
+      email_address: Электрондық пошта
+      first_name: Аты
+      get_unique_code: Бірегей кіру кодын алыңыз
+      join_lingu: Лингвке қосылыңыз
+      last_name: Тек
+      more_login_options: Кірудің қосымша параметрлері
+      no_account_question: Есептік жазбаңыз жоқ па?
+      or: немесе
+      resend_code: Кодты қайта жіберіңіз
+      sign_in: Кіру
+      sign_up: Тіркелу
+      want_to_receive_marketing_messages: Мен Лингингтен маркетингтік хабарламалар
+        алғым келеді
+      we_ve_sent_a_code: >-
+        Біз <strong> {{email}} </strong> мекен-жайына 6 таңбалы код жібердік. Кодтың
+        мерзімі 15 минутта бітеді, сондықтан оны жақын арада енгізіңіз.
+    cookie_agreement:
+      agree: Келісемін
+      condition: >-
+        Біз кукилерді сайттың жұмысын талдау және жеке мазмұнды жеткізу үшін қолданамыз.
+        «Келісемін» батырмасын басу арқылы сіз біздің шарттармен келісесіз.
+    course:
+      accredited_course_provider: Аккредиттелген курс провайдері
+      apply: Өтініш
+      apply_filters: Сүзгілерді қолданыңыз
+      by: Авторы
+      cancel: Бас тарту
+      categories: "%{count} санаттары"
+      category: Санат
+      clear: Таза
+      clear_filters: Сүзгілерді өшіру
+      contact_us: Бізбен хабарласыңы
+      could_not_find_match_for: Кешіріңіз, біз ештеңе таба алмадық
+      course_language: Курстың тілі
+      duration: Ұзақтығы
+      filter_settings:
+        categories:
+          academic: Академиялық
+          business: Бизнес
+          fashion: Сән
+          food_drink: Тамақ және сусын
+          for_kids: Балаларға арналған
+          general: Жалпы
+          health: Денсаулық
+          legal: Заңды
+          sport: Спорт
+          travel: Саяхат
+        durations:
+          t0_600: "<10 минут"
+          t1800_3600: 30-60 минут
+          t3600_86400: 1+ сағат
+          t600_1800: 10-30 минут
+        focus_on:
+          conversation: Әңгіме
+          grammar: Грамматика
+          listening: Тыңдау
+          pronunciation: Айтылым
+          reading: Оқу
+          speaking: Сөйлеп тұрған
+          writing: Жазу
+        levels:
+          long:
+            advanced: Жоғары деңгей
+            elementary: Бастауыш деңгей
+            intermediate: Орта деңгей
+            no_knowledge: Білім жоқ
+            pre_intermediate: Орташа деңгей
+            upper_intermediate: Жоғарғы орта деңгей
+          short:
+            advanced: Озат
+            beginner: Бастаушы
+            intermediate: Аралық
+        sort_by:
+          most_rated: Ең көп бағаланды
+          newest: Ең жаңа
+          popularity: Танымалдылық
+      filters: Сүзгілер
+      focus_on: Жұмылдыру
+      focus_on_title: Мен назар аударғым келеді
+      hide_lessons: Сабақтарды жасыру
+      hours: Жұмыс уақыты
+      i_understand: Мен түсіндім
+      i_want_to_learn: Мен білгім келеді
+      in_language: "%{language}"
+      language: Тіл
+      learn_more: Көбірек білу үшін
+      less_settings: Аз параметрлер
+      lessons: Сабақтар
+      lessons_available: "%{number} сабақтары бар"
+      lessons_catalog_page_subtitle: Тіл қаһарманы бол.
+      lessons_catalog_page_title: Тіл курсы арқылы көкжиегіңізді кеңейтіңіз
+      level: Деңгей
+      min: Мин
+      more_settings: Қосымша параметрлер
+      navbar:
+        close: Мәзірді жабу
+        menu: Мәзір
+        select_language: Тілді таңдаңыз
+      need_to_buy_course: Алдымен курсты брондау қажет
+      no_description: Ешқандай сипаттама берілмеген
+      no_results: Кешіріңіз, біз ештеңе таба алмадық
+      or: немесе
+      per_month: айына
+      plans: Жоспарлары
+      privacy_policy: Құпиялылық саясаты
+      rating: Рейтинг
+      remove_all_filters: Барлық сүзгілерді алып тастаңыз
+      reviews: Пікірлер
+      save: Сақтау
+      search: Іздеу
+      select_dots: "... таңдаңыз"
+      select_languages: Тілдерді таңдаңыз
+      select_num_languages: "%{number} тілдерін таңдаңыз"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Барлығын көрсету
+      show_all_lessons: Барлық сабақтарды көрсетіңіз
+      show_lessons: "%{number} сабақтарын көрсету"
+      show_more: Көбірек көрсет
+      sign_up_with_lingu_for: Lingu Норвегияға тіркеліңіз
+      skills: "%{count} дағдылары"
+      sort_by: Бойынша сұрыптау
+      start_typing_here: Теруді осы жерден бастаңыз
+      teach: Үйрету
+      terms_and_conditions: Ережелер мен шарттар
+      time_range: Уақыт диапазоны
+      try_adjusting_your_search: Сүзгілерді өзгерту арқылы іздеуді реттеп көріңіз
+      try_this_course: Осы курсты қолданып көріңіз
+      website_language: Веб-сайт тілі
+      words: Сөздер
+    games:
+      finished:
+        go_to_next_exercise: Жарайсың! Келесі жаттығуға өтіңіз
+      flashcard:
+        buttons:
+          finish: Аяқтау
+          next: Келесі
+          previous: Алдыңғы
+        check_out_new_words: Осы сабақта білетін жаңа сөздерді тексеріңіз
+        frequency_of_word_usage: "%{language}-де сөз қолдану жиілігі"
+        keep_practice_to_learn_all_words: "%{count} сөздерін қарап шығып, ойын ойнайық!"
+        word_frequency:
+          level1: Сирек қолданылады
+          level2: Сирек қолданылады
+          level3: Сөз жиілігі - орташа
+          level4: Сөз жиілігі - орташа
+          level5: Жалпы
+          level6: Өте кең таралған
+      match_word:
+        click_and_move_each_word_to_counterpart: Әр сөзді өз әріптесіне нұқыңыз және
+          жылжытыңыз
+        start_heading: Жұп құру үшін сөздерді сәйкестендір
+        time_is_up: Уақыт бітті!
+      skip_tutorial: Өткізіп жіберу
+      time_is_up: Уақыт бітті!
+      word_nodes:
+        match_letters_to_form_word: Сөз құру үшін әріптерді сәйкестендіріңіз
+      word_waterfall:
+        do_not_hesitate: Тездетейік!
+        go_to_next_exercise: Келесі жаттығуға өтіңіз
+        select_correct_translation: Дұрыс сәйкестікті таңдаңыз
+        well_done: Жарайсың!
+    home_page:
+      hello: Сәлеметсіз бе,
+      popular_lessons: Танымал сабақтар
+      show_more: Көбірек көрсет
+      time: "%{count} мин"
+      today_lesson: Сіздің бүгінгі сабағыңыз
+      user_name: "%{name}!"
+      words: "%{count} сөздер"
+    idle_screen:
+      by_author: "%{authorName} арқылы"
+      continue_lesson: Сабақты жалғастыру
+      exit: Шығу
+      idle_message: Сіз біраз уақыт бос жүрдіңіз ...
+    lesson_page:
+      back_to_course_page: Курс бетіне оралу
+      close: Жабық
+      continue_lesson: Сабақты жалғастыру
+      followed: Жазылды
+      hamburger_menu_btn: Гамбургер мәзірі
+      lesson_given: сабақтар
+      not_started: басталмады
+      or: Немесе
+      part_complete: "%{percent}% аяқталды"
+      restart_lesson: Қайтадан қосу
+      section_check: Тексеріңіз
+      section_check_info: "%{count} сынақтары"
+      section_learn: Үйреніңіз
+      section_learn_info: "%{count} минут көру және оқу"
+      section_play: Ойнаңыз
+      section_play_info: "%{count} практикаға арналған сөздер"
+      start_lesson: Сабақты бастау
+      step_progress: "%{percent}%"
+      subscribe: Іздеу
+      subscribed: Жазылды
+      subscribers: ізбасарлары
+      time_min: "%{minutesNumber} мин"
+      unsubscribe: Жазылымнан бас тарту
+      webview_error_title: Бірдеңе дұрыс болмады ...
+      words_number: "%{wordsNumber} жаңа сөздер"
+    lesson_task:
+      cancel_button: Бас тарту
+      check:
+        navigation_next: Келесі
+        navigation_previous: Алдыңғы
+        navigation_skip: Өткізіп жіберу
+      controls_panel:
+        font_size_button: Қаріп өлшемі
+        high_contrast_button:
+          origin: Жоғары контраст
+          short: Контраст
+        hints_button: Кеңестер
+        music_playback_button:
+          origin: Музыканы ойнату
+          short: Музыка
+        sound_effects_button:
+          origin: Дыбыстық эффекттер
+          short: Дыбыс
+      exit_button: Шығу
+      finish_button: Аяқтау
+      finished:
+        back_to_learn: Білуге оралу
+        back_to_lesson_page: Сабақ бетіне оралу
+        back_to_results_page: Нәтижелер бетіне оралу
+        bad_result_message: Хм ... сабақты тағы бір рет өткізуге тырысыңыз
+        close_lesson: Сабақты жабу
+        correct_answers_list: Дұрыс жауаптар тізімі
+        good_result_message: Мен сіздің күш салғаныңызды көремін!
+        great_result_message: Жарайсың! Бұл керемет нәтижелер!
+        next_course_lesson: Әрине, келесі сабаққа барыңыз
+        no_results: Сізде тест нәтижелері жоқ
+        no_results_text: Нәтиже алу үшін сабақты аяқтап, тест тапсырыңыз
+        see_correct_answers_list: Дұрыс жауаптар тізімін қараңыз
+        train_more: Көбірек жаттығыңыз, сонда келесі жолы жақсы нәтижелерге қол жеткізесіз!
+        you_finished_lesson: Керемет! Сіз сабақты аяқтадыңыз
+      go_back: Қайтып келу
+      next_button: Келесі
+      not_available_task: Бұл тапсырма әлі қол жетімді емес
+      start_button: Бастау
+      tasks:
+        check:
+          assignment:
+            accept: Қабылдау
+            author_will_check_your_answer: >-
+              %{author} сіздің жауабыңызды қарап шығады және әдетте 1-2 күн ішінде
+              кері байланыс береді
+            continue_writing: Жазуды жалғастырыңыз
+            copy: Көшіру
+            delete: Жою
+            delete_record: Жазбаны жою
+            edit: Өңдеу
+            essay_does_not_have_enough_words: >-
+              Сіздің жауабыңызда кем дегенде %{minWordsNumber} сөз болуы керек. Сіздің
+              жауабыңыз қазіргі уақытта %{currentWordsNumber} сөз.
+            followers_count: "%{followersCount} жазылушылар"
+            lessons_count: "%{lessonsCount} сабақтары"
+            minimal_recording_time: Минималды жазу уақыты - %{minimalRecordingTime}
+            minimum_characters_amount: Минималды таңбалар - %{minimumCharactersAmount}
+            minimum_words_amount: Минималды сөздер - %{minimumAmount}
+            record_again: Қайта жазыңыз
+            record_voice: Дауысты жазу
+            send_anyway: Қалай болса да, жібер
+            send_to_review: Қарауға жіберу
+            skip: Өткізіп жіберу
+            too_short_answer: Тым қысқа жауап
+            type_your_answer: Жауабыңызды теріңіз
+            unknown_task_type: Белгісіз тапсырма түрі
+            upgrade_licence: Лицензияны жаңарту
+            upgrade_your_plan: Мұғалімдердің шолуларымен тапсырмаларды орындауға жоспарыңызды
+              жаңартыңыз
+            upload_files: Файлдарды жүктеңіз
+            write_essay: Эссе жазыңыз
+            you_have_used_amount_of_assignments: Сіз %{amountOfAssignments} тағайындау
+              несиелерін пайдаландыңыз
+          fill_in_blanks:
+            sentence_gap: Сөйлемдегі алшақтық
+          fill_in_table:
+            column_answer_placeholder: Жауап
+            column_question_placeholder: Сұрақ
+            example: Мысал
+          true_false:
+            'false': Жалған
+            'true': Рас
+        learn:
+          translatable_text:
+            show_original: Түпнұсқасын көрсету
+            translate_into: Google-мен %{languageName} тіліне аудару
+            translate_into_your_lang: Google-мен өз тіліңізге аударыңыз
+        play:
+          arrange_words:
+            start_screen:
+              heading: Берілген сөздерден сөйлем құраңыз
+          audition:
+            start_screen:
+              heading: Аудионы тыңдап, жаңа естіген сөзді түртіңіз
+          dictation:
+            get_help: Көмек алыңыз
+            i_do_not_know: Мен білмеймін
+            input_placeholder: Мұнда естігендеріңізді енгізіңіз
+            start_screen:
+              heading: Тыңдаңыз және естігеніңізді жазыңыз
+          fill_gap:
+            start_screen:
+              heading: Сөз бен оның мағынасын сәйкестендіріңіз
+          finish_screen:
+            go_to_next_exercise: Жарайсың! Келесі жаттығуға өтіңіз
+          image_hotspot:
+            start_screen:
+              heading: Суреттегі заттарды дұрыс атаңыз
+          image_object:
+            start_screen:
+              heading: Келесі суреттен дұрыс затты таңдаңыз
+          inline_dropdown:
+            start_screen:
+              heading: Сөйлемге сәйкес сөздерді таңдаңыз
+          mark_word:
+            start_screen:
+              heading: Мәтінді оқып, суретке сәйкес сөзді таңдаңыз
+          minimal_pairs:
+            start_screen:
+              heading: Бейнені қарап, дұрыс нұсқаны таңдаңыз
+    locale:
+      currency_switcher_title: Валюта ауыстырғыш
+      lang_switcher_title: Тілді ауыстырып қосқыш
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Ағылшын
+        eo: Esperanto
+        es: Испания
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Итальяндық
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Норск
+        ne: Nepali
+        nl: Недерландия
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Полски
+        ps: Pashto
+        pt: Португалия
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: кисуахили
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Аудио жүктелуде
+        aria_pause_button: Кідірту
+        aria_play_button: Ойнаңыз
+        aria_reload_button: Қайта жүктеу
+        aria_stop_button: Тоқта
+        reload_message: Аудио жүктелмеді. Қайта жүктеу үшін батырманы басыңыз.
+    mobile_modal:
+      apply: Өтініш
+      cancel: Бас тарту
+      clear: Таза
+      save: Сақтау
+    page404:
+      goToStartLessonPage: Сабақтың басталу бетіне өтіңіз
+      ooops: Өй ...
+      sorry_message: Кешіріңіз, Тор бұл парақты таба алмады
+    profile:
+      navigation:
+        log_out: Шығу
+        my_profile: Менің профилім
+        settings: Параметрлер
+      onboarding:
+        choose_native_language: Ана тіліңізді немесе өзіңіз түсінетін тілді таңдаңыз
+        do_you_understand_english: Сіз ағылшын тілін түсінесіз бе?
+        hello: Сәлеметсіз бе
+        language_levels:
+          a1: Бастауыш деңгей
+          a2: Орташа деңгей
+          b1: Орта деңгей
+          b2: Жоғарғы орта деңгей
+          c1: Жоғары деңгей
+          no_knowledge: Білім жоқ
+        language_not_supported:
+          note: Тіл қол жетімді болғаннан кейін сізге хабарлаймыз
+          title: Кешіріңіз, бірақ біз бұл тілді әлі қолдамаймыз
+          try_another_language: Басқа тілді қолданып көріңіз
+        'no': Жоқ
+        search_placeholder: Іздеу ...
+        show_more_languages: Басқа тілдер
+        target_language_question: Сіз қай тілді білгіңіз келеді?
+        what_is_language_level: "%{languageName} деңгейіңізді қалай бағалар едіңіз?"
+        'yes': Иә
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Лингвтің құпиялылық саясаты
+        support: Қолдау
+      logout: Шығу
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Сіз оқитын мұғалімдер мен мектептерден жаңалықтар алыңыз
+              sections:
+                app_notifications: Қолданба туралы хабарландырулар
+                email: Электрондық пошта
+              title: Оқу көмегі
+            marketing:
+              description: >-
+                Лингвистің барлық жарнамалары, жаңартулары және шабыттары туралы хабардар
+                болып отырыңыз
+              sections:
+                browser_notifications: Шолғыш туралы хабарламалар
+                email: Электрондық пошта
+              title: Маркетинг
+          title: Байланыс параметрлері
+        personal_information:
+          delete_photo: Фотосуретті жою
+          email: Электрондық пошта
+          first_name: Аты
+          last_name: Тек
+          social_accounts:
+            connected: Қосылды
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Қосылмаған
+            title: Әлеуметтік шоттар
+          title: Жеке ақпарат
+          update_photo: Фотосуретті жаңарту
+        school:
+          active_licence: Белсенді лицензия
+          active_status: Белсенді
+          delete_profile: Менің профилімді жойыңыз
+          delete_profile_modal:
+            body: |-
+              Сіз өзіңіздің барлық деректеріңізді мәңгілікке жойасыз. «Қайтару» батырмасы жоқ, содан кейін оны сізге қайтара алмаймыз.
+              Lingu профилін және барлық деректерді біржола жойғыңыз келе ме?
+            cancel: Бас тарту
+            confirm: Ия, оны жойыңыз
+            i_understand_the_consequences: Мен оның салдарын түсінемін
+            title: Профиль жойылсын ба?
+          expired: Мерзімі өткен %{expire_date}
+          expires: Мерзімі %{expire_date} аяқталады
+          inactive_status: Белсенді емес
+          revoke_access: Оқуға рұқсатты қайтарып алыңыз
+          sections:
+            contact_school: Мектепке хабарласыңыз
+            export_my_data: Деректерімді экспорттау
+            read_school_privacy_policy: Мектептің құпиялылық саясатын оқыңыз
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Музыканы ойнату
+              sound_effects: Дыбыстық эффекттер
+              title: Дыбыс
+            visual:
+              dark_theme: Қараңғы тақырып
+              font_size:
+                test_text: Қоршаудың екінші жағында шөп үнемі жасыл болып тұрады
+                title: Қаріп өлшемі
+              high_contrast: Жоғары контраст
+              hints: Кеңестер
+              title: Көрнекі
+          title: Дыбыс және визуалды
+        training_settings:
+          sections:
+            i_understand: Мен түсіндім
+            i_want_to_learn: Мен білгім келеді
+            target_language_level: Ағылшын тілі
+          title: Оқыту параметрлері
+      settings_title: Параметрлер
+    teacher_card:
+      followers_count:
+        one: 1 жазылушы
+        other: "%{count} жазылушылар"
+      lessons_count:
+        one: 1 сабақ
+        other: "%{count} сабақтары"

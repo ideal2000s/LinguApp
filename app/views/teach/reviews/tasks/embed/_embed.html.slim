@@ -1,0 +1,9 @@
+.card.mb-3
+  .card-header.d-flex.justify-content-between
+    h5.card-title.mb-0.pb-0= task.name
+    = link_to teach_task_preview_path(task), class: 'btn btn-falcon-primary btn-sm', target: '_blank' do
+      i.fas.fa-eye.fa-fw.mr-1
+      = t(task.type.underscore, scope: 'tasks.types')
+  .card-header
+  - task.items.each do |item|
+    = item.url&.html_safe

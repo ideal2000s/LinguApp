@@ -1,0 +1,15 @@
+= form_for item, as: :task_item, url: teach_task_item_path(item.task, item) do |f|
+  .card.mb-3
+    .card-header
+      h3.card-title= t('teach.posts.list.content')
+      .alert.alert-dark
+        = image_tag("flags/#{language_to_flag_code(task.lesson.language&.code)}.svg", class: 'mr-2 ', style: 'max-width: 26px; height: auto;')
+        = t('.write_in_language', language: task.lesson.language&.name)
+    .card-body
+      .form-group
+        = f.label :embed, class: 'w-100 sentence' do
+          .form-group
+            = f.label :content
+            = f.text_area :content, data: {editor: 'summernote'}, class: 'translatable-summernote'
+            = error_for f.object, :content
+          = f.submit t('save_changes'), class: 'btn btn-success'

@@ -1,0 +1,619 @@
+---
+or:
+  course_mailer:
+    course_assigned_notification:
+      button: ପାଠ୍ୟକ୍ରମ ଆରମ୍ଭ କରନ୍ତୁ |
+      click_start_lesson: "'ଆରମ୍ଭ ଶିକ୍ଷା' କ୍ଲିକ୍ କରନ୍ତୁ |"
+      follow_course_link: ପାଠ୍ୟକ୍ରମ ଖୋଲିବାକୁ ବଟନ୍ କ୍ଲିକ୍ କରନ୍ତୁ |
+      footer_text: ପ୍ରତିଦିନ କିଛି ନୂଆ ଶିଖିବାକୁ ଲିଙ୍ଗୁକୁ ଫେରି ଆସ!
+      get_started_line: 'ଆପଣ କିପରି ଆରମ୍ଭ କରିବେ ତାହା ଏଠାରେ ଅଛି:'
+      notification_link: ବିଜ୍ଞପ୍ତି ସେଟିଂସମୂହ |
+      open_lesson: ପ୍ରଥମ ଶିକ୍ଷା ଖୋଲ |
+      or_paste_this_link: କିମ୍ବା ଏହି ଲିଙ୍କକୁ ଆପଣଙ୍କର ବ୍ରାଉଜରରେ ଲେପନ କରନ୍ତୁ |
+      sign_in_with_email: ଆପଣଙ୍କର ଇମେଲ୍ ଠିକଣା (%{email}) ସହିତ ଲଗ୍ ଇନ୍ କରନ୍ତୁ |
+      support_link: ସମର୍ଥନ
+      title: "%{course} ସହିତ ଆରମ୍ଭ କରିବା |"
+    new_document_comment:
+      author_text: "%{author} ଆପଣଙ୍କ କାର୍ଯ୍ୟର ଏକ ସମୀକ୍ଷା ଛାଡିଛି |"
+      button_text: ଏହାକୁ ଯାଞ୍ଚ କରନ୍ତୁ |
+      button_url_helper: 'କିମ୍ବା ଏହି ଲିଙ୍କକୁ ଆପଣଙ୍କର ବ୍ରାଉଜରରେ ଲେପନ କରନ୍ତୁ:'
+      footer_text: ବହୁତ କିଛି ଶିଖିବାକୁ ଅଛି ...
+      notification_link: ବିଜ୍ଞପ୍ତି ସେଟିଂସମୂହ |
+      subject_line: ନୂତନ ଆସାଇନମେଣ୍ଟ୍ ମନ୍ତବ୍ୟ |
+      support_link: ସମର୍ଥନ
+    otp:
+      ignore_msg: ଯଦି ଆପଣ ଏହି ଅନୁରୋଧ କରିନାହାଁନ୍ତି, କେବଳ ଇମେଲକୁ ଅଣଦେଖା କରନ୍ତୁ |
+      subject_line: ଲିଙ୍ଗୁ ପାଇଁ ତୁମର ଅନନ୍ୟ କୋଡ୍ |
+      unique_code_for_lingu: ଲିଙ୍ଗୁ ପାଇଁ ଏଠାରେ ଆପଣଙ୍କର ଅନନ୍ୟ କୋଡ୍ |
+  frontend:
+    auth:
+      already_have_acc_question: ପୂର୍ବରୁ ଏକ ଖାତା ଅଛି କି?
+      back: ପଛକୁ
+      back_to_sign_in: ସାଇନ୍ ଇନ୍ କୁ ଫେରନ୍ତୁ |
+      check_your_email_for_a_code: ଆପଣଙ୍କର କୋଡ୍ ପାଇଁ ଆପଣଙ୍କର ଇମେଲ୍ ଯାଞ୍ଚ କରନ୍ତୁ |
+      continue: ଜାରି ରଖ |
+      continue_with_email: ଇମେଲ ସହିତ ଜାରି ରଖନ୍ତୁ |
+      continue_with_provider: "%{provider} ସହିତ ଜାରି ରଖନ୍ତୁ |"
+      did_not_receive_a_code: ଏକ କୋଡ୍ ଗ୍ରହଣ କରି ନାହାଁନ୍ତି କି?
+      email_address: ଈମୈଲ ଠିକଣା
+      first_name: ପ୍ରଥମ ନାମ
+      get_unique_code: ଏକ ଅନନ୍ୟ ଲଗଇନ୍ କୋଡ୍ ପାଆନ୍ତୁ |
+      join_lingu: ଲିଙ୍ଗୁରେ ଯୋଗ ଦିଅନ୍ତୁ |
+      last_name: ଶେଷ ନାମ
+      more_login_options: ଅଧିକ ଲଗଇନ୍ ବିକଳ୍ପ |
+      no_account_question: ଏକ ଖାତା ନାହିଁ କି?
+      or: କିମ୍ବା
+      resend_code: କୋଡ୍ ପଠାନ୍ତୁ |
+      sign_in: ଚୁକ୍ତି କରିବା
+      sign_up: ସାଇନ୍ ଅପ୍ କରନ୍ତୁ
+      want_to_receive_marketing_messages: ମୁଁ ଲିଙ୍ଗରୁ ମାର୍କେଟିଂ ବାର୍ତ୍ତା ଗ୍ରହଣ କରିବାକୁ
+        ଚାହୁଁଛି |
+      we_ve_sent_a_code: >-
+        ଆମେ <strong> {{ଇମେଲ୍}} </strong> କୁ 6 ଅଙ୍କ ବିଶିଷ୍ଟ କୋଡ୍ ପଠାଇଛୁ | କୋଡ୍ 15 ମିନିଟରେ
+        ସମାପ୍ତ ହେବ, ତେଣୁ ଦୟାକରି ଏହାକୁ ଶୀଘ୍ର ପ୍ରବେଶ କରନ୍ତୁ |
+    cookie_agreement:
+      agree: ସହମତ |
+      condition: >-
+        ସାଇଟ୍ କାର୍ଯ୍ୟଦକ୍ଷତାକୁ ବିଶ୍ଳେଷଣ କରିବା ଏବଂ ବ୍ୟକ୍ତିଗତ ବିଷୟବସ୍ତୁ ବିତରଣ କରିବା ପାଇଁ
+        ଆମେ କୁକିଜ୍ ବ୍ୟବହାର କରୁ | “ରାଜି” କ୍ଲିକ୍ କରି, ତୁମେ ଆମର ସର୍ତ୍ତକୁ ରାଜି କର |
+    course:
+      accredited_course_provider: ସ୍ୱୀକୃତିପ୍ରାପ୍ତ ପାଠ୍ୟକ୍ରମ ପ୍ରଦାନକାରୀ |
+      apply: ପ୍ରୟୋଗ କରନ୍ତୁ |
+      apply_filters: ଫିଲ୍ଟରଗୁଡିକ ପ୍ରୟୋଗ କରନ୍ତୁ |
+      by: ଦ୍ By ାରା
+      cancel: ବାତିଲ୍ କରନ୍ତୁ |
+      categories: "%{count} ବର୍ଗଗୁଡିକ |"
+      category: ବର୍ଗ
+      clear: ସଫା
+      clear_filters: ଫିଲ୍ଟର୍ ସଫା କରନ୍ତୁ |
+      contact_us: ଆମ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ |
+      could_not_find_match_for: ଦୁ Sorry ଖିତ, ଆମେ କ match ଣସି ମେଳକ ପାଇଲୁ ନାହିଁ |
+      course_language: ପାଠ୍ୟକ୍ରମ ଭାଷା
+      duration: ଅବଧି
+      filter_settings:
+        categories:
+          academic: ଏକାଡେମିକ୍ |
+          business: ବ୍ୟବସାୟ
+          fashion: ଫ୍ୟାଶନ୍
+          food_drink: ଖାଦ୍ୟ ଏବଂ ପାନୀୟ
+          for_kids: ପିଲାମାନଙ୍କ ପାଇଁ
+          general: ଜେନେରାଲ୍ |
+          health: ସ୍ୱାସ୍ଥ୍ୟ
+          legal: ଆଇନଗତ |
+          sport: କ୍ରୀଡା
+          travel: ଭ୍ରମଣ |
+        durations:
+          t0_600: "<10 ମିନିଟ୍ |"
+          t1800_3600: 30-60 ମିନିଟ୍ |
+          t3600_86400: 1+ ଘଣ୍ଟା |
+          t600_1800: 10-30 ମିନିଟ୍ |
+        focus_on:
+          conversation: ବାର୍ତ୍ତାଳାପ
+          grammar: ବ୍ୟାକରଣ
+          listening: ଶୁଣିବା
+          pronunciation: ଉଚ୍ଚାରଣ
+          reading: ପ Reading ିବା |
+          speaking: କଥାବାର୍ତ୍ତା
+          writing: ଲେଖିବା
+        levels:
+          long:
+            advanced: ଉନ୍ନତ ସ୍ତର
+            elementary: ପ୍ରାଥମିକ ସ୍ତର
+            intermediate: ମଧ୍ୟବର୍ତ୍ତୀ ସ୍ତର
+            no_knowledge: କ knowledge ଣସି ଜ୍ଞାନ ନାହିଁ |
+            pre_intermediate: ପୂର୍ବ ମଧ୍ୟବର୍ତ୍ତୀ ସ୍ତର |
+            upper_intermediate: ଉପର ମଧ୍ୟବର୍ତ୍ତୀ ସ୍ତର |
+          short:
+            advanced: ଉନ୍ନତ
+            beginner: ଆରମ୍ଭ
+            intermediate: ମଧ୍ୟବର୍ତ୍ତୀ
+        sort_by:
+          most_rated: ଅଧିକାଂଶ ମୂଲ୍ୟାୟନ
+          newest: ନୂତନତମ |
+          popularity: ଲୋକପ୍ରିୟତା
+      filters: ଫିଲ୍ଟର୍ |
+      focus_on: ଉପରେ ଧ୍ୟାନ
+      focus_on_title: ମୁଁ ଧ୍ୟାନ ଦେବାକୁ ଚାହୁଁଛି |
+      hide_lessons: ପାଠ ଲୁଚାନ୍ତୁ |
+      hours: ଘଣ୍ଟା
+      i_understand: ମୁ ବୁଝିଲି
+      i_want_to_learn: ମୁଁ ଶିଖିବାକୁ ଚାହେଁ
+      in_language: "%{language} ରେ"
+      language: ଭାଷା
+      learn_more: ଅଧିକ ସିଖନ୍ତୁ
+      less_settings: କମ୍ ସେଟିଙ୍ଗ୍ |
+      lessons: ଶିକ୍ଷା
+      lessons_available: "%{number} ଶିକ୍ଷା ଉପଲବ୍ଧ |"
+      lessons_catalog_page_subtitle: ଭାଷା ହିରୋ ହୁଅ |
+      lessons_catalog_page_title: ଏକ ଭାଷା ପାଠ୍ୟକ୍ରମ ସହିତ ଆପଣଙ୍କର ରାଶି ବିସ୍ତାର କରନ୍ତୁ
+        |
+      level: ସ୍ତର
+      min: ମିନିଟ୍
+      more_settings: ଅଧିକ ସେଟିଙ୍ଗ୍ |
+      navbar:
+        close: ମେନୁ ବନ୍ଦ କରନ୍ତୁ |
+        menu: ମେନୁ
+        select_language: ଭାଷା ଚୟନ କରନ୍ତୁ |
+      need_to_buy_course: ଆପଣଙ୍କୁ ପ୍ରଥମେ ଏକ ପାଠ୍ୟକ୍ରମ ବୁକ୍ କରିବାକୁ ପଡିବ |
+      no_description: କ description ଣସି ବର୍ଣ୍ଣନା ପ୍ରଦାନ କରାଯାଇ ନାହିଁ |
+      no_results: ଦୁ Sorry ଖିତ, ଆମେ କ match ଣସି ମେଳକ ପାଇଲୁ ନାହିଁ |
+      or: କିମ୍ବା
+      per_month: ପ୍ରତି ମାସରେ |
+      plans: ଯୋଜନାଗୁଡିକ
+      privacy_policy: ଗୋପନୀୟତା ନୀତି
+      rating: ମୂଲ୍ୟାୟନ
+      remove_all_filters: ସମସ୍ତ ଫିଲ୍ଟର୍ ଅପସାରଣ କରନ୍ତୁ |
+      reviews: ସମୀକ୍ଷା
+      save: ସଞ୍ଚୟ କରନ୍ତୁ |
+      search: ସନ୍ଧାନ କର |
+      select_dots: ଚୟନ କରନ୍ତୁ ...
+      select_languages: ଲାଙ୍ଗୁଜ୍ ଚୟନ କରନ୍ତୁ |
+      select_num_languages: "%{number} ଭାଷା ଚୟନ କରନ୍ତୁ |"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: ସମସ୍ତ ଦେଖାନ୍ତୁ |
+      show_all_lessons: ସମସ୍ତ ଶିକ୍ଷା ଦେଖାନ୍ତୁ |
+      show_lessons: "%{number} ଶିକ୍ଷା ଦେଖାନ୍ତୁ |"
+      show_more: ଅଧିକ ଦେଖାନ୍ତୁ |
+      sign_up_with_lingu_for: ଲିଙ୍ଗୁ ନରୱେ ସହିତ ସାଇନ୍ ଅପ୍ କରନ୍ତୁ |
+      skills: "%{count} କ skills ଶଳ |"
+      sort_by: ଦ୍ୱାରା ସର୍ଟ କରନ୍ତୁ |
+      start_typing_here: ଏଠାରେ ଟାଇପ୍ କରିବା ଆରମ୍ଭ କରନ୍ତୁ |
+      teach: ଶିକ୍ଷା ଦିଅ |
+      terms_and_conditions: ସର୍ତ୍ତାବଳୀ
+      time_range: ସମୟ ସୀମା
+      try_adjusting_your_search: ଆପଣଙ୍କର ଫିଲ୍ଟର୍ ପରିବର୍ତ୍ତନ କରି ଆପଣଙ୍କର ସନ୍ଧାନକୁ ସଜାଡିବାକୁ
+        ଚେଷ୍ଟା କରନ୍ତୁ |
+      try_this_course: ଏହି ପାଠ୍ୟକ୍ରମ ଚେଷ୍ଟା କରନ୍ତୁ |
+      website_language: ୱେବସାଇଟ୍ ଭାଷା |
+      words: ଶବ୍ଦ
+    games:
+      finished:
+        go_to_next_exercise: ବହୁତ ବଢିଆ! ପରବର୍ତ୍ତୀ ବ୍ୟାୟାମକୁ ଯାଆନ୍ତୁ |
+      flashcard:
+        buttons:
+          finish: ସମାପ୍ତ
+          next: ପରବର୍ତ୍ତୀ
+          previous: ପୂର୍ବ
+        check_out_new_words: ଏହି ପାଠ୍ୟରେ ଆପଣ ଶିଖିବାକୁ ଥିବା ନୂତନ ଶବ୍ଦଗୁଡ଼ିକୁ ଦେଖନ୍ତୁ
+          |
+        frequency_of_word_usage: "%{language} ରେ ଶବ୍ଦ ବ୍ୟବହାରର ଆବୃତ୍ତି |"
+        keep_practice_to_learn_all_words: "%{count} ଶବ୍ଦର ସମୀକ୍ଷା କରନ୍ତୁ ଏବଂ ଚାଲନ୍ତୁ
+          କିଛି ଖେଳ ଖେଳିବା!"
+        word_frequency:
+          level1: କ୍ୱଚିତ୍ ବ୍ୟବହୃତ ହୁଏ |
+          level2: କ୍ୱଚିତ୍ ବ୍ୟବହୃତ ହୁଏ |
+          level3: ଶବ୍ଦ ଆବୃତ୍ତି - ମଧ୍ୟମ |
+          level4: ଶବ୍ଦ ଆବୃତ୍ତି - ମଧ୍ୟମ |
+          level5: ସାଧାରଣ |
+          level6: ବହୁତ ସାଧାରଣ |
+      match_word:
+        click_and_move_each_word_to_counterpart: ପ୍ରତ୍ୟେକ ଶବ୍ଦକୁ ଏହାର ପ୍ରତିପକ୍ଷକୁ
+          କ୍ଲିକ୍ କରନ୍ତୁ ଏବଂ ଘୁଞ୍ଚାନ୍ତୁ |
+        start_heading: ଏକ ଯୋଡି ତିଆରି କରିବାକୁ ଶବ୍ଦଗୁଡିକ ମେଳ କରନ୍ତୁ |
+        time_is_up: ସମୟ ସମାପ୍ତ!
+      skip_tutorial: ଛାଡିଦିଅ |
+      time_is_up: ସମୟ ସମାପ୍ତ!
+      word_nodes:
+        match_letters_to_form_word: ଏକ ଶବ୍ଦ ଗଠନ ପାଇଁ ଅକ୍ଷରଗୁଡିକ ମେଳ କରନ୍ତୁ |
+      word_waterfall:
+        do_not_hesitate: ଚାଲ ତ୍ୱରାନ୍ୱିତ କରିବା!
+        go_to_next_exercise: ପରବର୍ତ୍ତୀ ବ୍ୟାୟାମକୁ ଯାଆନ୍ତୁ |
+        select_correct_translation: ସଠିକ୍ ମେଳକ ଚୟନ କରନ୍ତୁ |
+        well_done: ବହୁତ ବଢିଆ!
+    home_page:
+      hello: ନମସ୍କାର,
+      popular_lessons: ଲୋକପ୍ରିୟ ଶିକ୍ଷା
+      show_more: ଅଧିକ ଦେଖାନ୍ତୁ |
+      time: "%{count} ମିନିଟ୍"
+      today_lesson: ଆଜି ପାଇଁ ତୁମର ଶିକ୍ଷା |
+      user_name: "%{name}!"
+      words: "%{count} ଶବ୍ଦ |"
+    idle_screen:
+      by_author: "%{authorName} ଦ୍ୱାରା"
+      continue_lesson: ଶିକ୍ଷା ଜାରି ରଖ |
+      exit: ପ୍ରସ୍ଥାନ
+      idle_message: ଆପଣ କିଛି ସମୟ ପାଇଁ ନିଷ୍କ୍ରିୟ ଅଛନ୍ତି ...
+    lesson_page:
+      back_to_course_page: ପାଠ୍ୟକ୍ରମ ପୃଷ୍ଠାକୁ ଫେରନ୍ତୁ |
+      close: ବନ୍ଦ
+      continue_lesson: ଶିକ୍ଷା ଜାରି ରଖ |
+      followed: ଅନୁସରଣ କରାଯାଇଛି
+      hamburger_menu_btn: ହାମବର୍ଗ ମେନୁ |
+      lesson_given: ଶିକ୍ଷା
+      not_started: ଆରମ୍ଭ ହୋଇନାହିଁ |
+      or: କିମ୍ବା
+      part_complete: "%{percent}% ସଂପୂର୍ଣ୍ଣ |"
+      restart_lesson: ପୁନଃପ୍ରାରମ୍ଭ
+      section_check: ଯାଞ୍ଚ କରନ୍ତୁ |
+      section_check_info: "%{count} ପରୀକ୍ଷା"
+      section_learn: ଶିଖନ୍ତୁ |
+      section_learn_info: "%{count} ମିନିଟ୍ ଦେଖିବା ଏବଂ ପ read ିବା ପାଇଁ |"
+      section_play: ଖେଳନ୍ତୁ |
+      section_play_info: ଅଭ୍ୟାସ କରିବାକୁ %{count} ଶବ୍ଦ |
+      start_lesson: ଶିକ୍ଷା ଆରମ୍ଭ କରନ୍ତୁ |
+      step_progress: "%{percent}%"
+      subscribe: ଅନୁସରଣ କରନ୍ତୁ
+      subscribed: ଅନୁସରଣ କରାଯାଇଛି
+      subscribers: ଅନୁସରଣକାରୀ |
+      time_min: "%{minutesNumber} ମିନିଟ୍"
+      unsubscribe: ଅନଫୋଲ୍ କରନ୍ତୁ |
+      webview_error_title: କିଛି ଭୁଲ ହୋଇ ଗଲା...
+      words_number: "%{wordsNumber} ନୂତନ ଶବ୍ଦ |"
+    lesson_task:
+      cancel_button: ବାତିଲ୍ କରନ୍ତୁ |
+      check:
+        navigation_next: ପରବର୍ତ୍ତୀ
+        navigation_previous: ପୂର୍ବ
+        navigation_skip: ଛାଡିଦିଅ |
+      controls_panel:
+        font_size_button: ଅକ୍ଷର ଆକାର
+        high_contrast_button:
+          origin: ଉଚ୍ଚ ବିପରୀତ |
+          short: ବିପରୀତ
+        hints_button: ସୂଚନା
+        music_playback_button:
+          origin: ସଙ୍ଗୀତ ଚଲାଇବା |
+          short: ସଙ୍ଗୀତ
+        sound_effects_button:
+          origin: ଶବ୍ଦ ପ୍ରଭାବ
+          short: ଶବ୍ଦ
+      exit_button: ପ୍ରସ୍ଥାନ
+      finish_button: ସମାପ୍ତ
+      finished:
+        back_to_learn: ଶିଖିବାକୁ ଫେରନ୍ତୁ |
+        back_to_lesson_page: ପାଠ୍ୟ ପୃଷ୍ଠାକୁ ଫେରନ୍ତୁ |
+        back_to_results_page: ଫଳାଫଳ ପୃଷ୍ଠାରେ ଫେରନ୍ତୁ |
+        bad_result_message: ହମ୍ ... ପାଠକୁ ଆଉ ଥରେ ନେବାକୁ ଚେଷ୍ଟା କର |
+        close_lesson: ବନ୍ଦ ପାଠ
+        correct_answers_list: ସଠିକ୍ ଉତ୍ତର ତାଲିକା |
+        good_result_message: ମୁଁ ଦେଖିପାରୁଛି ତୁମେ ଏକ ପ୍ରୟାସ କରିଛ!
+        great_result_message: ବହୁତ ବଢିଆ! ଏଗୁଡିକ ବହୁତ ଭଲ ଫଳାଫଳ!
+        next_course_lesson: ପରବର୍ତ୍ତୀ ପାଠ୍ୟକୁ ଯାଆନ୍ତୁ |
+        no_results: ଆପଣଙ୍କର ଏପର୍ଯ୍ୟନ୍ତ କ test ଣସି ପରୀକ୍ଷା ଫଳାଫଳ ନାହିଁ |
+        no_results_text: ଦୟାକରି, ପାଠ୍ୟ ସମାପ୍ତ କରନ୍ତୁ ଏବଂ ଫଳାଫଳ ପାଇବାକୁ ପରୀକ୍ଷା ଦିଅନ୍ତୁ
+          |
+        see_correct_answers_list: ସଠିକ୍ ଉତ୍ତର ତାଲିକା ଦେଖନ୍ତୁ |
+        train_more: ଅଧିକ ଅଭ୍ୟାସ କରନ୍ତୁ ଏବଂ ଆପଣ ପରବର୍ତ୍ତୀ ସମୟରେ ଭଲ ଫଳାଫଳ ହାସଲ କରିବେ!
+        you_finished_lesson: ଉତ୍ତମ! ତୁମେ ପାଠ ଶେଷ କରିଛ |
+      go_back: ଫେରିଯାଅ
+      next_button: ପରବର୍ତ୍ତୀ
+      not_available_task: ଏହି କାର୍ଯ୍ୟ ଏପର୍ଯ୍ୟନ୍ତ ଉପଲବ୍ଧ ନାହିଁ |
+      start_button: ଆରମ୍ଭ କରନ୍ତୁ |
+      tasks:
+        check:
+          assignment:
+            accept: ଗ୍ରହଣ କରନ୍ତୁ
+            author_will_check_your_answer: "%{author} ଆପଣଙ୍କ ଉତ୍ତରକୁ ସମୀକ୍ଷା କରିବ
+              ଏବଂ ସାଧାରଣତ 1-2 1-2 ଦିନ ମଧ୍ୟରେ ମତାମତ ଦେବ |"
+            continue_writing: ଲେଖିବା ଜାରି ରଖ |
+            copy: କପି କରନ୍ତୁ |
+            delete: ବିଲୋପ କରନ୍ତୁ |
+            delete_record: ରେକର୍ଡ ବିଲୋପ କରନ୍ତୁ |
+            edit: ସଂପାଦନା କରନ୍ତୁ |
+            essay_does_not_have_enough_words: >-
+              ଆପଣଙ୍କର ଉତ୍ତର ଅତିକମରେ %{minWordsNumber} ଶବ୍ଦ ଧାରଣ କରିବା ଉଚିତ | ତୁମର
+              ଉତ୍ତର ବର୍ତ୍ତମାନ %{currentWordsNumber} ଶବ୍ଦ ଅଟେ |
+            followers_count: "%{followersCount} ଅନୁସରଣକାରୀ |"
+            lessons_count: "%{lessonsCount} ଶିକ୍ଷା |"
+            minimal_recording_time: ସର୍ବନିମ୍ନ ରେକର୍ଡିଂ ସମୟ - %{minimalRecordingTime}
+              |
+            minimum_characters_amount: ସର୍ବନିମ୍ନ ଅକ୍ଷର - %{minimumCharactersAmount}
+              |
+            minimum_words_amount: ସର୍ବନିମ୍ନ ଶବ୍ଦ - %{minimumAmount} |
+            record_again: ପୁନର୍ବାର ରେକର୍ଡ କରନ୍ତୁ |
+            record_voice: ସ୍ୱର ରେକର୍ଡ କରନ୍ତୁ |
+            send_anyway: ଯାହା ବି ହେଉ ପଠାନ୍ତୁ |
+            send_to_review: ସମୀକ୍ଷା କରିବାକୁ ପଠାନ୍ତୁ |
+            skip: ଛାଡିଦିଅ |
+            too_short_answer: ବହୁତ ଛୋଟ ଉତ୍ତର |
+            type_your_answer: ତୁମର ଉତ୍ତର ଟାଇପ୍ କର |
+            unknown_task_type: ଅଜ୍ଞାତ କାର୍ଯ୍ୟ ପ୍ରକାର |
+            upgrade_licence: ଲାଇସେନ୍ସ ଅପଗ୍ରେଡ୍ କରନ୍ତୁ |
+            upgrade_your_plan: >-
+              ଶିକ୍ଷକମାନଙ୍କ ସମୀକ୍ଷା ସହିତ କାର୍ଯ୍ୟଗୁଡିକ ଚେଷ୍ଟା କରିବାକୁ ଆପଣଙ୍କର ଯୋଜନାକୁ
+              ଅପଗ୍ରେଡ୍ କରନ୍ତୁ |
+            upload_files: ଫାଇଲ୍ ଅପଲୋଡ୍ କରନ୍ତୁ |
+            write_essay: ପ୍ରବନ୍ଧ ଲେଖ |
+            you_have_used_amount_of_assignments: ଆପଣ %{amountOfAssignments} ଆସାଇନମେଣ୍ଟ
+              କ୍ରେଡିଟ୍ ବ୍ୟବହାର କରିଛନ୍ତି |
+          fill_in_blanks:
+            sentence_gap: ବାକ୍ୟର ବ୍ୟବଧାନ |
+          fill_in_table:
+            column_answer_placeholder: ଉତ୍ତର
+            column_question_placeholder: ପ୍ରଶ୍ନ |
+            example: ଉଦାହରଣ |
+          true_false:
+            'false': ମିଥ୍ୟା
+            'true': ସତ
+        learn:
+          translatable_text:
+            show_original: ମୂଳ ଦେଖାନ୍ତୁ |
+            translate_into: Google ସହିତ %{languageName} ରେ ଅନୁବାଦ କରନ୍ତୁ |
+            translate_into_your_lang: ଗୁଗୁଲ ସହିତ ତୁମର ଭାଷାରେ ଅନୁବାଦ କର |
+        play:
+          arrange_words:
+            start_screen:
+              heading: ପ୍ରଦତ୍ତ ଶବ୍ଦଗୁଡ଼ିକରୁ ଏକ ବାକ୍ୟ ପ୍ରସ୍ତୁତ କର |
+          audition:
+            start_screen:
+              heading: ଅଡିଓ ଶୁଣନ୍ତୁ ଏବଂ ଆପଣ ବର୍ତ୍ତମାନ ଶୁଣିଥିବା ଶବ୍ଦ ଉପରେ ଟ୍ୟାପ୍ କରନ୍ତୁ
+                |
+          dictation:
+            get_help: ସାହାଯ୍ୟ ନିଅ |
+            i_do_not_know: ମୁଁ ଜାଣି ନାହିଁ
+            input_placeholder: ଆପଣ ଏଠାରେ ଯାହା ଶୁଣିଛନ୍ତି ତାହା ପ୍ରବେଶ କରନ୍ତୁ |
+            start_screen:
+              heading: ତୁମେ ଯାହା ଶୁଣୁଛ ଶୁଣ ଏବଂ ଲେଖ |
+          fill_gap:
+            start_screen:
+              heading: ଶବ୍ଦ ଏବଂ ଏହାର ଅର୍ଥ ସହିତ ମେଳ କର |
+          finish_screen:
+            go_to_next_exercise: ବହୁତ ବଢିଆ! ପରବର୍ତ୍ତୀ ବ୍ୟାୟାମକୁ ଯାଆନ୍ତୁ |
+          image_hotspot:
+            start_screen:
+              heading: ଚିତ୍ରରେ ଥିବା ବସ୍ତୁଗୁଡ଼ିକର ସଠିକ୍ ନାମ ଦିଅ |
+          image_object:
+            start_screen:
+              heading: ପରବର୍ତ୍ତୀ ଛବିରୁ ସଠିକ୍ ବସ୍ତୁ ବାଛନ୍ତୁ |
+          inline_dropdown:
+            start_screen:
+              heading: ବାକ୍ୟ ସହିତ ମେଳ ଖାଉଥିବା ଶବ୍ଦଗୁଡିକ ବାଛନ୍ତୁ |
+          mark_word:
+            start_screen:
+              heading: ପାଠ ପ Read ଏବଂ ପ୍ରତିଛବି ସହିତ ମେଳ ଖାଉଥିବା ଶବ୍ଦକୁ ବାଛ |
+          minimal_pairs:
+            start_screen:
+              heading: ଭିଡିଓ ଦେଖନ୍ତୁ ଏବଂ ସଠିକ୍ ବିକଳ୍ପ ଚୟନ କରନ୍ତୁ |
+    locale:
+      currency_switcher_title: ମୁଦ୍ରା ସୁଇଚର୍ |
+      lang_switcher_title: ଭାଷା ସୁଇଚର୍
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ଡଚ୍
+        el: Greek
+        en: ଇଂରାଜୀ |
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ଇଟାଲୀୟୋ
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: ଲିଟୁଭି କାଲବା |
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: ନର୍ସ୍କ |
+        ne: Nepali
+        nl: ନେଦରଲ୍ୟାଣ୍ଡସ୍ |
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: ପୋଲସ୍କି |
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: ତୁର୍କ
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ଅଡିଓ ଲୋଡ୍ ହେଉଛି |
+        aria_pause_button: ବିରାମ
+        aria_play_button: ଖେଳନ୍ତୁ |
+        aria_reload_button: ପୁନ elo ଲୋଡ୍ କରନ୍ତୁ |
+        aria_stop_button: ବନ୍ଦ କର |
+        reload_message: ଅଡିଓ ଲୋଡ୍ କରିବାରେ ବିଫଳ | ପୁନ o ଲୋଡ୍ କରିବାକୁ ଦୟାକରି ବଟନ୍ କ୍ଲିକ୍
+          କରନ୍ତୁ |
+    mobile_modal:
+      apply: ପ୍ରୟୋଗ କରନ୍ତୁ |
+      cancel: ବାତିଲ୍ କରନ୍ତୁ |
+      clear: ସଫା
+      save: ସଞ୍ଚୟ କରନ୍ତୁ |
+    page404:
+      goToStartLessonPage: ଆରମ୍ଭ ପାଠ୍ୟ ପୃଷ୍ଠାକୁ ଯାଆନ୍ତୁ |
+      ooops: ଓହୋ ...
+      sorry_message: ଦୁ Sorry ଖିତ, ଟୋର ଏହି ପୃଷ୍ଠା ଖୋଜି ପାଇଲା ନାହିଁ |
+    profile:
+      navigation:
+        log_out: ପ୍ରସ୍ଥାନ କର
+        my_profile: ମୋର ପ୍ରୋଫାଇଲ୍
+        settings: ସେଟିଂସମୂହ
+      onboarding:
+        choose_native_language: ତୁମର ମାତୃଭାଷା କିମ୍ବା ତୁମେ ବୁ language ୁଥିବା ଭାଷା ବାଛ
+          |
+        do_you_understand_english: ଆପଣ ଇଂରାଜୀ ବୁ understand ନ୍ତି କି?
+        hello: ନମସ୍କାର
+        language_levels:
+          a1: ପ୍ରାଥମିକ ସ୍ତର
+          a2: ପୂର୍ବ-ମଧ୍ୟବର୍ତ୍ତୀ ସ୍ତର |
+          b1: ମଧ୍ୟବର୍ତ୍ତୀ ସ୍ତର
+          b2: ଉପର ମଧ୍ୟବର୍ତ୍ତୀ ସ୍ତର |
+          c1: ଉନ୍ନତ ସ୍ତର
+          no_knowledge: କ knowledge ଣସି ଜ୍ଞାନ ନାହିଁ |
+        language_not_supported:
+          note: ଭାଷା ଉପଲବ୍ଧ ହେବା ମାତ୍ରେ ଆମେ ଆପଣଙ୍କୁ ଜଣାଇବୁ |
+          title: ଦୁ Sorry ଖିତ, କିନ୍ତୁ ଆମେ ଏପର୍ଯ୍ୟନ୍ତ ଏହି ଭାଷାକୁ ସମର୍ଥନ କରୁନାହୁଁ
+          try_another_language: ଅନ୍ୟ ଭାଷା ଚେଷ୍ଟା କରନ୍ତୁ |
+        'no': ନା
+        search_placeholder: ସନ୍ଧାନ ...
+        show_more_languages: ଅନ୍ୟାନ୍ୟ ଭାଷା |
+        target_language_question: ଆପଣ କେଉଁ ଭାଷା ଶିଖିବାକୁ ଚାହୁଁଛନ୍ତି?
+        what_is_language_level: ତୁମର %{languageName} ସ୍ତରକୁ ତୁମେ କିପରି ମୂଲ୍ୟାଙ୍କନ
+          କରିବ?
+        'yes': ହଁ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: ଲିଙ୍ଗୁର ଗୋପନୀୟତା ନୀତି |
+        support: ସମର୍ଥନ
+      logout: ପ୍ରସ୍ଥାନ କର
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: ଆପଣ ଅନୁସରଣ କରୁଥିବା ଶିକ୍ଷକ ଏବଂ ବିଦ୍ୟାଳୟଗୁଡ଼ିକରୁ ଅଦ୍ୟତନ ଗ୍ରହଣ
+                କରନ୍ତୁ |
+              sections:
+                app_notifications: ଆପ୍ ବିଜ୍ଞପ୍ତିଗୁଡିକ |
+                email: ଇ-ମେଲ୍ |
+              title: ଶିକ୍ଷା ସହାୟତା
+            marketing:
+              description: ଲିଙ୍ଗୁରୁ ସମସ୍ତ ପଦୋନ୍ନତି, ଅଦ୍ୟତନ ଏବଂ ପ୍ରେରଣା ବିଷୟରେ ଅବଗତ
+                ରୁହ |
+              sections:
+                browser_notifications: ବ୍ରାଉଜର୍ ବିଜ୍ଞପ୍ତିଗୁଡିକ |
+                email: ଇ-ମେଲ୍ |
+              title: ମାର୍କେଟିଂ |
+          title: ଯୋଗାଯୋଗ ପସନ୍ଦଗୁଡିକ
+        personal_information:
+          delete_photo: ଫଟୋ ବିଲୋପ କରନ୍ତୁ |
+          email: ଇମେଲ୍ କରନ୍ତୁ |
+          first_name: ପ୍ରଥମ ନାମ
+          last_name: ଶେଷ ନାମ
+          social_accounts:
+            connected: ସଂଯୋଗ ହୋଇଛି |
+            facebook: ଫେସବୁକ୍
+            google: ଗୁଗୁଲ୍
+            microsoft: ମାଇକ୍ରୋସଫ୍ଟ |
+            not_connected: ସଂଯୁକ୍ତ ନୁହେଁ |
+            title: ସାମାଜିକ ଖାତା |
+          title: ବ୍ୟକ୍ତିଗତ ସୁଚ଼ନା
+          update_photo: ଫଟୋ ଅପଡେଟ୍ କରନ୍ତୁ |
+        school:
+          active_licence: ସକ୍ରିୟ ଲାଇସେନ୍ସ |
+          active_status: ସକ୍ରିୟ |
+          delete_profile: ମୋ ପ୍ରୋଫାଇଲ୍ ଡିଲିଟ୍ କରନ୍ତୁ |
+          delete_profile_modal:
+            body: |-
+              ତୁମେ ତୁମର ସମସ୍ତ ତଥ୍ୟକୁ ସବୁଦିନ ପାଇଁ ବିଲୋପ କର | କ und ଣସି ପୂର୍ବବତ୍ ବଟନ୍ ନାହିଁ, ଏବଂ ଆମେ ଏହା ପରେ ତୁମ ପାଇଁ ଫେରାଇ ପାରିବୁ ନାହିଁ |
+              ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଆପଣଙ୍କର ଲିଙ୍ଗ ପ୍ରୋଫାଇଲ୍ ଏବଂ ଆପଣଙ୍କର ସମସ୍ତ ତଥ୍ୟକୁ ସ୍ଥାୟୀ ଭାବରେ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?
+            cancel: ବାତିଲ୍ କରନ୍ତୁ |
+            confirm: ହଁ, ଏହାକୁ ଡିଲିଟ୍ କରନ୍ତୁ |
+            i_understand_the_consequences: ମୁଁ ଏହାର ପରିଣାମ ବୁ understand ିପାରୁଛି |
+            title: ଆପଣଙ୍କର ପ୍ରୋଫାଇଲ୍ ବିଲୋପ କରନ୍ତୁ?
+          expired: "%{expire_date} ମିଆଦ ପୂର୍ଣ୍ଣ ହୋଇଛି |"
+          expires: "%{expire_date} ମିଆଦ ପୂର୍ଣ୍ଣ ହୁଏ |"
+          inactive_status: ନିଷ୍କ୍ରିୟ |
+          revoke_access: ପ read ଼ିବା ପ୍ରବେଶ ପ୍ରତ୍ୟାହାର କରନ୍ତୁ |
+          sections:
+            contact_school: ବିଦ୍ୟାଳୟ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ |
+            export_my_data: ମୋର ତଥ୍ୟ ରପ୍ତାନି କରନ୍ତୁ |
+            read_school_privacy_policy: ବିଦ୍ୟାଳୟର ଗୋପନୀୟତା ନୀତି ପ .ନ୍ତୁ |
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: ସଙ୍ଗୀତ ଚଲାଇବା |
+              sound_effects: ଶବ୍ଦ ପ୍ରଭାବ
+              title: ଶବ୍ଦ
+            visual:
+              dark_theme: ଗା ark ଥିମ୍ |
+              font_size:
+                test_text: ଘାସ ସବୁବେଳେ ବାଡ଼ର ଅନ୍ୟ ପାର୍ଶ୍ୱରେ ସବୁଜ ହୋଇଥାଏ |
+                title: ଅକ୍ଷର ଆକାର
+              high_contrast: ଉଚ୍ଚ ବିପରୀତ |
+              hints: ସୂଚନା
+              title: ଭିଜୁଆଲ୍ |
+          title: ଶବ୍ଦ ଏବଂ ଭିଜୁଆଲ୍ |
+        training_settings:
+          sections:
+            i_understand: ମୁ ବୁଝିଲି
+            i_want_to_learn: ମୁଁ ଶିଖିବାକୁ ଚାହେଁ
+            target_language_level: ଇଂରାଜୀ ସ୍ତର
+          title: ତାଲିମ ସେଟିଂସମୂହ |
+      settings_title: ସେଟିଂସମୂହ
+    teacher_card:
+      followers_count:
+        one: 1 ଅନୁସରଣକାରୀ |
+        other: "%{count} ଅନୁସରଣକାରୀ |"
+      lessons_count:
+        one: 1 ଶିକ୍ଷା
+        other: "%{count} ଶିକ୍ଷା |"

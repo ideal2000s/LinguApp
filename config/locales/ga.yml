@@ -1,0 +1,621 @@
+---
+ga:
+  course_mailer:
+    course_assigned_notification:
+      button: Tosaigh an cúrsa
+      click_start_lesson: Cliceáil 'Tosaigh ceacht'
+      follow_course_link: Cliceáil an cnaipe chun an cúrsa a oscailt
+      footer_text: Tar ar ais go Lingu chun rud éigin nua a fhoghlaim gach lá!
+      get_started_line: 'Seo mar a thosaíonn tú:'
+      notification_link: Socruithe fógra
+      open_lesson: Oscail an chéad cheacht
+      or_paste_this_link: nó greamaigh an nasc seo i do bhrabhsálaí
+      sign_in_with_email: Logáil isteach le do sheoladh ríomhphoist (%{email})
+      support_link: Tacaíocht
+      title: Ag tosú le %{course}
+    new_document_comment:
+      author_text: D’fhág %{author} athbhreithniú ar do thasc
+      button_text: Seiceáil é
+      button_url_helper: 'nó greamaigh an nasc seo i do bhrabhsálaí:'
+      footer_text: Tá a lán eile le foghlaim ...
+      notification_link: Socruithe fógra
+      subject_line: Trácht sannadh nua
+      support_link: Tacaíocht
+    otp:
+      ignore_msg: Mura ndearna tú an iarraidh seo, déan neamhaird den ríomhphost.
+      subject_line: Do chód uathúil do Lingu
+      unique_code_for_lingu: Seo do chód uathúil do Lingu
+  frontend:
+    auth:
+      already_have_acc_question: An bhfuil cuntas agat cheana?
+      back: Ar ais
+      back_to_sign_in: Ar ais chun Sínigh Isteach
+      check_your_email_for_a_code: Seiceáil do r-phost le haghaidh do chód
+      continue: Leanúint ar aghaidh
+      continue_with_email: Lean ar aghaidh le ríomhphost
+      continue_with_provider: Lean ar aghaidh le %{provider}
+      did_not_receive_a_code: Nach bhfuair tú cód?
+      email_address: Seoladh ríomhphoist
+      first_name: Ainm
+      get_unique_code: Faigh cód uathúil logála isteach
+      join_lingu: Bí le Lingu
+      last_name: Ainm deireanach
+      more_login_options: Tuilleadh roghanna logála isteach
+      no_account_question: Nach bhfuil cuntas agat?
+      or: nó
+      resend_code: Cód athsheolaidh
+      sign_in: Sínigh isteach
+      sign_up: Clarú
+      want_to_receive_marketing_messages: Ba mhaith liom teachtaireachtaí margaíochta
+        a fháil ó Lingu
+      we_ve_sent_a_code: >-
+        Tá cód 6 dhigit seolta againn chuig <strong> {{email}} </strong>. Rachaidh
+        an cód in éag i gceann 15 nóiméad, mar sin cuir isteach é go luath.
+    cookie_agreement:
+      agree: Aontaigh
+      condition: >-
+        Úsáidimid fianáin chun feidhmíocht an láithreáin a anailísiú agus chun ábhar
+        pearsantaithe a sheachadadh. Trí “Aontaím” a chliceáil, toilíonn tú lenár
+        gcoinníollacha.
+    course:
+      accredited_course_provider: Soláthraí cúrsa creidiúnaithe
+      apply: Cuir iarratas isteach
+      apply_filters: Cuir scagairí i bhfeidhm
+      by: Le
+      cancel: Cealaigh
+      categories: catagóirí %{count}
+      category: Catagóir
+      clear: Glan
+      clear_filters: Scagairí soiléire
+      contact_us: Glaoigh orainn
+      could_not_find_match_for: Tá brón orainn, ní raibh muid in ann teacht ar aon
+        chluiche
+      course_language: Teanga an chúrsa
+      duration: Fad
+      filter_settings:
+        categories:
+          academic: Acadúil
+          business: Gnó
+          fashion: Faisean
+          food_drink: Bia & deoch
+          for_kids: Do pháistí
+          general: Ginearálta
+          health: Sláinte
+          legal: Dlí
+          sport: Spórt
+          travel: Taisteal
+        durations:
+          t0_600: "<10 nóiméad"
+          t1800_3600: 30-60 nóiméad
+          t3600_86400: 1+ uair an chloig
+          t600_1800: 10-30 nóiméad
+        focus_on:
+          conversation: Comhrá
+          grammar: Gramadach
+          listening: Éisteacht
+          pronunciation: Fuaimniú
+          reading: Léitheoireacht
+          speaking: Ag labhairt
+          writing: Scríbhneoireacht
+        levels:
+          long:
+            advanced: Ardleibhéal
+            elementary: Bunleibhéal
+            intermediate: Leibhéal idirmheánach
+            no_knowledge: Gan aon eolas
+            pre_intermediate: Leibhéal réamh-idirmheánach
+            upper_intermediate: Leibhéal idirmheánach uachtarach
+          short:
+            advanced: Ardleibhéal
+            beginner: Bunleibhéal
+            intermediate: Idirmheánach
+        sort_by:
+          most_rated: An chuid is mó rátáil
+          newest: Is nua
+          popularity: Coitianta
+      filters: Scagairí
+      focus_on: Díriú ar
+      focus_on_title: Ba mhaith liom díriú ar
+      hide_lessons: Folaigh ceachtanna
+      hours: Uaireanta
+      i_understand: Tuigim
+      i_want_to_learn: Ba mhaith liom foghlaim
+      in_language: i %{language}
+      language: Teanga
+      learn_more: Foghlaim níos mó
+      less_settings: Lúide socruithe
+      lessons: Ceachtanna
+      lessons_available: ceachtanna %{number} ar fáil
+      lessons_catalog_page_subtitle: Bí i do laoch teanga.
+      lessons_catalog_page_title: Leathnaigh do léaslínte le cúrsa teanga
+      level: Leibhéal
+      min: Min
+      more_settings: Níos mó socruithe
+      navbar:
+        close: Dún an roghchlár
+        menu: Roghchlár
+        select_language: Roghnaigh teanga
+      need_to_buy_course: Caithfidh tú cúrsa a chur in áirithe ar dtús
+      no_description: Níl aon tuairisc curtha ar fáil
+      no_results: Tá brón orainn, ní raibh muid in ann teacht ar aon chluiche
+      or: nó
+      per_month: in aghaidh na míosa
+      plans: Pleananna
+      privacy_policy: Beartas Príobháideachais
+      rating: Rátáil
+      remove_all_filters: Bain na scagairí go léir
+      reviews: Léirmheasanna
+      save: Sábháil
+      search: Cuardaigh
+      select_dots: Roghnaigh ...
+      select_languages: Roghnaigh langauges
+      select_num_languages: Roghnaigh teangacha %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Taispeáin gach rud
+      show_all_lessons: Taispeáin gach ceacht
+      show_lessons: Taispeáin ceachtanna %{number}
+      show_more: Taispeáin níos mó
+      sign_up_with_lingu_for: Cláraigh le Lingu Norway le haghaidh
+      skills: scileanna %{count}
+      sort_by: Sórtáil de réir
+      start_typing_here: Tosaigh ag clóscríobh anseo
+      teach: Múin
+      terms_and_conditions: Téarmaí agus Coinníollacha
+      time_range: Raon ama
+      try_adjusting_your_search: Déan iarracht do chuardach a choigeartú trí do scagairí
+        a athrú
+      try_this_course: Bain triail as an gcúrsa seo
+      website_language: Teanga an láithreáin ghréasáin
+      words: Focail
+    games:
+      finished:
+        go_to_next_exercise: An-mhaith! Téigh go dtí an chéad chleachtadh eile
+      flashcard:
+        buttons:
+          finish: Críochnaigh
+          next: Ar Aghaidh
+          previous: Roimhe seo
+        check_out_new_words: Amharc ar na focail nua a fhoghlaimfidh tú sa cheacht
+          seo
+        frequency_of_word_usage: Minicíocht úsáide focal i %{language}
+        keep_practice_to_learn_all_words: Déan athbhreithniú ar na focail %{count}
+          agus déanaimis roinnt cluichí a imirt!
+        word_frequency:
+          level1: Is annamh a úsáidtear
+          level2: Is annamh a úsáidtear
+          level3: Minicíocht focal - meán
+          level4: Minicíocht focal - meán
+          level5: Coitianta
+          level6: An-choitianta
+      match_word:
+        click_and_move_each_word_to_counterpart: Cliceáil agus bog gach focal chuig
+          a mhacasamhail
+        start_heading: Meaitseáil focail chun péire a dhéanamh
+        time_is_up: Tá an t-am ar bun!
+      skip_tutorial: Scipeáil
+      time_is_up: Tá an t-am ar bun!
+      word_nodes:
+        match_letters_to_form_word: Litreacha a mheaitseáil le focal a fhoirmiú
+      word_waterfall:
+        do_not_hesitate: Déanaimis luas!
+        go_to_next_exercise: Téigh go dtí an chéad chleachtadh eile
+        select_correct_translation: Roghnaigh an mheaitseáil cheart
+        well_done: An-mhaith!
+    home_page:
+      hello: Dia dhuit,
+      popular_lessons: Ceachtanna coitianta
+      show_more: Taispeáin níos mó
+      time: "%{count} min"
+      today_lesson: Do cheacht don lá inniu
+      user_name: "%{name}!"
+      words: focail %{count}
+    idle_screen:
+      by_author: le %{authorName}
+      continue_lesson: Lean ar aghaidh leis an gceacht
+      exit: An slí amach
+      idle_message: Tá tú díomhaoin le tamall ...
+    lesson_page:
+      back_to_course_page: Ar ais go leathanach an chúrsa
+      close: Dún
+      continue_lesson: Lean ar aghaidh leis an gceacht
+      followed: Lean
+      hamburger_menu_btn: Roghchlár Hamburger
+      lesson_given: ceachtanna
+      not_started: níor thosaigh
+      or: Nó
+      part_complete: "%{percent}% críochnaithe"
+      restart_lesson: Tosaigh arís
+      section_check: Seiceáil
+      section_check_info: tástálacha %{count}
+      section_learn: Foghlaim
+      section_learn_info: "%{count} min le féachaint agus le léamh"
+      section_play: Seinn
+      section_play_info: focail %{count} le cleachtadh
+      start_lesson: Tosaigh ceacht
+      step_progress: "%{percent}%"
+      subscribe: Lean
+      subscribed: Lean
+      subscribers: leanúna
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Unollow
+      webview_error_title: Chuaigh rud eigin mícheart...
+      words_number: "%{wordsNumber} focail nua"
+    lesson_task:
+      cancel_button: Cealaigh
+      check:
+        navigation_next: Ar Aghaidh
+        navigation_previous: Roimhe seo
+        navigation_skip: Scipeáil
+      controls_panel:
+        font_size_button: Méid cló
+        high_contrast_button:
+          origin: Codarsnacht ard
+          short: Codarsnacht
+        hints_button: Leideanna
+        music_playback_button:
+          origin: Athsheinm ceoil
+          short: Ceol
+        sound_effects_button:
+          origin: Éifeachtaí fuaime
+          short: Fuaim
+      exit_button: An slí amach
+      finish_button: Críochnaigh
+      finished:
+        back_to_learn: Ar ais ag foghlaim
+        back_to_lesson_page: Ar ais go leathanach an cheachta
+        back_to_results_page: Ar ais ar leathanach na dtorthaí
+        bad_result_message: Hmm ... déan iarracht an ceacht a thógáil uair amháin
+          eile
+        close_lesson: Dún ceacht
+        correct_answers_list: Liosta freagraí cearta
+        good_result_message: Feicim go ndearna tú iarracht!
+        great_result_message: An-mhaith! Is torthaí iontacha iad seo!
+        next_course_lesson: Téigh go dtí an chéad cheacht eile ar ndóigh
+        no_results: Níl aon torthaí tástála agat fós
+        no_results_text: Le do thoil, comhlánaigh an ceacht agus pas sa tástáil chun
+          na torthaí a fháil
+        see_correct_answers_list: Féach liosta na bhfreagraí cearta
+        train_more: Cleachtadh níos mó agus gheobhaidh tú torthaí níos fearr an chéad
+          uair eile!
+        you_finished_lesson: Go hiontach! Chríochnaigh tú an ceacht
+      go_back: Dul ar ais
+      next_button: Ar Aghaidh
+      not_available_task: Níl an tasc seo ar fáil go fóill
+      start_button: Tosaigh
+      tasks:
+        check:
+          assignment:
+            accept: Glac
+            author_will_check_your_answer: >-
+              Déanfaidh %{author} athbhreithniú ar do fhreagra agus tabharfaidh sé
+              aiseolas de ghnáth laistigh de 1-2 lá
+            continue_writing: Lean ort ag scríobh
+            copy: Cóip
+            delete: Scrios
+            delete_record: Scrios an taifead
+            edit: Cuir in Eagar
+            essay_does_not_have_enough_words: >-
+              Ba chóir go mbeadh focail %{minWordsNumber} ar a laghad i do fhreagra.
+              Is é do fhreagra focail %{currentWordsNumber} faoi láthair.
+            followers_count: leanúna %{followersCount}
+            lessons_count: ceachtanna %{lessonsCount}
+            minimal_recording_time: Am taifeadta íosta - %{minimalRecordingTime}
+            minimum_characters_amount: Carachtair íosta - %{minimumCharactersAmount}
+            minimum_words_amount: Focail íosta - %{minimumAmount}
+            record_again: Taifead arís
+            record_voice: Guth taifead
+            send_anyway: Seol ar aon nós
+            send_to_review: Seol chun athbhreithnithe
+            skip: Scipeáil
+            too_short_answer: Freagra ró-ghearr
+            type_your_answer: Clóscríobh do fhreagra
+            unknown_task_type: Cineál tasc anaithnid
+            upgrade_licence: Ceadúnas uasghrádaithe
+            upgrade_your_plan: Uasghrádú ar do phlean chun tascanna a thriail le hathbhreithnithe
+              múinteoirí
+            upload_files: Uaslódáil comhaid
+            write_essay: Scríobh aiste
+            you_have_used_amount_of_assignments: Tá creidmheasanna sannadh %{amountOfAssignments}
+              in úsáid agat
+          fill_in_blanks:
+            sentence_gap: Bearna pianbhreithe
+          fill_in_table:
+            column_answer_placeholder: Freagra
+            column_question_placeholder: Ceist
+            example: Sampla
+          true_false:
+            'false': Bréagach
+            'true': Fíor
+        learn:
+          translatable_text:
+            show_original: Taispeáin bunaidh
+            translate_into: Aistrigh le Google go %{languageName}
+            translate_into_your_lang: Aistrigh le Google i do theanga
+        play:
+          arrange_words:
+            start_screen:
+              heading: Déan abairt as na focail a thugtar
+          audition:
+            start_screen:
+              heading: Éist leis an bhfuaim agus sconna ar an bhfocal a chuala tú
+                díreach
+          dictation:
+            get_help: Faigh cabhair
+            i_do_not_know: Níl a fhios agam
+            input_placeholder: Cuir isteach an méid a chuala tú anseo
+            start_screen:
+              heading: Éist agus scríobh an méid a chloiseann tú
+          fill_gap:
+            start_screen:
+              heading: Meaitseáil an focal agus a bhrí
+          finish_screen:
+            go_to_next_exercise: An-mhaith! Téigh go dtí an chéad chleachtadh eile
+          image_hotspot:
+            start_screen:
+              heading: Ainmnigh na rudaí sa phictiúr i gceart
+          image_object:
+            start_screen:
+              heading: Roghnaigh an réad ceart ón gcéad phictiúr eile
+          inline_dropdown:
+            start_screen:
+              heading: Roghnaigh na focail a oireann don abairt
+          mark_word:
+            start_screen:
+              heading: Léigh an téacs agus roghnaigh an focal a oireann don íomhá
+          minimal_pairs:
+            start_screen:
+              heading: Féach ar an bhfíseán agus roghnaigh an rogha ceart
+    locale:
+      currency_switcher_title: Switcher airgeadra
+      lang_switcher_title: Switcher teanga
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Béarla
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwlarus
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Tá an fhuaim ag luchtú
+        aria_pause_button: Sos
+        aria_play_button: Seinn
+        aria_reload_button: Athlódáil
+        aria_stop_button: Stop
+        reload_message: >-
+          Theip ar luchtú fuaime a luchtú. Cliceáil le do thoil ar an gcnaipe chun
+          athlódáil.
+    mobile_modal:
+      apply: Cuir iarratas isteach
+      cancel: Cealaigh
+      clear: Glan
+      save: Sábháil
+    page404:
+      goToStartLessonPage: Téigh go leathanach tosaigh na gceachtanna
+      ooops: Oooops ...
+      sorry_message: Tá brón orm, ní raibh Tor in ann an leathanach seo a aimsiú
+    profile:
+      navigation:
+        log_out: Logáil Amach
+        my_profile: Mo phróifíl
+        settings: Socruithe
+      onboarding:
+        choose_native_language: Roghnaigh do theanga dhúchais nó do theanga a thuigeann
+          tú
+        do_you_understand_english: An dtuigeann tú Béarla?
+        hello: Dia dhuit
+        language_levels:
+          a1: Bunleibhéal
+          a2: Leibhéal réamh-idirmheánach
+          b1: Leibhéal idirmheánach
+          b2: Leibhéal Idirmheánach Uachtarach
+          c1: Ardleibhéal
+          no_knowledge: Gan aon eolas
+        language_not_supported:
+          note: Tabharfaimid fógra duit a luaithe a bheidh an teanga ar fáil
+          title: Tá brón orainn, ach ní thacaímid leis an teanga seo fós
+          try_another_language: Bain triail as teanga eile
+        'no': Níl
+        search_placeholder: Cuardaigh ...
+        show_more_languages: Teangacha eile
+        target_language_question: Cén teanga ar mhaith leat a fhoghlaim?
+        what_is_language_level: Conas a mheasfá do leibhéal %{languageName}?
+        'yes': Sea
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Beartas príobháideachta Lingu
+        support: Tacaíocht
+      logout: Logáil Amach
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Faigh nuashonruithe ó mhúinteoirí agus scoileanna a leanann
+                tú
+              sections:
+                app_notifications: Fógraí aip
+                email: R-phost
+              title: Cúnamh foghlama
+            marketing:
+              description: Fan ar an eolas faoi gach ardú céime, nuashonrú agus inspioráid
+                ó Lingu
+              sections:
+                browser_notifications: Fógraí brabhsálaí
+                email: R-phost
+              title: Margaíocht
+          title: Déan teagmháil le roghanna
+        personal_information:
+          delete_photo: Scrios grianghraf
+          email: Ríomhphost
+          first_name: Ainm
+          last_name: Ainm deireanach
+          social_accounts:
+            connected: Ceangailte
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Gan baint
+            title: Cuntais shóisialta
+          title: Eolas pearsanta
+          update_photo: Grianghraf a nuashonrú
+        school:
+          active_licence: Ceadúnas gníomhach
+          active_status: Gníomhach
+          delete_profile: Scrios mo phróifíl
+          delete_profile_modal:
+            body: |-
+              Scriosann tú do chuid sonraí go léir - go deo. Níl aon chnaipe cealaigh ann, agus ní féidir linn é a fháil ar ais duit ina dhiaidh sin.
+              An bhfuil tú cinnte go dteastaíonn uait do phróifíl Lingu agus do chuid sonraí go léir a scriosadh go buan?
+            cancel: Cealaigh
+            confirm: Sea, scrios é
+            i_understand_the_consequences: Tuigim na hiarmhairtí
+            title: Scrios do phróifíl?
+          expired: "%{expire_date} in éag"
+          expires: In éag %{expire_date}
+          inactive_status: Neamhghníomhach
+          revoke_access: Cúlghairm léite a chúlghairm
+          sections:
+            contact_school: Déan teagmháil leis an scoil
+            export_my_data: Easpórtáil mo chuid sonraí
+            read_school_privacy_policy: Léigh beartas Príobháideachta Scoile
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Athsheinm ceoil
+              sound_effects: Éifeachtaí fuaime
+              title: Fuaim
+            visual:
+              dark_theme: Téama dorcha
+              font_size:
+                test_text: Bíonn an féar níos glaise i gcónaí ar an taobh eile den
+                  fhál
+                title: Méid cló
+              high_contrast: Codarsnacht ard
+              hints: Leideanna
+              title: Amharc
+          title: Fuaim & Amharc
+        training_settings:
+          sections:
+            i_understand: Tuigim
+            i_want_to_learn: Ba mhaith liom foghlaim
+            target_language_level: Leibhéal Béarla
+          title: Socruithe oiliúna
+      settings_title: Socruithe
+    teacher_card:
+      followers_count:
+        one: 1 leantóir
+        other: leanúna %{count}
+      lessons_count:
+        one: 1 cheacht
+        other: ceachtanna %{count}

@@ -1,0 +1,19 @@
+- set_page_title t('.student_management')
+
+.card.rounded-bottom-0
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner4-sm.png')});"
+  .card-header.pb-0
+    h3.mb-0= t('.student_management')
+    p
+      = t('admin.students.list.active_students')
+      =< "(#{students.total_count})"
+  .card-body.pb-0.z-index-10
+    = link_to new_admin_student_path, class: 'card-link' do
+      = t('.create_new_student')
+      i.fas.fa-chevron-right.fa-fw
+.card.rounded-top-0
+  .card-body
+  #list= render partial: 'admin/students/list', locals: { students: students }
+  - unless current_user.language_scope.blank?
+    .card-footer
+      = render 'shared/scoped_records'

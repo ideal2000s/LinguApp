@@ -1,0 +1,4 @@
+- content_for :html_lang
+  = course.language&.code
+- content_for :meta
+  = render 'layouts/shared/open_graph_meta_tags', source: course, description: course.description.to_plain_text, url: students_course_url(course)

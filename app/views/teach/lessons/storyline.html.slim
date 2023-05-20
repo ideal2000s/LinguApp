@@ -1,0 +1,48 @@
+- set_page_title lesson.title
+
+= render partial: 'lesson_header', locals: { lesson: lesson }
+h3.font-weight-bold.mb-3= t('teach.lessons.storyline.define_learning_objectives)')
+#objectives= render 'objectives', objectives: lesson.objectives, lesson: lesson
+= form_with scope: :lesson, url: add_objective_teach_lesson_path(lesson), method: :post, html: { id: 'add_objective_form' } do |f|
+  .row
+    .col-lg-6.col-md-8.col-sm-10= f.text_field :objective, class: 'form-control'
+    .col-lg-1.col-md-2.col-sm-2= f.submit t('teach.lessons.show.add_objective'), class: 'btn btn-falcon-default'
+
+h4.font-weight-bold.mt-5= t('.lesson_content')
+- tasks.each do |task|
+  - if task.type == 'Tasks::Video'
+    .card.my-3
+      .card-body
+        .d-flex.justify-content-between
+          h3.card-title.py-0.my-1= task.name
+          = link_to edit_teach_lesson_task_path(task.lesson, task), class: 'btn btn-falcon-default btn-sm' do
+            i.fas.fa-pencil-alt.fa-fw
+        .mt-3== task.items.first.url
+  - if task.type == 'Tasks::Text'
+    .card.my-3
+      .card-body
+        .d-flex.justify-content-between
+          h3.card-title.py-0.my-1= task.name
+          = link_to edit_teach_lesson_task_path(task.lesson, task), class: 'btn btn-falcon-default btn-sm' do
+            i.fas.fa-pencil-alt.fa-fw
+        .pt-3
+          p== task.items.first.content
+  - else
+    .card.my-0
+      = render 'task_card', task: task
+
+.text-center.py-3
+  = link_to new_teach_lesson_task_path(lesson, subject: :teach), class: 'btn btn-falcon-primary', remote: true do
+    i.fas.fa-plus.fa-fw.mr-1
+    span= t('teach.tasks.new.new_task')
+
+- if lesson.parent
+  h4.font-weight-bold.mt-5= t('.parent_lesson')
+  ul
+    li= link_to lesson.parent.title, teach_lesson_path(lesson.parent)
+
+- if lesson.children.any?
+  h4.font-weight-bold.mt-5= t('.children_lessons')
+  ul
+    - lesson.children.each do |l|
+      li= link_to l.title, teach_lesson_path(l)

@@ -1,0 +1,617 @@
+---
+si:
+  course_mailer:
+    course_assigned_notification:
+      button: පා .මාලාව ආරම්භ කරන්න
+      click_start_lesson: "'ආරම්භක පාඩම' ක්ලික් කරන්න"
+      follow_course_link: පා .මාලාව විවෘත කිරීමට බොත්තම ක්ලික් කරන්න
+      footer_text: සෑම දිනකම අලුත් දෙයක් ඉගෙන ගැනීමට නැවත ලින්ගු වෙත එන්න!
+      get_started_line: 'ඔබ ආරම්භ කරන ආකාරය මෙන්න:'
+      notification_link: දැනුම්දීම් සැකසුම්
+      open_lesson: පළමු පාඩම විවෘත කරන්න
+      or_paste_this_link: හෝ මෙම සබැඳිය ඔබගේ බ්‍රව්සරයේ අලවන්න
+      sign_in_with_email: ඔබගේ විද්‍යුත් තැපැල් ලිපිනය සමඟ ලොග් වන්න (%{email})
+      support_link: සහාය
+      title: "%{course} සමඟ ආරම්භ කිරීම"
+    new_document_comment:
+      author_text: "%{author} ඔබගේ පැවරුම පිළිබඳ සමාලෝචනයක් ඉතිරි කළේය"
+      button_text: එය පරික්ෂා කරන්න
+      button_url_helper: 'හෝ මෙම සබැඳිය ඔබගේ බ්‍රව්සරයට අලවන්න:'
+      footer_text: ඉගෙන ගැනීමට තවත් බොහෝ දේ ඇත ...
+      notification_link: දැනුම්දීම් සැකසුම්
+      subject_line: නව පැවරුම් අදහස් දැක්වීම
+      support_link: සහාය
+    otp:
+      ignore_msg: ඔබ මෙම ඉල්ලීම නොකළේ නම්, විද්‍යුත් තැපෑල නොසලකා හරින්න.
+      subject_line: ලින්ගු සඳහා ඔබේ අද්විතීය කේතය
+      unique_code_for_lingu: මෙන්න ලින්ගු සඳහා ඔබේ අද්විතීය කේතය
+  frontend:
+    auth:
+      already_have_acc_question: දැනටමත් ගිණුමක් තිබේද?
+      back: ආපසු
+      back_to_sign_in: පුරනය වීමට ආපසු
+      check_your_email_for_a_code: ඔබගේ කේතය සඳහා ඔබගේ විද්‍යුත් ලිපිනය පරීක්ෂා කරන්න
+      continue: දිගටම කරගෙන යන්න
+      continue_with_email: ඊමේල් සමඟ ඉදිරියට යන්න
+      continue_with_provider: "%{provider} සමඟ ඉදිරියට යන්න"
+      did_not_receive_a_code: කේතයක් ලැබුනේ නැද්ද?
+      email_address: විද්යුත් තැපැල් ලිපිනය
+      first_name: මුල් නම
+      get_unique_code: අද්විතීය පිවිසුම් කේතයක් ලබා ගන්න
+      join_lingu: ලින්ගු හා සම්බන්ධ වන්න
+      last_name: අවසන් නම
+      more_login_options: තවත් පිවිසුම් විකල්ප
+      no_account_question: ගිණුමක් නැද්ද?
+      or: හෝ
+      resend_code: කේතය නැවත යවන්න
+      sign_in: පුරන්න
+      sign_up: ලියාපදිංචි වන්න
+      want_to_receive_marketing_messages: මට ලින්ගු වෙතින් අලෙවිකරණ පණිවිඩ ලැබීමට
+        අවශ්‍යයි
+      we_ve_sent_a_code: >-
+        අපි අංක 6 කින් යුත් කේතයක් <strong> {{විද්‍යුත් තැපෑල}} </strong> වෙත යවා
+        ඇත. කේතය මිනිත්තු 15 කින් කල් ඉකුත් වේ, එබැවින් කරුණාකර එය ඉක්මනින් ඇතුළත්
+        කරන්න.
+    cookie_agreement:
+      agree: එකඟ වන්න
+      condition: >-
+        අඩවි ක්‍රියාකාරිත්වය විශ්ලේෂණය කිරීමට සහ පුද්ගලීකරණය කළ අන්තර්ගතයන් ලබා දීමට
+        අපි කුකීස් භාවිතා කරමු. “එකඟ වන්න” ක්ලික් කිරීමෙන් ඔබ අපගේ කොන්දේසි වලට එකඟ
+        වේ.
+    course:
+      accredited_course_provider: පිළිගත් පා course මාලා සැපයුම්කරු
+      apply: අයදුම් කරන්න
+      apply_filters: පෙරහන් යොදන්න
+      by: විසින්
+      cancel: අවලංගු කරන්න
+      categories: "%{count} කාණ්ඩ"
+      category: වර්ගය
+      clear: පැහැදිලිව
+      clear_filters: පෙරහන් ඉවත් කරන්න
+      contact_us: අප අමතන්න
+      could_not_find_match_for: කණගාටුයි, අපට කිසිදු ගැලපීමක් සොයාගත නොහැකි විය
+      course_language: පා language මාලා භාෂාව
+      duration: කාල සීමාව
+      filter_settings:
+        categories:
+          academic: ශාස්ත්‍රීය
+          business: ව්යාපාරික
+          fashion: විලාසිතා
+          food_drink: ආහාර සහ බීම
+          for_kids: කුඩා දරුවන් සඳහා
+          general: පොදු
+          health: සෞඛ්‍යය
+          legal: නීතිමය
+          sport: ක්‍රීඩාව
+          travel: ගමන්
+        durations:
+          t0_600: "<විනාඩි 10 යි"
+          t1800_3600: විනාඩි 30-60
+          t3600_86400: පැය 1+
+          t600_1800: විනාඩි 10-30
+        focus_on:
+          conversation: සාකච්ඡාව
+          grammar: ව්‍යාකරණ
+          listening: සවන් දීම
+          pronunciation: උච්චාරණය
+          reading: කියවීම
+          speaking: කතා කරමින්
+          writing: ලේඛන
+        levels:
+          long:
+            advanced: උසස් පෙළ
+            elementary: මූලික මට්ටම
+            intermediate: අතරමැදි මට්ටම
+            no_knowledge: දැනුමක් නැත
+            pre_intermediate: පූර්ව අතරමැදි මට්ටම
+            upper_intermediate: ඉහළ අතරමැදි මට්ටම
+          short:
+            advanced: උසස්
+            beginner: ආරම්භකයා
+            intermediate: අතරමැදි
+        sort_by:
+          most_rated: වඩාත්ම ශ්‍රේණිගත කර ඇත
+          newest: අළුත්ම
+          popularity: ජනප්‍රියත්වය
+      filters: පෙරහන්
+      focus_on: යොමු කරන්න
+      focus_on_title: මට අවධානය යොමු කිරීමට අවශ්‍යයි
+      hide_lessons: පාඩම් සඟවන්න
+      hours: පැය
+      i_understand: මට තේරෙනවා
+      i_want_to_learn: මට ඉගෙනගන්න ඕන
+      in_language: "%{language} හි"
+      language: භාෂාව
+      learn_more: වැඩිදුර ඉගෙන ගන්න
+      less_settings: අඩු සැකසුම්
+      lessons: පාඩම්
+      lessons_available: "%{number} පාඩම් තිබේ"
+      lessons_catalog_page_subtitle: භාෂා වීරයා වන්න.
+      lessons_catalog_page_title: භාෂා පා .මාලාවක් සමඟ ඔබේ සීමාවන් පුළුල් කරන්න
+      level: මට්ටමින්
+      min: අවම
+      more_settings: තවත් සැකසුම්
+      navbar:
+        close: මෙනුව වසන්න
+        menu: මෙනු
+        select_language: භාෂාව තෝරන්න
+      need_to_buy_course: ඔබ මුලින්ම පා course මාලාවක් වෙන්කරවා ගත යුතුයි
+      no_description: විස්තරයක් සපයා නැත
+      no_results: කණගාටුයි, අපට කිසිදු ගැලපීමක් සොයාගත නොහැකි විය
+      or: හෝ
+      per_month: මසකට
+      plans: සැලසුම්
+      privacy_policy: රහස්යතා ප්රතිපත්තිය
+      rating: ශ්‍රේණිගත කිරීම
+      remove_all_filters: සියලුම පෙරහන් ඉවත් කරන්න
+      reviews: සමාලෝචන
+      save: සුරකින්න
+      search: සෙවීම
+      select_dots: තෝරන්න...
+      select_languages: භාෂා තෝරන්න
+      select_num_languages: "%{number} භාෂා තෝරන්න"
+      short_levels:
+        a1: ඒ 1
+        a2: ඒ 2
+        b1: බී 1
+        b2: බී 2
+        c1: සී 1
+        c2: සී 2
+        zero_level: A0
+      show_all: සියල්ල පෙන්වන්න
+      show_all_lessons: සියලුම පාඩම් පෙන්වන්න
+      show_lessons: "%{number} පාඩම් පෙන්වන්න"
+      show_more: තව පෙන්වන්න
+      sign_up_with_lingu_for: සඳහා ලින්ගු නෝර්වේ සමඟ ලියාපදිංචි වන්න
+      skills: "%{count} කුසලතා"
+      sort_by: අනුව තෝරන්න
+      start_typing_here: මෙහි ටයිප් කිරීම ආරම්භ කරන්න
+      teach: උගන්වන්න
+      terms_and_conditions: නියම සහ කොන්දේසි
+      time_range: කාල පරාසය
+      try_adjusting_your_search: ඔබගේ පෙරහන් වෙනස් කිරීමෙන් ඔබගේ සෙවුම වෙනස් කිරීමට
+        උත්සාහ කරන්න
+      try_this_course: මෙම පා .මාලාව උත්සාහ කරන්න
+      website_language: වෙබ් අඩවි භාෂාව
+      words: වචන
+    games:
+      finished:
+        go_to_next_exercise: හොඳට කලා! ඊළඟ ව්යායාමයට යන්න
+      flashcard:
+        buttons:
+          finish: අවසන් කරන්න
+          next: ඊළඟ
+          previous: කලින්
+        check_out_new_words: මෙම පාඩමෙන් ඔබ ඉගෙන ගන්නා නව වචන බලන්න
+        frequency_of_word_usage: "%{language} හි වචන භාවිතයේ වාර ගණන"
+        keep_practice_to_learn_all_words: "%{count} වචන සමාලෝචනය කර අපි ක්‍රීඩා කිහිපයක්
+          කරමු!"
+        word_frequency:
+          level1: කලාතුරකින් භාවිතා වේ
+          level2: කලාතුරකින් භාවිතා වේ
+          level3: වචන සංඛ්‍යාතය - මධ්‍යම
+          level4: වචන සංඛ්‍යාතය - මධ්‍යම
+          level5: පොදු
+          level6: ඉතා සුලභයි
+      match_word:
+        click_and_move_each_word_to_counterpart: සෑම වචනයක්ම එහි සහකරු වෙත ක්ලික්
+          කර ගෙන යන්න
+        start_heading: යුගලයක් සෑදීමට වචන ගලපන්න
+        time_is_up: කාලය ඉවරයි!
+      skip_tutorial: මඟ හරින්න
+      time_is_up: කාලය ඉවරයි!
+      word_nodes:
+        match_letters_to_form_word: වචනයක් සෑදීමට අකුරු ගලපන්න
+      word_waterfall:
+        do_not_hesitate: වේගවත් කරමු!
+        go_to_next_exercise: ඊළඟ ව්යායාමයට යන්න
+        select_correct_translation: නිවැරදි ගැලපීම තෝරන්න
+        well_done: හොඳට කලා!
+    home_page:
+      hello: හෙලෝ,
+      popular_lessons: ජනප්‍රිය පාඩම්
+      show_more: තව පෙන්වන්න
+      time: "%{count} මිනි"
+      today_lesson: අද දින ඔබේ පාඩම
+      user_name: "%{name}!"
+      words: "%{count} වචන"
+    idle_screen:
+      by_author: "%{authorName} විසින්"
+      continue_lesson: පාඩම දිගටම කරගෙන යන්න
+      exit: පිටවීම
+      idle_message: ඔබ කාලයක් තිස්සේ අක්‍රියව සිටියා ...
+    lesson_page:
+      back_to_course_page: පා course මාලා පිටුවට ආපසු
+      close: වසන්න
+      continue_lesson: පාඩම දිගටම කරගෙන යන්න
+      followed: අනුගමනය කරන ලදී
+      hamburger_menu_btn: හැම්බර්ගර් මෙනුව
+      lesson_given: පාඩම්
+      not_started: ආරම්භ කර නැත
+      or: හෝ
+      part_complete: "%{percent}% සම්පූර්ණයි"
+      restart_lesson: නැවත ආරම්භ
+      section_check: චෙක් පත
+      section_check_info: "%{count} පරීක්ෂණ"
+      section_learn: ඉගෙන ගන්න
+      section_learn_info: "%{count} මිනිත්තු නැරඹීමට සහ කියවීමට"
+      section_play: සෙල්ලම් කරන්න
+      section_play_info: "%{count} පුහුණු වීමට වචන"
+      start_lesson: පාඩම ආරම්භ කරන්න
+      step_progress: "%{percent}%"
+      subscribe: අනුගමනය කරන්න
+      subscribed: අනුගමනය කරන ලදී
+      subscribers: අනුගාමිකයන්
+      time_min: "%{minutesNumber} මිනි"
+      unsubscribe: අනුගමනය නොකරන්න
+      webview_error_title: මොකක්හරි වැරැද්දක් වෙලා...
+      words_number: "%{wordsNumber} නව වචන"
+    lesson_task:
+      cancel_button: අවලංගු කරන්න
+      check:
+        navigation_next: ඊළඟ
+        navigation_previous: කලින්
+        navigation_skip: මඟ හරින්න
+      controls_panel:
+        font_size_button: අකුරු ප්‍රමාණය
+        high_contrast_button:
+          origin: ඉහළ වෙනස
+          short: වෙනස
+        hints_button: ඉඟි
+        music_playback_button:
+          origin: සංගීත වාදනය
+          short: සංගීතය
+        sound_effects_button:
+          origin: ශබ්ද ප්‍රයෝග
+          short: ශබ්දය
+      exit_button: පිටවීම
+      finish_button: අවසන් කරන්න
+      finished:
+        back_to_learn: නැවත ඉගෙනීමට
+        back_to_lesson_page: පාඩම් පිටුවට ආපසු යන්න
+        back_to_results_page: ප්‍රති result ල පිටුවට ආපසු යන්න
+        bad_result_message: හ්ම් ... පාඩම තවත් වරක් ගැනීමට උත්සාහ කරන්න
+        close_lesson: පාඩම වසන්න
+        correct_answers_list: නිවැරදි පිළිතුරු ලැයිස්තුව
+        good_result_message: මට පේනවා ඔයා උත්සාහයක් දැම්මා කියලා!
+        great_result_message: හොඳට කලා! මේවා විශිෂ්ට ප්‍රති results ල!
+        next_course_lesson: පා course මාලාවේ ඊළඟ පාඩමට යන්න
+        no_results: ඔබට තවමත් පරීක්ෂණ ප්‍රති results ල නොමැත
+        no_results_text: කරුණාකර, පාඩම සම්පූර්ණ කර ප්‍රති pass ල ලබා ගැනීම සඳහා පරීක්ෂණය
+          සමත් වන්න
+        see_correct_answers_list: නිවැරදි පිළිතුරු ලැයිස්තුව බලන්න
+        train_more: වැඩි වැඩියෙන් පුහුණු වන්න, ඊළඟ වතාවේ ඔබට වඩා හොඳ ප්‍රති results
+          ල ලැබෙනු ඇත!
+        you_finished_lesson: මහා! ඔබ පාඩම අවසන් කළා
+      go_back: ආපසු යන්න
+      next_button: ඊළඟ
+      not_available_task: මෙම කාර්යය තවම නොමැත
+      start_button: ආරම්භ කරන්න
+      tasks:
+        check:
+          assignment:
+            accept: පිළිගන්න
+            author_will_check_your_answer: >-
+              %{author} ඔබේ පිළිතුර සමාලෝචනය කර සාමාන්‍යයෙන් දින 1-2 ක් තුළ ප්‍රතිපෝෂණය
+              ලබා දෙනු ඇත
+            continue_writing: දිගටම ලිවීම
+            copy: පිටපත් කරන්න
+            delete: මකන්න
+            delete_record: වාර්තාව මකන්න
+            edit: සංස්කරණය කරන්න
+            essay_does_not_have_enough_words: >-
+              ඔබේ පිළිතුරෙහි අවම වශයෙන් %{minWordsNumber} වචන අඩංගු විය යුතුය. ඔබගේ
+              පිළිතුර දැනට %{currentWordsNumber} වචන වේ.
+            followers_count: "%{followersCount} අනුගාමිකයන්"
+            lessons_count: "%{lessonsCount} පාඩම්"
+            minimal_recording_time: අවම පටිගත කිරීමේ කාලය - %{minimalRecordingTime}
+            minimum_characters_amount: අවම අක්ෂර - %{minimumCharactersAmount}
+            minimum_words_amount: අවම වචන - %{minimumAmount}
+            record_again: නැවත පටිගත කරන්න
+            record_voice: හ voice පටිගත කරන්න
+            send_anyway: කෙසේ හෝ යවන්න
+            send_to_review: සමාලෝචනයට යවන්න
+            skip: මඟ හරින්න
+            too_short_answer: ඉතා කෙටි පිළිතුරකි
+            type_your_answer: ඔබේ පිළිතුර ටයිප් කරන්න
+            unknown_task_type: නොදන්නා කාර්ය වර්ගය
+            upgrade_licence: බලපත්‍රය වැඩි දියුණු කරන්න
+            upgrade_your_plan: ගුරුවරුන්ගේ සමාලෝචන සමඟ පැවරුම් උත්සාහ කිරීමට ඔබගේ
+              සැලැස්ම වැඩි දියුණු කරන්න
+            upload_files: ගොනු උඩුගත කරන්න
+            write_essay: රචනාව ලියන්න
+            you_have_used_amount_of_assignments: ඔබ %{amountOfAssignments} පැවරුම්
+              බැර භාවිතා කර ඇත
+          fill_in_blanks:
+            sentence_gap: වාක්‍ය පරතරය
+          fill_in_table:
+            column_answer_placeholder: පිළිතුර
+            column_question_placeholder: ප්‍රශ්නය
+            example: උදාහරණයක්
+          true_false:
+            'false': අසත්‍යය
+            'true': සැබෑ
+        learn:
+          translatable_text:
+            show_original: මුල් පිටපත පෙන්වන්න
+            translate_into: ගූගල් සමඟ %{languageName} බවට පරිවර්තනය කරන්න
+            translate_into_your_lang: ගූගල් සමඟ ඔබේ භාෂාවට පරිවර්තනය කරන්න
+        play:
+          arrange_words:
+            start_screen:
+              heading: දී ඇති වචන වලින් වාක්‍යයක් සාදන්න
+          audition:
+            start_screen:
+              heading: ශ්‍රවණයට සවන් දී ඔබ ඇසූ වචනය තට්ටු කරන්න
+          dictation:
+            get_help: උදව් ලබා ගන්න
+            i_do_not_know: මම දන්නේ නැ
+            input_placeholder: ඔබ ඇසූ දේ මෙහි ඇතුළත් කරන්න
+            start_screen:
+              heading: ඔබට ඇසෙන දේ සවන් දී ලියන්න
+          fill_gap:
+            start_screen:
+              heading: වචනය සහ එහි අර්ථය ගැලපෙන්න
+          finish_screen:
+            go_to_next_exercise: හොඳට කලා! ඊළඟ ව්යායාමයට යන්න
+          image_hotspot:
+            start_screen:
+              heading: පින්තූරයේ ඇති වස්තූන් නිවැරදිව නම් කරන්න
+          image_object:
+            start_screen:
+              heading: ඊළඟ පින්තූරයෙන් නිවැරදි වස්තුව තෝරන්න
+          inline_dropdown:
+            start_screen:
+              heading: වාක්‍යයට ගැලපෙන වචන තෝරන්න
+          mark_word:
+            start_screen:
+              heading: පෙළ කියවා රූපයට ගැලපෙන වචනය තෝරන්න
+          minimal_pairs:
+            start_screen:
+              heading: වීඩියෝව නරඹා නිවැරදි විකල්පය තෝරන්න
+    locale:
+      currency_switcher_title: මුදල් මාරුව
+      lang_switcher_title: භාෂා මාරුව
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ඩොයිෂ්
+        el: Greek
+        en: ඉංග්රීසි
+        eo: Esperanto
+        es: එස්පානෝල්
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ෆ්‍රැන්චයිස්
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ඉතාලියානෝ
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: ලිටූවික් කල්බා
+        lv: ලැට්වීසු වලෝඩා
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: නොර්ස්ක්
+        ne: Nepali
+        nl: නෙඩර්ලන්ඩ්ස්
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: පොල්ස්කි
+        ps: Pashto
+        pt: පෘතුගීසි
+        ro: ලිම්බා රොමානි
+        ru: Русский
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: සෝමාලි
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: කිස්වාහිලි
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: ටර්කි
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ශ්රව්ය උපකරණ පූරණය වේ
+        aria_pause_button: විරාමය
+        aria_play_button: සෙල්ලම් කරන්න
+        aria_reload_button: නැවත පූරණය කරන්න
+        aria_stop_button: නවත්වන්න
+        reload_message: >-
+          ශ්රව්ය උපකරණ පූරණය කිරීමට අපොහොසත් විය. නැවත පූරණය කිරීමට කරුණාකර බොත්තම
+          ක්ලික් කරන්න.
+    mobile_modal:
+      apply: අයදුම් කරන්න
+      cancel: අවලංගු කරන්න
+      clear: පැහැදිලිව
+      save: සුරකින්න
+    page404:
+      goToStartLessonPage: ආරම්භක පාඩම් පිටුවට යන්න
+      ooops: අපොයි ...
+      sorry_message: කණගාටුයි, ටෝර්ට මෙම පිටුව සොයාගත නොහැකි විය
+    profile:
+      navigation:
+        log_out: ඉවත් වන්න
+        my_profile: මගේ පැතිකඩ
+        settings: සැකසුම්
+      onboarding:
+        choose_native_language: ඔබට තේරෙන ඔබේ මව් භාෂාව හෝ භාෂාව තෝරන්න
+        do_you_understand_english: ඔබට ඉංග්රීසි තේරෙනවාද?
+        hello: හෙලෝ
+        language_levels:
+          a1: මූලික මට්ටම
+          a2: පූර්ව අතරමැදි මට්ටම
+          b1: අතරමැදි මට්ටම
+          b2: ඉහළ අතරමැදි මට්ටම
+          c1: උසස් පෙළ
+          no_knowledge: දැනුමක් නැත
+        language_not_supported:
+          note: භාෂාව ලබා ගත හැකි ඉක්මනින් අපි ඔබට දන්වන්නෙමු
+          title: කණගාටුයි, නමුත් අපි තවමත් මෙම භාෂාවට සහාය නොදක්වමු
+          try_another_language: වෙනත් භාෂාවක් උත්සාහ කරන්න
+        'no': නොමැත
+        search_placeholder: සෙවීම...
+        show_more_languages: වෙනත් භාෂා
+        target_language_question: ඔබට ඉගෙනීමට අවශ්‍ය භාෂාව කුමක්ද?
+        what_is_language_level: ඔබගේ %{languageName} මට්ටම ඔබ තක්සේරු කරන්නේ කෙසේද?
+        'yes': ඔව්
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: ලින්ගුගේ රහස්‍යතා ප්‍රතිපත්තිය
+        support: සහාය
+      logout: ලොග්අවුට්
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: ඔබ අනුගමනය කරන ගුරුවරුන්ගෙන් සහ පාසල් වලින් යාවත්කාලීන
+                කිරීම් ලබා ගන්න
+              sections:
+                app_notifications: යෙදවුමේ දැනුම්දීම්
+                email: විද්යුත් තැපෑල
+              title: ඉගෙනුම් ආධාර
+            marketing:
+              description: >-
+                සියලුම ප්‍රවර්ධන, යාවත්කාලීන කිරීම් සහ ලින්ගු වෙතින් දේවානුභාවයෙන්
+                සිටීම පිළිබඳව දැනුවත් වන්න
+              sections:
+                browser_notifications: බ්‍රව්සර් දැනුම්දීම්
+                email: විද්යුත් තැපෑල
+              title: අලෙවි
+          title: සම්බන්ධතා මනාපයන්
+        personal_information:
+          delete_photo: ඡායාරූපය මකන්න
+          email: විද්යුත් තැපෑල
+          first_name: මුල් නම
+          last_name: අවසන් නම
+          social_accounts:
+            connected: සම්බන්ධයි
+            facebook: ෆේස්බුක්
+            google: ගූගල්
+            microsoft: මයික්‍රොසොෆ්ට්
+            not_connected: සම්බන්ධ නැත
+            title: සමාජ ගිණුම්
+          title: පුද්ගලික තොරතුරු
+          update_photo: ඡායාරූපය යාවත්කාලීන කරන්න
+        school:
+          active_licence: සක්‍රීය බලපත්‍රය
+          active_status: සක්‍රීයයි
+          delete_profile: මගේ පැතිකඩ මකන්න
+          delete_profile_modal:
+            body: |-
+              ඔබගේ සියලු දත්ත සදහටම මකා දමනු ඇත. අහෝසි කිරීමේ බොත්තමක් නොමැත, පසුව අපට එය නැවත ලබා ගත නොහැක.
+              ඔබේ භාෂාමය පැතිකඩ සහ ඔබගේ සියලු දත්ත ස්ථිරවම මකා දැමීමට ඔබට අවශ්‍යද?
+            cancel: අවලංගු කරන්න
+            confirm: ඔව්, එය මකන්න
+            i_understand_the_consequences: එහි ප්‍රතිවිපාක මට තේරෙනවා
+            title: ඔබගේ පැතිකඩ මකන්නද?
+          expired: කල් ඉකුත් වූ %{expire_date}
+          expires: "%{expire_date} කල් ඉකුත් වේ"
+          inactive_status: අක්‍රීයයි
+          revoke_access: කියවීමේ ප්‍රවේශය අවලංගු කරන්න
+          sections:
+            contact_school: පාසල අමතන්න
+            export_my_data: මගේ දත්ත අපනයනය කරන්න
+            read_school_privacy_policy: පාසල් රහස්‍යතා ප්‍රතිපත්තිය කියවන්න
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: සංගීත වාදනය
+              sound_effects: ශබ්ද ප්‍රයෝග
+              title: ශබ්දය
+            visual:
+              dark_theme: අඳුරු තේමාව
+              font_size:
+                test_text: වැටෙහි අනෙක් පැත්තේ තණකොළ සෑම විටම හරිත වේ
+                title: අකුරු ප්‍රමාණය
+              high_contrast: ඉහළ වෙනස
+              hints: ඉඟි
+              title: දෘශ්‍ය
+          title: ශබ්දය සහ දෘශ්‍ය
+        training_settings:
+          sections:
+            i_understand: මට තේරෙනවා
+            i_want_to_learn: මට ඉගෙනගන්න ඕන
+            target_language_level: ඉංග්‍රීසි මට්ටම
+          title: පුහුණු සැකසුම්
+      settings_title: සැකසුම්
+    teacher_card:
+      followers_count:
+        one: 1 අනුගාමිකයෙක්
+        other: "%{count} අනුගාමිකයන්"
+      lessons_count:
+        one: 1 පාඩම
+        other: "%{count} පාඩම්"

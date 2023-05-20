@@ -1,0 +1,9 @@
+tr id=dom_id(language)
+  td= language.code
+  td= link_to language.system_name, admin_language_words_path(language), class: 'font-weight-bold'
+  td= language.name
+  td= link_to language.words_count, admin_language_words_path(language), class: 'language-phrase-link'
+  td= link_to language.collections_count, admin_language_collections_path(language), class: 'language-collection-link'
+  td
+    - if policy(language).update?
+      = link_to t('edit'), edit_admin_language_path(language), class: 'btn btn-falcon-default btn-sm'

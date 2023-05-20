@@ -1,0 +1,28 @@
+- student = team_student.student
+tr id=dom_id(student)
+  - active_target_language = student.active_target_language
+  - native_language = student.native_language
+  - active_student_target_language = student.active_student_target_language
+  td
+    .d-flex.align-items-center
+      = custom_profile_tag(student)
+      span.student-full-name.ml-3
+        = link_to student.full_name, school_student_path(student), class: 'text-black'
+    td.student-email
+      = student.email
+    td.d-flex.flex-column.data-deletion-date
+      span.date-distance
+        = t('school.team_students.archived_students.table_headers.date_in', date: distance_of_time_in_words(Time.zone.now, team_student.scheduled_destruction_date))
+      span.ended-date
+        = t('.archived_at', date: l(team_student.archived_at, format: :short))
+    td= render partial: 'school/team_students/language_info', locals: { student: student }
+    td
+      .student-actions
+        - if policy(student).update?
+          = button_to restore_student_school_student_path(student), class: 'btn shadow-none p-0', method: :get, remote: true, title: t('.restore_student'), data: { toggle: 'tooltip', placement: 'bottom', confirm: t('school.team_students.archived_students.table_headers.restore_student_confirm')} do
+            = image_tag('icons/restore.svg')
+          span.separator
+          = button_to edit_school_student_path(student), class: 'btn shadow-none p-0', method: :get, title: t('school.team_students.list_row.edit'), data: { toggle: 'tooltip', placement: 'bottom' }, remote: true do
+            = image_tag('icons/edit.svg')
+          = button_to remove_student_school_student_path(student), class: 'btn shadow-none p-0', method: :get, title: t('.delete_student'), remote: true, data: { toggle: 'tooltip', placement: 'bottom', confirm: t('school.team_students.archived_students.table_headers.remove_student_confirm')} do
+            = image_tag('icons/close.svg')

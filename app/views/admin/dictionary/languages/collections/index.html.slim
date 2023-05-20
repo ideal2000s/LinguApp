@@ -1,0 +1,76 @@
+- set_page_title @language.name
+p#notice = notice
+
+.card
+  .card-header
+    h1= language.name
+    .justify-content-between
+      .btn-group
+        = link_to admin_language_words_path(@language), class: 'card-link' do
+          = t('admin.dictionary.languages.words.index.count_phrases', count: @language.words_count)
+        = link_to admin_language_collections_path(@language), class: 'card-link' do
+          = t('admin.dictionary.languages.words.index.count_collections', count: @language.collections_count)
+        = link_to new_admin_language_collection_path(language_id: @language.id), remote: true, class: 'card-link', id: 'btn_new_collection' do
+          i.fas.fa-plus.mr-2
+          = t('.new_collection')
+
+  .card-body.bg-light
+    = search_form_for search, url: admin_language_collections_path(language), class: 'collection-search-form' do |f|
+      h5.mb-3
+        = t('admin.dictionary.languages.words.index.filter')
+        - if search.conditions.length > 0
+          button.btn.btn-falcon-default.btn-sm.ml-2 aria-label="Close" type="button" onclick="window.location = '#{admin_language_collections_path(language)}';"
+            i.fas.fa-times.fa-fw
+      .row
+        .col-sm-12.col-md-6
+          = f.select :level_eq, options_for_select({"Zero level" => 1, "A1" => 10, "A2" => 20, "B1" => 30, "B2" => 40, "C1" => 50, "C2" => 60}, search.level_eq),
+                  { include_blank: t('.any_level') }, { class: 'form-control js-submit-on-change' }
+        .col-sm-12.col-md-6
+          = f.search_field :name_cont, class: 'form-control', placeholder: t('layouts.application.search'), id: 'collection_search'
+      .row
+        .col-sm-12
+          .btn-group.mt-3.w-100
+            - ('A'..'Z').each do |letter|
+              = link_to letter, "#", data: { letter: letter }, class: "btn btn-outline-dark btn-sm px-1 js-search-collection-letter #{search.name_start == letter ? 'active' : ''}"
+          = f.hidden_field :name_start
+
+  table.table.table-dashboard.mt-3
+    thead
+      tr
+        th= sort_link(search, :name)
+          = t('activerecord.models.collection')
+        th= sort_link(search, :level)
+          = t('teach.lessons.list.level')
+        th
+          = link_to t('.tags'), ''
+        th= sort_link(search, :audio_percentage)
+          = t('admin.dictionary.languages.words.index.audio_recorded')
+        th= sort_link(search, :image_percentage)
+          = t('admin.dictionary.languages.words.index.illustrated')
+        th= sort_link(search, :words_count)
+          = t('.word_count')
+    tbody
+      - collections.each do |collection|
+        - audio_coverage = collection.word_with_audio_count / collection.words_count.to_f
+        - image_coverage = collection.word_with_image_count / collection.words_count.to_f
+        tr id=dom_id(collection)
+          td= link_to collection.name, admin_language_collection_path(language, collection)
+          td= level_tag(collection.level)
+          td.align-middle
+            - collection.tags.flatten.reject { |s| s.empty? }.each do |tag|
+              span.badge.badge-soft-secondary.ml-1= t(tag, scope: 'activerecord.attributes.lessons.tags')
+          td.audio-coverage.align-middle
+            .progress
+              .progress-bar role='progressbar' aria-valuemax='100' class="#{ audio_coverage < 1 ? 'part-progress' : 'fulfill-progress'}" style="width: #{audio_coverage * 100}%"
+          td.image-coverage.align-middle
+            .progress
+              .progress-bar role='progressbar' aria-valuemax='100' class="#{ image_coverage < 1 ? 'part-progress' : 'fulfill-progress'}"style="width: #{image_coverage * 100}%"
+          td= link_to collection.words_count, admin_language_collection_path(language, collection)
+          td= link_to t('admin.teams.edit.action'), edit_admin_language_collection_path(language, collection), remote: true, class: 'btn btn-falcon-default btn-sm', id: "#{collection.name}_edit_link"
+
+.modal id='new-collection-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog role="document"
+    .modal-content
+.modal id='new-phrase-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog role="document"
+    .modal-content

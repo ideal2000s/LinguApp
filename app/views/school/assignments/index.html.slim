@@ -1,0 +1,21 @@
+- set_page_title t('school.assignments.assginments_management')
+.assignments-container.school-info-container
+  .assignments-list-container
+    .mb-4
+      .d-flex.align-items-center
+        h1.mb-0.pb-3
+          = t('.assignments_from_course')
+        = link_to school_assignments_path, class: 'ml-4', id: 'school_assignments_link'
+          = t('school.assignments.school_assignments')
+    - if documents.any?
+      = render 'documents_filters'
+      hr
+      = render 'assignment_list', documents: documents
+    - else
+      .text-center.mt-8
+        = image_tag 'dashboard/add-teacher.svg', class: 'img-fluid'
+        br
+        .h4.mt-5= t('.no_documents_msg')
+  .assignment-info.overflow-auto
+    = render 'assignments_stats', assignments_stats: assignments_stats
+

@@ -1,0 +1,33 @@
+$('#school-main-modal').modal('hide');
+$("#invite-students-modal").find(".close").trigger("click");
+$("#new-student-modal").find(".modal-content").html("<%= j render 'form', path: school_create_students_path, student: student, method: :post, action_name: 'new' %>");
+$("#new-student-modal").modal('show');
+setIntlTelInput();
+function formatCountry (country) {
+  country_info = country.text.split(', ');
+  if(!country.id) { return '<%= t('school.team_students.form.select_language') %>' }
+  return $(
+    `<img src=${country_info[0]} class="dropdown-item-flag"  alt="flag"/>` +
+    `<span class="flag-text ml-2">${country_info[1]}</span>`
+  );
+}
+
+$("#new-student-modal .select2").select2({ theme: 'bootstrap4', dropdownParent: $('#new-student-modal .modal-content'), minimumResultsForSearch: -1 })
+$("#new-student-modal .select-country").select2({
+  theme: 'bootstrap4',
+  dropdownParent: $('#new-student-modal .modal-content'),
+  templateResult: formatCountry,
+  templateSelection: formatCountry,
+  minimumResultsForSearch: -1
+})
+$("#new-student-modal .select-support-language").select2({
+  theme: 'bootstrap4',
+  dropdownParent: $('#new-student-modal .modal-content'),
+  templateResult: formatCountry,
+  templateSelection: formatCountry,
+})
+
+<% if student.errors.empty? %>
+  $("#new-student-modal").data('default-content', $("#new-student-modal form").serialize());
+  updateModalBackdrop($("#new-student-modal"));
+<% end %>

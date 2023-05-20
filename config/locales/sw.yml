@@ -1,0 +1,607 @@
+---
+sw:
+  course_mailer:
+    course_assigned_notification:
+      button: Anza kozi
+      click_start_lesson: Bonyeza 'Anza somo'
+      follow_course_link: Bonyeza kitufe kufungua kozi
+      footer_text: Rudi kwa Lingu ili ujifunze kitu kipya kila siku!
+      get_started_line: 'Hivi ndivyo unavyoanza:'
+      notification_link: Mipangilio ya arifa
+      open_lesson: Fungua somo la kwanza
+      or_paste_this_link: au weka kiungo hiki kwenye kivinjari chako
+      sign_in_with_email: Ingia na anwani yako ya barua pepe (%{email})
+      support_link: Msaada
+      title: Kuanza na %{course}
+    new_document_comment:
+      author_text: "%{author} imeacha ukaguzi wa mgawo wako"
+      button_text: Angalia
+      button_url_helper: 'au weka kiungo hiki kwenye kivinjari chako:'
+      footer_text: Kuna mengi zaidi ya kujifunza ...
+      notification_link: Mipangilio ya arifa
+      subject_line: Maoni mapya ya zoezi
+      support_link: Msaada
+    otp:
+      ignore_msg: Ikiwa haukufanya ombi hili, puuza tu barua pepe.
+      subject_line: Nambari yako ya kipekee ya Lingu
+      unique_code_for_lingu: Hapa kuna nambari yako ya kipekee ya Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Tayari una akaunti?
+      back: Nyuma
+      back_to_sign_in: Rudi kwa Ingia
+      check_your_email_for_a_code: Angalia barua pepe yako kwa msimbo wako
+      continue: Endelea
+      continue_with_email: Endelea na barua pepe
+      continue_with_provider: Endelea na %{provider}
+      did_not_receive_a_code: Hukupokea nambari ya kuthibitisha?
+      email_address: Barua pepe
+      first_name: Jina la kwanza
+      get_unique_code: Pata nambari ya kipekee ya kuingia
+      join_lingu: Jiunge na Lingu
+      last_name: Jina la familia
+      more_login_options: Chaguzi zaidi za kuingia
+      no_account_question: Huna akaunti?
+      or: au
+      resend_code: Tuma msimbo tena
+      sign_in: Weka sahihi
+      sign_up: Jisajili
+      want_to_receive_marketing_messages: Ninataka kupokea ujumbe wa uuzaji kutoka
+        kwa Lingu
+      we_ve_sent_a_code: >-
+        Tumetuma nambari ya nambari 6 kwa <strong> {{email}} </strong>. Nambari inaisha
+        baada ya dakika 15, kwa hivyo tafadhali ingiza hivi karibuni.
+    cookie_agreement:
+      agree: Kubali
+      condition: >-
+        Tunatumia kuki kuchanganua utendaji wa wavuti na kutoa yaliyomo kwa kibinafsi.
+        Kwa kubofya "Kubali", unakubali masharti yetu.
+    course:
+      accredited_course_provider: Mtoaji wa kozi iliyothibitishwa
+      apply: Tumia
+      apply_filters: Tumia vichungi
+      by: Na
+      cancel: Ghairi
+      categories: makundi ya %{count}
+      category: Jamii
+      clear: Wazi
+      clear_filters: Futa vichungi
+      contact_us: Wasiliana nasi
+      could_not_find_match_for: Samahani, hatukupata mechi yoyote ya
+      course_language: Lugha ya kozi
+      duration: Muda
+      filter_settings:
+        categories:
+          academic: Kielimu
+          business: Biashara
+          fashion: Mtindo
+          food_drink: Chakula na kinywaji
+          for_kids: Kwa watoto
+          general: Mkuu
+          health: Afya
+          legal: Kisheria
+          sport: Mchezo
+          travel: Kusafiri
+        durations:
+          t0_600: "<Dakika 10"
+          t1800_3600: Dakika 30-60
+          t3600_86400: Saa 1+
+          t600_1800: Dakika 10-30
+        focus_on:
+          conversation: Mazungumzo
+          grammar: Sarufi
+          listening: Kusikiliza
+          pronunciation: Matamshi
+          reading: Kusoma
+          speaking: Akiongea
+          writing: Kuandika
+        levels:
+          long:
+            advanced: Kiwango cha juu
+            elementary: Kiwango cha msingi
+            intermediate: Kiwango cha kati
+            no_knowledge: Hakuna maarifa
+            pre_intermediate: Kiwango cha kati cha kati
+            upper_intermediate: Kiwango cha juu cha kati
+          short:
+            advanced: Imesonga mbele
+            beginner: Mwanzoni
+            intermediate: Kati
+        sort_by:
+          most_rated: Iliyokadiriwa zaidi
+          newest: Mpya kabisa
+          popularity: Umaarufu
+      filters: Vichungi
+      focus_on: Zingatia
+      focus_on_title: Nataka kuzingatia
+      hide_lessons: Ficha masomo
+      hours: Masaa
+      i_understand: Naelewa
+      i_want_to_learn: Nataka kujifunza
+      in_language: katika %{language}
+      language: Lugha
+      learn_more: Jifunze zaidi
+      less_settings: Mipangilio kidogo
+      lessons: Masomo
+      lessons_available: masomo ya %{number} yanapatikana
+      lessons_catalog_page_subtitle: Masomo mkondoni kwa kuzungumza kwa ufasaha na
+        ujasiri
+      lessons_catalog_page_title: Jifunze lugha kwa urahisi na kwa ufanisi na Lingu
+      level: Kiwango
+      min: Dak
+      more_settings: Mipangilio zaidi
+      navbar:
+        close: Funga menyu
+        menu: Menyu
+        select_language: Chagua lugha
+      need_to_buy_course: Unahitaji kuweka kozi kwanza
+      no_description: Hakuna maelezo yaliyotolewa
+      no_results: Samahani, hatukupata mechi yoyote ya
+      or: au
+      per_month: kwa mwezi
+      plans: Mipango
+      privacy_policy: Sera ya faragha
+      rating: Upimaji
+      remove_all_filters: Ondoa vichungi vyote
+      reviews: Mapitio
+      save: Okoa
+      search: Tafuta
+      select_dots: Chagua ...
+      select_languages: Chagua lughauges
+      select_num_languages: Chagua lugha %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Onyesha yote
+      show_all_lessons: Onyesha masomo yote
+      show_lessons: Onyesha masomo ya %{number}
+      show_more: Onyesha zaidi
+      sign_up_with_lingu_for: Jisajili na Lingu Norway kwa
+      skills: ujuzi wa %{count}
+      sort_by: Panga kwa
+      start_typing_here: Anza kuandika hapa
+      teach: Fundisha
+      terms_and_conditions: Sheria na Masharti
+      time_range: Kiwango cha muda
+      try_adjusting_your_search: Jaribu kurekebisha utaftaji wako kwa kubadilisha
+        vichungi vyako
+      try_this_course: Jaribu kozi hii
+      website_language: Lugha ya wavuti
+      words: Maneno
+    games:
+      finished:
+        go_to_next_exercise: Umefanya vizuri! Nenda kwenye zoezi linalofuata
+      flashcard:
+        buttons:
+          finish: Maliza
+          next: Ifuatayo
+          previous: Iliyotangulia
+        check_out_new_words: Angalia maneno mapya ambayo utajifunza katika somo hili
+        frequency_of_word_usage: Mzunguko wa matumizi ya maneno katika %{language}
+        keep_practice_to_learn_all_words: Pitia maneno ya %{count} na tucheze michezo
+          mingine!
+        word_frequency:
+          level1: Inatumiwa mara chache
+          level2: Inatumiwa mara chache
+          level3: Mzunguko wa neno - kati
+          level4: Mzunguko wa neno - kati
+          level5: Kawaida
+          level6: Kawaida sana
+      match_word:
+        click_and_move_each_word_to_counterpart: Bonyeza na songa kila neno kwa mwenzake
+        skip_tutorial: Hopp juu
+        start_heading: Linganisha maneno kutengeneza jozi
+        time_is_up: Opp med farta!
+      skip_tutorial: Ruka
+      time_is_up: Muda umekwisha!
+      word_nodes:
+        match_letters_to_form_word: Linganisha barua ili kuunda neno
+      word_waterfall:
+        do_not_hesitate: Wacha tuharakishe!
+        go_to_next_exercise: Nenda kwenye zoezi linalofuata
+        select_correct_translation: Chagua mechi sahihi
+        well_done: Umefanya vizuri!
+    home_page:
+      hello: Halo,
+      popular_lessons: Masomo maarufu
+      show_more: Onyesha zaidi
+      time: "%{count} dakika"
+      today_lesson: Somo lako la leo
+      user_name: "%{name}!"
+      words: maneno ya %{count}
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Endelea na somo
+      exit: Utgång
+      idle_message: Umesita kwa muda ...
+    lesson_page:
+      back_to_course_page: Rudi kwenye ukurasa wa kozi
+      close: Funga
+      continue_lesson: Endelea na somo
+      followed: Imefuatwa
+      hamburger_menu_btn: Menyu ya hamburger
+      lesson_given: masomo
+      not_started: haijaanza
+      or: Au
+      part_complete: "%{percent}% imekamilika"
+      restart_lesson: Anzisha tena
+      section_check: Angalia
+      section_check_info: vipimo vya %{count}
+      section_learn: Jifunze
+      section_learn_info: "%{count} min kutazama na kusoma"
+      section_play: Cheza
+      section_play_info: maneno ya %{count} ya kufanya mazoezi
+      start_lesson: Anza somo
+      step_progress: "%{percent}%"
+      subscribe: Fuata
+      subscribed: Imefuatwa
+      subscribers: wafuasi
+      time_min: "%{minutesNumber} dakika"
+      unsubscribe: Acha kufuata
+      webview_error_title: Hitilafu imetokea ...
+      words_number: "%{wordsNumber} maneno mapya"
+    lesson_task:
+      cancel_button: Ghairi
+      check:
+        navigation_next: Ifuatayo
+        navigation_previous: Iliyotangulia
+        navigation_skip: Ruka
+      controls_panel:
+        font_size_button: Ukubwa wa herufi
+        high_contrast_button:
+          origin: Tofauti kubwa
+          short: Tofauti
+        hints_button: Vidokezo
+        music_playback_button:
+          origin: Uchezaji wa muziki
+          short: Muziki
+        sound_effects_button:
+          origin: Athari za sauti
+          short: Sauti
+      exit_button: Utgång
+      finish_button: Maliza
+      finished:
+        back_to_learn: Rudi kujifunza
+        back_to_lesson_page: Rudi kwenye ukurasa wa somo
+        back_to_results_page: Rudi kwenye ukurasa wa matokeo
+        bad_result_message: Hmm ... jaribu kuchukua somo mara moja zaidi
+        close_lesson: Funga somo
+        correct_answers_list: Orodha sahihi ya majibu
+        good_result_message: Naona umejitahidi!
+        great_result_message: Umefanya vizuri! Haya ni matokeo mazuri!
+        next_course_lesson: Nenda kwenye somo linalofuata bila shaka
+        no_results: Huna matokeo ya mtihani bado
+        no_results_text: Tafadhali, kamilisha somo na upitishe mtihani kupata matokeo
+        see_correct_answers_list: Angalia orodha sahihi ya majibu
+        train_more: Jizoeze zaidi na utafikia matokeo bora wakati ujao!
+        you_finished_lesson: Kubwa! Umemaliza somo
+      go_back: Rudi nyuma
+      next_button: Ifuatayo
+      not_available_task: Kazi hii bado haipatikani
+      start_button: Anza
+      tasks:
+        check:
+          assignment:
+            accept: Kubali
+            author_will_check_your_answer: "%{author} itakagua jibu lako na kutoa
+              maoni kwa siku 1-2"
+            continue_writing: Endelea kuandika
+            copy: Nakili
+            delete: Futa
+            delete_record: Futa rekodi
+            edit: Hariri
+            essay_does_not_have_enough_words: >-
+              Jibu lako linapaswa kuwa na angalau maneno %{minWordsNumber}. Jibu lako
+              kwa sasa ni maneno ya %{currentWordsNumber}.
+            followers_count: wafuasi wa %{followersCount}
+            lessons_count: masomo ya %{lessonsCount}
+            minimal_recording_time: Wakati mdogo wa kurekodi - %{minimalRecordingTime}
+            minimum_characters_amount: Wahusika wa chini - %{minimumCharactersAmount}
+            minimum_words_amount: Maneno ya chini - %{minimumAmount}
+            record_again: Rekodi tena
+            record_voice: Rekodi sauti
+            send_anyway: Tuma hata hivyo
+            send_to_review: Tuma kukagua
+            skip: Ruka
+            too_short_answer: Jibu fupi sana
+            type_your_answer: Andika jibu lako
+            unknown_task_type: Aina ya kazi isiyojulikana
+            upgrade_licence: Boresha leseni
+            upgrade_your_plan: Boresha mpango wako ili ujaribu kazi na hakiki za waalimu
+            upload_files: Pakia faili
+            write_essay: Andika insha
+            you_have_used_amount_of_assignments: Umetumia sifa za kazi za %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Pengo la sentensi
+          fill_in_table:
+            column_answer_placeholder: Jibu
+            column_question_placeholder: Swali
+            example: Mfano
+          true_false:
+            'false': Uongo
+            'true': Kweli
+        learn:
+          translatable_text:
+            show_original: Onyesha asili
+            translate_into: Tafsiri na Google katika %{languageName}
+            translate_into_your_lang: Tafsiri na Google kwa lugha yako
+        play:
+          arrange_words:
+            start_screen:
+              heading: Tengeneza sentensi kutoka kwa maneno uliyopewa
+          audition:
+            start_screen:
+              heading: Sikiliza sauti na gonga neno ambalo umesikia tu
+          dictation:
+            get_help: Pata msaada
+            i_do_not_know: Sijui
+            input_placeholder: Ingiza kile ulichosikia hapa
+            start_screen:
+              heading: Sikiza na andika unayosikia
+          fill_gap:
+            start_screen:
+              heading: Linganisha neno na maana yake
+          finish_screen:
+            go_to_next_exercise: Umefanya vizuri! Nenda kwenye zoezi linalofuata
+          image_hotspot:
+            start_screen:
+              heading: Taja vitu kwenye picha kwa usahihi
+          image_object:
+            start_screen:
+              heading: Chagua kitu sahihi kutoka picha inayofuata
+          inline_dropdown:
+            start_screen:
+              heading: Chagua maneno yanayolingana na sentensi
+          mark_word:
+            start_screen:
+              heading: Soma maandishi na uchague neno linalofanana na picha
+          minimal_pairs:
+            start_screen:
+              heading: Tazama video na uchague chaguo sahihi
+    locale:
+      currency_switcher_title: Kigeuza sarafu
+      lang_switcher_title: Kibadilisha lugha
+      locales:
+        af: Kiafrikana
+        am: Kiamhariki
+        ar: Kiarabu
+        az: Kiazabajani
+        be: Kibelarusi
+        bg: Български
+        bn: Kibengali
+        bs: Kibosnia
+        ca: Kikatalani
+        ceb: Cebuano
+        co: Kikosikani
+        cs: Kicheki
+        cy: Welsh
+        da: Kidenmaki
+        de: Deutsch
+        el: Kigiriki
+        en: Kiingereza
+        eo: Kiesperanto
+        es: Español
+        et: Kiestonia
+        eu: Kibasque
+        fa: Kiajemi
+        fi: Kifini
+        fr: Kifaransa
+        fy: Kifrisia
+        ga: Kiayalandi
+        gd: Scots Gaelic
+        gl: Kigalisia
+        gu: Kigujarati
+        ha: Kihausa
+        haw: Kihawai
+        he: Kiebrania
+        hi: Kihindi
+        hmn: Hmong
+        hr: Kikroeshia
+        ht: Kikrioli cha Haiti
+        hu: Kihungari
+        hy: Kiarmenia
+        id: Kiindonesia
+        ig: Igbo
+        is: Kiaislandi
+        it: Kiitaliano
+        ja: Kijapani
+        jv: Kijava
+        ka: Kijojiajia
+        kk: Kikazaki
+        km: Khmer
+        kn: Kikannada
+        ko: Kikorea
+        ku: Kikurdi
+        ky: Kikirigizi
+        la: Kilatini
+        lb: Kilasembagi
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasi
+        mi: Kimaori
+        mk: Kimasedonia
+        ml: Kimalayalam
+        mn: Kimongolia
+        mr: Kimarathi
+        ms: Kimalesia
+        mt: Kimalta
+        my: Kimyanmar (Kiburma)
+        nb: Norsk
+        ne: Kinepali
+        nl: Nederlands
+        ny: Kinyanja (Chichewa)
+        or: Odia (Kiorya)
+        pa: Kipunjabi
+        pl: Polski
+        ps: Kipashto
+        pt: Kireno
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Kisindhi
+        si: Sinhala
+        sk: Kislovakia
+        sl: Kislovenia
+        sm: Kisamoa
+        sn: Kishona
+        so: af Soomaali
+        sq: Kialbeni
+        sr: Сербский
+        st: Kisotho
+        su: Msunda
+        sv: Kiswidi
+        sw: kiSwahili
+        ta: Kitamil
+        te: Kitelugu
+        tg: Tajik
+        th: Thai
+        tk: Waturuki
+        tl: Tagalog
+        tr: Kituruki
+        tt: Kitatari
+        ug: Uyghur
+        uk: Українська
+        ur: Kiurdu
+        uz: Kiuzbeki
+        vi: Kivietinamu
+        xh: Kixhosa
+        yi: Kiyidi
+        yo: Kiyoruba
+        zh: Kichina
+        zu: Kizulu
+    media_player:
+      audio_player:
+        aria_loading_button: Sauti inapakia
+        aria_pause_button: Sitisha
+        aria_play_button: Cheza
+        aria_reload_button: Pakia tena
+        aria_stop_button: Acha
+        reload_message: Imeshindwa kupakia sauti. Tafadhali bonyeza kitufe ili kupakia
+          tena.
+    mobile_modal:
+      apply: Tumia
+      cancel: Ghairi
+      clear: Wazi
+      save: Okoa
+    page404:
+      goToStartLessonPage: Nenda kwenye ukurasa wa somo la mwanzo
+      ooops: Lo!
+      sorry_message: Samahani, Tor hakuweza kupata ukurasa huu
+    profile:
+      navigation:
+        log_out: Ingia nje
+        my_profile: Profaili yangu
+        settings: Mipangilio
+      onboarding:
+        choose_native_language: Chagua lugha yako ya asili au lugha unayoelewa
+        do_you_understand_english: Unaelewa Kiingereza?
+        hello: Halo
+        language_levels:
+          a1: Kiwango cha msingi
+          a2: Kiwango cha kati cha kati
+          b1: Kiwango cha kati
+          b2: Kiwango cha juu cha kati
+          c1: Kiwango cha juu
+          no_knowledge: Hakuna maarifa
+        language_not_supported:
+          note: Tutakuarifu mara tu lugha itakapopatikana
+          title: Samahani, lakini bado hatuungi mkono lugha hii
+          try_another_language: Jaribu lugha nyingine
+        'no': Hapana
+        search_placeholder: Tafuta ...
+        show_more_languages: Lugha zingine
+        target_language_question: Unataka kujifunza lugha gani?
+        what_is_language_level: Je! Unaweza kupima kiwango chako cha %{languageName}?
+        'yes': Ndio
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Sera ya faragha ya Lingu
+        support: Msaada
+      logout: Kuondoka
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Pokea taarifa kutoka kwa walimu na shule unazofuata
+              sections:
+                app_notifications: Arifa za programu
+                email: Barua pepe
+              title: Msaada wa kujifunza
+            marketing:
+              description: Kaa na habari juu ya ofa zote, sasisho, na msukumo kutoka
+                kwa Lingu
+              sections:
+                browser_notifications: Arifa za Kivinjari
+                email: Barua pepe
+              title: Uuzaji
+          title: Mapendeleo ya mawasiliano
+        personal_information:
+          delete_photo: Futa picha
+          email: Barua pepe
+          first_name: Jina la kwanza
+          last_name: Jina la familia
+          social_accounts:
+            connected: Imeunganishwa
+            facebook: Picha za
+            google: Google
+            microsoft: Microsoft
+            not_connected: Haijaunganishwa
+            title: Akaunti za kijamii
+          title: Maelezo ya kibinafsi
+          update_photo: Sasisha picha
+        school:
+          active_licence: Leseni inayotumika
+          active_status: Inatumika
+          delete_profile: Futa wasifu wangu
+          delete_profile_modal:
+            body: |-
+              Unafuta data zako zote-milele. Hakuna kitufe cha kutendua, na hatuwezi kukurejeshea baadaye.
+              Je! Una uhakika unataka kufuta kabisa wasifu wako wa Lingu na data yako yote?
+            cancel: Ghairi
+            confirm: Ndio, ifute
+            i_understand_the_consequences: Ninaelewa matokeo
+            title: Ungependa kufuta wasifu wako?
+          expired: "%{expire_date} iliyoisha muda wake"
+          expires: Inaisha %{expire_date}
+          inactive_status: Haifanyi kazi
+          revoke_access: Batilisha ufikiaji wa kusoma
+          sections:
+            contact_school: Wasiliana na shule
+            export_my_data: Hamisha data yangu
+            read_school_privacy_policy: Soma Sera ya faragha ya Shule
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Uchezaji wa muziki
+              sound_effects: Athari za sauti
+              title: Sauti
+            visual:
+              dark_theme: Mandhari meusi
+              font_size:
+                test_text: Nyasi daima ni kijani upande wa pili wa uzio
+                title: Ukubwa wa herufi
+              high_contrast: Tofauti kubwa
+              hints: Vidokezo
+              title: Ya kuona
+          title: Sauti na Kuonekana
+        training_settings:
+          sections:
+            i_understand: Naelewa
+            i_want_to_learn: Nataka kujifunza
+            target_language_level: Kiwango cha Kiingereza
+          title: Mipangilio ya mafunzo
+      settings_title: Mipangilio
+    teacher_card:
+      followers_count:
+        one: 1 mfuasi
+        other: wafuasi wa %{count}
+      lessons_count:
+        one: Somo 1
+        other: masomo ya %{count}

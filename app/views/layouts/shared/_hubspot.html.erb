@@ -1,0 +1,17 @@
+<% if Rails.env.production? %>
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9098816.js"></script>
+  <% if current_user %>
+    <script>
+        var _hsq = window._hsq = window._hsq || [];
+        _hsq.push(["identify",{
+            email: "<%= current_user.email %>",
+            id: <%= current_user.id %>,
+            firstName: "<%= current_user.fname %>",
+            lastName: "<%= current_user.lname %>",
+            company: "<%= current_team.name %>"
+        }]);
+    </script>
+  <% end %>
+  <!-- End of HubSpot Embed Code -->
+<% end %>

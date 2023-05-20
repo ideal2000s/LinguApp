@@ -1,0 +1,9 @@
+(function(){
+  <% if params.key?(:_delete_image) %>
+    $('#image-attachment').remove()
+  <% end %>
+  <% if params.key?(:_delete_audio) %>
+    $('#audio-attachment').remove()
+  <% end %>
+})();
+

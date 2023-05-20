@@ -1,0 +1,59 @@
+.modal-revoke-license {
+  .modal-header {
+    .modal-title {
+      color: $black1;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+  .modal-body {
+    .revoke-confirm-text {
+      color: $grey4;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .btn-secondary {
+      width: 40%;
+    }
+  }
+}
+.modal-edit-plan {
+  .modal-header {
+    padding-top: 0;
+    .modal-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  .modal-body {
+    padding-top: 0;
+    .plan-panel {
+      border-bottom: 1px solid $border-color;
+      padding: 10px 0;
+      &:hover {
+        background: $grey8;
+      }
+    }
+    .active {
+      color: $blue1;
+      display: block !important;
+    }
+    .license-content {
+      width: 240px;
+      .license-label {
+        color: $black1;
+        font-size: 16px;
+        margin: 0;
+      }
+      .expire-label {
+        color: $grey3;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.license-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

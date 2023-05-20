@@ -1,0 +1,10 @@
+- set_page_title t('.edit_post')
+
+.content
+  .row
+    .col-lg-12
+      .card.mb-3
+        .card-header
+          h2= t('.edit_post')
+        .card-body
+          = render 'form', post: post, lessons: lessons

@@ -1,0 +1,604 @@
+---
+my:
+  course_mailer:
+    course_assigned_notification:
+      button: သင်တန်းစတင်ပါ
+      click_start_lesson: "'Start lesson' ကိုနှိပ်ပါ။"
+      follow_course_link: သင်တန်းဖွင့်ရန်ခလုတ်ကိုနှိပ်ပါ
+      footer_text: နေ့တိုင်းအသစ်တစ်ခုကိုသင်ယူရန်လင်ဂူသို့ပြန်လာပါ။
+      get_started_line: ဒီနေရာမှာဘယ်လိုစတင်ခဲ့သလဲ။
+      notification_link: အသိပေးချက်ဆက်တင်များ
+      open_lesson: ပထမဆုံးသင်ခန်းစာကိုဖွင့်ပါ
+      or_paste_this_link: သို့မဟုတ်ဤ link ကိုသင့် browser တွင် paste လုပ်ပါ
+      sign_in_with_email: သင်၏အီးမေးလ်လိပ်စာဖြင့်လော့ဂ်အင် (%{email})
+      support_link: ပံ့ပိုးမှု
+      title: "%{course} ဖြင့်စတင်ခြင်း"
+    new_document_comment:
+      author_text: "%{author} သည်သင်၏တာ ၀ န်ကိုပြန်လည်သုံးသပ်ခဲ့သည်"
+      button_text: စုံစမ်းသည်
+      button_url_helper: 'သို့မဟုတ်ဤ link ကိုသင့် browser ထဲသို့ကူးထည့်ပါ:'
+      footer_text: သင်ယူဖို့အများကြီးပိုရှိပါတယ် ...
+      notification_link: အသိပေးချက်ဆက်တင်များ
+      subject_line: တာဝန်အသစ်မှတ်ချက်
+      support_link: ပံ့ပိုးမှု
+    otp:
+      ignore_msg: သင်ဤတောင်းဆိုမှုကိုမပြုလုပ်ပါကအီးမေးလ်ကိုလျစ်လျူရှုပါ။
+      subject_line: Lingu အတွက်ထူးခြားတဲ့ကုဒ်
+      unique_code_for_lingu: ဤတွင်သင်၏ Lingu အတွက်ထူးခြားသောကုဒ်ဖြစ်သည်
+  frontend:
+    auth:
+      already_have_acc_question: အကောင့်ရှိပြီးသားလား?
+      back: နောက်သို့
+      back_to_sign_in: နောက်သို့ဆိုင်းအင်လုပ်ပါ
+      check_your_email_for_a_code: သင့်ကုဒ်အတွက်အီးမေးလ်ကိုစစ်ဆေးပါ
+      continue: ဆက်လက်
+      continue_with_email: အီးမေးလ်ဖြင့်ဆက်လုပ်ပါ
+      continue_with_provider: "%{provider} နှင့်အတူ Continue"
+      did_not_receive_a_code: ကုဒ်မရခဲ့ဘူးလား။
+      email_address: အီးမေးလိပ်စာ
+      first_name: နာမည်
+      get_unique_code: ထူးခြားသော login ကုဒ်တစ်ခုရယူပါ
+      join_lingu: လင်ဂူနှင့်ဆက်သွယ်ပါ
+      last_name: မျိုးနွယ်အမည်
+      more_login_options: Login ရွေးစရာများ
+      no_account_question: အကောင့်မရှိဘူးလား
+      or: ဒါမှမဟုတ်
+      resend_code: ကုဒ်ပြန်ပို့ပါ
+      sign_in: ဆိုင်းအင်လုပ်ခြင်း
+      sign_up: ဆိုင်းအပ်
+      want_to_receive_marketing_messages: ကျွန်ုပ် Lingu မှစျေးကွက်ရှာဖွေရေးမက်ဆေ့ခ်ျရယူလိုသည်
+      we_ve_sent_a_code: >-
+        <strong> {{email}} </strong> ဂဏန်း ၆ လုံးပါတဲ့ကုဒ်တစ်ခုကိုကျွန်ုပ်တို့ပို့ပြီးပါပြီ။
+        ၁၅ မိနစ်အတွင်းကုဒ်သက်တမ်းကုန်ဆုံးပါက ကျေးဇူးပြု၍ မကြာမီထည့်သွင်းပါ။
+    cookie_agreement:
+      agree: သဘောတူတယ်
+      condition: >-
+        ကျွန်ုပ်တို့သည် site ၏စွမ်းဆောင်ရည်ကိုခွဲခြမ်းစိတ်ဖြာရန်နှင့်ကိုယ်ပိုင်အကြောင်းအရာများကိုပေးပို့ရန်
+        cookies များကိုအသုံးပြုသည်။ “ Agree” ကိုနှိပ်ပြီးကျွန်ုပ်တို့၏အခြေအနေများကိုသဘောတူသည်။
+    course:
+      accredited_course_provider: အသိအမှတ်ပြုသင်တန်းပံ့ပိုးပေး
+      apply: လျှောက်ထားပါ
+      apply_filters: filter များကိုအသုံးပြုပါ
+      by: အားဖြင့်
+      cancel: ပယ်ဖျက်ပါ
+      categories: "%{count} အမျိုးအစား"
+      category: အမျိုးအစား
+      clear: ရှင်းလင်းသော
+      clear_filters: filter များကိုရှင်းပါ
+      contact_us: ကြှနျုပျတို့ကိုဆကျသှယျရနျ
+      could_not_find_match_for: တောင်းပန်ပါတယ်၊ ကျွန်ုပ်တို့အတွက်မည်သည့်ကိုက်ညီမှုမှမတွေ့ပါ
+      course_language: သင်တန်းဘာသာစကား
+      duration: ကြာချိန်
+      filter_settings:
+        categories:
+          academic: ပညာရေးဆိုင်ရာ
+          business: စီးပွားရေး
+          fashion: ဖက်ရှင်
+          food_drink: အစားအစာနှင့်သောက်စရာ
+          for_kids: ကလေးများအတွက်
+          general: အထွေထွေ
+          health: ကျန်းမာရေး
+          legal: တရားဝင်
+          sport: အားကစား
+          travel: ခရီးသွားခြင်း
+        durations:
+          t0_600: "<10 မိနစ်"
+          t1800_3600: မိနစ် ၃၀-၆၀
+          t3600_86400: ၁ နာရီ
+          t600_1800: 10-30 မိနစ်
+        focus_on:
+          conversation: စကားလက်ဆုံပြောဆိုခြင်း
+          grammar: သဒ္ဒါ
+          listening: နားထောင်နေသည်
+          pronunciation: အသံထွက်
+          reading: စာဖတ်ခြင်း
+          speaking: ပြောရမယ်ဆိုရင်
+          writing: အရေးအသား
+        levels:
+          long:
+            advanced: အဆင့်မြင့်တန်း
+            elementary: မူလတန်းအဆင့်
+            intermediate: အလယ်အလတ်အဆင့်
+            no_knowledge: အသိပညာမရှိ
+            pre_intermediate: အကြိုအလယ်အလတ်အဆင့်ကို
+            upper_intermediate: အထက်အလယ်အလတ်အဆင့်ကို
+          short:
+            advanced: အဆင့်မြင့်
+            beginner: အစပြုသူ
+            intermediate: အလယ်အလတ်
+        sort_by:
+          most_rated: အများဆုံးသတ်မှတ်ခံရသည်
+          newest: နောက်ဆုံးပေါ်
+          popularity: လူကြိုက်များသည်
+      filters: စစ်ထုတ်ရန်
+      focus_on: အပေါ်အာရုံစိုက်သည်
+      focus_on_title: ငါအာရုံစိုက်ချင်တယ်
+      hide_lessons: သင်ခန်းစာများကိုဖျောက်ထားပါ
+      hours: နာရီ
+      i_understand: ကျွန်တော်နားလည်တယ်
+      i_want_to_learn: ငါလေ့လာချင်တယ်
+      in_language: "%{language} ၌တည်၏"
+      language: ဘာသာစကား
+      learn_more: ပိုမိုသိရှိရန်
+      less_settings: ဆက်တင်အနည်းငယ်
+      lessons: သင်ခန်းစာ
+      lessons_available: ရရှိနိုင်သော %{number} သင်ခန်းစာများ
+      lessons_catalog_page_subtitle: ဘာသာစကားသူရဲကောင်းဖြစ်လာပါ။
+      lessons_catalog_page_title: သင့်ရဲ့မိုးကုပ်စက်ဝိုင်းကိုဘာသာစကားသင်တန်းနှင့်တိုးချဲ့ပါ
+      level: အဆင့်
+      min: min
+      more_settings: နောက်ထပ်ချိန်ညှိချက်များ
+      navbar:
+        close: မီနူးပိတ်ပါ
+        menu: မီနူး
+        select_language: ဘာသာစကားရွေးပါ
+      need_to_buy_course: သင်ပထမ ဦး ဆုံးသင်တန်းစာအုပ်ဆိုင်ဖို့လိုအပ်ပါတယ်
+      no_description: ဖော်ပြချက်မရှိပါ
+      no_results: တောင်းပန်ပါတယ်၊ ကျွန်ုပ်တို့အတွက်မည်သည့်ကိုက်ညီမှုမှမတွေ့ပါ
+      or: ဒါမှမဟုတ်
+      per_month: တစ်လလျှင်
+      plans: အစီအစဉ်များ
+      privacy_policy: ကိုယ်ရေးအချက်အလက်မူဝါဒ
+      rating: အဆင့်သတ်မှတ်ချက်
+      remove_all_filters: အားလုံး filter များဖယ်ရှားပါ
+      reviews: သုံးသပ်ချက်များ
+      save: သိမ်းဆည်းပါ
+      search: ရှာပါ
+      select_dots: ရွေးပါ ...
+      select_languages: langauges ရွေးချယ်ပါ
+      select_num_languages: "%{number} ဘာသာစကားများကိုရွေးချယ်ပါ"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: ခ
+        b2: ခ
+        c1: C1
+        c2: c2
+        zero_level: A0
+      show_all: အားလုံးပြပါ
+      show_all_lessons: သင်ခန်းစာအားလုံးကိုပြပါ
+      show_lessons: "%{number} သင်ခန်းစာများကိုပြပါ"
+      show_more: နောက်ထပ်ပြပါ
+      sign_up_with_lingu_for: Lingu Norway အတွက်မှတ်ပုံတင်ပါ
+      skills: "%{count} ကျွမ်းကျင်မှု"
+      sort_by: အလိုက်စဥ်သည်
+      start_typing_here: ဤနေရာတွင်စတင်စာရိုက်ပါ
+      teach: သင်ပေးပါ
+      terms_and_conditions: စည်းကမ်းနှင့်သတ်မှတ်ချက်များ
+      time_range: အချိန်အကွာအဝေး
+      try_adjusting_your_search: သင်၏ filter များကိုပြောင်းလဲခြင်းဖြင့်သင်၏ရှာဖွေမှုကိုချိန်ညှိကြည့်ပါ
+      try_this_course: ဒီသင်တန်းကိုကြိုးစားကြည့်ပါ
+      website_language: ဝဘ်ဆိုက်ဘာသာစကား
+      words: စကားလုံးများ
+    games:
+      finished:
+        go_to_next_exercise: ကောင်းစွာပြီးဆုံးသည်! နောက်လေ့ကျင့်ခန်းတစ်ခုကိုသွားပါ
+      flashcard:
+        buttons:
+          finish: ပြီးပြီ
+          next: နောက်တစ်ခု
+          previous: ရှေ့
+        check_out_new_words: ယခုသင်ခန်းစာတွင်သင်လေ့လာမည့်စကားလုံးအသစ်များကိုစစ်ဆေးပါ
+        frequency_of_word_usage: "%{language} တွင်စကားလုံးအသုံးပြုမှုကြိမ်နှုန်း"
+        keep_practice_to_learn_all_words: "%{count} စကားလုံးများကိုပြန်ကြည့်။ ဂိမ်းအချို့ကစားကြစို့။"
+        word_frequency:
+          level1: ခဲအသုံးပြုသည်
+          level2: ခဲအသုံးပြုသည်
+          level3: စကားလုံးကြိမ်နှုန်း - အလယ်အလတ်
+          level4: စကားလုံးကြိမ်နှုန်း - အလယ်အလတ်
+          level5: အဖြစ်များသည်
+          level6: အလွန်ဘုံ
+      match_word:
+        click_and_move_each_word_to_counterpart: စကားလုံးတစ်လုံးချင်းစီကို၎င်းနှင့်သက်ဆိုင်သောနေရာသို့ရွှေ့။
+          ရွှေ့ပါ
+        start_heading: တစ်စုံဖြစ်စေရန်စကားလုံးများကိုကိုက်ညီပါ
+        time_is_up: အချိန်ပြီးပြီ!
+      skip_tutorial: ကျော်သွား
+      time_is_up: အချိန်ပြီးပြီ!
+      word_nodes:
+        match_letters_to_form_word: စာလုံးတခုကိုဖွဲ့စည်းရန်အက္ခရာများကိုတိုက်ဆိုင်စစ်ဆေးပါ
+      word_waterfall:
+        do_not_hesitate: မြန်အောင်လုပ်ကြရအောင်
+        go_to_next_exercise: နောက်လေ့ကျင့်ခန်းတစ်ခုကိုသွားပါ
+        select_correct_translation: မှန်ကန်သောကိုက်ညီမှုကိုရွေးပါ
+        well_done: ကောင်းစွာပြီးဆုံးသည်!
+    home_page:
+      hello: ဟယ်လို,
+      popular_lessons: လူကြိုက်များသောသင်ခန်းစာများ
+      show_more: နောက်ထပ်ပြပါ
+      time: "%{count} မိနစ်"
+      today_lesson: ဒီနေ့အတွက်သင်ခန်းစာ
+      user_name: "%{name}!"
+      words: "%{count} စကားများ"
+    idle_screen:
+      by_author: "%{authorName} ဖြင့်ပြုလုပ်နိုင်ပါတယ်"
+      continue_lesson: သင်ခန်းစာကိုဆက်သွားပါ
+      exit: ထွက်ပေါက်
+      idle_message: သင်အချိန်အတန်ကြာပျင်းရိသည် ...
+    lesson_page:
+      back_to_course_page: နောက်ကျောသင်တန်းစာမျက်နှာသို့
+      close: ပိတ်
+      continue_lesson: သင်ခန်းစာကိုဆက်သွားပါ
+      followed: နောက်ဆက်တွဲ
+      hamburger_menu_btn: ဟမ်ဘာဂါမီနူး
+      lesson_given: သင်ခန်းစာ
+      not_started: မစဘူး
+      or: ဒါမှမဟုတ်
+      part_complete: "%{percent}% ပြည့်စုံ"
+      restart_lesson: ပြန်စတင်သည်
+      section_check: စစ်ဆေးပါ
+      section_check_info: "%{count} စမ်းသပ်မှုများ"
+      section_learn: လေ့လာပါ
+      section_learn_info: ကြည့်ရှုရန်နှင့်ဖတ်ရန် %{count} min
+      section_play: ကစားသည်
+      section_play_info: "%{count} စကားလုံးများကိုလေ့ကျင့်ရန်"
+      start_lesson: သင်ခန်းစာစပါ
+      step_progress: "%{percent}%"
+      subscribe: နောက်လိုက်ပါ
+      subscribed: နောက်ဆက်တွဲ
+      subscribers: နောက်လိုက်များ
+      time_min: "%{minutesNumber} မိနစ်"
+      unsubscribe: မရပ်မနား
+      webview_error_title: တစ်ခုခုမှားယွင်းသွားတယ် ...
+      words_number: စကားလုံးအသစ် %{wordsNumber}
+    lesson_task:
+      cancel_button: ပယ်ဖျက်ပါ
+      check:
+        navigation_next: နောက်တစ်ခု
+        navigation_previous: ရှေ့
+        navigation_skip: ကျော်သွား
+      controls_panel:
+        font_size_button: စာလုံးအရွယ်အစား
+        high_contrast_button:
+          origin: မြင့်မားသောဆနျ့ကငျြဘ
+          short: ခြားနားချက်
+        hints_button: သဲလွန်စ
+        music_playback_button:
+          origin: တေးဂီတပြန်ဖွင့်သည်
+          short: ဂီတ
+        sound_effects_button:
+          origin: အသံအကျိုးသက်ရောက်မှုများ
+          short: အသံ
+      exit_button: ထွက်ပေါက်
+      finish_button: ပြီးပြီ
+      finished:
+        back_to_learn: နောက်ကျောသင်ယူရန်
+        back_to_lesson_page: နောက်ကျောသင်ခန်းစာစာမျက်နှာသို့
+        back_to_results_page: နောက်ကျောရလဒ်စာမျက်နှာပေါ်တွင်
+        bad_result_message: Hmm ... နောက်တစ်ခေါက်ထပ်သင်ကြည့်ပါ ဦး
+        close_lesson: အနီးကပ်သင်ခန်းစာ
+        correct_answers_list: မှန်ကန်သောအဖြေများစာရင်း
+        good_result_message: မင်းကြိုးစားအားထုတ်ပြီးပြီဆိုတာငါမြင်တယ်။
+        great_result_message: ကောင်းစွာပြီးဆုံးသည်! ဤသည်အလွန်ကြီးစွာသောရလဒ်များကိုပါ!
+        next_course_lesson: နောက်သင်တန်းသို့သွားပါ
+        no_results: သင့်မှာစမ်းသပ်မှုရလဒ်မရှိပါ
+        no_results_text: ကျေးဇူးပြု၍ သင်ခန်းစာကိုပြီးအောင်ပြီးအဖြေရရန်စာမေးပွဲအောင်ပါ
+        see_correct_answers_list: မှန်ကန်သောအဖြေများစာရင်းကိုကြည့်ပါ
+        train_more: >-
+          ပိုမိုလေ့ကျင့်ပါ၊ နောက်လာမည့်အချိန်တွင်ပိုမိုကောင်းမွန်သောရလဒ်များကိုသင်ရရှိမည်ဖြစ်သည်။
+        you_finished_lesson: ကောင်းတယ် သင်သင်ခန်းစာပြီးဆုံးသွားပြီ
+      go_back: ပြန်သွားသည်
+      next_button: နောက်တစ်ခု
+      not_available_task: ဒီအလုပ်ကိုမရရှိနိုင်ပါ
+      start_button: စတင်ပါ
+      tasks:
+        check:
+          assignment:
+            accept: လက်ခံသည်
+            author_will_check_your_answer: >-
+              %{author} သည်သင်၏အဖြေကိုပြန်လည်သုံးသပ်ပြီးပုံမှန်အားဖြင့် ၁-၂ ရက်အတွင်းပြန်လည်တုံ့ပြန်ပါမည်
+            continue_writing: ဆက်ရေးပါ
+            copy: ကူးပါ
+            delete: ဖျက်ပါ
+            delete_record: မှတ်တမ်းကိုဖျက်ပါ
+            edit: တည်းဖြတ်ပါ
+            essay_does_not_have_enough_words: >-
+              သင်၏အဖြေတွင်အနည်းဆုံး %{minWordsNumber} စကားလုံးများပါရမည် သင်၏အဖြေသည်
+              %{currentWordsNumber} စကားလုံးဖြစ်သည်။
+            followers_count: "%{followersCount} နောက်လိုက်များ"
+            lessons_count: "%{lessonsCount} သင်ခန်းစာများ"
+            minimal_recording_time: အနည်းဆုံးမှတ်တမ်းတင်အချိန် - %{minimalRecordingTime}
+            minimum_characters_amount: အနည်းဆုံးအက္ခရာများ - %{minimumCharactersAmount}
+            minimum_words_amount: အနည်းဆုံးစကားလုံးများ - %{minimumAmount}
+            record_again: ထပ်မံအသံသွင်းပါ
+            record_voice: အသံသွင်းရန်
+            send_anyway: ဘာပဲဖြစ်ဖြစ်ပို့ပါ
+            send_to_review: ပြန်လည်သုံးသပ်ဖို့ပို့ပါ
+            skip: ကျော်သွား
+            too_short_answer: အတိုတိုအဖြေ
+            type_your_answer: သင့်အဖြေကိုရိုက်ထည့်ပါ
+            unknown_task_type: မသိသောအလုပ်အမျိုးအစား
+            upgrade_licence: လိုင်စင်ကိုအဆင့်မြှင့်
+            upgrade_your_plan: ဆရာများသုံးသပ်ချက်များနှင့်အတူတာဝန်များကိုကြိုးစားရန်သင်၏အစီအစဉ်ကိုအဆင့်မြှင့်
+            upload_files: ဖိုင်များကိုတင်ပါ
+            write_essay: စာစီစာကုံးရေးပါ
+            you_have_used_amount_of_assignments: သင် %{amountOfAssignments} သတ်မှတ်ချက်ခရက်ဒစ်ကိုအသုံးပြုခဲ့သည်
+          fill_in_blanks:
+            sentence_gap: ဝါကျကွာဟချက်
+          fill_in_table:
+            column_answer_placeholder: အဖြေ
+            column_question_placeholder: မေးခွန်း
+            example: ဥပမာ
+          true_false:
+            'false': မှား
+            'true': မှန်ပါတယ်
+        learn:
+          translatable_text:
+            show_original: မူရင်းပြပါ
+            translate_into: Google ဖြင့် %{languageName} သို့ဘာသာပြန်ပါ
+            translate_into_your_lang: သင်၏ဂူဂဲလ်နှင့်သင်၏ဘာသာစကားသို့ဘာသာပြန်ပါ
+        play:
+          arrange_words:
+            start_screen:
+              heading: ပေးထားတဲ့စကားလုံးတွေထဲကဝါကျတစ်ခုလုပ်ပါ
+          audition:
+            start_screen:
+              heading: အသံကိုနားထောင်ပြီးသင်ကြားခဲ့ရတဲ့စကားလုံးကိုနှိပ်ပါ
+          dictation:
+            get_help: အကူအညီရယူပါ
+            i_do_not_know: ငါမသိဘူး
+            input_placeholder: မင်းဒီမှာကြားတာကိုရိုက်ထည့်ပါ
+            start_screen:
+              heading: နားထောင်ပြီးသင်ကြားတာကိုရေးပါ
+          fill_gap:
+            start_screen:
+              heading: စကားလုံးနှင့်၎င်း၏အဓိပ္ပာယ်ကိုကိုက်ညီပါ
+          finish_screen:
+            go_to_next_exercise: ကောင်းစွာပြီးဆုံးသည်! နောက်လေ့ကျင့်ခန်းတစ်ခုကိုသွားပါ
+          image_hotspot:
+            start_screen:
+              heading: ပုံထဲကအရာဝတ္ထုများကိုမှန်ကန်စွာရေးပါ
+          image_object:
+            start_screen:
+              heading: နောက်ပုံမှမှန်သည့်အရာဝတ္ထုကိုရွေးပါ
+          inline_dropdown:
+            start_screen:
+              heading: ဝါကျနှင့်ကိုက်ညီသောစကားလုံးများကိုရွေးပါ
+          mark_word:
+            start_screen:
+              heading: စာသားကိုဖတ်ပြီးပုံနှင့်ကိုက်ညီသောစကားလုံးကိုရွေးပါ
+          minimal_pairs:
+            start_screen:
+              heading: ဗွီဒီယိုကိုကြည့်။ မှန်ကန်သောရွေးချယ်မှုကိုရွေးချယ်ပါ
+    locale:
+      currency_switcher_title: ငွေကြေးလဲလှယ်သူ
+      lang_switcher_title: ဘာသာစကားကူးပြောင်းသူ
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: အင်္ဂလိပ်
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ပြင်သစ်
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: အီတလီ
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русскийязык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: တူရကီ
+        tt: Tatar
+        ug: Uyghur
+        uk: українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: အသံတင်နေသည်
+        aria_pause_button: ခေတ္တရပ်နားသည်
+        aria_play_button: ကစားသည်
+        aria_reload_button: ပြန်တင်ပါ
+        aria_stop_button: ရပ်
+        reload_message: အသံသွင်းရန်မအောင်မြင်ပါ။ ကျေးဇူးပြု၍ ပြန်ဖွင့်ရန်ခလုတ်ကိုနှိပ်ပါ။
+    mobile_modal:
+      apply: လျှောက်ထားပါ
+      cancel: ပယ်ဖျက်ပါ
+      clear: ရှင်းလင်းသော
+      save: သိမ်းဆည်းပါ
+    page404:
+      goToStartLessonPage: စတင်သင်ခန်းစာစာမျက်နှာကိုသွားပါ
+      ooops: Oooops ...
+      sorry_message: ဝမ်းနည်းပါသည် Tor သည်ဤစာမျက်နှာကိုရှာမရပါ
+    profile:
+      navigation:
+        log_out: ထွက်ပါ
+        my_profile: ကျွန်ုပ်၏ကိုယ်ရေးအကျဉ်း
+        settings: ချိန်ညှိချက်များ
+      onboarding:
+        choose_native_language: သင်နားလည်သည့်သင့်မိခင်ဘာသာစကားကိုရွေးချယ်ပါ
+        do_you_understand_english: အင်္ဂလိပ်လိုနားလည်ပါသလား
+        hello: ဟယ်လို
+        language_levels:
+          a1: မူလတန်းအဆင့်
+          a2: Pre- အလယ်အလတ်အဆင့်ကို
+          b1: အလယ်အလတ်အဆင့်
+          b2: အထက်အလယ်အလတ်အဆင့်ကို
+          c1: အဆင့်မြင့်တန်း
+          no_knowledge: အသိပညာမရှိ
+        language_not_supported:
+          note: ဘာသာစကားကိုရရှိနိုင်သဖြင့်ချက်ချင်းအကြောင်းကြားပါမည်
+          title: တောင်းပန်ပါတယ်၊ ဒါပေမယ့်ဒီဘာသာစကားကိုကျွန်ုပ်တို့မထောက်ပံ့သေးပါ
+          try_another_language: အခြားဘာသာစကားတစ်ခုကြိုးစားကြည့်ပါ
+        'no': မဟုတ်ဘူး
+        search_placeholder: ရှာရန် ...
+        show_more_languages: အခြားဘာသာစကားများ
+        target_language_question: ဘယ်ဘာသာစကားကိုသင်ယူချင်ပါသလဲ
+        what_is_language_level: သင်၏ %{languageName} အဆင့်ကိုသင်မည်သို့သတ်မှတ်မည်နည်း။
+        'yes': ဟုတ်တယ်
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu ၏သီးသန့်တည်ရှိမှုမူဝါဒ
+        support: ပံ့ပိုးမှု
+      logout: ထွက်ပေါက်
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: သင်လိုက်နေသောဆရာများနှင့်ကျောင်းများမှနောက်ဆုံးသတင်းများကိုရယူပါ
+              sections:
+                app_notifications: အက်ပလီကေးရှင်းအသိပေးချက်များ
+                email: အီးမေးလ်
+              title: အကူအညီအထောက်အပံ့
+            marketing:
+              description: >-
+                Lingu ၏ပရိုမိုးရှင်းများ၊ အသစ်ပြောင်းခြင်းများနှင့်လှုံ့ဆော်မှုများအားလုံးကိုအကြောင်းကြားပါ
+              sections:
+                browser_notifications: Browser သတိပေးချက်များ
+                email: အီးမေးလ်
+              title: စျေးကွက်ရှာဖွေရေး
+          title: ဆက်သွယ်ရန် ဦး စားပေးမှုများ
+        personal_information:
+          delete_photo: ဓာတ်ပုံအားဖျက်ပါ
+          email: အီးမေးလ်
+          first_name: နာမည်
+          last_name: မျိုးနွယ်အမည်
+          social_accounts:
+            connected: ချိတ်ဆက်ထားသည်
+            facebook: ဖေ့စ်ဘွတ်ခ်
+            google: ဂူဂဲလ်
+            microsoft: Microsoft
+            not_connected: ချိတ်ဆက်မထားပါ
+            title: လူမှုရေးအကောင့်များ
+          title: ကိုယ်ပိုင်သတင်းအချက်အလက်များ
+          update_photo: ဓာတ်ပုံကို update လုပ်ပါ
+        school:
+          active_licence: Active လိုင်စင်
+          active_status: တက်ကြွ
+          delete_profile: ကျွန်ုပ်၏ပရိုဖိုင်ကိုဖျက်ပစ်ပါ
+          delete_profile_modal:
+            body: |-
+              သင်၏အချက်အလက်အားလုံးကိုထာဝရဖျက်ဆီးပစ်နိုင်သည်။ undo ခလုတ်မရှိပါ၊ ကျွန်ုပ်တို့သည်သင့်နောက်မှ ပြန်၍ မရပါ။
+              သင်၏ Lingu ပရိုဖိုင်းနှင့်သင်၏ဒေတာအားလုံးကိုဖျက်ပစ်ချင်သည်မှာသေချာပါသလား။
+            cancel: ပယ်ဖျက်ပါ
+            confirm: ဟုတ်ကဲ့၊ ဖျက်ပါ
+            i_understand_the_consequences: အကျိုးဆက်တွေကိုငါနားလည်တယ်
+            title: သင်၏ပရိုဖိုင်းကိုဖျက်မည်လား။
+          expired: "%{expire_date} သက်တမ်းကုန်ဆုံးသွားပြီ"
+          expires: "%{expire_date} သက်တမ်းကုန်ဆုံး"
+          inactive_status: မလှုပ်မရှား
+          revoke_access: ပြန်လည်ဖတ်ရှုရန်
+          sections:
+            contact_school: ကျောင်းသို့ဆက်သွယ်ပါ
+            export_my_data: ကျွန်ုပ်၏အချက်အလက်များကိုတင်ပို့ပါ
+            read_school_privacy_policy: ကျောင်းသီးသန့်တည်ရှိမှုမူဝါဒကိုဖတ်ပါ
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: တေးဂီတပြန်ဖွင့်သည်
+              sound_effects: အသံအကျိုးသက်ရောက်မှုများ
+              title: အသံ
+            visual:
+              dark_theme: အမှောင်ထု
+              font_size:
+                test_text: ခြံစည်းရိုး၏အခြားဘက်ခြမ်းတွင်မြက်ပင်သည်စိမ်းလန်းစိုပြည်သည်
+                title: စာလုံးအရွယ်အစား
+              high_contrast: မြင့်မားသောဆနျ့ကငျြဘ
+              hints: သဲလွန်စ
+              title: အမြင်အာရုံ
+          title: အသံ & အမြင်အာရုံ
+        training_settings:
+          sections:
+            i_understand: ကျွန်တော်နားလည်တယ်
+            i_want_to_learn: ငါလေ့လာချင်တယ်
+            target_language_level: အင်္ဂလိပ်အဆင့်
+          title: သင်တန်းချိန်ညှိချက်များ
+      settings_title: ချိန်ညှိချက်များ
+    teacher_card:
+      followers_count:
+        one: နောက်လိုက် ၁
+        other: "%{count} နောက်လိုက်များ"
+      lessons_count:
+        one: သင်ခန်းစာ ၁ ခု
+        other: "%{count} သင်ခန်းစာများ"

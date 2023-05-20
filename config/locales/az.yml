@@ -1,0 +1,609 @@
+---
+az:
+  course_mailer:
+    course_assigned_notification:
+      button: Kursa başlayın
+      click_start_lesson: "'Dərsə başla' düyməsinə vurun"
+      follow_course_link: Kursu açmaq üçün düyməni vurun
+      footer_text: Hər gün yeni bir şey öyrənmək üçün Linguuqa qayıt!
+      get_started_line: 'Budur necə başlayırsınız:'
+      notification_link: Bildiriş parametrləri
+      open_lesson: İlk dərsi açın
+      or_paste_this_link: və ya bu linki brauzerinizə yapışdırın
+      sign_in_with_email: E-poçt adresinizlə daxil olun (%{email})
+      support_link: Dəstək
+      title: "%{course} ilə işə başlamaq"
+    new_document_comment:
+      author_text: "%{author} tapşırığınızın nəzərdən keçirilməsini tərk etdi"
+      button_text: Onu yoxlamaq
+      button_url_helper: 'və ya bu linki brauzerinizə yapışdırın:'
+      footer_text: Öyrənmək üçün daha çox şey var ...
+      notification_link: Bildiriş parametrləri
+      subject_line: Yeni tapşırıq şərhi
+      support_link: Dəstək
+    otp:
+      ignore_msg: Bu istəyi etməmisinizsə, sadəcə e-poçtu görməməzlikdən gəlin.
+      subject_line: Lingu üçün unikal kodunuz
+      unique_code_for_lingu: Lingu üçün unikal kodunuz budur
+  frontend:
+    auth:
+      already_have_acc_question: Artıq bir hesabınız var mı?
+      back: Geri
+      back_to_sign_in: Daxil ol qayıt
+      check_your_email_for_a_code: Kodunuz üçün elektron poçtunuzu yoxlayın
+      continue: Davam edin
+      continue_with_email: E-poçtla davam edin
+      continue_with_provider: "%{provider} ilə davam edin"
+      did_not_receive_a_code: Kod almadınız?
+      email_address: Elektron poçt ünvanı
+      first_name: Ad
+      get_unique_code: Bənzərsiz bir giriş kodu əldə edin
+      join_lingu: Lingu-ya qoşulun
+      last_name: Soyad
+      more_login_options: Daha çox giriş seçimi
+      no_account_question: Hesabınız yoxdur?
+      or: və ya
+      resend_code: Kodu yenidən göndərmək
+      sign_in: Daxil olun
+      sign_up: Abunə olun
+      want_to_receive_marketing_messages: Linguinqdən marketinq mesajları almaq istəyirəm
+      we_ve_sent_a_code: >-
+        <strong> {{email}} </strong> ünvanına 6 rəqəmli kod göndərdik. Kodun müddəti
+        15 dəqiqə ərzində başa çatır, ona görə lütfən onu daxil edin.
+    cookie_agreement:
+      agree: Razılaşmaq
+      condition: >-
+        Sayt performansını təhlil etmək və fərdi məzmunu çatdırmaq üçün çərəzlərdən
+        istifadə edirik. “Razıyam” tıklayaraq şərtlərimizə razılıq verirsiniz.
+    course:
+      accredited_course_provider: Akkreditə olunmuş kurs təminatçısı
+      apply: Müraciət edin
+      apply_filters: Filtrlər tətbiq edin
+      by: By
+      cancel: Ləğv et
+      categories: "%{count} kateqoriyalar"
+      category: Kateqoriya
+      clear: Təmiz
+      clear_filters: Filtrləri silin
+      contact_us: Bizimlə əlaqə saxlayın
+      could_not_find_match_for: Üzr istəyirik, heç bir uyğunluq tapa bilmədik
+      course_language: Kurs dili
+      duration: Müddət
+      filter_settings:
+        categories:
+          academic: Akademik
+          business: Biznes
+          fashion: Moda
+          food_drink: Yemək və içki
+          for_kids: Uşaqlar üçün
+          general: Ümumi
+          health: Sağlamlıq
+          legal: Qanuni
+          sport: İdman
+          travel: Səyahət
+        durations:
+          t0_600: "<10 dəqiqə"
+          t1800_3600: 30-60 dəqiqə
+          t3600_86400: 1+ saat
+          t600_1800: 10-30 dəqiqə
+        focus_on:
+          conversation: Söhbət
+          grammar: Qrammatika
+          listening: Dinləmək
+          pronunciation: Telaffuz
+          reading: Oxu
+          speaking: Danışan
+          writing: Yazı
+        levels:
+          long:
+            advanced: Qabaqcıl səviyyə
+            elementary: İbtidai səviyyə
+            intermediate: Orta səviyyə
+            no_knowledge: Məlumat yoxdur
+            pre_intermediate: Orta səviyyə
+            upper_intermediate: Yuxarı orta səviyyə
+          short:
+            advanced: Qabaqcıl
+            beginner: Başlanğıc
+            intermediate: Aralıq
+        sort_by:
+          most_rated: Ən çox qiymətləndirilib
+          newest: Ən yeni
+          popularity: Populyarlıq
+      filters: Filtrlər
+      focus_on: Diqqət yetirin
+      focus_on_title: Diqqət yetirmək istəyirəm
+      hide_lessons: Dərsləri gizlədin
+      hours: Saat
+      i_understand: Mən başa düşürəm
+      i_want_to_learn: Öyrənmək istəyirəm
+      in_language: "%{language}-da"
+      language: Dil
+      learn_more: Daha ətraflı
+      less_settings: Daha az parametr
+      lessons: Dərslər
+      lessons_available: "%{number} dərsləri mövcuddur"
+      lessons_catalog_page_subtitle: Dil qəhrəmanı ol.
+      lessons_catalog_page_title: Dil kursu ilə üfüqlərinizi genişləndirin
+      level: Səviyyə
+      min: Min
+      more_settings: Daha çox parametr
+      navbar:
+        close: Menyunu bağlayın
+        menu: Menyu
+        select_language: Dil seçin
+      need_to_buy_course: Əvvəlcə bir kurs sifariş etməlisiniz
+      no_description: Təsvir verilməyib
+      no_results: Üzr istəyirik, uyğun bir şey tapa bilmədik
+      or: və ya
+      per_month: aylıq
+      plans: Planlar
+      privacy_policy: Gizlilik Siyasəti
+      rating: Reytinq
+      remove_all_filters: Bütün filtrləri silin
+      reviews: Rəylər
+      save: Yadda saxla
+      search: Axtarış
+      select_dots: Seçin ...
+      select_languages: Dil seçin
+      select_num_languages: "%{number} dillərini seçin"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Hamısını göstər
+      show_all_lessons: Bütün dərsləri göstər
+      show_lessons: "%{number} dərslərini göstərin"
+      show_more: Daha çox göstər
+      sign_up_with_lingu_for: Lingu Norveç üçün qeydiyyatdan keçin
+      skills: "%{count} bacarıqları"
+      sort_by: Sırala
+      start_typing_here: Burada yazmağa başlayın
+      teach: Öyrət
+      terms_and_conditions: Şərtlər və Qaydalar
+      time_range: Vaxt aralığı
+      try_adjusting_your_search: Filtrlərinizi dəyişdirərək axtarışınızı düzəltməyə
+        çalışın
+      try_this_course: Bu kursu sınayın
+      website_language: Veb dili
+      words: Sözlər
+    games:
+      finished:
+        go_to_next_exercise: Afərin! Növbəti həyata keçir
+      flashcard:
+        buttons:
+          finish: Bitirin
+          next: Növbəti
+          previous: Əvvəlki
+        check_out_new_words: Bu dərsdə öyrənəcəyiniz yeni sözlərə baxın
+        frequency_of_word_usage: "%{language}-da söz istifadə tezliyi"
+        keep_practice_to_learn_all_words: "%{count} sözlərini nəzərdən keçirin və
+          bəzi oyunlar oynayaq!"
+        word_frequency:
+          level1: Nadir hallarda istifadə olunur
+          level2: Nadir hallarda istifadə olunur
+          level3: Söz tezliyi - orta
+          level4: Söz tezliyi - orta
+          level5: Ümumi
+          level6: Çox yaygındır
+      match_word:
+        click_and_move_each_word_to_counterpart: Hər sözü klikləyin və həmkarına aparın
+        start_heading: Bir cüt etmək üçün sözləri uyğunlaşdırın
+        time_is_up: Müddət doldu!
+      skip_tutorial: Keç
+      time_is_up: Müddət doldu!
+      word_nodes:
+        match_letters_to_form_word: Söz yaratmaq üçün hərflərə uyğun gəlin
+      word_waterfall:
+        do_not_hesitate: Sürətləndirək!
+        go_to_next_exercise: Növbəti həyata keçir
+        select_correct_translation: Düzgün uyğunluğu seçin
+        well_done: Afərin!
+    home_page:
+      hello: Salam,
+      popular_lessons: Populyar dərslər
+      show_more: Daha çox göstər
+      time: "%{count} dəq"
+      today_lesson: Bu gün üçün dərsiniz
+      user_name: "%{name}!"
+      words: "%{count} söz"
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Dərsə davam edin
+      exit: Çıx
+      idle_message: Bir müddətdir boş idiniz ...
+    lesson_page:
+      back_to_course_page: Kurs səhifəsinə qayıt
+      close: Yaxın
+      continue_lesson: Dərsə davam edin
+      followed: İzlənildi
+      hamburger_menu_btn: Hamburger menyusu
+      lesson_given: dərslər
+      not_started: başlamadı
+      or: Və ya
+      part_complete: "%{percent}% tamamlandı"
+      restart_lesson: Yenidən başlamaq
+      section_check: Yoxlayın
+      section_check_info: "%{count} testləri"
+      section_learn: Öyrən
+      section_learn_info: "%{count} dəqiqə izləmək və oxumaq"
+      section_play: Oynamaq
+      section_play_info: "%{count} təcrübə üçün sözlər"
+      start_lesson: Dərsə başlayın
+      step_progress: "%{percent}%"
+      subscribe: İzləyin
+      subscribed: İzlənildi
+      subscribers: izləyicilər
+      time_min: "%{minutesNumber} dəq"
+      unsubscribe: İzləməyin
+      webview_error_title: Bir şey səhv oldu ...
+      words_number: "%{wordsNumber} yeni sözlər"
+    lesson_task:
+      cancel_button: Ləğv et
+      check:
+        navigation_next: Növbəti
+        navigation_previous: Əvvəlki
+        navigation_skip: Keç
+      controls_panel:
+        font_size_button: Şrift ölçüsü
+        high_contrast_button:
+          origin: Yüksək kontrast
+          short: Kontrast
+        hints_button: Göstərişlər
+        music_playback_button:
+          origin: Musiqi çalma
+          short: Musiqi
+        sound_effects_button:
+          origin: Səs effektləri
+          short: Səs
+      exit_button: Çıx
+      finish_button: Bitirin
+      finished:
+        back_to_learn: Öyrənmək üçün geri
+        back_to_lesson_page: Dərs səhifəsinə qayıt
+        back_to_results_page: Nəticə səhifəsinə qayıt
+        bad_result_message: Hmm ... bir dəfə də olsun dərsi almağa çalışın
+        close_lesson: Dərsi bağlayın
+        correct_answers_list: Düzgün cavablar siyahısı
+        good_result_message: Görürəm ki, səy göstərmisiniz!
+        great_result_message: Afərin! Bunlar əla nəticələrdir!
+        next_course_lesson: Əlbətdə növbəti dərsə gedin
+        no_results: Hələ test nəticəniz yoxdur
+        no_results_text: Xahiş edirəm, dərsi başa vurun və nəticəni əldə etmək üçün
+          testi keçin
+        see_correct_answers_list: Düzgün cavablar siyahısına baxın
+        train_more: Daha çox məşq edin və növbəti dəfə daha yaxşı nəticələr əldə edəcəksiniz!
+        you_finished_lesson: Əla! Dərsi bitirdin
+      go_back: Qeri gayıt
+      next_button: Növbəti
+      not_available_task: Bu tapşırıq hələ mövcud deyil
+      start_button: Başlamaq
+      tasks:
+        check:
+          assignment:
+            accept: Qəbul et
+            author_will_check_your_answer: >-
+              %{author} cavabınızı nəzərdən keçirəcək və ümumiyyətlə 1-2 gün ərzində
+              rəy bildirəcəkdir
+            continue_writing: Yazmağa davam edin
+            copy: Kopyala
+            delete: Sil
+            delete_record: Yazını silin
+            edit: Redaktə edin
+            essay_does_not_have_enough_words: >-
+              Cavabınız ən azı %{minWordsNumber} sözdən ibarət olmalıdır. Cavabınız
+              hazırda %{currentWordsNumber} sözləridir.
+            followers_count: "%{followersCount} izləyiciləri"
+            lessons_count: "%{lessonsCount} dərsləri"
+            minimal_recording_time: Minimum qeyd müddəti - %{minimalRecordingTime}
+            minimum_characters_amount: Minimum simvol - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum sözlər - %{minimumAmount}
+            record_again: Yenidən qeyd edin
+            record_voice: Səsi yazın
+            send_anyway: Hər halda göndər
+            send_to_review: Rəy üçün göndərin
+            skip: Keç
+            too_short_answer: Çox qısa cavab
+            type_your_answer: Cavabınızı yazın
+            unknown_task_type: Naməlum tapşırıq növü
+            upgrade_licence: Lisenziyanı yüksəldin
+            upgrade_your_plan: Müəllimlərin rəyləri ilə tapşırıqları sınamaq üçün
+              planınızı təkmilləşdirin
+            upload_files: Faylları yükləyin
+            write_essay: İnşa yaz
+            you_have_used_amount_of_assignments: "%{amountOfAssignments} tapşırıq
+              kreditlərindən istifadə etdiniz"
+          fill_in_blanks:
+            sentence_gap: Cümlə boşluğu
+          fill_in_table:
+            column_answer_placeholder: Cavab verin
+            column_question_placeholder: Sual
+            example: Misal
+          true_false:
+            'false': Yalan
+            'true': Doğru
+        learn:
+          translatable_text:
+            show_original: Orijinalı göstərin
+            translate_into: Google ilə %{languageName} dilinə tərcümə edin
+            translate_into_your_lang: Google ilə dilinizə tərcümə edin
+        play:
+          arrange_words:
+            start_screen:
+              heading: Verilən sözlərdən cümlə qurun
+          audition:
+            start_screen:
+              heading: Səsi dinləyin və yeni eşitdiyiniz sözün üzərinə vurun
+          dictation:
+            get_help: Kömək almaq
+            i_do_not_know: Bilmirəm
+            input_placeholder: Bura eşitdiklərinizi daxil edin
+            start_screen:
+              heading: Dinlə və eşitdiklərini yaz
+          fill_gap:
+            start_screen:
+              heading: Sözü və mənasını uyğunlaşdırın
+          finish_screen:
+            go_to_next_exercise: Afərin! Növbəti həyata keçir
+          image_hotspot:
+            start_screen:
+              heading: Şəkildəki obyektlərə düzgün ad verin
+          image_object:
+            start_screen:
+              heading: Növbəti şəkildən düzgün obyekti seçin
+          inline_dropdown:
+            start_screen:
+              heading: Cümləyə uyğun sözləri seçin
+          mark_word:
+            start_screen:
+              heading: Mətni oxuyun və şəklə uyğun gələn sözü seçin
+          minimal_pairs:
+            start_screen:
+              heading: Videonu izləyin və düzgün seçimi seçin
+    locale:
+      currency_switcher_title: Valyuta dəyişdirici
+      lang_switcher_title: Dil dəyişdirici
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: İngilis dili
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: İtalyan
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Portuqaliya
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiwwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Səs yüklənir
+        aria_pause_button: Fasilə
+        aria_play_button: Oynamaq
+        aria_reload_button: Yenidən yükləyin
+        aria_stop_button: Dayan
+        reload_message: Səs yüklənmədi. Yenidən yükləmək üçün düyməni vurun.
+    mobile_modal:
+      apply: Müraciət edin
+      cancel: Ləğv et
+      clear: Təmiz
+      save: Yadda saxla
+    page404:
+      goToStartLessonPage: Dersin başlanğıc səhifəsinə keçin
+      ooops: Oooops ...
+      sorry_message: Bağışlayın, Tor bu səhifəni tapa bilmədi
+    profile:
+      navigation:
+        log_out: Çıxış
+        my_profile: Mənim Hesabım
+        settings: Parametrlər
+      onboarding:
+        choose_native_language: Ana dilinizi və ya başa düşdüyünüz dili seçin
+        do_you_understand_english: İngiliscə başa düşürsən?
+        hello: Salam
+        language_levels:
+          a1: İbtidai səviyyə
+          a2: Orta səviyyəli
+          b1: Orta səviyyə
+          b2: Yuxarı Orta səviyyə
+          c1: Qabaqcıl səviyyə
+          no_knowledge: Məlumat yoxdur
+        language_not_supported:
+          note: Dil mövcud olan kimi sizə xəbər verəcəyik
+          title: Bağışlayın, lakin bu dili hələ dəstəkləmirik
+          try_another_language: Başqa bir dili sınayın
+        'no': Yox
+        search_placeholder: Axtarış ...
+        show_more_languages: Başqa dillər
+        target_language_question: Hansı dili öyrənmək istəyirsən?
+        what_is_language_level: "%{languageName} səviyyənizi necə qiymətləndirərdiniz?"
+        'yes': Bəli
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu's gizlilik siyasəti
+        support: Dəstək
+      logout: Çıxış
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: İzlədiyiniz müəllimlərdən və məktəblərdən yenilikləri alın
+              sections:
+                app_notifications: Proqram bildirişləri
+                email: Elektron poçt
+              title: Kömək öyrənmək
+            marketing:
+              description: >-
+                Linguinqdən gələn bütün promosyonlar, yeniləmələr və ilham haqqında
+                məlumatlı olun
+              sections:
+                browser_notifications: Brauzer bildirişləri
+                email: Elektron poçt
+              title: Marketinq
+          title: Əlaqə üstünlükləri
+        personal_information:
+          delete_photo: Fotonu silin
+          email: Elektron poçt
+          first_name: Ad
+          last_name: Soyad
+          social_accounts:
+            connected: Əlaqədar
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Bağlantı yoxdur
+            title: Sosial hesablar
+          title: Şəxsi məlumat
+          update_photo: Fotonu yeniləyin
+        school:
+          active_licence: Aktiv lisenziya
+          active_status: Aktivdir
+          delete_profile: Profilimi silin
+          delete_profile_modal:
+            body: |-
+              Bütün məlumatlarınızı sonsuza qədər məhv edirsiniz. Geri qaytarma düyməsi yoxdur və sonra sizin üçün geri ala bilmərik.
+              Lingu profilinizi və bütün məlumatlarınızı qalıcı bir şəkildə silmək istədiyinizə əminsiniz?
+            cancel: Ləğv et
+            confirm: Bəli silin
+            i_understand_the_consequences: Nəticələrini başa düşürəm
+            title: Profiliniz silinsin?
+          expired: Vaxtı keçmiş %{expire_date}
+          expires: "%{expire_date} vaxtı bitir"
+          inactive_status: Fəal deyil
+          revoke_access: Oxu girişini ləğv edin
+          sections:
+            contact_school: Əlaqə məktəb
+            export_my_data: Verilərimi ixrac et
+            read_school_privacy_policy: Məktəbin məxfilik siyasətini oxuyun
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musiqi çalma
+              sound_effects: Səs effektləri
+              title: Səs
+            visual:
+              dark_theme: Qaranlıq tema
+              font_size:
+                test_text: Hasarın digər tərəfində ot həmişə yaşıl olur
+                title: Şrift ölçüsü
+              high_contrast: Yüksək kontrast
+              hints: Göstərişlər
+              title: Vizual
+          title: Səs və vizual
+        training_settings:
+          sections:
+            i_understand: Mən başa düşürəm
+            i_want_to_learn: Öyrənmək istəyirəm
+            target_language_level: İngilis dili səviyyəsi
+          title: Təlim parametrləri
+      settings_title: Parametrlər
+    teacher_card:
+      followers_count:
+        one: 1 izləyici
+        other: "%{count} izləyiciləri"
+      lessons_count:
+        one: 1 dərs
+        other: "%{count} dərsləri"

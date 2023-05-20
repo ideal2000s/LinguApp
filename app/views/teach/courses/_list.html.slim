@@ -1,0 +1,22 @@
+- courses.each do |course|
+  .col-lg-4.col-md-6.col-sm-12
+    .card.rounded-top
+      - if course.image.present?
+        .card-img-top
+          = link_to teach_course_path(course) do
+            = image_tag(course.image_url, class: 'rounded-top img-fluid', alt: course.title)
+      .card-body
+        h5.card-title= link_to course.title, teach_course_path(course), class: 'text-primary font-weight-bold'
+        p.card-text= truncate(strip_tags(course.description.to_s), length: 150)
+      ul.list-group.list-group-flush
+        li.list-group-item= t('.count_chapters', count: course.sections_count)
+        li.list-group-item= t('admin.lessons.index.count_lessons', count: course.lessons_count.to_i)
+        li.list-group-item
+          = t('.count_words', count: course.lessons.map{ |l| l.phrases_count}.sum)
+      .card-body
+        .btn-group
+          = link_to t('show'), teach_course_path(course), class: 'btn btn-sm btn-falcon-primary'
+          = link_to t('edit'), edit_teach_course_path(course), class: 'btn btn-sm btn-falcon-primary'
+          - if policy(course).destroy?
+            = link_to teach_course_path(course), class: 'btn btn-sm btn-falcon-default text-danger', method: :delete, data: {confirm: t('teach.courses.confirm_course_delete')} do
+              = t('delete')

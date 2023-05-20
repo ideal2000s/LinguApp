@@ -1,0 +1,23 @@
+div id=dom_id(item)
+  .card.mb-3
+    .card-body
+      .row
+        .col-9
+          p.card-title.mb-0= t(item.game_type, scope: 'activerecord.attributes.word_games.game_types')
+        .col-2
+          = best_in_place item, :enabled, as: :checkbox,
+                  collection: { true: t('enabled'), false: t('disabled') },
+                  url: teach_task_item_path(task, item),
+                  param: :task_item,
+                  data: { true_class: 'btn-success', false_class: 'btn-danger' },
+                  class: "btn rounded-capsule btn-sm mr-1 btn-#{item.enabled ? 'success' : 'danger' }"
+        .col-1
+          .btn-group.float-right
+            - if item.movable_down?
+              = link_to move_down_teach_task_item_path(task, item), method: :patch, remote: true,
+              class: 'btn btn-sm move_down', aria: { label: t('move_down') } do
+                span.fas.fa-chevron-down
+            - if item.movable_up?
+              = link_to move_up_teach_task_item_path(task, item), method: :patch, remote: true,
+              class: 'btn btn-sm move_up', aria: { label: t('move_up') } do
+                span.fas.fa-chevron-up

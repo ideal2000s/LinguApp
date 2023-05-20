@@ -1,0 +1,7 @@
+- set_page_title t('school.team_students.import_students.title')
+.students-container.school-info-container
+  .mb-4
+    .students-header.d-flex.justify-content-between.align-items-center
+      .d-flex.align-items-center
+        h1.mb-0.pb-3= t('students')
+    = render 'school/team_students/import_students_form',  errors: []

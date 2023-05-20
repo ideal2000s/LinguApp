@@ -1,0 +1,621 @@
+---
+mg:
+  course_mailer:
+    course_assigned_notification:
+      button: Atombohy ny fampianarana
+      click_start_lesson: Kitiho ny 'Start lesona'
+      follow_course_link: Tsindrio ny bokotra hanokatra ny làlana
+      footer_text: Miverina amin'ny Lingu hianaranao zava-baovao isan'andro!
+      get_started_line: 'Ity no fomba hanombohanao:'
+      notification_link: Fikirana fampandrenesana
+      open_lesson: Sokafy ny lesona voalohany
+      or_paste_this_link: na apetaho ao amin'ny browser-nao ity rohy ity
+      sign_in_with_email: Midira amin'ny adiresy mailakao (%{email})
+      support_link: MANAMPY
+      title: Manomboka amin'ny %{course}
+    new_document_comment:
+      author_text: "%{author} namela famerenana ny anjaranao"
+      button_text: Zahao hahitanao azy
+      button_url_helper: 'na apetaho ao anaty browser-nao ity rohy ity:'
+      footer_text: Mbola betsaka ny zavatra tokony hianarana ...
+      notification_link: Fikirana fampandrenesana
+      subject_line: Fanehoan-kevitra vaovao
+      support_link: Fanohanana
+    otp:
+      ignore_msg: Raha tsy nanao an'ity fangatahana ity ianao dia aza hadino fotsiny
+        ilay mailaka.
+      subject_line: Kaody tokana anao momba ny Lingu
+      unique_code_for_lingu: Ity ny kaody miavaka momba ny Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Efa manana kaonty?
+      back: indray
+      back_to_sign_in: Miverina amin'ny fisoratana anarana
+      check_your_email_for_a_code: Zahao ny mailakao momba ny kaodinao
+      continue: hanohy
+      continue_with_email: Tohizo amin'ny mailaka
+      continue_with_provider: Tohizo amin'ny %{provider}
+      did_not_receive_a_code: Tsy nahazo kaody?
+      email_address: Adiresy mailaka
+      first_name: Fanampin'anarana
+      get_unique_code: Makà kaody fidirana tokana
+      join_lingu: Midira amin'i Lingu
+      last_name: Anarana
+      more_login_options: Safidy fidirana bebe kokoa
+      no_account_question: Tsy manana kaonty?
+      or: na
+      resend_code: Avereno ny kaody
+      sign_in: Hiditra
+      sign_up: Hiditra Mpikambana
+      want_to_receive_marketing_messages: Te-handray hafatra ara-barotra avy amin'i
+        Lingu aho
+      we_ve_sent_a_code: >-
+        Nandefa kaody 6 isa ho an'i <strong> {{email}} </strong> izahay. Ny fehezan-dalàna
+        dia tapitra ao anatin'ny 15 minitra, noho izany azafady mba ampidiro tsy ho
+        ela.
+    cookie_agreement:
+      agree: manaiky
+      condition: >-
+        Mampiasa cookies izahay handinihana ny fahombiazan'ny tranonkala sy handefasana
+        atiny manokana. Amin'ny fipihana ny "Agree" dia manaiky ny fepetra apetrakay
+        ianao.
+    course:
+      accredited_course_provider: Mpanome fampianarana nahazo mari-pankasitrahana
+      apply: AMPIHARO
+      apply_filters: Asio sivana
+      by: ny
+      cancel: Manafoana
+      categories: sokajy %{count}
+      category: Sokajy
+      clear: Mazava
+      clear_filters: Hamafana ny sivana
+      contact_us: Mifandraisa aminay
+      could_not_find_match_for: Miala tsiny fa tsy nahita lalao nifanarahana izahay
+      course_language: Fiteny
+      duration: Duration
+      filter_settings:
+        categories:
+          academic: akademika
+          business: raharaham-barotra
+          fashion: Fashion
+          food_drink: Sakafo sy zava-pisotro
+          for_kids: Ho an'ny ankizy
+          general: General
+          health: FAHASALAMANA
+          legal: Ara-dalàna
+          sport: Fanatanjahantena
+          travel: Tsangatsangana
+        durations:
+          t0_600: "<10 minitra"
+          t1800_3600: 30-60 minitra
+          t3600_86400: 1+ ora
+          t600_1800: 10-30 minitra
+        focus_on:
+          conversation: RESAKA
+          grammar: Fitsipi-pitenenana
+          listening: fihainoana
+          pronunciation: Anarana iombonana
+          reading: FAMAKIANA
+          speaking: Miteny
+          writing: soratra
+        levels:
+          long:
+            advanced: Haavo avo lenta
+            elementary: Ambaratonga fototra
+            intermediate: Haavo antonony
+            no_knowledge: Tsy misy fahalalana
+            pre_intermediate: Ambaratonga antonony
+            upper_intermediate: Haavo antonony ambony
+          short:
+            advanced: Advanced
+            beginner: mpanao voalohany
+            intermediate: kafa
+        sort_by:
+          most_rated: Nomena isa indrindra
+          newest: Vaovao
+          popularity: laza
+      filters: sivana
+      focus_on: Mifantoha amin'ny
+      focus_on_title: Te hifantoka amin'ny
+      hide_lessons: Afeno ny lesona
+      hours: ORA
+      i_understand: Azoko
+      i_want_to_learn: Te hianatra aho
+      in_language: amin'ny %{language}
+      language: Fiteny
+      learn_more: Hamantatra bebe kokoa
+      less_settings: Fikirana kely kokoa
+      lessons: Lesona
+      lessons_available: lesona %{number} misy
+      lessons_catalog_page_subtitle: Tonga maherifo amin'ny fiteny.
+      lessons_catalog_page_title: Hanitatra ny faravodilanitrao amin'ny alàlan'ny
+        fampianarana fiteny
+      level: ambaratonga
+      min: Min
+      more_settings: Fikirana bebe kokoa
+      navbar:
+        close: Hidio ny menio
+        menu: sakafo
+        select_language: Safidio fiteny
+      need_to_buy_course: Mila mamandrika fampianarana aloha ianao
+      no_description: Tsy misy famaritana omena
+      no_results: Miala tsiny fa tsy nahita lalao nifanarahana izahay
+      or: na
+      per_month: isam-bolana
+      plans: drafitra
+      privacy_policy: Politika Fiarovana fiainan'olona
+      rating: Naoty
+      remove_all_filters: Esory ny sivana rehetra
+      reviews: Hevitra
+      save: afa-tsy
+      search: karohy
+      select_dots: Safidio ...
+      select_languages: Misafidiana langauges
+      select_num_languages: Misafidiana fiteny %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: D2
+        zero_level: A0
+      show_all: Asehoy daholo
+      show_all_lessons: Asehoy ny lesona rehetra
+      show_lessons: Asehoy ny lesona %{number}
+      show_more: Asehoy misimisy kokoa
+      sign_up_with_lingu_for: Misorata anarana amin'i Lingu Norvezy ho an'ny
+      skills: "%{count} fahaiza-manao"
+      sort_by: Sivanina araka
+      start_typing_here: Manomboha manorata eto
+      teach: Ampianaro
+      terms_and_conditions: Fepetra
+      time_range: Fe-potoana
+      try_adjusting_your_search: Andramo manitsy ny fikarohana ataonao amin'ny fanovana
+        ny sivana
+      try_this_course: Andramo ity taranja ity
+      website_language: Fitenin'ny tranonkala
+      words: Teny
+    games:
+      finished:
+        go_to_next_exercise: Vita tsara! Mandehana amin'ny fampiharana manaraka
+      flashcard:
+        buttons:
+          finish: farany
+          next: Manaraka
+          previous: Teo aloha
+        check_out_new_words: Zahao ireo teny vaovao hianaranao amin'ity lesona ity
+        frequency_of_word_usage: Frequency of word use in %{language}
+        keep_practice_to_learn_all_words: Avereno jerena ireo teny %{count} ary andao
+          hilalao lalao vitsivitsy!
+        word_frequency:
+          level1: Tsy dia ampiasaina loatra
+          level2: Tsy dia ampiasaina loatra
+          level3: Teny matetika - salantsalany
+          level4: Teny matetika - salantsalany
+          level5: iraisana
+          level6: Tena mahazatra
+      match_word:
+        click_and_move_each_word_to_counterpart: Kitiho ary afindra ny teny tsirairay
+          ho any aminy
+        start_heading: Ampifanaraho ny teny raha te hanana mpivady
+        time_is_up: Lany ny fotoana!
+      skip_tutorial: Mifohaza
+      time_is_up: Lany ny fotoana!
+      word_nodes:
+        match_letters_to_form_word: Ampifanaraho litera hamoronana teny
+      word_waterfall:
+        do_not_hesitate: Aleo manafaingana!
+        go_to_next_exercise: Mandehana amin'ny fampiharana manaraka
+        select_correct_translation: Safidio ny lalao mifanitsy
+        well_done: Vita tsara!
+    home_page:
+      hello: Salama,
+      popular_lessons: Lesona malaza
+      show_more: Asehoy misimisy kokoa
+      time: "%{count} min"
+      today_lesson: Ny lesonao anio
+      user_name: "%{name}!"
+      words: teny %{count}
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Tohizo ny lesona
+      exit: Fivoahana
+      idle_message: Nijanona elaela ianao ...
+    lesson_page:
+      back_to_course_page: Miverina amin'ny pejin'ny fampianarana
+      close: AKAIKY
+      continue_lesson: Tohizo ny lesona
+      followed: nanaraka
+      hamburger_menu_btn: Menu Hamburger
+      lesson_given: lesona
+      not_started: tsy natomboka
+      or: Na
+      part_complete: "%{percent}% vita"
+      restart_lesson: Haverina velomina
+      section_check: Taratasim-bola
+      section_check_info: "%{count} fitsapana"
+      section_learn: mianatra
+      section_learn_info: "%{count} min hijerena sy hamakiana"
+      section_play: Milalao
+      section_play_info: "%{count} teny ampiharina"
+      start_lesson: Atombohy ny lesona
+      step_progress: "%{percent}%"
+      subscribe: Araho
+      subscribed: nanaraka
+      subscribers: mpanara-dia
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Miala
+      webview_error_title: Nisy zavatra tsy nety...
+      words_number: teny vaovao %{wordsNumber}
+    lesson_task:
+      cancel_button: hanafoana
+      check:
+        navigation_next: Manaraka
+        navigation_previous: Teo aloha
+        navigation_skip: Mifohaza
+      controls_panel:
+        font_size_button: Haben'ny endri-tsoratra
+        high_contrast_button:
+          origin: Mifanohitra be
+          short: mifanohitra
+        hints_button: hamantatra izany
+        music_playback_button:
+          origin: Famerenana mozika
+          short: MOZIKA
+        sound_effects_button:
+          origin: Vokatry ny feo
+          short: MISAINA
+      exit_button: Fivoahana
+      finish_button: farany
+      finished:
+        back_to_learn: Miverina mianatra
+        back_to_lesson_page: Miverina amin'ny pejin'ny lesona
+        back_to_results_page: Miverina amin'ny pejy valiny
+        bad_result_message: Hmm ... andramo indray mandeha ny lesona
+        close_lesson: Fampianarana akaiky
+        correct_answers_list: Lisitry ny valiny marina
+        good_result_message: Hitako fa nanao ezaka ianao!
+        great_result_message: Vita tsara! Vokatra tsara ireo!
+        next_course_lesson: Mandehana manaraka ny lesona
+        no_results: Tsy mbola manana valin'ny fitsapana ianao
+        no_results_text: Azafady, fenoy ny lesona ary ampitao ny fitsapana mba hahitana
+          ny valiny
+        see_correct_answers_list: Jereo ny lisitry ny valiny marina
+        train_more: >-
+          Manaova fanazaran-tena bebe kokoa ary hahita vokatra tsara kokoa ianao amin'ny
+          manaraka!
+        you_finished_lesson: Tsara! Nahavita ny lesona ianao
+      go_back: Hiverina
+      next_button: Manaraka
+      not_available_task: Tsy mbola misy io asa io
+      start_button: fanombohana
+      tasks:
+        check:
+          assignment:
+            accept: MANAIKY
+            author_will_check_your_answer: >-
+              %{author} dia hamerina hijery ny valinteninao ary hanome valiny matetika
+              ao anatin'ny 1-2 andro
+            continue_writing: Manohiza manoratra
+            copy: dika mitovy
+            delete: Mamafa
+            delete_record: Fafao ny rakitra
+            edit: Ovay
+            essay_does_not_have_enough_words: >-
+              Ny valinteninao dia tokony ahitana teny %{minWordsNumber} farafaharatsiny.
+              Teny %{currentWordsNumber} izao ny valinteninao.
+            followers_count: "%{followersCount} mpanaraka"
+            lessons_count: lesona %{lessonsCount}
+            minimal_recording_time: Fotoana firaketana farany ambany - %{minimalRecordingTime}
+            minimum_characters_amount: Tarehimarika kely indrindra - %{minimumCharactersAmount}
+            minimum_words_amount: Teny kely indrindra - %{minimumAmount}
+            record_again: Raketo indray
+            record_voice: Feo firaketana
+            send_anyway: Alefaso ihany
+            send_to_review: Alefaso handinika
+            skip: Mifohaza
+            too_short_answer: Valiny fohy loatra
+            type_your_answer: Soraty ny valinteninao
+            unknown_task_type: Karazan'asa tsy fantatra
+            upgrade_licence: Lisansa fanavaozana
+            upgrade_your_plan: >-
+              Amboary ny drafitrao hanandramana ireo anjaranao miaraka amin'ny fanamarihan'ny
+              mpampianatra
+            upload_files: Ampidiro rakitra
+            write_essay: Manorata lahatsoratra
+            you_have_used_amount_of_assignments: Nampiasanao crédit %{amountOfAssignments}
+              fanendrena
+          fill_in_blanks:
+            sentence_gap: Hantsana fanamelohana
+          fill_in_table:
+            column_answer_placeholder: Valiny
+            column_question_placeholder: Fanontaniana
+            example: OHATRA
+          true_false:
+            'false': DISO
+            'true': Marina
+        learn:
+          translatable_text:
+            show_original: Asehoy ny tena izy
+            translate_into: Handika miaraka amin'i Google amin'ny %{languageName}
+            translate_into_your_lang: Handika miaraka amin'ny Google amin'ny fiteninao
+        play:
+          arrange_words:
+            start_screen:
+              heading: Manaova fehezan-teny avy amin'ireo teny nomena ireo
+          audition:
+            start_screen:
+              heading: Henoy ny feo ary tsindrio ilay teny vao henonao
+          dictation:
+            get_help: Mitadiava fanampiana
+            i_do_not_know: Tsy fantatro
+            input_placeholder: Ampidiro eto izay henonao
+            start_screen:
+              heading: Mihainoa ary soraty izay renao
+          fill_gap:
+            start_screen:
+              heading: Ampifanaraho ny teny sy ny dikany
+          finish_screen:
+            go_to_next_exercise: Vita tsara! Mandehana amin'ny fampiharana manaraka
+          image_hotspot:
+            start_screen:
+              heading: Lazao tsara ireo zavatra eo amin'ny sary
+          image_object:
+            start_screen:
+              heading: Misafidiana ny zavatra mety amin'ny sary manaraka
+          inline_dropdown:
+            start_screen:
+              heading: Misafidiana ireo teny mifanentana amin'ilay fehezanteny
+          mark_word:
+            start_screen:
+              heading: Vakio ny lahatsoratra ary safidio ny teny mifanaraka amin'ny
+                sary
+          minimal_pairs:
+            start_screen:
+              heading: Jereo ny horonantsary ary safidio ny safidy mety
+    locale:
+      currency_switcher_title: Mpamadika vola
+      lang_switcher_title: Mpamadika fiteny
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabo
+        az: Azerbaijani
+        be: Belarosiana
+        bg: Български
+        bn: Bengali
+        bs: Bosnianina
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danoà
+        de: Deutsch
+        el: Grika
+        en: Anglisy
+        eo: Esperanto
+        es: Español
+        et: Estonianina
+        eu: Basque
+        fa: Persiana
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irlandey
+        gd: Scots Gaelic
+        gl: Galisiana
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaii
+        he: Hebreo
+        hi: Hindi
+        hmn: Hmong
+        hr: Kroaty
+        ht: Haole Creole
+        hu: Hongroà
+        hy: Armeniana
+        id: Indonezianina
+        ig: Igbo
+        is: Islandy
+        it: Italiano
+        ja: Japoney
+        jv: Java
+        ka: Zeorziana
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Koreana
+        ku: Kiorda
+        ky: Kyrgyz
+        la: Latina
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Masedoniana
+        ml: Malayalam
+        mn: Mongoliana
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoa
+        sn: Shona
+        so: af Soomaali
+        sq: Albaney
+        sr: Сербский
+        st: Sesotho
+        su: Sundana
+        sv: Soedoa
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Torkmen
+        tl: Tagalog
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Країнська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamiana
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Sinoa
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Mandeha ny audio
+        aria_pause_button: Fiatoana
+        aria_play_button: Milalao
+        aria_reload_button: Reload
+        aria_stop_button: Mijanòna
+        reload_message: Tsy nahavita nandefa audio. Azafady tsindrio ny bokotra raha
+          te-hamindra indray.
+    mobile_modal:
+      apply: Ampiharo
+      cancel: Manafoana
+      clear: Mazava
+      save: Mitsitsia
+    page404:
+      goToStartLessonPage: Mandehana any amin'ny pejy lesona fanombohana
+      ooops: Oooops ...
+      sorry_message: Miala tsiny fa tsy nahita ity pejy ity i Tor
+    profile:
+      navigation:
+        log_out: Miala
+        my_profile: Ny mombamomba ahy
+        settings: Fikirana
+      onboarding:
+        choose_native_language: Safidio ny fiteninao na ny fiteninao azonao
+        do_you_understand_english: Mahazo teny Anglisy ve ianao?
+        hello: Salama
+        language_levels:
+          a1: Ambaratonga fototra
+          a2: Ambaratonga antonony
+          b1: Haavo antonony
+          b2: Haavo antonony ambony
+          c1: Haavo avo lenta
+          no_knowledge: Tsy misy fahalalana
+        language_not_supported:
+          note: Hampandre anao izahay raha vantany vao misy ilay fiteny
+          title: Miala tsiny, fa tsy mbola manohana an'ity fiteny ity izahay
+          try_another_language: Manandrama fiteny hafa
+        'no': tsy misy
+        search_placeholder: Karoka ...
+        show_more_languages: Fiteny hafa
+        target_language_question: Inona no fiteny tianao hianarana?
+        what_is_language_level: Ahoana ny fanombatanao ny haavon'ny %{languageName}?
+        'yes': ENY
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Politikan'ny tsiambaratelo nataon'i Lingu
+        support: MANAMPY
+      logout: Miala
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Raiso ny fanavaozana avy amin'ny mpampianatra sy sekoly
+                arahinao
+              sections:
+                app_notifications: Fampandrenesana amin'ny app
+                email: Mailaka
+              title: Fanampiana amin'ny fianarana
+            marketing:
+              description: >-
+                Fantaro hatrany ny momba ny fampiroboroboana, ny fanavaozana ary ny
+                aingam-panahy avy amin'i Lingu
+              sections:
+                browser_notifications: Fampandrenesan'ny mpitety
+                email: Mailaka
+              title: "-barotra"
+          title: Fifandraisana amin'ny fifandraisana
+        personal_information:
+          delete_photo: Fafao ny sary
+          email: Mailaka
+          first_name: Fanampin'anarana
+          last_name: Anarana
+          social_accounts:
+            connected: mifandray
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Tsy mifandray
+            title: Kaonty sosialy
+          title: Fampahalalana manokana
+          update_photo: Sary manavao
+        school:
+          active_licence: Fahazoan-dàlana miasa
+          active_status: Mavitrika
+          delete_profile: Fafao ny mombamomba ahy
+          delete_profile_modal:
+            body: |-
+              Horavanao ny datao rehetra — mandrakizay. Tsy misy bokotra fanafoanana, ary tsy afaka averinay ho anao intsony izy aorian'ny.
+              Azonao antoka fa te hamafa mandrakizay ny mombamomba anao amin'ny fiteny sy ny data rehetra ianao?
+            cancel: hanafoana
+            confirm: Eny, fafao izany
+            i_understand_the_consequences: Azoko tsara ny vokany
+            title: Fafao ny mombamomba anao?
+          expired: "%{expire_date} lany daty"
+          expires: Tapitra ny %{expire_date}
+          inactive_status: tsy mavitrika
+          revoke_access: Hofoanana ny fahazoana mamaky
+          sections:
+            contact_school: Mifandraisa amin'ny sekoly
+            export_my_data: Alefaso ny angon-drakitrao
+            read_school_privacy_policy: Vakio ny politika momba ny tsiambaratelon'ny
+              sekoly
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Famerenana mozika
+              sound_effects: Vokatry ny feo
+              title: MISAINA
+            visual:
+              dark_theme: Lohahevitra maizina
+              font_size:
+                test_text: Maitso hatrany ny ahitra amin'ny lafiny hafa amin'ny fefy
+                title: Haben'ny endri-tsoratra
+              high_contrast: Mifanohitra be
+              hints: hamantatra izany
+              title: maso
+          title: Sound & Visual
+        training_settings:
+          sections:
+            i_understand: Azoko
+            i_want_to_learn: Te hianatra aho
+            target_language_level: Haavo anglisy
+          title: Fikirana fiofanana
+      settings_title: Fikirana
+    teacher_card:
+      followers_count:
+        one: 1 mpanaraka
+        other: "%{count} mpanaraka"
+      lessons_count:
+        one: Lesona 1
+        other: lesona %{count}

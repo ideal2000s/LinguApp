@@ -1,0 +1,4 @@
+var form = document.querySelector('#glossary__form');
+if (form) form.reset();
+
+$('#glossary__items').html("<%= j render 'list', lesson: lesson, phrases: phrases %>")

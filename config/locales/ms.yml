@@ -1,0 +1,614 @@
+---
+ms:
+  course_mailer:
+    course_assigned_notification:
+      button: Mulakan kursus
+      click_start_lesson: Klik 'Mulakan pelajaran'
+      follow_course_link: Klik butang untuk membuka kursus
+      footer_text: Kembali ke Lingu untuk mempelajari sesuatu yang baru setiap hari!
+      get_started_line: 'Inilah cara anda memulakan:'
+      notification_link: Tetapan pemberitahuan
+      open_lesson: Buka pelajaran pertama
+      or_paste_this_link: atau tampal pautan ini di penyemak imbas anda
+      sign_in_with_email: Log masuk dengan alamat e-mel anda (%{email})
+      support_link: Sokongan
+      title: Bermula dengan %{course}
+    new_document_comment:
+      author_text: "%{author} memberikan ulasan mengenai tugasan anda"
+      button_text: Lihatlah
+      button_url_helper: 'atau tampal pautan ini ke penyemak imbas anda:'
+      footer_text: Terdapat banyak lagi yang perlu dipelajari ...
+      notification_link: Tetapan pemberitahuan
+      subject_line: Komen tugasan baru
+      support_link: Sokongan
+    otp:
+      ignore_msg: Sekiranya anda tidak membuat permintaan ini, abaikan e-mel tersebut.
+      subject_line: Kod unik anda untuk Lingu
+      unique_code_for_lingu: Inilah kod unik anda untuk Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Sudah mempunyai akaun?
+      back: Belakang
+      back_to_sign_in: Kembali ke Log masuk
+      check_your_email_for_a_code: Periksa e-mel anda untuk mengetahui kod anda
+      continue: Teruskan
+      continue_with_email: Teruskan dengan e-mel
+      continue_with_provider: Teruskan dengan %{provider}
+      did_not_receive_a_code: Tidak menerima kod?
+      email_address: Alamat emel
+      first_name: Nama pertama
+      get_unique_code: Dapatkan kod log masuk yang unik
+      join_lingu: Sertailah Lingu
+      last_name: Nama terakhir
+      more_login_options: Lebih banyak pilihan log masuk
+      no_account_question: Tidak mempunyai akaun?
+      or: atau
+      resend_code: Hantar semula kod
+      sign_in: Log masuk
+      sign_up: Mendaftar
+      want_to_receive_marketing_messages: Saya mahu menerima pesanan pemasaran dari
+        Lingu
+      we_ve_sent_a_code: >-
+        Kami telah menghantar kod 6 digit ke <strong> {{email}} </strong>. Kod akan
+        tamat dalam 15 minit, jadi sila masukkan segera.
+    cookie_agreement:
+      agree: Setuju
+      condition: >-
+        Kami menggunakan kuki untuk menganalisis prestasi laman web dan menyampaikan
+        kandungan yang diperibadikan. Dengan mengklik "Setuju", anda bersetuju dengan
+        syarat kami.
+    course:
+      accredited_course_provider: Penyedia kursus yang bertauliah
+      apply: Memohon
+      apply_filters: Sapukan penapis
+      by: Oleh
+      cancel: Batal
+      categories: kategori %{count}
+      category: Kategori
+      clear: Jelas
+      clear_filters: Penapis yang jelas
+      contact_us: Hubungi Kami
+      could_not_find_match_for: Maaf, kami tidak dapat mencari yang sesuai
+      course_language: Bahasa kursus
+      duration: Jangka masa
+      filter_settings:
+        categories:
+          academic: Akademik
+          business: Perniagaan
+          fashion: Fesyen
+          food_drink: Makanan minuman
+          for_kids: Untuk kanak kanak
+          general: Am
+          health: Kesihatan
+          legal: Undang-undang
+          sport: Sukan
+          travel: Melancong
+        durations:
+          t0_600: "<10 minit"
+          t1800_3600: 30-60 minit
+          t3600_86400: 1+ jam
+          t600_1800: 10-30 minit
+        focus_on:
+          conversation: Perbualan
+          grammar: Tatabahasa
+          listening: Mendengar
+          pronunciation: Sebutan
+          reading: Membaca
+          speaking: Bercakap
+          writing: Penulisan
+        levels:
+          long:
+            advanced: Tahap maju
+            elementary: Tahap asas
+            intermediate: Peringkat pertengahan
+            no_knowledge: Tiada pengetahuan
+            pre_intermediate: Pra peringkat pertengahan
+            upper_intermediate: Tahap pertengahan atas
+          short:
+            advanced: Mahir
+            beginner: Pemula
+            intermediate: Pertengahan
+        sort_by:
+          most_rated: Paling dinilai
+          newest: Terkini
+          popularity: Populariti
+      filters: Penapis
+      focus_on: Fokus pada
+      focus_on_title: Saya mahu memberi tumpuan
+      hide_lessons: Sembunyikan pelajaran
+      hours: Jam
+      i_understand: saya faham
+      i_want_to_learn: saya mahu belajar
+      in_language: dalam %{language}
+      language: Bahasa
+      learn_more: Ketahui lebih lanjut
+      less_settings: Kurang tetapan
+      lessons: Pengajaran
+      lessons_available: pelajaran %{number} ada
+      lessons_catalog_page_subtitle: Menjadi wira bahasa.
+      lessons_catalog_page_title: Luaskan cakerawala anda dengan kursus bahasa
+      level: Tahap
+      min: Min
+      more_settings: Lebih banyak tetapan
+      navbar:
+        close: Tutup menu
+        menu: Menu
+        select_language: Pilih Bahasa
+      need_to_buy_course: Anda perlu menempah kursus terlebih dahulu
+      no_description: Tidak ada keterangan yang diberikan
+      no_results: Maaf, kami tidak dapat mencari yang sesuai
+      or: atau
+      per_month: sebulan
+      plans: Rancangan
+      privacy_policy: Dasar privasi
+      rating: Penarafan
+      remove_all_filters: Keluarkan semua penapis
+      reviews: Ulasan
+      save: Jimat
+      search: Cari
+      select_dots: Pilih ...
+      select_languages: Pilih bahasa
+      select_num_languages: Pilih bahasa %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Tunjukkan semua
+      show_all_lessons: Tunjukkan semua pelajaran
+      show_lessons: Tunjukkan pelajaran %{number}
+      show_more: Tunjukkan lagi
+      sign_up_with_lingu_for: Daftar dengan Lingu Norway untuk
+      skills: kemahiran %{count}
+      sort_by: Disusun mengikut
+      start_typing_here: Mula menaip di sini
+      teach: Ajar
+      terms_and_conditions: Terma dan syarat
+      time_range: Julat masa
+      try_adjusting_your_search: Cuba sesuaikan carian anda dengan menukar penapis
+        anda
+      try_this_course: Cubalah kursus ini
+      website_language: Bahasa laman web
+      words: Perkataan
+    games:
+      finished:
+        go_to_next_exercise: Bagus! Pergi ke latihan seterusnya
+      flashcard:
+        buttons:
+          finish: Selesai
+          next: Seterusnya
+          previous: Sebelumnya
+        check_out_new_words: Lihat perkataan baru yang akan anda pelajari dalam pelajaran
+          ini
+        frequency_of_word_usage: Kekerapan penggunaan kata dalam %{language}
+        keep_practice_to_learn_all_words: Kaji perkataan %{count} dan mari bermain
+          beberapa permainan!
+        word_frequency:
+          level1: Jarang digunakan
+          level2: Jarang digunakan
+          level3: Kekerapan perkataan - sederhana
+          level4: Kekerapan perkataan - sederhana
+          level5: Biasa
+          level6: Sangat biasa
+      match_word:
+        click_and_move_each_word_to_counterpart: Klik dan pindahkan setiap perkataan
+          ke rakannya
+        start_heading: Padankan perkataan untuk membuat pasangan
+        time_is_up: Masa habis!
+      skip_tutorial: Langkau
+      time_is_up: Masa habis!
+      word_nodes:
+        match_letters_to_form_word: Padankan huruf untuk membentuk perkataan
+      word_waterfall:
+        do_not_hesitate: Mari kita mempercepat!
+        go_to_next_exercise: Pergi ke latihan seterusnya
+        select_correct_translation: Pilih padanan yang betul
+        well_done: Bagus!
+    home_page:
+      hello: Helo,
+      popular_lessons: Pelajaran popular
+      show_more: Tunjukkan lagi
+      time: "%{count} min"
+      today_lesson: Pelajaran anda untuk hari ini
+      user_name: "%{name}!"
+      words: perkataan %{count}
+    idle_screen:
+      by_author: oleh %{authorName}
+      continue_lesson: Teruskan pelajaran
+      exit: Keluar
+      idle_message: Anda telah lama menganggur ...
+    lesson_page:
+      back_to_course_page: Kembali ke halaman kursus
+      close: Tutup
+      continue_lesson: Teruskan pelajaran
+      followed: Diikuti
+      hamburger_menu_btn: Menu Hamburger
+      lesson_given: pengajaran
+      not_started: tidak bermula
+      or: Atau
+      part_complete: "%{percent}% lengkap"
+      restart_lesson: Mula semula
+      section_check: Periksa
+      section_check_info: ujian %{count}
+      section_learn: Belajar
+      section_learn_info: "%{count} min untuk menonton dan membaca"
+      section_play: Main
+      section_play_info: "%{count} perkataan untuk diamalkan"
+      start_lesson: Mulakan pelajaran
+      step_progress: "%{percent}%"
+      subscribe: Ikut
+      subscribed: Diikuti
+      subscribers: pengikut
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Berhenti mengikut
+      webview_error_title: Ada yang tidak kena ...
+      words_number: "%{wordsNumber} perkataan baru"
+    lesson_task:
+      cancel_button: Batal
+      check:
+        navigation_next: Seterusnya
+        navigation_previous: Sebelumnya
+        navigation_skip: Langkau
+      controls_panel:
+        font_size_button: Saiz huruf
+        high_contrast_button:
+          origin: Kontras tinggi
+          short: Kontras
+        hints_button: Petunjuk
+        music_playback_button:
+          origin: Main balik muzik
+          short: Muzik
+        sound_effects_button:
+          origin: Kesan bunyi
+          short: Bunyi
+      exit_button: Keluar
+      finish_button: Selesai
+      finished:
+        back_to_learn: Kembali belajar
+        back_to_lesson_page: Kembali ke halaman pelajaran
+        back_to_results_page: Kembali ke halaman hasil
+        bad_result_message: Hmm ... cuba ambil pelajaran sekali lagi
+        close_lesson: Tutup pelajaran
+        correct_answers_list: Senarai jawapan yang betul
+        good_result_message: Saya dapat melihat anda telah berusaha!
+        great_result_message: Bagus! Ini adalah hasil yang bagus!
+        next_course_lesson: Pergi ke pelajaran seterusnya dalam kursus
+        no_results: Anda belum mempunyai keputusan ujian
+        no_results_text: Tolong, lengkapkan pelajaran dan lulus ujian untuk mendapatkan
+          hasilnya
+        see_correct_answers_list: Lihat senarai jawapan yang betul
+        train_more: >-
+          Berlatih lebih banyak dan anda akan memperoleh hasil yang lebih baik pada
+          masa akan datang!
+        you_finished_lesson: Hebat! Anda menamatkan pelajaran
+      go_back: Pergi balik
+      next_button: Seterusnya
+      not_available_task: Tugas ini belum tersedia
+      start_button: Mulakan
+      tasks:
+        check:
+          assignment:
+            accept: Terima
+            author_will_check_your_answer: >-
+              %{author} akan menyemak jawapan anda dan biasanya memberi maklum balas
+              dalam 1-2 hari
+            continue_writing: Terus menulis
+            copy: Salinan
+            delete: Padam
+            delete_record: Padamkan rekod
+            edit: Edit
+            essay_does_not_have_enough_words: >-
+              Jawapan anda hendaklah mengandungi sekurang-kurangnya %{minWordsNumber}
+              perkataan. Jawapan anda sekarang adalah perkataan %{currentWordsNumber}.
+            followers_count: pengikut %{followersCount}
+            lessons_count: pelajaran %{lessonsCount}
+            minimal_recording_time: Masa rakaman minimum - %{minimalRecordingTime}
+            minimum_characters_amount: Aksara minimum - %{minimumCharactersAmount}
+            minimum_words_amount: Perkataan minimum - %{minimumAmount}
+            record_again: Rakam lagi
+            record_voice: Rakam suara
+            send_anyway: Hantar pula
+            send_to_review: Hantar ke semakan
+            skip: Langkau
+            too_short_answer: Jawapan yang terlalu pendek
+            type_your_answer: Taipkan jawapan anda
+            unknown_task_type: Jenis tugas yang tidak diketahui
+            upgrade_licence: Naik taraf lesen
+            upgrade_your_plan: Tingkatkan rancangan anda untuk mencuba tugasan dengan
+              ulasan guru
+            upload_files: Memuat naik fail
+            write_essay: Tulis karangan
+            you_have_used_amount_of_assignments: Anda telah menggunakan kredit tugasan
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Jurang hukuman
+          fill_in_table:
+            column_answer_placeholder: Jawapan
+            column_question_placeholder: Soalan
+            example: Contohnya
+          true_false:
+            'false': Salah
+            'true': Betul
+        learn:
+          translatable_text:
+            show_original: Paparkan yang asli
+            translate_into: Terjemahkan dengan Google ke dalam %{languageName}
+            translate_into_your_lang: Terjemahkan dengan Google ke dalam bahasa anda
+        play:
+          arrange_words:
+            start_screen:
+              heading: Buat ayat daripada perkataan yang diberikan
+          audition:
+            start_screen:
+              heading: Dengarkan audio dan ketik perkataan yang baru anda dengar
+          dictation:
+            get_help: Dapatkan pertolongan
+            i_do_not_know: Saya tidak tahu
+            input_placeholder: Masukkan apa yang anda dengar di sini
+            start_screen:
+              heading: Dengarkan dan tulis apa yang anda dengar
+          fill_gap:
+            start_screen:
+              heading: Padankan perkataan dan maknanya
+          finish_screen:
+            go_to_next_exercise: Bagus! Pergi ke latihan seterusnya
+          image_hotspot:
+            start_screen:
+              heading: Namakan objek dalam gambar dengan betul
+          image_object:
+            start_screen:
+              heading: Pilih objek yang betul dari gambar seterusnya
+          inline_dropdown:
+            start_screen:
+              heading: Pilih perkataan yang sesuai dengan ayat
+          mark_word:
+            start_screen:
+              heading: Baca teks dan pilih perkataan yang sesuai dengan gambar
+          minimal_pairs:
+            start_screen:
+              heading: Tonton video dan pilih pilihan yang betul
+    locale:
+      currency_switcher_title: Penukar mata wang
+      lang_switcher_title: Penukar bahasa
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Bahasa Inggeris
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Portugis
+        ro: Limba roman
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio sedang dimuat
+        aria_pause_button: Jeda sebentar
+        aria_play_button: Main
+        aria_reload_button: Tambah nilai
+        aria_stop_button: Berhenti
+        reload_message: Gagal memuatkan audio. Sila klik butang untuk memuatkan semula.
+    mobile_modal:
+      apply: Memohon
+      cancel: Batal
+      clear: Jelas
+      save: Jimat
+    page404:
+      goToStartLessonPage: Pergi ke halaman pelajaran permulaan
+      ooops: Oooops ...
+      sorry_message: Maaf, Tor tidak dapat menemui halaman ini
+    profile:
+      navigation:
+        log_out: Log keluar
+        my_profile: Profil saya
+        settings: Tetapan
+      onboarding:
+        choose_native_language: Pilih bahasa atau bahasa ibunda anda yang anda fahami
+        do_you_understand_english: Adakah anda memahami bahasa Inggeris?
+        hello: Helo
+        language_levels:
+          a1: Tahap asas
+          a2: Tahap pra-pertengahan
+          b1: Peringkat pertengahan
+          b2: Tahap Menengah Atas
+          c1: Tahap maju
+          no_knowledge: Tiada pengetahuan
+        language_not_supported:
+          note: Kami akan memberitahu anda sebaik sahaja bahasa itu tersedia
+          title: Maaf, tetapi kami belum menyokong bahasa ini
+          try_another_language: Cuba bahasa lain
+        'no': Tidak
+        search_placeholder: Cari ...
+        show_more_languages: Bahasa lain
+        target_language_question: Bahasa apa yang anda mahu pelajari?
+        what_is_language_level: Bagaimana anda menilai tahap %{languageName} anda?
+        'yes': Ya
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Dasar privasi Lingu
+        support: Sokongan
+      logout: Log keluar
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Terima kemas kini daripada guru dan sekolah yang anda ikuti
+              sections:
+                app_notifications: Pemberitahuan apl
+                email: E-mel
+              title: Bantuan pembelajaran
+            marketing:
+              description: Ikuti maklumat mengenai semua promosi, kemas kini dan inspirasi
+                dari Lingu
+              sections:
+                browser_notifications: Pemberitahuan penyemak imbas
+                email: E-mel
+              title: Pemasaran
+          title: Pilihan kenalan
+        personal_information:
+          delete_photo: Padamkan foto
+          email: E-mel
+          first_name: Nama pertama
+          last_name: Nama terakhir
+          social_accounts:
+            connected: Bersambung
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Tidak bersambung
+            title: Akaun sosial
+          title: Maklumat peribadi
+          update_photo: Kemas kini foto
+        school:
+          active_licence: Lesen aktif
+          active_status: Aktif
+          delete_profile: Padamkan profil saya
+          delete_profile_modal:
+            body: |-
+              Anda menghapuskan semua data anda - selama-lamanya. Tidak ada butang buat asal, dan kami tidak dapat mengembalikannya untuk anda selepas itu.
+              Adakah anda pasti mahu memadamkan profil Lingu dan semua data anda secara kekal?
+            cancel: Batal
+            confirm: Ya, padamkannya
+            i_understand_the_consequences: Saya faham akibatnya
+            title: Padamkan profil anda?
+          expired: Tamat tempoh %{expire_date}
+          expires: Tamat tempoh %{expire_date}
+          inactive_status: Tidak aktif
+          revoke_access: Batalkan akses baca
+          sections:
+            contact_school: Hubungi sekolah
+            export_my_data: Eksport data saya
+            read_school_privacy_policy: Baca dasar Privasi Sekolah
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Main balik muzik
+              sound_effects: Kesan bunyi
+              title: Bunyi
+            visual:
+              dark_theme: Tema gelap
+              font_size:
+                test_text: Rumput sentiasa lebih hijau di seberang pagar
+                title: Saiz huruf
+              high_contrast: Kontras tinggi
+              hints: Petunjuk
+              title: Visual
+          title: Bunyi & Visual
+        training_settings:
+          sections:
+            i_understand: saya faham
+            i_want_to_learn: saya mahu belajar
+            target_language_level: Tahap Bahasa Inggeris
+          title: Tetapan latihan
+      settings_title: Tetapan
+    teacher_card:
+      followers_count:
+        one: 1 pengikut
+        other: pengikut %{count}
+      lessons_count:
+        one: 1 pelajaran
+        other: pelajaran %{count}

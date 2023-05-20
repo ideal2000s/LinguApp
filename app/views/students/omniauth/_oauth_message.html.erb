@@ -1,0 +1,8 @@
+<%= javascript_tag nonce: true do %>
+  window.opener.postMessage({
+      type: 'oauth_callback',
+      authenticity_token: "<%= authenticity_token %>",
+      jwt_token: "<%= jwt_token %>"
+    }, location.origin);
+  window.close();
+<% end %>

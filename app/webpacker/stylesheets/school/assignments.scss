@@ -1,0 +1,519 @@
+.assignments-container {
+  background: linear-gradient(0deg, rgba(246, 246, 246, 0.5), rgba(246, 246, 246, 0.5)), #FFFFFF;
+  .assignments-list-container {
+    margin-right: 464px;
+  }
+  #school_assignments_link {
+    color: $grey3;
+  }
+  table.table tbody {
+    tr {
+      background: white;
+      box-shadow: 0 6px 20px rgba(38, 36, 61, 0.06);
+      td:nth-child(2) {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $black1;
+      }
+      td:last-child {
+        width: 180px !important;
+      }
+      &.active {
+        background: $grey1 !important;
+        box-shadow: none;
+      }
+      &.reviewed {
+        background: $grey9;
+        box-shadow: none;
+      }
+    }
+  }
+  .assignment-reviewed {
+    padding: 5px 8px;
+    background: rgba(141, 198, 63, 0.1);
+    border-radius: 20px;
+    font-size: 12px;
+    color: $green2;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .assignment-info {
+    width: 464px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    box-shadow: 0 10px 24px rgba(38, 36, 61, 0.07);
+    color: $black1;
+    h1 {
+      font-family: Encode Sans;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .trix-content {
+      color: $grey4;
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 0 0.5rem;
+      tr:not(:last-child) {
+        font-size: 14px;
+        img {
+          width: 38px;
+          height: 32px;
+          border-radius: 4px;
+        }
+        &:nth-child(3) td {
+          color: $grey4;
+        }
+        &:last-child .reviewed {
+          color: $green2;
+        }
+      }
+      tr:last-child {
+        .assignment-pending, .assignment-reviewed {
+          margin-left: 16px;
+        }
+      }
+    }
+    .assignment-info-separator {
+      background: $grey9;
+      height: 8px;
+      width: 100%;
+    }
+  }
+  .modal.note-modal {
+    .modal-content {
+      padding: 0;
+      label {
+        font-size: initial;
+        line-height: initial;
+      }
+    }
+  }
+  .assignments-stats {
+    padding: 24px;
+    .assignment-stat-info {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 23px 20px 33px;
+      box-shadow: 0 6px 20px rgba(188, 189, 216, 0.14);
+      border-radius: 14px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .assignment-stat-info + .assignment-stat-info {
+      margin-top: 24px;
+    }
+  }
+}
+
+.school-assignments-container, .archived-students-container {
+  .school-assignments-header, .archived-students-header {
+    #new_assignment_btn, #clear_archive_btn {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    #clear_archive_btn {
+      background: #F0F0F3;
+    }
+  }
+  .archive-notification {
+    background: #FFEBB7;
+    border-radius: 10px;
+    height: 58px;
+    color: #5e5e71;
+  }
+  .target-language-header {
+    margin-right: 60px;
+  }
+  .data-deletion-date {
+    .date-distance {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      color: #F7513F;
+    }
+    .ended-date {
+      font-size: 11px;
+      line-height: 14px;
+      letter-spacing: -0.02em;
+      color: #807F91;
+    }
+  }
+}
+
+.student-level {
+  background: #EAECF1;
+  border-radius: 20px;
+  padding: 6px 8px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: $grey4;
+  text-transform: uppercase;
+}
+
+.modal#assignment-modal {
+  .modal-dialog {
+    max-width: 496px;
+  }
+  #assignment_form {
+    textarea {
+      background: $grey1;
+    }
+  }
+  .assignment-student-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .assignment-student-fallback {
+    @extend .assignment-student-avatar;
+    background-color: #00a5d7;
+    font-size: 12px;
+    color: white;
+  }
+  .select2-search__field {
+    margin-top: 10px;
+    background: transparent;
+  }
+  .select2-selection__choice {
+    background: white;
+    border: none;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .select-dropdown-item {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 20px;
+    color: $black1;
+  }
+}
+
+.text-task-type, .audio-task-type, .file-task-type {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.text-task-type {
+  background: rgba(96, 63, 158, 0.1);
+  color: #7D5ABE;
+}
+
+.audio-task-type {
+  background: rgba(239, 64, 54, 0.1);
+  color: #EF4036;
+}
+
+.file-task-type {
+  background: rgba(235, 36, 134, 0.1);
+  color: #EB2486;
+}
+
+.school-assignments-list {
+  table tbody tr {
+    td {
+      &:first-child {
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: $black1;
+        width: 55%;
+      }
+    }
+  }
+}
+
+.school-assignment-container {
+  background: linear-gradient(0deg, rgba(246, 246, 246, 0.5), rgba(246, 246, 246, 0.5)), #FFFFFF;
+  .school-assignment-details > a {
+    span {
+      font-size: 14px;
+      line-height: 18px;
+      color: #A7AAB6;
+      margin-left: 14px;
+    }
+  }
+  #assign_student_btn {
+    font-family: Encode Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+  .assignment-student-ready {
+    background: white !important;
+    box-shadow: 0 10px 24px rgba(38, 36, 61, 0.07);
+  }
+  .assignment-student-skipped {
+    background: transparent !important;
+  }
+  .assignment-student-status-pending {
+    padding: 5px 8px;
+    background: rgba(141, 198, 63, 0.1);
+    border-radius: 20px;
+    font-size: 12px;
+    color: $green2;
+  }
+  .assignment-students-list {
+    table tbody tr {
+      &.active {
+        background: $grey1 !important;
+        box-shadow: none;
+      }
+    }
+  }
+  .school-assignment-info {
+    width: 464px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    box-shadow: 0 10px 24px rgba(38, 36, 61, 0.07);
+    color: $black1;
+    .student-info {
+      .student-avatar, .student-avatar-fallback {
+        width: 64px;
+        height: 64px;
+        font-size: 20px;
+      }
+      h1 {
+        font-family: Encode Sans;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 32px;
+      }
+      .target-language-level {
+        width: 35px;
+      }
+    }
+    .assignment-student-info-header {
+      table {
+        border-collapse: separate;
+        border-spacing: 10px 15px;
+      }
+    }
+  }
+  .assignment-student-info-separator {
+    width: 100%;
+    height: 8px;
+    background-color: $grey9;
+  }
+}
+
+.student-response-detail, .school-response-chat {
+  .student-full-name, .lingu-school {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: $black1;
+  }
+  .school-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+  .response-time {
+    font-size: 12px;
+    line-height: 14px;
+    color: $grey3;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: $black1;
+  }
+}
+
+.school-response-chat-container {
+  .school-response-chat {
+    padding-top: 20px;
+    &:not(:first-child) {
+      border-top: 1px solid #e6e6f0;
+    }
+    blockquote {
+      border-left: 1px solid #CCCCCC;
+      font-style: italic;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  border-top: 1px solid #e6e6f0;
+}
+
+.school-response {
+  & > img:first-child {
+    height: 36px;
+  }
+  form > i {
+    font-size: 19px;
+    position: absolute;
+    right: 80px;
+    bottom: 38px;
+    cursor: pointer;
+    &:hover {
+      color: #00A5D7;
+    }
+  }
+  width: 406px;
+  bottom: 0;
+  padding: 28px 0;
+  border-top: 1px solid #E6E6F0;
+  .school-audio-record-container {
+    height: 210px;
+    background: #F0F0F3;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    .close {
+      top: 10px;
+      right: 9px;
+      span {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.document-response-input {
+  border: none !important;
+  background-color: #F0F0F3 !important;
+  border-radius: 6px !important;
+  resize: none;
+  &::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #807F91 !important;
+  }
+}
+
+.document-review {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .note-dropdown-menu .note-palette {
+    width: 150px !important;
+  }
+}
+
+.review-tooltip {
+  position: fixed;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px rgba(19, 27, 47, 0.12);
+  border-radius: 6px;
+  padding: 10px 12px;
+  .review-comment, .review-quote {
+    opacity: .8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .separator {
+    border-right: 1px solid #E6E6F0;
+    margin: 0 12px;
+  }
+}
+
+.school-comment {
+  box-shadow: 0 0 10px rgba(19, 27, 47, 0.12);
+  border-radius: 6px;
+  position: absolute;
+  right: 30px;
+  img {
+    height: 28px;
+  }
+  button {
+    border-radius: 4px;
+    height: 32px;
+  }
+  textarea {
+    box-shadow: none !important;
+  }
+}
+
+.text-focus {
+  background: #f17538;
+  color: white;
+}
+
+.lingu-school-comment {
+  text-decoration: underline;
+  text-decoration-color: #ff751a;
+  background-color: #ffd1b3;
+}
+
+.comment-tooltip {
+  width: 260px;
+  background: #FFFFFF;
+  backdrop-filter: blur(3px);
+  border-radius: 8px;
+  color: $black1;
+  img {
+    height: 28px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+  }
+}
+
+body > .bs-tooltip-bottom {
+  .arrow::before {
+    border-bottom-color: white !important;
+  }
+  .tooltip-inner {
+    background: white;
+    box-shadow: 0 6px 20px rgba(38, 36, 61, 0.06);
+  }
+}
+
+.note-editor {
+  .note-editable {
+    max-height: 170px;
+  }
+  .note-toolbar {
+    background: $grey1;
+  }
+  .dropdown-toggle {
+    &:after {
+      display: inline-block;
+      margin-left: 0.255em;
+      vertical-align: 0.255em;
+      content: "";
+      border-top: 0.3em solid;
+      border-right: 0.3em solid transparent;
+      border-bottom: 0;
+      border-left: 0.3em solid transparent;
+    }
+  }
+}

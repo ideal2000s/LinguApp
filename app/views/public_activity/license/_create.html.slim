@@ -1,0 +1,6 @@
+- if controller.controller_name == 'team_users'
+  == t('activerecord.attributes.activity.license.create_student',
+          student: activity.recipient.student.full_name,
+          plan: activity.trackable.plan.name)
+- else
+  == t('activerecord.attributes.activity.license.create', plan_name: activity.trackable.plan.name, user_name: activity.owner&.full_name || t('shared.unknown'))

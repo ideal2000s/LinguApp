@@ -1,0 +1,28 @@
+- set_page_title collection.name
+.card
+  .card-header
+    h2= best_in_place collection, :name, url: admin_language_collection_path(@language, collection), inner_class: 'form-control'
+    .d-flex.align-items-center.justify-content-between
+      = link_to new_admin_language_word_path(@language, collection_id: collection.id), remote: true, class: 'card-link', id: 'new_phrase_button' do
+        i.fas.fa-plus.fa-fw.mr-1
+        = t('.new_word')
+      div{ style="width: 40%" }
+        = form_tag admin_language_collection_path(@language, collection), method: :put, remote: true
+          .input-group.input-group-sm
+            = select_tag :word_id, options_for_select([]),
+            class: 'form-control select2-remote words-search', multiple: false, data: { url: search_admin_language_words_path(@language), inputlength: 1, placeholder: t('.search_words') }
+            .input-group-append
+              button.btn.btn-outline-secondary.border-300.btn-sm.disabled#search_add_collection_word
+                i.fas.fa-plus.fa-fw
+  = render partial: 'admin/dictionary/languages/words/words_table', locals: { language: language, words: collection.words.order(:body).includes(:collections), collection: collection, translate: true }
+  .card-footer.d-flex.align-items-center.justify-content-between
+    .dropdown
+      button#dropdownMenuButton.btn.btn-falcon-secondary.dropdown-toggle.disabled.ml-1 aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
+        = t('admin.dictionary.languages.words.index.bulk_actions')
+      .dropdown-menu aria-labelledby="dropdownMenuButton"
+        = link_to t('.remove_from_collection'), remove_from_collection_admin_language_words_path(collection_id: collection.id), data: {confirm: 'Are you sure?'}, remote: true, method: :get, class: 'dropdown-item', id: 'btn_remove_phrases'
+    =< link_to t('activerecord.devise.shared.links.back'), admin_language_collections_path(language)
+
+.modal id='new-phrase-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog role="document"
+    .modal-content

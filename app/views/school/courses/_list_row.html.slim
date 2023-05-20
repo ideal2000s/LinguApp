@@ -1,0 +1,24 @@
+tr.course-row
+  td.align-middle
+    .d-flex.align-items-center
+      - if course.image.present?
+        = link_to school_course_path(course) do
+          = image_tag(course.image_url(:thumbnail), class: 'course-image-thumb', alt: course.title)
+      span.course-title.ml-3
+        = link_to course.title, school_course_path(course)
+  td.align-middle
+    span.course-author
+      => course.team.name
+    span.text-muted
+      = t('school.courses.list.created_at', created_at: l(course.created_at, format: :short))
+  td.align-middle.text-center
+    = course.lessons_count || 0
+  td.align-middle
+    .d-inline-block.language-info
+      = image_tag("flags/#{language_to_flag_code(course.language.code)}.svg", class: 'language-flag mr-1')
+      span.font-weight-bold
+        = course.language.name.presence || course.language.system_name
+        =< t(course.level&.upcase, scope: 'activerecord.attributes.course.level')
+  td.align-middle
+    .course-actions
+      = button_to t('school.courses.list.assign_to_group'), assign_team_group_school_course_path(course), method: :get, remote: true, class: 'btn btn-light'

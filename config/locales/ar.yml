@@ -1,0 +1,603 @@
+---
+ar:
+  course_mailer:
+    course_assigned_notification:
+      button: ابدأ الدورة
+      click_start_lesson: انقر فوق "بدء الدرس"
+      follow_course_link: انقر فوق الزر لفتح الدورة
+      footer_text: عد إلى Lingu لتتعلم شيئًا جديدًا كل يوم!
+      get_started_line: 'إليك كيف تبدأ:'
+      notification_link: إعدادات الإشعار
+      open_lesson: افتح الدرس الأول
+      or_paste_this_link: أو الصق هذا الرابط في متصفحك
+      sign_in_with_email: تسجيل الدخول بعنوان بريدك الإلكتروني (%{email})
+      support_link: الدعم
+      title: الابتداء مع %{course}
+    new_document_comment:
+      author_text: "%{author} ترك مراجعة مهمتك"
+      button_text: تحقق من ذلك
+      button_url_helper: 'أو الصق هذا الرابط في متصفحك:'
+      footer_text: هناك الكثير لنتعلمه ...
+      notification_link: إعدادات الإشعار
+      subject_line: تعليق مهمة جديدة
+      support_link: الدعم
+    otp:
+      ignore_msg: إذا لم تقدم هذا الطلب ، فتجاهل البريد الإلكتروني فقط.
+      subject_line: رمزك الفريد لـ Lingu
+      unique_code_for_lingu: هذا هو الرمز الفريد الخاص بك لـ Lingu
+  frontend:
+    auth:
+      already_have_acc_question: هل لديك حساب؟
+      back: عودة
+      back_to_sign_in: العودة إلى تسجيل الدخول
+      check_your_email_for_a_code: تحقق من بريدك الإلكتروني للحصول على رمزك
+      continue: استمر
+      continue_with_email: تواصل مع البريد الإلكتروني
+      continue_with_provider: تواصل مع %{provider}
+      did_not_receive_a_code: لم تتلق رمز؟
+      email_address: عنوان البريد الالكترونى
+      first_name: الاسم الاول
+      get_unique_code: احصل على رمز تسجيل دخول فريد
+      join_lingu: انضم إلى Lingu
+      last_name: الكنية
+      more_login_options: المزيد من خيارات تسجيل الدخول
+      no_account_question: ليس لديك حساب؟
+      or: أو
+      resend_code: أعد إرسال الرمز
+      sign_in: تسجيل الدخول
+      sign_up: سجل
+      want_to_receive_marketing_messages: أريد تلقي رسائل تسويقية من Lingu
+      we_ve_sent_a_code: >-
+        لقد أرسلنا رمزًا مكونًا من 6 أرقام إلى <strong> {{email}} </strong>. تنتهي
+        صلاحية الرمز خلال 15 دقيقة ، لذا يرجى إدخاله قريبًا.
+    cookie_agreement:
+      agree: يوافق على
+      condition: >-
+        نحن نستخدم ملفات تعريف الارتباط لتحليل أداء الموقع وتقديم محتوى مخصص. بالنقر
+        فوق "موافق" ، فإنك توافق على شروطنا.
+    course:
+      accredited_course_provider: مزود دورة معتمد
+      apply: تطبيق
+      apply_filters: تطبيق المرشحات
+      by: بواسطة
+      cancel: إلغاء
+      categories: فئات %{count}
+      category: الفئة
+      clear: واضح
+      clear_filters: مسح المرشحات
+      contact_us: اتصل بنا
+      could_not_find_match_for: عذرا ، لم نتمكن من العثور على أي تطابق
+      course_language: لغة الدورة
+      duration: المدة الزمنية
+      filter_settings:
+        categories:
+          academic: أكاديمي
+          business: اعمال
+          fashion: موضه
+          food_drink: طعام شراب
+          for_kids: للأطفال
+          general: جنرال لواء
+          health: الصحة
+          legal: قانوني
+          sport: رياضة
+          travel: السفر
+        durations:
+          t0_600: أقل من 10 دقائق
+          t1800_3600: 30-60 دقيقة
+          t3600_86400: 1+ ساعة
+          t600_1800: 10-30 دقيقة
+        focus_on:
+          conversation: محادثة
+          grammar: قواعد
+          listening: الاستماع
+          pronunciation: النطق
+          reading: قراءة
+          speaking: تكلم
+          writing: جاري الكتابة
+        levels:
+          long:
+            advanced: مستوى متقدم
+            elementary: المرحلة الابتدائية
+            intermediate: المستوى المتوسط
+            no_knowledge: لا معرفة
+            pre_intermediate: المستوى قبل المتوسط
+            upper_intermediate: مستوى فوق المتوسط
+          short:
+            advanced: المتقدمة
+            beginner: مبتدئ
+            intermediate: متوسط
+        sort_by:
+          most_rated: الأكثر تقييما
+          newest: الأحدث
+          popularity: شعبية
+      filters: المرشحات
+      focus_on: قم بالتركيز على
+      focus_on_title: اريد التركيز على
+      hide_lessons: إخفاء الدروس
+      hours: ساعات
+      i_understand: أنا أفهم
+      i_want_to_learn: اريد ان اتعلم
+      in_language: في %{language}
+      language: لغة
+      learn_more: أعرف أكثر
+      less_settings: إعدادات أقل
+      lessons: الدروس
+      lessons_available: تتوفر دروس %{number}
+      lessons_catalog_page_subtitle: كن بطل اللغة.
+      lessons_catalog_page_title: وسّع آفاقك بدورة لغة
+      level: مستوى
+      min: دقيقة
+      more_settings: المزيد من الإعدادات
+      navbar:
+        close: إغلاق القائمة
+        menu: قائمة طعام
+        select_language: اختار اللغة
+      need_to_buy_course: أنت بحاجة إلى حجز دورة أولا
+      no_description: لم يتم تقديم وصف
+      no_results: معذرةً ، لم نتمكن من العثور على أي تطابق لـ
+      or: أو
+      per_month: كل شهر
+      plans: الخطط
+      privacy_policy: سياسة الخصوصية
+      rating: تقييم
+      remove_all_filters: إزالة جميع المرشحات
+      reviews: المراجعات
+      save: حفظ
+      search: بحث
+      select_dots: تحديد...
+      select_languages: حدد langauges
+      select_num_languages: حدد لغات %{number}
+      short_levels:
+        a1: أ 1
+        a2: أ 2
+        b1: ب 1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: أ 0
+      show_all: عرض الكل
+      show_all_lessons: عرض كل الدروس
+      show_lessons: عرض دروس %{number}
+      show_more: أظهر المزيد
+      sign_up_with_lingu_for: اشترك مع Lingu Norway في
+      skills: مهارات %{count}
+      sort_by: ترتيب حسب
+      start_typing_here: ابدأ الكتابة هنا
+      teach: يعلم
+      terms_and_conditions: الأحكام والشروط
+      time_range: النطاق الزمني
+      try_adjusting_your_search: حاول تعديل البحث عن طريق تغيير عوامل التصفية الخاصة
+        بك
+      try_this_course: جرب هذه الدورة
+      website_language: لغة الموقع
+      words: كلمات
+    games:
+      finished:
+        go_to_next_exercise: أحسنت! انتقل إلى التمرين التالي
+      flashcard:
+        buttons:
+          finish: إنهاء
+          next: التالى
+          previous: السابق
+        check_out_new_words: تحقق من الكلمات الجديدة التي ستتعلمها في هذا الدرس
+        frequency_of_word_usage: تردد استخدام الكلمة في %{language}
+        keep_practice_to_learn_all_words: راجع كلمات %{count} ودعنا نلعب بعض الألعاب!
+        word_frequency:
+          level1: نادرا ما تستخدم
+          level2: نادرا ما تستخدم
+          level3: تردد الكلمات - متوسط
+          level4: تردد الكلمات - متوسط
+          level5: مشترك
+          level6: شائع جدا
+      match_word:
+        click_and_move_each_word_to_counterpart: انقر ونقل كل كلمة إلى نظيرتها
+        start_heading: تطابق الكلمات لعمل زوج
+        time_is_up: انتهى الوقت!
+      skip_tutorial: تخطى
+      time_is_up: انتهى الوقت!
+      word_nodes:
+        match_letters_to_form_word: تطابق الحروف لتشكيل كلمة
+      word_waterfall:
+        do_not_hesitate: لنسرع!
+        go_to_next_exercise: انتقل إلى التمرين التالي
+        select_correct_translation: حدد المطابقة الصحيحة
+        well_done: أحسنت!
+    home_page:
+      hello: مرحبا،
+      popular_lessons: دروس شعبية
+      show_more: أظهر المزيد
+      time: "%{count} دقيقة"
+      today_lesson: درسك لهذا اليوم
+      user_name: "%{name}!"
+      words: كلمات %{count}
+    idle_screen:
+      by_author: بواسطة %{authorName}
+      continue_lesson: أكمل الدرس
+      exit: خروج
+      idle_message: لقد كنت خاملاً لبعض الوقت ...
+    lesson_page:
+      back_to_course_page: العودة إلى صفحة الدورة
+      close: قريب
+      continue_lesson: أكمل الدرس
+      followed: يتبع
+      hamburger_menu_btn: قائمة همبرغر
+      lesson_given: الدروس
+      not_started: لم يبدأ
+      or: أو
+      part_complete: اكتمل %{percent}٪
+      restart_lesson: إعادة بدء
+      section_check: التحقق من
+      section_check_info: اختبارات %{count}
+      section_learn: تعلم
+      section_learn_info: "%{count} دقيقة لمشاهدة وقراءة"
+      section_play: لعب
+      section_play_info: كلمات %{count} للتدريب
+      start_lesson: ابدأ الدرس
+      step_progress: "%{percent}٪"
+      subscribe: إتبع
+      subscribed: يتبع
+      subscribers: متابعون
+      time_min: "%{minutesNumber} دقيقة"
+      unsubscribe: الغاء المتابعة
+      webview_error_title: هناك خطأ ما...
+      words_number: "%{wordsNumber} كلمات جديدة"
+    lesson_task:
+      cancel_button: إلغاء
+      check:
+        navigation_next: التالى
+        navigation_previous: السابق
+        navigation_skip: تخطى
+      controls_panel:
+        font_size_button: حجم الخط
+        high_contrast_button:
+          origin: تباين عالي
+          short: التباين
+        hints_button: تلميحات
+        music_playback_button:
+          origin: تشغيل الموسيقى
+          short: موسيقى
+        sound_effects_button:
+          origin: مؤثرات صوتية
+          short: صوت
+      exit_button: خروج
+      finish_button: إنهاء
+      finished:
+        back_to_learn: العودة للتعلم
+        back_to_lesson_page: العودة إلى صفحة الدرس
+        back_to_results_page: العودة إلى صفحة النتائج
+        bad_result_message: حسنًا ... حاول أن تأخذ الدرس مرة أخرى
+        close_lesson: إغلاق الدرس
+        correct_answers_list: قائمة الإجابات الصحيحة
+        good_result_message: أستطيع أن أرى أنك بذلت مجهودًا!
+        great_result_message: أحسنت! هذه نتائج رائعة!
+        next_course_lesson: انتقل إلى الدرس التالي في الدورة التدريبية
+        no_results: ليس لديك نتائج اختبار حتى الآن
+        no_results_text: من فضلك أكمل الدرس واجتاز الاختبار للحصول على النتائج
+        see_correct_answers_list: انظر قائمة الإجابات الصحيحة
+        train_more: تدرب أكثر وستحقق نتائج أفضل في المرة القادمة!
+        you_finished_lesson: عظيم! لقد أنهيت الدرس
+      go_back: عد
+      next_button: التالى
+      not_available_task: هذه المهمة ليست متاحة بعد
+      start_button: بداية
+      tasks:
+        check:
+          assignment:
+            accept: قبول
+            author_will_check_your_answer: ستراجع %{author} إجابتك وتقدم ملاحظاتك
+              عادةً في غضون يوم إلى يومين
+            continue_writing: مواصلة الكتابة
+            copy: نسخ
+            delete: حذف
+            delete_record: حذف سجل
+            edit: تعديل
+            essay_does_not_have_enough_words: >-
+              يجب أن تحتوي إجابتك على الأقل على %{minWordsNumber} كلمة. إجابتك حاليا
+              %{currentWordsNumber} كلمات.
+            followers_count: "%{followersCount} متابعين"
+            lessons_count: دروس %{lessonsCount}
+            minimal_recording_time: الحد الأدنى من وقت التسجيل - %{minimalRecordingTime}
+            minimum_characters_amount: الحد الأدنى من الأحرف - %{minimumCharactersAmount}
+            minimum_words_amount: الحد الأدنى من الكلمات - %{minimumAmount}
+            record_again: سجل مرة أخرى
+            record_voice: سجل صوت
+            send_anyway: أرسل على كل حال
+            send_to_review: أرسل للمراجعة
+            skip: تخطى
+            too_short_answer: إجابة قصيرة جدًا
+            type_your_answer: أكتب أجابتك
+            unknown_task_type: نوع مهمة غير معروف
+            upgrade_licence: رخصة الترقية
+            upgrade_your_plan: قم بترقية خطتك لتجربة الواجبات مع مراجعات المعلمين
+            upload_files: تحميل الملفات
+            write_essay: اكتب مقال
+            you_have_used_amount_of_assignments: لقد استخدمت اعتمادات الإحالة %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: فجوة الجملة
+          fill_in_table:
+            column_answer_placeholder: إجابة
+            column_question_placeholder: سؤال
+            example: مثال
+          true_false:
+            'false': خاطئة
+            'true': صحيح
+        learn:
+          translatable_text:
+            show_original: إظهار النسخة الأصلية
+            translate_into: ترجمة مع جوجل إلى %{languageName}
+            translate_into_your_lang: ترجمة مع جوجل إلى لغتك
+        play:
+          arrange_words:
+            start_screen:
+              heading: اصنع جملة من الكلمات المعطاة
+          audition:
+            start_screen:
+              heading: استمع إلى الصوت واضغط على الكلمة التي سمعتها للتو
+          dictation:
+            get_help: احصل على مساعدة
+            i_do_not_know: لا أدري، لا أعرف
+            input_placeholder: أدخل ما سمعته هنا
+            start_screen:
+              heading: استمع واكتب ما تسمعه
+          fill_gap:
+            start_screen:
+              heading: تطابق الكلمة ومعناها
+          finish_screen:
+            go_to_next_exercise: أحسنت! انتقل إلى التمرين التالي
+          image_hotspot:
+            start_screen:
+              heading: قم بتسمية الكائنات الموجودة في الصورة بشكل صحيح
+          image_object:
+            start_screen:
+              heading: اختر الكائن الصحيح من الصورة التالية
+          inline_dropdown:
+            start_screen:
+              heading: اختر الكلمات التي تطابق الجملة
+          mark_word:
+            start_screen:
+              heading: اقرأ النص وحدد الكلمة التي تطابق الصورة
+          minimal_pairs:
+            start_screen:
+              heading: شاهد الفيديو وحدد الخيار الصحيح
+    locale:
+      currency_switcher_title: محوّل العملات
+      lang_switcher_title: محوّل اللغة
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: الألمانية
+        el: Greek
+        en: الإنجليزية
+        eo: Esperanto
+        es: الاسبانية
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: الفرنسية
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ايطالي
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: نورسك
+        ne: Nepali
+        nl: الهولندية
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: بولسكي
+        ps: Pashto
+        pt: البرتغالية
+        ro: ليمبا روماني
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: يتم تحميل الصوت
+        aria_pause_button: وقفة
+        aria_play_button: لعب
+        aria_reload_button: إعادة تحميل
+        aria_stop_button: قف
+        reload_message: فشل تحميل الصوت. الرجاء الضغط على الزر لإعادة التحميل.
+    mobile_modal:
+      apply: تطبيق
+      cancel: إلغاء
+      clear: واضح
+      save: حفظ
+    page404:
+      goToStartLessonPage: انتقل إلى صفحة بدء الدرس
+      ooops: عفوًا ...
+      sorry_message: معذرةً ، لم يتمكن Tor من العثور على هذه الصفحة
+    profile:
+      navigation:
+        log_out: تسجيل خروج
+        my_profile: ملفي
+        settings: إعدادات
+      onboarding:
+        choose_native_language: اختر لغتك الأم أو اللغة التي تفهمها
+        do_you_understand_english: هل تفهم الإنجليزية؟
+        hello: مرحبا
+        language_levels:
+          a1: المرحلة الابتدائية
+          a2: المستوى قبل المتوسط
+          b1: المستوى المتوسط
+          b2: مستوى فوق المتوسط
+          c1: مستوى متقدم
+          no_knowledge: لا معرفة
+        language_not_supported:
+          note: سوف نخطرك بمجرد توفر اللغة
+          title: عذرا ، لكننا لا ندعم هذه اللغة بعد
+          try_another_language: جرب لغة أخرى
+        'no': لا
+        search_placeholder: بحث...
+        show_more_languages: لغات اخرى
+        target_language_question: ما اللغة التي تريد أن تتعلمها؟
+        what_is_language_level: كيف تقيم مستوى %{languageName} الخاص بك؟
+        'yes': نعم
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: سياسة خصوصية Lingu's
+        support: الدعم
+      logout: تسجيل خروج
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: تلقي تحديثات من المعلمين والمدارس التي تتابعها
+              sections:
+                app_notifications: اشعارات التطبيق
+                email: البريد الإلكتروني
+              title: مساعدة التعلم
+            marketing:
+              description: ابق على اطلاع بجميع العروض الترويجية والتحديثات والإلهام
+                من Lingu
+              sections:
+                browser_notifications: إخطارات المتصفح
+                email: البريد الإلكتروني
+              title: تسويق
+          title: جهات الاتصال المفضلة
+        personal_information:
+          delete_photo: حذف الصورة
+          email: البريد الإلكتروني
+          first_name: الاسم الاول
+          last_name: الكنية
+          social_accounts:
+            connected: متصل
+            facebook: موقع التواصل الاجتماعي الفيسبوك
+            google: جوجل
+            microsoft: مايكروسوفت
+            not_connected: غير متصل
+            title: الحسابات الاجتماعية
+          title: معلومات شخصية
+          update_photo: تحديث الصورة
+        school:
+          active_licence: رخصة سارية
+          active_status: نشيط
+          delete_profile: حذف ملف التعريف الخاص بي
+          delete_profile_modal:
+            body: |-
+              أنت تمحو كل بياناتك - إلى الأبد. ليس هناك زر تراجع ، ولا يمكننا استعادته لك بعد ذلك.
+              هل أنت متأكد أنك تريد حذف ملف تعريف Lingu وجميع بياناتك بشكل دائم؟
+            cancel: إلغاء
+            confirm: نعم ، احذفها
+            i_understand_the_consequences: أنا أفهم العواقب
+            title: حذف ملف التعريف الخاص بك؟
+          expired: منتهي الصلاحية %{expire_date}
+          expires: تنتهي صلاحية %{expire_date}
+          inactive_status: غير نشط
+          revoke_access: إبطال حق الوصول للقراءة
+          sections:
+            contact_school: اتصل بالمدرسة
+            export_my_data: تصدير بياناتي
+            read_school_privacy_policy: اقرأ سياسة الخصوصية للمدرسة
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: تشغيل الموسيقى
+              sound_effects: مؤثرات صوتية
+              title: صوت
+            visual:
+              dark_theme: مظهر داكن
+              font_size:
+                test_text: العشب دائمًا أكثر اخضرارًا على الجانب الآخر من السياج
+                title: حجم الخط
+              high_contrast: تباين عالي
+              hints: تلميحات
+              title: المرئية
+          title: سمعي ومرئي
+        training_settings:
+          sections:
+            i_understand: أنا أفهم
+            i_want_to_learn: اريد ان اتعلم
+            target_language_level: مستوى اللغة الإنجليزية
+          title: إعدادات التدريب
+      settings_title: إعدادات
+    teacher_card:
+      followers_count:
+        one: متابع واحد
+        other: "%{count} متابعين"
+      lessons_count:
+        one: درس واحد
+        other: دروس %{count}

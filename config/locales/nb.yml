@@ -1,0 +1,3383 @@
+---
+nb:
+  actions: Handlinger
+  activerecord:
+    attributes:
+      activity:
+        assignment:
+          receive: fikk en oppgave av %{user_name} med frist %{deadline_date}
+        lesson:
+          complete: fullførte %{lesson_link}
+        license:
+          create: ble tildelt <strong>%{plan_name}</strong> av %{user_name}
+          create_student: opprettet lisens <strong>%{plan}</strong> for %{student}
+          removed_expiration: "%{user_name} fjernet sluttdato for lisensen"
+          removed_expiration_student: fjernet sluttdato for lisensen til %{student}
+          revoke: "%{user_name} avsluttet lisensen"
+          revoke_student: avsluttet lisensen til %{student}
+          update: "%{user_name} satte sluttdato for lisensen til <strong>%{expire_date}</strong>"
+          update_student: satte sluttdato <strong>%{date}</strong> for lisensen til
+            %{student}
+        student:
+          create: deltakerkonto ble opprettet av %{user_name}
+          import: ble importert til <strong>%{team_name}</strong> av %{user_name}
+        team_group:
+          archive: klassen <strong>%{group}</strong> ble arkivert av %{user}
+          course_assign: tilordnet læreverket <strong>%{course}</strong> til klassen
+            %{group}
+          create: opprettet klassen <strong>%{group_name}</strong> i %{language}
+          import: importerte <strong>%{count} deltakere</strong> fra Excel/CSV
+        team_student:
+          archive: ble arkivert av %{user_name}
+          course_assign: ble tildelt <strong>%{course}</strong> av %{user_name}
+          create: ble importert til <strong>%{team_name}</strong> av %{user_name}
+          discard: ble markert for sletting av %{user_name}
+          group_assign: ble flyttet til klassen <strong>%{group_name}</strong> av
+            %{user_name}
+          joined_group: registrerte seg i klassen <strong>%{group_name}</strong> via
+            invitasjonslenke
+          restore: ble gjenopprettet av %{user_name}
+          undiscard: ble ikke kastet av %{user_name}
+        team_user:
+          create: brukerkonto hos <strong>%{team_name}</strong> ble opprettet av %{user_name}
+          self_registered: opprettet brukerkonto via invitasjonslenke
+        undo:
+          reassign_license: Gjenopprett lisens
+          remove_end_date: Fjern sluttdato
+          revoke_license: Avslutt lisens
+          unarchive_student: Gjenopprett deltakerkonto
+      assignment:
+        statuses:
+          pending: Venter vurdering
+          reviewed: Vurdert
+        types:
+          audio: Lydinnspilling
+          essay: Skriveoppgave
+          file: Filopplasting
+          text: Skriveoppgave
+      course:
+        description: Beskrivelse
+        title: Tittel
+      language:
+        code: Kode
+        name: Navn
+        system_name: Systemnavn
+      lesson:
+        credits: Krediteringer
+        kind: Type
+        kinds:
+          storyline: Storyline
+          tet: Teach-Engage-Test
+        level:
+          one: Nivå
+          other: Nivåer
+        levels:
+          a1: A1 - Nybegynnernivå
+          a2: A2 - Elementært nivå
+          b1: B1 - Mellomnivå
+          b2: B2 - Høyere mellomnivå
+          c1: C1 - Avansert nivå
+          c2: C2 - Morsmålsnivå
+          undefined: Udefinert
+          zero_level: 0 - Nullnivå
+        levels_for_target:
+          a1: Grunnskolenivå
+          a2: Før mellomnivå
+          b1: Mellomnivå
+          b2: Øvre mellomnivå
+          c1: Avansert nivå
+          zero_level: Ingen kunnskap
+        published: Publisert
+        short_kinds:
+          storyline: Story
+          tet: TET
+        short_levels:
+          a1: A1
+          a2: A2
+          b1: B1
+          b2: B2
+          c1: C1
+          c2: C2
+          undefined: "?"
+          zero_level: A0
+        skills:
+          conversation: Samtale
+          grammar: Grammatikk
+          pronunciation: Uttale
+          reading: Lese
+          writing: Skrive
+        status: Status
+        statuses:
+          approved: Godkjent
+          draft: Utkast
+          pending: Venter vurdering
+        tags:
+          academic: Academia
+          art: Kunst & litteratur
+          business: Forretning
+          fashion: Mote
+          food: Mat & drikke
+          general: Generell
+          health: Helse
+          legal: Jus
+          nature: Dyr & natur
+          religion: Religion
+          sport: Sport
+          travel: Reise
+        target_statuses:
+          approved: Godkjenn
+          draft: Sett som utkast
+          pending: Be om vurdering
+          pending_review: Be om anmeldelser
+        title: Tittel
+      lesson_review:
+        statuses:
+          approved: Godkjent
+          rejected: Krever endringer
+      plan:
+        plan_interval: Intervall
+        plan_intervals:
+          month: måned
+          quarter: kvartal
+          week: uke
+          year: år
+        price: Pris
+        price_currency: Valuta
+      reward:
+        description: Beskrivelse
+        dimension: Dimensjon
+        dimensions:
+          time: Tid
+          word: Ord
+          xp: Poeng
+        kind: Type
+        kinds:
+          badge: Merke
+          merchandise: Produkt
+        name: Navn
+      student:
+        email: E-postadresse
+        fname: Fornavn
+        gender: Kjønn
+        genders:
+          female: Kvinne
+          male: Mann
+          unknown: Ukjent
+        lname: Etternavn
+        locale: Språk
+        mobile: Mobilnummer
+        ssn: Personnummer
+      task:
+        complexity: Kompleksitet
+        name: Navn
+        subject: Etappe
+        subjects:
+          engage: Engage
+          teach: Teach
+          test: Test
+        type: Type
+      task_item:
+        content: Innhold
+      team:
+        about: Beskrivelse
+        name: Navn
+        statuses:
+          enterprise: Bedrift
+          personal: Personlig
+          school: Skole
+      team_user:
+        role: Rolle
+        roles:
+          manager: Leder
+          member: Lærer
+          owner: Administrator
+      user:
+        about: Beskrivelse
+        avatar: Profilbilde
+        confirmation_sent_at: Bekreftelse sendt
+        confirmation_token: Bekreftelseskode
+        confirmed_at: Bekreftet
+        created_at: Opprettet
+        current_password: Gjeldende passord
+        current_sign_in_at: Innlogget siden
+        current_sign_in_ip: Innlogget fra IP
+        email: E-post
+        encrypted_password: Kryptert passord
+        failed_attempts: Mislykkede forsøk
+        fname: Fornavn
+        last_sign_in_at: Sist innlogget
+        last_sign_in_ip: Sist innlogget fra IP
+        lname: Etternavn
+        locked_at: Låst
+        mobile: Mobilnummer
+        password: Passord
+        password_confirmation: Gjenta passordet
+        remember_created_at: Husk meg opprettet den
+        remember_me: Husk meg
+        reset_password_sent_at: Passordgjennoppretting sendt
+        reset_password_token: Nytt passord-kode
+        role: Roll
+        roles:
+          admin: Administrator
+          basic: Ingen
+          editor: Redaktør
+        sign_in_count: Antall innlogginger
+        unconfirmed_email: Ubekreftet epost
+        unlock_token: Lås opp-kode
+        updated_at: Oppdatert den
+      word:
+        body: Ord
+        description: Beskrivelse
+        frequency: Frekvens
+        prefix: Prefiks
+        translate: Oversette
+        word_class: Ordklasse
+        word_classes:
+          adjective: Adjektiv
+          adverb: Adverb
+          conjunction: Konjunksjon
+          determiner: Determinativ
+          interjection: Interjeksjon
+          noun: Substantiv
+          other: Annen
+          phrase: Frase
+          preposition: Preposisjon
+          pronoun: Pronomen
+          subjunction: Subjunksjon
+          unknown: Ukjent
+          verb: Verb
+        word_classes_abbr:
+          adjective: adj
+          adverb: adv
+          conjunction: conj
+          determiner: det
+          interjection: int
+          noun: n
+          other: annen
+          phrase: uttrykk
+          preposition: prep
+          pronoun: pron
+          subjunction: subj
+          unknown: "?"
+          verb: v
+      word_games:
+        game_types:
+          flashcard: Flashcards
+          match: Match ord
+          match_single: Match ord enkelt
+          nodes: Noder
+          recall: Minnes
+          waterfall: Foss
+    devise:
+      confirmations:
+        confirmed: Din konto har blitt aktivert og du er nå logget inn
+        new:
+          resend_confirmation_instructions: Send bekreftelsesinstruksjoner på nytt
+        send_instructions: Du vil snart motta en epost med instruksjoner for å aktivere
+          din konto.
+        send_paranoid_instructions: >-
+          Om vi har din e-post allerede vil du om få minutter motta en e-post med
+          instruksjoner for å bekrefte kontoen.
+      failure:
+        already_authenticated: Du er allerede innlogget.
+        inactive: Din konto er ikke aktivert.
+        invalid: Ugyldig engangskode eller ukjent e-postadresse
+        last_attempt: Du har ett forsøk til før din konto blir sperret.
+        locked: Din konto er sperret.
+        not_found_in_database: Fant ingen bruker med denne epostadressen
+        timeout: Din sesjon er utløpt. Logg inn igjen for å gå videre.
+        unauthenticated: Du må logge inn eller registrere deg for å gå videre.
+        unconfirmed: Du må bekrefte kontoen din for å kunne fortsette.
+      mailer:
+        confirmation_instructions:
+          action: Aktiver min konto
+          greeting: Velkommen %{recipient}!
+          instruction: Du kan aktivere din konto ved å trykke på lenken nedenfor.
+          subject: Bekreftelsesinstruksjoner
+        password_change:
+          greeting: Hei %{recipient}!
+          message: Vi ønsker å melde fra om at ditt passord har blitt forandret.
+          subject: Passordbytte
+        reset_password_instructions:
+          action: Bytt passord
+          greeting: Hei, %{recipient}!
+          instruction: >-
+            Noen har bedt om en link for å endre passordet ditt, og dette kan gjøres
+            på lenken under.
+          instruction_2: Vennligst se bort fra denne e-posten hvis du ikke ba om dette.
+          instruction_3: Passordet ditt endres ikke før du følger linken over og velger
+            et nytt passord.
+          subject: Instruksjoner for å tilbakestille passordet
+        unlock_instructions:
+          action: Gjenåpne min konto
+          greeting: Hei, %{recipient}!
+          instruction: Trykk på linken under for å gjenåpne din konto.
+          message: >-
+            Kontoen din har blitt sperret grunnet et høyt antall mislykkede innloggingsforsøk.
+          subject: Gjenåpning av konto
+      omniauth_callbacks:
+        failure: Kunne ikke autorisere deg fra %{kind} fordi "%{reason}".
+        success: Vellykket autorisering fra %{kind}.
+      passwords:
+        edit:
+          change_my_password: Endre mitt passord
+          change_your_password: Endre ditt passord
+          confirm_new_password: Bekreft nytt passord
+          new_password: Nytt passord
+        new:
+          forgot_your_password: Har du glemt passordet?
+          send_me_reset_password_instructions: Send instrukser for å tilbakestille
+            passordet
+        no_token: >-
+          For å få tilgang til denne siden må du ha fått en epost om å tilbakestille
+          passordet. Hvis det er tilfelle, sørg for at hele lenken blir brukt.
+        send_instructions: >-
+          Du vil snart motta en epost med instruksjoner for å tilbakestille passordet
+          ditt.
+        send_paranoid_instructions: >-
+          Hvis e-postadressen allerede finnes hos oss, vil du motta en lenke for å
+          sette passordet på nytt
+        updated: Ditt passord er endret og du er nå innlogget.
+        updated_not_active: Passordet er endret.
+      registrations:
+        destroyed: Takk for laget. Din konto er nå slettet.
+        edit:
+          are_you_sure: Er du sikker?
+          cancel_my_account: Slett min konto
+          currently_waiting_confirmation_for_email: Vi avventer bekreftelse for %{email}
+          leave_blank_if_you_don_t_want_to_change_it: la være tomt hvis du ikke ønsker
+            å endre dette
+          title: Rediger %{resource}
+          unhappy: Misfornøyd?
+          update: Lagre
+          we_need_your_current_password_to_confirm_your_changes: vi trenger ditt nåværende
+            passord for å bekrefte endringene
+        new:
+          sign_up: Registrering
+        signed_up: Velkommen! Din registrering er vellykket.
+        signed_up_but_inactive: Du er nå registrert. Men vi kan ikke logge deg inn
+          før kontoen blir aktivert.
+        signed_up_but_locked: Du er nå registrert. Men vi kan ikke logge deg inn fordi
+          kontoen er sperret.
+        signed_up_but_unconfirmed: >-
+          En bekreftelsesmelding er sendt til e-postadressen. Vennligst åpne lenken
+          for å aktivere kontoen.
+        update_needs_confirmation: >-
+          Brukerkontoen er nå oppdatert, men vi må bekrefte den nye e-postadressen.
+          Vennligst sjekk din e-post og klikk på lenken for å bekrefte din nye e-postadresse.
+        updated: Din brukerkonto er oppdatert.
+        updated_but_not_signed_in:
+      sessions:
+        already_signed_out: Du er nå logget ut.
+        new:
+          sign_in: Logg inn
+        signed_in: Du er nå innlogget.
+        signed_out: Du er nå logget ut.
+      shared:
+        links:
+          back: Tilbake
+          didn_t_receive_confirmation_instructions: Har du ikke mottatt bekreftelsesinstruksjoner?
+          didn_t_receive_unlock_instructions: Har du ikke mottatt instruksjoner for
+            å tilbakestille passordet?
+          forgot_your_password: Har du glemt passordet ditt?
+          sign_in: Logg inn
+          sign_in_with_provider: Logg inn med %{provider}
+          sign_up: Registrering
+        minimum_password_length:
+      unlocks:
+        new:
+          resend_unlock_instructions: Send instrukser for gjenåpning av konto på nytt
+        send_instructions: Du vil snart motta en epost med instruksjon for å gjenåpne
+          din konto.
+        send_paranoid_instructions: >-
+          Hvis kontoen eksisterer, vil du om få minutter motta en e-post med instruksjoner
+          om hvordan du låser opp den.
+        unlocked: Din konto er gjenåpnet og du er nå innlogget.
+    errors:
+      messages:
+        already_confirmed: har allerede blitt bekreftet. Prøv å logge inn.
+        confirmation_period_expired: må bekreftes innen %{period}, vennligst be om
+          et nytt
+        expired: har utløpt, vennligst forespør en ny
+        not_found: ikke funnet
+        not_locked: var ikke sperret
+        not_saved:
+          one: 'En feil gjorde at %{resource} ikke kunne lagres:'
+          other: "%{count} feil gjorde at %{resource} ikke kunne lagres:"
+      models:
+        task:
+          attributes:
+            image:
+              invalid: Spesifiser en bildefil eller en url, ikke begge deler
+        task_item_session:
+          attributes:
+            attempts_count:
+              cannot_be_lower_than: Kan ikke være lavere enn %{attempts_count}
+    models:
+      collection: Ordsamling
+      course: Læreverk
+      crawler: Innsamlingsjobb
+      language: Språk
+      lesson: Leksjon
+      skill: Ferdighet
+      student: Deltaker
+      task: Oppgave
+      team: Team
+      user: Bruker
+      word: Ord
+  add_audio: Legg til lydfil
+  add_student: Legg til deltaker
+  admin:
+    contexts:
+      index:
+        context_management: Administrer sammenhenger
+    courses:
+      index:
+        reset_phrases_count: Tilbakestill ordtellere
+      reset_phrases_count_notice: Setningenes antall kurs er blitt tilbakestilt.
+    crawlers:
+      index:
+        completed_at: Fullført
+        crawlers: Innsamlingsjobber for nettsteder
+        download_csv: Last ned CSV
+        started_at: Opprettet
+      new:
+        view_crawlers: Vis innsamlingsjobber
+    dashboard:
+      index:
+        active: Aktiv
+        add_student_text: Legg til deltakere og gi tilgang til nettleksjoner, tester
+          og oppgaver.
+        add_student_title: Inviter dine første deltakere
+        add_teacher_text: Lærere kan gi tilganger og tester, og svare på innleveringer
+          fra deltakerne.
+        add_teacher_title: Inviter kollegaene dine
+        expired: Utløpt
+        inactive: Inaktiv
+        no_data_text: Ingen registrerte data her ennå. Følg stegene under for å komme
+          igang!
+        previous_month: previous month
+        processor_name: Contact person for %{team}
+        student_by_level: Deltakere fordelt på nivå
+        this_month: this month
+        time_spent: Tidsbruk
+        title: Skoledashbord
+        top_lessons: Mest besøkte leksjoner
+        top_scorer: Mest aktive
+        total_visits: Besøksstatistikk
+        view_all: Vis alle
+    dictionary:
+      languages:
+        collections:
+          edit:
+            edit_collection: Rediger ordsamling
+          index:
+            any_level: Alle nivåer
+            new_collection: Ny samling
+            tags: Emner
+            word_count: Antall ord
+          show:
+            add_new_word: Legg til ord
+            new_word: Nytt ord
+            remove_from_collection: Fjern fra ordsamlingen
+            search_words: Søk etter ord...
+        words:
+          add_to_collection_form:
+            add_words_to_collection: "%{count} ord legges til ordsamling"
+            confirm: Bekreft
+          add_to_collection_post:
+            add_to_collection_success:
+              one: "%{count} ord ble lagt til %{collection} samlingen vellykket."
+              other: "%{count} ord ble lagt til i %{collection}-samlingen."
+          csv_import:
+            csv_import: Importer fra CSV
+            import_from_text: Importer fra tekst
+            import_to_lang: Importer nye ord til %{lang}
+            parse_text: Skann teksten
+            paste_text: Lim inn teksten du vil hente ord fra
+            recalculate_frequency: Beregn ordfrekvens på nytt
+            required_columns: 'Påkrevde csv-kolonner:'
+            select_source_file: Velg fil
+          edit_translation_form:
+            translation: Oversettelse
+            update_success: Oversettelsen ble oppdatert.
+            update_translation: Rediger oversettelse
+            word: Ord
+          form:
+            select_word_class: Velg ordklasse
+          index:
+            add_new_word: Legg til ord
+            add_to_existing_collection: Legg i eksisterende ordsamling
+            any_frequency: Alle frekvenser
+            any_time_source: Alle importer
+            audio_recorded: Lyd
+            bulk_actions: Flere handlinger
+            collections: Samlinger
+            count_collections:
+              one: "%{count} ordsamling"
+              other: "%{count} ordsamlinger"
+            count_phrases: "%{count} ord"
+            create_collection: Opprett ordsamling
+            description: Beskrivelse
+            export_csv: Eksporter CSV
+            filter: Filter
+            frequency: Frekvens
+            illustrated: Illustrert
+            import: Importer
+            import_from_website: Skann et nettsted
+            missing_audio: Mangler uttale
+            missing_illustration: Mangler illustrasjon
+            not_used_in_collections: Ikke brukt i ordsamlinger
+            not_used_in_lessons: Ikke brukt i leksjoner
+            upload: Last opp
+            used_in_collections: Brukt i ordsamlinger
+            used_in_lessons: Brukt i leksjoner
+            word: Ord
+            word_class: Ordklasse
+          recalculate_frequency:
+            job_performing: Ordfrekvensene beregnes nå på nytt
+    discard_msg: Oppføringen ble markert som slettet
+    languages:
+      edit:
+        add_character: Legg til tegn
+        available_as_target_language: Tilgjengelig som målspråk
+        available_for_support: Tilgjengelig som støttespråk
+        edit_language: Rediger %{name}
+        localization_note: Informasjon om oversettelse av brukergrensesnitt
+        restricted: Begrenset med mindre det er lisensiert
+      inactive:
+        inactive_languages: Inaktive språk
+        supported: Støttet?
+      list:
+        active_languages: Aktiverte språk
+        language_code: Språkkode
+    lesson_sessions:
+      create_failed: Kunne ikke opprette leksjonsøkt
+    lessons:
+      index:
+        count_lessons: "%{count} leksjoner"
+        limited_entries_scope: 'Du ser kun oppføringer relatert til: %{lang}'
+      show:
+        by_author: av %{author}
+      split:
+        error: Kan ikke dele leksjonen
+        success: Oppgavene ble flyttet til ny leksjon
+    plans:
+      create:
+        created_plan: Abonnementet ble opprettet
+      form:
+        system_name: Systemnavn
+      index:
+        create_new_plan: Opprett nytt abonnement
+      list:
+        all: Alle abonnement
+    rewards:
+      form:
+        choose_image: Velg bilde
+        description_placeholder: Skriv inn beskrivelsen for belønningen din.
+        update_success: Belønningen ble oppdatert
+      index:
+        all_rewards: Administrasjon av belønninger
+        confirm_reward_delete: Er du sikker på at du vil slette denne belønningen?
+        count_rewards: "%{count} belønninger"
+        create_new_reward: Opprett ny belønning
+        dimension: Dimensjon
+        kind: Type
+        title: Belønninger
+        update_reward: Oppdater belønning
+        value: Verdi
+    search:
+      search_result: "%{type}: %{result}"
+    skills:
+      skill_form:
+        enter_name: Skriv inn ferdighet...
+    students:
+      edit:
+        personal_data: Personopplysninger
+      edit_student: Rediger %{name}
+      form:
+        select_native_language: Velg morsmål
+        select_target_language: Velg aktivt målspråk
+      index:
+        create_new_student: Opprett ny deltaker
+        new_class: Ny klasse
+        student_management: Deltakeradministrasjon
+        teacher_management: Læreroversikt
+      list:
+        active_students: Aktive deltakere
+        native_language: Morsmål
+        target_language: Målspråk
+      list_row:
+        last_seen_at: Sist innlogget %{date}
+      new:
+        select_gender: Velg kjønn
+        select_locale: Velg språk
+      show:
+        learning_time: Læringstid
+    team_invitations:
+      create:
+        failure: Det skjedde en feil og du ble ikke lagt til i teamet
+        joined: Du er nå medlem av teamet
+      show:
+        already_member: Du er allerede medlem av dette teamet
+        join_button: Bli med i teamet
+        join_heading: Bli med i arbeidsområdet til teamet på lingu.com
+        profile: Profil
+        profile_link: Gå til %{link} for å administrere team
+        reject: Nei, takk
+        set_as_default: Sett som mitt standardteam
+    team_users:
+      index:
+        back_to_profile: Tilbake til min profil
+      list:
+        columns:
+          role: Rolle
+          user: Medlemsnavn
+        delete:
+          action: Fjern
+          confirm: Er du sikker på at du vil fjerne dette teammedlemmet?
+      team_link:
+        copy: Kopier
+        invitation_url: Del denne lenken for å invitere folk til teamet ditt
+        invite_cta: Inviter nye brukere til teamet
+        invite_heading: Inviter
+        members:
+          one: Ett medlem
+          other: "%{count} medlemmer"
+      team_members:
+        team_members: Teammedlemmer
+    teams:
+      create:
+        created_team: Organisasjonen ble opprettet
+      delete:
+        action: Slett team
+        confirm: Er du sikker på at du vil slette teamet?
+      edit:
+        action: Rediger
+        choose_image: Last opp logo
+        heading: Rediger team
+      form:
+        team_image: Team-logo
+      index:
+        columns:
+          actions: Handlinger
+          members: Medlemmer
+          name: Teamnavn
+        create_new_team: Opprett nytt team
+        default_team: STANDARD
+        heading: Mine team
+        most_recent_first: Siste først
+        oldest_first: Eldst først
+        set_default_team: Sett som standard
+      list:
+        docs: Oppg.
+        followers: Følgere
+        teams: Team
+      new:
+        action: Nytt team
+        heading: Nytt team
+      show:
+        sign_into_school: Gå til skoleområde
+    update_msg: Opplysningene ble oppdatert
+    users:
+      edit:
+        about_me_placeholder: Noen setninger om meg
+        delete_account: Slett denne kontoen
+        manage_profile_for: Rediger brukerprofil %{name}
+        mobile: Mobilnummer
+        personal_data: Personopplysninger
+        select_language_scope: Velg målspråk for redaktørrolle
+        teams: Team
+      index:
+        create_new_user: Opprett ny bruker
+        user_management: Brukeradministrasjon
+      list:
+        active_users: Aktive brukere
+  all: Alle
+  all_languages: Alle språk
+  amount: Antall
+  answer: Svar
+  app_name: Lingu
+  assigned_to: Besvart av
+  associated_with: Assosiert med
+  authorization_error: Du har ikke tillatelse til å utføre denne handlingen.
+  back: Tilbake
+  cancel: Avbryt
+  change: Endre
+  close: Lukk
+  collections: Samlinger
+  comment: Kommentar
+  common:
+    buttons:
+      save: Lagre
+      save_and_continue: Lagre og fortsett
+      update: Oppdater
+  configure: Konfigurer
+  correct: Riktig
+  correct_answer: Riktig svar
+  correct_word_order: Riktig rekkefølge
+  count_error_message_model:
+    one: Èn feilmelding forhindret lagring av %{model}.
+    other: "%{count} feilmeldinger forhindret lagring av %{model}."
+  course_mailer:
+    course_assigned_notification:
+      button: Start kurset
+      click_start_lesson: Klikk 'Start leksjon'
+      follow_course_link: Klikk på knappen for å åpne kurset
+      footer_text: Kom tilbake til Lingu for å lære noe nytt hver dag!
+      get_started_line: 'Slik kommer du i gang:'
+      notification_link: Varslingsinnstillinger
+      open_lesson: Åpne den første leksjonen
+      or_paste_this_link: eller lim inn denne lenken i nettleseren din
+      sign_in_with_email: Logg på med e-postadressen din (%{email})
+      support_link: Brukerstøtte
+      title: Komme i gang med %{course}
+    new_document_comment:
+      author_text: "%{author} kommenterte på oppgaven din"
+      button_text: Sjekk det ut
+      button_url_helper: 'eller lim inn denne lenken i nettleseren din:'
+      footer_text: Det er mye mer å lære ...
+      notification_link: Varslingsinnstillinger
+      subject_line: Ny tilbakemeldindg fra lærer
+      support_link: Brukerstøtte
+    otp:
+      ignore_msg: Hvis du ikke kom med denne forespørselen, er det bare å ignorere
+        e-posten.
+      subject_line: Din unike kode for Lingu
+      unique_code_for_lingu: Her er din unike kode for Lingu
+  course_mailer2:
+    new_document_comment:
+      author_text: "%{author} la en anmeldelse av oppgaven din"
+      button_text: Sjekk det ut
+      button_url_helper: 'eller lim inn denne lenken i nettleseren din:'
+      footer_text: Det er mye mer å lære ...
+      notification_link: Varslingsinnstillinger
+      subject_line: Ny oppgavekommentar
+      support_link: Brukerstøtte
+  courses: Læreverk
+  create: Opprett
+  create_student: Opprett deltaker
+  created: Opprettet
+  created_by: Laget av
+  danger_zone: Faresone
+  date:
+    abbr_day_names:
+    - søn
+    - man
+    - tir
+    - ons
+    - tor
+    - fre
+    - lør
+    abbr_month_names:
+    -
+    - jan
+    - feb
+    - mar
+    - apr
+    - mai
+    - jun
+    - jul
+    - aug
+    - sep
+    - okt
+    - nov
+    - des
+    day_names:
+    - søndag
+    - mandag
+    - tirsdag
+    - onsdag
+    - torsdag
+    - fredag
+    - lørdag
+    formats:
+      default: "%e. %b %Y"
+      long: "%e. %B %Y"
+      short: "%d.%m.%Y"
+    month_names:
+    -
+    - januar
+    - februar
+    - mars
+    - april
+    - mai
+    - juni
+    - juli
+    - august
+    - september
+    - oktober
+    - november
+    - desember
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: omtrent en time
+        other: omtrent %{count} timer
+      about_x_months:
+        one: omtrent en måned
+        other: omtrent %{count} måneder
+      about_x_years:
+        one: omtrent et år
+        other: omtrent %{count} år
+      almost_x_years:
+        one: Nesten et år
+        other: Nesten %{count} år
+      half_a_minute: halv minutt
+      less_than_x_minutes:
+        one: mindre enn ett minutt
+        other: mindre enn %{count} minutter
+        zero: mindre enn ett minutt
+      less_than_x_seconds:
+        one: mindre enn ett sekund
+        other: mindre enn %{count} sekunder
+        zero: mindre enn ett sekund
+      over_x_years:
+        one: mer enn et år
+        other: mer enn %{count} år
+      x_days:
+        one: 1 dag
+        other: "%{count} dager"
+      x_minutes:
+        one: 1 minutt
+        other: "%{count} minutter"
+      x_months:
+        one: 1 måned
+        other: "%{count} måneder"
+      x_seconds:
+        one: 1 sekund
+        other: "%{count} sekunder"
+      x_years:
+        one: et år
+        other: "%{count} år"
+  deactivate_account: Deaktiver konto
+  delete: Slett
+  delete_record_confirmation: Er du sikker på at du vil slette denne oppføringen?
+  delete_this_item: Vil du slette denne oppføringen?
+  deleted: Slettet
+  description: Beskrivelse
+  devise:
+    account_login: Logg inn
+    otp:
+      invalid_code: Koden er ikke gyldig. Prøv en gang til!
+      otp_instruction: Vi har sendt en engangskode til %{email}. Den utløper om 15
+        minutter.
+      sign_in: Vennligst logg inn
+    registrations:
+      edit:
+        change_password: Endre passord
+        enter_new_password: Oppgi nytt passord
+        enter_old_password: Oppgi det gamle passordet
+        enter_password_again: Gjenta passordet
+        upload_signature: Last opp signatur
+  disabled: Deaktivert
+  domains: Domener
+  edit: Rediger
+  email: E-post
+  embed_script: Lim inn innbyggingskode
+  enabled: Aktivert
+  enter_statement: Skriv inn tekst
+  error: feil
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: må være akseptert
+      blank: kan ikke være tom
+      confirmation: er ikke lik %{attribute}
+      empty: kan ikke være tom
+      equal_to: må være lik %{count}
+      even: må være partall
+      exclusion: er reservert
+      greater_than: må være større enn %{count}
+      greater_than_or_equal_to: må være større enn eller lik %{count}
+      inclusion: er ikke et gyldig valg
+      invalid: er ugyldig
+      less_than: må være mindre enn %{count}
+      less_than_or_equal_to: må være mindre enn eller lik %{count}
+      model_invalid: 'Det oppstod feil: %{errors}'
+      not_a_number: er ikke et tall
+      not_an_integer: er ikke et heltall
+      odd: må være oddetall
+      other_than: kan ikke være nøyaktig %{count}
+      present: må være tom
+      required: må eksistere
+      taken: er allerede i bruk
+      too_long: er for lang (maksimum %{count} tegn)
+      too_short: er for kort (minimum %{count} tegn)
+      wrong_length: er av feil lengde (maksimum %{count} tegn)
+    not_found:
+      not_found: Fant ikke siden (404)
+      page_not_found: Vi fant ikke siden du prøver å nå.
+    template:
+      body: 'Det oppstod problemer med følgende felt:'
+      header:
+        one: Kunne ikke lagre %{model} på grunn av én feil.
+        other: Kunne ikke lagre %{model} på grunn av %{count} feil.
+  example: Eksempel
+  expires_at: Upløper den
+  'false': Usant
+  filter: Filtrer
+  first_name: Fornavn
+  form:
+    level_updated: Nivået ble oppdatert
+    locales:
+      af: Afrikaans
+      am: Amharic
+      ar: Arabic
+      az: Azerbaijani
+      be: Belarusian
+      bg: Bulgarsk
+      bn: Bengali
+      bs: Bosnian
+      ca: Catalan
+      ceb: Cebuano
+      co: Corsican
+      cs: Czech
+      cy: Welsh
+      da: Danish
+      de: tysk
+      el: Greek
+      en: Engelsk
+      eo: Esperanto
+      es: Spansk
+      et: Estonian
+      eu: Basque
+      fa: Persian
+      'false': Norwegian
+      fi: Finnish
+      fr: Fransk
+      fy: Frisian
+      ga: Irish
+      gd: Scots Gaelic
+      gl: Galician
+      gr: Gresk
+      gu: Gujarati
+      ha: Hausa
+      haw: Hawaiian
+      he: Hebrew
+      hi: Hindi
+      hmn: Hmong
+      hr: Croatian
+      ht: Haitian Creole
+      hu: Hungarian
+      hy: Armenian
+      id: Indonesian
+      ig: Igbo
+      is: Icelandic
+      it: Italiensk
+      ja: Japanese
+      jv: Javanese
+      ka: Georgian
+      kk: Kazakh
+      km: Khmer
+      kn: Kannada
+      ko: Korean
+      ku: Kurdish
+      ky: Kyrgyz
+      la: Latin
+      lb: Luxembourgish
+      lo: Lao
+      lt: Litauisk
+      lv: Latvisk
+      mg: Malagasy
+      mi: Maori
+      mk: Macedonian
+      ml: Malayalam
+      mn: Mongolian
+      mr: Marathi
+      ms: Malay
+      mt: Maltese
+      my: Myanmar (Burmese)
+      nb: Norsk
+      ne: Nepali
+      nl: Nederlandsk
+      ny: Nyanja (Chichewa)
+      or: Odia (Oriya)
+      pa: Punjabi
+      pl: Polsk
+      ps: Pashto
+      pt: Portugisisk
+      ro: Rumensk
+      rs: Serbisk
+      ru: Russisk
+      rw: Kinyarwanda
+      sd: Sindhi
+      si: Sinhala (Sinhalese)
+      sk: Slovak
+      sl: Slovenian
+      sm: Samoan
+      sn: Shona
+      so: Somali
+      sq: Albanian
+      st: Sesotho
+      su: Sundanese
+      sv: Swedish
+      sw: Swahili
+      ta: Tamil
+      te: Telugu
+      tg: Tajik
+      th: Thai
+      tk: Turkmen
+      tl: Tagalog (Filipino)
+      tr: Tyrkisk
+      tt: Tatar
+      ua: Ukrainsk
+      ug: Uyghur
+      ur: Urdu
+      uz: Uzbek
+      vi: Vietnamese
+      xh: Xhosa
+      yi: Yiddish
+      yo: Yoruba
+      zh: Chinese
+      zu: Zulu
+  frontend:
+    auth:
+      already_have_acc_question: Har du allerede en konto?
+      back: Tilbake
+      back_to_sign_in: Tilbake til registrering
+      check_your_email_for_a_code: Gå til e-posten din og finn koden
+      continue: Fortsett
+      continue_with_email: Fortsett med epost
+      continue_with_provider: Fortsett med %{provider}
+      did_not_receive_a_code: Fikk du ikke noen kode?
+      email_address: E-postadresse
+      first_name: Fornavn
+      get_unique_code: Hent engangskode
+      join_lingu: Ny deltaker
+      last_name: Etternavn
+      more_login_options: Flere innloggingsmåter
+      no_account_question: Har du ikke noen deltakerkonto?
+      or: eller
+      resend_code: Send kode på nytt
+      sign_in: Logg inn
+      sign_up: Registrer deg
+      want_to_receive_marketing_messages: Jeg vil gjerne motta oppdateringer og tilbud
+        fra Lingu
+      we_ve_sent_a_code: >-
+        Vi har sendt en 6-sifret kode til <strong>{{email}}</strong>. Koden utløper
+        om 15 minutter.
+    cookie_agreement:
+      agree: Enig
+      condition: >-
+        Vi bruker informasjonskapsler for å analysere ytelsen til nettstedet og levere
+        personlig innhold. Ved å klikke “Enig”, samtykker du til disse betingelsene.
+    course:
+      accredited_course_provider: Godkjent kurstilbyder
+      apply: Søke om
+      apply_filters: Bruk filtre
+      by: Av
+      cancel: Avbryt
+      categories: "%{count} kategorier"
+      category: Kategori
+      clear: Fjern
+      clear_filters: Fjern filtre
+      contact_us: Kontakt oss
+      could_not_find_match_for: Beklager, vi fant ingen treff for
+      course_language: Målspråk
+      duration: Varighet
+      filter_settings:
+        categories:
+          academic: Akademisk
+          business: Forretning
+          fashion: Mote
+          food_drink: Mat og drikke
+          for_kids: For barn
+          general: Generell
+          health: Helse
+          legal: Juridisk
+          sport: Sport
+          travel: Reise
+        durations:
+          t0_600: "<10 minutter"
+          t1800_3600: 30-60 minutter
+          t3600_86400: 1+ time
+          t600_1800: 10-30 minutter
+        focus_on:
+          conversation: Samtale
+          grammar: Grammatikk
+          listening: Lytte
+          pronunciation: Uttale
+          reading: Lese
+          speaking: Snakke
+          writing: Skrive
+        levels:
+          long:
+            advanced: Avansert nivå
+            elementary: Elementært nivå
+            intermediate: Mellomnivå
+            no_knowledge: Ingen kunnskap
+            pre_intermediate: Nedre mellomnivå
+            upper_intermediate: Øvre mellomnivå
+          short:
+            advanced: Avansert
+            beginner: Nybegynner
+            intermediate: Mellomnivå
+        sort_by:
+          most_rated: Beste vurdering
+          newest: Nyeste
+          popularity: Popularitet
+      filters: Filtre
+      focus_on: Fokuser på
+      focus_on_title: Jeg vil fokusere på
+      hide_lessons: Skjul leksjonene
+      hours: Timer
+      i_understand: Jeg forstår
+      i_want_to_learn: Jeg ønsker å lære
+      in_language: i %{language}
+      language: Språk
+      learn_more: Lære mer
+      less_settings: Færre innstillinger
+      lessons: Leksjoner
+      lessons_available: "%{number} leksjoner tilgjengelig"
+      lessons_catalog_page_subtitle: Lingu er portalen for deg som vil mestre et nytt
+        språk
+      lessons_catalog_page_title: Utvid dine horisonter din med et språkkurs
+      level: Nivå
+      min: Min
+      more_settings: Flere innstillinger
+      navbar:
+        close: Lukk menyen
+        menu: Meny
+        select_language: Velg språk
+      need_to_buy_course: Du må bestille et kurs først
+      no_description: Mangler beskrivelse
+      no_results: Beklager, vi fant ingen treff for
+      or: eller
+      per_month: per måned
+      plans: Abonnement
+      privacy_policy: Personvern
+      rating: Vurdering
+      remove_all_filters: Fjern alle filtre
+      reviews: Vurderinger
+      save: Lagre
+      search: Søk
+      select_dots: Plukke ut...
+      select_languages: Velg språk
+      select_num_languages: Velg %{number} språk
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Vis alt
+      show_all_lessons: Vis alle leksjonene
+      show_lessons: Vis %{number} leksjoner
+      show_more: Vis mer
+      sign_up_with_lingu_for: Registrer deg hos Lingu Norge for
+      skills: "%{count} ferdigheter"
+      sort_by: Sorter etter
+      start_typing_here: Begynn å skrive her
+      teach: Undervise
+      terms_and_conditions: Vilkår og betingelser
+      time_range: Tidsbruk
+      try_adjusting_your_search: Prøv å justere søket ved å endre filtrene
+      try_this_course: Start fra begynnelsen
+      website_language: Nettsidespråk
+      words: Ord
+    games:
+      finished:
+        go_to_next_exercise: Bra gjort! Gå til neste øvelse
+      flashcard:
+        buttons:
+          finish: Bli ferdig
+          next: Neste
+          previous: Tidligere
+        check_out_new_words: Sjekk ut de nye ordene i denne leksjonen!
+        frequency_of_word_usage: Frekvens i %{language}
+        keep_practice_to_learn_all_words: Se gjennom de %{count} ordene før spillet
+          begynner!
+        word_frequency:
+          level1: Svært sjelden
+          level2: Sjelden
+          level3: Nokså sjelden
+          level4: Litt vanlig
+          level5: Vanlig
+          level6: Veldig vanlig
+      match_word:
+        click_and_move_each_word_to_counterpart: Klikk og dra ordene sammen.
+        start_heading: Match ord for å lage et par
+        time_is_up: Tiden er ute!
+      skip_tutorial: Hopp over
+      time_is_up: Opp med farta!
+      word_nodes:
+        match_letters_to_form_word: Knytt sammen stavelsene med klikk og dra.
+      word_waterfall:
+        do_not_hesitate: Opp med farta!
+        go_to_next_exercise: Gå til neste oppgave
+        select_correct_translation: Klikk ordet som passer
+        well_done: Bra jobba!
+    home_page:
+      hello: Hallo,
+      popular_lessons: Populære leksjoner
+      show_more: Vis mer
+      time: "%{count} min"
+      today_lesson: Din leksjon for i dag
+      user_name: "%{name}!"
+      words: "%{count} ord"
+    idle_screen:
+      by_author: av %{authorName}
+      continue_lesson: Fortsett leksjonen
+      exit: Gå ut
+      idle_message: Du har vært inaktiv en stund...
+    lesson_page:
+      back_to_course_page: Tilbake til kurssiden
+      close: Lukk
+      continue_lesson: Fortsett leksjonen
+      followed: Følger
+      hamburger_menu_btn: Hamburger-meny
+      lesson_given: leksjoner
+      not_started: Ikke påbegynt
+      or: eller
+      part_complete: "%{percent}% fullført"
+      restart_lesson: Start på nytt
+      section_check: Sjekk
+      section_check_info: "%{count} tester"
+      section_learn: Lær
+      section_learn_info: "%{count} min å lese"
+      section_play: Spill
+      section_play_info: "%{count} ord å lære"
+      start_lesson: Start leksjonen
+      step_progress: "%{percent}%"
+      subscribe: Følg
+      subscribed: Følger
+      subscribers: følgere
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Ikke følg
+      webview_error_title: Noe gikk galt...
+      words_number: "%{wordsNumber} nye ord"
+    lesson_task:
+      cancel_button: Avbryt
+      check:
+        navigation_next: Neste
+        navigation_previous: Forrige
+        navigation_skip: Hopp over
+      controls_panel:
+        font_size_button: Skriftstørrelse
+        high_contrast_button:
+          origin: Høy kontrast
+          short: Kontrast
+        hints_button: Hint
+        music_playback_button:
+          origin: Musikkavspilling
+          short: Musikk
+        sound_effects_button:
+          origin: Lydeffekter
+          short: Lyd
+      exit_button: Gå ut
+      exit_question: Er du sikker på at du vil forlate leksjonen?
+      finish_button: Fullfør
+      finished:
+        back_to_learn: Tilbake til Lær
+        back_to_lesson_page: Tilbake til forsiden
+        back_to_results_page: Tilbake på resultatsiden
+        bad_result_message: Hmm... prøv å ta leksjonen en gang til
+        close_lesson: Lukk leksjonen
+        correct_answers_list: Liste over riktige svar
+        good_result_message: Du prøvde i hvert fall...
+        great_result_message: Bra jobba! Dette er gode resultater
+        next_course_lesson: Gå til neste leksjon
+        no_results: Du har ingen testresultater ennå
+        no_results_text: Vennligst fullfør leksjonen og bestå testen for å få resultatene
+        see_correct_answers_list: Se listen over riktige svar
+        train_more: Øv mer og du vil oppnå bedre resultater neste gang!
+        you_finished_lesson: Bra jobba! Du har fullført leksjonen!
+      go_back: Tilbake
+      next_button: Neste
+      not_available_task: Denne oppgaven er ikke tilgjengelig ennå
+      start_button: Start
+      tasks:
+        check:
+          assignment:
+            accept: Aksepterer
+            author_will_check_your_answer: >-
+              %{author} vil gjennomgå svaret ditt og vanligvis gi tilbakemelding innen
+              få dager
+            continue_writing: Fortsett å skrive
+            copy: Kopiere
+            delete: Slett
+            delete_record: Slett meldingen
+            edit: Redigere
+            essay_does_not_have_enough_words: >-
+              Besvarelsen skal inneholde %{minWordsNumber} ord. Svaret ditt er på
+              %{currentWordsNumber} ord.
+            followers_count: "%{followersCount} følgere"
+            lessons_count: "%{lessonsCount} leksjoner"
+            minimal_recording_time: Minste opptakstid - %{minimalRecordingTime}
+            minimum_characters_amount: Minste antall tegn - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum antall ord - %{minimumAmount}
+            record_again: Ta opp igjen
+            record_voice: Ta opp stemme
+            send_anyway: Send uansett
+            send_to_review: Send for anmeldelse
+            skip: Hopp over
+            too_short_answer: For kort svar
+            type_your_answer: Skriv inn svaret ditt
+            unknown_task_type: Ukjent oppgavetype
+            upgrade_licence: Oppgrader lisens
+            upgrade_your_plan: Oppgrader planen din for å prøve oppgaver med tilbakemelding
+              fra lærer
+            upload_files: Last opp filer
+            write_essay: Skriv essay
+            you_have_used_amount_of_assignments: Du har brukt %{amountOfAssignments}
+              studiepoeng
+          fill_in_blanks:
+            sentence_gap: Setningsgapet
+          fill_in_table:
+            column_answer_placeholder: Svar
+            column_question_placeholder: Spørsmål
+            example: Eksempel
+          true_false:
+            'false': Falsk
+            'true': ekte
+        learn:
+          translatable_text:
+            show_original: Vis originalen
+            translate_into: Oversett med Google til %{languageName}
+            translate_into_your_lang: Oversett med Google til språket ditt
+        play:
+          arrange_words:
+            start_screen:
+              heading: Sett ordene sammen til en setning
+          audition:
+            start_screen:
+              heading: Lytt til lydsporet og trykk på ordet som passer
+          dictation:
+            get_help: Få hjelp
+            i_do_not_know: Jeg vet ikke
+            input_placeholder: Skriv inn det du hørte her
+            start_screen:
+              heading: Lytt og skriv det du hører
+          fill_gap:
+            start_screen:
+              heading: Velg ordet som passer til setningen
+          finish_screen:
+            go_to_next_exercise: Bra jobba! Fortsett til neste oppgave
+          image_hotspot:
+            start_screen:
+              heading: Navngi gjenstandene på bildet riktig
+          image_object:
+            start_screen:
+              heading: Klikk på riktig sted i bildet
+          inline_dropdown:
+            start_screen:
+              heading: Velg løsningen som samsvarer med teksten
+          mark_word:
+            start_screen:
+              heading: Les teksten og velg ordet som samsvarer med oppgaven
+          minimal_pairs:
+            start_screen:
+              heading: Se videoen og velg riktig alternativ
+    locale:
+      currency_switcher_title: Valutavelger
+      lang_switcher_title: Språkvelger
+      locales:
+        af: afrikaans
+        am: amharisk
+        ar: arabisk
+        az: aserbajdsjansk
+        be: hviterussisk
+        bg: bulgarsk
+        bn: bengali
+        bs: bosnisk
+        ca: katalansk
+        ceb: cebuano
+        co: korsikansk
+        cs: tsjekkisk
+        cy: walisisk
+        da: dansk
+        de: deutsch
+        el: gresk
+        en: engelsk
+        eo: esperanto
+        es: español
+        et: estisk
+        eu: baskisk
+        fa: persisk
+        'false': norsk
+        fi: finsk
+        fr: fransk
+        fy: frisisk
+        ga: irsk
+        gd: gælisk
+        gl: galisisk
+        gu: gujarati
+        ha: hausa
+        haw: hawaiisk
+        he: hebraisk
+        hi: hindi
+        hmn: hmong
+        hr: kroatisk
+        ht: haitisk kreolsk
+        hu: ungarsk
+        hy: armensk
+        id: indonesisk
+        ig: igbo
+        is: islandsk
+        it: italiano
+        ja: japansk
+        jv: javanesisk
+        ka: georgisk
+        kk: kasakhisk
+        km: khmer
+        kn: kannada
+        ko: koreansk
+        ku: kurdisk
+        ky: kirgisisk
+        la: latin
+        lb: luxemburgisk
+        lo: lao
+        lt: lietuvių kalba
+        lv: latviešu valoda
+        mg: madagaskar
+        mi: maori
+        mk: makedonsk
+        ml: malayalam
+        mn: mongolsk
+        mr: marathi
+        ms: malaysisk
+        mt: maltesisk
+        my: myanmar (burmesisk)
+        nb: norsk
+        ne: nepalesisk
+        nl: nederlands
+        ny: nyanja (chichewa)
+        or: odia (oriya)
+        pa: punjabi
+        pl: polski
+        ps: pashto
+        pt: português
+        ro: limba română
+        ru: русский язык
+        rw: kinyarwanda
+        sd: sindhi
+        si: singalesisk (singalesisk)
+        sk: slovakisk
+        sl: slovensk
+        sm: samoansk
+        sn: shona
+        so: af soomaali
+        sq: albansk
+        sr: сербский
+        st: sesotho
+        su: sundanesisk
+        sv: svensk
+        sw: kiswahili
+        ta: tamil
+        te: telugu
+        tg: tadsjikisk
+        th: thai
+        tk: turkmenere
+        tl: tagalog (filippinsk)
+        tr: türkçe
+        tt: tatarisk
+        ug: uyghur
+        uk: українська
+        ur: urdu
+        uz: usbekisk
+        vi: vietnamesisk
+        xh: xhosa
+        yi: jiddisk
+        yo: yoruba
+        zh: kinesisk
+        zu: zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Laster inn lydfil
+        aria_pause_button: Pause
+        aria_play_button: Spill av
+        aria_reload_button: Prøv på nytt
+        aria_stop_button: Stopp
+        reload_message: Kunne ikke hente lydfil. Prøv på nytt.
+    mobile_modal:
+      apply: Søke om
+      cancel: Avbryt
+      clear: Klar
+      save: Lagre
+    page404:
+      goToStartLessonPage: Gå til forsiden av leksjonen
+      ooops: Oooops...
+      sorry_message: Beklager, Tor fant ikke denne siden...
+    profile:
+      navigation:
+        log_out: Logg ut
+        my_profile: Min profil
+        settings: Innstillinger
+      onboarding:
+        choose_native_language: Velg ditt morsmål eller et språk du forstår
+        do_you_understand_english: Forstår du engelsk?
+        hello: Hei
+        language_levels:
+          a1: Begynnernivå
+          a2: Elementært nivå
+          b1: Mellomnivå
+          b2: Høyere mellomnivå
+          c1: Avansert nivå
+          no_knowledge: Ingen forkunnskaper
+        language_not_supported:
+          note: Vi vil varsle deg så snart språket vil være tilgjengelig
+          title: Beklager, men vi støtter ikke dette språket ennå
+          try_another_language: Velg et annet språk
+        'no': Nei
+        search_placeholder: Søk...
+        show_more_languages: Andre språk
+        target_language_question: Hvilket språk vil du lære?
+        what_is_language_level: Hvordan vil du vurdere ditt nivå i %{languageName}?
+        'yes': Ja
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingus personvernregler
+        support: Brukerstøtte
+      logout: Logg ut
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Motta oppdateringer fra lærere og skoler du følger
+              sections:
+                app_notifications: Applikasjonsnotifikasjoner
+                email: E-post
+              title: Læringsassistanse
+            marketing:
+              description: Hold deg informert om alle kampanjer, oppdateringer og
+                inspirasjon fra Lingu
+              sections:
+                browser_notifications: Nettleservarsler
+                email: E-post
+              title: Markedsføring
+          title: Kontaktinnstillinger
+        personal_information:
+          delete_photo: Slett bilde
+          email: E-post
+          first_name: Fornavn
+          last_name: Etternavn
+          social_accounts:
+            connected: Tilkoblet
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ikke tilkoblet
+            title: Sosiale kontoer
+          title: Personlig informasjon
+          update_photo: Oppdater bilde
+        school:
+          active_licence: Aktiv lisens
+          active_status: Aktiv
+          delete_profile: Slett profilen min
+          delete_profile_modal:
+            body: |-
+              Du utsletter alle dataene dine - for alltid. Det er ingen angre-knapp, og vi kan ikke få den tilbake etter deg.
+              Er du sikker på at du vil slette Lingu-profilen din og alle dataene dine permanent?
+            cancel: Avbryt
+            confirm: Ja, slett det
+            i_understand_the_consequences: Jeg forstår konsekvensene
+            title: Vil du slette profilen din?
+          expired: Utløpt %{expire_date}
+          expires: Utløper %{expire_date}
+          inactive_status: Inaktiv
+          revoke_access: Tilbakekall lesetilgang
+          sections:
+            contact_school: Kontakt skolen
+            export_my_data: Eksporter dataene mine
+            read_school_privacy_policy: Les personvernregler for skolen
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musikkavspilling
+              sound_effects: Lydeffekter
+              title: Lyd
+            visual:
+              dark_theme: Mørkt tema
+              font_size:
+                test_text: Gresset er alltid grønnere på den andre siden av gjerdet
+                title: Skriftstørrelse
+              high_contrast: Høy kontrast
+              hints: Tips
+              title: Visuell
+          title: Lyd og bilde
+        training_settings:
+          sections:
+            i_understand: jeg forstår
+            i_want_to_learn: Jeg ønsker å lære
+            target_language_level: engelsk nivå
+          title: Treningsinnstillinger
+      settings_title: Innstillinger
+    tasks:
+      check:
+        fill_in_table:
+          column_answer_placeholder: Svar
+          column_question_placeholder: Spørsmål
+          example: Eksempel
+      learn:
+        translatable_text:
+          show_original: Vis original
+          translate_into: Oversett med Google til %{languageName}
+      play:
+        arrange_words:
+          start_screen:
+            heading: Sett sammen ordene til en setning
+        fill_gap:
+          start_screen:
+            heading: Velg ordet som passer til setningen
+        finish_screen:
+          go_to_next_exercise: Bra jobba! Gå til neste oppgave.
+        image_object:
+          start_screen:
+            heading: Klikk på riktig sted i bildet
+        inline_dropdown:
+          start_screen:
+            heading: Fyll ut teksten med ordene som mangler
+        mark_word:
+          start_screen:
+            heading: Klikk på ordet som passer til oppgaven
+        minimal_pairs:
+          start_screen:
+            heading: Se videoklippet og velg riktig svaralternativ
+    teacher_card:
+      followers_count:
+        one: 1 følger
+        other: "%{count} følgere"
+      lessons_count:
+        one: 1 leksjon
+        other: "%{count} leksjoner"
+  gameplays:
+    errors:
+      finish_params: Ugyldige params for å fullføre spillet
+      not_created: Spillet ble ikke opprettet
+      not_updated: Spillingen ble ikke oppdatert
+  helpers:
+    select:
+      prompt: Vennligst velg
+    submit:
+      create: Lag %{model}
+      submit: Lagre %{model}
+      update: Oppdater %{model}
+  hidden: Skjult
+  incomplete_profile_information: Ufullstendig profil, vennligst oppdater informasjonen
+    din.
+  incorrect: Uriktig
+  instructions: Instruks
+  invalid_score_method: Feil vurderingsmetode for denne oppgavetypen
+  last_name: Etternavn
+  layouts:
+    admin:
+      profile_menu:
+        admin_area: Adminområdet
+        my_profile: Min brukerprofil
+      sidebar:
+        crawlers: Innsamlingsjobber
+        dashboard: Dashbord
+        dictionary: Ordbok
+        gamification: Spillifisering
+        languages: Språk
+        lessons: Leksjoner
+        personal_team: Personlig konto
+        plans: Planer
+        tasks: Oppgaver
+      workspace_header:
+        overview: Oversikt
+    application:
+      search: Søk...
+      sign_in_with_google: Logg inn med Google
+      thanks_linguer: Tusen takk for at du er en linguer
+    authoring:
+      sidebar:
+        back_to_lesson: Tilbake til leksjonen
+    school:
+      assignments:
+        assginments_management: Oppgaveoversikt
+        newest_first: Siste først
+        ready_for_review: Til vurdering
+        responses:
+          audio: Lydopptak
+          file: Filopplasting
+          text: Skriveoppgave
+        reviewed: Vurdert
+        school_assignments: Deltakeroppgaver
+        statuses:
+          pending: Pending
+          reviewed: Reviewed
+      sidebar:
+        activities: Aktivitetsloggen
+        assignments: Oppgaver
+        courses: Læreverk
+        dashboard: Dashbord
+        gdpr: GDPR
+        lessons: Leksjoner
+        school_settings: Innstillinger
+        search: Søk
+        students: Deltakere
+        support: Hjelp
+        teachers: Lærere
+        tests: Tester
+    teach:
+      sidebar:
+        courses: Læreverk
+        followers: Mine følgere
+        school_admin: Skoleadministrasjon
+  lesson_mailer:
+    new_lesson_review:
+      button: Åpne leksjonen
+      preheader: "%{user} vurderte leksjonen din"
+      review: Vurdering
+      statuses:
+        approved: Godkjent - du kan nå publisere leksjonen!
+        rejected: Leksjonen trenger justeringer
+      title: Ny vurdering
+      user_reviewed_lesson: "%{user} har vurdert leksjonen %{lesson}"
+  lessons: Leksjoner
+  levels: Nivåer
+  licenses: Lisenser
+  locales:
+    af: Afrikaans
+    am: Amharisk
+    ar: Arabisk
+    az: Aserbajdsjansk
+    be: Hviterussisk
+    bg: Български
+    bn: Bengali
+    bs: Bosnisk
+    ca: Katalansk
+    ceb: Cebuano
+    co: Korsikansk
+    cs: Tsjekkisk
+    cy: walisisk
+    da: dansk
+    de: Deutsch
+    el: gresk
+    en: Engelsk
+    eo: Esperanto
+    es: Español
+    et: Estisk
+    eu: Baskisk
+    fa: Persisk
+    'false': norsk
+    fi: Finsk
+    fr: Fransk
+    fy: Frisisk
+    ga: irsk
+    gd: Skotsk gælisk
+    gl: Galisisk
+    gu: Gujarati
+    ha: Hausa
+    haw: Hawaiisk
+    he: Hebraisk
+    hi: Hindi
+    hmn: Hmong
+    hr: Kroatisk
+    ht: Haitisk kreolsk
+    hu: Ungarsk
+    hy: Armensk
+    id: Indonesisk
+    ig: Igbo
+    is: islandsk
+    it: Italiano
+    ja: Japansk
+    jv: Javanesisk
+    ka: Georgisk
+    kk: Kasakhisk
+    km: Khmer
+    kn: Kannada
+    ko: Koreansk
+    ku: Kurdisk
+    ky: Kirgisisk
+    la: Latin
+    lb: Luxemburgisk
+    lo: Lao
+    lt: Lietuvių kalba
+    lv: Latviešu valoda
+    mg: Madagaskar
+    mi: Maori
+    mk: Makedonsk
+    ml: Malayalam
+    mn: Mongolsk
+    mr: Marathi
+    ms: Malaysisk
+    mt: Maltesisk
+    my: Myanmar (burmesisk)
+    nb: Norsk
+    ne: Nepalesisk
+    nl: Nederlands
+    ny: Nyanja (Chichewa)
+    or: Odia (Oriya)
+    pa: Punjabi
+    pl: Polski
+    ps: Pashto
+    pt: Português
+    ro: Limba română
+    rs: Сербский
+    ru: Русский язык
+    rw: Kinyarwanda
+    sd: Sindhi
+    si: Singalesisk (singalesisk)
+    sk: Slovakisk
+    sl: Slovensk
+    sm: Samoansk
+    sn: Shona
+    so: af Soomaali
+    sq: Albansk
+    st: Sesotho
+    su: Sundanesisk
+    sv: svensk
+    sw: kiSwahili
+    ta: Tamil
+    te: Telugu
+    tg: Tadsjikisk
+    th: Thai
+    tk: Turkmenere
+    tl: Tagalog (filippinsk)
+    tr: Türkçe
+    tt: Tatarisk
+    ua: Українська
+    ug: Uyghur
+    ur: Urdu
+    uz: Usbekisk
+    vi: Vietnamesisk
+    xh: Xhosa
+    yi: Jiddisk
+    yo: Yoruba
+    zh: kinesisk
+    zu: Zulu
+  mailers:
+    demo_msg: >-
+      Dette er en demo-tilgang som viser testens funksjonalitet. Du vil ikke motta
+      tilbakemelding på testsvaret ditt.
+  mobile:
+    errors:
+      cant_open_external_link: Kan ikke åpne lenken.
+  mobile_number: Mobilnummer
+  move_down: Flytt opp
+  move_up: Flytt ned
+  name: Navn
+  nok: kr
+  none: Ingen
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: kr
+    format:
+      delimiter: " "
+      precision: 2
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: true
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: milliard
+            other: milliarder
+          million:
+            one: million
+            other: millioner
+          quadrillion:
+            one: billiard
+            other: billiarder
+          thousand: tusen
+          trillion:
+            one: billion
+            other: billioner
+          unit: ''
+      format:
+        delimiter: " "
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: kB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  oauth:
+    scopes:
+      profile: E-post, fullt navn og profilbilde.
+  org_number: Organisasjonsnummer
+  platform_role: Systemrolle
+  preview: Forhåndsvis
+  profiles:
+    profile_form:
+      select_default_language: Velg standardspråk
+    show:
+      choose_image: Velg bilde
+      update_profile: Oppdater min profil
+  public_activity:
+    team_student:
+      course_assign:
+        unknown_course: et læreverk
+  published: Publisert
+  published_tasks: Publiserte oppgaver
+  remove: Fjern
+  restore_group: Gjenopprett klassen
+  result_type_label: Vis testresultater
+  rewards: Belønninger
+  role: Rolle
+  roles: Roller og tillatelser
+  save: Lagre
+  save_changes: Lagre endringer
+  school:
+    activities:
+      are_you_sure: Are you sure?
+      by_teacher: Bruker
+      event_type: Hendelse
+      failed: The activity could not be undone
+      item:
+        change: ENDRING
+        date: DATO
+        student: BRUKER
+      title: Endringslogg
+    activity_types:
+      license:
+        create: Lisens opprettet
+        removed_expiration: Sluttdato fjernet
+        revoke: Lisens slettet
+        update: Sluttdato satt
+      team_group:
+        archive: Arkivert klasse
+        create: Opprettet klasse
+      team_student:
+        archive: Deltakeren ble arkivert
+        create: Deltakeren ble opprettet
+        restore: Deltakeren ble gjenopprettet
+    assignments:
+      assginments_management: Oppdragsledelse
+      assignments_stats:
+        assignments_reviewed: vurderte oppgaver
+        avg_rating: Kvalitet på tilbakemeldinger
+        avg_response_time: svartid siste 30 dager
+        no_assignment_stats: Ingen data å vise ennå...
+        submissions_per_week: Innleveringer per uke
+      index:
+        assignments_from_course: Oppgaver fra læreverk
+        no_documents_msg: Deltakerne har ikke sendt inn noen innleveringer ennå
+      newest_first: ''
+      ready_for_review: Klar til gjennomgang
+      reviewed: Vurdert
+      school_assignments: Oppgaver fra skolen
+      types:
+        newest_first: Siste først
+    course_mailer:
+      course_assigned_notification:
+        click_start_lesson: Klikk 'Start leksjonen'
+        follow_course_link: Klikk knappen under for å åpne læreverket
+        get_started_line: 'Slik gjør du:'
+        open_lesson: Åpne første leksjon
+        sign_in_with_email: Logg inn med din e-postadresse (%{email})
+    course_sections:
+      classroom: Klasserom
+      self_study: Selvstudium
+    courses:
+      assign_team_group:
+        assigned: Læreverket ble tildelt %{group}
+      errors:
+        team_group_not_selected: Gruppen er ikke valgt
+      list:
+        assign_course: Tildel læreverk
+        assign_to_group: Tildel til klasse
+        by_last_modified: Sist oppdatert
+        created_at: on %{created_at}
+      show:
+        content_overview: Innholdsoversikt
+        count_lessons:
+          one: "%{count} leksjon"
+          other: "%{count} leksjoner"
+        course_components: Oppgavetyper
+        course_duration: ca. %{hours} timer
+        course_lessons: "%{count} leksjoner"
+        course_popularity: Popularitet / bruk
+        per_month: per måned
+        per_week: per uke
+        per_year: per år
+    current_teams:
+      general_profile:
+        select_default_school_language: Standard målspråk (undervisning)
+    dashboard:
+      agreement_success: Databehandleravtalen ble opprettet
+      confirm_agreement: Bekreft avtale
+      confirm_gdpr: Les gjennom og bekreft databehandleravtalen under.
+      empty:
+        create_gdpr_agreement: Opprett avtale
+      gdpr_confirm_success: Databehandleravtalen ble opprettet.
+      gdpr_confirmation: For å bruke denne tjenesten må skolen inngå databehandleravtale.
+      get_agreement: Last ned avtalen (PDF)
+      previous_month: forrige måned
+      processor_name: Kontaktperson hos %{team}
+      this_month: denne måneden
+    gdpr_agreements:
+      gdpr_subcontractors:
+        company: Selskap
+        data_location: Lagringssted for data
+        purpose: Formål
+        sub-contractors_heading: Underleverandører
+      notification: Vennligst opprett databehandleravtale først (GDPR-krav)
+      notification_button_content: Opprett avtale
+    licenses:
+      remove_end_date:
+        removed_end_date: Fjernet sluttdato for lisensen
+    mobile:
+      index:
+        log_out: Logg ut
+        mobile_support_will_be_available_at: Støtte for små skjermer vil bli tilgjengelig
+          våren 2021.
+        sorry_for_inconvenience: Vi beklager ulempen.
+        too_small_screen: For liten skjerm...
+    profile:
+      api_access:
+        add_new_app: Legg til ny app
+        app_name: Appens navn
+        create_app: Opprett en app for å generere en API-nøkkel. Følg deretter
+        delete_confirm: Er du sikker på at du vil slette denne appen?
+        documentation: dokumentasjon
+        give_students_access: >-
+          Med API-en kan du sømløst gi studentene tilgang til læringsressurser og
+          språktester i verdensklasse.
+        integrate_services: Integrer tjenestene våre på nettstedet ditt
+        redirect_url: Viderekoblings-URL
+        title: API-tilgang
+        to_start_your_process: for å starte integrasjonsprosessen.
+      billing:
+        business_address: Forretningsadresse
+        business_registration_id: Organisasjonsnummer
+        city: Poststed
+        country: Land
+        postal_code: Postnr
+        state: Fylke
+        street_address: Forretningsadresse
+        title: Fakturering
+      general:
+        remove_image: Slett logo
+        upload_new_image: Last opp nytt bilde
+      privacy:
+        data_processor_agreement: Databehandleravtale
+        destroy_user_after: Brukerdata slettes etter (dager)
+        download_signed_agreement: Last ned signert avtale
+        gdpr_contact_name: Skolens kontaktperson for personvern
+        privacy_url: Lenke til skolens personvernside
+        title: Personvern
+      tests:
+        agree_to: Jeg er enig i
+        agree_to_terms: Jeg godtar %{link} for språktester.
+        disabled: Deaktivert
+        enable_test: Aktiver språktester
+        enable_test_note: >-
+          Meld opp deltakere til automatiserte kartleggingstester, nivåtester, og
+          språktester med sensorvurdering.
+        enabled: Aktivert
+        for_testing_service: for testingstjeneste
+        pay_note: Skolen belastes per fullførte test. Prisene vises før oppmelding.
+        service_provider_note: 'Tjenesten leveres av Lingutest AS, org.nr.: 913 628
+          934.'
+        terms_and_conditions: kjøpsbetingelsene
+        test_module: Testmodul
+    school_assignments:
+      assign_to_student: Send til deltakere
+      create_assignment: Opprett oppgave
+      form:
+        assign_to: Send oppgaven til
+        deadline: Innleveringsfrist
+        empty_form_error: Sett inn kommentarinnhold eller ta opp lyd
+        pass_date: Sendt inn
+        select_student: Velg student
+      new_assignment: Lag et nytt oppdrag
+      responses:
+        audio: Lydrespons
+        file: Filrespons
+        text: Tekstsvar
+      school_assignments_management: Ledelse av skoleoppgaver
+      student_assignment:
+        statuses:
+          pending: Avventer
+          reviewed: Vurdert
+          skipped: Hoppet over
+      student_assignment_info:
+        service_provider_note: >-
+          Denne tjenesten leveres av Lingutest AS, forretningsregistrerings-ID NO
+          913 628 934.
+        submitted_at: Innlevert
+    search:
+      index:
+        search_fallback: Skriv noe for å søke...
+        search_school_data: Søk i skolens område
+    shared:
+      document_review:
+        add_comment: Legg til en kommentar...
+        leave_comment: Kommenter
+        use_quote: Siter
+      onboarding:
+        change_team: 'Vennligst bytt til en av følgende kontoer:'
+        complete_profile: Fullfør profilen din
+        contact_info: >-
+          Ta kontakt med oss på skole@lingu.com eller via chat-knappen nede til høyre
+          på siden.
+        follow_invitation_link: Skolebrukere må benytte en invitasjonslenke ved første
+          pålogging
+        signed_in_personal_team: Du har logget på en personlig konto.
+        wrong_place: Oops, kanskje du gikk feil?
+      school_response:
+        response_placeholder: Legg igjen teksten eller ta opp lyd ...
+        use_quote: Bruk som sitat
+    teachers:
+      default: Standard
+      import:
+        import_count_users: "%{count} brukere"
+        import_in_progress: Lærerkontoer blir opprettet. Vent litt.
+        items_count: "%{count} varer"
+      invite:
+        import_users: Importer lærere
+        invite_users: Inviter lærere
+        title: Inviter lærere
+      item:
+        archive: Slett bruker
+        edit: Rediger bruker
+        email: E-postadresse
+        followers: FØLGERE
+        language: Språk
+        lessons: Leksjoner
+        name: Navn
+        role: Rolle
+      language_placeholder: Søk språk
+      list:
+        add_teacher: Ny brukerkonto
+        all_roles: Alle roller
+        by_last_added: Sist opprettet
+        by_name_az: Alfabetisk A-Å
+        by_name_za: Alfabetisk Å-A
+        custom: Egendefinert
+        delete_confirm: Er du sikker på at du vil slette denne brukeren? Dette kan
+          ikke angres
+        no_teachers: >-
+          Du har ingen brukere registrert ennå. Inviter teamet ditt for å følge opp
+          deltakernes tilganger, selvstudium og innleveringer.
+      new:
+        created_successfully: Læreren er opprettet med hell.
+        failed_create_teacher: Mislyktes i å opprette lærer.
+        general: Generelt
+        import_from: Importer fra Excel/CSV
+        language: Språk
+        teach_languages: Språkkompetanse
+      role:
+        administrator: Administrator
+        editor: Redaktør
+        teacher: Lærer
+      set_as_default: Sett som standard
+      spot: ","
+    team_groups:
+      assign_course:
+        assigned: "%{course} ble tildelt %{group}"
+      create:
+        unique_name_error: Klassenavnet må være unikt
+      create_group: Lag ny klasse
+      edit:
+        general: Generell
+        members: Medlemmer
+        remove_member: Fjern
+        title: Rediger klassen
+      edit_group: Rediger klassen
+      edit_plan:
+        new_license_for_group: Tildel lisens til klassen
+      errors:
+        course_not_selected: Kurs er ikke valgt
+      item:
+        archive: Arkiver
+        assign_lesson: Tilordne leksjon om timen
+        assign_test: Tilordne test på timen
+        class: Klasse
+        confirm_archive: Er du sikker på at du vil arkivere denne klassen?
+        confirm_destroy: Er du sikker på at du vil slette denne klassen?
+        destroy: Slett
+        edit: Rediger klassen
+        invite_students: Inviter flere deltakere til denne klassen
+        invite_students_link: 'Invitasjonslenke:'
+        no_students: Ingen deltakere
+        set_joinable: Tillat invitasjonslenke for deltakere
+        waiting_note: Vennligst vent...
+      new:
+        language: Språk
+        level: Nivå
+        select_language: Velg språk
+        select_level: Velg nivå
+        sub_title: Opprett en klasse for å gruppere deltakere
+        title: Ny klasse
+      update:
+        archive_msg: Klassen ble merket som arkivert
+        discard_msg: Klassen ble merket som slettet
+        success: Klassen ble oppdatert
+    team_students:
+      analyze_imported_file:
+        import_count_students: Importer %{count} deltakere
+        items_count: "%{count} rader"
+      archived_students:
+        by_last_archived: Etter arkiveringsdato
+        clear_archive: Slett arkiverte deltakere
+        clear_archive_confirm: >-
+          Er du sikker på at du vil slette alle arkiverte studenter? Dette kan ikke
+          angres.
+        notification_content: >-
+          Ifølge personverninnstillingene hos %{school_name} vil arkiverte deltakere
+          slettes %{days} dager etter lisensen har utløpt.
+        student_last_name: Etter etternavn
+        table_headers:
+          data_deletion_date: Slettingsdato
+          date_in: om %{date}
+          email: E-post
+          level: Nivå
+          name: Navn
+          native: Morsmål
+          remove_student_confirm: Er du sikker på at du vil slette denne deltakeren?
+          restore_student_confirm: Er du sikker på at du vil gjenopprette denne deltakeren?
+          target: Målspråk
+        title: Arkiverte deltakere
+      archived_students_list_row:
+        archived_at: Arkivert den %{date}
+        delete_student: Slett deltaker
+        restore_student: Gjenopprett deltaker
+      assign_course:
+        assign_to_student: Tildel læreverk
+        assigned: Læreverket %{course} ble tildelt %{student}
+      courses:
+        assigned_course: Tildelt læreverk
+        other_courses: Andre læreverk
+      edit:
+        personal_data: Personlig informasjon
+      form:
+        active: Aktivt
+        add_new_student: Legg til deltaker
+        class: Klasse
+        confirm_close_popup: >-
+          Du har ulagrede endringer som vil gå tapt hvis du forlater siden. Er du
+          sikker på at du vil lukke?
+        import_students: importere deltakere
+        inactive: Sett som aktiv
+        language_select_placeholder: Søk etter språk...
+        native: Morsmål
+        nonnative: Sett som morsmål
+        personal_data: Personopplysninger
+        plan: Lisens
+        select_class: Velg klasse
+        select_language: Velg språk
+        send_invitation: sende invitasjon på epost
+        set_active_state: Sett aktivt
+        student_import_links: Du kan også %{import_link} eller %{invitation_link}
+        support_languages: Støttespråk
+        target_languages: Målspråk
+      import_students:
+        add_manually: legge til manuelt
+        add_or_invite_links: Du kan også %{add} eller %{invite}
+        also_you_can: Du kan også
+        analyze_failed: Kunne ikke lese denne filen
+        browser_link: velg fil
+        failed: Feil
+        import_failed: Importen kunne ikke fullføres
+        import_in_progress: Deltakerne importeres i løpet av få minutter.
+        not_recognize: Ugyldig e-postadresse
+        read_more: Les mer om importering
+        select_plan: Velg abonnement
+        title: Importere deltakere
+        upload_text: Dra og slipp et regneark eller
+        wrong_format: Feil format
+      import_students_form:
+        send_invites: sende invitasjoner
+      index:
+        add_manually: Registrer manuelt
+        archive: Arkiv
+        clear: Fjern
+        create_failed: Kunne ikke opprette student
+        import_students: Importer fra Excel
+        invite: Inviter
+        invite_students: Inviter deltakere
+        license: Lisens
+        new_class: Ny klasse
+        self_plan: Selvstudieplan
+        sort_by_date: Etter dato
+        sort_by_name: Alfabetisk
+      invite_students:
+        accept_invitation: Aksepter invitasjonen
+        add_manually: legge til én og én
+        add_new_class: Legg til ny klasse
+        add_or_import_links: Du kan også %{add} eller %{import}
+        already_account: Har du allerede en konto? Begynn å lære!
+        already_student: Du har allerede blitt med på dette teamet.
+        also_you_can: Også du kan
+        class_name: Klassenavn...
+        copy_link: Kopier lenke
+        create_account: lag din konto
+        create_student_failed: Mislyktes i å opprette ny student
+        created_student_successfully: Du har blitt lagt til i teamet.
+        emails: E-postadresser
+        follow_link_to_join_team: Følg lenken nedenfor for å komme i gang og sette
+          opp profilen din.
+        get_back_into: Sørg for å komme tilbake til Lingu for å prøve dem selv.
+        import_students: importere fra Excel
+        invitation_request: Velkommen til skolen!
+        invite_by_email: Send invitasjon på e-post
+        invite_by_link: Del en lenke
+        invite_more: Legg til
+        invited_to_join_team: Du er invitert til å bli med på Lingu-skolen.
+        join_school: Bli student hos
+        join_team_group_error: Noe gikk galt. Du kan ikke bli med i denne teamgruppen.
+        lots_more_to_learn: Det er mye mer du kan lære.
+        no_plan: Ingen plan
+        notification_settings: Varslingsinnstillinger
+        or: eller
+        paste_invite_link: 'eller lim inn denne lenken i nettleseren:'
+        privacy_policy: personvernerklæring
+        profile_link: Gå til %{link} for å administrere skoler
+        quick_student_setup: Innstillinger for nye deltakere
+        receive_marketing_messages: Ja, send meg tilbud og kursinformasjon
+        select_class: Velg klasse
+        send_invitation_failed: Kunne ikke sende invitasjoner
+        send_invitations: Send invitasjon
+        send_invitations_successfully: Invitasjoner er sendt
+        support: Brukerstøtte
+        title: Inviter studenter
+        we_process_your_data: Vi behandler dine personopplysninger i tråd med vår
+      lessons:
+        assign_lesson: Tilordne leksjoner
+        by_date: Etter dato
+        by_level: Etter nivå
+        earned_xp: Opptjent xp
+        progress: Framgang
+        recent_lessons: Nylig aktivitet i selvstudium
+        search_lesson: Søk leksjon
+      list:
+        native: Innfødt
+        native_language: Morsmål
+        target: Mål
+        target_language: Målspråk
+      list_row:
+        archive: Arkiver
+        are_you_sure_archiving: Er du sikker på at du vil arkivere denne deltakeren?
+        assign_course: Tilordne kurs
+        assign_lesson: Tilordne leksjon
+        assign_test: Tilordne test
+        edit: Rediger deltaker
+        move_to_class: Flytt til ny klasse
+        unarchive: Unarkiv
+      move_class:
+        submit: Lagre
+        title: Flytt til ny klasse
+      profile:
+        change_license: Endre lisens
+        expires_at: Utløper %{expires_at}
+        license_failed: Lisensene kunne ikke opprettes
+        license_in_progress: Lisensene opprettes.
+        no_license: Ingen lisens
+        perpetual_license: Løpende lisens
+        plan_is_not_selected: Plan is not selected
+        plan_price: "%{price} per %{interval}"
+        remove_end_date: Fjern sluttdato
+        revoke_license: Avslutt lisens nå
+        revoke_license_confirm: Er du sikker på at du vil avslutte tilgangen for denne
+          deltakeren?
+        revoke_license_now: Avslutt lisensen nå
+        set_end_date: Sett sluttdato for lisensen
+    team_users:
+      form:
+        edit_user: Rediger brukerkonto
+      lessons:
+        created_on: Laget på
+        followers_count: "%{count} følgere"
+        lessons_count: "%{count} leksjoner"
+        playthroughs: Gjennomføringer
+        teaches: Underviser i
+      list_row:
+        you: DEG
+    users:
+      form:
+        avatar: Bilde
+        remove_image: Fjern bilde
+        upload_image: Last opp bilde
+  score: Score
+  search_student: Søk opp deltaker
+  select: Velg
+  select_date: Velg dato
+  select_status: Velg status
+  sessions:
+    create: Opprett
+  shared:
+    activity: Aktivitet
+    assignment: Oppgave
+    audio_upload:
+      add_audio: Legg til lyd
+      choose_audio: Velg lydfil
+      update_audio: Oppdater lyd
+    author: Forfatter
+    available_date: Blir tilgjengelig våren 2021
+    cancel: Avbryt
+    category: Kategori
+    classes: Klasser
+    clear: Fjern
+    confirm: Bekreft
+    copy: Kopier
+    count_followers:
+      one: "%{count} følger"
+      other: "%{count} følgere"
+    count_lessons:
+      one: "%{count} leksjon"
+      other: "%{count} leksjoner"
+    count_students:
+      one: "%{count} deltaker"
+      other: "%{count} deltakere"
+    count_users:
+      one: "%{count} bruker"
+      other: "%{count} brukere"
+    earned_xp: Opptjent XP
+    edit: Redigere
+    email_lcase: e-postadresse
+    enter_code: Oppgi engangskode fra e-post
+    icon: Ikon
+    image_upload:
+      add_illustration: Legg til illustrasjon
+      choose_animation: Velg animasjon
+      choose_image: Velg bilde
+      update_illustration: Oppdater illustrasjon
+    inactive: Inaktive
+    instructions: Oppgavetekst
+    language: Språk
+    level: Nivå
+    next: Neste
+    rating: Vurdering
+    school: Skole
+    send: Sende
+    skill: ferdigheter
+    stats: Statistikk
+    student: Deltaker
+    tags: Innholdsknagger
+    team: Team
+    time_spent: Tidsbruk
+    unknown: ukjent
+  show: Vis
+  sign_in_facebook: Log inn med Facebook
+  sign_in_google: Logg inn med Google
+  sign_in_microsoft: Logg inn med Microsoft
+  sign_out: Logg ut
+  skills: Ferdigheter
+  sort_by: Sorter etter
+  special_characters: Særtegn for dette språket
+  ssn: Personnummer
+  status: Status
+  student_solution: Deltakerens svar
+  students: Deltakere
+  subject: Fag
+  success_signed_in: Du er innlogget
+  success_signed_out: Du er utlogget
+  support:
+    array:
+      last_word_connector: " og "
+      two_words_connector: " og "
+      words_connector: ", "
+  t:
+    collect_words_from_website: Samle inn ord fra nettsted
+  task_guidelines: Oppgaveretningslinjer
+  task_item_session:
+    errors:
+      create: Kan ikke opprette en ny øktoppgave
+  task_items:
+    record: Ta opp
+    video:
+      errors:
+        unsupported_url_format: Støttet format for videolink. Prøv Youtube eller Wistia-lenken.
+  task_scoring_label: Vurderingsmetode
+  tasks:
+    complexities:
+      high: Høy
+      low: Lav
+      medium: Medium
+    errors:
+      failure: Det oppstod en feil under opplasting av filen
+    score_method:
+      automatic: Automatisk
+      fractional: Brøk
+      manual: Sensorvurdering
+      no_score: Ingen vurdering
+      true_false: Sann/usann
+    score_methods:
+      automatic: Automatisk
+      fractional: Brøk
+      manual: Håndbok
+      no_score: Ingen poengsum
+      true_false: Sann / usann
+    types:
+      tasks/arrange_words: Syntaksoppgave
+      tasks/audio: Lydinnspilling
+      tasks/audio_dialogue: Lydsamtale
+      tasks/audition: Lytteoppgave
+      tasks/dictation: Diktat
+      tasks/email: E-postoppgave
+      tasks/embed: Innbyggingskode
+      tasks/essay: Skriveoppgave
+      tasks/fill_gap: Tomrom i setning
+      tasks/fill_in_blanks: Fyll ut tomrom
+      tasks/fill_in_table: Fyll ut tabell
+      tasks/image_hotspot: Bilde-hotspots
+      tasks/image_object: Klikk i bilde
+      tasks/inline_dropdown: Flervalg i tekst
+      tasks/mark_word: Merk ordene
+      tasks/mark_word_audio: Merk ordene (lyd)
+      tasks/select_image: Velg bilde
+      tasks/select_text: Flervalg
+      tasks/select_video: Minimale par
+      tasks/sms: SMS-oppgave
+      tasks/speaking: Lytt og gjenta
+      tasks/text: Les og lytt
+      tasks/translatable_text: Oversettbar tekst
+      tasks/true_false: Sann/usann
+      tasks/video: Video
+      tasks/webpage: Ekstern webside
+      tasks/word_games: Glosespill
+  teach:
+    course_sections:
+      lesson_row:
+        session_count: "%{count} visninger"
+        unpublished: Ikke publisert ennå
+        word_count: "%{count} ord"
+      section:
+        add_lesson: Legg til leksjon
+        chapter_no: Kapittel %{no}
+        delete_section: Er du sikker på at du vil slette denne delen?
+        select_lesson: Velg leksjon
+    courses:
+      confirm_course_delete: Er du sikker på at du vil slette dette kurset?
+      create:
+        success: Læreverket ble opprettet
+      destroy:
+        failure: Kunne ikke slette læreverket
+        success: Læreverket ble slettet
+      edit:
+        edit_course: Rediger læreverket
+      form:
+        choose_image: Velg bilde
+        description_placeholder: Skriv en dekkenede beskrivelse av læreverket her
+        prohibited_saving_form: forbudt lagring
+        select_language: Velg språk
+      index:
+        all_courses: Læreverk
+        my_courses: Mine læreverk
+        no_courses: Ingen læreverk her
+        title: Kurs
+      level_words:
+        count_missing_words: "%{count} ord fra %{level} er utelatt"
+        coverage_of_level: >-
+          Læreverket dekker %{percent} av frekvensordlisten for dette nivået, med
+          %{count} ord.
+        list_of_omitted_words: 'Frekvensordlisten for %{level} inneholder i tillegg
+          disse ordene:'
+      list:
+        count_chapters: "%{count} kapitler"
+        count_words: "%{count} ord og fraser"
+      new:
+        title: Nytt læreverk
+      show:
+        add_new_chapter: Nytt kapittel
+        remove_image: Fjern bildet
+      update:
+        success: Læreverket ble oppdatert
+      words:
+        compare_with_frequency_wordlist: Sammenligne med frekvensordlisten
+    lessons:
+      confirm_lesson_delete: Er du sikker på at du vil slette denne leksjonen?
+      count_approved_lessons:
+        one: Èn godkjent leksjon
+        other: "%{count} godkjente leksjoner"
+        two: To godkjente leksjoner
+        zero: Ingen godkjente leksjoner
+      count_draft_lessons:
+        one: Èn leksjon under utvikling
+        other: "%{count} leksjoner under utvikling"
+        two: To leksjoner under utvikling
+        zero: Ingen leksjoner under utvikling
+      count_pending_lessons:
+        one: Èn leksjon til vurdering
+        other: "%{count} leksjoner til vurdering"
+        two: To leksjoner til vurdering
+        zero: Ingen leksjoner til vurdering
+      count_published_lessons:
+        one: Èn publisert leksjon
+        other: "%{count} publiserte leksjoner"
+        two: To publiserte leksjoner
+        zero: Ingen publiserte leksjoner
+      create:
+        success: Leksjonen ble opprettet
+      destroy:
+        failure: Kunne ikke slette leksjonen
+        success: Leksjonen ble slettet
+      draft:
+        all_lessons: Alle leksjoner
+        approved_not_published: Godkjente, men ikke publiserte leksjoner
+        columns:
+          last_updated: Sist oppdatert
+        draft_lessons: Under utvikling
+        lessons_pending_review: Leksjoner som venter på vurdering
+        my_lessons: Mine leksjoner
+        no_lessons: Ingen leksjoner
+        published_lessons: Publiserte leksjoner
+        reviewable_lessons: Til vurdering
+        select_course: Velg læreverk
+        title: Leksjoner
+      edit:
+        choose_image: Velg bilde
+      edit_lesson: Rediger <i>%{lesson}</i>
+      form:
+        credits_placeholder: >-
+          Oppgi navn på rettighetshavere som skal godskrives deler av innholdet i
+          leksjonen.
+        prohibited_saving_form: forhindret lagring
+        select_language: Velg språk
+        select_level: Velg nivå
+        select_parent_lesson: Overordnet leksjon
+        select_skill: Velg ferdighet
+        select_support_language: Velg støttespråk
+        select_tag: Velg hovedkategori
+        select_target_language: Velg målspråk
+        select_target_language_active: Aktivt
+        select_target_language_level: Velg nivå for målspråk
+        select_team: Velg team
+        team_image: Logo
+      lesson_header:
+        glossary: Ordliste
+        live_page: Se leksjonen
+        more: Mer
+        more_actions: Flere handlinger
+      list:
+        columns:
+          last_updated: Sist oppdatert
+          title: Tittel
+        count_lessons:
+          one: En leksjon
+          other: "%{count} leksjoner"
+        level: Nivå
+      new:
+        title: Ny leksjon
+      publishable:
+        lesson_approval:
+          'false': Leksjonen må vurderes og godkjennes av en annen lærer.
+          'true': Leksjonen er godkjent av en annen lærer.
+        lesson_glossary:
+          'false': Ordlisten har for få eller for mange ord (anbefalt 10-20 ord).
+          'true': Ordlisten er ok.
+        user_credits:
+          'false': Du må vurdere en annen lærers leksjon før din kan publiseres.
+          'true': Du har vurdert en annen lærers leksjon.
+        user_profile:
+          'false': Du må oppdatere profilen din med bilde og beskrivelse.
+          'true': Profilen din er oppdatert.
+      review:
+        actions:
+          draft: Endre status til utkast
+          pending: Send til vurdering
+          publish: Publiser leksjonen
+        publication_error: Leksjonen kan ikke publiseres
+        published: Leksjonen ble vellykket publisert
+        publishing_status: Publiseringsstatus
+        status_updates:
+          draft: Leksjonsstatus ble satt til utkast
+          pending: Leksjonsstatus ble satt til gjennomgang
+        unpublication_error: Leksjonen kan ikke publiseres
+        unpublished: Leksjonen ble ikke publisert
+      reviewable_lessons:
+        author: Forfatter
+      select_color: Velg bakgrunnsfarge
+      show:
+        add_objective: Legg til
+        cover: Forsidebilde
+        move_tasks: Flytt oppgaver
+        no_cover: Ingen bilde her.
+        split: Del opp
+        title: Leksjonsdetaljer
+      split:
+        error: Ny leksjon ble ikke opprettet
+        new_lesson_title: Tittel på ny leksjon
+        split_lesson: Del opp leksjon
+        success: Ny leksjon er opprettet
+      storyline:
+        children_lessons: Underordnede leksjoner
+        define_learning_objectives): Bestem læringsmål
+        lesson_content: Innhold
+        parent_lesson: Forgående leksjon
+      task_row:
+        delete: Slett
+      tasks:
+        no_tasks: Ingen oppgaver her ennå
+      tet:
+        count_words: "%{count} ord vil benyttes til spill."
+        enter_learning_objective: Skriv inn læringsmål
+        games: Spill
+        go_to_glossary: Gå til ordlisten
+      update:
+        success: Leksjonen ble oppdatert
+      vocabulary:
+        add_phrase: Legg til frase
+        lesson_vocabulary: Vokabular
+    phrases:
+      add_phrase: Legg til ord
+      form:
+        enter_phrase: Skriv et ord...
+      heading: Leksjonsliste
+      index:
+        confirm_reload_phrases: Er du sikker? Ordlisten nullstilles og nye ord importeres.
+        contextual_wordlist: Kontekstuell ordliste
+        delete_all: Slette alle
+        generate_glossary: Generer ordliste
+        glossary_count: Ordlisten inneholder %{count} ord
+        independent_wordlist: Generer ordliste
+        recommended_glossary_text: >-
+          Læringsplattformen generer spill for deltakeren basert på denne ordlisten.
+          Vi anbefaler at ordlisten inneholder mellom 10 og 20 ord.
+        waiting_note: Vennligst vent...
+      list:
+        confirm_phrase_delete: Er du sikker på at du vil slette denne setningen?
+        no_phrases: Ingen uttrykk ennå. Generer en liste eller legg til ord manuelt.
+      title: Ordliste
+    posts:
+      confirm_post_delete: Er du sikker på at du vil slette dette innlegget?
+      create:
+        success: Innlegget ble opprettet.
+      destroy:
+        failure: Gjør ikke slett dette innlegget.
+        success: Innlegget ble slettet.
+      edit:
+        edit_post: Rediger innlegget
+      form:
+        content_placeholder: Skriv inn innholdet for innlegget ditt.
+        prohibited_saving_form: forbudt lagring
+        select_lesson: Velg leksjon
+      index:
+        all_posts: Alle innlegg
+        my_posts: Mine innlegg
+        no_posts: Ingen innlegg
+        posts: Innlegg
+        title: Innlegg
+      list:
+        content: Innhold
+        lesson: Lekse
+      new:
+        title: Nytt innlegg
+      update:
+        success: Innlegget ble oppdatert.
+    reviewable_lessons:
+      count_pending_review:
+        one: Èn leksjon venter på vurdering
+        other: "%{count} leksjoner venter på vurdering"
+        zero: Ingen leksjoner venter på vurdering
+    reviews:
+      form:
+        approve: Godkjent for publisering
+        changes_requested: Leksjonen trenger justeringer
+        submit_review: Send vurdering
+      index:
+        no_learning_objectives: Ingen læringsmål definert...
+        objectives: Læringsmål
+      items:
+        approved_at: Godkjent den %{time}
+        changes_requested_at: Foreslåtte endringer, %{time}
+        confirm_delete: Er du sikker på at du vil slette denne anmeldelsen?
+        no_reviews: Ingen vurderinger
+      navbar:
+        post_review: Ny vurdering
+      reviews:
+        reviews: Vurderinger
+    task_item_options:
+      auditions:
+        option_form:
+          add_answer: Legg til svar
+          enter_answer: Skriv inn svaret
+      select_image:
+        option_form:
+          item_option_image: Elementalternativbilde
+    task_items:
+      arrange_words:
+        arrange_words:
+          additional_words: Uriktige alternativer
+          click_set_incorrect_words: "(Klikk her for å legge til)"
+          enter_correct_sentence: Riktig setning
+          hint: Hint
+        forms:
+          form:
+            leave_blank_for_translations: La feltet stå tomt for å bruke Google Translate
+      audition:
+        forms:
+          form:
+            minute: Minutt
+            second: Sekund
+            select_word: Velg ord
+      dictation:
+        forms:
+          form:
+            enter_expected_response: Skriv inn forventet svar fra deltakeren
+      email:
+        email:
+          email_body: E-postmelding
+          from_email: Avsenders epost
+          from_name: Avsenders navn
+      embed:
+        embed:
+          accepted_sources: Aksepterte kilder
+      image_hotspot:
+        forms:
+          form:
+            add_hotspot: Legg til et hotspot
+            associate_with: Assosiert med
+            new_hotspot: Nytt hotspot
+            select_word: Velg ord
+      image_object:
+        forms:
+          form:
+            add_object: Opprett oppgave
+            instruction: Hva skal deltakeren klikke på?
+            leave_blank_for_audio: Tekstinstruks (la feltet være tomt for lydinstruks)
+            new_object: Nytt klikkområde
+        image_object:
+          audio_only: "(kun lyd)"
+      inline_dropdown:
+        forms:
+          form:
+            add_block: Legg til oppgave
+      mark_word:
+        mark_word:
+          associate_with: Koble mot
+          link_word: Koble ord
+      select_image:
+        forms:
+          form:
+            enter_question: Skriv oppgavetekst her
+        select_image:
+          delete_question: Slett spørsmål
+          find_image: Last opp bilde
+      select_text:
+        forms:
+          form:
+            add_question: Opprett spørsmål
+            enter_question: Skriv inn oppgavespørsmål her
+            new_question: Nytt spørsmål
+        select_text:
+          add_answer: Legg til svar
+          enter_answer: Skriv svaralternativ
+          select_text_guide: >-
+            Flervalgsoppgave lar deg stille et spørsmål og oppgi ett eller flere riktige
+            alternativer.
+      select_video:
+        select_video:
+          select_video_guide: >-
+            Opprett et spørsmål, og spill inn en kort videosnutt. Lagre videoen ved
+            å klikke på diskettikonet. Legg deretter inn svaralternativer med ett
+            riktig svar.
+        select_video_guide: >-
+          Lag et spørsmål, og ta deretter opp en kort video. Lagre videoen ved å klikke
+          diskettikonet. Legg deretter til svar.
+      sms:
+        forms:
+          form:
+            message: Melding
+            sender_name: Avsender
+      speaking:
+        forms:
+          form:
+            add_sentence: Legg til setning
+            instruction: Skriv inn forventet svar fra deltakeren
+            new_sentence: Ny setning
+      translatable_text:
+        translatable_text:
+          write_in_language: Skriv på %{language}. Artikkelen oversettes til deltakerens
+            morsmål
+      true_false:
+        forms:
+          form:
+            add_statement: Opprett setning
+            new_statement: Ny setning
+      video:
+        video:
+          accepted_sources: Aksepterer Youtube og Wistia-videoer
+          caption: Tekst / transkripsjon
+      webpage:
+        webpage:
+          url_label: Adresse til nettside
+    task_list_row:
+      confirm_publish: Er du sikker på at du vil endre publiseringstatus?
+    task_moves:
+      move_tasks: Flytt oppgaver
+      select_lesson: Velg leksjon
+    tasks:
+      arrange_words:
+        forms:
+          form:
+            arrange_words_guidelines: Skriv inn en syntaktisk riktig setning, og spill
+              inn din egen uttale.
+            sentences: Setninger
+      audio:
+        audio:
+          input_minimum_duration: Minste varighet for lydspor
+          minimum_duration: Minste varighet
+      audio_dialogue:
+        forms:
+          form:
+            enter_name_of_partner: Navn på samtalepartner
+            input_answers_select: Last opp lydspor
+            partner_name: Navn på samtalepartner
+      audition:
+        errors:
+          start_interference: Det må være minst %{seconds} sekund mellom hver oppgave
+          task_audio_duration: Tidsstempel bør ikke overstige lydvarigheten
+          task_audio_presence: Last opp lyd til opplastingsskjema for oppgave
+        forms:
+          form:
+            audition_guidelines: >-
+              Begynn med å laste opp en lydfil på 30 sek til 2 min. Legg deretter
+              inn tidspunkt for når ordet skal vises for deltakeren, og koble tidspunktet
+              mot et ord fra ordlisten.
+            per_30s: per 30 sekunder lydspor.
+      convert_text_task_confirm: Er du sikker på at du vil konvertere oppgavetype?
+      convert_text_task_msg: Oppgavetypen ble endret.
+      delete_task_confirm: Er du sikker på at du vil slette denne oppgaven?
+      deleted_task_msg: Oppgaven ble slettet
+      dictation:
+        forms:
+          form:
+            guidelines: >-
+              Deltakeren skal skrive det han hører. Skriv inn forventet svar fra deltakeren,
+              og spill inn lydopptaket etterpå.
+            sentences: Setninger
+        name: Oppgaver
+      email:
+        forms:
+          form:
+            email_task_guidelines: >-
+              Fyll ut feltene med avsender, emne og melding dersom deltakeren skal
+              besvare en epost, Hvis disse feltene er tomme, vil deltakeren se ny
+              epost-skjema.
+      enter_help_text_for_student: Hjelpetekst for deltaker
+      enter_instruction: Fortell deltakeren hva han/hun skal gjøre
+      enter_title: Oppgi tittel
+      essay:
+        essay:
+          input_minimum_words: Minste antall ord
+          minimum_words: Minimum antall ord
+      fill_gap:
+        forms:
+          form:
+            fill_gap_guidelines: >-
+              Feltet *select* vil bli vist som et tomrom i setningen og mulige svaralternativer
+              under. Første alternativ etter kolon (:) skal være det riktige svaret.
+      fill_in_blanks:
+        forms:
+          form:
+            fill_in_blanks: Fyll inn tomrom
+            fill_in_blanks_example: Jeg * elsker * denne byen
+            fill_in_blanks_guidelines: >-
+              Marker ordene som skal fylles ut med stjernetegn (*) og skill riktige
+              alternativer eller skrivemåter med kolon (:).
+      fill_in_table:
+        forms:
+          form:
+            column: Kolonne
+            columns: Antall kolonner
+            fill_in_tables_guidelines: >-
+              Kandidaten vil kunne lese første kolonne og skal fylle ut kolonne to
+              og tre. Skill riktige svaralternativer med komma (:).
+            has_demo: Vis først løsningsdemo
+            question_format: Spørsmålsformat
+      giphy_modal:
+        results: bilder funnet
+        search_giphy: Søk etter bilder fra Giphy
+      headline: Overskrift
+      hints_placeholder: Oppgi tips for å hjelpe deltakeren løse oppgaven
+      image_hotspot:
+        forms:
+          form:
+            hotspots: Hotspots
+            image_hotspot_guidelines: >-
+              Begynn med å laste opp et bilde. Søk opp ord fra ordlisten og dra den
+              hotspoten til riktig sted på bildet.
+      image_object:
+        forms:
+          form:
+            clickable_image_areas: Klikkbare områder i bildet
+            image_object_guidelines: >-
+              Start med å laste opp et bilde. Deretter legger du til en tekst eller
+              lydinstruks om hva deltakeren skal klikke på i bildet. Du kan flytte
+              og utvide størrelsen på det klikkbare området ved å dra nedre høyre
+              hjørne.
+      index:
+        all_states: Alle statuser
+        all_subjects: Alle fag
+        all_task: Alle oppgaver
+        search_name: Søk på navn
+        task_base: Oppgavebank
+      inline_dropdown:
+        forms:
+          form:
+            inline_dropdown_guidelines: >-
+              Feltet *select* vil bli vist som en nedtrekksliste hvor deltakeren skal
+              velge et svar. Først alternativ etter kolon (:) skal være det riktige
+              svaret.
+      instructions_for_student: Tekst på startsiden
+      introduction_task_placeholder: Introduksjon til oppgaven
+      list:
+        count_tasks: "%{count} oppgaver"
+        last_updated: Sist oppdatert
+        settings: Innstillinger
+      main_form:
+        save_and_continue: Lagre og fortsett
+      mark_word:
+        forms:
+          form:
+            mark_words_guide: Marker alle ordene som deltakeren skal klikke på med
+              stjernetegn (*).
+            sentences: Setning
+            statements: Oppgaver
+      mark_word_audio:
+        forms:
+          form:
+            mark_word_audio_guide: >-
+              Merk hvert ord studenten skal klikke med stjerner (*) umiddelbart før
+              og etter. Etter at du har opprettet uttalelse, kan du lage lydinstruksjoner
+              for å fortelle eleven hvilke ord han skal klikke på.
+            statements: Setninger
+      new:
+        new_task: Ny oppgave
+        save_and_continue: Lagre og fortsett
+        select_context: Velg kontekst
+        select_skills: Velg ferdigheter
+        select_task_type: Velg oppgavetype
+        task_name: Overskrift
+      overview:
+        count: Antall
+        no_level: Udefinert nivå
+        tasks_by_level: Oppgaver fordelt på nivå
+        tasks_count:
+          one: Èn oppgave
+          other: "%{count} oppgaver"
+          zero: No oppgaver
+      preview:
+        back_to_task: Tilbake til oppgaven
+      required_count_msg: Denne oppgavetypen krever minimum %{count} oppgaver
+      select_image:
+        forms:
+          form:
+            upload_and_select_correct: Last opp bilder og marker riktig svar
+      select_text:
+        fields:
+          hints_or_help: Hjelpetekst for deltaker
+        forms:
+          form:
+            questions: Spørsmål
+      select_video:
+        fields:
+          hints_or_help: Tips eller hjelp til studenter
+        forms:
+          form:
+            questions: Spørsmål
+      settings:
+        content: Konfigurer innhold
+        task_settings_for: Oppdater innstillinger for %{name}
+        task_type: Oppgavetype
+      shared_task_fields:
+        accepted_video_sources: Godtar Youtube og Wistia-videoer
+        choose_audio_file: Velg lydfil
+        choose_file: Velg Fil
+        choose_giphy_image: Søk Giphy-bilde
+        choose_image: Velg bildefil
+        complexity: Kompleksitet
+        delete_attachment: Fjern vedlegg
+        internal_name: Administrativt navn
+        remove_audio: Fjern lyd
+        remove_image: Fjern bildet
+        score_fractional_label: Brøk (automatisk), for eksempel 4 av 5 poeng.
+        score_manual_label: Manuell vurdering av sensor
+        score_no_score_label: Ingen score
+        score_true_false_label: Kun poeng ved riktig svar (automatisk)
+        stretch_image_label: Strekk bildet til å fylle siden
+        task_content: Innhold i oppgaven
+        upload_audio: Last opp lydfil
+      shared_task_header:
+        convert_text_task_type: Oversett
+        last_updated_at_date_by: Sist oppdatert %{date} av %{user}
+      size_requirements: Omfang
+      sms:
+        forms:
+          form:
+            define_sms_dialogue: Konfigurer sms-dialogen
+        sms:
+          input_minimum_duration: Minste varighet for lydspor
+          minimum_duration: Minste varighet
+      speaking:
+        forms:
+          form:
+            instruction: Oppgaveinstruksjon
+            sentences: Setninger
+            speaking_guide: >-
+              Skriv inn en setning og ta opp uttalen din, eller last opp lydfil. Deltakerens
+              lydopptak sammenlignes med tekstversjonen av setningen.
+      task_introduction: Beskrivelse av oppgaven
+      task_text_title: Innhold
+      tasks:
+        inline_dropdown:
+          forms:
+            form:
+              inline_dropdown_guidelines: >-
+                Feltet *select* vil bli vist som en nedtrekksliste hvor deltakeren
+                skal velge et svar. Første alternativ etter kolon (:) skal være det
+                riktige svaret.
+        instructions_for_student: Instruks til deltaker
+        introduction_task_placeholder: Introduksjon til oppgaven
+        list:
+          count_tasks: "%{count} oppgaver"
+          last_updated: Sist oppdatert
+          settings: Innstillinger
+        mark_word:
+          forms:
+            form:
+              mark_words_guide: Marker alle ordene som deltakeren skal klikke på med
+                stjernetegn (*).
+              sentences: Setning
+              statements: Oppgaver
+        new:
+          new_task: Ny oppgave
+          save_and_continue: Lagre og fortsett
+          select_context: Velg kontekst
+          select_skills: Velg ferdigheter
+          task_name: Overskrift
+        overview:
+          count: Antall
+          no_level: Udefinert nivå
+          tasks_by_level: Oppgaver fordelt på nivå
+          tasks_count:
+            one: Èn oppgave
+            other: "%{count} oppgaver"
+            zero: No oppgaver
+        preview:
+          back_to_task: Tilbake til oppgaven
+        select_image:
+          forms:
+            form:
+              upload_and_select_correct: Last opp bilder og marker riktig svar
+        select_text:
+          fields:
+            hints_or_help: Hjelpetekst for deltaker
+          forms:
+            form:
+              questions: Spørsmål
+        settings:
+          content: Konfigurer innhold
+          task_settings_for: Oppdater innstillinger for %{name}
+          task_type: Oppgavetype
+        shared_task_fields:
+          complexity: Kompleksitet
+          delete_attachment: Fjern vedlegg
+          internal_name: Administrativt navn
+          remove: Fjern
+          score_fractional_label: Brøk (automatisk), for eksempel 4 av 5 poeng.
+          score_manual_label: Manuell vurdering av sensor
+          score_no_score_label: Ingen score
+          score_true_false_label: Kun poeng ved riktig svar (automatisk)
+          task_content: Innhold i oppgaven
+          upload_audio: Last opp lydfil
+        shared_task_header:
+          last_updated_at_date_by: Sist oppdatert %{date} av %{user}
+        sms:
+          forms:
+            form:
+              define_sms_dialogue: Konfigurer sms-dialogen
+          sms:
+            input_minimum_duration: Minste varighet for lydspor
+            minimum_duration: Minste varighet
+        task_introduction: Beskrivelse av oppgaven
+        task_text_title: Innhold
+        true_false:
+          forms:
+            form:
+              statements: Utsagn
+        upload_audio: Last opp lydfil
+      translatable_text:
+        forms:
+          form:
+            guidelines: >-
+              Denne teksten skal skrives på målspråket for leksjonen, og oversettes
+              automatisk til deltakers morsmål. <br><br><strong>Merk tekst som ikke
+              skal oversettes med «tag content»-verktøyet</strong>
+      true_false:
+        forms:
+          form:
+            statements: Utsagn
+            true_false_guidelines: >-
+              I denne oppgavetypen skal du legge inn utsagn og markere dem som sanne
+              eller usanne.
+      upload_audio: Last opp lydfil
+      upload_demo_audio: Last opp demo lydfil
+      video:
+        form:
+          embed:
+            label: Video innebygd kode
+            placeholder: Angi kode for innbygging av video
+          url:
+            label: Videolink
+            placeholder: https://www.youtube.com/watch?v=IDHERE
+        forms:
+          form:
+            video_guidelines: >-
+              Lim inn adressen til en Youtube- eller Wistia-video, og skriv inn en
+              oppsummering av innholdet i tekstfeltet.
+    team_domains:
+      form:
+        add: Legge til
+        add_domain: Legg til et e-postdomene for automatiske invitasjoner
+      list:
+        delete:
+          action: Ta vekk
+          confirm: Er du sikker på at du vil slette dette domenet?
+    team_invitations:
+      create:
+        failure: Det skjedde en feil og du ble ikke lagt til i teamet
+        joined: Du er nå medlem av teamet
+      show:
+        already_member: Du er allerede medlem av dette teamet
+        join_button: Bli med i teamet
+        join_heading: Bli med i arbeidsområdet til teamet på lingu.com
+        profile: Profil
+        profile_link: Gå til %{link} for å administrere team
+        reject: Nei, takk
+        set_as_default: Sett som mitt standardteam
+    team_users:
+      delete:
+        action: Slett team
+        confirm: Er du sikker på at du vil slette teamet?
+      edit:
+        action: Rediger
+        choose_image: Last opp logo
+        heading: Rediger team
+      form:
+        team_image: Team-logo
+      index:
+        back_to_profile: Tilbake til profilen min
+        columns:
+          actions: Handlinger
+          members: Medlemmer
+          name: Teamnavn
+        default_team: STANDARD
+        heading: Mine team
+        set_default_team: Sett som standard
+      list:
+        columns:
+          actions: Handlinger
+          role: Rolle
+          user: Medlemsnavn
+        delete:
+          action: Fjern
+          confirm: Er du sikker på at du vil fjerne dette teammedlemmet?
+        leave:
+          action: Forlat
+          confirm: Er du sikker på at du vil forlate dette laget?
+      new:
+        action: Nytt team
+        heading: Nytt team
+      team_link:
+        copy: Kopier
+        invitation_url: Del denne lenken for å invitere folk til teamet ditt
+        invite_cta: Inviter nye brukere til teamet
+        invite_heading: Inviter
+        members:
+          one: Ett medlem
+          other: "%{count} medlemmer"
+      team_members:
+        team_members: Teammedlemmer
+    teams:
+      delete:
+        action: Slett teamet
+        confirm: Er du sikker på at du vil slette et team?
+      edit:
+        action: Redigere
+        choose_image: Last opp logo
+        heading: Rediger teamet
+      form:
+        team_image: Firmalogo
+      index:
+        columns:
+          actions: Handlinger
+          members: Medlemmmer
+          name: Teamnavn
+        default_team: STANDARD
+        heading: Mine team
+        set_default_team: SETT STANDARD
+        teams: Lag
+      instruction:
+        select_ability_title: Hva ønsker du å bruke Lingu-plattformen til?
+      new:
+        action: Nytt team
+        heading: Nytt team
+      onboarding:
+        authoring: Opprette og publisere nettleksjoner / e-læring
+        licensing: Gi mine deltakere tilgang til e-læring, spill og tester
+        other: Administrasjon av deltakere og lærere
+        submit: Kom igang
+        teaching: Tilby undervisning (én til én) og veiledning for deltakere
+  team_domain_invitations:
+    list:
+      accept: Aksepterer
+      actions: Handlinger
+      decline: Avslå
+      team_invitations: Teaminvitasjoner
+      team_name: Lag navn
+  team_invitations:
+    create:
+      joined: Velkommen til %{team}
+    show:
+      team_not_found: Teamet ble ikke funnet
+  time:
+    am: ''
+    formats:
+      activity: "% d% b,% Y% H:% M"
+      date: "%e. %B %Y"
+      default: "%d.%m.%Y kl %H:%M"
+      long: "%A, %e. %B %Y, %H:%M"
+      pdf: "% d. %AV"
+      short: "%e. %b %Y, %H:%M"
+    pm: ''
+  time_spent: Tid brukt
+  title: Tittel
+  'true': Sant
+  type: Type
+  update: Oppdater
+  upload: Last opp
+  users: Brukere
+  view: Vis
+  views:
+    pagination:
+      first: første
+      last: siste
+      next: neste
+      previous: forrige
+      truncate: "..."
+  welcome:
+    signin:
+      enter_email: Oppgi epost
+      welcome_title: Velkommen til Lingu
+  will_paginate:
+    next_label: Neste <i class="fa fa-angle-right"></i>
+    previous_label: <i class="fa fa-angle-left"></i> Forrige
+  word: Ord
+  words: Ord

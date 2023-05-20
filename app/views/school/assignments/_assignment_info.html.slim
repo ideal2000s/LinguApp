@@ -1,0 +1,38 @@
+- assignable = document.assignable
+- student = document.student
+.assignment-info-header.p-4
+  h1= assignable.name
+  = assignment_type_tag(assignable)
+  p.mt-4
+    - if assignable.is_a?(Task)
+      = strip_tags(assignable.introduction)
+    - elsif assignable.is_a?(Assignment)
+      = strip_tags(assignable.instruction)
+  table.mt-3
+    - if assignable.is_a?(Task)
+      - lesson = assignable.lesson
+      tr
+        th= t('activerecord.models.lesson')
+        td.d-flex.align-items-center.ml-3
+          = lesson.image ? image_tag(lesson.image_url) : image_tag('uploader/defaults/lesson/original.png', class: 'bg-400')
+          span.ml-1
+            = lesson.title
+    tr
+      th= t('activerecord.models.student')
+      td.d-flex.align-items-center.ml-3
+        = custom_profile_tag(student)
+        .student-full-name.ml-2
+          - if (team_student = current_team.team_students.find_by(student: student))
+            = link_to student.full_name, school_student_path(student)
+          - else
+            = student.full_name
+            span.text-muted=< "(#{student.email})"
+    tr
+      th= t('school.school_assignments.student_assignment_info.submitted_at')
+      td
+        span.ml-3= l(document.created_at, format: :default)
+    tr
+      th= t('status')
+      td= document_status_tag(document)
+.assignment-info-separator
+= render 'school/shared/document_review', document: document, comment: comment, comments: comments

@@ -1,0 +1,625 @@
+---
+tl:
+  course_mailer:
+    course_assigned_notification:
+      button: Simulan ang kurso
+      click_start_lesson: I-click ang 'Simulang aralin'
+      follow_course_link: I-click ang pindutan upang buksan ang kurso
+      footer_text: Bumalik sa Lingu upang matuto ng bagong araw-araw!
+      get_started_line: 'Narito kung paano ka nagsisimula:'
+      notification_link: Mga setting ng abiso
+      open_lesson: Buksan ang unang aralin
+      or_paste_this_link: o i-paste ang link na ito sa iyong browser
+      sign_in_with_email: Mag-log in gamit ang iyong email address (%{email})
+      support_link: Suporta
+      title: Pagsisimula sa %{course}
+    new_document_comment:
+      author_text: Nag-iwan ng pagsusuri ang %{author} ng iyong takdang-aralin
+      button_text: Tingnan ito
+      button_url_helper: 'o i-paste ang link na ito sa iyong browser:'
+      footer_text: Marami pang dapat malaman ...
+      notification_link: Mga setting ng abiso
+      subject_line: Bagong komento sa pagtatalaga
+      support_link: Suporta
+    otp:
+      ignore_msg: Kung hindi mo ginawa ang kahilingang ito, huwag pansinin lamang
+        ang email.
+      subject_line: Ang iyong natatanging code para sa Lingu
+      unique_code_for_lingu: Narito ang iyong natatanging code para sa Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Mayroon nang account?
+      back: Bumalik
+      back_to_sign_in: Bumalik sa Mag-sign in
+      check_your_email_for_a_code: Suriin ang iyong email para sa iyong code
+      continue: Magpatuloy
+      continue_with_email: Magpatuloy sa email
+      continue_with_provider: Magpatuloy sa %{provider}
+      did_not_receive_a_code: Hindi nakatanggap ng isang code?
+      email_address: Email address
+      first_name: Pangalan
+      get_unique_code: Kumuha ng isang natatanging code sa pag-login
+      join_lingu: Sumali kay Lingu
+      last_name: Huling pangalan
+      more_login_options: Higit pang mga pagpipilian sa pag-login
+      no_account_question: Wala kang account?
+      or: o
+      resend_code: Ipadala muli ang code
+      sign_in: Mag-sign in
+      sign_up: Mag-sign up
+      want_to_receive_marketing_messages: Nais kong makatanggap ng mga mensahe sa
+        marketing mula sa Lingu
+      we_ve_sent_a_code: >-
+        Nagpadala kami ng isang 6-digit na code sa <strong> {{email}} </strong>. Mag-e-expire
+        ang code sa loob ng 15 minuto, kaya't mangyaring ipasok ito sa lalong madaling
+        panahon.
+    cookie_agreement:
+      agree: Sang-ayon
+      condition: >-
+        Gumagamit kami ng cookies upang suriin ang pagganap ng site at maghatid ng
+        isinapersonal na nilalaman. Sa pamamagitan ng pag-click sa "Sumang-ayon",
+        pumayag ka sa aming mga kundisyon.
+    course:
+      accredited_course_provider: Accredited na tagabigay ng kurso
+      apply: Mag-apply
+      apply_filters: Mag-apply ng mga filter
+      by: Ni
+      cancel: Kanselahin
+      categories: "%{count} kategorya"
+      category: Kategoryang
+      clear: Malinaw
+      clear_filters: I-clear ang mga filter
+      contact_us: Makipag-ugnayan sa amin
+      could_not_find_match_for: Paumanhin, wala kaming makitang anumang tugma para
+        sa
+      course_language: Wika ng kurso
+      duration: Tagal
+      filter_settings:
+        categories:
+          academic: Akademiko
+          business: Negosyo
+          fashion: Fashion
+          food_drink: Pagkain Inumin
+          for_kids: Para sa mga bata
+          general: Pangkalahatan
+          health: Kalusugan
+          legal: Ligal
+          sport: Palakasan
+          travel: Paglalakbay
+        durations:
+          t0_600: "<10 minuto"
+          t1800_3600: 30-60 minuto
+          t3600_86400: 1+ na oras
+          t600_1800: 10-30 minuto
+        focus_on:
+          conversation: Pag-uusap
+          grammar: Gramatika
+          listening: Nakikinig
+          pronunciation: Pagbigkas
+          reading: Pagbabasa
+          speaking: Nagsasalita
+          writing: Pagsusulat
+        levels:
+          long:
+            advanced: Advanced na antas
+            elementary: Antas ng elementarya
+            intermediate: Antas ng antas
+            no_knowledge: Walang kaalaman
+            pre_intermediate: Paunang antas ng intermediate
+            upper_intermediate: Taas na antas ng intermediate
+          short:
+            advanced: Advanced
+            beginner: Nagsisimula
+            intermediate: Nasa pagitan
+        sort_by:
+          most_rated: Pinaka-rate
+          newest: Pinakabago
+          popularity: Katanyagan
+      filters: Mga Filter
+      focus_on: Pagtuunan ng pansin
+      focus_on_title: Gusto kong pagtuunan ng pansin
+      hide_lessons: Itago ang mga aralin
+      hours: Mga oras
+      i_understand: naiintindihan ko
+      i_want_to_learn: gusto ko matuto
+      in_language: sa %{language}
+      language: Wika
+      learn_more: Matuto nang higit pa
+      less_settings: Mas kaunting mga setting
+      lessons: Aralin
+      lessons_available: magagamit ang mga aralin na %{number}
+      lessons_catalog_page_subtitle: Naging bayani sa wika.
+      lessons_catalog_page_title: Palawakin ang iyong mga patutunguhan sa isang kurso
+        sa wika
+      level: Antas
+      min: Min
+      more_settings: Higit pang mga setting
+      navbar:
+        close: Isara ang menu
+        menu: Menu
+        select_language: Piliin ang wika
+      need_to_buy_course: Kailangan mo munang mag-book ng kurso
+      no_description: Walang ibinigay na paglalarawan
+      no_results: Paumanhin, wala kaming makitang anumang tugma para sa
+      or: o
+      per_month: kada buwan
+      plans: Mga Plano
+      privacy_policy: Patakaran sa privacy
+      rating: Marka
+      remove_all_filters: Alisin ang lahat ng mga filter
+      reviews: Mga pagsusuri
+      save: Magtipid
+      search: Maghanap
+      select_dots: Piliin ang ...
+      select_languages: Piliin ang mga langauge
+      select_num_languages: Piliin ang mga wika ng %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Ipakita lahat
+      show_all_lessons: Ipakita ang lahat ng mga aralin
+      show_lessons: Ipakita ang mga aralin sa %{number}
+      show_more: Magpakita pa
+      sign_up_with_lingu_for: Mag-sign up kasama si Lingu Norway para sa
+      skills: "%{count} kasanayan"
+      sort_by: Pagbukud-bukurin ayon
+      start_typing_here: Simulang mag-type dito
+      teach: Turo
+      terms_and_conditions: Mga Tuntunin at Kundisyon
+      time_range: Saklaw ng oras
+      try_adjusting_your_search: >-
+        Subukang isaayos ang iyong paghahanap sa pamamagitan ng pagbabago ng iyong
+        mga filter
+      try_this_course: Subukan ang kursong ito
+      website_language: Wika sa website
+      words: Mga salita
+    games:
+      finished:
+        go_to_next_exercise: Magaling! Pumunta sa susunod na ehersisyo
+      flashcard:
+        buttons:
+          finish: Tapos na
+          next: Susunod
+          previous: Dati
+        check_out_new_words: Suriin ang mga bagong salita na matututunan mo sa araling
+          ito
+        frequency_of_word_usage: Dalas ng paggamit ng salita sa %{language}
+        keep_practice_to_learn_all_words: Suriin ang mga salitang %{count} at maglaro
+          tayo ng ilang mga laro!
+        word_frequency:
+          level1: Minsan lang gamitin
+          level2: Minsan lang gamitin
+          level3: Dalas ng salita - katamtaman
+          level4: Dalas ng salita - katamtaman
+          level5: Karaniwan
+          level6: Napaka-pangkaraniwan
+      match_word:
+        click_and_move_each_word_to_counterpart: I-click at ilipat ang bawat salita
+          sa katapat nito
+        start_heading: Itugma ang mga salita upang makagawa ng isang pares
+        time_is_up: Tapos na ang oras!
+      skip_tutorial: Laktawan
+      time_is_up: Tapos na ang oras!
+      word_nodes:
+        match_letters_to_form_word: Itugma ang mga titik upang makabuo ng isang salita
+      word_waterfall:
+        do_not_hesitate: Bilisan natin!
+        go_to_next_exercise: Pumunta sa susunod na ehersisyo
+        select_correct_translation: Piliin ang tamang tugma
+        well_done: Magaling!
+    home_page:
+      hello: Kamusta,
+      popular_lessons: Mga sikat na aralin
+      show_more: Magpakita pa
+      time: "%{count} min"
+      today_lesson: Ang iyong aralin para sa araw na ito
+      user_name: "%{name}!"
+      words: "%{count} salita"
+    idle_screen:
+      by_author: ni %{authorName}
+      continue_lesson: Magpatuloy sa aralin
+      exit: Exit
+      idle_message: Matagal ka nang walang ginagawa ...
+    lesson_page:
+      back_to_course_page: Bumalik sa pahina ng kurso
+      close: Isara
+      continue_lesson: Magpatuloy sa aralin
+      followed: Sinundan
+      hamburger_menu_btn: Menu ng Hamburger
+      lesson_given: aralin
+      not_started: hindi nagsimula
+      or: O kaya naman
+      part_complete: "%{percent}% kumpleto na"
+      restart_lesson: I-restart
+      section_check: Suriin
+      section_check_info: "%{count} pagsusulit"
+      section_learn: Alamin
+      section_learn_info: "%{count} min upang panoorin at basahin"
+      section_play: Maglaro
+      section_play_info: "%{count} mga salita upang magsanay"
+      start_lesson: Simulan ang aralin
+      step_progress: "%{percent}%"
+      subscribe: Sundan
+      subscribed: Sinundan
+      subscribers: tagasunod
+      time_min: "%{minutesNumber} min"
+      unsubscribe: I-unfollow
+      webview_error_title: May nangyaring mali ...
+      words_number: "%{wordsNumber} mga bagong salita"
+    lesson_task:
+      cancel_button: Kanselahin
+      check:
+        navigation_next: Susunod
+        navigation_previous: Dati
+        navigation_skip: Laktawan
+      controls_panel:
+        font_size_button: Laki ng font
+        high_contrast_button:
+          origin: Mataas na kaibahan
+          short: Paghahambing
+        hints_button: Pahiwatig
+        music_playback_button:
+          origin: Pag-playback ng musika
+          short: Musika
+        sound_effects_button:
+          origin: Mga sound effects
+          short: Tunog
+      exit_button: Exit
+      finish_button: Tapos na
+      finished:
+        back_to_learn: Bumalik upang malaman
+        back_to_lesson_page: Bumalik sa pahina ng aralin
+        back_to_results_page: Bumalik sa pahina ng resulta
+        bad_result_message: Hmm ... subukang gawin muli ang aralin
+        close_lesson: Isara ang aralin
+        correct_answers_list: Tama ang listahan ng mga sagot
+        good_result_message: Kita kong nag-eeffort ka!
+        great_result_message: Magaling! Mahusay na mga resulta ito!
+        next_course_lesson: Pumunta sa susunod na aralin sa kurso
+        no_results: Wala ka pang mga resulta sa pagsubok
+        no_results_text: >-
+          Mangyaring kumpletuhin ang aralin at ipasa ang pagsubok upang makuha ang
+          mga resulta
+        see_correct_answers_list: Tingnan ang tamang listahan ng mga sagot
+        train_more: >-
+          Magsanay nang higit pa at makakamit mo ang mas mahusay na mga resulta sa
+          susunod!
+        you_finished_lesson: Malaki! Natapos mo ang aralin
+      go_back: Bumalik ka
+      next_button: Susunod
+      not_available_task: Ang gawaing ito ay hindi pa magagamit
+      start_button: Magsimula
+      tasks:
+        check:
+          assignment:
+            accept: Tanggapin
+            author_will_check_your_answer: >-
+              Susuriin ng %{author} ang iyong sagot at karaniwang magbibigay ng puna
+              sa loob ng 1-2 araw
+            continue_writing: Magpatuloy sa pagsusulat
+            copy: Kopya
+            delete: Tanggalin
+            delete_record: Tanggalin ang talaan
+            edit: I-edit
+            essay_does_not_have_enough_words: >-
+              Ang iyong sagot ay dapat maglaman ng hindi bababa sa %{minWordsNumber}
+              mga salita. Ang iyong sagot ay kasalukuyang %{currentWordsNumber} salita.
+            followers_count: "%{followersCount} tagasunod"
+            lessons_count: "%{lessonsCount} aralin"
+            minimal_recording_time: Minimal na oras ng pagrekord - %{minimalRecordingTime}
+            minimum_characters_amount: Minimum na character - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum na salita - %{minimumAmount}
+            record_again: Record ulit
+            record_voice: Mag-record ng boses
+            send_anyway: Magpadala pa rin
+            send_to_review: Ipadala upang suriin
+            skip: Laktawan
+            too_short_answer: Masyadong maikling sagot
+            type_your_answer: I-type ang iyong sagot
+            unknown_task_type: Hindi kilalang uri ng gawain
+            upgrade_licence: Mag-upgrade ng lisensya
+            upgrade_your_plan: >-
+              I-upgrade ang iyong plano upang subukan ang mga takdang aralin sa mga
+              pagsusuri ng guro
+            upload_files: Mag-upload ng mga file
+            write_essay: Sumulat ng sanaysay
+            you_have_used_amount_of_assignments: Gumamit ka ng mga kredito ng pagtatalaga
+              ng %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Puwang ng pangungusap
+          fill_in_table:
+            column_answer_placeholder: Sagot
+            column_question_placeholder: Tanong
+            example: Halimbawa
+          true_false:
+            'false': Mali
+            'true': Totoo
+        learn:
+          translatable_text:
+            show_original: Ipakita ang orihinal
+            translate_into: Isalin kasama ang Google sa %{languageName}
+            translate_into_your_lang: Magsalin kasama ng Google sa iyong wika
+        play:
+          arrange_words:
+            start_screen:
+              heading: Gumawa ng isang pangungusap sa mga ibinigay na salita
+          audition:
+            start_screen:
+              heading: Makinig sa audio at mag-tap sa salitang narinig mo lang
+          dictation:
+            get_help: Humingi ng tulong
+            i_do_not_know: Hindi ko alam
+            input_placeholder: Ipasok ang narinig dito
+            start_screen:
+              heading: Makinig at isulat ang naririnig
+          fill_gap:
+            start_screen:
+              heading: Itugma ang salita at ang kahulugan nito
+          finish_screen:
+            go_to_next_exercise: Magaling! Pumunta sa susunod na ehersisyo
+          image_hotspot:
+            start_screen:
+              heading: Pangalanan nang wasto ang mga bagay sa larawan
+          image_object:
+            start_screen:
+              heading: Piliin ang tamang bagay mula sa susunod na larawan
+          inline_dropdown:
+            start_screen:
+              heading: Piliin ang mga salitang tumutugma sa pangungusap
+          mark_word:
+            start_screen:
+              heading: Basahin ang teksto at piliin ang salitang tumutugma sa imahe
+          minimal_pairs:
+            start_screen:
+              heading: Panoorin ang video at piliin ang tamang pagpipilian
+    locale:
+      currency_switcher_title: Tagapalit ng pera
+      lang_switcher_title: Tagapagpalit ng wika
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Ingles
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italyano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Tagalog
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Країнська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Naglo-load ang audio
+        aria_pause_button: I-pause
+        aria_play_button: Maglaro
+        aria_reload_button: Reload
+        aria_stop_button: Tigilan mo na
+        reload_message: Nabigong mai-load ang audio. Mangyaring i-click ang pindutan
+          upang i-reload.
+    mobile_modal:
+      apply: Mag-apply
+      cancel: Kanselahin
+      clear: Malinaw
+      save: Magtipid
+    page404:
+      goToStartLessonPage: Pumunta sa pahina ng aralin sa pagsisimula
+      ooops: Oooops ...
+      sorry_message: Paumanhin, hindi makita ni Tor ang pahinang ito
+    profile:
+      navigation:
+        log_out: Mag-log out
+        my_profile: Ang aking profile
+        settings: Mga setting
+      onboarding:
+        choose_native_language: Piliin ang iyong katutubong wika o wikang naiintindihan
+          mo
+        do_you_understand_english: Nakakaintindi ka ba ng Ingles?
+        hello: Kamusta
+        language_levels:
+          a1: Antas ng elementarya
+          a2: Antas ng paunang kalagitnaan
+          b1: Antas ng antas
+          b2: Itaas na antas ng Panloob
+          c1: Advanced na antas
+          no_knowledge: Walang kaalaman
+        language_not_supported:
+          note: Aabisuhan ka namin sa lalong madaling panahon na magagamit ang wika
+          title: Paumanhin, ngunit hindi pa namin sinusuportahan ang wikang ito
+          try_another_language: Subukan ang ibang wika
+        'no': Hindi
+        search_placeholder: Maghanap ...
+        show_more_languages: Iba pang mga wika
+        target_language_question: anong wika ang gusto mong matutunan?
+        what_is_language_level: Paano mo ma-rate ang iyong antas ng %{languageName}?
+        'yes': Oo
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Patakaran sa privacy ni Lingu
+        support: Suporta
+      logout: Pag-logout
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Makatanggap ng mga update mula sa mga guro at paaralan
+                na sinusundan mo
+              sections:
+                app_notifications: Mga abiso sa app
+                email: E-mail
+              title: Tulong sa pag-aaral
+            marketing:
+              description: >-
+                Manatiling may kaalaman tungkol sa lahat ng mga promosyon, pag-update,
+                at inspirasyon mula sa Lingu
+              sections:
+                browser_notifications: Mga abiso sa browser
+                email: E-mail
+              title: Marketing
+          title: Mga kagustuhan sa pakikipag-ugnay
+        personal_information:
+          delete_photo: Tanggalin ang larawan
+          email: Email
+          first_name: Pangalan
+          last_name: Huling pangalan
+          social_accounts:
+            connected: Nakakonekta
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Hindi konektado
+            title: Mga social account
+          title: Personal na impormasyon
+          update_photo: I-update ang larawan
+        school:
+          active_licence: Aktibong lisensya
+          active_status: Aktibo
+          delete_profile: Tanggalin ang aking profile
+          delete_profile_modal:
+            body: |-
+              Nawasak mo ang lahat ng iyong data — magpakailanman. Walang button na i-undo, at hindi namin ito maibabalik para sa iyo pagkatapos.
+              Sigurado ka bang nais mong permanenteng tanggalin ang iyong profile sa Lingu at lahat ng iyong data?
+            cancel: Kanselahin
+            confirm: Oo, tanggalin ito
+            i_understand_the_consequences: Naiintindihan ko ang mga kahihinatnan
+            title: Tanggalin ang iyong profile?
+          expired: Nag-expire na ang %{expire_date}
+          expires: Mag-e-expire ang %{expire_date}
+          inactive_status: Hindi aktibo
+          revoke_access: Bawiin ang access sa pagbasa
+          sections:
+            contact_school: Makipag-ugnay sa paaralan
+            export_my_data: I-export ang aking data
+            read_school_privacy_policy: Basahin ang patakaran sa Privacy ng Paaralan
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Pag-playback ng musika
+              sound_effects: Mga sound effects
+              title: Tunog
+            visual:
+              dark_theme: Madilim na tema
+              font_size:
+                test_text: Ang damo ay palaging berde sa kabilang panig ng bakod
+                title: Laki ng font
+              high_contrast: Mataas na kaibahan
+              hints: Pahiwatig
+              title: Biswal
+          title: Tunog at Visual
+        training_settings:
+          sections:
+            i_understand: naiintindihan ko
+            i_want_to_learn: gusto ko matuto
+            target_language_level: lebel sa Ingles
+          title: Mga setting ng pagsasanay
+      settings_title: Mga setting
+    teacher_card:
+      followers_count:
+        one: 1 tagasunod
+        other: "%{count} tagasunod"
+      lessons_count:
+        one: 1 aralin
+        other: "%{count} aralin"

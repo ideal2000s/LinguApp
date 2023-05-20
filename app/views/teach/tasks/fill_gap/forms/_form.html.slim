@@ -1,0 +1,21 @@
+- content_for(:instructions) do
+  .card.bg-soft-info.mt-5
+    .card-body
+      .card-title= t('instructions')
+      p.card-text= t('.fill_gap_guidelines')
+      p.font-italic Example: English is a *select:language/country/district/dialect*.
+    .card-footer.bg-soft-info
+      .card-title= t('teach.tasks.size_requirements')
+      p.card-text= t('teach.tasks.required_count_msg', count: Tasks::FillGap::MIN_ITEMS_SIZE)
+
+.card
+  = render 'teach/tasks/shared_task_header', task: task
+  = form_for form, as: :task, url: teach_lesson_task_path(task.lesson_id, task), method: :patch do |f|
+    = render 'teach/tasks/shared_task_fields', f: f
+
+#task_items.mt-5
+  h4.mb-3= t('teach.tasks.mark_word.forms.form.statements')
+  #task_items_container
+    = render partial: task.items, as: :item, locals: { task: task }
+.links.inline_dropdown_item
+  = render task.items.form.new, task: task

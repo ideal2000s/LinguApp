@@ -1,0 +1,21 @@
+$("#<%= dom_id(document) %>").addClass('active').siblings().removeClass('active');
+$('.assignment-info')
+  .removeClass('d-none')
+  .html("<%= j render 'school/assignments/assignment_info', document: document, comment: comment, comments: comments %>");
+$('.lingu-school-comment').each(function () {
+  $(this).tooltip({
+    html: true,
+    title: "<div class='comment-tooltip d-flex'>" + '<%= image_tag('icons/school_image.svg', class: 'mr-2') %>' +
+      "<div><h1>Lingu school</h1><span>" + $(this).data('tooltip-comment') + "</span></div></div>",
+    placement: 'bottom',
+    toggle: 'tooltip'
+  })
+})
+
+setAutosize();
+setSchoolCustomSummernote();
+schoolComment();
+schoolQuote();
+schoolAudioRecord();
+ReactRailsUJS.mountComponents();
+preventEmptyCommentFormSubmit("<%= I18n.t('school.school_assignments.form.empty_form_error') %>");

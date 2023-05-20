@@ -1,0 +1,38 @@
+- set_page_title course.title
+
+.mt-4
+  .d-flex.justify-content-between.align-items-center.mb-4
+    h1= course.title
+  h3.mb-4= t('description')
+  .card
+    .card-body.row
+      div class=(course.image.present? ? 'col-6' : 'col-12')
+        = course.description.to_s.html_safe
+      - if course.image
+        .col-6.d-flex.flex-column.align-items-center
+          = image_tag course.image_url, class: 'rounded-soft w-100'
+  h3.mt-5.mb-4= t('lessons')
+  .course_sections_container
+    - sections.each_with_index do |section, index|
+      .card.mb-4 class='course-section' id=dom_id(section) data-section-id=section.id
+        .card-body
+          .d-flex.justify-content-between.align-items-center
+            h4.font-weight-bold.mb-4= section.name.presence || 'unnamed section'
+          - section.lessons.order(:position).each do |lesson|
+            .section_lesson_row.bg-soft-secondary.rounded-sm.d-flex.align-items-center.mt-4 id=dom_id(lesson) style='min-height: 96px'
+              .section-lesson-img
+                = link_to admin_lesson_path(lesson) do
+                  = image_tag(lesson.image.present? ? lesson.image_url(:thumbnail) : lesson.image_url, class: 'rounded-left', width: 96)
+              div.pl-4
+                h5.d-block.pb-1
+                  = link_to lesson.title, admin_lesson_path(lesson), class: 'mb-3 font-weight-bold'
+                span.mr-5
+                  i.fa.fa-language.mr-3
+                  strong= t('teach.course_sections.lesson_row.word_count', count: lesson.phrases_count)
+                span.mr-5
+                  i.fa.fa-list-ol.mr-3
+                  strong= t('teach.tasks.overview.tasks_count', count: lesson.tasks.count)
+                - # span.a.fa-clock.mr-3
+                - unless lesson.published?
+                  span
+                    span.badge.badge-soft-warning= t('teach.course_sections.lesson_row.unpublished')

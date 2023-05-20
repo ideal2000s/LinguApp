@@ -1,0 +1,34 @@
+- set_page_title lesson.title
+
+= render partial: 'lesson_header', locals: { lesson: lesson }
+
+.row
+  .col-sm-12.col-md-6
+    h3.font-weight-bold.mb-3= t('teach.lessons.storyline.define_learning_objectives)')
+    #objectives= render 'objectives', objectives: lesson.objectives, lesson: lesson
+
+    = form_with scope: :lesson, url: add_objective_teach_lesson_path(lesson), method: :post, html: { id: 'add_objective_form' } do |f|
+      .row
+        .col-sm-9= f.text_field :objective, class: 'form-control', placeholder: t('.enter_learning_objective')
+        .col-sm-3= f.submit t('teach.lessons.show.add_objective'), class: 'btn btn-falcon-default btn-block'
+
+  .col-sm-12.col-md-6
+    h3.font-weight-bold.mb-3= t('teach.lessons.show.cover')
+
+    - if lesson.image.present?
+      = image_tag lesson.image_url, class: 'preview img-thumbnail img-thumbnail--small'
+    - else
+      span= t('teach.lessons.show.no_cover')
+      =< link_to t('upload'), edit_teach_lesson_path(lesson), remote: true
+
+- %w[teach engage test].each_with_index do |subject, index|
+  .card.mt-5 data-controller='tasks' data-tasks-subject=subject data-tasks-subject-index=index class="subject-#{index}"
+    .card-header
+      .d-flex.justify-content-between
+        h4.font-weight-bold=I18n.t("activerecord.attributes.task.subjects.#{subject}")
+        - if policy(lesson).edit?
+          = link_to new_teach_lesson_task_path(lesson, subject: subject), class: 'btn btn-falcon-primary', remote: true do
+            i.fas.fa-plus.fa-fw.mr-1
+            span = t('teach.tasks.new.new_task')
+
+    = render 'tasks', tasks: tasks.send(subject)

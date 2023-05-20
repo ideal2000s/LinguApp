@@ -1,0 +1,32 @@
+- user = team_user.user
+.profile-details.h-auto.d-flex.flex-column.align-items-center
+  .edit-teacher-profile.d-inline-block.position-absolute.cursor-pointer
+    = button_to edit_school_team_user_path(team_user), class: 'btn border-0 shadow-none p-0', method: :get, remote: true do
+      = image_tag('icons/edit.svg')
+  .position-relative
+    = custom_profile_tag(user)
+    .mt-n1
+      span.badge.teacher-profile-badge class="badge-#{team_user.role}"
+        = t(team_user.role, scope: 'activerecord.attributes.team_user.roles')
+    .user-authentication-wrapper.d-flex data-toggle="tooltip" title=(t('admin.students.list_row.last_seen_at', date: l(team_user.user.last_sign_in_at)) if team_user.user.sign_in_count.positive?)
+      - user.identities.each do |identity|
+        = social_icon_for(identity.provider_code)
+      = social_icon_for('email') if user.identities.empty?
+  .profile-info.mt-4.d-flex.flex-column.align-items-center
+    h1= user.full_name
+    h2.mb-3= user.email
+    .lessons-followers-info.d-flex
+      span.d-flex.align-items-center
+        = image_tag('icons/language.svg', class: 'mr-2')
+        = t('school.team_users.lessons.lessons_count', count: user.lessons.count)
+      span.d-flex.align-items-center.ml-4
+        = image_tag('icons/subscribers.svg', class: 'mr-2')
+        = t('school.team_users.lessons.followers_count', count: user.followers_count)
+    .teach-info.mt-4
+      h2.mb-3
+        = t('school.team_users.lessons.teaches')
+    .teach-languages.d-flex.flex-wrap.justify-content-around.mb-5
+      - user.languages.map do |language|
+        .language-info.mt-1
+          = image_tag("flags/#{language_to_flag_code(language.code)}.svg", class: 'language-flag mr-1')
+          = language.name.presence || language.system_name

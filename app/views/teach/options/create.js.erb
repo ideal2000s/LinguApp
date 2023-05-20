@@ -1,0 +1,6 @@
+(function () {
+  var $container = $('#<%= dom_id(item) %> .task_item_options');
+  $container.append('<%= j render partial: option, as: :option, locals: { option: option, item: item } %>');
+  $container.find('.best_in_place').best_in_place()
+})();
+<%= render template: 'teach/options/new', locals: { item: item, option: item.options.new } %>

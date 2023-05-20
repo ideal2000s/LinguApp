@@ -1,0 +1,58 @@
+- set_page_title t('school.activities.title')
+.school-info-container.students-container data-controller='activity'
+  .mb-4
+    .students-header.d-flex.justify-content-between.align-items-center
+      h1.mb-0.pb-3= t('students')
+    = render 'school/team_students/list_header'
+  = search_form_for @search, url: activity_logs_school_activities_path, class: 'student-search-form' do |f|
+    .students-filter.mb-3
+      == paginate activities
+      .event-by-filter.btn-group.custom-dropdown.language-by-filter
+        = f.hidden_field :key_include, class: 'filter-values'
+        button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+          span.mr-2= t('school.activities.event_type')
+          i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-left.mt-1.p-3
+          .language-container.overflow-auto
+            - Activity::EVENT_TYPES.each do |key, value|
+              - next unless key.start_with?('license') || key.start_with?('team_student')
+              .custom-control.custom-checkbox.mb-3
+                input.custom-control-input.language-select type='checkbox' id="#{key}_check" data-filter-val="#{value}"
+                label.custom-control-label.d-flex.align-items-center for="#{key}_check"
+                  span= t(value, scope: 'school.activity_types')
+          hr
+          .d-flex.justify-content-between
+            button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+              = t('shared.clear')
+            button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+              = t('save')
+      .recipient-by-filter.btn-group.custom-dropdown.ml-2.level-by-filter
+        = f.hidden_field :owner_of_User_type_include, class: 'filter-values'
+        button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+          span.mr-2= t('school.activities.by_teacher')
+          i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-left.mt-1.p-3
+          .language-container.overflow-auto
+            - owners.each do |owner|
+              - user = owner.user
+              .custom-control.custom-checkbox.mb-3
+                input.custom-control-input.language-select type='checkbox' id="#{user.id}_check" data-filter-val="#{user.id}"
+                label.custom-control-label.d-flex.align-items-center for="#{user.id}_check"
+                  strong.ml-2.mr-1
+                    = user.full_name
+          hr
+          .d-flex.justify-content-between
+            button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+              = t('shared.clear')
+            button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+              = t('save')
+  .students_list
+    table.table.table-hover.m-0
+      thead.d-content
+        tr
+          - %w[date student change].each do |e|
+            th = t(e, scope: 'school.activities.item')
+          th
+      tbody
+        = render partial: 'school/activities/list_row', collection: activities, as: :activity, cached: true
+  .mt-3== paginate activities

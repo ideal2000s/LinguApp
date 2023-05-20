@@ -1,0 +1,10 @@
+- set_page_title t('teach.lessons.draft.reviewable_lessons')
+.card
+  .card-header.d-flex.justify-content-between.align-items-center
+    h3.ml-0= t('teach.reviewable_lessons.count_pending_review', count: lessons.size)
+    = search_form_for @search, url: reviewable_teach_lessons_path do |f|
+      = f.select :course_section_course_id_eq, options_for_select(courses.pluck(:title, :id), @search.course_section_course_id_eq), {include_blank: t('teach.lessons.draft.select_course')}, {class: 'form-control js-submit-on-change'}
+  - if lessons.any?
+    = render 'reviewable_lessons',  lessons: lessons
+  - else
+    .card-body= t('teach.lessons.draft.no_lessons')

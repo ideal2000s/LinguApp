@@ -1,0 +1,30 @@
+= form_for [:teach, team], remote: true do |f|
+  .form-group
+    = f.label :name, required: true, autofocus: true
+    = f.text_field :name, class: 'form-control'
+  .form-group
+    = f.label :about
+    = f.text_field :about, class: 'form-control'
+  - unless team.new_record?
+    .form-group
+      - Team::ABILITIES_ARRAY.each_with_index do |a, i|
+        .custom-control.custom-checkbox
+          = check_box_tag 'team[abilities][]', a, false, class: 'custom-control-input', id: "team_abilities_#{a}", checked: team.abilities.include?(a)
+          label[class="custom-control-label pl-3" id="team_abilities_#{a}_label" for="team_abilities_#{a}"]
+            = t(a, scope: 'teach.teams.onboarding')
+  .form-group
+    = f.upload_helper_for(:image, accept: 'image/*', data: {upload: 'image'}, button: {class: 'btn btn-sm btn-block'}, aria: {label: I18n.t('teach.teams.form.team_image')}) do |h|
+      - h.button do
+        i.fas.fa-image.fa-fw.mr-2
+        = t('teach.teams.edit.choose_image')
+      - h.preview do |resource|
+        = image_tag(resource.image_url, class: 'preview img-thumbnail') if resource.image_url
+
+  .form-group
+    = f.submit t('common.buttons.save_and_continue'), class: 'btn btn-primary btn-block'
+
+- if team.persisted? && policy(team).destroy?
+  hr
+  = link_to teach_team_path(team), class: 'btn btn-danger', method: :delete, remote: true, data: { confirm: t('teach.teams.delete.confirm') }  do
+    i.fa.fa-times
+    span= t('teach.teams.delete.action')

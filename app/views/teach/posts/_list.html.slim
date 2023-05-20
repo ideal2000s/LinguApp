@@ -1,0 +1,23 @@
+table.table.thead-light.table-hover.mb-0
+  thead
+    tr.vertical
+      th= t('.content')
+      th= t('.lesson')
+      th
+  tbody
+    - posts.each do |post|
+      tr
+        td
+          - post_content = post.content
+          = link_to post_content.length > 30 ? post.content[0..30]+'...' : post_content, edit_teach_post_path(post), class: 'text-primary font-weight-bold'
+        td.align-middle
+          - post_lesson = post.lesson
+          - if post_lesson
+            = link_to post_lesson.title, teach_lesson_path(post_lesson)
+        td.align-middle.text-right
+          .btn-group
+            = link_to edit_teach_post_path(post), class: 'btn btn-falcon-default btn-sm' do
+              i.fas.fa-pencil-alt.fa-fw
+            - if policy(post).destroy?
+              = link_to teach_post_path(post), class: 'btn btn-falcon-danger btn-sm', method: :delete, data: {confirm: t('teach.posts.confirm_post_delete')} do
+                i.fas.fa-times.fa-fw

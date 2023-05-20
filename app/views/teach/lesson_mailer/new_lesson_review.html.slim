@@ -1,0 +1,5 @@
+p= t('lesson_mailer.new_lesson_review.user_reviewed_lesson', user: @review.author.full_name, lesson: @lesson.title)
+h3= t('status')
+= t(@review.status, scope: 'lesson_mailer.new_lesson_review.statuses')
+h3= t('lesson_mailer.new_lesson_review.review')
+p= simple_format(@review.content)

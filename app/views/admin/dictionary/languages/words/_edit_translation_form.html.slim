@@ -1,0 +1,26 @@
+.modal-header
+  h5.modal-title id='edit_word_translation_form'
+    = t('.update_translation')
+  button.close type='button' data-dismiss='modal' aria-label='Close'
+    span.font-weight-light aria-hidden='true' &times;
+.modal-body
+  div
+    = form_for word, url: update_translation_admin_language_word_path(word.language, word), remote: true, method: :put, html: { id: 'word_form' } do |f|
+      .row
+        .col-lg-12
+          .form-group
+            = f.label :prefixed_body do
+              .d-flex
+                = image_tag("flags/#{language_to_flag_code(word.language.code)}.svg", class: 'mr-2 ', style: 'max-width: 22px; height: auto;')
+                span= t('word')
+            = f.text_field :prefixed_body, class: 'form-control', readonly: true
+      .row
+        .col-lg-12
+          .form-group
+            = f.label :translation do
+              .d-flex
+                = image_tag("flags/#{language_to_flag_code(I18n.locale.to_s)}.svg", class: 'mr-2 ', style: 'max-width: 26px; height: auto;')
+                span= t('.translation')
+            = text_field(:dictionary_word, :translation, class: 'form-control', value: word.translations[I18n.locale.to_s])
+      .actions
+        = f.submit value: t('save'), class: 'btn btn-primary'

@@ -1,0 +1,45 @@
+- display_method ||= :user_name
+- display_title ||= t('.columns.user')
+table.table
+  thead
+    tr
+      th= display_title
+      th width="20%"= t('.columns.role')
+      th width="20%"
+
+  - team_users.each do |team_user|
+    - team = team_user.team
+    tr
+      td= team_user.send(display_method)
+      td
+        - if policy(team_user).edit?
+          .dropdown data-team-user=team_user.id
+            = link_to '#', data: { toggle: 'dropdown' }, id: 'teamUserRole', class: 'btn btn-sm btn-falcon-default dropdown-toggle', role: 'button' do
+              = t(team_user.role, scope: 'activerecord.attributes.team_user.roles')
+            .dropdown-menu.dropdown-menu-left.py-0 aria-labelledby="teamUserRole"
+              - TeamUser.roles.each do |role, value|
+                = link_to t(role, scope: 'activerecord.attributes.team_user.roles'),
+                        teach_team_team_user_path(team, team_user, role: role),
+                        class: 'dropdown-item',
+                        method: :patch,
+                        remote: true
+        - else
+          = t(team_user.role, scope: 'activerecord.attributes.team_user.roles')
+
+      td
+        - if policy(team_user).destroy?
+          = link_to teach_team_team_user_path(team, team_user),
+                  class: 'btn btn-sm btn-primary',
+                  method: :delete,
+                  remote: true,
+                  data: { confirm: t('.delete.confirm') } do
+            i.fa.fa-times
+            span= t('.delete.action')
+
+        - if policy(team_user).leave?
+          = link_to leave_teach_team_team_user_path(team, team_user),
+                  class: 'btn btn-sm btn-primary',
+                  method: :delete,
+                  data: { confirm: t('.leave.confirm') } do
+            i.fa.fa-times
+            span= t('.leave.action')

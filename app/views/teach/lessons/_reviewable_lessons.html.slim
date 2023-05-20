@@ -1,0 +1,22 @@
+table.table.thead-light.table-hover.mb-0
+  thead
+    tr.vertical
+      th= t('title')
+      th= t('.author')
+      th
+        i.fas.fa-comment.fa-fw
+      th
+  tbody
+    - lessons.each do |lesson|
+      tr
+        td
+          strong= link_to lesson.title, teach_lesson_reviews_path(lesson), class: 'text-black'
+          br
+          = lesson_level_tag(lesson)
+          .badge= l(lesson.updated_at, format: :short)
+        td= user_avatar_with_name lesson.author
+        td.align-middle
+          span.badge class=(lesson.reviews.size.positive? ? 'badge-soft-success' : 'badge-soft-danger')
+            = lesson.reviews.size
+        td.align-middle.text-right
+          = link_to t('view'), teach_lesson_reviews_path(lesson), class: 'btn btn-falcon-default btn-sm'

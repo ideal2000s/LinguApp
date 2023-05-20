@@ -1,0 +1,10 @@
+.search-lessons-item.d-flex.justify-content-between
+  .custom-control.custom-checkbox.d-flex.align-items-center
+    input.custom-control-input.mr-1 type='checkbox' id="#{lesson.id}_check" data-lesson-id = lesson.id
+    label.custom-control-label for="#{lesson.id}_check"
+      span.ml-1
+        = lesson.title
+  .lesson-info.d-flex.align-items-center
+    span.mr-1
+      = t(lesson.level, scope: 'activerecord.attributes.lesson.short_levels')
+    = image_tag("flags/#{language_to_flag_code(lesson.language&.code)}.svg")

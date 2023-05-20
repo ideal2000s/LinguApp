@@ -1,0 +1,609 @@
+---
+sd:
+  course_mailer:
+    course_assigned_notification:
+      button: نصاب شروع ڪريو
+      click_start_lesson: "'سبق شروع ڪريو' تي ڪلڪ ڪريو"
+      follow_course_link: ڪورس کولڻ لاءِ بٽڻ تي ڪلڪ ڪريو
+      footer_text: روزانو ڪجهه نئين سکڻ لاءِ لساني ۾ اچو!
+      get_started_line: 'توهان شروع ڪيو هتي ڪئين آهي:'
+      notification_link: اطلاع جي جوڙ
+      open_lesson: پهريون سبق کوليو
+      or_paste_this_link: يا ھي لنڪ پنھنجي براؤزر ۾ پيسٽ ڪريو
+      sign_in_with_email: پنهنجي ايم ميل ايڊريس سان لاگ ان ٿيو (%{email})
+      support_link: سپورٽ
+      title: "%{course} سان شروع ڪندي"
+    new_document_comment:
+      author_text: "%{author} ڇڏي توهان جي ذميواري جو جائزو"
+      button_text: چڪاس ڪريو
+      button_url_helper: 'يا هن لنڪ کي پنهنجي براؤزر ۾ پيسٽ ڪريو:'
+      footer_text: سکڻ لاءِ گهڻو ڪجهه آهي ۔۔۔
+      notification_link: اطلاع جي جوڙ
+      subject_line: نئين اسائنمينٽ راءِ
+      support_link: سپورٽ
+    otp:
+      ignore_msg: جيڪڏهن توهان اها درخواست نه ڪئي هئي ، صرف اي ميل کي نظر انداز ڪيو.
+      subject_line: لساني لاءِ توهان جو منفرد ڪوڊ
+      unique_code_for_lingu: هتي لئنگو لاءِ توهان جو انوکو ڪوڊ آهي
+  frontend:
+    auth:
+      already_have_acc_question: اڳ ۾ ئي کاتو آهي؟
+      back: پوئتي
+      back_to_sign_in: واپس سائن ان ٿيو
+      check_your_email_for_a_code: پنهنجي ڪوڊ جي اي ميل چيڪ ڪريو
+      continue: جاري رکو
+      continue_with_email: اي ميل سان جاري رکو
+      continue_with_provider: "%{provider} سان جاري رکو"
+      did_not_receive_a_code: ڪوڊ نه مليو؟
+      email_address: اي ميل پتو
+      first_name: پهريون نالو
+      get_unique_code: هڪ منفرد لاگ ان ڪوڊ حاصل ڪيو
+      join_lingu: لساني ۾ شامل ٿيو
+      last_name: پويون نالو
+      more_login_options: لاگ ان جا وڌيڪ اختيارَ
+      no_account_question: اڪائونٽ نه آهي؟
+      or: يا
+      resend_code: ڪوڊ ٻيهر موڪليو
+      sign_in: سائن ان ڪريو
+      sign_up: سائن اپ ڪريو
+      want_to_receive_marketing_messages: آئون لينگو کان مارڪيٽنگ وارا پيغام حاصل
+        ڪرڻ چاهيان ٿو
+      we_ve_sent_a_code: >-
+        اسان هڪ 6 عدد ڪوڊ موڪليو آهي <strong> {{اي ميل}} </strong>. ڪوڊ 15 منٽن ۾
+        ختم ٿئي ٿو ، سو مهرباني ڪري ان کي جلد داخل ڪريو.
+    cookie_agreement:
+      agree: واسلوبي
+      condition: >-
+        اسان سائيٽ جي ڪارڪردگي جو تجزيو ڪرڻ ۽ ذاتي مواد کي پهچائڻ لاءِ ڪوڪيز استعمال
+        ڪريون ٿا. “اتفاق” تي ڪلڪ ڪندي ، توهان اسان جي شرطن تي رضامند آهيو.
+    course:
+      accredited_course_provider: تصديق ٿيل ڪورس فراهم ڪندڙ
+      apply: لاڳو ڪريو
+      apply_filters: فلٽر لاڳو ڪريو
+      by: پاران
+      cancel: رد ڪرڻ
+      categories: "%{count} قسمون"
+      category: ڪيٽيگري
+      clear: صاف
+      clear_filters: فلٽر صاف ڪريو
+      contact_us: اسان سان رابطو ڪريو
+      could_not_find_match_for: معاف ڪجو ، اسان ڪنهن لاءِ ميچ نه ڳولي سگهياسين
+      course_language: ڪورس جي ٻولي
+      duration: مدو
+      filter_settings:
+        categories:
+          academic: تعليمي
+          business: ڌنڌو
+          fashion: فيشن
+          food_drink: کاڌو ۽ مشروب
+          for_kids: ٻارن لاءِ
+          general: جنرل
+          health: صحت
+          legal: قانوني
+          sport: راندين
+          travel: سفر
+        durations:
+          t0_600: "<10 منٽ"
+          t1800_3600: 30-60 منٽ
+          t3600_86400: 1+ ڪلاڪ
+          t600_1800: 10-30 منٽ
+        focus_on:
+          conversation: ڪونوڪارپس
+          grammar: گرامر
+          listening: ٻڌڻ
+          pronunciation: تلفظ
+          reading: پڙهڻ
+          speaking: ڳالھائڻ
+          writing: لکندڙ
+        levels:
+          long:
+            advanced: اعليٰ ليول
+            elementary: ابتدائي سطح
+            intermediate: انٽرميڊيٽ ليول
+            no_knowledge: ڪا خبر ناهي
+            pre_intermediate: اڳئين وچولي سطح
+            upper_intermediate: اپر وچولي سطح
+          short:
+            advanced: ترقي يافته
+            beginner: شروعاتي
+            intermediate: انٽرميڊيٽ
+        sort_by:
+          most_rated: تمام گهڻي رتبي جي
+          newest: نئون
+          popularity: مقبوليت
+      filters: فلٽر
+      focus_on: تي غور ڪريو
+      focus_on_title: آئون توجهه ڏيڻ چاهيان ٿو
+      hide_lessons: سبق لڪايو
+      hours: گھڙيون
+      i_understand: مان سمجهان ٿو
+      i_want_to_learn: مان سکڻ چاهيان ٿو
+      in_language: "%{language} ۾"
+      language: ٻولي
+      learn_more: وڌيڪ سکو
+      less_settings: گھٽ سيٽنگون
+      lessons: سبق
+      lessons_available: "%{number} سبق دستياب آهي"
+      lessons_catalog_page_subtitle: ٻولي جو ھيرو ٿيو.
+      lessons_catalog_page_title: ٻولي جي ڪورس سان پنھنجي افق کي وڌايو
+      level: سطح
+      min: منٽ
+      more_settings: وڌيڪ سيٽنگون
+      navbar:
+        close: نامو بند ڪيو
+        menu: خوراڪ نامو
+        select_language: ٻولي چونڊيو
+      need_to_buy_course: توهان کي پهرين هڪ ڪورس بک ڪرڻ جي ضرورت آهي
+      no_description: ڪابه وضاحت نه مهيا ڪئي وئي
+      no_results: معاف ڪجو ، اسان ڪنهن لاءِ ميچ نه ڳولي سگهياسين
+      or: يا
+      per_month: هر مهيني
+      plans: منصوبو
+      privacy_policy: پرائيويسي پاليسي
+      rating: ريٽنگ
+      remove_all_filters: سڀ فلٽر ڪو
+      reviews: نظرثانيون
+      save: محفوظ ڪريو
+      search: ڳولا
+      select_dots: چونڊيو ...
+      select_languages: ٻوليون چونڊيو
+      select_num_languages: چونڊيو ايڪس زڪسڪسڪسڪسڪسڪس ٻوليون
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: بي 1
+        b2: بي 2
+        c1: سي 1
+        c2: سي 2
+        zero_level: A0
+      show_all: سڀ ڏيکاريو
+      show_all_lessons: سڀ سبق ڏيکاريو
+      show_lessons: ڏيکاريو %{number} سبق
+      show_more: وڌيڪ ڏيکاريو
+      sign_up_with_lingu_for: لينگو ناروي سان سائن اپ ڪيو جنهن لاءِ
+      skills: "%{count} صلاحيتون"
+      sort_by: ترتيب وار
+      start_typing_here: هتي لکڻ شروع ڪيو
+      teach: سيکاريو
+      terms_and_conditions: ضابطا ۽ ضابطا
+      time_range: وقت جي حد
+      try_adjusting_your_search: پنھنجو فلٽر تبديل ڪري پنھنجي ڳولھا کي درست ڪرڻ جي
+        ڪوشش ڪريو
+      try_this_course: انهي ڪورس کي آزمايو
+      website_language: ويب سائيٽ ٻولي
+      words: الفاظ
+    games:
+      finished:
+        go_to_next_exercise: بهترين! ايندڙ مشق تي وڃو
+      flashcard:
+        buttons:
+          finish: ختم ڪر
+          next: اڳتي
+          previous: اڳوڻو
+        check_out_new_words: توھان نوان سبق پڙھيو توھان ھن سبق ۾ سکندا
+        frequency_of_word_usage: "%{language} ۾ لفظ جي استعمال جو فريڪوئنسي"
+        keep_practice_to_learn_all_words: "%{count} لفظن جو جائزو وٺو ۽ اچو ته ڪجھ
+          رانديون کيڏون."
+        word_frequency:
+          level1: نایاب استعمال ٿيل
+          level2: نایاب استعمال ٿيل
+          level3: لفظ فریکوئنسي - وچولي
+          level4: لفظ فریکوئنسي - وچولي
+          level5: عام
+          level6: تمام عام
+      match_word:
+        click_and_move_each_word_to_counterpart: هر لفظ کي دٻايو ۽ هن جي هم منصب ڏانهن
+          منتقل ڪيو
+        start_heading: جوڙو ٺاھڻ لاءِ لفظ ملائي
+        time_is_up: وقت ختم ٿيو!
+      skip_tutorial: ڇڏي ڏيو
+      time_is_up: وقت ختم ٿيو!
+      word_nodes:
+        match_letters_to_form_word: اکر ٺاهڻ لاءِ اکر ملايو
+      word_waterfall:
+        do_not_hesitate: اچو ته تيز ٿيو!
+        go_to_next_exercise: ايندڙ مشق تي وڃو
+        select_correct_translation: صحيح ميچ چونڊيو
+        well_done: بهترين!
+    home_page:
+      hello: سلام،
+      popular_lessons: مشهور سبق
+      show_more: وڌيڪ ڏيکاريو
+      time: "%{count} منٽ"
+      today_lesson: تنهنجو سبق ا today لاءِ
+      user_name: زيڪسڪسيمڪس!
+      words: "%{count} لفظَ"
+    idle_screen:
+      by_author: کان xxzxzx0 طرفان
+      continue_lesson: سبق جاري رکو
+      exit: نڪتل
+      idle_message: توھان ڪجھ وقت لاءِ ناڪام ٿي رھيا آھيو ...
+    lesson_page:
+      back_to_course_page: ڪورس پيج ڏانهن واپس وڃو
+      close: بند ڪريو
+      continue_lesson: سبق جاري رکو
+      followed: پيروي ڪئي وئي
+      hamburger_menu_btn: هيمبرگر مينيو
+      lesson_given: سبق
+      not_started: شروع نه ڪيو ويو
+      or: يا
+      part_complete: "%{percent} ٪ مڪمل ٿيو"
+      restart_lesson: بحال ٿيو
+      section_check: چيڪ
+      section_check_info: "%{count} ٽيسٽ"
+      section_learn: سکو
+      section_learn_info: ڏسڻ ۽ پڙهڻ لاءِ %{count} منٽ
+      section_play: کيڏو
+      section_play_info: مشق ڪرڻ لاءِ %{count} لفظ
+      start_lesson: سبق شروع ڪريو
+      step_progress: "%{percent} ٪"
+      subscribe: پيروي ڪريو
+      subscribed: پيروي ڪئي وئي
+      subscribers: پوئلڳ
+      time_min: "%{minutesNumber} منٽ"
+      unsubscribe: بغير پيروي ڪريو
+      webview_error_title: ڪجهه غلط ٿيو ...
+      words_number: "%{wordsNumber} نوان لفظ"
+    lesson_task:
+      cancel_button: رد ڪرڻ
+      check:
+        navigation_next: اڳتي
+        navigation_previous: اڳوڻو
+        navigation_skip: ڇڏي ڏيو
+      controls_panel:
+        font_size_button: فانٽ سائيز
+        high_contrast_button:
+          origin: اعلي برعڪس
+          short: مقابلو
+        hints_button: اشارو
+        music_playback_button:
+          origin: موسيقي کيڏڻ
+          short: موسيقي
+        sound_effects_button:
+          origin: آواز جا اثر
+          short: آواز
+      exit_button: نڪتل
+      finish_button: ختم ڪر
+      finished:
+        back_to_learn: سکڻ لاءِ واپس
+        back_to_lesson_page: سبق واري صفحي ڏانهن واپس وڃو
+        back_to_results_page: واپس نتيجن واري صفحي تي
+        bad_result_message: هون ... ڪوشش ڪريو هڪ دفعو ٻيهر سبق وٺڻ گهرجي
+        close_lesson: سبق بند ڪريو
+        correct_answers_list: صحيح جوابن جي فھرست
+        good_result_message: آئون ڏسي سگهان ٿو ته توھان ڪوشش ڪئي آھي!
+        great_result_message: بهترين! اهي بهترين نتيجا آهن!
+        next_course_lesson: ڪورس ۾ ايندڙ سبق ڏانهن وڃو
+        no_results: توھان وٽ اڃان تائين ڪوبه امتحان جا نتيجا نه آھن
+        no_results_text: مهرباني ڪري ، سبق مڪمل ڪيو ۽ نتيجا حاصل ڪرڻ لاءِ امتحان پاس
+          ڪيو
+        see_correct_answers_list: صحيح جوابن جي لسٽ ڏسو
+        train_more: وڌيڪ مشق ڪريو ۽ توهان ايندڙ وقت بهتر نتيجا حاصل ڪندا!
+        you_finished_lesson: زبردست! توهان سبق ختم ڪيو
+      go_back: واپس وڃو
+      next_button: اڳتي
+      not_available_task: اهو ڪم اڃا تائين دستياب ناهي
+      start_button: شروع ڪريو
+      tasks:
+        check:
+          assignment:
+            accept: قبول ڪريو
+            author_will_check_your_answer: "%{author} توهان جي جواب جو جائزو وٺندو
+              ۽ عام طور تي 1-2 ڏينهن اندر موٽ ڏيندو"
+            continue_writing: لکڻ جاري رکو
+            copy: ڪاپي
+            delete: ختم ڪريو
+            delete_record: حذف ڪريو رڪارڊ
+            edit: تبديلي آڻيو
+            essay_does_not_have_enough_words: >-
+              توھان جي جواب ۾ گھٽ ۾ گھٽ %{minWordsNumber} لفظ شامل ھجن. توهان جو جواب
+              في الحال %{currentWordsNumber} لفظن آهي.
+            followers_count: "%{followersCount} پوئلڳ"
+            lessons_count: "%{lessonsCount} سبق"
+            minimal_recording_time: گھٽ ۾ گھٽ وقت جو رڪارڊنگ - %{minimalRecordingTime}
+            minimum_characters_amount: گھٽ ۾ گهٽ اکر - زڪسڪسڪسڪسڪسڪسڪس
+            minimum_words_amount: گھٽ ۾ گھٽ لفظ - %{minimumAmount}
+            record_again: ٻيهر رڪارڊ
+            record_voice: آواز رڪارڊ ڪريو
+            send_anyway: بحرحال موڪليو
+            send_to_review: نظرثاني ڪريو موڪليو
+            skip: ڇڏي ڏيو
+            too_short_answer: تمام نن answerڙو جواب
+            type_your_answer: توهان جو جواب لکو
+            unknown_task_type: نامعلوم ڪم جو قسم
+            upgrade_licence: واڌاري جو لائسنس
+            upgrade_your_plan: استادن جي جائزي سان هنائن ڪرڻ جي ڪوشش ڪرڻ لاءِ پنهنجي
+              منصوبي کي اپڊيٽ ڪيو
+            upload_files: فائلون اپلوڊ ڪريو
+            write_essay: مضمون لکو
+            you_have_used_amount_of_assignments: توھان استعمال ڪيو آھي %{amountOfAssignments}
+              اسائنمينٽ ڪريڊٽ
+          fill_in_blanks:
+            sentence_gap: جملن جو فرق
+          fill_in_table:
+            column_answer_placeholder: جواب ڏيو
+            column_question_placeholder: سوال
+            example: مثال
+          true_false:
+            'false': ڪوڙو
+            'true': سچو
+        learn:
+          translatable_text:
+            show_original: اصلي ڏيکاريو
+            translate_into: "%{languageName} ۾ گوگل سان ترجمو ڪريو"
+            translate_into_your_lang: گوگل سان توهان جي ٻولي ۾ ترجمو ڪريو
+        play:
+          arrange_words:
+            start_screen:
+              heading: ڏنل لفظن مان هڪ جملو ٺاهيو
+          audition:
+            start_screen:
+              heading: آڊيو ٻڌي ۽ ان لفظ تي ٽيپ ڪريو جيڪو توهان مٿي ٻڌو
+          dictation:
+            get_help: مدد وٺو
+            i_do_not_know: مونکي خبر ناهي
+            input_placeholder: هتي ٻڌو جيڪو توهان ٻڌو
+            start_screen:
+              heading: جيڪو ٻڌو ٻڌي ۽ لکو
+          fill_gap:
+            start_screen:
+              heading: لفظ ۽ ان جي مطلب کي ملايو
+          finish_screen:
+            go_to_next_exercise: بهترين! ايندڙ مشق تي وڃو
+          image_hotspot:
+            start_screen:
+              heading: تصوير ۾ موجود شين کي صحيح طرح نالو ڏيو
+          image_object:
+            start_screen:
+              heading: ايندڙ تصوير مان صحيح اعتراض کڻو
+          inline_dropdown:
+            start_screen:
+              heading: اهي لفظ چونڊيو جيڪي جملن سان ملي
+          mark_word:
+            start_screen:
+              heading: متن پڙهو ۽ لفظ چونڊيو جيڪو تصوير سان ملي ٿو
+          minimal_pairs:
+            start_screen:
+              heading: وڊيو ڏسو ۽ صحيح آپشن چونڊيو
+    locale:
+      currency_switcher_title: ڪرنسي مٽائيندڙ
+      lang_switcher_title: ٻولي مٽائيندڙ
+      locales:
+        af: آفريڪي
+        am: امهاري
+        ar: عربي
+        az: آذربائيجان
+        be: بيلاروسي
+        bg: Български
+        bn: بنگالي
+        bs: بوسنيائي
+        ca: قيطلوني
+        ceb: ڪيوبوانو
+        co: ڪارسيڪائي
+        cs: چيڪ ٻولي
+        cy: ويلش
+        da: ڊينش ٻولي
+        de: ڊيوچ
+        el: يوناني
+        en: انگريزي
+        eo: ايسپرانتو
+        es: اسپاپول
+        et: ايستونائي
+        eu: بسڪاني
+        fa: فارسي
+        fi: فني
+        fr: فرانسيسي
+        fy: فريسيئن
+        ga: آئرستاني
+        gd: اسڪاٽس گئلِڪ
+        gl: گاليشين ٻولي
+        gu: گجراتي
+        ha: هوسا ٻولي
+        haw: هوائين
+        he: عبراني
+        hi: هندي
+        hmn: همنگي
+        hr: ڪروشيائي
+        ht: هيٽي ڪرولي
+        hu: هنگري
+        hy: آرمينيائي
+        id: انڊونيشي
+        ig: اِگبو
+        is: آئس لينڊي
+        it: اٽليانو
+        ja: جاپاني
+        jv: جاواني
+        ka: جيارجي
+        kk: قازق
+        km: خمير
+        kn: ڪنادي
+        ko: ڪورين
+        ku: ڪردي
+        ky: ڪرغيز
+        la: لاطيني
+        lb: لڪسمبرگي
+        lo: لائو
+        lt: ليتووي ڪلبا
+        lv: ليٽيوو ويلوڊا
+        mg: ملاگسي
+        mi: مائوري
+        mk: مقدوني
+        ml: مالايالم
+        mn: منگولي
+        mr: مراٺي
+        ms: مالائي
+        mt: مالٽي
+        my: ميانمار (برمي)
+        nb: نورسڪ
+        ne: نيپالي
+        nl: نيدرلينڊز
+        ny: نانجا (چيچايا)
+        or: اوڊييا (اوريا)
+        pa: پنجابي
+        pl: پولسڪي
+        ps: پشتو
+        pt: پورچوگيزن
+        ro: ليما رومنا
+        ru: Русский язык
+        rw: ڪنيارواندا
+        sd: سنڌي
+        si: سنھالا
+        sk: سلوويڪي
+        sl: سلوويني
+        sm: ساموئي
+        sn: شونا
+        so: سوميالي
+        sq: الباني
+        sr: Сербский
+        st: سِسوٿو
+        su: سنڊينيز
+        sv: سويڊني
+        sw: ڪوسويلي
+        ta: تاملي
+        te: تيلوگو ٻولي
+        tg: تاجڪ
+        th: ٿائي ٻولي
+        tk: ترڪماني
+        tl: تگلگ ٻولي
+        tr: ٽرڪ
+        tt: تاتار
+        ug: يوغور
+        uk: Українська
+        ur: اردو
+        uz: اُزبڪ
+        vi: ويٽناميز
+        xh: هوسا
+        yi: يِدِش
+        yo: يورابا
+        zh: چيني
+        zu: زولو
+    media_player:
+      audio_player:
+        aria_loading_button: آڊيو لوڊ ٿي رهي آهي
+        aria_pause_button: روڪيو
+        aria_play_button: کيڏو
+        aria_reload_button: ٻيهر لوڊ ڪريو
+        aria_stop_button: روڪيو
+        reload_message: آڊيو لوڊ ڪرڻ ۾ ناڪام. مهرباني ڪري لوڊ ڪرڻ لاءِ بٽڻ تي ڪلڪ
+          ڪريو
+    mobile_modal:
+      apply: لاڳو ڪريو
+      cancel: رد ڪرڻ
+      clear: صاف
+      save: محفوظ ڪريو
+    page404:
+      goToStartLessonPage: شروعاتي سبق واري صفحي ڏانهن وڃو
+      ooops: اڙي ...
+      sorry_message: معاف ڪجو ، تور هن صفحي کي نه ڳولي سگهيو
+    profile:
+      navigation:
+        log_out: ڪم ڇڏڻ
+        my_profile: منهنجو پروفائل
+        settings: جوڙ
+      onboarding:
+        choose_native_language: پنهنجي مادري ٻولي يا ٻولي چونڊيو جنهن کي توهان سمجهو
+        do_you_understand_english: ڇا توهان انگريزي سمجهندا آهيون؟
+        hello: سلام
+        language_levels:
+          a1: ابتدائي سطح
+          a2: اڳئين وچولي سطح
+          b1: انٽرميڊيٽ ليول
+          b2: اپر انٽرميڊيٽ ليول
+          c1: اعليٰ ليول
+          no_knowledge: ڪا خبر ناهي
+        language_not_supported:
+          note: جيترو جلد ٻولي دستياب ٿيندي اسان کي اطلاع ڪنداسين
+          title: معاف ڪجو ، پر اسان اڃا تائين هن ٻولي جي حمايت نٿا ڪريون
+          try_another_language: ٻي ٻولي کي آزمايو
+        'no': نه
+        search_placeholder: ڳوليو ...
+        show_more_languages: ٻيون ٻوليون
+        target_language_question: توهان ڪهڙي ٻولي سکڻ چاهيو ٿا؟
+        what_is_language_level: توهان پنهنجي %{languageName} جي سطح تي شرح ڪيئن ڪنداسين؟
+        'yes': ها
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: لِونگ جي رازداري پاليسي
+        support: سپورٽ
+      logout: ڪم ڇڏڻ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: توهان جي پيروي ڪيل استادن ۽ اسڪولن کان تازه ڪاري حاصل ڪريو
+              sections:
+                app_notifications: ايپ جي اطلاعن
+                email: اِي ميل
+              title: سکڻ ۾ مدد
+            marketing:
+              description: لينگويج جي سڀني پيشڪشين ، اپڊيٽس ، ۽ انسپائريشن بابت Stayاڻ
+                رکو
+              sections:
+                browser_notifications: برائوزر جون اطلاعون
+                email: اِي ميل
+              title: مارڪيٽنگ
+          title: رابطا ترجيحات
+        personal_information:
+          delete_photo: تصوير خارج ڪريو
+          email: ايميل
+          first_name: پهريون نالو
+          last_name: پويون نالو
+          social_accounts:
+            connected: ڪنيڪٽ ٿيل
+            facebook: ڪريو
+            google: گوگل
+            microsoft: مائڪروسوفٽ
+            not_connected: جڙيل ناهي
+            title: سماجي اڪائونٽس
+          title: ذاتي معلومات
+          update_photo: تصوير کي تازو ڪريو
+        school:
+          active_licence: فعال لائسنس
+          active_status: فعال
+          delete_profile: منھنجو پروفائل ختم ڪريو
+          delete_profile_modal:
+            body: |-
+              توهان سڀني ڊيٽا کي ڇنڊي ڇڏيو هميشه لاءِ. ڪو رد ڪرڻ وارو بٽڻ ناهي ، ۽ اسان توهان کي توهان کان پوء واپس حاصل نه ڪري سگهندا.
+              ڇا توهان پڪ سان پنهنجي لساني پروفائل ۽ توهان جي سموري ڊيٽا کي مستقل طور ختم ڪرڻ چاهيندا؟
+            cancel: رد ڪرڻ
+            confirm: ها ، ان کي ختم ڪريو
+            i_understand_the_consequences: مان ئي نتيجن کي سمجهان ٿو
+            title: پنھنجو پروفائيل ختم ڪريو؟
+          expired: ختم ٿيل %{expire_date}
+          expires: ختم ٿئي ٿو %{expire_date}
+          inactive_status: غير فعال
+          revoke_access: پڙهائي جي رسائي کي رد ڪريو
+          sections:
+            contact_school: اسڪول سان رابطو ڪريو
+            export_my_data: منهنجي ڊيٽا برآمد ڪريو
+            read_school_privacy_policy: اسڪول جي رازداري جي پاليسي پڙهو
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: موسيقي کيڏڻ
+              sound_effects: آواز جا اثر
+              title: آواز
+            visual:
+              dark_theme: اونداهي موضوع
+              font_size:
+                test_text: گھاس سدائين ھميشه جي ٻين ڀر واري ھوندي آھي باھ جي ٻئي طرف
+                title: فانٽ سائيز
+              high_contrast: اعلي برعڪس
+              hints: اشارو
+              title: بصري
+          title: آواز ۽ بصري
+        training_settings:
+          sections:
+            i_understand: مان سمجهان ٿو
+            i_want_to_learn: مان سکڻ چاهيان ٿو
+            target_language_level: انگريزي سطح
+          title: ٽريننگ سيٽنگون
+      settings_title: جوڙ
+    teacher_card:
+      followers_count:
+        one: 1 پيروڪار
+        other: "%{count} پوئلڳ"
+      lessons_count:
+        one: 1 سبق
+        other: "%{count} سبق"

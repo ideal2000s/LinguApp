@@ -1,0 +1,32 @@
+div id=dom_id(item)
+  .card.mb-3 class="#{item.functional? && 'corner-success' || 'corner-warning'}"
+    .card-body
+      .row
+        .col-sm-9.col-md-8.d-flex.align-items-center
+          pre.card-text= best_in_place item,
+                  :sentence,
+                  as: :textarea,
+                  url: teach_task_item_path(task, item),
+                  param: :task_item,
+                  inner_class: "form-control"
+        .col-sm-3.col-md-4.d-flex.justify-content-between.align-items-center
+          - unless item.audio
+            div.float-left style='width: 70%; display: none'
+              = react_component('components/AudioRecord', {api: "/tasks/#{item.task_id}/items/#{item.id}", item: item})
+            button.btn.float-left.item-record-btn
+              i.fa.fa-microphone
+            = form_for item, as: :task_item, url: teach_task_item_path(task, item), method: :patch do |f|
+              .task-item-audio-upload
+                label[for="task_item_#{item.id}_audio"]
+                  span.btn.float-right.item-audio-upload-btn
+                    i.fa.fa-file-upload
+                = f.file_field :audio, accept: 'audio/*', id: "task_item_#{item.id}_audio", class: 'js-submit-on-change'
+          - else
+            = audio_tag(item.audio_url, class: 'preview', controls: true, style: 'width: 55%; height: 100%')
+            = form_for item, as: :task_item, url: teach_task_item_path(task, item), method: :patch do |f|
+              = f.hidden_field :remove_audio, value: 'true'
+              button.item-audio-remove
+                span.fa.fa-trash
+          .text-right
+            = link_to teach_task_item_path(task, item), method: :delete, remote: true, class: 'btn btn-falcon-danger float-right btn-sm', data: { confirm: 'Delete this item?' } do
+              i.fas.fa-times.fa-fw

@@ -1,0 +1,57 @@
+.tab-content
+  #top-score-students-list.tab-pane.fade.show.active aria-labelledby="top-score-students-tab" role="tabpanel"
+    - team_presenter.top_score_students.each do |student|
+      .card.bg-light.mb-2
+        .d-flex.align-items-center.p-2
+          .col-sm-1.text-center
+            = custom_profile_tag(student)
+          .col-sm-6
+            .card-text.font-weight-bold
+              = link_to student.full_name, school_student_path(student)
+          .col-sm-1.text-right
+            span.badge.badge-pill.badge-soft-secondary
+              - if student.active_student_target_language.present?
+                = level_title(student.active_student_target_language.level)
+              - else
+                = level_title('undefined')
+          .col-sm-1
+            - native_flag_path = nil
+            - tar_flag_path = nil
+            - if student.native_language
+              - native_flag_path = image_path("flags/#{language_to_flag_code(student.native_language.code)}.svg")
+            - if student.active_target_language
+              - tar_flag_path = image_path("flags/#{language_to_flag_code(student.active_target_language.code)}.svg")
+            span.badge.badge-pill.badge-soft-secondary
+              img.mr-1 src="#{native_flag_path}" alt="" width="17" height="13"
+              = "-"
+              img.ml-1 src="#{tar_flag_path}" alt="" width="17" height="13"
+          .col-sm-3.text-center
+            -#img.mr-1 src="#{image_path('icons/star-exp.svg')}" alt="" width="18" height="18"
+            = student.lesson_time_human
+  #inactive-students-list.tab-pane.fade aria-labelledby="inactive-students-tab" role="tabpanel"
+    - team_presenter.inactive_students.each do |team_student|
+      .card.bg-light.mb-2
+        .d-flex.align-items-center.p-2
+          .col-sm-1.text-center
+            - student = team_student.student
+            = custom_profile_tag(student)
+          .col-sm-7
+            .card-text.font-weight-bold
+              = link_to student.full_name, school_student_path(student)
+          .col-sm-1.text-right
+            span.badge.badge-pill.badge-soft-secondary
+              - if student.active_student_target_language.present?
+                = level_title(student.active_student_target_language.level)
+              - else
+                = level_title('undefined')
+          .col-sm-3.text-center
+            - native_flag_path = nil
+            - tar_flag_path = nil
+            - if student.native_language
+              - native_flag_path = image_path("flags/#{language_to_flag_code(student.native_language.code)}.svg")
+            - if student.active_target_language
+              - tar_flag_path = image_path("flags/#{language_to_flag_code(student.active_target_language.code)}.svg")
+            span.badge.badge-pill.badge-soft-secondary
+              img.mr-1 src="#{native_flag_path}" alt="" width="17" height="13"
+              = "-"
+              img.ml-1 src="#{tar_flag_path}" alt="" width="17" height="13"

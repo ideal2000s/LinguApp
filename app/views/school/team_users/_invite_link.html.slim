@@ -1,0 +1,4 @@
+.input-group.mb-2
+  = text_field_tag 'invitation', team_team_invitations_url(current_team.to_gid_param), class: 'form-control'
+  .input-group-append
+    a.input-group-text.clipboard data-clipboard-target="#invitation" href="#"= t('teach.team_users.team_link.copy')

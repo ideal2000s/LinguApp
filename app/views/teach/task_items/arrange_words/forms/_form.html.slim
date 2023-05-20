@@ -1,0 +1,17 @@
+= form_for form, html: { id: dom_id(task, :item_form) }, as: :task_item, remote: true, url: teach_task_items_path(task) do |f|
+  .card.mb-3
+    .card-body
+      .form-group
+        .input-group
+          = f.label :arrange_words, t('teach.task_items.arrange_words.arrange_words.enter_correct_sentence'), class: 'w-100 sentence'
+          = f.text_field :arrange_words, class: 'form-control'
+          = error_for f.object, :arrange_words
+        .input-group
+          = f.label :additional_words, t('teach.task_items.arrange_words.arrange_words.additional_words'), class: 'w-100 sentence'
+          = f.text_field :additional_words, class: 'form-control'
+          = error_for f.object, :additional_words
+        .input-group
+          = f.label :hint, t('teach.task_items.arrange_words.arrange_words.hint'), class: 'w-100 sentence'
+          = f.text_field :hint, class: 'form-control', placeholder: t('.leave_blank_for_translations')
+          = error_for f.object, :hint
+      = f.submit t('common.buttons.save'), class: 'btn btn-success'

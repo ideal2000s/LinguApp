@@ -1,0 +1,620 @@
+---
+hmn:
+  course_mailer:
+    course_assigned_notification:
+      button: Pib lub kawm
+      click_start_lesson: Nyem 'Pib zaj lus qhia'
+      follow_course_link: Nyem lub pob kom qhib kev kawm
+      footer_text: Rov qab tuaj rau Lingu kom kawm ib yam tshiab txhua hnub!
+      get_started_line: 'Nov yog qhov koj pib:'
+      notification_link: Ceeb toom kev teeb tsa
+      open_lesson: Qhib thawj zaj lus qhia
+      or_paste_this_link: los yog muab tshuaj txuas rau hauv koj qhov browser
+      sign_in_with_email: Nkag mus nrog koj email chaw nyob (%{email})
+      support_link: Txhawb nqa
+      title: Kev pib nrog %{course}
+    new_document_comment:
+      author_text: "%{author} tshuav kev tshuaj xyuas koj txoj haujlwm"
+      button_text: Xyuas nws tawm
+      button_url_helper: 'los yog muab tshuaj txuas rau hauv koj qhov browser:'
+      footer_text: Muaj ntau yam ntxiv kom paub ...
+      notification_link: Ceeb toom kev teeb tsa
+      subject_line: Cov lus tshiab hais
+      support_link: Txhawb nqa
+    otp:
+      ignore_msg: Yog tias koj tsis tau ua qhov kev thov no, cia li tsis quav ntsej
+        txog email.
+      subject_line: Koj cov lej cim rau Lingu
+      unique_code_for_lingu: Ntawm no yog koj tus lej cim rau Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Twb muaj ib tus account?
+      back: Tom qab
+      back_to_sign_in: Rov qab mus rau npe nkag
+      check_your_email_for_a_code: Kuaj koj email rau koj cov cai
+      continue: Txuas ntxiv mus
+      continue_with_email: Txuas nrog email
+      continue_with_provider: Txuas nrog %{provider}
+      did_not_receive_a_code: Tsis tau txais ib qho code?
+      email_address: Email chaw nyob
+      first_name: Lub npe
+      get_unique_code: Tau txais lub cim nkag teb chaws tshwj xeeb
+      join_lingu: Koom nrog Lingu
+      last_name: Lub xeem
+      more_login_options: Ntau tus ID nkag mus xaiv
+      no_account_question: Tsis muaj ib tug account?
+      or: lossis
+      resend_code: Resend code
+      sign_in: Sau npe nkag
+      sign_up: Sau npe
+      want_to_receive_marketing_messages: Kuv xav tau txais cov lus tshaj tawm los
+        ntawm Lingu
+      we_ve_sent_a_code: >-
+        Peb tau xa lub cim 6-lej rau <strong> {{email}} </strong>. Txoj cai tag sijhawm
+        hauv 15 feeb, yog li thov nkag mus sai.
+    cookie_agreement:
+      agree: Pom zoo
+      condition: >-
+        Peb siv cov ncuav qab zib los tshuaj xyuas cov haujlwm hauv chaw xa khoom
+        thiab xa cov ntsiab lus ntawm tus kheej. Los ntawm txhaj "Pom zoo", koj pom
+        zoo rau peb cov xwm txheej.
+    course:
+      accredited_course_provider: Tus muab kev pom zoo pab rau
+      apply: Thov
+      apply_filters: Siv cov ntxaij lim dej
+      by: Los ntawm
+      cancel: Ntawv cia Suam teb
+      categories: "%{count} pawg"
+      category: Qeb
+      clear: Ntshiab
+      clear_filters: Cov lim dej ntshiab
+      contact_us: Tiv tauj peb
+      could_not_find_match_for: Thov txim, peb nrhiav tsis pom qhov twg rau
+      course_language: Cov hom lus kawm
+      duration: Ntev
+      filter_settings:
+        categories:
+          academic: Kev Kawm
+          business: Kev lag luam
+          fashion: Zam ntawv
+          food_drink: Khoom noj khoom haus & haus
+          for_kids: Rau cov menyuam
+          general: Dav
+          health: Kev Noj Qab Haus Huv
+          legal: Raws li txoj cai
+          sport: Kev Ua Si Nawv
+          travel: Ncig tebchaws
+        durations:
+          t0_600: "<10 feeb"
+          t1800_3600: 30-60 feeb
+          t3600_86400: 1+ teev
+          t600_1800: 10-30 feeb
+        focus_on:
+          conversation: Kev Sib Tham
+          grammar: Qauv sau ntawv
+          listening: Mloog
+          pronunciation: Kev hais tawm
+          reading: Nyeem Ntawv
+          speaking: Hais lus
+          writing: Sau Ntawv
+        levels:
+          long:
+            advanced: Qib siab heev
+            elementary: Qib Qib Qib
+            intermediate: Qib nrab
+            no_knowledge: Tsis paub
+            pre_intermediate: Qib ua Ntej Qib
+            upper_intermediate: Qib Nrab Qib Nruab Nrab
+          short:
+            advanced: Siab
+            beginner: Pib
+            intermediate: Nruab nrab
+        sort_by:
+          most_rated: Feem ntau ntaus nqi
+          newest: Vauv tshiab
+          popularity: Cov Nrov
+      filters: Ntxaij lim dej
+      focus_on: Tsom ntsoov
+      focus_on_title: Kuv xav ua kom pom tseeb
+      hide_lessons: Nkaum cov tshooj lus
+      hours: Sijhawm
+      i_understand: Kuv nkag siab
+      i_want_to_learn: Kuv xav kawm
+      in_language: hauv %{language}
+      language: Lus
+      learn_more: Moog kawm ntawv ntxiv
+      less_settings: Tsawg dua qhov chaw
+      lessons: Cov tshooj lus
+      lessons_available: "%{number} cov lus qhia muaj"
+      lessons_catalog_page_subtitle: Ua tus hero hero.
+      lessons_catalog_page_title: Nthuav koj lub qab ntug nrog hom lus kawm
+      level: Qib
+      min: Min
+      more_settings: Ntau nqis
+      navbar:
+        close: Kaw cov zaub mov
+        menu: Ntawv qhia zaub mov
+        select_language: Xaiv lus
+      need_to_buy_course: Koj yuav tsum tau book chav kawm ua ntej
+      no_description: Tsis muaj lus piav qhia
+      no_results: Thov txim, peb nrhiav tsis pom qhov twg rau
+      or: lossis
+      per_month: hauv ib hlis
+      plans: Cov phiaj xwm
+      privacy_policy: Txoj cai tsis pub twg paub
+      rating: Kev Ntsuas
+      remove_all_filters: Tshem tawm tag nrho cov ntxaij lim dej
+      reviews: Xyuas
+      save: Txuag
+      search: Tshawb Fawb
+      select_dots: Xaiv ...
+      select_languages: Xaiv langauges
+      select_num_languages: Xaiv lus %{number} lus
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Qhia txhua tus
+      show_all_lessons: Qhia txhua zaj lus qhia
+      show_lessons: Qhia %{number} tej zaj lus qhia
+      show_more: Qhia ntau yam
+      sign_up_with_lingu_for: Zwm npe nrog Lingu Norway rau
+      skills: "%{count} kev txawj ntse"
+      sort_by: Tsi yog
+      start_typing_here: Pib ntaus hauv no
+      teach: Qhia
+      terms_and_conditions: Cov Lus Qhia thiab Cov Lus
+      time_range: Sij hawm ntau
+      try_adjusting_your_search: Sim kho koj txoj kev tshawb fawb los ntawm kev hloov
+        koj lub lim dej
+      try_this_course: Sim cov chav no
+      website_language: Lub vas sab lus
+      words: Cov lus
+    games:
+      finished:
+        go_to_next_exercise: Ua tau zoo heev! Mus qoj ib ce tom ntej
+      flashcard:
+        buttons:
+          finish: Xaus
+          next: Ntxiv mus
+          previous: Yav dhau los
+        check_out_new_words: Txheeb xyuas cov lus tshiab uas koj yuav kawm hauv zaj
+          lus qhia no
+        frequency_of_word_usage: Zaus ntawm cov lus siv hauv %{language}
+        keep_practice_to_learn_all_words: Txheeb xyuas %{count} cov lus thiab cia
+          peb ua si qee qhov kev ua si!
+        word_frequency:
+          level1: Tsis tshua muaj neeg siv
+          level2: Tsis tshua muaj neeg siv
+          level3: Lo lus zaus - nruab nrab
+          level4: Lo lus zaus - nruab nrab
+          level5: Ntau
+          level6: Heev ntau
+      match_word:
+        click_and_move_each_word_to_counterpart: Nyem thiab txav rau txhua lo lus
+          rau nws cov counterpart
+        start_heading: Ua raws cov lus los ua ib khub
+        time_is_up: Lub sij hawm tas!
+      skip_tutorial: Hla
+      time_is_up: Lub sij hawm tas!
+      word_nodes:
+        match_letters_to_form_word: Siv cov ntawv los ua ib lo lus
+      word_waterfall:
+        do_not_hesitate: Caw khiav kom nrawm!
+        go_to_next_exercise: Mus qoj ib ce tom ntej
+        select_correct_translation: Xaiv txoj kev sib phim
+        well_done: Ua tau zoo heev!
+    home_page:
+      hello: Nyob zoo,
+      popular_lessons: Cov tshooj lus nrov
+      show_more: Qhia ntau yam
+      time: "%{count} min"
+      today_lesson: Koj zaj lus qhia rau hnub no
+      user_name: "%{name}!"
+      words: "%{count} lus"
+    idle_screen:
+      by_author: los ntawm %{authorName}
+      continue_lesson: Kawm txuas ntxiv
+      exit: Tawm
+      idle_message: Koj twb nyob tsis tau rau tej lub sij hawm ...
+    lesson_page:
+      back_to_course_page: Rov qab mus rau nplooj ntawv kawm
+      close: Kaw
+      continue_lesson: Kawm txuas ntxiv
+      followed: Ua raws
+      hamburger_menu_btn: Hamburger zaub mov
+      lesson_given: cov tshooj lus
+      not_started: tsis tau pib
+      or: Los yog
+      part_complete: "%{percent}% tiav"
+      restart_lesson: Rov qab pib
+      section_check: Tshawb xyuas
+      section_check_info: "%{count} kev xeem"
+      section_learn: Kawm
+      section_learn_info: "%{count} min los saib thiab nyeem"
+      section_play: Ua si
+      section_play_info: "%{count} lus los xyaum"
+      start_lesson: Pib zaj lus qhia
+      step_progress: "%{percent}%"
+      subscribe: Ua raws
+      subscribed: Ua raws
+      subscribers: cov thwjtim
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Unfollow
+      webview_error_title: Ib yam dab tsi mus tsis ncaj ncees lawm ...
+      words_number: "%{wordsNumber} cov lus tshiab"
+    lesson_task:
+      cancel_button: Ntawv cia Suam teb
+      check:
+        navigation_next: Ntxiv mus
+        navigation_previous: Yav dhau los
+        navigation_skip: Hla
+      controls_panel:
+        font_size_button: Qhov loj me
+        high_contrast_button:
+          origin: Siab zoo ib
+          short: Zoo ib
+        hints_button: Cov Tswv Yim
+        music_playback_button:
+          origin: Tso nkauj ua si
+          short: Nkauj Nkauj
+        sound_effects_button:
+          origin: Suab los
+          short: Suab
+      exit_button: Tawm
+      finish_button: Xaus
+      finished:
+        back_to_learn: Rov qab kawm
+        back_to_lesson_page: Rov qab mus rau nplooj ntawv kawm
+        back_to_results_page: Rov qab rau ntawm nplooj ntawv ua tau
+        bad_result_message: Hmm ... sim saib zaj lus qhia ib zaug ntxiv
+        close_lesson: Kaw zaj lus qhia
+        correct_answers_list: Cov lus teb yog
+        good_result_message: Kuv pom tias koj tau sib zog!
+        great_result_message: Ua tau zoo heev! Cov no yog cov txiaj ntsig tau!
+        next_course_lesson: Mus rau lwm zaj lus qhia nyob hauv chav kawm
+        no_results: Koj tsis muaj kev sib tw xeem tau
+        no_results_text: Thov, ua kom tiav cov ntawv qhia thiab dhau kev sim kom pom
+          qhov tshwm sim
+        see_correct_answers_list: Saib cov npe teev tseg
+        train_more: Xyaum ua ntau ntxiv thiab koj yuav ua tiav tau zoo dua rau lwm
+          zaus!
+        you_finished_lesson: Zoo heev! Koj ua tiav zaj lus qhia
+      go_back: Rov qab mus
+      next_button: Ntxiv mus
+      not_available_task: Txoj haujlwm no tseem tsis tau muaj
+      start_button: Pib
+      tasks:
+        check:
+          assignment:
+            accept: Txais
+            author_will_check_your_answer: >-
+              %{author} yuav tshuaj xyuas koj cov lus teb thiab feem ntau yuav tawm
+              tswv yim li hauv 1-2 hnub
+            continue_writing: Sau txuas ntxiv
+            copy: Luam
+            delete: Rho tawm
+            delete_record: Rho tawm cov ntaub ntawv
+            edit: Kho kom raug
+            essay_does_not_have_enough_words: >-
+              Koj cov lus teb yuav tsum muaj tsawg kawg %{minWordsNumber} lus. Koj
+              cov lus teb yog %{currentWordsNumber} lus tam sim no.
+            followers_count: "%{followersCount} followers"
+            lessons_count: "%{lessonsCount} cov tshooj lus"
+            minimal_recording_time: Cov sijhawm sau tsawg tshaj plaws - %{minimalRecordingTime}
+            minimum_characters_amount: Yam tsawg kawg nkaus cov cim - %{minimumCharactersAmount}
+            minimum_words_amount: Cov lus tsawg kawg - %{minimumAmount}
+            record_again: Sau dua
+            record_voice: Sau lub suab
+            send_anyway: Xa xijpeem
+            send_to_review: Xa mus soj ntsuam
+            skip: Hla
+            too_short_answer: Cov lus teb luv heev
+            type_your_answer: Ntaus koj cov lus teb
+            unknown_task_type: Tsis paub hom haujlwm
+            upgrade_licence: Hloov kho daim ntawv tso cai
+            upgrade_your_plan: Hloov kho koj txoj kev npaj kom sim cov haujlwm nrog
+              cov xib fwb soj ntsuam
+            upload_files: Upload ntaub ntawv
+            write_essay: Sau ntawv
+            you_have_used_amount_of_assignments: Koj tau siv %{amountOfAssignments}
+              cov haujlwm ntaj
+          fill_in_blanks:
+            sentence_gap: Kab lus sib txawv
+          fill_in_table:
+            column_answer_placeholder: Teb
+            column_question_placeholder: Lo lus nug
+            example: Piv txwv
+          true_false:
+            'false': Tsis tseeb
+            'true': Muaj tseeb
+        learn:
+          translatable_text:
+            show_original: Qhia thawj
+            translate_into: Txhais nrog Google rau %{languageName}
+            translate_into_your_lang: Txhais nrog Google rau koj hom lus
+        play:
+          arrange_words:
+            start_screen:
+              heading: Ua ib kab lus tawm ntawm cov lus muab
+          audition:
+            start_screen:
+              heading: Mloog lub suab thiab coj mus rhaub rau lo lus koj nyuam qhuav
+                hnov
+          dictation:
+            get_help: Tau txais kev pab
+            i_do_not_know: Kuv tsis paub
+            input_placeholder: Ntaus qhov koj tau hnov ntawm no
+            start_screen:
+              heading: Mloog thiab sau yam koj hnov
+          fill_gap:
+            start_screen:
+              heading: Phim cov lus thiab nws lub ntsiab lus
+          finish_screen:
+            go_to_next_exercise: Ua tau zoo heev! Mus qoj ib ce tom ntej
+          image_hotspot:
+            start_screen:
+              heading: Sau cov khoom hauv daim duab kom raug
+          image_object:
+            start_screen:
+              heading: Xaiv cov khoom raug los ntawm daim duab tom ntej
+          inline_dropdown:
+            start_screen:
+              heading: Xaiv cov lus uas txuam nrog kab lus
+          mark_word:
+            start_screen:
+              heading: Nyeem kab ntawv thiab xaiv lo lus uas phim cov duab
+          minimal_pairs:
+            start_screen:
+              heading: Saib cov yeeb yaj kiab thiab xaiv cov kev xaiv kom raug
+    locale:
+      currency_switcher_title: Txhab switcher
+      lang_switcher_title: Cov lus hloov
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: ".Лгарски"
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Kev Deutsch
+        el: Greek
+        en: Lus Askiv
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Nis
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Portugalês
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Йербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwalay
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: ".Країнська"
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Suab yog chaw thau khoom
+        aria_pause_button: Ncua
+        aria_play_button: Ua si
+        aria_reload_button: Tsua
+        aria_stop_button: Txhob
+        reload_message: Tsis ua tiav cov thauj khoom. Thov nias lub pob rov qab ntim
+          dua.
+    mobile_modal:
+      apply: Thov
+      cancel: Ntawv cia Suam teb
+      clear: Ntshiab
+      save: Txuag
+    page404:
+      goToStartLessonPage: Mus rau thawj nplooj ntawv pib
+      ooops: Oooops ...
+      sorry_message: Thov txim, Tor nrhiav tsis tau nplooj ntawv no
+    profile:
+      navigation:
+        log_out: Tawm Tawm
+        my_profile: Kuv qhov profile
+        settings: Chaw
+      onboarding:
+        choose_native_language: Xaiv koj hom lus los hom koj nkag siab
+        do_you_understand_english: Koj puas nkag siab lus Askiv?
+        hello: Nyob zoo
+        language_levels:
+          a1: Qib Qib Qib
+          a2: Qib ua Nrab theem
+          b1: Qib nrab
+          b2: Qib Nruab Nrab Qib Nruab Nrab
+          c1: Qib siab heev
+          no_knowledge: Tsis paub
+        language_not_supported:
+          note: Peb yuav ceeb toom koj sai li sai tau cov lus yuav muaj
+          title: Thov txim, tab sis peb tsis txhawb cov lus no
+          try_another_language: Sim ua lwm yam lus
+        'no': Tsis yog
+        search_placeholder: Tshawb nrhiav ...
+        show_more_languages: Lwm yam lus
+        target_language_question: Hom lus twg koj xav kawm?
+        what_is_language_level: Koj yuav ntaus koj qib %{languageName} li cas?
+        'yes': Yog lawm
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu privacy txoj cai
+        support: Txhawb nqa
+      logout: Teev Npe
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: >-
+                Tau txais cov ntawv qhia tshiab los ntawm cov xibfwb thiab cov tsev
+                kawm uas koj ua raws
+              sections:
+                app_notifications: Cov ntawv qhia App
+                email: E-mail
+              title: Kawm kev pab
+            marketing:
+              description: >-
+                Qhia kom paub txog tag nrho cov kev tshaj tawm, hloov tshiab, thiab
+                kev tshoov siab los ntawm Lingu
+              sections:
+                browser_notifications: Browser cov ntawv qhia
+                email: E-mail
+              title: Kev Lag Luam
+          title: Hu rau kev nyiam
+        personal_information:
+          delete_photo: Rho tawm duab
+          email: Email
+          first_name: Lub npe
+          last_name: Lub xeem
+          social_accounts:
+            connected: Txuas Txuag
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Tsis txuas nrog
+            title: Tus lej nyiaj
+          title: Cov ntaub ntawv ntiag tug
+          update_photo: Daim duab hloov tshiab
+        school:
+          active_licence: Daim ntawv tso cai nquag
+          active_status: Nquag muaj
+          delete_profile: Rho tawm kuv qhov profile
+          delete_profile_modal:
+            body: |-
+              Koj tshem tawm tag nrho koj cov ntaub ntawv — mus ib txhis. Tsis muaj qhov khawm tsis zoo, thiab peb tsis tuaj yeem muab rov qab rau koj tom qab.
+              Koj puas paub tseeb tias koj xav rho tawm koj li Lingu profile thiab tag nrho koj cov ntaub ntawv?
+            cancel: Ntawv cia Suam teb
+            confirm: Yog lawm, rho tawm nws
+            i_understand_the_consequences: Kuv nkag siab cov txim
+            title: Rho tawm koj qhov profile?
+          expired: Xwv %{expire_date}
+          expires: Xwv %{expire_date}
+          inactive_status: Nquag
+          revoke_access: Rho tawm kev nkag tau mus saib
+          sections:
+            contact_school: Hu rau tsev kawm ntawv
+            export_my_data: Export kuv cov ntaub ntawv
+            read_school_privacy_policy: Nyeem Ntawv Txoj Cai Tswjfwm Ntiag Tug
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Tso nkauj ua si
+              sound_effects: Suab los
+              title: Suab
+            visual:
+              dark_theme: Cov ntsiab lus tsaus nti
+              font_size:
+                test_text: Tus nyom nws ib txwm nyob ntsuab rau lwm sab ntawm lub
+                  laj kab
+                title: Qhov loj me
+              high_contrast: Siab zoo ib
+              hints: Cov Tswv Yim
+              title: Nrig txog kev pom
+          title: Suab & Kos duab
+        training_settings:
+          sections:
+            i_understand: Kuv nkag siab
+            i_want_to_learn: Kuv xav kawm
+            target_language_level: Qib Lus Askiv
+          title: Kev teeb tsa kev kawm
+      settings_title: Chaw
+    teacher_card:
+      followers_count:
+        one: 1 tug raws
+        other: "%{count} followers"
+      lessons_count:
+        one: 1 zaj lus qhia
+        other: "%{count} cov tshooj lus"

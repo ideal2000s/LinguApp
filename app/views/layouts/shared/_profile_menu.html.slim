@@ -1,0 +1,27 @@
+li.nav-item.dropdown
+  a#user-navbar.nav-link.p-0 aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+    = user_avatar current_user, 'avatar-2xl'
+
+  .dropdown-menu.dropdown-menu-right.py-0 aria-labelledby="user-navbar"
+    .bg-white.rounded-soft.py-2
+      a.dropdown-item.font-weight-bold.text-success href="#!"
+        span= current_user.full_name
+
+      .dropdown-divider
+
+      = link_to profile_path, class: 'dropdown-item' do
+        i.fas.fa-user.pr-1
+        = t('layouts.admin.profile_menu.my_profile')
+
+      - if !current_user.basic?
+        = link_to admin_dashboard_index_path, class: 'dropdown-item' do
+          i.fas.fa-cog.pr-1
+          = t('layouts.admin.sidebar.dashboard')
+
+      .dropdown-divider
+
+      = render 'layouts/shared/teams'
+
+      .dropdown-divider
+
+      = link_to t('sign_out'), destroy_user_session_path, class: 'dropdown-item', method: :delete

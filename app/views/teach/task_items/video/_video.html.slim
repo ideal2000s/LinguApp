@@ -1,0 +1,14 @@
+= form_for item, as: :task_item, remote: true, url: teach_task_item_path(item.task, item) do |f|
+  .card.mb-3
+    .card-body
+      .form-group
+        = f.label :url, t('teach.tasks.video.form.url.label'), class: 'w-100 sentence required'
+        small= t('.accepted_sources')
+        = f.text_field :url, placeholder: t('teach.tasks.video.form.url.placeholder'), class: 'form-control question', required: true
+        = error_for f.object, :url
+      .form-group
+        = f.label :caption, t('.caption')
+        = f.rich_text_area :caption
+        = error_for f.object, :caption
+      .form-group
+        = f.submit t('save_changes'), class: 'btn btn-success'

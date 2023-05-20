@@ -1,0 +1,39 @@
+.d-flex.align-items-center.justify-content-center.flex-column.mt-5
+  .school-onboarding.text-center style="background: url(#{image_path('bg/school-illustration.svg')}) no-repeat center center / contain white;"
+    - if profile_check
+      h1.mt-4= t('.complete_profile')
+      = render partial: 'layouts/shared/locale_selector'
+      = form_for user, url: profile_path, as: :profile, method: :patch, html: { class: 'd-flex justify-content-center text-left' } do |f|
+        = hidden_field_tag :profile_check, profile_check
+        .w-50.px-5
+          - if current_team.name.present?
+            span.ml-3.font-weight-bold= current_team.name
+          .form-group.mt-5.small
+            = f.label :fname, t('first_name'), class: 'text-600'
+            = f.text_field :fname, class: 'form-control'
+            = error_for f.object, :fname
+          .form-group.small
+            = f.label :lname, t('last_name'), class: 'text-600'
+            = f.text_field :lname, class: 'form-control'
+            = error_for f.object, :lname
+          .form-group.text-center
+            = f.hidden_field :locale, value: I18n.locale
+            = f.submit t('shared.next'), class: 'btn btn-primary px-4 py-2 font-weight-bold'
+    - else
+      h1.mt-8
+        = t('.wrong_place')
+      - if school_teams.empty?
+        .school-instruction.px-11.mt-4
+          p
+            = t('.signed_in_personal_team')
+            =< t('.follow_invitation_link')
+          p= t('.contact_info')
+          = link_to t('sign_out'), destroy_user_session_path, method: :delete, class: 'd-block mt-4'
+      - else
+        .change-team.d-flex.align-items-center.flex-column
+          h2.my-4.px-11
+            = t('.signed_in_personal_team')
+            =< t('.change_team')
+          - school_teams.each do |team|
+            = link_to school_current_team_path(id: team.id), method: :post, class: 'btn btn-falcon-default team-link w-50 py-3 text-1000' do
+              = team.name

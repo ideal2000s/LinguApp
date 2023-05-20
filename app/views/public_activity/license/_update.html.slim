@@ -1,0 +1,11 @@
+- if activity.parameters[:end_date]
+  - date = l(activity.parameters[:end_date], format: :date)
+  - if controller.controller_name == 'team_users'
+    == t('activerecord.attributes.activity.license.update_student', student: activity.recipient.student.full_name, date: date)
+  - else
+    == t('activerecord.attributes.activity.license.update', user_name: activity.owner.full_name, expire_date: date)
+- else
+  - if controller.controller_name == 'team_users'
+    == t('activerecord.attributes.activity.license.removed_expiration_student', student: activity.recipient.student.full_name)
+  - else
+    == t('activerecord.attributes.activity.license.removed_expiration', user_name: activity.owner.full_name)

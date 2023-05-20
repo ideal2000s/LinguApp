@@ -1,0 +1,7 @@
+- if activity.owner == activity.trackable&.student
+  == t('activerecord.attributes.activity.team_student.group_assign',
+          group_name: activity.trackable&.team_group&.name&.presence || 'unknown group',
+          user_name: activity.owner.full_name)
+- else
+  == t('activerecord.attributes.activity.team_student.joined_group',
+          group_name: activity.trackable&.team_group&.name&.presence || 'unknown group')

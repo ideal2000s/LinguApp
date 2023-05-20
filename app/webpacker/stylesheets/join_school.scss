@@ -1,0 +1,176 @@
+.join-school-header {
+  display: flex;
+  margin: 50px 0;
+  justify-content: center;
+}
+.join-school-content {
+  width: 768px;
+  height: 592px;
+  border-radius: 30px !important;
+  .card-body {
+    text-align: center;
+  }
+  .join-school-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .school-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 46px;
+  }
+  .student-join-form {
+    width: 416px;
+    input[type=text] {
+      height: 56px;
+    }
+  }
+  .receive-marketing-messages-check {
+    margin: 20px 0 40px 0;
+    text-align: left;
+    .custom-control-label::before {
+      border-radius: 4px;
+    }
+  }
+  .accept-invitation-btn {
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px;
+    margin-bottom: 40px;
+  }
+  .sign-in-link {
+    color: #00A5D7;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .join-school-footer {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  .privacy-link {
+    color: #00A5D7;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+}
+
+.school-onboarding {
+  width: 768px;
+  height: 592px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(45, 43, 57, 0.1);
+  color: #2D2D3A;
+  input[type=text] {
+    background: #F0F0F3;
+    height: 44px;
+  }
+  h1, h2 {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h2, .school-instruction {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
+  .team-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .team-link + .team-link {
+    margin-top: 12px;
+  }
+}
+
+.school-sign-in {
+  @extend .school-onboarding;
+  input[type=email] {
+    height: 56px;
+    font-size: 18px;
+  }
+  .school-otp-button {
+    width: 416px;
+    position: relative;
+    border: 1px solid #E6E6F0 !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    color: #2D2D3A !important;
+    &:hover {
+      border-color: #00A5D7 !important;
+    }
+    img {
+      position: absolute;
+      left: 25px;
+      top: 13px;
+    }
+  }
+}
+
+.otp-input-wrapper {
+  margin-bottom: 2.25rem;
+  .otp-input {
+    border: 1px solid #e6e6f0;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #2d2d3a;
+    width: 60px !important;
+    height: 66px;
+    margin: 5px;
+    padding: 12px;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #2d2d3a;
+    }
+  }
+  &.invalid {
+    .otp-input {
+      border: 1px solid #FF5858 !important;
+    }
+  }
+}
+
+.otp-check-container {
+  width: 472px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  .user-otp-error {
+    position: relative;
+    background: rgba(255, 88, 88, 0.1);
+    border-radius: 10px;
+    img {
+      position: absolute;
+      left: 12px;
+      top: 17px;
+    }
+  }
+}
+
+.mobile-unsupported {
+  background: #F0F0F3;
+  border-radius: 8px;
+  color: #2D2D3A;
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+.mobile-logout {
+  .btn {
+    border-radius: 62px;
+    height: 52px;
+    line-height: 38px;
+  }
+}

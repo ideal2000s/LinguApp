@@ -1,0 +1,19 @@
+<svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="14">
+<rect width="20" height="14" rx="2" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M20 0H0V7.14894H20V0Z" fill="#4758A9"/>
+<path d="M20 7.14893H0V14H20V7.14893Z" fill="#F54747"/>
+<path d="M14.2858 4.46826H5.71436V10.4257H14.2858V4.46826Z" fill="#F5F7FA"/>
+<path d="M13.1427 6.25537H10.5713V7.14899H13.1427V6.25537Z" fill="#57A863"/>
+<path d="M9.71449 6.25537H7.14307V7.14899H9.71449V6.25537Z" fill="#57A863"/>
+<path d="M9.71422 5.06396H8.28564V5.95758H9.71422V5.06396Z" fill="#57A863"/>
+<path d="M11.9999 5.06396H10.5713V5.95758H11.9999V5.06396Z" fill="#57A863"/>
+<path d="M9.71422 7.44678H8.28564V8.34039H9.71422V7.44678Z" fill="#57A863"/>
+<path d="M11.9999 7.44678H10.5713V8.34039H11.9999V7.44678Z" fill="#57A863"/>
+<path d="M10 10.1276V10.4255H13.7143V8.04248L10 10.1276Z" fill="#4758A9"/>
+<path d="M6.57129 8.04248V10.4255H10.2856V10.1276L6.57129 8.04248Z" fill="#4758A9"/>
+<path d="M10.5715 5.06396H9.71436V10.4257H10.5715V5.06396Z" fill="#57A863"/>
+</g>
+</svg>

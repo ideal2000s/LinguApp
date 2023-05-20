@@ -1,0 +1,16 @@
+- set_page_title t('.not_found')
+
+.container data-layout="container"
+  .row.flex-center.min-vh-100.py-6.text-center
+    .col-sm-10.col-md-8.col-lg-6.col-xxl-5
+      = link_to root_path do
+        .img.text-center.pb-3= image_tag('lingu-logo.svg', style: 'max-width: 200px;')
+      .card
+        .card-body.p-4.p-sm-5
+          .display-1.text-300.fs-error 404
+          p.lead.mt-4.text-800.text-sans-serif.font-weight-semi-bold= t('.page_not_found')
+          - unless current_user
+            hr/
+            .d-flex.flex-center
+              .text-center
+                = link_to t('sign_in_google'), '/auth/google_user', class: 'btn btn-falcon-primary btn-block'

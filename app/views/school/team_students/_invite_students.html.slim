@@ -1,0 +1,46 @@
+.team-group-select.modal-dialog.modal-invite-students role="document" data-controller="invite-students"
+  .modal-content
+    .modal-header.d-flex
+      h5.modal-title= t('school.team_students.index.invite_students')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+        span.font-weight-light aria-hidden="true" == ("&times")
+    .modal-body
+      ul.nav.invite-students-tabs role="tablist"
+        li.nav-item
+          a#invite-by-link-tab.nav-link.active aria-controls="invite-by-link-panel" aria-selected="true" data-toggle="tab" href="#invite-by-link-panel" role="tab"
+            = t('school.team_students.invite_students.invite_by_link')
+        -# li.nav-item
+        -#  a#invite-by-email-tab.nav-link aria-controls="invite-by-email-panel" aria-selected="false" data-toggle="tab" href="#invite-by-email-panel" role="tab"
+        -#    = t('school.team_students.invite_students.invite_by_email')
+      .tab-content
+        #invite-by-link-panel.tab-pane.show.active aria-labelledby="invite-by-link-tab" role="tabpanel"
+          .team-group-select
+            = label_tag 'team_group_id', t('school.team_students.form.class'), required: true
+            = select_tag 'team_group_id', options_for_select(current_team.team_groups.unarchived.undiscarded.joinable.select(:id, :name).map { |s| [s.name, s.id] }), class: 'form-control', prompt: t('school.team_students.invite_students.select_class'),
+                    multiple: false, data: {url: '', inputlength: 1, target: 'invite-students.teamGroupSelect', action: "change->invite-students#teamGroupChanged", value: students_invitation_url(current_team.to_gid_param, subdomain: nil)}
+          .copy-link-field.d-flex.justify-content-between
+            = text_field_tag 'copy-link-text', students_invitation_url(current_team.to_gid_param, subdomain: nil), class: 'form-control', readonly: true, 'data-target' => "invite-students.copyLinkInput"
+            button.btn.btn-primary.copy-link-btn data-action="click->invite-students#copyInvitationLink" data-target='invite-students.copyLinkBtn' = t('school.team_students.invite_students.copy_link')
+        #invite-by-email-panel.tab-pane aria-labelledby="invite-by-email-tab" role="tabpanel"
+          = form_tag send_invitations_school_students_path
+            .email-fields
+              = label_tag 'invitee_emails[]', t('school.team_students.invite_students.emails'), required: true
+              = text_field_tag 'invitee_emails[]', '', class: 'form-control invite-email-input'
+            a.more-invite-btn data-target='invite-students.moreInviteBtn' data-action="click->invite-students#addMoreInviteEmail"
+              i.fas.fa-plus.mr-2
+              = t('school.team_students.invite_students.invite_more')
+            hr.panel-divider
+            .student-setup-panel
+              h5.modal-title = t('school.team_students.invite_students.quick_student_setup')
+              .plan-select
+                = label_tag 'plan_id', t('school.team_students.form.plan'), required: true
+                = select_tag 'plan_id', options_for_select(Plan.select(:id, :name_translations).map { |plan| [plan.name, plan.id] }), class: 'form-control', prompt: t('school.team_students.import_students.select_plan')
+              .team-group-select
+                = label_tag 'team_group_id', t('school.team_students.form.class'), required: true
+                = select_tag 'team_group_id', options_for_select(current_team.team_groups.kept.unarchived.undiscarded.select(:id, :name).map { |s| [s.name, s.id] }), class: 'form-control', prompt: t('school.team_students.invite_students.select_class'),
+                        multiple: false, data: {url: '', inputlength: 1}
+              button.btn.btn-primary.btn-block.send-invitation-btn = t('school.team_students.invite_students.send_invitations')
+    .text-center
+      == t('.add_or_import_links',
+              add: link_to(t('school.team_students.invite_students.add_manually'), new_school_student_path, remote: true),
+              import: link_to(t('.import_students'), import_students_school_students_path, remote: true))

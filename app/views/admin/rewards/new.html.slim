@@ -1,0 +1,18 @@
+- set_page_title t('admin.rewards.index.create_new_reward')
+
+.card.mb-3
+  .card-header
+    h5.mb-0= t('admin.rewards.index.create_new_reward')
+  .card-body
+    = form_for reward, url: admin_rewards_path, html: { id: 'reward_form' } do |f|
+      - if reward.errors.any?
+        .alert.alert-warning#error_explanation
+          h5
+            = t('count_error_message_model', count: reward.errors.count, model: reward.model_name.human)
+          ul
+            - reward.errors.full_messages.each do |message|
+              li= message
+      = render 'admin/rewards/form', reward: reward, f: f
+      .col-12.d-flex.mt-3
+        = f.submit t('admin.rewards.index.create_new_reward'), class: 'btn btn-primary mr-1'
+        = link_to t('back'), admin_rewards_path, class: 'btn btn-falcon-default mr-1'

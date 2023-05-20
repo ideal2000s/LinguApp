@@ -1,0 +1,9 @@
+= form_for form, html: { id: dom_id(task, :item_form) }, as: :task_item, remote: true, url: teach_task_items_path(task) do |f|
+  .card.mb-3
+    .card-body
+      h4.required= t('teach.task_items.select_text.forms.form.new_question')
+      .form-group
+        = f.text_field :question, placeholder: t('teach.task_items.select_text.forms.form.enter_question'), class: 'form-control question'
+        = error_for f.object, :question
+      .form-group
+        = f.submit t('teach.task_items.select_text.forms.form.add_question'), class: 'btn btn-falcon-default'

@@ -1,0 +1,34 @@
+.section_lesson_row.bg-soft-secondary.rounded-sm.d-flex.align-items-center.mt-4 id=dom_id(lesson) style='min-height: 96px'
+  .section-lesson-img
+    = link_to teach_lesson_path(lesson) do
+      = image_tag(lesson.image.present? ? lesson.image_url(:thumbnail) : lesson.image_url, class: 'rounded-left', width: 96)
+  div.pl-4
+    h5.d-block.pb-1
+      = link_to lesson.title, teach_lesson_path(lesson), class: 'mb-3 font-weight-bold'
+    span.mr-3
+      i.fa.fa-language.mr-2
+      strong= t('.word_count', count: lesson.phrases_count)
+    span.mr-3
+      i.fa.fa-list-ol.mr-2
+      strong= t('teach.tasks.overview.tasks_count', count: lesson.tasks.count)
+    - if lesson.sessions.any?
+      span.mr-3
+        i.fa.fa-profile.mr-2
+        strong= t('.session_count', count: lesson.sessions.size)
+      - if lesson.average_duration
+        span.mr-3
+          i.fa.fa-clock.mr-2
+          strong= lesson.average_duration_human
+    - unless lesson.published?
+      span
+        span.badge.badge-soft-warning= t('.unpublished')
+  .btn-group.pr-4 role="group" style="margin-left: auto"
+    = link_to move_up_lesson_teach_course_section_path(course, course_section, lesson_id: lesson.id), remote: true,
+      class: 'btn btn-sm btn-falcon-default section-lesson-up' do
+      i.fas.fa-arrow-up.fa-fw
+    = link_to move_down_lesson_teach_course_section_path(course, course_section, lesson_id: lesson.id), remote: true,
+      class: 'btn btn-sm btn-falcon-default section-lesson-down' do
+      i.fas.fa-arrow-down.fa-fw
+    = link_to remove_lesson_teach_course_section_path(course, course_section, lesson_id: lesson.id), remote: true,
+      class: 'btn btn-sm btn-falcon-default' do
+      i.fas.fa-times.fa-fw.text-danger

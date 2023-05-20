@@ -1,0 +1,9 @@
+.btn-group.float-right
+  - unless item.first?
+    = link_to move_up_teach_task_item_path(task, item), method: :patch, remote: true, class: 'btn px-1 move_up', aria: { label: t('move_up') } do
+      span.fas.fa-chevron-up
+  - unless item.last?
+    = link_to move_down_teach_task_item_path(task, item), method: :patch, remote: true, class: 'btn px-1 move_down', aria: { label: t('move_down') } do
+      span.fas.fa-chevron-down
+  = link_to teach_task_item_path(task, item), method: :delete, remote: true, class: 'btn text-danger', data: { confirm: t('delete_this_item') } do
+    span.fas.fa-times

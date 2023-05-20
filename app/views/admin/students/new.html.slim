@@ -1,0 +1,22 @@
+- set_page_title t('admin.students.index.create_new_student')
+
+.card.mb-3
+  .card-header
+    h5.mb-0= t('admin.students.index.create_new_student')
+  .card-body
+    = form_for student, url: admin_students_path, html: { id: 'student_form' } do |f|
+      - if student.errors.any?
+        .alert.alert-warning#error_explanation
+          h5
+            = t('count_error_message_model', count: student.errors.count, model: student.model_name.human)
+          ul
+            - student.errors.full_messages.each do |message|
+              li= message
+      = render 'admin/students/form', student: student, f: f
+        .form-group
+          = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+          = link_to t('back'), admin_students_path, class: 'btn btn-falcon-default mr-1'
+
+      .col-12.d-flex.mt-3
+        = f.submit t('create_student'), class: 'btn btn-primary mr-1'
+        = link_to t('back'), admin_students_path, class: 'btn btn-falcon-default mr-1'

@@ -1,0 +1,610 @@
+---
+sv:
+  course_mailer:
+    course_assigned_notification:
+      button: Starta kursen
+      click_start_lesson: Klicka på "Starta lektion"
+      follow_course_link: Klicka på knappen för att öppna banan
+      footer_text: Kom tillbaka till Lingu för att lära dig något nytt varje dag!
+      get_started_line: 'Så här kommer du igång:'
+      notification_link: Meddelandeinställningar
+      open_lesson: Öppna den första lektionen
+      or_paste_this_link: eller klistra in den här länken i din webbläsare
+      sign_in_with_email: Logga in med din e-postadress (%{email})
+      support_link: Stöd
+      title: Komma igång med %{course}
+    new_document_comment:
+      author_text: "%{author} lämnade en recension av ditt uppdrag"
+      button_text: Kolla in det
+      button_url_helper: 'eller klistra in den här länken i din webbläsare:'
+      footer_text: Det finns mycket mer att lära sig ...
+      notification_link: Meddelandeinställningar
+      subject_line: Ny uppdragskommentar
+      support_link: Stöd
+    otp:
+      ignore_msg: Om du inte gjorde denna begäran, ignorerar du bara e-postmeddelandet.
+      subject_line: Din unika kod för Lingu
+      unique_code_for_lingu: Här är din unika kod för Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Har du redan ett konto?
+      back: Tillbaka
+      back_to_sign_in: Tillbaka till Logga in
+      check_your_email_for_a_code: Kontrollera din e-post för din kod
+      continue: Fortsätta
+      continue_with_email: Fortsätt med e-post
+      continue_with_provider: Fortsätt med %{provider}
+      did_not_receive_a_code: Fick du inte en kod?
+      email_address: E-postadress
+      first_name: Förnamn
+      get_unique_code: Få en unik inloggningskod
+      join_lingu: Gå med i Lingu
+      last_name: Efternamn
+      more_login_options: Fler inloggningsalternativ
+      no_account_question: Har du inget konto?
+      or: eller
+      resend_code: Återsänd koden
+      sign_in: Logga in
+      sign_up: Bli Medlem
+      want_to_receive_marketing_messages: Jag vill få marknadsföringsmeddelanden från
+        Lingu
+      we_ve_sent_a_code: >-
+        Vi har skickat en sexsiffrig kod till <strong> {{email}} </strong>. Koden
+        upphör att gälla om 15 minuter, så ange den snart.
+    cookie_agreement:
+      agree: Hålla med
+      condition: >-
+        Vi använder cookies för att analysera webbplatsens prestanda och leverera
+        personligt innehåll. Genom att klicka på “Godkänn” godkänner du våra villkor.
+    course:
+      accredited_course_provider: Ackrediterad kursleverantör
+      apply: Tillämpa
+      apply_filters: Använd filter
+      by: Förbi
+      cancel: Annullera
+      categories: "%{count} kategorier"
+      category: Kategori
+      clear: Klar
+      clear_filters: Rensa filter
+      contact_us: Kontakta oss
+      could_not_find_match_for: Vi kunde tyvärr inte hitta någon matchning för
+      course_language: Kursens språk
+      duration: Varaktighet
+      filter_settings:
+        categories:
+          academic: Akademisk
+          business: Företag
+          fashion: Mode
+          food_drink: Mat & dryck
+          for_kids: För barn
+          general: Allmän
+          health: Hälsa
+          legal: Rättslig
+          sport: Sport
+          travel: Resa
+        durations:
+          t0_600: "<10 minuter"
+          t1800_3600: 30-60 minuter
+          t3600_86400: 1+ timme
+          t600_1800: 10-30 minuter
+        focus_on:
+          conversation: Konversation
+          grammar: Grammatik
+          listening: Lyssnande
+          pronunciation: Uttal
+          reading: Läsning
+          speaking: Tala
+          writing: Skrift
+        levels:
+          long:
+            advanced: Avancerad nivå
+            elementary: Elementär nivå
+            intermediate: Mellannivå
+            no_knowledge: Ingen kunskap
+            pre_intermediate: Före medelnivå
+            upper_intermediate: Övre mellannivå
+          short:
+            advanced: Avancerad
+            beginner: Nybörjare
+            intermediate: Mellanliggande
+        sort_by:
+          most_rated: Mest betygsatt
+          newest: Nyaste
+          popularity: Popularitet
+      filters: Filter
+      focus_on: Fokusera på
+      focus_on_title: Jag vill fokusera på
+      hide_lessons: Dölj lektioner
+      hours: Timmar
+      i_understand: jag förstår
+      i_want_to_learn: jag vill lära mig
+      in_language: i %{language}
+      language: Språk
+      learn_more: Läs mer
+      less_settings: Mindre inställningar
+      lessons: Lektioner
+      lessons_available: "%{number} lektioner tillgängliga"
+      lessons_catalog_page_subtitle: Bli språkhjälte.
+      lessons_catalog_page_title: Utöka dina horisonter med en språkkurs
+      level: Nivå
+      min: Min
+      more_settings: Fler inställningar
+      navbar:
+        close: Stäng menyn
+        menu: Meny
+        select_language: Välj språk
+      need_to_buy_course: Du måste boka en kurs först
+      no_description: Ingen beskrivning tillhandahålls
+      no_results: Vi kunde tyvärr inte hitta någon matchning för
+      or: eller
+      per_month: per månad
+      plans: Planer
+      privacy_policy: Integritetspolicy
+      rating: Betyg
+      remove_all_filters: Ta bort alla filter
+      reviews: Recensioner
+      save: Spara
+      search: Sök
+      select_dots: Välj...
+      select_languages: Välj språk
+      select_num_languages: Välj %{number} språk
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Visa allt
+      show_all_lessons: Visa alla lektioner
+      show_lessons: Visa %{number} lektioner
+      show_more: Visa mer
+      sign_up_with_lingu_for: Registrera dig med Lingu Norge för
+      skills: "%{count} färdigheter"
+      sort_by: Sortera efter
+      start_typing_here: Börja skriva här
+      teach: Lära
+      terms_and_conditions: Villkor
+      time_range: Tidsintervall
+      try_adjusting_your_search: Försök att justera din sökning genom att ändra dina
+        filter
+      try_this_course: Prova den här kursen
+      website_language: Webbplatsens språk
+      words: Ord
+    games:
+      finished:
+        go_to_next_exercise: Bra gjort! Gå till nästa övning
+      flashcard:
+        buttons:
+          finish: Avsluta
+          next: Nästa
+          previous: Tidigare
+        check_out_new_words: Kolla in de nya orden du kommer att lära dig i den här
+          lektionen
+        frequency_of_word_usage: Frekvensen för ordanvändning i %{language}
+        keep_practice_to_learn_all_words: Granska %{count}-orden och låt oss spela
+          några spel!
+        word_frequency:
+          level1: Sällan använd
+          level2: Sällan använd
+          level3: Ordfrekvens - medium
+          level4: Ordfrekvens - medium
+          level5: Allmänning
+          level6: Väldigt vanligt
+      match_word:
+        click_and_move_each_word_to_counterpart: Klicka och flytta varje ord till
+          motsvarigheten
+        start_heading: Matcha ord för att göra ett par
+        time_is_up: Tiden är ute!
+      skip_tutorial: Hoppa
+      time_is_up: Tiden är ute!
+      word_nodes:
+        match_letters_to_form_word: Matcha bokstäver för att bilda ett ord
+      word_waterfall:
+        do_not_hesitate: Låt oss påskynda!
+        go_to_next_exercise: Gå till nästa övning
+        select_correct_translation: Välj rätt matchning
+        well_done: Bra gjort!
+    home_page:
+      hello: Hallå,
+      popular_lessons: Populära lektioner
+      show_more: Visa mer
+      time: "%{count} min"
+      today_lesson: Din lektion för idag
+      user_name: "%{name}!"
+      words: "%{count} ord"
+    idle_screen:
+      by_author: av %{authorName}
+      continue_lesson: Fortsätt lektionen
+      exit: Utgång
+      idle_message: Du har varit inaktiv i en tid ...
+    lesson_page:
+      back_to_course_page: Tillbaka till kurssidan
+      close: Stänga
+      continue_lesson: Fortsätt lektionen
+      followed: Följt
+      hamburger_menu_btn: Hamburgare meny
+      lesson_given: lektioner
+      not_started: ej påbörjad
+      or: Eller
+      part_complete: "%{percent}% komplett"
+      restart_lesson: Omstart
+      section_check: Kolla upp
+      section_check_info: "%{count}-tester"
+      section_learn: Lära sig
+      section_learn_info: "%{count} min att titta och läsa"
+      section_play: Spela
+      section_play_info: "%{count} ord att öva på"
+      start_lesson: Starta lektionen
+      step_progress: "%{percent}%"
+      subscribe: Följ
+      subscribed: Följt
+      subscribers: anhängare
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Sluta följa
+      webview_error_title: Något gick fel...
+      words_number: "%{wordsNumber} nya ord"
+    lesson_task:
+      cancel_button: Annullera
+      check:
+        navigation_next: Nästa
+        navigation_previous: Tidigare
+        navigation_skip: Hoppa
+      controls_panel:
+        font_size_button: Textstorlek
+        high_contrast_button:
+          origin: Hög kontrast
+          short: Kontrast
+        hints_button: Tips
+        music_playback_button:
+          origin: Musikuppspelning
+          short: musik
+        sound_effects_button:
+          origin: Ljudeffekter
+          short: Ljud
+      exit_button: Utgång
+      finish_button: Avsluta
+      finished:
+        back_to_learn: Tillbaka för att lära dig
+        back_to_lesson_page: Tillbaka till lektionssidan
+        back_to_results_page: Tillbaka på resultatsidan
+        bad_result_message: Hmm ... försök att ta lektionen en gång till
+        close_lesson: Stäng lektionen
+        correct_answers_list: Lista över korrekta svar
+        good_result_message: Jag kan se att du har gjort ett försök!
+        great_result_message: Bra gjort! Det här är fantastiska resultat!
+        next_course_lesson: Gå till nästa lektion i kursen
+        no_results: Du har inga testresultat än
+        no_results_text: Snälla, slutför lektionen och klara testet för att få resultaten
+        see_correct_answers_list: Se korrekt svarlista
+        train_more: Öva mer och du kommer att uppnå bättre resultat nästa gång!
+        you_finished_lesson: Bra! Du har avslutat lektionen
+      go_back: Gå tillbaka
+      next_button: Nästa
+      not_available_task: Denna uppgift är inte tillgänglig än
+      start_button: Start
+      tasks:
+        check:
+          assignment:
+            accept: Acceptera
+            author_will_check_your_answer: "%{author} granskar ditt svar och ger vanligtvis
+              feedback inom 1-2 dagar"
+            continue_writing: Fortsätt skriva
+            copy: Kopiera
+            delete: Radera
+            delete_record: Radera post
+            edit: Redigera
+            essay_does_not_have_enough_words: >-
+              Ditt svar bör innehålla minst %{minWordsNumber} ord. Ditt svar är för
+              närvarande %{currentWordsNumber} ord.
+            followers_count: "%{followersCount} följare"
+            lessons_count: "%{lessonsCount} lektioner"
+            minimal_recording_time: Minsta inspelningstid - %{minimalRecordingTime}
+            minimum_characters_amount: Minsta tecken - %{minimumCharactersAmount}
+            minimum_words_amount: Minsta ord - %{minimumAmount}
+            record_again: Spela in igen
+            record_voice: Spela in röst
+            send_anyway: Skicka ändå
+            send_to_review: Skicka för recension
+            skip: Hoppa
+            too_short_answer: För kort svar
+            type_your_answer: Skriv ditt svar
+            unknown_task_type: Okänd uppgiftstyp
+            upgrade_licence: Uppgradera licens
+            upgrade_your_plan: Uppgradera din plan för att prova uppgifter med lärargranskningar
+            upload_files: Ladda upp filer
+            write_essay: Skriv uppsats
+            you_have_used_amount_of_assignments: Du har använt %{amountOfAssignments}
+              tilldelningskrediter
+          fill_in_blanks:
+            sentence_gap: Meningsklyftan
+          fill_in_table:
+            column_answer_placeholder: Svar
+            column_question_placeholder: Fråga
+            example: Exempel
+          true_false:
+            'false': Falsk
+            'true': Sann
+        learn:
+          translatable_text:
+            show_original: Visa original
+            translate_into: Översätt med Google till %{languageName}
+            translate_into_your_lang: Översätt med Google till ditt språk
+        play:
+          arrange_words:
+            start_screen:
+              heading: Gör en mening av de givna orden
+          audition:
+            start_screen:
+              heading: Lyssna på ljudet och tryck på ordet du just hört
+          dictation:
+            get_help: Få hjälp
+            i_do_not_know: Jag vet inte
+            input_placeholder: Ange vad du hörde här
+            start_screen:
+              heading: Lyssna och skriv vad du hör
+          fill_gap:
+            start_screen:
+              heading: Matcha ordet och dess betydelse
+          finish_screen:
+            go_to_next_exercise: Bra gjort! Gå till nästa övning
+          image_hotspot:
+            start_screen:
+              heading: Namnge objekten i bilden korrekt
+          image_object:
+            start_screen:
+              heading: Välj rätt objekt från nästa bild
+          inline_dropdown:
+            start_screen:
+              heading: Välj de ord som matchar meningen
+          mark_word:
+            start_screen:
+              heading: Läs texten och välj det ord som matchar bilden
+          minimal_pairs:
+            start_screen:
+              heading: Titta på videon och välj rätt alternativ
+    locale:
+      currency_switcher_title: Valutaväxlare
+      lang_switcher_title: Språkomkopplare
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: engelsk
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Ljudet laddas
+        aria_pause_button: Paus
+        aria_play_button: Spela
+        aria_reload_button: Ladda om
+        aria_stop_button: Sluta
+        reload_message: Det gick inte att ladda ljudet. Klicka på knappen för att
+          ladda om.
+    mobile_modal:
+      apply: Tillämpa
+      cancel: Annullera
+      clear: Klar
+      save: Spara
+    page404:
+      goToStartLessonPage: Gå till sidan för startlektioner
+      ooops: Oooops ...
+      sorry_message: Tyvärr kunde Tor inte hitta den här sidan
+    profile:
+      navigation:
+        log_out: Logga ut
+        my_profile: Min profil
+        settings: inställningar
+      onboarding:
+        choose_native_language: Välj ditt modersmål eller språk du förstår
+        do_you_understand_english: Förstår du engelska?
+        hello: Hallå
+        language_levels:
+          a1: Elementär nivå
+          a2: Förmedelsnivå
+          b1: Mellannivå
+          b2: Övre mellannivå
+          c1: Avancerad nivå
+          no_knowledge: Ingen kunskap
+        language_not_supported:
+          note: Vi meddelar dig så snart språket kommer att finnas tillgängligt
+          title: Tyvärr, men vi stöder inte det här språket än
+          try_another_language: Prova ett annat språk
+        'no': Nej
+        search_placeholder: Sök...
+        show_more_languages: Andra språk
+        target_language_question: Vilket språk vill du lära dig?
+        what_is_language_level: Hur skulle du betygsätta din %{languageName}-nivå?
+        'yes': Ja
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingus integritetspolicy
+        support: Stöd
+      logout: Logga ut
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Få uppdateringar från lärare och skolor du följer
+              sections:
+                app_notifications: App anmälningar
+                email: E-post
+              title: Inlärningshjälp
+            marketing:
+              description: >-
+                Håll dig informerad om alla erbjudanden, uppdateringar och inspiration
+                från Lingu
+              sections:
+                browser_notifications: Webbläsaraviseringar
+                email: E-post
+              title: Marknadsföring
+          title: Kontaktinställningar
+        personal_information:
+          delete_photo: Radera foto
+          email: E-post
+          first_name: Förnamn
+          last_name: Efternamn
+          social_accounts:
+            connected: Ansluten
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ej ansluten
+            title: Sociala konton
+          title: Personlig information
+          update_photo: Uppdatera foto
+        school:
+          active_licence: Aktiv licens
+          active_status: Aktiva
+          delete_profile: Ta bort min profil
+          delete_profile_modal:
+            body: |-
+              Du utplånar all din data - för alltid. Det finns ingen ångra-knapp och vi kan inte få tillbaka den efter dig.
+              Är du säker på att du vill ta bort din Lingu-profil och all din data permanent?
+            cancel: Annullera
+            confirm: Ja, ta bort det
+            i_understand_the_consequences: Jag förstår konsekvenserna
+            title: Ta bort din profil?
+          expired: Gick ut %{expire_date}
+          expires: Gäller ut %{expire_date}
+          inactive_status: Inaktiv
+          revoke_access: Återkalla läsbehörighet
+          sections:
+            contact_school: Kontakta skolan
+            export_my_data: Exportera mina uppgifter
+            read_school_privacy_policy: Läs Skolans integritetspolicy
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musikuppspelning
+              sound_effects: Ljudeffekter
+              title: Ljud
+            visual:
+              dark_theme: Mörkt tema
+              font_size:
+                test_text: Gräset är alltid grönare på andra sidan staketet
+                title: Textstorlek
+              high_contrast: Hög kontrast
+              hints: Tips
+              title: Visuell
+          title: Ljud & Visual
+        training_settings:
+          sections:
+            i_understand: jag förstår
+            i_want_to_learn: jag vill lära mig
+            target_language_level: engelskanivå
+          title: Träningsinställningar
+      settings_title: inställningar
+    teacher_card:
+      followers_count:
+        one: 1 följare
+        other: "%{count} följare"
+      lessons_count:
+        one: 1 lektion
+        other: "%{count} lektioner"

@@ -1,0 +1,28 @@
+.card.mb-3
+  - image_data = task.image || task.image_remote_link
+  - unless image_data.blank?
+    - if image_data.respond_to?('url')
+      .card-img-top= image_tag(task.image_url, class: 'img-fluid')
+    - else
+      .card-img-top= image_tag(JSON.parse(image_data)['original_url'])
+
+  .card-header.d-flex.justify-content-between
+    h5.card-title.mb-0.pb-0= task.name
+    = link_to teach_task_preview_path(task), class: 'btn btn-falcon-primary btn-sm', target: '_blank' do
+      i.fas.fa-eye.fa-fw.mr-1
+      = t(task.type.underscore, scope: 'tasks.types')
+  .card-body
+    .lesson-review-content.d-flex.flex-column
+      - if task.introduction.to_s.length > 73
+        = task.introduction.to_s.html_safe
+      - if task.audio
+        = audio_tag(task.audio_url, class: 'preview', controls: true, style: "margin: 20px 0;") if task.audio
+      - task.items.each_with_index do |item, index|
+        h5.font-weight-bold.mt-5= item.question
+        - item.options.each do |option|
+          - is_true = option.correct
+          .d-flex.align-items-center.w-100.p-3.mt-2.rounded-soft.bg-soft-secondary[class="#{is_true ? 'bg-soft-success border border-2x border-success' : ''}"]
+            .answer-check.d-flex.align-items-center.justify-content-center.bg-700.rounded-circle.text-white
+              .fas[class="#{is_true ? 'fa-check' : 'fa-times'}"]
+            .task-answer
+              = option.answer

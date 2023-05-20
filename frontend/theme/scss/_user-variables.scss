@@ -1,0 +1,206 @@
+//
+//
+// user-variables.scss
+//
+// Place your own variable overrides here, these will override any Bootstrap and theme variables.
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+    (
+      0: 0,
+      1: ($spacer * .25),
+      2: ($spacer * .5),
+      3: $spacer,
+      4: ($spacer * 1.5),
+      5: ($spacer * 3),
+      6: ($spacer * 4.5),
+      7: ($spacer * 6),
+      8: ($spacer * 10)
+    ),
+    $spacers
+);
+//*-----------------------------------------------
+//|   Color System
+//-----------------------------------------------*/
+$white: #fff !default;
+$gray-100: #f9fafd !default;
+$gray-200: #edf2f9 !default;
+$gray-300: #d8e2ef !default;
+$gray-400: #b6c1d2 !default;
+$gray-500: #9da9bb !default;
+$gray-600: #748194 !default;
+$gray-700: #5e6e82 !default;
+$gray-800: #4d5969 !default;
+$gray-900: #344050 !default;
+$gray-1000: #232e3c !default;
+$gray-1100: #0b1727 !default;
+$black: #000 !default;
+
+$grays: () !default;
+$grays: map_merge($grays, (
+        'black': $black,
+        '100': $gray-100,
+        '200': $gray-200,
+        '300': $gray-300,
+        '400': $gray-400,
+        '500': $gray-500,
+        '600': $gray-600,
+        '700': $gray-700,
+        '800': $gray-800,
+        '900': $gray-900,
+        '1000': $gray-1000,
+        '1100': $gray-1100,
+        'white': $white,
+));
+
+//*-----------------------------------------------
+//|   Solid Colors
+//-----------------------------------------------*/
+$blue: #00a5d7 !default;
+$indigo: #727cf5 !default;
+$purple: #6b5eae !default;
+$pink: #c82285 !default;
+$red: #e63757 !default;
+$orange: #fd7e14 !default;
+$yellow: #f5803e !default;
+$green: #39a935 !default;
+$teal: #02a8b5 !default;
+$cyan: #009ee2 !default;
+
+$border-radius:               .625rem !default;
+$border-radius-lg:            .8rem !default;
+$border-radius-sm:            .5rem !default;
+
+// to use it in styled components use theme.linguBlue100 name for $lingu-blue-100
+$lingu-blue-100: #b2eaf9 !default;
+$lingu-blue-200: #99e3f7 !default;
+$lingu-blue-300: #80ddf6 !default;
+$lingu-blue-400: #66d6f3 !default;
+$lingu-blue-500: #4dcef2 !default;
+$lingu-blue-600: #33c7f0 !default;
+$lingu-blue-700: #00a5d7 !default;
+$lingu-blue-800: #0094c5 !default;
+$lingu-blue-900: #0082b2 !default;
+$lingu-blue-1000: #00759f !default; // primary button
+$lingu-blue-1200: #00688e !default;
+$lingu-blue-1300: #00597c !default;
+$lingu-blue-1400: #00466f !default;
+
+// $lingu-blue-orig: #00bce8 !default;
+
+$lingu-black-20: #d1d2d4;
+$lingu-black-60: #818285;
+$lingu-black-80: #58585a;
+$lingu-black: #000;
+
+$lingu-blue-btn-bg-disabled: $lingu-black-20;
+$lingu-blue-btn-color-disabled: $lingu-black-80;
+$lingu-blue-btn-focus-bg: $lingu-blue-800;
+$lingu-blue-btn-focus-outline-color: $lingu-blue-800;
+
+$lingu-red-100: #ee5148;
+$lingu-dark-red: #e60000;
+$lingu-green: #6fa33e;
+$lingu-light-pink: #f08eaf;
+$lingu-light-blue: $lingu-blue-500;
+$lingu-grey: #a7aab6;
+$lingu-yellow: #d7df21;
+
+$lingu-primary-submit-btn-bg: (
+  default: $blue,
+  hover: $lingu-blue-1200,
+  focus: $lingu-blue-1200,
+  pressed: $lingu-blue-1400,
+  disabled: #E6E6F0
+);
+
+$lingu-secondary-btn-bg: (
+  default: #e6e6f0,
+  hover: #d3d3e1,
+  focus: #d3d3e1,
+  pressed: $gray-500,
+  disabled: #E6E6F0
+);
+
+$lingu-light-btn-bg: (
+  default: #ffffff,
+  hover: #d3d3e1,
+  focus: #d3d3e1,
+  pressed: $gray-200,
+  disabled: #E6E6F0
+);
+
+$lingu-transparent-btn-bg: (
+  default: #2d2d3a32,
+  hover: #2d2d3a88,
+  focus: #2d2d3a88,
+  pressed: #2d2d3acc,
+  disabled: #2d2d3a32
+);
+
+$lingu-yellow-btn-bg: (
+  default: $lingu-yellow,
+  hover: #bed62f,
+  focus: #d7df21,
+  active: #bed62f,
+  pressed: #bed62f
+);
+
+$lingu-light-font: #fbfcff;
+$lingu-dark-font: $gray-1100;
+
+$lingu-page-bg-purple: linear-gradient(180deg, #9c6eb3 0%, #af71cc 31.81%, #4f398e 100%), #FFFFFF;
+$lingu-page-bg-light: linear-gradient(0deg, #f3f3f8, #f3f3f8), linear-gradient(180deg, #9c6eb3 0%, #af71cc 31.81%, #4f398e 100%), #ffffff;
+$lingu-page-bg-light-blue: linear-gradient(180deg, #58bbd8 19.79%, #1086b0 100%);
+
+$lingu-lesson-background-gradient: $lingu-page-bg-purple;
+$lingu-lesson-background: #8371ce;
+$lingu-lesson-color: $lingu-light-font;
+$lingu-lesson-yellow: $lingu-yellow;
+$lingu-lesson-button-color: #00466f;
+$lingu-lesson-start-button-background: $lingu-yellow-btn-bg;
+$lingu-lesson-restart-button-background: $lingu-yellow-btn-bg;
+
+// [TODO] Replace this variable everywhere with the one bellow.
+$lingu-font-family: 'Encode Sans', 'Product Sans', 'Helvetica', Arial, sans-serif;
+
+$lingu-heading-font-family: 'Encode Sans', 'Product Sans', 'Helvetica', Arial, sans-serif;
+$lingu-text-font-family: 'Inter', 'Product Sans', 'Helvetica', Arial, sans-serif;
+
+$lingu-bpt-xs: 320px;
+$lingu-bpt-sm: 576px;
+$lingu-bpt-md: 768px;
+$lingu-bpt-lg: 992px;
+$lingu-bpt-xl: 1200px;
+
+$lingu-br-pts: (
+  xs: 320,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200
+) !default;
+//*-----------------------------------------------
+//|   Theme Colors
+//-----------------------------------------------*/
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-1100 !default;
+
+$theme-colors: () !default;
+$theme-colors: map_merge($theme-colors, (
+        'primary': $primary,
+        'secondary': $secondary,
+        'success': $success,
+        'info': $info,
+        'warning': $warning,
+        'danger': $danger,
+        'light': $light,
+        'dark': $dark,
+));

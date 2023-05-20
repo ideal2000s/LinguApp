@@ -1,0 +1,608 @@
+---
+tt:
+  course_mailer:
+    course_assigned_notification:
+      button: Курсны башлау
+      click_start_lesson: "'Дәресне башлау' басыгыз"
+      follow_course_link: Курсны ачу өчен төймәгә басыгыз
+      footer_text: Лингуга көн саен яңа нәрсә белергә кайтыгыз!
+      get_started_line: 'Менә сез ничек башлыйсыз:'
+      notification_link: Хәбәрләр көйләүләре
+      open_lesson: Беренче дәресне ач
+      or_paste_this_link: яки бу сылтаманы браузерыгызда урнаштырыгыз
+      sign_in_with_email: Электрон почта адресыгыз белән керегез (%{email})
+      support_link: Ярдәм
+      title: "%{course} белән башлау"
+    new_document_comment:
+      author_text: "%{author} сезнең биремгә күзәтү калдырды"
+      button_text: Тикшерергә аны
+      button_url_helper: 'яки бу сылтаманы браузерга ябыштырыгыз:'
+      footer_text: Өйрәнергә күп нәрсә бар ...
+      notification_link: Хәбәрләр көйләүләре
+      subject_line: Яңа бирем аңлатмасы
+      support_link: Ярдәм
+    otp:
+      ignore_msg: Әгәр сез бу үтенечне ясамасагыз, электрон почтаны санга сукмагыз.
+      subject_line: Лингу өчен сезнең уникаль код
+      unique_code_for_lingu: Менә Лингу өчен уникаль код
+  frontend:
+    auth:
+      already_have_acc_question: Сезнең хисап бармы?
+      back: Кире
+      back_to_sign_in: Керү
+      check_your_email_for_a_code: Код өчен электрон почтагызны тикшерегез
+      continue: Дәвам итегез
+      continue_with_email: Электрон почта белән дәвам итегез
+      continue_with_provider: "%{provider} белән дәвам итегез"
+      did_not_receive_a_code: Код алмадыгызмы?
+      email_address: Мэйл адресы
+      first_name: Исем
+      get_unique_code: Уникаль логин коды алыгыз
+      join_lingu: Лингуга кушылыгыз
+      last_name: Фамилия
+      more_login_options: Күбрәк керү вариантлары
+      no_account_question: Хисап язмагыз юк?
+      or: яки
+      resend_code: Код җибәрү
+      sign_in: Керегез
+      sign_up: Теркәлергә
+      want_to_receive_marketing_messages: Мин Лингудан маркетинг хәбәрләрен алырга
+        телим
+      we_ve_sent_a_code: >-
+        Без 6 санлы код җибәрдек <strong> {{электрон почта}} </strong>. Код 15 минутта
+        бетә, зинһар, тиздән кертегез.
+    cookie_agreement:
+      agree: Килешегез
+      condition: >-
+        Без cookie'ны сайт эшчәнлеген анализлау һәм шәхси эчтәлек бирү өчен кулланабыз.
+        "Килешү" төймәсенә басып, сез безнең шартларга ризасыз.
+    course:
+      accredited_course_provider: Аккредитацияләнгән курс провайдеры
+      apply: Кулланыгыз
+      apply_filters: Фильтрлар кулланыгыз
+      by: Byәр сүзнең
+      cancel: Баш тарту
+      categories: "%{count} категорияләре"
+      category: Төркем
+      clear: Чиста
+      clear_filters: Фильтрларны чистарту
+      contact_us: Безнең белән элемтәгә чыгу
+      could_not_find_match_for: Гафу итегез, без бернинди матч таба алмадык
+      course_language: Курс теле
+      duration: Озынлыгы
+      filter_settings:
+        categories:
+          academic: Академик
+          business: Бизнес
+          fashion: Мода
+          food_drink: Ашамлык һәм эчемлек
+          for_kids: Балалар өчен
+          general: Генерал
+          health: Сәламәтлек
+          legal: Legalридик
+          sport: Спорт
+          travel: Сәяхәт
+        durations:
+          t0_600: "<10 минут"
+          t1800_3600: 30-60 минут
+          t3600_86400: 1+ сәгать
+          t600_1800: 10-30 минут
+        focus_on:
+          conversation: Сөйләшү
+          grammar: Грамматика
+          listening: Тыңлау
+          pronunciation: ".Әр сүзнең"
+          reading: Уку
+          speaking: Сөйләшү
+          writing: Язу
+        levels:
+          long:
+            advanced: Алга киткән дәрәҗә
+            elementary: Башлангыч дәрәҗә
+            intermediate: Урта дәрәҗә
+            no_knowledge: Белем юк
+            pre_intermediate: Алдан урта дәрәҗә
+            upper_intermediate: Upperгары урта дәрәҗә
+          short:
+            advanced: Алга киткән
+            beginner: Башлангыч
+            intermediate: Ара
+        sort_by:
+          most_rated: Иң күп бәяләнгән
+          newest: Иң яңасы
+          popularity: Популярлык
+      filters: Фильтрлар
+      focus_on: Игътибарны юнәлдерү
+      focus_on_title: Минем игътибар итәсе килә
+      hide_lessons: Дәресләрне яшерегез
+      hours: Сәгать
+      i_understand: мин аңлыйм
+      i_want_to_learn: Минем өйрәнәсем килә
+      in_language: "%{language}"
+      language: Тел
+      learn_more: Тулырак
+      less_settings: Азрак көйләүләр
+      lessons: Дәресләр
+      lessons_available: "%{number} дәресләре бар"
+      lessons_catalog_page_subtitle: Тел герое бул.
+      lessons_catalog_page_title: Тел курсы белән офыкларыгызны киңәйтегез
+      level: Дәрәҗә
+      min: Мин
+      more_settings: Күбрәк көйләүләр
+      navbar:
+        close: Ябык меню
+        menu: Меню
+        select_language: Телне сайлагыз
+      need_to_buy_course: Башта курсны броньларга кирәк
+      no_description: Тасвирлама юк
+      no_results: Гафу итегез, без бернинди матч таба алмадык
+      or: яки
+      per_month: ай саен
+      plans: Планнар
+      privacy_policy: Шәхсилек сәясәте
+      rating: Рейтинг
+      remove_all_filters: Барлык фильтрларны бетерегез
+      reviews: Карап чыгу
+      save: Саклагыз
+      search: Эзләү
+      select_dots: Сайлагыз ...
+      select_languages: Лангагларны сайлагыз
+      select_num_languages: "%{number} телләрен сайлагыз"
+      short_levels:
+        a1: А1
+        a2: А2
+        b1: В1
+        b2: В2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Барысын да күрсәт
+      show_all_lessons: Барлык дәресләрне күрсәт
+      show_lessons: "%{number} дәресләрен күрсәтегез"
+      show_more: Күбрәк күрсәтегез
+      sign_up_with_lingu_for: Лингв Норвегия белән язылу
+      skills: "%{count} осталыгы"
+      sort_by: Карата төрлә
+      start_typing_here: Монда яза башлагыз
+      teach: Укыт
+      terms_and_conditions: Шартлар һәм килешүләр
+      time_range: Вакыт диапазоны
+      try_adjusting_your_search: Фильтрларыгызны үзгәртеп эзләвегезне көйләргә тырышыгыз
+      try_this_course: Бу курсны карагыз
+      website_language: Вебсайт теле
+      words: Сүзләр
+    games:
+      finished:
+        go_to_next_exercise: Афәрин! Киләсе күнегүгә бар
+      flashcard:
+        buttons:
+          finish: Тәмам
+          next: Алга
+          previous: Алдагы
+        check_out_new_words: Бу дәрестә сез өйрәнәчәк яңа сүзләрне карагыз
+        frequency_of_word_usage: "%{language}да сүз куллану ешлыгы"
+        keep_practice_to_learn_all_words: "%{count} сүзләрен карагыз һәм әйдәгез берничә
+          уен уйныйк!"
+        word_frequency:
+          level1: Сирәк кулланыла
+          level2: Сирәк кулланыла
+          level3: Сүз ешлыгы - урта
+          level4: Сүз ешлыгы - урта
+          level5: Гомуми
+          level6: Бик еш очрый
+      match_word:
+        click_and_move_each_word_to_counterpart: Wordәр сүзгә басыгыз һәм күчерегез
+        start_heading: Пар ясау өчен сүзләрне туры китерегез
+        time_is_up: Вакыт бетте!
+      skip_tutorial: Сикереп тор
+      time_is_up: Вакыт бетте!
+      word_nodes:
+        match_letters_to_form_word: Сүз ясау өчен хәрефләрне туры китерегез
+      word_waterfall:
+        do_not_hesitate: Тизләник!
+        go_to_next_exercise: Киләсе күнегүгә бар
+        select_correct_translation: Дөрес матчны сайлагыз
+        well_done: Афәрин!
+    home_page:
+      hello: Сәлам,
+      popular_lessons: Популяр дәресләр
+      show_more: Күбрәк күрсәтегез
+      time: "%{count} мин"
+      today_lesson: Бүгенге дәрес
+      user_name: "%{name}!"
+      words: "%{count} сүзләр"
+    idle_screen:
+      by_author: "%{authorName} белән"
+      continue_lesson: Дәресне дәвам итегез
+      exit: Чыгу
+      idle_message: Сез берникадәр вакыт эшсез калдыгыз ...
+    lesson_page:
+      back_to_course_page: Курс битенә кире кайту
+      close: Ябу
+      continue_lesson: Дәресне дәвам итегез
+      followed: Иярчен
+      hamburger_menu_btn: Гамбургер менюсы
+      lesson_given: дәресләр
+      not_started: башланмады
+      or: Яисә
+      part_complete: "%{percent}% тулы"
+      restart_lesson: Киредән кабызу
+      section_check: Тикшерегез
+      section_check_info: "%{count} тестлары"
+      section_learn: Өйрән
+      section_learn_info: "%{count} мин карау һәм уку өчен"
+      section_play: Уйна
+      section_play_info: "%{count} сүзләр"
+      start_lesson: Дәрес башлау
+      step_progress: "%{percent}%"
+      subscribe: Ияртегез
+      subscribed: Иярчен
+      subscribers: иярүчеләр
+      time_min: "%{minutesNumber} мин"
+      unsubscribe: Игътибар итмә
+      webview_error_title: Нәрсәдер дөрес булмаган ...
+      words_number: "%{wordsNumber} яңа сүзләр"
+    lesson_task:
+      cancel_button: Баш тарту
+      check:
+        navigation_next: Алга
+        navigation_previous: Алдагы
+        navigation_skip: Сикереп тор
+      controls_panel:
+        font_size_button: Хәреф зурлыгы
+        high_contrast_button:
+          origin: Contrastгары контраст
+          short: Контраст
+        hints_button: Киңәшләр
+        music_playback_button:
+          origin: Музыка уйнау
+          short: Музыка
+        sound_effects_button:
+          origin: Тавыш эффектлары
+          short: Тавыш
+      exit_button: Чыгу
+      finish_button: Тәмам
+      finished:
+        back_to_learn: Өйрәнергә
+        back_to_lesson_page: Дәрес битенә кире кайту
+        back_to_results_page: Нәтиҗә битенә кире кайту
+        bad_result_message: Хм ... дәресне тагын бер тапкыр алырга тырыш
+        close_lesson: Якын дәрес
+        correct_answers_list: Дөрес җаваплар исемлеге
+        good_result_message: Сезнең тырышлыгыгызны күрәм!
+        great_result_message: Афәрин! Бу бик яхшы нәтиҗәләр!
+        next_course_lesson: Киләсе дәрескә бар
+        no_results: Сездә әле тест нәтиҗәләре юк
+        no_results_text: Зинһар, дәресне тәмамлагыз һәм нәтиҗәләргә ирешү өчен тест
+          бирегез
+        see_correct_answers_list: Дөрес җаваплар исемлеген карагыз
+        train_more: Күбрәк эшләгез, сез киләсе тапкыр яхшырак нәтиҗәләргә ирешерсез!
+        you_finished_lesson: Бик яхшы! Сез дәресне тәмамладыгыз
+      go_back: Кире кайту
+      next_button: Алга
+      not_available_task: Бу бирем әлегә мөмкин түгел
+      start_button: Башлау
+      tasks:
+        check:
+          assignment:
+            accept: Кабул ит
+            author_will_check_your_answer: "%{author} сезнең җавапны караячак һәм
+              1-2 көн эчендә кире кайтачак"
+            continue_writing: Язуны дәвам итегез
+            copy: Күчермә
+            delete: Бетерү
+            delete_record: Язманы бетерү
+            edit: Редакцияләү
+            essay_does_not_have_enough_words: >-
+              Сезнең җавапта ким дигәндә %{minWordsNumber} сүз булырга тиеш. Сезнең
+              җавап хәзерге вакытта %{currentWordsNumber} сүз.
+            followers_count: "%{followersCount} иярүчеләр"
+            lessons_count: "%{lessonsCount} дәресләре"
+            minimal_recording_time: Минималь язу вакыты - %{minimalRecordingTime}
+            minimum_characters_amount: Минималь символлар - %{minimumCharactersAmount}
+            minimum_words_amount: Минималь сүзләр - %{minimumAmount}
+            record_again: Тагын языгыз
+            record_voice: Тавыш яздыр
+            send_anyway: Барыбер җибәр
+            send_to_review: Кабатлау өчен җибәрегез
+            skip: Сикереп тор
+            too_short_answer: Бик кыска җавап
+            type_your_answer: ".Авабыгызны языгыз"
+            unknown_task_type: Билгесез эш төре
+            upgrade_licence: Лицензияне яңарту
+            upgrade_your_plan: Укытучылар рецензияләре белән биремнәрне сынап карау
+              өчен планыгызны яңартыгыз
+            upload_files: Файлларны йөкләү
+            write_essay: Сочинение языгыз
+            you_have_used_amount_of_assignments: Сез %{amountOfAssignments} бирем
+              кредитларын кулландыгыз
+          fill_in_blanks:
+            sentence_gap: Enceөмлә аермасы
+          fill_in_table:
+            column_answer_placeholder: ".Авап"
+            column_question_placeholder: Сорау
+            example: Мисал
+          true_false:
+            'false': Ялган
+            'true': Дөрес
+        learn:
+          translatable_text:
+            show_original: Оригиналь күрсәт
+            translate_into: Google белән %{languageName} тәрҗемә итегез
+            translate_into_your_lang: Google белән үз телегезгә тәрҗемә итегез
+        play:
+          arrange_words:
+            start_screen:
+              heading: Бирелгән сүзләрдән җөмлә төзегез
+          audition:
+            start_screen:
+              heading: Аудионы тыңлагыз һәм сез ишеткән сүзгә басыгыз
+          dictation:
+            get_help: Ярдәм алу
+            i_do_not_know: Белмим
+            input_placeholder: Монда ишеткәннәрегезне кертегез
+            start_screen:
+              heading: Тыңла һәм ишеткәнне яз
+          fill_gap:
+            start_screen:
+              heading: Сүз һәм аның мәгънәсенә туры кил
+          finish_screen:
+            go_to_next_exercise: Афәрин! Киләсе күнегүгә бар
+          image_hotspot:
+            start_screen:
+              heading: Рәсемдәге әйберләрне дөрес әйтегез
+          image_object:
+            start_screen:
+              heading: Киләсе рәсемнән дөрес объектны сайлагыз
+          inline_dropdown:
+            start_screen:
+              heading: Theөмләгә туры килгән сүзләрне сайлагыз
+          mark_word:
+            start_screen:
+              heading: Текстны укыгыз һәм рәсемгә туры килгән сүзне сайлагыз
+          minimal_pairs:
+            start_screen:
+              heading: Видеоны карагыз һәм дөрес вариантны сайлагыз
+    locale:
+      currency_switcher_title: Валюта алмаштыручы
+      lang_switcher_title: Тел алмаштыручы
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Дойч
+        el: Greek
+        en: Инглиз
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Француз
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Италия
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Норск
+        ne: Nepali
+        nl: Недерланд
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Полски
+        ps: Pashto
+        pt: Португалия
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Төркче
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Аудио йөкләнә
+        aria_pause_button: Пауза
+        aria_play_button: Уйна
+        aria_reload_button: Йөкләү
+        aria_stop_button: Тукта
+        reload_message: Аудио йөкләнә алмады. Зинһар, йөкләү өчен төймәгә басыгыз.
+    mobile_modal:
+      apply: Кулланыгыз
+      cancel: Баш тарту
+      clear: Чиста
+      save: Саклагыз
+    page404:
+      goToStartLessonPage: Башлангыч дәрес битенә керегез
+      ooops: Оооопс ...
+      sorry_message: Гафу итегез, Тор бу битне таба алмады
+    profile:
+      navigation:
+        log_out: Чыгарга
+        my_profile: Минем профиль
+        settings: Көйләүләр
+      onboarding:
+        choose_native_language: Сез аңлаган туган телне яки телне сайлагыз
+        do_you_understand_english: Сез инглизчә аңлыйсызмы?
+        hello: Сәлам
+        language_levels:
+          a1: Башлангыч дәрәҗә
+          a2: Урта дәрәҗә
+          b1: Урта дәрәҗә
+          b2: Upperгары Урта дәрәҗә
+          c1: Алга киткән дәрәҗә
+          no_knowledge: Белем юк
+        language_not_supported:
+          note: Тел булганнан соң без сезгә хәбәр итәрбез
+          title: Гафу итегез, ләкин без әлегә бу телне хупламыйбыз
+          try_another_language: Башка телне карагыз
+        'no': ".К"
+        search_placeholder: Эзләү ...
+        show_more_languages: Башка телләр
+        target_language_question: Сез нинди телне өйрәнергә телисез?
+        what_is_language_level: Сезнең %{languageName} дәрәҗәсенә ничек бәя бирер
+          идегез?
+        'yes': Әйе
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Лингуның хосусыйлык политикасы
+        support: Ярдәм
+      logout: Чыгарга
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Сез ияргән укытучылардан һәм мәктәпләрдән яңартулар алыгыз
+              sections:
+                app_notifications: Кушымта хәбәрләре
+                email: Электрон почта
+              title: Өйрәнү ярдәме
+            marketing:
+              description: Лингудан барлык акцияләр, яңартулар, илһам турында хәбәрдар
+                булыгыз
+              sections:
+                browser_notifications: Браузер хәбәрләре
+                email: Электрон почта
+              title: Маркетинг
+          title: Контакт өстенлекләре
+        personal_information:
+          delete_photo: Фотоны бетерегез
+          email: Электрон почта
+          first_name: Исем
+          last_name: Фамилия
+          social_accounts:
+            connected: Бәйләнгән
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Бәйләнмәгән
+            title: Социаль хисаплар
+          title: Шәхси мәгълүмат
+          update_photo: Фотоны яңарту
+        school:
+          active_licence: Актив лицензия
+          active_status: Актив
+          delete_profile: Минем профильне бетерегез
+          delete_profile_modal:
+            body: |-
+              Сез бөтен мәгълүматыгызны мәңгегә юк итәсез. Кире кайтару төймәсе юк, һәм без аны соңыннан кире кайтара алмыйбыз.
+              Сез Лингу профилегезне һәм барлык мәгълүматларыгызны мәңгегә бетерергә телисезме?
+            cancel: Баш тарту
+            confirm: Әйе, бетерегез
+            i_understand_the_consequences: Мин моның нәтиҗәләрен аңлыйм
+            title: Профилеңне бетер?
+          expired: "%{expire_date} вакыты"
+          expires: "%{expire_date} вакыты бетә"
+          inactive_status: Актив түгел
+          revoke_access: Уку мөмкинлеген кире кагу
+          sections:
+            contact_school: Мәктәп белән элемтәгә керергә
+            export_my_data: Минем мәгълүматны экспортлагыз
+            read_school_privacy_policy: Мәктәпнең хосусыйлык политикасын укыгыз
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Музыка уйнау
+              sound_effects: Тавыш эффектлары
+              title: Тавыш
+            visual:
+              dark_theme: Кара тема
+              font_size:
+                test_text: Theлән һәрвакыт койманың икенче ягында яшелрәк
+                title: Хәреф зурлыгы
+              high_contrast: Contrastгары контраст
+              hints: Киңәшләр
+              title: Визуаль
+          title: Тавыш һәм визуаль
+        training_settings:
+          sections:
+            i_understand: мин аңлыйм
+            i_want_to_learn: Минем өйрәнәсем килә
+            target_language_level: Инглиз теле
+          title: Укыту көйләүләре
+      settings_title: Көйләүләр
+    teacher_card:
+      followers_count:
+        one: 1 ияртүче
+        other: "%{count} иярүчеләр"
+      lessons_count:
+        one: 1 дәрес
+        other: "%{count} дәресләре"

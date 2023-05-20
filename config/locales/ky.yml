@@ -1,0 +1,612 @@
+---
+ky:
+  course_mailer:
+    course_assigned_notification:
+      button: Албетте, баштаңыз
+      click_start_lesson: '"Сабакты баштоо" баскычын чыкылдатыңыз'
+      follow_course_link: Курсту ачуу үчүн баскычты чыкылдатыңыз
+      footer_text: Күн сайын жаңы нерселерди билүү үчүн Лингвиге кайтып келиңиз!
+      get_started_line: 'Баштоо жолуңуз:'
+      notification_link: Эскертме орнотуулары
+      open_lesson: Биринчи сабакты ачуу
+      or_paste_this_link: же бул шилтемени браузериңизге чаптаңыз
+      sign_in_with_email: Электрондук почта дарегиңиз менен кириңиз (%{email})
+      support_link: Колдоо
+      title: "%{course} менен баштоо"
+    new_document_comment:
+      author_text: "%{author} сиздин тапшырмаңызды карап чыгып кетти"
+      button_text: Муну карап көр
+      button_url_helper: 'же бул шилтемени браузериңизге чаптаңыз:'
+      footer_text: Үйрөнө турган дагы көп нерселер бар ...
+      notification_link: Эскертме орнотуулары
+      subject_line: Жаңы тапшырма боюнча комментарий
+      support_link: Колдоо
+    otp:
+      ignore_msg: >-
+        Эгер сиз бул өтүнүчтү жасай элек болсоңуз, анда электрондук почтага көңүл
+        бурбай эле коюңуз.
+      subject_line: Lingu үчүн уникалдуу кодуңуз
+      unique_code_for_lingu: Бул жерде сиздин Лингвинг үчүн уникалдуу кодуңуз бар
+  frontend:
+    auth:
+      already_have_acc_question: Эсебиңиз барбы?
+      back: Артка
+      back_to_sign_in: Кирүү үчүн кайтуу
+      check_your_email_for_a_code: Кодуңузду электрондук почтаңыздан текшериңиз
+      continue: Улантуу
+      continue_with_email: Электрондук почта билдирүүсүн улантыңыз
+      continue_with_provider: "%{provider} менен улантыңыз"
+      did_not_receive_a_code: Код алган жоксузбу?
+      email_address: Электрондук почта дареги
+      first_name: Биринчи аты
+      get_unique_code: Уникалдуу кирүү кодун алыңыз
+      join_lingu: Lingu кошулуу
+      last_name: Акыркы Аты
+      more_login_options: Кирүү мүмкүнчүлүктөрү
+      no_account_question: Эсебиңиз жокпу?
+      or: же
+      resend_code: Кодду жөнөтүү
+      sign_in: Кирүү
+      sign_up: Кирүү
+      want_to_receive_marketing_messages: Мен Лингингден маркетингдик билдирүүлөрдү
+        алгым келет
+      we_ve_sent_a_code: >-
+        <strong> {{email}} </strong> дарегине 6 орундуу кодду жөнөттүк. Коддун мөөнөтү
+        15 мүнөттө бүтөт, андыктан аны жакын арада киргизиңиз.
+    cookie_agreement:
+      agree: Макул
+      condition: >-
+        Биз кукилерди сайттын ишин анализдөө жана жекелештирилген мазмунду жеткирүү
+        үчүн колдонобуз. "Макул" баскычын чыкылдатуу менен, сиз биздин шарттарга макулдугуңузду
+        билдиресиз.
+    course:
+      accredited_course_provider: Аккредитацияланган курстун провайдери
+      apply: Колдонуу
+      apply_filters: Чыпкаларды колдонуу
+      by: By
+      cancel: Жокко чыгаруу
+      categories: "%{count} категориялары"
+      category: Категория
+      clear: Таза
+      clear_filters: Чыпкаларды тазалоо
+      contact_us: Биз менен байланыш
+      could_not_find_match_for: Кечиресиз, эч нерсе таба алган жокпуз
+      course_language: Курстун тили
+      duration: Узактыгы
+      filter_settings:
+        categories:
+          academic: Академиялык
+          business: Бизнес
+          fashion: Fashion
+          food_drink: Тамак суусундук
+          for_kids: Балдар үчүн
+          general: Жалпы
+          health: Ден-соолук
+          legal: Юридикалык
+          sport: Спорт
+          travel: Саякат
+        durations:
+          t0_600: "<10 мүнөт"
+          t1800_3600: 30-60 мүнөт
+          t3600_86400: 1+ саат
+          t600_1800: 10-30 мүнөт
+        focus_on:
+          conversation: Баарлашуу
+          grammar: Грамматика
+          listening: Угуу
+          pronunciation: Pronunciation
+          reading: Окуу
+          speaking: Сүйлөө
+          writing: Жазуу
+        levels:
+          long:
+            advanced: Өркүндөтүлгөн деңгээл
+            elementary: Башталгыч деңгээл
+            intermediate: Орто деңгээл
+            no_knowledge: Билим жок
+            pre_intermediate: Ортоңку деңгээл
+            upper_intermediate: Жогорку ортоңку деңгээл
+          short:
+            advanced: Өркүндөтүлгөн
+            beginner: Beginner
+            intermediate: Ортоңку
+        sort_by:
+          most_rated: Эң көп бааланган
+          newest: Эң жаңы
+          popularity: Популярдуулук
+      filters: Чыпкалар
+      focus_on: Көңүл буруңуз
+      focus_on_title: Мен көңүл бургум келет
+      hide_lessons: Сабактарды жашыруу
+      hours: Сааттар
+      i_understand: түшүндүм
+      i_want_to_learn: Мен үйрөнгүм келет
+      in_language: in %{language}
+      language: Тил
+      learn_more: Көбүрөөк билүү
+      less_settings: Аз орнотуулар
+      lessons: Сабактар
+      lessons_available: "%{number} сабактары бар"
+      lessons_catalog_page_subtitle: Тил баатыры бол.
+      lessons_catalog_page_title: Тил курсу менен горизонтуңузду кеңейтиңиз
+      level: Даража
+      min: Мин
+      more_settings: Көбүрөөк орнотуулар
+      navbar:
+        close: Менюну жабуу
+        menu: Меню
+        select_language: Тил тандаңыз
+      need_to_buy_course: Алгач курсту брондоо керек
+      no_description: Эч кандай сүрөттөмө берилген эмес
+      no_results: Кечиресиз, эч нерсе таба алган жокпуз
+      or: же
+      per_month: айына
+      plans: Пландар
+      privacy_policy: Купуялык саясаты
+      rating: Рейтинг
+      remove_all_filters: Бардык чыпкаларды алып салыңыз
+      reviews: Сын-пикирлер
+      save: Сактоо
+      search: Издөө
+      select_dots: Тандоо ...
+      select_languages: Тилдерди тандаңыз
+      select_num_languages: "%{number} тилин тандаңыз"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Бардыгын көрсөтүү
+      show_all_lessons: Бардык сабактарды көрсөтүү
+      show_lessons: "%{number} сабактарын көрсөтүү"
+      show_more: Көбүрөөк көрсөтүү
+      sign_up_with_lingu_for: Lingu Норвегия менен катталыңыз
+      skills: "%{count} көндүмдөр"
+      sort_by: Иреттөө
+      start_typing_here: Бул жерден жаза баштаңыз
+      teach: Окут
+      terms_and_conditions: Шарттар
+      time_range: Убакыт диапазону
+      try_adjusting_your_search: Чыпкаларыңызды өзгөртүп, издөөңүздү тууралап көрүңүз
+      try_this_course: Бул курсту байкап көрүңүз
+      website_language: Вебсайттын тили
+      words: Сөздөр
+    games:
+      finished:
+        go_to_next_exercise: Мыкты жасалды! Кийинки көнүгүүгө барыңыз
+      flashcard:
+        buttons:
+          finish: Аяктоо
+          next: Кийинки
+          previous: Мурунку
+        check_out_new_words: Бул сабактан үйрөнө турган жаңы сөздөрдү карап чыгыңыз
+        frequency_of_word_usage: "%{language} сөздөрдү колдонуу жыштыгы"
+        keep_practice_to_learn_all_words: "%{count} сөздөрүн карап чыгып, бир нече
+          оюн ойнойлу!"
+        word_frequency:
+          level1: Сейрек колдонулат
+          level2: Сейрек колдонулат
+          level3: Сөздүн жыштыгы - орто
+          level4: Сөздүн жыштыгы - орто
+          level5: Жалпы
+          level6: Абдан кеңири тараган
+      match_word:
+        click_and_move_each_word_to_counterpart: Чыкылдатып, ар бир сөздү теңтушуна
+          жылдырыңыз
+        start_heading: Жуп жасоо үчүн сөздөрдү дал келтирүү
+        time_is_up: Убакыт бүттү!
+      skip_tutorial: Өткөрүп жибер
+      time_is_up: Убакыт бүттү!
+      word_nodes:
+        match_letters_to_form_word: Сөз түзүү үчүн тамгаларды дал келтирүү
+      word_waterfall:
+        do_not_hesitate: Тездетели!
+        go_to_next_exercise: Кийинки көнүгүүгө барыңыз
+        select_correct_translation: Туура шайкештикти тандаңыз
+        well_done: Мыкты жасалды!
+    home_page:
+      hello: Салам,
+      popular_lessons: Популярдуу сабактар
+      show_more: Көбүрөөк көрсөтүү
+      time: "%{count} мүн"
+      today_lesson: Бүгүнкү сабак
+      user_name: "%{name}!"
+      words: "%{count} сөздөр"
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Сабакты улантуу
+      exit: Чыгуу
+      idle_message: Бир нече убакыттан бери бош жүрөсүз ...
+    lesson_page:
+      back_to_course_page: Албетте, баракка
+      close: Жабуу
+      continue_lesson: Сабакты улантуу
+      followed: Followed
+      hamburger_menu_btn: Гамбургер менюсу
+      lesson_given: сабактар
+      not_started: башталган жок
+      or: Же
+      part_complete: "%{percent}% аяктады"
+      restart_lesson: Кайра жүргүзүү
+      section_check: Текшерүү
+      section_check_info: "%{count} тесттери"
+      section_learn: Үйрөн
+      section_learn_info: "%{count} мүнөт көрүү жана окуу"
+      section_play: Play
+      section_play_info: "%{count} сөздөрдү машыгуу"
+      start_lesson: Сабакты баштоо
+      step_progress: "%{percent}%"
+      subscribe: Follow
+      subscribed: Followed
+      subscribers: жолдоочулары
+      time_min: "%{minutesNumber} мүн"
+      unsubscribe: Жазылууну токтотуу
+      webview_error_title: Бир жерден ката кетти ...
+      words_number: "%{wordsNumber} жаңы сөздөр"
+    lesson_task:
+      cancel_button: Жокко чыгаруу
+      check:
+        navigation_next: Кийинки
+        navigation_previous: Мурунку
+        navigation_skip: Өткөрүп жибер
+      controls_panel:
+        font_size_button: Ариптин чоңдугу
+        high_contrast_button:
+          origin: Жогорку контраст
+          short: Контраст
+        hints_button: Ишара
+        music_playback_button:
+          origin: Музыканы ойнотуу
+          short: Музыка
+        sound_effects_button:
+          origin: Үн эффекттери
+          short: Үн
+      exit_button: Чыгуу
+      finish_button: Аяктоо
+      finished:
+        back_to_learn: Артка үйрөнүү
+        back_to_lesson_page: Сабак барагына кайтуу
+        back_to_results_page: Натыйжа барагында
+        bad_result_message: Хм ... сабакты дагы бир жолу алганга аракет кыл
+        close_lesson: Сабакты жабуу
+        correct_answers_list: Туура жооптор тизмеси
+        good_result_message: Сенин аракет кылганыңды байкадым!
+        great_result_message: Мыкты жасалды! Бул сонун натыйжалар!
+        next_course_lesson: Албетте, кийинки сабакка өтүңүз
+        no_results: Азырынча тесттин жыйынтыгы жок
+        no_results_text: Сураныч, сабакты бүтүрүп, тесттен өтүп, жыйынтыгын алыңыз
+        see_correct_answers_list: Туура жооптор тизмесин караңыз
+        train_more: Көбүрөөк машыксаңыз, кийинки жолу дагы жакшы натыйжаларга жетесиз!
+        you_finished_lesson: Абдан жакшы! Сиз сабакты бүттүңүз
+      go_back: Артка кайрыл
+      next_button: Кийинки
+      not_available_task: Бул тапшырма азырынча жок
+      start_button: Баштоо
+      tasks:
+        check:
+          assignment:
+            accept: Кабыл алуу
+            author_will_check_your_answer: "%{author} сиздин жообуңузду карап чыгып,
+              адатта 1-2 күндүн ичинде жооп кайтарат"
+            continue_writing: Жазууну уланта бериңиз
+            copy: Көчүрүү
+            delete: Жок кылуу
+            delete_record: Жазууну жок кылуу
+            edit: Түзөтүү
+            essay_does_not_have_enough_words: >-
+              Сиздин жообуңузда жок дегенде %{minWordsNumber} сөздөр камтылышы керек.
+              Сиздин жообуңуз учурда %{currentWordsNumber} сөздөрдөн турат.
+            followers_count: "%{followersCount} жолдоочулары"
+            lessons_count: "%{lessonsCount} сабактары"
+            minimal_recording_time: Минималдуу жазуу убакыты - %{minimalRecordingTime}
+            minimum_characters_amount: Минималдуу белгилер - %{minimumCharactersAmount}
+            minimum_words_amount: Минималдуу сөздөр - %{minimumAmount}
+            record_again: Кайра жаздырыңыз
+            record_voice: Үн жазуу
+            send_anyway: Баары бир жөнөтүңүз
+            send_to_review: Кароого жөнөтүү
+            skip: Өткөрүп жибер
+            too_short_answer: Өтө кыска жооп
+            type_your_answer: Жообуңузду териңиз
+            unknown_task_type: Белгисиз тапшырма түрү
+            upgrade_licence: Лицензияны жаңыртуу
+            upgrade_your_plan: >-
+              Мугалимдердин сын-пикирлери менен тапшырмаларды аткарып көрүү үчүн планыңызды
+              жаңыртыңыз
+            upload_files: Файлдарды жүктөө
+            write_essay: Эссе жаз
+            you_have_used_amount_of_assignments: Сиз %{amountOfAssignments} дайындоо
+              кредиттерин колдондуңуз
+          fill_in_blanks:
+            sentence_gap: Сүйлөмдүн боштугу
+          fill_in_table:
+            column_answer_placeholder: Жооп
+            column_question_placeholder: Суроо
+            example: Мисал
+          true_false:
+            'false': Жалган
+            'true': Ырас
+        learn:
+          translatable_text:
+            show_original: Түпнусканы көрсөтүү
+            translate_into: Google менен %{languageName} тилине которуңуз
+            translate_into_your_lang: Google менен өз тилиңизге которуңуз
+        play:
+          arrange_words:
+            start_screen:
+              heading: Берилген сөздөрдөн сүйлөм түзүңүз
+          audition:
+            start_screen:
+              heading: Аудиону угуңуз жана жаңы уккан сөзүңүздү таптаңыз
+          dictation:
+            get_help: Жардам алуу
+            i_do_not_know: Мен билбейм
+            input_placeholder: Бул жерге уккандарыңызды киргизиңиз
+            start_screen:
+              heading: Угуп, укканыңызды жазыңыз
+          fill_gap:
+            start_screen:
+              heading: Сөздү жана анын маанисин дал келтирип коюңуз
+          finish_screen:
+            go_to_next_exercise: Мыкты жасалды! Кийинки көнүгүүгө барыңыз
+          image_hotspot:
+            start_screen:
+              heading: Сүрөттөгү объектилерди туура атагыла
+          image_object:
+            start_screen:
+              heading: Кийинки сүрөттөн керектүү нерсени тандаңыз
+          inline_dropdown:
+            start_screen:
+              heading: Сүйлөмгө туура келген сөздөрдү тандаңыз
+          mark_word:
+            start_screen:
+              heading: Текстти окуп, сүрөттө дал келген сөздү тандаңыз
+          minimal_pairs:
+            start_screen:
+              heading: Видеону көрүп, туура жолду тандаңыз
+    locale:
+      currency_switcher_title: Валюта алмаштыргыч
+      lang_switcher_title: Тил алмаштыргыч
+      locales:
+        af: Африкаансча
+        am: Амхарча
+        ar: Арабча
+        az: Азербайжан
+        be: Беларусча
+        bg: Български
+        bn: Бенгалча
+        bs: Бошнакча
+        ca: Каталанча
+        ceb: Себуано
+        co: Корсикче
+        cs: Чехче
+        cy: Валлийче
+        da: Датча
+        de: Deutsch
+        el: Грекче
+        en: Англисче
+        eo: Эсперанто
+        es: Español
+        et: Эстончо
+        eu: Баскча
+        fa: Парсча
+        fi: Финче
+        fr: Français
+        fy: Frisian
+        ga: Ирландча
+        gd: Scots Gaelic
+        gl: Галицияча
+        gu: Гужаратиче
+        ha: Хаусача
+        haw: Гавайча
+        he: Еврейче
+        hi: Хиндиче
+        hmn: Хмонгчо
+        hr: Хорватча
+        ht: Гаитилик креол
+        hu: Венгерче
+        hy: Армянча
+        id: Индонезияча
+        ig: Igbo
+        is: Исландияча
+        it: Italiano
+        ja: Жапончо
+        jv: Жанавизче
+        ka: Грузинче
+        kk: Казакча
+        km: Khmer
+        kn: Каннадача
+        ko: Корейче
+        ku: Күрд
+        ky: Кыргызча
+        la: Латынча
+        lb: Люксембургча
+        lo: Лаочо
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Малагасия
+        mi: Маориче
+        mk: Македонияча
+        ml: Малаяламча
+        mn: Монголчо
+        mr: Маратиче
+        ms: Малайча
+        mt: Малтизче
+        my: Мьянма (Бирма)
+        nb: Norsk
+        ne: Непаличе
+        nl: Nederlands
+        ny: Ньяня (Чичева)
+        or: Одия (Ория)
+        pa: Пунжабиче
+        pl: Polski
+        ps: Пуштунча
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Синдиче
+        si: Sinhala
+        sk: Словакча
+        sl: Словенияча
+        sm: Samoan
+        sn: Шона
+        so: af Soomaali
+        sq: Албанча
+        sr: Сербский
+        st: Сесото
+        su: Сунданча
+        sv: Шведче
+        sw: kiSwahili
+        ta: Тамилче
+        te: Телугуча
+        tg: Тажик
+        th: Тайча
+        tk: Түркмөнчө
+        tl: Тагалогчо
+        tr: Türkçe
+        tt: Татар
+        ug: Уйгур
+        uk: Українська
+        ur: Урдуча
+        uz: Өзбекче
+        vi: Вьетнамча
+        xh: Хосача
+        yi: Идишче
+        yo: Йорубача
+        zh: Кытайча
+        zu: Зулуча
+    media_player:
+      audio_player:
+        aria_loading_button: Аудио жүктөлүүдө
+        aria_pause_button: Тыным
+        aria_play_button: Play
+        aria_reload_button: Кайра жүктөө
+        aria_stop_button: Токтот
+        reload_message: Аудио жүктөлбөй калды. Кайра жүктөө үчүн баскычты чыкылдатыңыз.
+    mobile_modal:
+      apply: Колдонуу
+      cancel: Жокко чыгаруу
+      clear: Таза
+      save: Сактоо
+    page404:
+      goToStartLessonPage: Сабакты баштоо барагына өтүңүз
+      ooops: Oooops ...
+      sorry_message: Кечиресиз, Tor бул баракты таба алган жок
+    profile:
+      navigation:
+        log_out: Чыгуу
+        my_profile: Менин профилим
+        settings: Орнотуулар
+      onboarding:
+        choose_native_language: Эне тилиңизди же сиз түшүнгөн тилди тандаңыз
+        do_you_understand_english: Сен англисче түшүнөсүңбү?
+        hello: салам
+        language_levels:
+          a1: Башталгыч деңгээл
+          a2: Ортоңку деңгээл
+          b1: Орто деңгээл
+          b2: Жогорку Ортоңку деңгээл
+          c1: Өркүндөтүлгөн деңгээл
+          no_knowledge: Билим жок
+        language_not_supported:
+          note: Тил жеткиликтүү болгондо сизге кабарлайбыз
+          title: Кечиресиз, бирок биз бул тилди азырынча колдобойбуз
+          try_another_language: Башка тилди байкап көрүңүз
+        'no': Жок
+        search_placeholder: Издөө ...
+        show_more_languages: Башка тилдер
+        target_language_question: Кайсы тилди үйрөнгүңүз келет?
+        what_is_language_level: "%{languageName} деңгээлиңизди кандай баалайт элеңиз?"
+        'yes': Ооба
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Лингвдин купуялуулук саясаты
+        support: Колдоо
+      logout: Чыгуу
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Сиз окуган мугалимдерден жана мектептерден жаңылыктарды
+                алыңыз
+              sections:
+                app_notifications: Колдонмонун эскертмелери
+                email: Электрондук почта
+              title: Окууга жардам
+            marketing:
+              description: >-
+                Лингвисттин бардык жарнамалары, жаңыртуулары жана илхамы жөнүндө кабардар
+                болуп туруңуз
+              sections:
+                browser_notifications: Браузердин эскертмелери
+                email: Электрондук почта
+              title: Маркетинг
+          title: Байланыштын артыкчылыктары
+        personal_information:
+          delete_photo: Сүрөттү жок кылуу
+          email: Электрондук почта
+          first_name: Биринчи аты
+          last_name: Акыркы Аты
+          social_accounts:
+            connected: Туташты
+            facebook: Facebook
+            google: Гугл
+            microsoft: Microsoft
+            not_connected: Туташкан жок
+            title: Социалдык эсептер
+          title: Жеке маалымат
+          update_photo: Сүрөттү жаңыртуу
+        school:
+          active_licence: Активдүү лицензия
+          active_status: Активдүү
+          delete_profile: Менин профилимди жок кыл
+          delete_profile_modal:
+            body: |-
+              Бардык дайындарыңызды түбөлүккө жок кыласыз. Артка кайтаруу баскычы жок, андан кийин аны сизге кайтарып бере албайбыз.
+              Lingu профилиңизди жана бардык дайындарыңызды биротоло жок кылгыңыз келеби?
+            cancel: Жокко чыгаруу
+            confirm: Ооба, аны жок кыл
+            i_understand_the_consequences: Мунун кесепеттерин түшүнүп турам
+            title: Профилиңизди жок кыласызбы?
+          expired: Мөөнөтү бүткөн %{expire_date}
+          expires: Мөөнөтү аяктайт %{expire_date}
+          inactive_status: Жигерсиз
+          revoke_access: Окуу мүмкүнчүлүгүн жокко чыгаруу
+          sections:
+            contact_school: Мектеп менен байланышуу
+            export_my_data: Менин дайындарымды экспорттоо
+            read_school_privacy_policy: Мектептин Купуялык саясатын окуп чыгыңыз
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Музыканы ойнотуу
+              sound_effects: Үн эффекттери
+              title: Үн
+            visual:
+              dark_theme: Караңгы тема
+              font_size:
+                test_text: Короонун аркы өйүзүндө чөп дайыма жашыл болуп турат
+                title: Ариптин чоңдугу
+              high_contrast: Жогорку контраст
+              hints: Ишара
+              title: Visual
+          title: Үн жана визуалдык
+        training_settings:
+          sections:
+            i_understand: түшүндүм
+            i_want_to_learn: Мен үйрөнгүм келет
+            target_language_level: Англисче деңгээл
+          title: Тренингдин жөндөөлөрү
+      settings_title: Орнотуулар
+    teacher_card:
+      followers_count:
+        one: 1 ээрчиген
+        other: "%{count} жолдоочулары"
+      lessons_count:
+        one: 1 сабак
+        other: "%{count} сабактары"

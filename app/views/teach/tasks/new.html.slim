@@ -1,0 +1,39 @@
+- set_page_title t('.new_task')
+
+- content_for :back do
+  = link_to teach_lesson_path(lesson), class: 'nav-link' do
+    i.fas.fa-chevron-left.fa-fw
+    = t('layouts.authoring.sidebar.back_to_lesson')
+
+.content
+  .row
+    .col-lg-12
+      .card.mb-3
+        .card-header
+          h2= t('.new_task')
+        .card-body.bg-light
+          = form_for form, as: :task, url: teach_lesson_tasks_path(lesson) do |f|
+            - if form.errors.any?
+              .alert.alert-warning#error_explanation
+                h4
+                  = pluralize(form.errors.count, t('error'))
+                  =< t('teach.lessons.form.prohibited_saving_form')
+                ul
+                  - form.errors.full_messages.each do |message|
+                    li= message
+
+            .row
+              .col-md-6
+                .form-group
+                  = f.label :name, required: true
+                  = f.text_field :name, class: 'form-control'
+                  = error_for f.object, :name
+              .col-md-6
+                .form-group
+                  = f.label :type, required: true
+                  = f.select :type, options_for_select(Task.types_for_select(params[:subject]), f.object.type), { prompt: t('.select_task_type') }, class: 'form-control select2'
+                  = error_for f.object, :type
+              = f.hidden_field :subject, value: params[:subject]
+            .row
+              .col-12
+                = f.submit t('common.buttons.save_and_continue'), class: 'btn btn-primary'

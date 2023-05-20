@@ -1,0 +1,56 @@
+.search-input-container {
+  border-bottom: 1px solid #F0F0F3;
+  padding: 20px 44px;
+}
+
+#search_lingu_school {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.search-result-container {
+  padding: 33px 40px 0 40px;
+  li {
+    a {
+      font-size: 16px;
+      line-height: 20px;
+      color: $grey7;
+      text-decoration: none;
+      &:hover {
+        color: #00A5D7;
+      }
+    }
+    &.active {
+      a {
+        font-weight: bold;
+        color: #00A5D7;
+      }
+      border-bottom: 3px solid #00A5D7;
+    }
+  }
+  li + li {
+    margin-left: 24px;
+  }
+  .search-result-count {
+    color: #A7AAB6;
+  }
+}
+
+.school-search-input {
+  .item-icon {
+    width: 24px;
+    height: 24px;
+  }
+  input[type="text"] {
+    box-shadow: none;
+  }
+  ::-webkit-input-placeholder {
+    color: #807F91 !important;
+  }
+  &.active {
+    ::-webkit-input-placeholder {
+      color: #00A5D7 !important;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+- set_page_title lesson.title
+
+= form_tag teach_lesson_split_path(lesson), method: :post do |f|
+  .card
+    .card-header.bg-light
+      .form-group
+        = label_tag 'lesson[title]', t('teach.lessons.split.new_lesson_title'), required: true
+        = text_field_tag 'lesson[title]', lesson.title, class: 'form-control'
+
+    - %w[teach engage test].each_with_index do |subject, index|
+      .card-body
+        h4.font-weight-bold= t("activerecord.attributes.task.subjects.#{subject}")
+        table.table.thead-light.table-hover.mb-0
+          tbody
+            = render partial: 'task_row', collection: tasks.public_send(subject),
+            as: :task
+
+    .card-footer
+      = submit_tag t('teach.lessons.split.split_lesson'), class: 'btn btn-primary'
+      = link_to t('back'), teach_lessons_path(lesson), class: 'btn btn-falcon-default ml-2'

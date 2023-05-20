@@ -1,0 +1,9 @@
+= form_for form, html: { id: dom_id(task, :item_form) }, as: :task_item, remote: true, url: teach_task_items_path(task) do |f|
+  .card.mb-3
+    .card-body
+      .form-group
+        .input-group
+          = f.label :sentence, t('teach.task_items.dictation.forms.form.enter_expected_response'), class: 'w-100 sentence'
+          = f.text_field :sentence, class: 'form-control'
+          = error_for f.object, :sentence
+      = f.submit t('save_changes'), class: 'btn btn-success'

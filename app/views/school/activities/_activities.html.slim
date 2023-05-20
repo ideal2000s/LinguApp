@@ -1,0 +1,13 @@
+.student-activities-list.mt-4
+  - date = activities.first.created_at.to_date
+  - activities.each do |activity|
+    - unless date == activity.created_at.to_date
+      - date = activity.created_at.to_date
+      hr
+    .d-flex.align-items-baseline.mb-2
+      .activity-date= l(activity.created_at, format: :activity)
+      .activity-splitter
+      .activity-message
+        - cache [activity, I18n.locale] do
+          = render_activity(activity)
+  == paginate activities

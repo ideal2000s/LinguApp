@@ -1,0 +1,14 @@
+active_license_revoke:
+  cron: "0 0 * * *"
+  class: "Cron::ActiveLicenseRevokerJob"
+  queue: default
+
+phrases_count_reset:
+  cron: "0 0 * * *"
+  class: "Cron::PhrasesCountResetJob"
+  queue: default
+
+dictionary_import_remove:
+  cron: "0 0 * * 1"
+  class: "Cron::DictionaryImportWipeJob"
+  queue: default

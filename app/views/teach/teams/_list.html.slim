@@ -1,0 +1,36 @@
+table.table.table-hover.table-dashboard.mb-0
+  thead
+    tr
+      th scope='col'= t('teach.teams.index.columns.name')
+      th scope='col' width='15%'
+      th scope='col' width='15%'= t('teach.teams.index.columns.members')
+      th scope='col' width='10%'= t('teach.teams.index.columns.actions')
+  tbody
+    - teams.each do |team_user|
+      - team = team_user.team
+      tr
+        td.align-middle
+          .media
+            - if team.image.present?
+              .file-thumbnail
+                = image_tag team.image_url(:tiny), class: 'rounded-soft' rescue nil
+            .media-body.ml-3
+              strong= team_user.team_name
+              .badge.badge-light.ml-2.text-uppercase.fs--2
+                = t(team_user.role, scope: 'activerecord.attributes.team_user.roles')
+        td.align-middle.small
+          = default_team_status(team_user.default?) || link_to(t('teach.teams.index.set_default_team'), default_teach_team_path(team), method: :post, remote: true)
+        td.align-middle
+          - if team.personal?
+            .small.text-uppercase= t('activerecord.attributes.team.statuses.personal')
+          - else
+            - if policy(team).show?
+              = link_to teach_team_team_users_path(team) do
+                = t('teach.team_users.team_link.members', count: team_user.team_size)
+            - else
+              = t('teach.team_users.team_link.members', count: team_user.team_size)
+        td.align-middle
+          .btn-group
+            - if policy(team).edit?
+              = link_to edit_teach_team_path(team), class: 'btn btn-falcon-primary btn-sm', remote: true do
+                span= t('admin.teams.edit.action')

@@ -1,0 +1,59 @@
+.school-navbar
+  = link_to school_students_path, class: 'navbar-brand p-0' do
+    .d-flex.school-team-title
+      - if (brand_logo_url = current_team.image_url(:brand))
+        = image_tag(brand_logo_url)
+      - else
+        h4= truncate(current_team.name, length: 20)
+
+  .navbar-links.mt-4
+    ul.navbar-nav.flex-column
+      - %w[dashboard students teachers assignments courses].each do |e|
+        - is_active = (controller.controller_name == 'team_users' ? 'teachers' : (controller.controller_name == 'activities' ? 'students' : controller.controller_name)).include? e
+        li.nav-item.school-sidebar-item style="#{'font-weight: 600' if is_active}"
+          = link_to [:school, e == 'teachers' ? 'team_users': (e == 'assignments' ? 'documents' : e)], class: "nav-link p-0 #{is_active ? 'nav-item-active' : ''}" do
+            .d-flex.align-items-center
+              .item-icon style="#{is_active ? "background-color: #00a5d7; -webkit-mask: url(#{asset_path("icons/#{e}.svg")}) no-repeat center / contain;" : "background: url(#{asset_path("icons/#{e}.svg")})"};"
+              span.ml-3= t(".#{e}")
+    .mt-5.d-flex.align-items-center.school-search-input class="#{'active' if controller.controller_name == 'search'}"
+      .item-icon style="#{controller.controller_name == 'search' ? "background-color: #00a5d7; -webkit-mask: url(#{asset_path("icons/search.svg")}) no-repeat center / contain;" : "background: url(#{asset_path("icons/search.svg")})"};"
+      = form_tag school_search_path, method: :get
+        = text_field_tag :q, nil, class: 'form-control bg-transparent border-0', autocomplete: 'off', placeholder: t('.search')
+
+    ul.navbar-nav.ml-auto
+      li.nav-item.dropdown.py-3.school-sidebar-item
+        = link_to '#', class: 'dropdown-toggle nav-link', id: 'locale_selector', role: 'button', data: {toggle: 'dropdown', target: '#'} do
+          = image_tag("flags/#{language_to_flag_code(I18n.locale.to_s)}.svg", class: 'mr-2 ', style: 'width: 25px; height: auto;')
+          = t(locale.to_s, scope: 'locales')
+        .dropdown-menu.py-0 aria-labelledby="locale_selector"
+          .bg-white.rounded-soft.py-2
+            - enabled_locales.sort.each do |locale|
+              = link_to({locale: locale.to_s}, class: 'dropdown-item') do
+                .avatar.mr-3
+                  = image_tag("flags/#{language_to_flag_code(locale.to_s)}.svg", class: 'mr-2 ', style: 'max-width: 22px; height: auto;') rescue nil
+                strong= t(locale.to_s, scope: 'locales')
+
+  .school-nav-bottom
+    .dropup
+      a#userDropdownMenuLink.d-flex.align-items-center.dropdown-toggle data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" role="button"
+        .d-flex.align-items-center.justify-content-center style="background-image: url(#{asset_path('icons/ellipse.svg')}); width: 36px; height: 36px;"
+          - if current_user.avatar.present?
+            = image_tag(current_user.avatar_url(:thumbnail) || current_user.avatar_url, width: 36, height: 36, class: 'rounded-circle')
+          - else
+            span.text-white= current_user.initials
+        span.ml-2.school-team-name= current_user.full_name
+        .user-dropdown-ellipsis.ml-auto.text-center
+          i.fa.fa-ellipsis-h
+      .dropdown-menu.dropdown-menu-right
+        = link_to t('.school_settings'), edit_school_current_team_path, class: 'dropdown-item', remote: true
+        = link_to t('layouts.admin.profile_menu.my_profile'), edit_school_current_profile_path, class: 'dropdown-item', remote: true
+        .dropdown-divider
+        - current_user_teams.each do |team|
+          = link_to school_current_team_path(id: team.id), method: :post, class: 'dropdown-item' do
+            = team.name
+            - if team == current_team
+              i.fas.fa-long-arrow-alt-left.fa-sm.ml-2
+        .dropdown-divider
+        //a.mb-2.d-block= t('.support')
+        // hr
+        = link_to t('sign_out'), destroy_user_session_path, method: :delete, class: 'dropdown-item'

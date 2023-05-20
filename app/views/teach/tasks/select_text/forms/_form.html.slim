@@ -1,0 +1,16 @@
+- content_for(:instructions) do
+  .card.bg-soft-info.mt-5
+    .card-body
+      .card-title= t('instructions')
+      p.card-text= t('teach.task_items.select_text.select_text.select_text_guide')
+    .card-footer.bg-soft-info
+      .card-title= t('teach.tasks.size_requirements')
+      p.card-text= t('teach.tasks.required_count_msg', count: Tasks::SelectText::MIN_ITEMS_SIZE)
+= render 'teach/tasks/shared_task_form', task: task, form: form
+
+#task_items.mt-5
+  h2= t('.questions')
+  #task_items_container
+    = render partial: task.items, as: :item, locals: { task: task }
+.links
+  = render task.items.form.new, task: task

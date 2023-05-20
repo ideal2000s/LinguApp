@@ -1,0 +1,7 @@
+tr id=dom_id(plan)
+  td= plan.system_name
+  td= plan.name
+  td= plan.language.name
+  td
+    - if policy(plan).update?
+      = link_to t('edit'), edit_admin_plan_path(plan), class: 'btn btn-falcon-default btn-sm'

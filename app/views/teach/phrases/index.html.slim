@@ -1,0 +1,39 @@
+- set_page_title t('teach.phrases.title')
+
+= render partial: 'teach/lessons/lesson_header', locals: { lesson: lesson, active: :glossary }
+
+.card.mb-3
+  .card-header
+    h3.font-weight-bold.mb-3= t('teach.phrases.title')
+    p.card-text= t('.recommended_glossary_text')
+  .card-body
+    .row
+      .col-sm-6
+        = render 'form', lesson: lesson
+      - if Language::TT_AVAILABLE_LANG_CODES.include?(lesson.language.code)
+        .col-sm-6
+          .float-right
+            button.btn.btn-falcon-default.dropdown-toggle id='generate_glossary_dropdown' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' = t('.generate_glossary')
+            .dropdown-menu aria-labelledby='generate_glossary_dropdown'
+              = button_to t('.independent_wordlist'),
+                generate_teach_lesson_phrases_path(lesson),
+                remote: true,
+                class: 'dropdown-item',
+                data: {'disable-with' => t('.waiting_note'), confirm: t('.confirm_reload_phrases')}
+              - if course
+                .dropdown-divider
+                h6.dropdown-header = t('.contextual_wordlist')
+                = button_to course.title,
+                  generate_teach_lesson_phrases_path(lesson, course_id: course.id),
+                  remote: true,
+                  class: 'dropdown-item',
+                  data: {'disable-with' => t('.waiting_note'), confirm: t('.confirm_reload_phrases')}
+
+.card.mb-5
+  .card-header
+    .d-flex
+      #glossary__items
+        = render 'list', lesson: lesson, phrases: phrases
+  .card-footer
+    #glossary__items_footer.d-flex
+      = render 'footer', lesson: lesson, phrases: phrases

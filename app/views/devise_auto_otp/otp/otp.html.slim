@@ -1,0 +1,26 @@
+- set_page_title t('welcome.signin.welcome_title')
+
+.d-flex.align-items-center.justify-content-center.min-vh-100
+  .otp-check-container.d-flex.flex-column.align-items-center
+    h3.font-weight-bold.mt-5
+      =t('devise.otp.check_email_for_code')
+    p.my-4.text-1000.text-center.px-4
+      = resource.class.name
+      == t('devise.otp.otp_instruction', email: resource.email)
+    = form_for(resource, as: resource_name, url: sign_in_otp_path(resource_name), method: :post) do |f|
+      = f.hidden_field :email
+      = f.hidden_field :password
+      .otp-input-wrapper.d-flex.align-items-center.justify-content-center
+        = react_component('components/OtpChecker', resource: resource.class.name.downcase)
+    - if alert == t('devise.failure.invalid')
+      .user-otp-error.mb-4.py-3.px-5.text-center.text-black
+        = image_tag('icons/alert.svg')
+        = t('devise.otp.invalid_code')
+    .resend-code.d-flex.align-items-center
+      span= t('frontend.auth.did_not_receive_a_code')
+      = form_for(resource, as: resource_name, url: request_otp_path(resource_name), method: :post) do |f|
+        = f.hidden_field :email
+        = f.submit t('frontend.auth.resend_code'), class: 'btn shadow-none text-primary p-0 ml-2'
+    = link_to email_otp_path(resource), class: 'text-600 my-5' do
+      i.fa.fa-arrow-left.mr-2
+      = t('back')

@@ -1,0 +1,3 @@
+= form_for(Skill.new, url: admin_skills_path, remote: true, class: 'form-inline') do |f|
+  td= f.text_field :name, class: 'form-control', placeholder: t('.enter_name'), aria: { label: t('name') }
+  td= f.submit t('create'), class: 'btn btn-falcon-primary btn-sm'

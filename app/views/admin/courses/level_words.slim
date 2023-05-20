@@ -1,0 +1,28 @@
+- set_page_title course.title
+
+.card.mb-5
+  .card-header.d-flex.justify-content-between.align-items-center
+    h2.mb-0= course.title
+    = link_to t('back'), admin_courses_path, class: 'btn btn-falcon-default btn-sm'
+  .card-body
+    p= t('teach.courses.level_words.coverage_of_level', count: phrases.count, percent: number_to_percentage(phrases.count / missing_phrases.count.to_f * 100, precision: 0))
+    .d-flex.align-items-center.justify-content-between
+    - phrases.each do |phrase|
+      - phrase_division = phrase_division(phrase, course)
+      .badge.badge-pill.px-3.py-2.mr-2.my-1 class=phrase_division[0] data-toggle="tooltip" title=phrase_division[1]
+        span.text-black= phrase.prefixed_body
+
+.card.mb-3
+  .card-header
+    h3.mb-3= t('teach.courses.level_words.count_missing_words', count: missing_phrases.count, level: course.level.upcase )
+    p.card-text= t('teach.courses.level_words.list_of_omitted_words', level: course.level.upcase)
+
+  - Dictionary::Word.word_classes.each do |k, v|
+    - words = missing_phrases.where(word_class: k).order(:body)
+    - next unless words.any?
+    .card-body.mb-3
+      h4= t(k, scope: 'activerecord.attributes.word.word_classes')
+      - words.each do |phrase|
+        - phrase_division = phrase_division(phrase, course)
+        .badge.badge-pill.px-3.py-2.mr-2.my-1 class=phrase_division[0] data-toggle="tooltip" title=phrase_division[1]
+          span.text-black= phrase.prefixed_body

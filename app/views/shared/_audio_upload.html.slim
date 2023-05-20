@@ -1,0 +1,43 @@
+= form_with(model: [@language, @word], url: path) do |form|
+  .modal-body.form-group.pt-4
+    h4.ml-3.mb-5= @word.audio ? t('.update_audio') : t('.add_audio')
+    - if @word.errors.any?
+      #error_explanation
+        h2= "#{pluralize(@word.errors.count, "error")} prohibited this word from being saved:"
+        ul
+          - @word.errors.full_messages.each do |message|
+            li= message
+    .row class="#{!@word.audio ? 'pl-4' : ''}"
+      div class="#{@word.audio ? 'col-2' : 'col-1'}"
+      = form.hidden_field :audio, value: @word.cached_audio_data
+      - if @word.audio.nil?
+        .col-5
+          = form.file_field :audio, class: 'input-file custom-file-input', id: 'phrase_audio_upload', accept: '.au, .mp3, .ogg, .vorbis, .wav, .mid', style: 'margin-bottom: 10px'
+          label.custom-file-label= t('.choose_audio')
+          - if @word.audio.present?
+            .custom-file-name-container
+              span.file-upload__file
+                = link_to @word.audio.original_filename, @word.audio_url
+      - else
+        .col-6
+          div style='padding-bottom: 65px'
+            audio#sound_effect.audio-player controls=true
+              source src=@word.audio_url
+              | Your browser does not support the audio element.
+            .audio-upload-remove
+              label.checkbox
+                = form.check_box :remove_audio, class: 'z-index-10'
+                span style='margin-left: 3px'
+                  = t('teach.tasks.tasks.shared_task_fields.remove')
+      .col-1
+      div class="#{@word.audio ? 'd-none' : 'col-4'}"
+        div style='display: none'
+          = react_component('components/AudioRecord', {api: "/teach/tasks", upload_mode: 1, item: @word})
+        a.btn.float-left.item-record-btn style='margin-left: 30px'
+          i.fa.fa-microphone
+      .custom-file-name-container.ml-6.mt-2
+        span.custom-file-name
+    - if @collection
+      = hidden_field_tag :collection_ids, @collection.id
+    .actions.mt-4.ml-3
+      = form.submit value: t('update'), class: 'btn btn-primary'

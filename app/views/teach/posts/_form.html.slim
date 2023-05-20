@@ -1,0 +1,26 @@
+= form_for [:teach, post] do |f|
+  .row
+    .col-md-12
+      - if post.errors.any?
+        .alert.alert-warning#error_explanation
+          h4
+            = pluralize(post.errors.count, 'error')
+            =< t('.prohibited_saving_form')
+          ul
+            - post.errors.full_messages.each do |message|
+              li= message
+      .form-group
+        = f.label :content, required: true
+        = f.text_area :content, rows: 5, class: 'form-control', placeholder: t('.content_placeholder')
+      = f.hidden_field :lesson_id, id: 'post_fallback_lesson_id', value: nil
+      .form-group
+        .custom-control.custom-switch
+          input.custom-control-input#check_post_lesson[type="checkbox" checked=post.lesson_id.present?]
+          label.custom-control-label[for="check_post_lesson"]
+            = t('.select_lesson')
+      .form-group
+        = f.select :lesson_id, options_for_select(lessons.map{ |l| [l.title, l.id] }, f.object.lesson_id),
+                { include_blank: t('select') }, { class: 'form-control select2', multiple: false, disabled: post.lesson_id.nil? }
+  .row
+    .col-12
+      = f.submit t('common.buttons.save'), class: 'btn btn-primary'

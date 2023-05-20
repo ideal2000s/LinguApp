@@ -1,0 +1,6 @@
+.mobile-unsupported.p-7.text-center
+  h2.mb-3 = t('.too_small_screen')
+  p= t('.mobile_support_will_be_available_at')
+  p.mb-0 = t('.sorry_for_inconvenience')
+.mobile-logout.mx-3.mt-3
+  = link_to t('.log_out'), destroy_user_session_path, method: :delete, class: 'btn btn-light btn-block btn-lg' if signed_in?(:user)

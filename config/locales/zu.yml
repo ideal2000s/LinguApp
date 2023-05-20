@@ -1,0 +1,611 @@
+---
+zu:
+  course_mailer:
+    course_assigned_notification:
+      button: Qala isifundo
+      click_start_lesson: Chofoza u-'Qala isifundo '
+      follow_course_link: Chofoza inkinobho ukuvula inkambo
+      footer_text: Buyela eLingu uzofunda okuthile okusha nsuku zonke!
+      get_started_line: 'Nakhu ukuthi uqala kanjani:'
+      notification_link: Izilungiselelo zesaziso
+      open_lesson: Vula isifundo sokuqala
+      or_paste_this_link: noma namathisela lesi sixhumanisi kusiphequluli sakho
+      sign_in_with_email: Ngena ngemvume ngekheli lakho le-imeyili (%{email})
+      support_link: Ukusekela
+      title: Ukuqala nge-%{course}
+    new_document_comment:
+      author_text: I-%{author} ishiye isibuyekezo sesabelo sakho
+      button_text: Kuhlole
+      button_url_helper: 'noma namathisela lesi sixhumanisi kusiphequluli sakho:'
+      footer_text: Kuningi ongakufunda ...
+      notification_link: Izilungiselelo zesaziso
+      subject_line: Ukuphawula okusha kwesabelo
+      support_link: Ukusekela
+    otp:
+      ignore_msg: Uma ungasenzanga lesi sicelo, vele unganaki i-imeyili.
+      subject_line: Ikhodi yakho eyingqayizivele yeLingu
+      unique_code_for_lingu: Nayi ikhodi yakho eyingqayizivele yeLingu
+  frontend:
+    auth:
+      already_have_acc_question: Usunayo i-akhawunti?
+      back: Emuva
+      back_to_sign_in: Buyela ekungeneni ngemvume
+      check_your_email_for_a_code: Bheka i-imeyili yakho ukuthola ikhodi yakho
+      continue: Qhubeka
+      continue_with_email: Qhubeka nge-imeyili
+      continue_with_provider: Qhubeka nge-%{provider}
+      did_not_receive_a_code: Awutholanga ikhodi?
+      email_address: Ikheli le-imeyili
+      first_name: Igama
+      get_unique_code: Thola ikhodi yokungena eyingqayizivele
+      join_lingu: Joyina uLingu
+      last_name: Isibongo
+      more_login_options: Izinketho eziningi zokungena ngemvume
+      no_account_question: Awunayo i-akhawunti?
+      or: noma
+      resend_code: Thumela kabusha ikhodi
+      sign_in: Ngena ngemvume
+      sign_up: Bhalisela
+      want_to_receive_marketing_messages: Ngifuna ukuthola imiyalezo yokumaketha evela
+        kuLingu
+      we_ve_sent_a_code: >-
+        Sithumele ikhodi yamadijithi angu-6 ku <strong> <strong> {{email}} </strong>.
+        Ikhodi iphelelwa yisikhathi ngemizuzu engu-15, ngakho-ke sicela uyifake maduzane.
+    cookie_agreement:
+      agree: Vumelana
+      condition: >-
+        Sisebenzisa amakhukhi ukuhlaziya ukusebenza kwesayithi nokuletha okuqukethwe
+        okwenzelwe wena. Ngokuchofoza "Ngiyavuma", uyavumelana nemibandela yethu.
+    course:
+      accredited_course_provider: Umhlinzeki wezifundo ogunyaziwe
+      apply: Faka isicelo
+      apply_filters: Sebenzisa izihlungi
+      by: Ngu
+      cancel: Khansela
+      categories: "%{count} izigaba"
+      category: Isigaba
+      clear: Kucacile
+      clear_filters: Sula izihlungi
+      contact_us: Xhumana nathi
+      could_not_find_match_for: Uxolo, asikwazanga ukuthola okufanayo
+      course_language: Ulimi lwezifundo
+      duration: Isikhathi
+      filter_settings:
+        categories:
+          academic: Ezemfundo
+          business: Ibhizinisi
+          fashion: Imfashini
+          food_drink: Ukudla nesiphuzo
+          for_kids: Okwezingane
+          general: Jikelele
+          health: Ezempilo
+          legal: Ezomthetho
+          sport: Ezemidlalo
+          travel: Ukuvakasha
+        durations:
+          t0_600: "<Imizuzu eyi-10"
+          t1800_3600: 30-60 imizuzu
+          t3600_86400: 1+ ihora
+          t600_1800: 10-30 imizuzu
+        focus_on:
+          conversation: Ingxoxo
+          grammar: Uhlelo lolimi
+          listening: Ukulalela
+          pronunciation: Ukuphinyiselwa
+          reading: Ukufunda
+          speaking: Okhulumayo
+          writing: Kubhala
+        levels:
+          long:
+            advanced: Izinga eliphakeme
+            elementary: Izinga lokuqala
+            intermediate: Izinga eliphakathi
+            no_knowledge: Akukho lwazi
+            pre_intermediate: Izinga eliphakathi nendawo
+            upper_intermediate: Izinga eliphezulu eliphakathi nendawo
+          short:
+            advanced: Kuthuthukile
+            beginner: Oqalayo
+            intermediate: Lesisemkhatsini
+        sort_by:
+          most_rated: Okukalwe kakhulu
+          newest: Okusha kakhulu
+          popularity: Ukuthandwa
+      filters: Izihlungi
+      focus_on: Gxila ku
+      focus_on_title: Ngifuna ukugxila
+      hide_lessons: Fihla izifundo
+      hours: Amahora
+      i_understand: Ngiyaqonda
+      i_want_to_learn: Ngifuna ukufunda
+      in_language: ku-%{language}
+      language: Ulimi
+      learn_more: Funda kabanzi
+      less_settings: Izilungiselelo ezimbalwa
+      lessons: Izifundo
+      lessons_available: "%{number} izifundo ziyatholakala"
+      lessons_catalog_page_subtitle: Yiba iqhawe lolimi.
+      lessons_catalog_page_title: Nweba ama-horizons akho ngenkambo yolimi
+      level: Izinga
+      min: Ubuncane
+      more_settings: Izilungiselelo eziningi
+      navbar:
+        close: Vala imenyu
+        menu: Imenyu
+        select_language: Khetha ulimi
+      need_to_buy_course: Udinga ukubhuka isifundo kuqala
+      no_description: Ayikho incazelo enikeziwe
+      no_results: Uxolo, asikwazanga ukuthola okufanayo
+      or: noma
+      per_month: ngenyanga
+      plans: Izinhlelo
+      privacy_policy: Inqubomgomo yobumfihlo
+      rating: Isilinganiso
+      remove_all_filters: Susa zonke izihlungi
+      reviews: Ukubuyekeza
+      save: Gcina
+      search: Sesha
+      select_dots: Khetha ...
+      select_languages: Khetha izilimi
+      select_num_languages: Khetha izilimi %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Veza konke
+      show_all_lessons: Khombisa zonke izifundo
+      show_lessons: Khombisa izifundo ze-%{number}
+      show_more: Bonisa okuningi
+      sign_up_with_lingu_for: Bhalisela i-Lingu Norway ye
+      skills: "%{count} amakhono"
+      sort_by: Hlunga nge
+      start_typing_here: Qala ukuthayipha lapha
+      teach: Fundisa
+      terms_and_conditions: Imibandela
+      time_range: Ibanga lesikhathi
+      try_adjusting_your_search: Zama ukulungisa usesho lwakho ngokushintsha izihlungi
+        zakho
+      try_this_course: Zama le nkambo
+      website_language: Ulimi lwewebhusayithi
+      words: Amagama
+    games:
+      finished:
+        go_to_next_exercise: Wenze kahle! Yiya esivivinyweni esilandelayo
+      flashcard:
+        buttons:
+          finish: Qeda
+          next: Olandelayo
+          previous: Esedlule
+        check_out_new_words: Bheka amagama amasha ozowafunda kulesi sifundo
+        frequency_of_word_usage: Imvamisa yokusetshenziswa kwamagama ku-%{language}
+        keep_practice_to_learn_all_words: Buyekeza amagama we-%{count} bese sidlala
+          imidlalo ethile!
+        word_frequency:
+          level1: Isetshenziswa kakhulu
+          level2: Isetshenziswa kakhulu
+          level3: Imvamisa yeZwi - maphakathi
+          level4: Imvamisa yeZwi - maphakathi
+          level5: Okuvamile
+          level6: Kuvamile kakhulu
+      match_word:
+        click_and_move_each_word_to_counterpart: Chofoza bese uhambisa igama ngalinye
+          kumlingani walo
+        start_heading: Qondanisa amagama ukwenza ipheya
+        time_is_up: Isikhathi siphelile!
+      skip_tutorial: Yeqa
+      time_is_up: Isikhathi siphelile!
+      word_nodes:
+        match_letters_to_form_word: Qondanisa izinhlamvu ukwakha igama
+      word_waterfall:
+        do_not_hesitate: Masisheshe!
+        go_to_next_exercise: Yiya esivivinyweni esilandelayo
+        select_correct_translation: Khetha ukufanisa okulungile
+        well_done: Wenze kahle!
+    home_page:
+      hello: Sawubona,
+      popular_lessons: Izifundo ezithandwayo
+      show_more: Bonisa okuningi
+      time: "%{count} iminithi"
+      today_lesson: Isifundo sakho sanamuhla
+      user_name: "%{name}!"
+      words: "%{count} amagama"
+    idle_screen:
+      by_author: by SGIYA ngoMASKANDI MEDIA
+      continue_lesson: Qhubeka nesifundo
+      exit: Phuma
+      idle_message: Sekunesikhathi ungenzi lutho ...
+    lesson_page:
+      back_to_course_page: Buyela ekhasini lesifundo
+      close: Vala
+      continue_lesson: Qhubeka nesifundo
+      followed: Kulandelwe
+      hamburger_menu_btn: Imenyu yeHamburger
+      lesson_given: izifundo
+      not_started: akuqaliwe
+      or: Noma
+      part_complete: i-%{percent}% iqediwe
+      restart_lesson: Qala kabusha
+      section_check: Hlola
+      section_check_info: ukuhlolwa kwe-%{count}
+      section_learn: Funda
+      section_learn_info: "%{count} min ukuze ubuke futhi ufunde"
+      section_play: Dlala
+      section_play_info: amagama angama-%{count} okufanele uwajwayeze
+      start_lesson: Qala isifundo
+      step_progress: "%{percent}%"
+      subscribe: Landela
+      subscribed: Kulandelwe
+      subscribers: abalandeli
+      time_min: "%{minutesNumber} iminithi"
+      unsubscribe: Yeka ukulandela
+      webview_error_title: Kukhona okungahambanga kahle...
+      words_number: "%{wordsNumber} amagama amasha"
+    lesson_task:
+      cancel_button: Khansela
+      check:
+        navigation_next: Olandelayo
+        navigation_previous: Esedlule
+        navigation_skip: Yeqa
+      controls_panel:
+        font_size_button: Usayizi wefonti
+        high_contrast_button:
+          origin: Ukuqhathanisa okuphezulu
+          short: Qhathanisa
+        hints_button: Amacebo
+        music_playback_button:
+          origin: Ukudlala komculo
+          short: Umculo
+        sound_effects_button:
+          origin: Imiphumela yomsindo
+          short: Umsindo
+      exit_button: Phuma
+      finish_button: Qeda
+      finished:
+        back_to_learn: Emuva ukuze ufunde
+        back_to_lesson_page: Buyela ekhasini lesifundo
+        back_to_results_page: Emuva ekhasini lemiphumela
+        bad_result_message: Hmm ... zama ukuthatha isifundo futhi
+        close_lesson: Vala isifundo
+        correct_answers_list: Uhlu lwezimpendulo ezifanele
+        good_result_message: Ngiyabona ukuthi wenze umzamo!
+        great_result_message: Wenze kahle! Lena imiphumela emihle!
+        next_course_lesson: Iya esifundweni esilandelayo ngokuqinisekile
+        no_results: Awunayo imiphumela yokuhlolwa okwamanje
+        no_results_text: Ngiyacela, gcwalisa isifundo bese uphasa isivivinyo ukuze
+          uthole imiphumela
+        see_correct_answers_list: Bona uhlu lwezimpendulo ezifanele
+        train_more: Zijwayeze okwengeziwe futhi uzothola imiphumela engcono ngokuzayo!
+        you_finished_lesson: Kuhle! Uqedile isifundo
+      go_back: Buyela emuva
+      next_button: Olandelayo
+      not_available_task: Lo msebenzi awutholakali okwamanje
+      start_button: Qala
+      tasks:
+        check:
+          assignment:
+            accept: Yamukela
+            author_will_check_your_answer: >-
+              i-%{author} izobuyekeza impendulo yakho futhi inikeze impendulo zingakapheli
+              izinsuku eziyi-1-2
+            continue_writing: Qhubeka nokubhala
+            copy: Kopisha
+            delete: Susa
+            delete_record: Susa irekhodi
+            edit: Hlela
+            essay_does_not_have_enough_words: >-
+              Impendulo yakho kufanele iqukathe okungenani amagama angama-%{minWordsNumber}.
+              Impendulo yakho njengamanje ngamagama we-%{currentWordsNumber}.
+            followers_count: "%{followersCount} abalandeli"
+            lessons_count: "%{lessonsCount} izifundo"
+            minimal_recording_time: Isikhathi esincane sokurekhoda - %{minimalRecordingTime}
+            minimum_characters_amount: Izinhlamvu ezincane - %{minimumCharactersAmount}
+            minimum_words_amount: Amagama amancane - %{minimumAmount}
+            record_again: Qopha futhi
+            record_voice: Qopha izwi
+            send_anyway: Thumela noma kunjalo
+            send_to_review: Thumela ukuze kubuyekezwe
+            skip: Yeqa
+            too_short_answer: Impendulo emfushane kakhulu
+            type_your_answer: Thayipha impendulo yakho
+            unknown_task_type: Uhlobo lomsebenzi olungaziwa
+            upgrade_licence: Thuthukisa ilayisense
+            upgrade_your_plan: Thuthukisa uhlelo lwakho ukuze uzame izabelo ngezibuyekezo
+              zothisha
+            upload_files: Layisha amafayela
+            write_essay: Bhala indzabambhalo
+            you_have_used_amount_of_assignments: Usebenzise amakhredithi esabelo se-%{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Igebe lesigwebo
+          fill_in_table:
+            column_answer_placeholder: Phendula
+            column_question_placeholder: Umbuzo
+            example: Isibonelo
+          true_false:
+            'false': Amanga
+            'true': Yiqiniso
+        learn:
+          translatable_text:
+            show_original: Khombisa okwangempela
+            translate_into: Humusha nge-Google ku-%{languageName}
+            translate_into_your_lang: Humusha nge-Google ngolimi lwakho
+        play:
+          arrange_words:
+            start_screen:
+              heading: Yakha umusho ngamagama owanikiwe
+          audition:
+            start_screen:
+              heading: Lalela umsindo bese uthepha egameni osanda kulizwa
+          dictation:
+            get_help: Thola usizo
+            i_do_not_know: Angazi
+            input_placeholder: Faka okuzwile lapha
+            start_screen:
+              heading: Lalela bese ubhala okuzwile
+          fill_gap:
+            start_screen:
+              heading: Qondanisa igama nencazelo yalo
+          finish_screen:
+            go_to_next_exercise: Wenze kahle! Yiya esivivinyweni esilandelayo
+          image_hotspot:
+            start_screen:
+              heading: Qamba izinto ezisesithombeni kahle
+          image_object:
+            start_screen:
+              heading: Khetha into efanele esithombeni esilandelayo
+          inline_dropdown:
+            start_screen:
+              heading: Khetha amagama ahambelana nomusho
+          mark_word:
+            start_screen:
+              heading: Funda umbhalo bese ukhetha igama elifana nesithombe
+          minimal_pairs:
+            start_screen:
+              heading: Buka ividiyo bese ukhetha inketho efanele
+    locale:
+      currency_switcher_title: Isishintshi semali
+      lang_switcher_title: Isishintshi solimi
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: I-Deutsch
+        el: Greek
+        en: IsiNgisi
+        eo: Esperanto
+        es: I-Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Ama-Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: I-Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: IsiLatviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Isi-Norsk
+        ne: Nepali
+        nl: ENederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: I-Polski
+        ps: Pashto
+        pt: I-Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: I-Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Umsindo uyalayisha
+        aria_pause_button: Misa kancane
+        aria_play_button: Dlala
+        aria_reload_button: Layisha kabusha
+        aria_stop_button: Ima
+        reload_message: >-
+          Yehlulekile ukulayisha umsindo. Sicela uchofoze inkinobho ukuze uphinde
+          ulayishe.
+    mobile_modal:
+      apply: Faka isicelo
+      cancel: Khansela
+      clear: Kucacile
+      save: Gcina
+    page404:
+      goToStartLessonPage: Iya ekhasini lokuqala lesifundo
+      ooops: Hawu ...
+      sorry_message: Uxolo, uTor akalitholanga leli khasi
+    profile:
+      navigation:
+        log_out: Phuma
+        my_profile: Iphrofayela yami
+        settings: Amasethingi
+      onboarding:
+        choose_native_language: Khetha ulimi lwakho lwendabuko noma ulimi oluqondayo
+        do_you_understand_english: Uyasiqonda isiNgisi?
+        hello: Sawubona
+        language_levels:
+          a1: Izinga lokuqala
+          a2: Izinga eliphakathi nendawo
+          b1: Izinga eliphakathi
+          b2: Izinga Eliphezulu Eliphakathi Naphakathi
+          c1: Izinga eliphakeme
+          no_knowledge: Akukho lwazi
+        language_not_supported:
+          note: Sizokwazisa ngokushesha lapho ulimi seluzotholakala
+          title: Uxolo, kodwa okwamanje asisekeli lolu limi
+          try_another_language: Zama olunye ulimi
+        'no': Cha
+        search_placeholder: Sesha ...
+        show_more_languages: Ezinye izilimi
+        target_language_question: Yiluphi ulimi ofuna ukulifunda?
+        what_is_language_level: Ungalinganisa kanjani izinga lakho le-%{languageName}?
+        'yes': Yebo
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Inqubomgomo yobumfihlo kaLingu
+        support: Ukusekela
+      logout: Phuma
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Thola izibuyekezo ezivela kothisha nasezikoleni ozilandelayo
+              sections:
+                app_notifications: Izaziso zohlelo lokusebenza
+                email: I-imeyili
+              title: Usizo lokufunda
+            marketing:
+              description: Hlala unolwazi ngakho konke ukukhushulwa, izibuyekezo,
+                nogqozi oluvela kuLingu
+              sections:
+                browser_notifications: Izaziso zesiphequluli
+                email: I-imeyili
+              title: Ukumaketha
+          title: Okuncamelayo koxhumana nabo
+        personal_information:
+          delete_photo: Susa isithombe
+          email: Imeyili
+          first_name: Igama
+          last_name: Isibongo
+          social_accounts:
+            connected: Kuxhunyiwe
+            facebook: Facebook
+            google: Google
+            microsoft: IMicrosoft
+            not_connected: Ayixhunyiwe
+            title: Ama-akhawunti omphakathi
+          title: Ulwazi lomuntu siqu
+          update_photo: Buyekeza isithombe
+        school:
+          active_licence: Ilayisense esebenzayo
+          active_status: Kuyasebenza
+          delete_profile: Susa iphrofayela yami
+          delete_profile_modal:
+            body: |-
+              Uqothula yonke idatha yakho — unomphela. Ayikho inkinobho yokuhlehlisa, futhi asikwazi ukukubuyisela yona ngemuva.
+              Ingabe uqinisekile ukuthi ufuna ukususa unomphela iphrofayili yakho yoLimi nayo yonke idatha yakho?
+            cancel: Khansela
+            confirm: Yebo, isuse
+            i_understand_the_consequences: Ngiyayiqonda imiphumela
+            title: Susa iphrofayela yakho?
+          expired: I-%{expire_date} ephelelwe yisikhathi
+          expires: Kuphelelwa yisikhathi %{expire_date}
+          inactive_status: Akusebenzi
+          revoke_access: Hoxisa ukufinyelela kokufunda
+          sections:
+            contact_school: Xhumana nesikole
+            export_my_data: Thumela idatha yami
+            read_school_privacy_policy: Funda Inqubomgomo Yobumfihlo Yesikole
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Ukudlala komculo
+              sound_effects: Imiphumela yomsindo
+              title: Umsindo
+            visual:
+              dark_theme: Itimu emnyama
+              font_size:
+                test_text: Utshani buhlala buluhlaza ngaphesheya kocingo
+                title: Usayizi wefonti
+              high_contrast: Ukuqhathanisa okuphezulu
+              hints: Amacebo
+              title: Okubukwayo
+          title: Umsindo nokubonakalayo
+        training_settings:
+          sections:
+            i_understand: Ngiyaqonda
+            i_want_to_learn: Ngifuna ukufunda
+            target_language_level: Izinga lesiNgisi
+          title: Izilungiselelo zokuqeqesha
+      settings_title: Amasethingi
+    teacher_card:
+      followers_count:
+        one: 1 umlandeli
+        other: "%{count} abalandeli"
+      lessons_count:
+        one: 1 isifundo
+        other: "%{count} izifundo"

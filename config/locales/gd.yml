@@ -1,0 +1,622 @@
+---
+gd:
+  course_mailer:
+    course_assigned_notification:
+      button: Tòisich an cùrsa
+      click_start_lesson: Briog air 'Tòisich leasan'
+      follow_course_link: Cliog air a ’phutan gus an cùrsa fhosgladh
+      footer_text: Thig air ais gu Lingu airson rudeigin ùr ionnsachadh a h-uile latha!
+      get_started_line: 'Seo mar a thòisicheas tu:'
+      notification_link: Suidhich fios
+      open_lesson: Fosgail a ’chiad leasan
+      or_paste_this_link: no cuir a-steach an ceangal seo sa bhrobhsair agad
+      sign_in_with_email: Log a-steach leis an t-seòladh post-d agad (%{email})
+      support_link: Taic
+      title: A ’tòiseachadh le %{course}
+    new_document_comment:
+      author_text: Dh ’fhàg %{author} lèirmheas air do shònrachadh
+      button_text: Dèan sgrùdadh air
+      button_url_helper: 'no cuir a-steach an ceangal seo don bhrobhsair agad:'
+      footer_text: Tha tòrr a bharrachd ri ionnsachadh ...
+      notification_link: Suidhich fios
+      subject_line: Beachd mu sònrachadh ùr
+      support_link: Taic
+    otp:
+      ignore_msg: Mura do rinn thu an t-iarrtas seo, dìreach leig seachad am post-d.
+      subject_line: An còd sònraichte agad airson Lingu
+      unique_code_for_lingu: Seo an còd sònraichte agad airson Lingu
+  frontend:
+    auth:
+      already_have_acc_question: A bheil cunntas agad mu thràth?
+      back: Air ais
+      back_to_sign_in: Air ais gus clàradh a-steach
+      check_your_email_for_a_code: Thoir sùil air a ’phost-d agad airson do chòd
+      continue: Lean air adhart
+      continue_with_email: Lean air adhart le post-d
+      continue_with_provider: Lean air adhart le %{provider}
+      did_not_receive_a_code: Nach d ’fhuair thu còd?
+      email_address: Seòladh puist-d
+      first_name: A 'chiad ainm
+      get_unique_code: Faigh còd inntrigidh sònraichte
+      join_lingu: Thig còmhla ri Lingu
+      last_name: Ainm deireannach
+      more_login_options: Barrachd roghainnean logadh a-steach
+      no_account_question: Nach eil cunntas agad?
+      or: 'no'
+      resend_code: Còd ath-fhuirich
+      sign_in: Soidhnig a-steach
+      sign_up: Cuir d'ainm ris
+      want_to_receive_marketing_messages: Tha mi airson teachdaireachdan margaidheachd
+        fhaighinn bho Lingu
+      we_ve_sent_a_code: >-
+        Tha sinn air còd 6-fhigearach a chuir gu <strong> {{post-d}} </strong>. Thig
+        an còd gu crìch ann an 15 mionaidean, mar sin cuir a-steach e a dh ’aithghearr.
+    cookie_agreement:
+      agree: Aontachadh
+      condition: >-
+        Bidh sinn a ’cleachdadh briosgaidean gus coileanadh làraich a sgrùdadh agus
+        susbaint pearsanaichte a lìbhrigeadh. Le bhith a ’briogadh“ Aontaich ”, tha
+        thu ag aontachadh ris na cumhaichean againn.
+    course:
+      accredited_course_provider: Solaraiche cùrsa barrantaichte
+      apply: Cuir a-steach
+      apply_filters: Cuir sìoltachain an sàs
+      by: Ro
+      cancel: Sguir dheth
+      categories: roinnean %{count}
+      category: Roinn-seòrsa
+      clear: Soilleir
+      clear_filters: Filters soilleir
+      contact_us: Cuir fios thugainn
+      could_not_find_match_for: Duilich, cha b ’urrainn dhuinn maids sam bith a lorg
+      course_language: Cànan a ’chùrsa
+      duration: Faid
+      filter_settings:
+        categories:
+          academic: Acadaimigeach
+          business: Gnìomhachas
+          fashion: Fasan
+          food_drink: Biadh & deoch
+          for_kids: Dha clann
+          general: Coitcheann
+          health: Slàinte
+          legal: Laghail
+          sport: Spòrs
+          travel: Siubhal
+        durations:
+          t0_600: "<10 mionaidean"
+          t1800_3600: 30-60 mionaid
+          t3600_86400: 1+ uair a thìde
+          t600_1800: 10-30 mionaid
+        focus_on:
+          conversation: Còmhradh
+          grammar: Gràmar
+          listening: Ag èisteachd
+          pronunciation: Fuaimneachadh
+          reading: Leughadh
+          speaking: A ’bruidhinn
+          writing: Sgrìobhadh
+        levels:
+          long:
+            advanced: Ìre adhartach
+            elementary: Ìre bunasach
+            intermediate: Ìre eadar-mheadhanach
+            no_knowledge: Gun eòlas
+            pre_intermediate: Ìre ro eadar-mheadhanach
+            upper_intermediate: Ìre eadar-mheadhanach àrd
+          short:
+            advanced: Adhartach
+            beginner: Neach-tòiseachaidh
+            intermediate: Eadar-mheadhanach
+        sort_by:
+          most_rated: Measadh as motha
+          newest: As ùire
+          popularity: Popularity
+      filters: Filters
+      focus_on: Fòcas air
+      focus_on_title: Tha mi airson fòcas a chuir air
+      hide_lessons: Cuir am falach leasanan
+      hours: Uairean
+      i_understand: Tha mi a 'tuigsinn
+      i_want_to_learn: Tha mi airson ionnsachadh
+      in_language: ann an %{language}
+      language: Cànan
+      learn_more: Ionnsaich barrachd
+      less_settings: Nas lugha de shuidheachaidhean
+      lessons: Leasanan
+      lessons_available: leasanan %{number} rim faighinn
+      lessons_catalog_page_subtitle: Bi nad ghaisgeach cànain.
+      lessons_catalog_page_title: Leudaich do shealladh le cùrsa cànain
+      level: Ìre
+      min: Mion
+      more_settings: Barrachd shuidheachaidhean
+      navbar:
+        close: Dùin clàr
+        menu: Clàr
+        select_language: Tagh cànan
+      need_to_buy_course: Feumaidh tu cùrsa a ghlèidheadh an toiseach
+      no_description: Cha deach tuairisgeul a thoirt seachad
+      no_results: Duilich, cha b ’urrainn dhuinn maids sam bith a lorg
+      or: 'no'
+      per_month: gach mìos
+      plans: Planaichean
+      privacy_policy: Poileasaidh prìobhaideachd
+      rating: Rangachadh
+      remove_all_filters: Thoir air falbh a h-uile sìoltachan
+      reviews: Lèirmheasan
+      save: Sàbhail
+      search: Rannsaich
+      select_dots: Tagh ...
+      select_languages: Tagh langauges
+      select_num_languages: Tagh cànanan %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Seall na h-uile
+      show_all_lessons: Seall a h-uile leasan
+      show_lessons: Seall leasanan %{number}
+      show_more: Seall barrachd
+      sign_up_with_lingu_for: Clàraich le Lingu Norway airson
+      skills: sgilean %{count}
+      sort_by: Deasaich le
+      start_typing_here: Tòisich a ’taipeadh an seo
+      teach: Teagasg
+      terms_and_conditions: Cumhachan is Cùmhnantan
+      time_range: Raon-tìm
+      try_adjusting_your_search: >-
+        Feuch ris an rannsachadh agad atharrachadh le bhith ag atharrachadh na criathragan
+        agad
+      try_this_course: Feuch an cùrsa seo
+      website_language: Cànan làrach-lìn
+      words: Faclan
+    games:
+      finished:
+        go_to_next_exercise: S math a rinn thu! Rach don ath eacarsaich
+      flashcard:
+        buttons:
+          finish: Crìochnaich
+          next: An ath rud
+          previous: Roimhe seo
+        check_out_new_words: Thoir sùil air na faclan ùra a dh ’ionnsaicheas tu anns
+          an leasan seo
+        frequency_of_word_usage: Tricead cleachdadh fhaclan ann an %{language}
+        keep_practice_to_learn_all_words: >-
+          Dèan lèirmheas air na faclan %{count} agus leig leinn cuid de gheamannan
+          a chluich!
+        word_frequency:
+          level1: Glè ainneamh
+          level2: Glè ainneamh
+          level3: Tricead fhaclan - meadhanach
+          level4: Tricead fhaclan - meadhanach
+          level5: Cumanta
+          level6: Gu math cumanta
+      match_word:
+        click_and_move_each_word_to_counterpart: Cliog agus gluais gach facal chun
+          neach eile
+        start_heading: Maids faclan airson paidhir a dhèanamh
+        time_is_up: Tha an ùine seachad!
+      skip_tutorial: Thoir leum
+      time_is_up: Tha an ùine seachad!
+      word_nodes:
+        match_letters_to_form_word: Maids litrichean airson facal a chruthachadh
+      word_waterfall:
+        do_not_hesitate: Nach luathaich sinn!
+        go_to_next_exercise: Rach don ath eacarsaich
+        select_correct_translation: Tagh maids cheart
+        well_done: S math a rinn thu!
+    home_page:
+      hello: Halò,
+      popular_lessons: Leasanan cumanta
+      show_more: Seall barrachd
+      time: "%{count} min"
+      today_lesson: Do leasan airson an-diugh
+      user_name: "%{name}!"
+      words: faclan %{count}
+    idle_screen:
+      by_author: le %{authorName}
+      continue_lesson: Lean air adhart le leasan
+      exit: Ar-a-mach
+      idle_message: Tha thu air a bhith idle airson ùine ...
+    lesson_page:
+      back_to_course_page: Air ais gu duilleag a ’chùrsa
+      close: Dùin
+      continue_lesson: Lean air adhart le leasan
+      followed: Air a leantainn
+      hamburger_menu_btn: Clàr-taice Hamburger
+      lesson_given: leasanan
+      not_started: cha do thòisich
+      or: Air neo
+      part_complete: "%{percent}% coileanta"
+      restart_lesson: Ath-thòisich
+      section_check: Thoir sùil air
+      section_check_info: deuchainnean %{count}
+      section_learn: Ionnsaich
+      section_learn_info: "%{count} min ri fhaicinn agus ri leughadh"
+      section_play: Cluich
+      section_play_info: "%{count} faclan ri chleachdadh"
+      start_lesson: Tòisich leasan
+      step_progress: "%{percent}%"
+      subscribe: Lean
+      subscribed: Air a leantainn
+      subscribers: luchd-leantainn
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Gun fhuasgladh
+      webview_error_title: Chaidh rudeigin ceàrr ...
+      words_number: "%{wordsNumber} faclan ùra"
+    lesson_task:
+      cancel_button: Sguir dheth
+      check:
+        navigation_next: An ath rud
+        navigation_previous: Roimhe seo
+        navigation_skip: Thoir leum
+      controls_panel:
+        font_size_button: Meud cruth
+        high_contrast_button:
+          origin: Eadar-dhealachadh àrd
+          short: Contrast
+        hints_button: Molaidhean
+        music_playback_button:
+          origin: Ath-chluich ciùil
+          short: Ceòl
+        sound_effects_button:
+          origin: Buaidhean fuaim
+          short: Fuaim
+      exit_button: Ar-a-mach
+      finish_button: Crìochnaich
+      finished:
+        back_to_learn: Air ais airson ionnsachadh
+        back_to_lesson_page: Air ais gu duilleag nan leasan
+        back_to_results_page: Air ais air duilleag toradh
+        bad_result_message: Hmm ... feuch ris an leasan a ghabhail aon uair eile
+        close_lesson: Leasan dlùth
+        correct_answers_list: Liosta freagairtean ceart
+        good_result_message: Chì mi gu bheil thu air oidhirp a dhèanamh!
+        great_result_message: S math a rinn thu! Is e deagh thoraidhean a tha sin!
+        next_course_lesson: Rach don ath leasan ann an cùrsa
+        no_results: Chan eil toraidhean deuchainn agad fhathast
+        no_results_text: >-
+          Feuch an cuir thu crìoch air an leasan agus cuir seachad an deuchainn gus
+          na toraidhean fhaighinn
+        see_correct_answers_list: Faic liosta nan freagairtean ceart
+        train_more: Cleachd barrachd agus gheibh thu toraidhean nas fheàrr an ath
+          thuras!
+        you_finished_lesson: Sgoinneil! Chuir thu crìoch air an leasan
+      go_back: Theirig air ais
+      next_button: An ath rud
+      not_available_task: Chan eil an gnìomh seo ri fhaighinn fhathast
+      start_button: Tòisich
+      tasks:
+        check:
+          assignment:
+            accept: Gabhail
+            author_will_check_your_answer: >-
+              Nì %{author} ath-sgrùdadh air do fhreagairt agus mar as trice bheir
+              e seachad fios air ais taobh a-staigh 1-2 latha
+            continue_writing: Lean air adhart a ’sgrìobhadh
+            copy: Leth-bhreac
+            delete: Cuir às
+            delete_record: Cuir às do chlàr
+            edit: Deasaich
+            essay_does_not_have_enough_words: >-
+              Bu chòir gum biodh co-dhiù faclan %{minWordsNumber} anns an fhreagairt
+              agad. Is e do fhreagairt an-dràsta faclan %{currentWordsNumber}.
+            followers_count: luchd-leantainn %{followersCount}
+            lessons_count: leasanan %{lessonsCount}
+            minimal_recording_time: Ùine clàraidh as ìsle - %{minimalRecordingTime}
+            minimum_characters_amount: Caractaran as ìsle - %{minimumCharactersAmount}
+            minimum_words_amount: Faclan as ìsle - %{minimumAmount}
+            record_again: Clàraich a-rithist
+            record_voice: Clàraich guth
+            send_anyway: Cuir co-dhiù
+            send_to_review: Cuir gu lèirmheas
+            skip: Thoir leum
+            too_short_answer: Freagairt ro ghoirid
+            type_your_answer: Taidhp do fhreagairt
+            unknown_task_type: Seòrsa gnìomh neo-aithnichte
+            upgrade_licence: Cead ùrachadh
+            upgrade_your_plan: >-
+              Dèan ùrachadh air a ’phlana agad gus sònrachaidhean fheuchainn le lèirmheasan
+              thidsearan
+            upload_files: Luchdaich suas faidhlichean
+            write_essay: Sgrìobh aiste
+            you_have_used_amount_of_assignments: Tha thu air creideasan sònrachaidh
+              %{amountOfAssignments} a chleachdadh
+          fill_in_blanks:
+            sentence_gap: Beàrn seantans
+          fill_in_table:
+            column_answer_placeholder: Freagair
+            column_question_placeholder: Ceist
+            example: Eisimpleir
+          true_false:
+            'false': Meallta
+            'true': Fìor
+        learn:
+          translatable_text:
+            show_original: Seall tùsail
+            translate_into: Eadar-theangachadh le Google gu %{languageName}
+            translate_into_your_lang: Eadar-theangaich le Google a-steach don chànan
+              agad
+        play:
+          arrange_words:
+            start_screen:
+              heading: Dèan seantans a-mach às na faclan a chaidh a thoirt seachad
+          audition:
+            start_screen:
+              heading: Èist ris a ’chlaistinn agus tap air an fhacal a chuala thu
+          dictation:
+            get_help: Faigh cuideachadh
+            i_do_not_know: Chan eil fios agam
+            input_placeholder: Cuir a-steach na chuala thu an seo
+            start_screen:
+              heading: Èist agus sgrìobh na chluinneas tu
+          fill_gap:
+            start_screen:
+              heading: Dèan maids eadar am facal agus a bhrìgh
+          finish_screen:
+            go_to_next_exercise: S math a rinn thu! Rach don ath eacarsaich
+          image_hotspot:
+            start_screen:
+              heading: Ainmich na nithean san dealbh gu ceart
+          image_object:
+            start_screen:
+              heading: Tagh an rud ceart bhon ath dhealbh
+          inline_dropdown:
+            start_screen:
+              heading: Tagh na faclan a tha a ’freagairt ris an t-seantans
+          mark_word:
+            start_screen:
+              heading: Leugh an teacsa agus tagh am facal a tha a ’freagairt ris an
+                ìomhaigh
+          minimal_pairs:
+            start_screen:
+              heading: Coimhead air a ’bhidio agus tagh an roghainn cheart
+    locale:
+      currency_switcher_title: Switcher airgead
+      lang_switcher_title: Switcher cànain
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Sasannach
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwlarus
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Tha claisneachd a ’luchdachadh
+        aria_pause_button: Stad
+        aria_play_button: Cluich
+        aria_reload_button: Ath-luchdaich
+        aria_stop_button: Stad
+        reload_message: Dh'fhàillig a luchdachadh claisneachd. Cliog air a ’phutan
+          gus ath-luchdachadh.
+    mobile_modal:
+      apply: Cuir a-steach
+      cancel: Sguir dheth
+      clear: Soilleir
+      save: Sàbhail
+    page404:
+      goToStartLessonPage: Rach gu duilleag tòiseachaidh nan leasan
+      ooops: Oooops ...
+      sorry_message: Duilich, cha b ’urrainn dha Tor an duilleag seo a lorg
+    profile:
+      navigation:
+        log_out: Log a-mach
+        my_profile: Mo phròifil
+        settings: Suidhichidhean
+      onboarding:
+        choose_native_language: Tagh do chànan no do chànan dùthchasach a thuigeas
+          tu
+        do_you_understand_english: A bheil Beurla agad?
+        hello: Halò
+        language_levels:
+          a1: Ìre bunasach
+          a2: Ìre ro-mheadhanach
+          b1: Ìre eadar-mheadhanach
+          b2: Ìre eadar-mheadhanach àrd
+          c1: Ìre adhartach
+          no_knowledge: Gun eòlas
+        language_not_supported:
+          note: Cuiridh sinn fios thugaibh cho luath ‘s a bhios an cànan ri fhaighinn
+          title: Duilich, ach chan eil sinn a ’toirt taic don chànan seo fhathast
+          try_another_language: Feuch cànan eile
+        'no': Chan eil
+        search_placeholder: Lorg ...
+        show_more_languages: Cànanan eile
+        target_language_question: Dè an cànan a tha thu airson ionnsachadh?
+        what_is_language_level: Dè do bheachd air an ìre %{languageName} agad?
+        'yes': Tha
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Poileasaidh prìobhaideachd Lingu
+        support: Taic
+      logout: Log a-mach
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Faigh ùrachaidhean bho thidsearan agus sgoiltean a leanas
+                tu
+              sections:
+                app_notifications: Brathan app
+                email: Post-d
+              title: Taic ionnsachaidh
+            marketing:
+              description: Fuirich fiosraichte mu gach àrdachadh, ùrachadh agus brosnachadh
+                bho Lingu
+              sections:
+                browser_notifications: Brathan brabhsair
+                email: Post-d
+              title: Margaidheachd
+          title: Cuir fios gu roghainnean
+        personal_information:
+          delete_photo: Cuir às do dhealbh
+          email: Post-d
+          first_name: A 'chiad ainm
+          last_name: Ainm deireannach
+          social_accounts:
+            connected: Ceangailte
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Gun cheangal
+            title: Cunntasan sòisealta
+          title: Fiosrachadh pearsanta
+          update_photo: Ùraich dealbh
+        school:
+          active_licence: Cead gnìomhach
+          active_status: Gnìomhach
+          delete_profile: Thoir às mo phròifil
+          delete_profile_modal:
+            body: |-
+              Bidh thu a ’cur às don dàta agad gu lèir - gu bràth. Chan eil putan dad ann, agus chan urrainn dhuinn fhaighinn air ais dhut às deidh sin.
+              A bheil thu cinnteach gu bheil thu airson do phròifil Lingu agus do dhàta gu lèir a dhubhadh às gu maireannach?
+            cancel: Sguir dheth
+            confirm: Tha, cuir às e
+            i_understand_the_consequences: Tha mi a ’tuigsinn na buaidh
+            title: Thoir às do phròifil?
+          expired: Dh ’fhalbh %{expire_date}
+          expires: A ’tighinn gu crìch %{expire_date}
+          inactive_status: Neo-ghnìomhach
+          revoke_access: Ath-ghairm ruigsinneachd ruigsinneachd
+          sections:
+            contact_school: Cuir fios chun sgoil
+            export_my_data: Às-mhalairt an dàta agam
+            read_school_privacy_policy: Leugh poileasaidh prìobhaideachd na sgoile
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Ath-chluich ciùil
+              sound_effects: Buaidhean fuaim
+              title: Fuaim
+            visual:
+              dark_theme: Cuspair dorcha
+              font_size:
+                test_text: Tha am feur an-còmhnaidh nas uaine air taobh eile na feansa
+                title: Meud cruth
+              high_contrast: Eadar-dhealachadh àrd
+              hints: Molaidhean
+              title: Lèirsinneach
+          title: Fuaim & lèirsinneach
+        training_settings:
+          sections:
+            i_understand: Tha mi a 'tuigsinn
+            i_want_to_learn: Tha mi airson ionnsachadh
+            target_language_level: Ìre Beurla
+          title: Suidhichidhean trèanaidh
+      settings_title: Suidhichidhean
+    teacher_card:
+      followers_count:
+        one: 1 neach-leantainn
+        other: luchd-leantainn %{count}
+      lessons_count:
+        one: 1 leasan
+        other: leasanan %{count}

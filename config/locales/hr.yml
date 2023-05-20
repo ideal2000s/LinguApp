@@ -1,0 +1,608 @@
+---
+hr:
+  course_mailer:
+    course_assigned_notification:
+      button: Započnite tečaj
+      click_start_lesson: Kliknite "Započni lekciju"
+      follow_course_link: Kliknite gumb da biste otvorili tečaj
+      footer_text: Vratite se u Lingu da biste svaki dan naučili nešto novo!
+      get_started_line: 'Evo kako započinjete:'
+      notification_link: Postavke obavijesti
+      open_lesson: Otvorite prvu lekciju
+      or_paste_this_link: ili zalijepite ovu vezu u svoj preglednik
+      sign_in_with_email: Prijavite se svojom adresom e-pošte (%{email})
+      support_link: Podrška
+      title: Početak rada sa %{course}
+    new_document_comment:
+      author_text: "%{author} je ostavio pregled vašeg zadatka"
+      button_text: Pogledajte
+      button_url_helper: 'ili zalijepite ovu vezu u svoj preglednik:'
+      footer_text: Još se puno toga može naučiti ...
+      notification_link: Postavke obavijesti
+      subject_line: Novi komentar zadatka
+      support_link: Podrška
+    otp:
+      ignore_msg: Ako niste podnijeli ovaj zahtjev, jednostavno zanemarite e-poštu.
+      subject_line: Vaš jedinstveni kod za Lingu
+      unique_code_for_lingu: Evo vašeg jedinstvenog koda za Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Već imate račun?
+      back: leđa
+      back_to_sign_in: Natrag na Prijava
+      check_your_email_for_a_code: Potražite svoj kôd u svojoj e-pošti
+      continue: Nastaviti
+      continue_with_email: Nastavite s e-poštom
+      continue_with_provider: Nastavite sa %{provider}
+      did_not_receive_a_code: Niste dobili kôd?
+      email_address: Email adresa
+      first_name: Ime
+      get_unique_code: Nabavite jedinstveni kod za prijavu
+      join_lingu: Pridružite se Lingu
+      last_name: Prezime
+      more_login_options: Više mogućnosti prijave
+      no_account_question: Nemate račun?
+      or: ili
+      resend_code: Ponovno pošalji kôd
+      sign_in: Prijaviti se
+      sign_up: Prijavite se
+      want_to_receive_marketing_messages: Želim primati marketinške poruke od Lingua
+      we_ve_sent_a_code: >-
+        Poslali smo 6-znamenkasti kôd na adresu {{{email}} </strong>. Kôd istječe
+        za 15 minuta, pa ga molimo unesite uskoro.
+    cookie_agreement:
+      agree: Pristani
+      condition: >-
+        Kolačiće koristimo za analizu izvedbe web mjesta i isporuku personaliziranog
+        sadržaja. Klikom na "Slažem se" pristajete na naše uvjete.
+    course:
+      accredited_course_provider: Akreditirani pružatelj tečaja
+      apply: Prijavite se
+      apply_filters: Primijeni filtre
+      by: Po
+      cancel: Otkazati
+      categories: "%{count} kategorije"
+      category: Kategorija
+      clear: Čisto
+      clear_filters: Obriši filtre
+      contact_us: Kontaktirajte nas
+      could_not_find_match_for: Nažalost, nismo uspjeli pronaći nijedno podudaranje
+        za
+      course_language: Jezik tečaja
+      duration: Trajanje
+      filter_settings:
+        categories:
+          academic: Akademski
+          business: Poslovanje
+          fashion: Moda
+          food_drink: Hrana piće
+          for_kids: Za djecu
+          general: Općenito
+          health: Zdravlje
+          legal: Pravni
+          sport: Sport
+          travel: Putovati
+        durations:
+          t0_600: "<10 minuta"
+          t1800_3600: 30-60 minuta
+          t3600_86400: 1+ sat
+          t600_1800: 10-30 minuta
+        focus_on:
+          conversation: Razgovor
+          grammar: Gramatika
+          listening: Slušanje
+          pronunciation: Izgovor
+          reading: Čitanje
+          speaking: Govoreći
+          writing: Pisanje
+        levels:
+          long:
+            advanced: Napredna razina
+            elementary: Osnovna razina
+            intermediate: Srednja razina
+            no_knowledge: Nema znanja
+            pre_intermediate: Pre srednja razina
+            upper_intermediate: Gornja srednja razina
+          short:
+            advanced: Napredna
+            beginner: Početnik
+            intermediate: Srednji
+        sort_by:
+          most_rated: Najbolje ocijenjeno
+          newest: Najnoviji
+          popularity: Popularnost
+      filters: Filteri
+      focus_on: Usredotočite se na
+      focus_on_title: Želim se usredotočiti na
+      hide_lessons: Sakrij lekcije
+      hours: Sati
+      i_understand: razumijem
+      i_want_to_learn: Želim učiti
+      in_language: u %{language}
+      language: Jezik
+      learn_more: Saznajte više
+      less_settings: Manje postavki
+      lessons: Lekcije
+      lessons_available: "%{number} dostupnih lekcija"
+      lessons_catalog_page_subtitle: Postanite jezični junak.
+      lessons_catalog_page_title: Proširite svoje vidike tečajem jezika
+      level: Razina
+      min: Min
+      more_settings: Više opcija
+      navbar:
+        close: Zatvori izbornik
+        menu: izbornik
+        select_language: Izaberi jezik
+      need_to_buy_course: Prvo morate rezervirati tečaj
+      no_description: Nije naveden opis
+      no_results: Nažalost, nismo uspjeli pronaći nijedno podudaranje za
+      or: ili
+      per_month: na mjesec
+      plans: Planovi
+      privacy_policy: Politika privatnosti
+      rating: Ocjena
+      remove_all_filters: Uklonite sve filtre
+      reviews: Recenzije
+      save: Uštedjeti
+      search: traži
+      select_dots: Odaberi...
+      select_languages: Odaberite jezike
+      select_num_languages: Odaberite %{number} jezike
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Pokaži sve
+      show_all_lessons: Prikaži sve lekcije
+      show_lessons: Pokažite %{number} lekcije
+      show_more: Prikaži više
+      sign_up_with_lingu_for: Prijavite se za Lingu Norveška za
+      skills: "%{count} vještine"
+      sort_by: Poredaj po
+      start_typing_here: Počnite tipkati ovdje
+      teach: Uči
+      terms_and_conditions: Uvjeti i odredbe
+      time_range: Vremenski raspon
+      try_adjusting_your_search: Pokušajte prilagoditi pretraživanje promjenom filtara
+      try_this_course: Isprobajte ovaj tečaj
+      website_language: Jezik web stranice
+      words: Riječi
+    games:
+      finished:
+        go_to_next_exercise: Dobro napravljeno! Idite na sljedeću vježbu
+      flashcard:
+        buttons:
+          finish: Završi
+          next: Sljedeći
+          previous: Prethodni
+        check_out_new_words: Pogledajte nove riječi koje ćete naučiti u ovoj lekciji
+        frequency_of_word_usage: Učestalost upotrebe riječi u %{language}
+        keep_practice_to_learn_all_words: Pregledajte riječi %{count} i igrajmo neke
+          igre!
+        word_frequency:
+          level1: Rijetko se koristi
+          level2: Rijetko se koristi
+          level3: Učestalost riječi - srednja
+          level4: Učestalost riječi - srednja
+          level5: Uobičajen
+          level6: Vrlo često
+      match_word:
+        click_and_move_each_word_to_counterpart: Kliknite i pomaknite svaku riječ
+          u odgovarajuću
+        start_heading: Upari riječi kako bi se stvorio par
+        time_is_up: Vrijeme je isteklo!
+      skip_tutorial: Preskočiti
+      time_is_up: Vrijeme je isteklo!
+      word_nodes:
+        match_letters_to_form_word: Uparite slova da biste stvorili riječ
+      word_waterfall:
+        do_not_hesitate: Ubrzajmo!
+        go_to_next_exercise: Idite na sljedeću vježbu
+        select_correct_translation: Odaberite ispravno podudaranje
+        well_done: Dobro napravljeno!
+    home_page:
+      hello: Zdravo,
+      popular_lessons: Popularne lekcije
+      show_more: Prikaži više
+      time: "%{count} min"
+      today_lesson: Vaša lekcija za danas
+      user_name: "%{name}!"
+      words: "%{count} riječi"
+    idle_screen:
+      by_author: od %{authorName}
+      continue_lesson: Nastavite lekciju
+      exit: Izlaz
+      idle_message: Neaktivan si neko vrijeme ...
+    lesson_page:
+      back_to_course_page: Povratak na stranicu tečaja
+      close: Zatvoriti
+      continue_lesson: Nastavite lekciju
+      followed: Slijedi
+      hamburger_menu_btn: Izbornik hamburgera
+      lesson_given: lekcije
+      not_started: nije započeto
+      or: Ili
+      part_complete: "%{percent}% dovršeno"
+      restart_lesson: Ponovo pokrenite
+      section_check: Ček
+      section_check_info: "%{count} testovi"
+      section_learn: Naučiti
+      section_learn_info: "%{count} min za gledanje i čitanje"
+      section_play: igra
+      section_play_info: "%{count} riječi za vježbanje"
+      start_lesson: Započnite lekciju
+      step_progress: "%{percent}%"
+      subscribe: slijediti
+      subscribed: Slijedi
+      subscribers: sljedbenici
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Prestani pratiti
+      webview_error_title: Nešto je pošlo po zlu...
+      words_number: "%{wordsNumber} nove riječi"
+    lesson_task:
+      cancel_button: Otkazati
+      check:
+        navigation_next: Sljedeći
+        navigation_previous: Prethodni
+        navigation_skip: Preskočiti
+      controls_panel:
+        font_size_button: Veličina fonta
+        high_contrast_button:
+          origin: Visoki kontrast
+          short: Kontrast
+        hints_button: Savjeti
+        music_playback_button:
+          origin: Reprodukcija glazbe
+          short: glazba, muzika
+        sound_effects_button:
+          origin: Zvučni efekti
+          short: Zvuk
+      exit_button: Izlaz
+      finish_button: Završi
+      finished:
+        back_to_learn: Povratak na učenje
+        back_to_lesson_page: Povratak na stranicu lekcije
+        back_to_results_page: Povratak na stranicu rezultata
+        bad_result_message: Hmm ... pokušaj još jednom uzeti lekciju
+        close_lesson: Zatvori lekciju
+        correct_answers_list: Popis točnih odgovora
+        good_result_message: Vidim da ste se potrudili!
+        great_result_message: Dobro napravljeno! Ovo su sjajni rezultati!
+        next_course_lesson: Idite na sljedeću lekciju na tečaju
+        no_results: Još nemate rezultate ispitivanja
+        no_results_text: Molimo, dovršite lekciju i položite test da biste dobili
+          rezultate
+        see_correct_answers_list: Pogledajte popis točnih odgovora
+        train_more: Vježbajte više i sljedeći put postići ćete bolje rezultate!
+        you_finished_lesson: Sjajno! Završili ste lekciju
+      go_back: Vrati se natrag
+      next_button: Sljedeći
+      not_available_task: Ovaj zadatak još nije dostupan
+      start_button: Početak
+      tasks:
+        check:
+          assignment:
+            accept: Prihvatiti
+            author_will_check_your_answer: >-
+              %{author} će pregledati vaš odgovor i obično će dati povratne informacije
+              u roku od 1-2 dana
+            continue_writing: Nastavite pisati
+            copy: Kopirati
+            delete: Izbrisati
+            delete_record: Izbriši zapis
+            edit: Uredi
+            essay_does_not_have_enough_words: >-
+              Vaš bi odgovor trebao sadržavati najmanje %{minWordsNumber} riječi.
+              Vaš je odgovor trenutno %{currentWordsNumber} riječi.
+            followers_count: "%{followersCount} sljedbenika"
+            lessons_count: "%{lessonsCount} lekcije"
+            minimal_recording_time: Minimalno vrijeme snimanja - %{minimalRecordingTime}
+            minimum_characters_amount: Minimalni broj znakova - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum riječi - %{minimumAmount}
+            record_again: Snimite ponovo
+            record_voice: Snimanje glasa
+            send_anyway: Pošalji svejedno
+            send_to_review: Pošaljite na pregled
+            skip: Preskočiti
+            too_short_answer: Prekratak odgovor
+            type_your_answer: Upišite svoj odgovor
+            unknown_task_type: Nepoznata vrsta zadatka
+            upgrade_licence: Licenca za nadogradnju
+            upgrade_your_plan: Nadogradite svoj plan za isprobavanje zadataka recenzijama
+              učitelja
+            upload_files: Učitaj datoteke
+            write_essay: Napišite esej
+            you_have_used_amount_of_assignments: Koristili ste %{amountOfAssignments}
+              bodove za dodjelu
+          fill_in_blanks:
+            sentence_gap: Jaz u rečenici
+          fill_in_table:
+            column_answer_placeholder: Odgovor
+            column_question_placeholder: Pitanje
+            example: Primjer
+          true_false:
+            'false': Lažno
+            'true': Pravi
+        learn:
+          translatable_text:
+            show_original: Prikaži original
+            translate_into: Prevedi s Googleom u %{languageName}
+            translate_into_your_lang: Prevedite s Googleom na svoj jezik
+        play:
+          arrange_words:
+            start_screen:
+              heading: Od danih riječi napravi rečenicu
+          audition:
+            start_screen:
+              heading: Slušajte zvuk i dodirnite riječ koju ste upravo čuli
+          dictation:
+            get_help: Dobiti pomoć
+            i_do_not_know: Ne znam
+            input_placeholder: Ovdje unesite ono što ste čuli
+            start_screen:
+              heading: Slušajte i napišite što čujete
+          fill_gap:
+            start_screen:
+              heading: Uskladite riječ i njezino značenje
+          finish_screen:
+            go_to_next_exercise: Dobro napravljeno! Idite na sljedeću vježbu
+          image_hotspot:
+            start_screen:
+              heading: Ispravno imenujte predmete na slici
+          image_object:
+            start_screen:
+              heading: Odaberite pravi objekt sa sljedeće slike
+          inline_dropdown:
+            start_screen:
+              heading: Odaberite riječi koje odgovaraju rečenici
+          mark_word:
+            start_screen:
+              heading: Pročitajte tekst i odaberite riječ koja odgovara slici
+          minimal_pairs:
+            start_screen:
+              heading: Pogledajte video i odaberite ispravnu opciju
+    locale:
+      currency_switcher_title: Mjenjač valuta
+      lang_switcher_title: Prebacivač jezika
+      locales:
+        af: Afrikaans
+        am: Amharski
+        ar: arapski
+        az: Azerbejdžanski
+        be: Bjeloruski
+        bg: Bʺlgarski
+        bn: bengalski
+        bs: bosanski
+        ca: katalonski
+        ceb: Cebuano
+        co: Korzikanac
+        cs: češki
+        cy: velški
+        da: danski
+        de: Deutsch
+        el: grčki
+        en: Engleski
+        eo: esperanto
+        es: Español
+        et: estonski
+        eu: baskijski
+        fa: Perzijski
+        fi: Finski
+        fr: Français
+        fy: frizijski
+        ga: irski
+        gd: Škotski galski
+        gl: Galicijski
+        gu: Gudžaratski
+        ha: Hausa
+        haw: havajski
+        he: Hebrejski
+        hi: Hindski
+        hmn: Hmong
+        hr: Hrvatski
+        ht: Haićanski kreolski
+        hu: Mađarski
+        hy: Armenac
+        id: indonezijski
+        ig: Igbo
+        is: Islandski
+        it: Italiano
+        ja: japanski
+        jv: javanski
+        ka: gruzijski
+        kk: Kazahstanski
+        km: Kmerski
+        kn: Kannada
+        ko: korejski
+        ku: kurdski
+        ky: Kirgiški
+        la: latinski
+        lb: Luksemburški
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malgaški
+        mi: Maori
+        mk: makedonski
+        ml: Malajalamski
+        mn: mongolski
+        mr: Marathski
+        ms: malajski
+        mt: malteški
+        my: Mjanmar (burmanski)
+        nb: Norsk
+        ne: Nepalski
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odija (orijski)
+        pa: Pandžapski
+        pl: Polski
+        ps: Paštu
+        pt: Português
+        ro: Limba română
+        ru: Russkij âzyk
+        rw: Kinjaruanda
+        sd: Sindhi
+        si: Sinhala
+        sk: slovački
+        sl: Slovenski
+        sm: Samoanski
+        sn: Šona
+        so: af Soomaali
+        sq: Albanski
+        sr: Srpski
+        st: Sezoto
+        su: Sundanac
+        sv: švedski
+        sw: kiSwahili
+        ta: Tamil
+        te: Teluški
+        tg: Tadžički
+        th: Tajlandski
+        tk: Turkmen
+        tl: Tagalog
+        tr: Türkçe
+        tt: tatarski
+        ug: Ujgurski
+        uk: Ukraíнськаnsʹka
+        ur: urdu
+        uz: uzbečki
+        vi: vijetnamski
+        xh: Xhosa
+        yi: jidiš
+        yo: Joruba
+        zh: kineski
+        zu: zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Učitava se zvuk
+        aria_pause_button: Pauza
+        aria_play_button: igra
+        aria_reload_button: Ponovno učitati
+        aria_stop_button: Stop
+        reload_message: Učitavanje zvuka nije uspjelo. Kliknite gumb za ponovno učitavanje.
+    mobile_modal:
+      apply: Prijavite se
+      cancel: Otkazati
+      clear: Čisto
+      save: Uštedjeti
+    page404:
+      goToStartLessonPage: Idite na početnu stranicu lekcije
+      ooops: Ups ...
+      sorry_message: Nažalost, Tor nije mogao pronaći ovu stranicu
+    profile:
+      navigation:
+        log_out: Odjavite se
+        my_profile: Moj profil
+        settings: Postavke
+      onboarding:
+        choose_native_language: Odaberite svoj materinji jezik ili jezik koji razumijete
+        do_you_understand_english: Razumiješ li engleski?
+        hello: zdravo
+        language_levels:
+          a1: Osnovna razina
+          a2: Pre-srednja razina
+          b1: Srednja razina
+          b2: Gornja srednja razina
+          c1: Napredna razina
+          no_knowledge: Nema znanja
+        language_not_supported:
+          note: Obavijestit ćemo vas čim jezik bude dostupan
+          title: Žao nam je, ali još ne podržavamo ovaj jezik
+          try_another_language: Pokušajte s drugim jezikom
+        'no': Ne
+        search_placeholder: Traži...
+        show_more_languages: Drugi jezici
+        target_language_question: Koji jezik želite naučiti?
+        what_is_language_level: Kako biste ocijenili razinu %{languageName}?
+        'yes': Da
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Politika privatnosti tvrtke Lingu
+        support: Podrška
+      logout: Odjavite se
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Primajte ažuriranja od učitelja i škola koje pratite
+              sections:
+                app_notifications: Obavijesti aplikacije
+                email: E-mail
+              title: Pomoć u učenju
+            marketing:
+              description: Budite informirani o svim promocijama, ažuriranjima i inspiracijama
+                tvrtke Lingu
+              sections:
+                browser_notifications: Obavijesti preglednika
+                email: E-mail
+              title: Marketing
+          title: Postavke kontakta
+        personal_information:
+          delete_photo: Izbriši fotografiju
+          email: E-mail
+          first_name: Ime
+          last_name: Prezime
+          social_accounts:
+            connected: Povezano
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Nije povezano
+            title: Društveni računi
+          title: Osobne informacije
+          update_photo: Ažuriraj fotografiju
+        school:
+          active_licence: Aktivna licenca
+          active_status: Aktivan
+          delete_profile: Izbriši moj profil
+          delete_profile_modal:
+            body: |-
+              Sve svoje podatke brišete - zauvijek. Nema gumba za poništavanje i ne možemo vam ga vratiti nakon.
+              Jeste li sigurni da želite trajno izbrisati svoj Lingu profil i sve svoje podatke?
+            cancel: Otkazati
+            confirm: Da, izbriši ga
+            i_understand_the_consequences: Razumijem posljedice
+            title: Izbrisati svoj profil?
+          expired: Isteklo %{expire_date}
+          expires: Istječe %{expire_date}
+          inactive_status: Neaktivan
+          revoke_access: Opoziv pristupa za čitanje
+          sections:
+            contact_school: Obratite se školi
+            export_my_data: Izvezi moje podatke
+            read_school_privacy_policy: Pročitajte Pravila o privatnosti u školi
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Reprodukcija glazbe
+              sound_effects: Zvučni efekti
+              title: Zvuk
+            visual:
+              dark_theme: Tamna tema
+              font_size:
+                test_text: Trava je uvijek zelenija s druge strane ograde
+                title: Veličina fonta
+              high_contrast: Visoki kontrast
+              hints: Savjeti
+              title: Vizualni
+          title: Zvuk i vizualno
+        training_settings:
+          sections:
+            i_understand: razumijem
+            i_want_to_learn: Želim učiti
+            target_language_level: Engleski nivo
+          title: Postavke treninga
+      settings_title: Postavke
+    teacher_card:
+      followers_count:
+        one: 1 sljedbenik
+        other: "%{count} sljedbenika"
+      lessons_count:
+        one: 1 lekcija
+        other: "%{count} lekcije"

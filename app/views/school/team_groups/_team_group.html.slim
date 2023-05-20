@@ -1,0 +1,12 @@
+.card
+  .card-header
+    .row.justify-content-between
+      .col-auto
+        h6.card-header-title.mb-0= team_group.name
+      .col-auto
+        .dropdown.d-inline-block
+          button.btn id="team-group-action-dropdown-#{team_group.id}" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" = '...'
+          .dropdown-menu aria-labelledby="team-group-action-dropdown-#{team_group.id}"
+            a.dropdown-item= t('edit')
+            a.dropdown-item= t('school.team_students.list_row.archive')
+            a.dropdown-item= t('delete')

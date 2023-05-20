@@ -1,0 +1,610 @@
+---
+ka:
+  course_mailer:
+    course_assigned_notification:
+      button: დაიწყეთ კურსი
+      click_start_lesson: დააჭირეთ "გაკვეთილის დაწყება"
+      follow_course_link: დააჭირეთ ღილაკს, რომ გახსნათ კურსი
+      footer_text: დაბრუნდით ლინგვში და ყოველდღე ისწავლეთ ახალი რამ!
+      get_started_line: 'როგორ იწყება ეს:'
+      notification_link: შეტყობინების პარამეტრები
+      open_lesson: გახსენით პირველი გაკვეთილი
+      or_paste_this_link: ან ჩასვით ეს ბმული თქვენს ბრაუზერში
+      sign_in_with_email: შედით თქვენი ელ.ფოსტის მისამართით (%{email})
+      support_link: მხარდაჭერა
+      title: დაწყება %{course}– ით
+    new_document_comment:
+      author_text: "%{author}– მა დატოვა თქვენი დავალების მიმოხილვა"
+      button_text: Შეამოწმე
+      button_url_helper: 'ან ჩასვით ეს ბმული თქვენს ბრაუზერში:'
+      footer_text: კიდევ ბევრი რამის სწავლაა ...
+      notification_link: შეტყობინების პარამეტრები
+      subject_line: ახალი დავალების კომენტარი
+      support_link: მხარდაჭერა
+    otp:
+      ignore_msg: თუ ეს თხოვნა არ გააკეთეთ, უბრალოდ უგულებელყოფთ ელ.წერილს.
+      subject_line: თქვენი უნიკალური კოდი ლინგვისთვის
+      unique_code_for_lingu: ეს არის თქვენი უნიკალური კოდი ლინგვისთვის
+  frontend:
+    auth:
+      already_have_acc_question: უკვე გაქვთ ანგარიში?
+      back: უკან
+      back_to_sign_in: უკან შესვლა
+      check_your_email_for_a_code: შეამოწმეთ თქვენი ელ.ფოსტა თქვენი კოდისთვის
+      continue: გაგრძელება
+      continue_with_email: გააგრძელეთ ელ.ფოსტით
+      continue_with_provider: გააგრძელეთ %{provider}– ით
+      did_not_receive_a_code: კოდი არ მიგიღიათ?
+      email_address: Ელექტრონული მისამართი
+      first_name: Სახელი
+      get_unique_code: მიიღეთ უნიკალური კოდი
+      join_lingu: შემოგვიერთდით ლინგვში
+      last_name: Გვარი
+      more_login_options: შესვლის მეტი ვარიანტი
+      no_account_question: არ გაქვთ ანგარიში?
+      or: ან
+      resend_code: Კოდის გადაგზავნა
+      sign_in: Შესვლა
+      sign_up: დარეგისტრირება
+      want_to_receive_marketing_messages: მსურს მარინგის შეტყობინებები მივიღო ლინგვისგან
+      we_ve_sent_a_code: >-
+        ჩვენ გამოვაგზავნეთ 6 ნიშნა კოდი <strong> {{{ელ.ფოსტა}} </strong> - ზე. კოდის
+        მოქმედების ვადა 15 წუთში იწურება, ამიტომ გთხოვთ, მალე შეიყვანოთ იგი.
+    cookie_agreement:
+      agree: ვეთანხმები
+      condition: >-
+        ჩვენ ვიყენებთ ქუქი-ფაილებს საიტის მუშაობის გასაანალიზებლად და პერსონალიზირებული
+        შინაარსის მისაღებად. "ვეთანხმები" -ზე დაწკაპუნებით თქვენ ეთანხმებით ჩვენს
+        პირობებს.
+    course:
+      accredited_course_provider: აკრედიტებული კურსის პროვაიდერი
+      apply: მიმართვა
+      apply_filters: გამოიყენეთ ფილტრები
+      by: ავტორი
+      cancel: გაუქმება
+      categories: "%{count} კატეგორიები"
+      category: კატეგორია
+      clear: გასაგებია
+      clear_filters: ფილტრების გასუფთავება
+      contact_us: Დაგვიკავშირდით
+      could_not_find_match_for: უკაცრავად, ვერ იპოვნეთ შესატყვისი
+      course_language: კურსის ენა
+      duration: ხანგრძლივობა
+      filter_settings:
+        categories:
+          academic: აკადემიური
+          business: ბიზნესი
+          fashion: მოდა
+          food_drink: Საჭმელ - სასმელი
+          for_kids: Ბავშვებისთვის
+          general: გენერალი
+          health: ჯანმრთელობა
+          legal: იურიდიული
+          sport: სპორტი
+          travel: მოგზაურობა
+        durations:
+          t0_600: "<10 წთ"
+          t1800_3600: 30-60 წუთი
+          t3600_86400: 1+ საათი
+          t600_1800: 10-30 წუთი
+        focus_on:
+          conversation: Საუბარი
+          grammar: გრამატიკა
+          listening: მოსმენა
+          pronunciation: გამოთქმა
+          reading: Კითხვა
+          speaking: საუბარი
+          writing: Წერა
+        levels:
+          long:
+            advanced: მოწინავე დონე
+            elementary: Ელემენტარული დონე
+            intermediate: Შუალედური დონე
+            no_knowledge: არავითარი ცოდნა
+            pre_intermediate: წინა შუალედური დონე
+            upper_intermediate: ზედა შუალედური დონე
+          short:
+            advanced: Მოწინავე
+            beginner: დამწყები
+            intermediate: შუალედური
+        sort_by:
+          most_rated: ყველაზე რეიტინგული
+          newest: უახლესი
+          popularity: პოპულარობა
+      filters: ფილტრები
+      focus_on: Კონცენტრირება
+      focus_on_title: მინდა ყურადღება გავამახვილო
+      hide_lessons: გაკვეთილების დამალვა
+      hours: საათები
+      i_understand: მე მესმის
+      i_want_to_learn: მინდა ვისწავლო
+      in_language: "%{language}– ში"
+      language: Ენა
+      learn_more: Გაიგე მეტი
+      less_settings: ნაკლები პარამეტრები
+      lessons: გაკვეთილები
+      lessons_available: "%{number} გაკვეთილი ხელმისაწვდომია"
+      lessons_catalog_page_subtitle: გახდი ენის გმირი.
+      lessons_catalog_page_title: გააფართოვეთ თქვენი ჰორიზონტები ენის კურსით
+      level: დონე
+      min: მინ
+      more_settings: დამატებითი პარამეტრები
+      navbar:
+        close: მენიუს დახურვა
+        menu: მენიუ
+        select_language: Აირჩიეთ ენა
+      need_to_buy_course: ჯერ უნდა დაჯავშნოთ კურსი
+      no_description: აღწერილობა არ არის მოწოდებული
+      no_results: უკაცრავად, ვერ იპოვნეთ რაიმე შესატყვისი
+      or: ან
+      per_month: თვეში
+      plans: გეგმები
+      privacy_policy: Კონფიდენციალურობის პოლიტიკა
+      rating: რეიტინგი
+      remove_all_filters: ამოიღეთ ყველა ფილტრი
+      reviews: მიმოხილვები
+      save: Შენახვა
+      search: ძებნა
+      select_dots: აირჩიეთ ...
+      select_languages: აირჩიეთ ენა
+      select_num_languages: აირჩიეთ %{number} ენა
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Მაჩვენე ყველა
+      show_all_lessons: აჩვენეთ ყველა გაკვეთილი
+      show_lessons: აჩვენეთ %{number} გაკვეთილი
+      show_more: მეტის ჩვენება
+      sign_up_with_lingu_for: დარეგისტრირდი ლინგვ ნორვეგიაში
+      skills: "%{count} უნარები"
+      sort_by: Დალაგება
+      start_typing_here: დაიწყეთ აქ აკრეფა
+      teach: ასწავლე
+      terms_and_conditions: Ვადები და პირობები
+      time_range: Დროის მონაკვეთი
+      try_adjusting_your_search: შეეცადეთ შეცვალოთ თქვენი ძიება ფილტრების შეცვლით
+      try_this_course: სცადეთ ეს კურსი
+      website_language: ვებსაიტის ენა
+      words: სიტყვები
+    games:
+      finished:
+        go_to_next_exercise: კარგად გაკეთდეს! გადადით შემდეგ ვარჯიშზე
+      flashcard:
+        buttons:
+          finish: დასრულება
+          next: შემდეგი
+          previous: წინა
+        check_out_new_words: გაეცანით ახალ სიტყვებს, რომლებსაც შეისწავლით ამ გაკვეთილზე
+        frequency_of_word_usage: სიტყვების გამოყენების სიხშირე %{language}- ში
+        keep_practice_to_learn_all_words: გადახედეთ %{count} სიტყვებს და მოდით ვითამაშოთ
+          თამაშები!
+        word_frequency:
+          level1: იშვიათად იყენებენ
+          level2: იშვიათად იყენებენ
+          level3: სიტყვის სიხშირე - საშუალო
+          level4: სიტყვის სიხშირე - საშუალო
+          level5: საერთო
+          level6: Ძალიან საერთო
+      match_word:
+        click_and_move_each_word_to_counterpart: დააჭირეთ და გადაიტანეთ თითოეული სიტყვა
+          თავის კოლეგასთან
+        start_heading: შეუსაბამეთ სიტყვები წყვილის შესაქმნელად
+        time_is_up: დრო ამოიწურა!
+      skip_tutorial: გამოტოვება
+      time_is_up: დრო ამოიწურა!
+      word_nodes:
+        match_letters_to_form_word: შეუსაბამეთ ასოები სიტყვის შესაქმნელად
+      word_waterfall:
+        do_not_hesitate: მოდით დავაჩქაროთ!
+        go_to_next_exercise: გადადით შემდეგ ვარჯიშზე
+        select_correct_translation: შეარჩიეთ სწორი შესატყვისი
+        well_done: კარგად გაკეთდეს!
+    home_page:
+      hello: გამარჯობა,
+      popular_lessons: პოპულარული გაკვეთილები
+      show_more: მეტის ჩვენება
+      time: "%{count} წთ"
+      today_lesson: შენი გაკვეთილი დღეს
+      user_name: "%{name}!"
+      words: "%{count} სიტყვა"
+    idle_screen:
+      by_author: "%{authorName}– ის მიერ"
+      continue_lesson: გააგრძელე გაკვეთილი
+      exit: გასვლა
+      idle_message: თქვენ გარკვეული დროით უსაქმური ხართ ...
+    lesson_page:
+      back_to_course_page: კურსის გვერდზე დაბრუნება
+      close: დახურვა
+      continue_lesson: გააგრძელე გაკვეთილი
+      followed: გაჰყვა
+      hamburger_menu_btn: ჰამბურგერის მენიუ
+      lesson_given: გაკვეთილები
+      not_started: არ დაწყებულა
+      or: ან
+      part_complete: "%{percent}% დასრულებულია"
+      restart_lesson: Რესტარტი
+      section_check: Ჩეკი
+      section_check_info: "%{count} ტესტები"
+      section_learn: Ვისწავლოთ
+      section_learn_info: "%{count} წთ უყურებს და კითხულობს"
+      section_play: ითამაშეთ
+      section_play_info: "%{count} სიტყვები პრაქტიკაში"
+      start_lesson: დაწყება გაკვეთილი
+      step_progress: "%{percent}%"
+      subscribe: Გაყოლა
+      subscribed: გაჰყვა
+      subscribers: მიმდევრები
+      time_min: "%{minutesNumber} წთ"
+      unsubscribe: გაუქმება
+      webview_error_title: Რაღაც არასწორად წავიდა...
+      words_number: "%{wordsNumber} ახალი სიტყვა"
+    lesson_task:
+      cancel_button: გაუქმება
+      check:
+        navigation_next: შემდეგი
+        navigation_previous: წინა
+        navigation_skip: გამოტოვება
+      controls_panel:
+        font_size_button: Შრიფტის ზომა
+        high_contrast_button:
+          origin: მაღალი კონტრასტი
+          short: კონტრასტი
+        hints_button: მინიშნებები
+        music_playback_button:
+          origin: მუსიკის დაკვრა
+          short: მუსიკა
+        sound_effects_button:
+          origin: Ხმის ეფექტები
+          short: ხმა
+      exit_button: გასვლა
+      finish_button: დასრულება
+      finished:
+        back_to_learn: თავში ვისწავლოთ
+        back_to_lesson_page: გაკვეთილის გვერდზე დაბრუნება
+        back_to_results_page: შედეგის გვერდზე დაბრუნება
+        bad_result_message: ჰმმ ... შეეცადეთ გაკვეთილი კიდევ ერთხელ გაიაროთ
+        close_lesson: დახურული გაკვეთილი
+        correct_answers_list: სწორია პასუხების სია
+        good_result_message: ვხედავ, რომ შენ ძალ-ღონეს აკეთებდი!
+        great_result_message: კარგად გაკეთდეს! ეს შესანიშნავი შედეგია!
+        next_course_lesson: რა თქმა უნდა შემდეგ გაკვეთილზე გადასვლა
+        no_results: თქვენ ჯერ არ გაქვთ ტესტის შედეგები
+        no_results_text: გთხოვთ, შეავსოთ გაკვეთილი და ჩააბაროთ ტესტი, რომ მიიღოთ შედეგები
+        see_correct_answers_list: იხილეთ სწორი პასუხების სია
+        train_more: ივარჯიშეთ მეტი და შემდეგ შედეგს მიაღწევთ უკეთეს შედეგს!
+        you_finished_lesson: მშვენიერია! თქვენ გაკვეთილი დაასრულეთ
+      go_back: Დაბრუნდი
+      next_button: შემდეგი
+      not_available_task: ეს დავალება ჯერ მიუწვდომელია
+      start_button: დაწყება
+      tasks:
+        check:
+          assignment:
+            accept: მიღება
+            author_will_check_your_answer: >-
+              %{author} განიხილავს თქვენს პასუხს და, როგორც წესი, მოგცემთ გამოხმაურებას
+              1-2 დღის განმავლობაში
+            continue_writing: გააგრძელეთ წერა
+            copy: კოპირება
+            delete: წაშლა
+            delete_record: ჩანაწერის წაშლა
+            edit: რედაქტირება
+            essay_does_not_have_enough_words: >-
+              თქვენი პასუხი უნდა შეიცავდეს მინიმუმ %{minWordsNumber} სიტყვას. თქვენი
+              პასუხი ამჟამად %{currentWordsNumber} სიტყვაა.
+            followers_count: "%{followersCount} მიმდევრები"
+            lessons_count: "%{lessonsCount} გაკვეთილი"
+            minimal_recording_time: ჩაწერის მინიმალური დრო - %{minimalRecordingTime}
+            minimum_characters_amount: მინიმალური სიმბოლოები - %{minimumCharactersAmount}
+            minimum_words_amount: მინიმალური სიტყვები - %{minimumAmount}
+            record_again: ისევ ჩაწერა
+            record_voice: ჩაწერეთ ხმა
+            send_anyway: მაინც გაგზავნე
+            send_to_review: გაგზავნეთ განსახილველად
+            skip: გამოტოვება
+            too_short_answer: ძალიან მოკლე პასუხი
+            type_your_answer: აკრიფეთ თქვენი პასუხი
+            unknown_task_type: ამოცანის უცნობი ტიპი
+            upgrade_licence: განაახლეთ ლიცენზია
+            upgrade_your_plan: განაახლეთ თქვენი გეგმა, რომ მასწავლებლებთან დავალებების
+              მიმოხილვა სცადოთ
+            upload_files: Ატვირთეთ ფაილები
+            write_essay: დაწერე ესე
+            you_have_used_amount_of_assignments: თქვენ გამოიყენეთ %{amountOfAssignments}
+              დავალების კრედიტები
+          fill_in_blanks:
+            sentence_gap: სასჯელის უფსკრული
+          fill_in_table:
+            column_answer_placeholder: პასუხი
+            column_question_placeholder: Კითხვა
+            example: მაგალითი
+          true_false:
+            'false': ცრუ
+            'true': მართალია
+        learn:
+          translatable_text:
+            show_original: ორიგინალის ჩვენება
+            translate_into: თარგმნეთ Google- ით %{languageName}
+            translate_into_your_lang: თარგმნეთ Google- ით თქვენს ენაზე
+        play:
+          arrange_words:
+            start_screen:
+              heading: მოცემული სიტყვებიდან შეადგინეთ წინადადება
+          audition:
+            start_screen:
+              heading: მოუსმინეთ აუდიოს და შეეხეთ ახლახან მოსმენილ სიტყვას
+          dictation:
+            get_help: Დახმარების მიღება
+            i_do_not_know: Მე არ ვიცი
+            input_placeholder: შეიყვანეთ რაც აქ მოისმინეთ
+            start_screen:
+              heading: მოისმინე და დაწერე ის რაც გსმენიათ
+          fill_gap:
+            start_screen:
+              heading: შეუსაბამეთ სიტყვა და მისი მნიშვნელობა
+          finish_screen:
+            go_to_next_exercise: კარგად გაკეთდეს! გადადით შემდეგ ვარჯიშზე
+          image_hotspot:
+            start_screen:
+              heading: სწორად დაასახელეთ სურათზე გამოსახული ობიექტები
+          image_object:
+            start_screen:
+              heading: შემდეგი სურათიდან აირჩიეთ სწორი ობიექტი
+          inline_dropdown:
+            start_screen:
+              heading: აარჩიეთ წინადადების შესატყვისი სიტყვები
+          mark_word:
+            start_screen:
+              heading: წაიკითხეთ ტექსტი და აირჩიეთ სიტყვა, რომელიც ემთხვევა სურათს
+          minimal_pairs:
+            start_screen:
+              heading: უყურეთ ვიდეოს და აირჩიეთ სწორი ვარიანტი
+    locale:
+      currency_switcher_title: ვალუტის გადამყვანი
+      lang_switcher_title: ენის გადამრთველი
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: ბულგარული
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: დოიჩი
+        el: Greek
+        en: ინგლისური
+        eo: Esperanto
+        es: ესპანელი
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: იტალიალო
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: ლიეტუვიჩ კალბა
+        lv: Latvie valu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: ნორსკი
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: პოლოსკი
+        ps: Pashto
+        pt: პორტუგალური
+        ro: Limba română
+        ru: Русский зык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: სოომაალი
+        sq: Albanian
+        sr: სერბული
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: თურქული
+        tt: Tatar
+        ug: Uyghur
+        uk: უკრაინა
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: აუდიო იტვირთება
+        aria_pause_button: პაუზა
+        aria_play_button: ითამაშეთ
+        aria_reload_button: გადატვირთეთ
+        aria_stop_button: გაჩერდი
+        reload_message: აუდიო ვერ ჩაიტვირთა. გთხოვთ, დააწკაპუნოთ ღილაკზე გადატვირთვისთვის.
+    mobile_modal:
+      apply: მიმართვა
+      cancel: გაუქმება
+      clear: გასაგებია
+      save: Გადარჩენა
+    page404:
+      goToStartLessonPage: გადადით დაწყების გაკვეთილის გვერდზე
+      ooops: აუუუ ...
+      sorry_message: უკაცრავად, ტორმა ვერ იპოვა ეს გვერდი
+    profile:
+      navigation:
+        log_out: გამოსვლა
+        my_profile: Ჩემი პროფილი
+        settings: პარამეტრები
+      onboarding:
+        choose_native_language: აირჩიეთ თქვენი მშობლიური ენა ან თქვენთვის გასაგები
+          ენა
+        do_you_understand_english: Ინგლისური გესმის?
+        hello: გამარჯობა
+        language_levels:
+          a1: Ელემენტარული დონე
+          a2: შუალედური დონე
+          b1: Შუალედური დონე
+          b2: ზედა შუალედური დონე
+          c1: მოწინავე დონე
+          no_knowledge: არავითარი ცოდნა
+        language_not_supported:
+          note: ჩვენ გაცნობებთ, როგორც კი ენა ხელმისაწვდომი იქნება
+          title: უკაცრავად, მაგრამ ამ ენას ჯერ არ ვუჭერთ მხარს
+          try_another_language: სცადეთ სხვა ენა
+        'no': არა
+        search_placeholder: ძებნა ...
+        show_more_languages: Სხვა ენები
+        target_language_question: რომელი ენის სწავლა გსურთ?
+        what_is_language_level: როგორ შეაფასებდით თქვენს %{languageName} დონეს?
+        'yes': დიახ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: ლინგვის კონფიდენციალურობის პოლიტიკა
+        support: მხარდაჭერა
+      logout: გასვლა
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: მიიღეთ განახლებები მასწავლებლებისა და სკოლებისგან, რომლებსაც
+                მიჰყვებით
+              sections:
+                app_notifications: Აპლიკაციის შეტყობინებები
+                email: ელ.ფოსტა
+              title: სწავლის დახმარება
+            marketing:
+              description: იყავით ინფორმირებული ლინგვის ყველა აქციის, განახლებისა
+                და შთაგონების შესახებ
+              sections:
+                browser_notifications: ბრაუზერის შეტყობინებები
+                email: ელ.ფოსტა
+              title: მარკეტინგი
+          title: საკონტაქტო პარამეტრები
+        personal_information:
+          delete_photo: ფოტოს წაშლა
+          email: ელ.წერილი
+          first_name: Სახელი
+          last_name: Გვარი
+          social_accounts:
+            connected: დაკავშირებულია
+            facebook: ფეისბუქი
+            google: გუგლი
+            microsoft: მაიკროსოფტი
+            not_connected: Არ არის დაკავშირებული
+            title: სოციალური ანგარიშები
+          title: Პირადი ინფორმაცია
+          update_photo: განაახლეთ ფოტო
+        school:
+          active_licence: აქტიური ლიცენზია
+          active_status: აქტიური
+          delete_profile: წაშალე ჩემი პროფილი
+          delete_profile_modal:
+            body: |-
+              თქვენ გაანადგურებთ თქვენს ყველა მონაცემს - სამუდამოდ. გაუქმების ღილაკი არ არის და მას შემდეგ ვერ დაგიბრუნებთ.
+              დარწმუნებული ხართ, რომ გსურთ სამუდამოდ წაშალოთ თქვენი Lingu პროფილი და თქვენი მონაცემები?
+            cancel: გაუქმება
+            confirm: დიახ, წაშალეთ
+            i_understand_the_consequences: მე მესმის შედეგები
+            title: გსურთ თქვენი პროფილის წაშლა?
+          expired: ვადაგასული %{expire_date}
+          expires: იწურება %{expire_date}
+          inactive_status: არააქტიური
+          revoke_access: წაკითხვის წვდომის გაუქმება
+          sections:
+            contact_school: დაუკავშირდით სკოლას
+            export_my_data: ჩემი მონაცემების ექსპორტი
+            read_school_privacy_policy: წაიკითხეთ სკოლის კონფიდენციალურობის პოლიტიკა
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: მუსიკის დაკვრა
+              sound_effects: Ხმის ეფექტები
+              title: ხმა
+            visual:
+              dark_theme: მუქი თემა
+              font_size:
+                test_text: გალავნის მეორე მხარეს ბალახი ყოველთვის უფრო მწვანე ფერისაა
+                title: Შრიფტის ზომა
+              high_contrast: მაღალი კონტრასტი
+              hints: მინიშნებები
+              title: ვიზუალური
+          title: ხმოვანი და ვიზუალური
+        training_settings:
+          sections:
+            i_understand: მე მესმის
+            i_want_to_learn: მინდა ვისწავლო
+            target_language_level: ინგლისური დონის
+          title: ტრენინგის პარამეტრები
+      settings_title: პარამეტრები
+    teacher_card:
+      followers_count:
+        one: 1 მიმდევარი
+        other: "%{count} მიმდევრები"
+      lessons_count:
+        one: 1 გაკვეთილი
+        other: "%{count} გაკვეთილი"

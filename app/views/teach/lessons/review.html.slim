@@ -1,0 +1,7 @@
+- set_page_title t('.publishing_status')
+
+= render partial: 'lesson_header', locals: { lesson: lesson }
+
+= render 'lesson_status', lesson: lesson, statuses: statuses, publishable: publishable
+
+= render 'review_reviews', reviews: reviews if reviews.any?

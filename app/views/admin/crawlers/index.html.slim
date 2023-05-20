@@ -1,0 +1,31 @@
+- set_page_title t('.crawlers')
+
+.card
+  .card-header
+    h3.mb-0= t('.crawlers')
+
+  table.table.table-hover
+    thead
+      tr
+        th URL
+        th= t('activerecord.models.language')
+        th= t('activerecord.attributes.lesson.status')
+        th= t('.started_at')
+        th= t('.completed_at')
+        th CSV
+        th= t('delete')
+
+    tbody
+      - @crawlers.each do |crawler|
+        tr
+          td = crawler.url
+          td = crawler.language.capitalize
+          td = crawler.status
+          td = crawler.started_at
+          td = crawler.finished_at
+          td
+            - if crawler.finished?
+              = link_to t('.download_csv'), "#{crawler.csv_file_url}"
+          td
+            - if crawler.pending?
+              = link_to t('delete'), admin_crawler_path(crawler), data: {confirm: 'Are you sure?'}, method: :delete

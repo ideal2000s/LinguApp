@@ -1,0 +1,9 @@
+.card
+  = render 'teach/tasks/shared_task_header', task: task
+  = form_for form, as: :task, url: teach_lesson_task_path(task.lesson, task), method: :patch do |f|
+    = render 'teach/tasks/shared_task_fields', f: f
+
+#task_items.mt-5
+  h2= t('configure')
+  #task_items_container
+    = render partial: task.items.first_or_create, as: :item, locals: { task: task }

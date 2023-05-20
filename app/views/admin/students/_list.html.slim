@@ -1,0 +1,13 @@
+= paginate students
+#students_list.bg-light
+  .table-responsive
+    table.table.thead-light.table-hover.table-condensed
+      thead
+        tr
+          th= t('name')
+          th= t('email')
+          th= t('.native_language')
+          th= t('.target_language')
+          th
+      tbody
+        = render partial: 'admin/students/list_row', collection: students, as: :student, cached: true

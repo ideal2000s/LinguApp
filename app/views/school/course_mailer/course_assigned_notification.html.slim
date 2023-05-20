@@ -1,0 +1,6 @@
+p= t('course_mailer.course_assigned_notification.get_started_line')
+ol
+  li= t('course_mailer.course_assigned_notification.follow_course_link')
+  li= t('course_mailer.course_assigned_notification.open_lesson')
+  li= t('course_mailer.course_assigned_notification.sign_in_with_email', email: @student.email)
+  li= t('course_mailer.course_assigned_notification.click_start_lesson')

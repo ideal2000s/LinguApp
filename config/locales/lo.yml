@@ -1,0 +1,600 @@
+---
+lo:
+  course_mailer:
+    course_assigned_notification:
+      button: ເລີ່ມຕົ້ນຫຼັກສູດ
+      click_start_lesson: ກົດ 'ບົດຮຽນເລີ່ມຕົ້ນ'
+      follow_course_link: ກົດປຸ່ມເພື່ອເປີດຫຼັກສູດ
+      footer_text: ກັບມາທີ່ Lingu ເພື່ອຮຽນຮູ້ສິ່ງ ໃໝ່ ທຸກໆມື້!
+      get_started_line: 'ນີ້ແມ່ນວິທີທີ່ທ່ານເລີ່ມຕົ້ນ:'
+      notification_link: ການຕັ້ງຄ່າແຈ້ງເຕືອນ
+      open_lesson: ເປີດບົດຮຽນ ທຳ ອິດ
+      or_paste_this_link: ຫຼືວາງລິ້ງນີ້ຢູ່ໃນ browser ຂອງທ່ານ
+      sign_in_with_email: ເຂົ້າໃຊ້ທີ່ຢູ່ອີເມວຂອງທ່ານ (%{email})
+      support_link: ສະ ໜັບ ສະ ໜູນ
+      title: ການເລີ່ມຕົ້ນດ້ວຍ %{course}
+    new_document_comment:
+      author_text: "%{author} ປະໄວ້ການທົບທວນຄືນຂອງການມອບ ໝາຍ ຂອງທ່ານ"
+      button_text: ກວດເບິ່ງມັນ
+      button_url_helper: 'ຫຼືວາງລິ້ງນີ້ເຂົ້າໃນ browser ຂອງທ່ານ:'
+      footer_text: ມີອີກຫຼາຍຢ່າງທີ່ຕ້ອງຮຽນຮູ້…
+      notification_link: ການຕັ້ງຄ່າແຈ້ງເຕືອນ
+      subject_line: ຄຳ ເຫັນກ່ຽວກັບການມອບ ໝາຍ ໃໝ່
+      support_link: ສະ ໜັບ ສະ ໜູນ
+    otp:
+      ignore_msg: ຖ້າທ່ານບໍ່ໄດ້ຮ້ອງຂໍນີ້, ພຽງແຕ່ບໍ່ສົນໃຈອີເມວ.
+      subject_line: ລະຫັດທີ່ເປັນເອກະລັກຂອງທ່ານ ສຳ ລັບ Lingu
+      unique_code_for_lingu: ນີ້ແມ່ນລະຫັດທີ່ເປັນເອກະລັກຂອງທ່ານ ສຳ ລັບ Lingu
+  frontend:
+    auth:
+      already_have_acc_question: ມີບັນຊີຢູ່ແລ້ວບໍ?
+      back: ກັບໄປ
+      back_to_sign_in: ກັບໄປເຂົ້າສູ່ລະບົບ
+      check_your_email_for_a_code: ກວດເບິ່ງອີເມວຂອງທ່ານ ສຳ ລັບລະຫັດຂອງທ່ານ
+      continue: ສືບຕໍ່
+      continue_with_email: ສືບຕໍ່ດ້ວຍອີເມວ
+      continue_with_provider: ສືບຕໍ່ດ້ວຍ %{provider}
+      did_not_receive_a_code: ບໍ່ໄດ້ຮັບລະຫັດບໍ?
+      email_address: ທີ່​ຢູ່​ອີ​ເມວ
+      first_name: ຊື່​ແທ້
+      get_unique_code: ເອົາລະຫັດເຂົ້າສູ່ລະບົບທີ່ເປັນເອກະລັກ
+      join_lingu: ເຂົ້າຮ່ວມກັບ Lingu
+      last_name: ນາມ​ສະ​ກຸນ
+      more_login_options: ຕົວເລືອກເຂົ້າສູ່ລະບົບເພີ່ມເຕີມ
+      no_account_question: ບໍ່ມີບັນຊີບໍ?
+      or: ຫຼື
+      resend_code: ສົ່ງລະຫັດຄືນ ໃໝ່
+      sign_in: ເຂົ້າ​ສູ່​ລະ​ບົບ
+      sign_up: ລົງ​ທະ​ບຽນ
+      want_to_receive_marketing_messages: ຂ້ອຍຕ້ອງການຮັບຂໍ້ຄວາມທາງກາລະຕະຫຼາດຈາກ Lingu
+      we_ve_sent_a_code: >-
+        ພວກເຮົາໄດ້ສົ່ງລະຫັດ 6 ຕົວເລກໄປທີ່ <strong> {{email}} </strong>. ລະຫັດຈະ ໝົດ
+        ລົງພາຍໃນ 15 ນາທີ, ສະນັ້ນກະລຸນາໃສ່ມັນໄວໆນີ້.
+    cookie_agreement:
+      agree: ຕົກລົງ
+      condition: >-
+        ພວກເຮົາໃຊ້ cookies ເພື່ອວິເຄາະຜົນງານຂອງເວບໄຊທ໌ແລະສົ່ງເນື້ອຫາທີ່ເປັນສ່ວນຕົວ.
+        ໂດຍການກົດ“ ເຫັນດີ”, ທ່ານຍິນຍອມຕໍ່ເງື່ອນໄຂຂອງພວກເຮົາ.
+    course:
+      accredited_course_provider: ຜູ້ສະ ໜອງ ຫຼັກສູດທີ່ໄດ້ຮັບການຮັບຮອງ
+      apply: ສະ ໝັກ
+      apply_filters: ນຳ ໃຊ້ຕົວກອງ
+      by: ໂດຍ
+      cancel: ຍົກເລີກ
+      categories: "%{count} ປະເພດ"
+      category: ໝວດ
+      clear: ແຈ້ງ
+      clear_filters: ລ້າງຕົວກອງ
+      contact_us: ຕິດ​ຕໍ່​ພວກ​ເຮົາ
+      could_not_find_match_for: ຂໍອະໄພ, ພວກເຮົາບໍ່ສາມາດຊອກຫາການແຂ່ງຂັນໃດໆ
+      course_language: ພາສາຫຼັກສູດ
+      duration: ໄລຍະເວລາ
+      filter_settings:
+        categories:
+          academic: ວິຊາການ
+          business: ທຸລະກິດ
+          fashion: ແຟຊັ່ນ
+          food_drink: ອາຫານແລະເຄື່ອງດື່ມ
+          for_kids: ສຳ ລັບເດັກນ້ອຍ
+          general: ທົ່ວໄປ
+          health: ສຸ​ຂະ​ພາບ
+          legal: ຖືກກົດ ໝາຍ
+          sport: ກິລາ
+          travel: ທ່ອງ​ທ່ຽວ
+        durations:
+          t0_600: "<10 ນາທີ"
+          t1800_3600: 30-60 ນາທີ
+          t3600_86400: 1+ ຊົ່ວໂມງ
+          t600_1800: 10-30 ນາທີ
+        focus_on:
+          conversation: ການສົນທະນາ
+          grammar: ໄວຍາກອນ
+          listening: ການຟັງ
+          pronunciation: ການອອກສຽງ
+          reading: ການອ່ານ
+          speaking: ເວົ້າ
+          writing: ການ​ຂຽນ
+        levels:
+          long:
+            advanced: ລະດັບຂັ້ນສູງ
+            elementary: ລະດັບປະຖົມ
+            intermediate: ລະ​ດັບ​ປານ​ກາງ
+            no_knowledge: ບໍ່ມີຄວາມຮູ້
+            pre_intermediate: ລະດັບປານກາງກ່ອນ
+            upper_intermediate: ລະດັບປານກາງລະດັບກາງ
+          short:
+            advanced: ຂັ້ນສູງ
+            beginner: ຜູ້ເລີ່ມຕົ້ນ
+            intermediate: ລະດັບປານກາງ
+        sort_by:
+          most_rated: ໃຫ້ຄະແນນຫຼາຍທີ່ສຸດ
+          newest: ໃໝ່ ສຸດ
+          popularity: ຄວາມນິຍົມ
+      filters: ຕົວກອງ
+      focus_on: ຈຸດ​ສຸມ
+      focus_on_title: ຂ້ອຍຢາກສຸມໃສ່
+      hide_lessons: ເຊື່ອງບົດຮຽນ
+      hours: ຊົ່ວໂມງ
+      i_understand: ຂ້ອຍ​ເຂົ້າ​ໃຈ
+      i_want_to_learn: ຂ້າ​ພະ​ເຈົ້າ​ຕ້ອງ​ການ​ຮຽນ​ຮູ້
+      in_language: ໃນ %{language}
+      language: ພາສາ
+      learn_more: ຮຽນຮູ້ເພີ່ມເຕີມ
+      less_settings: ການຕັ້ງຄ່າຫນ້ອຍ
+      lessons: ບົດຮຽນ
+      lessons_available: "%{number} ບົດຮຽນທີ່ມີຢູ່"
+      lessons_catalog_page_subtitle: ກາຍເປັນວິລະຊົນດ້ານພາສາ.
+      lessons_catalog_page_title: ຂະຫຍາຍຂອບເຂດຂອງທ່ານດ້ວຍຫລັກສູດພາສາ
+      level: ລະດັບ
+      min: Min
+      more_settings: ການຕັ້ງຄ່າເພີ່ມເຕີມ
+      navbar:
+        close: ປິດເມນູ
+        menu: ເມນູ
+        select_language: ເລືອກພາສາ
+      need_to_buy_course: ທ່ານຕ້ອງການຈອງຫລັກສູດກ່ອນ
+      no_description: ບໍ່ມີ ຄຳ ອະທິບາຍໃດໆ
+      no_results: ຂໍອະໄພ, ພວກເຮົາບໍ່ສາມາດຊອກຫາການແຂ່ງຂັນໃດໆ
+      or: ຫຼື
+      per_month: ຕໍ່​ເດືອນ
+      plans: ແຜນການ
+      privacy_policy: ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ
+      rating: ການໃຫ້ຄະແນນ
+      remove_all_filters: ຖອດທຸກຕົວກອງອອກ
+      reviews: ການທົບທວນຄືນ
+      save: ບັນທຶກ
+      search: ຄົ້ນຫາ
+      select_dots: ເລືອກ ...
+      select_languages: ເລືອກ langauges
+      select_num_languages: ເລືອກພາສາ %{number}
+      short_levels:
+        a1: ກ 1
+        a2: ກ 2
+        b1: ຂ 1
+        b2: ຂ
+        c1: C1
+        c2: C2
+        zero_level: ກ .0
+      show_all: ສະແດງທັງ ໝົດ
+      show_all_lessons: ສະແດງບົດຮຽນທັງ ໝົດ
+      show_lessons: ສະແດງບົດຮຽນ %{number}
+      show_more: ສະແດງໃຫ້ເຫັນຫຼາຍ
+      sign_up_with_lingu_for: ລົງທະບຽນກັບ Lingu Norway ເພື່ອ
+      skills: "%{count} ທັກສະ"
+      sort_by: ຮຽງຕາມ
+      start_typing_here: ເລີ່ມພິມຢູ່ບ່ອນນີ້
+      teach: ສອນ
+      terms_and_conditions: ຂໍ້ ກຳ ນົດແລະເງື່ອນໄຂ
+      time_range: ຊ່ວງເວລາ
+      try_adjusting_your_search: ພະຍາຍາມດັດປັບການຄົ້ນຫາຂອງທ່ານໂດຍການປ່ຽນຕົວກອງຂອງທ່ານ
+      try_this_course: ລອງວິຊານີ້
+      website_language: ພາສາເວບໄຊທ໌
+      words: ຄຳ ເວົ້າ
+    games:
+      finished:
+        go_to_next_exercise: ເຮັດໄດ້ດີ! ໄປອອກ ກຳ ລັງກາຍຕໍ່ໄປ
+      flashcard:
+        buttons:
+          finish: ຈົບ
+          next: ຕໍ່ໄປ
+          previous: ທີ່ຜ່ານມາ
+        check_out_new_words: ກວດເບິ່ງ ຄຳ ສັບ ໃໝ່ໆ ທີ່ທ່ານຈະຮຽນໃນບົດຮຽນນີ້
+        frequency_of_word_usage: ຄວາມຖີ່ຂອງການໃຊ້ ຄຳ ສັບໃນ %{language}
+        keep_practice_to_learn_all_words: ທົບທວນ ຄຳ ສັບ %{count} ແລະລອງຫຼີ້ນບາງເກມ!
+        word_frequency:
+          level1: ໃຊ້ທີ່ຫາຍາກ
+          level2: ໃຊ້ທີ່ຫາຍາກ
+          level3: ຄວາມຖີ່ຂອງ ຄຳ ສັບ - ກາງ
+          level4: ຄວາມຖີ່ຂອງ ຄຳ ສັບ - ກາງ
+          level5: ສາມັນ
+          level6: ພົບຫຼາຍ
+      match_word:
+        click_and_move_each_word_to_counterpart: ກົດແລະຍ້າຍແຕ່ລະ ຄຳ ສັບໄປຫາຄູ່ຂອງມັນ
+        start_heading: ຈັບຄູ່ ຄຳ ເພື່ອສ້າງຄູ່
+        time_is_up: ເຖິງເວລາແລ້ວ!
+      skip_tutorial: ຂ້າມ
+      time_is_up: ເຖິງເວລາແລ້ວ!
+      word_nodes:
+        match_letters_to_form_word: ກົງກັບຕົວອັກສອນເພື່ອປະກອບ ຄຳ
+      word_waterfall:
+        do_not_hesitate: ຂໍໃຫ້ເລັ່ງ!
+        go_to_next_exercise: ໄປອອກ ກຳ ລັງກາຍຕໍ່ໄປ
+        select_correct_translation: ເລືອກເອົາການຈັບຄູ່ທີ່ຖືກຕ້ອງ
+        well_done: ເຮັດໄດ້ດີ!
+    home_page:
+      hello: ສະບາຍດີ,
+      popular_lessons: ບົດຮຽນທີ່ໄດ້ຮັບຄວາມນິຍົມ
+      show_more: ສະແດງໃຫ້ເຫັນຫຼາຍ
+      time: "%{count} ນ"
+      today_lesson: ບົດຮຽນຂອງເຈົ້າ ສຳ ລັບມື້ນີ້
+      user_name: "%{name}!"
+      words: "%{count} ຄຳ ສັບ"
+    idle_screen:
+      by_author: ໂດຍ %{authorName}
+      continue_lesson: ສືບຕໍ່ບົດຮຽນ
+      exit: ອອກໄປ
+      idle_message: ທ່ານບໍ່ໄດ້ເຮັດວຽກເປັນເວລາ ໜຶ່ງ ...
+    lesson_page:
+      back_to_course_page: ກັບໄປ ໜ້າ ຫຼັກສູດ
+      close: ປິດ
+      continue_lesson: ສືບຕໍ່ບົດຮຽນ
+      followed: ຕິດຕາມ
+      hamburger_menu_btn: ເມນູແຮມເບີເກີ
+      lesson_given: ບົດຮຽນ
+      not_started: ບໍ່ໄດ້ເລີ່ມຕົ້ນ
+      or: ຫລື
+      part_complete: "%{percent}% ສຳ ເລັດແລ້ວ"
+      restart_lesson: ເລີ່ມ​ຕົ້ນ​ໃຫມ່
+      section_check: ກວດສອບ
+      section_check_info: ການທົດສອບ %{count}
+      section_learn: ຮຽນຮູ້
+      section_learn_info: "%{count} min ເພື່ອເບິ່ງແລະອ່ານ"
+      section_play: ຫຼິ້ນ
+      section_play_info: "%{count} ຄໍາທີ່ຈະປະຕິບັດ"
+      start_lesson: ເລີ່ມຕົ້ນບົດຮຽນ
+      step_progress: "%{percent}%"
+      subscribe: ປະຕິບັດຕາມ
+      subscribed: ຕິດຕາມ
+      subscribers: ຜູ້ຕິດຕາມ
+      time_min: "%{minutesNumber} ນ"
+      unsubscribe: ບໍ່ຕິດ
+      webview_error_title: ມີບາງຢ່າງຜິດປົກກະຕິ ...
+      words_number: "%{wordsNumber} ຄຳ ສັບ ໃໝ່"
+    lesson_task:
+      cancel_button: ຍົກເລີກ
+      check:
+        navigation_next: ຕໍ່ໄປ
+        navigation_previous: ທີ່ຜ່ານມາ
+        navigation_skip: ຂ້າມ
+      controls_panel:
+        font_size_button: ຂະ ໜາດ ຕົວອັກສອນ
+        high_contrast_button:
+          origin: ກົງກັນຂ້າມສູງ
+          short: ກົງກັນຂ້າມ
+        hints_button: ຄຳ ແນະ ນຳ
+        music_playback_button:
+          origin: ການຫລີ້ນດົນຕີ
+          short: ເພງ
+        sound_effects_button:
+          origin: ຜົນກະທົບສຽງ
+          short: ສຽງ
+      exit_button: ອອກໄປ
+      finish_button: ຈົບ
+      finished:
+        back_to_learn: ກັບໄປທີ່ຈະຮຽນຮູ້
+        back_to_lesson_page: ກັບໄປ ໜ້າ ບົດຮຽນ
+        back_to_results_page: ກັບໄປ ໜ້າ ຜົນໄດ້ຮັບ
+        bad_result_message: ອື່ມ ... ລອງເອົາບົດຮຽນອີກຄັ້ງ ໜຶ່ງ
+        close_lesson: ປິດບົດຮຽນ
+        correct_answers_list: ບັນຊີລາຍຊື່ ຄຳ ຕອບທີ່ຖືກຕ້ອງ
+        good_result_message: ຂ້ອຍເຫັນວ່າເຈົ້າໄດ້ພະຍາຍາມແລ້ວ!
+        great_result_message: ເຮັດໄດ້ດີ! ນີ້ແມ່ນຜົນໄດ້ຮັບທີ່ຍິ່ງໃຫຍ່!
+        next_course_lesson: ໄປຫາບົດຮຽນຕໍ່ໄປໃນຫຼັກສູດ
+        no_results: ທ່ານຍັງບໍ່ທັນມີຜົນການທົດສອບເທື່ອ
+        no_results_text: ກະລຸນາ, ຈົ່ງເຮັດບົດຮຽນໃຫ້ ສຳ ເລັດແລະຜ່ານການສອບເສັງເພື່ອໃຫ້ໄດ້ຜົນ
+        see_correct_answers_list: ເບິ່ງລາຍຊື່ ຄຳ ຕອບທີ່ຖືກຕ້ອງ
+        train_more: ຝຶກໃຫ້ຫຼາຍຂື້ນແລະທ່ານຈະໄດ້ຮັບຜົນດີຂື້ນໃນຄັ້ງຕໍ່ໄປ!
+        you_finished_lesson: ຍິ່ງໃຫຍ່! ທ່ານຈົບບົດຮຽນແລ້ວ
+      go_back: ກັບ​ຄືນ
+      next_button: ຕໍ່ໄປ
+      not_available_task: ວຽກງານນີ້ຍັງບໍ່ມີເທື່ອ
+      start_button: ເລີ່ມຕົ້ນ
+      tasks:
+        check:
+          assignment:
+            accept: ຍອມ​ຮັບ
+            author_will_check_your_answer: "%{author} ຈະທົບທວນ ຄຳ ຕອບຂອງທ່ານແລະໂດຍປົກກະຕິຈະໃຫ້
+              ຄຳ ຕິຊົມພາຍໃນ 1-2 ວັນ"
+            continue_writing: ສືບຕໍ່ຂຽນ
+            copy: ສຳ ເນົາ
+            delete: ລົບ
+            delete_record: ລົບບັນທຶກ
+            edit: ແກ້ໄຂ
+            essay_does_not_have_enough_words: >-
+              ຄຳ ຕອບຂອງທ່ານຄວນມີຢ່າງ ໜ້ອຍ %{minWordsNumber} ຄຳ. ຄຳ ຕອບຂອງທ່ານແມ່ນ
+              %{currentWordsNumber} ຄຳ ສັບປະຈຸບັນ.
+            followers_count: "%{followersCount} ຜູ້ຕິດຕາມ"
+            lessons_count: "%{lessonsCount} ບົດຮຽນ"
+            minimal_recording_time: ເວລາບັນທຶກ ໜ້ອຍ ທີ່ສຸດ - %{minimalRecordingTime}
+            minimum_characters_amount: ຕົວອັກສອນຕ່ ຳ ສຸດ - %{minimumCharactersAmount}
+            minimum_words_amount: ຄຳ ເວົ້າຂັ້ນຕ່ ຳ - %{minimumAmount}
+            record_again: ບັນທຶກອີກຄັ້ງ
+            record_voice: ບັນທຶກສຽງ
+            send_anyway: ສົ່ງຢ່າງໃດກໍ່ຕາມ
+            send_to_review: ສົ່ງໃຫ້ກວດກາຄືນ
+            skip: ຂ້າມ
+            too_short_answer: ຄຳ ຕອບສັ້ນເກີນໄປ
+            type_your_answer: ພິມ ຄຳ ຕອບຂອງທ່ານ
+            unknown_task_type: ບໍ່ຮູ້ປະເພດວຽກ
+            upgrade_licence: ຍົກລະດັບໃບອະນຸຍາດ
+            upgrade_your_plan: ຍົກລະດັບແຜນການຂອງທ່ານໃຫ້ພະຍາຍາມມອບ ໝາຍ ກັບການທົບທວນຄູ
+            upload_files: ອັບໂຫລດເອກະສານ
+            write_essay: ຂຽນບົດຂຽນ
+            you_have_used_amount_of_assignments: ທ່ານໄດ້ໃຊ້ໃບມອບ ໝາຍ %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: ຊ່ອງຫວ່າງຂອງປະໂຫຍກ
+          fill_in_table:
+            column_answer_placeholder: ຕອບ
+            column_question_placeholder: ຄຳ ຖາມ
+            example: ຕົວຢ່າງ
+          true_false:
+            'false': ບໍ່ຖືກຕ້ອງ
+            'true': ຖືກຕ້ອງ
+        learn:
+          translatable_text:
+            show_original: ສະແດງຕົ້ນສະບັບ
+            translate_into: ແປກັບ Google ເປັນ %{languageName}
+            translate_into_your_lang: ແປກັບ Google ເປັນພາສາຂອງທ່ານ
+        play:
+          arrange_words:
+            start_screen:
+              heading: ສ້າງປະໂຫຍກອອກຈາກ ຄຳ ທີ່ໃຫ້
+          audition:
+            start_screen:
+              heading: ຟັງສຽງແລະກົດໃສ່ ຄຳ ທີ່ທ່ານຫາກໍ່ໄດ້ຍິນ
+          dictation:
+            get_help: ຂໍຄວາມຊ່ວຍເຫລືອ
+            i_do_not_know: ຂ້ອຍ​ບໍ່​ຮູ້
+            input_placeholder: ກະລຸນາໃສ່ສິ່ງທີ່ທ່ານໄດ້ຍິນຢູ່ນີ້
+            start_screen:
+              heading: ຟັງແລະຂຽນສິ່ງທີ່ທ່ານໄດ້ຍິນ
+          fill_gap:
+            start_screen:
+              heading: ກົງກັບ ຄຳ ສັບແລະຄວາມ ໝາຍ ຂອງມັນ
+          finish_screen:
+            go_to_next_exercise: ເຮັດໄດ້ດີ! ໄປອອກ ກຳ ລັງກາຍຕໍ່ໄປ
+          image_hotspot:
+            start_screen:
+              heading: ຕັ້ງຊື່ວັດຖຸໃນຮູບຖືກຕ້ອງ
+          image_object:
+            start_screen:
+              heading: ເລືອກວັດຖຸທີ່ຖືກຕ້ອງຈາກຮູບຕໍ່ໄປ
+          inline_dropdown:
+            start_screen:
+              heading: ເລືອກເອົາ ຄຳ ທີ່ກົງກັບປະໂຫຍກ
+          mark_word:
+            start_screen:
+              heading: ອ່ານຂໍ້ຄວາມແລະເລືອກ ຄຳ ທີ່ກົງກັບຮູບພາບ
+          minimal_pairs:
+            start_screen:
+              heading: ເບິ່ງວິດີໂອແລະເລືອກຕົວເລືອກທີ່ຖືກຕ້ອງ
+    locale:
+      currency_switcher_title: ຕົວປ່ຽນສະກຸນເງິນ
+      lang_switcher_title: ຕົວປ່ຽນແປງພາສາ
+      locales:
+        af: ພາສາແອັສປາຍ
+        am: Amharic
+        ar: ອາຣັບ
+        az: ອາເມລິກາ
+        be: ເບລາຣູດ
+        bg: лгарски
+        bn: ພາສາເບັງກາລີ
+        bs: ບອສເນຍ
+        ca: ກາຕາລັງ
+        ceb: ຫ້ອງສະ ໝຸດ
+        co: Corsican
+        cs: ເຊັກ
+        cy: ແວວ
+        da: ເດນມາກ
+        de: ເຢຍລະມັນ
+        el: ກເຣັກ
+        en: ພາສາອັງກິດ
+        eo: Esperanto
+        es: Español
+        et: ເອສໂຕເນຍ
+        eu: ປະເທດແບນຊິກ
+        fa: ເປີເຊຍ
+        fi: ແຟງລັງ
+        fr: ຝະລັ່ງ
+        fy: ປະເທດເກາະ
+        ga: ໄອແລນ
+        gd: ສະກັອດກີ
+        gl: ກາລິຊຽນ
+        gu: ກູບາ
+        ha: Hausa
+        haw: ຮາວາຍ
+        he: ຍິວ
+        hi: ຮິນດູ
+        hmn: ເຜົ່າມົ້ງ
+        hr: ໂຄຣເອເຊຍ
+        ht: ປະເທດ Haitian Haitian
+        hu: ຮັງກາຣີ
+        hy: ອາກເມນີ
+        id: ອິນໂດເນເຊຍ
+        ig: ອິໂກໂບ
+        is: ພາສາໄອສແລນ
+        it: ອິຕາລີ
+        ja: ຍີ່ປຸ່ນ
+        jv: ຈາວາ
+        ka: ຈໍເຈຍ
+        kk: ຄາຊັກສະຖານ
+        km: ພາສາລາວ
+        kn: ການາດາ
+        ko: ເກົາຫຼີ
+        ku: ເຄີດິສ
+        ky: ກີກີ
+        la: ລາຕິນ
+        lb: ພາສາລາວ
+        lo: ລາວ
+        lt: Lietuvių kalba
+        lv: ລັດເວຍ
+        mg: ມາລາກາ
+        mi: Maori
+        mk: ມາເຊໂດນີ
+        ml: ມາເລເຊຍ
+        mn: ພາສາມົງໂກນ
+        mr: ມາຣາທອນ
+        ms: ມາເລ
+        mt: Maltese
+        my: ມຽນມາ (ມຽນມາ)
+        nb: ນາວ
+        ne: ເນປານ
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: ພາສາປັນຈາກາ
+        pl: Polski
+        ps: ພາສາ Pashto
+        pt: ປະເທດ Portugal
+        ro: Limba română
+        ru: РуРусс.язкк.
+        rw: ກິນົນ
+        sd: Sindhi
+        si: ສິນລະປະ
+        sk: ສະໂລວາເກຍ
+        sl: ສະໂລເວນີ
+        sm: ຊາມົວ
+        sn: Shona
+        so: af Soomaali
+        sq: ອານບານີ
+        sr: Сербский
+        st: ເຊໂດນ
+        su: ສຸວັນດາ
+        sv: ຊູແອັດ
+        sw: kiSwalay
+        ta: ທະມິນ
+        te: Telugu
+        tg: ທາຈິກິສະຖານ
+        th: ໄທ
+        tk: ຕວັກກີ
+        tl: ຕາກາລTagalogອກ
+        tr: Türkçe
+        tt: Tatar
+        ug: ອູຍຄູ້
+        uk: ".країнська"
+        ur: Urdu
+        uz: Uzbek
+        vi: ຫວຽດນາມ
+        xh: Xhosa
+        yi: ຢິດ
+        yo: Yoruba
+        zh: ຈີນ
+        zu: ຊູລູ
+    media_player:
+      audio_player:
+        aria_loading_button: ສຽງ ກຳ ລັງໂຫລດຢູ່
+        aria_pause_button: ຢຸດ​ຊົ່ວ​ຄາວ
+        aria_play_button: ຫຼິ້ນ
+        aria_reload_button: ໂຫຼດ ໃໝ່
+        aria_stop_button: ຢຸດ
+        reload_message: ການໂຫລດສຽງລົ້ມເຫລວ. ກະລຸນາກົດປຸ່ມເພື່ອໂຫລດ ໃໝ່.
+    mobile_modal:
+      apply: ສະ ໝັກ
+      cancel: ຍົກເລີກ
+      clear: ແຈ້ງ
+      save: ບັນທຶກ
+    page404:
+      goToStartLessonPage: ໄປທີ່ ໜ້າ ບົດຮຽນເລີ່ມຕົ້ນ
+      ooops: ໂອ ...
+      sorry_message: ຂໍໂທດ, Tor ບໍ່ສາມາດຊອກຫາ ໜ້າ ນີ້ໄດ້
+    profile:
+      navigation:
+        log_out: ອອກ​ຈາກ​ລະ​ບົບ
+        my_profile: ໂປຼໄຟລ໌ຂອງຂ້ອຍ
+        settings: ການຕັ້ງຄ່າ
+      onboarding:
+        choose_native_language: ເລືອກພາສາຫຼືພາສາທີ່ທ່ານເຂົ້າໃຈ
+        do_you_understand_english: ເຈົ້າ​ເຂົ້າ​ໃຈ​ພາ​ສາ​ອັງ​ກິດ​ບໍ?
+        hello: ສະບາຍດີ
+        language_levels:
+          a1: ລະດັບປະຖົມ
+          a2: ລະດັບປານກາງ
+          b1: ລະ​ດັບ​ປານ​ກາງ
+          b2: ລະດັບປານກາງລະດັບປານກາງ
+          c1: ລະດັບຂັ້ນສູງ
+          no_knowledge: ບໍ່ມີຄວາມຮູ້
+        language_not_supported:
+          note: ພວກເຮົາຈະແຈ້ງໃຫ້ທ່ານຊາບທັນທີທີ່ພາສາຈະມີ
+          title: ຂໍໂທດ, ແຕ່ພວກເຮົາຍັງບໍ່ສະ ໜັບ ສະ ໜູນ ພາສານີ້ເທື່ອ
+          try_another_language: ລອງໃຊ້ພາສາອື່ນ
+        'no': ບໍ່
+        search_placeholder: ຄົ້ນຫາ ...
+        show_more_languages: ພາສາອື່ນໆ
+        target_language_question: ເຈົ້າຢາກຮຽນພາສາໃດ?
+        what_is_language_level: ເຈົ້າຈະໃຫ້ຄະແນນລະດັບ %{languageName} ຂອງເຈົ້າແນວໃດ?
+        'yes': ແມ່ນແລ້ວ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວຂອງ Lingu
+        support: ສະ ໜັບ ສະ ໜູນ
+      logout: ອອກ​ຈາກ​ລະ​ບົບ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: ໄດ້ຮັບການປັບປຸງຈາກຄູອາຈານແລະໂຮງຮຽນທີ່ທ່ານຕິດຕາມ
+              sections:
+                app_notifications: ການແຈ້ງເຕືອນຂອງແອັບ App
+                email: ອີເມລ
+              title: ການຊ່ວຍເຫຼືອໃນການຮຽນຮູ້
+            marketing:
+              description: ຮັບຂໍ້ມູນກ່ຽວກັບໂປໂມຊັ່ນ, ການອັບເດດແລະແຮງບັນດານໃຈຈາກ Lingu
+              sections:
+                browser_notifications: ການແຈ້ງເຕືອນຂອງຕົວທ່ອງເວັບ
+                email: ອີເມລ
+              title: ການຕະຫຼາດ
+          title: ການຕິດຕໍ່ຕາມທີ່ໃຈມັກ
+        personal_information:
+          delete_photo: ລຶບຮູບ
+          email: ອີເມວ
+          first_name: ຊື່​ແທ້
+          last_name: ນາມ​ສະ​ກຸນ
+          social_accounts:
+            connected: ເຊື່ອມຕໍ່ແລ້ວ
+            facebook: ເຟສບຸກ
+            google: Google
+            microsoft: Microsoft
+            not_connected: ບໍ່ເຊື່ອມຕໍ່
+            title: ບັນຊີສັງຄົມ
+          title: ຂໍ້​ມູນ​ສ່ວນ​ຕົວ
+          update_photo: ປັບປຸງຮູບພາບ
+        school:
+          active_licence: ໃບອະນຸຍາດເຄື່ອນໄຫວ
+          active_status: ຫ້າວຫັນ
+          delete_profile: ລຶບໂປຣໄຟລ໌ຂອງຂ້ອຍ
+          delete_profile_modal:
+            body: |-
+              ທ່ານ ທຳ ລາຍຂໍ້ມູນທັງ ໝົດ ຂອງທ່ານ - ຕະຫຼອດໄປ. ບໍ່ມີປຸ່ມຍົກເລີກ, ແລະພວກເຮົາບໍ່ສາມາດເອົາມັນຄືນມາໃຫ້ທ່ານຫລັງຈາກນັ້ນ.
+              ທ່ານແນ່ໃຈບໍ່ວ່າທ່ານຕ້ອງການລຶບໂປຣໄຟລ໌ Lingu ຂອງທ່ານແລະຂໍ້ມູນທັງ ໝົດ ຂອງທ່ານຢ່າງຖາວອນ?
+            cancel: ຍົກເລີກ
+            confirm: ແມ່ນແລ້ວ, ລຶບມັນອອກ
+            i_understand_the_consequences: ຂ້ອຍເຂົ້າໃຈຜົນສະທ້ອນ
+            title: ລຶບໂປຣໄຟລ໌ຂອງທ່ານບໍ່?
+          expired: ຫມົດອາຍຸ %{expire_date}
+          expires: ຫມົດອາຍຸ %{expire_date}
+          inactive_status: ບໍ່ເຮັດວຽກ
+          revoke_access: ຍົກເລີກການເຂົ້າເຖິງການອ່ານ
+          sections:
+            contact_school: ຕິດຕໍ່ໂຮງຮຽນ
+            export_my_data: ສົ່ງອອກຂໍ້ມູນຂອງຂ້ອຍ
+            read_school_privacy_policy: ອ່ານນະໂຍບາຍຄວາມເປັນສ່ວນຕົວຂອງໂຮງຮຽນ
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: ການຫລີ້ນດົນຕີ
+              sound_effects: ຜົນກະທົບສຽງ
+              title: ສຽງ
+            visual:
+              dark_theme: ຫົວຂໍ້ມືດ
+              font_size:
+                test_text: ຫຍ້າແມ່ນສີຂຽວສະ ເໝີ ຢູ່ອີກເບື້ອງ ໜຶ່ງ ຂອງຮົ້ວ
+                title: ຂະ ໜາດ ຕົວອັກສອນ
+              high_contrast: ກົງກັນຂ້າມສູງ
+              hints: ຄຳ ແນະ ນຳ
+              title: ສາຍຕາ
+          title: ສຽງແລະພາບ
+        training_settings:
+          sections:
+            i_understand: ຂ້ອຍ​ເຂົ້າ​ໃຈ
+            i_want_to_learn: ຂ້າ​ພະ​ເຈົ້າ​ຕ້ອງ​ການ​ຮຽນ​ຮູ້
+            target_language_level: ລະດັບພາສາອັງກິດ
+          title: ການຕັ້ງຄ່າການຝຶກອົບຮົມ
+      settings_title: ການຕັ້ງຄ່າ
+    teacher_card:
+      followers_count:
+        one: ຜູ້ຕິດຕາມ 1 ຄົນ
+        other: "%{count} ຜູ້ຕິດຕາມ"
+      lessons_count:
+        one: 1 ບົດຮຽນ
+        other: "%{count} ບົດຮຽນ"

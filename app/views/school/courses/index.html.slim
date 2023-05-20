@@ -1,0 +1,12 @@
+- set_page_title t('courses')
+.courses-container.school-info-container
+  .mb-4
+    .d-flex.align-items-center
+      h1.mb-0.pb-3= t('courses')
+  = render partial: 'list_filters'
+  hr
+  = render 'list', courses: courses
+
+.modal.fade id='assign-to-group-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content

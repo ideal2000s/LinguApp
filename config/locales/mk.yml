@@ -1,0 +1,615 @@
+---
+mk:
+  course_mailer:
+    course_assigned_notification:
+      button: Започнете го курсот
+      click_start_lesson: Кликнете на „Почеток лекција“
+      follow_course_link: Кликнете на копчето за да го отворите курсот
+      footer_text: Вратете се во Лингви за да научите нешто ново секој ден!
+      get_started_line: 'Еве како започнувате:'
+      notification_link: Поставки за известување
+      open_lesson: Отворете ја првата лекција
+      or_paste_this_link: или залепете ја оваа врска во вашиот прелистувач
+      sign_in_with_email: Пријавете се со вашата адреса за е-пошта (%{email})
+      support_link: Поддршка
+      title: Започнување со %{course}
+    new_document_comment:
+      author_text: "%{author} остави преглед на вашата задача"
+      button_text: Провери го
+      button_url_helper: 'или залепете ја оваа врска во вашиот прелистувач:'
+      footer_text: Има многу повеќе да научиме ...
+      notification_link: Поставки за известување
+      subject_line: Нов коментар за доделување задачи
+      support_link: Поддршка
+    otp:
+      ignore_msg: Ако не сте го поставиле ова барање, само игнорирајте ја е-поштата.
+      subject_line: Вашиот единствен код за Лингви
+      unique_code_for_lingu: Еве го вашиот единствен код за Лингви
+  frontend:
+    auth:
+      already_have_acc_question: Веќе имате профил?
+      back: Назад
+      back_to_sign_in: Назад за да се најавите
+      check_your_email_for_a_code: Проверете ја вашата е-пошта за вашиот код
+      continue: Продолжете
+      continue_with_email: Продолжете со е-пошта
+      continue_with_provider: Продолжете со %{provider}
+      did_not_receive_a_code: Не добивте код?
+      email_address: И-мејл адреса
+      first_name: Име
+      get_unique_code: Добијте уникатен код за најавување
+      join_lingu: Придружи се на Лингви
+      last_name: Презиме
+      more_login_options: Повеќе опции за најавување
+      no_account_question: Немате сметка?
+      or: или
+      resend_code: Препрати код
+      sign_in: Најави се
+      sign_up: Пријавете се
+      want_to_receive_marketing_messages: Сакам да добивам пораки за маркетинг од
+        Лингвинг
+      we_ve_sent_a_code: >-
+        Испративме 6-цифрен код на <strong> {{е-пошта}} </strong>. Кодот истекува
+        за 15 минути, затоа ве молиме внесете го наскоро.
+    cookie_agreement:
+      agree: Се согласувам
+      condition: >-
+        Ние користиме колачиња за да ги анализираме перформансите на страницата и
+        да испорачаме персонализирана содржина. Со кликнување на „Се согласувам“,
+        вие се согласувате со нашите услови.
+    course:
+      accredited_course_provider: Акредитиран давател на курсеви
+      apply: Аплицирај
+      apply_filters: Нанесете филтри
+      by: Од страна на
+      cancel: Откажи
+      categories: категории %{count}
+      category: Категорија
+      clear: Јасно
+      clear_filters: Исчистете ги филтрите
+      contact_us: Контактирајте не
+      could_not_find_match_for: Извинете, не можевме да најдеме натпревар за
+      course_language: Јазик на курсот
+      duration: Времетраење
+      filter_settings:
+        categories:
+          academic: Академски
+          business: Бизнис
+          fashion: Мода
+          food_drink: Храна и пијалок
+          for_kids: За деца
+          general: Генерал
+          health: Здравје
+          legal: Правни
+          sport: Спорт
+          travel: Патува
+        durations:
+          t0_600: "<10 минути"
+          t1800_3600: 30-60 минути
+          t3600_86400: 1+ час
+          t600_1800: 10-30 минути
+        focus_on:
+          conversation: Разговор
+          grammar: Граматика
+          listening: Слушање
+          pronunciation: Изговор
+          reading: Читање
+          speaking: Зборувајќи
+          writing: Пишување
+        levels:
+          long:
+            advanced: Напредно ниво
+            elementary: Основно ниво
+            intermediate: Средно ниво
+            no_knowledge: Без знаење
+            pre_intermediate: Пред средно ниво
+            upper_intermediate: Горно средно ниво
+          short:
+            advanced: Напредно
+            beginner: Почетник
+            intermediate: Средно
+        sort_by:
+          most_rated: Најценети
+          newest: Најново
+          popularity: Популарност
+      filters: Филтри
+      focus_on: Фокусирај се на
+      focus_on_title: Сакам да се фокусирам на
+      hide_lessons: Скриј лекции
+      hours: Часови
+      i_understand: разбирам
+      i_want_to_learn: Јас сакам да научам
+      in_language: во %{language}
+      language: Јазик
+      learn_more: Научи повеќе
+      less_settings: Помалку поставки
+      lessons: Лекции
+      lessons_available: достапни лекции за %{number}
+      lessons_catalog_page_subtitle: Станете херој на јазикот.
+      lessons_catalog_page_title: Проширете ги своите хоризонти со курс за јазик
+      level: Ниво
+      min: Мин
+      more_settings: Повеќе поставки
+      navbar:
+        close: Затвори мени
+        menu: Мени
+        select_language: Одбери јазик
+      need_to_buy_course: Прво треба да резервирате курс
+      no_description: Не е даден опис
+      no_results: Извинете, не можевме да најдеме натпревар за
+      or: или
+      per_month: месечно
+      plans: Планови
+      privacy_policy: Политика за приватност
+      rating: Рејтинг
+      remove_all_filters: Отстранете ги сите филтри
+      reviews: Осврти
+      save: Зачувај
+      search: Пребарување
+      select_dots: Изберете ...
+      select_languages: Изберете ланжери
+      select_num_languages: Изберете %{number} јазици
+      short_levels:
+        a1: А1
+        a2: А2
+        b1: Б1
+        b2: Б2
+        c1: Ц1
+        c2: C2
+        zero_level: А0
+      show_all: Покажи се
+      show_all_lessons: Покажете ги сите лекции
+      show_lessons: Покажете лекции од %{number}
+      show_more: Прикажи повеќе
+      sign_up_with_lingu_for: Регистрирајте се со Лингу Норвешка за
+      skills: вештини %{count}
+      sort_by: Сортирај по
+      start_typing_here: Почнете да пишувате овде
+      teach: Научи
+      terms_and_conditions: Правила и услови
+      time_range: Временски опсег
+      try_adjusting_your_search: Обидете се да го прилагодите пребарувањето со промена
+        на филтрите
+      try_this_course: Пробајте го овој курс
+      website_language: Јазик на веб-страница
+      words: Зборови
+    games:
+      finished:
+        go_to_next_exercise: Добро сторено! Одете на следната вежба
+      flashcard:
+        buttons:
+          finish: Заврши
+          next: Следно
+          previous: Претходна
+        check_out_new_words: Проверете ги новите зборови што ќе ги научите на оваа
+          лекција
+        frequency_of_word_usage: Фреквенција на употреба на зборови во %{language}
+        keep_practice_to_learn_all_words: Прегледајте ги зборовите %{count} и ајде
+          да играме неколку игри!
+        word_frequency:
+          level1: Ретко се користи
+          level2: Ретко се користи
+          level3: Фреквенција на зборови - средна
+          level4: Фреквенција на зборови - средна
+          level5: Заеднички
+          level6: Многу често
+      match_word:
+        click_and_move_each_word_to_counterpart: Кликнете и преместете го секој збор
+          на неговиот колега
+        start_heading: Совпаѓаат зборови за да направат пар
+        time_is_up: Времето истече!
+      skip_tutorial: Прескокни
+      time_is_up: Времето истече!
+      word_nodes:
+        match_letters_to_form_word: Совпаѓаат букви за да формираат збор
+      word_waterfall:
+        do_not_hesitate: Да забрзаме!
+        go_to_next_exercise: Одете на следната вежба
+        select_correct_translation: Изберете правилно совпаѓање
+        well_done: Добро сторено!
+    home_page:
+      hello: Здраво,
+      popular_lessons: Популарни лекции
+      show_more: Прикажи повеќе
+      time: "%{count} мин"
+      today_lesson: Вашата лекција за денес
+      user_name: "%{name}!"
+      words: "%{count} зборови"
+    idle_screen:
+      by_author: од %{authorName}
+      continue_lesson: Продолжете со лекцијата
+      exit: Излез
+      idle_message: Веќе некое време сте во мирување ...
+    lesson_page:
+      back_to_course_page: Назад на страницата за курс
+      close: Затвори
+      continue_lesson: Продолжете со лекцијата
+      followed: Следи
+      hamburger_menu_btn: Мени со хамбургер
+      lesson_given: лекции
+      not_started: не започнат
+      or: Или
+      part_complete: "%{percent}% завршен"
+      restart_lesson: Рестарт
+      section_check: Проверете
+      section_check_info: тестови %{count}
+      section_learn: Научи
+      section_learn_info: "%{count} мин за гледање и читање"
+      section_play: Играј
+      section_play_info: "%{count} зборови за вежбање"
+      start_lesson: Започнете ја лекцијата
+      step_progress: "%{percent}%"
+      subscribe: Следи
+      subscribed: Следи
+      subscribers: следбеници
+      time_min: "%{minutesNumber} мин"
+      unsubscribe: Следете
+      webview_error_title: Нешто тргна наопаку...
+      words_number: "%{wordsNumber} нови зборови"
+    lesson_task:
+      cancel_button: Откажи
+      check:
+        navigation_next: Следно
+        navigation_previous: Претходна
+        navigation_skip: Прескокни
+      controls_panel:
+        font_size_button: Големина на фонтот
+        high_contrast_button:
+          origin: Висок контраст
+          short: Контраст
+        hints_button: Навестувања
+        music_playback_button:
+          origin: Репродукција на музика
+          short: Музика
+        sound_effects_button:
+          origin: Звучни ефекти
+          short: Звук
+      exit_button: Излез
+      finish_button: Заврши
+      finished:
+        back_to_learn: Назад за да научат
+        back_to_lesson_page: Назад на страната на лекцијата
+        back_to_results_page: Назад на страницата со резултати
+        bad_result_message: Хм ... обидете се да ја однесете лекцијата уште еднаш
+        close_lesson: Затвори лекција
+        correct_answers_list: Точен список со одговори
+        good_result_message: Гледам дека се потрудивте!
+        great_result_message: Добро сторено! Ова се одлични резултати!
+        next_course_lesson: Одете на следната лекција во курс
+        no_results: Сè уште немате резултати од тестот
+        no_results_text: >-
+          Ве молиме, завршете ја лекцијата и положете го тестот за да ги добиете резултатите
+        see_correct_answers_list: Погледнете го списокот на точни одговори
+        train_more: Вежбајте повеќе и следниот пат ќе постигнете подобри резултати!
+        you_finished_lesson: Одлично! Ја завршивте лекцијата
+      go_back: Врати се назад
+      next_button: Следно
+      not_available_task: Оваа задача сè уште не е достапна
+      start_button: Започнете
+      tasks:
+        check:
+          assignment:
+            accept: Прифати
+            author_will_check_your_answer: >-
+              %{author} ќе го разгледа вашиот одговор и обично ќе даде повратни информации
+              во рок од 1-2 дена
+            continue_writing: Продолжете да пишувате
+            copy: Копирај
+            delete: Избриши
+            delete_record: Избриши запис
+            edit: Уредување
+            essay_does_not_have_enough_words: >-
+              Вашиот одговор треба да содржи најмалку %{minWordsNumber} зборови. Вашиот
+              одговор во моментов е %{currentWordsNumber} зборови.
+            followers_count: "%{followersCount} следбеници"
+            lessons_count: лекции од %{lessonsCount}
+            minimal_recording_time: Минимално време на снимање - %{minimalRecordingTime}
+            minimum_characters_amount: Минимални знаци - %{minimumCharactersAmount}
+            minimum_words_amount: Минимални зборови - %{minimumAmount}
+            record_again: Сними повторно
+            record_voice: Сними глас
+            send_anyway: Испрати во секој случај
+            send_to_review: Испратете на преглед
+            skip: Прескокни
+            too_short_answer: Премногу краток одговор
+            type_your_answer: Внесете го вашиот одговор
+            unknown_task_type: Непознат тип на задача
+            upgrade_licence: Надградба на лиценцата
+            upgrade_your_plan: Ажурирајте го вашиот план за да пробате прегледи за
+              задачи со наставници
+            upload_files: Поставете датотеки
+            write_essay: Напиши есеј
+            you_have_used_amount_of_assignments: Користевте кредити за доделување
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Јаз во реченицата
+          fill_in_table:
+            column_answer_placeholder: Одговор
+            column_question_placeholder: Прашање
+            example: Пример
+          true_false:
+            'false': Лажни
+            'true': Вистина
+        learn:
+          translatable_text:
+            show_original: Покажи оригинал
+            translate_into: Преведете со Google во %{languageName}
+            translate_into_your_lang: Преведете со Google на вашиот јазик
+        play:
+          arrange_words:
+            start_screen:
+              heading: Направете реченица од дадените зборови
+          audition:
+            start_screen:
+              heading: Слушајте го аудиото и допрете на зборот што штотуку го слушнавте
+          dictation:
+            get_help: Побарај помош
+            i_do_not_know: Не знам
+            input_placeholder: Внесете го она што го слушнавте тука
+            start_screen:
+              heading: Слушајте и напишете го она што го слушате
+          fill_gap:
+            start_screen:
+              heading: Одговара на зборот и неговото значење
+          finish_screen:
+            go_to_next_exercise: Добро сторено! Одете на следната вежба
+          image_hotspot:
+            start_screen:
+              heading: Правилно именувајте ги предметите на сликата
+          image_object:
+            start_screen:
+              heading: Изберете го вистинскиот објект од следната слика
+          inline_dropdown:
+            start_screen:
+              heading: Изберете ги зборовите што одговараат на реченицата
+          mark_word:
+            start_screen:
+              heading: Прочитајте го текстот и изберете го зборот што одговара на
+                сликата
+          minimal_pairs:
+            start_screen:
+              heading: Погледнете го видеото и изберете точна опција
+    locale:
+      currency_switcher_title: Префрлувач на валути
+      lang_switcher_title: Промена на јазик
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Дојч
+        el: Greek
+        en: Англиски
+        eo: Esperanto
+        es: Еспањол
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Француски
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Италијано
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Лиетувиќ калба
+        lv: Латвије валода
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Норск
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Полски
+        ps: Pashto
+        pt: Португалски јазик
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: аф Соомаали
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: киСвахили
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Туркче
+        tt: Tatar
+        ug: Uyghur
+        uk: Украина
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Аудиото се вчитува
+        aria_pause_button: Пауза
+        aria_play_button: Играј
+        aria_reload_button: Вчитај повторно
+        aria_stop_button: Застани
+        reload_message: Не успеа да се вчита аудио. Кликнете на копчето за повторно
+          вчитување.
+    mobile_modal:
+      apply: Аплицирај
+      cancel: Откажи
+      clear: Јасно
+      save: Зачувај
+    page404:
+      goToStartLessonPage: Одете на страницата за почетна лекција
+      ooops: Оуупс ...
+      sorry_message: За жал, Тор не може да ја најде оваа страница
+    profile:
+      navigation:
+        log_out: Одјавете се
+        my_profile: Мој Профил
+        settings: Поставки
+      onboarding:
+        choose_native_language: Изберете го вашиот мајчин јазик или јазик што го разбирате
+        do_you_understand_english: Дали разбираш англиски?
+        hello: Здраво
+        language_levels:
+          a1: Основно ниво
+          a2: Пред-средно ниво
+          b1: Средно ниво
+          b2: Горно средно ниво
+          c1: Напредно ниво
+          no_knowledge: Без знаење
+        language_not_supported:
+          note: Ние ќе ве известиме веднаш штом јазикот ќе биде достапен
+          title: Извинете, но сè уште не го поддржуваме овој јазик
+          try_another_language: Пробајте друг јазик
+        'no': Не
+        search_placeholder: Пребарување ...
+        show_more_languages: Други јазици
+        target_language_question: Кој јазик сакате да го научите?
+        what_is_language_level: Како би го оцениле нивото на %{languageName}?
+        'yes': Да
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Политика на приватност на Лингви
+        support: Поддршка
+      logout: Одјавување
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Добивајте новости од наставниците и училиштата што ги следите
+              sections:
+                app_notifications: Известувања за апликации
+                email: Е-пошта
+              title: Помош за учење
+            marketing:
+              description: Бидете информирани за сите промоции, ажурирања и инспирација
+                од Лингви
+              sections:
+                browser_notifications: Известувања за прелистувачи
+                email: Е-пошта
+              title: Маркетинг
+          title: Преференции за контакт
+        personal_information:
+          delete_photo: Избришете ја фотографијата
+          email: Е-пошта
+          first_name: Име
+          last_name: Презиме
+          social_accounts:
+            connected: Поврзан
+            facebook: Фејсбук
+            google: Гугл
+            microsoft: Мајкрософт
+            not_connected: Не е поврзано
+            title: Социјални сметки
+          title: Лични податоци
+          update_photo: Ажурирајте ја фотографијата
+        school:
+          active_licence: Активна лиценца
+          active_status: Активни
+          delete_profile: Избриши го мојот профил
+          delete_profile_modal:
+            body: |-
+              Ги уништувате сите ваши податоци - засекогаш. Нема копче за враќање, а потоа не можеме да ви го вратиме.
+              Дали сте сигурни дека сакате трајно да го избришете вашиот профил на Лингви и сите ваши податоци?
+            cancel: Откажи
+            confirm: Да, избришете го
+            i_understand_the_consequences: Јас ги разбирам последиците
+            title: Да се избрише профилот?
+          expired: Истечен %{expire_date}
+          expires: Истекува %{expire_date}
+          inactive_status: Неактивен
+          revoke_access: Одземете го пристапот за читање
+          sections:
+            contact_school: Контактирајте го училиштето
+            export_my_data: Извоз на моите податоци
+            read_school_privacy_policy: Прочитајте ја Политиката за приватност на
+              училиштето
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Репродукција на музика
+              sound_effects: Звучни ефекти
+              title: Звук
+            visual:
+              dark_theme: Темна тема
+              font_size:
+                test_text: Тревата е секогаш позелена од другата страна на оградата
+                title: Големина на фонтот
+              high_contrast: Висок контраст
+              hints: Навестувања
+              title: Визуелно
+          title: Звук и визуелно
+        training_settings:
+          sections:
+            i_understand: разбирам
+            i_want_to_learn: Јас сакам да научам
+            target_language_level: Англиско ниво
+          title: Поставки за обука
+      settings_title: Поставки
+    teacher_card:
+      followers_count:
+        one: 1 следбеник
+        other: "%{count} следбеници"
+      lessons_count:
+        one: 1 час
+        other: лекции од %{count}

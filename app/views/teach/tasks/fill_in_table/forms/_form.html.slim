@@ -1,0 +1,87 @@
+- content_for(:instructions) do
+  .card.bg-soft-info.mt-5.hidden-sm-down
+    .card-body
+      .card-title= t('instructions')
+      p.card-text= t('.fill_in_tables_guidelines')
+      p.card-text.font-italic
+        = t('example') + ': '
+        ul
+          li lift:elevator
+          li color:colour
+          li grey:gray
+    .card-footer.bg-soft-info
+      .card-title= t('teach.tasks.size_requirements')
+      p.card-text= t('teach.tasks.required_count_msg', count: Tasks::FillInTable::MIN_ITEMS_SIZE)
+.card
+  = render 'teach/tasks/shared_task_header', task: task
+  = form_for form, as: :task, url: teach_lesson_task_path(task.lesson, task), method: :patch do |f|
+    = render layout: 'teach/tasks/shared_task_fields', locals: { f: f } do
+      .row
+        .col-lg-6
+          .form-group
+            = f.label :columns, t('teach.tasks.fill_in_table.forms.form.columns')
+            = f.select :columns, options_for_select([1, 2], f.object.columns), {}, { class: 'form-control select2' }
+            = error_for f.object, :columns
+        .col-lg-6
+          .form-group
+            = f.label :question_format, t('teach.tasks.fill_in_table.forms.form.question_format')
+            = f.select :question_format, options_for_select([Tasks::FillInTable::TEXT_QUESTION_FORMAT, Tasks::FillInTable::AUDIO_QUESTION_FORMAT], f.object.question_format), {},
+              { class: 'form-control select2', disabled: task.items.any? }
+            = error_for f.object, :columns
+      .form-group
+        .custom-control.custom-switch
+          = f.check_box :has_demo, class: 'custom-control-input'
+          = f.label :has_demo, class: 'custom-control-label'
+
+#task_items.mt-5.mb-10.card
+  .card-body
+    h4= t('teach.tasks.mark_word.forms.form.statements')
+
+  table.table.table-light
+    thead
+      tr
+        th style="width: #{task.two_columns? ? '33%' : '50%' }"
+          = best_in_place task,
+            :h1,
+            url: teach_lesson_task_path(task.lesson, task),
+            inner_class: "form-control",
+            place_holder: 'Question - click to edit'
+        th
+          = best_in_place task,
+            :h2,
+            url: teach_lesson_task_path(task.lesson, task),
+            inner_class: "form-control",
+            place_holder: 'Answer column 1'
+        - if task.two_columns?
+          th
+            = best_in_place task,
+              :h3,
+              url: teach_lesson_task_path(task.lesson, task),
+              inner_class: "form-control",
+              place_holder: 'Answer column 2'
+    - if task.has_demo
+      tbody
+        = form_for form, as: :task, url: teach_lesson_task_path(task.lesson, task), method: :patch do |f|
+          tr
+            - if task.audio_question_format?
+              td
+                .form-group
+                  = f.upload_helper_for(:audio_question_demo, resource: f.object.task, accept: 'audio/*', data: { upload: 'audio' }) do |h|
+                    - h.button do
+                      i.fas.fa-headphones.fa-fw.mr-2
+                      = t('teach.tasks.upload_demo_audio')
+                    - h.preview do |resource|
+                      = audio_tag(resource.audio_question_demo_url, class: 'preview', controls: true) if resource.audio_question_demo
+            - else
+              td= f.text_field :question_demo, placeholder: 'Demo Question', class: 'form-control question', required: true
+
+            td= f.text_field :column1_demo, placeholder: 'Demo Answer 1', class: 'form-control column1', required: true
+            - if task.two_columns?
+              td= f.text_field :column2_demo, placeholder: 'Demo Answer 2', class: 'form-control column2', required: true
+            td= f.submit t('save'), class: 'btn btn-success float-right'
+
+    tbody#task_items_container
+      = render partial: task.items, as: :item, locals: { task: task }
+    tfoot
+      - item = task.items.new
+      tr= render item.to_partial_path(prefix: :teach, partial: :forms, suffix: :form), task: task, item: item

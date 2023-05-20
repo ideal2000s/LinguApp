@@ -1,0 +1,2 @@
+= text_field_tag 'invitation', students_invitation_url(current_team.to_gid_param, subdomain: nil, team_group_id: team_group.id), class: 'form-control border-0 mr-2', id: dom_id(team_group), readonly: true
+button.btn.btn-primary.clipboard data-clipboard-target="##{dom_id(team_group)}" href="#"= t('shared.copy')

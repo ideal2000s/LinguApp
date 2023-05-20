@@ -1,0 +1,600 @@
+---
+he:
+  course_mailer:
+    course_assigned_notification:
+      button: התחל את הקורס
+      click_start_lesson: לחץ על 'התחל שיעור'
+      follow_course_link: לחץ על הלחצן כדי לפתוח את הקורס
+      footer_text: חזור לינגו כדי ללמוד משהו חדש כל יום!
+      get_started_line: 'כך מתחילים:'
+      notification_link: הגדרות התראה
+      open_lesson: פתח את השיעור הראשון
+      or_paste_this_link: או הדבק קישור זה בדפדפן שלך
+      sign_in_with_email: היכנס באמצעות כתובת הדוא"ל שלך (%{email})
+      support_link: תמיכה
+      title: תחילת העבודה עם %{course}
+    new_document_comment:
+      author_text: "%{author} השאיר ביקורת על המטלה שלך"
+      button_text: תבדוק את זה
+      button_url_helper: 'או הדבק קישור זה בדפדפן שלך:'
+      footer_text: יש עוד הרבה מה ללמוד ...
+      notification_link: הגדרות התראה
+      subject_line: הערת מטלה חדשה
+      support_link: תמיכה
+    otp:
+      ignore_msg: אם לא הגשת בקשה זו, פשוט התעלם מהדוא"ל.
+      subject_line: הקוד הייחודי שלך ללינגו
+      unique_code_for_lingu: הנה הקוד הייחודי שלך לינגו
+  frontend:
+    auth:
+      already_have_acc_question: כבר יש לך חשבון?
+      back: חזור
+      back_to_sign_in: חזרה לכניסה
+      check_your_email_for_a_code: בדוק אם הקוד שלך נמצא בדוא"ל שלך
+      continue: לְהַמשִׁיך
+      continue_with_email: המשך בדוא"ל
+      continue_with_provider: המשך עם %{provider}
+      did_not_receive_a_code: לא קיבלת קוד?
+      email_address: כתובת דוא"ל
+      first_name: שם פרטי
+      get_unique_code: קבל קוד כניסה ייחודי
+      join_lingu: הצטרף ללינגו
+      last_name: שם משפחה
+      more_login_options: אפשרויות כניסה נוספות
+      no_account_question: אין לך חשבון?
+      or: אוֹ
+      resend_code: שלח קוד שוב
+      sign_in: להתחבר
+      sign_up: הירשם
+      want_to_receive_marketing_messages: אני רוצה לקבל מסרים שיווקיים מלינגו
+      we_ve_sent_a_code: >-
+        שלחנו קוד בן 6 ספרות ל <strong> {{email}} </strong>. הקוד יפוג בעוד 15 דקות,
+        אז הזן אותו בהקדם.
+    cookie_agreement:
+      agree: לְהַסכִּים
+      condition: >-
+        אנו משתמשים בעוגיות לניתוח ביצועי האתר ומסירת תוכן מותאם אישית. בלחיצה על
+        "מסכים" אתה מסכים לתנאים שלנו.
+    course:
+      accredited_course_provider: ספק קורסים מוכר
+      apply: להגיש מועמדות
+      apply_filters: החל פילטרים
+      by: על ידי
+      cancel: לְבַטֵל
+      categories: קטגוריות %{count}
+      category: קטגוריה
+      clear: ברור
+      clear_filters: נקה מסננים
+      contact_us: צור קשר
+      could_not_find_match_for: מצטערים, לא מצאנו שום התאמה עבור
+      course_language: שפת הקורס
+      duration: מֶשֶׁך
+      filter_settings:
+        categories:
+          academic: אקדמי
+          business: עֵסֶק
+          fashion: אופנה
+          food_drink: אוכל שתייה
+          for_kids: לילדים
+          general: כללי
+          health: בְּרִיאוּת
+          legal: משפטי
+          sport: ספּוֹרט
+          travel: לִנְסוֹעַ
+        durations:
+          t0_600: "<10 דקות"
+          t1800_3600: 30-60 דקות
+          t3600_86400: שעה + יותר
+          t600_1800: 10-30 דקות
+        focus_on:
+          conversation: שִׂיחָה
+          grammar: דקדוק
+          listening: הַקשָׁבָה
+          pronunciation: מִבטָא
+          reading: קריאה
+          speaking: מדבר
+          writing: כְּתִיבָה
+        levels:
+          long:
+            advanced: שלב מתקדם
+            elementary: רמה יסודית
+            intermediate: רמת ביניים
+            no_knowledge: חוסר ידע
+            pre_intermediate: דרגת ביניים מראש
+            upper_intermediate: דרגת ביניים עליונה
+          short:
+            advanced: מִתקַדֵם
+            beginner: מַתחִיל
+            intermediate: ביניים
+        sort_by:
+          most_rated: הכי מדורג
+          newest: החדש ביותר
+          popularity: פּוֹפּוּלָרִיוּת
+      filters: מסננים
+      focus_on: להתמקד ב
+      focus_on_title: אני רוצה להתמקד
+      hide_lessons: הסתר שיעורים
+      hours: שעה (ות
+      i_understand: אני מבין
+      i_want_to_learn: אני רוצה ללמוד
+      in_language: ב- %{language}
+      language: שפה
+      learn_more: למד עוד
+      less_settings: פחות הגדרות
+      lessons: שיעורים
+      lessons_available: שיעורי %{number} זמינים
+      lessons_catalog_page_subtitle: הפוך לגיבור שפה.
+      lessons_catalog_page_title: הרחב את אופקייך עם קורס שפות
+      level: רָמָה
+      min: דקה
+      more_settings: הגדרות נוספות
+      navbar:
+        close: סגור תפריט
+        menu: תַפרִיט
+        select_language: בחר שפה
+      need_to_buy_course: עליך להזמין קורס קודם
+      no_description: לא ניתן תיאור
+      no_results: מצטערים, לא מצאנו שום התאמה עבור
+      or: אוֹ
+      per_month: לחודש
+      plans: תוכניות
+      privacy_policy: מדיניות הפרטיות
+      rating: דֵרוּג
+      remove_all_filters: הסר את כל המסננים
+      reviews: ביקורות
+      save: להציל
+      search: לחפש
+      select_dots: בחר...
+      select_languages: בחר באנגלית
+      select_num_languages: בחר שפות %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: תראה הכול
+      show_all_lessons: הראה את כל השיעורים
+      show_lessons: הראה שיעורי %{number}
+      show_more: להראות יותר
+      sign_up_with_lingu_for: הירשם עם Lingu Norway עבור
+      skills: כישורי %{count}
+      sort_by: מיין לפי
+      start_typing_here: התחל להקליד כאן
+      teach: לְלַמֵד
+      terms_and_conditions: תנאים
+      time_range: טווח זמן
+      try_adjusting_your_search: נסה להתאים את החיפוש על ידי שינוי המסננים שלך
+      try_this_course: נסה קורס זה
+      website_language: שפת האתר
+      words: מילים
+    games:
+      finished:
+        go_to_next_exercise: כל הכבוד! עבור לתרגיל הבא
+      flashcard:
+        buttons:
+          finish: סיים
+          next: הַבָּא
+          previous: קודם
+        check_out_new_words: בדוק את המילים החדשות שתלמד בשיעור זה
+        frequency_of_word_usage: תדירות השימוש במילים ב- %{language}
+        keep_practice_to_learn_all_words: סקור את מילות %{count} ובוא נשחק כמה משחקים!
+        word_frequency:
+          level1: משומש לעתים רחוקות
+          level2: משומש לעתים רחוקות
+          level3: תדירות מילים - בינונית
+          level4: תדירות מילים - בינונית
+          level5: מְשׁוּתָף
+          level6: מאד שכיח
+      match_word:
+        click_and_move_each_word_to_counterpart: לחץ והעבר כל מילה לעמיתיה
+        start_heading: התאם מילים כדי ליצור זוג
+        time_is_up: הזמן עבר!
+      skip_tutorial: לדלג
+      time_is_up: הזמן עבר!
+      word_nodes:
+        match_letters_to_form_word: התאם אותיות ליצירת מילה
+      word_waterfall:
+        do_not_hesitate: בואו נזרז!
+        go_to_next_exercise: עבור לתרגיל הבא
+        select_correct_translation: בחר התאמה נכונה
+        well_done: כל הכבוד!
+    home_page:
+      hello: שלום,
+      popular_lessons: שיעורים פופולריים
+      show_more: להראות יותר
+      time: "%{count} דקות"
+      today_lesson: השיעור שלך להיום
+      user_name: "%{name}!"
+      words: מילים %{count}
+    idle_screen:
+      by_author: מאת %{authorName}
+      continue_lesson: המשך השיעור
+      exit: יְצִיאָה
+      idle_message: אתה בטל מזה זמן ...
+    lesson_page:
+      back_to_course_page: חזרה לדף הקורס
+      close: סגור
+      continue_lesson: המשך השיעור
+      followed: אחריו
+      hamburger_menu_btn: תפריט המבורגר
+      lesson_given: שיעורים
+      not_started: לא התחיל
+      or: אוֹ
+      part_complete: "%{percent}% הושלם"
+      restart_lesson: אתחול
+      section_check: חשבון
+      section_check_info: מבחני %{count}
+      section_learn: לִלמוֹד
+      section_learn_info: "%{count} דקות לצפייה ולקריאה"
+      section_play: לְשַׂחֵק
+      section_play_info: "%{count} מילים לתרגול"
+      start_lesson: התחל שיעור
+      step_progress: "%{percent}%"
+      subscribe: לעקוב אחר
+      subscribed: אחריו
+      subscribers: עוקבים
+      time_min: "%{minutesNumber} דקות"
+      unsubscribe: עקוב אחר
+      webview_error_title: משהו השתבש...
+      words_number: מילים חדשות
+    lesson_task:
+      cancel_button: לְבַטֵל
+      check:
+        navigation_next: הַבָּא
+        navigation_previous: קודם
+        navigation_skip: לדלג
+      controls_panel:
+        font_size_button: גודל גופן
+        high_contrast_button:
+          origin: ניגודיות גבוה
+          short: בניגוד
+        hints_button: רמזים
+        music_playback_button:
+          origin: השמעת מוזיקה
+          short: מוּסִיקָה
+        sound_effects_button:
+          origin: אפקטים קוליים
+          short: נשמע
+      exit_button: יְצִיאָה
+      finish_button: סיים
+      finished:
+        back_to_learn: חזרה ללמוד
+        back_to_lesson_page: חזרה לדף השיעור
+        back_to_results_page: חזרה לדף התוצאות
+        bad_result_message: הממ ... נסו לקחת את השיעור פעם נוספת
+        close_lesson: שיעור קרוב
+        correct_answers_list: רשימת תשובות נכונות
+        good_result_message: אני יכול לראות שהתאמנת!
+        great_result_message: כל הכבוד! אלה תוצאות נהדרות!
+        next_course_lesson: עבור לשיעור הבא בקורס
+        no_results: עדיין אין לך תוצאות בדיקה
+        no_results_text: אנא, סיים את השיעור ועבר את המבחן לקבלת התוצאות
+        see_correct_answers_list: ראה רשימת תשובות נכונה
+        train_more: התאמן יותר ותגיע לתוצאות טובות יותר בפעם הבאה!
+        you_finished_lesson: גדול! סיימת את השיעור
+      go_back: תחזור
+      next_button: הַבָּא
+      not_available_task: משימה זו אינה זמינה עדיין
+      start_button: הַתחָלָה
+      tasks:
+        check:
+          assignment:
+            accept: לְקַבֵּל
+            author_will_check_your_answer: "%{author} יבדוק את תשובתך ובדרך כלל ייתן
+              משוב תוך 1-2 ימים"
+            continue_writing: המשך לכתוב
+            copy: עותק
+            delete: לִמְחוֹק
+            delete_record: מחק רשומה
+            edit: לַעֲרוֹך
+            essay_does_not_have_enough_words: >-
+              התשובה שלך צריכה לכלול לפחות מילים %{minWordsNumber}. התשובה שלך היא
+              כרגע %{currentWordsNumber} מילים.
+            followers_count: עוקבים %{followersCount}
+            lessons_count: שיעורי %{lessonsCount}
+            minimal_recording_time: זמן הקלטה מינימלי - %{minimalRecordingTime}
+            minimum_characters_amount: תווים מינימליים - %{minimumCharactersAmount}
+            minimum_words_amount: מינימום מילים - %{minimumAmount}
+            record_again: הקלט שוב
+            record_voice: הקלט קול
+            send_anyway: לשלוח בכל מקרה
+            send_to_review: שלח לביקורת
+            skip: לדלג
+            too_short_answer: תשובה קצרה מדי
+            type_your_answer: הקלד את תשובתך
+            unknown_task_type: סוג משימה לא ידוע
+            upgrade_licence: רישיון שדרוג
+            upgrade_your_plan: שדרג את התוכנית שלך לנסות משימות עם ביקורות מורים
+            upload_files: העלה קבצים
+            write_essay: כתוב חיבור
+            you_have_used_amount_of_assignments: השתמשת בזיכויים להקצאת %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: פער משפטים
+          fill_in_table:
+            column_answer_placeholder: תשובה
+            column_question_placeholder: שְׁאֵלָה
+            example: דוגמא
+          true_false:
+            'false': שֶׁקֶר
+            'true': נָכוֹן
+        learn:
+          translatable_text:
+            show_original: הראה מקור
+            translate_into: תרגם עם גוגל ל- %{languageName}
+            translate_into_your_lang: תרגם עם גוגל לשפה שלך
+        play:
+          arrange_words:
+            start_screen:
+              heading: הפוך משפט מתוך המילים הנתונות
+          audition:
+            start_screen:
+              heading: האזן לשמע והקש על המילה ששמעת זה עתה
+          dictation:
+            get_help: תקבל עזרה
+            i_do_not_know: אני לא יודע
+            input_placeholder: הזן את מה ששמעת כאן
+            start_screen:
+              heading: הקשיבו וכתבו את מה שאתם שומעים
+          fill_gap:
+            start_screen:
+              heading: התאם את המילה ומשמעותה
+          finish_screen:
+            go_to_next_exercise: כל הכבוד! עבור לתרגיל הבא
+          image_hotspot:
+            start_screen:
+              heading: תן שם נכון לאובייקטים בתמונה
+          image_object:
+            start_screen:
+              heading: בחר את האובייקט הנכון מהתמונה הבאה
+          inline_dropdown:
+            start_screen:
+              heading: בחר את המילים שתואמות את המשפט
+          mark_word:
+            start_screen:
+              heading: קרא את הטקסט ובחר את המילה שתואמת את התמונה
+          minimal_pairs:
+            start_screen:
+              heading: צפו בסרטון ובחרו באפשרות הנכונה
+    locale:
+      currency_switcher_title: מחליף מטבע
+      lang_switcher_title: מחליף שפה
+      locales:
+        af: אפריקאית
+        am: אמהרית
+        ar: עֲרָבִית
+        az: אזרבייג'אני
+        be: בלארוסית
+        bg: Български
+        bn: בנגלית
+        bs: בוסני
+        ca: קטלאנית
+        ceb: סבואנו
+        co: קורסיקאית
+        cs: צ'כי
+        cy: וולשית
+        da: דַנִי
+        de: דויטש
+        el: יווני
+        en: אנגלית
+        eo: אֶסְפֵּרַנְטוֹ
+        es: ספרדית
+        et: אסטונית
+        eu: באסקית
+        fa: פַּרסִית
+        fi: פִינִית
+        fr: צרפתים
+        fy: פריזית
+        ga: אִירִית
+        gd: סקוטית גאלית
+        gl: גליציאנית
+        gu: גוג'ראטי
+        ha: האוזה
+        haw: הוואי
+        he: עִברִית
+        hi: הינדית
+        hmn: המונג
+        hr: קרואטית
+        ht: קריאולית האיטי
+        hu: הוּנגָרִי
+        hy: אַרְמֶנִי
+        id: אינדונזית
+        ig: איגבו
+        is: איסלנדית
+        it: איטלקינו
+        ja: יַפָּנִית
+        jv: ג'אוואנית
+        ka: גרוזיני
+        kk: קזחית
+        km: חמר
+        kn: קנאדה
+        ko: קוריאנית
+        ku: כּוּרדִי
+        ky: קירגיזים
+        la: לָטִינִית
+        lb: לוקסמבורגית
+        lo: לאו
+        lt: Lietuvių kalba
+        lv: לטבישו ולודה
+        mg: מלגית
+        mi: מאורי
+        mk: מקדונית
+        ml: מלאיים
+        mn: מוֹנגוֹלִי
+        mr: מרת'י
+        ms: מלאית
+        mt: מלטזית
+        my: מיאנמר (בורמזית)
+        nb: נורבגית
+        ne: נפאלית
+        nl: הולנדית
+        ny: ניאנג'ה (צ'יצ'ואה)
+        or: אודיה (אוריה)
+        pa: פונג'אבי
+        pl: פולסקי
+        ps: פשטו
+        pt: פורטוגזית
+        ro: Limba română
+        ru: Русский язык
+        rw: קיניארוונדה
+        sd: סינדי
+        si: סינהלה
+        sk: סלובקית
+        sl: סלובנית
+        sm: סמואני
+        sn: שונה
+        so: af Soomaali
+        sq: אלבנית
+        sr: Сербский
+        st: סזוטו
+        su: סונדאנית
+        sv: שוודית
+        sw: kiSwahili
+        ta: טמילית
+        te: טלוגו
+        tg: טג'יקית
+        th: תאילנדי
+        tk: טורקמנים
+        tl: תגלית
+        tr: טורקצה
+        tt: טטרית
+        ug: אויגור
+        uk: Українська
+        ur: אורדו
+        uz: אוזבקית
+        vi: וייטנאמית
+        xh: Xhosa
+        yi: אִידִישׁ
+        yo: יורובה
+        zh: סִינִית
+        zu: זולו
+    media_player:
+      audio_player:
+        aria_loading_button: האודיו נטען
+        aria_pause_button: הַפסָקָה
+        aria_play_button: לְשַׂחֵק
+        aria_reload_button: לִטעוֹן מִחָדָשׁ
+        aria_stop_button: תפסיק
+        reload_message: טעינת האודיו נכשלה. אנא לחץ על הלחצן כדי לטעון מחדש.
+    mobile_modal:
+      apply: להגיש מועמדות
+      cancel: לְבַטֵל
+      clear: ברור
+      save: להציל
+    page404:
+      goToStartLessonPage: עבור לדף השיעור התחל
+      ooops: אופס ...
+      sorry_message: מצטער, טור לא מצא את הדף הזה
+    profile:
+      navigation:
+        log_out: להתנתק
+        my_profile: הפרופיל שלי
+        settings: הגדרות
+      onboarding:
+        choose_native_language: בחר את שפת האם שלך או את השפה שאתה מבין
+        do_you_understand_english: האם אתה מבין אנגלית?
+        hello: שלום
+        language_levels:
+          a1: רמה יסודית
+          a2: רמה לפני ביניים
+          b1: רמת ביניים
+          b2: רמת ביניים עליונה
+          c1: שלב מתקדם
+          no_knowledge: חוסר ידע
+        language_not_supported:
+          note: אנו נודיע לך ברגע שהשפה תהיה זמינה
+          title: מצטערים, אך איננו תומכים עדיין בשפה זו
+          try_another_language: נסה שפה אחרת
+        'no': לא
+        search_placeholder: לחפש...
+        show_more_languages: שפות אחרות
+        target_language_question: "? איזו שפה אתה רוצה ללמוד"
+        what_is_language_level: איך היית מדרג את רמת %{languageName} שלך?
+        'yes': כן
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: מדיניות הפרטיות של לינגו
+        support: תמיכה
+      logout: להתנתק
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: קבל עדכונים ממורים ובתי ספר שאתה עוקב אחריהם
+              sections:
+                app_notifications: התראות יישום
+                email: אימייל
+              title: סיוע בלמידה
+            marketing:
+              description: הישאר מעודכן לגבי כל המבצעים, העדכונים וההשראה מ- Lingu
+              sections:
+                browser_notifications: התראות דפדפן
+                email: אימייל
+              title: שיווק
+          title: העדפות אנשי קשר
+        personal_information:
+          delete_photo: למחוק תמונה
+          email: אימייל
+          first_name: שם פרטי
+          last_name: שם משפחה
+          social_accounts:
+            connected: מְחוּבָּר
+            facebook: פייסבוק
+            google: גוגל
+            microsoft: מיקרוסופט
+            not_connected: לא מחובר
+            title: חשבונות חברתיים
+          title: מידע אישי
+          update_photo: עדכן תמונה
+        school:
+          active_licence: רישיון פעיל
+          active_status: פָּעִיל
+          delete_profile: מחק את הפרופיל שלי
+          delete_profile_modal:
+            body: |-
+              אתה מוחק את כל הנתונים שלך - לנצח. אין לחצן ביטול ולא נוכל להחזיר לך אותו לאחר מכן.
+              האם אתה בטוח שברצונך למחוק לצמיתות את פרופיל ה- Lingu שלך ואת כל הנתונים שלך?
+            cancel: לְבַטֵל
+            confirm: כן, מחק אותו
+            i_understand_the_consequences: אני מבין את ההשלכות
+            title: למחוק את הפרופיל שלך?
+          expired: פג תוקף %{expire_date}
+          expires: פג תוקף %{expire_date}
+          inactive_status: לֹא פָּעִיל
+          revoke_access: בטל את הגישה לקריאה
+          sections:
+            contact_school: צרו קשר עם בית הספר
+            export_my_data: ייצא את הנתונים שלי
+            read_school_privacy_policy: קרא את מדיניות הפרטיות של בית הספר
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: השמעת מוזיקה
+              sound_effects: אפקטים קוליים
+              title: נשמע
+            visual:
+              dark_theme: ערכת נושא כהה
+              font_size:
+                test_text: הדשא תמיד ירוק יותר בצד השני של הגדר
+                title: גודל גופן
+              high_contrast: ניגודיות גבוה
+              hints: רמזים
+              title: חָזוּתִי
+          title: סאונד וויזואלי
+        training_settings:
+          sections:
+            i_understand: אני מבין
+            i_want_to_learn: אני רוצה ללמוד
+            target_language_level: רמת אנגלית
+          title: הגדרות אימון
+      settings_title: הגדרות
+    teacher_card:
+      followers_count:
+        one: חסיד אחד
+        other: עוקבים %{count}
+      lessons_count:
+        one: שיעור אחד
+        other: שיעורי %{count}

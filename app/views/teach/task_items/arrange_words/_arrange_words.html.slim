@@ -1,0 +1,48 @@
+div id=dom_id(item)
+  .card.mb-3 class="#{item.functional? && 'corner-success' || 'corner-warning'}"
+    .card-body
+      .row
+        .col-5
+          strong= t('.enter_correct_sentence')
+          pre.card-text= best_in_place item,
+                  :arrange_words,
+                  url: teach_task_item_path(task, item),
+                  param: :task_item,
+                  inner_class: "form-control"
+          br
+          strong= t('.additional_words')
+          pre.card-text= best_in_place item,
+                  :additional_words,
+                  url: teach_task_item_path(task, item),
+                  param: :task_item,
+                  inner_class: "form-control",
+                  place_holder: t('.click_set_incorrect_words')
+
+        .col-3
+          strong= t('.hint') + ':'
+          pre.card-text= best_in_place item,
+                  :hint,
+                  url: teach_task_item_path(task, item),
+                  param: :task_item,
+                  inner_class: "form-control",
+                  place_holder: '(Google Translate)'
+        .col-4.d-flex.justify-content-between.align-items-center
+          - unless item.audio
+            div.float-left style='width: 70%; display: none'
+              = react_component('components/AudioRecord', {api: "/tasks/#{item.task_id}/items/#{item.id}", item: item})
+            button.btn.float-left.item-record-btn
+              i.fa.fa-microphone
+            = form_for item, as: :task_item, url: teach_task_item_path(task, item), method: :patch do |f|
+              .task-item-audio-upload
+                label[for="task_item_#{item.id}_audio"]
+                  span.btn.float-right.item-audio-upload-btn
+                    i.fa.fa-file-upload
+                = f.file_field :audio, accept: 'audio/*', id: "task_item_#{item.id}_audio", class: 'js-submit-on-change'
+          - else
+            = audio_tag(item.audio_url, class: 'preview', controls: true, style: 'width: 55%; height: 100%')
+            = form_for item, as: :task_item, url: teach_task_item_path(task, item), method: :patch do |f|
+              = f.hidden_field :audio, value: ''
+              = f.hidden_field :remove_audio, value: 'true'
+              button.item-audio-remove
+                span.fa.fa-trash
+          = render 'teach/task_items/shared/move_and_delete', task: task, item: item

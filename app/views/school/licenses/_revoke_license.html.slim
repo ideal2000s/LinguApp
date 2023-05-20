@@ -1,0 +1,12 @@
+.modal-dialog.modal-revoke-license role="document"
+  .modal-content
+    .modal-header
+      h5.modal-title = t('school.team_students.profile.revoke_license_now')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+    .modal-body
+      = form_with url: school_team_student_license_path(team_student, team_student.active_license), method: :delete, data: { remote: false } do |f|
+        .revoke-confirm-text
+          = t('school.team_students.profile.revoke_license_confirm')
+        .d-flex.justify-content-between.action-group.mt-4
+          = f.submit t('shared.confirm'), class: 'btn btn-danger ml-2 w-50'
+          button.btn.btn-light.w-50 type='button' data-dismiss="modal" = t('shared.cancel')

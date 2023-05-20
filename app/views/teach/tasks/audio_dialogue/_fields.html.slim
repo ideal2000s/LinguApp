@@ -1,0 +1,68 @@
+#settings.card.bg-light.collapse
+  .card-body
+    h4.mt-2= t('teach.tasks.list.settings')
+    .form-group
+      = f.label :name, t('teach.tasks.shared_task_fields.internal_name'), required: true
+      = f.text_field :name, class: 'form-control', placeholder: t('teach.tasks.enter_title')
+      = error_for f.object, :name
+    .row
+      .col-md-7.col-sm-12
+        .form-group
+          = f.label t('teach.tasks.new.select_subject')
+          = f.select :subject, options_for_select(Task.subjects_for_select, f.object.subject), { prompt: t('teach.tasks.new.select_subject') }, class: 'form-control select2'
+          = error_for f.object, :subject
+        .form-group
+          = f.label t('teach.tasks.new.select_industry')
+          = f.select :industry_id, options_for_select(Industry.select(:name_translations, :id).map { |i| [i.name, i.id] }, f.object.industry_id), { include_blank: '' }, { class: 'form-control select2', multiple: false }
+        .form-group
+          = f.label :complexity, t('teach.tasks.shared_task_fields.complexity'), required: true
+          = f.select :complexity, options_for_select(Task.complexities_for_select, f.object.complexity), { prompt: '' }, class: 'form-control select2'
+          = error_for f.object, :complexity
+      .col-md-5.col-sm-12
+        .form-group
+          = f.label :published, t('status')
+          .custom-control.custom-switch
+            = f.check_box :published, class: 'custom-control-input'
+            = f.label :published, t('published'), class: 'custom-control-label'
+        .form-group
+          label= t('task_scoring_label')
+          - if f.object.manual_review?
+            = f.hidden_field :score_method, value: 'manual'
+          - else
+            - Task.score_methods.keys.each do |m|
+              .custom-control.custom-radio
+                = f.radio_button :score_method, m, class: 'custom-control-input'
+                = f.label "score_method_#{m}".to_sym, t(".score_#{m}_label"), class: 'custom-control-label'
+            = error_for f.object, :score_method
+.card
+  .card-body
+    h4.mt-2= t('teach.tasks.shared_task_fields.task_content')
+    .form-group
+      = f.label :title, t('teach.tasks.headline'), required: true
+      = f.text_field :title, class: 'form-control', placeholder: t('teach.tasks.enter_title')
+      = error_for f.object, :title
+    - unless f.object.skip_introduction?
+      .form-group
+        = f.label :introduction, t('teach.tasks.task_introduction'), required: true
+        = f.text_area :introduction, rows: "3", class: 'form-control', placeholder: t('teach.tasks.introduction_task_placeholder')
+        = error_for f.object, :introduction
+      .form-group
+        = f.upload_helper_for(:audio, resource: f.object.task, accept: 'audio/*', data: { upload: 'audio' }) do |h|
+          - h.button do
+            i.fas.fa-headphones.fa-fw.mr-2
+            = t('teach.tasks.shared_task_fields.upload_audio')
+          - h.preview do |resource|
+            = audio_tag(resource.audio_url, class: 'preview', controls: true) if resource.audio
+      .form-group
+        = f.upload_helper_for(:image, resource: f.object.task, accept: 'image/*', data: { upload: 'image' }) do |h|
+          - h.button do
+            i.fas.fa-image.fa-fw.mr-2
+            = t('teach.tasks.shared_task_fields.choose_image')
+          - h.preview do |resource|
+            = image_tag(resource.image_url(:thumbnail), class: 'preview img-thumbnail') if resource.image
+    .form-group
+      = f.label :instruction, t('teach.tasks.select_text.fields.hints_or_help')
+      = f.text_field :instruction, class: 'form-control'
+      = error_for f.object, :instruction
+    .form-group
+      = f.submit t('save_changes'), class: 'btn btn-primary'

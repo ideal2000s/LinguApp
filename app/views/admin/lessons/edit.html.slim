@@ -1,0 +1,69 @@
+- set_page_title lesson.title
+.row
+  .col-sm-12.col-md-8
+    .card.mb-3
+      .card-header
+        h2== t('teach.lessons.edit_lesson', lesson: lesson.title)
+      .card-body
+        = form_for [:teach, lesson] do |f|
+          - if lesson.errors.any?
+            .alert.alert-warning#error_explanation
+              h4
+                = pluralize(lesson.errors.count, 'error')
+                =< t('teach.lessons.form.prohibited_saving_form')
+              ul
+                - lesson.errors.full_messages.each do |message|
+                  li= message
+          .form-group
+            = f.label :title, required: true
+            = f.text_field :title, class: 'form-control'
+            = error_for f.object, :title
+          - if f.object.new_record? && current_user.admin?
+            .form-group
+              = f.label :kind, required: true
+              - Lesson.kinds.keys.each do |kind|
+                .custom-control.custom-radio
+                  = f.radio_button :kind, kind, class: 'custom-control-input'
+                  = f.label "kind_#{kind}".to_sym, t(kind, scope: 'activerecord.attributes.lesson.kinds'), class: 'custom-control-label'
+          .form-group
+            = f.label :language_id, t('teach.lessons.form.select_target_language'), required: true
+            = f.select :language_id, options_for_select(Language.active.select(:name_translations, :id).map { |d| [d.name, d.id] }, f.object.language_id), {include_blank: t('select')}, {class: 'form-control select2', multiple: false}
+            = error_for f.object, :language_id
+          .form-group
+            = f.label :support_language_id, t('teach.lessons.form.select_support_language')
+            = f.select :support_language_id, options_for_select(Language.support.select(:name_translations, :id).map { |d| [d.name, d.id] }, f.object.support_language_id), {include_blank: t('select')}, {class: 'form-control select2', multiple: false}
+            = error_for f.object, :support_language_id
+          .form-group
+            = f.label :level, t('teach.lessons.form.select_level')
+            = f.select :level, options_for_select(Lesson.levels_for_select, f.object.level), {prompt: t('teach.lessons.form.select_level')}, class: 'form-control select2'
+          .form-group
+            = f.label :parent_id, t('teach.lessons.form.select_parent_lesson')
+            = f.select :parent_id, options_for_select(lesson.team.lessons.where.not(id: lesson.id).select(:title, :id).map { |d| [d.name_for_select, d.id] }, f.object.parent_id), {include_blank: t('select')}, {class: 'form-control select2', multiple: false}
+            = error_for f.object, :parent_id
+          .form-group
+            = f.label :team_id, t('teach.lessons.form.select_team')
+            = f.select :team_id, options_for_select(Team.kept.select(:owner_id, :status, :name, :id).map { |d| [d.id_name, d.id] }, f.object.team_id), {include_blank: t('select')}, {class: 'form-control select2', multiple: false}
+            = error_for f.object, :parent_id
+          .form-group
+            = f.label :tags, t('teach.lessons.form.select_tag')
+            = f.select :tags, options_for_select(Lesson::TAG_ARRAY.map { |e| [t("activerecord.attributes.lesson.tags.#{e}"), e] }, f.object.tags), {}, {class: 'form-control select2', multiple: true}
+          .form-group
+            = f.label :skill_ids, t('teach.lessons.form.select_skill')
+            = f.select :skill_ids, options_for_select(Skill.select(:name_translations, :id).map { |s| [s.name, s.id] }, f.object.skill_ids), {}, {class: 'form-control select2', multiple: true}
+          .form-group
+            = f.label :credits
+            = f.text_area :credits, rows: 5, class: 'form-control', placeholder: t('teach.lessons.form.credits_placeholder')
+            = error_for f.object, :credits
+          .form-group
+            = f.label :published, t('teach.lessons.review.publishing_status')
+            .custom-control.custom-switch
+              = f.check_box :published, class: 'custom-control-input'
+              = f.label :published, t('published'), class: 'custom-control-label'
+          .form-group
+            = f.label :status, required: true
+            - Lesson.statuses.keys.each do |status|
+              .custom-control.custom-radio
+                = f.radio_button :status, status, class: 'custom-control-input'
+                = f.label "status_#{status}".to_sym, t(status, scope: 'activerecord.attributes.lesson.statuses'), class: 'custom-control-label'
+          .actions
+            = f.submit t('common.buttons.save'), class: 'btn btn-primary'

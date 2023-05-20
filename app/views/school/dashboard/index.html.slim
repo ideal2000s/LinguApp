@@ -1,0 +1,8 @@
+- set_page_title t('layouts.admin.sidebar.dashboard')
+
+.dashboard-container
+  - if current_team.gdpr_consented? && current_team.school_member?
+    -#h1.mb-4.font-weight-bold = t('admin.dashboard.index.title')
+    = render 'school/dashboard/show', current_team: current_team, team_presenter: team_presenter, duration_stats: duration_stats
+  - else
+    = render 'school/dashboard/empty', team: current_team

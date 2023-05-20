@@ -1,0 +1,609 @@
+---
+ug:
+  course_mailer:
+    course_assigned_notification:
+      button: دەرسنى باشلاڭ
+      click_start_lesson: "«دەرس باشلاش» نى چېكىڭ"
+      follow_course_link: كۇنۇپكىنى چېكىپ دەرسنى ئېچىڭ
+      footer_text: ھەر كۈنى يېڭى نەرسىلەرنى ئۆگىنىش ئۈچۈن لىنگۇغا قايتىپ كېلىڭ!
+      get_started_line: 'بۇ ئىشنى قانداق باشلايسىز:'
+      notification_link: ئۇقتۇرۇش تەڭشىكى
+      open_lesson: بىرىنچى دەرسنى ئېچىڭ
+      or_paste_this_link: ياكى بۇ ئۇلىنىشنى تور كۆرگۈچىڭىزگە چاپلاڭ
+      sign_in_with_email: ئېلېكترونلۇق خەت ئادرېسىڭىز بىلەن كىرىڭ (%{email})
+      support_link: قوللاش
+      title: "%{course} بىلەن باشلاش"
+    new_document_comment:
+      author_text: "%{author} تاپشۇرۇقىڭىزغا باھا بەردى"
+      button_text: تەكشۈرۈپ بېقىڭ
+      button_url_helper: 'ياكى بۇ ئۇلىنىشنى تور كۆرگۈچىڭىزگە چاپلاڭ:'
+      footer_text: ئۆگىنىدىغان يەنە نۇرغۇن ئىشلار بار ...
+      notification_link: ئۇقتۇرۇش تەڭشىكى
+      subject_line: يېڭى تاپشۇرۇق ئىزاھاتى
+      support_link: قوللاش
+    otp:
+      ignore_msg: ئەگەر بۇ تەلەپنى ئوتتۇرىغا قويمىغان بولسىڭىز ، ئېلېكترونلۇق خەتكە
+        پەرۋا قىلماڭ.
+      subject_line: Lingu نىڭ ئۆزگىچە كودى
+      unique_code_for_lingu: بۇ سىزنىڭ Lingu ئۈچۈن خاس كودىڭىز
+  frontend:
+    auth:
+      already_have_acc_question: ھېساباتىڭىز بارمۇ؟
+      back: قايتىش
+      back_to_sign_in: قايتا كىرىش
+      check_your_email_for_a_code: ئېلېكترونلۇق خەت ساندۇقىڭىزنى تەكشۈرۈڭ
+      continue: داۋاملاشتۇر
+      continue_with_email: ئېلېكترونلۇق خەت بىلەن داۋاملاشتۇرۇڭ
+      continue_with_provider: "%{provider} بىلەن داۋاملاشتۇرۇڭ"
+      did_not_receive_a_code: كود تاپشۇرۇۋالمىدىڭىزمۇ؟
+      email_address: ئېلخەت ئادرېسى
+      first_name: ئىسمى
+      get_unique_code: ئۆزگىچە كىرىش كودىغا ئېرىشىڭ
+      join_lingu: Lingu غا قوشۇلۇڭ
+      last_name: فامىلىسى
+      more_login_options: تېخىمۇ كۆپ كىرىش تاللانمىلىرى
+      no_account_question: ھېساباتىڭىز يوقمۇ؟
+      or: ياكى
+      resend_code: كودنى ئەۋەتىش
+      sign_in: تىزىملىتىڭ
+      sign_up: تىزىملىتىڭ
+      want_to_receive_marketing_messages: مەن لىنگۇنىڭ سېتىش ئۇچۇرلىرىنى تاپشۇرۇۋالغۇم
+        بار
+      we_ve_sent_a_code: >-
+        بىز <strong> {{ئېلېكترونلۇق خەت}} </strong> گە 6 خانىلىق كود ئەۋەتتۇق. بۇ
+        كودنىڭ ۋاقتى 15 مىنۇتتا توشىدۇ ، شۇڭا تېزرەك كىرگۈزۈڭ.
+    cookie_agreement:
+      agree: ماقۇل
+      condition: >-
+        ساقلانمىلارنى تور بېكەتنىڭ ئىقتىدارىنى تەھلىل قىلىش ۋە خاسلاشتۇرۇلغان مەزمۇنلارنى
+        يەتكۈزۈش ئۈچۈن ئىشلىتىمىز. «ماقۇل» نى چېكىپ ، بىزنىڭ شەرتلىرىمىزگە قوشۇلىسىز.
+    course:
+      accredited_course_provider: ئېتىراپ قىلىنغان دەرسلىك بىلەن تەمىنلىگۈچى
+      apply: ئىلتىماس قىلىڭ
+      apply_filters: سۈزگۈچ ئىشلىتىڭ
+      by: By
+      cancel: بىكار قىلىش
+      categories: "%{count} تۈرى"
+      category: سەھىپە
+      clear: ئېنىق
+      clear_filters: سۈزگۈچنى تازىلاش
+      contact_us: بىز بىلەن ئالاقىلىشىڭ
+      could_not_find_match_for: كەچۈرۈڭ ، بىز ھېچقانداق ماسلىشالمىدۇق
+      course_language: دەرس تىلى
+      duration: Duration
+      filter_settings:
+        categories:
+          academic: Academic
+          business: سودا
+          fashion: مودا
+          food_drink: يېمەكلىك ۋە ئىچىملىك
+          for_kids: بالىلار ئۈچۈن
+          general: General
+          health: ساغلاملىق
+          legal: قانۇنلۇق
+          sport: Sport
+          travel: ساياھەت
+        durations:
+          t0_600: "<10 مىنۇت"
+          t1800_3600: 30-60 مىنۇت
+          t3600_86400: 1+ سائەت
+          t600_1800: 10-30 مىنۇت
+        focus_on:
+          conversation: سۆھبەت
+          grammar: گرامماتىكىسى
+          listening: ئاڭلاش
+          pronunciation: تەلەپپۇز
+          reading: ئوقۇش
+          speaking: سۆزلەۋاتىدۇ
+          writing: يېزىش
+        levels:
+          long:
+            advanced: ئىلغار سەۋىيە
+            elementary: Elementary level
+            intermediate: ئوتتۇرا دەرىجىلىك
+            no_knowledge: بىلىم يوق
+            pre_intermediate: ئارىلىق سەۋىيىسى
+            upper_intermediate: يۇقىرى ئوتتۇرا قاتلام
+          short:
+            advanced: ئىلغار
+            beginner: Beginner
+            intermediate: Intermediate
+        sort_by:
+          most_rated: ئەڭ كۆپ باھالانغان
+          newest: ئەڭ يېڭى
+          popularity: ئاممىباب
+      filters: سۈزگۈچ
+      focus_on: دىققەت قىلىڭ
+      focus_on_title: مەن زېھنىمنى مەركەزلەشتۈرمەكچى
+      hide_lessons: دەرسلەرنى يوشۇرۇش
+      hours: سائەت
+      i_understand: چۈشەندىم
+      i_want_to_learn: مېنىڭ ئۆگەنگۈم بار
+      in_language: "%{language}"
+      language: تىل
+      learn_more: تەپسىلاتى
+      less_settings: تەڭشەكلەر ئاز
+      lessons: دەرسلەر
+      lessons_available: "%{number} دەرسلىرى بار"
+      lessons_catalog_page_subtitle: تىل قەھرىمانىغا ئايلىنىڭ.
+      lessons_catalog_page_title: تىل دەرسلىكى بىلەن نەزەر دائىرىڭىزنى كېڭەيتىڭ
+      level: Level
+      min: مىن
+      more_settings: تېخىمۇ كۆپ تەڭشەكلەر
+      navbar:
+        close: تىزىملىكنى تاقاش
+        menu: تىزىملىك
+        select_language: تىل تاللاڭ
+      need_to_buy_course: ئالدى بىلەن دەرس زاكاز قىلىشىڭىز كېرەك
+      no_description: ھېچقانداق چۈشەندۈرۈش بېرىلمىدى
+      no_results: كەچۈرۈڭ ، بىز ھېچقانداق ماسلىشالمىدۇق
+      or: ياكى
+      per_month: ھەر ئايدا
+      plans: پىلانلار
+      privacy_policy: مەخپىيەتلىك تۈزۈمى
+      rating: باھا
+      remove_all_filters: بارلىق سۈزگۈچلەرنى ئۆچۈرۈڭ
+      reviews: باھا
+      save: ساقلاش
+      search: ئىزدەش
+      select_dots: تاللاڭ ...
+      select_languages: لەڭگەرنى تاللاڭ
+      select_num_languages: "%{number} تىللىرىنى تاللاڭ"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: ھەممىنى كۆرسەت
+      show_all_lessons: بارلىق دەرسلەرنى كۆرسەت
+      show_lessons: "%{number} دەرسلىرىنى كۆرسەت"
+      show_more: تېخىمۇ كۆپ كۆرسەت
+      sign_up_with_lingu_for: نورۋېگىيەدىكى Lingu بىلەن تىزىملىتىڭ
+      skills: "%{count} ماھارەت"
+      sort_by: تەرتىپلەش
+      start_typing_here: بۇ يەردىن يېزىشنى باشلاڭ
+      teach: ئۆگىتىڭ
+      terms_and_conditions: شەرت ۋە شەرت
+      time_range: ۋاقىت دائىرىسى
+      try_adjusting_your_search: سۈزگۈچنى ئۆزگەرتىش ئارقىلىق ئىزدەشنى تەڭشەڭ
+      try_this_course: بۇ دەرسلىكنى سىناپ بېقىڭ
+      website_language: تور بېكەت تىلى
+      words: سۆز
+    games:
+      finished:
+        go_to_next_exercise: ياخشى! كېيىنكى مەشىققە بېرىڭ
+      flashcard:
+        buttons:
+          finish: تامام
+          next: كېيىنكى
+          previous: ئالدىنقى
+        check_out_new_words: بۇ دەرسلىكتە ئۆگەنمەكچى بولغان يېڭى سۆزلەرنى تەكشۈرۈپ
+          بېقىڭ
+        frequency_of_word_usage: "%{language} دىكى سۆز ئىشلىتىش قېتىم سانى"
+        keep_practice_to_learn_all_words: "%{count} سۆزلىرىنى كۆرۈپ بېقىڭ ، بىر قىسىم
+          ئويۇنلارنى ئوينايلى!"
+        word_frequency:
+          level1: ناھايىتى ئاز ئىشلىتىلىدۇ
+          level2: ناھايىتى ئاز ئىشلىتىلىدۇ
+          level3: سۆز چاستوتىسى - ئوتتۇراھال
+          level4: سۆز چاستوتىسى - ئوتتۇراھال
+          level5: Common
+          level6: بەك كۆپ ئۇچرايدۇ
+      match_word:
+        click_and_move_each_word_to_counterpart: ھەر بىر سۆزنى چېكىپ ، قارشى تەرەپكە
+          يۆتكەڭ
+        start_heading: بىر جۈپ قىلىش ئۈچۈن سۆزلەرنى ماسلاشتۇرۇڭ
+        time_is_up: ۋاقىت توشتى!
+      skip_tutorial: ئاتلاش
+      time_is_up: ۋاقىت توشتى!
+      word_nodes:
+        match_letters_to_form_word: ھەرپلەرنى ماسلاشتۇرۇپ سۆز ھاسىل قىلىڭ
+      word_waterfall:
+        do_not_hesitate: تېزلىتىمىز!
+        go_to_next_exercise: كېيىنكى مەشىققە بېرىڭ
+        select_correct_translation: توغرا ماسلاشتۇرۇشنى تاللاڭ
+        well_done: ياخشى!
+    home_page:
+      hello: ياخشىمۇسىز ،
+      popular_lessons: ئاممىباب دەرسلەر
+      show_more: تېخىمۇ كۆپ كۆرسەت
+      time: "%{count} min"
+      today_lesson: بۈگۈن دەرسلىكىڭىز
+      user_name: "%{name}!"
+      words: "%{count} سۆز"
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: دەرسنى داۋاملاشتۇرۇڭ
+      exit: چىقىش
+      idle_message: سىز بىر مەزگىل بىكار بولۇپ قالدىڭىز ...
+    lesson_page:
+      back_to_course_page: دەرس بېتىگە قايتىڭ
+      close: تاقاش
+      continue_lesson: دەرسنى داۋاملاشتۇرۇڭ
+      followed: Followed
+      hamburger_menu_btn: ھامبۇرگ تىزىملىكى
+      lesson_given: دەرسلەر
+      not_started: باشلىمىدى
+      or: ياكى
+      part_complete: "%{percent}% تامام"
+      restart_lesson: قايتا قوزغىتىڭ
+      section_check: تەكشۈرۈڭ
+      section_check_info: "%{count} سىناقلىرى"
+      section_learn: ئۆگىنىڭ
+      section_learn_info: "%{count} مىنۇت كۆرۈش ۋە ئوقۇش"
+      section_play: ئويناش
+      section_play_info: "%{count} مەشىق قىلىدىغان سۆز"
+      start_lesson: دەرس باشلاش
+      step_progress: "%{percent}%"
+      subscribe: ئەگىشىڭ
+      subscribed: Followed
+      subscribers: ئەگەشكۈچىلەر
+      time_min: "%{minutesNumber} min"
+      unsubscribe: جولداس
+      webview_error_title: چاتاق چىقتى ...
+      words_number: "%{wordsNumber} يېڭى سۆزلەر"
+    lesson_task:
+      cancel_button: بىكار قىلىش
+      check:
+        navigation_next: كېيىنكى
+        navigation_previous: ئالدىنقى
+        navigation_skip: ئاتلاش
+      controls_panel:
+        font_size_button: خەت چوڭلۇقى
+        high_contrast_button:
+          origin: يۇقىرى سېلىشتۇرما
+          short: سېلىشتۇرما
+        hints_button: كۆرسەتمە
+        music_playback_button:
+          origin: مۇزىكا قويۇش
+          short: مۇزىكا
+        sound_effects_button:
+          origin: ئاۋاز ئۈنۈمى
+          short: ئاۋاز
+      exit_button: چىقىش
+      finish_button: تامام
+      finished:
+        back_to_learn: ئۆگىنىشكە قايتىش
+        back_to_lesson_page: دەرس بېتىگە قايتىڭ
+        back_to_results_page: نەتىجە بېتىگە قايتىڭ
+        bad_result_message: ھىم ... دەرسنى يەنە بىر قېتىم سىناپ بېقىڭ
+        close_lesson: دەرسنى تاقاش
+        correct_answers_list: توغرا جاۋاب تىزىملىكى
+        good_result_message: سىزنىڭ تىرىشچانلىقىڭىزنى كۆرەلەيمەن!
+        great_result_message: ياخشى! بۇلار ناھايىتى ياخشى نەتىجىلەر!
+        next_course_lesson: كېيىنكى دەرسكە ئۆتۈڭ
+        no_results: سىزدە تېخى سىناق نەتىجىسى يوق
+        no_results_text: دەرسنى تاماملاپ ، سىناقتىن ئۆتۈپ نەتىجىگە ئېرىشىڭ
+        see_correct_answers_list: توغرا جاۋاب تىزىملىكىنى كۆرۈڭ
+        train_more: كۆپرەك مەشىق قىلىڭ ، كېلەر قېتىم تېخىمۇ ياخشى نەتىجىگە ئېرىشىسىز!
+        you_finished_lesson: قالتىس! دەرسنى تاماملىدىڭىز
+      go_back: قايتىڭ
+      next_button: كېيىنكى
+      not_available_task: بۇ ۋەزىپە تېخىچە يوق
+      start_button: باشلاش
+      tasks:
+        check:
+          assignment:
+            accept: قوبۇل قىلىڭ
+            author_will_check_your_answer: "%{author} جاۋابىڭىزنى تەكشۈرۈپ ، ئادەتتە
+              1-2 كۈن ئىچىدە پىكىر بېرىدۇ"
+            continue_writing: يېزىشنى داۋاملاشتۇرۇڭ
+            copy: كۆچۈرۈڭ
+            delete: ئۆچۈرۈش
+            delete_record: خاتىرىنى ئۆچۈرۈڭ
+            edit: تەھرىر
+            essay_does_not_have_enough_words: >-
+              جاۋابىڭىزدا كەم دېگەندە %{minWordsNumber} سۆز بولۇشى كېرەك. جاۋابىڭىز
+              ھازىر %{currentWordsNumber} سۆز.
+            followers_count: "%{followersCount} ئەگەشكۈچىلىرى"
+            lessons_count: "%{lessonsCount} دەرسلىرى"
+            minimal_recording_time: ئەڭ تۆۋەن خاتىرىلەش ۋاقتى - %{minimalRecordingTime}
+            minimum_characters_amount: ئەڭ كىچىك ھەرپ - %{minimumCharactersAmount}
+            minimum_words_amount: ئەڭ تۆۋەن سۆز - %{minimumAmount}
+            record_again: قايتا خاتىرىلەڭ
+            record_voice: ئاۋاز خاتىرىلەش
+            send_anyway: قانداقلا بولمىسۇن ئەۋەتىڭ
+            send_to_review: قاراپ چىقىشقا ئەۋەتىڭ
+            skip: ئاتلاش
+            too_short_answer: بەك قىسقا جاۋاب
+            type_your_answer: جاۋابىڭىزنى يېزىڭ
+            unknown_task_type: نامەلۇم ۋەزىپە تىپى
+            upgrade_licence: ئىجازەتنامىنى يېڭىلاش
+            upgrade_your_plan: ئوقۇتقۇچىلارنىڭ باھاسى بىلەن تاپشۇرۇقنى سىناپ بېقىش
+              پىلانىڭىزنى يېڭىلاڭ
+            upload_files: ھۆججەتلەرنى يۈكلەڭ
+            write_essay: ماقالە يېزىڭ
+            you_have_used_amount_of_assignments: سىز %{amountOfAssignments} تاپشۇرۇق
+              ئىناۋىتىنى ئىشلەتتىڭىز
+          fill_in_blanks:
+            sentence_gap: جۈملە پەرقى
+          fill_in_table:
+            column_answer_placeholder: جاۋاب
+            column_question_placeholder: سوئال
+            example: مىسال
+          true_false:
+            'false': يالغان
+            'true': توغرا
+        learn:
+          translatable_text:
+            show_original: ئەسلى كۆرسەت
+            translate_into: Google بىلەن %{languageName} غا تەرجىمە قىلىڭ
+            translate_into_your_lang: Google بىلەن تىلىڭىزغا تەرجىمە قىلىڭ
+        play:
+          arrange_words:
+            start_screen:
+              heading: بېرىلگەن سۆزلەردىن بىر جۈملە تۈزۈڭ
+          audition:
+            start_screen:
+              heading: ئاۋازنى ئاڭلاڭ ۋە ئەمدىلا ئاڭلىغان سۆزنى چېكىڭ
+          dictation:
+            get_help: ياردەمگە ئېرىشىڭ
+            i_do_not_know: بىلمەيمەن
+            input_placeholder: ئاڭلىغانلىرىڭىزنى بۇ يەرگە كىرگۈزۈڭ
+            start_screen:
+              heading: ئاڭلىغانلىرىڭىزنى ئاڭلاڭ ۋە يېزىڭ
+          fill_gap:
+            start_screen:
+              heading: سۆز ۋە ئۇنىڭ مەنىسىنى ماسلاشتۇرۇڭ
+          finish_screen:
+            go_to_next_exercise: ياخشى! كېيىنكى مەشىققە بېرىڭ
+          image_hotspot:
+            start_screen:
+              heading: رەسىمدىكى نەرسىلەرگە توغرا ئىسىم قويۇڭ
+          image_object:
+            start_screen:
+              heading: كېيىنكى رەسىمدىن توغرا ئوبيېكتنى تاللاڭ
+          inline_dropdown:
+            start_screen:
+              heading: جۈملىگە ماس كېلىدىغان سۆزلەرنى تاللاڭ
+          mark_word:
+            start_screen:
+              heading: تېكىستنى ئوقۇڭ ۋە رەسىمگە ماس كېلىدىغان سۆزنى تاللاڭ
+          minimal_pairs:
+            start_screen:
+              heading: سىننى كۆرۈڭ ۋە توغرا تاللاشنى تاللاڭ
+    locale:
+      currency_switcher_title: پۇل ئالماشتۇرغۇچ
+      lang_switcher_title: تىل ئالماشتۇرغۇچ
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: ئىنگىلىزچە
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ئاۋاز يۈكلىنىۋاتىدۇ
+        aria_pause_button: Pause
+        aria_play_button: ئويناش
+        aria_reload_button: قايتا يۈكلەڭ
+        aria_stop_button: توختاڭ
+        reload_message: ئاۋاز يۈكلىيەلمىدى. قايتا يۈكلەش ئۈچۈن كۇنۇپكىنى بېسىڭ.
+    mobile_modal:
+      apply: ئىلتىماس قىلىڭ
+      cancel: بىكار قىلىش
+      clear: ئېنىق
+      save: ساقلاش
+    page404:
+      goToStartLessonPage: باشلاش دەرس بېتىگە كىرىڭ
+      ooops: Oooops ...
+      sorry_message: كەچۈرۈڭ ، تور بۇ بەتنى تاپالمىدى
+    profile:
+      navigation:
+        log_out: چېكىنىش
+        my_profile: مېنىڭ ئارخىپىم
+        settings: تەڭشەك
+      onboarding:
+        choose_native_language: ئانا تىلىڭىزنى ياكى چۈشىنىدىغان تىلىڭىزنى تاللاڭ
+        do_you_understand_english: ئىنگلىزچىنى چۈشىنەمسىز؟
+        hello: ياخشىمۇسىز
+        language_levels:
+          a1: Elementary level
+          a2: ئالدىنقى باسقۇچ
+          b1: ئوتتۇرا دەرىجىلىك
+          b2: يۇقىرى ئوتتۇرا دەرىجىلىك
+          c1: ئىلغار سەۋىيە
+          no_knowledge: بىلىم يوق
+        language_not_supported:
+          note: تىل بولسىلا سىزگە خەۋەر قىلىمىز
+          title: كەچۈرۈڭ ، ئەمما بىز بۇ تىلنى تېخى قوللىمايمىز
+          try_another_language: باشقا تىلنى سىناپ بېقىڭ
+        'no': ياق
+        search_placeholder: ئىزدەش ...
+        show_more_languages: باشقا تىللار
+        target_language_question: قايسى تىلنى ئۆگەنمەكچى؟
+        what_is_language_level: "%{languageName} سەۋىيىڭىزگە قانداق باھا بېرىسىز؟"
+        'yes': ھەئە
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: لىڭنىڭ مەخپىيەتلىك سىياسىتى
+        support: قوللاش
+      logout: Logout
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: سىز ئەگەشكەن ئوقۇتقۇچى ۋە مەكتەپلەردىن يېڭىلانمىلارنى تاپشۇرۇۋېلىڭ
+              sections:
+                app_notifications: ئەپ ئۇقتۇرۇشى
+                email: ئېلېكترونلۇق خەت
+              title: ئۆگىنىش ياردىمى
+            marketing:
+              description: لىنگۇنىڭ بارلىق تەشۋىقاتلىرى ، يېڭىلانمىلىرى ۋە ئىلھامى
+                ھەققىدە خەۋەردار بولۇڭ
+              sections:
+                browser_notifications: توركۆرگۈ ئۇقتۇرۇشى
+                email: ئېلېكترونلۇق خەت
+              title: Marketing
+          title: ئالاقىلىشىش مايىللىقى
+        personal_information:
+          delete_photo: رەسىمنى ئۆچۈرۈڭ
+          email: ئېلخەت
+          first_name: ئىسمى
+          last_name: فامىلىسى
+          social_accounts:
+            connected: ئۇلاندى
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: ئۇلانمىدى
+            title: ئىجتىمائىي ھېساباتلار
+          title: شەخسىي ئۇچۇرلار
+          update_photo: رەسىمنى يېڭىلاش
+        school:
+          active_licence: ئاكتىپ ئىجازەتنامە
+          active_status: ئاكتىپ
+          delete_profile: ئارخىپىمنى ئۆچۈرۈڭ
+          delete_profile_modal:
+            body: |-
+              بارلىق سانلىق مەلۇماتلىرىڭىزنى مەڭگۈ ئۆچۈرۈۋېتىسىز. ئەمەلدىن قالدۇرۇش كۇنۇپكىسى يوق ، بىز ئۇنى كېيىن سىزگە قايتۇرالمايمىز.
+              تىل ئارخىپىڭىزنى ۋە بارلىق سانلىق مەلۇماتلىرىڭىزنى مەڭگۈلۈك ئۆچۈرمەكچىمۇ؟
+            cancel: بىكار قىلىش
+            confirm: ھەئە ، ئۇنى ئۆچۈرۈڭ
+            i_understand_the_consequences: مەن ئۇنىڭ ئاقىۋىتىنى چۈشىنىمەن
+            title: ئارخىپىڭىزنى ئۆچۈرەمسىز؟
+          expired: ۋاقتى ئۆتكەن %{expire_date}
+          expires: "%{expire_date} نىڭ ۋاقتى توشىدۇ"
+          inactive_status: ھەرىكەتسىز
+          revoke_access: ئوقۇش ھوقۇقىنى بىكار قىلىڭ
+          sections:
+            contact_school: مەكتەپ بىلەن ئالاقىلىشىڭ
+            export_my_data: سانلىق مەلۇماتلىرىمنى چىقىرىڭ
+            read_school_privacy_policy: مەكتەپ مەخپىيەتلىك سىياسىتىنى ئوقۇڭ
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: مۇزىكا قويۇش
+              sound_effects: ئاۋاز ئۈنۈمى
+              title: ئاۋاز
+            visual:
+              dark_theme: قاراڭغۇ تېما
+              font_size:
+                test_text: رىشاتكىنىڭ قارشى تەرىپىدىكى ئوت-چۆپلەر ھەمىشە يېشىل بولىدۇ
+                title: خەت چوڭلۇقى
+              high_contrast: يۇقىرى سېلىشتۇرما
+              hints: كۆرسەتمە
+              title: Visual
+          title: ئاۋاز ۋە كۆرۈنۈش
+        training_settings:
+          sections:
+            i_understand: چۈشەندىم
+            i_want_to_learn: مېنىڭ ئۆگەنگۈم بار
+            target_language_level: ئىنگلىز تىلى
+          title: مەشىق تەڭشەكلىرى
+      settings_title: تەڭشەك
+    teacher_card:
+      followers_count:
+        one: 1 ئەگەشكۈچى
+        other: "%{count} ئەگەشكۈچىلىرى"
+      lessons_count:
+        one: 1 دەرس
+        other: "%{count} دەرسلىرى"

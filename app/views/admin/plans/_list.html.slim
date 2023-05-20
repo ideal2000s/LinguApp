@@ -1,0 +1,11 @@
+#plan_list
+  -#== paginate plans
+  table.table.thead-light.table-hover
+    thead
+      tr
+        th= t('activerecord.attributes.language.system_name')
+        th= t('name')
+        th= t('shared.language')
+        th
+    tbody
+      = render partial: 'list_row', collection: plans, as: :plan, cached: true

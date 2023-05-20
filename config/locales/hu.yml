@@ -1,0 +1,610 @@
+---
+hu:
+  course_mailer:
+    course_assigned_notification:
+      button: Indítsa el a tanfolyamot
+      click_start_lesson: Kattintson a „Lecke indítása” gombra
+      follow_course_link: Kattintson a gombra a tanfolyam megnyitásához
+      footer_text: Térjen vissza Lingu-ba, hogy minden nap tanuljon valami újat!
+      get_started_line: 'Így kezdheti el:'
+      notification_link: Értesítési beállítások
+      open_lesson: Nyissa meg az első órát
+      or_paste_this_link: vagy illessze be ezt a linket a böngészőjébe
+      sign_in_with_email: Jelentkezzen be e-mail címével (%{email})
+      support_link: Támogatás
+      title: A %{course} használatának megkezdése
+    new_document_comment:
+      author_text: A %{author} véleményt hagyott a feladatáról
+      button_text: Nézd meg
+      button_url_helper: 'vagy illessze be ezt a linket a böngészőjébe:'
+      footer_text: Sokat kell még megtanulni ...
+      notification_link: Értesítési beállítások
+      subject_line: Új hozzászólási megjegyzés
+      support_link: Támogatás
+    otp:
+      ignore_msg: Ha nem Ön kérte, hagyja figyelmen kívül az e-mailt.
+      subject_line: A Lingu egyedi kódja
+      unique_code_for_lingu: Itt található a Lingu egyedi kódja
+  frontend:
+    auth:
+      already_have_acc_question: Már van fiókja?
+      back: Vissza
+      back_to_sign_in: Vissza a bejelentkezéshez
+      check_your_email_for_a_code: Ellenőrizze az e-mailben a kódot
+      continue: Folytatni
+      continue_with_email: Folytatás e-mailben
+      continue_with_provider: Folytassa a %{provider} paranccsal
+      did_not_receive_a_code: Nem kapott kódot?
+      email_address: Email cím
+      first_name: Keresztnév
+      get_unique_code: Szerezzen be egyedi bejelentkezési kódot
+      join_lingu: Csatlakozzon a Lingu-hoz
+      last_name: Vezetéknév
+      more_login_options: További bejelentkezési lehetőségek
+      no_account_question: Nincs fiókja?
+      or: vagy
+      resend_code: Kód újraküldése
+      sign_in: Bejelentkezés
+      sign_up: Regisztrálj
+      want_to_receive_marketing_messages: Marketing üzeneteket akarok kapni a Lingu-tól
+      we_ve_sent_a_code: >-
+        Egy hatjegyű kódot küldtünk a <strong> {{email}} </strong> címre. A kód 15
+        perc múlva lejár, ezért kérjük, írja be hamarosan.
+    cookie_agreement:
+      agree: Egyetért
+      condition: >-
+        A sütik segítségével elemezzük a webhely teljesítményét és személyre szabott
+        tartalmat szállítunk. Az „Elfogadom” gombra kattintva elfogadja feltételeinket.
+    course:
+      accredited_course_provider: Akkreditált tanfolyamszolgáltató
+      apply: Alkalmaz
+      apply_filters: Szűrők alkalmazása
+      by: Által
+      cancel: Megszünteti
+      categories: "%{count} kategóriák"
+      category: Kategória
+      clear: Egyértelmű
+      clear_filters: Törölje a szűrőket
+      contact_us: Lépjen kapcsolatba velünk
+      could_not_find_match_for: 'Sajnos nem találtunk megfelelőt a következőre:'
+      course_language: Tanfolyam nyelve
+      duration: Időtartam
+      filter_settings:
+        categories:
+          academic: Akadémiai
+          business: Üzleti
+          fashion: Divat
+          food_drink: Étel ital
+          for_kids: Gyerekeknek
+          general: Tábornok
+          health: Egészség
+          legal: Jogi
+          sport: Sport
+          travel: Utazás
+        durations:
+          t0_600: "<10 perc"
+          t1800_3600: 30-60 perc
+          t3600_86400: 1+ óra
+          t600_1800: 10-30 perc
+        focus_on:
+          conversation: Beszélgetés
+          grammar: Nyelvtan
+          listening: Hallgatás
+          pronunciation: Kiejtés
+          reading: Olvasás
+          speaking: Beszélő
+          writing: Írás
+        levels:
+          long:
+            advanced: Haladó szint
+            elementary: Alapfok
+            intermediate: Középfokú
+            no_knowledge: Nincs tudás
+            pre_intermediate: Pre középszint
+            upper_intermediate: Felső középszint
+          short:
+            advanced: Fejlett
+            beginner: Kezdő
+            intermediate: Közbülső
+        sort_by:
+          most_rated: A legtöbbet értékelt
+          newest: Legújabb
+          popularity: Népszerűség
+      filters: Szűrők
+      focus_on: Összpontosítson
+      focus_on_title: Koncentrálni akarok
+      hide_lessons: Leckék elrejtése
+      hours: Órák
+      i_understand: értem
+      i_want_to_learn: Meg akarom tanulni
+      in_language: "%{language}-ban"
+      language: Nyelv
+      learn_more: Tudj meg többet
+      less_settings: Kevesebb beállítás
+      lessons: Tanulságok
+      lessons_available: "%{number} órák állnak rendelkezésre"
+      lessons_catalog_page_subtitle: Legyen nyelvhős.
+      lessons_catalog_page_title: Bővítse látókörét egy nyelvtanfolyammal
+      level: Szint
+      min: Min
+      more_settings: További beállítások
+      navbar:
+        close: Menü bezárása
+        menu: Menü
+        select_language: Válasszon nyelvet
+      need_to_buy_course: Először tanfolyamot kell foglalnia
+      no_description: Nincs leírás
+      no_results: 'Sajnos nem találtunk megfelelőt a következőre:'
+      or: vagy
+      per_month: havonta
+      plans: Tervek
+      privacy_policy: Adatvédelmi irányelvek
+      rating: Értékelés
+      remove_all_filters: Távolítsa el az összes szűrőt
+      reviews: Vélemények
+      save: Megment
+      search: Keresés
+      select_dots: Válasszon ...
+      select_languages: Válassza ki a langauges lehetőséget
+      select_num_languages: Válassza ki a %{number} nyelveket
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Mutasd az összeset
+      show_all_lessons: Az összes lecke megjelenítése
+      show_lessons: "%{number} leckék megjelenítése"
+      show_more: Mutass többet
+      sign_up_with_lingu_for: Iratkozzon fel a Lingu Norway webhelyre
+      skills: "%{count} készségek"
+      sort_by: Sorrend
+      start_typing_here: Kezdje el itt gépelni
+      teach: Tanít
+      terms_and_conditions: Felhasználási feltételek
+      time_range: Időtartományban
+      try_adjusting_your_search: Próbálkozzon a keresés beállításával a szűrők módosításával
+      try_this_course: Próbálja ki ezt a tanfolyamot
+      website_language: Weboldal nyelve
+      words: Szavak
+    games:
+      finished:
+        go_to_next_exercise: Szép munka! Ugrás a következő gyakorlatra
+      flashcard:
+        buttons:
+          finish: Befejez
+          next: Következő
+          previous: Előző
+        check_out_new_words: Nézze meg az új szavakat, amelyeket megtanul ebben a
+          leckében
+        frequency_of_word_usage: A szóhasználat gyakorisága %{language}-ban
+        keep_practice_to_learn_all_words: Tekintse át a %{count} szavakat, és játsszunk
+          néhány játékot!
+        word_frequency:
+          level1: Ritkán használt
+          level2: Ritkán használt
+          level3: Szó gyakorisága - közepes
+          level4: Szó gyakorisága - közepes
+          level5: Gyakori
+          level6: Nagyon gyakori
+      match_word:
+        click_and_move_each_word_to_counterpart: Kattintson és helyezze át az egyes
+          szavakat a megfelelőikre
+        start_heading: Párosítsd a szavakat
+        time_is_up: Az idő lejárt!
+      skip_tutorial: Ugrás
+      time_is_up: Az idő lejárt!
+      word_nodes:
+        match_letters_to_form_word: Betűk egyeztetése szó kialakításához
+      word_waterfall:
+        do_not_hesitate: Gyorsítsunk!
+        go_to_next_exercise: Ugrás a következő gyakorlatra
+        select_correct_translation: Válassza ki a megfelelő egyezést
+        well_done: Szép munka!
+    home_page:
+      hello: Helló,
+      popular_lessons: Népszerű órák
+      show_more: Mutass többet
+      time: "%{count} perc"
+      today_lesson: A mai leckéd
+      user_name: "%{name}!"
+      words: "%{count} szó"
+    idle_screen:
+      by_author: 'írta: %{authorName}'
+      continue_lesson: Folytassa a leckét
+      exit: Kijárat
+      idle_message: Egy ideje tétlen vagy ...
+    lesson_page:
+      back_to_course_page: Vissza a tanfolyam oldalára
+      close: Bezárás
+      continue_lesson: Folytassa a leckét
+      followed: Követve
+      hamburger_menu_btn: Hamburger menü
+      lesson_given: leckék
+      not_started: nem kezdődött
+      or: Vagy
+      part_complete: "%{percent}% kész"
+      restart_lesson: Újrakezd
+      section_check: Jelölje be
+      section_check_info: "%{count} tesztek"
+      section_learn: Tanul
+      section_learn_info: "%{count} perc nézni és olvasni"
+      section_play: Játék
+      section_play_info: "%{count} szó gyakorolni"
+      start_lesson: Indítsa el a leckét
+      step_progress: "%{percent}%"
+      subscribe: Kövesse
+      subscribed: Követve
+      subscribers: követői
+      time_min: "%{minutesNumber} perc"
+      unsubscribe: Követés megszüntetése
+      webview_error_title: Valami elromlott...
+      words_number: "%{wordsNumber} új szó"
+    lesson_task:
+      cancel_button: Megszünteti
+      check:
+        navigation_next: Következő
+        navigation_previous: Előző
+        navigation_skip: Ugrás
+      controls_panel:
+        font_size_button: Betűméret
+        high_contrast_button:
+          origin: Magas kontraszt
+          short: Kontraszt
+        hints_button: Tippek
+        music_playback_button:
+          origin: Zenelejátszás
+          short: Zene
+        sound_effects_button:
+          origin: Hang hatások
+          short: Hang
+      exit_button: Kijárat
+      finish_button: Befejez
+      finished:
+        back_to_learn: Vissza a tanuláshoz
+        back_to_lesson_page: Vissza a lecke oldalára
+        back_to_results_page: Vissza az eredményoldalra
+        bad_result_message: Hmm ... próbáld meg még egyszer levenni a leckét
+        close_lesson: Zárja be a leckét
+        correct_answers_list: Helyes válaszok listája
+        good_result_message: Látom, erőfeszítéseket tett!
+        great_result_message: Szép munka! Ezek nagyszerű eredmények!
+        next_course_lesson: Ugrás a kurzus következő órájára
+        no_results: Még nincsenek tesztjei
+        no_results_text: Kérjük, töltse le a leckét, és tegye le a tesztet az eredmények
+          eléréséhez
+        see_correct_answers_list: Lásd a helyes válaszok listáját
+        train_more: Gyakorolj többet, és legközelebb jobb eredményeket érsz el!
+        you_finished_lesson: Nagy! Befejezte a leckét
+      go_back: Menjen vissza
+      next_button: Következő
+      not_available_task: Ez a feladat még nem érhető el
+      start_button: Rajt
+      tasks:
+        check:
+          assignment:
+            accept: Elfogad
+            author_will_check_your_answer: >-
+              A %{author} felülvizsgálja válaszát, és általában 1-2 napon belül visszajelzést
+              ad
+            continue_writing: Írjon tovább
+            copy: Másolat
+            delete: Töröl
+            delete_record: Rekord törlése
+            edit: Szerkesztés
+            essay_does_not_have_enough_words: >-
+              Válaszának legalább %{minWordsNumber} szót kell tartalmaznia. A válasz
+              jelenleg %{currentWordsNumber} szó.
+            followers_count: "%{followersCount} követő"
+            lessons_count: "%{lessonsCount} leckék"
+            minimal_recording_time: Minimális felvételi idő - %{minimalRecordingTime}
+            minimum_characters_amount: Minimális karakter - %{minimumCharactersAmount}
+            minimum_words_amount: Minimális szavak - %{minimumAmount}
+            record_again: Rögzítse újra
+            record_voice: Hangfelvétel
+            send_anyway: Mindenképpen küldd
+            send_to_review: Küldés áttekintésre
+            skip: Ugrás
+            too_short_answer: Túl rövid válasz
+            type_your_answer: Írja be a válaszát
+            unknown_task_type: Ismeretlen feladat típusa
+            upgrade_licence: Frissítse a licencet
+            upgrade_your_plan: Frissítse a tervét, hogy kipróbálja a feladatokat a
+              tanárok véleményeivel
+            upload_files: Fájlok feltöltése
+            write_essay: Írj esszét
+            you_have_used_amount_of_assignments: Használta a %{amountOfAssignments}
+              hozzárendelési krediteket
+          fill_in_blanks:
+            sentence_gap: Mondatrés
+          fill_in_table:
+            column_answer_placeholder: Válasz
+            column_question_placeholder: Kérdés
+            example: Példa
+          true_false:
+            'false': Hamis
+            'true': Igaz
+        learn:
+          translatable_text:
+            show_original: Mutasd az eredetit
+            translate_into: Fordítsd le a Google-lal %{languageName}-ra
+            translate_into_your_lang: Fordítson a Google segítségével az Ön nyelvére
+        play:
+          arrange_words:
+            start_screen:
+              heading: Készítsen egy mondatot a megadott szavakból!
+          audition:
+            start_screen:
+              heading: Hallgassa meg a hangot, és érintse meg az imént hallott szót
+          dictation:
+            get_help: Kaphat segítséget
+            i_do_not_know: Nem tudom
+            input_placeholder: Írja be ide, amit hallott
+            start_screen:
+              heading: Hallgasd és írd meg, amit hallasz
+          fill_gap:
+            start_screen:
+              heading: Illessze össze a szót és jelentését
+          finish_screen:
+            go_to_next_exercise: Szép munka! Ugrás a következő gyakorlatra
+          image_hotspot:
+            start_screen:
+              heading: Nevezze el helyesen a képen lévő objektumokat
+          image_object:
+            start_screen:
+              heading: Válassza ki a megfelelő objektumot a következő képből
+          inline_dropdown:
+            start_screen:
+              heading: Válassza ki a mondatnak megfelelő szavakat
+          mark_word:
+            start_screen:
+              heading: Olvassa el a szöveget, és válassza ki a képnek megfelelő szót
+          minimal_pairs:
+            start_screen:
+              heading: Nézze meg a videót, és válassza a megfelelő lehetőséget
+    locale:
+      currency_switcher_title: Pénzváltó
+      lang_switcher_title: Nyelvváltó
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: angol
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: A hang betöltődik
+        aria_pause_button: Szünet
+        aria_play_button: Játék
+        aria_reload_button: Újratöltés
+        aria_stop_button: Álljon meg
+        reload_message: >-
+          Nem sikerült betölteni a hanganyagot. Kérjük, kattintson a gombra az újratöltéshez.
+    mobile_modal:
+      apply: Alkalmaz
+      cancel: Megszünteti
+      clear: Egyértelmű
+      save: Mentés
+    page404:
+      goToStartLessonPage: Lépjen a lecke kezdő oldalára
+      ooops: Hoppá ...
+      sorry_message: Sajnáljuk, Tor nem találta ezt az oldalt
+    profile:
+      navigation:
+        log_out: Kijelentkezés
+        my_profile: A profilom
+        settings: Beállítások
+      onboarding:
+        choose_native_language: Válassza ki anyanyelvét vagy az Ön által értett nyelvet
+        do_you_understand_english: Értesz angolul?
+        hello: Helló
+        language_levels:
+          a1: Alapfok
+          a2: Középszint előtti szint
+          b1: Középfokú
+          b2: Felső középszint
+          c1: Haladó szint
+          no_knowledge: Nincs tudás
+        language_not_supported:
+          note: Amint a nyelv elérhető lesz, értesítjük
+          title: Sajnáljuk, de még nem támogatjuk ezt a nyelvet
+          try_another_language: Próbáljon másik nyelvet
+        'no': Nem
+        search_placeholder: Keresés...
+        show_more_languages: Más nyelvek
+        target_language_question: Milyen nyelvet akar megtanulni?
+        what_is_language_level: Hogyan értékelné a %{languageName} szintjét?
+        'yes': Igen
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: A Lingu adatvédelmi irányelvei
+        support: Támogatás
+      logout: Kijelentkezés
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Frissítéseket kaphat a követett tanároktól és iskoláktól
+              sections:
+                app_notifications: Alkalmazás értesítések
+                email: Email
+              title: Tanulási segítség
+            marketing:
+              description: Legyen tájékozott a Lingu minden promóciójáról, frissítéséről
+                és inspirációjáról
+              sections:
+                browser_notifications: Böngésző értesítései
+                email: Email
+              title: Marketing
+          title: Kapcsolattartási beállítások
+        personal_information:
+          delete_photo: Fotó törlése
+          email: Email
+          first_name: Keresztnév
+          last_name: Vezetéknév
+          social_accounts:
+            connected: csatlakoztatva
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Nem kapcsolódik
+            title: Közösségi számlák
+          title: Személyes adat
+          update_photo: Fotó frissítése
+        school:
+          active_licence: Aktív licenc
+          active_status: Aktív
+          delete_profile: Törölje a profilomat
+          delete_profile_modal:
+            body: |-
+              Minden adatot megsemmisít - örökre. Nincs visszavonás gomb, és ezt követően nem tudjuk visszakapni.
+              Biztosan véglegesen törli a Lingu-profilját és az összes adatot?
+            cancel: Megszünteti
+            confirm: Igen, törölje
+            i_understand_the_consequences: Értem a következményeket
+            title: Törli a profilját?
+          expired: Lejárt %{expire_date}
+          expires: Lejár a %{expire_date}
+          inactive_status: Inaktív
+          revoke_access: Az olvasási hozzáférés visszavonása
+          sections:
+            contact_school: Lépjen kapcsolatba az iskolával
+            export_my_data: Exportálja az adataimat
+            read_school_privacy_policy: Olvassa el az iskolai adatvédelmi irányelveket
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Zenelejátszás
+              sound_effects: Hang hatások
+              title: Hang
+            visual:
+              dark_theme: Sötét téma
+              font_size:
+                test_text: A fű mindig zöldebb a kerítés másik oldalán
+                title: Betűméret
+              high_contrast: Magas kontraszt
+              hints: Tippek
+              title: Vizuális
+          title: Hang és kép
+        training_settings:
+          sections:
+            i_understand: értem
+            i_want_to_learn: Meg akarom tanulni
+            target_language_level: angol szint
+          title: Képzési beállítások
+      settings_title: Beállítások
+    teacher_card:
+      followers_count:
+        one: 1 követő
+        other: "%{count} követő"
+      lessons_count:
+        one: 1 lecke
+        other: "%{count} leckék"

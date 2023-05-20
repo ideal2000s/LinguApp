@@ -1,0 +1,65 @@
+nav.navbar.navbar-vertical.navbar-expand-xl.navbar-light.navbar-glass.perfect-scrollbar.scrollbar
+  = link_to teach_lessons_path, class: 'navbar-brand text-left' do
+    .d-flex= image_tag('lingu-logo.svg', class: 'mr-2 float-left', width: 100, height: 56)
+
+  #navbarVerticalCollapse.collapse.navbar-collapse.perfect-scrollbar.scrollbar
+    ul.navbar-nav.flex-column
+      li.nav-item
+        = link_to draft_teach_lessons_path, class: 'nav-link' do
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-chalkboard-teacher
+            span.ml-1.font-weight-bold= current_team.personal? ? t('teach.lessons.draft.my_lessons') : t('teach.lessons.draft.all_lessons')
+      li.nav-item
+        = link_to teach_courses_path, class: 'nav-link' do
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-bookmark
+            span.ml-1.font-weight-bold= t('layouts.teach.sidebar.courses')
+      li.nav-item
+        = link_to reviewable_teach_lessons_path, class: 'nav-link' do
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-comments
+            span.ml-1.font-weight-bold= t('teach.lessons.draft.reviewable_lessons')
+      - if current_team.posts.kept.any?
+        li.nav-item
+          = link_to teach_posts_path, class: 'nav-link' do
+            .d-flex.align-items-center
+              span.nav-link-icon
+                span.fas.fa-comment-alt
+              span.ml-1.font-weight-bold= t('teach.posts.index.posts')
+      - if current_team.followers.any?
+        li.nav-item
+          = link_to followers_teach_team_path(current_team), class: 'nav-link' do
+            .d-flex.align-items-center
+              span.nav-link-icon
+                span.fas.fa-thumbs-up
+              span.ml-1.font-weight-bold= t('.followers')
+      - if current_team.abilities.include?('licensing')
+        li.nav-item
+          = link_to school_students_url(subdomain: 'school'), class: 'nav-link' do
+            .d-flex.align-items-center
+              span.nav-link-icon
+                span.fas.fa-graduation-cap
+              span.ml-1.font-weight-bold= t('.school_admin')
+
+    - if current_user_teams.size > 1
+      ul.navbar-nav.flex-column
+        hr
+        li.nav-item
+          a.nav-link.dropdown-indicator aria-controls="settings" aria-expanded="false" data-toggle="collapse" href="#settings" role="button"
+            .d-flex.align-items-center
+              small
+                = current_team.personal? ? t('layouts.admin.sidebar.personal_team') : current_team.name
+          ul#settings.nav.collapse data-parent="#navbarVerticalCollapse"
+            li.nav-item
+              = render 'layouts/shared/teams'
+    - else
+      .settings.px-3.px-xl-0
+        .navbar-vertical-divider
+          hr.border-300.my-3
+        - if current_team.personal?
+          small= t('layouts.admin.sidebar.personal_team')
+        - else
+          small= current_team.name

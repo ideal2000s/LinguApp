@@ -1,0 +1,30 @@
+= form_with(model: [@language, @word], url: path) do |f|
+  .modal-body
+    - if @word.errors.any?
+      #error_explanation
+        h2= "#{pluralize(@word.errors.count, "error")} prohibited this word from being saved:"
+        ul
+          - @word.errors.full_messages.each do |message|
+            li= message
+
+    h4.mb-3= "#{phrase_header_title}#{@word.body}"
+    .row style='margin-bottom: 10px'
+      .col-12
+        .row
+          .col-4
+            .form-group
+              = f.text_field :prefix, class: 'form-control', placeholder: t('activerecord.attributes.word.prefix')
+          .col-8
+            .form-group
+              = f.text_field :body, class: 'form-control', placeholder: t('activerecord.attributes.word.body')
+        .form-group
+          = f.text_field :description, class: 'form-control', placeholder: t('activerecord.attributes.word.description')
+        .form-group
+          = f.select :word_class, options_for_select(Dictionary::Word.word_classes_for_select(1), f.object.word_class), { prompt: t('.select_word_class') }, class: 'form-control select2'
+        .form-group
+          = f.select :frequency, options_for_select({ "Frequency: 0" => 0, "Frequency: 1" => 1, "Frequency: 2" => 2, "Frequency: 3" => 3, "Frequency: 4" => 4, "Frequency: 5" => 5, "Frequency: 6" => 6 }, @word.frequency), { prompt: t('activerecord.attributes.word.frequency') }, { class: 'form-control' }
+    = f.hidden_field :language_id
+    - if @collection
+      = f.hidden_field :collection_ids, multiple: true, value: @collection.id
+    .actions
+      = f.submit value: btn_title, class: 'btn btn-primary'

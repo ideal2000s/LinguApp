@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    title= page_title
+    = render 'layouts/shared/favicon'
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application.css', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_packs_with_chunks_tag 'application', media: 'all'
+  body.bg-white
+    main#top.main
+      .d-flex.justify-content-center
+        .d-table
+          = link_to root_path do
+            .join-school-header = image_tag('lingu-logo.svg', class: '', width: 90, height: 51)
+          = yield
+
+    = javascript_packs_with_chunks_tag 'application'

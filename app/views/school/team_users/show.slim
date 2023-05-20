@@ -1,0 +1,74 @@
+- user = team_user.user
+- set_page_title user.full_name
+
+.teacher-info-container.school-info-container.d-flex.justify-content-between
+  .teacher-info-details.flex-grow-1
+    = render 'team_user_header', team_user: team_user
+    = search_form_for @search, url: school_team_user_path, class: 'lesson-search-form' do |f|
+      .lessons-filter.d-flex.justify-content-between.align-items-center
+        div
+          .btn-group.custom-dropdown.language-by-filter
+            = f.hidden_field :language_include, class: 'filter-values'
+            button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+              span.mr-2= t('shared.language')
+              i.fa.fa-angle-down
+            .dropdown-menu.dropdown-menu-left.mt-1.p-3
+              .language-container.overflow-auto
+                - active_languages.each do |language|
+                  .custom-control.custom-checkbox.mb-3
+                    input.custom-control-input.language-select type='checkbox' id="#{language.code}_check" data-filter-val="#{language.id}"
+                    label.custom-control-label.d-flex.align-items-center for="#{language.code}_check"
+                      = image_tag("flags/#{language_to_flag_code(language.code)}.svg", class: 'mx-2')
+                      span= language.name.presence || language.system_name
+              hr
+              .d-flex.justify-content-between
+                button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+                  = t('shared.clear')
+                button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+                  = t('save')
+          .btn-group.custom-dropdown.ml-2.level-by-filter
+            = f.hidden_field :level_include, class: 'filter-values'
+            button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+              span.mr-2= t('shared.level')
+              i.fa.fa-angle-down
+            .dropdown-menu.dropdown-menu-left.mt-1.p-3
+              - Lesson.levels_for_target_language.each do |detail, level|
+                .custom-control.custom-checkbox.mb-3
+                  input.custom-control-input.language-select type='checkbox' id="#{level}_check" data-filter-val="#{level}"
+                  label.custom-control-label.d-flex.align-items-center for="#{level}_check"
+                    strong.ml-2.mr-1= detail
+              hr
+              .d-flex.justify-content-between
+                button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+                  = t('shared.clear')
+                button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+                  = t('save')
+        .school-info-sort
+          .dropdown-toggle.cursor-pointer data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+            span.mr-2.selected-sort-item = t('school.teachers.list.by_last_added')
+            i.fa.fa-angle-down
+          .dropdown-menu.dropdown-menu-right.mt-1.p-0
+            .custom-filter-item.px-3.pb-2.pt-3.filter-item-active data-filter-by='created_at desc'
+              button.d-flex.justify-content-between.border-0.w-100
+                = sort_link(@search, 'created_at desc', t('school.teachers.list.by_last_added'))
+                i.fa.fa-check.active-check.mr-2.color-transparent
+            .custom-filter-item.px-3 data-filter-by='title asc'
+              button.d-flex.justify-content-between.border-0.w-100
+                = sort_link(@search, 'title asc', t('school.teachers.list.by_name_az'))
+                i.fa.fa-check.active-check.mr-2.color-transparent
+            .custom-filter-item.px-3.pt-2.pb-3 data-filter-by='title desc'
+              button.d-flex.justify-content-between.border-0.w-100
+                = sort_link(@search, 'title desc', t('school.teachers.list.by_name_za'))
+                i.fa.fa-check.active-check.mr-2.color-transparent
+    .teacher-lessons-list.thead-block-list.mt-4
+      table.table
+        thead
+          tr
+            th=t('name')
+            th
+            th.text-center= t('school.team_users.lessons.playthroughs')
+            th.text-center= t('shared.language')
+            th
+        tbody
+          = render partial: 'team_user_lesson_row', collection: lessons, as: :lesson, locals: { team_user: team_user }, cached: true
+  = render 'team_user_profile', team_user: team_user

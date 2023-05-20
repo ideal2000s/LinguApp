@@ -1,0 +1,37 @@
+.d-flex.flex-column.h-100
+  .search-input-container.d-flex
+    = image_tag('icons/search.svg')
+    = form_tag school_search_path, method: :get, remote: true, class: 'w-100'
+      = search_field_tag :q, search_term, class: 'form-control w-100', placeholder: t('.search_school_data'), id: 'search_lingu_school'
+  .search-result-container.h-100.d-flex.flex-column
+    ul.nav.nav-tabs
+      li.active
+        a.pb-3.d-inline-block data-toggle='tab' href='#students'
+          = t('students')
+        span.search-result-count.ml-1#students_count
+          = results['Student']&.count.to_i
+      li
+        a.pb-3.d-inline-block data-toggle='tab' href='#teachers'
+          = t('layouts.school.sidebar.teachers')
+        span.search-result-count.ml-1#teachers_count
+          = results['User']&.count.to_i
+      li
+        a.pb-3.d-inline-block data-toggle='tab' href='#tests'
+          = t('layouts.school.sidebar.tests')
+        span.search-result-count.ml-1#tests_count
+          | 0
+      li
+        a.pb-3.d-inline-block data-toggle='tab' href='#assignments'
+          = t('layouts.school.sidebar.assignments')
+        span.search-result-count.ml-1#assignments_count
+          | 0
+    .tab-content.flex-grow-1.d-flex.flex-column
+      #students.tab-pane.fade.in.show.active
+        = render 'school/team_students/list', team_students: TeamStudent.where(student_id: results['Student']&.pluck(:searchable_id), team: current_team).includes(:student)
+      #teachers.tab-pane.fade
+        = render 'school/team_users/list', team_users: TeamUser.where(user_id: results['User']&.pluck(:searchable_id), team: current_team).includes(:user)
+      #tests.tab-pane.fade
+      #assignments.tab-pane.fade
+      .search-fallback.m-auto.text-center style="#{results.values.map(&:count).sum > 0 ? 'display: none;' : ''}"
+        = image_tag('school/search-fallback.svg', class: 'mb-3 d-block')
+        = t('.search_fallback')

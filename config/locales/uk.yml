@@ -1,0 +1,611 @@
+---
+uk:
+  course_mailer:
+    course_assigned_notification:
+      button: Почніть курс
+      click_start_lesson: Натисніть "Почати урок"
+      follow_course_link: Натисніть кнопку, щоб відкрити курс
+      footer_text: Повертайтеся до Лінгу, щоб щодня дізнаватися щось нове!
+      get_started_line: 'Ось як ви починаєте:'
+      notification_link: Налаштування сповіщень
+      open_lesson: Відкрийте перший урок
+      or_paste_this_link: або вставте це посилання у свій браузер
+      sign_in_with_email: Увійдіть за допомогою електронної адреси (%{email})
+      support_link: Підтримка
+      title: Початок роботи з %{course}
+    new_document_comment:
+      author_text: "%{author} залишив огляд вашого завдання"
+      button_text: Перевір
+      button_url_helper: 'або вставте це посилання у свій браузер:'
+      footer_text: Існує ще багато чого, щоб навчитися ...
+      notification_link: Налаштування сповіщень
+      subject_line: Новий коментар до завдання
+      support_link: Підтримка
+    otp:
+      ignore_msg: Якщо ви не робили цього запиту, просто проігноруйте електронний
+        лист.
+      subject_line: Ваш унікальний код для Lingu
+      unique_code_for_lingu: Ось ваш унікальний код для Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Вже є аккаунт?
+      back: Назад
+      back_to_sign_in: Назад до Увійти
+      check_your_email_for_a_code: Перевірте свій електронний лист на наявність коду
+      continue: Продовжуйте
+      continue_with_email: Продовжуйте з електронною поштою
+      continue_with_provider: Продовжуйте з %{provider}
+      did_not_receive_a_code: Не отримали код?
+      email_address: Електронна адреса
+      first_name: Ім'я
+      get_unique_code: Отримайте унікальний код входу
+      join_lingu: Приєднуйтесь до Lingu
+      last_name: Прізвище
+      more_login_options: Більше варіантів входу
+      no_account_question: Не маєте облікового запису?
+      or: або
+      resend_code: Надіслати код повторно
+      sign_in: Увійти
+      sign_up: Зареєструйтесь
+      want_to_receive_marketing_messages: Я хочу отримувати маркетингові повідомлення
+        від Lingu
+      we_ve_sent_a_code: >-
+        Ми надіслали 6-значний код на <strong> {{email}} </strong>. Термін дії коду
+        закінчується за 15 хвилин, тому, будь ласка, введіть його найближчим часом.
+    cookie_agreement:
+      agree: Погодьтеся
+      condition: >-
+        Ми використовуємо файли cookie для аналізу роботи сайту та надання персоналізованого
+        вмісту. Натискаючи «Погоджуюсь», ви погоджуєтесь з нашими умовами.
+    course:
+      accredited_course_provider: Акредитований постачальник курсів
+      apply: Застосувати
+      apply_filters: Застосувати фільтри
+      by: Автор
+      cancel: Скасувати
+      categories: "%{count} категорії"
+      category: Категорія
+      clear: Ясно
+      clear_filters: Очистити фільтри
+      contact_us: Зв'яжіться з нами
+      could_not_find_match_for: На жаль, не вдалося знайти жодного збігу для
+      course_language: Курсова мова
+      duration: Тривалість
+      filter_settings:
+        categories:
+          academic: Академічний
+          business: Бізнес
+          fashion: Мода
+          food_drink: Їжа та напої
+          for_kids: Для дітей
+          general: Загальні
+          health: Здоров'я
+          legal: Юридична
+          sport: Спорт
+          travel: Подорожі
+        durations:
+          t0_600: "<10 хвилин"
+          t1800_3600: 30-60 хвилин
+          t3600_86400: 1+ година
+          t600_1800: 10-30 хвилин
+        focus_on:
+          conversation: Розмова
+          grammar: Граматика
+          listening: Слухання
+          pronunciation: Вимова
+          reading: Читання
+          speaking: Розмовляючи
+          writing: Письмо
+        levels:
+          long:
+            advanced: Просунутий рівень
+            elementary: Елементарний рівень
+            intermediate: Середній рівень
+            no_knowledge: Ніяких знань
+            pre_intermediate: До середнього рівня
+            upper_intermediate: Верхній середній рівень
+          short:
+            advanced: Розширений
+            beginner: Новачок
+            intermediate: Середній
+        sort_by:
+          most_rated: Найбільш оцінені
+          newest: Найновіші
+          popularity: Популярність
+      filters: Фільтри
+      focus_on: Зосередьтеся на
+      focus_on_title: Я хочу зосередитись на
+      hide_lessons: Сховати уроки
+      hours: Годин
+      i_understand: Я розумію
+      i_want_to_learn: я хочу, щоб дізнатися
+      in_language: у %{language}
+      language: Мова
+      learn_more: Вивчайте більше
+      less_settings: Менше налаштувань
+      lessons: Уроки
+      lessons_available: "%{number} доступних уроків"
+      lessons_catalog_page_subtitle: Інтернет-уроки для вільного та впевненого мовлення
+      lessons_catalog_page_title: Вивчайте мови легко та ефективно за допомогою Lingu
+      level: Рівень
+      min: Хв
+      more_settings: Більше налаштувань
+      navbar:
+        close: Закрити меню
+        menu: Меню
+        select_language: Оберіть мову
+      need_to_buy_course: Спочатку потрібно замовити курс
+      no_description: Опис не надано
+      no_results: На жаль, не вдалося знайти жодного збігу для
+      or: або
+      per_month: на місяць
+      plans: Плани
+      privacy_policy: Політика конфіденційності
+      rating: Рейтинг
+      remove_all_filters: Видаліть усі фільтри
+      reviews: Відгуки
+      save: Зберегти
+      search: Пошук
+      select_dots: Виберіть ...
+      select_languages: Виберіть мови
+      select_num_languages: Виберіть %{number} мови
+      short_levels:
+        a1: А1
+        a2: А2
+        b1: B1
+        b2: В2
+        c1: C1
+        c2: С2
+        zero_level: A0
+      show_all: Покажи все
+      show_all_lessons: Показати всі уроки
+      show_lessons: Показати уроки %{number}
+      show_more: Показати більше
+      sign_up_with_lingu_for: Зареєструйтесь у Lingu Norway для
+      skills: "%{count} навички"
+      sort_by: Сортувати за
+      start_typing_here: Почніть друкувати тут
+      teach: Вчити
+      terms_and_conditions: Правила та умови
+      time_range: Діапазон часу
+      try_adjusting_your_search: Спробуйте налаштувати пошук, змінивши фільтри
+      try_this_course: Спробуйте цей курс
+      website_language: Мова веб-сайту
+      words: Слова
+    games:
+      finished:
+        go_to_next_exercise: Молодці! Перейдіть до наступної вправи
+      flashcard:
+        buttons:
+          finish: Готово
+          next: Далі
+          previous: Попередній
+        check_out_new_words: Ознайомтеся з новими словами, які ви вивчите на цьому
+          уроці
+        frequency_of_word_usage: Частота вживання слів у %{language}
+        keep_practice_to_learn_all_words: Перегляньте слова %{count} і давайте пограємо
+          в деякі ігри!
+        word_frequency:
+          level1: Рідко використовується
+          level2: Рідко використовується
+          level3: Частота слів - середня
+          level4: Частота слів - середня
+          level5: Поширені
+          level6: Дуже часто
+      match_word:
+        click_and_move_each_word_to_counterpart: Клацніть і перемістіть кожне слово
+          до відповідника
+        skip_tutorial: Гопп закінчений
+        start_heading: Підберіть слова, щоб скласти пару
+        time_is_up: Opp med farta!
+      skip_tutorial: Пропустити
+      time_is_up: Час вийшов!
+      word_nodes:
+        match_letters_to_form_word: Підберіть букви, щоб утворити слово
+      word_waterfall:
+        do_not_hesitate: Пришвидшимось!
+        go_to_next_exercise: Перейдіть до наступної вправи
+        select_correct_translation: Виберіть правильний збіг
+        well_done: Молодці!
+    home_page:
+      hello: Здрастуйте,
+      popular_lessons: Популярні уроки
+      show_more: Показати більше
+      time: "%{count} хв"
+      today_lesson: Ваш урок на сьогодні
+      user_name: "%{name}!"
+      words: "%{count} слів"
+    idle_screen:
+      by_author: від %{authorName}
+      continue_lesson: Продовжити урок
+      exit: Вихід
+      idle_message: Ви просто не працювали певний час ...
+    lesson_page:
+      back_to_course_page: Повернутися на сторінку курсу
+      close: Закрити
+      continue_lesson: Продовжити урок
+      followed: Слідували
+      hamburger_menu_btn: Меню гамбургера
+      lesson_given: уроки
+      not_started: не розпочато
+      or: Або
+      part_complete: "%{percent}% завершено"
+      restart_lesson: Перезапустіть
+      section_check: Перевірте
+      section_check_info: "%{count} тести"
+      section_learn: Навчіться
+      section_learn_info: "%{count} хв для перегляду та читання"
+      section_play: Грати
+      section_play_info: "%{count} слів на практиці"
+      start_lesson: Почати урок
+      step_progress: "%{percent}%"
+      subscribe: Слідуйте
+      subscribed: Слідували
+      subscribers: послідовники
+      time_min: "%{minutesNumber} хв"
+      unsubscribe: Скасувати підписку
+      webview_error_title: Щось пішло не так...
+      words_number: "%{wordsNumber} нових слів"
+    lesson_task:
+      cancel_button: Скасувати
+      check:
+        navigation_next: Далі
+        navigation_previous: Попередній
+        navigation_skip: Пропустити
+      controls_panel:
+        font_size_button: Розмір шрифту
+        high_contrast_button:
+          origin: Високий контраст
+          short: Контраст
+        hints_button: Підказки
+        music_playback_button:
+          origin: Відтворення музики
+          short: Музика
+        sound_effects_button:
+          origin: Звукові ефекти
+          short: Звук
+      exit_button: Вихід
+      finish_button: Готово
+      finished:
+        back_to_learn: Назад, щоб дізнатися
+        back_to_lesson_page: Повернутися на сторінку уроку
+        back_to_results_page: Повернутися на сторінку результатів
+        bad_result_message: Хм ... спробуйте взяти урок ще раз
+        close_lesson: Закрити урок
+        correct_answers_list: Список правильних відповідей
+        good_result_message: Я бачу, що ви доклали зусиль!
+        great_result_message: Молодці! Це чудові результати!
+        next_course_lesson: Перейти до наступного уроку на курсі
+        no_results: У вас ще немає результатів тесту
+        no_results_text: Пройдіть урок та пройдіть тест, щоб отримати результати
+        see_correct_answers_list: Див. Список правильних відповідей
+        train_more: Попрактикуйтесь більше, і наступного разу ви досягнете кращих
+          результатів!
+        you_finished_lesson: Чудово! Ви закінчили урок
+      go_back: Повертайся
+      next_button: Далі
+      not_available_task: Це завдання поки недоступне
+      start_button: Почніть
+      tasks:
+        check:
+          assignment:
+            accept: Прийміть
+            author_will_check_your_answer: >-
+              %{author} перевірить вашу відповідь і, як правило, дасть відгук протягом
+              1-2 днів
+            continue_writing: Продовжуйте писати
+            copy: Копіювати
+            delete: Видалити
+            delete_record: Видалити запис
+            edit: Редагувати
+            essay_does_not_have_enough_words: >-
+              Ваша відповідь повинна містити принаймні %{minWordsNumber} слів. Наразі
+              ваша відповідь - %{currentWordsNumber} слова.
+            followers_count: "%{followersCount} підписників"
+            lessons_count: "%{lessonsCount} уроків"
+            minimal_recording_time: Мінімальний час запису - %{minimalRecordingTime}
+            minimum_characters_amount: Мінімум символів - %{minimumCharactersAmount}
+            minimum_words_amount: Мінімум слів - %{minimumAmount}
+            record_again: Знову запишіть
+            record_voice: Запис голосу
+            send_anyway: Відправити в будь-якому випадку
+            send_to_review: Надіслати на огляд
+            skip: Пропустити
+            too_short_answer: Занадто коротка відповідь
+            type_your_answer: Введіть свою відповідь
+            unknown_task_type: Невідомий тип завдання
+            upgrade_licence: Ліцензія на оновлення
+            upgrade_your_plan: Оновіть свій план, щоб спробувати завдання за допомогою
+              відгуків викладачів
+            upload_files: Завантажте файли
+            write_essay: Написати есе
+            you_have_used_amount_of_assignments: Ви використовували кредити присвоєння
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Розрив у реченні
+          fill_in_table:
+            column_answer_placeholder: Відповідь
+            column_question_placeholder: Питання
+            example: Приклад
+          true_false:
+            'false': помилковий
+            'true': Правда
+        learn:
+          translatable_text:
+            show_original: Показати оригінал
+            translate_into: Перекладіть із Google на %{languageName}
+            translate_into_your_lang: Перекладайте за допомогою Google на вашу мову
+        play:
+          arrange_words:
+            start_screen:
+              heading: Складіть із поданих слів речення
+          audition:
+            start_screen:
+              heading: Прослухайте звук і натисніть на слово, яке ви щойно почули
+          dictation:
+            get_help: Отримати допомогу
+            i_do_not_know: Не знаю
+            input_placeholder: Введіть почуте тут
+            start_screen:
+              heading: Слухайте і пишіть те, що чуєте
+          fill_gap:
+            start_screen:
+              heading: Установіть відповідність між словом та його значенням
+          finish_screen:
+            go_to_next_exercise: Молодці! Перейдіть до наступної вправи
+          image_hotspot:
+            start_screen:
+              heading: Правильно назвіть предмети на малюнку
+          image_object:
+            start_screen:
+              heading: Виберіть потрібний об’єкт із наступного малюнка
+          inline_dropdown:
+            start_screen:
+              heading: Доберіть слова, які відповідають реченню
+          mark_word:
+            start_screen:
+              heading: Прочитайте текст і виберіть слово, яке відповідає зображенню
+          minimal_pairs:
+            start_screen:
+              heading: Перегляньте відео та виберіть правильний варіант
+    locale:
+      currency_switcher_title: Перемикач валют
+      lang_switcher_title: Змінювач мови
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Українська
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Англійська
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Франсуа
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Норська
+        ne: Nepali
+        nl: Нідерланди
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Польський
+        ps: Pashto
+        pt: Португальська
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербський
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: кісуахілі
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Завантажується аудіо
+        aria_pause_button: Пауза
+        aria_play_button: Грати
+        aria_reload_button: Перезавантажте
+        aria_stop_button: Стій
+        reload_message: Не вдалося завантажити аудіо. Натисніть кнопку, щоб перезавантажити.
+    mobile_modal:
+      apply: Подати заявку
+      cancel: Скасувати
+      clear: Ясно
+      save: Зберегти
+    page404:
+      goToStartLessonPage: Перейдіть на початкову сторінку уроку
+      ooops: На жаль ...
+      sorry_message: На жаль, Тор не зміг знайти цю сторінку
+    profile:
+      navigation:
+        log_out: Вийти
+        my_profile: Мій профіль
+        settings: Налаштування
+      onboarding:
+        choose_native_language: Виберіть рідну мову або мову, яку ви розумієте
+        do_you_understand_english: Ти розумієш англійську?
+        hello: Здрастуйте
+        language_levels:
+          a1: Елементарний рівень
+          a2: До середнього рівня
+          b1: Середній рівень
+          b2: Верхній середній рівень
+          c1: Просунутий рівень
+          no_knowledge: Ніяких знань
+        language_not_supported:
+          note: Ми повідомимо вас, як тільки мова стане доступною
+          title: Вибачте, але ми ще не підтримуємо цю мову
+          try_another_language: Спробуйте іншу мову
+        'no': Ні
+        search_placeholder: Шукати ...
+        show_more_languages: Інші мови
+        target_language_question: Яку мову ви хочете вивчити?
+        what_is_language_level: Як би ви оцінили свій рівень %{languageName}?
+        'yes': Так
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Політика конфіденційності Lingu
+        support: Підтримка
+      logout: Вийти
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Отримуйте оновлення від вчителів та шкіл, за якими ви стежите
+              sections:
+                app_notifications: Сповіщення додатків
+                email: Електронна пошта
+              title: Допомога в навчанні
+            marketing:
+              description: Будьте в курсі всіх акцій, оновлень та натхнення від Lingu
+              sections:
+                browser_notifications: Сповіщення браузера
+                email: Електронна пошта
+              title: Маркетинг
+          title: Налаштування контактів
+        personal_information:
+          delete_photo: Видалити фото
+          email: Електронна пошта
+          first_name: Ім'я
+          last_name: Прізвище
+          social_accounts:
+            connected: Підключено
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Не під'єднано
+            title: Соціальні рахунки
+          title: Персональна інформація
+          update_photo: Оновити фото
+        school:
+          active_licence: Активна ліцензія
+          active_status: Активний
+          delete_profile: Видалити мій профіль
+          delete_profile_modal:
+            body: |-
+              Ви знищуєте всі свої дані - назавжди. Кнопки скасування немає, і ми не можемо повернути її вам після.
+              Ви впевнені, що хочете назавжди видалити свій профіль Lingu та всі свої дані?
+            cancel: Скасувати
+            confirm: Так, видалити його
+            i_understand_the_consequences: Я розумію наслідки
+            title: Видалити свій профіль?
+          expired: Термін дії минув %{expire_date}
+          expires: Термін дії закінчується %{expire_date}
+          inactive_status: Неактивний
+          revoke_access: Скасувати доступ для читання
+          sections:
+            contact_school: Зверніться до школи
+            export_my_data: Експортувати мої дані
+            read_school_privacy_policy: Прочитайте Політику конфіденційності школи
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Відтворення музики
+              sound_effects: Звукові ефекти
+              title: Звук
+            visual:
+              dark_theme: Темна тема
+              font_size:
+                test_text: З іншого боку огорожі трава завжди зеленіша
+                title: Розмір шрифту
+              high_contrast: Високий контраст
+              hints: Підказки
+              title: Візуальна
+          title: Звук та візуал
+        training_settings:
+          sections:
+            i_understand: Я розумію
+            i_want_to_learn: я хочу, щоб дізнатися
+            target_language_level: Рівень англійської
+          title: Навчальні налаштування
+      settings_title: Налаштування
+    teacher_card:
+      followers_count:
+        one: 1 підписник
+        other: "%{count} підписників"
+      lessons_count:
+        one: 1 урок
+        other: "%{count} уроків"

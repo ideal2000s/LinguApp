@@ -1,0 +1,37 @@
+$('#assignment-modal').find('.modal-content').html("<%= j render 'form', path: school_assignments_path, method: :post, title: t('school.school_assignments.new_assignment'), submit_title: t('school.school_assignments.create_assignment'), assignment: assignment, students: students %>")
+$("#assignment-modal .select2").select2({ theme: 'bootstrap4', dropdownParent: $('#assignment-modal .modal-content'), minimumResultsForSearch: -1 })
+
+function formatCountry (country) {
+  country_info = country.text.split(', ');
+  if(!country.id) { return '<%= t('school.team_students.form.select_language') %>' }
+  return $(
+    `<img src=${country_info[0]} class="dropdown-item-flag"  alt="flag"/>` +
+    `<span class="flag-text ml-2">${country_info[1]}</span>`
+  );
+}
+
+function formatStudent (student) {
+  student_info = student.text.split(', ');
+  if(!student.id) { return '<%= t('school.school_assignments.form.select_student') %>' }
+  img = student_info[0] === '' ? `<div class="assignment-student-fallback d-flex align-items-center justify-content-center">${student_info[1]}</div>`
+    : `<img src=${student_info[0]} class="assignment-student-avatar">`
+  return $(
+    `<div class="d-flex align-items-center select-dropdown-item">${img}<span class="student-text">${student_info[2]}</span></div>`
+  )
+}
+
+$("#assignment-modal .select-country").select2({
+  theme: 'bootstrap4',
+  dropdownParent: $('#assignment-modal .modal-content'),
+  templateResult: formatCountry,
+  templateSelection: formatCountry,
+  minimumResultsForSearch: -1
+})
+
+$("#assignment-modal .select-students").select2({
+  theme: 'bootstrap4',
+  dropdownParent: $('#assignment-modal .modal-content'),
+  templateResult: formatStudent,
+  templateSelection: formatStudent,
+  minimumResultsForSearch: -1
+})

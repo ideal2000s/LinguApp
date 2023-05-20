@@ -1,0 +1,20 @@
+- content_for(:instructions) do
+  .card.bg-soft-info.mt-5.hidden-sm-down
+    .card-body
+      .card-title= t('instructions')
+      p.card-text= t('.fill_in_blanks_guidelines')
+      p.card-text.font-italic
+        = t('example') + ': '
+        | The man took the *lift:elevator* to the top floor.
+    .card-footer.bg-soft-info
+      .card-title= t('teach.tasks.size_requirements')
+      p.card-text= t('teach.tasks.required_count_msg', count: Tasks::FillInBlanks::MIN_ITEMS_SIZE)
+
+= render 'teach/tasks/shared_task_form', task: task, form: form
+
+#task_items.mt-5
+  h4= t('teach.tasks.mark_word.forms.form.statements')
+  #task_items_container
+    = render partial: task.items, as: :item, locals: { task: task }
+.links.inline_dropdown_item
+  = render task.items.form.new, task: task

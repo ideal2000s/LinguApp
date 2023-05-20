@@ -1,0 +1,39 @@
+.assignments-stats
+  h1.mb-4= t('shared.stats')
+  - if assignments_stats[:reviewed_count] > 0
+    .assignment-stat-info
+      .d-flex.flex-column.justify-content-center
+        h1
+          = assignments_stats[:reviewed_count]
+          span.text-muted=< "/ #{assignments_stats[:documents_count]}"
+        span.text-700
+          = t('.assignments_reviewed')
+      = image_tag('dashboard/lessons.svg')
+    .assignment-stat-info
+      .d-flex.flex-column.justify-content-center
+        h1= assignments_stats[:avg_response_time]
+        span.text-700
+          = t('.avg_response_time')
+      div= image_tag('dashboard/time_spent.svg')
+    - if assignments_stats[:avg_rating] > 0
+      .assignment-stat-info
+        .d-flex.flex-column.justify-content-center
+          h1
+            => assignments_stats[:avg_rating]
+            span.text-muted
+              | / 5.00
+          span.text-700
+            = t('.avg_rating')
+        div= image_tag('icons/rating.svg')
+    .mt-4
+      h1= t('.submissions_per_week')
+      canvas#assignments_stats_chart
+  - else
+    .text-center.mt-5
+      br
+      .h4.mt-5= t('.no_assignment_stats')
+
+javascript:
+  window.assignmentsLabel = #{raw assignments_stats[:submission_hash].keys}
+  window.CommentsCount = #{assignments_stats[:submission_hash].values}
+  window.documentsStep = #{assignments_stats[:documents_step]}

@@ -1,0 +1,608 @@
+---
+sk:
+  course_mailer:
+    course_assigned_notification:
+      button: Začnite kurz
+      click_start_lesson: Kliknite na položku „Spustiť lekciu“
+      follow_course_link: Kliknutím na tlačidlo otvoríte kurz
+      footer_text: Vráťte sa do Lingu a naučte sa každý deň niečo nové!
+      get_started_line: 'Tu je návod, ako začať:'
+      notification_link: Nastavenia upozornení
+      open_lesson: Otvorte prvú lekciu
+      or_paste_this_link: alebo vložte tento odkaz do svojho prehliadača
+      sign_in_with_email: Prihláste sa pomocou svojej e-mailovej adresy (%{email})
+      support_link: podpora
+      title: Začíname s %{course}
+    new_document_comment:
+      author_text: "%{author} napísal recenziu vášho zadania"
+      button_text: Skontrolovať to
+      button_url_helper: 'alebo vložte tento odkaz do svojho prehliadača:'
+      footer_text: Je toho veľa, čo sa treba naučiť ...
+      notification_link: Nastavenia upozornení
+      subject_line: Nový komentár k úlohe
+      support_link: podpora
+    otp:
+      ignore_msg: Ak ste túto žiadosť neurobili, e-mail jednoducho ignorujte.
+      subject_line: Váš jedinečný kód pre Lingu
+      unique_code_for_lingu: Tu je váš jedinečný kód pre Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Máte už účet?
+      back: späť
+      back_to_sign_in: Späť na prihlásenie
+      check_your_email_for_a_code: Skontrolujte kód v e-maile
+      continue: ďalej
+      continue_with_email: Pokračujte e-mailom
+      continue_with_provider: Pokračujte na %{provider}
+      did_not_receive_a_code: Nedostali ste kód?
+      email_address: Emailová adresa
+      first_name: Krstné meno
+      get_unique_code: Získajte jedinečný prihlasovací kód
+      join_lingu: Pripojte sa k Lingu
+      last_name: Priezvisko
+      more_login_options: Viac možností prihlásenia
+      no_account_question: Nemáte účet?
+      or: alebo
+      resend_code: Znova odoslať kód
+      sign_in: Prihlásiť sa
+      sign_up: Prihlásiť Se
+      want_to_receive_marketing_messages: Chcem dostávať marketingové správy od spoločnosti
+        Lingu
+      we_ve_sent_a_code: >-
+        Poslali sme 6-ciferný kód na adresu <strong> {{email}} </strong>. Platnosť
+        kódu vyprší o 15 minút, takže ho zadajte čoskoro.
+    cookie_agreement:
+      agree: Súhlasím
+      condition: >-
+        Súbory cookie používame na analýzu výkonu stránok a poskytovanie personalizovaného
+        obsahu. Kliknutím na „Súhlasím“ vyjadrujete súhlas s našimi podmienkami.
+    course:
+      accredited_course_provider: Akreditovaný poskytovateľ kurzu
+      apply: Podať žiadosť
+      apply_filters: Použiť filtre
+      by: 'Autor:'
+      cancel: Zrušiť
+      categories: kategórie %{count}
+      category: Kategória
+      clear: jasný
+      clear_filters: Vymazať filtre
+      contact_us: Kontaktuj nás
+      could_not_find_match_for: Ľutujeme, nenašli sme žiadnu zhodu pre
+      course_language: Jazyk kurzu
+      duration: Trvanie
+      filter_settings:
+        categories:
+          academic: Akademický
+          business: Obchodné
+          fashion: Móda
+          food_drink: Jedlo a pitie
+          for_kids: Pre deti
+          general: Všeobecné
+          health: Zdravie
+          legal: Legálne
+          sport: Šport
+          travel: Cestovanie
+        durations:
+          t0_600: "<10 minút"
+          t1800_3600: 30-60 minút
+          t3600_86400: 1 a viac hodín
+          t600_1800: 10-30 minút
+        focus_on:
+          conversation: Konverzácia
+          grammar: Gramatika
+          listening: Počúvanie
+          pronunciation: Výslovnosť
+          reading: Čítanie
+          speaking: Reč
+          writing: Písanie
+        levels:
+          long:
+            advanced: Pokročilá úroveň
+            elementary: Základná úroveň
+            intermediate: Stredná úroveň
+            no_knowledge: Žiadne vedomosti
+            pre_intermediate: Predbežná úroveň
+            upper_intermediate: Vyššia stredná úroveň
+          short:
+            advanced: Pokročilé
+            beginner: Začiatočník
+            intermediate: Stredne pokročilý
+        sort_by:
+          most_rated: Najviac hodnotené
+          newest: Najnovšie
+          popularity: Popularita
+      filters: Filtre
+      focus_on: Zamerať sa na
+      focus_on_title: Chcem sa zamerať na
+      hide_lessons: Skryť lekcie
+      hours: Hodiny
+      i_understand: rozumiem
+      i_want_to_learn: Chcem sa učiť
+      in_language: v %{language}
+      language: Jazyk
+      learn_more: Uč sa viac
+      less_settings: Menej nastavení
+      lessons: Poučenie
+      lessons_available: "%{number} dostupných lekcií"
+      lessons_catalog_page_subtitle: Staňte sa jazykovým hrdinom.
+      lessons_catalog_page_title: Rozšírte si obzory jazykovým kurzom
+      level: Úroveň
+      min: Min
+      more_settings: Viac nastavení
+      navbar:
+        close: Zavrieť ponuku
+        menu: Ponuka
+        select_language: Zvoľ jazyk
+      need_to_buy_course: Najprv si musíte objednať kurz
+      no_description: Nebol poskytnutý žiadny popis
+      no_results: Ľutujeme, nenašli sme žiadnu zhodu pre
+      or: alebo
+      per_month: za mesiac
+      plans: Plány
+      privacy_policy: Zásady ochrany osobných údajov
+      rating: Hodnotenie
+      remove_all_filters: Odstráňte všetky filtre
+      reviews: Recenzie
+      save: Uložiť
+      search: Vyhľadávanie
+      select_dots: Vyberte ...
+      select_languages: Vyberte langauges
+      select_num_languages: Vyberte jazyky %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Ukázať všetko
+      show_all_lessons: Zobraziť všetky lekcie
+      show_lessons: Zobraziť lekcie %{number}
+      show_more: Zobraziť viac
+      sign_up_with_lingu_for: Zaregistrujte sa v Lingu Norway pre
+      skills: zručnosti %{count}
+      sort_by: Triediť podľa
+      start_typing_here: Začnite písať tu
+      teach: Teach
+      terms_and_conditions: Podmienky
+      time_range: Časový rozsah
+      try_adjusting_your_search: Skúste upraviť hľadanie zmenou filtrov
+      try_this_course: Vyskúšajte tento kurz
+      website_language: Jazyk webových stránok
+      words: Slová
+    games:
+      finished:
+        go_to_next_exercise: Výborne! Prejdite na ďalšie cvičenie
+      flashcard:
+        buttons:
+          finish: Skončiť
+          next: Ďalšie
+          previous: Predchádzajúce
+        check_out_new_words: Pozrite sa na nové slová, ktoré sa naučíte v tejto lekcii
+        frequency_of_word_usage: Frekvencia používania slov v %{language}
+        keep_practice_to_learn_all_words: Skontrolujte slová %{count} a zahrajme si
+          nejaké hry!
+        word_frequency:
+          level1: Zriedka sa používa
+          level2: Zriedka sa používa
+          level3: Frekvencia slov - stredná
+          level4: Frekvencia slov - stredná
+          level5: Bežné
+          level6: Velmi bezne
+      match_word:
+        click_and_move_each_word_to_counterpart: Kliknite a presuňte každé slovo na
+          jeho ekvivalent
+        start_heading: Priraďte slová k vytvoreniu dvojice
+        time_is_up: Čas vypršal!
+      skip_tutorial: Preskočiť
+      time_is_up: Čas vypršal!
+      word_nodes:
+        match_letters_to_form_word: Priraďte písmená k slovu
+      word_waterfall:
+        do_not_hesitate: Poďme zrýchliť!
+        go_to_next_exercise: Prejdite na ďalšie cvičenie
+        select_correct_translation: Vyberte správnu zhodu
+        well_done: Výborne!
+    home_page:
+      hello: Ahoj,
+      popular_lessons: Populárne lekcie
+      show_more: Zobraziť viac
+      time: "%{count} min"
+      today_lesson: Vaša lekcia pre dnešok
+      user_name: "%{name}!"
+      words: "%{count} slov"
+    idle_screen:
+      by_author: 'autor: %{authorName}'
+      continue_lesson: Pokračujte v lekcii
+      exit: Východ
+      idle_message: Už ste nejaký čas nečinný ...
+    lesson_page:
+      back_to_course_page: Späť na stránku kurzu
+      close: Zavrieť
+      continue_lesson: Pokračujte v lekcii
+      followed: Nasledoval
+      hamburger_menu_btn: Hamburgerové menu
+      lesson_given: lekcie
+      not_started: nezačal
+      or: Alebo
+      part_complete: "%{percent}% hotové"
+      restart_lesson: Reštart
+      section_check: Skontrolujte
+      section_check_info: testy %{count}
+      section_learn: Naučte sa
+      section_learn_info: "%{count} min na pozeranie a čítanie"
+      section_play: hrať
+      section_play_info: "%{count} slov na precvičenie"
+      start_lesson: Začnite lekciu
+      step_progress: "%{percent}%"
+      subscribe: Postupujte
+      subscribed: Nasledoval
+      subscribers: nasledovníkov
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Zrušiť sledovanie
+      webview_error_title: Niečo sa pokazilo...
+      words_number: "%{wordsNumber} nových slov"
+    lesson_task:
+      cancel_button: Zrušiť
+      check:
+        navigation_next: Ďalšie
+        navigation_previous: Predchádzajúce
+        navigation_skip: Preskočiť
+      controls_panel:
+        font_size_button: Veľkosť písma
+        high_contrast_button:
+          origin: Vysoký kontrast
+          short: Kontrast
+        hints_button: Rady
+        music_playback_button:
+          origin: Prehrávanie hudby
+          short: Hudba
+        sound_effects_button:
+          origin: Zvukové efekty
+          short: Zvuk
+      exit_button: Východ
+      finish_button: Skončiť
+      finished:
+        back_to_learn: Späť k učeniu
+        back_to_lesson_page: Späť na stránku lekcie
+        back_to_results_page: Späť na stránku s výsledkami
+        bad_result_message: Hmm ... skús si vziať lekciu ešte raz
+        close_lesson: Uzavrieť lekciu
+        correct_answers_list: Zoznam správnych odpovedí
+        good_result_message: Vidím, že si sa snažil!
+        great_result_message: Výborne! Sú to skvelé výsledky!
+        next_course_lesson: Prejdite samozrejme na ďalšiu hodinu
+        no_results: Zatiaľ nemáte žiadne výsledky testov
+        no_results_text: Absolvujte lekciu a absolvujte test, aby ste dosiahli výsledky
+        see_correct_answers_list: Pozrite si zoznam správnych odpovedí
+        train_more: Cvičte viac a nabudúce dosiahnete lepšie výsledky!
+        you_finished_lesson: Skvelé! Dokončili ste lekciu
+      go_back: Vráť sa
+      next_button: Ďalšie
+      not_available_task: Táto úloha zatiaľ nie je k dispozícii
+      start_button: Štart
+      tasks:
+        check:
+          assignment:
+            accept: súhlasiť
+            author_will_check_your_answer: "%{author} skontroluje vašu odpoveď a zvyčajne
+              poskytne spätnú väzbu do 1-2 dní"
+            continue_writing: Pokračujte v písaní
+            copy: Kópia
+            delete: Odstrániť
+            delete_record: Odstrániť záznam
+            edit: Upraviť
+            essay_does_not_have_enough_words: >-
+              Vaša odpoveď by mala obsahovať minimálne %{minWordsNumber} slov. Vaša
+              odpoveď je momentálne %{currentWordsNumber} slov.
+            followers_count: "%{followersCount} sledovateľov"
+            lessons_count: "%{lessonsCount} lekcie"
+            minimal_recording_time: Minimálna doba nahrávania - %{minimalRecordingTime}
+            minimum_characters_amount: Minimálny počet znakov - %{minimumCharactersAmount}
+            minimum_words_amount: Minimálny počet slov - %{minimumAmount}
+            record_again: Zaznamenajte znova
+            record_voice: Zaznamenajte hlas
+            send_anyway: Napriek tomu odoslať
+            send_to_review: Poslať na kontrolu
+            skip: Preskočiť
+            too_short_answer: Príliš krátka odpoveď
+            type_your_answer: Napíšte svoju odpoveď
+            unknown_task_type: Neznámy typ úlohy
+            upgrade_licence: Aktualizácia licencie
+            upgrade_your_plan: Inovujte svoj plán a vyskúšajte úlohy s recenziami
+              učiteľov
+            upload_files: Nahrať súbory
+            write_essay: Napíš esej
+            you_have_used_amount_of_assignments: Použili ste kredity na priradenie
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Veta medzery
+          fill_in_table:
+            column_answer_placeholder: Odpoveď
+            column_question_placeholder: Otázka
+            example: Príklad
+          true_false:
+            'false': Falošné
+            'true': Pravdaže
+        learn:
+          translatable_text:
+            show_original: Ukáž originál
+            translate_into: Preložiť pomocou Google do %{languageName}
+            translate_into_your_lang: Preložiť pomocou Google do svojho jazyka
+        play:
+          arrange_words:
+            start_screen:
+              heading: Z daných slov urobte vetu
+          audition:
+            start_screen:
+              heading: Vypočujte si zvuk a klepnite na slovo, ktoré ste práve počuli
+          dictation:
+            get_help: Získajte pomoc
+            i_do_not_know: Neviem
+            input_placeholder: Sem zadajte to, čo ste počuli
+            start_screen:
+              heading: Vypočujte si a napíšte, čo počujete
+          fill_gap:
+            start_screen:
+              heading: Priraďte slovo a jeho význam
+          finish_screen:
+            go_to_next_exercise: Výborne! Prejdite na ďalšie cvičenie
+          image_hotspot:
+            start_screen:
+              heading: Pomenujte správne objekty na obrázku
+          image_object:
+            start_screen:
+              heading: Vyberte správny objekt z nasledujúceho obrázka
+          inline_dropdown:
+            start_screen:
+              heading: Vyberte slová, ktoré sa zhodujú s vetou
+          mark_word:
+            start_screen:
+              heading: Prečítajte si text a vyberte slovo, ktoré sa zhoduje s obrázkom
+          minimal_pairs:
+            start_screen:
+              heading: Pozrite si video a vyberte správnu možnosť
+    locale:
+      currency_switcher_title: Prepínač meny
+      lang_switcher_title: Prepínač jazykov
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Angličtina
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiShahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Zvuk sa načítava
+        aria_pause_button: Pauza
+        aria_play_button: hrať
+        aria_reload_button: Znova načítať
+        aria_stop_button: Prestaň
+        reload_message: Nepodarilo sa načítať zvuk. Načítajte znova kliknutím na tlačidlo.
+    mobile_modal:
+      apply: Podať žiadosť
+      cancel: Zrušiť
+      clear: jasný
+      save: Uložiť
+    page404:
+      goToStartLessonPage: Prejdite na stránku úvodnej lekcie
+      ooops: Oooops ...
+      sorry_message: Je nám ľúto, Tor nemohol nájsť túto stránku
+    profile:
+      navigation:
+        log_out: Odhlásiť sa
+        my_profile: Môj profil
+        settings: nastavenie
+      onboarding:
+        choose_native_language: Vyberte si rodný jazyk alebo jazyk, ktorému rozumiete
+        do_you_understand_english: Rozumies po anglicky?
+        hello: Ahoj
+        language_levels:
+          a1: Základná úroveň
+          a2: Predbežná úroveň
+          b1: Stredná úroveň
+          b2: Horná stredná úroveň
+          c1: Pokročilá úroveň
+          no_knowledge: Žiadne vedomosti
+        language_not_supported:
+          note: Hneď ako bude jazyk k dispozícii, budeme vás informovať
+          title: Je nám ľúto, ale tento jazyk zatiaľ nepodporujeme
+          try_another_language: Skúste iný jazyk
+        'no': Nie
+        search_placeholder: Vyhľadávanie...
+        show_more_languages: Iné jazyky
+        target_language_question: Aký jazyk sa chcete naučiť?
+        what_is_language_level: Ako by ste ohodnotili svoju úroveň %{languageName}?
+        'yes': Áno
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Zásady ochrany osobných údajov spoločnosti Lingu
+        support: podpora
+      logout: Odhlásiť sa
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Dostávajte novinky od učiteľov a škôl, ktoré sledujete
+              sections:
+                app_notifications: Upozornenia aplikácie
+                email: E-mail
+              title: Pomoc pri učení
+            marketing:
+              description: >-
+                Zostaňte informovaní o všetkých propagáciách, aktualizáciách a inšpirácii
+                od spoločnosti Lingu
+              sections:
+                browser_notifications: Oznámenia prehliadača
+                email: E-mail
+              title: Marketing
+          title: Predvoľby kontaktu
+        personal_information:
+          delete_photo: Odstrániť fotografiu
+          email: Email
+          first_name: Krstné meno
+          last_name: Priezvisko
+          social_accounts:
+            connected: Pripojené
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Nepripojený
+            title: Sociálne účty
+          title: Osobné informácie
+          update_photo: Aktualizovať fotografiu
+        school:
+          active_licence: Aktívna licencia
+          active_status: Aktívny
+          delete_profile: Odstrániť môj profil
+          delete_profile_modal:
+            body: |-
+              Vymazáte všetky svoje dáta - navždy. Nie je možné vrátiť späť žiadne tlačidlo a potom vám ho nemôžeme vrátiť.
+              Naozaj chcete natrvalo odstrániť svoj profil Lingu a všetky svoje údaje?
+            cancel: Zrušiť
+            confirm: Áno, vymazať
+            i_understand_the_consequences: Chápem dôsledky
+            title: Odstrániť svoj profil?
+          expired: Platnosť %{expire_date} vypršala
+          expires: Vyprší %{expire_date}
+          inactive_status: Neaktívne
+          revoke_access: Odvolať prístup na čítanie
+          sections:
+            contact_school: Kontaktujte školu
+            export_my_data: Exportovať moje údaje
+            read_school_privacy_policy: Prečítajte si Pravidlá ochrany súkromia školy
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Prehrávanie hudby
+              sound_effects: Zvukové efekty
+              title: Zvuk
+            visual:
+              dark_theme: Tmavá téma
+              font_size:
+                test_text: Tráva je na druhej strane plotu vždy zelenšia
+                title: Veľkosť písma
+              high_contrast: Vysoký kontrast
+              hints: Rady
+              title: Vizuálne
+          title: Zvuk a obraz
+        training_settings:
+          sections:
+            i_understand: rozumiem
+            i_want_to_learn: Chcem sa učiť
+            target_language_level: Anglická úroveň
+          title: Nastavenia tréningu
+      settings_title: nastavenie
+    teacher_card:
+      followers_count:
+        one: 1 sledovateľ
+        other: "%{count} sledovateľov"
+      lessons_count:
+        one: 1 lekcia
+        other: "%{count} lekcie"

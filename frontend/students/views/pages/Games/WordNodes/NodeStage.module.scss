@@ -1,0 +1,192 @@
+@import "../../../../../theme/scss/user-variables";
+
+.container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+.tutorialHeadline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #FBFCFF;
+  opacity: 0.8;
+}
+.skipButton {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #FBFCFF;
+  opacity: 0.5;
+}
+@media (max-width: $lingu-bpt-sm) {
+  .tutorialHeadline {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  .skipButton {
+    bottom: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 1;
+  }
+}
+.questionContainer {
+  width: 100%;
+}
+.question {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 110%;
+  color: #FBFCFF;
+  margin: 30px 0 18px 0;
+}
+.questionImage {
+  height: 120px;
+}
+@media (max-width: $lingu-bpt-sm) {
+  .question {
+    font-size: 3.125rem;
+    margin-top: 15px;
+  }
+  .questionImage {
+    height: 90px;
+  }
+}
+.weakText {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 110%;
+  color: #487AC5;
+}
+
+.nodesViewport {
+  max-width: 800px;
+  max-height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-height: $lingu-bpt-lg) {
+  .nodesViewport {
+    max-width: 600px;
+    max-height: 400px;
+  }
+}
+.nodesContainer {
+  width: 100%;
+  max-width: 600px;
+  padding-top: 100%;
+  position: relative;
+}
+.nodesMotionDiv {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.nodesWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.node {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #FFFFFF;
+  opacity: 0.9;
+  transform: translate(-50%, -50px);
+}
+.nodeCircle {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  transform: translate(-50%, -50%);
+}
+.nodeWhiteCircle {
+  margin: 8px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #FBFCFF;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.nodeCircle.selected .nodeWhiteCircle {
+  background: white;
+}
+.nodeCircle.potential .nodeWhiteCircle {
+  background: white;
+}
+.whiteOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: radial-gradient(60.94% 60.94% at 50% 50%, rgba(14, 52, 120, 0) 0%, #092350 100%);
+  opacity: 0.45;
+}
+.nodeCircle.selected .whiteOverlay {
+  background: radial-gradient(71.43% 71.43% at 50% 50%, rgba(14, 52, 120, 0) 16.08%, #0E3478 100%);
+}
+.nodeCircle.potential .whiteOverlay {
+  background: radial-gradient(71.43% 71.43% at 50% 50%, rgba(255, 255, 255, 0) 16.08%, #FFFFFF 100%);
+  animation:change 1.2s linear infinite;
+}
+.nodeCircle.lastOne .whiteOverlay {
+  background: radial-gradient(71.43% 71.43% at 50% 50%, rgba(255, 255, 255, 0) 16.08%, #FFFFFF 100%);
+}
+@keyframes change {
+  0% { transform: scale(0.7); opacity: 0.5; }
+  50% { transform: scale(1); opacity: 0.3; }
+  100% { transform: scale(1.3); opacity: 0; }
+}
+.drawingBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+.drawingSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.links, .line {
+  fill: none;
+  stroke-width: 8px;
+  opacity: 0.3;
+  stroke: white;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.handContainer {
+  position: absolute;
+}
+.handPointer {
+  height: 90px;
+}
+.inlineBlock {
+  display: inline-block;
+}

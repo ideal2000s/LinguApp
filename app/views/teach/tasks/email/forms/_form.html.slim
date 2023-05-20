@@ -1,0 +1,12 @@
+- content_for(:instructions) do
+  .card.bg-info.mt-5
+    .card-body.text-white
+      .card-title= t('instructions')
+      p.card-text= t('.email_task_guidelines')
+
+= render 'teach/tasks/shared_task_form', task: task, form: form
+
+#task_items.mt-5
+  h3= t('configure')
+  #task_items_container
+    = render partial: task.items.first_or_create, as: :item, locals: { task: task }

@@ -1,0 +1,4 @@
+div class="section-lessons-#{table_view}-container"
+  = render partial: "lessons_#{table_view}_item", collection: lessons, as: :lesson, cached: true
+  - if table_view == 'card'
+    == empty_lesson_cards(lessons.count)

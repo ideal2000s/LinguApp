@@ -1,0 +1,10 @@
+.card.mb-3
+  .card-header
+    h4.card-title.font-weight-bold= t('.team_members')
+
+  #team_users__list.table-responsive.bg-light
+    = render 'list', team: team, team_users: team_users
+
+  .row.mx-1.py-2
+    .col-auto.fs--1
+      = t('teach.team_users.team_link.members', count: team_users.size)

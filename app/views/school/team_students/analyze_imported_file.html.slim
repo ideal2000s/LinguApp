@@ -1,0 +1,56 @@
+- if errors.blank?
+  .modal-dialog.modal-input-students role="document"
+    .modal-content
+      .modal-header.d-flex
+        h5.modal-title = t('school.team_students.import_students.title')
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span.font-weight-light aria-hidden="true" == ("&times")
+      .modal-body
+        = form_tag create_batch_school_students_path, class: 'import-students-form'
+        .import-csv-panel.d-flex
+          = image_tag('icons/import-csv-on.svg', class: 'mr-3', width: 50, height: 40)
+          .card-title.flex-fill.d-flex.flex-column
+            small.m-0= file_name
+            span= t('.items_count', count: students.count)
+          = link_to import_students_school_students_path, remote: true do
+            = image_tag('icons/cancel.svg', class: '', width: 28, height: 28)
+        .students-list-panel
+          - students.each_with_index do |student, index|
+            = hidden_field_tag 'students[][fname]', student.fname
+            = hidden_field_tag 'students[][lname]', student.lname
+            = hidden_field_tag 'students[][email]', student.email
+            = hidden_field_tag 'students[][mobile]', student.mobile
+            = hidden_field_tag 'students[][gender]', student.gender
+            = hidden_field_tag 'students[][native_language_data]', student.native_language_data
+            = hidden_field_tag 'students[][target_language_data]', student.target_language_data
+            = hidden_field_tag 'students[][ssn]', student.ssn
+            = hidden_field_tag 'students[][level]', student.level
+            - if student.email_valid
+              .student-panel.color-success.d-flex
+                b.w-auto = student.full_name
+                .text-email.flex-fill.ml-2 = student.email
+                = hidden_field_tag 'students[][valid]', true
+                = image_tag('icons/success.svg', class: '', width: 20, height: 20)
+            - else
+              .student-panel.color-fail.d-flex
+                b.w-auto = student.full_name
+                .text-email.flex-fill.ml-2 = student.email
+                = hidden_field_tag 'students[][valid]', false
+                .text-status
+                  span.pr-2= t('school.team_students.import_students.not_recognize')
+                  span.badge.badge-pill.badge-danger
+                    i.fas.fa-exclamation-circle.mr-1
+                    = t('school.team_students.import_students.failed')
+        .category-panel
+          .form-group
+            = label_tag 'team_group_id', t('school.team_students.form.class'), required: true
+            = select_tag 'team_group_id', options_for_select(current_team.team_groups.kept.unarchived.undiscarded.select(:id, :name).map { |s| [s.name, s.id] }), class: 'form-control',
+                    multiple: false, prompt: t('school.team_students.form.select_class'), data: { url: '', inputlength: 1 }
+          .form-group
+            = label_tag 'plan_id', t('school.team_students.form.plan')
+            = select_tag 'plan_id', options_for_select(Plan.select(:id, :name_translations).map { |plan| [plan.name, plan.id] }), class: 'form-control', prompt: t('school.team_students.import_students.select_plan')
+        .modal-action
+          button.btn.btn.btn-primary.float-right
+            = t('.import_count_students', count: students.count)
+- else
+  = render partial: 'school/team_students/import_students_form', locals: { errors: errors }

@@ -1,0 +1,14 @@
+- set_page_title plan.system_name
+
+.content
+  .row
+    .col-lg-12
+      .card.mb-3
+        .card-header
+          h5.mb-0= t('.edit_plan', name: plan.system_name)
+        = form_for plan, url: admin_plan_path(plan), method: :patch, html: { id: 'plan_form' } do |f|
+          .card-body.bg-light
+            = render 'admin/plans/form', plan: plan, f: f
+            .form-group
+              = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+              = link_to t('back'), admin_plans_path, class: 'btn btn-falcon-default mr-1'

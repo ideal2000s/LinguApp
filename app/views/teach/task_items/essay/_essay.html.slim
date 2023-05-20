@@ -1,0 +1,11 @@
+= form_for item, as: :task_item, remote: true, url: teach_task_item_path(:task_id => item.task_id, :id => item.id) do |f|
+  .card.mb-3
+    .card-body
+      .form-group
+        = f.label :minimum_words, class: 'w-100 sentence' do
+          h4.required= t('teach.tasks.essay.essay.minimum_words')
+          .input-group
+            = f.text_field :minimum_words, placeholder: t('teach.tasks.essay.essay.input_minimum_words'), class: 'form-control question'
+            .input-group-append
+            = f.submit t('save_changes'), class: 'btn btn-success'
+          = error_for f.object, :minimum_words

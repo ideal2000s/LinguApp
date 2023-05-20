@@ -1,0 +1,27 @@
+- set_page_title t('teach.lessons.draft.draft_lessons')
+
+.card
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner2.png')});"
+  .card-header.pb-0
+    h3.ml-0= current_team.personal? ? t('teach.lessons.draft.my_lessons') : t('teach.lessons.draft.all_lessons')
+  .card-body.z-index-10.my-0.py-0
+    = link_to new_teach_lesson_path, class: 'card-link' do
+      i.fas.fa-plus.fa-fw.mr-1
+      span= t('teach.lessons.new.title')
+
+  .card-body.z-index-10
+    ul#lessons_list.nav.nav-pills role="tablist"
+      = render partial: 'teach/lessons/nav/draft_tab'
+      = render partial: 'teach/lessons/nav/pending_tab'
+      li.nav-item
+        a#lessons-tab.nav-link.active aria-controls="lessons" aria-selected="false" data-toggle="tab" href="#lessons" role="tab"
+          = t('activerecord.attributes.lesson.statuses.approved')
+      = render partial: 'teach/lessons/nav/published_tab'
+
+#lessons_list-content.tab-content.border.p-3.mt-3.card
+  #lessons.tab-pane.fade.show.active aria-labelledby="lessons-tab" role="tabpanel"
+    h3.card-title= t('teach.lessons.count_approved_lessons', count: lessons.approved.total_count)
+    - if lessons.approved.any?
+      = render 'list', lessons: lessons.approved
+    - else
+      = t('teach.lessons.draft.no_lessons')

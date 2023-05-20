@@ -1,0 +1,8 @@
+- set_page_title t('profiles.show.update_profile')
+
+.row.mt-2
+  .col-lg-12
+    .card.mb-3
+      = render 'profile_form', user: current_user
+
+= render 'teams', teams: teams, invitations: current_user.team_invitations.pending

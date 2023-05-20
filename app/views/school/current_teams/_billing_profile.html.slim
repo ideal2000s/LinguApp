@@ -1,0 +1,27 @@
+= form_tag school_current_team_path, method: :put, remote: true
+  .mb-5
+    = label_tag 'business_registration_id', t('school.profile.billing.business_registration_id')
+    = text_field_tag 'business_registration_id', team.business_registration_id, class: 'form-control', autocomplete: 'off', required: true
+  .mb-2
+    = label_tag 'street_address', t('school.profile.billing.street_address')
+    = text_field_tag 'street_address', team.street_address, class: 'form-control', autocomplete: 'off', required: true
+  .d-flex.justify-content-between.mb-2
+    .postal-code-field
+      = label_tag 'postal_code', t('school.profile.billing.postal_code')
+      = text_field_tag 'postal_code', team.postal_code, class: 'form-control', autocomplete: 'off', required: true
+    .city-field.mr-2
+      = label_tag 'city', t('school.profile.billing.city')
+      = text_field_tag 'city', team.city, class: 'form-control', autocomplete: 'off', required: true
+  .d-flex.justify-content-between.mb-2
+    .country-field.w-50.mr-2
+      = label_tag 'country', t('school.profile.billing.country')
+      = select_tag 'country', options_for_select(ISO3166::Country.all.sort.map{|country| [[country.name, country.emoji_flag].join(', '), country.alpha2]}, team.country), class: 'form-control', data: { target: "school-profile.selectCountry", placeholder: t('school.profile.billing.country') }, prompt: 'Select'
+      .state-field
+      = label_tag 'state', t('school.profile.billing.state')
+      = select_tag 'state', options_for_select([], team.state), class: 'form-control state-select', data: { target: "school-profile.selectState" }
+  = submit_tag t('common.buttons.save'), class: 'btn btn-primary float-right mt-3'
+
+- countryData = ISO3166::Country.all.sort.map{|country| [country.alpha2, country.states.map{|state| [state[0], state[1].name] }]}
+
+javascript:
+  window.countryData = { countries: #{countryData.to_json.html_safe}, by_ip: "#{country_by_ip}", current_country:  "#{team.country}", current_state: "#{team.state}" }

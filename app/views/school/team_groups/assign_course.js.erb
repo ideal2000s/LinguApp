@@ -1,0 +1,8 @@
+<% if request.post? %>
+  $('#assign-course-modal').modal('hide');
+  $('#flash').replaceWith("<%= j(render('layouts/shared/flash', flash: flash )) %>");
+  $("#team_group_item_<%= team_group.id %>").replaceWith("<%= j render 'list_item', team_group: team_group %>")
+<% else %>
+  $("#assign-course-modal").html("<%= j render 'assign_course_form', courses: courses, team_group: team_group, current_course_id: current_course_id %>");
+  $('#assign-course-modal').modal('show');
+<% end %>

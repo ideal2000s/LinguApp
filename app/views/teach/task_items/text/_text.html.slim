@@ -1,0 +1,32 @@
+= form_for item, as: :task_item, url: teach_task_item_path(:task_id => item.task_id, :id => item.id) do |f|
+  .card.mb-3
+    .card-body
+      .form-group
+        = f.label :embed, class: 'w-100 sentence' do
+          .form-group
+            .form-group
+              = f.label :content
+              = f.text_area :content, data: { editor: 'summernote' }
+              = error_for f.object, :content
+            .form-group.row class="#{item.audio ? 'd-none' : ''}"
+              .col-3
+                = f.upload_helper_for(:audio, resource: f.object, accept: 'audio/*', data: { upload: 'audio' }) do |h|
+                  - h.button do
+                    i.fas.fa-headphones.fa-fw.mr-2
+                    = t('teach.tasks.shared_task_fields.upload_audio')
+                  - h.preview do |resource|
+                    = audio_tag(resource.audio_url, class: 'preview', controls: true) if resource.audio
+              .col-4 style='letter-spacing: normal; margin-top: 4px;'
+                div style='width: 70%; display: none'
+                  = react_component('components/AudioRecord', { api: "/tasks/#{item.task_id}/items/#{item.id}", item: item, upload_mode: 1 })
+                a.btn.float-left.item-record-btn style='margin-left: 30px'
+                  i.fa.fa-microphone
+            - if item.audio
+              .d-flex.align-items-center
+                = audio_tag(item.audio_url, class: 'preview', controls: true)
+                .audio-upload-remove style='margin-left: 10px;'
+                = f.check_box :remove_audio
+                span style='margin-left: 3px'
+                  = t('remove')
+          .form-group
+            = f.submit t('save_changes'), class: 'btn btn-success'

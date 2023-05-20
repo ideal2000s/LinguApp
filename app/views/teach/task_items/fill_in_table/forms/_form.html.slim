@@ -1,0 +1,22 @@
+= form_for item, html: {id: dom_id(task, :item_form)}, as: :task_item, remote: true, url: teach_task_items_path(task) do |f|
+  - if task.audio_question_format?
+    td.pl-3
+      .form-group#task_items_container.d-flex
+        .mr-5
+          = f.upload_helper_for(:audio, resource: f.object, accept: 'audio/*', data: {upload: 'audio'}) do |h|
+            - h.button do
+              i.fas.fa-headphones.fa-fw.mr-2
+              = t('teach.tasks.shared_task_fields.upload_audio')
+            - h.preview do |resource|
+              = audio_tag(resource.audio_url, class: 'preview', controls: true) if resource.audio
+        div style='width: 50%; display: none'
+          = react_component('components/AudioRecord', { api: "/tasks/#{item.task_id}/items/#{item.id}", item: item, upload_mode: 1 })
+        a.btn.float-left.item-record-btn.ml-6
+          i.fa.fa-microphone
+  - else
+    td= f.text_field :question, placeholder: 'Question', class: 'form-control question', required: true
+  td= text_field_tag 'task_item[options_attributes][0][answer]', '', placeholder: 'Answer 1', class: 'form-control column1', required: true
+  - if task.two_columns?
+    td= text_field_tag 'task_item[options_attributes][1][answer]', '', placeholder: 'Answer 2', class: 'form-control column2', required: true
+
+  td= f.submit t('save'), class: 'btn btn-success float-right'

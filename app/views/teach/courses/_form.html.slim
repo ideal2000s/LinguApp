@@ -1,0 +1,51 @@
+= form_for [:teach, course] do |f|
+  .row
+    .col-md-12
+      - if course.errors.any?
+        .alert.alert-warning#error_explanation
+          h4
+            = pluralize(course.errors.count, 'error')
+            =< t('.prohibited_saving_form')
+          ul
+            - course.errors.full_messages.each do |message|
+              li= message
+      .form-group
+        = f.label :title, required: true
+        = f.text_field :title, class: 'form-control'
+      - unless course.new_record?
+        .form-group
+          = f.label :slug, required: true
+          = f.text_field :slug, class: 'form-control'
+      .row
+        .col-6
+          .form-group
+            = f.label :language_id, t('.select_language'), required: true
+            = f.select :language_id, options_for_select(Language.active.select(:name_translations, :id).map {|d| [d.name, d.id]}, f.object.language_id), {include_blank: t('select')}, {class: 'form-control select2', multiple: false}
+            = error_for f.object, :language_id
+        .col-6
+          .form-group
+            = f.label :level, t('teach.lessons.form.select_level')
+            = f.select :level, options_for_select(Lesson.levels_for_select, f.object.level), {prompt: t('teach.lessons.form.select_level')}, class: 'form-control select2'
+            = error_for f.object, :level
+        .col-6
+          .form-group
+            = f.label :estimated_time, 'Estimated no. of hours'
+            = f.number_field :estimated_time, class: 'form-control'
+      .form-group
+        = f.label :description
+        = f.rich_text_area :description, placeholder: t('.description_placeholder')
+      .form-group
+        .custom-control.custom-checkbox
+          = f.check_box :published, class: 'custom-control-input'
+          = f.label :published, class: 'custom-control-label'
+      .form-group
+        = f.upload_helper_for(:image, accept: 'image/*', data: {upload: 'image'}) do |h|
+          - h.button do
+            i.fas.fa-image.fa-fw.mr-2
+            = t('profiles.show.choose_image')
+
+          - h.preview do |resource|
+            = image_tag(resource.image_url(:thumbnail), class: 'preview img-thumbnail') if resource.image
+  .row
+    .col-12
+      = f.submit t('common.buttons.save'), class: 'btn btn-primary'

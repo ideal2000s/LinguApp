@@ -1,0 +1,7 @@
+$("#right_modal .modal-body").html("<%= j render partial: 'teach/lessons/form', locals: { lesson: @lesson }%>");
+$("#right_modal .modal-title").html('Edit lesson');
+$('#right_modal').modal('show');
+$('#lesson_tags').select2({ theme: 'bootstrap4', dropdownParent: $('#right_modal .modal-content') });
+$('#lesson_skill_ids').select2({ theme: 'bootstrap4', dropdownParent: $('#right_modal .modal-content') });
+
+uppyUtils.initUploadInputs($('#right_modal'));

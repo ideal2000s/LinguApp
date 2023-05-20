@@ -1,0 +1,5 @@
+$("#right_modal .modal-body").html("<%= j render partial: 'teach/courses/form', locals: { course: course }%>");
+$("#right_modal .modal-title").html('<%= t('.edit_course')%>');
+$('#right_modal').modal('show');
+
+uppyUtils.initUploadInputs($('#right_modal'));

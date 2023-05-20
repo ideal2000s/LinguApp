@@ -1,0 +1,612 @@
+---
+ku:
+  course_mailer:
+    course_assigned_notification:
+      button: Dest bi qursê bikin
+      click_start_lesson: "'Destpêka dersê' bikirtînin"
+      follow_course_link: Ji bo vekirina qursê bişkojkê bikirtînin
+      footer_text: Vegerin Lingu ku her roj tiştek nû fêr bibin!
+      get_started_line: 'Li vir hûn çawa dest pê dikin ev e:'
+      notification_link: Mîhengên agahdarkirinê
+      open_lesson: Dersa yekem vekin
+      or_paste_this_link: an vê lînkê li geroka xwe bicîh bikin
+      sign_in_with_email: Bi navnîşana e-nameya xwe têkevin nav (%{email})
+      support_link: Alîkarî
+      title: Dest bi %{course} dikin
+    new_document_comment:
+      author_text: "%{author} veniştinek ji wezîfeya we re hişt"
+      button_text: Hûn dixwazin
+      button_url_helper: 'an vê lînkê li geroka xwe bixe:'
+      footer_text: Pir tişt hene ku hîn bibin ...
+      notification_link: Mîhengên agahdarkirinê
+      subject_line: ".Îroveya wezîfeya nû"
+      support_link: Alîkarî
+    otp:
+      ignore_msg: Heke we vê daxwazê nekir, tenê e-nameyê paşguh bikin.
+      subject_line: Koda weya yekta ji bo Lingu
+      unique_code_for_lingu: Li vir koda weya yekta ji bo Lingu heye
+  frontend:
+    auth:
+      already_have_acc_question: Jixwe hesabê we heye?
+      back: Paş
+      back_to_sign_in: Vegere Têkevê
+      check_your_email_for_a_code: Ji bo koda xwe e-nameya xwe kontrol bikin
+      continue: Berdewamkirin
+      continue_with_email: Bi e-nameyê bidomînin
+      continue_with_provider: Bi %{provider} berdewam bikin
+      did_not_receive_a_code: Ma kodek wernegirt?
+      email_address: Navnîşana emailê
+      first_name: Nav
+      get_unique_code: Koda têketinê ya yekta bistînin
+      join_lingu: Beşdarî Lingu bibin
+      last_name: Paşnav
+      more_login_options: Vebijarkên bêtir têketinê
+      no_account_question: Hesabê we tune?
+      or: an
+      resend_code: Koda şandin
+      sign_in: Têketin
+      sign_up: Tomar kirin
+      want_to_receive_marketing_messages: Ez dixwazim ji Lingu peyamên kirrûbirrê
+        bistînim
+      we_ve_sent_a_code: >-
+        Me ji bo <strong> {{{e-name}} </strong> kodek 6-reqem şandiye. Kod di 15 hûrdeman
+        de xilas dibe, ji kerema xwe zû zû têkevinê.
+    cookie_agreement:
+      agree: Qebûlkirin
+      condition: >-
+        Em cookies bikar tînin ku performansa malperê analîz bikin û naveroka kesane
+        radest bikin. Bi tikandina "Bipejirîne", hûn ji mercên me razî ne.
+    course:
+      accredited_course_provider: Pêşkêşkerê qursa akredîtekirî
+      apply: Bikaranîn
+      apply_filters: Parzûnan bicîh bikin
+      by: Ji
+      cancel: Bişûndekirin
+      categories: kategoriyên %{count}
+      category: Liq
+      clear: Zelal
+      clear_filters: Parzûnan paqij bikin
+      contact_us: Paqij bûn
+      could_not_find_match_for: Bibore, me nikaribû tu match ji bo bibînin
+      course_language: Zimanê qursê
+      duration: Demajok
+      filter_settings:
+        categories:
+          academic: Danişgayî
+          business: Dikan
+          fashion: Mode
+          food_drink: Xwarin & vexwarin
+          for_kids: Ji bo zarokan
+          general: Giştî
+          health: Tendûrûstî
+          legal: Mafî
+          sport: Sîpor
+          travel: Gerrîn
+        durations:
+          t0_600: "<10 hûrdeman"
+          t1800_3600: 30-60 hûrdem
+          t3600_86400: 1+ demjimêr
+          t600_1800: 10-30 hûrdem
+        focus_on:
+          conversation: Kêfî
+          grammar: Rêziman
+          listening: Guhdarî kirin
+          pronunciation: Nîqaş
+          reading: Xwendinî
+          speaking: Axaftin
+          writing: Nivîs
+        levels:
+          long:
+            advanced: Asta pêşkeftî
+            elementary: Asta destpêkî
+            intermediate: Asta navîn
+            no_knowledge: Ne zane
+            pre_intermediate: Asta pêşîn a navîn
+            upper_intermediate: Asta navîn a jorîn
+          short:
+            advanced: Pêşveçû
+            beginner: Despêkevan
+            intermediate: Di nav
+        sort_by:
+          most_rated: Pir nirxandî
+          newest: Nûtirîn
+          popularity: Popularity
+      filters: Parzûn
+      focus_on: Li ser bisekinin
+      focus_on_title: Ez dixwazim li ser bisekinim
+      hide_lessons: Dersan veşêrin
+      hours: Demjimêr
+      i_understand: ez dizanim
+      i_want_to_learn: ez dixwazim hîn bibim
+      in_language: di %{language}
+      language: Ziman
+      learn_more: Bêtir hîn bibin
+      less_settings: Mîhengên kêmtir
+      lessons: Ders
+      lessons_available: dersên %{number} hene
+      lessons_catalog_page_subtitle: Bibin qehremanê zimên.
+      lessons_catalog_page_title: Bi qursek zimanî asoyên xwe fireh bikin
+      level: Serrast
+      min: Min
+      more_settings: Mîhengên bêtir
+      navbar:
+        close: Menûyê bigire
+        menu: Qerta xûrekê
+        select_language: Ziman hilbijêrin
+      need_to_buy_course: Pêdivî ye ku hûn pêşîn qursek veqetînin
+      no_description: No description provided
+      no_results: Bibore, me nikaribû tu match ji bo bibînin
+      or: an
+      per_month: her meh
+      plans: Plans
+      privacy_policy: Siyaseta taybetîtiyê
+      rating: Nirxandin
+      remove_all_filters: Hemî parzûnan derxînin
+      reviews: Nirxandinan
+      save: Rizgarkirin
+      search: Gerr
+      select_dots: Neqandin...
+      select_languages: Zimanan hilbijêrin
+      select_num_languages: Zimanên %{number} hilbijêrin
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Hemî nîşan bide
+      show_all_lessons: Hemî dersan nîşan bidin
+      show_lessons: Dersên %{number} nîşan bidin
+      show_more: Zêdetir nîşan bide
+      sign_up_with_lingu_for: Bi Lingu Norway re bibin endam ji bo
+      skills: behreyên %{count}
+      sort_by: Sort kirin
+      start_typing_here: Li vir dest bi nivîsandinê bikin
+      teach: Hînkirin
+      terms_and_conditions: Termsert û merc
+      time_range: Rêzeya demê
+      try_adjusting_your_search: Bi guhertina parzûnên xwe ve lêgerîna xwe sererast
+        bikin
+      try_this_course: Vê qursê biceribînin
+      website_language: Zimanê malperê
+      words: Words
+    games:
+      finished:
+        go_to_next_exercise: Aferîn! Herin tetbîqata din
+      flashcard:
+        buttons:
+          finish: Qedandin
+          next: Piştî
+          previous: Pêşî
+        check_out_new_words: Gotinên nû yên ku hûn ê di vê dersê de fêr bibin bibînin
+        frequency_of_word_usage: Pirjimariya karanîna bêjeyê di %{language}
+        keep_practice_to_learn_all_words: Gotinên %{count} binirxînin û ka em çend
+          lîstikan bilîzin!
+        word_frequency:
+          level1: Kêm caran tê bikar anîn
+          level2: Kêm caran tê bikar anîn
+          level3: Frequency word - medium
+          level4: Frequency word - medium
+          level5: Hevre
+          level6: Pir gelemperî
+      match_word:
+        click_and_move_each_word_to_counterpart: Her peyvê bikirtînin û veguherînin
+          hevberê xwe
+        start_heading: Bêjeyan li hev bikin da ku bibin cotek
+        time_is_up: Wext qediya!
+      skip_tutorial: Hilperkîn
+      time_is_up: Wext qediya!
+      word_nodes:
+        match_letters_to_form_word: Ji bo çêkirina peyvekê tîpan li hev bînin
+      word_waterfall:
+        do_not_hesitate: Ka em lez bikin!
+        go_to_next_exercise: Herin tetbîqata din
+        select_correct_translation: Maçek rast hilbijêrin
+        well_done: Aferîn!
+    home_page:
+      hello: Slav,
+      popular_lessons: Dersên populer
+      show_more: Zêdetir nîşan bide
+      time: "%{count} min"
+      today_lesson: Dersa we ya îro
+      user_name: "%{name}!"
+      words: bêjeyên %{count}
+    idle_screen:
+      by_author: ji hêla %{authorName}
+      continue_lesson: Dersê bidomînin
+      exit: Derî
+      idle_message: Hûn demek bêkar in ...
+    lesson_page:
+      back_to_course_page: Vegere rûpelê qursê
+      close: Nêzîkî
+      continue_lesson: Dersê bidomînin
+      followed: Opandin
+      hamburger_menu_btn: Menu Hamburger
+      lesson_given: dersan
+      not_started: dest pê nekiriye
+      or: An
+      part_complete: "%{percent}% temam"
+      restart_lesson: Dîsa dest pê bikin
+      section_check: Berçavkirinî
+      section_check_info: testên %{count}
+      section_learn: Fêrbûn
+      section_learn_info: "%{count} min temaşekirin û xwendin"
+      section_play: Bazî
+      section_play_info: "%{count} bêjeyên pratîkê"
+      start_lesson: Dest bi dersê bikin
+      step_progress: "%{percent}%"
+      subscribe: Pêketin
+      subscribed: Opandin
+      subscribers: şopîner
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Unfollow
+      webview_error_title: Tiştek xelet çû ...
+      words_number: "%{wordsNumber} bêjeyên nû"
+    lesson_task:
+      cancel_button: Bişûndekirin
+      check:
+        navigation_next: Piştî
+        navigation_previous: Pêşî
+        navigation_skip: Hilperkîn
+      controls_panel:
+        font_size_button: Mezinahiya nivîsê
+        high_contrast_button:
+          origin: Berevajiya bilind
+          short: Dijîtî
+        hints_button: Hîretan
+        music_playback_button:
+          origin: Playback muzîkê
+          short: Mûzîk
+        sound_effects_button:
+          origin: Bandorên deng
+          short: Rengdan
+      exit_button: Derî
+      finish_button: Qedandin
+      finished:
+        back_to_learn: Vegere fêrbûnê
+        back_to_lesson_page: Vegere rûpelê dersê
+        back_to_results_page: Vegere ser rûpelê encam
+        bad_result_message: Hmm ... hewl bidin ku dersê carek din bigirin
+        close_lesson: Dersê bigire
+        correct_answers_list: Lîsteya bersivên rast
+        good_result_message: Ez dibînim ku we hewlek daye!
+        great_result_message: Aferîn! Ev encamên mezin in!
+        next_course_lesson: Di qursê de biçin dersa din
+        no_results: Hê encamên testê tune
+        no_results_text: Ji kerema xwe, dersê biqedînin û testê derbas bikin da ku
+          encaman bigirin
+        see_correct_answers_list: Lîsteya bersivên rast bibînin
+        train_more: Bêtir pratîkî bikin û hûn ê carek din encamên çêtir bi dest bixin!
+        you_finished_lesson: Ecêb! We ders qedand
+      go_back: Min himbêz bike
+      next_button: Piştî
+      not_available_task: Ev peywir hîn tune
+      start_button: Destpêkirin
+      tasks:
+        check:
+          assignment:
+            accept: Baweranîn
+            author_will_check_your_answer: >-
+              %{author} dê bersiva we binirxîne û bi gelemperî di nav 1-2 rojan de
+              bersivê bide
+            continue_writing: Nivîsandinê bidomînin
+            copy: Kopî
+            delete: Jêbirin
+            delete_record: Qeydê hilînin
+            edit: Weşandin
+            essay_does_not_have_enough_words: >-
+              Bersiva we divê herî kêm %{minWordsNumber} bêje hebe. Bersiva we niha
+              %{currentWordsNumber} bêje ne.
+            followers_count: "%{followersCount} şagirtan"
+            lessons_count: dersên %{lessonsCount}
+            minimal_recording_time: Dema tomarkirina kêmînîn - %{minimalRecordingTime}
+            minimum_characters_amount: Karakteyên herî kêm - %{minimumCharactersAmount}
+            minimum_words_amount: Bêjeyên herî kêm - %{minimumAmount}
+            record_again: Dîsa tomar bikin
+            record_voice: Deng tomar kirin
+            send_anyway: Çawa be jî bişînin
+            send_to_review: Ji bo nirxandinê bişînin
+            skip: Hilperkîn
+            too_short_answer: Bersiva pir kurt
+            type_your_answer: Bersiva xwe binivîsin
+            unknown_task_type: Cûreyek karê nenas
+            upgrade_licence: Lîsansa nûvekirinê
+            upgrade_your_plan: Plana xwe nûve bikin ku karan bi nirxandinên mamosteyan
+              biceribînin
+            upload_files: Pelan bar bikin
+            write_essay: Nivîsar binivîsin
+            you_have_used_amount_of_assignments: We kredîdên tayînkirina %{amountOfAssignments}
+              bikar aniye
+          fill_in_blanks:
+            sentence_gap: Navbera hevokê
+          fill_in_table:
+            column_answer_placeholder: Bersiv
+            column_question_placeholder: Pirs
+            example: Mînak
+          true_false:
+            'false': şaş
+            'true': rast
+        learn:
+          translatable_text:
+            show_original: Orjînal nîşan bidin
+            translate_into: Bi Google re %{languageName} wergerînin
+            translate_into_your_lang: Bi Google re wergerînin zimanê xwe
+        play:
+          arrange_words:
+            start_screen:
+              heading: Ji bêjeyên dane hevokek çêbikin
+          audition:
+            start_screen:
+              heading: Guhdarî guhdarî bikin û li ser peyva ku we nû bihîstî tapînin
+          dictation:
+            get_help: Alîkarî bistînin
+            i_do_not_know: Ez nizanim
+            input_placeholder: Ya ku we li vir bihîstiye têkevinê
+            start_screen:
+              heading: Ya ku hûn dibihîzin guhdarî bikin û binivîsin
+          fill_gap:
+            start_screen:
+              heading: Peyv û wateya wê li hev bikin
+          finish_screen:
+            go_to_next_exercise: Aferîn! Herin tetbîqata din
+          image_hotspot:
+            start_screen:
+              heading: Navê tiştên li wêneyê rast bikin
+          image_object:
+            start_screen:
+              heading: Tiştê rastê ji wêneyê din hilbijêrin
+          inline_dropdown:
+            start_screen:
+              heading: Bêjeyên ku bi hevokê re li hev dikin hilbijêrin
+          mark_word:
+            start_screen:
+              heading: Nivîsarê bixwînin û peyva ku bi wêneyê re têkildar e hilbijêrin
+          minimal_pairs:
+            start_screen:
+              heading: Vîdyoyê temaşe bikin û vebijarka rast hilbijêrin
+    locale:
+      currency_switcher_title: Guherînerê diravê
+      lang_switcher_title: Switcher ziman
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Bulgarî
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Îngilîzî
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский зык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: de Soomaali
+        sq: Albanian
+        sr: Serbistan
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Krayna
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio tê barkirin
+        aria_pause_button: Mizdan
+        aria_play_button: Bazî
+        aria_reload_button: Ji nû ve barkirin
+        aria_stop_button: Rawestan
+        reload_message: Deng nehat barkirin. Ji kerema xwe ji nû ve bikirtînin bişkojkê
+          bikirtînin.
+    mobile_modal:
+      apply: Bikaranîn
+      cancel: Bişûndekirin
+      clear: Zelal
+      save: Rizgarkirin
+    page404:
+      goToStartLessonPage: Herin rûpelê dersa destpêkê
+      ooops: Oooops ...
+      sorry_message: Bibore, Tor vê rûpelê nedît
+    profile:
+      navigation:
+        log_out: Derkeve
+        my_profile: Profîla min
+        settings: Mîhengên
+      onboarding:
+        choose_native_language: Zimanê xweya dayikê an zimanê ku hûn jê fam dikin
+          hilbijêrin
+        do_you_understand_english: Ma hûn ji Englishngilîzî fam dikin?
+        hello: Slav
+        language_levels:
+          a1: Asta destpêkî
+          a2: Asta pêş-navîn
+          b1: Asta navîn
+          b2: Asta Navîn a Jorîn
+          c1: Asta pêşkeftî
+          no_knowledge: Ne zane
+        language_not_supported:
+          note: Em ê zûka ku ziman dê peyda bibe we agahdar bikin
+          title: Bibore, lê em hîn piştgirî nadin vî zimanî
+          try_another_language: Zimanek din biceribînin
+        'no': Na
+        search_placeholder: Gerr...
+        show_more_languages: Zimanên din
+        target_language_question: Hûn dixwazin kîjan zimanî fêr bibin?
+        what_is_language_level: Hûn ê asta %{languageName} xwe çawa binirxînin?
+        'yes': Erê
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Siyaseta taybetîtiyê ya Lingu
+        support: Alîkarî
+      logout: Derkeve
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Ji mamoste û dibistanên ku hûn dişopînin nûveyan bistînin
+              sections:
+                app_notifications: Notifications App
+                email: E-name
+              title: Alîkariya hînbûnê
+            marketing:
+              description: Li ser hemî danasîn, nûvekirin û îlhamê ji Lingu agahdar
+                bimînin
+              sections:
+                browser_notifications: Agahdariyên gerokê
+                email: E-name
+              title: Kirrûbirrîn
+          title: Vebijarkên têkiliyê
+        personal_information:
+          delete_photo: Wêneyê jêbirin
+          email: E-nameyê bişînin
+          first_name: Nav
+          last_name: Paşnav
+          social_accounts:
+            connected: Girêdayî
+            facebook: Facebook
+            google: gûgil
+            microsoft: Microsoft
+            not_connected: Ne girêdayî ye
+            title: Hesabên civakî
+          title: Agahdariya kesane
+          update_photo: Wêne nûve bikin
+        school:
+          active_licence: Lîsansa çalak
+          active_status: Jîr
+          delete_profile: Profîla min hilînin
+          delete_profile_modal:
+            body: |-
+              Hûn hemî daneyên xwe-heta hetayê ji holê radikin. Bişkojka betalbûnê tune, û em nekarin paşê wê ji bo we vegerînin.
+              Ma hûn pê ewle ne ku hûn dixwazin profîla xweya Lingu-ê û hemî daneyên xwe bi herdemî jêbirin?
+            cancel: Bişûndekirin
+            confirm: Erê, wê jê bibe
+            i_understand_the_consequences: Ez ji encaman fam dikim
+            title: Profîla xwe paqij dike?
+          expired: "%{expire_date} qediya"
+          expires: "%{expire_date} xelas dibe"
+          inactive_status: Bêkar
+          revoke_access: Destûra xwendinê betal bikin
+          sections:
+            contact_school: Bi dibistanê re têkilî daynin
+            export_my_data: Daneyên min bişînin derve
+            read_school_privacy_policy: Polîtîkaya Taybetmendiyê ya Dibistanê bixwînin
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Playback muzîkê
+              sound_effects: Bandorên deng
+              title: Rengdan
+            visual:
+              dark_theme: Mijara tarî
+              font_size:
+                test_text: Giya li rexê dinê her dem hêşîntir e
+                title: Mezinahiya nivîsê
+              high_contrast: Berevajiya bilind
+              hints: Hîretan
+              title: Çavî
+          title: Deng & Dîtin
+        training_settings:
+          sections:
+            i_understand: ez dizanim
+            i_want_to_learn: ez dixwazim hîn bibim
+            target_language_level: Asta Englishngilîzî
+          title: Mîhengên perwerdehiyê
+      settings_title: Mîhengên
+    teacher_card:
+      followers_count:
+        one: 1 Follower
+        other: "%{count} şagirtan"
+      lessons_count:
+        one: 1 ders
+        other: dersên %{count}

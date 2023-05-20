@@ -1,0 +1,614 @@
+---
+kn:
+  course_mailer:
+    course_assigned_notification:
+      button: ಕೋರ್ಸ್ ಪ್ರಾರಂಭಿಸಿ
+      click_start_lesson: "'ಪಾಠ ಪ್ರಾರಂಭಿಸು' ಕ್ಲಿಕ್ ಮಾಡಿ"
+      follow_course_link: ಕೋರ್ಸ್ ತೆರೆಯಲು ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ
+      footer_text: ಪ್ರತಿದಿನ ಹೊಸದನ್ನು ಕಲಿಯಲು ಲಿಂಗುಗೆ ಹಿಂತಿರುಗಿ!
+      get_started_line: 'ನೀವು ಹೇಗೆ ಪ್ರಾರಂಭಿಸಬೇಕು ಎಂಬುದು ಇಲ್ಲಿದೆ:'
+      notification_link: ಅಧಿಸೂಚನೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು
+      open_lesson: ಮೊದಲ ಪಾಠವನ್ನು ತೆರೆಯಿರಿ
+      or_paste_this_link: ಅಥವಾ ಈ ಲಿಂಕ್ ಅನ್ನು ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಅಂಟಿಸಿ
+      sign_in_with_email: ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸದೊಂದಿಗೆ ಲಾಗ್ ಇನ್ ಮಾಡಿ (%{email})
+      support_link: ಬೆಂಬಲ
+      title: "%{course} ನೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುವುದು"
+    new_document_comment:
+      author_text: "%{author} ನಿಮ್ಮ ನಿಯೋಜನೆಯ ವಿಮರ್ಶೆಯನ್ನು ಬಿಟ್ಟಿದೆ"
+      button_text: ಅದನ್ನು ಪರಿಶೀಲಿಸಿ
+      button_url_helper: 'ಅಥವಾ ಈ ಲಿಂಕ್ ಅನ್ನು ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಅಂಟಿಸಿ:'
+      footer_text: ಕಲಿಯಲು ಇನ್ನೂ ಸಾಕಷ್ಟು ಇದೆ ...
+      notification_link: ಅಧಿಸೂಚನೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು
+      subject_line: ಹೊಸ ನಿಯೋಜನೆ ಕಾಮೆಂಟ್
+      support_link: ಬೆಂಬಲ
+    otp:
+      ignore_msg: ನೀವು ಈ ವಿನಂತಿಯನ್ನು ಮಾಡದಿದ್ದರೆ, ಇಮೇಲ್ ಅನ್ನು ನಿರ್ಲಕ್ಷಿಸಿ.
+      subject_line: ಲಿಂಗುಗಾಗಿ ನಿಮ್ಮ ಅನನ್ಯ ಕೋಡ್
+      unique_code_for_lingu: ಲಿಂಗ್ಗುಗಾಗಿ ನಿಮ್ಮ ಅನನ್ಯ ಕೋಡ್ ಇಲ್ಲಿದೆ
+  frontend:
+    auth:
+      already_have_acc_question: ಈಗಾಗಲೇ ಖಾತೆ ಹೊಂದಿದ್ದೀರ?
+      back: ಹಿಂದೆ
+      back_to_sign_in: ಸೈನ್ ಇನ್ ಮಾಡಲು ಹಿಂತಿರುಗಿ
+      check_your_email_for_a_code: ನಿಮ್ಮ ಕೋಡ್‌ಗಾಗಿ ನಿಮ್ಮ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ
+      continue: ಮುಂದುವರಿಸಿ
+      continue_with_email: ಇಮೇಲ್‌ನೊಂದಿಗೆ ಮುಂದುವರಿಸಿ
+      continue_with_provider: "%{provider} ನೊಂದಿಗೆ ಮುಂದುವರಿಸಿ"
+      did_not_receive_a_code: ಕೋಡ್ ಸ್ವೀಕರಿಸಲಿಲ್ಲವೇ?
+      email_address: ಇಮೇಲ್ ವಿಳಾಸ
+      first_name: ಮೊದಲ ಹೆಸರು
+      get_unique_code: ಅನನ್ಯ ಲಾಗಿನ್ ಕೋಡ್ ಪಡೆಯಿರಿ
+      join_lingu: ಲಿಂಗು ಸೇರಿ
+      last_name: ಕೊನೆಯ ಹೆಸರು
+      more_login_options: ಹೆಚ್ಚಿನ ಲಾಗಿನ್ ಆಯ್ಕೆಗಳು
+      no_account_question: ಖಾತೆ ಇಲ್ಲವೇ?
+      or: ಅಥವಾ
+      resend_code: ಕೋಡ್ ಅನ್ನು ಮರುಹೊಂದಿಸಿ
+      sign_in: ಸೈನ್ ಇನ್ ಮಾಡಿ
+      sign_up: ಸೈನ್ ಅಪ್ ಮಾಡಿ
+      want_to_receive_marketing_messages: ನಾನು ಲಿಂಗುವಿನಿಂದ ಮಾರ್ಕೆಟಿಂಗ್ ಸಂದೇಶಗಳನ್ನು
+        ಸ್ವೀಕರಿಸಲು ಬಯಸುತ್ತೇನೆ
+      we_ve_sent_a_code: >-
+        ನಾವು 6-ಅಂಕಿಯ ಕೋಡ್ ಅನ್ನು <strong> {{ಇಮೇಲ್}} </ strong> ಗೆ ಕಳುಹಿಸಿದ್ದೇವೆ. ಕೋಡ್
+        15 ನಿಮಿಷಗಳಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ, ಆದ್ದರಿಂದ ದಯವಿಟ್ಟು ಅದನ್ನು ಶೀಘ್ರದಲ್ಲೇ ನಮೂದಿಸಿ.
+    cookie_agreement:
+      agree: ಒಪ್ಪುತ್ತೇನೆ
+      condition: >-
+        ಸೈಟ್ ಕಾರ್ಯಕ್ಷಮತೆಯನ್ನು ವಿಶ್ಲೇಷಿಸಲು ಮತ್ತು ವೈಯಕ್ತಿಕಗೊಳಿಸಿದ ವಿಷಯವನ್ನು ತಲುಪಿಸಲು
+        ನಾವು ಕುಕೀಗಳನ್ನು ಬಳಸುತ್ತೇವೆ. “ಒಪ್ಪುತ್ತೇನೆ” ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ, ನೀವು ನಮ್ಮ ಷರತ್ತುಗಳಿಗೆ
+        ಸಮ್ಮತಿಸುತ್ತೀರಿ.
+    course:
+      accredited_course_provider: ಮಾನ್ಯತೆ ಪಡೆದ ಕೋರ್ಸ್ ಒದಗಿಸುವವರು
+      apply: ಅನ್ವಯಿಸು
+      apply_filters: ಶೋಧಕಗಳನ್ನು ಅನ್ವಯಿಸಿ
+      by: ಇವರಿಂದ
+      cancel: ರದ್ದುಮಾಡಿ
+      categories: "%{count} ವಿಭಾಗಗಳು"
+      category: ವರ್ಗ
+      clear: ಸ್ಪಷ್ಟ
+      clear_filters: ಫಿಲ್ಟರ್‌ಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ
+      contact_us: ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ
+      could_not_find_match_for: ಕ್ಷಮಿಸಿ, ಇದಕ್ಕಾಗಿ ನಮಗೆ ಯಾವುದೇ ಹೊಂದಾಣಿಕೆ ಕಂಡುಬಂದಿಲ್ಲ
+      course_language: ಕೋರ್ಸ್ ಭಾಷೆ
+      duration: ಅವಧಿ
+      filter_settings:
+        categories:
+          academic: ಶೈಕ್ಷಣಿಕ
+          business: ವ್ಯಾಪಾರ
+          fashion: ಫ್ಯಾಷನ್
+          food_drink: ಆಹಾರ ಪಾನೀಯ
+          for_kids: ಮಕ್ಕಳಿಗಾಗಿ
+          general: ಜನರಲ್
+          health: ಆರೋಗ್ಯ
+          legal: ಕಾನೂನು
+          sport: ಕ್ರೀಡೆ
+          travel: ಪ್ರಯಾಣ
+        durations:
+          t0_600: "<10 ನಿಮಿಷಗಳು"
+          t1800_3600: 30-60 ನಿಮಿಷಗಳು
+          t3600_86400: 1+ ಗಂಟೆ
+          t600_1800: 10-30 ನಿಮಿಷಗಳು
+        focus_on:
+          conversation: ಸಂಭಾಷಣೆ
+          grammar: ವ್ಯಾಕರಣ
+          listening: ಕೇಳುವ
+          pronunciation: ಉಚ್ಚಾರಣೆ
+          reading: ಓದುವಿಕೆ
+          speaking: ಮಾತನಾಡುತ್ತಿದ್ದಾರೆ
+          writing: ಬರೆಯುವುದು
+        levels:
+          long:
+            advanced: ಮುಂದುವರಿದ ಹಂತ
+            elementary: ಪ್ರಾಥಮಿಕ ಹಂತ
+            intermediate: ಮಧ್ಯಂತರ ಮಟ್ಟ
+            no_knowledge: ಜ್ಞಾನವಿಲ್ಲ
+            pre_intermediate: ಪೂರ್ವ ಮಧ್ಯಂತರ ಮಟ್ಟ
+            upper_intermediate: ಮೇಲಿನ ಮಧ್ಯಂತರ ಮಟ್ಟ
+          short:
+            advanced: ಸುಧಾರಿತ
+            beginner: ಬಿಗಿನರ್
+            intermediate: ಮಧ್ಯಂತರ
+        sort_by:
+          most_rated: ಹೆಚ್ಚು ರೇಟ್ ಮಾಡಲಾಗಿದೆ
+          newest: ಹೊಸತು
+          popularity: ಜನಪ್ರಿಯತೆ
+      filters: ಫಿಲ್ಟರ್‌ಗಳು
+      focus_on: ಗಮನಹರಿಸಿ
+      focus_on_title: ನಾನು ಗಮನಹರಿಸಲು ಬಯಸುತ್ತೇನೆ
+      hide_lessons: ಪಾಠಗಳನ್ನು ಮರೆಮಾಡಿ
+      hours: ಗಂಟೆಗಳು
+      i_understand: ನನಗೆ ಅರ್ಥವಾಗಿದೆ
+      i_want_to_learn: ನಾನು ಕಲಿಯಲು ಬಯಸುತ್ತೇನೆ
+      in_language: "%{language} ನಲ್ಲಿ"
+      language: ಭಾಷೆ
+      learn_more: ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ
+      less_settings: ಕಡಿಮೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು
+      lessons: ಪಾಠಗಳು
+      lessons_available: "%{number} ಪಾಠಗಳು ಲಭ್ಯವಿದೆ"
+      lessons_catalog_page_subtitle: ಭಾಷಾ ನಾಯಕನಾಗು.
+      lessons_catalog_page_title: ಭಾಷಾ ಕೋರ್ಸ್‌ನೊಂದಿಗೆ ನಿಮ್ಮ ಪರಿಧಿಯನ್ನು ವಿಸ್ತರಿಸಿ
+      level: ಮಟ್ಟ
+      min: ಕನಿಷ್ಠ
+      more_settings: ಹೆಚ್ಚಿನ ಸೆಟ್ಟಿಂಗ್‌ಗಳು
+      navbar:
+        close: ಮೆನು ಮುಚ್ಚಿ
+        menu: ಮೆನು
+        select_language: ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ
+      need_to_buy_course: ನೀವು ಮೊದಲು ಕೋರ್ಸ್ ಅನ್ನು ಬುಕ್ ಮಾಡಬೇಕಾಗಿದೆ
+      no_description: ಯಾವುದೇ ವಿವರಣೆಯನ್ನು ಒದಗಿಸಿಲ್ಲ
+      no_results: ಕ್ಷಮಿಸಿ, ಇದಕ್ಕಾಗಿ ನಮಗೆ ಯಾವುದೇ ಹೊಂದಾಣಿಕೆ ಕಂಡುಬಂದಿಲ್ಲ
+      or: ಅಥವಾ
+      per_month: ಪ್ರತಿ ತಿಂಗಳು
+      plans: ಯೋಜನೆಗಳು
+      privacy_policy: ಗೌಪ್ಯತಾ ನೀತಿ
+      rating: ರೇಟಿಂಗ್
+      remove_all_filters: ಎಲ್ಲಾ ಫಿಲ್ಟರ್‌ಗಳನ್ನು ತೆಗೆದುಹಾಕಿ
+      reviews: ವಿಮರ್ಶೆಗಳು
+      save: ಉಳಿಸಿ
+      search: ಹುಡುಕಿ Kannada
+      select_dots: ಆಯ್ಕೆ ಮಾಡಿ...
+      select_languages: ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ
+      select_num_languages: "%{number} ಭಾಷೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+      short_levels:
+        a1: ಎ 1
+        a2: ಎ 2
+        b1: ಬಿ 1
+        b2: ಬಿ 2
+        c1: ಸಿ 1
+        c2: ಸಿ 2
+        zero_level: ಎ 0
+      show_all: ಎಲ್ಲ ತೋರಿಸು
+      show_all_lessons: ಎಲ್ಲಾ ಪಾಠಗಳನ್ನು ತೋರಿಸಿ
+      show_lessons: "%{number} ಪಾಠಗಳನ್ನು ತೋರಿಸಿ"
+      show_more: ಇನ್ನು ಹೆಚ್ಚು ತೋರಿಸು
+      sign_up_with_lingu_for: ಇದಕ್ಕಾಗಿ ಲಿಂಗು ನಾರ್ವೆಯೊಂದಿಗೆ ಸೈನ್ ಅಪ್ ಮಾಡಿ
+      skills: "%{count} ಕೌಶಲ್ಯಗಳು"
+      sort_by: ವಿಂಗಡಿಸು
+      start_typing_here: ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿ
+      teach: ಕಲಿಸಿ
+      terms_and_conditions: ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳು
+      time_range: ಸಮಯದ ಶ್ರೇಣಿ
+      try_adjusting_your_search: ನಿಮ್ಮ ಫಿಲ್ಟರ್‌ಗಳನ್ನು ಬದಲಾಯಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಹುಡುಕಾಟವನ್ನು
+        ಹೊಂದಿಸಲು ಪ್ರಯತ್ನಿಸಿ
+      try_this_course: ಈ ಕೋರ್ಸ್ ಅನ್ನು ಪ್ರಯತ್ನಿಸಿ
+      website_language: ವೆಬ್‌ಸೈಟ್ ಭಾಷೆ
+      words: ಪದಗಳು
+    games:
+      finished:
+        go_to_next_exercise: ಒಳ್ಳೆಯದು! ಮುಂದಿನ ವ್ಯಾಯಾಮಕ್ಕೆ ಹೋಗಿ
+      flashcard:
+        buttons:
+          finish: ಮುಕ್ತಾಯ
+          next: ಮುಂದೆ
+          previous: ಹಿಂದಿನದು
+        check_out_new_words: ಈ ಪಾಠದಲ್ಲಿ ನೀವು ಕಲಿಯುವ ಹೊಸ ಪದಗಳನ್ನು ಪರಿಶೀಲಿಸಿ
+        frequency_of_word_usage: "%{language} ನಲ್ಲಿ ಪದ ಬಳಕೆಯ ಆವರ್ತನ"
+        keep_practice_to_learn_all_words: "%{count} ಪದಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಕೆಲವು
+          ಆಟಗಳನ್ನು ಆಡೋಣ!"
+        word_frequency:
+          level1: ವಿರಳವಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ
+          level2: ವಿರಳವಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ
+          level3: ಪದ ಆವರ್ತನ - ಮಧ್ಯಮ
+          level4: ಪದ ಆವರ್ತನ - ಮಧ್ಯಮ
+          level5: ಸಾಮಾನ್ಯ
+          level6: ತುಂಬಾ ಸಾಮಾನ್ಯವಾಗಿದೆ
+      match_word:
+        click_and_move_each_word_to_counterpart: ಪ್ರತಿ ಪದವನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಅದರ
+          ಪ್ರತಿರೂಪಕ್ಕೆ ಸರಿಸಿ
+        start_heading: ಜೋಡಿಯನ್ನು ಮಾಡಲು ಪದಗಳನ್ನು ಹೊಂದಿಸಿ
+        time_is_up: ವೇಳೆಯಾಯಿತು!
+      skip_tutorial: ಬಿಟ್ಟುಬಿಡಿ
+      time_is_up: ವೇಳೆಯಾಯಿತು!
+      word_nodes:
+        match_letters_to_form_word: ಪದವನ್ನು ರೂಪಿಸಲು ಅಕ್ಷರಗಳನ್ನು ಹೊಂದಿಸಿ
+      word_waterfall:
+        do_not_hesitate: ವೇಗಗೊಳಿಸೋಣ!
+        go_to_next_exercise: ಮುಂದಿನ ವ್ಯಾಯಾಮಕ್ಕೆ ಹೋಗಿ
+        select_correct_translation: ಸರಿಯಾದ ಹೊಂದಾಣಿಕೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ
+        well_done: ಒಳ್ಳೆಯದು!
+    home_page:
+      hello: ಹಲೋ,
+      popular_lessons: ಜನಪ್ರಿಯ ಪಾಠಗಳು
+      show_more: ಇನ್ನು ಹೆಚ್ಚು ತೋರಿಸು
+      time: "%{count} ನಿಮಿಷ"
+      today_lesson: ಇಂದಿನ ನಿಮ್ಮ ಪಾಠ
+      user_name: "%{name}!"
+      words: "%{count} ಪದಗಳು"
+    idle_screen:
+      by_author: "%{authorName} ನಿಂದ"
+      continue_lesson: ಪಾಠ ಮುಂದುವರಿಸಿ
+      exit: ನಿರ್ಗಮಿಸಿ
+      idle_message: ನೀವು ಸ್ವಲ್ಪ ಸಮಯದವರೆಗೆ ನಿಷ್ಕ್ರಿಯರಾಗಿದ್ದೀರಿ ...
+    lesson_page:
+      back_to_course_page: ಕೋರ್ಸ್ ಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ
+      close: ಮುಚ್ಚಿ
+      continue_lesson: ಪಾಠ ಮುಂದುವರಿಸಿ
+      followed: ಅನುಸರಿಸಿದರು
+      hamburger_menu_btn: ಹ್ಯಾಂಬರ್ಗರ್ ಮೆನು
+      lesson_given: ಪಾಠಗಳು
+      not_started: ಪ್ರಾರಂಭಿಸಿಲ್ಲ
+      or: ಅಥವಾ
+      part_complete: "%{percent}% ಪೂರ್ಣಗೊಂಡಿದೆ"
+      restart_lesson: ಪುನರಾರಂಭದ
+      section_check: ಪರಿಶೀಲಿಸಿ
+      section_check_info: "%{count} ಪರೀಕ್ಷೆಗಳು"
+      section_learn: ಕಲಿ
+      section_learn_info: ವೀಕ್ಷಿಸಲು ಮತ್ತು ಓದಲು %{count} ನಿಮಿಷ
+      section_play: ಪ್ಲೇ ಮಾಡಿ
+      section_play_info: ಅಭ್ಯಾಸ ಮಾಡಲು %{count} ಪದಗಳು
+      start_lesson: ಪಾಠ ಪ್ರಾರಂಭಿಸಿ
+      step_progress: "%{percent}%"
+      subscribe: ಅನುಸರಿಸಿ
+      subscribed: ಅನುಸರಿಸಿದರು
+      subscribers: ಅನುಯಾಯಿಗಳು
+      time_min: "%{minutesNumber} ನಿಮಿಷ"
+      unsubscribe: ಅನುಸರಿಸಬೇಡಿ
+      webview_error_title: ಏನೋ ತಪ್ಪಾಗಿದೆ...
+      words_number: "%{wordsNumber} ಹೊಸ ಪದಗಳು"
+    lesson_task:
+      cancel_button: ರದ್ದುಮಾಡಿ
+      check:
+        navigation_next: ಮುಂದೆ
+        navigation_previous: ಹಿಂದಿನದು
+        navigation_skip: ಬಿಟ್ಟುಬಿಡಿ
+      controls_panel:
+        font_size_button: ಅಕ್ಷರ ಗಾತ್ರ
+        high_contrast_button:
+          origin: ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್
+          short: ಕಾಂಟ್ರಾಸ್ಟ್
+        hints_button: ಸುಳಿವುಗಳು
+        music_playback_button:
+          origin: ಸಂಗೀತ ಪ್ಲೇಬ್ಯಾಕ್
+          short: ಸಂಗೀತ
+        sound_effects_button:
+          origin: ಧ್ವನಿ ಪರಿಣಾಮಗಳು
+          short: ಧ್ವನಿ
+      exit_button: ನಿರ್ಗಮಿಸಿ
+      finish_button: ಮುಕ್ತಾಯ
+      finished:
+        back_to_learn: ಕಲಿಯಲು ಹಿಂತಿರುಗಿ
+        back_to_lesson_page: ಪಾಠ ಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ
+        back_to_results_page: ಫಲಿತಾಂಶ ಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ
+        bad_result_message: ಹಾಂ ... ಪಾಠವನ್ನು ಮತ್ತೊಮ್ಮೆ ತೆಗೆದುಕೊಳ್ಳಲು ಪ್ರಯತ್ನಿಸಿ
+        close_lesson: ಪಾಠವನ್ನು ಮುಚ್ಚಿ
+        correct_answers_list: ಸರಿಯಾದ ಉತ್ತರಗಳ ಪಟ್ಟಿ
+        good_result_message: ನೀವು ಪ್ರಯತ್ನ ಮಾಡಿದ್ದೀರಿ ಎಂದು ನಾನು ನೋಡಬಹುದು!
+        great_result_message: ಒಳ್ಳೆಯದು! ಇವು ಉತ್ತಮ ಫಲಿತಾಂಶಗಳು!
+        next_course_lesson: ಕೋರ್ಸ್‌ನಲ್ಲಿ ಮುಂದಿನ ಪಾಠಕ್ಕೆ ಹೋಗಿ
+        no_results: ನೀವು ಇನ್ನೂ ಯಾವುದೇ ಪರೀಕ್ಷಾ ಫಲಿತಾಂಶಗಳನ್ನು ಹೊಂದಿಲ್ಲ
+        no_results_text: >-
+          ದಯವಿಟ್ಟು, ಪಾಠವನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ ಮತ್ತು ಫಲಿತಾಂಶಗಳನ್ನು ಪಡೆಯಲು ಪರೀಕ್ಷೆಯಲ್ಲಿ ಉತ್ತೀರ್ಣರಾಗಿ
+        see_correct_answers_list: ಸರಿಯಾದ ಉತ್ತರಗಳ ಪಟ್ಟಿಯನ್ನು ನೋಡಿ
+        train_more: ಹೆಚ್ಚು ಅಭ್ಯಾಸ ಮಾಡಿ ಮತ್ತು ಮುಂದಿನ ಬಾರಿ ನೀವು ಉತ್ತಮ ಫಲಿತಾಂಶಗಳನ್ನು
+          ಸಾಧಿಸುವಿರಿ!
+        you_finished_lesson: ಅದ್ಭುತವಾಗಿದೆ! ನೀವು ಪಾಠ ಮುಗಿಸಿದ್ದೀರಿ
+      go_back: ಹಿಂದೆ ಹೋಗು
+      next_button: ಮುಂದೆ
+      not_available_task: ಈ ಕಾರ್ಯ ಇನ್ನೂ ಲಭ್ಯವಿಲ್ಲ
+      start_button: ಪ್ರಾರಂಭಿಸಿ
+      tasks:
+        check:
+          assignment:
+            accept: ಒಪ್ಪಿಕೊಳ್ಳಿ
+            author_will_check_your_answer: >-
+              %{author} ನಿಮ್ಮ ಉತ್ತರವನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ ಮತ್ತು ಸಾಮಾನ್ಯವಾಗಿ 1-2 ದಿನಗಳಲ್ಲಿ
+              ಪ್ರತಿಕ್ರಿಯೆ ನೀಡುತ್ತದೆ
+            continue_writing: ಬರೆಯುವುದನ್ನು ಮುಂದುವರಿಸಿ
+            copy: ನಕಲಿಸಿ
+            delete: ಅಳಿಸಿ
+            delete_record: ದಾಖಲೆಯನ್ನು ಅಳಿಸಿ
+            edit: ತಿದ್ದು
+            essay_does_not_have_enough_words: >-
+              ನಿಮ್ಮ ಉತ್ತರವು ಕನಿಷ್ಠ %{minWordsNumber} ಪದಗಳನ್ನು ಹೊಂದಿರಬೇಕು. ನಿಮ್ಮ ಉತ್ತರವು
+              ಪ್ರಸ್ತುತ %{currentWordsNumber} ಪದಗಳು.
+            followers_count: "%{followersCount} ಅನುಯಾಯಿಗಳು"
+            lessons_count: "%{lessonsCount} ಪಾಠಗಳು"
+            minimal_recording_time: ಕನಿಷ್ಠ ರೆಕಾರ್ಡಿಂಗ್ ಸಮಯ - %{minimalRecordingTime}
+            minimum_characters_amount: ಕನಿಷ್ಠ ಅಕ್ಷರಗಳು - %{minimumCharactersAmount}
+            minimum_words_amount: ಕನಿಷ್ಠ ಪದಗಳು - %{minimumAmount}
+            record_again: ಮತ್ತೆ ರೆಕಾರ್ಡ್ ಮಾಡಿ
+            record_voice: ಧ್ವನಿ ಧ್ವನಿ
+            send_anyway: ಹೇಗಾದರೂ ಕಳುಹಿಸಲು
+            send_to_review: ವಿಮರ್ಶೆಗೆ ಕಳುಹಿಸಿ
+            skip: ಬಿಟ್ಟುಬಿಡಿ
+            too_short_answer: ತುಂಬಾ ಕಡಿಮೆ ಉತ್ತರ
+            type_your_answer: ನಿಮ್ಮ ಉತ್ತರವನ್ನು ಟೈಪ್ ಮಾಡಿ
+            unknown_task_type: ಅಜ್ಞಾತ ಕಾರ್ಯ ಪ್ರಕಾರ
+            upgrade_licence: ಪರವಾನಗಿ ನವೀಕರಿಸಿ
+            upgrade_your_plan: ಶಿಕ್ಷಕರ ವಿಮರ್ಶೆಗಳೊಂದಿಗೆ ಕಾರ್ಯಯೋಜನೆಗಳನ್ನು ಪ್ರಯತ್ನಿಸಲು
+              ನಿಮ್ಮ ಯೋಜನೆಯನ್ನು ನವೀಕರಿಸಿ
+            upload_files: ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ
+            write_essay: ಪ್ರಬಂಧ ಬರೆಯಿರಿ
+            you_have_used_amount_of_assignments: ನೀವು %{amountOfAssignments} ನಿಯೋಜನೆ
+              ಸಾಲಗಳನ್ನು ಬಳಸಿದ್ದೀರಿ
+          fill_in_blanks:
+            sentence_gap: ವಾಕ್ಯದ ಅಂತರ
+          fill_in_table:
+            column_answer_placeholder: ಉತ್ತರ
+            column_question_placeholder: ಪ್ರಶ್ನೆ
+            example: ಉದಾಹರಣೆ
+          true_false:
+            'false': ತಪ್ಪು
+            'true': ನಿಜ
+        learn:
+          translatable_text:
+            show_original: ಮೂಲವನ್ನು ತೋರಿಸಿ
+            translate_into: Google ನೊಂದಿಗೆ %{languageName} ಗೆ ಅನುವಾದಿಸಿ
+            translate_into_your_lang: Google ನೊಂದಿಗೆ ನಿಮ್ಮ ಭಾಷೆಗೆ ಅನುವಾದಿಸಿ
+        play:
+          arrange_words:
+            start_screen:
+              heading: ಕೊಟ್ಟಿರುವ ಪದಗಳಿಂದ ಒಂದು ವಾಕ್ಯವನ್ನು ಮಾಡಿ
+          audition:
+            start_screen:
+              heading: ಆಡಿಯೊವನ್ನು ಆಲಿಸಿ ಮತ್ತು ನೀವು ಈಗ ಕೇಳಿದ ಪದವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ
+          dictation:
+            get_help: ಸಹಾಯ ಪಡೆ
+            i_do_not_know: ನನಗೆ ಗೊತ್ತಿಲ್ಲ
+            input_placeholder: ನೀವು ಕೇಳಿದ್ದನ್ನು ಇಲ್ಲಿ ನಮೂದಿಸಿ
+            start_screen:
+              heading: ನೀವು ಕೇಳುವದನ್ನು ಕೇಳಿ ಮತ್ತು ಬರೆಯಿರಿ
+          fill_gap:
+            start_screen:
+              heading: ಪದ ಮತ್ತು ಅದರ ಅರ್ಥವನ್ನು ಹೊಂದಿಸಿ
+          finish_screen:
+            go_to_next_exercise: ಒಳ್ಳೆಯದು! ಮುಂದಿನ ವ್ಯಾಯಾಮಕ್ಕೆ ಹೋಗಿ
+          image_hotspot:
+            start_screen:
+              heading: ಚಿತ್ರದಲ್ಲಿನ ವಸ್ತುಗಳನ್ನು ಸರಿಯಾಗಿ ಹೆಸರಿಸಿ
+          image_object:
+            start_screen:
+              heading: ಮುಂದಿನ ಚಿತ್ರದಿಂದ ಸರಿಯಾದ ವಸ್ತುವನ್ನು ಆರಿಸಿ
+          inline_dropdown:
+            start_screen:
+              heading: ವಾಕ್ಯಕ್ಕೆ ಹೊಂದಿಕೆಯಾಗುವ ಪದಗಳನ್ನು ಆರಿಸಿ
+          mark_word:
+            start_screen:
+              heading: ಪಠ್ಯವನ್ನು ಓದಿ ಮತ್ತು ಚಿತ್ರಕ್ಕೆ ಹೊಂದಿಕೆಯಾಗುವ ಪದವನ್ನು ಆರಿಸಿ
+          minimal_pairs:
+            start_screen:
+              heading: ವೀಡಿಯೊ ನೋಡಿ ಮತ್ತು ಸರಿಯಾದ ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿ
+    locale:
+      currency_switcher_title: ಕರೆನ್ಸಿ ಸ್ವಿಚರ್
+      lang_switcher_title: ಭಾಷಾ ಸ್ವಿಚರ್
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ಡಾಯ್ಚ್
+        el: Greek
+        en: ಆಂಗ್ಲ
+        eo: Esperanto
+        es: ಎಸ್ಪಾನೋಲ್
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ಫ್ರಾಂಕೈಸ್
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ಇಟಾಲಿಯಾನೊ
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: ಲಿಟುವಿಕ್ ಕಲ್ಬಾ
+        lv: ಲಾಟ್ವಿಯು ವಲೋಡಾ
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: ನಾರ್ಸ್ಕ್
+        ne: Nepali
+        nl: ನೆಡರ್ಲ್ಯಾಂಡ್ಸ್
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: ಪೋಲ್ಸ್ಕಿ
+        ps: Pashto
+        pt: ಪೋರ್ಚುಗೀಸ್
+        ro: ಲಿಂಬಾ ರೊಮಾನಾ
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: ಅಫ್ ಸೂಮಾಲಿ
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: ಕಿಸ್ವಾಹಿಲಿ
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: ಟರ್ಕೀ
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ಆಡಿಯೋ ಲೋಡ್ ಆಗುತ್ತಿದೆ
+        aria_pause_button: ವಿರಾಮ
+        aria_play_button: ಪ್ಲೇ ಮಾಡಿ
+        aria_reload_button: ಮರುಲೋಡ್ ಮಾಡಿ
+        aria_stop_button: ನಿಲ್ಲಿಸು
+        reload_message: ಆಡಿಯೊ ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ. ಮರುಲೋಡ್ ಮಾಡಲು ದಯವಿಟ್ಟು ಬಟನ್ ಕ್ಲಿಕ್
+          ಮಾಡಿ.
+    mobile_modal:
+      apply: ಅನ್ವಯಿಸು
+      cancel: ರದ್ದುಮಾಡಿ
+      clear: ಸ್ಪಷ್ಟ
+      save: ಉಳಿಸಿ
+    page404:
+      goToStartLessonPage: ಪ್ರಾರಂಭ ಪಾಠ ಪುಟಕ್ಕೆ ಹೋಗಿ
+      ooops: ಓಹ್ ...
+      sorry_message: ಕ್ಷಮಿಸಿ, ಟಾರ್‌ಗೆ ಈ ಪುಟ ಸಿಗಲಿಲ್ಲ
+    profile:
+      navigation:
+        log_out: ಲಾಗ್ ಔಟ್
+        my_profile: ಸ್ವ ಭೂಮಿಕೆ
+        settings: ಸಂಯೋಜನೆಗಳು
+      onboarding:
+        choose_native_language: ನಿಮ್ಮ ಸ್ಥಳೀಯ ಭಾಷೆ ಅಥವಾ ನೀವು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವ ಭಾಷೆಯನ್ನು
+          ಆರಿಸಿ
+        do_you_understand_english: ನಿನಗೆ ಇಂಗ್ಲಿಷ್ ಅರ್ಥವಾಗುತ್ತಾ?
+        hello: ಹಲೋ
+        language_levels:
+          a1: ಪ್ರಾಥಮಿಕ ಹಂತ
+          a2: ಪೂರ್ವ-ಮಧ್ಯಂತರ ಮಟ್ಟ
+          b1: ಮಧ್ಯಂತರ ಮಟ್ಟ
+          b2: ಮೇಲಿನ ಮಧ್ಯಂತರ ಮಟ್ಟ
+          c1: ಮುಂದುವರಿದ ಹಂತ
+          no_knowledge: ಜ್ಞಾನವಿಲ್ಲ
+        language_not_supported:
+          note: ಭಾಷೆ ಲಭ್ಯವಾದ ತಕ್ಷಣ ನಾವು ನಿಮಗೆ ತಿಳಿಸುತ್ತೇವೆ
+          title: ಕ್ಷಮಿಸಿ, ಆದರೆ ನಾವು ಈ ಭಾಷೆಯನ್ನು ಇನ್ನೂ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ
+          try_another_language: ಇನ್ನೊಂದು ಭಾಷೆಯನ್ನು ಪ್ರಯತ್ನಿಸಿ
+        'no': ಇಲ್ಲ
+        search_placeholder: ಹುಡುಕಿ Kannada...
+        show_more_languages: ಇತರ ಭಾಷೆಗಳು
+        target_language_question: ನೀವು ಯಾವ ಭಾಷೆಯನ್ನು ಕಲಿಯಲು ಬಯಸುತ್ತೀರಿ?
+        what_is_language_level: ನಿಮ್ಮ %{languageName} ಮಟ್ಟವನ್ನು ನೀವು ಹೇಗೆ ರೇಟ್ ಮಾಡುತ್ತೀರಿ?
+        'yes': ಹೌದು
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: ಲಿಂಗುವಿನ ಗೌಪ್ಯತೆ ನೀತಿ
+        support: ಬೆಂಬಲ
+      logout: ಲಾಗ್ ಔಟ್
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: ನೀವು ಅನುಸರಿಸುವ ಶಿಕ್ಷಕರು ಮತ್ತು ಶಾಲೆಗಳಿಂದ ನವೀಕರಣಗಳನ್ನು ಸ್ವೀಕರಿಸಿ
+              sections:
+                app_notifications: ಆಪ್ ಸೂಚನೆಗಳು
+                email: ಇ-ಮೇಲ್
+              title: ಕಲಿಕೆ ನೆರವು
+            marketing:
+              description: ಎಲ್ಲಾ ಪ್ರಚಾರಗಳು, ನವೀಕರಣಗಳು ಮತ್ತು ಲಿಂಗುವಿನಿಂದ ಸ್ಫೂರ್ತಿ ಬಗ್ಗೆ
+                ಮಾಹಿತಿ ನೀಡಿ
+              sections:
+                browser_notifications: ಬ್ರೌಸರ್ ಅಧಿಸೂಚನೆಗಳು
+                email: ಇ-ಮೇಲ್
+              title: ಮಾರ್ಕೆಟಿಂಗ್
+          title: ಸಂಪರ್ಕ ಪ್ರಾಶಸ್ತ್ಯಗಳು
+        personal_information:
+          delete_photo: ಫೋಟೋ ಅಳಿಸಿ
+          email: ಇಮೇಲ್
+          first_name: ಮೊದಲ ಹೆಸರು
+          last_name: ಕೊನೆಯ ಹೆಸರು
+          social_accounts:
+            connected: ಸಂಪರ್ಕಿಸಲಾಗಿದೆ
+            facebook: ಫೇಸ್ಬುಕ್
+            google: ಗೂಗಲ್
+            microsoft: ಮೈಕ್ರೋಸಾಫ್ಟ್
+            not_connected: ಸಂಪರ್ಕವನ್ನು ಹೊಂದಿಲ್ಲ
+            title: ಸಾಮಾಜಿಕ ಖಾತೆಗಳು
+          title: ವಯಕ್ತಿಕ ಮಾಹಿತಿ
+          update_photo: ಫೋಟೋ ನವೀಕರಿಸಿ
+        school:
+          active_licence: ಸಕ್ರಿಯ ಪರವಾನಗಿ
+          active_status: ಸಕ್ರಿಯ
+          delete_profile: ನನ್ನ ಪ್ರೊಫೈಲ್ ಅಳಿಸಿ
+          delete_profile_modal:
+            body: |-
+              ನಿಮ್ಮ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ನೀವು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಿಹಾಕುತ್ತೀರಿ. ರದ್ದುಗೊಳಿಸು ಬಟನ್ ಇಲ್ಲ, ಮತ್ತು ಅದನ್ನು ನಿಮಗಾಗಿ ಮರಳಿ ಪಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ.
+              ನಿಮ್ಮ ಭಾಷಾ ಪ್ರೊಫೈಲ್ ಮತ್ತು ನಿಮ್ಮ ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?
+            cancel: ರದ್ದುಮಾಡಿ
+            confirm: ಹೌದು, ಅದನ್ನು ಅಳಿಸಿ
+            i_understand_the_consequences: ಪರಿಣಾಮಗಳನ್ನು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ
+            title: ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಅಳಿಸುವುದೇ?
+          expired: ಅವಧಿ ಮುಗಿದ %{expire_date}
+          expires: "%{expire_date} ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ"
+          inactive_status: ನಿಷ್ಕ್ರಿಯ
+          revoke_access: ಓದುವ ಪ್ರವೇಶವನ್ನು ಹಿಂತೆಗೆದುಕೊಳ್ಳಿ
+          sections:
+            contact_school: ಶಾಲೆಯನ್ನು ಸಂಪರ್ಕಿಸಿ
+            export_my_data: ನನ್ನ ಡೇಟಾವನ್ನು ರಫ್ತು ಮಾಡಿ
+            read_school_privacy_policy: ಶಾಲೆಯ ಗೌಪ್ಯತೆ ನೀತಿಯನ್ನು ಓದಿ
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: ಸಂಗೀತ ಪ್ಲೇಬ್ಯಾಕ್
+              sound_effects: ಧ್ವನಿ ಪರಿಣಾಮಗಳು
+              title: ಧ್ವನಿ
+            visual:
+              dark_theme: ಡಾರ್ಕ್ ಥೀಮ್
+              font_size:
+                test_text: ಬೇಲಿಯ ಇನ್ನೊಂದು ಬದಿಯಲ್ಲಿ ಹುಲ್ಲು ಯಾವಾಗಲೂ ಹಸಿರಾಗಿರುತ್ತದೆ
+                title: ಅಕ್ಷರ ಗಾತ್ರ
+              high_contrast: ಹೆಚ್ಚಿನ ಕಾಂಟ್ರಾಸ್ಟ್
+              hints: ಸುಳಿವುಗಳು
+              title: ವಿಷುಯಲ್
+          title: ಧ್ವನಿ ಮತ್ತು ವಿಷುಯಲ್
+        training_settings:
+          sections:
+            i_understand: ನನಗೆ ಅರ್ಥವಾಗಿದೆ
+            i_want_to_learn: ನಾನು ಕಲಿಯಲು ಬಯಸುತ್ತೇನೆ
+            target_language_level: ಇಂಗ್ಲಿಷ್ ಮಟ್ಟ
+          title: ತರಬೇತಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು
+      settings_title: ಸಂಯೋಜನೆಗಳು
+    teacher_card:
+      followers_count:
+        one: 1 ಅನುಯಾಯಿ
+        other: "%{count} ಅನುಯಾಯಿಗಳು"
+      lessons_count:
+        one: 1 ಪಾಠ
+        other: "%{count} ಪಾಠಗಳು"

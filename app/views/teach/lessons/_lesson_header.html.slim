@@ -1,0 +1,28 @@
+.mt-3
+  h1.mb-3= lesson.title
+  .d-flex.justify-content-between
+    div
+      = lesson_level_tag(lesson)
+      = lesson_status_tag(lesson)
+    = render 'teach/lessons/color_selector', lesson: lesson
+    .dropdown.text-sans-serif.d-inline-block.mb-2
+      .btn-group
+        = link_to t('edit'), edit_teach_lesson_path(lesson), class: 'btn btn-sm btn-falcon-default', remote: true
+        button#lesson-actions.btn.btn-falcon-default.btn-sm.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
+          = t('.more')
+        .dropdown-menu.dropdown-menu-right.py-0 aria-labelledby="lesson-actions"
+          = link_to t('preview'), teach_lesson_reviews_path(lesson), class: 'dropdown-item'
+          = link_to t('teach.lessons.show.split'), new_teach_lesson_split_path(lesson), class: 'dropdown-item'
+          = link_to t('teach.lessons.show.move_tasks'), new_teach_task_move_path(lesson), class: 'dropdown-item'
+          - if lesson.course
+            hr
+            = link_to lesson.course.title, teach_course_path(lesson.course), class: 'dropdown-item'
+
+  .btn-group.my-5.w-100
+    = link_to t('teach.lessons.storyline.lesson_content'), teach_lesson_path(lesson), class: "btn btn-sm #{lesson.tasks.any? ? 'btn-success' : 'btn-light'}"
+    = link_to t('.glossary'), teach_lesson_phrases_path(lesson), class: "btn btn-sm #{lesson.lesson_phrases.any? ? 'btn-success' : 'btn-light'}"
+    = link_to t('teach.lessons.review.publishing_status'), review_teach_lesson_path(lesson), class: "btn btn-sm #{lesson.published? ? 'btn-success' : 'btn-light'}"
+    - if lesson.published?
+      = link_to t('.live_page'), public_url(lesson), target: '_blank', class: "btn btn-sm btn-success"
+    - else
+      = link_to t('.live_page'), "#", class: "btn btn-sm btn-light"

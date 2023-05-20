@@ -1,0 +1,44 @@
+- if errors.blank?
+  .modal-dialog.modal-input-students role="document"
+    .modal-content
+      .modal-header.d-flex
+        h5.modal-title.font-weight-bold = t('school.teachers.invite.import_users')
+        button.close type="button" data-dismiss="modal" aria-label="Close"
+          span.font-weight-light aria-hidden="true" == ("&times")
+      .modal-body
+        = form_tag create_batch_school_team_users_path, class: 'import-users-form'
+        .import-csv-panel.d-flex
+          = image_tag('icons/import-csv-on.svg', class: 'mr-3', width: 50, height: 40)
+          .card-title.flex-fill.d-flex.flex-column
+            small.m-0= file_name
+            span= t('school.team_students.analyze_imported_file.items_count', count: users.count)
+          = link_to import_team_users_school_team_users_path, remote: true do
+            = image_tag('icons/cancel.svg', class: '', width: 28, height: 28)
+        .students-list-panel
+          - users.each_with_index do |user, index|
+            = hidden_field_tag 'users[][fname]', user.fname
+            = hidden_field_tag 'users[][lname]', user.lname
+            = hidden_field_tag 'users[][email]', user.email
+            = hidden_field_tag 'users[][mobile]', user.mobile
+            = hidden_field_tag 'users[][language_data]', user.language_data
+            - if user.email_valid
+              .student-panel.color-success.d-flex
+                b.w-auto = user.full_name
+                .text-email.flex-fill.ml-2 = user.email
+                = hidden_field_tag 'users[][valid]', true
+                = image_tag('icons/success.svg', class: '', width: 20, height: 20)
+            - else
+              .student-panel.color-fail.d-flex
+                b.w-auto = user.full_name
+                .text-email.flex-fill.ml-2 = user.email
+                = hidden_field_tag 'users[][valid]', false
+                .text-status
+                  span.pr-2= t('school.team_students.import_students.not_recognize')
+                  span.badge.badge-pill.badge-danger
+                    i.fas.fa-exclamation-circle.mr-1
+                    = t('school.team_students.import_students.failed')
+        .modal-action.mt-3
+          button.btn.btn.btn-primary.btn-lg.float-right.import-action-btn
+            = t('school.teachers.import.import_count_users', count: users.count)
+- else
+  = render partial: 'school/team_users/import_team_users_form', locals: { errors: errors }

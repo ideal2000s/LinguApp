@@ -1,0 +1,17 @@
+nav.navbar.navbar-vertical.navbar-expand-xl.navbar-light.navbar-glass.perfect-scrollbar.scrollbar
+  = link_to admin_dashboard_index_path, class: 'navbar-brand text-left' do
+    .d-flex= image_tag('lingu-logo.svg', class: 'mr-2 float-left', width: 100, height: 56)
+
+  #navbarVerticalCollapse.collapse.navbar-collapse.perfect-scrollbar.scrollbar
+    ul.navbar-nav.flex-column
+      li.nav-item.mt-3
+        .d-flex.align-items-center
+          - if content_for(:back)
+            = yield(:back)
+          - else
+            = link_to teach_lesson_path(lesson), class: 'nav-link' do
+              i.fas.fa-chevron-left.fa-fw
+              = t('.back_to_lesson')
+
+    - if content_for?(:instructions)
+      = yield(:instructions)

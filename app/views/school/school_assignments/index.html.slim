@@ -1,0 +1,71 @@
+- set_page_title t('school.assignments.school_assignments')
+.school-assignments-container.school-info-container
+  .school-assignments-header.mb-4.d-flex.align-items-center.justify-content-between
+    = link_to school_documents_path, class: 'd-inline-flex align-items-center' do
+      = image_tag('icons/arrow_left.svg', class: 'mr-3')
+      h1.mb-0
+        = t('school.assignments.school_assignments')
+    = button_to new_school_assignment_path, remote: true, method: :get, class: 'btn btn-primary rounded-capsule', id: 'new_assignment_btn', data: { toggle: 'modal', target: '#assignment-modal' }
+      i.fa.fa-plus.mr-1
+      span= t('school.school_assignments.create_assignment')
+  = search_form_for @search, url: school_assignments_path, class: 'school-assignment-search-form' do |f|
+    .school-assignments-filter.d-flex.justify-content-between.align-items-center
+      div
+        .btn-group.custom-dropdown.language-by-filter
+          = f.hidden_field :language_include, class: 'filter-values'
+          button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+            span.mr-2= t('shared.language')
+            i.fa.fa-angle-down
+          .dropdown-menu.dropdown-menu-left.mt-1.p-3
+            .language-container.overflow-auto
+              - Language.active.each do |language|
+                .custom-control.custom-checkbox.mb-3
+                  input.custom-control-input.language-select type='checkbox' id="#{language.code}_check" data-filter-val="#{language.id}"
+                  label.custom-control-label.d-flex.align-items-center for="#{language.code}_check"
+                    = image_tag("flags/#{language_to_flag_code(language.code)}.svg", class: 'mx-2')
+                    span= language.system_name
+            hr
+            .d-flex.justify-content-between
+              button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+                = t('shared.clear')
+              button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+                = t('save')
+        .btn-group.custom-dropdown.type-by-filter.ml-2
+          = f.hidden_field :types_include, class: 'filter-values'
+          button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+            span.mr-2= t('type')
+            i.fa.fa-angle-down
+          .dropdown-menu.dropdown-menu-left.mt-1.p-3
+            .types-container
+              - Assignment.contexts.keys.each do |val|
+                .custom-control.custom-checkbox.mb-3
+                  input.custom-control-input.status-select type='checkbox' id="#{val}_check" data-filter-val="#{val}"
+                  label.custom-control-label.d-flex.align-items-center for="#{val}_check"
+                    span.ml-2= t(val, scope: 'school.assignments.types')
+            hr
+            .d-flex.justify-content-between
+              button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+                = t('shared.clear')
+              button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+                = t('save')
+      .school-info-sort
+        .dropdown-toggle.cursor-pointer data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+          span.mr-2.selected-sort-item = t('school.teachers.list.by_last_added')
+          i.fa.fa-angle-down
+        .dropdown-menu.dropdown-menu-right.mt-1.p-0
+          .custom-filter-item.px-3.pb-2.pt-3.filter-item-active data-filter-by='created_at desc'
+            button.d-flex.justify-content-between.align-items-center.border-0.w-100
+              = sort_link(@search, 'created_at desc', t('school.teachers.list.by_last_added'))
+              i.fa.fa-check.active-check.mr-2.color-transparent
+          .custom-filter-item.px-3 data-filter-by='name asc'
+            button.d-flex.justify-content-between.align-items-center.border-0.w-100
+              = sort_link(@search, 'name asc', t('school.teachers.list.by_name_az'))
+              i.fa.fa-check.active-check.mr-2.color-transparent
+          .custom-filter-item.px-3.pt-2.pb-3 data-filter-by='name desc'
+            button.d-flex.justify-content-between.align-items-center.border-0.w-100
+              = sort_link(@search, 'name desc', t('school.teachers.list.by_name_za'))
+              i.fa.fa-check.active-check.mr-2.color-transparent
+  = render 'assignments_list', assignments: assignments
+.modal.fade id='assignment-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content.p-4

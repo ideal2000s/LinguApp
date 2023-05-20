@@ -1,0 +1,620 @@
+---
+ceb:
+  course_mailer:
+    course_assigned_notification:
+      button: Sugdi ang kurso
+      click_start_lesson: Pag-klik sa 'Pagsugod sa leksyon'
+      follow_course_link: Pag-klik sa buton aron maablihan ang kurso
+      footer_text: Pagbalik sa Lingu aron mahibal-an ang bag-ong adlaw-adlaw!
+      get_started_line: 'Ania kung giunsa ka magsugod:'
+      notification_link: Mga setting sa pahibalo
+      open_lesson: Ablihi ang una nga leksyon
+      or_paste_this_link: o i-paste kini nga link sa imong browser
+      sign_in_with_email: Pag-log in gamit ang imong email address (%{email})
+      support_link: Pagsuporta
+      title: Pagsugod sa %{course}
+    new_document_comment:
+      author_text: Ang %{author} nagbilin usa ka pagsusi sa imong asaynment
+      button_text: Tanawa
+      button_url_helper: 'o i-paste kini nga link sa imong browser:'
+      footer_text: Adunay daghan pa nga mahibal-an ...
+      notification_link: Mga setting sa pahibalo
+      subject_line: Bag-ong komentaryo sa buluhaton
+      support_link: Pagsuporta
+    otp:
+      ignore_msg: Kung wala nimo kini gihangyo, ibaliwala ra ang email.
+      subject_line: Ang imong talagsaon nga code alang sa Lingu
+      unique_code_for_lingu: Niini ang imong talagsaon nga code alang sa Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Adunay na usa ka account?
+      back: Balik
+      back_to_sign_in: Balik sa Pag-sign in
+      check_your_email_for_a_code: Susihon ang imong email alang sa imong code
+      continue: Padayon
+      continue_with_email: Padayon sa email
+      continue_with_provider: Padayon sa %{provider}
+      did_not_receive_a_code: Wala makadawat usa ka code?
+      email_address: Email address
+      first_name: Panguna nga ngalan
+      get_unique_code: Pagkuha usa ka talagsaon nga code sa pag-login
+      join_lingu: Apil sa Lingu
+      last_name: Apelyido
+      more_login_options: Daghang kapilian sa pag-login
+      no_account_question: Wala kay account?
+      or: o
+      resend_code: Igpadala usab ang code
+      sign_in: Pag-sign in
+      sign_up: Pag-sign up
+      want_to_receive_marketing_messages: Gusto nako makadawat mga mensahe sa pagpamaligya
+        gikan sa Lingu
+      we_ve_sent_a_code: >-
+        Nagpadala kami usa ka 6-digit nga code sa <strong> {{email}} </strong>. Ang
+        code mapupos sa 15 minuto, busa palihug isulud kini dayon.
+    cookie_agreement:
+      agree: Pagsugot
+      condition: >-
+        Gigamit namon ang cookies aron masusi ang kahimoan sa site ug maghatud sa
+        kaugalingon nga sulud. Pinaagi sa pag-klik sa "Agree", uyon ka sa among mga
+        kondisyon.
+    course:
+      accredited_course_provider: Giila nga tagahatag sa kurso
+      apply: Pag-apply
+      apply_filters: Ibutang ang mga filter
+      by: Pinaagi sa
+      cancel: Kanselahon
+      categories: Mga kategorya sa %{count}
+      category: Kategoryang
+      clear: Tin-aw
+      clear_filters: Tin-aw nga mga pagsala
+      contact_us: Kontaka kami
+      could_not_find_match_for: Pasensya, wala kami makit-an nga kaparis
+      course_language: Sinultian sa kurso
+      duration: Kadugayon
+      filter_settings:
+        categories:
+          academic: Academic
+          business: Negosyo
+          fashion: Fashion
+          food_drink: Pagkaon ug ilimnon
+          for_kids: Alang sa mga bata
+          general: Kinatibuk-an
+          health: Panglawas
+          legal: Ligal
+          sport: Sport
+          travel: Pagbiyahe
+        durations:
+          t0_600: "<10 minuto"
+          t1800_3600: 30-60 minuto
+          t3600_86400: 1+ ka oras
+          t600_1800: 10-30 minuto
+        focus_on:
+          conversation: Pag-istoryahanay
+          grammar: Gramatika
+          listening: Pagpamati
+          pronunciation: Paglitok
+          reading: Pagbasa
+          speaking: Nagsulti
+          writing: Pagsulat
+        levels:
+          long:
+            advanced: Advanced nga lebel
+            elementary: Elementary nga lebel
+            intermediate: Tunga nga lebel
+            no_knowledge: Wala kahibalo
+            pre_intermediate: Pre level sa lebel
+            upper_intermediate: Taas nga lebel sa tungatunga
+          short:
+            advanced: Advanced
+            beginner: Sinugdanan
+            intermediate: Tunga-tunga
+        sort_by:
+          most_rated: Labing gimarkahan
+          newest: Bag-o
+          popularity: Pagkapopular
+      filters: Mga filter
+      focus_on: Pag-focus sa
+      focus_on_title: Gusto nako mag focus
+      hide_lessons: Itago ang mga leksyon
+      hours: Mga oras
+      i_understand: nakasabot ko
+      i_want_to_learn: Gusto nako mahibal-an
+      in_language: sa %{language}
+      language: Sinultian
+      learn_more: Pagkat-on pa
+      less_settings: Dili kaayo setting
+      lessons: Mga Leksyon
+      lessons_available: magamit ang mga leksyon nga %{number}
+      lessons_catalog_page_subtitle: Nahimong bayani sa sinultian.
+      lessons_catalog_page_title: Palapdon ang imong mga pangpang sa usa ka kurso
+        sa sinultian
+      level: Lebel
+      min: Min
+      more_settings: Daghang mga setting
+      navbar:
+        close: Pagsira menu
+        menu: Menu
+        select_language: Pagpili sinultian
+      need_to_buy_course: Kinahanglan nimo nga mag-book una usa ka kurso
+      no_description: Wala gihatag nga paghulagway
+      no_results: Pasensya, wala kami makit-an nga kaparis
+      or: o
+      per_month: matag bulan
+      plans: Mga Plano
+      privacy_policy: Patakaran sa pagkapribado
+      rating: Rating
+      remove_all_filters: Kuhaa ang tanan nga mga pagsala
+      reviews: Mga review
+      save: Pagtipig
+      search: Pagpangita
+      select_dots: Pilia ...
+      select_languages: Pagpili langauges
+      select_num_languages: Pagpili mga sinultian nga %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Ipakita tanan
+      show_all_lessons: Ipakita ang tanan nga mga leksyon
+      show_lessons: Ipakita ang mga leksyon sa %{number}
+      show_more: Ipakita pa
+      sign_up_with_lingu_for: Pag-sign up uban sa Lingu Norway alang sa
+      skills: "%{count} kahanas"
+      sort_by: Paghan-ay sa
+      start_typing_here: Sugdi ang pag-type dinhi
+      teach: Pagtudlo
+      terms_and_conditions: Mga Termino ug Kondisyon
+      time_range: Sakup sa oras
+      try_adjusting_your_search: Sulayi ang pag-ayo sa imong pagpangita pinaagi sa
+        pagbag-o sa imong mga filter
+      try_this_course: Sulayi kini nga kurso
+      website_language: Sinultian sa website
+      words: Mga pulong
+    games:
+      finished:
+        go_to_next_exercise: Maayong pagkabuhat! Pag-adto sa sunod nga ehersisyo
+      flashcard:
+        buttons:
+          finish: Paghuman
+          next: Sunod
+          previous: Kaniadto
+        check_out_new_words: Susiha ang bag-ong mga pulong nga imong mahibal-an sa
+          kini nga leksyon
+        frequency_of_word_usage: Kadaghan sa paggamit sa pulong sa %{language}
+        keep_practice_to_learn_all_words: Ribyuha ang mga pulong nga %{count} ug magdula
+          kita og mga dula!
+        word_frequency:
+          level1: Panalagsa gigamit
+          level2: Panalagsa gigamit
+          level3: Kanunay nga pulong - medium
+          level4: Kanunay nga pulong - medium
+          level5: Kasagaran
+          level6: Kasagaran kaayo
+      match_word:
+        click_and_move_each_word_to_counterpart: Pag-klik ug pagbalhin sa matag pulong
+          sa iyang katugbang
+        start_heading: Ipares ang mga pulong aron mahimo’g pares
+        time_is_up: Panahon na!
+      skip_tutorial: Laktaw
+      time_is_up: Panahon na!
+      word_nodes:
+        match_letters_to_form_word: Ipares ang mga letra aron makahimo usa ka pulong
+      word_waterfall:
+        do_not_hesitate: Paspasan ta!
+        go_to_next_exercise: Pag-adto sa sunod nga ehersisyo
+        select_correct_translation: Pilia ang tama nga posporo
+        well_done: Maayong pagkabuhat!
+    home_page:
+      hello: Kumusta,
+      popular_lessons: Popular nga mga leksyon
+      show_more: Ipakita pa
+      time: "%{count} min"
+      today_lesson: Ang imong leksyon karon
+      user_name: "%{name}!"
+      words: "%{count} mga pulong"
+    idle_screen:
+      by_author: ni %{authorName}
+      continue_lesson: Ipadayon ang leksyon
+      exit: Paggawas
+      idle_message: Taudtaod na ka nga wala’y buhat ...
+    lesson_page:
+      back_to_course_page: Balik sa panid sa kurso
+      close: Suod nga
+      continue_lesson: Ipadayon ang leksyon
+      followed: Gisundan
+      hamburger_menu_btn: Menu sa Hamburger
+      lesson_given: leksyon
+      not_started: wala nagsugod
+      or: O
+      part_complete: nahuman na ang %{percent}%
+      restart_lesson: Pagsugod usab
+      section_check: Susihon
+      section_check_info: "%{count} pagsulay"
+      section_learn: Pagkat-on
+      section_learn_info: "%{count} min aron motan-aw ug magbasa"
+      section_play: Pagdula
+      section_play_info: "%{count} mga pulong nga buhaton"
+      start_lesson: Pagsugod sa leksyon
+      step_progress: "%{percent}%"
+      subscribe: Sunda
+      subscribed: Gisundan
+      subscribers: mga sumusunod
+      time_min: "%{minutesNumber} min"
+      unsubscribe: I-unfollow
+      webview_error_title: Adunay nahimong sayup ...
+      words_number: "%{wordsNumber} bag-ong mga pulong"
+    lesson_task:
+      cancel_button: Kanselahon
+      check:
+        navigation_next: Sunod
+        navigation_previous: Kaniadto
+        navigation_skip: Laktaw
+      controls_panel:
+        font_size_button: Kadako sa font
+        high_contrast_button:
+          origin: Taas nga kalainan
+          short: Pagtandi
+        hints_button: Hint
+        music_playback_button:
+          origin: Pag-playback sa musika
+          short: Musika
+        sound_effects_button:
+          origin: Mga epekto sa tunog
+          short: Tingog
+      exit_button: Paggawas
+      finish_button: Paghuman
+      finished:
+        back_to_learn: Balik sa pagkat-on
+        back_to_lesson_page: Balik sa panid sa leksyon
+        back_to_results_page: Balik sa panid sa sangputanan
+        bad_result_message: Hmm ... pagsulay sa pagkuha sa leksyon sa makausa pa
+        close_lesson: Pagtapos sa leksyon
+        correct_answers_list: Sakto nga lista sa mga tubag
+        good_result_message: Nakita nako nga nag-effort ka!
+        great_result_message: Maayong pagkabuhat! Maayo kini nga mga sangputanan!
+        next_course_lesson: Pag-adto sa sunod nga leksyon nga kurso
+        no_results: Wala ka pay mga sangputanan sa pagsulay
+        no_results_text: >-
+          Palihug, kompletoha ang leksyon ug ipasa ang pagsulay aron makuha ang mga
+          sangputanan
+        see_correct_answers_list: Kitaa ang tama nga lista sa mga tubag
+        train_more: Pagpraktis labi pa ug makab-ot nimo ang labi ka maayo nga mga
+          resulta sa sunod!
+        you_finished_lesson: Maayo kaayo! Natapos nimo ang leksyon
+      go_back: Balik na
+      next_button: Sunod
+      not_available_task: Kini nga buluhaton dili pa magamit
+      start_button: Pagsugod
+      tasks:
+        check:
+          assignment:
+            accept: Dawata
+            author_will_check_your_answer: >-
+              susihon sa %{author} ang imong tubag ug kasagarang mohatag og feedback
+              sa sulud sa 1-2 ka adlaw
+            continue_writing: Padayon sa pagsulat
+            copy: Kopya
+            delete: Pagtangtang
+            delete_record: Delete record
+            edit: Pag-edit
+            essay_does_not_have_enough_words: >-
+              Ang imong tubag kinahanglan adunay sulud mga %{minWordsNumber} nga mga
+              pulong. Ang imong tubag karon %{currentWordsNumber} mga pulong.
+            followers_count: "%{followersCount} mga sumusunod"
+            lessons_count: "%{lessonsCount} mga leksyon"
+            minimal_recording_time: Minimum nga oras sa pagrekord - %{minimalRecordingTime}
+            minimum_characters_amount: Minimum nga mga karakter - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum nga mga pulong - %{minimumAmount}
+            record_again: Pagrekord usab
+            record_voice: Pagrekord sa tingog
+            send_anyway: Padala gihapon
+            send_to_review: Ipadala aron pagsusi
+            skip: Laktaw
+            too_short_answer: Mubo kaayo nga tubag
+            type_your_answer: Type ang imong tubag
+            unknown_task_type: Wala mahibal-an nga tipo sa buluhaton
+            upgrade_licence: Pag-upgrade sa lisensya
+            upgrade_your_plan: >-
+              Pag-upgrade sa imong plano aron masulayan ang mga asaynment sa mga pagribyu
+              sa mga magtutudlo
+            upload_files: Pag-upload sa mga file
+            write_essay: Pagsulat essay
+            you_have_used_amount_of_assignments: Gigamit nimo ang mga kredito sa %{amountOfAssignments}
+              nga gitudlo
+          fill_in_blanks:
+            sentence_gap: Gintang sa sentensya
+          fill_in_table:
+            column_answer_placeholder: Tubag
+            column_question_placeholder: Pangutana
+            example: Pananglitan
+          true_false:
+            'false': Bakak
+            'true': Tinuod
+        learn:
+          translatable_text:
+            show_original: Ipakita ang orihinal
+            translate_into: Paghubad uban ang Google sa %{languageName}
+            translate_into_your_lang: Paghubad uban ang Google sa imong sinultian
+        play:
+          arrange_words:
+            start_screen:
+              heading: Paghimo usa ka tudling-pulong gikan sa gihatag nga mga pulong
+          audition:
+            start_screen:
+              heading: Pagpamati sa audio ug pag-tap sa pulong nga imong nadungog
+          dictation:
+            get_help: Pangayo ug tabang
+            i_do_not_know: Wala ko kabalo
+            input_placeholder: Isulud dinhi ang imong nadungog
+            start_screen:
+              heading: Pamati ug isulat kung unsa ang imong nadungog
+          fill_gap:
+            start_screen:
+              heading: Itugma ang pulong ug ang kahulugan niini
+          finish_screen:
+            go_to_next_exercise: Maayong pagkabuhat! Pag-adto sa sunod nga ehersisyo
+          image_hotspot:
+            start_screen:
+              heading: Igngalan og tama ang mga butang sa litrato
+          image_object:
+            start_screen:
+              heading: Pilia ang tama nga butang gikan sa sunod nga litrato
+          inline_dropdown:
+            start_screen:
+              heading: Pilia ang mga pulong nga katugbang sa tudling-pulong
+          mark_word:
+            start_screen:
+              heading: Basaha ang teksto ug pilia ang pulong nga motugma sa imahe
+          minimal_pairs:
+            start_screen:
+              heading: Tan-awa ang video ug pilia ang tama nga kapilian
+    locale:
+      currency_switcher_title: Tigpamalit sa salapi
+      lang_switcher_title: Tigpamalit sa sinultian
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: English
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Mga Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Mga Magasin
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Nag-load ang audio
+        aria_pause_button: Hunong
+        aria_play_button: Pagdula
+        aria_reload_button: Pag-usab
+        aria_stop_button: Hunong na
+        reload_message: Napakyas sa pag-load sa audio. Palihug i-klik ang buton aron
+          i-reload.
+    mobile_modal:
+      apply: Pag-apply
+      cancel: Kanselahon
+      clear: Tin-aw
+      save: Pagtipig
+    page404:
+      goToStartLessonPage: Pag-adto sa panid sa panugod sa leksyon
+      ooops: Oooops ...
+      sorry_message: Pasensya, wala makita ni Tor kini nga panid
+    profile:
+      navigation:
+        log_out: Pag-log out
+        my_profile: Akong profile
+        settings: Mga setting
+      onboarding:
+        choose_native_language: Pilia ang imong lumad nga sinultian o sinultian nga
+          imong nasabut
+        do_you_understand_english: Nakasabut ka ba sa English?
+        hello: Kumusta
+        language_levels:
+          a1: Elementary nga lebel
+          a2: Pre-intermediate nga lebel
+          b1: Tunga nga lebel
+          b2: Taas nga lebel sa Tunga-tunga
+          c1: Advanced nga lebel
+          no_knowledge: Wala kahibalo
+        language_not_supported:
+          note: Igapahibalo namon kanimo sa higayon nga magamit ang sinultian
+          title: Pasensya, apan dili pa namon gisuportahan kini nga sinultian
+          try_another_language: Pagsulay laing sinultian
+        'no': Dili
+        search_placeholder: Pagpangita ...
+        show_more_languages: Uban pang mga sinultian
+        target_language_question: Unsang sinultian ang gusto nimong makat-unan?
+        what_is_language_level: Giunsa nimo ma-rate ang imong lebel sa %{languageName}?
+        'yes': Oo
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Patakaran sa pagkapribado ni Lingu
+        support: Pagsuporta
+      logout: Pag-logout
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Pagdawat mga update gikan sa mga magtutudlo ug eskuylahan
+                nga imong gisunud
+              sections:
+                app_notifications: Mga pahibalo sa app
+                email: E-mail
+              title: Tabang sa pagkat-on
+            marketing:
+              description: >-
+                Padayon nga nahibal-an ang bahin sa tanan nga mga promosyon, update,
+                ug inspirasyon gikan sa Lingu
+              sections:
+                browser_notifications: Mga pahibalo sa browser
+                email: E-mail
+              title: Pagpamaligya
+          title: Mga gusto sa pagkontak
+        personal_information:
+          delete_photo: Tangtanga ang litrato
+          email: Email
+          first_name: Panguna nga ngalan
+          last_name: Apelyido
+          social_accounts:
+            connected: Konektado
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Dili konektado
+            title: Mga account sa sosyal
+          title: Personal nga kasayuran
+          update_photo: Pagbag-o sa litrato
+        school:
+          active_licence: Aktibo nga lisensya
+          active_status: Aktibo
+          delete_profile: I-delete ang akong profile
+          delete_profile_modal:
+            body: |-
+              Nalaglag nimo ang tanan nimong datos — hangtod sa hangtod. Wala’y pag-undo nga buton, ug dili namo kini makuha alang kanimo pagkahuman.
+              Sigurado ba ka nga gusto nimo permanente nga tangtangon ang imong profile sa Lingu ug tanan nimo nga datos?
+            cancel: Kanselahon
+            confirm: Oo, tangtanga kini
+            i_understand_the_consequences: Nasabtan nako ang mga sangputanan
+            title: I-delete ang imong profile?
+          expired: Tapos na %{expire_date}
+          expires: Mo-expire ang %{expire_date}
+          inactive_status: Dili aktibo
+          revoke_access: Pagtangtang sa access sa pagbasa
+          sections:
+            contact_school: Pakigsulti sa eskuylahan
+            export_my_data: I-export ang akong datos
+            read_school_privacy_policy: Basaha ang patakaran sa Privacy sa School
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Pag-playback sa musika
+              sound_effects: Mga epekto sa tunog
+              title: Tingog
+            visual:
+              dark_theme: Ngitngit nga tema
+              font_size:
+                test_text: Ang sagbot kanunay nga mas lunhaw sa pikas nga koral
+                title: Kadako sa font
+              high_contrast: Taas nga kalainan
+              hints: Hint
+              title: Biswal
+          title: Tingog ug Makita
+        training_settings:
+          sections:
+            i_understand: nakasabot ko
+            i_want_to_learn: Gusto nako mahibal-an
+            target_language_level: Lebel sa English
+          title: Mga setting sa pagbansay
+      settings_title: Mga setting
+    teacher_card:
+      followers_count:
+        one: 1 sumusunod
+        other: "%{count} mga sumusunod"
+      lessons_count:
+        one: 1 nga leksyon
+        other: "%{count} mga leksyon"

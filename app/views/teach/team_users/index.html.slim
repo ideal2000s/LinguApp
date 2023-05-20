@@ -1,0 +1,14 @@
+p.mt-3
+  = link_to profile_path do
+    i.fas.fa-chevron-left.fa-fw
+    span= t('.back_to_profile')
+
+h1.pt-2.pb-4
+  = team.name
+
+.row
+  .col-lg-6
+    = render 'team_members', team: team, team_users: team_users
+
+  .col-lg-6
+    = render 'team_link', team: team

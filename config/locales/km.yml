@@ -1,0 +1,603 @@
+---
+km:
+  course_mailer:
+    course_assigned_notification:
+      button: ចាប់ផ្តើមវគ្គសិក្សា
+      click_start_lesson: ចុច 'ចាប់ផ្តើមមេរៀន'
+      follow_course_link: ចុចប៊ូតុងដើម្បីបើកវគ្គសិក្សា
+      footer_text: ត្រលប់មកភាសាលីកវិញដើម្បីរៀនអ្វីថ្មីជារៀងរាល់ថ្ងៃ!
+      get_started_line: នេះជារបៀបដែលអ្នកចាប់ផ្តើម៖
+      notification_link: ការកំណត់ការជូនដំណឹង
+      open_lesson: បើកមេរៀនដំបូង
+      or_paste_this_link: ឬបិទភ្ជាប់តំណនេះក្នុងកម្មវិធីអ៊ីនធឺណិតរបស់អ្នក
+      sign_in_with_email: ចូលដោយប្រើអាសយដ្ឋានអ៊ីមែលរបស់អ្នក (%{email})
+      support_link: គាំទ្រ
+      title: ការចាប់ផ្តើមជាមួយ %{course}
+    new_document_comment:
+      author_text: "%{author} បានចាកចេញពីការពិនិត្យមើលការងាររបស់អ្នកឡើងវិញ"
+      button_text: សូមពិនិត្យមើលវា
+      button_url_helper: ឬបិទភ្ជាប់តំណភ្ជាប់នេះទៅក្នុងកម្មវិធីរុករករបស់អ្នក៖
+      footer_text: មានអ្វីជាច្រើនទៀតដែលត្រូវរៀន ...
+      notification_link: ការកំណត់ការជូនដំណឹង
+      subject_line: មតិយោបល់ការងារថ្មី
+      support_link: គាំទ្រ
+    otp:
+      ignore_msg: ប្រសិនបើអ្នកមិនបានធ្វើការស្នើសុំនេះទេគ្រាន់តែមិនអើពើនឹងអ៊ីម៉ែល។
+      subject_line: លេខកូដតែមួយគត់របស់អ្នកសម្រាប់ភាសា Lingu
+      unique_code_for_lingu: នេះគឺជាលេខកូដតែមួយគត់របស់អ្នកសម្រាប់ភាសាលីក
+  frontend:
+    auth:
+      already_have_acc_question: មានគណនីរួចហើយ?
+      back: ថយក្រោយ
+      back_to_sign_in: ត្រលប់ទៅចុះឈ្មោះចូលវិញ
+      check_your_email_for_a_code: ពិនិត្យអ៊ីមែលរបស់អ្នកសម្រាប់លេខកូដរបស់អ្នក
+      continue: បន្ត
+      continue_with_email: បន្តជាមួយអ៊ីមែល
+      continue_with_provider: បន្តជាមួយ %{provider}
+      did_not_receive_a_code: មិនបានទទួលលេខកូដឬ?
+      email_address: អាស័យ​ដ្ឋាន​អ៊ី​ម៉េ​ល
+      first_name: នាមខ្លួន
+      get_unique_code: ទទួលបានលេខកូដចូលតែមួយគត់
+      join_lingu: ចូលរួមជាមួយ Lingu
+      last_name: នាមត្រកូល
+      more_login_options: ជម្រើសចូលច្រើនទៀត
+      no_account_question: មិនមានគណនីមែនទេ?
+      or: ឬ
+      resend_code: ផ្ញើកូដម្តងទៀត
+      sign_in: ចូល
+      sign_up: ចុះ​ឈ្មោះ
+      want_to_receive_marketing_messages: ខ្ញុំចង់ទទួលបានសារទីផ្សារពី Lingu
+      we_ve_sent_a_code: >-
+        យើងបានផ្ញើលេខកូដ ៦ ខ្ទង់ទៅ <strong> {{អ៊ីមែល}} </strong> ។ លេខកូដនឹងផុតកំណត់ក្នុងរយៈពេល
+        ១៥ នាទីដូច្នេះសូមបញ្ចូលវាឆាប់ៗនេះ។
+    cookie_agreement:
+      agree: យល់ព្រម
+      condition: >-
+        យើងប្រើខូឃីស៍ដើម្បីវិភាគប្រតិបត្តិការគេហទំព័រនិងផ្តល់មាតិកាផ្ទាល់ខ្លួន។ ដោយចុច“
+        យល់ព្រម” អ្នកយល់ព្រមនឹងលក្ខខណ្ឌរបស់យើង។
+    course:
+      accredited_course_provider: អ្នកផ្តល់វគ្គសិក្សាដែលមានការទទួលស្គាល់
+      apply: អនុវត្ត
+      apply_filters: អនុវត្តតម្រង
+      by: ដោយ
+      cancel: បោះបង់
+      categories: ប្រភេទ %{count}
+      category: ប្រភេទ
+      clear: ច្បាស់
+      clear_filters: សម្អាតតម្រង
+      contact_us: ទាក់ទង​មក​ពួក​យើង
+      could_not_find_match_for: សូមទោសយើងមិនអាចរកការប្រកួតណាមួយបានទេ
+      course_language: ភាសាវគ្គសិក្សា
+      duration: រយៈពេល
+      filter_settings:
+        categories:
+          academic: សិក្សា
+          business: អាជីវកម្ម
+          fashion: ម៉ូត
+          food_drink: អាហារនិងភេសជ្ជៈ
+          for_kids: សម្រាប់កុមារ
+          general: ទូទៅ
+          health: សុខភាព
+          legal: ស្របច្បាប់
+          sport: កីឡា
+          travel: ធ្វើដំណើរ
+        durations:
+          t0_600: "<១០ នាទី"
+          t1800_3600: ៣០-៦០ នាទី
+          t3600_86400: ១+ ម៉ោង
+          t600_1800: ១០-៣០ នាទី
+        focus_on:
+          conversation: ការសន្ទនា
+          grammar: វេយ្យាករណ៍
+          listening: ស្តាប់
+          pronunciation: ការបញ្ចេញសំឡេង
+          reading: ការអាន
+          speaking: និយាយ
+          writing: ការសរសេរ
+        levels:
+          long:
+            advanced: កម្រិតខ្ពស់
+            elementary: កំរិតបឋម
+            intermediate: កម្រិតមធ្យម
+            no_knowledge: គ្មានចំណេះដឹង
+            pre_intermediate: កម្រិតមុនមធ្យម
+            upper_intermediate: កម្រិតមធ្យមខ្ពស់
+          short:
+            advanced: កម្រិតខ្ពស់
+            beginner: អ្នកចាប់ផ្តើមដំបូង
+            intermediate: កម្រិតមធ្យម
+        sort_by:
+          most_rated: បានវាយតម្លៃខ្ពស់បំផុត
+          newest: ថ្មីបំផុត
+          popularity: ប្រជាប្រិយភាព
+      filters: តម្រង
+      focus_on: ផ្ដោត​ទៅលើ
+      focus_on_title: ខ្ញុំចង់ផ្តោតលើ
+      hide_lessons: លាក់មេរៀន
+      hours: ម៉ោង
+      i_understand: ខ្ញុំ​យល់
+      i_want_to_learn: ខ្ញុំ​ចង់​រៀន
+      in_language: ក្នុង %{language}
+      language: ភាសា
+      learn_more: ស្វែង​យល់​បន្ថែម
+      less_settings: ការកំណត់តិច
+      lessons: មេរៀន
+      lessons_available: មានមេរៀន %{number}
+      lessons_catalog_page_subtitle: ក្លាយជាវីរបុរសភាសា។
+      lessons_catalog_page_title: ពង្រីកការយល់ដឹងរបស់អ្នកជាមួយនឹងវគ្គសិក្សាភាសា
+      level: កំរិត
+      min: នាទី
+      more_settings: ការកំណត់ច្រើនទៀត
+      navbar:
+        close: បិទម៉ឺនុយ
+        menu: មឺនុយ
+        select_language: ជ្រើសរើស​ភាសា
+      need_to_buy_course: អ្នកត្រូវកក់វគ្គសិក្សាជាមុនសិន
+      no_description: គ្មានការពិពណ៌នាបានផ្តល់
+      no_results: សូមទោសយើងមិនអាចរកការប្រកួតណាមួយបានទេ
+      or: ឬ
+      per_month: ក្នុង​មួយ​ខែ
+      plans: ផែនការ
+      privacy_policy: គោលការណ៍​ភាព​ឯកជន
+      rating: ការវាយតម្លៃ
+      remove_all_filters: យកតម្រងទាំងអស់ចេញ
+      reviews: ការពិនិត្យឡើងវិញ
+      save: រក្សាទុក
+      search: ស្វែងរក
+      select_dots: ជ្រើសរើស ...
+      select_languages: ជ្រើសរើសឧបករណ៍លួងលោម
+      select_num_languages: ជ្រើសរើសភាសា %{number}
+      short_levels:
+        a1: ក ១
+        a2: ក ២
+        b1: ខ ១
+        b2: ខ ២
+        c1: គ ១
+        c2: គ ២
+        zero_level: ក .០
+      show_all: បង្ហាញ​ទាំងអស់
+      show_all_lessons: បង្ហាញមេរៀនទាំងអស់
+      show_lessons: បង្ហាញមេរៀន %{number}
+      show_more: បង្ហាញច្រើនទៀត
+      sign_up_with_lingu_for: ចុះឈ្មោះជាមួយ Lingu ន័រវែសសម្រាប់
+      skills: ជំនាញ %{count}
+      sort_by: តម្រៀបតាម
+      start_typing_here: ចាប់ផ្តើមវាយនៅទីនេះ
+      teach: បង្រៀន
+      terms_and_conditions: ល័ក្ខខ័ណ្ឌ
+      time_range: ជួរពេលវេលា
+      try_adjusting_your_search: ព្យាយាមកែការស្វែងរករបស់អ្នកដោយប្តូរតម្រងរបស់អ្នក
+      try_this_course: សាកល្បងវគ្គនេះ
+      website_language: ភាសាគេហទំព័រ
+      words: ពាក្យ
+    games:
+      finished:
+        go_to_next_exercise: ល្អ​ណាស់! ទៅលំហាត់បន្ទាប់
+      flashcard:
+        buttons:
+          finish: បញ្ចប់
+          next: បន្ទាប់
+          previous: មុន
+        check_out_new_words: ពិនិត្យមើលពាក្យថ្មីដែលអ្នកនឹងរៀននៅក្នុងមេរៀននេះ
+        frequency_of_word_usage: ភាពញឹកញាប់នៃការប្រើប្រាស់ពាក្យនៅក្នុង %{language}
+        keep_practice_to_learn_all_words: ពិនិត្យពាក្យហ្ស៊ីហ្ស៊ីហ្សិច ០ ហើយតោះលេងហ្គេមខ្លះ!
+        word_frequency:
+          level1: ប្រើកម្រណាស់
+          level2: ប្រើកម្រណាស់
+          level3: ប្រេកង់ពាក្យ - មធ្យម
+          level4: ប្រេកង់ពាក្យ - មធ្យម
+          level5: ធម្មតា
+          level6: ជា​រឿង​ធម្មតា​ណាស់
+      match_word:
+        click_and_move_each_word_to_counterpart: ចុចហើយផ្លាស់ទីពាក្យនីមួយៗទៅសមភាគីរបស់វា
+        start_heading: ផ្គូផ្គងពាក្យដើម្បីបង្កើតជាគូ
+        time_is_up: ដល់​ម៉ោង!
+      skip_tutorial: រំលង
+      time_is_up: ដល់​ម៉ោង!
+      word_nodes:
+        match_letters_to_form_word: ផ្គូផ្គងអក្សរដើម្បីបង្កើតពាក្យ
+      word_waterfall:
+        do_not_hesitate: សូមបង្កើនល្បឿន!
+        go_to_next_exercise: ទៅលំហាត់បន្ទាប់
+        select_correct_translation: ជ្រើសរើសការប្រកួតត្រឹមត្រូវ
+        well_done: ល្អ​ណាស់!
+    home_page:
+      hello: ជំរាបសួរ,
+      popular_lessons: មេរៀនពេញនិយម
+      show_more: បង្ហាញច្រើនទៀត
+      time: "%{count} នាទី"
+      today_lesson: មេរៀនរបស់អ្នកសំរាប់ថ្ងៃនេះ
+      user_name: "%{name}!"
+      words: "%{count} ពាក្យ"
+    idle_screen:
+      by_author: ដោយ %{authorName}
+      continue_lesson: បន្តមេរៀន
+      exit: ចេញ
+      idle_message: អ្នកបានទំនេរមួយរយៈ ...
+    lesson_page:
+      back_to_course_page: ត្រលប់ទៅទំព័រវគ្គសិក្សា
+      close: បិទ
+      continue_lesson: បន្តមេរៀន
+      followed: ធ្វើតាម
+      hamburger_menu_btn: ម៉ឺនុយហាំប៊ឺហ្គឺ
+      lesson_given: មេរៀន
+      not_started: មិន​បាន​ចាប់​ផ្តើ​ម
+      or: ឬ
+      part_complete: "%{percent}% បានបញ្ចប់"
+      restart_lesson: ចាប់ផ្តើមឡើងវិញ
+      section_check: ពិនិត្យ
+      section_check_info: "%{count} តេស្ត"
+      section_learn: រៀន
+      section_learn_info: "%{count} នាទីដើម្បីមើលនិងអាន"
+      section_play: ចាក់
+      section_play_info: "%{count} ពាក្យដើម្បីអនុវត្ត"
+      start_lesson: ចាប់ផ្តើមមេរៀន
+      step_progress: "%{percent}%"
+      subscribe: ធ្វើតាម
+      subscribed: ធ្វើតាម
+      subscribers: អ្នកដើរតាម
+      time_min: "%{minutesNumber} នាទី"
+      unsubscribe: មិនធ្វើតាម
+      webview_error_title: មាន​អ្វីមួយ​មិន​ប្រក្រតី...
+      words_number: ពាក្យថ្មី %{wordsNumber}
+    lesson_task:
+      cancel_button: បោះបង់
+      check:
+        navigation_next: បន្ទាប់
+        navigation_previous: មុន
+        navigation_skip: រំលង
+      controls_panel:
+        font_size_button: ទំហំ​អក្សរ
+        high_contrast_button:
+          origin: កម្រិតពណ៌ខ្ពស់
+          short: កម្រិតពណ៌
+        hints_button: ព័ត៌មានជំនួយ
+        music_playback_button:
+          origin: ចាក់តន្ត្រីឡើងវិញ
+          short: តន្ត្រី
+        sound_effects_button:
+          origin: ផលប៉ះពាល់សំឡេង
+          short: សំឡេង
+      exit_button: ចេញ
+      finish_button: បញ្ចប់
+      finished:
+        back_to_learn: ត្រឡប់ទៅរៀនវិញ
+        back_to_lesson_page: ត្រលប់ទៅទំព័រមេរៀនវិញ
+        back_to_results_page: ត្រឡប់មកទំព័រលទ្ធផលវិញ
+        bad_result_message: ហ៊ឹម ... ព្យាយាមយកមេរៀនម្តងទៀត
+        close_lesson: បិទមេរៀន
+        correct_answers_list: បញ្ជីចម្លើយត្រឹមត្រូវ
+        good_result_message: ខ្ញុំអាចឃើញថាអ្នកបានប្រឹងប្រែងហើយ!
+        great_result_message: ល្អ​ណាស់! ទាំងនេះគឺជាលទ្ធផលដ៏អស្ចារ្យ!
+        next_course_lesson: ទៅមេរៀនបន្ទាប់នៅក្នុងវគ្គសិក្សា
+        no_results: អ្នកមិនទាន់មានលទ្ធផលតេស្តនៅឡើយទេ
+        no_results_text: សូមបំពេញមេរៀននិងប្រលងជាប់ដើម្បីទទួលបានលទ្ធផល
+        see_correct_answers_list: មើលបញ្ជីចម្លើយត្រឹមត្រូវ
+        train_more: អនុវត្តកាន់តែច្រើនហើយអ្នកនឹងទទួលបានលទ្ធផលល្អប្រសើរនៅពេលក្រោយ!
+        you_finished_lesson: អស្ចារ្យ! អ្នកបានបញ្ចប់មេរៀនហើយ
+      go_back: ត្រឡប់​ក្រោយ
+      next_button: បន្ទាប់
+      not_available_task: កិច្ចការនេះមិនទាន់មាននៅឡើយទេ
+      start_button: ចាប់ផ្តើម
+      tasks:
+        check:
+          assignment:
+            accept: ព្រមទទួល
+            author_will_check_your_answer: >-
+              %{author} នឹងពិនិត្យឡើងវិញនូវចម្លើយរបស់អ្នកហើយជាធម្មតាផ្តល់មតិត្រឡប់ក្នុងរយៈពេល
+              ១-២ ថ្ងៃ
+            continue_writing: បន្តការសរសេរ
+            copy: ចម្លង
+            delete: លុប
+            delete_record: លុបកំណត់ត្រា
+            edit: កែសម្រួល
+            essay_does_not_have_enough_words: >-
+              ចម្លើយរបស់អ្នកគួរតែមានយ៉ាងហោចណាស់ពាក្យ %{minWordsNumber} ។ ចម្លើយរបស់អ្នកគឺបច្ចុប្បន្ន
+              %{currentWordsNumber} ពាក្យ។
+            followers_count: "%{followersCount} អ្នកដើរតាម"
+            lessons_count: មេរៀន %{lessonsCount}
+            minimal_recording_time: ពេលវេលាថតអប្បបរមា - %{minimalRecordingTime}
+            minimum_characters_amount: តួអក្សរអប្បបរមា - %{minimumCharactersAmount}
+            minimum_words_amount: ពាក្យអប្បបរមា - %{minimumAmount}
+            record_again: កត់ត្រាម្តងទៀត
+            record_voice: ថតសំលេង
+            send_anyway: ផ្ញើទោះយ៉ាងណាក៏ដោយ
+            send_to_review: ផ្ញើទៅពិនិត្យ
+            skip: រំលង
+            too_short_answer: ចម្លើយខ្លីពេក
+            type_your_answer: វាយចម្លើយរបស់អ្នក
+            unknown_task_type: ប្រភេទភារកិច្ចដែលមិនស្គាល់
+            upgrade_licence: ធ្វើឱ្យប្រសើរឡើងនូវអាជ្ញាប័ណ្ណ
+            upgrade_your_plan: ធ្វើឱ្យប្រសើរផែនការរបស់អ្នកដើម្បីព្យាយាមការងារជាមួយការពិនិត្យគ្រូ
+            upload_files: ផ្ទុកឯកសារឡើង
+            write_essay: សរសេរអត្ថបទ
+            you_have_used_amount_of_assignments: អ្នកបានប្រើឥណទានការងារ %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: ចន្លោះប្រយោគ
+          fill_in_table:
+            column_answer_placeholder: ចម្លើយ
+            column_question_placeholder: សំណួរ
+            example: ឧទាហរណ៍
+          true_false:
+            'false': មិនពិត
+            'true': ពិត
+        learn:
+          translatable_text:
+            show_original: បង្ហាញដើម
+            translate_into: បកប្រែជាមួយហ្គូហ្គោលជា %{languageName}
+            translate_into_your_lang: បកប្រែជាមួយហ្គូហ្គោលជាភាសារបស់អ្នក
+        play:
+          arrange_words:
+            start_screen:
+              heading: ធ្វើឱ្យប្រយោគចេញពីពាក្យដែលបានផ្តល់ឱ្យ
+          audition:
+            start_screen:
+              heading: ស្តាប់សំលេងហើយចុចលើពាក្យដែលអ្នកទើបតែលឺ
+          dictation:
+            get_help: ទទួល​បាន​ជំនួយ
+            i_do_not_know: ខ្ញុំមិនដឹងទេ
+            input_placeholder: បញ្ចូលអ្វីដែលអ្នកបាន heard នៅទីនេះ
+            start_screen:
+              heading: ស្តាប់ហើយសរសេរអ្វីដែលអ្នក hear
+          fill_gap:
+            start_screen:
+              heading: ត្រូវនឹងពាក្យនិងអត្ថន័យរបស់វា
+          finish_screen:
+            go_to_next_exercise: ល្អ​ណាស់! ទៅលំហាត់បន្ទាប់
+          image_hotspot:
+            start_screen:
+              heading: ដាក់ឈ្មោះវត្ថុក្នុងរូបភាពអោយបានត្រឹមត្រូវ
+          image_object:
+            start_screen:
+              heading: ជ្រើសរើសវត្ថុដែលត្រឹមត្រូវពីរូបភាពបន្ទាប់
+          inline_dropdown:
+            start_screen:
+              heading: ជ្រើសរើសពាក្យដែលត្រូវនឹងប្រយោគ
+          mark_word:
+            start_screen:
+              heading: អានអត្ថបទហើយជ្រើសរើសពាក្យដែលត្រូវនឹងរូបភាព
+          minimal_pairs:
+            start_screen:
+              heading: មើលវីដេអូហើយជ្រើសរើសជម្រើសត្រឹមត្រូវ
+    locale:
+      currency_switcher_title: ឧបករណ៍ប្តូររូបិយប័ណ្ណ
+      lang_switcher_title: ឧបករណ៍ប្តូរភាសា
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: អង់គ្លេស
+        eo: Esperanto
+        es: អេសប៉ាល
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: បារាំង
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: អ៊ីតាលី
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: លីតវីយូកាឡាបា
+        lv: ឡាតវីវ៉ូវ៉ាដា
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: ណឺរ
+        ne: Nepali
+        nl: ណឺឌៀល
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: ប៉ូលស្គី
+        ps: Pashto
+        pt: ព័រទុយហ្កាល់
+        ro: លីមបាromână
+        ru: Русскийязык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af សូម៉ាម៉ាលី
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: គីស្វាហ៊ីលី
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: តេជេ
+        tt: Tatar
+        ug: Uyghur
+        uk: ".країнська"
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: សម្លេងកំពុងដំណើរការ
+        aria_pause_button: ផ្អាក
+        aria_play_button: ចាក់
+        aria_reload_button: ផ្ទុកឡើងវិញ
+        aria_stop_button: ឈប់
+        reload_message: បានបរាជ័យក្នុងការផ្ទុកសំឡេង។ សូមចុចប៊ូតុងដើម្បីផ្ទុកឡើងវិញ។
+    mobile_modal:
+      apply: អនុវត្ត
+      cancel: បោះបង់
+      clear: ច្បាស់
+      save: រក្សាទុក
+    page404:
+      goToStartLessonPage: ចូលទៅកាន់ទំព័រមេរៀនចាប់ផ្តើម
+      ooops: អូ ...
+      sorry_message: សូមទោស, Tor មិនអាចរកទំព័រនេះទេ
+    profile:
+      navigation:
+        log_out: ចាកចេញ
+        my_profile: ប្រវត្តិរូបរបស់ខ្ញុំ
+        settings: ការកំណត់
+      onboarding:
+        choose_native_language: ជ្រើសរើសភាសាដើមឬភាសាដែលអ្នកយល់
+        do_you_understand_english: តើ​អ្នក​ចេះ​ស្តាប់​ភាសាអង់គ្លេស​ទេ?
+        hello: សួស្តី
+        language_levels:
+          a1: កំរិតបឋម
+          a2: កម្រិតមុនមធ្យម
+          b1: កម្រិតមធ្យម
+          b2: កម្រិតមធ្យមខ្ពស់
+          c1: កម្រិតខ្ពស់
+          no_knowledge: គ្មានចំណេះដឹង
+        language_not_supported:
+          note: យើងនឹងជូនដំណឹងដល់អ្នកនៅពេលដែលភាសាមាន
+          title: សូមទោសប៉ុន្តែយើងមិនទាន់គាំទ្រភាសានេះនៅឡើយទេ
+          try_another_language: សាកល្បងភាសាផ្សេងទៀត
+        'no': ទេ
+        search_placeholder: ស្វែងរក
+        show_more_languages: ភាសា​ដ៏​ទៃ​ទៀត
+        target_language_question: តើអ្នកចង់រៀនភាសាអ្វី?
+        what_is_language_level: តើអ្នកវាយតម្លៃកម្រិត %{languageName} របស់អ្នកយ៉ាងដូចម្តេច?
+        'yes': ត្រូវហើយ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: គោលនយោបាយភាពឯកជនរបស់ Lingu
+        support: គាំទ្រ
+      logout: ចាកចេញ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: ទទួលបានព័ត៌មានថ្មីៗពីគ្រូនិងសាលារៀនដែលអ្នកតាមដាន
+              sections:
+                app_notifications: ការ​ជូនដំណឹង​កម្មវិធី
+                email: អ៊ីមែល
+              title: ជំនួយការរៀន
+            marketing:
+              description: >-
+                ទទួលបានព័ត៌មានអំពីការផ្សព្វផ្សាយការធ្វើបច្ចុប្បន្នភាពនិងការលើកទឹកចិត្តទាំងអស់ពីលីល
+              sections:
+                browser_notifications: ការជូនដំណឹងរបស់កម្មវិធីរុករក
+                email: អ៊ីមែល
+              title: ទីផ្សារ
+          title: ចំណូលចិត្តទំនាក់ទំនង
+        personal_information:
+          delete_photo: លុបរូបថត
+          email: អ៊ីមែល
+          first_name: នាមខ្លួន
+          last_name: នាមត្រកូល
+          social_accounts:
+            connected: បានភ្ជាប់
+            facebook: ហ្វេសប៊ុក
+            google: ហ្គូហ្គោល
+            microsoft: ក្រុមហ៊ុន Microsoft
+            not_connected: មិនបាន​តភ្ជាប់
+            title: គណនីសង្គម
+          title: ព័ត៌មាន​ផ្ទាល់ខ្លួន
+          update_photo: ធ្វើបច្ចុប្បន្នភាពរូបថត
+        school:
+          active_licence: អាជ្ញាប័ណ្ណសកម្ម
+          active_status: សកម្ម
+          delete_profile: លុបប្រវត្តិរូបរបស់ខ្ញុំ
+          delete_profile_modal:
+            body: |-
+              អ្នកបំផ្លាញទិន្នន័យរបស់អ្នកទាំងអស់ជារៀងរហូត។ មិនមានប៊ូតុងបកក្រោយទេហើយយើងមិនអាចយកវាមកវិញសម្រាប់អ្នកបានទេ។
+              តើអ្នកពិតជាចង់លុបប្រវត្តិរូប Lingu របស់អ្នកនិងទិន្នន័យរបស់អ្នកជាអចិន្ត្រៃយ៍មែនទេ?
+            cancel: បោះបង់
+            confirm: ត្រូវហើយលុបវាចោល
+            i_understand_the_consequences: ខ្ញុំយល់ពីផលវិបាក
+            title: លុបប្រវត្តិរូបរបស់អ្នកឬ?
+          expired: ផុតកំណត់ %{expire_date}
+          expires: ផុតកំណត់ %{expire_date}
+          inactive_status: អសកម្ម
+          revoke_access: បញ្ឈប់សុពលភាពការចូលប្រើការអាន
+          sections:
+            contact_school: ទាក់ទងសាលា
+            export_my_data: នាំចេញទិន្នន័យរបស់ខ្ញុំ
+            read_school_privacy_policy: អានគោលការណ៍ឯកជនភាពសាលា
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: ចាក់តន្ត្រីឡើងវិញ
+              sound_effects: ផលប៉ះពាល់សំឡេង
+              title: សំឡេង
+            visual:
+              dark_theme: ស្បែកខ្មៅងងឹត
+              font_size:
+                test_text: ស្មៅតែងតែមានពណ៌បៃតងនៅផ្នែកម្ខាងទៀតនៃរបង
+                title: ទំហំ​អក្សរ
+              high_contrast: កម្រិតពណ៌ខ្ពស់
+              hints: ព័ត៌មានជំនួយ
+              title: មើលឃើញ
+          title: សំឡេងនិងរូបភាព
+        training_settings:
+          sections:
+            i_understand: ខ្ញុំ​យល់
+            i_want_to_learn: ខ្ញុំ​ចង់​រៀន
+            target_language_level: កំរិតភាសាអង់គ្លេស
+          title: ការកំណត់ការបណ្តុះបណ្តាល
+      settings_title: ការកំណត់
+    teacher_card:
+      followers_count:
+        one: អ្នកដើរតាមម្នាក់
+        other: "%{count} អ្នកដើរតាម"
+      lessons_count:
+        one: ១ មេរៀន
+        other: មេរៀន %{count}

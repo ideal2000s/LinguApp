@@ -1,0 +1,23 @@
+- set_page_title t('layouts.admin.sidebar.dashboard')
+
+.card-deck
+  .card.mb-3.overflow-hidden style=("min-width: 12rem")
+    .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner3.png')});"
+    .card-body.position-relative
+      h6= t('students')
+      .display-4.fs-4.mb-2.font-weight-normal.text-sans-serif.text-warning= Student.kept.by_language(current_user.language_scope).size
+      = link_to t('.view_all'), admin_students_path, class: 'font-weight-semi-bold fs--1 text-nowrap'
+  .card.mb-3.overflow-hidden style=("min-width: 12rem")
+    .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner1.png')});"
+    .card-body.position-relative
+      h6= t('lessons')
+      .display-4.fs-4.mb-2.font-weight-normal.text-sans-serif.text-info
+        = Lesson.kept.by_language(current_user.language_scope).size
+      = link_to t('.view_all'), teach_lessons_path, class: 'font-weight-semi-bold fs--1 text-nowrap'
+  - if nav_policy.users?
+    .card.mb-3.overflow-hidden style=("min-width: 12rem")
+      .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner2.png')});"
+      .card-body.position-relative
+        h6= t('users')
+        .display-4.fs-4.mb-2.font-weight-normal.text-sans-serif.text-success= User.kept.size
+        = link_to t('.view_all'), admin_users_path, class: 'font-weight-semi-bold fs--1 text-nowrap'

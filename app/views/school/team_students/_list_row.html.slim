@@ -1,0 +1,45 @@
+- student = team_student.student
+tr.py-2
+  td.align-middle
+    .d-flex.align-items-center
+      = custom_profile_tag(student)
+      .name
+        = link_to student.full_name, school_student_path(student), class: 'student-full-name ml-3'
+        small.ml-3= student.email
+  td.student-active-license
+    .student-license.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+      - active_license = team_student.active_license
+      - if active_license
+        .license-label.license-overflow
+          = active_license.plan.name
+        .expires-label
+          - if active_license.expires_at
+            = t('school.team_students.profile.expires_at', expires_at: l(active_license.expires_at, format: :default))
+          - else
+            = t('school.team_students.profile.perpetual_license')
+      - else
+        .no-license-label.text-danger= t('school.team_students.profile.no_license')
+    = render 'school/team_students/update_license_form', team_student: team_student
+  td
+    .d-flex
+      = render partial: 'school/team_students/language_info', locals: { student: student }
+  td
+    .student-actions
+      - if policy(student).update?
+        / a data-toggle='tooltip' data-placement='bottom' title=t('.assign_lesson')
+        /   = image_tag('icons/lesson.svg')
+        / a data-toggle='tooltip' data-placement='bottom' title=t('.assign_test')
+        /   = image_tag('icons/test.svg')
+        span.separator
+        = button_to edit_school_student_path(student), class: 'btn shadow-none p-0', method: :get, remote: true,
+                data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.edit') do
+          = image_tag('icons/edit.svg')
+        = button_to assign_course_school_student_path(student), class: 'btn shadow-none p-0', method: :get, remote: true,
+                data: {toggle: 'tooltip', placement: 'bottom'}, title: t('.assign_course') do
+          = image_tag('icons/lesson.svg')
+        = button_to move_class_school_student_path(student), class: 'btn shadow-none p-0', method: :get, remote: true,
+                data: { toggle: 'tooltip', placement: 'bottom' }, title: t('.move_to_class') do
+          = image_tag('icons/move to.svg')
+        = button_to archive_school_student_path(student), class: 'btn shadow-none p-0', method: :get, remote: true,
+                data: { confirm: t('.are_you_sure_archiving'), toggle: 'tooltip', placement: 'bottom' }, title: t('.archive') do
+          = image_tag('icons/trash.svg')

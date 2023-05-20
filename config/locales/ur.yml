@@ -1,0 +1,611 @@
+---
+ur:
+  course_mailer:
+    course_assigned_notification:
+      button: کورس شروع کریں
+      click_start_lesson: "'سبق شروع کریں' پر کلک کریں"
+      follow_course_link: کورس کو کھولنے کے لئے بٹن پر کلک کریں
+      footer_text: ہر روز کچھ نیا سیکھنے کے لئے واپس لنگو پر آئیں!
+      get_started_line: 'آپ کی شروعات کا طریقہ یہ ہے:'
+      notification_link: اطلاع کی ترتیبات
+      open_lesson: پہلا سبق کھولیں
+      or_paste_this_link: یا اس لنک کو اپنے براؤزر میں چسپاں کریں
+      sign_in_with_email: اپنے ای میل ایڈریس (%{email}) کے ساتھ لاگ ان کریں
+      support_link: مدد کریں
+      title: "%{course} کے ساتھ شروع کرنا"
+    new_document_comment:
+      author_text: "%{author} نے آپ کی اسائنمنٹ کا جائزہ لیا"
+      button_text: اس کی جانچ پڑتال کر
+      button_url_helper: 'یا اس لنک کو اپنے براؤزر میں چسپاں کریں:'
+      footer_text: سیکھنے کے لئے اور بھی بہت کچھ ہے ...
+      notification_link: اطلاع کی ترتیبات
+      subject_line: نئی اسائنمنٹ کمنٹ
+      support_link: مدد کریں
+    otp:
+      ignore_msg: اگر آپ نے یہ درخواست نہیں کی ہے تو ، صرف ای میل کو نظر انداز کریں۔
+      subject_line: زبان کے لئے آپ کا انوکھا کوڈ
+      unique_code_for_lingu: زبان کے لئے آپ کا انوکھا کوڈ یہ ہے
+  frontend:
+    auth:
+      already_have_acc_question: پہلے سے ہی ایک اکاؤنٹ ہے؟
+      back: پیچھے
+      back_to_sign_in: سائن ان پر واپس جائیں
+      check_your_email_for_a_code: اپنے کوڈ کے لئے اپنا ای میل چیک کریں
+      continue: جاری رہے
+      continue_with_email: ای میل کے ساتھ جاری رکھیں
+      continue_with_provider: "%{provider} کے ساتھ جاری رکھیں"
+      did_not_receive_a_code: کوڈ نہیں ملا؟
+      email_address: ای میل اڈریس
+      first_name: پہلا نام
+      get_unique_code: ایک انوکھا لاگ ان کوڈ حاصل کریں
+      join_lingu: Lingu میں شامل ہوں
+      last_name: آخری نام
+      more_login_options: لاگ ان کے مزید اختیارات
+      no_account_question: کیا آپ کا اکاؤنٹ نہیں ہے؟
+      or: یا
+      resend_code: کوڈ پھر سے بھیجو
+      sign_in: سائن ان
+      sign_up: سائن اپ
+      want_to_receive_marketing_messages: میں لینگو سے مارکیٹنگ کے پیغامات وصول کرنا
+        چاہتا ہوں
+      we_ve_sent_a_code: >-
+        ہم نے-ہندسوں کا کوڈ </ strong> {{ای میل}} </ strong> پر بھیجا ہے۔ کوڈ کی مدت
+        15 منٹ میں ختم ہوجاتی ہے ، لہذا براہ کرم جلد ہی اسے داخل کریں۔
+    cookie_agreement:
+      agree: متفق ہوں
+      condition: >-
+        ہم سائٹ کی کارکردگی کا تجزیہ کرنے اور مشخص مواد فراہم کرنے کیلئے کوکیز کا
+        استعمال کرتے ہیں۔ "اتفاق" پر کلک کرکے ، آپ ہمارے شرائط سے اتفاق کرتے ہیں۔
+    course:
+      accredited_course_provider: تسلیم شدہ کورس فراہم کنندہ
+      apply: درخواست دیں
+      apply_filters: فلٹرز لگائیں
+      by: بذریعہ
+      cancel: منسوخ کریں
+      categories: "%{count} زمرہ جات"
+      category: قسم
+      clear: صاف
+      clear_filters: فلٹرز صاف کریں
+      contact_us: ہم سے رابطہ کریں
+      could_not_find_match_for: معذرت ، ہمیں اس کے لئے کوئی میچ نہیں مل سکا
+      course_language: کورس کی زبان
+      duration: دورانیہ
+      filter_settings:
+        categories:
+          academic: تعلیمی
+          business: کاروبار
+          fashion: فیشن
+          food_drink: کھانا پینا
+          for_kids: بچوں کے لئے
+          general: جنرل
+          health: صحت
+          legal: قانونی
+          sport: کھیل
+          travel: سفر
+        durations:
+          t0_600: "<10 منٹ"
+          t1800_3600: 30-60 منٹ
+          t3600_86400: 1+ گھنٹے
+          t600_1800: 10-30 منٹ
+        focus_on:
+          conversation: گفتگو
+          grammar: گرائمر
+          listening: سن رہا ہے
+          pronunciation: تلفظ
+          reading: پڑھنا
+          speaking: بولنا
+          writing: تحریر
+        levels:
+          long:
+            advanced: اعلی درجے کی سطح
+            elementary: ابتدائی درجہ
+            intermediate: انٹرمیڈیٹ کی سطح
+            no_knowledge: کوئی علم نہیں
+            pre_intermediate: انٹرمیڈیٹ سے پہلے کی سطح
+            upper_intermediate: اپر انٹرمیڈیٹ لیول
+          short:
+            advanced: اعلی درجے کی
+            beginner: شروع
+            intermediate: انٹرمیڈیٹ
+        sort_by:
+          most_rated: سب سے زیادہ درجہ بند
+          newest: تازہ ترین
+          popularity: مقبولیت
+      filters: فلٹرز
+      focus_on: پر توجہ مرکوز کریں
+      focus_on_title: میں توجہ مرکوز کرنا چاہتا ہوں
+      hide_lessons: اسباق چھپائیں
+      hours: اوقات
+      i_understand: میں سمجھ گیا
+      i_want_to_learn: میں سیکھنا چاہتا ہوں
+      in_language: "%{language} میں"
+      language: زبان
+      learn_more: اورجانیے
+      less_settings: کم ترتیبات
+      lessons: اسباق
+      lessons_available: "%{number} اسباق دستیاب ہیں"
+      lessons_catalog_page_subtitle: زبان کا ہیرو بن
+      lessons_catalog_page_title: زبان کے کورس کے ذریعہ اپنے افق کو وسعت دیں
+      level: سطح
+      min: کم سے کم
+      more_settings: مزید ترتیبات
+      navbar:
+        close: مینو بند کریں
+        menu: مینو
+        select_language: زبان منتخب کریں
+      need_to_buy_course: آپ کو پہلے کورس کروانا ہوگا
+      no_description: کوئی تفصیل فراہم نہیں کی گئی
+      no_results: معذرت ، ہمیں اس کے لئے کوئی میچ نہیں مل سکا
+      or: یا
+      per_month: فی مہینہ
+      plans: منصوبے
+      privacy_policy: رازداری کی پالیسی
+      rating: درجہ بندی
+      remove_all_filters: تمام فلٹرز کو ہٹا دیں
+      reviews: جائزہ
+      save: محفوظ کریں
+      search: تلاش کریں
+      select_dots: منتخب کریں ...
+      select_languages: لانگج منتخب کریں
+      select_num_languages: "%{number} زبانیں منتخب کریں"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: بی 1
+        b2: بی 2
+        c1: سی 1
+        c2: سی 2
+        zero_level: A0
+      show_all: سارے دکھاو
+      show_all_lessons: سبق دکھائیں
+      show_lessons: "%{number} سبق دکھائیں"
+      show_more: مزید دکھائیں
+      sign_up_with_lingu_for: کے لئے لِنگو ناروے کے ساتھ سائن اپ کریں
+      skills: "%{count} مہارت"
+      sort_by: کے لحاظ سے ترتیب دیں
+      start_typing_here: یہاں ٹائپ کرنا شروع کریں
+      teach: سکھائیں
+      terms_and_conditions: شرائط و ضوابط
+      time_range: وقت کی حد
+      try_adjusting_your_search: اپنے فلٹرز کو تبدیل کرکے اپنی تلاش کو ایڈجسٹ کرنے
+        کی کوشش کریں
+      try_this_course: اس کورس کی کوشش کریں
+      website_language: ویب سائٹ کی زبان
+      words: الفاظ
+    games:
+      finished:
+        go_to_next_exercise: بہت اچھے! اگلی ورزش پر جائیں
+      flashcard:
+        buttons:
+          finish: ختم
+          next: اگلے
+          previous: پچھلا
+        check_out_new_words: اس سبق میں جو نئے الفاظ آپ سیکھیں گے ان کو چیک کریں
+        frequency_of_word_usage: "%{language} میں لفظ کے استعمال کی فریکوئنسی"
+        keep_practice_to_learn_all_words: "%{count} الفاظ کا جائزہ لیں اور آئیے کچھ
+          کھیل کھیلیں!"
+        word_frequency:
+          level1: شاذ و نادر ہی استعمال کیا جاتا ہے
+          level2: شاذ و نادر ہی استعمال کیا جاتا ہے
+          level3: الفاظ کی تعدد - میڈیم
+          level4: الفاظ کی تعدد - میڈیم
+          level5: عام
+          level6: بہت عام
+      match_word:
+        click_and_move_each_word_to_counterpart: ہر لفظ کو اپنے ہم منصب پر کلک کریں
+          اور منتقل کریں
+        start_heading: جوڑا بنانے کے لئے الفاظ ملاو.
+        time_is_up: وقت ختم!
+      skip_tutorial: چھوڑ دو
+      time_is_up: وقت ختم!
+      word_nodes:
+        match_letters_to_form_word: ایک لفظ بنانے کے لئے خطوط کو میچ کریں
+      word_waterfall:
+        do_not_hesitate: چلیں تیز!
+        go_to_next_exercise: اگلی ورزش پر جائیں
+        select_correct_translation: صحیح میچ منتخب کریں
+        well_done: بہت اچھے!
+    home_page:
+      hello: ہیلو،
+      popular_lessons: مقبول اسباق
+      show_more: مزید دکھائیں
+      time: "%{count} منٹ"
+      today_lesson: آج کے ل Your آپ کا سبق
+      user_name: "%{name}!"
+      words: "%{count} الفاظ"
+    idle_screen:
+      by_author: بذریعہ %{authorName}
+      continue_lesson: جاری رکھیں سبق
+      exit: باہر نکلیں
+      idle_message: آپ کچھ وقت کے لئے بیکار رہے ہیں ...
+    lesson_page:
+      back_to_course_page: واپس صفحے پر
+      close: بند کریں
+      continue_lesson: جاری رکھیں سبق
+      followed: پیروی کی
+      hamburger_menu_btn: ہیمبرگر مینو
+      lesson_given: اسباق
+      not_started: شروع نہیں کیا
+      or: یا
+      part_complete: "%{percent}٪ مکمل"
+      restart_lesson: دوبارہ شروع کریں
+      section_check: چیک کریں
+      section_check_info: "%{count} ٹیسٹ"
+      section_learn: سیکھیں
+      section_learn_info: دیکھنے اور پڑھنے کے ل z %{count} منٹ
+      section_play: کھیلیں
+      section_play_info: عمل کرنے کے لئے %{count} الفاظ
+      start_lesson: سبق شروع کریں
+      step_progress: "%{percent}٪"
+      subscribe: پیروی
+      subscribed: پیروی کی
+      subscribers: پیروکار
+      time_min: "%{minutesNumber} منٹ"
+      unsubscribe: غیر مسدود کریں
+      webview_error_title: کچھ غلط ہو گیا...
+      words_number: "%{wordsNumber} نئے الفاظ"
+    lesson_task:
+      cancel_button: منسوخ کریں
+      check:
+        navigation_next: اگلے
+        navigation_previous: پچھلا
+        navigation_skip: چھوڑ دو
+      controls_panel:
+        font_size_button: حرف کا سائز
+        high_contrast_button:
+          origin: اعلی برعکس
+          short: اس کے برعکس
+        hints_button: اشارے
+        music_playback_button:
+          origin: میوزک پلے بیک
+          short: میوزک
+        sound_effects_button:
+          origin: صوتی اثرات
+          short: آواز
+      exit_button: باہر نکلیں
+      finish_button: ختم
+      finished:
+        back_to_learn: سیکھنے کے لئے واپس
+        back_to_lesson_page: سبق والے صفحے پر واپس جائیں
+        back_to_results_page: نتیجہ کے صفحے پر واپس
+        bad_result_message: ہممم ... ایک بار اور سبق لینے کی کوشش کریں
+        close_lesson: سبق بند کریں
+        correct_answers_list: جوابات کی فہرست کو درست کریں
+        good_result_message: میں دیکھ سکتا ہوں کہ آپ نے کوشش کی ہے!
+        great_result_message: بہت اچھے! یہ عظیم نتائج ہیں!
+        next_course_lesson: کورس کے اگلے سبق پر جائیں
+        no_results: آپ کے پاس ابھی تک کوئی ٹیسٹ کے نتائج نہیں ہیں
+        no_results_text: براہ کرم ، اسباق کو مکمل کریں اور نتائج حاصل کرنے کے لئے
+          امتحان پاس کریں
+        see_correct_answers_list: جوابات کی درست فہرست دیکھیں
+        train_more: زیادہ سے زیادہ مشق کریں اور اگلی بار آپ بہتر نتائج حاصل کریں گے!
+        you_finished_lesson: زبردست! آپ نے سبق ختم کردیا
+      go_back: واپس جاو
+      next_button: اگلے
+      not_available_task: یہ کام ابھی دستیاب نہیں ہے
+      start_button: شروع کریں
+      tasks:
+        check:
+          assignment:
+            accept: قبول کریں
+            author_will_check_your_answer: "%{author} آپ کے جواب کا جائزہ لے گا اور
+              عام طور پر 1-2 دن کے اندر رائے دے گا"
+            continue_writing: لکھنا جاری رکھیں
+            copy: کاپی
+            delete: حذف کریں
+            delete_record: ریکارڈ حذف کریں
+            edit: ترمیم
+            essay_does_not_have_enough_words: >-
+              آپ کے جواب میں کم از کم %{minWordsNumber} الفاظ ہونے چاہئیں۔ آپ کا جواب
+              فی الحال %{currentWordsNumber} الفاظ کا ہے۔
+            followers_count: "%{followersCount} پیروکار"
+            lessons_count: "%{lessonsCount} اسباق"
+            minimal_recording_time: ریکارڈنگ کا کم سے کم وقت - %{minimalRecordingTime}
+            minimum_characters_amount: کم سے کم حرف۔ %{minimumCharactersAmount}
+            minimum_words_amount: کم سے کم الفاظ - %{minimumAmount}
+            record_again: دوبارہ ریکارڈ کریں
+            record_voice: آواز ریکارڈ کریں
+            send_anyway: بہر حال بھیجیں
+            send_to_review: جائزہ کے لئے بھیجیں
+            skip: چھوڑ دو
+            too_short_answer: بہت مختصر جواب
+            type_your_answer: اپنا جواب ٹائپ کریں
+            unknown_task_type: نامعلوم کام کی قسم
+            upgrade_licence: لائسنس کو اپ گریڈ کریں
+            upgrade_your_plan: اساتذہ کے جائزے کے ساتھ اسائنمنٹس کو آزمانے کے لئے
+              اپنے منصوبے کو اپ گریڈ کریں
+            upload_files: فائلیں اپ لوڈ کرو
+            write_essay: مضمون لکھیں
+            you_have_used_amount_of_assignments: آپ نے %{amountOfAssignments} اسائنمنٹ
+              کریڈٹ استعمال کیے ہیں
+          fill_in_blanks:
+            sentence_gap: سزا کا فرق
+          fill_in_table:
+            column_answer_placeholder: جواب
+            column_question_placeholder: سوال
+            example: مثال
+          true_false:
+            'false': جھوٹا
+            'true': سچ ہے
+        learn:
+          translatable_text:
+            show_original: اصل دکھائیں
+            translate_into: گوگل کے ساتھ %{languageName} میں ترجمہ کریں
+            translate_into_your_lang: گوگل کے ساتھ اپنی زبان میں ترجمہ کریں
+        play:
+          arrange_words:
+            start_screen:
+              heading: دیئے گئے الفاظ میں سے ایک جملہ بنائیں
+          audition:
+            start_screen:
+              heading: آڈیو سنیں اور ابھی جو لفظ آپ نے سنا ہے اس پر ٹیپ کریں
+          dictation:
+            get_help: مدد حاصل کرو
+            i_do_not_know: میں نہیں جانتا
+            input_placeholder: جو کچھ آپ نے یہاں سنا ہے اسے داخل کریں
+            start_screen:
+              heading: جو سنتے ہو سنو اور لکھ لو
+          fill_gap:
+            start_screen:
+              heading: لفظ اور اس کے معنی ملائیں
+          finish_screen:
+            go_to_next_exercise: بہت اچھے! اگلی ورزش پر جائیں
+          image_hotspot:
+            start_screen:
+              heading: تصویر میں موجود اشیاء کو صحیح طریقے سے نام دیں
+          image_object:
+            start_screen:
+              heading: اگلی تصویر سے دائیں چیز کو منتخب کریں
+          inline_dropdown:
+            start_screen:
+              heading: وہ الفاظ چنیں جو جملے سے مماثل ہوں
+          mark_word:
+            start_screen:
+              heading: متن کو پڑھیں اور وہ لفظ منتخب کریں جو تصویر سے مماثل ہے
+          minimal_pairs:
+            start_screen:
+              heading: ویڈیو دیکھیں اور صحیح آپشن منتخب کریں
+    locale:
+      currency_switcher_title: کرنسی مبدل
+      lang_switcher_title: زبان کا مبدل
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ڈوئش
+        el: Greek
+        en: انگریزی
+        eo: Esperanto
+        es: ایسپول
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: فرانسیسی
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: اطالوی
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: لیٹوویų کالبہ
+        lv: لٹوویو والڈا
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: نورسک
+        ne: Nepali
+        nl: نیدرلینڈز
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: پولسکی
+        ps: Pashto
+        pt: پرتگالی
+        ro: لمبا رومنی
+        ru: к кык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: AF سومالی
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: کیسوالی
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: آڈیو لوڈ ہو رہا ہے
+        aria_pause_button: توقف
+        aria_play_button: کھیلیں
+        aria_reload_button: دوبارہ لوڈ کریں
+        aria_stop_button: رک جاؤ
+        reload_message: آڈیو لوڈ کرنے میں ناکام۔ براہ کرم دوبارہ لوڈ کرنے کے لئے بٹن
+          پر کلک کریں۔
+    mobile_modal:
+      apply: درخواست دیں
+      cancel: منسوخ کریں
+      clear: صاف
+      save: محفوظ کریں
+    page404:
+      goToStartLessonPage: شروع والے سبق والے صفحے پر جائیں
+      ooops: افوہ ...
+      sorry_message: معذرت ، Tor کو یہ صفحہ نہیں مل سکا
+    profile:
+      navigation:
+        log_out: لاگ آوٹ
+        my_profile: میری پروفائل
+        settings: ترتیبات
+      onboarding:
+        choose_native_language: اپنی مادری زبان یا اپنی زبان منتخب کریں
+        do_you_understand_english: کیا آپ انگریزی سمجھتے ہیں؟
+        hello: ہیلو
+        language_levels:
+          a1: ابتدائی درجہ
+          a2: پری انٹرمیڈیٹ لیول
+          b1: انٹرمیڈیٹ کی سطح
+          b2: اپر انٹرمیڈیٹ لیول
+          c1: اعلی درجے کی سطح
+          no_knowledge: کوئی علم نہیں
+        language_not_supported:
+          note: جیسے ہی زبان دستیاب ہوگی ہم آپ کو مطلع کریں گے
+          title: معذرت ، لیکن ہم ابھی تک اس زبان کی حمایت نہیں کرتے ہیں
+          try_another_language: کوئی اور زبان آزمائیں
+        'no': نہیں
+        search_placeholder: تلاش کریں ...
+        show_more_languages: دوسری زبانیں
+        target_language_question: آپ کون سی زبان سیکھنا چاہتے ہیں؟
+        what_is_language_level: آپ اپنے %{languageName} کی سطح کو کیسے درجہ دیں گے؟
+        'yes': جی ہاں
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: زبان کی رازداری کی پالیسی
+        support: مدد کریں
+      logout: لاگ آوٹ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: آپ جن اساتذہ اور اسکولوں کی پیروی کرتے ہیں ان کی تازہ کارییں
+                حاصل کریں
+              sections:
+                app_notifications: ایپ کی اطلاعات
+                email: ای میل
+              title: سیکھنے میں مدد
+            marketing:
+              description: زبان سے سبھی پروموشنز ، اپ ڈیٹس ، اور انسپائریشن کے بارے
+                میں آگاہ رہیں
+              sections:
+                browser_notifications: براؤزر کی اطلاعات
+                email: ای میل
+              title: مارکیٹنگ
+          title: رابطہ کی ترجیحات
+        personal_information:
+          delete_photo: تصویر حذف کریں
+          email: ای میل
+          first_name: پہلا نام
+          last_name: آخری نام
+          social_accounts:
+            connected: جڑا ہوا
+            facebook: فیس بک
+            google: گوگل
+            microsoft: مائیکرو سافٹ
+            not_connected: منسلک نہیں
+            title: سماجی اکاؤنٹس
+          title: ذاتی معلومات
+          update_photo: تصویر کو اپ ڈیٹ کریں
+        school:
+          active_licence: فعال لائسنس
+          active_status: فعال
+          delete_profile: میرا پروفائل حذف کریں
+          delete_profile_modal:
+            body: |-
+              آپ اپنے تمام ڈیٹا کو ہمیشہ کے لئے ختم کردیں گے۔ یہاں کوئی کالعدم بٹن نہیں ہے ، اور ہم اسے آپ کے ل back واپس نہیں آسکتے ہیں۔
+              کیا آپ واقعی اپنے لِنگو پروفائل اور اپنے تمام ڈیٹا کو مستقل طور پر حذف کرنا چاہتے ہیں؟
+            cancel: منسوخ کریں
+            confirm: ہاں ، اسے حذف کردیں
+            i_understand_the_consequences: میں اس کے انجام کو سمجھتا ہوں
+            title: اپنا پروفائل حذف کریں؟
+          expired: میعاد ختم ہوگئی۔ %{expire_date}
+          expires: "%{expire_date} ختم ہوجاتا ہے"
+          inactive_status: غیر فعال
+          revoke_access: پڑھنے تک رسائی منسوخ کریں
+          sections:
+            contact_school: اسکول سے رابطہ کریں
+            export_my_data: میرا ڈیٹا ایکسپورٹ کریں
+            read_school_privacy_policy: اسکول کی رازداری کی پالیسی پڑھیں
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: میوزک پلے بیک
+              sound_effects: صوتی اثرات
+              title: آواز
+            visual:
+              dark_theme: سیاہ تھیم
+              font_size:
+                test_text: گھاس ہمیشہ باڑ کے دوسری طرف ہرے رنگ کی رہتی ہے
+                title: حرف کا سائز
+              high_contrast: اعلی برعکس
+              hints: اشارے
+              title: بصری
+          title: صوتی اور بصری
+        training_settings:
+          sections:
+            i_understand: میں سمجھ گیا
+            i_want_to_learn: میں سیکھنا چاہتا ہوں
+            target_language_level: انگریزی کی سطح
+          title: تربیت کی ترتیبات
+      settings_title: ترتیبات
+    teacher_card:
+      followers_count:
+        one: 1 پیروکار
+        other: "%{count} پیروکار"
+      lessons_count:
+        one: 1 سبق
+        other: "%{count} اسباق"

@@ -1,0 +1,12 @@
+- set_page_title team.name
+
+.card.mb-3
+  .card-header
+    h5.mb-0= team.name
+  .card-body
+    = form_for [:admin, team], html: { id: 'team_form' } do |f|
+      = render partial: 'form', locals: { team: team, f: f }
+
+      .col-12.d-flex.mt-3
+        = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+        = link_to t('back'), admin_teams_path, class: 'btn btn-falcon-default mr-1'

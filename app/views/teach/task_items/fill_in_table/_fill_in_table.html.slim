@@ -1,0 +1,24 @@
+tr id=dom_id(item)
+  th
+    - if task.audio_question_format? && item.audio
+      = audio_tag(item.audio_url, controls: true)
+    - else
+      = best_in_place item,
+              :question,
+              url: teach_task_item_path(task, item),
+              param: :task_item,
+              inner_class: "form-control"
+  = render partial: item.options, as: :option, cached: true, locals: { item: item }
+
+  td
+    .btn-group.float-right
+      - unless item.last?
+        = link_to move_down_teach_task_item_path(task, item), method: :patch, remote: true,
+        class: 'btn move_down', aria: { label: t('move_down') } do
+          span.fas.fa-chevron-down
+      - unless item.first?
+        = link_to move_up_teach_task_item_path(task, item), method: :patch, remote: true,
+        class: 'btn move_up', aria: { label: t('move_up') } do
+          span.fas.fa-chevron-up
+      = link_to teach_task_item_path(task, item), method: :delete, remote: true, class: 'btn text-danger', data: { confirm: t('delete_this_item') } do
+        span.fas.fa-times

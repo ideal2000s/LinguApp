@@ -1,0 +1,40 @@
+- set_page_title t('admin.students.index.student_management')
+.students-container.school-info-container
+  .mb-4
+    .students-header.d-flex.justify-content-between.align-items-center
+      .d-flex.align-items-center
+        h1.mb-0.pb-3= t('students')
+      div
+        = button_to new_school_team_group_path, method: :get, remote: true, class: 'btn btn-primary rounded-capsule menu-button' do
+          =< t('school.team_students.index.new_class')
+        .btn-group.ml-3.custom-dropdown
+          button.btn.btn-primary.rounded-capsule.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+            span.invite-students
+              = t('school.team_students.form.add_new_student')
+            span.horizontal-line
+            i.fa.fa-angle-down
+          .dropdown-menu.dropdown-menu-right.mt-1
+            = button_to new_school_student_path, remote: true, method: :get, class: 'btn shadow-none p-0 d-flex align-items-center' do
+              = image_tag('icons/assign.svg')
+              span= t('school.team_students.index.add_manually')
+            = button_to invite_students_school_students_path, remote: true, method: :get, class: 'btn shadow-none p-0 d-flex align-items-center' do
+              = image_tag('icons/invite.svg')
+              span= t('school.team_students.index.invite_students')
+            = button_to import_students_school_students_path, remote: true, method: :get, class: 'btn shadow-none p-0 d-flex align-items-center' do
+              = image_tag('icons/import.svg')
+              span= t('school.team_students.index.import_students')
+    = render 'list_header'
+  - if team_students.any?
+    = render partial: 'list_filters', locals: { available_plans: available_plans }
+    hr
+    = render 'list', team_students: team_students
+  - unless current_team.team_students.unarchived.size.positive?
+    .teacher-empty-panel.text-center
+      = image_tag("dashboard/add-student.svg", width: 264, height: 268)
+      p.mt-2 = t('admin.dashboard.index.add_student_text')
+      = link_to invite_students_school_students_path, remote: true, class: 'btn btn-primary' do
+        i.fas.fa-plus.mr-2
+        = t('.invite')
+      = link_to import_students_school_students_path, remote: true, class: 'btn btn-primary ml-2' do
+        i.fas.fa-plus.mr-2
+        = t('.import_students')

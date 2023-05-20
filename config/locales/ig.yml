@@ -1,0 +1,603 @@
+---
+ig:
+  course_mailer:
+    course_assigned_notification:
+      button: Malite usoro ahụ
+      click_start_lesson: Pịa 'Malite ihe mmụta'
+      follow_course_link: Pịa bọtịnụ imeghe usoro
+      footer_text: Laghachi na Lingu iji mụta ihe ọhụrụ kwa ụbọchị!
+      get_started_line: 'Nke a bụ otu ị si bido:'
+      notification_link: Ntọala ngosi
+      open_lesson: Mepee ihe ọmụmụ mbụ
+      or_paste_this_link: ma ọ bụ mado njikọ a na ihe nchọgharị gị
+      sign_in_with_email: Jiri adreesị email gị wee banye (%{email})
+      support_link: Nkwado
+      title: Ibido %{course}
+    new_document_comment:
+      author_text: "%{author} hapụrụ nyocha nke ọrụ gị"
+      button_text: Lelee ya
+      button_url_helper: 'ma ọ bụ mado njikọ a na ihe nchọgharị gị:'
+      footer_text: Enwere otutu ihe ichoro ...
+      notification_link: Ntọala ngosi
+      subject_line: Ozi ọhụrụ e nyere anyị
+      support_link: Nkwado
+    otp:
+      ignore_msg: Ọ bụrụ na ịmeghị arịrịọ a, naanị eleghara ozi ịntanetị ahụ anya.
+      subject_line: Koodu gị pụrụ iche maka asụsụ
+      unique_code_for_lingu: Nke a bụ koodu gị pụrụ iche maka asụsụ
+  frontend:
+    auth:
+      already_have_acc_question: Have nweela akaụntụ?
+      back: Azụ
+      back_to_sign_in: Azụ banye
+      check_your_email_for_a_code: Lelee email gị maka koodu gị
+      continue: Gaa n'ihu
+      continue_with_email: Gaa n'ihu na email
+      continue_with_provider: Gaa n'ihu na %{provider}
+      did_not_receive_a_code: Anabatabeghi koodu?
+      email_address: Adreesị ozi ịntanetị
+      first_name: Aha mbụ
+      get_unique_code: Nweta koodu nbanye pụrụ iche
+      join_lingu: Jikọọ asụsụ
+      last_name: Aha ikpeazụ
+      more_login_options: More nbanye nhọrọ
+      no_account_question: Enweghị akaụntụ?
+      or: ma ọ bụ
+      resend_code: Nyeghari koodu
+      sign_in: banye
+      sign_up: debanye aha
+      want_to_receive_marketing_messages: Achọrọ m ịnata ozi ahịa site na asụsụ
+      we_ve_sent_a_code: >-
+        Anyị ezigala koodu ọnụọgụ 6 <strong> {{email}} </strong>. Koodu gwuchara n’ime
+        nkeji iri na ise, yabụ biko tinyenu ya n’oge adịghị anya.
+    cookie_agreement:
+      agree: Na-ekweta
+      condition: >-
+        Anyị na-eji kuki iji nyochaa arụmọrụ saịtị ma nyefee ọdịnaya ahaziri iche.
+        Site na ịpị “Kwere”, ị kwenye na ọnọdụ anyị.
+    course:
+      accredited_course_provider: Ndị na-enye ọrụ akwadoro
+      apply: Tinye
+      apply_filters: Tinye ihe nzacha
+      by: Site na
+      cancel: Kagbuo
+      categories: "%{count} edemede"
+      category: Atiya
+      clear: Kọwaa
+      clear_filters: Kọwaa ihe nzacha
+      contact_us: Kpọtụrụ anyị
+      could_not_find_match_for: Ndo, anyị ahụghị egwuregwu ọ bụla maka
+      course_language: N'ezie asụsụ
+      duration: Oge
+      filter_settings:
+        categories:
+          academic: Ọmụmụ
+          business: Azụmaahịa
+          fashion: Ejiji
+          food_drink: Nri & ihe ọ drinkụ drinkụ
+          for_kids: Maka umuaka
+          general: General
+          health: Ahụike
+          legal: Iwu
+          sport: Egwuregwu
+          travel: Njem
+        durations:
+          t0_600: Nkeji 10
+          t1800_3600: 30-60 nkeji
+          t3600_86400: 1+ awa
+          t600_1800: Nkeji 10-30
+        focus_on:
+          conversation: Mkparịta ụka
+          grammar: Ramtọ asusu
+          listening: Na-ege ntị
+          pronunciation: Mkpọpụta okwu
+          reading: Gụ ihe
+          speaking: Na-ekwu
+          writing: Ide ihe
+        levels:
+          long:
+            advanced: Ọkwa dị elu
+            elementary: Element larịị
+            intermediate: Ọkwa etiti
+            no_knowledge: Enweghị ihe ọmụma
+            pre_intermediate: Nga ọkwa nke etiti
+            upper_intermediate: Oke larịị dị elu
+          short:
+            advanced: Nke di elu
+            beginner: Mbido
+            intermediate: N'etiti
+        sort_by:
+          most_rated: Kacha gosiri
+          newest: Kacha ọhụrụ
+          popularity: Ewu ewu
+      filters: Nzacha
+      focus_on: Gbado anya na
+      focus_on_title: Achọrọ m ilekwasị anya
+      hide_lessons: Zoo ihe
+      hours: Awa
+      i_understand: Aghọtara m
+      i_want_to_learn: Achọrọ m ịmụ
+      in_language: na %{language}
+      language: Asụsụ
+      learn_more: Mụtakwuo
+      less_settings: Ntọala pere mpe
+      lessons: Nkuzi
+      lessons_available: "%{number} nkuzi dị"
+      lessons_catalog_page_subtitle: Bụrụ dike n'asụsụ.
+      lessons_catalog_page_title: Amụ asụsụ ga-amụba mbara igwe gị
+      level: Ọkwa
+      min: Nkeji
+      more_settings: Ntọala ndị ọzọ
+      navbar:
+        close: Mechie menu
+        menu: NchNhr
+        select_language: Họrọ asụsụ
+      need_to_buy_course: Ikwesiri ide akwukwo tupu oge
+      no_description: Enweghị nkọwa nyere
+      no_results: Ndo, anyị ahụghị egwuregwu ọ bụla maka
+      or: ma ọ bụ
+      per_month: kwa ọnwa
+      plans: Atụmatụ
+      privacy_policy: Amụma nzuzo
+      rating: Ogo
+      remove_all_filters: Wepu ihe niile nzacha
+      reviews: Nyocha
+      save: Chekwa
+      search: Chọọ
+      select_dots: Họrọ ...
+      select_languages: Họrọ langauges
+      select_num_languages: Họrọ asụsụ %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Gosi ha niile
+      show_all_lessons: Gosi ihe omumu
+      show_lessons: Gosi nkuzi %{number}
+      show_more: Gosi ihe
+      sign_up_with_lingu_for: Banye na asụsụ asụsụ Norway maka
+      skills: "%{count} nkà"
+      sort_by: Hazie site na
+      start_typing_here: Bido dee ebe a
+      teach: Na-akụzi
+      terms_and_conditions: Usoro na ọnọdụ
+      time_range: Oge iche
+      try_adjusting_your_search: Gbalịa ịhazigharị ọchụchọ gị site na ịgbanwe nzacha
+        gị
+      try_this_course: Gbalịa ihe a
+      website_language: Asụsụ weebụsaịtị
+      words: Okwu
+    games:
+      finished:
+        go_to_next_exercise: Ị mere nke ọma! Gaa na mmega ahụ ọzọ
+      flashcard:
+        buttons:
+          finish: Mechaa
+          next: Osote
+          previous: Nke gara aga
+        check_out_new_words: Lelee okwu ọhụrụ ị ga-amụta na nkuzi a
+        frequency_of_word_usage: Ugboro ugboro nke ojiji okwu na %{language}
+        keep_practice_to_learn_all_words: Nyochaa okwu %{count} ma ka anyị gwuo ụfọdụ
+          egwuregwu!
+        word_frequency:
+          level1: Obere oge
+          level2: Obere oge
+          level3: Okwu ugboro - ọkara
+          level4: Okwu ugboro - ọkara
+          level5: Ọkarị
+          level6: Ezigbo
+      match_word:
+        click_and_move_each_word_to_counterpart: Pịa ma bugharịa mkpụrụ okwu ọ bụla
+          na ibe ya
+        start_heading: Dakọtara okwu iji mee otu ụzọ
+        time_is_up: Oge agwụla!
+      skip_tutorial: Mafere
+      time_is_up: Oge agwụla!
+      word_nodes:
+        match_letters_to_form_word: Dakọtara akwụkwọ ozi iji mepụta okwu
+      word_waterfall:
+        do_not_hesitate: Ka anyị mee ọsọ ọsọ!
+        go_to_next_exercise: Gaa na mmega ahụ ọzọ
+        select_correct_translation: Họrọ egwuregwu kwesiri
+        well_done: Ị mere nke ọma!
+    home_page:
+      hello: Nnọọ,
+      popular_lessons: Ihe omumu ndi mara nma
+      show_more: Gosi ihe
+      time: zzzzz00 min
+      today_lesson: Ihe omumu gi taa
+      user_name: Chidinma
+      words: "%{count} okwu"
+    idle_screen:
+      by_author: by Onyeka Onwenu
+      continue_lesson: Gaa n'ihu ihe mmụta
+      exit: Ụzọ ọpụpụ
+      idle_message: Been nọrọla nkịtị nwa oge ...
+    lesson_page:
+      back_to_course_page: Laghachi na peeji nke
+      close: Mechie
+      continue_lesson: Gaa n'ihu ihe mmụta
+      followed: Na-eso
+      hamburger_menu_btn: Hamburger menu
+      lesson_given: nkuzi
+      not_started: ebughi
+      or: Ma ọ bụ
+      part_complete: "%{percent}% zuru ezu"
+      restart_lesson: Malitegharịa ekwentị
+      section_check: Lelee
+      section_check_info: "%{count} ule"
+      section_learn: Mụta
+      section_learn_info: "%{count} min iji lelee ma gụọ"
+      section_play: Kpọọ
+      section_play_info: Okwu azịza
+      start_lesson: Malite ihe omumu
+      step_progress: Chidinma
+      subscribe: Soro
+      subscribed: Na-eso
+      subscribers: na-eso ụzọ
+      time_min: zzzzz00 min
+      unsubscribe: Wepu
+      webview_error_title: O nwere ihe mere ...
+      words_number: "%{wordsNumber} okwu ọhụrụ"
+    lesson_task:
+      cancel_button: Kagbuo
+      check:
+        navigation_next: Osote
+        navigation_previous: Nke gara aga
+        navigation_skip: Mafere
+      controls_panel:
+        font_size_button: Nha ihu nha
+        high_contrast_button:
+          origin: Ọdịiche dị elu
+          short: Ihe dị iche
+        hints_button: Ihe ngosi
+        music_playback_button:
+          origin: Egwu egwu
+          short: Egwu
+        sound_effects_button:
+          origin: Mmetụta ụda
+          short: ".Da"
+      exit_button: Ụzọ ọpụpụ
+      finish_button: Mechaa
+      finished:
+        back_to_learn: Laghachi ịmụ ihe
+        back_to_lesson_page: Laghachi na peeji nke nkuzi
+        back_to_results_page: Laghachi na peeji nsonaazụ
+        bad_result_message: Hmm ... gbalịa iwere nkuzi ahụ oge ọzọ
+        close_lesson: Mechie ihe
+        correct_answers_list: Ndepụta azịza ziri ezi
+        good_result_message: Enwere m ike ịhụ na ị gbalịsiri ike!
+        great_result_message: Ị mere nke ọma! Ndị a bụ ezigbo nsonaazụ!
+        next_course_lesson: Gaa na nkuzi ọzọ na nkuzi
+        no_results: Have nweghị nsonaazụ ule ugbu a
+        no_results_text: Biko, mezue nkuzi wee gafee ule iji nweta nsonaazụ ya
+        see_correct_answers_list: Hụ ndepụta azịza ziri ezi
+        train_more: Na-emekwu ihe ma ị ga-arụpụta ezigbo nsonaazụ oge ọzọ!
+        you_finished_lesson: Akwa! Mechara ihe mmụta ahụ
+      go_back: Laghachi azụ
+      next_button: Osote
+      not_available_task: Ọrụ a adịghị ma
+      start_button: Malite
+      tasks:
+        check:
+          assignment:
+            accept: Nabata
+            author_will_check_your_answer: "%{author} ga-enyocha azịza gị ma na-enyekarị
+              nzaghachi n'ime ụbọchị 1-2"
+            continue_writing: Nọgide na-ede
+            copy: Detuo
+            delete: Hichapụ
+            delete_record: Hichapụ ndekọ
+            edit: Dezie
+            essay_does_not_have_enough_words: >-
+              Azịza gị kwesịrị ịnwe opekata mpe okwu %{minWordsNumber}. Azịza gị ugbu
+              a bụ %{currentWordsNumber} okwu.
+            followers_count: Onyedika Onyemaobi
+            lessons_count: "%{lessonsCount} nkuzi"
+            minimal_recording_time: Obere oge ndekọ - %{minimalRecordingTime}
+            minimum_characters_amount: Obere ederede - %{minimumCharactersAmount}
+            minimum_words_amount: Okwu pere mpe - %{minimumAmount}
+            record_again: Dekọọ ọzọ
+            record_voice: Dekọọ olu
+            send_anyway: Ziga agbanyeghị
+            send_to_review: Ziga iji nyochaa
+            skip: Mafere
+            too_short_answer: Azịza dị mkpụmkpụ
+            type_your_answer: Pịnye azịza gị
+            unknown_task_type: Taskdị ọrụ a na-amaghị
+            upgrade_licence: Nweta nkwalite
+            upgrade_your_plan: Kwalite atụmatụ gị iji nwalee ọrụ nke ndị nkuzi
+            upload_files: Bulite faịlụ
+            write_essay: Dee edemede
+            you_have_used_amount_of_assignments: Have jirila kredit %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Oghere nke ikpe
+          fill_in_table:
+            column_answer_placeholder: Azịza
+            column_question_placeholder: Ajụjụ
+            example: Ihe Nlereanya
+          true_false:
+            'false': Segha
+            'true': Eziokwu
+        learn:
+          translatable_text:
+            show_original: Gosi nke izizi
+            translate_into: Jiri Google tụgharịa asụsụ na %{languageName}
+            translate_into_your_lang: Jiri Google sụgharịa asụsụ gị
+        play:
+          arrange_words:
+            start_screen:
+              heading: Mee otu ahịrịokwu n’ime okwu ndị ahụ enyere
+          audition:
+            start_screen:
+              heading: Gee ntị na ụda wee pịa okwu ị nụrụ ugbu a
+          dictation:
+            get_help: Chọọ enyemaka
+            i_do_not_know: Amaghị m
+            input_placeholder: Tinye ihe ị nụrụ ebe a
+            start_screen:
+              heading: Gee ntị nụrụ ihe ị nụrụ
+          fill_gap:
+            start_screen:
+              heading: Dakọtara okwu ahụ na ihe ọ pụtara
+          finish_screen:
+            go_to_next_exercise: Ị mere nke ọma! Gaa na mmega ahụ ọzọ
+          image_hotspot:
+            start_screen:
+              heading: Kpọọ ihe ndị dị na foto a aha nke ọma
+          image_object:
+            start_screen:
+              heading: Họrọ ihe ziri ezi na eserese na-esote
+          inline_dropdown:
+            start_screen:
+              heading: Họrọ mkpụrụ okwu dabara na ahịrịokwu ahụ
+          mark_word:
+            start_screen:
+              heading: Guo ederede ma họrọ okwu ya na ihe onyonyo a
+          minimal_pairs:
+            start_screen:
+              heading: Lelee vidiyo ma họrọ nhọrọ ziri ezi
+    locale:
+      currency_switcher_title: Mgbanwe ego
+      lang_switcher_title: Asụsụ switcher
+      locales:
+        af: Afrịka
+        am: Asụsụ Amharik
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Арски
+        bn: Asụsụ Bengali
+        bs: Asụsụ Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Asụsụ Kọsikan
+        cs: Czech
+        cy: Welsh
+        da: Asụsụ Danish
+        de: Deutsch
+        el: Grik
+        en: Bekee
+        eo: Esperanto
+        es: Español
+        et: Estonia
+        eu: Basque
+        fa: Peshia
+        fi: Asụsụ Finish
+        fr: Français
+        fy: Frisị
+        ga: Asụsụ Aịrish
+        gd: Gaelic nke Scots
+        gl: Onye Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaii
+        he: Hibru
+        hi: Hindi
+        hmn: Hmong
+        hr: Asụsụ Croatian
+        ht: Asụsụ Creole nke Haiti
+        hu: Asụsụ Hungary
+        hy: Armenia
+        id: Indoneshian
+        ig: Igbo
+        is: Asụsụ Iceland
+        it: Italiano
+        ja: Ndị Japan
+        jv: Asụsụ Javanese
+        ka: Onye Georgia
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdi
+        ky: Kyrgyz
+        la: Latin
+        lb: Asụsụ Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Asụsụ Malagasy
+        mi: Maori
+        mk: Masedonia
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Mọlta
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Asụsụ Nepali
+        nl: Nederlands
+        ny: Distance Arochukwu-Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Asụsụ Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala
+        sk: Asụsụ Slovak
+        sl: Asụsụ Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albania
+        sr: Mmekọahụ
+        st: Sesotho
+        su: Asụsụ Sundan
+        sv: Asụsụ Sweden
+        sw: kiSwahili
+        ta: Asụsụ Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Ndị Turkmen
+        tl: Asụsụ Tagle
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Asụsụ Urdu
+        uz: Asụsụ Uzbek
+        vi: Vietnam
+        xh: Xhosa
+        yi: Asụsụ Yiddish
+        yo: Ndi Yoruba
+        zh: Chinese nke
+        zu: Asụsụ
+    media_player:
+      audio_player:
+        aria_loading_button: Audio na-ebu ibu
+        aria_pause_button: Kwụsịtụ
+        aria_play_button: Kpọọ
+        aria_reload_button: Bugharịa
+        aria_stop_button: Kwụsị
+        reload_message: Okpu Ibu Ibu Biko pịa bọtịnụ Mbugharị.
+    mobile_modal:
+      apply: Tinye
+      cancel: Kagbuo
+      clear: Kọwaa
+      save: Chekwa
+    page404:
+      goToStartLessonPage: Gaa na peeji nke mmalite ọmụmụ
+      ooops: Oooops ...
+      sorry_message: Ndo, Tor ahụghị ihu akwụkwọ a
+    profile:
+      navigation:
+        log_out: Pụọ
+        my_profile: Profaịlụ m
+        settings: Ntọala
+      onboarding:
+        choose_native_language: Họrọ asụsụ ala gị ma ọ bụ asụsụ ị na-aghọta
+        do_you_understand_english: I na aghota bekee?
+        hello: Nnọọ
+        language_levels:
+          a1: Element larịị
+          a2: Nga ọkwa nke etiti
+          b1: Ọkwa etiti
+          b2: Oke elu nke etiti
+          c1: Ọkwa dị elu
+          no_knowledge: Enweghị ihe ọmụma
+        language_not_supported:
+          note: Anyị ga-agwa gị ozugbo asụsụ ahụ ga-adị
+          title: Ndo, mana anyị anaghị akwado asụsụ a
+          try_another_language: Nwalee asụsụ ọzọ
+        'no': Mba
+        search_placeholder: Chọọ ...
+        show_more_languages: Asụsụ ndị ọzọ
+        target_language_question: Kedu asụsụ ị chọrọ ịmụ?
+        what_is_language_level: Kedụ ihe ị ga-eji ọkwa %{languageName} gị?
+        'yes': Eeh
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Iwu nzuzo nke asụsụ
+        support: Nkwado
+      logout: Logout
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Nweta mmelite sitere na ndị nkuzi na ụlọ akwụkwọ ị na-eso
+              sections:
+                app_notifications: Notma Ọkwa
+                email: E-mail
+              title: Enyemaka mmụta
+            marketing:
+              description: Mụọ maka ọkwa niile, mmelite na mmụọ sitere na asụsụ
+              sections:
+                browser_notifications: Nchọgharị nchọgharị
+                email: E-mail
+              title: Ahịa
+          title: Kpọtụrụ mmasị
+        personal_information:
+          delete_photo: Hichapụ foto
+          email: Email
+          first_name: Aha mbụ
+          last_name: Aha ikpeazụ
+          social_accounts:
+            connected: Ejikọtara
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Enweghị njikọ
+            title: Akaụntụ mmekọrịta
+          title: Ozi nkeonwe
+          update_photo: Melite foto
+        school:
+          active_licence: Ikike ikike
+          active_status: Nọ n'ọrụ
+          delete_profile: Hichapụ profaịlụ m
+          delete_profile_modal:
+            body: |-
+              Kpochapụrụ data gị niile ruo mgbe ebighị ebi. Enweghị bọtịnụ idozi, anyị enweghị ike iweghachitere gị ya ma emechaa.
+              O doro gị anya na ị chọrọ ihichapụ profaịlụ asụsụ gị na data gị niile?
+            cancel: Kagbuo
+            confirm: Ee, hichapụ ya
+            i_understand_the_consequences: Aghọtara m ihe si na ya pụta
+            title: Hichapụ profaịlụ gị?
+          expired: Emechara %{expire_date}
+          expires: Emebie %{expire_date}
+          inactive_status: Adịghị arụ ọrụ
+          revoke_access: Wepụ ohere ịgụ
+          sections:
+            contact_school: Kpọtụrụ ụlọ akwụkwọ
+            export_my_data: Mbupụ data m
+            read_school_privacy_policy: Guo Iwu Nzuzo nke School
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Egwu egwu
+              sound_effects: Mmetụta ụda
+              title: ".Da"
+            visual:
+              dark_theme: Isi okwu gbara ọchịchịrị
+              font_size:
+                test_text: Ugbo ahihia ahihia ndu n’akuku nke ngere
+                title: Nha ihu nha
+              high_contrast: Ọdịiche dị elu
+              hints: Ihe ngosi
+              title: Anya
+          title: "&Da & Anya"
+        training_settings:
+          sections:
+            i_understand: Aghọtara m
+            i_want_to_learn: Achọrọ m ịmụ
+            target_language_level: Ọkwa Bekee
+          title: Ntọala ọzụzụ
+      settings_title: Ntọala
+    teacher_card:
+      followers_count:
+        one: 1 na-eso ụzọ
+        other: Onyedika Onyemaobi
+      lessons_count:
+        one: 1 ihe
+        other: "%{count} nkuzi"

@@ -1,0 +1,15 @@
+- set_page_title t('.title')
+
+.card
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner2.png')});"
+  .card-header.pb-2
+    h3.ml-0= current_team_user.member? ? t('teach.lessons.index.my_posts') : t('teach.lessons.index.all_posts')
+  .card-body.z-index-10.my-3.py-0
+    = link_to new_teach_post_path, class: 'card-link' do
+      i.fas.fa-plus.fa-fw.mr-1
+      span= t('teach.posts.new.title')
+.card.mt-3.p-3.tab-content.border
+  - if posts.count > 0
+    = render 'list', posts: posts
+  - else
+    = t('.no_posts')

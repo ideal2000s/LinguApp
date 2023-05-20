@@ -1,0 +1,11 @@
+.card
+  = render 'teach/tasks/shared_task_header', task: task
+  = form_for form, as: :task, url: teach_lesson_task_path(task.lesson, task), method: :patch do |f|
+    = render 'teach/tasks/sms/fields', f: f
+
+#task_items.mt-5
+  h2= t('.define_sms_dialogue')
+  #task_items_container
+    = render partial: task.items, as: :item, locals: { task: task }
+.links
+  = render task.items.form.new, task: task

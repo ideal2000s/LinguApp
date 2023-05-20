@@ -1,0 +1,4 @@
+(function(){
+    var $container = $('#<%=dom_id(option)%>');
+    $container.replaceWith('<%= j render 'teach/task_item_options/select_text/select_text', option: @option, item: @item %>')
+})();

@@ -1,0 +1,50 @@
+= paginate lessons
+table.table.thead-light.table-hover.mb-0
+  thead
+    tr.vertical
+      th
+      th= t('title')
+      th
+        i.fas.fa-tags
+      th.text-center
+        i.fas.fa-star
+      th.text-center
+        i.fas.fa-clock
+      th
+  tbody
+    - lessons.each do |lesson|
+      tr
+        td.align-middle
+          .fas.fa-circle class="#{lesson.published? ? 'text-success' : 'text-muted'}"
+        td.w-100
+          = link_to lesson.title, teach_lesson_path(lesson), class: 'text-primary font-weight-bold'
+          small.d-flex.align-items-center
+            - unless current_team_user.member?
+              = user_avatar_with_name lesson.author, 'avatar-s'
+              |,
+            =< l(lesson.updated_at, format: :short)
+        td.align-middle
+          = lesson_level_tag(lesson)
+          - lesson.skills.each do |s|
+            .badge.badge-pill.badge-soft-warning.mr-1.my-1
+              span= s.name
+          - lesson.tags.flatten.reject(&:blank?).each do |t|
+            .badge.badge-pill.badge-soft-success.mr-1.my-1
+              span= t(t, scope: 'activerecord.attributes.lesson.tags')
+        td.align-middle
+          - if lesson.ratings_count.positive?
+            small
+              = lesson.rating
+              =< "(#{lesson.ratings_count})"
+        td.align-middle
+          -if lesson.average_duration
+            span.badge.badge-light= lesson.average_duration_human
+        td.align-middle.text-right
+          .btn-group
+            = link_to teach_lesson_reviews_path(lesson), class: 'btn btn-falcon-default btn-sm' do
+              i.fas.fa-eye.fa-fw
+            = link_to edit_teach_lesson_path(lesson), class: 'btn btn-falcon-default btn-sm' do
+              i.fas.fa-pencil-alt.fa-fw
+            - if policy(lesson).destroy?
+              = link_to teach_lesson_path(lesson), class: 'btn btn-falcon-danger btn-sm', method: :delete, data: { confirm: t('teach.lessons.confirm_lesson_delete')} do
+                i.fas.fa-times.fa-fw

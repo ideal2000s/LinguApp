@@ -1,0 +1,59 @@
+= form_with(model: [@language, @word], url: path) do |form|
+  = form.hidden_field :image, value: @word.cached_image_data
+  = form.hidden_field :animation, value: @word.cached_animation_data
+  .word_illustration.p-4
+    h4.mb-4= @word.image ? t('.update_illustration') : t('.add_illustration')
+    - if @word.errors.any?
+      #error_explanation
+        h2= "#{pluralize(@word.errors.count, "error")} prohibited this word from being saved:"
+        ul
+          - @word.errors.full_messages.each do |message|
+            li= message
+    .word-image.row.align-items-center
+      - valid_image_types = %w[image/svg+xml image/svg]
+      - other_image_types = %w[image/jpeg image/jpg image/png image/webp image/tiff image/gif]
+      - if @word.image.nil? || !valid_image_types.include?(@word.image.mime_type)
+        .col-1
+        .custom-file.col-5
+          = form.file_field :image, class: 'input-file custom-file-input js-preview-phrase-image', id: 'phrase-image-upload', accept: '.svg', style: 'margin-bottom: 10px'
+          label.custom-file-label.pl-4
+            = t('.choose_image')
+        - if @word.image.present?
+          span.file-upload__file.ml-4
+            - if other_image_types.include?(@word.image.mime_type)
+              = image_tag @word.image_url, class: 'word_uploaded_image'
+            - else
+              = link_to @word.image.original_filename, @word.image_url
+        .col-6
+          img#preview_image.hidden
+          span#upload_file_name.hidden
+      - else
+        .col-6= image_tag @word.image_url.to_s, class: 'word_uploaded_image'
+        div.image-upload-remove.col-3
+          label.checkbox
+            = form.check_box :remove_image
+            span style='margin-left: 3px' Remove
+    .word-animation.mt-4.row.align-items-center
+      - if @word.animation.nil?
+        .col-1
+        .text-center
+        .custom-file.col-5
+          = form.file_field :animation, class: 'input-file custom-file-input js-preview-phrase-animation', id: 'phrase-animation-upload', accept: '.json', style: 'margin-bottom: 10px'
+          label.custom-file-label.pl-3
+            = t('.choose_animation')
+        span#animation_file_name.col-6.text-center
+      - else
+        .col-2
+        .text-center.col-5
+          = link_to @word.animation.original_filename, @word.animation_url
+        div.animation-upload-remove.col-3
+          label.checkbox
+            = form.check_box :remove_animation
+            span style='margin-left: 3px' Remove
+    .word-color-required.mt-4.ml-5
+      = form.check_box :color_required, style: 'margin-right: 5px'
+      = form.label :color_required
+    - if @collection
+      = hidden_field_tag :collection_id, @collection.id
+    .actions.mt-4
+      = form.submit value: t('update'), class: 'btn btn-primary'

@@ -1,0 +1,613 @@
+---
+be:
+  course_mailer:
+    course_assigned_notification:
+      button: Пачніце курс
+      click_start_lesson: Націсніце "Пачаць урок"
+      follow_course_link: Націсніце кнопку, каб адкрыць курс
+      footer_text: Вяртайцеся ў Лінгву, каб кожны дзень даведацца нешта новае!
+      get_started_line: 'Вось як пачаць:'
+      notification_link: Налады апавяшчэнняў
+      open_lesson: Адкрыйце першы ўрок
+      or_paste_this_link: альбо ўстаўце гэтую спасылку ў свой браўзэр
+      sign_in_with_email: Увайдзіце са сваім адрасам электроннай пошты (%{email})
+      support_link: Падтрымка
+      title: Пачатак працы з %{course}
+    new_document_comment:
+      author_text: "%{author} пакінуў агляд вашага задання"
+      button_text: Праверце
+      button_url_helper: 'альбо ўстаўце гэтую спасылку ў свой браўзэр:'
+      footer_text: Можна яшчэ шмат чаму навучыцца ...
+      notification_link: Налады апавяшчэнняў
+      subject_line: Новы каментарый да задання
+      support_link: Падтрымка
+    otp:
+      ignore_msg: Калі вы не зрабілі гэты запыт, проста ігнаруйце электронную пошту.
+      subject_line: Ваш унікальны код для Lingu
+      unique_code_for_lingu: Вось ваш унікальны код для лінгві
+  frontend:
+    auth:
+      already_have_acc_question: Ужо ёсць уліковы запіс?
+      back: Назад
+      back_to_sign_in: Назад да Уваход
+      check_your_email_for_a_code: Праверце ваш адрас электроннай пошты на наяўнасць
+        кода
+      continue: Працягвайце
+      continue_with_email: Працягвайце з электроннай поштай
+      continue_with_provider: Працягвайце з %{provider}
+      did_not_receive_a_code: Не атрымалі код?
+      email_address: Адрас электроннай пошты
+      first_name: Імя
+      get_unique_code: Атрымаць унікальны код для ўваходу
+      join_lingu: Далучайцеся да Lingu
+      last_name: Прозвішча
+      more_login_options: Дадатковыя параметры ўваходу
+      no_account_question: У вас няма ўліковага запісу?
+      or: альбо
+      resend_code: Паўторна адправіць код
+      sign_in: Увайсці
+      sign_up: Зарэгістравацца
+      want_to_receive_marketing_messages: Я хачу атрымліваць маркетынгавыя паведамленні
+        ад Lingu
+      we_ve_sent_a_code: >-
+        Мы адправілі 6-значны код на <strong> {{email}} </strong>. Код заканчваецца
+        праз 15 хвілін, таму, калі ласка, увядзіце яго ў бліжэйшы час.
+    cookie_agreement:
+      agree: Пагадзіцеся
+      condition: >-
+        Мы выкарыстоўваем файлы cookie для аналізу працы сайта і дастаўкі персаналізаванага
+        кантэнту. Націскаючы кнопку "Згодны", вы згаджаецеся з нашымі ўмовамі.
+    course:
+      accredited_course_provider: Акрэдытаваны пастаўшчык курсаў
+      apply: Падаць заяўку
+      apply_filters: Ужыць фільтры
+      by: Аўтар
+      cancel: Адмяніць
+      categories: "%{count} катэгорыі"
+      category: Катэгорыя
+      clear: Ясна
+      clear_filters: Ачысціць фільтры
+      contact_us: Звяжыцеся з намі
+      could_not_find_match_for: На жаль, мы не змаглі знайсці ніводнага супадзення
+        для
+      course_language: Мова курса
+      duration: Працягласць
+      filter_settings:
+        categories:
+          academic: Акадэмічны
+          business: Бізнэс
+          fashion: Мода
+          food_drink: Ежа і напоі
+          for_kids: Для дзяцей
+          general: Агульны
+          health: Здароўе
+          legal: Юрыдычны
+          sport: Спорт
+          travel: Падарожжа
+        durations:
+          t0_600: "<10 хвілін"
+          t1800_3600: 30-60 хвілін
+          t3600_86400: 1+ гадзіну
+          t600_1800: 10-30 хвілін
+        focus_on:
+          conversation: Размова
+          grammar: Граматыка
+          listening: Слухаю
+          pronunciation: Вымаўленне
+          reading: Чытанне
+          speaking: Кажучы
+          writing: Сачыненне
+        levels:
+          long:
+            advanced: Пашыраны ўзровень
+            elementary: Элементарны ўзровень
+            intermediate: Сярэдні ўзровень
+            no_knowledge: Няма ведаў
+            pre_intermediate: Да сярэдняга ўзроўню
+            upper_intermediate: Верхні прамежкавы ўзровень
+          short:
+            advanced: Пашыраны
+            beginner: Пачатковец
+            intermediate: Прамежкавы
+        sort_by:
+          most_rated: Самыя рэйтынгавыя
+          newest: Найноўшыя
+          popularity: Папулярнасць
+      filters: Фільтры
+      focus_on: Сфакусавацца на
+      focus_on_title: Я хачу засяродзіцца на
+      hide_lessons: Схаваць урокі
+      hours: Гадзін
+      i_understand: Я разумею
+      i_want_to_learn: Я хачу вучыцца
+      in_language: у %{language}
+      language: Мова
+      learn_more: Даведайся больш
+      less_settings: Менш налад
+      lessons: Урокі
+      lessons_available: "%{number} даступных урокаў"
+      lessons_catalog_page_subtitle: Стаць моўным героем.
+      lessons_catalog_page_title: Пашырце свой кругагляд моўным курсам
+      level: Узровень
+      min: Мін
+      more_settings: Дадатковыя налады
+      navbar:
+        close: Зачыніць меню
+        menu: Меню
+        select_language: Выберыце мову
+      need_to_buy_course: Спачатку трэба замовіць курс
+      no_description: Апісанне не прадстаўлена
+      no_results: На жаль, мы не змаглі знайсці ніводнага супадзення для
+      or: альбо
+      per_month: у месяц
+      plans: Планы
+      privacy_policy: Палітыка прыватнасці
+      rating: Рэйтынг
+      remove_all_filters: Выдаліце ўсе фільтры
+      reviews: Водгукі
+      save: Захаваць
+      search: Пошук
+      select_dots: Выберыце ...
+      select_languages: Выберыце мовы
+      select_num_languages: Выберыце мовы %{number}
+      short_levels:
+        a1: А1
+        a2: А2
+        b1: B1
+        b2: В2
+        c1: C1
+        c2: С2
+        zero_level: A0
+      show_all: Паказаць усё
+      show_all_lessons: Паказаць усе ўрокі
+      show_lessons: Паказаць урокі %{number}
+      show_more: Паказаць больш
+      sign_up_with_lingu_for: Падпішыцеся на Lingu Нарвегія для
+      skills: "%{count} навыкі"
+      sort_by: Сартаваць па
+      start_typing_here: Пачніце друкаваць тут
+      teach: Вучыце
+      terms_and_conditions: Умовы
+      time_range: Дыяпазон часу
+      try_adjusting_your_search: Паспрабуйце наладзіць пошук, змяніўшы фільтры
+      try_this_course: Паспрабуйце гэты курс
+      website_language: Мова вэб-сайта
+      words: Словы
+    games:
+      finished:
+        go_to_next_exercise: Добра зроблена! Перайсці да наступнага практыкаванні
+      flashcard:
+        buttons:
+          finish: Скончыць
+          next: Далей
+          previous: Папярэдняя
+        check_out_new_words: Праверце новыя словы, якія вы даведаецеся на гэтым уроку
+        frequency_of_word_usage: Частата выкарыстання слоў у %{language}
+        keep_practice_to_learn_all_words: Праглядзіце словы %{count} і пагуляем у
+          некалькі гульняў!
+        word_frequency:
+          level1: Рэдка выкарыстоўваецца
+          level2: Рэдка выкарыстоўваецца
+          level3: Частата слоў - сярэдняя
+          level4: Частата слоў - сярэдняя
+          level5: Агульны
+          level6: Вельмі часта
+      match_word:
+        click_and_move_each_word_to_counterpart: Націсніце і перамясціце кожнае слова
+          на адпаведнік
+        start_heading: Дапасайце словы, каб атрымалася пара
+        time_is_up: Час скончыўся!
+      skip_tutorial: Прапусціць
+      time_is_up: Час скончыўся!
+      word_nodes:
+        match_letters_to_form_word: Падбярыце літары, каб утварыць слова
+      word_waterfall:
+        do_not_hesitate: Давайце паскорым!
+        go_to_next_exercise: Перайсці да наступнага практыкаванні
+        select_correct_translation: Выберыце правільнае супадзенне
+        well_done: Добра зроблена!
+    home_page:
+      hello: Добры дзень,
+      popular_lessons: Папулярныя ўрокі
+      show_more: Паказаць больш
+      time: "%{count} мін"
+      today_lesson: Ваш урок на сёння
+      user_name: "%{name}!"
+      words: "%{count} слоў"
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Працягнуць урок
+      exit: Выйсце
+      idle_message: Вы нейкі час бяздзейнічалі ...
+    lesson_page:
+      back_to_course_page: Вярнуцца да старонкі курса
+      close: Зачыніць
+      continue_lesson: Працягнуць урок
+      followed: Услед
+      hamburger_menu_btn: Меню гамбургера
+      lesson_given: урокі
+      not_started: не пачаў
+      or: Альбо
+      part_complete: "%{percent}% завершана"
+      restart_lesson: Перазапуск
+      section_check: Праверце
+      section_check_info: тэсты %{count}
+      section_learn: Даведайся
+      section_learn_info: "%{count} хвілін для прагляду і чытання"
+      section_play: Гуляць
+      section_play_info: "%{count} слоў на практыцы"
+      start_lesson: Пачатак урока
+      step_progress: "%{percent}%"
+      subscribe: Выконвайце
+      subscribed: Услед
+      subscribers: паслядоўнікаў
+      time_min: "%{minutesNumber} мін"
+      unsubscribe: Адмяніць
+      webview_error_title: Нешта пайшло не так ...
+      words_number: "%{wordsNumber} новых слоў"
+    lesson_task:
+      cancel_button: Адмяніць
+      check:
+        navigation_next: Далей
+        navigation_previous: Папярэдняя
+        navigation_skip: Прапусціць
+      controls_panel:
+        font_size_button: Памер шрыфта
+        high_contrast_button:
+          origin: Высокая кантраснасць
+          short: Кантраст
+        hints_button: Падказкі
+        music_playback_button:
+          origin: Прайграванне музыкі
+          short: Музыка
+        sound_effects_button:
+          origin: Гукавыя эфекты
+          short: Гук
+      exit_button: Выйсце
+      finish_button: Скончыць
+      finished:
+        back_to_learn: Назад, каб даведацца
+        back_to_lesson_page: Вярнуцца да старонкі ўрока
+        back_to_results_page: Вярнуцца на старонку вынікаў
+        bad_result_message: Хм ... паспрабуй яшчэ раз прайсці ўрок
+        close_lesson: Блізкі ўрок
+        correct_answers_list: Спіс правільных адказаў
+        good_result_message: Я бачу, вы прыклалі намаганні!
+        great_result_message: Добра зроблена! Гэта цудоўныя вынікі!
+        next_course_lesson: Перайсці да наступнага ўрока ў курсе
+        no_results: У вас пакуль няма вынікаў тэстаў
+        no_results_text: Калі ласка, запоўніце ўрок і прайдзіце тэст, каб атрымаць
+          вынікі
+        see_correct_answers_list: Глядзіце спіс правільных адказаў
+        train_more: Трэніруйцеся больш, і вы даможацеся лепшых вынікаў у наступны
+          раз!
+        you_finished_lesson: Выдатна! Вы скончылі ўрок
+      go_back: Вяртацца
+      next_button: Далей
+      not_available_task: Гэта задача пакуль недаступная
+      start_button: Пачніце
+      tasks:
+        check:
+          assignment:
+            accept: Прыняць
+            author_will_check_your_answer: "%{author} разгледзіць ваш адказ і звычайна
+              дасць водгукі на працягу 1-2 дзён"
+            continue_writing: Працягвайце пісаць
+            copy: Капіяваць
+            delete: Выдаліць
+            delete_record: Выдаліць запіс
+            edit: Рэдагаваць
+            essay_does_not_have_enough_words: >-
+              Ваш адказ павінен змяшчаць як мінімум %{minWordsNumber} слоў. У цяперашні
+              час вашым адказам з'яўляюцца %{currentWordsNumber} словы.
+            followers_count: "%{followersCount} паслядоўнікаў"
+            lessons_count: "%{lessonsCount} урокаў"
+            minimal_recording_time: Мінімальны час запісу - %{minimalRecordingTime}
+            minimum_characters_amount: Мінімум сімвалаў - %{minimumCharactersAmount}
+            minimum_words_amount: Мінімум слоў - %{minimumAmount}
+            record_again: Запіс яшчэ раз
+            record_voice: Запіс голасу
+            send_anyway: Адправіць у любым выпадку
+            send_to_review: Адправіць на агляд
+            skip: Прапусціць
+            too_short_answer: Занадта кароткі адказ
+            type_your_answer: Увядзіце адказ
+            unknown_task_type: Невядомы тып задачы
+            upgrade_licence: Абнаўленне ліцэнзіі
+            upgrade_your_plan: Абнавіце свой план, каб паспрабаваць заданні з дапамогай
+              аглядаў настаўнікаў
+            upload_files: Загрузіць файлы
+            write_essay: Напісаць сачыненне
+            you_have_used_amount_of_assignments: Вы выкарыстоўвалі крэдыты прызначэння
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Разрыў прапаноў
+          fill_in_table:
+            column_answer_placeholder: Адкажыце
+            column_question_placeholder: Пытанне
+            example: Прыклад
+          true_false:
+            'false': Няпраўда
+            'true': Праўда
+        learn:
+          translatable_text:
+            show_original: Паказаць арыгінал
+            translate_into: Перакладзіце з Google на %{languageName}
+            translate_into_your_lang: Перакладзіце з Google на вашу мову
+        play:
+          arrange_words:
+            start_screen:
+              heading: Складзіце сказ з прыведзеных слоў
+          audition:
+            start_screen:
+              heading: Праслухайце аўдыя і націсніце на слова, якое вы толькі што
+                пачулі
+          dictation:
+            get_help: Звяртайцеся па дапамогу
+            i_do_not_know: Я не ведаю
+            input_placeholder: Увядзіце пачутае
+            start_screen:
+              heading: Слухайце і пішыце тое, што чуеце
+          fill_gap:
+            start_screen:
+              heading: Падбярыце слова і яго значэнне
+          finish_screen:
+            go_to_next_exercise: Добра зроблена! Перайсці да наступнага практыкаванні
+          image_hotspot:
+            start_screen:
+              heading: Правільна назавіце прадметы на малюнку
+          image_object:
+            start_screen:
+              heading: Выберыце патрэбны аб'ект з наступнага малюнка
+          inline_dropdown:
+            start_screen:
+              heading: Падбярыце словы, якія адпавядаюць сказу
+          mark_word:
+            start_screen:
+              heading: Прачытайце тэкст і выберыце слова, якое адпавядае малюнку
+          minimal_pairs:
+            start_screen:
+              heading: Паглядзіце відэа і абярыце правільны варыянт
+    locale:
+      currency_switcher_title: Перакладчык валют
+      lang_switcher_title: Пераключальнік мовы
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Беларускі
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Англійская
+        eo: Esperanto
+        es: Іспанскі
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Франсуа
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Італьянскі
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Нарск
+        ne: Nepali
+        nl: Нідэрланды
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Польскі
+        ps: Pashto
+        pt: Партугальская
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: ад Самаалі
+        sq: Albanian
+        sr: Сербскі
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: кісуахілі
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Украінская
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Аўдыё загружаецца
+        aria_pause_button: Паўза
+        aria_play_button: Гуляць
+        aria_reload_button: Перазагрузіць
+        aria_stop_button: Спыніцеся
+        reload_message: Не атрымалася загрузіць аўдыя. Націсніце кнопку, каб перазагрузіць.
+    mobile_modal:
+      apply: Падаць заяўку
+      cancel: Адмяніць
+      clear: Ясна
+      save: Захаваць
+    page404:
+      goToStartLessonPage: Перайдзіце на стартавую старонку ўрока
+      ooops: На жаль ...
+      sorry_message: На жаль, Tor не змог знайсці гэтую старонку
+    profile:
+      navigation:
+        log_out: Выйдзіце з сістэмы
+        my_profile: Мой профіль
+        settings: Налады
+      onboarding:
+        choose_native_language: Выберыце родную мову альбо мову, якую разумееце
+        do_you_understand_english: Вы разумееце англійскую мову?
+        hello: добры дзень
+        language_levels:
+          a1: Элементарны ўзровень
+          a2: Да сярэдняга ўзроўню
+          b1: Сярэдні ўзровень
+          b2: Верхні сярэдні ўзровень
+          c1: Пашыраны ўзровень
+          no_knowledge: Няма ведаў
+        language_not_supported:
+          note: Мы паведамім вам, як толькі мова стане даступнай
+          title: На жаль, мы пакуль не падтрымліваем гэтую мову
+          try_another_language: Паспрабуйце іншую мову
+        'no': Не
+        search_placeholder: Шукаць ...
+        show_more_languages: Іншыя мовы
+        target_language_question: Якую мову вы хочаце вывучыць?
+        what_is_language_level: Як бы вы ацанілі ўзровень %{languageName}?
+        'yes': Так
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Палітыка прыватнасці Lingu
+        support: Падтрымка
+      logout: Выхад
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Атрымлівайце навіны ад настаўнікаў і школ, за якімі вы
+                сочыце
+              sections:
+                app_notifications: Апавяшчэнні прыкладанняў
+                email: Электронная пошта
+              title: Дапамога ў навучанні
+            marketing:
+              description: Будзьце ў курсе ўсіх акцый, абнаўленняў і натхнення ад
+                Lingu
+              sections:
+                browser_notifications: Апавяшчэнні браўзэра
+                email: Электронная пошта
+              title: Маркетынг
+          title: Кантактныя перавагі
+        personal_information:
+          delete_photo: Выдаліць фота
+          email: Электронная пошта
+          first_name: Імя
+          last_name: Прозвішча
+          social_accounts:
+            connected: Падключаны
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Не звязана
+            title: Сацыяльныя рахункі
+          title: Асабістая інфармацыя
+          update_photo: Абнавіць фота
+        school:
+          active_licence: Актыўная ліцэнзія
+          active_status: Актыўны
+          delete_profile: Выдаліць мой профіль
+          delete_profile_modal:
+            body: |-
+              Вы выдаляеце ўсе свае дадзеныя - назаўжды. Кнопкі адмены няма, і мы не можам вярнуць яе вам пасля.
+              Вы ўпэўнены, што хочаце назаўсёды выдаліць свой профіль Lingu і ўсе свае дадзеныя?
+            cancel: Адмяніць
+            confirm: Так, выдаліць яго
+            i_understand_the_consequences: Я разумею наступствы
+            title: Выдаліць свой профіль?
+          expired: Мінула %{expire_date}
+          expires: Тэрмін дзеяння заканчваецца %{expire_date}
+          inactive_status: Неактыўны
+          revoke_access: Адмяніць доступ для чытання
+          sections:
+            contact_school: Звязацца са школай
+            export_my_data: Экспарт маіх дадзеных
+            read_school_privacy_policy: Прачытайце Палітыка прыватнасці школы
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Прайграванне музыкі
+              sound_effects: Гукавыя эфекты
+              title: Гук
+            visual:
+              dark_theme: Цёмная тэма
+              font_size:
+                test_text: З іншага боку агароджы трава заўсёды зелянейшая
+                title: Памер шрыфта
+              high_contrast: Высокая кантраснасць
+              hints: Падказкі
+              title: Візуальны
+          title: Гук і візуал
+        training_settings:
+          sections:
+            i_understand: Я разумею
+            i_want_to_learn: Я хачу вучыцца
+            target_language_level: Англійскі ўзровень
+          title: Налады навучання
+      settings_title: Налады
+    teacher_card:
+      followers_count:
+        one: 1 паслядоўнік
+        other: "%{count} паслядоўнікаў"
+      lessons_count:
+        one: 1 урок
+        other: "%{count} урокаў"

@@ -1,0 +1,10 @@
+default: &default
+  adapter: postgresql
+  host: <%= ENV.fetch('DBHOST', 'postgres') %>
+  database: test
+  username: postgres
+  encoding: unicode
+test:
+  <<: *default
+production:
+  <<: *default

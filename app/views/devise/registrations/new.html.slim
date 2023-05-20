@@ -1,0 +1,40 @@
+- set_page_title t('.create_account')
+
+.row.flex-center.min-vh-100.py-6
+  .col-sm-10.col-md-8.col-lg-6.col-xl-5.col-xxl-4
+    a.d-flex.flex-center.mb-4 href="/"
+      img.mr-2 alt="" src="#{image_path('lingu-logo.svg')}" width="150" /
+    .card
+      .card-body.p-4.p-sm-5
+        .row.text-left.justify-content-between.mb-4
+          .col-auto
+            h4.mb-0= t('.create_account')
+          .col-auto
+            p.fs--1.text-600.mb-0
+              = link_to "Log in", new_session_path(resource_name)
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          = render "devise/shared/error_messages", resource: resource
+          .row
+            .col-6.form-group
+              = f.label :fname, t('first_name'), class: 'label-control'
+              = f.text_field :fname, class: 'form-control', placeholder: t('.enter_first_name')
+            .col-6.form-group
+              = f.label :lname, t('last_name'), class: 'label-control'
+              = f.text_field :lname, class: 'form-control', placeholder: t('.enter_last_name')
+          .form-group
+            = f.label :email, class: 'label-control'
+            = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: t('welcome.signin.enter_email')
+          .row.mt-2
+            .col-6
+              = f.label :password, class: 'label-control'
+              = f.password_field :password, autocomplete: "new-password", class: 'form-control', placeholder: t('devise.registrations.edit.enter_new_password')
+            .col-6
+              = f.label :password_confirmation, class: 'label-control'
+              = f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control', placeholder: t('devise.registrations.edit.enter_password_again')
+          .form-group.mt-3
+            .custom-control.custom-checkbox
+              input#basic-register-checkbox.custom-control-input type="checkbox" /
+              label.custom-control-label for="basic-register-checkbox"
+                | I accept the terms and conditions and privacy policy
+          .actions.text-center.mt-2
+            = f.submit "Sign up", class: 'btn btn-falcon-primary'

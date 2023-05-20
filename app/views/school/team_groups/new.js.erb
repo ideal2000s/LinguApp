@@ -1,0 +1,23 @@
+$("#team-group-modal").html("<%= j render partial: 'school/team_groups/new_form', locals: { team_group: team_group }%>");
+$('#team-group-modal').modal('show');
+function formatCountry (country) {
+  country_info = country.text.split(', ');
+  if(!country.id) { return '<%= t('school.team_students.form.select_language') %>' }
+  return $(
+    `<img src=${country_info[0]} class="dropdown-item-flag"  alt="flag"/>` +
+    `<span class="flag-text ml-2">${country_info[1]}</span>`
+  );
+}
+
+$("#team-group-modal .select2").select2({
+  theme: 'bootstrap4',
+  dropdownParent: $('#team-group-modal .modal-content'),
+  minimumResultsForSearch: -1
+})
+$("#team-group-modal .select-country").select2({
+  theme: 'bootstrap4',
+  dropdownParent: $('#team-group-modal .modal-content'),
+  templateResult: formatCountry,
+  templateSelection: formatCountry,
+  minimumResultsForSearch: -1
+})

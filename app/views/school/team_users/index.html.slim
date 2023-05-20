@@ -1,0 +1,80 @@
+- set_page_title t('admin.students.index.teacher_management')
+.teachers-container.school-info-container data-controller="teachers"
+  .mb-4
+    .teachers-header.d-flex.justify-content-between.align-items-center
+      .d-flex.align-items-center
+        h1.mb-0.pb-3= t('layouts.school.sidebar.teachers')
+      div
+        - if policy(TeamUser).create?
+          .btn-group.ml-3.custom-dropdown
+            button.btn.btn-primary.rounded-capsule.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+              span.invite-teachers
+                = t('school.teachers.list.add_teacher')
+              span.horizontal-line
+              i.fa.fa-angle-down
+            .dropdown-menu.dropdown-menu-risght.mt-1
+              = button_to new_school_team_user_path, class: 'btn border-0 shadow-none p-0 d-flex align-items-center', method: :get, remote: true do
+                = image_tag('icons/assign.svg')
+                span= t('school.team_students.index.add_manually')
+              / = link_to new_school_team_user_path do
+              /   = image_tag('icons/invite.svg')
+              /   span= t('school.teachers.invite.title')
+              = button_to import_team_users_school_team_users_path, class: 'btn border-0 shadow-none p-0 d-flex align-items-center', method: :get, remote: true do
+                = image_tag('icons/import.svg')
+                span= t('school.teachers.new.import_from')
+  - if team_users.count > 0
+    = search_form_for @search, url: school_team_users_path, class: 'teacher-search-form' do |f|
+      .d-flex.justify-content-between
+        .students-filter
+          .btn-group.custom-dropdown.ml-2.roles-by-filter
+            = f.hidden_field :role_include, class: 'filter-values'
+            button.btn.dropdown-toggle data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+              span.mr-2.selected-filter-item= has_filter ? t('school.teachers.list.custom') : t('school.teachers.list.all_roles')
+              i.fa.fa-angle-down
+            .dropdown-menu.dropdown-menu-left.mt-1.p-3
+              - TeamUser.roles.each do |k, v|
+                .d-flex.custom-control.custom-checkbox.mb-3
+                  input.custom-control-input.role-select type='checkbox' id="#{k}_check" data-filter-val="#{k}"
+                  label.custom-control-label.d-flex.align-items-center for="#{k}_check"
+                    span.role-badge class="badge badge-#{k}"
+                      = t(k, scope: 'activerecord.attributes.team_user.roles')
+              hr
+              .d-flex.justify-content-between
+                button.btn.bg-transparent.border-0.p-0.clear-filter type='button'
+                  = t('remove')
+                button.btn.bg-transparent.border-0.p-0.save-filter.font-weight-bold
+                  = t('save')
+        .school-info-sort
+          .dropdown-toggle.cursor-pointer data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+            span.mr-2.selected-sort-item = t('school.teachers.list.by_name_az')
+            i.fa.fa-angle-down
+          .dropdown-menu.dropdown-menu-right.mt-1.p-0
+            .custom-filter-item.px-3.pb-2.pt-3 data-filter-by='created_at desc'
+              button.d-flex.justify-content-between.align-items-center.border-0.w-100
+                = sort_link(@search, 'created_at desc', t('school.teachers.list.by_last_added'))
+                i.fa.fa-check.active-check.mr-2.color-transparent
+            .custom-filter-item.px-3.filter-item-active data-filter-by='user_lname asc'
+              button.d-flex.justify-content-between.align-items-center.border-0.w-100
+                = sort_link(@search, 'user_lname asc', t('school.teachers.list.by_name_az'))
+                i.fa.fa-check.active-check.mr-2.color-transparent
+            .custom-filter-item.px-3.pt-2.pb-3 data-filter-by='user_lname desc'
+              button.d-flex.justify-content-between.align-items-center.border-0.w-100
+                = sort_link(@search, 'user_lname desc', t('school.teachers.list.by_name_za'))
+                i.fa.fa-check.active-check.mr-2.color-transparent
+    hr
+      = render partial: 'school/team_users/list', locals: {team_users: team_users}
+    hr
+    .row.mt-5
+      .col-6
+        h5.font-weight-semi-bold= t('admin.dashboard.index.add_teacher_title')
+        = render 'school/team_users/invite_link'
+  - else
+    .teacher-empty-panel
+      = image_tag("dashboard/add-teacher.svg", width: 264, height: 268)
+      p.mt-2 = t('school.teachers.list.no_teachers')
+      = render 'school/team_users/invite_link'
+
+.modal.fade.modal-form-teacher id='new-teacher-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content
+= render 'layouts/shared/gdpr_modal'

@@ -1,0 +1,615 @@
+---
+tg:
+  course_mailer:
+    course_assigned_notification:
+      button: Курсро оғоз кунед
+      click_start_lesson: "'Оғози дарс' -ро клик кунед"
+      follow_course_link: Барои кушодани курс кнопкаро клик кунед
+      footer_text: Ба Лингвинг баргардед, то ҳар рӯз чизи наверо омӯзед!
+      get_started_line: 'Ин аст тарзи оғоз:'
+      notification_link: Танзимоти огоҳӣ
+      open_lesson: Дарси аввалро кушоед
+      or_paste_this_link: ё ин пайвандро дар браузери худ гузоред
+      sign_in_with_email: Бо суроғаи почтаи электронии худ ворид шавед (%{email})
+      support_link: Дастгирӣ
+      title: Оғози кор бо %{course}
+    new_document_comment:
+      author_text: "%{author} баррасии супориши шуморо боқӣ гузошт"
+      button_text: Инро Санҷ
+      button_url_helper: 'ё ин пайвандро ба браузери худ гузоред:'
+      footer_text: Боз бисёр чизҳои омӯхтан лозим аст ...
+      notification_link: Танзимоти огоҳӣ
+      subject_line: Шарҳи супориши нав
+      support_link: Дастгирӣ
+    otp:
+      ignore_msg: Агар шумо ин дархостро иҷро накардед, танҳо паёми электрониро нодида
+        гиред.
+      subject_line: Рамзи ягонаи шумо барои Linguing
+      unique_code_for_lingu: Ин аст рамзи беназири шумо барои Лингвист
+  frontend:
+    auth:
+      already_have_acc_question: Аллакай ҳисоб доред?
+      back: Бозгашт
+      back_to_sign_in: Бозгашт ба Воридшавӣ
+      check_your_email_for_a_code: Рамзи худро тавассути почтаи электронии худ санҷед
+      continue: Давом диҳед
+      continue_with_email: Бо почтаи электронӣ идома диҳед
+      continue_with_provider: Бо %{provider} идома диҳед
+      did_not_receive_a_code: Рамз нагирифтед?
+      email_address: Суроғаи электронӣ
+      first_name: Ном
+      get_unique_code: Рамзи ягонаи вурудро гиред
+      join_lingu: Ба Лингв ҳамроҳ шавед
+      last_name: Насаб
+      more_login_options: Имкониятҳои бештари вуруд
+      no_account_question: Шумо ҳисоб надоред?
+      or: ё
+      resend_code: Рамзро фиристед
+      sign_in: даромад
+      sign_up: қайд кардан
+      want_to_receive_marketing_messages: Ман мехоҳам паёмҳои маркетингиро аз Lingu
+        гирам
+      we_ve_sent_a_code: >-
+        Мо ба <strong> {{email}} </strong> коди 6-рақама фиристодем. Мӯҳлати эътибори
+        кодекс пас аз 15 дақиқа ба анҷом мерасад, аз ин рӯ лутфан онро зуд ворид кунед.
+    cookie_agreement:
+      agree: Розӣ шавед
+      condition: >-
+        Мо кукиҳоро барои таҳлили иҷрои сайт ва мундариҷаи фардӣ истифода мебарем.
+        Бо зеркунии "Розӣ", шумо ба шароити мо розӣ ҳастед.
+    course:
+      accredited_course_provider: Провайдери курсҳои аккредитатсионӣ
+      apply: Муроҷиат кунед
+      apply_filters: Филтрҳоро истифода баред
+      by: Бо
+      cancel: Бекор кардан
+      categories: категорияҳои %{count}
+      category: Категория
+      clear: Тоза
+      clear_filters: Филтрҳоро тоза кунед
+      contact_us: Бо мо тамос гиред
+      could_not_find_match_for: Бубахшед, мо барои худ ягон мувофиқат пайдо карда
+        натавонистем
+      course_language: Забони курс
+      duration: Давомнокӣ
+      filter_settings:
+        categories:
+          academic: Академикӣ
+          business: Бизнес
+          fashion: Мӯд
+          food_drink: Ғизо ва нӯшидан
+          for_kids: Барои кӯдакон
+          general: Умумӣ
+          health: Тандурустӣ
+          legal: Ҳуқуқӣ
+          sport: Варзиш
+          travel: Сафар
+        durations:
+          t0_600: "<10 дақиқа"
+          t1800_3600: Дақиқаҳои 30-60
+          t3600_86400: 1+ соат
+          t600_1800: 10-30 дақиқа
+        focus_on:
+          conversation: Сӯҳбат
+          grammar: Грамматика
+          listening: Гӯш додан
+          pronunciation: Талаффуз
+          reading: Хондан
+          speaking: Гап задан
+          writing: Навиштан
+        levels:
+          long:
+            advanced: Сатҳи пешрафта
+            elementary: Сатҳи ибтидоӣ
+            intermediate: Сатҳи миёна
+            no_knowledge: Донише нест
+            pre_intermediate: Сатҳи пеш аз миёна
+            upper_intermediate: Сатҳи миёнаи миёна
+          short:
+            advanced: Advanced
+            beginner: Сар
+            intermediate: Миёна
+        sort_by:
+          most_rated: Аз ҳама баҳо дода шудааст
+          newest: Навтарин
+          popularity: Маъруфият
+      filters: Филтрҳо
+      focus_on: Тамаркуз ба
+      focus_on_title: Ман мехоҳам диққати худро ба он равона кунам
+      hide_lessons: Дарсҳоро пинҳон кунед
+      hours: Соатҳо
+      i_understand: ман мефаҳмам
+      i_want_to_learn: Ман мехоҳам омӯзам
+      in_language: дар %{language}
+      language: Забон
+      learn_more: Бештар омӯз
+      less_settings: Танзимоти камтар
+      lessons: Дарсҳо
+      lessons_available: "%{number} дарсҳои дастрас"
+      lessons_catalog_page_subtitle: Қаҳрамони забон шавед.
+      lessons_catalog_page_title: Уфуқҳои худро бо як курси забонҳо васеъ кунед
+      level: Сатҳ
+      min: Дақ
+      more_settings: Танзимоти бештар
+      navbar:
+        close: Менюро пӯшед
+        menu: Меню
+        select_language: Забонро интихоб кунед
+      need_to_buy_course: Аввал шумо бояд курси худро банд кунед
+      no_description: Тавсифи дода намешавад
+      no_results: Бубахшед, мо барои худ ягон мувофиқат пайдо карда натавонистем
+      or: ё
+      per_month: дар як моҳ
+      plans: Нақшаҳо
+      privacy_policy: Сиёсати Корбурди Маълумоти Шахсӣ
+      rating: Рейтинг
+      remove_all_filters: Ҳама филтрҳоро нест кунед
+      reviews: Шарҳҳо
+      save: Захира кунед
+      search: Ҷустуҷӯ
+      select_dots: Интихоб кунед ...
+      select_languages: Лангаугҳоро интихоб кунед
+      select_num_languages: Забонҳои %{number} -ро интихоб кунед
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Ҳамаро нишон диҳед
+      show_all_lessons: Ҳама дарсҳоро нишон диҳед
+      show_lessons: Дарсҳои %{number} нишон диҳед
+      show_more: Бештар нишон диҳед
+      sign_up_with_lingu_for: Бо Lingu Норвегия ворид шавед
+      skills: малакаҳои %{count}
+      sort_by: Ҷудо кардан ба
+      start_typing_here: Дар инҷо навиштанро оғоз кунед
+      teach: Таълим
+      terms_and_conditions: Шарту Шароит
+      time_range: Диапазони вақт
+      try_adjusting_your_search: Кӯшиш кунед, ки ҷустуҷӯи худро бо тағир додани филтрҳоятон
+        танзим кунед
+      try_this_course: Ин курсро санҷед
+      website_language: Забони вебсайт
+      words: Суханҳо
+    games:
+      finished:
+        go_to_next_exercise: Офарин! Ба машқи навбатӣ равед
+      flashcard:
+        buttons:
+          finish: Тамом кардан
+          next: Баъдӣ
+          previous: Қаблӣ
+        check_out_new_words: Калимаҳои наверо, ки дар ин дарс меомӯзед, санҷед
+        frequency_of_word_usage: Фосилаи истифодаи калимаҳо дар %{language}
+        keep_practice_to_learn_all_words: Калимаҳои %{count}-ро аз назар гузаронед
+          ва биёед якчанд бозиҳо кунем!
+        word_frequency:
+          level1: Кам истифода мешавад
+          level2: Кам истифода мешавад
+          level3: Басомади калима - миёна
+          level4: Басомади калима - миёна
+          level5: Умумӣ
+          level6: Хеле маъмул
+      match_word:
+        click_and_move_each_word_to_counterpart: Ҳар як калимаро клик кунед ва ба
+          ҳамтои худ интиқол диҳед
+        start_heading: Бо ҳам калимаҳо созед, то як ҷуфт созед
+        time_is_up: Вақт тамом шуд!
+      skip_tutorial: Гузаштан
+      time_is_up: Вақт тамом шуд!
+      word_nodes:
+        match_letters_to_form_word: Барои ташаккули калима ҳарфҳоро мувофиқат кунед
+      word_waterfall:
+        do_not_hesitate: Биёед суръатро тезонем!
+        go_to_next_exercise: Ба машқи навбатӣ равед
+        select_correct_translation: Мувофиқати дурустро интихоб кунед
+        well_done: Офарин!
+    home_page:
+      hello: Салом,
+      popular_lessons: Дарсҳои маъмул
+      show_more: Бештар нишон диҳед
+      time: "%{count} дақ"
+      today_lesson: Дарси шумо барои имрӯз
+      user_name: "%{name}!"
+      words: калимаҳои %{count}
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Дарсро идома диҳед
+      exit: Баромадгоҳ
+      idle_message: Шумо чанд муддат бекор будед ...
+    lesson_page:
+      back_to_course_page: Бозгашт ба саҳифаи курс
+      close: Пӯшед
+      continue_lesson: Дарсро идома диҳед
+      followed: Аз паи
+      hamburger_menu_btn: Менюи гамбургер
+      lesson_given: дарсҳо
+      not_started: сар нашудааст
+      or: Ё
+      part_complete: "%{percent}% ба анҷом расид"
+      restart_lesson: Оғози дубора
+      section_check: Санҷед
+      section_check_info: озмоишҳои %{count}
+      section_learn: Омӯзед
+      section_learn_info: "%{count} дақ барои тамошо ва хондан"
+      section_play: Бозӣ кардан
+      section_play_info: калимаҳои %{count} барои амалӣ кардан
+      start_lesson: Дарсро оғоз кунед
+      step_progress: "%{percent}%"
+      subscribe: Пайравӣ
+      subscribed: Аз паи
+      subscribers: пайравони
+      time_min: "%{minutesNumber} дақ"
+      unsubscribe: Бекор кунед
+      webview_error_title: Чизе хато шуд ...
+      words_number: калимаҳои нав %{wordsNumber}
+    lesson_task:
+      cancel_button: Бекор кардан
+      check:
+        navigation_next: Баъдӣ
+        navigation_previous: Қаблӣ
+        navigation_skip: Гузаштан
+      controls_panel:
+        font_size_button: Андозаи ҳарф
+        high_contrast_button:
+          origin: Баръакси баланд
+          short: Баръакс
+        hints_button: Маслиҳатҳо
+        music_playback_button:
+          origin: Навозиши мусиқӣ
+          short: Мусиқӣ
+        sound_effects_button:
+          origin: Таъсири садо
+          short: Садо
+      exit_button: Баромадгоҳ
+      finish_button: Тамом кардан
+      finished:
+        back_to_learn: Бозгашт ба омӯхтан
+        back_to_lesson_page: Бозгашт ба саҳифаи дарс
+        back_to_results_page: Бозгашт ба саҳифаи натиҷа
+        bad_result_message: Хм ... бори дигар кӯшиш кунед, ки дарсро бигиред
+        close_lesson: Дарси наздик
+        correct_answers_list: Рӯйхати ҷавобҳои дуруст
+        good_result_message: Ман мебинам, ки шумо саъй кардед!
+        great_result_message: Офарин! Ин натиҷаҳои олӣ мебошанд!
+        next_course_lesson: Албатта ба дарси оянда гузаред
+        no_results: Шумо ҳоло натиҷаҳои санҷиш надоред
+        no_results_text: Лутфан, дарсро ба итмом расонед ва тестро супоред, то натиҷа
+          ба даст оред
+        see_correct_answers_list: Ба рӯйхати ҷавобҳои дуруст нигаред
+        train_more: Бештар машқ кунед ва дафъаи оянда ба натиҷаҳои беҳтар ноил хоҳед
+          шуд!
+        you_finished_lesson: Бузург! Шумо дарсро тамом кардед
+      go_back: Баргаштан
+      next_button: Баъдӣ
+      not_available_task: Ин вазифа ҳанӯз дастрас нест
+      start_button: Оғоз кунед
+      tasks:
+        check:
+          assignment:
+            accept: Қабул кунед
+            author_will_check_your_answer: >-
+              %{author} ҷавоби шуморо баррасӣ мекунад ва маъмулан дар давоми 1-2 рӯз
+              фикру ақидаҳо медиҳад
+            continue_writing: Навиштанро идома диҳед
+            copy: Нусха
+            delete: Нест кардан
+            delete_record: Сабтро нест кунед
+            edit: Таҳрир
+            essay_does_not_have_enough_words: >-
+              Ҷавоби шумо бояд ҳадди ақал калимаҳои %{minWordsNumber} дошта бошад.
+              Ҷавоби шумо айни замон калимаҳои %{currentWordsNumber} мебошад.
+            followers_count: пайравони %{followersCount}
+            lessons_count: дарсҳои %{lessonsCount}
+            minimal_recording_time: Вақти минималии сабт - %{minimalRecordingTime}
+            minimum_characters_amount: Аломатҳои ҳадди аққал - %{minimumCharactersAmount}
+            minimum_words_amount: Калимаҳои ҳадди аққал - %{minimumAmount}
+            record_again: Боз сабт кунед
+            record_voice: Овозро сабт кунед
+            send_anyway: Ба ҳар ҳол фиристед
+            send_to_review: Барои баррасӣ фиристед
+            skip: Гузаштан
+            too_short_answer: Ҷавоби хеле кӯтоҳ
+            type_your_answer: Ҷавоби худро нависед
+            unknown_task_type: Навъи вазифаи номаълум
+            upgrade_licence: Литсензияи навсозӣ
+            upgrade_your_plan: Нақшаи худро барои санҷиши супоришҳо бо шарҳи муаллимон
+              навсозӣ кунед
+            upload_files: Бор кардани файлҳо
+            write_essay: Иншо нависед
+            you_have_used_amount_of_assignments: Шумо %{amountOfAssignments} қарзҳои
+              таъинотиро истифода бурдед
+          fill_in_blanks:
+            sentence_gap: Холигии ҳукм
+          fill_in_table:
+            column_answer_placeholder: Ҷавоб
+            column_question_placeholder: Савол
+            example: Мисол
+          true_false:
+            'false': Дурӯғ
+            'true': Дуруст
+        learn:
+          translatable_text:
+            show_original: Нусхаи аслиро нишон диҳед
+            translate_into: Тарҷума бо Google ба %{languageName}
+            translate_into_your_lang: Бо Google ба забони худ тарҷума кунед
+        play:
+          arrange_words:
+            start_screen:
+              heading: Аз калимаҳои додашуда ҷумла тартиб диҳед
+          audition:
+            start_screen:
+              heading: Аудиоро гӯш кунед ва калимаи нав шунидаатонро ламс кунед
+          dictation:
+            get_help: Кӯмак гиред
+            i_do_not_know: Ман намедонам
+            input_placeholder: Он чизе ки дар ин ҷо шунидаед, ворид кунед
+            start_screen:
+              heading: Он чизеро, ки мешунавед, гӯш кунед ва нависед
+          fill_gap:
+            start_screen:
+              heading: Калима ва маънои онро мувофиқ кунед
+          finish_screen:
+            go_to_next_exercise: Офарин! Ба машқи навбатӣ равед
+          image_hotspot:
+            start_screen:
+              heading: Объектҳои дар расмбударо дуруст номбар кунед
+          image_object:
+            start_screen:
+              heading: Аз тасвири оянда объекти дурустро интихоб кунед
+          inline_dropdown:
+            start_screen:
+              heading: Калимаҳое, ки ба ҷумла мувофиқат мекунанд, интихоб кунед
+          mark_word:
+            start_screen:
+              heading: Матнро хонед ва калимаи мувофиқи тасвирро интихоб кунед
+          minimal_pairs:
+            start_screen:
+              heading: Видеоро тамошо кунед ва имконоти дурустро интихоб кунед
+    locale:
+      currency_switcher_title: Калиди асъор
+      lang_switcher_title: Калиди забон
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Англисӣ
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Итолиёно
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Латвиешу валода
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Норск
+        ne: Nepali
+        nl: Недерландия
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Полски
+        ps: Pashto
+        pt: Португалия
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Аудио бор мешавад
+        aria_pause_button: Танаффус
+        aria_play_button: Бозӣ кардан
+        aria_reload_button: Перезагрузка
+        aria_stop_button: Ист
+        reload_message: Боркунии аудио ноком шуд. Лутфан кнопкаро барои дубора барқарор
+          кунед.
+    mobile_modal:
+      apply: Муроҷиат кунед
+      cancel: Бекор кардан
+      clear: Тоза
+      save: Захира кунед
+    page404:
+      goToStartLessonPage: Ба саҳифаи оғози дарс гузаред
+      ooops: Эҳ ...
+      sorry_message: Бубахшед, Тор ин саҳифаро ёфта натавонист
+    profile:
+      navigation:
+        log_out: Баромадан
+        my_profile: Профили ман
+        settings: Танзимот
+      onboarding:
+        choose_native_language: Забони модарӣ ё забони фаҳмидаатонро интихоб кунед
+        do_you_understand_english: Шумо забони англисиро мефаҳмед?
+        hello: Салом
+        language_levels:
+          a1: Сатҳи ибтидоӣ
+          a2: Сатҳи пеш аз миёна
+          b1: Сатҳи миёна
+          b2: Сатҳи миёнаи миёна
+          c1: Сатҳи пешрафта
+          no_knowledge: Донише нест
+        language_not_supported:
+          note: Ҳамин ки забон пайдо шуд, мо шуморо огоҳ хоҳем кард
+          title: Бубахшед, аммо мо ҳоло ин забонро дастгирӣ намекунем
+          try_another_language: Забони дигарро санҷед
+        'no': Не
+        search_placeholder: Ҷустуҷӯ ...
+        show_more_languages: Забонҳои дигар
+        target_language_question: Шумо кадом забонро омӯхтан мехоҳед?
+        what_is_language_level: Шумо сатҳи %{languageName}-ро чӣ гуна арзёбӣ мекунед?
+        'yes': Бале
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Сиёсати махфияти Lingu
+        support: Дастгирӣ
+      logout: Баромадан
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Аз муаллимон ва мактабҳое, ки пайравӣ мекунед, навигариҳо
+                гиред
+              sections:
+                app_notifications: Огоҳиҳои барнома
+                email: Почтаи электронӣ
+              title: Кӯмаки омӯзишӣ
+            marketing:
+              description: Дар бораи ҳама аксияҳо, навсозӣ ва илҳом аз Linguing огоҳ
+                бошед
+              sections:
+                browser_notifications: Огоҳиҳои браузер
+                email: Почтаи электронӣ
+              title: Маркетинг
+          title: Афзалиятҳои тамос
+        personal_information:
+          delete_photo: Суратро нест кунед
+          email: Почтаи электронӣ
+          first_name: Ном
+          last_name: Насаб
+          social_accounts:
+            connected: Пайваст
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Пайваст нашудааст
+            title: Ҳисобҳои иҷтимоӣ
+          title: Маълумоти шахсӣ
+          update_photo: Навсозии акс
+        school:
+          active_licence: Литсензияи фаъол
+          active_status: Фаъол
+          delete_profile: Профили маро нест кунед
+          delete_profile_modal:
+            body: |-
+              Шумо ҳамаи маълумоти худро то абад нест мекунед. Тугмаи бозпас мавҷуд нест ва мо пас аз он онро барои шумо баргардонда наметавонем.
+              Оё мутмаин ҳастед, ки мехоҳед профили Lingu ва ҳама маълумоти худро ба таври доимӣ нест кунед?
+            cancel: Бекор кардан
+            confirm: Бале, онро нест кунед
+            i_understand_the_consequences: Ман оқибатҳои онро мефаҳмам
+            title: Профили худро нест кунед?
+          expired: "%{expire_date}-и мӯҳлаташ гузашта"
+          expires: Ба охир мерасад %{expire_date}
+          inactive_status: Ғайрифаъол
+          revoke_access: Дастрасии хонданро бекор кунед
+          sections:
+            contact_school: Тамос бо мактаб
+            export_my_data: Маълумоти маро содир кунед
+            read_school_privacy_policy: Сиёсати махфияти мактабро хонед
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Навозиши мусиқӣ
+              sound_effects: Таъсири садо
+              title: Садо
+            visual:
+              dark_theme: Мавзӯи торик
+              font_size:
+                test_text: Алафҳо ҳамеша дар тарафи дигари девор сабзтаранд
+                title: Андозаи ҳарф
+              high_contrast: Баръакси баланд
+              hints: Маслиҳатҳо
+              title: Визуалӣ
+          title: Садо ва визуалӣ
+        training_settings:
+          sections:
+            i_understand: ман мефаҳмам
+            i_want_to_learn: Ман мехоҳам омӯзам
+            target_language_level: Сатҳи англисӣ
+          title: Танзимоти омӯзиш
+      settings_title: Танзимот
+    teacher_card:
+      followers_count:
+        one: 1 пайрав
+        other: пайравони %{count}
+      lessons_count:
+        one: 1 дарс
+        other: дарсҳои %{count}

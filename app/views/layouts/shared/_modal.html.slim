@@ -1,0 +1,44 @@
+#right_modal.modal.modal-fixed-right aria-hidden="true" aria-labelledby="right_modal_label" role="dialog" tabindex="-1"
+  .modal-dialog.modal-dialog-vertical role="document"
+    .modal-content.border-0.min-vh-100
+      .modal-header
+        h5#right_modal_label.modal-title
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span.font-weight-light aria-hidden="true"  ×
+      .modal-body.py-5.bg-light
+
+.modal.fade id='team-group-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog role="document"
+.modal.fade id='new-student-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true" data={ 'confirm-close': t('school.team_students.form.confirm_close_popup') }
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content
+.modal.fade id='invite-students-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document" style='vertical-align: middle'
+    .modal-content
+.modal.fade id='edit-student-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document" style='vertical-align: middle'
+    .modal-content
+.modal.fade id='school-main-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+.modal.fade.modal-form-teacher id='edit-teacher-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document" style='vertical-align: middle'
+    .modal-content
+.modal.fade id='assign-course-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content
+.modal.fade id='gdpr-notification-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document" style='vertical-align: middle'
+    .modal-content.p-4.d-flex.align-items-center
+      h1.mb-5.text-center
+        = t('school.gdpr_agreements.notification')
+      button.btn.btn-primary#gdpr_show_btn
+        = t('school.gdpr_agreements.notification_button_content')
+.modal.fade id='gdpr-agreement-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content
+      = render 'school/gdpr_agreements/agreement_content', team: current_team, show_notification: true, processor_name: nil
+      .modal-footer.bg-light
+        label.text-black.mr-auto= t('school.dashboard.processor_name', team: current_team.name)
+        = form_tag agreement_school_dashboard_path, method: :post, class: 'w-100 d-flex'
+        = hidden_field_tag :team_id, current_team.id
+        = text_field_tag :processor_name, current_user.full_name, class: 'form-control mr-3 bg-white'
+        = submit_tag t('school.dashboard.confirm_agreement'), class: 'btn btn-primary font-weight-bold'

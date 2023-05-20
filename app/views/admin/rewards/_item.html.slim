@@ -1,0 +1,22 @@
+.row
+  .col-lg-2.col-sm-1
+  .col-lg-4.col-sm-5
+    div
+      = image_tag(reward.image_url, class: 'preview img-thumbnail', width: '150px') if reward.image
+  .col-lg-4.col-sm-5
+    div
+      span.font-weight-bold = t('language') + ': '
+      span = reward.language&.code
+    div
+      span.font-weight-bold = t('admin.rewards.index.kind') + ': '
+      span = reward.kind
+    div
+      span.font-weight-bold = t('admin.rewards.index.dimension') + ': '
+      span = reward.dimension
+    div
+      span.font-weight-bold = t('admin.rewards.index.value') + ': '
+      span = reward.value.to_s
+    div
+      span.font-weight-bold = t('description') + ': '
+      = reward.description.to_s.html_safe
+  .col-lg-2.col-sm-1

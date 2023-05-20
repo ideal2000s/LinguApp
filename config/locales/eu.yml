@@ -1,0 +1,608 @@
+---
+eu:
+  course_mailer:
+    course_assigned_notification:
+      button: Ikastaroa hasi
+      click_start_lesson: Egin klik 'Hasi ikasgaian'
+      follow_course_link: Egin klik botoian ikastaroa irekitzeko
+      footer_text: Itzuli Linguera egunero zerbait berria ikastera!
+      get_started_line: 'Hona hemen nola hasten zaren:'
+      notification_link: Jakinarazpenen ezarpenak
+      open_lesson: Ireki lehen ikasgaia
+      or_paste_this_link: edo itsatsi esteka hau zure arakatzailean
+      sign_in_with_email: Hasi saioa zure helbide elektronikoarekin (%{email})
+      support_link: Laguntza
+      title: "%{course}-rekin hastea"
+    new_document_comment:
+      author_text: "%{author}-k zure zereginaren berrikuspena utzi du"
+      button_text: Begiratu ezazu
+      button_url_helper: 'edo itsatsi esteka hau zure arakatzailean:'
+      footer_text: Askoz gehiago dago ikasteko ...
+      notification_link: Jakinarazpenen ezarpenak
+      subject_line: Zereginen iruzkin berria
+      support_link: Laguntza
+    otp:
+      ignore_msg: Eskaera hori egin ez baduzu, ez ikusi mezu elektronikoa.
+      subject_line: Lingu-en zure kodea
+      unique_code_for_lingu: Hona hemen Lingu-en zure kodea
+  frontend:
+    auth:
+      already_have_acc_question: Baduzu kontua?
+      back: Itzuli
+      back_to_sign_in: Hasi saioa berriro
+      check_your_email_for_a_code: Begiratu zure posta elektronikoa zure kodearen
+        bila
+      continue: Jarraitu
+      continue_with_email: Jarraitu posta elektronikoarekin
+      continue_with_provider: Jarraitu %{provider}-rekin
+      did_not_receive_a_code: Ez al duzu koderik jaso?
+      email_address: Posta elektroniko helbidea
+      first_name: Izena
+      get_unique_code: Lortu saio-hasiera kode bakarra
+      join_lingu: Batu Lingu-en
+      last_name: Abizena
+      more_login_options: Saioa hasteko aukera gehiago
+      no_account_question: Ez duzu konturik?
+      or: edo
+      resend_code: Birbidali kodea
+      sign_in: Hasi saioa
+      sign_up: Izena eman
+      want_to_receive_marketing_messages: Lingu-en marketin mezuak jaso nahi ditut
+      we_ve_sent_a_code: >-
+        6 digituko kodea bidali dugu <strong> {{email}} </strong> helbidera. Kodea
+        15 minutu barru iraungiko da, beraz sartu laster.
+    cookie_agreement:
+      agree: Ados
+      condition: >-
+        Cookieak erabiltzen ditugu gunearen errendimendua aztertzeko eta eduki pertsonalizatua
+        emateko. "Ados" sakatuta, gure baldintzak onartzen dituzu.
+    course:
+      accredited_course_provider: Egiaztatutako ikastaroen hornitzailea
+      apply: Aplikatu
+      apply_filters: Aplikatu iragazkiak
+      by: By
+      cancel: Utzi
+      categories: "%{count} kategoriak"
+      category: Kategoria
+      clear: Garbi
+      clear_filters: Garbitu iragazkiak
+      contact_us: Jarri gurekin harremanetan
+      could_not_find_match_for: Sentitzen dugu, ezin izan dugu inongo partidarik aurkitu
+      course_language: Ikastaroaren hizkuntza
+      duration: Iraupena
+      filter_settings:
+        categories:
+          academic: Akademikoa
+          business: Negozioa
+          fashion: Moda
+          food_drink: Janaria eta edaria
+          for_kids: Haurrentzat
+          general: Orokorra
+          health: Osasuna
+          legal: Legezkoa
+          sport: Kirola
+          travel: Bidaia
+        durations:
+          t0_600: "<10 minutu"
+          t1800_3600: 30-60 minutu
+          t3600_86400: Ordubete baino gehiago
+          t600_1800: 10-30 minutu
+        focus_on:
+          conversation: Elkarrizketa
+          grammar: Gramatika
+          listening: Entzumena
+          pronunciation: Ahoskera
+          reading: Irakurketa
+          speaking: Hitz egiten
+          writing: Idazketa
+        levels:
+          long:
+            advanced: Maila aurreratua
+            elementary: Oinarrizko maila
+            intermediate: Tarteko maila
+            no_knowledge: Ezagutzarik ez
+            pre_intermediate: Erdi aurreko maila
+            upper_intermediate: Goi tarteko maila
+          short:
+            advanced: Aurreratua
+            beginner: Hasiberria
+            intermediate: Tartekoa
+        sort_by:
+          most_rated: Baloratuena
+          newest: Berriena
+          popularity: Ospea
+      filters: Iragazkiak
+      focus_on: Arreta jarri
+      focus_on_title: Zentratu nahi dut
+      hide_lessons: Ezkutatu ikasgaiak
+      hours: Orduak
+      i_understand: ulertzen dut
+      i_want_to_learn: ikasi nahi dut
+      in_language: "%{language}-n"
+      language: Hizkuntza
+      learn_more: Gehiago ikasi
+      less_settings: Ezarpen gutxiago
+      lessons: Ikasgaiak
+      lessons_available: "%{number} ikasgai eskuragarri"
+      lessons_catalog_page_subtitle: Bihurtu hizkuntza heroia.
+      lessons_catalog_page_title: Zabaldu zure horizonteak hizkuntza ikastaro batekin
+      level: Maila
+      min: Min
+      more_settings: Ezarpen gehiago
+      navbar:
+        close: Itxi menua
+        menu: Menua
+        select_language: Aukeratu hizkuntza
+      need_to_buy_course: Ikastaroa erreserbatu behar duzu lehenik
+      no_description: Ez da deskribapenik eman
+      no_results: Sentitzen dugu, ezin izan dugu inongo partidarik aurkitu
+      or: edo
+      per_month: hilean
+      plans: Planak
+      privacy_policy: Pribatutasun politika
+      rating: Balorazioa
+      remove_all_filters: Kendu iragazki guztiak
+      reviews: Iritziak
+      save: Gorde
+      search: Bilatu
+      select_dots: Aukeratu ...
+      select_languages: Aukeratu langauges
+      select_num_languages: Aukeratu %{number} hizkuntzak
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Erakutsi dena
+      show_all_lessons: Erakutsi ikasgai guztiak
+      show_lessons: Erakutsi %{number} ikasgaiak
+      show_more: Erakutsi gehiago
+      sign_up_with_lingu_for: Eman izena Lingu Norway-rekin
+      skills: "%{count} trebetasunak"
+      sort_by: Ordenatu
+      start_typing_here: Hasi hemen idazten
+      teach: Irakatsi
+      terms_and_conditions: Baldintzak eta baldintzak
+      time_range: Denbora tartea
+      try_adjusting_your_search: Saiatu bilaketa egokitzen iragazkiak aldatuta
+      try_this_course: Saiatu ikastaro hau
+      website_language: Webgunearen hizkuntza
+      words: Hitzak
+    games:
+      finished:
+        go_to_next_exercise: Ongi egina! Joan hurrengo ariketara
+      flashcard:
+        buttons:
+          finish: Amaitu
+          next: Hurrengoa
+          previous: Aurrekoa
+        check_out_new_words: Ikusi ikasgai honetan ikasiko dituzun hitz berriak
+        frequency_of_word_usage: Hitzen erabileraren maiztasuna %{language}-n
+        keep_practice_to_learn_all_words: Berrikusi %{count} hitzak eta goazen jolas
+          batzuetara!
+        word_frequency:
+          level1: Gutxitan erabiltzen da
+          level2: Gutxitan erabiltzen da
+          level3: Hitzen maiztasuna - ertaina
+          level4: Hitzen maiztasuna - ertaina
+          level5: Arrunta
+          level6: Oso arrunta
+      match_word:
+        click_and_move_each_word_to_counterpart: Egin klik eta mugitu hitz bakoitza
+          bere homologora
+        start_heading: Bikotea egiteko hitzak lotzea
+        time_is_up: Denbora amaitu da!
+      skip_tutorial: Saltatu
+      time_is_up: Denbora amaitu da!
+      word_nodes:
+        match_letters_to_form_word: Lotu letrak hitz bat osatzeko
+      word_waterfall:
+        do_not_hesitate: Azkarra dezagun!
+        go_to_next_exercise: Joan hurrengo ariketara
+        select_correct_translation: Aukeratu partida egokia
+        well_done: Ongi egina!
+    home_page:
+      hello: Kaixo,
+      popular_lessons: Ikasgai herrikoiak
+      show_more: Erakutsi gehiago
+      time: "%{count} min"
+      today_lesson: Gaurko zure ikasgaia
+      user_name: "%{name}!"
+      words: "%{count} hitzak"
+    idle_screen:
+      by_author: 'egilea: %{authorName}'
+      continue_lesson: Jarraitu ikasgaia
+      exit: Irten
+      idle_message: Aspaldi egon zara alferrik ...
+    lesson_page:
+      back_to_course_page: Itzuli ikastaroaren orrira
+      close: Itxi
+      continue_lesson: Jarraitu ikasgaia
+      followed: Jarraituta
+      hamburger_menu_btn: Hanburgesa menua
+      lesson_given: ikasgaiak
+      not_started: ez da hasi
+      or: Edo
+      part_complete: "%{percent}% osatuta"
+      restart_lesson: Berriro hasi
+      section_check: Egiaztatu
+      section_check_info: "%{count} probak"
+      section_learn: Ikasi
+      section_learn_info: "%{count} min ikusi eta irakurtzeko"
+      section_play: Jolastu
+      section_play_info: "%{count} hitzak lantzeko"
+      start_lesson: Hasi ikasgaia
+      step_progress: "%{percent}%"
+      subscribe: Jarraitu
+      subscribed: Jarraituta
+      subscribers: jarraitzaileak
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Utzi
+      webview_error_title: Arazoren bat izan da ...
+      words_number: "%{wordsNumber} hitz berri"
+    lesson_task:
+      cancel_button: Utzi
+      check:
+        navigation_next: Hurrengoa
+        navigation_previous: Aurrekoa
+        navigation_skip: Saltatu
+      controls_panel:
+        font_size_button: Letra tamaina
+        high_contrast_button:
+          origin: Kontraste handia
+          short: Kontrastatu
+        hints_button: Aholkuak
+        music_playback_button:
+          origin: Musika erreproduzitzea
+          short: Musika
+        sound_effects_button:
+          origin: Soinu efektuak
+          short: Soinua
+      exit_button: Irten
+      finish_button: Amaitu
+      finished:
+        back_to_learn: Itzuli ikasteko
+        back_to_lesson_page: Itzuli ikasgaiaren orrialdera
+        back_to_results_page: Itzuli emaitza orrialdera
+        bad_result_message: Hmm ... saiatu ikasgaia beste behin hartzen
+        close_lesson: Itxi ikasgaia
+        correct_answers_list: Erantzun zerrenda zuzena
+        good_result_message: Ahaleginak egin dituzula ikusten dut!
+        great_result_message: Ongi egina! Emaitza bikainak dira!
+        next_course_lesson: Joan ikastaroan hurrengo ikasgaira
+        no_results: Oraindik ez duzu probaren emaitzarik
+        no_results_text: Mesedez, osatu ikasgaia eta gainditu proba emaitzak lortzeko
+        see_correct_answers_list: Ikusi erantzunen zerrenda zuzena
+        train_more: Praktikatu gehiago eta emaitza hobeak lortuko dituzu hurrengoan!
+        you_finished_lesson: Primeran! Ikasgaia amaitu zenuen
+      go_back: Atzera egin
+      next_button: Hurrengoa
+      not_available_task: Zeregin hau oraindik ez dago erabilgarri
+      start_button: Hasi
+      tasks:
+        check:
+          assignment:
+            accept: Onartu
+            author_will_check_your_answer: >-
+              %{author}-k zure erantzuna berrikusiko du eta normalean 1-2 eguneko
+              epean emango du iritzia
+            continue_writing: Jarraitu idazten
+            copy: Kopiatu
+            delete: Ezabatu
+            delete_record: Ezabatu erregistroa
+            edit: Editatu
+            essay_does_not_have_enough_words: >-
+              Zure erantzunak gutxienez %{minWordsNumber} hitz izan behar ditu. Zure
+              erantzuna une honetan %{currentWordsNumber} hitzak dira.
+            followers_count: "%{followersCount} jarraitzaile"
+            lessons_count: "%{lessonsCount} ikasgai"
+            minimal_recording_time: Grabazio gutxieneko denbora - %{minimalRecordingTime}
+            minimum_characters_amount: Gutxieneko karaktereak - %{minimumCharactersAmount}
+            minimum_words_amount: Gutxieneko hitzak - %{minimumAmount}
+            record_again: Grabatu berriro
+            record_voice: Grabatu ahotsa
+            send_anyway: Bidali hala ere
+            send_to_review: Bidali berrikustera
+            skip: Saltatu
+            too_short_answer: Erantzun laburregia
+            type_your_answer: Idatzi zure erantzuna
+            unknown_task_type: Zeregin mota ezezaguna
+            upgrade_licence: Bertsio berritzeko lizentzia
+            upgrade_your_plan: Bertsio-berritu plana irakasleen iritziekin zereginak
+              probatzeko
+            upload_files: Fitxategiak igo
+            write_essay: Idatzi saiakera
+            you_have_used_amount_of_assignments: "%{amountOfAssignments} esleitzeko
+              kredituak erabili dituzu"
+          fill_in_blanks:
+            sentence_gap: Esaldien hutsunea
+          fill_in_table:
+            column_answer_placeholder: Erantzun
+            column_question_placeholder: Galdera
+            example: Adibidez
+          true_false:
+            'false': Gezurra
+            'true': Egia
+        learn:
+          translatable_text:
+            show_original: Erakutsi originala
+            translate_into: Itzuli Google-rekin %{languageName}
+            translate_into_your_lang: Itzuli Google-rekin zure hizkuntzara
+        play:
+          arrange_words:
+            start_screen:
+              heading: Egin esaldi bat emandako hitzekin
+          audition:
+            start_screen:
+              heading: Entzun audioa eta ukitu entzun berri duzun hitza
+          dictation:
+            get_help: Lortu laguntza
+            i_do_not_know: Ez dakit
+            input_placeholder: Sartu hemen entzundakoa
+            start_screen:
+              heading: Entzun eta idatzi entzuten duzuna
+          fill_gap:
+            start_screen:
+              heading: Hitza eta bere esanahia lotu
+          finish_screen:
+            go_to_next_exercise: Ongi egina! Joan hurrengo ariketara
+          image_hotspot:
+            start_screen:
+              heading: Izendatu irudiko objektuak zuzen
+          image_object:
+            start_screen:
+              heading: Aukeratu objektu egokia hurrengo irudian
+          inline_dropdown:
+            start_screen:
+              heading: Aukeratu esaldiarekin bat datozen hitzak
+          mark_word:
+            start_screen:
+              heading: Irakurri testua eta hautatu irudiarekin bat datorren hitza
+          minimal_pairs:
+            start_screen:
+              heading: Ikusi bideoa eta hautatu aukera zuzena
+    locale:
+      currency_switcher_title: Moneta aldatzailea
+      lang_switcher_title: Hizkuntza aldatzailea
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Ingelesa
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahiliera
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audioa kargatzen ari da
+        aria_pause_button: Eten
+        aria_play_button: Jolastu
+        aria_reload_button: Berriro kargatu
+        aria_stop_button: Gelditu
+        reload_message: Ezin izan da kargatu audioa. Egin klik botoian berriro kargatzeko.
+    mobile_modal:
+      apply: Aplikatu
+      cancel: Utzi
+      clear: Garbi
+      save: Gorde
+    page404:
+      goToStartLessonPage: Joan hasierako ikasgaiaren orrira
+      ooops: Aupa ...
+      sorry_message: Tor-ek ezin izan du orrialde hau aurkitu
+    profile:
+      navigation:
+        log_out: Saioa amaitu
+        my_profile: Nire profila
+        settings: Ezarpenak
+      onboarding:
+        choose_native_language: Aukeratu zure ama hizkuntza edo ulertzen duzun hizkuntza
+        do_you_understand_english: Ulertzen al duzu ingelesa?
+        hello: Kaixo
+        language_levels:
+          a1: Oinarrizko maila
+          a2: Erdi-aurreko maila
+          b1: Tarteko maila
+          b2: Goi Erdi Mailakoa
+          c1: Maila aurreratua
+          no_knowledge: Ezagutzarik ez
+        language_not_supported:
+          note: Hizkuntza erabilgarri egon bezain laster jakinaraziko dizugu
+          title: Sentitzen dugu, baina oraindik ez dugu hizkuntza hau onartzen
+          try_another_language: Probatu beste hizkuntza bat
+        'no': Ez
+        search_placeholder: Bilatu ...
+        show_more_languages: Beste hizkuntza batzuk
+        target_language_question: Zein hizkuntza ikasi nahi duzu?
+        what_is_language_level: Nola baloratuko zenuke zure %{languageName} maila?
+        'yes': Bai
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu-en pribatutasun politika
+        support: Laguntza
+      logout: Saioa amaitu
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Jaso jarraitzen dituzun irakasle eta ikastetxeen eguneratzeak
+              sections:
+                app_notifications: Aplikazioen jakinarazpenak
+                email: Posta elektronikoa
+              title: Ikasteko laguntza
+            marketing:
+              description: Egon informatuta Lingu-en promozio, eguneratze eta inspirazio
+                guztiei buruz
+              sections:
+                browser_notifications: Arakatzailearen jakinarazpenak
+                email: Posta elektronikoa
+              title: Marketina
+          title: Harremanetarako hobespenak
+        personal_information:
+          delete_photo: Ezabatu argazkia
+          email: Posta elektronikoa
+          first_name: Izena
+          last_name: Abizena
+          social_accounts:
+            connected: Konektatuta
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ez dago konektatuta
+            title: Gizarte kontuak
+          title: Informazio pertsonala
+          update_photo: Eguneratu argazkia
+        school:
+          active_licence: Lizentzia aktiboa
+          active_status: Aktiboa
+          delete_profile: Ezabatu nire profila
+          delete_profile_modal:
+            body: |-
+              Zure datu guztiak ezabatzen dituzu, betirako. Ez dago desegiteko botoirik, eta ondoren ezin dizugu berreskuratu.
+              Ziur zure Lingu profila eta datu guztiak behin betiko ezabatu nahi dituzula?
+            cancel: Utzi
+            confirm: Bai, ezabatu
+            i_understand_the_consequences: Ondorioak ulertzen ditut
+            title: Zure profila ezabatu nahi duzu?
+          expired: Iraungita %{expire_date}
+          expires: "%{expire_date} iraungitzen da"
+          inactive_status: Inaktiboa
+          revoke_access: Ezeztatu irakurtzeko sarbidea
+          sections:
+            contact_school: Ikastetxearekin harremanetan jarri
+            export_my_data: Esportatu nire datuak
+            read_school_privacy_policy: Irakurri Ikastetxearen Pribatutasun politika
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musika erreproduzitzea
+              sound_effects: Soinu efektuak
+              title: Soinua
+            visual:
+              dark_theme: Gai iluna
+              font_size:
+                test_text: Belarra beti berdeagoa da hesiaren beste aldean
+                title: Letra tamaina
+              high_contrast: Kontraste handia
+              hints: Aholkuak
+              title: Ikusizko
+          title: Soinua eta Ikuspena
+        training_settings:
+          sections:
+            i_understand: ulertzen dut
+            i_want_to_learn: ikasi nahi dut
+            target_language_level: Ingeles maila
+          title: Prestakuntza ezarpenak
+      settings_title: Ezarpenak
+    teacher_card:
+      followers_count:
+        one: 1 jarraitzaile
+        other: "%{count} jarraitzaile"
+      lessons_count:
+        one: 1 ikasgai
+        other: "%{count} ikasgai"

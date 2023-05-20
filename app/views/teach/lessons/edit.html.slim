@@ -1,0 +1,10 @@
+- set_page_title lesson.title
+
+.content
+  .row
+    .col-lg-12
+      .card.mb-3
+        .card-header
+          h2== t('teach.lessons.edit_lesson', lesson: lesson.title)
+        .card-body
+          = render 'form', lesson: lesson

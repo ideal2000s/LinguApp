@@ -1,0 +1,14 @@
+.card-body id=dom_id(option)
+  .row
+    .col-9
+      p.card-text= best_in_place option, :answer, url: teach_item_option_path(item, option), param: :item_option, inner_class: "form-control"
+    .col-2
+      = best_in_place option, :correct, as: :checkbox,
+              collection: [t('incorrect'), t('correct')],
+              data: { true_class: 'btn-success', false_class: 'btn-danger' },
+              url: teach_item_option_path(item, option),
+              param: :item_option,
+              class: "btn rounded-capsule btn-sm mr-1 btn-#{option.correct ? 'success' : 'danger' }"
+    .col-1
+      = link_to teach_item_option_path(item, option), method: :delete, remote: true, class: 'btn btn-falcon-danger btn-sm', data: { confirm: 'Delete this item?' } do
+        i.fas.fa-times.fa-fw

@@ -1,0 +1,61 @@
+.btn-primary {
+  &:hover, &:active, &:focus {
+    background: $color-primary-hover !important;
+    border-color: $border-color-primary-hover !important;
+  }
+}
+
+.btn-secondary {
+  &:hover, &:active, &:focus {
+    background: $color-secondary-hover !important;
+    border-color: $border-color-secondary-hover !important;
+  }
+}
+
+.btn-success {
+  color: #fff;
+  &:hover, &:active, &:focus{
+    background: $color-success-hover !important;
+    border-color: $border-color-success-hover !important;
+  }
+}
+
+.btn-info {
+  &:hover, &:active, &:focus {
+    background: $color-info-hover !important;
+    border-color: $border-color-info-hover !important;
+  }
+}
+
+.btn-warning {
+  &:hover, &:active, &:focus {
+    background: $color-warning-hover !important;
+    border-color: $border-color-warning-hover !important;
+  }
+}
+
+.btn-danger {
+  &:hover, &:active, &:focus {
+    background: $color-danger-hover !important;
+    border-color: $border-color-danger-hover !important;
+  }
+}
+
+
+.btn-outline-secondary {
+  color: #D5E1E7;
+  border-color: #D5E1E7;
+
+  &:hover, &:active, &:focus {
+    color: #9FAABA !important;
+    border-color: #9FAABA !important;
+    background: #fff !important;
+  }
+}
+
+.btn-outline-success {
+  color: $color-success-hover;
+  &:hover, &:active, &:focus {
+    color: #fff !important;
+  }
+}

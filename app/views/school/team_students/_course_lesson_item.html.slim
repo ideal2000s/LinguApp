@@ -1,0 +1,15 @@
+- lesson_session = lesson.sessions.by_student(student).take
+tr
+  td= lesson.title
+  td= lesson_session&.duration_human
+  td
+    -# TODO: Add lesson XP
+    -# if lesson_session.earned_xp > 0
+    -# span 0
+    -#=< image_tag('icons/xp-badge.svg')
+  td
+    .d-flex.justify-content-between.align-items-center
+      .progress
+        .progress-bar role='progressbar' aria-valuemin='0' aria-valuemax='100' style="width: #{lesson_session&.progress_percent || 0}%"
+      span.ml-1 class="#{(lesson_session&.progress_percent || 0) < 100 ? 'font-weight-bold' : ''}"
+        | #{lesson_session&.progress_percent || 0}%

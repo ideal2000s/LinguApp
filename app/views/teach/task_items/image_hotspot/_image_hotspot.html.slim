@@ -1,0 +1,12 @@
+div id=dom_id(item)
+  .card.mb-3 class="#{item.functional? && 'corner-success' || 'corner-warning'}"
+    .card-body
+      .row
+        .col-1.d-flex.justify-content-between.align-items-center
+          .hotspot-icon.text-center= item.position
+        .col-9.align-middle
+          strong.mt-2= item.word_body
+          =< "(#{t(item.word_class, scope: 'activerecord.attributes.word.word_classes_abbr')})"
+        .col-2.text-right
+          = link_to teach_task_item_path(task, item), method: :delete, remote: true, class: 'btn btn-falcon-danger float-right btn-sm', data: { confirm: 'Delete this item?' } do
+            i.fas.fa-times.fa-fw

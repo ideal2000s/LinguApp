@@ -1,0 +1,174 @@
+@import "../../../../../theme/scss/user-variables";
+
+.container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.wordListContainer {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.header {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #FBFCFF;
+  opacity: 0.8;
+  margin: 3rem 0 0 0;
+  padding: 0 3rem;
+
+  @media (min-width: $lingu-bpt-sm) {
+    margin-bottom: 2rem;
+  }
+  @media (min-width: $lingu-bpt-md) {
+    margin-bottom: 4rem;
+  }
+  @media (min-height: $lingu-bpt-lg) {
+    margin-bottom: 8.825rem;
+  }
+}
+
+.cardContainer {
+  padding: 16px;
+  max-width: 100%;
+  width: 375px;
+  flex: 1;
+  max-height: 558px;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(251, 252, 255, 0.69992) 0%, rgba(251, 252, 255, 0.67) 13.83%, #FBFCFF 100%);
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
+  border-radius: 26px;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 24px;
+
+  &>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  &.shaking {
+    animation: shake 1s linear;
+    animation-iteration-count: 2;
+  }
+  @keyframes shake {
+    10%, 90% {
+      transform: rotate(-0.5deg);
+    }
+
+    20%, 80% {
+      transform: rotate(1deg);
+    }
+
+    30%, 50%, 70% {
+      transform: rotate(-2deg);
+    }
+
+    40%, 60% {
+      transform: rotate(2deg);
+    }
+  }
+}
+
+.nextCard {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 16px;
+  background: linear-gradient(180deg, #FBFCFF 0%, rgba(251, 252, 255, 0.67) 100%);
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
+  border-radius: 26px;
+  transform: rotate(-8.72deg);
+  opacity: 0.2;
+}
+
+.buttonContainer {
+  position: absolute;
+  left: -100px;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  .arrowButton {
+    &.back {
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+  button {
+    opacity: 0.6;
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+    &:disabled {
+      opacity: 0.2;
+    }
+  }
+}
+
+.origin {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 91.02%;
+  color: #2D2D3A;
+}
+
+.translation {
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #2D2D3A;
+  opacity: 0.5;
+}
+
+
+
+.audio {
+  margin-bottom: 76px;
+
+  &.hasImage {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+}
+
+.nextButtonContainer {
+  position: absolute;
+  bottom: 40px;
+  button {
+    margin: 0 auto;
+  }
+}
+
+.progressBar {
+  position: absolute;
+  bottom: 16px;
+}
+
+@media (min-width: $lingu-bpt-sm) {
+  .progressBar {
+    bottom: 22px;
+  }
+}

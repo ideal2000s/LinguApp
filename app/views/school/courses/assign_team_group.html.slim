@@ -1,0 +1,7 @@
+- set_page_title t('courses')
+.courses-container.school-info-container
+  .mb-4
+    .d-flex.align-items-center
+      h1.mb-0.pb-3= t('courses')
+      
+    = render 'assign_team_group_form', course: course, team_groups: team_groups

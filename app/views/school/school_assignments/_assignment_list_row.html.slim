@@ -1,0 +1,9 @@
+- language = assignment.language
+tr onclick="javascript: window.location='#{school_assignment_path(assignment)}'"
+  td= assignment.name
+  td= assignment_type_tag(assignment)
+  td.d-flex
+    .language-info
+      = image_tag("flags/#{language_to_flag_code(language.code)}.svg", class: 'language-flag mr-1')
+      span.font-weight-bold
+        = language.name.presence || language.system_name

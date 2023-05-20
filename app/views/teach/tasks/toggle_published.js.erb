@@ -1,0 +1,4 @@
+(function(){
+    var $container = $('#<%=dom_id(@task)%>');
+    $container.replaceWith('<%= j render 'teach/task_list_row', task: @task %>')
+})();

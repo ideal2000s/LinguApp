@@ -1,0 +1,602 @@
+---
+am:
+  course_mailer:
+    course_assigned_notification:
+      button: ትምህርቱን ይጀምሩ
+      click_start_lesson: "'ጀምር ትምህርት' ን ጠቅ ያድርጉ"
+      follow_course_link: ትምህርቱን ለመክፈት ቁልፉን ጠቅ ያድርጉ
+      footer_text: በየቀኑ አዲስ ነገር ለመማር ወደ ሊንጉ ይመለሱ!
+      get_started_line: እንዴት እንደሚጀመር እነሆ
+      notification_link: የማሳወቂያ ቅንብሮች
+      open_lesson: የመጀመሪያውን ትምህርት ይክፈቱ
+      or_paste_this_link: ወይም ይህንን አገናኝ በአሳሽዎ ውስጥ ይለጥፉ
+      sign_in_with_email: በኢሜል አድራሻዎ ይግቡ (%{email})
+      support_link: ድጋፍ
+      title: በ %{course} መጀመር
+    new_document_comment:
+      author_text: "%{author} የምደባዎን ግምገማ ትቷል"
+      button_text: ተመልከተው
+      button_url_helper: ወይም ይህንን አገናኝ በአሳሽዎ ውስጥ ይለጥፉ
+      footer_text: ለመማር ብዙ ተጨማሪ ነገሮች አሉ ...
+      notification_link: የማሳወቂያ ቅንብሮች
+      subject_line: አዲስ የምደባ አስተያየት
+      support_link: ድጋፍ
+    otp:
+      ignore_msg: ይህንን ጥያቄ ካላደረጉ ኢሜሉን ችላ ይበሉ ፡፡
+      subject_line: ለቋንቋ የእርስዎ ልዩ ኮድ
+      unique_code_for_lingu: ለቋንቋ ልዩ ኮድዎ ይኸውልዎት
+  frontend:
+    auth:
+      already_have_acc_question: ቀድሞውኑ መለያ አለዎት?
+      back: ተመለስ
+      back_to_sign_in: ወደ መለያ ለመግባት ተመለስ
+      check_your_email_for_a_code: ስለ ኮድዎ ኢሜልዎን ይፈትሹ
+      continue: ቀጥል
+      continue_with_email: በኢሜል ይቀጥሉ
+      continue_with_provider: በ %{provider} ይቀጥሉ
+      did_not_receive_a_code: ኮድ አልተቀበሉም?
+      email_address: የ ኢሜል አድራሻ
+      first_name: የመጀመሪያ ስም
+      get_unique_code: ልዩ የመግቢያ ኮድ ያግኙ
+      join_lingu: ቋንቋን ይቀላቀሉ
+      last_name: የአያት ሥም
+      more_login_options: ተጨማሪ የመግቢያ አማራጮች
+      no_account_question: መለያ የለዎትም?
+      or: ወይም
+      resend_code: እንደገና ይላኩ ኮድ
+      sign_in: ስግን እን
+      sign_up: ተመዝገቢ
+      want_to_receive_marketing_messages: ከሊንጉ የግብይት መልዕክቶችን መቀበል እፈልጋለሁ
+      we_ve_sent_a_code: >-
+        ባለ 6 አኃዝ ኮድ ወደ <strong> {{email}} </strong> ልከናል ፡፡ ኮዱ በ 15 ደቂቃዎች ውስጥ ጊዜው
+        ያበቃል ፣ ስለሆነም እባክዎን በቅርቡ ያስገቡት።
+    cookie_agreement:
+      agree: እስማማለሁ
+      condition: >-
+        የጣቢያ አፈፃፀምን ለመተንተን እና ግላዊነት የተላበሰ ይዘትን ለማድረስ ኩኪዎችን እንጠቀማለን ፡፡ “እስማማለሁ” ን ጠቅ
+        በማድረግ ለእኛ ሁኔታ ተስማምተዋል።
+    course:
+      accredited_course_provider: እውቅና ያለው የኮርስ አቅራቢ
+      apply: ያመልክቱ
+      apply_filters: ማጣሪያዎችን ይተግብሩ
+      by: በ
+      cancel: ሰርዝ
+      categories: "%{count} ምድቦች"
+      category: ምድብ
+      clear: ግልጽ
+      clear_filters: ማጣሪያዎችን ያጽዱ
+      contact_us: አግኙን
+      could_not_find_match_for: ይቅርታ ፣ ለእዚህ ምንም ተዛማጅ ማግኘት አልቻልንም
+      course_language: የኮርስ ቋንቋ
+      duration: የቆይታ ጊዜ
+      filter_settings:
+        categories:
+          academic: ትምህርታዊ
+          business: ንግድ
+          fashion: ፋሽን
+          food_drink: ምግብ እና መጠጥ
+          for_kids: ለልጆች
+          general: ጄኔራል
+          health: ጤና
+          legal: ሕጋዊ
+          sport: ስፖርት
+          travel: ጉዞ
+        durations:
+          t0_600: "<10 ደቂቃዎች"
+          t1800_3600: 30-60 ደቂቃዎች
+          t3600_86400: 1+ ሰዓት
+          t600_1800: ከ10-30 ደቂቃዎች
+        focus_on:
+          conversation: ውይይት
+          grammar: ሰዋሰው
+          listening: ማዳመጥ
+          pronunciation: አጠራር
+          reading: ንባብ
+          speaking: በመናገር ላይ
+          writing: መጻፍ
+        levels:
+          long:
+            advanced: የላቀ ደረጃ
+            elementary: የመጀመሪያ ደረጃ
+            intermediate: መካከለኛ ደረጃ
+            no_knowledge: እውቀት የለም
+            pre_intermediate: ቅድመ መካከለኛ ደረጃ
+            upper_intermediate: የላይኛው መካከለኛ ደረጃ
+          short:
+            advanced: የላቀ
+            beginner: ጀማሪ
+            intermediate: መካከለኛ
+        sort_by:
+          most_rated: በጣም ደረጃ የተሰጠው
+          newest: በጣም አዲስ
+          popularity: ታዋቂነት
+      filters: ማጣሪያዎች
+      focus_on: ትኩረት ያድርጉ
+      focus_on_title: ማተኮር እፈልጋለሁ
+      hide_lessons: ትምህርቶችን ደብቅ
+      hours: ሰዓታት
+      i_understand: ገባኝ
+      i_want_to_learn: መማር እፈልጋለሁ
+      in_language: በ %{language} ውስጥ
+      language: ቋንቋ
+      learn_more: ተጨማሪ እወቅ
+      less_settings: ያነሱ ቅንብሮች
+      lessons: ትምህርቶች
+      lessons_available: "%{number} ትምህርቶች ይገኛሉ"
+      lessons_catalog_page_subtitle: የቋንቋ ጀግና ይሁኑ ፡፡
+      lessons_catalog_page_title: አድማሶችዎን በቋንቋ ትምህርት ያስፋፉ
+      level: ደረጃ
+      min: ደቂቃ
+      more_settings: ተጨማሪ ቅንብሮች
+      navbar:
+        close: ምናሌን ዝጋ
+        menu: ምናሌ
+        select_language: ቋንቋ ይምረጡ
+      need_to_buy_course: በመጀመሪያ አንድ ኮርስ መያዝ ያስፈልግዎታል
+      no_description: መግለጫ አልተሰጠም
+      no_results: ይቅርታ ፣ ለእዚህ ምንም ተዛማጅ ማግኘት አልቻልንም
+      or: ወይም
+      per_month: በ ወር
+      plans: ዕቅዶች
+      privacy_policy: የ ግል የሆነ
+      rating: ደረጃ መስጠት
+      remove_all_filters: ሁሉንም ማጣሪያዎችን ያስወግዱ
+      reviews: ግምገማዎች
+      save: አስቀምጥ
+      search: ፈልግ
+      select_dots: ይምረጡ ...
+      select_languages: ልጓሞችን ይምረጡ
+      select_num_languages: "%{number} ቋንቋዎችን ይምረጡ"
+      short_levels:
+        a1: ሀ .1
+        a2: ሀ
+        b1: ቢ 1
+        b2: ቢ 2
+        c1: ሲ 1
+        c2: ሲ 2
+        zero_level: አ .0
+      show_all: ሁሉንም አሳይ
+      show_all_lessons: ሁሉንም ትምህርቶች አሳይ
+      show_lessons: "%{number} ትምህርቶችን አሳይ"
+      show_more: ተጨማሪ አሳይ
+      sign_up_with_lingu_for: ለ ሊንጎ ኖርዌይ ይመዝገቡ
+      skills: "%{count} ችሎታዎች"
+      sort_by: ቅደምተከተሉ የተስተካከለው
+      start_typing_here: እዚህ መተየብ ይጀምሩ
+      teach: አስተምር
+      terms_and_conditions: አተገባበሩና መመሪያው
+      time_range: የጊዜ ክልል
+      try_adjusting_your_search: ማጣሪያዎን በመለወጥ ፍለጋዎን ለማስተካከል ይሞክሩ
+      try_this_course: ይህንን ኮርስ ይሞክሩ
+      website_language: የድር ጣቢያ ቋንቋ
+      words: ቃላት
+    games:
+      finished:
+        go_to_next_exercise: ጥሩ ስራ! ወደ ቀጣዩ መልመጃ ይሂዱ
+      flashcard:
+        buttons:
+          finish: ጨርስ
+          next: ቀጣይ
+          previous: ቀዳሚ
+        check_out_new_words: በዚህ ትምህርት ውስጥ የሚማሯቸውን አዳዲስ ቃላት ይመልከቱ
+        frequency_of_word_usage: በ %{language} ውስጥ የቃላት አጠቃቀም ድግግሞሽ
+        keep_practice_to_learn_all_words: የ %{count} ቃላትን ይገምግሙ እና የተወሰኑ ጨዋታዎችን እንጫወት!
+        word_frequency:
+          level1: አልፎ አልፎ ጥቅም ላይ ውሏል
+          level2: አልፎ አልፎ ጥቅም ላይ ውሏል
+          level3: የቃል ድግግሞሽ - መካከለኛ
+          level4: የቃል ድግግሞሽ - መካከለኛ
+          level5: የተለመደ
+          level6: በጣም የተለመደ
+      match_word:
+        click_and_move_each_word_to_counterpart: እያንዳንዱን ቃል ወደ አቻው ጠቅ ያድርጉ እና ያንቀሳቅሱት
+        start_heading: ጥንድ ለማድረግ ቃላትን ያዛምዱ
+        time_is_up: ጊዜው አብቅቷል!
+      skip_tutorial: ዝለል
+      time_is_up: ጊዜው አብቅቷል!
+      word_nodes:
+        match_letters_to_form_word: ቃል ለመመስረት ደብዳቤዎችን ያዛምዱ
+      word_waterfall:
+        do_not_hesitate: እናፋጥን!
+        go_to_next_exercise: ወደ ቀጣዩ መልመጃ ይሂዱ
+        select_correct_translation: ትክክለኛውን ግጥሚያ ይምረጡ
+        well_done: ጥሩ ስራ!
+    home_page:
+      hello: ሀሎ,
+      popular_lessons: ታዋቂ ትምህርቶች
+      show_more: ተጨማሪ አሳይ
+      time: "%{count} ደቂቃ"
+      today_lesson: ለዛሬው የእርስዎ ትምህርት
+      user_name: "%{name}!"
+      words: "%{count} ቃላት"
+    idle_screen:
+      by_author: በ %{authorName}
+      continue_lesson: ትምህርት ይቀጥሉ
+      exit: መውጫ
+      idle_message: ለተወሰነ ጊዜ ስራ ፈትተዋል ...
+    lesson_page:
+      back_to_course_page: ወደ ኮርስ ገጽ ተመለስ
+      close: ገጠመ
+      continue_lesson: ትምህርት ይቀጥሉ
+      followed: የተከተለ
+      hamburger_menu_btn: የሃምበርገር ምናሌ
+      lesson_given: ትምህርቶች
+      not_started: አልተጀመረም
+      or: ወይም
+      part_complete: "%{percent}% ተጠናቅቋል"
+      restart_lesson: እንደገና ጀምር
+      section_check: ፈትሽ
+      section_check_info: "%{count} ሙከራዎች"
+      section_learn: ይማሩ
+      section_learn_info: ለመመልከት እና ለማንበብ %{count} ደቂቃ
+      section_play: ይጫወቱ
+      section_play_info: ለመለማመድ %{count} ቃላት
+      start_lesson: ትምህርት ይጀምሩ
+      step_progress: "%{percent}%"
+      subscribe: ተከተል
+      subscribed: የተከተለ
+      subscribers: ተከታዮች
+      time_min: "%{minutesNumber} ደቂቃ"
+      unsubscribe: አትከተል
+      webview_error_title: የሆነ ስህተት ተከስቷል...
+      words_number: "%{wordsNumber} አዲስ ቃላት"
+    lesson_task:
+      cancel_button: ሰርዝ
+      check:
+        navigation_next: ቀጣይ
+        navigation_previous: ቀዳሚ
+        navigation_skip: ዝለል
+      controls_panel:
+        font_size_button: የቅርጸ-ቁምፊ መጠን
+        high_contrast_button:
+          origin: ከፍተኛ ንፅፅር
+          short: ንፅፅር
+        hints_button: ፍንጮች
+        music_playback_button:
+          origin: የሙዚቃ መልሶ ማጫወት
+          short: ሙዚቃ
+        sound_effects_button:
+          origin: የድምፅ ውጤቶች
+          short: ድምጽ
+      exit_button: መውጫ
+      finish_button: ጨርስ
+      finished:
+        back_to_learn: ለመማር ተመለስ
+        back_to_lesson_page: ወደ ትምህርቱ ገጽ ተመለስ
+        back_to_results_page: በውጤት ገጽ ላይ ተመለስ
+        bad_result_message: እምም ... ትምህርቱን አንድ ተጨማሪ ጊዜ ለመውሰድ ይሞክሩ
+        close_lesson: ዝጋ ትምህርት
+        correct_answers_list: ትክክለኛ የመልሶች ዝርዝር
+        good_result_message: ጥረት እንዳደረጉ አይቻለሁ!
+        great_result_message: ጥሩ ስራ! እነዚህ ጥሩ ውጤቶች ናቸው!
+        next_course_lesson: በእርግጥ ወደ ቀጣዩ ትምህርት ይሂዱ
+        no_results: እስካሁን ምንም የፈተና ውጤቶች የሉዎትም
+        no_results_text: እባክዎን ትምህርቱን ያጠናቅቁ እና ውጤቱን ለማግኘት ፈተናውን ያልፉ
+        see_correct_answers_list: ትክክለኛ የመልስ ዝርዝርን ይመልከቱ
+        train_more: የበለጠ ይለማመዱ እና በሚቀጥለው ጊዜ የተሻሉ ውጤቶችን ያገኛሉ!
+        you_finished_lesson: በጣም ጥሩ! ትምህርቱን ጨርሰዋል
+      go_back: ተመለስ
+      next_button: ቀጣይ
+      not_available_task: ይህ ተግባር ገና አልተገኘም
+      start_button: ይጀምሩ
+      tasks:
+        check:
+          assignment:
+            accept: ተቀበል
+            author_will_check_your_answer: "%{author} መልስዎን ይገመግማል እና በተለምዶ በ1-2 ቀናት
+              ውስጥ ግብረመልስ ይሰጣል"
+            continue_writing: መጻፍዎን ይቀጥሉ
+            copy: ገልብጥ
+            delete: ሰርዝ
+            delete_record: መዝገብ ሰርዝ
+            edit: አርትዕ
+            essay_does_not_have_enough_words: >-
+              የእርስዎ መልስ ቢያንስ %{minWordsNumber} ቃላትን መያዝ አለበት። መልስዎ በአሁኑ ጊዜ %{currentWordsNumber}
+              ቃላት ነው።
+            followers_count: "%{followersCount} ተከታዮች"
+            lessons_count: "%{lessonsCount} ትምህርቶች"
+            minimal_recording_time: አነስተኛ የመቅጃ ጊዜ - %{minimalRecordingTime}
+            minimum_characters_amount: አነስተኛ ቁምፊዎች - %{minimumCharactersAmount}
+            minimum_words_amount: አነስተኛ ቃላት - %{minimumAmount}
+            record_again: እንደገና ይመዝግቡ
+            record_voice: ድምፅን ይቅዱ
+            send_anyway: ለማንኛውም ላክ
+            send_to_review: እንዲገመገም ይላኩ
+            skip: ዝለል
+            too_short_answer: በጣም አጭር መልስ
+            type_your_answer: መልስዎን ይተይቡ
+            unknown_task_type: ያልታወቀ የተግባር ዓይነት
+            upgrade_licence: ፈቃድ አሻሽል
+            upgrade_your_plan: ምደባዎችን ከመምህራን ግምገማዎች ጋር ለመሞከር ዕቅድዎን ያሻሽሉ
+            upload_files: ፋይሎችን ይስቀሉ
+            write_essay: ድርሰት ፃፍ
+            you_have_used_amount_of_assignments: የ %{amountOfAssignments} ምደባ ክሬዲቶችን
+              ተጠቅመዋል
+          fill_in_blanks:
+            sentence_gap: የአረፍተ ነገር ክፍተት
+          fill_in_table:
+            column_answer_placeholder: መልስ
+            column_question_placeholder: ጥያቄ
+            example: ለምሳሌ
+          true_false:
+            'false': ውሸት
+            'true': እውነት ነው
+        learn:
+          translatable_text:
+            show_original: ዋናውን አሳይ
+            translate_into: ከጉግል ጋር ወደ %{languageName} ይተርጉሙ
+            translate_into_your_lang: ከጉግል ጋር ወደ ቋንቋዎ ይተርጉሙ
+        play:
+          arrange_words:
+            start_screen:
+              heading: ከተሰጡት ቃላት ውስጥ አረፍተ ነገር ያድርጉ
+          audition:
+            start_screen:
+              heading: ኦዲዮውን ያዳምጡ እና አሁን የሰሙትን ቃል መታ ያድርጉ
+          dictation:
+            get_help: እርዳታ ያግኙ
+            i_do_not_know: አላውቅም
+            input_placeholder: የሰሙትን እዚህ ያስገቡ
+            start_screen:
+              heading: የሰሙትን ያዳምጡ እና ይፃፉ
+          fill_gap:
+            start_screen:
+              heading: ቃሉን እና ትርጉሙን ያዛምዱ
+          finish_screen:
+            go_to_next_exercise: ጥሩ ስራ! ወደ ቀጣዩ መልመጃ ይሂዱ
+          image_hotspot:
+            start_screen:
+              heading: በስዕሉ ውስጥ ያሉትን ዕቃዎች በትክክል ይሰይሙ
+          image_object:
+            start_screen:
+              heading: ከሚቀጥለው ስዕል ትክክለኛውን ነገር ይምረጡ
+          inline_dropdown:
+            start_screen:
+              heading: ከአረፍተ ነገሩ ጋር የሚዛመዱ ቃላትን ይምረጡ
+          mark_word:
+            start_screen:
+              heading: ጽሑፉን ያንብቡ እና ከምስሉ ጋር የሚስማማውን ቃል ይምረጡ
+          minimal_pairs:
+            start_screen:
+              heading: ቪዲዮውን ይመልከቱ እና ትክክለኛውን አማራጭ ይምረጡ
+    locale:
+      currency_switcher_title: የምንዛሬ መቀየሪያ
+      lang_switcher_title: የቋንቋ መቀየሪያ
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: ".Арски"
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ዶቼች
+        el: Greek
+        en: እንግሊዝኛ
+        eo: Esperanto
+        es: ኢስፓኦል
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ፍራንሷ
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ኢጣሊያኖ
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: ኖርስክ
+        ne: Nepali
+        nl: ነደርላንድስ
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: ፖልስኪ
+        ps: Pashto
+        pt: ፓርጆጊስ
+        ro: ሊምባ ሮማኒă
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af ሶማሊ
+        sq: Albanian
+        sr: Йербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ኦዲዮ እየተጫነ ነው
+        aria_pause_button: ለአፍታ አቁም
+        aria_play_button: ይጫወቱ
+        aria_reload_button: እንደገና ጫን
+        aria_stop_button: ተወ
+        reload_message: ኦዲዮን መጫን አልተሳካም። እንደገና ለመጫን እባክዎ አዝራሩን ጠቅ ያድርጉ።
+    mobile_modal:
+      apply: ያመልክቱ
+      cancel: ሰርዝ
+      clear: ግልጽ
+      save: አስቀምጥ
+    page404:
+      goToStartLessonPage: ወደ መጀመሪያ ትምህርት ገጽ ይሂዱ
+      ooops: ኦኦፕስ ...
+      sorry_message: ይቅርታ ቶር ይህንን ገጽ ማግኘት አልቻለም
+    profile:
+      navigation:
+        log_out: ውጣ
+        my_profile: የግል ማህደሬ
+        settings: ቅንብሮች
+      onboarding:
+        choose_native_language: እርስዎ የሚረዱትን ቋንቋዎን ወይም ቋንቋዎን ይምረጡ
+        do_you_understand_english: እንግሊዘኛ ያውቃሉ?
+        hello: ሀሎ
+        language_levels:
+          a1: የመጀመሪያ ደረጃ
+          a2: የቅድመ-መካከለኛ ደረጃ
+          b1: መካከለኛ ደረጃ
+          b2: የላይኛው መካከለኛ ደረጃ
+          c1: የላቀ ደረጃ
+          no_knowledge: እውቀት የለም
+        language_not_supported:
+          note: ቋንቋው እንደወጣ እናሳውቅዎታለን
+          title: ይቅርታ ፣ ግን ይህን ቋንቋ ገና አንደግፍም
+          try_another_language: ሌላ ቋንቋ ይሞክሩ
+        'no': አይ
+        search_placeholder: ፈልግ ...
+        show_more_languages: ሌሎች ቋንቋዎች
+        target_language_question: ምን ቋንቋ መማር ይፈልጋሉ?
+        what_is_language_level: የ %{languageName} ደረጃዎን እንዴት ይመዘኑ ነበር?
+        'yes': አዎ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: የቋንቋ ግላዊነት ፖሊሲ
+        support: ድጋፍ
+      logout: ውጣ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: ከሚከተሏቸው መምህራን እና ትምህርት ቤቶች ዝመናዎችን ይቀበሉ
+              sections:
+                app_notifications: የመተግበሪያ ማሳወቂያዎች
+                email: ኢሜል
+              title: የመማር እገዛ
+            marketing:
+              description: ከቋንቋው ስለ ሁሉም ማስተዋወቂያዎች ፣ ዝመናዎች እና መነሳሳት መረጃ ያግኙ
+              sections:
+                browser_notifications: የአሳሽ ማሳወቂያዎች
+                email: ኢሜል
+              title: ግብይት
+          title: የእውቂያ ምርጫዎች
+        personal_information:
+          delete_photo: ፎቶን ሰርዝ
+          email: ኢሜል
+          first_name: የመጀመሪያ ስም
+          last_name: የአያት ሥም
+          social_accounts:
+            connected: ተገናኝቷል
+            facebook: ፌስቡክ
+            google: ጉግል
+            microsoft: ማይክሮሶፍት
+            not_connected: አልተገናኘም
+            title: ማህበራዊ መለያዎች
+          title: የግል መረጃ
+          update_photo: ፎቶን ያዘምኑ
+        school:
+          active_licence: ንቁ ፈቃድ
+          active_status: ንቁ
+          delete_profile: መገለጫዬን ሰርዝ
+          delete_profile_modal:
+            body: |-
+              ሁሉንም መረጃዎችዎን — ለዘላለም ይደመሰሳሉ። ምንም የመቀልበስ አዝራር የለም ፣ እና ከዚያ በኋላ ለእርስዎ መልሰን ማግኘት አንችልም።
+              እርግጠኛ ነዎት የቋንቋ መገለጫዎን እና ሁሉንም ውሂብዎን እስከመጨረሻው መሰረዝ ይፈልጋሉ?
+            cancel: ሰርዝ
+            confirm: አዎ ሰርዝ
+            i_understand_the_consequences: የሚያስከትለውን መዘዝ ተረድቻለሁ
+            title: መገለጫዎ ይሰረዝ?
+          expired: ጊዜው ያለፈበት %{expire_date}
+          expires: "%{expire_date} ን ያበቃል"
+          inactive_status: እንቅስቃሴ-አልባ
+          revoke_access: የንባብ መዳረሻን ይሽሩ
+          sections:
+            contact_school: ትምህርት ቤት ያነጋግሩ
+            export_my_data: ውሂቤን ላክ
+            read_school_privacy_policy: የትምህርት ቤት ግላዊነት ፖሊሲን ያንብቡ
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: የሙዚቃ መልሶ ማጫወት
+              sound_effects: የድምፅ ውጤቶች
+              title: ድምጽ
+            visual:
+              dark_theme: ጨለማ ጭብጥ
+              font_size:
+                test_text: ሳሩ ሁልጊዜ በአጥሩ ማዶ በኩል አረንጓዴ ነው
+                title: የቅርጸ-ቁምፊ መጠን
+              high_contrast: ከፍተኛ ንፅፅር
+              hints: ፍንጮች
+              title: ቪዥዋል
+          title: ድምጽ እና ቪዥዋል
+        training_settings:
+          sections:
+            i_understand: ገባኝ
+            i_want_to_learn: መማር እፈልጋለሁ
+            target_language_level: የእንግሊዝኛ ደረጃ
+          title: የሥልጠና ቅንጅቶች
+      settings_title: ቅንብሮች
+    teacher_card:
+      followers_count:
+        one: 1 ተከታይ
+        other: "%{count} ተከታዮች"
+      lessons_count:
+        one: 1 ትምህርት
+        other: "%{count} ትምህርቶች"

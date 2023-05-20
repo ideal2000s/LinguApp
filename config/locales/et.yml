@@ -1,0 +1,606 @@
+---
+et:
+  course_mailer:
+    course_assigned_notification:
+      button: Alustage kursust
+      click_start_lesson: Klõpsake nuppu „Alusta õppetundi”
+      follow_course_link: Kursuse avamiseks klõpsake nuppu
+      footer_text: Tule tagasi Lingu juurde, et iga päev midagi uut õppida!
+      get_started_line: Alustamiseks toimige järgmiselt.
+      notification_link: Teavitusseaded
+      open_lesson: Avage esimene õppetund
+      or_paste_this_link: või kleepige see link oma brauserisse
+      sign_in_with_email: Logige sisse oma e-posti aadressiga (%{email})
+      support_link: Toetus
+      title: "%{course}-ga alustamine"
+    new_document_comment:
+      author_text: "%{author} jättis teie ülesande arvustuse"
+      button_text: Vaata järgi
+      button_url_helper: 'või kleepige see link oma brauserisse:'
+      footer_text: Õppida on veel palju ...
+      notification_link: Teavitusseaded
+      subject_line: Uus ülesande kommentaar
+      support_link: Toetus
+    otp:
+      ignore_msg: Kui te seda taotlust ei esitanud, eirake lihtsalt e-posti aadressi.
+      subject_line: Teie ainulaadne Lingu kood
+      unique_code_for_lingu: Siin on teie ainulaadne Lingu kood
+  frontend:
+    auth:
+      already_have_acc_question: On juba konto?
+      back: tagasi
+      back_to_sign_in: Tagasi sisselogimise juurde
+      check_your_email_for_a_code: Kontrollige oma e-posti aadressi
+      continue: Jätka
+      continue_with_email: Jätkake meiliga
+      continue_with_provider: Jätkake punktiga %{provider}
+      did_not_receive_a_code: Kas te ei saanud koodi?
+      email_address: E-posti aadress
+      first_name: Eesnimi
+      get_unique_code: Hankige ainulaadne sisselogimiskood
+      join_lingu: Liitu Linguga
+      last_name: Perekonnanimi
+      more_login_options: Veel sisselogimisvalikuid
+      no_account_question: Kas teil pole kontot?
+      or: või
+      resend_code: Saada kood uuesti
+      sign_in: Logi sisse
+      sign_up: Registreeri
+      want_to_receive_marketing_messages: Soovin saada Lingult turundussõnumeid
+      we_ve_sent_a_code: >-
+        Oleme saatnud kuuekohalise koodi aadressile <strong> {{email}} </strong>.
+        Kood aegub 15 minuti pärast, seega sisestage see varsti.
+    cookie_agreement:
+      agree: Nõus
+      condition: >-
+        Kasutame küpsiseid saidi toimivuse analüüsimiseks ja isikupärastatud sisu
+        edastamiseks. Klõpsates nupul „Nõustun”, nõustute meie tingimustega.
+    course:
+      accredited_course_provider: Akrediteeritud kursuse pakkuja
+      apply: Rakenda
+      apply_filters: Rakenda filtrid
+      by: Kõrval
+      cancel: Tühista
+      categories: "%{count} kategooriad"
+      category: Kategooria
+      clear: Selge
+      clear_filters: Tühjendage filtrid
+      contact_us: Võta meiega ühendust
+      could_not_find_match_for: Kahjuks ei leidnud me ühtegi vastet
+      course_language: Kursuse keel
+      duration: Kestus
+      filter_settings:
+        categories:
+          academic: Akadeemiline
+          business: Äri
+          fashion: Mood
+          food_drink: Söök ja jook
+          for_kids: Lastele
+          general: Kindral
+          health: Tervis
+          legal: Seaduslik
+          sport: Sport
+          travel: Reisimine
+        durations:
+          t0_600: "<10 minutit"
+          t1800_3600: 30-60 minutit
+          t3600_86400: 1+ tund
+          t600_1800: 10–30 minutit
+        focus_on:
+          conversation: Vestlus
+          grammar: Grammatika
+          listening: Kuulamine
+          pronunciation: Hääldus
+          reading: Lugemine
+          speaking: Rääkimine
+          writing: Kirjutamine
+        levels:
+          long:
+            advanced: Kõrgtasemel
+            elementary: Algtase
+            intermediate: Kesktasemel
+            no_knowledge: Teadmisi pole
+            pre_intermediate: Eelne kesktase
+            upper_intermediate: Ülemine kesktase
+          short:
+            advanced: Täpsem
+            beginner: Algaja
+            intermediate: Vahepealne
+        sort_by:
+          most_rated: Enim hinnatud
+          newest: Uusim
+          popularity: Populaarsus
+      filters: Filtrid
+      focus_on: Keskendu
+      focus_on_title: Tahan keskenduda
+      hide_lessons: Peida õppetunnid
+      hours: Tunnid
+      i_understand: Ma saan aru
+      i_want_to_learn: Ma tahan õppida
+      in_language: kujul %{language}
+      language: Keel
+      learn_more: Lisateave
+      less_settings: Vähem seadeid
+      lessons: Õppetunnid
+      lessons_available: "%{number} õppetunnid saadaval"
+      lessons_catalog_page_subtitle: Hakka keelekangelaseks.
+      lessons_catalog_page_title: Laiendage oma silmaringi keelekursusega
+      level: Tase
+      min: Min
+      more_settings: Rohkem seadeid
+      navbar:
+        close: Sule menüü
+        menu: Menüü
+        select_language: Vali keel
+      need_to_buy_course: Esmalt peate kursuse broneerima
+      no_description: Kirjeldust pole esitatud
+      no_results: Kahjuks ei leidnud me ühtegi vastet
+      or: või
+      per_month: kuus
+      plans: Plaanid
+      privacy_policy: Privaatsuspoliitika
+      rating: Hinnang
+      remove_all_filters: Eemaldage kõik filtrid
+      reviews: Arvustused
+      save: Salvesta
+      search: Otsing
+      select_dots: Valige ...
+      select_languages: Valige langauges
+      select_num_languages: Valige %{number} keelt
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Näita kõike
+      show_all_lessons: Kuva kõik õppetunnid
+      show_lessons: Kuva %{number} õppetunnid
+      show_more: Näita rohkem
+      sign_up_with_lingu_for: Registreeruge Lingu Norra kasutajaks
+      skills: "%{count} oskused"
+      sort_by: Sorteerima
+      start_typing_here: Alustage siia tippimist
+      teach: Õpetage
+      terms_and_conditions: Tingimused
+      time_range: Ajavahemik
+      try_adjusting_your_search: Proovige oma otsingut filtrite muutmisega kohandada
+      try_this_course: Proovige seda kursust
+      website_language: Veebisaidi keel
+      words: Sõnad
+    games:
+      finished:
+        go_to_next_exercise: Hästi tehtud! Minge järgmisele harjutusele
+      flashcard:
+        buttons:
+          finish: Lõpetama
+          next: Järgmine
+          previous: Eelmine
+        check_out_new_words: Vaadake uusi õppetunde, mida selles õppetükis õpite
+        frequency_of_word_usage: Sõnakasutuse sagedus kujul %{language}
+        keep_practice_to_learn_all_words: Vaadake üle %{count} sõnad ja mängime mõnda
+          mängu!
+        word_frequency:
+          level1: Kasutatakse harva
+          level2: Kasutatakse harva
+          level3: Sõna sagedus - keskmine
+          level4: Sõna sagedus - keskmine
+          level5: Sage
+          level6: Väga tavaline
+      match_word:
+        click_and_move_each_word_to_counterpart: Klõpsake ja liigutage iga sõna vaste
+          juurde
+        start_heading: Paari moodustamiseks sobitage sõnu
+        time_is_up: Aeg on läbi!
+      skip_tutorial: Vahele jätma
+      time_is_up: Aeg on läbi!
+      word_nodes:
+        match_letters_to_form_word: Sobitage tähed sõna moodustamiseks
+      word_waterfall:
+        do_not_hesitate: Kiirendame!
+        go_to_next_exercise: Minge järgmisele harjutusele
+        select_correct_translation: Valige õige vaste
+        well_done: Hästi tehtud!
+    home_page:
+      hello: Tere,
+      popular_lessons: Populaarsed õppetunnid
+      show_more: Näita rohkem
+      time: "%{count} min"
+      today_lesson: Teie tänane õppetund
+      user_name: "%{name}!"
+      words: "%{count} sõna"
+    idle_screen:
+      by_author: poolt %{authorName}
+      continue_lesson: Jätka õppetundi
+      exit: Välju
+      idle_message: Olete mõnda aega jõude olnud ...
+    lesson_page:
+      back_to_course_page: Tagasi kursuse lehele
+      close: Sulge
+      continue_lesson: Jätka õppetundi
+      followed: Järgnes
+      hamburger_menu_btn: Hamburgeri menüü
+      lesson_given: õppetunnid
+      not_started: alustamata
+      or: Või
+      part_complete: "%{percent}% on valmis"
+      restart_lesson: Taaskäivita
+      section_check: Kontrollima
+      section_check_info: "%{count} testid"
+      section_learn: Õpi
+      section_learn_info: "%{count} min vaatamiseks ja lugemiseks"
+      section_play: Esita
+      section_play_info: "%{count} sõna harjutamiseks"
+      start_lesson: Alusta õppetundi
+      step_progress: "%{percent}%"
+      subscribe: Jälgi
+      subscribed: Järgnes
+      subscribers: järgijad
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Lõpeta jälgimine
+      webview_error_title: Midagi läks valesti...
+      words_number: "%{wordsNumber} uut sõna"
+    lesson_task:
+      cancel_button: Tühista
+      check:
+        navigation_next: Järgmine
+        navigation_previous: Eelmine
+        navigation_skip: Vahele jätma
+      controls_panel:
+        font_size_button: Fondi suurus
+        high_contrast_button:
+          origin: Suur kontrastsus
+          short: Kontrast
+        hints_button: Vihjed
+        music_playback_button:
+          origin: Muusika taasesitus
+          short: Muusika
+        sound_effects_button:
+          origin: Heliefektid
+          short: Heli
+      exit_button: Välju
+      finish_button: Lõpetama
+      finished:
+        back_to_learn: Tagasi õppima
+        back_to_lesson_page: Tagasi tunni lehele
+        back_to_results_page: Tagasi tulemuste lehele
+        bad_result_message: Hmm ... proovige veel üks kord õppetund võtta
+        close_lesson: Sulge õppetund
+        correct_answers_list: Õigete vastuste loend
+        good_result_message: Ma näen, et olete pingutanud!
+        great_result_message: Hästi tehtud! Need on suurepärased tulemused!
+        next_course_lesson: Mine muidugi järgmisele õppetunnile
+        no_results: Teil pole veel testi tulemusi
+        no_results_text: Tulemuste saamiseks täitke õppetund ja sooritage test
+        see_correct_answers_list: Vaadake õigete vastuste loendit
+        train_more: Harjutage rohkem ja saavutate järgmisel korral paremaid tulemusi!
+        you_finished_lesson: Suurepärane! Sa lõpetasid tunni
+      go_back: Mine tagasi
+      next_button: Järgmine
+      not_available_task: See ülesanne pole veel saadaval
+      start_button: Alusta
+      tasks:
+        check:
+          assignment:
+            accept: Nõus
+            author_will_check_your_answer: >-
+              %{author} vaatab teie vastuse üle ja annab tavaliselt tagasisidet 1-2
+              päeva jooksul
+            continue_writing: Jätka kirjutamist
+            copy: Kopeeri
+            delete: Kustuta
+            delete_record: Kustuta kirje
+            edit: Muuda
+            essay_does_not_have_enough_words: >-
+              Teie vastus peaks sisaldama vähemalt %{minWordsNumber} sõna. Teie vastus
+              on praegu %{currentWordsNumber} sõna.
+            followers_count: "%{followersCount} jälgijat"
+            lessons_count: "%{lessonsCount} õppetunnid"
+            minimal_recording_time: Minimaalne salvestusaeg - %{minimalRecordingTime}
+            minimum_characters_amount: Minimaalsed tähemärgid - %{minimumCharactersAmount}
+            minimum_words_amount: Minimaalsed sõnad - %{minimumAmount}
+            record_again: Salvestage uuesti
+            record_voice: Salvesta hääl
+            send_anyway: Saada ikkagi
+            send_to_review: Saada ülevaatamiseks
+            skip: Vahele jätma
+            too_short_answer: Liiga lühike vastus
+            type_your_answer: Sisestage oma vastus
+            unknown_task_type: Tundmatu ülesande tüüp
+            upgrade_licence: Täiendage litsentsi
+            upgrade_your_plan: Uuendage oma plaani, et proovida ülesandeid koos õpetajate
+              arvustustega
+            upload_files: Faile üles laadima
+            write_essay: Kirjutage essee
+            you_have_used_amount_of_assignments: Olete kasutanud %{amountOfAssignments}
+              ülesandekrediiti
+          fill_in_blanks:
+            sentence_gap: Lauselõhe
+          fill_in_table:
+            column_answer_placeholder: Vastus
+            column_question_placeholder: Küsimus
+            example: Näide
+          true_false:
+            'false': Vale
+            'true': Tõsi
+        learn:
+          translatable_text:
+            show_original: Näita originaali
+            translate_into: Tõlgi Google'iga %{languageName}-ks
+            translate_into_your_lang: Tõlgi Google'iga oma keelde
+        play:
+          arrange_words:
+            start_screen:
+              heading: Tehke etteantud sõnadest lause
+          audition:
+            start_screen:
+              heading: Kuulake heli ja puudutage äsja kuuldud sõna
+          dictation:
+            get_help: Hankige abi
+            i_do_not_know: Ma ei tea
+            input_placeholder: Sisestage siia kuuldu
+            start_screen:
+              heading: Kuula ja kirjuta, mida kuuled
+          fill_gap:
+            start_screen:
+              heading: Sobitage sõna ja selle tähendus
+          finish_screen:
+            go_to_next_exercise: Hästi tehtud! Minge järgmisele harjutusele
+          image_hotspot:
+            start_screen:
+              heading: Nimetage pildil olevad objektid õigesti
+          image_object:
+            start_screen:
+              heading: Valige järgmisel pildil õige objekt
+          inline_dropdown:
+            start_screen:
+              heading: Valige lausega sobivad sõnad
+          mark_word:
+            start_screen:
+              heading: Lugege teksti ja valige pilt, mis sobib pildiga
+          minimal_pairs:
+            start_screen:
+              heading: Vaadake videot ja valige õige valik
+    locale:
+      currency_switcher_title: Valuuta vahetaja
+      lang_switcher_title: Keelevahetaja
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Inglise
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Heli laaditakse
+        aria_pause_button: Paus
+        aria_play_button: Esita
+        aria_reload_button: Laadige uuesti
+        aria_stop_button: Lõpeta
+        reload_message: Heli laadimine ebaõnnestus. Uuesti laadimiseks klõpsake nuppu.
+    mobile_modal:
+      apply: Rakenda
+      cancel: Tühista
+      clear: Selge
+      save: Salvesta
+    page404:
+      goToStartLessonPage: Minge tunni alguslehele
+      ooops: Hmm ...
+      sorry_message: Vabandust, Tor ei leidnud seda lehte
+    profile:
+      navigation:
+        log_out: Logi välja
+        my_profile: Minu profiil
+        settings: Seaded
+      onboarding:
+        choose_native_language: Valige oma emakeel või teile arusaadav keel
+        do_you_understand_english: Kas sa mõistad inglise keelt?
+        hello: Tere
+        language_levels:
+          a1: Algtase
+          a2: Enne kesktaset
+          b1: Kesktasemel
+          b2: Ülemine kesktase
+          c1: Kõrgtasemel
+          no_knowledge: Teadmisi pole
+        language_not_supported:
+          note: Teavitame teid kohe, kui keel on saadaval
+          title: Vabandust, kuid me ei toeta seda keelt veel
+          try_another_language: Proovige mõnda muud keelt
+        'no': Ei
+        search_placeholder: Otsing...
+        show_more_languages: Teised keeled
+        target_language_question: Mis keelt soovite õppida?
+        what_is_language_level: Kuidas hindaksite oma %{languageName} taset?
+        'yes': Jah
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu privaatsuspoliitika
+        support: Toetus
+      logout: Logi välja
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Saate värskendusi oma jälgitavatelt õpetajatelt ja koolidelt
+              sections:
+                app_notifications: Rakenduse märguanded
+                email: E-post
+              title: Õppimisabi
+            marketing:
+              description: Olge kursis kõigi Lingu pakkumiste, värskenduste ja inspiratsioonidega
+              sections:
+                browser_notifications: Brauseri märguanded
+                email: E-post
+              title: Turundus
+          title: Kontakti eelistused
+        personal_information:
+          delete_photo: Kustuta foto
+          email: E-post
+          first_name: Eesnimi
+          last_name: Perekonnanimi
+          social_accounts:
+            connected: Ühendatud
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Pole ühendatud
+            title: Sotsiaalsed kontod
+          title: Isiklik informatsioon
+          update_photo: Foto värskendamine
+        school:
+          active_licence: Aktiivne litsents
+          active_status: Aktiivne
+          delete_profile: Kustuta minu profiil
+          delete_profile_modal:
+            body: |-
+              Hävitate kõik oma andmed - igavesti. Puudub tagasivõtmisnupp ja me ei saa seda pärast teie eest tagasi.
+              Kas soovite kindlasti oma Lingu profiili ja kõik andmed jäädavalt kustutada?
+            cancel: Tühista
+            confirm: Jah, kustuta see
+            i_understand_the_consequences: Mõistan tagajärgi
+            title: Kas kustutada oma profiil?
+          expired: Aegunud %{expire_date}
+          expires: Aegub %{expire_date}
+          inactive_status: Mitteaktiivne
+          revoke_access: Tühista lugemisõigus
+          sections:
+            contact_school: Võtke ühendust kooliga
+            export_my_data: Ekspordi minu andmed
+            read_school_privacy_policy: Lugege kooli privaatsuseeskirju
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Muusika taasesitus
+              sound_effects: Heliefektid
+              title: Heli
+            visual:
+              dark_theme: Tume teema
+              font_size:
+                test_text: Muru on teisel pool aeda alati rohelisem
+                title: Fondi suurus
+              high_contrast: Suur kontrastsus
+              hints: Vihjed
+              title: Visuaalne
+          title: Heli ja visuaal
+        training_settings:
+          sections:
+            i_understand: Ma saan aru
+            i_want_to_learn: Ma tahan õppida
+            target_language_level: Inglise tasemel
+          title: Treeningu seaded
+      settings_title: Seaded
+    teacher_card:
+      followers_count:
+        one: 1 jälgija
+        other: "%{count} jälgijat"
+      lessons_count:
+        one: 1 õppetund
+        other: "%{count} õppetunnid"

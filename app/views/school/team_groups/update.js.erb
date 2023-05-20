@@ -1,0 +1,7 @@
+<%- if team_group.errors.blank? %>
+  $('#team-group-modal .team-group-errors').html("");
+  $('#team-group-modal').modal('hide');
+  window.location.reload();
+<%- else %>
+  $('#team-group-modal .team-group-errors').html("<%= j render partial: 'school/team_groups/errors', locals: { team_group: team_group }%>");
+<%- end %>

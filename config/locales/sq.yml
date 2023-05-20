@@ -1,0 +1,611 @@
+---
+sq:
+  course_mailer:
+    course_assigned_notification:
+      button: Filloni kursin
+      click_start_lesson: Kliko "Fillo mësimin"
+      follow_course_link: Klikoni në butonin për të hapur kursin
+      footer_text: Kthehuni në Lingu për të mësuar diçka të re çdo ditë!
+      get_started_line: 'Ja se si filloni:'
+      notification_link: Cilësimet e njoftimit
+      open_lesson: Hapni mësimin e parë
+      or_paste_this_link: ose ngjisni këtë lidhje në shfletuesin tuaj
+      sign_in_with_email: Identifikohu me adresën tuaj të postës elektronike (%{email})
+      support_link: Mbështetje
+      title: Fillimi me %{course}
+    new_document_comment:
+      author_text: "%{author} la një përmbledhje të detyrës suaj"
+      button_text: Kontrolloje
+      button_url_helper: 'ose ngjisni këtë lidhje në shfletuesin tuaj:'
+      footer_text: Ka shumë më shumë për të mësuar ...
+      notification_link: Cilësimet e njoftimit
+      subject_line: Koment i ri për detyrën
+      support_link: Mbështetje
+    otp:
+      ignore_msg: Nëse nuk e keni bërë këtë kërkesë, thjesht injoroni emailin.
+      subject_line: Kodi juaj unik për Lingu
+      unique_code_for_lingu: Këtu është kodi juaj unik për Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Posedoni një llogari?
+      back: Mbrapa
+      back_to_sign_in: Kthehu te Identifikohu
+      check_your_email_for_a_code: Kontrolloni postën elektronike për kodin tuaj
+      continue: Vazhdoni
+      continue_with_email: Vazhdoni me email
+      continue_with_provider: Vazhdoni me %{provider}
+      did_not_receive_a_code: Nuk morët një kod?
+      email_address: Adresa e emailit
+      first_name: Emri
+      get_unique_code: Merrni një kod unik hyrjeje
+      join_lingu: Bashkohu me Lingu
+      last_name: Mbiemri
+      more_login_options: Më shumë mundësi hyrjeje
+      no_account_question: Nuk keni llogari?
+      or: ose
+      resend_code: Ridergo kodin
+      sign_in: Hyni
+      sign_up: Regjistrohu
+      want_to_receive_marketing_messages: Dua të marr mesazhe marketingu nga Lingu
+      we_ve_sent_a_code: >-
+        Ne kemi dërguar një kod me 6 shifra te <strong> {{email}} </strong>. Kodi
+        skadon për 15 minuta, kështu që ju lutemi shkruani atë së shpejti.
+    cookie_agreement:
+      agree: Pajtohem
+      condition: >-
+        Ne përdorim cookies për të analizuar performancën e faqes dhe për të ofruar
+        përmbajtje të personalizuar. Duke klikuar "Pajtohem", ju pranoni kushtet tona.
+    course:
+      accredited_course_provider: Ofruesi i akredituar i kursit
+      apply: Aplikoni
+      apply_filters: Aplikoni filtra
+      by: Nga
+      cancel: Anulo
+      categories: kategori %{count}
+      category: Kategoria
+      clear: Qartë
+      clear_filters: Pastroni filtrat
+      contact_us: Na kontaktoni
+      could_not_find_match_for: Na vjen keq, nuk gjetëm asnjë ndeshje për të
+      course_language: Gjuha e kursit
+      duration: Kohëzgjatja
+      filter_settings:
+        categories:
+          academic: Akademik
+          business: Biznesi
+          fashion: Modës
+          food_drink: Ushqim dhe pije
+          for_kids: Për fëmijë
+          general: Gjeneral
+          health: Shëndeti
+          legal: Ligjore
+          sport: Sporti
+          travel: Udhëtim
+        durations:
+          t0_600: "<10 minuta"
+          t1800_3600: 30-60 minuta
+          t3600_86400: 1+ orë
+          t600_1800: 10-30 minuta
+        focus_on:
+          conversation: Biseda
+          grammar: Gramatikë
+          listening: Të dëgjuarit
+          pronunciation: Shqiptimi
+          reading: Leximi
+          speaking: Duke folur
+          writing: Duke shkruar
+        levels:
+          long:
+            advanced: Niveli i avancuar
+            elementary: Niveli fillor
+            intermediate: Niveli i ndërmjetëm
+            no_knowledge: Nuk ka njohuri
+            pre_intermediate: Niveli parapjesor
+            upper_intermediate: Niveli i sipërm i ndërmjetëm
+          short:
+            advanced: Avancuar
+            beginner: Fillestar
+            intermediate: E ndërmjetme
+        sort_by:
+          most_rated: Më të vlerësuarat
+          newest: Më të rejat
+          popularity: Popullariteti
+      filters: Filtrat
+      focus_on: Perqendrohu ne
+      focus_on_title: Dua të përqendrohem te
+      hide_lessons: Fshih mësimet
+      hours: Orët
+      i_understand: E kuptoj
+      i_want_to_learn: une dua te mesoj
+      in_language: në %{language}
+      language: Gjuhe
+      learn_more: Mëso më shumë
+      less_settings: Cilësimet më pak
+      lessons: Mësimet
+      lessons_available: mësime në dispozicion %{number}
+      lessons_catalog_page_subtitle: Bëhuni hero i gjuhës.
+      lessons_catalog_page_title: Zgjero horizontet tuaja me një kurs gjuhe
+      level: Niveli
+      min: Min
+      more_settings: Më shumë cilësime
+      navbar:
+        close: Mbyll menunë
+        menu: Menu
+        select_language: Zgjidh gjuhen
+      need_to_buy_course: Së pari duhet të rezervoni një kurs
+      no_description: Nuk është dhënë asnjë përshkrim
+      no_results: Na vjen keq, nuk gjetëm asnjë ndeshje për të
+      or: ose
+      per_month: në muaj
+      plans: Planet
+      privacy_policy: Politika e privatësisë
+      rating: Vlerësimi
+      remove_all_filters: Hiqni të gjithë filtrat
+      reviews: Shqyrtime
+      save: Ruaj
+      search: Kërko
+      select_dots: Zgjidh ...
+      select_languages: Zgjidhni gjuhët
+      select_num_languages: Zgjidhni gjuhët %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Shfaq të gjitha
+      show_all_lessons: Tregoni të gjitha mësimet
+      show_lessons: Tregoni mësime %{number}
+      show_more: Trego më shumë
+      sign_up_with_lingu_for: Regjistrohuni në Lingu Norvegji për
+      skills: aftësi %{count}
+      sort_by: Ndaj sipas
+      start_typing_here: Filloni të shkruani këtu
+      teach: Mësoni
+      terms_and_conditions: Termat dhe Kushtet
+      time_range: Diapazoni kohor
+      try_adjusting_your_search: Provoni të rregulloni kërkimin tuaj duke ndryshuar
+        filtrat tuaj
+      try_this_course: Provoni këtë kurs
+      website_language: Gjuha e faqes në internet
+      words: Fjalët
+    games:
+      finished:
+        go_to_next_exercise: Te lumte! Shkoni në ushtrimin tjetër
+      flashcard:
+        buttons:
+          finish: Mbaro
+          next: Tjetra
+          previous: E mëparshme
+        check_out_new_words: Shikoni fjalët e reja që do të mësoni në këtë mësim
+        frequency_of_word_usage: Frekuenca e përdorimit të fjalëve në %{language}
+        keep_practice_to_learn_all_words: Rishikoni fjalët %{count} dhe le të luajmë
+          disa lojëra!
+        word_frequency:
+          level1: Përdoret rrallë
+          level2: Përdoret rrallë
+          level3: Frekuenca e fjalës - e mesme
+          level4: Frekuenca e fjalës - e mesme
+          level5: I zakonshëm
+          level6: Shumë e zakonshme
+      match_word:
+        click_and_move_each_word_to_counterpart: Klikoni dhe zhvendosni secilën fjalë
+          te tjetra
+        start_heading: Përputhni fjalët për të bërë një çift
+        time_is_up: Koha mbaroi!
+      skip_tutorial: Kapërce
+      time_is_up: Koha mbaroi!
+      word_nodes:
+        match_letters_to_form_word: Përputhni shkronjat për të formuar një fjalë
+      word_waterfall:
+        do_not_hesitate: Le të shpejtojmë!
+        go_to_next_exercise: Shkoni në ushtrimin tjetër
+        select_correct_translation: Zgjidhni përputhjen e saktë
+        well_done: Te lumte!
+    home_page:
+      hello: Përshëndetje,
+      popular_lessons: Mësime popullore
+      show_more: Trego më shumë
+      time: "%{count} min"
+      today_lesson: Mësimi juaj për sot
+      user_name: "%{name}!"
+      words: fjalë %{count}
+    idle_screen:
+      by_author: nga %{authorName}
+      continue_lesson: Vazhdoni mësimin
+      exit: Dalja
+      idle_message: Ju keni qenë boshe për ca kohë ...
+    lesson_page:
+      back_to_course_page: Kthehu tek faqja e kursit
+      close: Mbylle
+      continue_lesson: Vazhdoni mësimin
+      followed: Ndiqet
+      hamburger_menu_btn: Menuja e hamburgerit
+      lesson_given: mësime
+      not_started: nuk ka filluar
+      or: Ose
+      part_complete: "%{percent}% i kompletuar"
+      restart_lesson: Rifillo, fillo përsëri
+      section_check: Kontrolloni
+      section_check_info: teste %{count}
+      section_learn: Meso
+      section_learn_info: "%{count} min për të parë dhe lexuar"
+      section_play: Luaj
+      section_play_info: "%{count} fjalë për t’u praktikuar"
+      start_lesson: Filloni mësimin
+      step_progress: "%{percent}%"
+      subscribe: Ndiqni
+      subscribed: Ndiqet
+      subscribers: ndjekësit
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Mos ndiq
+      webview_error_title: Dicka shkoi keq...
+      words_number: "%{wordsNumber} fjalë të reja"
+    lesson_task:
+      cancel_button: Anulo
+      check:
+        navigation_next: Tjetra
+        navigation_previous: E mëparshme
+        navigation_skip: Kapërce
+      controls_panel:
+        font_size_button: Përmasa e germave
+        high_contrast_button:
+          origin: Kontrast i lartë
+          short: Kontrasti
+        hints_button: Lë të kuptohet
+        music_playback_button:
+          origin: Luajtja e muzikës
+          short: Muzika
+        sound_effects_button:
+          origin: Efektet e zërit
+          short: Tingull
+      exit_button: Dalja
+      finish_button: Mbaro
+      finished:
+        back_to_learn: Kthehu për të mësuar
+        back_to_lesson_page: Kthehu në faqen e mësimit
+        back_to_results_page: Kthehu në faqen e rezultateve
+        bad_result_message: Hmm ... provo ta marrësh mësimin edhe një herë
+        close_lesson: Mësim i mbyllur
+        correct_answers_list: Lista e saktë e përgjigjeve
+        good_result_message: Unë mund të shoh që ju keni bërë një përpjekje!
+        great_result_message: Te lumte! Këto janë rezultate të shkëlqyera!
+        next_course_lesson: Shkoni në mësimin tjetër në kurs
+        no_results: Nuk keni ende rezultate testimi
+        no_results_text: Ju lutemi, plotësoni mësimin dhe kaloni testin për të marrë
+          rezultatet
+        see_correct_answers_list: Shihni listën e saktë të përgjigjeve
+        train_more: Praktikoni më shumë dhe herën tjetër do të arrini rezultate më
+          të mira!
+        you_finished_lesson: Shkëlqyeshëm! Mbarove mësimin
+      go_back: Kthehu mbrapa
+      next_button: Tjetra
+      not_available_task: Kjo detyrë nuk është ende e disponueshme
+      start_button: Fillo
+      tasks:
+        check:
+          assignment:
+            accept: Pranoj
+            author_will_check_your_answer: >-
+              %{author} do të rishikojë përgjigjen tuaj dhe zakonisht do të japë komente
+              brenda 1-2 ditësh
+            continue_writing: Vazhdoni të shkruani
+            copy: Kopjoni
+            delete: Fshij
+            delete_record: Fshi rekordin
+            edit: Redakto
+            essay_does_not_have_enough_words: >-
+              Përgjigja juaj duhet të përmbajë të paktën %{minWordsNumber} fjalë.
+              Përgjigja juaj aktualisht është fjalë %{currentWordsNumber}.
+            followers_count: ndjekës të %{followersCount}
+            lessons_count: mësime %{lessonsCount}
+            minimal_recording_time: Koha minimale e regjistrimit - %{minimalRecordingTime}
+            minimum_characters_amount: Karakteret minimale - %{minimumCharactersAmount}
+            minimum_words_amount: Fjalët minimale - %{minimumAmount}
+            record_again: Regjistro përsëri
+            record_voice: Regjistro zërin
+            send_anyway: Dërgoni gjithsesi
+            send_to_review: Dërgoni për rishikim
+            skip: Kapërce
+            too_short_answer: Përgjigje shumë e shkurtër
+            type_your_answer: Shkruaj përgjigjen tënde
+            unknown_task_type: Lloji i panjohur i detyrës
+            upgrade_licence: Përditëso licencën
+            upgrade_your_plan: Përditësoni planin tuaj për të provuar detyra me komente
+              të mësuesve
+            upload_files: Ngarko skedarët
+            write_essay: Shkruaj ese
+            you_have_used_amount_of_assignments: Ju keni përdorur kreditë e caktimit
+              të %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Hendeku i fjalive
+          fill_in_table:
+            column_answer_placeholder: Përgjigje
+            column_question_placeholder: Pyetje
+            example: Shembull
+          true_false:
+            'false': I rremë
+            'true': E vërtetë
+        learn:
+          translatable_text:
+            show_original: Trego origjinalin
+            translate_into: Përkthe me Google në %{languageName}
+            translate_into_your_lang: Përkthe me Google në gjuhën tënde
+        play:
+          arrange_words:
+            start_screen:
+              heading: Bëni një fjali nga fjalët e dhëna
+          audition:
+            start_screen:
+              heading: Dëgjoni audion dhe prekni fjalën që sapo dëgjuat
+          dictation:
+            get_help: Merr ndihme
+            i_do_not_know: Une nuk e di
+            input_placeholder: Shkruani ato që keni dëgjuar këtu
+            start_screen:
+              heading: Dëgjoni dhe shkruani ato që dëgjoni
+          fill_gap:
+            start_screen:
+              heading: Përputhni fjalën dhe kuptimin e saj
+          finish_screen:
+            go_to_next_exercise: Te lumte! Shkoni në ushtrimin tjetër
+          image_hotspot:
+            start_screen:
+              heading: Emërtoni saktë objektet në figurë
+          image_object:
+            start_screen:
+              heading: Zgjidh objektin e duhur nga fotografia tjetër
+          inline_dropdown:
+            start_screen:
+              heading: Zgjidh fjalët që përputhen me fjalinë
+          mark_word:
+            start_screen:
+              heading: Lexoni tekstin dhe zgjidhni fjalën që përputhet me imazhin
+          minimal_pairs:
+            start_screen:
+              heading: Shikoni videon dhe zgjidhni opsionin e saktë
+    locale:
+      currency_switcher_title: Ndërruesi i valutave
+      lang_switcher_title: Ndërruesi i gjuhës
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Gjermanisht
+        el: Greek
+        en: Anglisht
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский зык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Serbisht
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSuahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Turqisht
+        tt: Tatar
+        ug: Uyghur
+        uk: Ukrainas
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio po ngarkohet
+        aria_pause_button: Ndalo
+        aria_play_button: Luaj
+        aria_reload_button: Ringarkoj
+        aria_stop_button: Ndal
+        reload_message: Audio nuk u ngarkua. Ju lutemi klikoni në butonin për të ringarkuar.
+    mobile_modal:
+      apply: Aplikoni
+      cancel: Anulo
+      clear: Qartë
+      save: Ruaj
+    page404:
+      goToStartLessonPage: Shko në faqen e mësimit të fillimit
+      ooops: Oooops ...
+      sorry_message: Na vjen keq, Tor nuk mund ta gjente këtë faqe
+    profile:
+      navigation:
+        log_out: Shkyç
+        my_profile: Profili im
+        settings: Cilësimet
+      onboarding:
+        choose_native_language: Zgjidhni gjuhën tuaj amtare ose gjuhën që kuptoni
+        do_you_understand_english: A kupton anglisht?
+        hello: Përshëndetje
+        language_levels:
+          a1: Niveli fillor
+          a2: Niveli para-mesatar
+          b1: Niveli i ndërmjetëm
+          b2: Niveli i mesëm i sipërm
+          c1: Niveli i avancuar
+          no_knowledge: Nuk ka njohuri
+        language_not_supported:
+          note: Ne do t'ju njoftojmë sa më shpejt që gjuha të jetë në dispozicion
+          title: Na vjen keq, por ne ende nuk e mbështesim këtë gjuhë
+          try_another_language: Provo një gjuhë tjetër
+        'no': Jo
+        search_placeholder: Kërko ...
+        show_more_languages: Gjuhe te tjera
+        target_language_question: Çfarë gjuhe dëshironi të mësoni?
+        what_is_language_level: Si do ta vlerësonit nivelin tuaj %{languageName}?
+        'yes': po
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Politika e privatësisë e Lingu
+        support: Mbështetje
+      logout: Shkyç
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Merrni azhurnime nga mësuesit dhe shkollat që ndiqni
+              sections:
+                app_notifications: Njoftimet e aplikacionit
+                email: Posta elektronike
+              title: Ndihma për të mësuar
+            marketing:
+              description: >-
+                Qëndroni të informuar në lidhje me të gjitha promovimet, azhurnimet
+                dhe frymëzimin nga Lingu
+              sections:
+                browser_notifications: Njoftimet e shfletuesit
+                email: Posta elektronike
+              title: Marketingu
+          title: Preferencat e kontaktit
+        personal_information:
+          delete_photo: Fshi fotografinë
+          email: Email
+          first_name: Emri
+          last_name: Mbiemri
+          social_accounts:
+            connected: I lidhur
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Nuk është e lidhur
+            title: Llogaritë sociale
+          title: Informata personale
+          update_photo: Përditëso foton
+        school:
+          active_licence: Licencë aktive
+          active_status: Aktiv
+          delete_profile: Fshi profilin tim
+          delete_profile_modal:
+            body: |-
+              Ju zhdukni të gjitha të dhënat tuaja - përgjithmonë. Nuk ka një buton të zhbllokuar dhe ne nuk mund ta marrim përsëri për ju pas.
+              Jeni i sigurt që dëshironi të fshini përgjithmonë profilin tuaj Lingu dhe të gjitha të dhënat tuaja?
+            cancel: Anulo
+            confirm: Po, fshije atë
+            i_understand_the_consequences: Unë i kuptoj pasojat
+            title: Të fshihet profili juaj?
+          expired: Skaduar %{expire_date}
+          expires: Skadon %{expire_date}
+          inactive_status: Joaktiv
+          revoke_access: Revokoni aksesin e leximit
+          sections:
+            contact_school: Kontaktoni shkollën
+            export_my_data: Eksporto të dhënat e mia
+            read_school_privacy_policy: Lexoni politikën e privatësisë së shkollës
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Luajtja e muzikës
+              sound_effects: Efektet e zërit
+              title: Tingull
+            visual:
+              dark_theme: Temë e errët
+              font_size:
+                test_text: Bari është gjithmonë më i gjelbër në anën tjetër të gardhit
+                title: Përmasa e germave
+              high_contrast: Kontrast i lartë
+              hints: Lë të kuptohet
+              title: Vizuale
+          title: Tingull dhe vizual
+        training_settings:
+          sections:
+            i_understand: E kuptoj
+            i_want_to_learn: une dua te mesoj
+            target_language_level: Niveli anglisht
+          title: Cilësimet e trajnimit
+      settings_title: Cilësimet
+    teacher_card:
+      followers_count:
+        one: 1 ndjekës
+        other: ndjekës të %{count}
+      lessons_count:
+        one: 1 orë mësimi
+        other: mësime %{count}

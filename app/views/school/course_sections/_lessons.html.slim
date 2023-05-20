@@ -1,0 +1,11 @@
+- is_card_view = table_view == 'card'
+.course-section-lessons
+  .d-flex.align-items-center.justify-content-between.mb-3
+    div.font-weight-semi-bold
+      = t('shared.count_lessons', count: course_section.lessons.kept.published.count)
+    .lessons-table-mode.d-flex
+      = link_to change_view_mode_school_course_course_section_path(course, course_section, table_view_mode: 'list'), class: "btn p-1 shadow-none #{!is_card_view ? 'active' : ''}"
+        = image_tag('icons/list-view.svg')
+      = link_to change_view_mode_school_course_course_section_path(course, course_section, table_view_mode: 'card'), class: "btn p-1 ml-2 shadow-none #{is_card_view ? 'active' : ''}"
+        = image_tag('icons/grid-view.svg')
+  = render 'lessons_list', lessons: lessons, table_view: table_view

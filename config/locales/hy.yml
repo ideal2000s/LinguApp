@@ -1,0 +1,614 @@
+---
+hy:
+  course_mailer:
+    course_assigned_notification:
+      button: Դասընթացը սկսեք
+      click_start_lesson: Կտտացրեք «Սկսել դասը»
+      follow_course_link: Դասընթացը բացելու համար կտտացրեք կոճակին
+      footer_text: 'Վերադարձեք Լինգու ՝ ամեն օր նոր բան սովորելու:'
+      get_started_line: 'Ահա, թե ինչպես եք սկսել:'
+      notification_link: Անուցման պարամետրերը
+      open_lesson: Բացեք առաջին դասը
+      or_paste_this_link: կամ տեղադրեք այս հղումը ձեր զննարկչում
+      sign_in_with_email: Մուտք գործեք ձեր էլ. Փոստի հասցեով (%{email})
+      support_link: Աջակցություն
+      title: Սկսել %{course}- ով
+    new_document_comment:
+      author_text: "%{author}- ը թողեց ձեր հանձնարարականի ակնարկ"
+      button_text: Ստուգեք այն
+      button_url_helper: կամ տեղադրեք այս հղումը ձեր զննարկչի մեջ ՝
+      footer_text: Սովորելու շատ ավելին կա ...
+      notification_link: Անուցման պարամետրերը
+      subject_line: Նոր հանձնարարականի մեկնաբանությունը
+      support_link: Աջակցություն
+    otp:
+      ignore_msg: Եթե դուք չեք կատարել այս խնդրանքը, պարզապես անտեսեք էլ.
+      subject_line: Ձեր եզակի կոդը Lingu- ի համար
+      unique_code_for_lingu: Ահա ձեր եզակի ծածկագիրը Lingu- ի համար
+  frontend:
+    auth:
+      already_have_acc_question: Արդեն ունեք հաշիվ?
+      back: Վերադառնալ
+      back_to_sign_in: Վերադառնալ Մուտք
+      check_your_email_for_a_code: Ստուգեք ձեր էլ.փոստը ձեր կոդի համար
+      continue: Շարունակել
+      continue_with_email: Շարունակեք էլ
+      continue_with_provider: Շարունակեք %{provider}- ով
+      did_not_receive_a_code: 'Կոդը չե՞ք ստացել:'
+      email_address: Էլեկտրոնային հասցե
+      first_name: Անուն
+      get_unique_code: Ստացեք եզակի մուտքային կոդ
+      join_lingu: Միացեք Lingu- ին
+      last_name: Ազգանուն
+      more_login_options: Մուտքի այլ տարբերակներ
+      no_account_question: 'Հաշիվ չունե՞ք:'
+      or: կամ
+      resend_code: Վեր ուղարկել կոդը
+      sign_in: Մուտք գործել
+      sign_up: Գրանցվել
+      want_to_receive_marketing_messages: Ես ուզում եմ Lingu- ից շուկայավարման հաղորդագրություններ
+        ստանալ
+      we_ve_sent_a_code: >-
+        Մենք ուղարկել ենք վեցանիշ կոդ ՝ <strong> {{էլ. Փոստ}} </strong> - ին: Կոդի
+        գործողության ժամկետը լրանում է 15 րոպեում, այնպես որ խնդրում ենք շուտով մուտքագրել
+        այն:
+    cookie_agreement:
+      agree: Համաձայնվել
+      condition: >-
+        Մենք օգտագործում ենք քուքիներ կայքի կատարողականը վերլուծելու և անհատականացված
+        բովանդակություն հաղորդելու համար: Կտտացնելով «Համաձայն եմ» ՝ Դուք համաձայն
+        եք մեր պայմաններին:
+    course:
+      accredited_course_provider: Հավատարմագրված դասընթացավար
+      apply: Դիմել
+      apply_filters: Կիրառել զտիչներ
+      by: Հեղինակ ՝
+      cancel: Չեղարկել
+      categories: "%{count} կարգեր"
+      category: Կատեգորիա
+      clear: Մաքրել
+      clear_filters: Մաքրել ֆիլտրերը
+      contact_us: Կապվեք մեզ հետ
+      could_not_find_match_for: Ներեցեք, մենք չկարողացանք որևէ համընկնում գտնել
+      course_language: Դասընթացի լեզուն
+      duration: Տեւողությունը
+      filter_settings:
+        categories:
+          academic: Ակադեմիական
+          business: Բիզնես
+          fashion: Նորաձեւություն
+          food_drink: Սնունդ և խմիչք
+          for_kids: Երեխաների համար
+          general: Գեներալ
+          health: Առողջություն
+          legal: Իրավական
+          sport: Սպորտ
+          travel: Ամփորդություն
+        durations:
+          t0_600: "<10 րոպե"
+          t1800_3600: 30-60 րոպե
+          t3600_86400: 1+ ժամ
+          t600_1800: 10-30 րոպե
+        focus_on:
+          conversation: Րույց
+          grammar: Քերականություն
+          listening: Լսելը
+          pronunciation: Արտասանություն
+          reading: Ընթերցանություն
+          speaking: Խոսելով
+          writing: Գրելը
+        levels:
+          long:
+            advanced: Ընդլայնված մակարդակ
+            elementary: Տարրական մակարդակ
+            intermediate: Միջանկյալ մակարդակ
+            no_knowledge: Ոչ մի գիտելիք
+            pre_intermediate: Նախնական միջանկյալ մակարդակ
+            upper_intermediate: Վերին միջանկյալ մակարդակ
+          short:
+            advanced: Առաջադեմ
+            beginner: Սկսնակ
+            intermediate: Միջանկյալ
+        sort_by:
+          most_rated: Առավել գնահատված
+          newest: Նորագույն
+          popularity: Հանրաճանաչություն
+      filters: Fտիչներ
+      focus_on: Կենտրոնանալ ինչ որ բանի վրա
+      focus_on_title: Ես ուզում եմ կենտրոնանալ դրա վրա
+      hide_lessons: Թաքցնել դասերը
+      hours: Ժամեր
+      i_understand: ես հասկանում եմ
+      i_want_to_learn: Ես ուզում եմ սովորել
+      in_language: "%{language}- ում"
+      language: Լեզու
+      learn_more: Իմացեք ավելին
+      less_settings: Ավելի քիչ պարամետրեր
+      lessons: Դասեր
+      lessons_available: "%{number} առկա դասեր"
+      lessons_catalog_page_subtitle: 'Դարձիր լեզվի հերոս:'
+      lessons_catalog_page_title: Ընդլայնել ձեր հորիզոնները լեզվի դասընթացով
+      level: Մակարդակ
+      min: Մին
+      more_settings: Լրացուցիչ կարգավորումներ
+      navbar:
+        close: Փակել ընտրացանկը
+        menu: Ընտրացանկ
+        select_language: Ընտրել լեզուն
+      need_to_buy_course: Նախ պետք է դասընթաց պատվիրել
+      no_description: Ոչ մի նկարագրություն չի տրամադրվել
+      no_results: Ներեցեք, մենք չկարողացանք որևէ համընկնում գտնել
+      or: կամ
+      per_month: ամսական
+      plans: Պլաններ
+      privacy_policy: Գաղտնիության քաղաքականություն
+      rating: Վարկանիշ
+      remove_all_filters: Հեռացրեք բոլոր ֆիլտրերը
+      reviews: Ակնարկներ
+      save: Խնայել
+      search: Որոնում
+      select_dots: Ընտրել ...
+      select_languages: Ընտրեք լեզուները
+      select_num_languages: Ընտրեք %{number} լեզուներ
+      short_levels:
+        a1: Ա 1
+        a2: A2
+        b1: Բ 1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Ցույց տալ ամբողջը
+      show_all_lessons: Ուցադրել բոլոր դասերը
+      show_lessons: Showույց տվեք %{number} դասեր
+      show_more: Ցույց տալ ավելին
+      sign_up_with_lingu_for: Գրանցվեք Lingu Norway- ի հետ
+      skills: "%{count} հմտություններ"
+      sort_by: Դասավորել ըստ
+      start_typing_here: Սկսեք մուտքագրել այստեղ
+      teach: Սովորեցրու
+      terms_and_conditions: Ընդհանուր դրույթներր եւ պայմանները
+      time_range: Timeամանակի միջակայք
+      try_adjusting_your_search: Փորձեք հարմարեցնել ձեր որոնումը ՝ փոխելով զտիչները
+      try_this_course: Փորձեք այս դասընթացը
+      website_language: Վեբ կայքի լեզու
+      words: Բառեր
+    games:
+      finished:
+        go_to_next_exercise: Դե լավ Գնացեք հաջորդ վարժությանը
+      flashcard:
+        buttons:
+          finish: Ավարտել
+          next: Հաջորդը
+          previous: Նախորդ
+        check_out_new_words: Ստուգեք նոր բառերը, որոնք դուք կսովորեք այս դասում
+        frequency_of_word_usage: Բառերի օգտագործման հաճախականությունը %{language}-
+          ում
+        keep_practice_to_learn_all_words: 'Վերանայեք %{count} բառերը և եկեք մի քանի
+          խաղ խաղանք:'
+        word_frequency:
+          level1: Հազվադեպ է օգտագործվում
+          level2: Հազվադեպ է օգտագործվում
+          level3: Բառի հաճախականությունը `միջին
+          level4: Բառի հաճախականությունը `միջին
+          level5: Ընդհանուր
+          level6: Շատ տարածված
+      match_word:
+        click_and_move_each_word_to_counterpart: Կտտացրեք և տեղափոխեք յուրաքանչյուր
+          բառ իր գործընկերոջը
+        start_heading: Համապատասխանեցրե՛ք բառերը զույգ կազմելու համար
+        time_is_up: Timeամանակն անցավ
+      skip_tutorial: Բաց թողնել
+      time_is_up: Timeամանակն անցավ
+      word_nodes:
+        match_letters_to_form_word: Համապատասխանեցեք տառերը ՝ բառ կազմելու համար
+      word_waterfall:
+        do_not_hesitate: 'Արի՛ արագացնենք:'
+        go_to_next_exercise: Գնացեք հաջորդ վարժությանը
+        select_correct_translation: Ընտրեք ճիշտ համընկնում
+        well_done: Դե լավ
+    home_page:
+      hello: Բարեւ Ձեզ,
+      popular_lessons: Հանրաճանաչ դասեր
+      show_more: Ցույց տալ ավելին
+      time: "%{count} րոպե"
+      today_lesson: Ձեր դասը այսօրվա համար
+      user_name: "%{name}!"
+      words: "%{count} բառեր"
+    idle_screen:
+      by_author: "%{authorName}- ի կողմից"
+      continue_lesson: Շարունակեք դասը
+      exit: Ելք
+      idle_message: Դուք որոշ ժամանակ անգործ եք եղել ...
+    lesson_page:
+      back_to_course_page: Վերադառնալ դասընթացի էջ
+      close: փակել
+      continue_lesson: Շարունակեք դասը
+      followed: Հետևեց
+      hamburger_menu_btn: Համբուրգերի մենյու
+      lesson_given: դասեր
+      not_started: չի սկսվել
+      or: Կամ
+      part_complete: "%{percent}% ավարտված է"
+      restart_lesson: Վերսկսել
+      section_check: Ստուգել
+      section_check_info: "%{count} թեստեր"
+      section_learn: Սովորեք
+      section_learn_info: "%{count} րոպե դիտելու և կարդալու համար"
+      section_play: Խաղալ
+      section_play_info: "%{count} բառեր գործնականում"
+      start_lesson: Սկսեք դասը
+      step_progress: "%{percent}%"
+      subscribe: Հետևեք
+      subscribed: Հետևեց
+      subscribers: հետեւորդներ
+      time_min: "%{minutesNumber} րոպե"
+      unsubscribe: Հետևել
+      webview_error_title: Ինչ որ բան այնպես չգնաց...
+      words_number: "%{wordsNumber} նոր բառեր"
+    lesson_task:
+      cancel_button: Չեղարկել
+      check:
+        navigation_next: Հաջորդը
+        navigation_previous: Նախորդ
+        navigation_skip: Բաց թողնել
+      controls_panel:
+        font_size_button: Տառատեսակի չափը
+        high_contrast_button:
+          origin: Բարձր հակադրություն
+          short: Հակադրություն
+        hints_button: Ակնարկներ
+        music_playback_button:
+          origin: Երաժշտության նվագարկում
+          short: Երաժշտություն
+        sound_effects_button:
+          origin: Ձայնային էֆեկտներ
+          short: Հնչյուն
+      exit_button: Ելք
+      finish_button: Ավարտել
+      finished:
+        back_to_learn: Վերադառնալ սովորելու համար
+        back_to_lesson_page: Վերադառնալ դասի էջ
+        back_to_results_page: Վերադառնալ արդյունքի էջ
+        bad_result_message: Հըմ ... փորձիր մեկ անգամ եւս դասը վերցնել
+        close_lesson: Փակ դաս
+        correct_answers_list: Answersիշտ պատասխանների ցուցակ
+        good_result_message: 'Ես տեսնում եմ, որ դուք ջանք եք թափել:'
+        great_result_message: 'Դե լավ Սրանք հիանալի արդյունքներ են:'
+        next_course_lesson: Իհարկե գնացեք հաջորդ դասին
+        no_results: Դուք դեռ թեստի արդյունքներ չունեք
+        no_results_text: Խնդրում եմ, ավարտեք դասը և անցեք թեստը ՝ արդյունքներ ստանալու
+          համար
+        see_correct_answers_list: Տեսեք ճիշտ պատասխանների ցուցակը
+        train_more: 'Ավելի շատ զբաղվեք և հաջորդ անգամ ավելի լավ արդյունքների կհասնեք:'
+        you_finished_lesson: Հոյակապ Դասն ավարտեցիք
+      go_back: Վերադառնալ
+      next_button: Հաջորդը
+      not_available_task: Այս առաջադրանքը դեռ մատչելի չէ
+      start_button: Սկսեք
+      tasks:
+        check:
+          assignment:
+            accept: Ընդունել
+            author_will_check_your_answer: >-
+              %{author}- ը կվերանայի ձեր պատասխանը և սովորաբար կտա հետադարձ կապ 1-2
+              օրվա ընթացքում
+            continue_writing: Շարունակեք գրել
+            copy: Պատճենել
+            delete: Նջել
+            delete_record: Deleteնջել գրառումը
+            edit: Խմբագրել
+            essay_does_not_have_enough_words: >-
+              Ձեր պատասխանը պետք է պարունակի առնվազն %{minWordsNumber} բառ: Ձեր պատասխանը
+              ներկայումս %{currentWordsNumber} բառ է:
+            followers_count: "%{followersCount} հետեւորդներ"
+            lessons_count: "%{lessonsCount} դասեր"
+            minimal_recording_time: Ձայնագրման նվազագույն ժամանակը - %{minimalRecordingTime}
+            minimum_characters_amount: Նվազագույն նիշեր - %{minimumCharactersAmount}
+            minimum_words_amount: Նվազագույն բառերը - %{minimumAmount}
+            record_again: Կրկին ձայնագրեք
+            record_voice: Ձայնագրել
+            send_anyway: Ինչեւէ ուղարկել
+            send_to_review: Ուղարկել վերանայման
+            skip: Բաց թողնել
+            too_short_answer: Չափազանց կարճ պատասխան
+            type_your_answer: Մուտքագրեք ձեր պատասխանը
+            unknown_task_type: Առաջադրանքի անհայտ տեսակ
+            upgrade_licence: Նորացնել լիցենզիան
+            upgrade_your_plan: Նորացրեք ձեր ծրագիրը ՝ ուսուցիչների հետ առաջադրանքները
+              փորձելու համար
+            upload_files: Ֆայլեր վերբեռնել
+            write_essay: Գրիր շարադրություն
+            you_have_used_amount_of_assignments: Դուք օգտագործել եք %{amountOfAssignments}
+              նշանակման կրեդիտներ
+          fill_in_blanks:
+            sentence_gap: Նախադասության բացը
+          fill_in_table:
+            column_answer_placeholder: Պատասխանել
+            column_question_placeholder: Հարց
+            example: Օրինակ
+          true_false:
+            'false': Կեղծ
+            'true': Ճիշտ
+        learn:
+          translatable_text:
+            show_original: Originalուցադրել բնօրինակը
+            translate_into: Google- ի հետ թարգմանեք %{languageName}
+            translate_into_your_lang: Google- ի միջոցով թարգմանեք ձեր լեզվով
+        play:
+          arrange_words:
+            start_screen:
+              heading: Տրված բառերից կազմիր նախադասություն
+          audition:
+            start_screen:
+              heading: Լսեք աուդիոն և հպեք ձեր լսած բառին
+          dictation:
+            get_help: Օգնություն ստանալ
+            i_do_not_know: Ես չգիտեմ
+            input_placeholder: Մուտքագրեք այստեղ լսածը
+            start_screen:
+              heading: Լսեք և գրեք այն, ինչ լսում եք
+          fill_gap:
+            start_screen:
+              heading: Համապատասխանեցեք բառը և դրա իմաստը
+          finish_screen:
+            go_to_next_exercise: Դե լավ Գնացեք հաջորդ վարժությանը
+          image_hotspot:
+            start_screen:
+              heading: Nameիշտ անվանել նկարում պատկերված օբյեկտները
+          image_object:
+            start_screen:
+              heading: Հաջորդ նկարից ընտրեք ճիշտ օբյեկտը
+          inline_dropdown:
+            start_screen:
+              heading: Ընտրեք նախադասությանը համապատասխանող բառերը
+          mark_word:
+            start_screen:
+              heading: Կարդացեք տեքստը և ընտրեք նկարին համապատասխան բառը
+          minimal_pairs:
+            start_screen:
+              heading: Դիտեք տեսանյութը և ընտրեք ճիշտ տարբերակը
+    locale:
+      currency_switcher_title: Արտարժույթի փոխարկիչ
+      lang_switcher_title: Լեզվի փոխարկիչ
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Գերմանական
+        el: Greek
+        en: Անգլերեն
+        eo: Esperanto
+        es: Իսպանական
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Ֆրանս
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Իտալական
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Նորսկ
+        ne: Nepali
+        nl: Նիդերլանդներ
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Պոլսկի
+        ps: Pashto
+        pt: Պորտուգալերեն
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Թյուրքչե
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Աուդիոն բեռնում է
+        aria_pause_button: Դադար
+        aria_play_button: Խաղալ
+        aria_reload_button: Վերաբեռնել
+        aria_stop_button: Կանգ առ
+        reload_message: 'Չհաջողվեց բեռնել աուդիոն: Խնդրում ենք սեղմել կոճակը ՝ վերաբեռնելու
+          համար:'
+    mobile_modal:
+      apply: Դիմել
+      cancel: Չեղարկել
+      clear: Մաքրել
+      save: Խնայել
+    page404:
+      goToStartLessonPage: Անցեք մեկնարկի դասի էջին
+      ooops: Օoo ...
+      sorry_message: Ներեցեք, Tor- ը չկարողացավ գտնել այս էջը
+    profile:
+      navigation:
+        log_out: Դուրս գալ
+        my_profile: Իմ էջը
+        settings: Կարգավորումներ
+      onboarding:
+        choose_native_language: Ընտրեք ձեր մայրենի լեզուն կամ ձեր հասկանալի լեզուն
+        do_you_understand_english: Դու անգլերեն հասկանում ես?
+        hello: Բարեւ Ձեզ
+        language_levels:
+          a1: Տարրական մակարդակ
+          a2: Նախընտրական միջանկյալ մակարդակ
+          b1: Միջանկյալ մակարդակ
+          b2: Վերին միջանկյալ մակարդակ
+          c1: Ընդլայնված մակարդակ
+          no_knowledge: Ոչ մի գիտելիք
+        language_not_supported:
+          note: Մենք ձեզ կտեղեկացնենք, հենց որ լեզուն հասանելի լինի
+          title: Ներեցեք, բայց մենք դեռ չենք աջակցում այս լեզուն
+          try_another_language: Փորձեք մեկ այլ լեզու
+        'no': Ոչ
+        search_placeholder: Որոնել ...
+        show_more_languages: Այլ լեզուներ
+        target_language_question: 'Ի՞նչ լեզու եք ուզում սովորել:'
+        what_is_language_level: 'Ինչպե՞ս կգնահատեք ձեր %{languageName} մակարդակը:'
+        'yes': Այո
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Լինգուի գաղտնիության քաղաքականությունը
+        support: Աջակցություն
+      logout: Դուրս գալ
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Ստացեք թարմացումներ ուսուցիչներից և դպրոցներից, որոնց հետևում
+                եք
+              sections:
+                app_notifications: Ծրագրի ծանուցումները
+                email: Էլ
+              title: Ուսուցման օգնություն
+            marketing:
+              description: Տեղեկացեք Lingu- ի բոլոր ակցիաների, թարմացումների և ոգեշնչման
+                մասին
+              sections:
+                browser_notifications: Brննարկչի ծանուցումներ
+                email: Էլ
+              title: Մարկետինգ
+          title: Կոնտակտային նախապատվություններ
+        personal_information:
+          delete_photo: Deleteնջել լուսանկարը
+          email: Էլ
+          first_name: Անուն
+          last_name: Ազգանուն
+          social_accounts:
+            connected: Միացված է
+            facebook: Ֆեյսբուք
+            google: Google- ը
+            microsoft: Microsoft- ը
+            not_connected: Միացված չէ
+            title: Սոցիալական հաշիվներ
+          title: Անձնական տվյալներ
+          update_photo: Թարմացնել լուսանկարը
+        school:
+          active_licence: Ակտիվ լիցենզիա
+          active_status: Ակտիվ
+          delete_profile: Deleteնջել իմ պրոֆիլը
+          delete_profile_modal:
+            body: |-
+              Դուք ջնջում եք ձեր բոլոր տվյալները ՝ ընդմիշտ: Հետադարձման կոճակ չկա, և հետո մենք չենք կարող այն վերադարձնել ձեզ համար:
+              Վստա՞հ եք, որ ցանկանում եք ընդմիշտ ջնջել ձեր Lingu պրոֆիլը և ձեր բոլոր տվյալները:
+            cancel: Չեղարկել
+            confirm: Այո, ջնջիր այն
+            i_understand_the_consequences: Ես հասկանում եմ հետևանքները
+            title: 'Deleteնջե՞լ պրոֆիլը:'
+          expired: Expամկետանց %{expire_date}
+          expires: Expամկետը լրանում է %{expire_date}
+          inactive_status: Անգործունյա
+          revoke_access: Կարդալ ընթերցման հասանելիությունը
+          sections:
+            contact_school: Կապվեք դպրոցին
+            export_my_data: Արտահանեք իմ տվյալները
+            read_school_privacy_policy: Կարդացեք դպրոցի գաղտնիության քաղաքականությունը
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Երաժշտության նվագարկում
+              sound_effects: Ձայնային էֆեկտներ
+              title: Հնչյուն
+            visual:
+              dark_theme: Մութ թեման
+              font_size:
+                test_text: Theանկապատի մյուս կողմում խոտը միշտ ավելի կանաչ է
+                title: Տառատեսակի չափը
+              high_contrast: Բարձր հակադրություն
+              hints: Ակնարկներ
+              title: Տեսողական
+          title: Ձայն և տեսողական
+        training_settings:
+          sections:
+            i_understand: ես հասկանում եմ
+            i_want_to_learn: Ես ուզում եմ սովորել
+            target_language_level: Անգլերեն մակարդակ
+          title: Ուսուցման պարամետրեր
+      settings_title: Կարգավորումներ
+    teacher_card:
+      followers_count:
+        one: 1 հետևորդ
+        other: "%{count} հետեւորդներ"
+      lessons_count:
+        one: 1 դաս
+        other: "%{count} դասեր"

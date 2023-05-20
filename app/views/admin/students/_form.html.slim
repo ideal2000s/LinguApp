@@ -1,0 +1,64 @@
+.row
+  .col-lg-6
+    .form-group
+      = f.label :fname, t('first_name')
+      = f.text_field :fname, class: 'form-control'
+      = error_for f.object, :fname
+  .col-lg-6
+    .form-group
+      = f.label :lname, t('last_name')
+      = f.text_field :lname, class: 'form-control'
+      = error_for f.object, :lname
+.form-group
+  = f.label :email, t('email')
+  = f.email_field :email, class: 'form-control'
+  = error_for f.object, :email
+.row
+  .col-lg-6
+    .form-group
+      = f.label :mobile, t('admin.users.edit.mobile')
+      = f.text_field :mobile, class: 'form-control'
+  .col-lg-6
+    .form-group
+      = f.label :ssn, t('ssn')
+      = f.text_field :ssn, class: 'form-control'
+      = error_for f.object, :ssn
+.row
+  .col-lg-6
+    .form-group
+      = f.fields_for :student_support_languages do |support_lang_form|
+        = support_lang_form.hidden_field :native
+        = support_lang_form.label :language_id, t('.select_native_language')
+        = support_lang_form.select :language_id, options_for_select(Language.support.ordered.select(:system_name, :id).map { |d| [d.system_name, d.id] }, support_lang_form.object.language_id), { include_blank: t('.select_native_language') }, { class: 'form-control select2'}
+        = error_for support_lang_form.object, :language_id
+- if student.student_target_languages
+  table.table.thead-light.table-dashboard.my-3
+    thead
+      tr
+        th= t('teach.lessons.form.select_target_language')
+        th= t('teach.lessons.form.select_target_language_level')
+        th= t('teach.lessons.form.select_target_language_active')
+    tbody
+      = f.fields_for :student_target_languages do |lang_form|
+        tr
+          td = lang_form.select :language_id, options_for_select(Language.active.select(:system_name, :id).map { |d| [d.system_name, d.id] }, lang_form.object.language_id), { include_blank: t('teach.lessons.form.select_target_language') }, {class: 'form-control select2'}
+          td = lang_form.select :level,
+                  options_for_select(StudentTargetLanguage.levels_for_select, lang_form.object.level),
+                  {},
+                  class: 'form-control select2'
+          td.pt-3.pl-5
+            = lang_form.check_box :active,
+                    checked: (lang_form.object.id == f.object.active_student_target_language_id),
+                    class: 'active-lang-checkbox'
+.row
+  .col-lg-12
+    .form-group
+      = f.label :gender
+      - Student.genders.keys.each do |g|
+        .custom-control.custom-radio
+          = f.radio_button :gender, g, class: 'custom-control-input'
+          = f.label "gender_#{g}".to_sym, t(g, scope: 'activerecord.attributes.student.genders'), class: 'custom-control-label'
+  .col-lg-12
+    .form-group
+      = f.label :school_team_ids, t('admin.teams.list.teams')
+      = f.select :school_team_ids, options_for_select(Team.kept.select(:name, :status, :id, :owner_id).map { |s| [s.name, s.id] }, f.object.school_team_ids), {}, {class: 'form-control select2', multiple: true}

@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    title= page_title
+    = render 'layouts/shared/favicon'
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_packs_with_chunks_tag 'application', media: 'all'
+  body
+    main#top.main
+      .container-fluid
+        nav.navbar.navbar-vertical.navbar-expand-xl.navbar-light.navbar-glass
+          = link_to admin_dashboard_index_path, class: 'navbar-brand text-left' do
+            .d-flex= image_tag('lingu-logo.svg', class: 'mr-2', style: 'width: 146px; margin: 0 20px; height: 82px;')
+          #navbarVerticalCollapse.collapse.navbar-collapse
+            .flex-column
+            - if content_for?(:filters)
+              .card.mb-3
+                .card-header
+                  h5.mb-0= t('filter')
+                .card-body
+                  = yield(:filters)
+            - if content_for?(:links)
+              = yield(:links)
+        = render 'layouts/admin/sidebar'
+        .content
+          = render 'layouts/admin/header'
+          - if notice
+            .alert.alert-success== notice
+          - if alert
+            .alert.alert-danger== alert
+          = yield
+
+          = render 'layouts/admin/footer'
+    = javascript_packs_with_chunks_tag 'application'

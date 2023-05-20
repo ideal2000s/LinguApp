@@ -1,0 +1,611 @@
+---
+yi:
+  course_mailer:
+    course_assigned_notification:
+      button: אָנהייבן דעם קורס
+      click_start_lesson: גיט 'אָנהייב לעקציע'
+      follow_course_link: דריקט דעם קנעפּל צו עפֿענען דעם קורס
+      footer_text: קום צוריק צו לינגו צו לערנען עפּעס נייַ יעדער טאָג!
+      get_started_line: 'דאָ ס ווי איר אָנהייבן:'
+      notification_link: אָנזאָג סעטטינגס
+      open_lesson: עפֿענען די ערשטער לעקציע
+      or_paste_this_link: אָדער פּאַפּ דעם לינק אין דיין בלעטערער
+      sign_in_with_email: לאָגין מיט דיין E- בריוו אַדרעס (%{email})
+      support_link: שטיצן
+      title: צו אָנהייבן מיט %{course}
+    new_document_comment:
+      author_text: "%{author} האָט איבערגעלייגט אַ רעצענזיע פון דיין אַסיינמאַנט"
+      button_text: קוק עס דורך
+      button_url_helper: 'אָדער פּאַפּ דעם לינק אין דיין בלעטערער:'
+      footer_text: עס איז פיל מער צו לערנען ...
+      notification_link: אָנזאָג סעטטינגס
+      subject_line: ניו אַסיינמאַנט באַמערקן
+      support_link: שטיצן
+    otp:
+      ignore_msg: אויב איר האָט ניט שטעלן דעם בעטן, נאָר איגנאָרירן די E- בריוו
+      subject_line: דיין יינציק קאָד פֿאַר לינגו
+      unique_code_for_lingu: דאָ איז דיין יינציק קאָד פֿאַר לינגו
+  frontend:
+    auth:
+      already_have_acc_question: שוין האָבן אַ חשבון?
+      back: צוריק
+      back_to_sign_in: צוריק צו צייכן אין
+      check_your_email_for_a_code: טשעק דיין E- בריוו פֿאַר דיין קאָד
+      continue: פאָרזעצן
+      continue_with_email: פאָרזעצן מיט E- בריוו
+      continue_with_provider: פאָרזעצן מיט %{provider}
+      did_not_receive_a_code: האט איר נישט באַקומען אַ קאָד?
+      email_address: אימעיל אדרעס
+      first_name: ערשטע נאמען
+      get_unique_code: באַקומען אַ יינציק לאָגין קאָד
+      join_lingu: באַהעפטן לינגו
+      last_name: לעצטע נאמען
+      more_login_options: מער לאָגין אָפּציעס
+      no_account_question: טאָן ניט האָבן אַ חשבון?
+      or: אָדער
+      resend_code: שיקן שיקן קאָד
+      sign_in: סיין אריין
+      sign_up: צייכן אַרויף
+      want_to_receive_marketing_messages: איך ווילן צו באַקומען פֿאַרקויף אַרטיקלען
+        פֿון לינגו
+      we_ve_sent_a_code: >-
+        מיר האָבן געשיקט אַ 6-ציפֿער קאָד צו <strong> {email}} </ strong>. דער קאָד
+        יקספּייערז אין 15 מינוט, אַזוי ביטע אַרייַן עס באַלד.
+    cookie_agreement:
+      agree: שטימען
+      condition: >-
+        מיר נוצן קיכלעך צו אַנאַלייז די פאָרשטעלונג פון דער פּלאַץ און צושטעלן פערזענליכען
+        אינהאַלט. דורך קליקינג "שטימען", איר שטימען צו אונדזער באדינגונגען.
+    course:
+      accredited_course_provider: אַקרעדיטיד קאָרסאַז
+      apply: צולייגן
+      apply_filters: צולייגן פילטערס
+      by: דורך
+      cancel: באָטל מאַכן
+      categories: "%{count} קאַטעגאָריעס"
+      category: קאַטעגאָריע
+      clear: קלאָר
+      clear_filters: קלאָר פילטערס
+      contact_us: רוף אונז
+      could_not_find_match_for: אנטשולדיגט, מיר קען ניט געפֿינען קיין גלייַכן פֿאַר
+      course_language: לויף שפּראַך
+      duration: געדויער
+      filter_settings:
+        categories:
+          academic: אַקאַדעמיק
+          business: געשעפט
+          fashion: מאָדע
+          food_drink: עסנוואַרג & טרינקען
+          for_kids: פֿאַר קידס
+          general: אַלגעמיינע
+          health: געזונט
+          legal: לעגאַל
+          sport: ספּאָרט
+          travel: רייזע
+        durations:
+          t0_600: "<10 מינוט"
+          t1800_3600: 30-60 מינוט
+          t3600_86400: 1+ שעה
+          t600_1800: 10-30 מינוט
+        focus_on:
+          conversation: שמועס
+          grammar: גראַמאַטיק
+          listening: צוגעהערט
+          pronunciation: פּראָונאַנסייישאַן
+          reading: רידינג
+          speaking: גערעדט
+          writing: שרייבן
+        levels:
+          long:
+            advanced: אַוואַנסירטע מדרגה
+            elementary: עלעמענטאַר שטאַפּל
+            intermediate: ינטערמעדיאַטע מדרגה
+            no_knowledge: קיין וויסן
+            pre_intermediate: פאַר ינטערמידייט מדרגה
+            upper_intermediate: אויבערשטער ינטערמידייט מדרגה
+          short:
+            advanced: אַוואַנסירטע
+            beginner: אָנהייבער
+            intermediate: ינטערמעדיאַטע
+        sort_by:
+          most_rated: מערסט רייטאַד
+          newest: נואַסט
+          popularity: פּאָפּולאַריטעט
+      filters: פילטערס
+      focus_on: פאָקוס אויף
+      focus_on_title: איך ווילן צו פאָקוס אויף
+      hide_lessons: באַהאַלטן לעקציעס
+      hours: Hours
+      i_understand: איך פֿאַרשטיין
+      i_want_to_learn: איך וויל לערנען
+      in_language: אין %{language}
+      language: שפּראַך
+      learn_more: לערן מער
+      less_settings: ווייניקער סעטטינגס
+      lessons: לעקציעס
+      lessons_available: "%{number} לעקציעס בנימצא"
+      lessons_catalog_page_subtitle: ווערן שפּראַך העלד.
+      lessons_catalog_page_title: יקספּאַנד דיין כערייזאַן מיט אַ שפּראַך לויף
+      level: Level
+      min: מין
+      more_settings: מער סעטטינגס
+      navbar:
+        close: נאָענט מעניו
+        menu: מעניו
+        select_language: אויסקלייַבן שפּראַך
+      need_to_buy_course: איר דאַרפֿן צו בוך אַ קורס
+      no_description: קיין באַשרייַבונג צוגעשטעלט
+      no_results: אנטשולדיגט, מיר קען ניט געפֿינען קיין גלייַכן פֿאַר
+      or: אָדער
+      per_month: פּער חודש
+      plans: פּלאַן
+      privacy_policy: פּריוואַטקייט פּאָליטיק
+      rating: שאַץ
+      remove_all_filters: אַראָפּנעמען אַלע פילטערס
+      reviews: באריכטן
+      save: היט
+      search: זוך
+      select_dots: סעלעקטירן ...
+      select_languages: סעלעקטירן לאַנגאַוגעס
+      select_num_languages: סעלעקטירן %{number} שפּראַכן
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: ווייז אלע
+      show_all_lessons: ווייַזן אַלע לעקציעס
+      show_lessons: ווייַזן זקסזקסזקס 0 לעקציעס
+      show_more: ווייז מער
+      sign_up_with_lingu_for: צייכן אַרויף מיט לינגו נאָרווייַ פֿאַר
+      skills: "%{count} סקילז"
+      sort_by: סאָרט דורך
+      start_typing_here: אָנהייב טייפּינג דאָ
+      teach: לערנען
+      terms_and_conditions: טערמינען אין תנאים
+      time_range: צייט קייט
+      try_adjusting_your_search: פּרוּווט אַדזשאַסטינג דיין זוכן דורך טשאַנגינג דיין
+        פילטערס
+      try_this_course: פּרוּווט דעם קורס
+      website_language: וועבזייטל שפּראַך
+      words: ווערטער
+    games:
+      finished:
+        go_to_next_exercise: גוט געטאן! גיין צו די ווייַטער געניטונג
+      flashcard:
+        buttons:
+          finish: ענדיקן
+          next: ווייַטער
+          previous: פֿריִערדיקע
+        check_out_new_words: קוק די נייַע ווערטער וואָס איר וועט לערנען אין דעם לעקציע
+        frequency_of_word_usage: אָפטקייַט פון וואָרט באַניץ אין %{language}
+        keep_practice_to_learn_all_words: איבערבליק די %{count} ווערטער און לאָזן
+          אונדז שפּילן עטלעכע שפּילערייַ!
+        word_frequency:
+          level1: ראַרעלי געוויינט
+          level2: ראַרעלי געוויינט
+          level3: וואָרט אָפטקייַט - מיטל
+          level4: וואָרט אָפטקייַט - מיטל
+          level5: פּראָסט
+          level6: זייער פּראָסט
+      match_word:
+        click_and_move_each_word_to_counterpart: דריקט און מאַך יעדער וואָרט צו זיין
+          אַנטקעגענער
+        start_heading: גלייַכן ווערטער צו מאַכן אַ פּאָר
+        time_is_up: צייט ס אַרויף!
+      skip_tutorial: האָפּקען
+      time_is_up: צייט ס אַרויף!
+      word_nodes:
+        match_letters_to_form_word: גלייַכן אותיות צו פאָרעם אַ וואָרט
+      word_waterfall:
+        do_not_hesitate: זאל ס גיכקייַט אַרויף!
+        go_to_next_exercise: גיין צו די ווייַטער געניטונג
+        select_correct_translation: סעלעקטירן ריכטיק גלייַכן
+        well_done: גוט געטאן!
+    home_page:
+      hello: העלא,
+      popular_lessons: פאָלקס לעקציעס
+      show_more: ווייז מער
+      time: "%{count} מין"
+      today_lesson: דיין לעקציע פֿאַר הייַנט
+      user_name: "%{name}!"
+      words: "%{count} ווערטער"
+    idle_screen:
+      by_author: דורך %{authorName}
+      continue_lesson: פאָרזעצן לעקציע
+      exit: אַרויסגאַנג
+      idle_message: איר האָט שוין ליידיק פֿאַר עטלעכע מאָל ...
+    lesson_page:
+      back_to_course_page: צוריק צו קורס בלאַט
+      close: נאָענט
+      continue_lesson: פאָרזעצן לעקציע
+      followed: נאכגעגאנגען
+      hamburger_menu_btn: האַמבורגער מעניו
+      lesson_given: לעקציעס
+      not_started: ניט סטאַרטעד
+      or: אָדער
+      part_complete: "%{percent}% גאַנץ"
+      restart_lesson: הייב אן נאכאמאל
+      section_check: טשעק
+      section_check_info: "%{count} טעסץ"
+      section_learn: לערן
+      section_learn_info: "%{count} מין צו היטן און לייענען"
+      section_play: שפּיל
+      section_play_info: "%{count} ווערטער צו פיר"
+      start_lesson: אָנהייב לעקציע
+      step_progress: "%{percent}%"
+      subscribe: גיי
+      subscribed: נאכגעגאנגען
+      subscribers: אנהענגערס
+      time_min: "%{minutesNumber} מין"
+      unsubscribe: ונלאָוו
+      webview_error_title: עפּעס איז פאַלש ...
+      words_number: "%{wordsNumber} נייע ווערטער"
+    lesson_task:
+      cancel_button: באָטל מאַכן
+      check:
+        navigation_next: ווייַטער
+        navigation_previous: פֿריִערדיקע
+        navigation_skip: האָפּקען
+      controls_panel:
+        font_size_button: שריפֿט גרייס
+        high_contrast_button:
+          origin: הויך קאַנטראַסט
+          short: קאַנטראַסט
+        hints_button: הינץ
+        music_playback_button:
+          origin: מוזיק פּלייבאַק
+          short: מוזיק
+        sound_effects_button:
+          origin: געזונט יפעקס
+          short: קלאַנג
+      exit_button: אַרויסגאַנג
+      finish_button: ענדיקן
+      finished:
+        back_to_learn: צוריק צו לערנען
+        back_to_lesson_page: צוריק צו דער בלאַט בלאַט
+        back_to_results_page: צוריק אויף רעזולטאַט בלאַט
+        bad_result_message: הממ ... פּרובירן צו נעמען די לעקציע נאָך אַ מאָל
+        close_lesson: נאָענט לעקציע
+        correct_answers_list: ריכטיק ענטפֿערס רשימה
+        good_result_message: איך קענען זען איר'ווע געמאכט אַן מי!
+        great_result_message: גוט געטאן! די ביסט גרויס רעזולטאַטן!
+        next_course_lesson: גיין צו די ווייַטער לעקציע
+        no_results: איר האָט קיין פּרובירן רעזולטאַטן נאָך
+        no_results_text: ביטע, פאַרענדיקן די לעקציע און דורכפירן די פּראָבע צו באַקומען
+          די רעזולטאַטן
+        see_correct_answers_list: זען די ריכטיק ענטפֿערס רשימה
+        train_more: פיר מער און איר וועט דערגרייכן בעסער רעזולטאַטן ווייַטער צייַט!
+        you_finished_lesson: גרויס! איר פאַרטיק די לעקציע
+      go_back: גיי צוריק
+      next_button: ווייַטער
+      not_available_task: די אַרבעט איז נישט בנימצא נאָך
+      start_button: אָנהייב
+      tasks:
+        check:
+          assignment:
+            accept: אָננעמען
+            author_will_check_your_answer: "%{author} וועט איבערבליקן דיין ענטפער
+              און טיפּיקלי געבן באַמערקונגען ין 1-2 טעג"
+            continue_writing: פאָרזעצן שרייבן
+            copy: קאָפּיע
+            delete: ויסמעקן
+            delete_record: ויסמעקן רעקאָרד
+            edit: רעדאַגירן
+            essay_does_not_have_enough_words: >-
+              דיין ענטפער זאָל כּולל לפּחות זקסזקסזקס 0 ווערטער. דיין ענטפער איז דערווייַל
+              זקסזקסזקס 1 ווערטער.
+            followers_count: "%{followersCount} אנהענגערס"
+            lessons_count: "%{lessonsCount} לעקציעס"
+            minimal_recording_time: מינימאַל רעקאָרדינג צייט - זקסזקסזקס 0
+            minimum_characters_amount: מינימום אותיות - זקסזקסזקס 0
+            minimum_words_amount: מינימום ווערטער - %{minimumAmount}
+            record_again: רעקאָרדירן ווידער
+            record_voice: רעקאָרדירן קול
+            send_anyway: שיק סיי ווי
+            send_to_review: שיקן צו באריכטן
+            skip: האָפּקען
+            too_short_answer: צו קורץ ענטפֿערן
+            type_your_answer: טיפּ דיין ענטפער
+            unknown_task_type: אומבאַקאַנט אַרבעט טיפּ
+            upgrade_licence: אַפּגרייד דערלויבעניש
+            upgrade_your_plan: אַפּגרייד דיין פּלאַן צו פּרובירן אַסיינמאַנץ מיט די
+              באריכטן פון לערערס
+            upload_files: צופֿעליקער טעקעס
+            write_essay: שרייב עסיי
+            you_have_used_amount_of_assignments: איר האָט געוויינט זקסזקסזקס 0 אַסיינמאַנט
+              קרעדיץ
+          fill_in_blanks:
+            sentence_gap: זאַץ ריס
+          fill_in_table:
+            column_answer_placeholder: ענטפער
+            column_question_placeholder: פראגע
+            example: בייַשפּיל
+          true_false:
+            'false': פאַלש
+            'true': אמת
+        learn:
+          translatable_text:
+            show_original: ווייַזן אָריגינעל
+            translate_into: זעץ מיט Google אין %{languageName}
+            translate_into_your_lang: זעץ מיט Google אין דיין שפּראַך
+        play:
+          arrange_words:
+            start_screen:
+              heading: מאַכן אַ זאַץ פון די געגעבן ווערטער
+          audition:
+            start_screen:
+              heading: הערן צו די אַודיאָ און קלאַפּ אויף די וואָרט איר נאָר געהערט
+          dictation:
+            get_help: באַקומען הילף
+            i_do_not_know: איך וויס נישט
+            input_placeholder: אַרייַן וואָס איר האָט דאָ געהערט
+            start_screen:
+              heading: הערן און שרייַבן וואָס איר הערן
+          fill_gap:
+            start_screen:
+              heading: גלייַכן דעם וואָרט און זיין טייַטש
+          finish_screen:
+            go_to_next_exercise: גוט געטאן! גיין צו די ווייַטער געניטונג
+          image_hotspot:
+            start_screen:
+              heading: נאָמען די אַבדזשעקס אין די בילד ריכטיק
+          image_object:
+            start_screen:
+              heading: קלייַבן די רעכט כייפעץ פון דער ווייַטער בילד
+          inline_dropdown:
+            start_screen:
+              heading: קלייַבן די ווערטער וואָס גלייַכן די זאַץ
+          mark_word:
+            start_screen:
+              heading: לייענען די טעקסט און סעלעקטירן די וואָרט וואָס גלייַכן די בילד
+          minimal_pairs:
+            start_screen:
+              heading: היטן די ווידעא און סעלעקטירן די ריכטיק אָפּציע
+    locale:
+      currency_switcher_title: קראַנטקייַט סוויטטשער
+      lang_switcher_title: שפּראַך באַשטימען
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: ענגליש
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: פראנצויזיש
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: איטאַליעניש
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: פּאָלסקי
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: אַודיאָ איז לאָודינג
+        aria_pause_button: Pause
+        aria_play_button: שפּיל
+        aria_reload_button: Reload
+        aria_stop_button: אָפּשטעל
+        reload_message: ניט אַנדערש צו לאָדן אַודיאָ. ביטע גיט די קנעפּל צו רילאָוד.
+    mobile_modal:
+      apply: צולייגן
+      cancel: באָטל מאַכן
+      clear: קלאָר
+      save: היט
+    page404:
+      goToStartLessonPage: גיין צו די אָנהייב לעקציע בלאַט
+      ooops: אָאָאָאָפּס ...
+      sorry_message: אנטשולדיגט, Tor קען ניט געפֿינען דעם בלאַט
+    profile:
+      navigation:
+        log_out: קלאָץ אויס
+        my_profile: מיין פּראָפיל
+        settings: סעטטינגס
+      onboarding:
+        choose_native_language: קלייַבן דיין געבוירן שפּראַך אָדער שפּראַך איר פֿאַרשטיין
+        do_you_understand_english: צי איר פֿאַרשטיין ענגליש?
+        hello: העלא
+        language_levels:
+          a1: עלעמענטאַר שטאַפּל
+          a2: פאַר-ינטערמידייט מדרגה
+          b1: ינטערמעדיאַטע מדרגה
+          b2: אויבערשטער ינטערמעדיאַטע מדרגה
+          c1: אַוואַנסירטע מדרגה
+          no_knowledge: קיין וויסן
+        language_not_supported:
+          note: מיר וועלן אייך מעלדן ווי באַלד די שפּראַך וועט זיין בארעכטיגט
+          title: זײַט מוחל, אָבער מיר שטיצן נאָך ניט די שפּראַך
+          try_another_language: פּרוּווט אַן אַנדער שפּראַך
+        'no': ניין
+        search_placeholder: זוך ...
+        show_more_languages: אנדערע שפראכן
+        target_language_question: וועלכע שפראך ווילסטו לערנען?
+        what_is_language_level: ווי וואָלט איר אָפּשאַצן דיין זקסזקסזקס 0 מדרגה?
+        'yes': יאָ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: לינגו ס פּריוואַטקייט פּאָליטיק
+        support: שטיצן
+      logout: לאָגאָוט
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: באַקומען דערהייַנטיקונגען פֿון לערערס און שולן איר נאָכפאָלגן
+              sections:
+                app_notifications: אַפּ נאָוטאַפאַקיישאַנז
+                email: E- בריוו
+              title: לערנען הילף
+            marketing:
+              description: >-
+                בלייבן ינפאָרמד וועגן אַלע פּערמאָושאַנז, דערהייַנטיקונגען און ינספּיראַציע
+                פֿון לינגו
+              sections:
+                browser_notifications: בראַוזער נאָוטאַפאַקיישאַנז
+                email: E- בריוו
+              title: פֿאַרקויף
+          title: קאָנטאַקט פּרעפֿערענצן
+        personal_information:
+          delete_photo: ויסמעקן פאָטאָ
+          email: אימעיל
+          first_name: ערשטע נאמען
+          last_name: לעצטע נאמען
+          social_accounts:
+            connected: פארבונדן
+            facebook: פאַסעבאָאָק
+            google: Google
+            microsoft: מייקראָסאָפֿט
+            not_connected: ניט פארבונדן
+            title: סאציאל אַקאַונץ
+          title: פערזענלעכע אינפֿאָרמאַציע
+          update_photo: דערהייַנטיקן פאָטאָ
+        school:
+          active_licence: אַקטיוו דערלויבעניש
+          active_status: אַקטיוו
+          delete_profile: ויסמעקן מיין פּראָפיל
+          delete_profile_modal:
+            body: |-
+              איר ויסמעקן אַלע דיין דאַטן - אויף אייביק. עס איז קיין ופמאַכן קנעפּל, און מיר קענען נישט באַקומען עס צוריק פֿאַר איר.
+              זענט איר זיכער אַז איר ווילט פּערמאַנאַנטלי ויסמעקן דיין לינגו פּראָפיל און אַלע דיין דאַטן?
+            cancel: באָטל מאַכן
+            confirm: יאָ, ויסמעקן עס
+            i_understand_the_consequences: איך פֿאַרשטיין די קאַנסאַקווענסאַז
+            title: ויסמעקן דיין פּראָפיל?
+          expired: אויסגעגאנגען זקסזקסזקס 0
+          expires: יקספּייערז %{expire_date}
+          inactive_status: ינאַקטיוו
+          revoke_access: אָפּרופן לייענען אַקסעס
+          sections:
+            contact_school: קאָנטאַקט שולע
+            export_my_data: אַרויספירן מיין דאַטן
+            read_school_privacy_policy: לייענען שולע פּריוואַטקייט פּאָליטיק
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: מוזיק פּלייבאַק
+              sound_effects: געזונט יפעקס
+              title: קלאַנג
+            visual:
+              dark_theme: טונקל טעמע
+              font_size:
+                test_text: די גראָז איז שטענדיק גרינער אויף די אנדערע זייַט פון דעם
+                  פּלויט
+                title: שריפֿט גרייס
+              high_contrast: הויך קאַנטראַסט
+              hints: הינץ
+              title: וויסואַל
+          title: געזונט & וויסואַל
+        training_settings:
+          sections:
+            i_understand: איך פֿאַרשטיין
+            i_want_to_learn: איך וויל לערנען
+            target_language_level: ענגליש מדרגה
+          title: טראַינינג סעטטינגס
+      settings_title: סעטטינגס
+    teacher_card:
+      followers_count:
+        one: 1 נאכגייער
+        other: "%{count} אנהענגערס"
+      lessons_count:
+        one: 1 לעקציע
+        other: "%{count} לעקציעס"

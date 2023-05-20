@@ -1,0 +1,6 @@
+= form_with scope: :lesson, url: teach_lesson_phrases_path(lesson), method: :post, html: { id: 'glossary__form' }, data: { url: teach_lesson_phrases_path(lesson) } do |f|
+  .row
+    .col-lg-8.col-md-8.col-sm-10
+      = f.text_field :phrase, class: 'form-control', placeholder: t('.enter_phrase'), autocomplete: 'off', required: true
+    .col-lg-1.col-md-2.col-sm-2
+      = f.submit t('teach.phrases.add_phrase'), class: 'btn btn-falcon-default'

@@ -1,0 +1,618 @@
+---
+id:
+  course_mailer:
+    course_assigned_notification:
+      button: Mulai kursus
+      click_start_lesson: Klik 'Mulai pelajaran'
+      follow_course_link: Klik tombol untuk membuka kursus
+      footer_text: Kembalilah ke Lingu untuk mempelajari sesuatu yang baru setiap
+        hari!
+      get_started_line: 'Begini cara Anda memulai:'
+      notification_link: Pengaturan pemberitahuan
+      open_lesson: Buka pelajaran pertama
+      or_paste_this_link: atau tempel tautan ini di browser Anda
+      sign_in_with_email: Masuk dengan alamat email Anda (%{email})
+      support_link: Dukung
+      title: Memulai dengan %{course}
+    new_document_comment:
+      author_text: "%{author} meninggalkan ulasan tentang tugas Anda"
+      button_text: Coba lihat
+      button_url_helper: 'atau tempel tautan ini ke browser Anda:'
+      footer_text: Masih banyak lagi yang harus dipelajari ...
+      notification_link: Pengaturan pemberitahuan
+      subject_line: Komentar tugas baru
+      support_link: Dukung
+    otp:
+      ignore_msg: Jika Anda tidak membuat permintaan ini, abaikan email tersebut.
+      subject_line: Kode unik Anda untuk Lingu
+      unique_code_for_lingu: Ini kode unik Anda untuk Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Sudah memiliki akun?
+      back: Kembali
+      back_to_sign_in: Kembali ke Masuk
+      check_your_email_for_a_code: Periksa email Anda untuk kode Anda
+      continue: Terus
+      continue_with_email: Lanjutkan dengan email
+      continue_with_provider: Lanjutkan dengan %{provider}
+      did_not_receive_a_code: Tidak menerima kode?
+      email_address: Alamat email
+      first_name: Nama depan
+      get_unique_code: Dapatkan kode login unik
+      join_lingu: Bergabunglah dengan Lingu
+      last_name: nama keluarga
+      more_login_options: Opsi masuk lainnya
+      no_account_question: Belum punya akun?
+      or: atau
+      resend_code: Kirim ulang kode
+      sign_in: Masuk
+      sign_up: Daftar
+      want_to_receive_marketing_messages: Saya ingin menerima pesan pemasaran dari
+        Lingu
+      we_ve_sent_a_code: >-
+        Kami telah mengirimkan kode 6 digit ke <strong> {{email}} </strong>. Kode
+        kedaluwarsa dalam 15 menit, jadi harap segera masukkan.
+    cookie_agreement:
+      agree: Setuju
+      condition: >-
+        Kami menggunakan cookie untuk menganalisis kinerja situs dan mengirimkan konten
+        yang dipersonalisasi. Dengan mengklik "Setuju", Anda menyetujui ketentuan
+        kami.
+    course:
+      accredited_course_provider: Penyedia kursus terakreditasi
+      apply: Menerapkan
+      apply_filters: Terapkan filter
+      by: Oleh
+      cancel: Membatalkan
+      categories: "%{count} kategori"
+      category: Kategori
+      clear: Bersih
+      clear_filters: Hapus filter
+      contact_us: Hubungi kami
+      could_not_find_match_for: Maaf, kami tidak dapat menemukan yang cocok untuk
+      course_language: Bahasa kursus
+      duration: Durasi
+      filter_settings:
+        categories:
+          academic: Akademik
+          business: Bisnis
+          fashion: Mode
+          food_drink: Makanan Minuman
+          for_kids: Untuk anak-anak
+          general: Umum
+          health: Kesehatan
+          legal: Hukum
+          sport: Olahraga
+          travel: Perjalanan
+        durations:
+          t0_600: "<10 menit"
+          t1800_3600: 30-60 menit
+          t3600_86400: 1+ jam
+          t600_1800: 10-30 menit
+        focus_on:
+          conversation: Percakapan
+          grammar: Tatabahasa
+          listening: Mendengarkan
+          pronunciation: Pengucapan
+          reading: Bacaan
+          speaking: Berbicara
+          writing: Penulisan
+        levels:
+          long:
+            advanced: Tingkat Lanjut
+            elementary: Tingkat dasar
+            intermediate: Tingkat menengah
+            no_knowledge: Tidak ada pengetahuan
+            pre_intermediate: Pra tingkat menengah
+            upper_intermediate: Tingkat menengah atas
+          short:
+            advanced: Maju
+            beginner: Pemula
+            intermediate: Menengah
+        sort_by:
+          most_rated: Peringkat terbanyak
+          newest: Terbaru
+          popularity: Kepopuleran
+      filters: Filter
+      focus_on: Fokus pada
+      focus_on_title: Saya ingin fokus
+      hide_lessons: Sembunyikan pelajaran
+      hours: Jam
+      i_understand: saya mengerti
+      i_want_to_learn: saya ingin belajar
+      in_language: di %{language}
+      language: Bahasa
+      learn_more: Belajarlah lagi
+      less_settings: Lebih sedikit pengaturan
+      lessons: Pelajaran
+      lessons_available: "%{number} pelajaran tersedia"
+      lessons_catalog_page_subtitle: Menjadi pahlawan bahasa.
+      lessons_catalog_page_title: Perluas wawasan Anda dengan kursus bahasa
+      level: Tingkat
+      min: Min
+      more_settings: Lebih banyak pengaturan
+      navbar:
+        close: Tutup menu
+        menu: Tidak bisa
+        select_language: Pilih bahasa
+      need_to_buy_course: Anda perlu memesan kursus terlebih dahulu
+      no_description: Tidak ada deskripsi yang tersedia
+      no_results: Maaf, kami tidak dapat menemukan yang cocok untuk
+      or: atau
+      per_month: per bulan
+      plans: Rencana
+      privacy_policy: Kebijakan pribadi
+      rating: Peringkat
+      remove_all_filters: Hapus semua filter
+      reviews: Ulasan
+      save: Menyimpan
+      search: Cari
+      select_dots: Pilih...
+      select_languages: Pilih bahasa
+      select_num_languages: Pilih bahasa %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Tunjukkan semua
+      show_all_lessons: Tunjukkan semua pelajaran
+      show_lessons: Tunjukkan pelajaran %{number}
+      show_more: Menampilkan lebih banyak
+      sign_up_with_lingu_for: Daftar dengan Lingu Norway untuk
+      skills: "%{count}"
+      sort_by: Sortir dengan
+      start_typing_here: Mulailah mengetik di sini
+      teach: Mengajar
+      terms_and_conditions: Syarat dan ketentuan
+      time_range: Rentang waktu
+      try_adjusting_your_search: Coba sesuaikan pencarian Anda dengan mengubah filter
+        Anda
+      try_this_course: Coba kursus ini
+      website_language: Bahasa situs web
+      words: Kata-kata
+    games:
+      finished:
+        go_to_next_exercise: Sudah selesai dilakukan dengan baik! Lanjutkan ke latihan
+          berikutnya
+      flashcard:
+        buttons:
+          finish: Selesai
+          next: Lanjut
+          previous: Sebelumnya
+        check_out_new_words: Lihat kata-kata baru yang akan Anda pelajari dalam pelajaran
+          ini
+        frequency_of_word_usage: Frekuensi penggunaan kata dalam %{language}
+        keep_practice_to_learn_all_words: Tinjau kata-kata %{count} dan mari kita
+          mainkan beberapa game!
+        word_frequency:
+          level1: Jarang digunakan
+          level2: Jarang digunakan
+          level3: Frekuensi kata - sedang
+          level4: Frekuensi kata - sedang
+          level5: Umum
+          level6: Sangat umum
+      match_word:
+        click_and_move_each_word_to_counterpart: Klik dan pindahkan setiap kata ke
+          pasangannya
+        start_heading: Cocokkan kata untuk membuat pasangan
+        time_is_up: Waktunya habis!
+      skip_tutorial: Melewatkan
+      time_is_up: Waktunya habis!
+      word_nodes:
+        match_letters_to_form_word: Cocokkan huruf untuk membentuk kata
+      word_waterfall:
+        do_not_hesitate: Ayo percepat!
+        go_to_next_exercise: Lanjutkan ke latihan berikutnya
+        select_correct_translation: Pilih kecocokan yang benar
+        well_done: Sudah selesai dilakukan dengan baik!
+    home_page:
+      hello: Halo,
+      popular_lessons: Pelajaran populer
+      show_more: Menampilkan lebih banyak
+      time: "%{count} mnt"
+      today_lesson: Pelajaran Anda untuk hari ini
+      user_name: "%{name}!"
+      words: "%{count} kata"
+    idle_screen:
+      by_author: oleh %{authorName}
+      continue_lesson: Lanjutkan pelajaran
+      exit: Keluar
+      idle_message: Anda sudah menganggur selama beberapa waktu ...
+    lesson_page:
+      back_to_course_page: Kembali ke halaman kursus
+      close: Menutup
+      continue_lesson: Lanjutkan pelajaran
+      followed: Diikuti
+      hamburger_menu_btn: Menu hamburger
+      lesson_given: pelajaran
+      not_started: belum mulai
+      or: Atau
+      part_complete: "%{percent}% selesai"
+      restart_lesson: Mengulang kembali
+      section_check: Memeriksa
+      section_check_info: "%{count} tes"
+      section_learn: Belajar
+      section_learn_info: "%{count} menit untuk menonton dan membaca"
+      section_play: Bermain
+      section_play_info: "%{count} kata untuk berlatih"
+      start_lesson: Mulai pelajaran
+      step_progress: "%{percent}%"
+      subscribe: Mengikuti
+      subscribed: Diikuti
+      subscribers: pengikut
+      time_min: "%{minutesNumber} mnt"
+      unsubscribe: Berhenti mengikuti
+      webview_error_title: Ada yang salah...
+      words_number: "%{wordsNumber} kata baru"
+    lesson_task:
+      cancel_button: Membatalkan
+      check:
+        navigation_next: Lanjut
+        navigation_previous: Sebelumnya
+        navigation_skip: Melewatkan
+      controls_panel:
+        font_size_button: Ukuran huruf
+        high_contrast_button:
+          origin: Kontras tinggi
+          short: Kontras
+        hints_button: Petunjuk
+        music_playback_button:
+          origin: Pemutaran musik
+          short: Musik
+        sound_effects_button:
+          origin: Efek suara
+          short: Suara
+      exit_button: Keluar
+      finish_button: Selesai
+      finished:
+        back_to_learn: Kembali belajar
+        back_to_lesson_page: Kembali ke halaman pelajaran
+        back_to_results_page: Kembali ke halaman hasil
+        bad_result_message: Hmm ... coba ambil pelajaran sekali lagi
+        close_lesson: Tutup pelajaran
+        correct_answers_list: Daftar jawaban yang benar
+        good_result_message: Saya dapat melihat Anda telah berusaha!
+        great_result_message: Sudah selesai dilakukan dengan baik! Ini hasil yang
+          bagus!
+        next_course_lesson: Lanjutkan ke pelajaran berikutnya dalam kursus
+        no_results: Anda belum memiliki hasil tes
+        no_results_text: Tolong, selesaikan pelajaran dan lulus tes untuk mendapatkan
+          hasilnya
+        see_correct_answers_list: Lihat daftar jawaban yang benar
+        train_more: >-
+          Berlatih lebih banyak dan Anda akan mencapai hasil yang lebih baik di lain
+          waktu!
+        you_finished_lesson: Bagus! Anda menyelesaikan pelajaran
+      go_back: Kembali
+      next_button: Lanjut
+      not_available_task: Tugas ini belum tersedia
+      start_button: Mulailah
+      tasks:
+        check:
+          assignment:
+            accept: Menerima
+            author_will_check_your_answer: >-
+              %{author} akan meninjau jawaban Anda dan biasanya memberikan masukan
+              dalam 1-2 hari
+            continue_writing: Lanjutkan menulis
+            copy: Salinan
+            delete: Menghapus
+            delete_record: Hapus catatan
+            edit: Edit
+            essay_does_not_have_enough_words: >-
+              Jawaban Anda harus berisi setidaknya %{minWordsNumber} kata. Jawaban
+              Anda saat ini adalah %{currentWordsNumber} kata.
+            followers_count: "%{followersCount} pengikut"
+            lessons_count: "%{lessonsCount} pelajaran"
+            minimal_recording_time: Waktu perekaman minimal - %{minimalRecordingTime}
+            minimum_characters_amount: Karakter minimum - %{minimumCharactersAmount}
+            minimum_words_amount: Kata minimum - %{minimumAmount}
+            record_again: Rekam lagi
+            record_voice: Rekam suara
+            send_anyway: Tetap kirim
+            send_to_review: Kirim untuk ditinjau
+            skip: Melewatkan
+            too_short_answer: Jawaban terlalu pendek
+            type_your_answer: Ketik jawabanmu
+            unknown_task_type: Jenis tugas tidak diketahui
+            upgrade_licence: Tingkatkan lisensi
+            upgrade_your_plan: Tingkatkan paket Anda untuk mencoba tugas dengan ulasan
+              guru
+            upload_files: Unggah berkas
+            write_essay: Tulis esai
+            you_have_used_amount_of_assignments: Anda telah menggunakan kredit tugas
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Celah kalimat
+          fill_in_table:
+            column_answer_placeholder: Menjawab
+            column_question_placeholder: Pertanyaan
+            example: Contoh
+          true_false:
+            'false': Salah
+            'true': Benar
+        learn:
+          translatable_text:
+            show_original: Menunjukkan yang asli
+            translate_into: Terjemahkan dengan Google ke dalam %{languageName}
+            translate_into_your_lang: Terjemahkan dengan Google ke dalam bahasa Anda
+        play:
+          arrange_words:
+            start_screen:
+              heading: Buatlah kalimat dari kata-kata yang diberikan
+          audition:
+            start_screen:
+              heading: Dengarkan audionya dan ketuk kata yang baru saja Anda dengar
+          dictation:
+            get_help: Mendapatkan bantuan
+            i_do_not_know: Saya tidak tahu
+            input_placeholder: Masukkan apa yang Anda dengar di sini
+            start_screen:
+              heading: Dengarkan dan tulis apa yang Anda dengar
+          fill_gap:
+            start_screen:
+              heading: Cocokkan kata dan artinya
+          finish_screen:
+            go_to_next_exercise: Sudah selesai dilakukan dengan baik! Lanjutkan ke
+              latihan berikutnya
+          image_hotspot:
+            start_screen:
+              heading: Beri nama objek di gambar dengan benar
+          image_object:
+            start_screen:
+              heading: Pilih objek yang tepat dari gambar berikutnya
+          inline_dropdown:
+            start_screen:
+              heading: Pilih kata-kata yang cocok dengan kalimat tersebut
+          mark_word:
+            start_screen:
+              heading: Baca teks dan pilih kata yang cocok dengan gambar
+          minimal_pairs:
+            start_screen:
+              heading: Tonton videonya dan pilih opsi yang benar
+    locale:
+      currency_switcher_title: Pengalih mata uang
+      lang_switcher_title: Pengalih bahasa
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Inggris
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Belanda
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio sedang dimuat
+        aria_pause_button: Berhenti sebentar
+        aria_play_button: Bermain
+        aria_reload_button: Muat ulang
+        aria_stop_button: Berhenti
+        reload_message: Gagal memuat audio. Silakan klik tombol untuk memuat ulang.
+    mobile_modal:
+      apply: Menerapkan
+      cancel: Membatalkan
+      clear: Bersih
+      save: Menyimpan
+    page404:
+      goToStartLessonPage: Buka halaman mulai pelajaran
+      ooops: Ups ...
+      sorry_message: Maaf, Tor tidak dapat menemukan halaman ini
+    profile:
+      navigation:
+        log_out: Keluar
+        my_profile: Profil saya
+        settings: Pengaturan
+      onboarding:
+        choose_native_language: Pilih bahasa ibu atau bahasa yang Anda pahami
+        do_you_understand_english: Apakah kamu mengerti bahasa Inggris?
+        hello: Halo
+        language_levels:
+          a1: Tingkat dasar
+          a2: Tingkat pra-menengah
+          b1: Tingkat menengah
+          b2: Tingkat Menengah Atas
+          c1: Tingkat Lanjut
+          no_knowledge: Tidak ada pengetahuan
+        language_not_supported:
+          note: Kami akan memberi tahu Anda segera setelah bahasa tersedia
+          title: Maaf, kami belum mendukung bahasa ini
+          try_another_language: Coba bahasa lain
+        'no': Tidak
+        search_placeholder: Cari...
+        show_more_languages: Bahasa lainnya
+        target_language_question: Bahasa apa yang ingin kamu pelajari?
+        what_is_language_level: Bagaimana Anda menilai level %{languageName} Anda?
+        'yes': Iya
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Kebijakan privasi Lingu
+        support: Dukung
+      logout: Keluar
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Terima pembaruan dari guru dan sekolah yang Anda ikuti
+              sections:
+                app_notifications: Pemberitahuan aplikasi
+                email: Surel
+              title: Bantuan belajar
+            marketing:
+              description: Tetap terinformasi tentang semua promosi, pembaruan, dan
+                inspirasi dari Lingu
+              sections:
+                browser_notifications: Pemberitahuan browser
+                email: Surel
+              title: Pemasaran
+          title: Preferensi kontak
+        personal_information:
+          delete_photo: Menghapus foto
+          email: Surel
+          first_name: Nama depan
+          last_name: nama keluarga
+          social_accounts:
+            connected: Terhubung
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Tidak terhubung
+            title: Akun sosial
+          title: Informasi pribadi
+          update_photo: Perbarui foto
+        school:
+          active_licence: Lisensi aktif
+          active_status: Aktif
+          delete_profile: Hapus profil saya
+          delete_profile_modal:
+            body: |-
+              Anda menghapus semua data Anda — selamanya. Tidak ada tombol urungkan, dan kami tidak bisa mengembalikannya untuk Anda setelahnya.
+              Apakah Anda yakin ingin menghapus profil Lingu dan semua data Anda secara permanen?
+            cancel: Membatalkan
+            confirm: Ya, hapus
+            i_understand_the_consequences: Saya mengerti konsekuensinya
+            title: Hapus profil Anda?
+          expired: Kedaluwarsa %{expire_date}
+          expires: Kedaluwarsa %{expire_date}
+          inactive_status: Tidak aktif
+          revoke_access: Cabut akses baca
+          sections:
+            contact_school: Hubungi sekolah
+            export_my_data: Ekspor data saya
+            read_school_privacy_policy: Baca Kebijakan Privasi Sekolah
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Pemutaran musik
+              sound_effects: Efek suara
+              title: Suara
+            visual:
+              dark_theme: Tema gelap
+              font_size:
+                test_text: Rerumputan selalu lebih hijau di sisi lain pagar
+                title: Ukuran huruf
+              high_contrast: Kontras tinggi
+              hints: Petunjuk
+              title: Visual
+          title: Suara & Visual
+        training_settings:
+          sections:
+            i_understand: saya mengerti
+            i_want_to_learn: saya ingin belajar
+            target_language_level: Tingkat bahasa Inggris
+          title: Pengaturan pelatihan
+      settings_title: Pengaturan
+    teacher_card:
+      followers_count:
+        one: 1 pengikut
+        other: "%{count} pengikut"
+      lessons_count:
+        one: 1 pelajaran
+        other: "%{count} pelajaran"

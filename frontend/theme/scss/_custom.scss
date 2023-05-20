@@ -1,0 +1,52 @@
+#vocabulary-list {
+  .badge {
+    font-size: 1.1rem;
+  }
+}
+.nav-pills {
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: white !important;
+  }
+}
+
+.bg-muted {
+  background-color: $gray-100;
+  color: $gray-500;
+  a {
+    color: $gray-500 !important;
+  }
+}
+
+.card {
+  &.corner-warning {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: -33px;
+      width: 40px;
+      height: 200%;
+      background-color: $warning;
+    }
+  }
+  &.corner-success {
+    position: relative;
+    overflow:hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: -33px;
+      width: 40px;
+      height: 200%;
+      background-color: $success;
+    }
+  }
+}

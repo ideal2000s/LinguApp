@@ -1,0 +1,21 @@
+$('#assignment-modal').find('.modal-content')
+  .html("<%= j render 'form', path: assign_student_school_assignment_path, method: :post, title: t('school.school_assignments.assign_to_student'),
+  submit_title: t('shared.send'), assignment: assignment, students: students %>")
+
+function formatStudent (student) {
+  student_info = student.text.split(', ');
+  if(!student.id) { return '<%= t('school.school_assignments.form.select_student') %>' }
+  img = student_info[0] === '' ? `<div class="assignment-student-fallback d-flex align-items-center justify-content-center">${student_info[1]}</div>`
+    : `<img src=${student_info[0]} class="assignment-student-avatar">`
+  return $(
+    `<div class="d-flex align-items-center select-dropdown-item">${img}<span class="student-text">${student_info[2]}</span></div>`
+  )
+}
+
+$("#assignment-modal .select-students").select2({
+  theme: 'bootstrap4',
+  dropdownParent: $('#assignment-modal .modal-content'),
+  templateResult: formatStudent,
+  templateSelection: formatStudent,
+  minimumResultsForSearch: -1
+})

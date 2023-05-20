@@ -1,0 +1,6 @@
+.card.mt-3
+  .card-header.bg-light
+    h3.card-title.mb-0= t('.reviews')
+
+  #review__items
+    = render 'teach/reviews/items', reviews: reviews, lesson: lesson

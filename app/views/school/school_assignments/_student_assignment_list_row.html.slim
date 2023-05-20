@@ -1,0 +1,11 @@
+- student = student_assignment.student
+tr class="assignment-student-#{student_assignment.status}" onclick="javascript:assignmentRowClick('#{review_school_assignment_path(student_assignment.assignment, student_assignment: student_assignment)}')" id=dom_id(student_assignment)
+  td
+    .d-flex.align-items-center
+      = custom_profile_tag(student)
+      .student-full-name.ml-3
+        = student.full_name
+  td
+    = l(student_assignment.passed_at, format: :default) if student_assignment.passed_at
+  td
+    = student_assignment_status_tag(student_assignment)

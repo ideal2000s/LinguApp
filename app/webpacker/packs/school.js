@@ -1,0 +1,13 @@
+import 'bootstrap';
+import 'jquery';
+import '../stylesheets/school.scss';
+import 'intl-tel-input/build/css/intlTelInput.css';
+import '../school_extension';
+import 'chart.js';
+import 'theme';
+import '../extensions/select2';
+import Rails from '@rails/ujs';
+Rails.start();
+const componentRequireContext = require.context("school", true);
+const ReactRailsUJS = require("react_ujs");
+ReactRailsUJS.useContext(componentRequireContext);

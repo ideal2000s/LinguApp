@@ -1,0 +1,8 @@
+@import '~bootstrap/scss/functions';
+@import 'overrides/variables';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/bootstrap';
+@import 'overrides/buttons';
+@import 'custom';
+@import '../extensions/uppy/file-button';

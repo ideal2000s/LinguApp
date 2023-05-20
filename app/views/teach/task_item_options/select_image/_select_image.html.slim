@@ -1,0 +1,17 @@
+div id=dom_id(option)
+  .inline
+    .row
+      .col-sm-2
+        = best_in_place option, :correct, as: :checkbox, collection: { true: t('correct'), false: t('incorrect') },
+                data: { true_class: 'btn-success', false_class: 'btn-danger' },
+                url: toggle_correct_teach_item_option_path(item, option),
+                class: "btn rounded-capsule btn-sm mr-1 btn-#{option.correct ? 'success' : 'danger' }"
+      .col-sm-8
+        - if option.image
+          = image_tag(option.image_url(:lesson_ui).to_s, title: option.image.original_filename, class: 'max-w-50')
+        - else
+          | Error: file is missing
+      .col-sm-2
+        = link_to teach_item_option_path(item, option), method: :delete, remote: true, class: 'btn btn-falcon-danger btn-sm align-middle', data: { confirm: 'Delete this item?' } do
+          i.fas.fa-times.fa-fw
+  hr

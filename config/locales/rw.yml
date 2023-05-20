@@ -1,0 +1,611 @@
+---
+rw:
+  course_mailer:
+    course_assigned_notification:
+      button: Tangira amasomo
+      click_start_lesson: Kanda 'Tangira isomo'
+      follow_course_link: Kanda buto kugirango ufungure amasomo
+      footer_text: Garuka i Lingu wige ikintu gishya buri munsi!
+      get_started_line: 'Dore uko utangira:'
+      notification_link: Igenamiterere
+      open_lesson: Fungura isomo rya mbere
+      or_paste_this_link: cyangwa wandike iyi link muri mushakisha yawe
+      sign_in_with_email: Injira hamwe na imeri yawe (%{email})
+      support_link: Inkunga
+      title: Gutangira na %{course}
+    new_document_comment:
+      author_text: "%{author} yasize isubiramo umukoro wawe"
+      button_text: Reba neza
+      button_url_helper: 'cyangwa andika iyi link muri mushakisha yawe:'
+      footer_text: Hariho byinshi byo kwiga ...
+      notification_link: Igenamiterere
+      subject_line: Igitekerezo gishya
+      support_link: Inkunga
+    otp:
+      ignore_msg: Niba utakoze iki cyifuzo, wirengagize imeri.
+      subject_line: Kode yawe yihariye ya Lingu
+      unique_code_for_lingu: Dore code yawe yihariye ya Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Ufite konti?
+      back: Inyuma
+      back_to_sign_in: Subira Kwinjira
+      check_your_email_for_a_code: Reba imeri yawe kuri kode yawe
+      continue: Komeza
+      continue_with_email: Komeza ukoresheje imeri
+      continue_with_provider: Komeza hamwe na %{provider}
+      did_not_receive_a_code: Ntabwo wakiriye kode?
+      email_address: Aderesi imeri
+      first_name: Izina ryambere
+      get_unique_code: Kubona kode idasanzwe
+      join_lingu: Injira Lingu
+      last_name: Izina ryanyuma
+      more_login_options: Amahitamo menshi yo kwinjira
+      no_account_question: Ntabwo ufite konti?
+      or: cyangwa
+      resend_code: Kohereza kode
+      sign_in: Injira
+      sign_up: Iyandikishe
+      want_to_receive_marketing_messages: Ndashaka kwakira ubutumwa bwo kwamamaza
+        muri Lingu
+      we_ve_sent_a_code: >-
+        Twohereje kode 6 yimibare kuri <strong> {{imeri}} </strong>. Kode irangira
+        muminota 15, nyamuneka iyinjire vuba.
+    cookie_agreement:
+      agree: Emera
+      condition: >-
+        Dukoresha kuki mu gusesengura imikorere yurubuga no gutanga ibintu byihariye.
+        Ukanze "Emera", wemera ibisabwa.
+    course:
+      accredited_course_provider: Utanga amasomo yemewe
+      apply: Koresha
+      apply_filters: Koresha muyunguruzi
+      by: Na
+      cancel: Kureka
+      categories: ibyiciro bya %{count}
+      category: Icyiciro
+      clear: Biragaragara
+      clear_filters: Kuramo Akayunguruzo
+      contact_us: Twandikire
+      could_not_find_match_for: Ihangane, ntitwashoboye kubona aho duhurira
+      course_language: Ururimi rw'amasomo
+      duration: Ikiringo
+      filter_settings:
+        categories:
+          academic: Amasomo
+          business: Ubucuruzi
+          fashion: Imyambarire
+          food_drink: Ibiryo & ibinyobwa
+          for_kids: Kubana
+          general: Jenerali
+          health: Ubuzima
+          legal: Byemewe n'amategeko
+          sport: Siporo
+          travel: Urugendo
+        durations:
+          t0_600: "<Iminota 10"
+          t1800_3600: Iminota 30-60
+          t3600_86400: Isaha 1+
+          t600_1800: Iminota 10-30
+        focus_on:
+          conversation: Ikiganiro
+          grammar: Ikibonezamvugo
+          listening: Gutegera
+          pronunciation: Imvugo
+          reading: Gusoma
+          speaking: Kuvuga
+          writing: Kwandika
+        levels:
+          long:
+            advanced: Urwego rwo hejuru
+            elementary: Urwego rwibanze
+            intermediate: Urwego rwagati
+            no_knowledge: Nta bumenyi
+            pre_intermediate: Urwego rwagateganyo
+            upper_intermediate: Urwego rwo hejuru
+          short:
+            advanced: Yateye imbere
+            beginner: Intangiriro
+            intermediate: Hagati
+        sort_by:
+          most_rated: Benshi
+          newest: Agashya
+          popularity: Icyamamare
+      filters: Muyunguruzi
+      focus_on: Wibande
+      focus_on_title: Ndashaka kwibandaho
+      hide_lessons: Hisha amasomo
+      hours: Amasaha
+      i_understand: Ndabyumva
+      i_want_to_learn: Ndashaka kwiga
+      in_language: muri %{language}
+      language: Ururimi
+      learn_more: Wige byinshi
+      less_settings: Igenamiterere rito
+      lessons: Amasomo
+      lessons_available: "%{number} amasomo arahari"
+      lessons_catalog_page_subtitle: Ba intwari y'ururimi.
+      lessons_catalog_page_title: Kwagura ibizenguruka hamwe n'amasomo y'ururimi
+      level: Urwego
+      min: Min
+      more_settings: Igenamiterere ryinshi
+      navbar:
+        close: Funga menu
+        menu: Ibikubiyemo
+        select_language: Hitamo ururimi
+      need_to_buy_course: Ugomba kubanza gutondeka amasomo
+      no_description: Nta bisobanuro byatanzwe
+      no_results: Ihangane, ntitwashoboye kubona aho duhurira
+      or: cyangwa
+      per_month: ku kwezi
+      plans: Gahunda
+      privacy_policy: Politiki y’ibanga
+      rating: Urutonde
+      remove_all_filters: Kuraho muyunguruzi
+      reviews: Isubiramo
+      save: Bika
+      search: Shakisha
+      select_dots: Hitamo ...
+      select_languages: Hitamo indimi
+      select_num_languages: Hitamo indimi %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Erekana byose
+      show_all_lessons: Erekana amasomo yose
+      show_lessons: Erekana amasomo ya %{number}
+      show_more: Erekana byinshi
+      sign_up_with_lingu_for: Iyandikishe hamwe na Lingu Noruveje ya
+      skills: "%{count} ubuhanga"
+      sort_by: Gutondekanya na
+      start_typing_here: Tangira kwandika hano
+      teach: Igisha
+      terms_and_conditions: Amategeko n'amabwiriza
+      time_range: Igihe cyagenwe
+      try_adjusting_your_search: Gerageza guhindura ubushakashatsi bwawe uhindura
+        muyungurura
+      try_this_course: Gerageza aya masomo
+      website_language: Ururimi
+      words: Amagambo
+    games:
+      finished:
+        go_to_next_exercise: Muraho neza! Jya mu myitozo ikurikira
+      flashcard:
+        buttons:
+          finish: Kurangiza
+          next: Ibikurikira
+          previous: Mbere
+        check_out_new_words: Reba amagambo mashya uziga muri iri somo
+        frequency_of_word_usage: Inshuro yo gukoresha ijambo muri %{language}
+        keep_practice_to_learn_all_words: Ongera usubiremo amagambo ya %{count} hanyuma
+          dukine imikino imwe n'imwe!
+        word_frequency:
+          level1: Ni gake ikoreshwa
+          level2: Ni gake ikoreshwa
+          level3: Ijambo inshuro - hagati
+          level4: Ijambo inshuro - hagati
+          level5: Bisanzwe
+          level6: Birasanzwe
+      match_word:
+        click_and_move_each_word_to_counterpart: Kanda hanyuma wimure buri jambo kuri
+          mugenzi waryo
+        start_heading: Huza amagambo kugirango ukore
+        time_is_up: Igihe kirageze!
+      skip_tutorial: Simbuka
+      time_is_up: Igihe kirageze!
+      word_nodes:
+        match_letters_to_form_word: Huza inyuguti kugirango ukore ijambo
+      word_waterfall:
+        do_not_hesitate: Reka twihute!
+        go_to_next_exercise: Jya mu myitozo ikurikira
+        select_correct_translation: Hitamo guhuza neza
+        well_done: Muraho neza!
+    home_page:
+      hello: Mwaramutse,
+      popular_lessons: Amasomo azwi
+      show_more: Erekana byinshi
+      time: "%{count} min"
+      today_lesson: Isomo ryawe uyu munsi
+      user_name: "%{name}!"
+      words: "%{count} amagambo"
+    idle_screen:
+      by_author: by %{authorName}
+      continue_lesson: Komeza isomo
+      exit: Sohoka
+      idle_message: Umaze igihe ukora ubusa ...
+    lesson_page:
+      back_to_course_page: Subira kurupapuro
+      close: Funga
+      continue_lesson: Komeza isomo
+      followed: Bikurikiranye
+      hamburger_menu_btn: Hamburger menu
+      lesson_given: amasomo
+      not_started: ntabwo byatangiye
+      or: Cyangwa
+      part_complete: "%{percent}% byuzuye"
+      restart_lesson: Ongera utangire
+      section_check: Reba
+      section_check_info: ibizamini bya %{count}
+      section_learn: Iga
+      section_learn_info: "%{count} min kureba no gusoma"
+      section_play: Kina
+      section_play_info: "%{count} amagambo yo kwitoza"
+      start_lesson: Tangira isomo
+      step_progress: "%{percent}%"
+      subscribe: Kurikira
+      subscribed: Bikurikiranye
+      subscribers: abayoboke
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Kurikira
+      webview_error_title: Ikintu kitagenze neza ...
+      words_number: "%{wordsNumber} amagambo mashya"
+    lesson_task:
+      cancel_button: Kureka
+      check:
+        navigation_next: Ibikurikira
+        navigation_previous: Mbere
+        navigation_skip: Simbuka
+      controls_panel:
+        font_size_button: Ingano yimyandikire
+        high_contrast_button:
+          origin: Itandukaniro ryinshi
+          short: Itandukaniro
+        hints_button: Ibitekerezo
+        music_playback_button:
+          origin: Gukina umuziki
+          short: Umuziki
+        sound_effects_button:
+          origin: Ingaruka zijwi
+          short: Ijwi
+      exit_button: Sohoka
+      finish_button: Kurangiza
+      finished:
+        back_to_learn: Subira kwiga
+        back_to_lesson_page: Subira ku rupapuro rw'isomo
+        back_to_results_page: Garuka kurupapuro rwibisubizo
+        bad_result_message: Hmm ... gerageza gufata isomo ikindi gihe
+        close_lesson: Isomo rya hafi
+        correct_answers_list: Urutonde rwibisubizo
+        good_result_message: Ndabona washyizeho umwete!
+        great_result_message: Muraho neza! Ibi nibisubizo byiza!
+        next_course_lesson: Jya mu isomo ritaha
+        no_results: Nta bisubizo by'ibizamini ufite
+        no_results_text: Nyamuneka, uzuza isomo hanyuma utsinde ikizamini kugirango
+          ubone ibisubizo
+        see_correct_answers_list: Reba urutonde rwibisubizo nyabyo
+        train_more: Witoze byinshi kandi uzagera kubisubizo byiza ubutaha!
+        you_finished_lesson: Birakomeye! Urangije isomo
+      go_back: Subira inyuma
+      next_button: Ibikurikira
+      not_available_task: Iki gikorwa ntikiraboneka
+      start_button: Tangira
+      tasks:
+        check:
+          assignment:
+            accept: Emera
+            author_will_check_your_answer: >-
+              %{author} izasubiramo igisubizo cyawe kandi mubisanzwe utange ibitekerezo
+              muminsi 1-2
+            continue_writing: Komeza wandike
+            copy: Gukoporora
+            delete: Siba
+            delete_record: Siba inyandiko
+            edit: Hindura
+            essay_does_not_have_enough_words: >-
+              Igisubizo cyawe kigomba kuba kirimo byibuze amagambo ya %{minWordsNumber}.
+              Igisubizo cyawe ni amagambo ya %{currentWordsNumber}.
+            followers_count: "%{followersCount} abayoboke"
+            lessons_count: "%{lessonsCount} amasomo"
+            minimal_recording_time: Igihe ntarengwa cyo gufata amajwi - %{minimalRecordingTime}
+            minimum_characters_amount: Inyuguti nto - %{minimumCharactersAmount}
+            minimum_words_amount: Amagambo make - %{minimumAmount}
+            record_again: Ongera wandike
+            record_voice: Andika ijwi
+            send_anyway: Ohereza uko byagenda kose
+            send_to_review: Ohereza gusubiramo
+            skip: Simbuka
+            too_short_answer: Igisubizo kigufi cyane
+            type_your_answer: Andika igisubizo cyawe
+            unknown_task_type: Ubwoko bw'imirimo itazwi
+            upgrade_licence: Kuzamura uruhushya
+            upgrade_your_plan: Kuzamura gahunda yawe yo kugerageza umukoro hamwe nabarimu
+              basubiramo
+            upload_files: Kuramo dosiye
+            write_essay: Andika inyandiko
+            you_have_used_amount_of_assignments: Wakoresheje inguzanyo za %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Ikinyuranyo cyinteruro
+          fill_in_table:
+            column_answer_placeholder: Igisubizo
+            column_question_placeholder: Ikibazo
+            example: Urugero
+          true_false:
+            'false': Ikinyoma
+            'true': Nukuri
+        learn:
+          translatable_text:
+            show_original: Erekana umwimerere
+            translate_into: Sobanura hamwe na Google muri %{languageName}
+            translate_into_your_lang: Sobanura hamwe na Google mu rurimi rwawe
+        play:
+          arrange_words:
+            start_screen:
+              heading: Kora interuro mu magambo yatanzwe
+          audition:
+            start_screen:
+              heading: Umva amajwi hanyuma ukande ku ijambo umaze kumva
+          dictation:
+            get_help: Shaka ubufasha
+            i_do_not_know: Sinzi
+            input_placeholder: Injira ibyo wumvise hano
+            start_screen:
+              heading: Umva kandi wandike ibyo wumva
+          fill_gap:
+            start_screen:
+              heading: Huza ijambo nubusobanuro bwaryo
+          finish_screen:
+            go_to_next_exercise: Muraho neza! Jya mu myitozo ikurikira
+          image_hotspot:
+            start_screen:
+              heading: Vuga ibintu biri ku ishusho neza
+          image_object:
+            start_screen:
+              heading: Tora ikintu gikwiye ku ishusho ikurikira
+          inline_dropdown:
+            start_screen:
+              heading: Toranya amagambo ahuye ninteruro
+          mark_word:
+            start_screen:
+              heading: Soma inyandiko hanyuma uhitemo ijambo rihuye nishusho
+          minimal_pairs:
+            start_screen:
+              heading: Reba videwo hanyuma uhitemo neza
+    locale:
+      currency_switcher_title: Guhindura amafaranga
+      lang_switcher_title: Guhindura ururimi
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Icyongereza
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Umutaliyano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederland
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Amajwi arimo gupakira
+        aria_pause_button: Kuruhuka
+        aria_play_button: Kina
+        aria_reload_button: Ongera usubiremo
+        aria_stop_button: Hagarara
+        reload_message: Kunanirwa gupakira amajwi. Nyamuneka kanda buto kugirango
+          wongere.
+    mobile_modal:
+      apply: Koresha
+      cancel: Kureka
+      clear: Biragaragara
+      save: Bika
+    page404:
+      goToStartLessonPage: Jya kurupapuro rwamasomo
+      ooops: Oooops ...
+      sorry_message: Ihangane, Tor ntishobora kubona iyi page
+    profile:
+      navigation:
+        log_out: Gusohoka
+        my_profile: Umwirondoro wanjye
+        settings: Igenamiterere
+      onboarding:
+        choose_native_language: Hitamo ururimi kavukire cyangwa ururimi wumva
+        do_you_understand_english: Wumva icyongereza?
+        hello: Mwaramutse
+        language_levels:
+          a1: Urwego rwibanze
+          a2: Urwego rwibanze
+          b1: Urwego rwagati
+          b2: Urwego rwo hejuru
+          c1: Urwego rwo hejuru
+          no_knowledge: Nta bumenyi
+        language_not_supported:
+          note: Tuzabamenyesha mugihe ururimi ruzaboneka
+          title: Ihangane, ariko ntabwo dushyigikiye uru rurimi
+          try_another_language: Gerageza urundi rurimi
+        'no': Oya
+        search_placeholder: Shakisha ...
+        show_more_languages: Izindi ndimi
+        target_language_question: Ni uruhe rurimi ushaka kwiga?
+        what_is_language_level: Nigute wagereranya urwego rwa %{languageName}?
+        'yes': Yego
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Politiki y’ibanga ya Lingu
+        support: Inkunga
+      logout: Gusohoka
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Akira amakuru mashya kubarimu n'amashuri ukurikira
+              sections:
+                app_notifications: Kumenyesha porogaramu
+                email: E-imeri
+              title: Imfashanyo yo kwiga
+            marketing:
+              description: >-
+                Komeza umenyeshe ibyerekeye kuzamurwa mu ntera, kuvugurura, no guhumekwa
+                kuva Lingu
+              sections:
+                browser_notifications: Amatangazo ya mushakisha
+                email: E-imeri
+              title: Kwamamaza
+          title: Menyesha ibyo ukunda
+        personal_information:
+          delete_photo: Siba ifoto
+          email: Imeri
+          first_name: Izina ryambere
+          last_name: Izina ryanyuma
+          social_accounts:
+            connected: Byahujwe
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ntabwo bihujwe
+            title: Konti rusange
+          title: Amakuru yihariye
+          update_photo: Kuvugurura ifoto
+        school:
+          active_licence: Uruhushya rukora
+          active_status: Bikora
+          delete_profile: Siba umwirondoro wanjye
+          delete_profile_modal:
+            body: |-
+              Uhanagura amakuru yawe yose - iteka ryose. Hano nta buto bwo gusubiramo, kandi ntidushobora kukugarura nyuma yawe.
+              Uzi neza ko ushaka gusiba burundu umwirondoro wawe wa Lingu hamwe namakuru yawe yose?
+            cancel: Kureka
+            confirm: Yego, siba
+            i_understand_the_consequences: Ndumva ingaruka
+            title: Siba umwirondoro wawe?
+          expired: "%{expire_date} yarangiye"
+          expires: Irangira %{expire_date}
+          inactive_status: Kudakora
+          revoke_access: Kuraho gusoma
+          sections:
+            contact_school: Menyesha ishuri
+            export_my_data: Kohereza amakuru yanjye
+            read_school_privacy_policy: Soma Politiki Yibanga Yishuri
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Gukina umuziki
+              sound_effects: Ingaruka zijwi
+              title: Ijwi
+            visual:
+              dark_theme: Insanganyamatsiko yijimye
+              font_size:
+                test_text: Ibyatsi bihora bibisi kurundi ruhande rwuruzitiro
+                title: Ingano yimyandikire
+              high_contrast: Itandukaniro ryinshi
+              hints: Ibitekerezo
+              title: Biboneka
+          title: Ijwi & Biboneka
+        training_settings:
+          sections:
+            i_understand: Ndabyumva
+            i_want_to_learn: Ndashaka kwiga
+            target_language_level: Urwego rw'icyongereza
+          title: Igenamiterere
+      settings_title: Igenamiterere
+    teacher_card:
+      followers_count:
+        one: 1 umuyoboke
+        other: "%{count} abayoboke"
+      lessons_count:
+        one: Isomo 1
+        other: "%{count} amasomo"

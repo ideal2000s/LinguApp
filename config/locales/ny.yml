@@ -1,0 +1,608 @@
+---
+ny:
+  course_mailer:
+    course_assigned_notification:
+      button: Yambani maphunzirowo
+      click_start_lesson: Dinani 'Yambitsani phunziro'
+      follow_course_link: Dinani batani kuti mutsegule njirayo
+      footer_text: Bwererani ku Lingu kuti muphunzire zatsopano tsiku lililonse!
+      get_started_line: 'Umu ndi momwe mumayambira:'
+      notification_link: Makonda azidziwitso
+      open_lesson: Tsegulani phunziro loyamba
+      or_paste_this_link: kapena onjezani ulalowu mu msakatuli wanu
+      sign_in_with_email: Lowani ndi imelo adilesi yanu (%{email})
+      support_link: Thandizo
+      title: Kuyamba ndi %{course}
+    new_document_comment:
+      author_text: "%{author} adasiya kuwunika ntchito yanu"
+      button_text: Onani
+      button_url_helper: 'kapena onjezani ulalowu mu msakatuli wanu:'
+      footer_text: Pali zambiri zoti muphunzire ...
+      notification_link: Makonda azidziwitso
+      subject_line: Ndemanga yatsopano
+      support_link: Thandizo
+    otp:
+      ignore_msg: Ngati simunapemphe izi, ingonyalanyazani imelo.
+      subject_line: Khodi yanu yapadera ya Lingu
+      unique_code_for_lingu: Nayi nambala yanu yapadera ya Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Muli ndi akaunti?
+      back: Kubwerera
+      back_to_sign_in: Back to Lowani
+      check_your_email_for_a_code: Onani imelo yanu kuti mupeze nambala yanu
+      continue: Pitirizani
+      continue_with_email: Pitirizani ndi imelo
+      continue_with_provider: Pitirizani ndi %{provider}
+      did_not_receive_a_code: Simunalandire nambala?
+      email_address: Imelo adilesi
+      first_name: Dzina loyamba
+      get_unique_code: Pezani nambala yolowera yapadera
+      join_lingu: Lowani ndi Lingu
+      last_name: Dzina lomaliza
+      more_login_options: Zowonjezera zolowera
+      no_account_question: Mulibe akaunti?
+      or: kapena
+      resend_code: Kutumizanso kachidindo
+      sign_in: Lowani muakaunti
+      sign_up: Lowani
+      want_to_receive_marketing_messages: Ndikufuna kulandira mauthenga otsatsa kuchokera
+        ku Lingu
+      we_ve_sent_a_code: >-
+        Tatumiza nambala ya manambala 6 ku <strong> {{email}} </strong>. Malamulowa
+        amatha mu mphindi 15, chifukwa chake chonde lembani posachedwa.
+    cookie_agreement:
+      agree: Gwirizanani
+      condition: >-
+        Timagwiritsa ntchito ma cookie kusanthula magwiridwe antchito atsamba ndikupereka
+        zokonda zanu. Mwa kuwonekera "Gwirizanani", mumavomereza zikhalidwe zathu.
+    course:
+      accredited_course_provider: Wovomerezeka wopereka maphunziro
+      apply: Ikani
+      apply_filters: Ikani zosefera
+      by: Ndi
+      cancel: Kuletsa
+      categories: magawo a %{count}
+      category: Gulu
+      clear: Chotsani
+      clear_filters: Chotsani zosefera
+      contact_us: Lumikizanani nafe
+      could_not_find_match_for: Pepani, sitinapeze chilichonse chofanana
+      course_language: Chilankhulo cha maphunziro
+      duration: Kutalika
+      filter_settings:
+        categories:
+          academic: Maphunziro
+          business: Bizinesi
+          fashion: Mafashoni
+          food_drink: Chakudya & chakumwa
+          for_kids: Za ana
+          general: Zonse
+          health: Zaumoyo
+          legal: Zamalamulo
+          sport: Masewera
+          travel: Kuyenda
+        durations:
+          t0_600: "<Mphindi 10"
+          t1800_3600: Mphindi 30-60
+          t3600_86400: 1+ ora
+          t600_1800: Mphindi 10-30
+        focus_on:
+          conversation: Kukambirana
+          grammar: Galamala
+          listening: Kumvetsera
+          pronunciation: Kutchulidwa
+          reading: Kuwerenga
+          speaking: Kulankhula
+          writing: Kulemba
+        levels:
+          long:
+            advanced: Mulingo wapamwamba
+            elementary: Mulingo woyambira
+            intermediate: Mulingo wapakatikati
+            no_knowledge: Palibe chidziwitso
+            pre_intermediate: Mulingo wapakatikati
+            upper_intermediate: Mulingo wapakatikati
+          short:
+            advanced: Zapamwamba
+            beginner: Woyambira
+            intermediate: Wapakatikati
+        sort_by:
+          most_rated: Ambiri adavotera
+          newest: Zatsopano kwambiri
+          popularity: Kutchuka
+      filters: Zosefera
+      focus_on: Onani kwambiri pa
+      focus_on_title: Ndikufuna kuyang'ana kwambiri
+      hide_lessons: Bisani maphunziro
+      hours: Maola
+      i_understand: Ndikumvetsa
+      i_want_to_learn: Ndikufuna kuphunzira
+      in_language: mu %{language}
+      language: Chilankhulo
+      learn_more: Dziwani zambiri
+      less_settings: Zochepera zochepa
+      lessons: Tikuphunzira
+      lessons_available: "%{number} maphunziro omwe alipo"
+      lessons_catalog_page_subtitle: Khalani ngwazi yolankhula.
+      lessons_catalog_page_title: Lonjezerani kutalika kwanu ndi maphunziro azilankhulo
+      level: Mulingo
+      min: Osachepera
+      more_settings: Makonda ena
+      navbar:
+        close: Tsekani menyu
+        menu: Menyu
+        select_language: Sankhani chinenero
+      need_to_buy_course: Muyenera kusungitsa kosi kaye
+      no_description: Palibe kufotokozera komwe kwaperekedwa
+      no_results: Pepani, sitinapeze chilichonse chofanana
+      or: kapena
+      per_month: pamwezi
+      plans: Mapulani
+      privacy_policy: Mfundo Zazinsinsi
+      rating: Mavoti
+      remove_all_filters: Chotsani zosefera zonse
+      reviews: Ndemanga
+      save: Sungani
+      search: Sakani
+      select_dots: Sankhani ...
+      select_languages: Sankhani maulendo
+      select_num_languages: Sankhani zilankhulo za %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Onetsani zonse
+      show_all_lessons: Onetsani maphunziro onse
+      show_lessons: Onetsani maphunziro a %{number}
+      show_more: Onetsani zambiri
+      sign_up_with_lingu_for: Lowani ndi Lingu Norway kwa
+      skills: "%{count} maluso"
+      sort_by: Sanjani potengera
+      start_typing_here: Yambani kulemba apa
+      teach: Phunzitsani
+      terms_and_conditions: Migwirizano ndi zokwaniritsa
+      time_range: Nthawi
+      try_adjusting_your_search: Yesetsani kusintha kusaka kwanu posintha zosefera
+      try_this_course: Yesani maphunzirowa
+      website_language: Chilankhulo cha webusayiti
+      words: Mawu
+    games:
+      finished:
+        go_to_next_exercise: Mwachita bwino! Pitani ku zochitika zotsatirazi
+      flashcard:
+        buttons:
+          finish: Malizitsani
+          next: Ena
+          previous: Zakale
+        check_out_new_words: Onani mawu atsopano omwe muphunzire mu phunziroli
+        frequency_of_word_usage: Pafupipafupi kagwiritsidwe ntchito ka mawu mu %{language}
+        keep_practice_to_learn_all_words: Unikani mawu a %{count} ndipo tiyeni tichite
+          masewera ena!
+        word_frequency:
+          level1: Kawirikawiri amagwiritsidwa ntchito
+          level2: Kawirikawiri amagwiritsidwa ntchito
+          level3: Kutulutsa mawu - wapakatikati
+          level4: Kutulutsa mawu - wapakatikati
+          level5: Zofala
+          level6: Zofala kwambiri
+      match_word:
+        click_and_move_each_word_to_counterpart: Dinani ndikusuntha liwu lirilonse
+          kwa mnzake
+        start_heading: Fananizani mawu kuti mupange peyala
+        time_is_up: Nthawi yatha!
+      skip_tutorial: Pitani
+      time_is_up: Nthawi yatha!
+      word_nodes:
+        match_letters_to_form_word: Fananitsani zilembo kuti mupange mawu
+      word_waterfall:
+        do_not_hesitate: Tiyeni tifulumizitse!
+        go_to_next_exercise: Pitani ku zochitika zotsatirazi
+        select_correct_translation: Sankhani machesi olondola
+        well_done: Mwachita bwino!
+    home_page:
+      hello: Moni,
+      popular_lessons: Maphunziro otchuka
+      show_more: Onetsani zambiri
+      time: "%{count} min"
+      today_lesson: Phunziro lanu lero
+      user_name: alireza.
+      words: "%{count} mawu"
+    idle_screen:
+      by_author: by Nyimbo Zachimalawi
+      continue_lesson: Pitirizani kuphunzira
+      exit: Potulukira
+      idle_message: Mwakhala osachita kanthu kwakanthawi ...
+    lesson_page:
+      back_to_course_page: Bwererani ku tsamba la maphunziro
+      close: Tsekani
+      continue_lesson: Pitirizani kuphunzira
+      followed: Tsatirani
+      hamburger_menu_btn: Menyu ya Hamburger
+      lesson_given: maphunziro
+      not_started: osayamba
+      or: Kapena
+      part_complete: "%{percent}% zatha"
+      restart_lesson: Yambitsaninso
+      section_check: Fufuzani
+      section_check_info: "%{count} mayesero"
+      section_learn: Phunzirani
+      section_learn_info: "%{count} min kuti muwone ndikuwerenga"
+      section_play: Sewerani
+      section_play_info: "%{count} mawu oti muchite"
+      start_lesson: Yambani phunziro
+      step_progress: alireza.
+      subscribe: Tsatirani
+      subscribed: Tsatirani
+      subscribers: otsatira
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Yotsatirani
+      webview_error_title: China chake chalakwika ...
+      words_number: "%{wordsNumber} mawu atsopano"
+    lesson_task:
+      cancel_button: Kuletsa
+      check:
+        navigation_next: Ena
+        navigation_previous: Zakale
+        navigation_skip: Pitani
+      controls_panel:
+        font_size_button: Kukula kwa zilembo
+        high_contrast_button:
+          origin: Kusiyanitsa kwakukulu
+          short: Kusiyanitsa
+        hints_button: Malangizo
+        music_playback_button:
+          origin: Kuimba nyimbo
+          short: Nyimbo
+        sound_effects_button:
+          origin: Zomveka
+          short: Kumveka
+      exit_button: Potulukira
+      finish_button: Malizitsani
+      finished:
+        back_to_learn: Bwererani kuti muphunzire
+        back_to_lesson_page: Bwererani ku tsamba la phunziro
+        back_to_results_page: Kubwerera patsamba lotsatira
+        bad_result_message: Hmm ... yesetsani kutenga phunziroli nthawi ina
+        close_lesson: Tsekani phunziro
+        correct_answers_list: Mndandanda wa mayankho olondola
+        good_result_message: Ndikuwona kuti mwachita khama!
+        great_result_message: Mwachita bwino! Izi ndi zotsatira zabwino!
+        next_course_lesson: Pitani ku phunziro lotsatira
+        no_results: Mulibe zotsatira za mayeso pano
+        no_results_text: Chonde, malizitsani phunziroli ndikuyesa mayeso kuti mupeze
+          zotsatira
+        see_correct_answers_list: Onani mndandanda wa mayankho olondola
+        train_more: Yesetsani zambiri ndipo mudzapeza zotsatira zabwino nthawi ina!
+        you_finished_lesson: Zabwino! Mudatsiriza phunziroli
+      go_back: Bwererani
+      next_button: Ena
+      not_available_task: Ntchitoyi sikupezeka pano
+      start_button: Yambani
+      tasks:
+        check:
+          assignment:
+            accept: Landirani
+            author_will_check_your_answer: "%{author} iwunikanso yankho lanu ndipo
+              imapereka mayankho mkati mwa masiku 1-2"
+            continue_writing: Pitilizani kulemba
+            copy: Koperani
+            delete: Chotsani
+            delete_record: Chotsani mbiri
+            edit: Sinthani
+            essay_does_not_have_enough_words: >-
+              Yankho lanu liyenera kukhala ndi mawu osachepera %{minWordsNumber}.
+              Yankho lanu pakali pano ndi mawu a %{currentWordsNumber}.
+            followers_count: "%{followersCount} otsatira"
+            lessons_count: "%{lessonsCount} maphunziro"
+            minimal_recording_time: Nthawi yochepera - %{minimalRecordingTime}
+            minimum_characters_amount: Zolemba zochepa - %{minimumCharactersAmount}
+            minimum_words_amount: Osachepera mawu - %{minimumAmount}
+            record_again: Lembani kachiwiri
+            record_voice: Lembani mawu
+            send_anyway: Tumizani mulimonse
+            send_to_review: Tumizani kuti muwone
+            skip: Pitani
+            too_short_answer: Yankho lalifupi kwambiri
+            type_your_answer: Lembani yankho lanu
+            unknown_task_type: Mtundu wosadziwika wa ntchito
+            upgrade_licence: Sinthani laisensi
+            upgrade_your_plan: Sinthani dongosolo lanu kuti muyesere magawo ndi kuwunika
+              kwa aphunzitsi
+            upload_files: Kwezani mafayilo
+            write_essay: Lembani nkhani
+            you_have_used_amount_of_assignments: Mwagwiritsa ntchito mayikidwe a %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Kusiyana kwa ziganizo
+          fill_in_table:
+            column_answer_placeholder: Yankho
+            column_question_placeholder: Funso
+            example: Mwachitsanzo
+          true_false:
+            'false': Zabodza
+            'true': Zowona
+        learn:
+          translatable_text:
+            show_original: Onetsani choyambirira
+            translate_into: Tanthauzirani ndi Google mu %{languageName}
+            translate_into_your_lang: Tanthauzirani ndi Google mchilankhulo chanu
+        play:
+          arrange_words:
+            start_screen:
+              heading: Pangani sentensi ndi mawu omwe mwapatsidwa
+          audition:
+            start_screen:
+              heading: Mverani zomvera ndikudina mawu omwe mwamva kumene
+          dictation:
+            get_help: Pezani thandizo
+            i_do_not_know: Sindikudziwa
+            input_placeholder: Lowani zomwe mwamva apa
+            start_screen:
+              heading: Mverani ndikulemba zomwe mukumva
+          fill_gap:
+            start_screen:
+              heading: Gwirizanitsani liwulo ndi tanthauzo lake
+          finish_screen:
+            go_to_next_exercise: Mwachita bwino! Pitani ku zochitika zotsatirazi
+          image_hotspot:
+            start_screen:
+              heading: Tchulani zinthu zomwe zili pachithunzichi molondola
+          image_object:
+            start_screen:
+              heading: Sankhani chinthu choyenera pachithunzichi
+          inline_dropdown:
+            start_screen:
+              heading: Sankhani mawu omwe akufanana ndi chiganizo
+          mark_word:
+            start_screen:
+              heading: Werengani mawuwo ndikusankha mawu omwe akufanana ndi chithunzicho
+          minimal_pairs:
+            start_screen:
+              heading: Onerani kanemayo ndikusankha njira yoyenera
+    locale:
+      currency_switcher_title: Kusintha kwa ndalama
+      lang_switcher_title: Wosintha zilankhulo
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Chingerezi
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Chitaliyana
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Chitundu
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: ndi Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio ikukweza
+        aria_pause_button: Imani pang'ono
+        aria_play_button: Sewerani
+        aria_reload_button: Tsegulaninso
+        aria_stop_button: Imani
+        reload_message: Takanika kutsegula mawu. Chonde dinani batani kuti mutsitsenso.
+    mobile_modal:
+      apply: Ikani
+      cancel: Kuletsa
+      clear: Chotsani
+      save: Sungani
+    page404:
+      goToStartLessonPage: Pitani patsamba loyamba la phunziro
+      ooops: Ooops ...
+      sorry_message: Pepani, Tor sanapeze tsambali
+    profile:
+      navigation:
+        log_out: Tulukani
+        my_profile: Mbiri yanga
+        settings: Zokonzera
+      onboarding:
+        choose_native_language: Sankhani chilankhulo kapena chilankhulo chomwe mumamvetsetsa
+        do_you_understand_english: Mumamva Chingerezi?
+        hello: Moni
+        language_levels:
+          a1: Mulingo woyambira
+          a2: Mulingo wapakatikati
+          b1: Mulingo wapakatikati
+          b2: Mulingo wapakatikati
+          c1: Mulingo wapamwamba
+          no_knowledge: Palibe chidziwitso
+        language_not_supported:
+          note: Tikukudziwitsani posachedwa chilankhulo
+          title: Pepani, koma sitikugwirizana ndi chilankhulochi
+          try_another_language: Yesani chilankhulo china
+        'no': Ayi
+        search_placeholder: Fufuzani ...
+        show_more_languages: Ziyankhulo zina
+        target_language_question: Kodi mukufuna kuphunzira chilankhulo chanji?
+        what_is_language_level: Kodi mungayese bwanji mulingo wanu wa %{languageName}?
+        'yes': Inde
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Mfundo zachinsinsi za Lingu
+        support: Thandizo
+      logout: Tulukani
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Landirani zosintha kuchokera kwa aphunzitsi ndi masukulu
+                omwe mumatsatira
+              sections:
+                app_notifications: Zidziwitso za App
+                email: Imelo
+              title: Thandizo pophunzira
+            marketing:
+              description: Dziwani zambiri zotsatsa, zosintha, ndi kudzoza kuchokera
+                ku Lingu
+              sections:
+                browser_notifications: Zidziwitso za msakatuli
+                email: Imelo
+              title: Kutsatsa
+          title: Lumikizanani ndi zokonda
+        personal_information:
+          delete_photo: Chotsani chithunzi
+          email: Imelo
+          first_name: Dzina loyamba
+          last_name: Dzina lomaliza
+          social_accounts:
+            connected: Kulumikizidwa
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Osalumikizidwa
+            title: Maakaunti ochezera
+          title: Zambiri zanu
+          update_photo: Sinthani chithunzi
+        school:
+          active_licence: Chilolezo chogwira ntchito
+          active_status: Yogwira
+          delete_profile: Chotsani mbiri yanga
+          delete_profile_modal:
+            body: |-
+              Mumafafaniza deta yanu yonse — kwamuyaya. Palibe batani lokonzanso, ndipo sitingathe kukubwezerani pambuyo pake.
+              Mukutsimikiza kuti mukufuna kufufutiratu mbiri yanu ya Lingu ndi data yanu yonse?
+            cancel: Kuletsa
+            confirm: Inde, chotsani
+            i_understand_the_consequences: Ndikumvetsetsa zotsatira zake
+            title: Chotsani mbiri yanu?
+          expired: Kutha ntchito %{expire_date}
+          expires: Itha ntchito %{expire_date}
+          inactive_status: Zosagwira
+          revoke_access: Sinthani mwayi wowerenga
+          sections:
+            contact_school: Lumikizanani ndi sukulu
+            export_my_data: Tumizani deta yanga
+            read_school_privacy_policy: Werengani Mfundo Zazinsinsi Zasukulu
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Kuimba nyimbo
+              sound_effects: Zomveka
+              title: Kumveka
+            visual:
+              dark_theme: Mutu wakuda
+              font_size:
+                test_text: Udzu nthawi zonse umakhala wobiriwira mbali inayo ya mpanda
+                title: Kukula kwa zilembo
+              high_contrast: Kusiyanitsa kwakukulu
+              hints: Malangizo
+              title: Zowoneka
+          title: Phokoso & Zowoneka
+        training_settings:
+          sections:
+            i_understand: Ndikumvetsa
+            i_want_to_learn: Ndikufuna kuphunzira
+            target_language_level: Mulingo wa Chingerezi
+          title: Makonda ophunzitsira
+      settings_title: Zokonzera
+    teacher_card:
+      followers_count:
+        one: 1 wotsatira
+        other: "%{count} otsatira"
+      lessons_count:
+        one: 1 phunziro
+        other: "%{count} maphunziro"

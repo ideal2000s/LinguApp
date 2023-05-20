@@ -1,0 +1,8 @@
+- set_page_title course.title
+.school-course-container.d-flex.flex-column.min-vh-100
+  = render 'school/courses/course_header', course: course
+  .course-info.flex-grow-1.d-flex
+    .w-25
+      = render 'school/courses/course_overview_list', course: course, course_section: course_section
+    .w-75
+      = render 'lessons', course: course, course_section: course_section, table_view: table_view, lessons: lessons

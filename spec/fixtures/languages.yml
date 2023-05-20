@@ -1,0 +1,47 @@
+# == Schema Information
+#
+# Table name: languages
+#
+#  id                :bigint           not null, primary key
+#  code              :string           not null
+#  system_name       :string           not null
+#  name_translations :jsonb            not null
+#  slug_translations :jsonb            not null
+#  active            :boolean          default(FALSE), not null
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#  support           :boolean          default(FALSE), not null
+#  words_count       :integer          default(0), not null
+#  collections_count :integer          default(0), not null
+#  characters        :string           default([]), not null, is an Array
+#  restricted        :boolean          default(FALSE), not null
+#  meta              :jsonb            not null
+#
+
+norwegian:
+  code: nb
+  system_name: Norwegian
+  restricted: false
+  name_translations: { "nb": "Norsk", "en": "Norwegian" }
+  slug_translations: { "nb": "norsk", "en": "norwegian" }
+danish:
+  code: da
+  support: true
+  system_name: Danish
+  restricted: false
+  name_translations: { "nb": "Dansk", "en": "Danish" }
+  slug_translations: { "nb": "dansk", "en": "danish" }
+german:
+  code: de
+  support: true
+  system_name: Deutsch
+  restricted: false
+  name_translations: { "nb": "Tysk", "en": "German" }
+  slug_translations: { "nb": "tysk", "en": "german" }
+english:
+  code: en
+  active: true
+  system_name: English
+  restricted: false
+  name_translations: { "nb": "Engelsk", "en": "English" }
+  slug_translations: { "nb": "engelsk", "en": "english" }

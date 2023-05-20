@@ -1,0 +1,15 @@
+- active_target_language = student.active_target_language
+- native_language = student.native_language
+- if native_language || active_target_language
+  = button_to edit_school_student_path(student), class: 'btn shadow-none p-0', method: :get, remote: true do
+    .language-info
+      - if native_language
+        = image_tag("flags/#{language_to_flag_code(native_language.code)}.svg", class: 'language-flag mr-1')
+        = native_language.name.presence || native_language.system_name
+        span.fas.fa-long-arrow-alt-right.mx-2
+      - if active_target_language
+        = image_tag("flags/#{language_to_flag_code(active_target_language.code)}.svg", class: 'language-flag mr-1')
+        = active_target_language.name.presence || active_target_language.system_name
+        =< student.target_language_level&.upcase
+      - else
+        | ?

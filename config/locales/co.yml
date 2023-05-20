@@ -1,0 +1,613 @@
+---
+co:
+  course_mailer:
+    course_assigned_notification:
+      button: Principià u corsu
+      click_start_lesson: Cliccate nantu à 'Start lezione'
+      follow_course_link: Cliccate nantu à u buttone per apre u corsu
+      footer_text: Vultate à Lingu per amparà qualcosa di novu ogni ghjornu!
+      get_started_line: 'Eccu cumu si principia:'
+      notification_link: Impostazioni di notificazione
+      open_lesson: Apri a prima lezziò
+      or_paste_this_link: o incolla stu ligame in u vostru navigatore
+      sign_in_with_email: Cunnettatevi cù u vostru indirizzu email (%{email})
+      support_link: Supportu
+      title: Principià cù %{course}
+    new_document_comment:
+      author_text: "%{author} hà lasciatu una rivista di a vostra missione"
+      button_text: Da un'uchjata
+      button_url_helper: 'o incolla stu ligame in u vostru navigatore:'
+      footer_text: Ci hè assai di più da amparà ...
+      notification_link: Impostazioni di notificazione
+      subject_line: Novu cummentariu d'assignazione
+      support_link: Supportu
+    otp:
+      ignore_msg: Se ùn avete micca fattu sta dumanda, ignora solu l'email.
+      subject_line: U vostru còdice unicu per Lingu
+      unique_code_for_lingu: Eccu u vostru còdice unicu per Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Avete dighjà un contu?
+      back: Torna
+      back_to_sign_in: Torna à Accedi
+      check_your_email_for_a_code: Verificate u vostru email per u vostru còdice
+      continue: Cuntinuà
+      continue_with_email: Cuntinuà cù email
+      continue_with_provider: Cuntinuà cù %{provider}
+      did_not_receive_a_code: Ùn avete micca ricevutu un codice?
+      email_address: Indirizzu mail
+      first_name: Nomu
+      get_unique_code: Uttenite un codice di cunnessione unicu
+      join_lingu: Unisciti à Lingu
+      last_name: Casata
+      more_login_options: Più opzioni di login
+      no_account_question: Ùn avete micca un contu?
+      or: o
+      resend_code: Rinvia u codice
+      sign_in: Firmà lu
+      sign_up: Firma
+      want_to_receive_marketing_messages: Vogliu riceve messaghji di marketing da
+        Lingu
+      we_ve_sent_a_code: >-
+        Avemu mandatu un codice di 6 cifre à <strong> {{email}} </strong>. U codice
+        scade in 15 minuti, allora per piacè inseritelu prestu.
+    cookie_agreement:
+      agree: D'accord
+      condition: >-
+        Utilizemu i cookies per analizà e prestazioni di u situ è furnisce un cuntenutu
+        persunalizatu. Clicchendu "D'accord", accunsentite à e nostre cundizioni.
+    course:
+      accredited_course_provider: Fornitore di corsi accreditatu
+      apply: Dumandà
+      apply_filters: Applica filtri
+      by: Di
+      cancel: Annulla
+      categories: "%{count} categurie"
+      category: Catigurìa
+      clear: Chjaru
+      clear_filters: Annullà i filtri
+      contact_us: Cuntatta ci
+      could_not_find_match_for: Scusate, ùn pudemu truvà alcuna partita per
+      course_language: Lingua di corsu
+      duration: Durata
+      filter_settings:
+        categories:
+          academic: Accademicu
+          business: Cummerciu
+          fashion: Moda
+          food_drink: Manghjà è beie
+          for_kids: Per i zitelli
+          general: Generale
+          health: Salute
+          legal: Legale
+          sport: Sport
+          travel: Viaghjà
+        durations:
+          t0_600: "<10 minuti"
+          t1800_3600: 30-60 minuti
+          t3600_86400: 1+ ora
+          t600_1800: 10-30 minuti
+        focus_on:
+          conversation: Cunversazione
+          grammar: Grammatica
+          listening: À sente
+          pronunciation: Pronuncia
+          reading: Lettura
+          speaking: Parlendu
+          writing: Scrittura
+        levels:
+          long:
+            advanced: Livellu avanzatu
+            elementary: Livellu elementariu
+            intermediate: Livellu intermediu
+            no_knowledge: Nisuna cunniscenza
+            pre_intermediate: Livellu intermediu pre
+            upper_intermediate: Livellu intermediu superiore
+          short:
+            advanced: Avanzatu
+            beginner: Principiante
+            intermediate: Intermediu
+        sort_by:
+          most_rated: U più valutatu
+          newest: U più novu
+          popularity: Popularità
+      filters: Filtri
+      focus_on: Focus on
+      focus_on_title: Vogliu fighjà nantu
+      hide_lessons: Oculta e lezioni
+      hours: Stonde
+      i_understand: capiscu
+      i_want_to_learn: Vogliu amparà
+      in_language: in %{language}
+      language: Lingua
+      learn_more: Sapè ne di più
+      less_settings: Meno impostazioni
+      lessons: Lezioni
+      lessons_available: "%{number} lezioni dispunibili"
+      lessons_catalog_page_subtitle: Diventà eroe di a lingua.
+      lessons_catalog_page_title: Ampliate i vostri orizonti cù un cursu di lingua
+      level: Livellu
+      min: Min
+      more_settings: Più paràmetri
+      navbar:
+        close: Chiudi menu
+        menu: Menu
+        select_language: Sceglite a lingua
+      need_to_buy_course: Avete bisognu di riservà un cursu prima
+      no_description: Nisuna descrizzione furnita
+      no_results: Scusate, ùn pudemu truvà alcuna partita per
+      or: o
+      per_month: per mese
+      plans: Piani
+      privacy_policy: Pulitica di privacy
+      rating: Valutazione
+      remove_all_filters: Elimina tutti i filtri
+      reviews: Recensioni
+      save: Salvà
+      search: Cerca
+      select_dots: Selezziunà ...
+      select_languages: Selezziunate langauges
+      select_num_languages: Selezziunate e lingue %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Mustrà tuttu
+      show_all_lessons: Mostra tutte e lezioni
+      show_lessons: Mostra lezioni %{number}
+      show_more: Mostra di più
+      sign_up_with_lingu_for: Iscriviti à Lingu Norway per
+      skills: "%{count} cumpetenze"
+      sort_by: Ordina per
+      start_typing_here: Cumincià à scrive quì
+      teach: Insignà
+      terms_and_conditions: Termini è Cundizioni
+      time_range: Tempu
+      try_adjusting_your_search: Pruvate d'aghjustà a vostra ricerca cambiendu i vostri
+        filtri
+      try_this_course: Pruvate stu corsu
+      website_language: Lingua di u situ web
+      words: Parolle
+    games:
+      finished:
+        go_to_next_exercise: Bè fatta! Andate à u prossimu eserciziu
+      flashcard:
+        buttons:
+          finish: Finisci
+          next: Dopu
+          previous: Precedente
+        check_out_new_words: Scuprite e novi parolle chì avete da amparà in questa
+          lezzione
+        frequency_of_word_usage: Frequenza di l'usu di e parolle in %{language}
+        keep_practice_to_learn_all_words: Fighjate e parolle %{count} è andemu à ghjucà
+          qualchì ghjocu!
+        word_frequency:
+          level1: Raramente adupratu
+          level2: Raramente adupratu
+          level3: Frequenza di e parolle - media
+          level4: Frequenza di e parolle - media
+          level5: Cumunu
+          level6: Assai cumunu
+      match_word:
+        click_and_move_each_word_to_counterpart: Cliccate è traslate ogni parolla
+          à a so contraparte
+        start_heading: Assuciate e parolle per fà una coppia
+        time_is_up: U tempu hè passatu!
+      skip_tutorial: Saltà
+      time_is_up: U tempu hè passatu!
+      word_nodes:
+        match_letters_to_form_word: Unisce lettere per furmà una parolla
+      word_waterfall:
+        do_not_hesitate: Acceleremu!
+        go_to_next_exercise: Andate à u prossimu eserciziu
+        select_correct_translation: Sceglite a partita curretta
+        well_done: Bè fatta!
+    home_page:
+      hello: Bonghjornu,
+      popular_lessons: Lezioni pupulari
+      show_more: Mostra di più
+      time: "%{count} min"
+      today_lesson: A to lezzione per oghje
+      user_name: "%{name}!"
+      words: "%{count} parolle"
+    idle_screen:
+      by_author: da %{authorName}
+      continue_lesson: Cuntinuà a lezzione
+      exit: Esci
+      idle_message: Sì statu inattivu dapoi qualchì tempu ...
+    lesson_page:
+      back_to_course_page: Torna à a pagina di u corsu
+      close: Vicinu
+      continue_lesson: Cuntinuà a lezzione
+      followed: Seguitatu
+      hamburger_menu_btn: Menu Hamburger
+      lesson_given: lezziò
+      not_started: micca principiatu
+      or: Or
+      part_complete: "%{percent}% cumpletu"
+      restart_lesson: Ripigliate
+      section_check: Verificate
+      section_check_info: testi %{count}
+      section_learn: Amparà
+      section_learn_info: "%{count} min per fighjà è leghje"
+      section_play: Ghjucà
+      section_play_info: "%{count} parolle da praticà"
+      start_lesson: Principià lezzione
+      step_progress: "%{percent}%"
+      subscribe: Seguitate
+      subscribed: Seguitatu
+      subscribers: seguitori
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Abbandunà
+      webview_error_title: Qualcosa ùn hè andatu male ...
+      words_number: "%{wordsNumber} parolle novi"
+    lesson_task:
+      cancel_button: Annulla
+      check:
+        navigation_next: Dopu
+        navigation_previous: Precedente
+        navigation_skip: Saltà
+      controls_panel:
+        font_size_button: Dimensione di u caratteru
+        high_contrast_button:
+          origin: Cuntrastu altu
+          short: Cuntrastu
+        hints_button: Cunsiglii
+        music_playback_button:
+          origin: Riproduzione musicale
+          short: Musica
+        sound_effects_button:
+          origin: Effetti sonori
+          short: Sound
+      exit_button: Esci
+      finish_button: Finisci
+      finished:
+        back_to_learn: Torna per amparà
+        back_to_lesson_page: Torna à a pagina di lezioni
+        back_to_results_page: Torna à a pagina di risultati
+        bad_result_message: Hmm ... prova à piglià a lezzione una volta di più
+        close_lesson: Close lezziò
+        correct_answers_list: Lista curretta di risposte
+        good_result_message: Vecu chì avete fattu un sforzu!
+        great_result_message: Bè fatta! Quessi sò ottimi risultati!
+        next_course_lesson: Andate à a lezzione prossima in corsu
+        no_results: Ùn avete ancu risultati di test
+        no_results_text: Per piacè, compie a lezione è passa u test per uttene i risultati
+        see_correct_answers_list: Vede a lista di risposte currette
+        train_more: Praticate di più è uttenerete risultati megliu a prossima volta!
+        you_finished_lesson: Perfettu! Ai finitu a lezzione
+      go_back: Riturnà
+      next_button: Dopu
+      not_available_task: Stu compitu ùn hè ancu dispunibile
+      start_button: Principià
+      tasks:
+        check:
+          assignment:
+            accept: Accetta
+            author_will_check_your_answer: "%{author} rivederà a vostra risposta è
+              tipicamente darà feedback in 1-2 ghjorni"
+            continue_writing: Cuntinuà à scrive
+            copy: Copia
+            delete: Sguassà
+            delete_record: Sguassà u discu
+            edit: Mudificà
+            essay_does_not_have_enough_words: >-
+              A vostra risposta duveria cuntene almenu parolle %{minWordsNumber}.
+              A vostra risposta hè attualmente %{currentWordsNumber} parole.
+            followers_count: "%{followersCount} followers"
+            lessons_count: "%{lessonsCount} lezioni"
+            minimal_recording_time: Tempu minimu di registrazione - %{minimalRecordingTime}
+            minimum_characters_amount: Caratteri minimi - %{minimumCharactersAmount}
+            minimum_words_amount: Parolle minime - %{minimumAmount}
+            record_again: Arregistrà dinò
+            record_voice: Arregistrà a voce
+            send_anyway: Mandà quantunque
+            send_to_review: Mandà à rivista
+            skip: Saltà
+            too_short_answer: Troppu risposta corta
+            type_your_answer: Scrive a vostra risposta
+            unknown_task_type: Tipu di compitu scunnisciutu
+            upgrade_licence: Licenza d'aghjurnamentu
+            upgrade_your_plan: Aghjurnate u vostru pianu per pruvà incarichi cù e
+              riviste di i prufessori
+            upload_files: Caricate i fugliali
+            write_essay: Scrivi scrittu
+            you_have_used_amount_of_assignments: Avete adupratu crediti di assignazione
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Lacuna di sintenza
+          fill_in_table:
+            column_answer_placeholder: Rispondi
+            column_question_placeholder: Dumanda
+            example: Esempiu
+          true_false:
+            'false': 'False'
+            'true': Hè vera
+        learn:
+          translatable_text:
+            show_original: Mostra uriginale
+            translate_into: Traduce cù Google in %{languageName}
+            translate_into_your_lang: Traduce cù Google in a vostra lingua
+        play:
+          arrange_words:
+            start_screen:
+              heading: Fate una frase cù e parolle date
+          audition:
+            start_screen:
+              heading: State à sente l'audio è toccate a parolla chì avete intesu
+          dictation:
+            get_help: Uttene aiutu
+            i_do_not_know: Ùn la sò
+            input_placeholder: Intrite ciò chì avete intesu quì
+            start_screen:
+              heading: Stà à sente è scrive ciò chì si sente
+          fill_gap:
+            start_screen:
+              heading: Assuciate a parolla è u so significatu
+          finish_screen:
+            go_to_next_exercise: Bè fatta! Andate à u prossimu eserciziu
+          image_hotspot:
+            start_screen:
+              heading: Cognome l'uggetti in a stampa currettamente
+          image_object:
+            start_screen:
+              heading: Sceglite l'ughjettu adattatu da a stampa dopu
+          inline_dropdown:
+            start_screen:
+              heading: Sceglite e parolle chì currispondenu à a frasa
+          mark_word:
+            start_screen:
+              heading: Leghjite u testu è selezziunate a parolla chì currisponde à
+                l'imaghjina
+          minimal_pairs:
+            start_screen:
+              heading: Fighjate u video è selezziunate l'opzione curretta
+    locale:
+      currency_switcher_title: Cambiatore di valute
+      lang_switcher_title: Cambia lingua
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Inglese
+        eo: Esperanto
+        es: Spagnolu
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahilianu
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: L'audio hè in carica
+        aria_pause_button: Pause
+        aria_play_button: Ghjucà
+        aria_reload_button: Ricaricà
+        aria_stop_button: Piantà
+        reload_message: >-
+          Impussibule di caricà l'audio. Per piacè cliccate nantu à u buttone per
+          ricaricà.
+    mobile_modal:
+      apply: Dumandà
+      cancel: Annulla
+      clear: Chjaru
+      save: Salvà
+    page404:
+      goToStartLessonPage: Andate à a pagina di lezioni iniziale
+      ooops: Oooops ...
+      sorry_message: Scusate, Tor ùn hà micca pussutu truvà sta pagina
+    profile:
+      navigation:
+        log_out: Scunnettà si
+        my_profile: U mo prufilu
+        settings: Impostazioni
+      onboarding:
+        choose_native_language: Sceglite a vostra lingua nativa o a lingua chì capite
+        do_you_understand_english: Capisci l'inglese?
+        hello: Bonghjornu
+        language_levels:
+          a1: Livellu elementariu
+          a2: Livellu pre-intermediu
+          b1: Livellu intermediu
+          b2: Livellu Intermediu Superiore
+          c1: Livellu avanzatu
+          no_knowledge: Nisuna cunniscenza
+        language_not_supported:
+          note: Vi avveremu appena a lingua serà dispunibule
+          title: Scusate, ma ùn sustenimu ancu sta lingua
+          try_another_language: Pruvate un'altra lingua
+        'no': Innò
+        search_placeholder: Cerca ...
+        show_more_languages: Altre lingue
+        target_language_question: Chì lingua vulete amparà?
+        what_is_language_level: Cumu valuterebbe u vostru livellu %{languageName}?
+        'yes': Iè
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Politica di privacy di Lingu
+        support: Supportu
+      logout: Scunnettà si
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Ricevi aggiornamenti da prufessori è scole chì seguitate
+              sections:
+                app_notifications: Notificazioni App
+                email: E-mail
+              title: Assistenza à l'apprendimentu
+            marketing:
+              description: >-
+                Restate infurmatu nantu à tutte e prumuzioni, aggiornamenti è ispirazione
+                da Lingu
+              sections:
+                browser_notifications: Notificazioni di u navigatore
+                email: E-mail
+              title: Marketing
+          title: Preferenze di cuntattu
+        personal_information:
+          delete_photo: Sguassà a foto
+          email: Email
+          first_name: Nomu
+          last_name: Casata
+          social_accounts:
+            connected: Cunnessu
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Micca cunnessu
+            title: Conti suciali
+          title: Infurmazione persunale
+          update_photo: Foto d'aghjurnamentu
+        school:
+          active_licence: Licenza attiva
+          active_status: Attivu
+          delete_profile: Elimina u mo prufilu
+          delete_profile_modal:
+            body: |-
+              Eliminate tutti i vostri dati-per sempre. Ùn ci hè micca un buttone d'annullamentu, è ùn pudemu micca ricuperallu per voi dopu.
+              Site sicuru di vulè sguassà definitivamente u vostru prufilu Lingu è tutti i vostri dati?
+            cancel: Annulla
+            confirm: Iè, sguassatela
+            i_understand_the_consequences: Capiscu e cunsequenze
+            title: Sguassà u vostru prufilu?
+          expired: Scadutu %{expire_date}
+          expires: Scade %{expire_date}
+          inactive_status: Inattivu
+          revoke_access: Revoca l'accessu di lettura
+          sections:
+            contact_school: Cuntattate a scola
+            export_my_data: Esporta i mo dati
+            read_school_privacy_policy: Leghje a pulitica di privacy di a scola
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Riproduzione musicale
+              sound_effects: Effetti sonori
+              title: Sound
+            visual:
+              dark_theme: Tema scuru
+              font_size:
+                test_text: L'erba hè sempre più verde di l'altra parte di a fence
+                title: Dimensione di u caratteru
+              high_contrast: Cuntrastu altu
+              hints: Cunsiglii
+              title: Visuale
+          title: Sound & Visual
+        training_settings:
+          sections:
+            i_understand: capiscu
+            i_want_to_learn: Vogliu amparà
+            target_language_level: Livellu d'inglese
+          title: Impostazioni di furmazione
+      settings_title: Impostazioni
+    teacher_card:
+      followers_count:
+        one: 1 seguitore
+        other: "%{count} followers"
+      lessons_count:
+        one: 1 lezzione
+        other: "%{count} lezioni"

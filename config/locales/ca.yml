@@ -1,0 +1,610 @@
+---
+ca:
+  course_mailer:
+    course_assigned_notification:
+      button: Comença el curs
+      click_start_lesson: Feu clic a "Inicia la lliçó"
+      follow_course_link: Feu clic al botó per obrir el curs
+      footer_text: Torneu a Lingu per aprendre cada dia alguna cosa nova!
+      get_started_line: 'A continuació us expliquem com començar:'
+      notification_link: Configuració de notificacions
+      open_lesson: Obriu la primera lliçó
+      or_paste_this_link: o enganxeu aquest enllaç al navegador
+      sign_in_with_email: Inicieu la sessió amb la vostra adreça de correu electrònic
+        (%{email})
+      support_link: Suport
+      title: Introducció a %{course}
+    new_document_comment:
+      author_text: "%{author} ha deixat una revisió de la vostra tasca"
+      button_text: Comprova-ho
+      button_url_helper: 'o enganxeu aquest enllaç al navegador:'
+      footer_text: Hi ha molt més per aprendre ...
+      notification_link: Configuració de notificacions
+      subject_line: Nou comentari de la tasca
+      support_link: Suport
+    otp:
+      ignore_msg: Si no heu fet aquesta sol·licitud, només heu d'ignorar el correu
+        electrònic.
+      subject_line: El vostre codi únic per a Lingu
+      unique_code_for_lingu: Aquí teniu el vostre codi únic per a Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Ja tens un compte?
+      back: esquena
+      back_to_sign_in: Torna a iniciar la sessió
+      check_your_email_for_a_code: Comproveu el vostre codi de correu electrònic
+      continue: Continua
+      continue_with_email: Continueu amb el correu electrònic
+      continue_with_provider: Continueu amb %{provider}
+      did_not_receive_a_code: No heu rebut cap codi?
+      email_address: Correu electrònic
+      first_name: Nom
+      get_unique_code: Obteniu un codi d’inici de sessió únic
+      join_lingu: Uneix-te a Lingu
+      last_name: Cognom
+      more_login_options: Més opcions d’inici de sessió
+      no_account_question: No teniu cap compte?
+      or: o bé
+      resend_code: Codi de reenviament
+      sign_in: Inicieu la sessió
+      sign_up: Registra't
+      want_to_receive_marketing_messages: Vull rebre missatges de màrqueting de Lingu
+      we_ve_sent_a_code: >-
+        Hem enviat un codi de 6 dígits a <strong> {{email}} </strong>. El codi caduca
+        d'aquí a 15 minuts, així que introduïu-lo aviat.
+    cookie_agreement:
+      agree: Acordar
+      condition: >-
+        Utilitzem cookies per analitzar el rendiment del lloc i oferir contingut personalitzat.
+        En fer clic a "Accepto", accepteu les nostres condicions.
+    course:
+      accredited_course_provider: Proveïdor de cursos acreditat
+      apply: Aplicar
+      apply_filters: Apliqueu filtres
+      by: Per
+      cancel: Cancel · lar
+      categories: categories %{count}
+      category: Categoria
+      clear: Clar
+      clear_filters: Esborra els filtres
+      contact_us: Poseu-vos en contacte amb nosaltres
+      could_not_find_match_for: Ho sentim, no hem trobat cap coincidència per a
+      course_language: Idioma del curs
+      duration: Durada
+      filter_settings:
+        categories:
+          academic: Acadèmic
+          business: Negocis
+          fashion: Moda
+          food_drink: Menjar i beure
+          for_kids: Per a nens
+          general: General
+          health: Salut
+          legal: Legal
+          sport: Esport
+          travel: Viatges
+        durations:
+          t0_600: "<10 minuts"
+          t1800_3600: 30-60 minuts
+          t3600_86400: 1 hora o més
+          t600_1800: 10-30 minuts
+        focus_on:
+          conversation: Conversa
+          grammar: Gramàtica
+          listening: Escoltar
+          pronunciation: Pronunciació
+          reading: Lectura
+          speaking: Parlant
+          writing: Escriure
+        levels:
+          long:
+            advanced: Nivell avançat
+            elementary: Nivell elemental
+            intermediate: Nivell intermedi
+            no_knowledge: Sense coneixement
+            pre_intermediate: Nivell pre intermedi
+            upper_intermediate: Nivell intermedi superior
+          short:
+            advanced: Avançat
+            beginner: Principiant
+            intermediate: Intermedi
+        sort_by:
+          most_rated: Més valorats
+          newest: El més nou
+          popularity: Popularitat
+      filters: Filtres
+      focus_on: Centreu-vos en
+      focus_on_title: Vull centrar-me en
+      hide_lessons: Amaga les lliçons
+      hours: Hores
+      i_understand: entenc
+      i_want_to_learn: vull aprendre
+      in_language: a %{language}
+      language: Llenguatge
+      learn_more: Aprèn més
+      less_settings: Menys configuracions
+      lessons: Lliçons
+      lessons_available: "%{number} lliçons disponibles"
+      lessons_catalog_page_subtitle: Converteix-te en un heroi de la llengua.
+      lessons_catalog_page_title: Amplieu els horitzons amb un curs d'idiomes
+      level: Nivell
+      min: Mín
+      more_settings: Més configuracions
+      navbar:
+        close: Tanca el menú
+        menu: Menú
+        select_language: Escolliu l'idioma
+      need_to_buy_course: Primer heu de reservar un curs
+      no_description: No es proporciona cap descripció
+      no_results: Ho sentim, no hem trobat cap coincidència per a
+      or: o bé
+      per_month: per mes
+      plans: Plans
+      privacy_policy: Política de privacitat
+      rating: Valoració
+      remove_all_filters: Elimineu tots els filtres
+      reviews: Ressenyes
+      save: Desa
+      search: Cerca
+      select_dots: Selecciona ...
+      select_languages: Seleccioneu les llengües
+      select_num_languages: Seleccioneu els idiomes %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Mostrar tots
+      show_all_lessons: Mostra totes les lliçons
+      show_lessons: Mostra les lliçons de %{number}
+      show_more: Mostra més
+      sign_up_with_lingu_for: Registreu-vos a Lingu Norway per
+      skills: "%{count} habilitats"
+      sort_by: Ordenar per
+      start_typing_here: Comenceu a escriure aquí
+      teach: Ensenyar
+      terms_and_conditions: Termes i condicions
+      time_range: Interval de temps
+      try_adjusting_your_search: Proveu d’ajustar la cerca canviant els filtres
+      try_this_course: Prova aquest curs
+      website_language: Idioma del lloc web
+      words: Paraules
+    games:
+      finished:
+        go_to_next_exercise: Ben fet! Aneu al següent exercici
+      flashcard:
+        buttons:
+          finish: Acabar
+          next: Pròxim
+          previous: Anterior
+        check_out_new_words: Mireu les paraules noves que aprendreu en aquesta lliçó
+        frequency_of_word_usage: Freqüència d'ús de paraules a %{language}
+        keep_practice_to_learn_all_words: Reviseu les paraules %{count} i anem a jugar.
+        word_frequency:
+          level1: Poques vegades s’utilitza
+          level2: Poques vegades s’utilitza
+          level3: 'Freqüència de paraules: mitjà'
+          level4: 'Freqüència de paraules: mitjà'
+          level5: Comú
+          level6: Molt comú
+      match_word:
+        click_and_move_each_word_to_counterpart: Feu clic i moveu cada paraula al
+          seu homòleg
+        start_heading: Relacionar paraules per formar un parell
+        time_is_up: El temps s'ha acabat!
+      skip_tutorial: Ometre
+      time_is_up: El temps s'ha acabat!
+      word_nodes:
+        match_letters_to_form_word: Relacionar lletres per formar una paraula
+      word_waterfall:
+        do_not_hesitate: Accelerem!
+        go_to_next_exercise: Aneu al següent exercici
+        select_correct_translation: Seleccioneu la coincidència correcta
+        well_done: Ben fet!
+    home_page:
+      hello: Hola,
+      popular_lessons: Lliçons populars
+      show_more: Mostra més
+      time: "%{count} min"
+      today_lesson: La teva lliçó per avui
+      user_name: "%{name}!"
+      words: "%{count} paraules"
+    idle_screen:
+      by_author: per %{authorName}
+      continue_lesson: Continua la lliçó
+      exit: Surt
+      idle_message: Fa temps que estàs inactiu ...
+    lesson_page:
+      back_to_course_page: Torna a la pàgina del curs
+      close: Tanca
+      continue_lesson: Continua la lliçó
+      followed: Seguit
+      hamburger_menu_btn: Menú hamburguesa
+      lesson_given: lliçons
+      not_started: no començat
+      or: O bé
+      part_complete: "%{percent}% completat"
+      restart_lesson: Reinicia
+      section_check: Comprovar
+      section_check_info: proves %{count}
+      section_learn: Aprendre
+      section_learn_info: "%{count} min per veure i llegir"
+      section_play: Jugar
+      section_play_info: "%{count} paraules per practicar"
+      start_lesson: Comença la lliçó
+      step_progress: "%{percent}%"
+      subscribe: Segueix
+      subscribed: Seguit
+      subscribers: seguidors
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Deixa de seguir
+      webview_error_title: Alguna cosa ha anat malament...
+      words_number: "%{wordsNumber} paraules noves"
+    lesson_task:
+      cancel_button: Cancel · lar
+      check:
+        navigation_next: Pròxim
+        navigation_previous: Anterior
+        navigation_skip: Ometre
+      controls_panel:
+        font_size_button: Mida de la font
+        high_contrast_button:
+          origin: Alt contrast
+          short: Contrast
+        hints_button: Consells
+        music_playback_button:
+          origin: Reproducció de música
+          short: Música
+        sound_effects_button:
+          origin: Efectes de so
+          short: So
+      exit_button: Surt
+      finish_button: Acabar
+      finished:
+        back_to_learn: Tornar a aprendre
+        back_to_lesson_page: Torna a la pàgina de la lliçó
+        back_to_results_page: Torna a la pàgina de resultats
+        bad_result_message: Mmm ... intenta agafar la lliçó una vegada més
+        close_lesson: Tancar la lliçó
+        correct_answers_list: Llista de respostes correctes
+        good_result_message: Veig que has fet un esforç!
+        great_result_message: Ben fet! Són bons resultats.
+        next_course_lesson: Aneu a la següent lliçó del curs
+        no_results: Encara no teniu resultats de proves
+        no_results_text: Completa la lliçó i passa la prova per obtenir els resultats
+        see_correct_answers_list: Vegeu la llista de respostes correctes
+        train_more: Practiqueu més i obtindreu millors resultats la propera vegada!
+        you_finished_lesson: Genial! Has acabat la lliçó
+      go_back: Torna
+      next_button: Pròxim
+      not_available_task: Aquesta tasca encara no està disponible
+      start_button: Començar
+      tasks:
+        check:
+          assignment:
+            accept: Accepta
+            author_will_check_your_answer: >-
+              %{author} revisarà la vostra resposta i normalment donarà comentaris
+              en un termini d'1 a 2 dies
+            continue_writing: Continueu escrivint
+            copy: Copia
+            delete: Suprimeix
+            delete_record: Esborra el registre
+            edit: Edita
+            essay_does_not_have_enough_words: >-
+              La vostra resposta ha de contenir com a mínim %{minWordsNumber} paraules.
+              Actualment, la vostra resposta són paraules %{currentWordsNumber}.
+            followers_count: "%{followersCount} seguidors"
+            lessons_count: "%{lessonsCount} lliçons"
+            minimal_recording_time: 'Temps mínim de gravació: %{minimalRecordingTime}'
+            minimum_characters_amount: 'Caràcters mínims: %{minimumCharactersAmount}'
+            minimum_words_amount: 'Paraules mínimes: %{minimumAmount}'
+            record_again: Torna a gravar
+            record_voice: Grava la veu
+            send_anyway: Enviar de totes maneres
+            send_to_review: Enviar a revisió
+            skip: Ometre
+            too_short_answer: Resposta massa curta
+            type_your_answer: Escriviu la vostra resposta
+            unknown_task_type: Tipus de tasca desconegut
+            upgrade_licence: Llicència d'actualització
+            upgrade_your_plan: Actualitzeu el vostre pla per provar tasques amb ressenyes
+              de professors
+            upload_files: Pengeu fitxers
+            write_essay: Redactar assaig
+            you_have_used_amount_of_assignments: Heu utilitzat crèdits d'assignació
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Bretxa de frases
+          fill_in_table:
+            column_answer_placeholder: Resposta
+            column_question_placeholder: Pregunta
+            example: Exemple
+          true_false:
+            'false': Fals
+            'true': És cert
+        learn:
+          translatable_text:
+            show_original: Mostra l'original
+            translate_into: Tradueix amb Google a %{languageName}
+            translate_into_your_lang: Tradueix amb Google al teu idioma
+        play:
+          arrange_words:
+            start_screen:
+              heading: Feu una frase a partir de les paraules donades
+          audition:
+            start_screen:
+              heading: Escolta l'àudio i toca la paraula que acabes d'escoltar
+          dictation:
+            get_help: Aconseguir ajuda
+            i_do_not_know: No ho sé
+            input_placeholder: Introduïu el que heu escoltat aquí
+            start_screen:
+              heading: Escolta i escriu el que escoltes
+          fill_gap:
+            start_screen:
+              heading: Relaciona la paraula amb el seu significat
+          finish_screen:
+            go_to_next_exercise: Ben fet! Aneu al següent exercici
+          image_hotspot:
+            start_screen:
+              heading: Anomeneu correctament els objectes de la imatge
+          image_object:
+            start_screen:
+              heading: Trieu l'objecte adequat de la imatge següent
+          inline_dropdown:
+            start_screen:
+              heading: Tria les paraules que coincideixin amb la frase
+          mark_word:
+            start_screen:
+              heading: Llegiu el text i seleccioneu la paraula que coincideixi amb
+                la imatge
+          minimal_pairs:
+            start_screen:
+              heading: Mireu el vídeo i seleccioneu l'opció correcta
+    locale:
+      currency_switcher_title: Canviador de divises
+      lang_switcher_title: Canviador d'idioma
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Anglès
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Francès
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Països Baixos
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Portuguès
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: de Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: S'està carregant l'àudio
+        aria_pause_button: Pausa
+        aria_play_button: Jugar
+        aria_reload_button: Recarregar
+        aria_stop_button: Atura
+        reload_message: No s'ha pogut carregar l'àudio. Feu clic al botó per tornar
+          a carregar.
+    mobile_modal:
+      apply: Aplicar
+      cancel: Cancel · lar
+      clear: Clar
+      save: Desa
+    page404:
+      goToStartLessonPage: Aneu a la pàgina inicial de la lliçó
+      ooops: Vaja ...
+      sorry_message: Tor no ha trobat aquesta pàgina
+    profile:
+      navigation:
+        log_out: Tancar sessió
+        my_profile: El meu perfil
+        settings: Configuració
+      onboarding:
+        choose_native_language: Trieu la vostra llengua materna o l’idioma que entengueu
+        do_you_understand_english: Entens l'anglès?
+        hello: Hola
+        language_levels:
+          a1: Nivell elemental
+          a2: Nivell pre-intermedi
+          b1: Nivell intermedi
+          b2: Nivell intermedi superior
+          c1: Nivell avançat
+          no_knowledge: Sense coneixement
+        language_not_supported:
+          note: T'avisarem tan aviat com l'idioma estigui disponible
+          title: Ho sentim, però encara no admetem aquest idioma
+          try_another_language: Proveu un altre idioma
+        'no': 'No'
+        search_placeholder: Cerca...
+        show_more_languages: Altres llengües
+        target_language_question: Quin idioma vols aprendre?
+        what_is_language_level: Com valoraries el teu nivell %{languageName}?
+        'yes': Sí
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Política de privadesa de Lingu
+        support: Suport
+      logout: Tancar sessió
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Rebeu actualitzacions dels professors i escoles que seguiu
+              sections:
+                app_notifications: Notificacions de les apps
+                email: Correu electrònic
+              title: Assistència a l'aprenentatge
+            marketing:
+              description: Estigueu informat de totes les promocions, actualitzacions
+                i inspiració de Lingu
+              sections:
+                browser_notifications: Notificacions del navegador
+                email: Correu electrònic
+              title: Màrqueting
+          title: Preferències de contacte
+        personal_information:
+          delete_photo: Suprimeix la foto
+          email: Correu electrònic
+          first_name: Nom
+          last_name: Cognom
+          social_accounts:
+            connected: Connectat
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: No connectat
+            title: Comptes socials
+          title: Informació personal
+          update_photo: Actualitza la foto
+        school:
+          active_licence: Llicència activa
+          active_status: Actiu
+          delete_profile: Esborra el meu perfil
+          delete_profile_modal:
+            body: |-
+              Esborreu totes les vostres dades, per sempre. No hi ha cap botó de desfer i no el podem recuperar després.
+              Esteu segur que voleu suprimir permanentment el vostre perfil de Lingu i totes les vostres dades?
+            cancel: Cancel · lar
+            confirm: Sí, suprimiu-lo
+            i_understand_the_consequences: Entenc les conseqüències
+            title: Voleu eliminar el vostre perfil?
+          expired: Caducat %{expire_date}
+          expires: Caduca %{expire_date}
+          inactive_status: Inactiu
+          revoke_access: Revoca l'accés de lectura
+          sections:
+            contact_school: Poseu-vos en contacte amb l’escola
+            export_my_data: Exporta les meves dades
+            read_school_privacy_policy: Llegiu la política de privadesa de l’escola
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Reproducció de música
+              sound_effects: Efectes de so
+              title: So
+            visual:
+              dark_theme: Tema fosc
+              font_size:
+                test_text: L’herba sempre és més verda a l’altra banda de la tanca
+                title: Mida de la font
+              high_contrast: Alt contrast
+              hints: Consells
+              title: Visual
+          title: So i visual
+        training_settings:
+          sections:
+            i_understand: entenc
+            i_want_to_learn: vull aprendre
+            target_language_level: Nivell d’anglès
+          title: Configuració de l'entrenament
+      settings_title: Configuració
+    teacher_card:
+      followers_count:
+        one: 1 seguidor
+        other: "%{count} seguidors"
+      lessons_count:
+        one: 1 lliçó
+        other: "%{count} lliçons"

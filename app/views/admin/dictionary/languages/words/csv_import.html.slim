@@ -1,0 +1,37 @@
+- set_page_title t('.import_to_lang', lang: @language.name)
+
+- if @message
+  #notice.alert.alert-warning= @message
+.card.mb-3
+  .card-header
+    h1= t('.import_to_lang', lang: @language.name)
+    - if @error_messages.present?
+      #error_explanation
+        h4= "#{pluralize(@error_messages.length, "error")} occurred during import:"
+        ul
+          - @error_messages.each do |message|
+            li= message
+
+  .card-body.bg-light
+    h3= t('.csv_import')
+    = form_tag csv_import_admin_language_words_path(@language), multipart: true, class: 'upload-csv-form'
+      .csv-upload
+        label.btn.btn-outline-dark for="file"
+          = t('.select_source_file')
+        = file_field_tag :file, hidden: '', accept: '.csv', class: 'js-word-import-csv'
+        br
+        small
+          span= t('.required_columns')
+          i< phrase_body, prefix, word_class, definition, occurrences, collection_title
+- if Language::TT_AVAILABLE_LANG_CODES.include? @language.code
+  .card
+    .card-header
+      h3= t('.import_from_text')
+    .card-body.bg-light
+      h5= t('.paste_text')
+      = form_tag text_import_admin_language_words_path(@language), multipart: true, class: 'text-import-form'
+        = text_area_tag :text, '', class: 'parse-text form-control my-3', id: 'parse_text', rows: 7, cols: 75
+        div
+          = button_to t('.parse_text'), '', class: 'btn btn-primary', data: { disable_with: '...parsing' }
+    .card-footer
+      = link_to t('activerecord.devise.shared.links.back'), admin_language_words_path(@language)

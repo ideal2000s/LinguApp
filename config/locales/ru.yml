@@ -1,0 +1,614 @@
+---
+ru:
+  course_mailer:
+    course_assigned_notification:
+      button: Начать курс
+      click_start_lesson: Нажмите "Начать урок".
+      follow_course_link: Нажмите кнопку, чтобы открыть курс
+      footer_text: Возвращайтесь в Lingu, чтобы узнавать что-то новое каждый день!
+      get_started_line: 'Вот как начать:'
+      notification_link: Настройки уведомлений
+      open_lesson: Откройте первый урок
+      or_paste_this_link: или вставьте эту ссылку в свой браузер
+      sign_in_with_email: Войдите, используя свой адрес электронной почты (%{email})
+      support_link: Служба поддержки
+      title: Начало работы с %{course}
+    new_document_comment:
+      author_text: "%{author} оставил отзыв о вашем задании"
+      button_text: Проверить это
+      button_url_helper: 'или вставьте эту ссылку в свой браузер:'
+      footer_text: Есть еще много чего узнать ...
+      notification_link: Настройки уведомлений
+      subject_line: Комментарий к новому заданию
+      support_link: Поддержка
+    otp:
+      ignore_msg: Если вы не отправляли этот запрос, просто проигнорируйте письмо.
+      subject_line: Ваш уникальный код для Lingu
+      unique_code_for_lingu: Вот ваш уникальный код для Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Уже есть аккаунт?
+      back: Назад
+      back_to_sign_in: Вернуться к входу
+      check_your_email_for_a_code: Проверьте свою электронную почту на наличие кода
+      continue: Продолжить
+      continue_with_email: Продолжить по электронной почте
+      continue_with_provider: Продолжайте с %{provider}
+      did_not_receive_a_code: Не получили код?
+      email_address: Адрес электронной почты
+      first_name: Имя
+      get_unique_code: Получите уникальный код для входа
+      join_lingu: Присоединяйтесь к Lingu
+      last_name: Фамилия
+      more_login_options: Дополнительные параметры входа
+      no_account_question: Нет учетной записи?
+      or: или
+      resend_code: Отправить код еще раз
+      sign_in: войти
+      sign_up: зарегистрироваться
+      want_to_receive_marketing_messages: Я хочу получать маркетинговые предложения
+        от Lingu
+      we_ve_sent_a_code: >-
+        Мы отправили 6-значный код на адрес <strong> {{email}} </strong>. Срок действия
+        кода истекает через 15 минут, поэтому введите его как можно скорее.
+    cookie_agreement:
+      agree: Согласен
+      condition: >-
+        Мы используем файлы cookie для анализа производительности сайта и предоставления
+        персонализированного контента. Нажимая «Согласен», вы соглашаетесь с нашими
+        условиями.
+    course:
+      accredited_course_provider: Аккредитованный провайдер курсов
+      apply: Применить
+      apply_filters: Применить фильтры
+      by: По
+      cancel: Отмена
+      categories: "%{count} категории"
+      category: Категория
+      clear: Очистить
+      clear_filters: Очистить фильтры
+      contact_us: Связаться с нами
+      could_not_find_match_for: К сожалению, мы не смогли найти совпадений для
+      course_language: Язык курса
+      duration: Продолжительность
+      filter_settings:
+        categories:
+          academic: Академический
+          business: Бизнес
+          fashion: Мода
+          food_drink: Еда, напиток
+          for_kids: Для детей
+          general: генеральный
+          health: Здоровье
+          legal: Юридический
+          sport: Спорт
+          travel: Путешествовать
+        durations:
+          t0_600: "<10 минут"
+          t1800_3600: 30-60 минут
+          t3600_86400: 1+ час
+          t600_1800: 10-30 минут
+        focus_on:
+          conversation: Разговор
+          grammar: Грамматика
+          listening: Прослушивание
+          pronunciation: Произношение
+          reading: Чтение
+          speaking: Говорящий
+          writing: Письмо
+        levels:
+          long:
+            advanced: Продвинутый уровень
+            elementary: Простейший уровень
+            intermediate: Промежуточный уровень
+            no_knowledge: Нет знаний
+            pre_intermediate: Уровень ниже среднего
+            upper_intermediate: Уровень выше среднего
+          short:
+            advanced: Продвинутый
+            beginner: Новичок
+            intermediate: Средний
+        sort_by:
+          most_rated: Самый популярный
+          newest: Новейшие
+          popularity: Популярность
+      filters: Фильтры
+      focus_on: Фокус на
+      focus_on_title: Я хочу сосредоточиться на
+      hide_lessons: Скрыть уроки
+      hours: Часы
+      i_understand: Я понимаю
+      i_want_to_learn: Я хочу научиться
+      in_language: в %{language}
+      language: Язык
+      learn_more: Учить больше
+      less_settings: Меньше настроек
+      lessons: Уроки
+      lessons_available: "%{number} уроков доступно"
+      lessons_catalog_page_subtitle: Онлайн-уроки для свободного и уверенного разговора
+      lessons_catalog_page_title: Учите языки легко и эффективно с Lingu
+      level: Уровень
+      min: Мин.
+      more_settings: Больше настроек
+      navbar:
+        close: Закрыть меню
+        menu: Меню
+        select_language: Выбрать язык
+      need_to_buy_course: Вам нужно сначала записаться на курс
+      no_description: Нет описания
+      no_results: К сожалению, мы не смогли найти совпадений для
+      or: или
+      per_month: в месяц
+      plans: Планы
+      privacy_policy: Политика конфиденциальности
+      rating: Рейтинг
+      remove_all_filters: Удалить все фильтры
+      reviews: Отзывы
+      save: Сохранить
+      search: Поиск
+      select_dots: Выбрать...
+      select_languages: Выберите языки
+      select_num_languages: Выберите языки %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: Би 2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Показать все
+      show_all_lessons: Показать все уроки
+      show_lessons: Показать уроки %{number}
+      show_more: Показать больше
+      sign_up_with_lingu_for: Зарегистрируйтесь в Lingu Norway для
+      skills: "%{count} навыки"
+      sort_by: Сортировать по
+      start_typing_here: Начните печатать здесь
+      teach: Учат
+      terms_and_conditions: Условия и положения
+      time_range: Временной диапазон
+      try_adjusting_your_search: Попробуйте скорректировать поиск, изменив фильтры
+      try_this_course: Попробовать этот курс
+      website_language: Язык веб-сайта
+      words: Слова
+    games:
+      finished:
+        go_to_next_exercise: Отлично сработано! Перейти к следующему упражнению
+      flashcard:
+        buttons:
+          finish: Конец
+          next: Следующий
+          previous: Предыдущий
+        check_out_new_words: Ознакомьтесь с новыми словами, которые вы выучите на
+          этом уроке
+        frequency_of_word_usage: Частота употребления слов в %{language}
+        keep_practice_to_learn_all_words: Просмотрите слова %{count} и поиграем в
+          игры!
+        word_frequency:
+          level1: Редко используемый
+          level2: Редко используемый
+          level3: Частота слова - средняя
+          level4: Частота слова - средняя
+          level5: Общие
+          level6: Очень распространен
+      match_word:
+        click_and_move_each_word_to_counterpart: Щелкните и переместите каждое слово
+          к его аналогу
+        skip_tutorial: Прыгать
+        start_heading: Подберите слова, чтобы получилась пара
+        time_is_up: Время вышло!
+      skip_tutorial: Пропускать
+      time_is_up: Время вышло!
+      word_nodes:
+        match_letters_to_form_word: Подбирайте буквы, чтобы образовать слово
+      word_waterfall:
+        do_not_hesitate: Давайте ускоряться!
+        go_to_next_exercise: Перейти к следующему упражнению
+        select_correct_translation: Выберите правильное соответствие
+        well_done: Отлично сработано!
+    home_page:
+      hello: Здравствуйте,
+      popular_lessons: Популярные уроки
+      show_more: Показать больше
+      time: "%{count} мин"
+      today_lesson: Ваш урок на сегодня
+      user_name: "%{name}!"
+      words: "%{count} слов"
+    idle_screen:
+      by_author: 'автор: %{authorName}'
+      continue_lesson: Продолжить урок
+      exit: Выход
+      idle_message: Вы какое-то время были неактивны...
+    lesson_page:
+      back_to_course_page: Вернуться на страницу курса
+      close: Закрыть
+      continue_lesson: Продолжить урок
+      followed: Подписан
+      hamburger_menu_btn: Гамбургер меню
+      lesson_given: уроки
+      not_started: не начато
+      or: Или
+      part_complete: "%{percent}% выполнено"
+      restart_lesson: Начать заново
+      section_check: Проверьте
+      section_check_info: "%{count} тесты"
+      section_learn: Учиться
+      section_learn_info: "%{count} мин на просмотр и чтение"
+      section_play: Играть в
+      section_play_info: "%{count} слов для практики"
+      start_lesson: Начать урок
+      step_progress: "%{percent}%"
+      subscribe: следить
+      subscribed: Подписан
+      subscribers: подписчики
+      time_min: "%{minutesNumber} мин"
+      unsubscribe: Отписаться
+      webview_error_title: Что-то пошло не так...
+      words_number: "%{wordsNumber} новые слова"
+    lesson_task:
+      cancel_button: отменить
+      check:
+        navigation_next: следующий
+        navigation_previous: Предыдущий
+        navigation_skip: Пропустить
+      controls_panel:
+        font_size_button: Размер шрифта
+        high_contrast_button:
+          origin: Высокий контраст
+          short: Контраст
+        hints_button: Подсказки
+        music_playback_button:
+          origin: Воспроизведение музыки
+          short: Музыка
+        sound_effects_button:
+          origin: Звуковые эффекты
+          short: Звук
+      exit_button: Выход
+      finish_button: Конец
+      finished:
+        back_to_learn: Вернуться, чтобы узнать
+        back_to_lesson_page: Вернуться на страницу урока
+        back_to_results_page: Вернуться на страницу результатов
+        bad_result_message: Хм ... попробуй взять урок еще раз
+        close_lesson: Закрытие урока
+        correct_answers_list: Список правильных ответов
+        good_result_message: Я вижу, вы приложили усилия!
+        great_result_message: Отлично сработано! Это отличные результаты!
+        next_course_lesson: Перейти к следующему уроку в курсе
+        no_results: У вас еще нет результатов тестирования
+        no_results_text: Пожалуйста, завершите урок и пройдите тест, чтобы увидеть
+          результат
+        see_correct_answers_list: Посмотреть список правильных ответов
+        train_more: Больше тренируйтесь, и в следующий раз вы добьетесь лучших результатов!
+        you_finished_lesson: Большой! Ты закончил урок
+      go_back: Вернись
+      next_button: следующий
+      not_available_task: Эта задача пока недоступна
+      start_button: Начало
+      tasks:
+        check:
+          assignment:
+            accept: Принять
+            author_will_check_your_answer: "%{author} рассмотрит ваш ответ и обычно
+              оставит отзыв в течение 1-2 дней."
+            continue_writing: Продолжайте писать
+            copy: Копировать
+            delete: удалять
+            delete_record: Удалить запись
+            edit: редактировать
+            essay_does_not_have_enough_words: >-
+              Ваш ответ должен содержать как минимум %{minWordsNumber} слов. Ваш ответ
+              в настоящее время %{currentWordsNumber} слов.
+            followers_count: "%{followersCount} подписчиков"
+            lessons_count: "%{lessonsCount} уроки"
+            minimal_recording_time: Минимальное время записи - %{minimalRecordingTime}
+            minimum_characters_amount: Минимальное количество символов - %{minimumCharactersAmount}
+            minimum_words_amount: Минимум слов - %{minimumAmount}
+            record_again: Записать снова
+            record_voice: Запись голоса
+            send_anyway: Все равно отправить
+            send_to_review: Отправить на обзор
+            skip: Пропускать
+            too_short_answer: Слишком короткий ответ
+            type_your_answer: Введите свой ответ
+            unknown_task_type: Неизвестный тип задачи
+            upgrade_licence: Обновить лицензию
+            upgrade_your_plan: Обновите свой план, чтобы попробовать задания с отзывами
+              учителей
+            upload_files: Загрузить файлы
+            write_essay: Написать эссе
+            you_have_used_amount_of_assignments: Вы использовали кредиты на назначение
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Пробел в предложении
+          fill_in_table:
+            column_answer_placeholder: Ответ
+            column_question_placeholder: Вопрос
+            example: пример
+          true_false:
+            'false': Ложь
+            'true': Правда
+        learn:
+          translatable_text:
+            show_original: Показать оригинал
+            translate_into: Перевести с Google на %{languageName}
+            translate_into_your_lang: Переводите с Google на ваш язык
+        play:
+          arrange_words:
+            start_screen:
+              heading: Составьте предложение из заданных слов
+          audition:
+            start_screen:
+              heading: Прослушайте аудио и нажмите на слово, которое вы только что
+                услышали
+          dictation:
+            get_help: Получить помощь
+            i_do_not_know: Я не знаю
+            input_placeholder: Введите здесь то, что вы слышали
+            start_screen:
+              heading: Слушайте и пишите то, что слышите
+          fill_gap:
+            start_screen:
+              heading: Подберите слово и его значение
+          finish_screen:
+            go_to_next_exercise: Отлично сработано! Перейти к следующему упражнению
+          image_hotspot:
+            start_screen:
+              heading: Назовите предметы на картинке правильно
+          image_object:
+            start_screen:
+              heading: Выберите нужный объект со следующего изображения
+          inline_dropdown:
+            start_screen:
+              heading: Выберите слова, соответствующие предложению
+          mark_word:
+            start_screen:
+              heading: Прочтите текст и выберите слово, соответствующее изображению
+          minimal_pairs:
+            start_screen:
+              heading: Посмотрите видео и выберите правильный вариант
+    locale:
+      currency_switcher_title: Переключатель валют
+      lang_switcher_title: Переключатель языка
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: английский
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvi kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Норск
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: аф Соомаали
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: киСуахили
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Аудио загружается
+        aria_pause_button: Пауза
+        aria_play_button: Играть в
+        aria_reload_button: Перезагрузить
+        aria_stop_button: Стоп
+        reload_message: Не удалось загрузить аудио. Пожалуйста, нажмите кнопку, чтобы
+          перезагрузить.
+    mobile_modal:
+      apply: Применять
+      cancel: Отмена
+      clear: ясно
+      save: Сохранить
+    page404:
+      goToStartLessonPage: Перейти на страницу начала урока
+      ooops: Ой...
+      sorry_message: Извините, Tor не смог найти эту страницу
+    profile:
+      navigation:
+        log_out: Выйти
+        my_profile: Мой профиль
+        settings: Настройки
+      onboarding:
+        choose_native_language: Выберите свой родной язык или язык, который вы понимаете
+        do_you_understand_english: Вы понимаете английский?
+        hello: Здравствуйте
+        language_levels:
+          a1: Простейший уровень
+          a2: Уровень ниже среднего
+          b1: Промежуточный уровень
+          b2: Уровень выше среднего
+          c1: Продвинутый уровень
+          no_knowledge: Нет знаний
+        language_not_supported:
+          note: Мы сообщим вам, как только язык будет доступен
+          title: Извините, но мы пока не поддерживаем этот язык
+          try_another_language: Попробуйте другой язык
+        'no': Нет
+        search_placeholder: Поиск...
+        show_more_languages: Другие языки
+        target_language_question: Какой язык Вы бы хотели изучить?
+        what_is_language_level: Как бы вы оценили свой уровень %{languageName}?
+        'yes': да
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Политика конфиденциальности Lingu
+        support: Служба поддержки
+      logout: Выйти
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Получайте обновления от учителей и школ, на которых вы
+                подписаны
+              sections:
+                app_notifications: Уведомления приложений
+                email: Эл. почта
+              title: Помощь в обучении
+            marketing:
+              description: Будьте в курсе всех акций, обновлений и вдохновения от
+                Lingu
+              sections:
+                browser_notifications: Уведомления в браузере
+                email: Эл. почта
+              title: Маркетинг
+          title: Контактные предпочтения
+        personal_information:
+          delete_photo: Удалить фото
+          email: Эл. адрес
+          first_name: Имя
+          last_name: Фамилия
+          social_accounts:
+            connected: Связаны
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Не подключен
+            title: Социальные аккаунты
+          title: Личные данные
+          update_photo: Обновить фото
+        school:
+          active_licence: Активная лицензия
+          active_status: Активный
+          delete_profile: Удалить мой профиль
+          delete_profile_modal:
+            body: |-
+              Вы стираете все свои данные навсегда. Кнопки отмены нет, и мы не сможем вернуть ее вам после.
+              Вы уверены, что хотите навсегда удалить свой профиль Lingu и все свои данные?
+            cancel: отменить
+            confirm: Да, удалить
+            i_understand_the_consequences: Я понимаю последствия
+            title: Удалить свой профиль?
+          expired: Просроченный %{expire_date}
+          expires: Истекает %{expire_date}
+          inactive_status: Неактивный
+          revoke_access: Отменить доступ для чтения
+          sections:
+            contact_school: Связаться со школой
+            export_my_data: Экспортировать мои данные
+            read_school_privacy_policy: Прочтите Политику конфиденциальности школы
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Воспроизведение музыки
+              sound_effects: Звуковые эффекты
+              title: Звук
+            visual:
+              dark_theme: Темная тема
+              font_size:
+                test_text: По ту сторону забора трава всегда зеленее
+                title: Размер шрифта
+              high_contrast: Высокий контраст
+              hints: Подсказки
+              title: Визуальный
+          title: Звук и видео
+        training_settings:
+          sections:
+            i_understand: Я понимаю
+            i_want_to_learn: я хочу учиться
+            target_language_level: Уровень английского
+          title: Настройки тренировки
+      settings_title: Настройки
+    teacher_card:
+      followers_count:
+        one: 1 подписчик
+        other: "%{count} подписчиков"
+      lessons_count:
+        one: 1 урок
+        other: "%{count} уроки"

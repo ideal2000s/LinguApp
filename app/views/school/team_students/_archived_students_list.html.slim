@@ -1,0 +1,16 @@
+.archived_students_list.thead-block-list
+  table.table.table-hover.m-0
+    thead
+      tr
+        - %w[name email data_deletion_date target_native].each do |e|
+          - if e == 'target_native'
+            th
+              span.target-language-header
+                = t('school.team_students.archived_students.table_headers.native')
+              span
+                = t('school.team_students.archived_students.table_headers.target')
+          - else
+            th = t(e, scope: 'school.team_students.archived_students.table_headers')
+        th
+    tbody
+      = render partial: 'archived_students_list_row', collection: team_students, as: :team_student

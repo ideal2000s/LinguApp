@@ -1,0 +1,38 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2020", "dom", "webworker"],
+    "module": "es2020",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny":true,
+    "noImplicitThis":true,
+    "noImplicitReturns":true,
+    "strictNullChecks":true,
+    "esModuleInterop": true,
+    "baseUrl": "frontend",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./@types"
+    ]
+  },
+  "exclude": [
+    "**/*.stories.*",
+    "**/stories/*",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/node_modules",
+    "**/.*/",
+    "vendor",
+    "assets",
+    "public"
+  ],
+  "compileOnSave": false
+}

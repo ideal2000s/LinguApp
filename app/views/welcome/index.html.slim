@@ -1,0 +1,15 @@
+- set_page_title t('welcome.signin.welcome_title')
+
+.jumbotron
+  .card.mb-3
+    .card-header
+      h2 Welcome to Lingu
+    .card-body
+      ul.nav.flex-column
+        li.nav-item
+          = link_to t('admin.lessons.index.my_lessons'), teach_lessons_path, class: 'nav-link'
+        - if nav_policy.admin_dashboard?
+          li.nav-item
+            = link_to t('layouts.admin.sidebar.dashboard'), admin_dashboard_path, class: 'nav-link'
+        li.nav-item
+          = link_to t('profiles.show.update_profile'), profile_path, class: 'nav-link'

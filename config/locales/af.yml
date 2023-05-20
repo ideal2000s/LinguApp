@@ -1,0 +1,584 @@
+---
+af:
+  course_mailer:
+    course_assigned_notification:
+      button: Begin die kursus
+      click_start_lesson: Klik op 'Begin les'
+      follow_course_link: Klik op die knoppie om die kursus te open
+      get_started_line: 'Hier is hoe u begin:'
+      notification_link: Kennisgewinginstellings
+      open_lesson: Maak die eerste les oop
+      or_paste_this_link: of plak hierdie skakel in u blaaier
+      sign_in_with_email: Meld aan met u e-posadres (%{email})
+      support_link: Ondersteuning
+      title: Aan die slag met %{course}
+  frontend:
+    auth:
+      already_have_acc_question: Reeds 'n rekening?
+      back: Terug
+      back_to_sign_in: Terug na Aanmeld
+      check_your_email_for_a_code: Kyk na u e-pos vir u kode
+      continue: Aanhou
+      continue_with_email: Gaan voort met e-pos
+      continue_with_provider: Gaan voort met %{provider}
+      did_not_receive_a_code: Het u nie 'n kode ontvang nie?
+      email_address: E-pos adres
+      first_name: Eerste naam
+      get_unique_code: Kry 'n unieke aanmeldkode
+      join_lingu: Sluit aan by Lingu
+      last_name: Van
+      more_login_options: Meer aanmeldopsies
+      no_account_question: Het u nie 'n rekening nie?
+      or: of
+      resend_code: Herstuur kode
+      sign_in: Meld aan
+      sign_up: Teken aan
+      want_to_receive_marketing_messages: Ek wil bemarkingsboodskappe van Lingu ontvang
+      we_ve_sent_a_code: >-
+        Ons het 'n ses-syfer-kode na <strong> {{email}} </strong> gestuur. Die kode
+        verval binne 15 minute, so voer dit binnekort in.
+    cookie_agreement:
+      agree: Stem saam
+      condition: >-
+        Ons gebruik koekies om werfprestasies te ontleed en gepersonaliseerde inhoud
+        te lewer. Deur op "Stem saam" te klik, stem u in tot ons voorwaardes.
+    course:
+      accredited_course_provider: Geakkrediteerde kursusverskaffer
+      apply: Doen aansoek
+      apply_filters: Pas filters toe
+      by: Deur
+      categories: "%{count} kategorieë"
+      category: Kategorie
+      clear: Duidelik
+      clear_filters: Vee filters uit
+      contact_us: Kontak Ons
+      course_language: Kursus taal
+      duration: Duur
+      filter_settings:
+        categories:
+          academic: Akademies
+          business: Besigheid
+          fashion: Mode
+          food_drink: Eet & drink
+          for_kids: Vir kinders
+          general: Generaal
+          health: Gesondheid
+          legal: Wettig
+          sport: Sport
+          travel: Reis
+        durations:
+          t0_600: "<10 minute"
+          t1800_3600: 30-60 minute
+          t3600_86400: 1+ uur
+          t600_1800: 10-30 minute
+        focus_on:
+          conversation: Gesprek
+          grammar: Grammatika
+          listening: Luister
+          pronunciation: Uitspraak
+          reading: Leeswerk
+          speaking: Praat
+          writing: Skryfwerk
+        levels:
+          long:
+            advanced: Gevorderde vlak
+            elementary: Elementêre vlak
+            intermediate: Intermediêre vlak
+            no_knowledge: Geen kennis nie
+            pre_intermediate: Voor-middelvlak
+            upper_intermediate: Boonste middelvlak
+          short:
+            advanced: Gevorderd
+            beginner: Beginner
+            intermediate: Intermediêr
+        sort_by:
+          most_rated: Mees gegradeer
+          newest: Nuutste
+          popularity: Gewildheid
+      filters: Filters
+      focus_on: Fokus op
+      focus_on_title: Ek wil daarop fokus
+      hide_lessons: Versteek lesse
+      hours: Ure
+      i_understand: ek verstaan
+      i_want_to_learn: Ek wil leer
+      in_language: in %{language}
+      language: Taal
+      learn_more: Leer meer
+      less_settings: Minder instellings
+      lessons: Lesse
+      lessons_available: "%{number} lesse beskikbaar"
+      lessons_catalog_page_subtitle: Word taalheld.
+      lessons_catalog_page_title: Brei u horisonne uit met 'n taalkursus
+      level: Vlak
+      min: Min
+      more_settings: Meer instellings
+      navbar:
+        close: Maak die spyskaart toe
+        menu: Spyskaart
+        select_language: Kies taal
+      need_to_buy_course: U moet eers 'n kursus bespreek
+      no_description: Geen beskrywing verskaf nie
+      no_results: Jammer, ons kon geen wedstryd vind vir
+      or: of
+      per_month: per maand
+      plans: Planne
+      privacy_policy: Privaatheidsbeleid
+      rating: Gradering
+      reviews: Resensies
+      save: Stoor
+      search: Soek
+      select_dots: Kies ...
+      select_languages: Kies taal
+      select_num_languages: Kies %{number} tale
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Wys alles
+      show_all_lessons: Wys alles
+      show_lessons: Wys %{number}-lesse
+      show_more: Wys meer
+      sign_up_with_lingu_for: Sluit aan by Lingu Noorweë vir
+      skills: "%{count} vaardighede"
+      sort_by: Sorteer Volgens
+      start_typing_here: Begin hier tik
+      teach: Onderrig
+      terms_and_conditions: Bepalings en voorwaardes
+      time_range: Tydsbestek
+      try_this_course: Probeer hierdie kursus
+      website_language: Webwerf taal
+      words: Woorde
+    games:
+      finished:
+        go_to_next_exercise: Wel gedaan! Gaan na die volgende oefening
+      flashcard:
+        buttons:
+          finish: Klaar
+          next: Volgende
+          previous: Vorige
+        check_out_new_words: Kyk na die nuwe woorde wat u in hierdie les sal leer
+        frequency_of_word_usage: Frekwensie van woordgebruik in %{language}
+        keep_practice_to_learn_all_words: Kyk na die woorde %{count} en laat ons speletjies
+          speel!
+        word_frequency:
+          level1: Selde gebruik
+          level2: Selde gebruik
+          level3: Woordfrekwensie - medium
+          level4: Woordfrekwensie - medium
+          level5: Algemene
+          level6: Baie algemeen
+      match_word:
+        click_and_move_each_word_to_counterpart: Klik en skuif elke woord na sy eweknie
+        start_heading: Pas woorde om 'n paar te maak
+        time_is_up: Tyd is verby!
+      skip_tutorial: Huppel
+      time_is_up: Tyd is verby!
+      word_nodes:
+        match_letters_to_form_word: Pas letters om 'n woord te vorm
+      word_waterfall:
+        do_not_hesitate: Kom ons bespoedig!
+        go_to_next_exercise: Gaan na die volgende oefening
+        select_correct_translation: Kies die regte pasmaat
+        well_done: Wel gedaan!
+    home_page:
+      hello: Hallo,
+      popular_lessons: Gewilde lesse
+      show_more: Wys meer
+      time: "%{count} min"
+      today_lesson: U les vir vandag
+      user_name: "%{name}!"
+      words: "%{count} woorde"
+    idle_screen:
+      by_author: deur %{authorName}
+      continue_lesson: Gaan voort met les
+      exit: Uitgang
+      idle_message: Jy is al 'n geruime tyd ledig ...
+    lesson_page:
+      back_to_course_page: Terug na kursusblad
+      close: Naby
+      continue_lesson: Gaan voort met les
+      followed: Gevolg
+      hamburger_menu_btn: Hamburger-spyskaart
+      lesson_given: lesse
+      not_started: nie begin
+      or: Of
+      part_complete: "%{percent}% voltooi"
+      restart_lesson: Begin oor
+      section_check: Tjek
+      section_check_info: "%{count} toetse"
+      section_learn: Leer
+      section_learn_info: "%{count} min om te kyk en te lees"
+      section_play: Speel
+      section_play_info: "%{count} woorde om te oefen"
+      start_lesson: Begin les
+      step_progress: "%{percent}%"
+      subscribe: Volg
+      subscribed: Gevolg
+      subscribers: volgelinge
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Ontvolg
+      webview_error_title: Iets het verkeerd geloop...
+      words_number: "%{wordsNumber} nuwe woorde"
+    lesson_task:
+      cancel_button: Kanselleer
+      check:
+        navigation_next: Volgende
+        navigation_previous: Vorige
+        navigation_skip: Huppel
+      controls_panel:
+        font_size_button: Skrifgrootte
+        high_contrast_button:
+          origin: Hoë kontras
+          short: Kontras
+        hints_button: Wenke
+        music_playback_button:
+          origin: Musiek speel
+          short: Musiek
+        sound_effects_button:
+          origin: Byklanke
+          short: Klank
+      exit_button: Uitgang
+      finish_button: Klaar
+      finished:
+        back_to_learn: Terug om te leer
+        back_to_lesson_page: Terug na die lesblad
+        back_to_results_page: Terug op die resultate bladsy
+        bad_result_message: Hmm ... probeer die les nog een keer neem
+        close_lesson: Maak les toe
+        correct_answers_list: Lys met korrekte antwoorde
+        good_result_message: Ek kan sien jy het moeite gedoen!
+        great_result_message: Wel gedaan! Dit is goeie resultate!
+        next_course_lesson: Gaan na die volgende les
+        no_results: U het nog geen toetsuitslae nie
+        no_results_text: Voltooi asseblief die les en slaag die toets om die resultate
+          te kry
+        see_correct_answers_list: Sien die korrekte antwoordelys
+        train_more: Oefen meer en u sal volgende keer beter resultate behaal!
+        you_finished_lesson: Groot! U het die les voltooi
+      go_back: Gaan terug
+      next_button: Volgende
+      not_available_task: Hierdie taak is nog nie beskikbaar nie
+      start_button: Begin
+      tasks:
+        check:
+          assignment:
+            accept: Aanvaar
+            author_will_check_your_answer: "%{author} sal u antwoord hersien en gewoonlik
+              binne 1-2 dae terugvoer gee"
+            continue_writing: Gaan voort met skryf
+            copy: Kopieer
+            delete: Vee uit
+            delete_record: Vee rekord uit
+            edit: Wysig
+            essay_does_not_have_enough_words: >-
+              U antwoord moet minstens %{minWordsNumber} woorde bevat. U antwoord
+              is tans %{currentWordsNumber} woorde.
+            followers_count: "%{followersCount} volgelinge"
+            lessons_count: "%{lessonsCount} lesse"
+            minimal_recording_time: Minimale opnametyd - %{minimalRecordingTime}
+            minimum_characters_amount: Minimum karakters - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum woorde - %{minimumAmount}
+            record_again: Neem weer op
+            record_voice: Neem stem op
+            send_anyway: Stuur in elk geval
+            send_to_review: Stuur om te hersien
+            skip: Huppel
+            too_short_answer: Te kort antwoord
+            type_your_answer: Tik u antwoord in
+            unknown_task_type: Onbekende taaksoort
+            upgrade_licence: Gradeer lisensie op
+            upgrade_your_plan: Gradeer u plan op om opdragte met onderwysersresensies
+              te probeer
+            upload_files: Laai lêers op
+            write_essay: Skryf opstel
+            you_have_used_amount_of_assignments: U het %{amountOfAssignments} werkopdragkrediete
+              gebruik
+          fill_in_blanks:
+            sentence_gap: Sinsgaping
+          fill_in_table:
+            column_answer_placeholder: Antwoord
+            column_question_placeholder: Vraag
+            example: Voorbeeld
+          true_false:
+            'false': onwaar
+            'true': Waar
+        learn:
+          translatable_text:
+            show_original: Vertoon oorspronklike
+            translate_into: Vertaal met Google in %{languageName}
+            translate_into_your_lang: Vertaal met Google in u taal
+        play:
+          arrange_words:
+            start_screen:
+              heading: Maak 'n sin uit die gegewe woorde
+          audition:
+            start_screen:
+              heading: Luister na die klank en tik op die woord wat u pas gehoor het
+          dictation:
+            get_help: Kry hulp
+            i_do_not_know: Ek weet nie
+            input_placeholder: Tik in wat u hier gehoor het
+            start_screen:
+              heading: Luister en skryf wat jy hoor
+          fill_gap:
+            start_screen:
+              heading: Pas die woord en die betekenis daarvan
+          finish_screen:
+            go_to_next_exercise: Wel gedaan! Gaan na die volgende oefening
+          image_hotspot:
+            start_screen:
+              heading: Benoem die voorwerpe in die prentjie korrek
+          image_object:
+            start_screen:
+              heading: Kies die regte voorwerp uit die volgende prentjie
+          inline_dropdown:
+            start_screen:
+              heading: Kies die woorde wat by die sin pas
+          mark_word:
+            start_screen:
+              heading: Lees die teks en kies die woord wat by die prent pas
+          minimal_pairs:
+            start_screen:
+              heading: Kyk na die video en kies die regte opsie
+    locale:
+      currency_switcher_title: Valutaskakelaar
+      lang_switcher_title: Taalskakelaar
+      locales:
+        bg: Български
+        de: Deutsch
+        en: Engels
+        es: Español
+        fr: Français
+        it: Italiano
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        nb: Norsk
+        nl: Nederlands
+        pl: Polski
+        pt: Portugees
+        ro: Limba română
+        ru: Русский язык
+        so: af Soomaali
+        sr: Сербский
+        sw: kiSwahili
+        tr: Türkçe
+        uk: Українська
+        af: Afrikaans
+        sq: Albanian
+        am: Amharic
+        ar: Arabic
+        hy: Armenian
+        az: Azerbaijani
+        eu: Basque
+        be: Belarusian
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        zh: Chinese
+        co: Corsican
+        hr: Croatian
+        cs: Czech
+        da: Danish
+        eo: Esperanto
+        et: Estonian
+        fi: Finnish
+        fy: Frisian
+        gl: Galician
+        ka: Georgian
+        el: Greek
+        gu: Gujarati
+        ht: Haitian Creole
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hu: Hungarian
+        is: Icelandic
+        ig: Igbo
+        id: Indonesian
+        ga: Irish
+        ja: Japanese
+        jv: Javanese
+        kn: Kannada
+        kk: Kazakh
+        km: Khmer
+        rw: Kinyarwanda
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        lo: Lao
+        la: Latin
+        lb: Luxembourgish
+        mk: Macedonian
+        mg: Malagasy
+        ms: Malay
+        ml: Malayalam
+        mt: Maltese
+        mi: Maori
+        mr: Marathi
+        mn: Mongolian
+        my: Myanmar (Burmese)
+        ne: Nepali
+        no: Norwegian
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        ps: Pashto
+        fa: Persian
+        pa: Punjabi
+        sm: Samoan
+        gd: Scots Gaelic
+        st: Sesotho
+        sn: Shona
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        su: Sundanese
+        sv: Swedish
+        tl: Tagalog (Filipino)
+        tg: Tajik
+        ta: Tamil
+        tt: Tatar
+        te: Telugu
+        th: Thai
+        tk: Turkmen
+        ur: Urdu
+        ug: Uyghur
+        uz: Uzbek
+        vi: Vietnamese
+        cy: Welsh
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Klank laai tans
+        aria_pause_button: Pouse
+        aria_play_button: Speel
+        aria_reload_button: Herlaai
+        aria_stop_button: Stop
+        reload_message: Kon nie oudio laai nie. Klik op die knoppie om weer te laai.
+    page404:
+      goToStartLessonPage: Gaan na die beginlesblad
+      ooops: Oooops ...
+      sorry_message: Jammer, Tor kon nie hierdie bladsy vind nie
+    profile:
+      navigation:
+        log_out: Teken uit
+        my_profile: My profiel
+        settings: Instellings
+      onboarding:
+        choose_native_language: Kies u moedertaal of taal wat u verstaan
+        do_you_understand_english: Verstaan jy Engels?
+        hello: Hallo
+        language_levels:
+          a1: Elementêre vlak
+          a2: Pre-intermediêre vlak
+          b1: Intermediêre vlak
+          b2: Boonste middelvlak
+          c1: Gevorderde vlak
+          no_knowledge: Geen kennis nie
+        language_not_supported:
+          note: Ons sal u in kennis stel sodra die taal beskikbaar is
+          title: Jammer, maar ons ondersteun nog nie hierdie taal nie
+          try_another_language: Probeer 'n ander taal
+        'no': Geen
+        search_placeholder: Soek...
+        show_more_languages: Ander tale
+        target_language_question: Watter taal wil u leer?
+        what_is_language_level: Hoe sou u u %{languageName}-vlak beoordeel?
+        'yes': Ja
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingu se privaatheidsbeleid
+        support: Ondersteuning
+      logout: Teken uit
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Ontvang opdaterings van onderwysers en skole wat u volg
+              sections:
+                app_notifications: APP kennisgewings
+                email: E-pos
+              title: Leerhulp
+            marketing:
+              description: Bly op hoogte van alle promosies, opdaterings en inspirasie
+                van Lingu
+              sections:
+                browser_notifications: Blaaierkennisgewings
+                email: E-pos
+              title: Bemarking
+          title: Kontakvoorkeure
+        personal_information:
+          delete_photo: Vee foto uit
+          email: E-pos
+          first_name: Eerste naam
+          last_name: Van
+          social_accounts:
+            connected: Gekoppel
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Nie gekonnekteer nie
+            title: Sosiale rekeninge
+          title: Persoonlike inligting
+          update_photo: Dateer foto op
+        school:
+          active_licence: Aktiewe lisensie
+          active_status: Aktief
+          delete_profile: Vee my profiel uit
+          delete_profile_modal:
+            body: |-
+              U vernietig al u data — vir altyd. Daar is geen ongedaanknoppie nie, en ons kan dit nie weer vir u terugkry nie.
+              Is u seker dat u u Lingu-profiel en al u data permanent wil verwyder?
+            cancel: Kanselleer
+            confirm: Ja, verwyder dit
+            i_understand_the_consequences: Ek verstaan die gevolge
+            title: Vee u profiel uit?
+          expired: Verval %{expire_date}
+          expires: Verval %{expire_date}
+          inactive_status: Onaktief
+          revoke_access: Herroep leestoegang
+          sections:
+            contact_school: Kontak skool
+            export_my_data: Voer my data uit
+            read_school_privacy_policy: Lees die skool se privaatheidsbeleid
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musiek speel
+              sound_effects: Byklanke
+              title: Klank
+            visual:
+              dark_theme: Donker tema
+              font_size:
+                test_text: Die gras is altyd groener aan die ander kant van die heining
+                title: Skrifgrootte
+              high_contrast: Hoë kontras
+              hints: Wenke
+              title: Visueel
+          title: Klank en beeldend
+        training_settings:
+          sections:
+            i_understand: ek verstaan
+            i_want_to_learn: Ek wil leer
+            target_language_level: Engelse vlak
+          title: Opleidingsinstellings
+      settings_title: Instellings
+    teacher_card:
+      followers_count:
+        one: 1 volgeling
+        other: "%{count} volgelinge"
+      lessons_count:
+        one: 1 les
+        other: "%{count} lesse"

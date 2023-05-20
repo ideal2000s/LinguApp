@@ -1,0 +1,608 @@
+---
+fi:
+  course_mailer:
+    course_assigned_notification:
+      button: Aloita kurssi
+      click_start_lesson: Napsauta Aloita oppitunti
+      follow_course_link: Napsauta painiketta avataksesi kurssin
+      footer_text: Tule takaisin Linguun oppimaan jotain uutta joka päivä!
+      get_started_line: 'Näin pääset alkuun:'
+      notification_link: Ilmoitusasetukset
+      open_lesson: Avaa ensimmäinen oppitunti
+      or_paste_this_link: tai liitä tämä linkki selaimeesi
+      sign_in_with_email: Kirjaudu sisään sähköpostiosoitteellasi (%{email})
+      support_link: Tuki
+      title: "%{course}: n käytön aloittaminen"
+    new_document_comment:
+      author_text: "%{author} jätti arvostelun tehtävästäsi"
+      button_text: Tarkista se
+      button_url_helper: 'tai liitä tämä linkki selaimeesi:'
+      footer_text: Opittavaa on paljon enemmän ...
+      notification_link: Ilmoitusasetukset
+      subject_line: Uusi tehtäväkommentti
+      support_link: Tuki
+    otp:
+      ignore_msg: Jos et tehnyt tätä pyyntöä, ohita vain sähköposti.
+      subject_line: Ainutlaatuinen koodisi kielelle
+      unique_code_for_lingu: Tässä on ainutlaatuinen koodisi kielelle
+  frontend:
+    auth:
+      already_have_acc_question: Onko sinulla jo tili?
+      back: Takaisin
+      back_to_sign_in: Takaisin Kirjaudu sisään
+      check_your_email_for_a_code: Tarkista koodisi sähköpostiosoitteesi
+      continue: Jatkaa
+      continue_with_email: Jatka sähköpostilla
+      continue_with_provider: Jatka mallilla %{provider}
+      did_not_receive_a_code: Etkö saanut koodia?
+      email_address: Sähköpostiosoite
+      first_name: Etunimi
+      get_unique_code: Hanki yksilöllinen kirjautumiskoodi
+      join_lingu: Liity Linguun
+      last_name: Sukunimi
+      more_login_options: Lisää kirjautumisvaihtoehtoja
+      no_account_question: Eikö sinulla ole tiliä?
+      or: tai
+      resend_code: Lähetä koodi uudelleen
+      sign_in: Kirjaudu sisään
+      sign_up: Kirjaudu
+      want_to_receive_marketing_messages: Haluan saada markkinointiviestejä Lingulta
+      we_ve_sent_a_code: >-
+        Olemme lähettäneet 6-numeroisen koodin osoitteeseen <strong> {{email}} </strong>.
+        Koodi vanhenee 15 minuutissa, joten kirjoita se pian.
+    cookie_agreement:
+      agree: Olla samaa mieltä
+      condition: >-
+        Käytämme evästeitä sivuston suorituskyvyn analysointiin ja henkilökohtaisen
+        sisällön toimittamiseen. Klikkaamalla "Hyväksyn" hyväksyt ehdot.
+    course:
+      accredited_course_provider: Akkreditoitu kurssin tarjoaja
+      apply: Käytä
+      apply_filters: Käytä suodattimia
+      by: Tekijä
+      cancel: Peruuttaa
+      categories: "%{count} luokat"
+      category: Kategoria
+      clear: Asia selvä
+      clear_filters: Tyhjennä suodattimet
+      contact_us: Ota meihin yhteyttä
+      could_not_find_match_for: Valitettavasti emme löytäneet yhtään hakua
+      course_language: Kurssin kieli
+      duration: Kesto
+      filter_settings:
+        categories:
+          academic: Akateeminen
+          business: Liiketoiminta
+          fashion: Muoti
+          food_drink: Ruoka juoma
+          for_kids: Lapsille
+          general: Kenraali
+          health: Terveys
+          legal: Laillinen
+          sport: Urheilu
+          travel: Matkustaa
+        durations:
+          t0_600: "<10 minuuttia"
+          t1800_3600: 30-60 minuuttia
+          t3600_86400: 1 + tunti
+          t600_1800: 10-30 minuuttia
+        focus_on:
+          conversation: Keskustelu
+          grammar: Kielioppi
+          listening: Kuunteleminen
+          pronunciation: Ääntäminen
+          reading: Lukeminen
+          speaking: Puhuminen
+          writing: Kirjoittaminen
+        levels:
+          long:
+            advanced: Edistynyt taso
+            elementary: Alkeistaso
+            intermediate: Keskitaso
+            no_knowledge: Ei tietoa
+            pre_intermediate: Ennen keskitasoa
+            upper_intermediate: Ylempi keskitaso
+          short:
+            advanced: Pitkälle kehittynyt
+            beginner: Aloittelija
+            intermediate: Välituote
+        sort_by:
+          most_rated: Arvostetuimmat
+          newest: Uusin
+          popularity: Suosio
+      filters: Suodattimet
+      focus_on: Keskittyä
+      focus_on_title: Haluan keskittyä
+      hide_lessons: Piilota oppitunnit
+      hours: Tunnit
+      i_understand: Ymmärrän
+      i_want_to_learn: Haluan oppia
+      in_language: muodossa %{language}
+      language: Kieli
+      learn_more: Lisätietoja
+      less_settings: Vähemmän asetuksia
+      lessons: Oppitunnit
+      lessons_available: "%{number} oppitunteja saatavilla"
+      lessons_catalog_page_subtitle: Ryhdy kielisankariksi.
+      lessons_catalog_page_title: Laajenna näköalojasi kielikurssilla
+      level: Taso
+      min: Min
+      more_settings: Lisää asetuksia
+      navbar:
+        close: Sulje valikko
+        menu: Valikko
+        select_language: Valitse kieli
+      need_to_buy_course: Sinun on varattava kurssi ensin
+      no_description: Ei kuvausta
+      no_results: Valitettavasti emme löytäneet yhtään hakua
+      or: tai
+      per_month: kuukaudessa
+      plans: Suunnitelmat
+      privacy_policy: Tietosuojakäytäntö
+      rating: Luokitus
+      remove_all_filters: Poista kaikki suodattimet
+      reviews: Arvostelut
+      save: Tallentaa
+      search: Hae
+      select_dots: Valitse ...
+      select_languages: Valitse kielet
+      select_num_languages: Valitse %{number} kieltä
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Näytä kaikki
+      show_all_lessons: Näytä kaikki oppitunnit
+      show_lessons: Näytä %{number} oppitunteja
+      show_more: Näytä lisää
+      sign_up_with_lingu_for: Rekisteröidy Lingu Norway -palveluun
+      skills: "%{count} taidot"
+      sort_by: Järjestä
+      start_typing_here: Aloita kirjoittaminen tähän
+      teach: Opettaa
+      terms_and_conditions: Käyttöehdot
+      time_range: Aikahaarukka
+      try_adjusting_your_search: Yritä säätää hakua vaihtamalla suodattimia
+      try_this_course: Kokeile tätä kurssia
+      website_language: Verkkosivuston kieli
+      words: Sanat
+    games:
+      finished:
+        go_to_next_exercise: Hyvin tehty! Siirry seuraavaan harjoitukseen
+      flashcard:
+        buttons:
+          finish: Suorittaa loppuun
+          next: Seuraava
+          previous: Edellinen
+        check_out_new_words: Katso uudet sanat, jotka opit tässä oppitunnissa
+        frequency_of_word_usage: Sanan käytön taajuus muodossa %{language}
+        keep_practice_to_learn_all_words: Tarkista %{count} sanat ja pelataan joitain
+          pelejä!
+        word_frequency:
+          level1: Harvoin käytetty
+          level2: Harvoin käytetty
+          level3: Sanataajuus - keskitaso
+          level4: Sanataajuus - keskitaso
+          level5: Yleinen
+          level6: Erittäin yleinen
+      match_word:
+        click_and_move_each_word_to_counterpart: Napsauta ja siirrä jokainen sana
+          vastaavaansa
+        start_heading: Yhdistä sanat parin muodostamiseksi
+        time_is_up: Aika on lopussa!
+      skip_tutorial: Ohita
+      time_is_up: Aika on lopussa!
+      word_nodes:
+        match_letters_to_form_word: Yhdistä kirjaimet sanan muodostamiseksi
+      word_waterfall:
+        do_not_hesitate: Nopeutetaan!
+        go_to_next_exercise: Siirry seuraavaan harjoitukseen
+        select_correct_translation: Valitse oikea ottelu
+        well_done: Hyvin tehty!
+    home_page:
+      hello: Hei,
+      popular_lessons: Suositut oppitunnit
+      show_more: Näytä lisää
+      time: "%{count} min"
+      today_lesson: Oppitunti tänään
+      user_name: "%{name}!"
+      words: "%{count} sanaa"
+    idle_screen:
+      by_author: kirjoittanut %{authorName}
+      continue_lesson: Jatka oppituntia
+      exit: Lopeta
+      idle_message: Olet ollut käyttämättömänä jonkin aikaa ...
+    lesson_page:
+      back_to_course_page: Takaisin kurssisivulle
+      close: kiinni
+      continue_lesson: Jatka oppituntia
+      followed: Seurattu
+      hamburger_menu_btn: Hampurilaismenu
+      lesson_given: oppitunteja
+      not_started: Ei alkanut
+      or: Tai
+      part_complete: "%{percent}% valmis"
+      restart_lesson: Uudelleenkäynnistää
+      section_check: Tarkistaa
+      section_check_info: "%{count} testit"
+      section_learn: Oppia
+      section_learn_info: "%{count} min katsella ja lukea"
+      section_play: pelata
+      section_play_info: "%{count} sanaa harjoitella"
+      start_lesson: Aloita oppitunti
+      step_progress: "%{percent}%"
+      subscribe: Seuraa
+      subscribed: Seurattu
+      subscribers: seuraajia
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Lopeta seuraaminen
+      webview_error_title: Jotain meni pieleen...
+      words_number: "%{wordsNumber} uusia sanoja"
+    lesson_task:
+      cancel_button: Peruuttaa
+      check:
+        navigation_next: Seuraava
+        navigation_previous: Edellinen
+        navigation_skip: Ohita
+      controls_panel:
+        font_size_button: Fonttikoko
+        high_contrast_button:
+          origin: Korkea kontrasti
+          short: Kontrasti
+        hints_button: Vihjeitä
+        music_playback_button:
+          origin: Musiikin toisto
+          short: Musiikki
+        sound_effects_button:
+          origin: Ääniefektit
+          short: Ääni
+      exit_button: Lopeta
+      finish_button: Suorittaa loppuun
+      finished:
+        back_to_learn: Takaisin oppimaan
+        back_to_lesson_page: Takaisin oppitunnin sivulle
+        back_to_results_page: Takaisin tulossivulle
+        bad_result_message: Hmm ... yritä ottaa oppitunti vielä kerran
+        close_lesson: Sulje oppitunti
+        correct_answers_list: Oikeiden vastausten luettelo
+        good_result_message: Näen, että olet ponnistellut!
+        great_result_message: Hyvin tehty! Nämä ovat upeita tuloksia!
+        next_course_lesson: Siirry kurssin seuraavaan oppituntiin
+        no_results: Sinulla ei ole vielä testituloksia
+        no_results_text: Ole hyvä ja suorita oppitunti ja läpäise testi saadaksesi
+          tulokset
+        see_correct_answers_list: Katso oikeiden vastausten luettelo
+        train_more: Harjoittele enemmän ja saavutat parempia tuloksia ensi kerralla!
+        you_finished_lesson: Loistava! Olet suorittanut oppitunnin
+      go_back: Mene takaisin
+      next_button: Seuraava
+      not_available_task: Tämä tehtävä ei ole vielä käytettävissä
+      start_button: alkaa
+      tasks:
+        check:
+          assignment:
+            accept: Hyväksyä
+            author_will_check_your_answer: "%{author} tarkistaa vastauksesi ja antaa
+              yleensä palautetta 1-2 päivän kuluessa"
+            continue_writing: Jatka kirjoittamista
+            copy: Kopio
+            delete: Poistaa
+            delete_record: Poista tietue
+            edit: Muokata
+            essay_does_not_have_enough_words: >-
+              Vastauksesi tulisi sisältää vähintään %{minWordsNumber} sanaa. Vastauksesi
+              on tällä hetkellä %{currentWordsNumber} sanaa.
+            followers_count: "%{followersCount} seuraajaa"
+            lessons_count: "%{lessonsCount} oppitunteja"
+            minimal_recording_time: Pienin tallennusaika - %{minimalRecordingTime}
+            minimum_characters_amount: Vähimmäismerkit - %{minimumCharactersAmount}
+            minimum_words_amount: Vähimmäissanat - %{minimumAmount}
+            record_again: Nauhoita uudelleen
+            record_voice: Nauhoita ääni
+            send_anyway: Lähettää pois
+            send_to_review: Lähetä arvosteluun
+            skip: Ohita
+            too_short_answer: Liian lyhyt vastaus
+            type_your_answer: Kirjoita vastauksesi
+            unknown_task_type: Tuntematon tehtävän tyyppi
+            upgrade_licence: Päivitä lisenssi
+            upgrade_your_plan: >-
+              Päivitä suunnitelmasi, jotta voit kokeilla tehtäviä opettajien arvostelujen
+              avulla
+            upload_files: Lähetä tiedostoja
+            write_essay: Kirjoita essee
+            you_have_used_amount_of_assignments: Olet käyttänyt %{amountOfAssignments}-tehtäväluottoja
+          fill_in_blanks:
+            sentence_gap: Lauserot
+          fill_in_table:
+            column_answer_placeholder: Vastaus
+            column_question_placeholder: Kysymys
+            example: Esimerkki
+          true_false:
+            'false': Väärä
+            'true': Totta
+        learn:
+          translatable_text:
+            show_original: Näytä alkuperäinen
+            translate_into: Käännä Google-kielellä %{languageName}
+            translate_into_your_lang: Käännä Google-kielelläsi
+        play:
+          arrange_words:
+            start_screen:
+              heading: Tee lause annetuista sanoista
+          audition:
+            start_screen:
+              heading: Kuuntele ääntä ja napauta juuri kuulemasi sanaa
+          dictation:
+            get_help: Hae apua
+            i_do_not_know: Minä en tiedä
+            input_placeholder: Kirjoita kuullut tähän
+            start_screen:
+              heading: Kuuntele ja kirjoita mitä kuulet
+          fill_gap:
+            start_screen:
+              heading: Yhdistä sana ja sen merkitys
+          finish_screen:
+            go_to_next_exercise: Hyvin tehty! Siirry seuraavaan harjoitukseen
+          image_hotspot:
+            start_screen:
+              heading: Nimeä kuvan objektit oikein
+          image_object:
+            start_screen:
+              heading: Valitse oikea esine seuraavasta kuvasta
+          inline_dropdown:
+            start_screen:
+              heading: Valitse sanaa vastaavat sanat
+          mark_word:
+            start_screen:
+              heading: Lue teksti ja valitse kuvaa vastaava sana
+          minimal_pairs:
+            start_screen:
+              heading: Katso video ja valitse oikea vaihtoehto
+    locale:
+      currency_switcher_title: Valuutanvaihtaja
+      lang_switcher_title: Kielenvaihtaja
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Englanti
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Ääni latautuu
+        aria_pause_button: Tauko
+        aria_play_button: pelata
+        aria_reload_button: Lataa uudelleen
+        aria_stop_button: Lopettaa
+        reload_message: Äänen lataaminen epäonnistui. Napsauta painiketta ladataksesi
+          uudelleen.
+    mobile_modal:
+      apply: Käytä
+      cancel: Peruuttaa
+      clear: Asia selvä
+      save: Tallentaa
+    page404:
+      goToStartLessonPage: Siirry oppitunnin aloitussivulle
+      ooops: Hups ...
+      sorry_message: Valitettavasti Tor ei löytänyt tätä sivua
+    profile:
+      navigation:
+        log_out: Kirjautua ulos
+        my_profile: Profiilini
+        settings: asetukset
+      onboarding:
+        choose_native_language: Valitse äidinkielesi tai ymmärtämäsi kieli
+        do_you_understand_english: Ymmärrätkö englantia?
+        hello: Hei
+        language_levels:
+          a1: Alkeistaso
+          a2: Keskitasoa edeltävä taso
+          b1: Keskitaso
+          b2: Ylempi keskitaso
+          c1: Edistynyt taso
+          no_knowledge: Ei tietoa
+        language_not_supported:
+          note: Ilmoitamme sinulle heti, kun kieli on käytettävissä
+          title: Valitettavasti emme vielä tue tätä kieltä
+          try_another_language: Kokeile toista kieltä
+        'no': Ei
+        search_placeholder: Hae...
+        show_more_languages: Muut kielet
+        target_language_question: Mitä kieltä haluat oppia?
+        what_is_language_level: Kuinka arvioisit %{languageName}-tasosi?
+        'yes': Joo
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Lingun tietosuojakäytäntö
+        support: Tuki
+      logout: Kirjautua ulos
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Vastaanota päivityksiä seuraamiltasi opettajilta ja kouluilta
+              sections:
+                app_notifications: Sovellusilmoitukset
+                email: Sähköposti
+              title: Oppimisapu
+            marketing:
+              description: Pysy ajan tasalla kaikista Lingun tarjouksista, päivityksistä
+                ja inspiraatiosta
+              sections:
+                browser_notifications: Selainilmoitukset
+                email: Sähköposti
+              title: Markkinointi
+          title: Ota yhteyttä
+        personal_information:
+          delete_photo: Poista valokuva
+          email: Sähköposti
+          first_name: Etunimi
+          last_name: Sukunimi
+          social_accounts:
+            connected: Yhdistetty
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ei yhteyttä
+            title: Sosiaaliset tilit
+          title: Henkilökohtaisia tietoja
+          update_photo: Päivitä valokuva
+        school:
+          active_licence: Aktiivinen lisenssi
+          active_status: Aktiivinen
+          delete_profile: Poista profiilini
+          delete_profile_modal:
+            body: |-
+              Hävität kaikki tietosi - ikuisesti. Kumoa-painiketta ei ole, emmekä voi saada sitä takaisin sinulle.
+              Haluatko varmasti poistaa Lingu-profiilisi ja kaikki tietosi pysyvästi?
+            cancel: Peruuttaa
+            confirm: Kyllä, poista se
+            i_understand_the_consequences: Ymmärrän seuraukset
+            title: Poistetaanko profiilisi?
+          expired: Vanhentunut %{expire_date}
+          expires: Vanhenee %{expire_date}
+          inactive_status: Epäaktiivinen
+          revoke_access: Peruuta lukuoikeus
+          sections:
+            contact_school: Ota yhteyttä kouluun
+            export_my_data: Vie tietoni
+            read_school_privacy_policy: Lue koulun tietosuojakäytäntö
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musiikin toisto
+              sound_effects: Ääniefektit
+              title: Ääni
+            visual:
+              dark_theme: Tumma teema
+              font_size:
+                test_text: Ruoho on aina vihreämpää aidan toisella puolella
+                title: Fonttikoko
+              high_contrast: Korkea kontrasti
+              hints: Vihjeitä
+              title: Visuaalinen
+          title: Ääni ja visuaalisuus
+        training_settings:
+          sections:
+            i_understand: Ymmärrän
+            i_want_to_learn: Haluan oppia
+            target_language_level: Englannin taso
+          title: Harjoitteluasetukset
+      settings_title: asetukset
+    teacher_card:
+      followers_count:
+        one: 1 seuraaja
+        other: "%{count} seuraajaa"
+      lessons_count:
+        one: 1 oppitunti
+        other: "%{count} oppitunteja"

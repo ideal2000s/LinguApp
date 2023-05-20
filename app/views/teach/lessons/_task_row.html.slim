@@ -1,0 +1,19 @@
+tr id=dom_id(task) class="task-row #{task.published? ? '' : 'bg-muted'}" data-target='tasks.task' data-task-path=position_teach_lesson_task_path(task.lesson, task)
+  td.align-middle.text-center
+    i.fas.fa-fw.mr-1 class=(task.acceptable? ? '' : 'text-danger') class=(task_icon_class(task))
+  td.align-middle
+    = link_to task.name, edit_teach_lesson_task_path(task.lesson, task), class: 'text-primary font-weight-bold'
+    br
+    small= t(task.type.underscore, scope: 'tasks.types')
+  td.align-middle= l(task.updated_at, format: :short)
+  td.align-middle.text-right
+    .btn-group.mr-2 role="group"
+      a.btn.btn-sm.btn-falcon-default data-action="tasks#up"
+        i.fas.fa-arrow-up.fa-fw
+      a.btn.btn-sm.btn-falcon-default data-action="tasks#down"
+        i.fas.fa-arrow-down.fa-fw
+      = link_to teach_task_preview_path(task), class: 'btn btn-falcon-primary btn-sm', target: '_blank' do
+        i.fas.fa-eye.fa-fw
+      - if policy(task.lesson).edit?
+        = link_to teach_lesson_task_path(task.lesson, task), aria: { label: I18n.t('teach.lessons.task_row.delete') }, class: 'btn btn-falcon-danger btn-sm', method: :delete, data: { confirm: t('teach.tasks.delete_task_confirm') } do
+          i.fas.fa-times.fa-fw

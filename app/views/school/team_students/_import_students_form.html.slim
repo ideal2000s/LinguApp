@@ -1,0 +1,27 @@
+.modal-dialog.modal-input-students role="document" data-controller="importer"
+  .modal-content
+    .modal-header.d-flex
+      h5.modal-title = t('school.team_students.import_students.title')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+        span.font-weight-light aria-hidden="true" == ("&times")
+    .modal-body
+      .file-dropzone-container data-target='importer.dropzone'
+        = form_tag analyze_imported_file_school_students_path, multipart: true, class: 'upload-csv-form', 'data-target' => 'importer.csvFileForm'
+          .input-img= image_tag('icons/import-csv.svg', class: 'mb-2', width: 37, height: 46)
+          span= t('school.team_students.import_students.upload_text')
+          span.file-input
+            =< t('school.team_students.import_students.browser_link')
+            = file_field_tag :file, accept: '.csv, .xls, .xlsx', 'data-action' => "importer#uploadCSVFile", 'data-target' => "importer.fileInput"
+          - if errors.present?
+            .error-message
+              i.fas.fa-exclamation-circle.text-danger.mr-2
+              span.text-danger.error-text = errors[0]
+          /*.note-read-more
+            = image_tag('icons/info.svg', class: 'mr-2', width: 20, height: 20)
+            = t('school.team_students.import_students.read_more')
+      .mt-2.mb-3.text-center
+        == t('school.team_students.import_students.add_or_invite_links',
+                add: link_to(t('school.team_students.invite_students.add_manually'), new_school_student_path, remote: true),
+                invite: link_to(t('school.team_students.form.send_invitation'), invite_students_school_students_path, remote: true))
+    .spinner-wrapper.d-none data-target='importer.spinner'
+      .spinner-border role="status"

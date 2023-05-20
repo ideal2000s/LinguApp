@@ -1,0 +1,6 @@
+.mr-3= custom_profile_tag(user)
+- team_user = current_team.team_users.find_by(user_id: user.id)
+- if team_user
+  = link_to user.full_name, school_team_user_path(team_user), class: 'user-full-name'
+- else
+  span.user-full-name= user.full_name

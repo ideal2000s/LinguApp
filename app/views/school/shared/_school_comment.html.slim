@@ -1,0 +1,8 @@
+.school-comment.bg-white.d-none.p-2
+  = image_tag('icons/school_image.svg', class: 'mr-1')
+    / = form_tag add_comments_school_comment_path(comment), remote: true, method: :post, class: 'd-flex'
+    /   = hidden_field_tag :document_id, document.id
+    /   = hidden_field_tag :word
+    /   = text_area_tag :comment, '', class: 'school-comment-reply form-control mx-1 p-1', cols: '28', placeholder: t('.add_comment'), required: true
+    /   button.btn.btn-primary
+    /     = t('shared.send')

@@ -1,0 +1,17 @@
+h3.font-weight-bold.mb-3.mt-5= t('teach.reviews.reviews.reviews')
+
+- reviews.each do |review|
+  .card.mb-3
+    .notification
+      .notification-avatar
+        .avatar.avatar-xl.mr-4
+          .avatar-circle
+            span.initials= review.author.initials
+      .notification-body
+        strong.fs-1= review.author_name
+        = simple_format(review.content, class: 'fs-1')
+
+        span.notification-time
+          span.fas class=review_status_class(review.status)
+          =< t(review.status, scope: 'activerecord.attributes.lesson_review.statuses')
+          =< l(review.created_at, format: :short)

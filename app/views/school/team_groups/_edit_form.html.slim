@@ -1,0 +1,40 @@
+.modal-dialog.modal-edit-team-group role="document"
+  .modal-content
+    .modal-header
+      h5.modal-title= t('school.team_groups.edit.title')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+    .modal-body
+      .team-group-information
+        h6.modal-sub-title.d-flex
+          div= t('school.teachers.new.general')
+          div.horizontal-line.flex-fill.ml-2
+        = form_for team_group, url: school_team_group_path(team_group), method: 'PUT', remote: true, html: { id: 'team_group_form' } do |f|
+          .form-group.team-group-errors
+          .row
+            .col-lg-6
+              .form-group
+                = f.label :name, t('name')
+                = f.text_field :name, class: 'form-control', required: true
+                = error_for f.object, :name
+            .col-lg-6
+              .form-group
+                = f.label :level, t('shared.level')
+                = f.select :level, options_for_select(TeamGroup.levels_for_select, f.object.level), {prompt: t('school.team_groups.new.select_level')}, { class: 'form-control select2', required: true }
+                = error_for f.object, :level
+          .d-inline-block.mr-5
+            .custom-control.custom-switch
+              = f.check_box :joinable, class: 'custom-control-input'
+              = f.label :joinable, t('school.team_groups.item.set_joinable'), class: 'custom-control-label'
+          .d-flex.action-group
+            = f.submit t('save'), class: 'btn btn-primary ml-auto'
+      .team-group-members.mt-2
+        h6.modal-sub-title.d-flex
+          div= t('admin.teams.index.columns.members')
+          div.horizontal-line.flex-fill.ml-2
+        .team-group-students.students_list
+          - if students.any?
+            table.table.table-hover.m-0
+              tbody
+                = render partial: 'school/team_groups/edit_team_group_member', collection: students, as: :student
+          - else
+            .text-center = t('school.team_groups.item.no_students')

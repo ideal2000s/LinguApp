@@ -1,0 +1,18 @@
+- set_page_title t('devise.forgot_password')
+
+.row.flex-center.min-vh-100.py-6.text-center
+  .col-sm-10.col-md-8.col-lg-6.col-xl-5.col-xxl-4
+    a.d-flex.flex-center.mb-4 href="/"
+      img.mr-2 alt="" src="#{image_path('lingu-logo.svg')}" width="150" /
+    .card
+      .card-body.p-4.p-sm-5
+        h4.mb-1= t('devise.forgot_password')
+        p= t('devise.enter_email_receive_link')
+        = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+          = render "devise/shared/error_messages", resource: resource
+          .form-group
+            = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: t('email'), class: 'form-control'
+          .form-group
+            = f.submit t('devise.send_reset_link'), class: 'btn btn-falcon-primary'
+            br
+            = link_to t('back'), root_path, class: 'btn btn-link'

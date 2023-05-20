@@ -1,0 +1,22 @@
+.card.mb-3
+  - if task.image
+    .card-img-top= image_tag(task.image_url, class: 'img-fluid')
+  .card-header.d-flex.justify-content-between
+    h5.card-title.mb-0.pb-0= task.name
+    = link_to teach_task_preview_path(task), class: 'btn btn-falcon-primary btn-sm', target: '_blank' do
+      i.fas.fa-eye.fa-fw.mr-1
+      = t(task.type.underscore, scope: 'tasks.types')
+  .card-body
+    .lesson-review-content.d-flex.flex-column
+      - if task.introduction.to_s.length > 73
+        = task.introduction.to_s.html_safe
+      = audio_tag(task.audio_url, class: 'preview', controls: true, style: "margin: 20px 0;") if task.audio
+      - task.items.each do |item|
+        .d-flex.align-items-center.justify-content-between.bg-soft-secondary.mt-2.rounded.px-4.py-3
+          .task-answer[style="width: 80%; margin: 0"]
+            = item.statement
+          .d-flex.justify-content-between
+            .check-item[class="#{item.veracity ? 'correct' : ''}"]
+              .fas.fa-check
+            .check-item.ml-3[class="#{item.veracity ? '' : 'incorrect'}"]
+              .fas.fa-times

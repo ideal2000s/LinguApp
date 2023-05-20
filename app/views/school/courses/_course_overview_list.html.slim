@@ -1,0 +1,8 @@
+- course_sections = course.course_sections
+.course-overview-list.h-100.overflow-auto
+  = link_to school_course_path(course), class: "mb-4 course-overview-list-item #{controller.controller_name == 'courses' ? 'active' : ''}"
+    .course-section-chapter= t('school.courses.show.content_overview')
+  - course_sections.each_with_index do |e, i|
+    = link_to school_course_course_section_path(course, e), class: "mb-2 course-overview-list-item d-flex align-items-center justify-content-between #{(controller.controller_name == 'course_sections' && e == course_section) ? 'active' : ''}"
+      .course-section-chapter= e.name
+      small.text-600= t('school.courses.show.count_lessons', count: e.lessons.kept.published.count)

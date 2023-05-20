@@ -1,0 +1,11 @@
+.card.mt-5
+  .card-header
+    .d-flex.justify-content-between
+      h4.mb-0.font-weight-bold = t('teach.teams.index.heading')
+      = link_to new_teach_team_path, class: 'btn btn-falcon-primary', remote: true do
+        i.fas.fa-plus.fa-fw
+        span= t('teach.teams.new.action')
+  .card-body
+    #team_invitations_list= render 'team_domain_invitations/list', invitations: invitations
+  #teams__list.table-responsive
+    = render 'teach/teams/list', teams: teams

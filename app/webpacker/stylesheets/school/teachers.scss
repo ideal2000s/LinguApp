@@ -1,0 +1,201 @@
+.teachers-container {
+  .invite-teachers {
+    margin-right: 24px;
+  }
+  .role-badge {
+    font-size: 14px;
+  }
+  .language-badge {
+    background: $grey8;
+    border-radius: 20px;
+  }
+  .teachers-list {
+    .table {
+      thead tr {
+        th:last-child {
+          width: 100px;
+        }
+      }
+      .student-actions {
+        opacity: 0.5;
+      }
+      .student-avatar-fallback {
+        background-color: #8371ce;
+      }
+    }
+  }
+  .teacher-empty-panel {
+    margin: auto;
+    margin-top: 100px;
+    color: $grey4;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 370px;
+    .btn {
+      font-size: 14px;
+      height: 40px;
+    }
+  }
+}
+
+.badge-member {
+  background: $grey8;
+  border-radius: 20px;
+  color: $grey3;
+}
+.badge-manager {
+  background: rgba(153, 227, 247, 0.3);
+  border-radius: 20px;
+  color: $blue1;
+}
+.badge-owner {
+  background: $yellow1;
+  border-radius: 20px;
+  color: $yellow2;
+}
+
+.modal-form-teacher {
+  .modal-header {
+    border: none;
+    padding-top: 0;
+    .modal-title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+  .modal-body {
+    padding-top: 0;
+    .teacher-role-select {
+      display: flex;
+      justify-content: space-between !important;
+      background: $grey1;
+      border-radius: 6px;
+      text-align: center;
+      .nav-item {
+        flex-basis: 30%;
+        flex-grow: 0;
+        margin: 3px;
+        .nav-link {
+          font-size: 14px;
+          color: $grey7;
+          opacity: 0.5;
+          flex-basis: 33%;
+          flex-grow: 0;
+          &.active {
+            background: white;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            color: $grey7 !important;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .iti {
+      color: $black1;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .autocomplete-suggestion {
+      margin: 3px;
+    }
+    .language-suggestion {
+      border-bottom: 1px solid $border-color;
+      .language-action {
+        font-size: 14px;
+      }
+      .default-language {
+        color: $blue1;
+        margin-right: 7px;
+      }
+      .language-select {
+        flex-grow: 1;
+        padding: 7px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    .add-teacher-btn {
+      width: 50%;
+      height: 48px;
+      margin: 30px auto;
+    }
+  }
+}
+
+.teacher-lessons-list {
+  table tbody td {
+    img {
+      width: 68px;
+      height: 56px;
+      border-radius: 4px;
+    }
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: $black1;
+    &:nth-child(2) {
+      color: $grey3;
+      font-weight: normal;
+    }
+    &:nth-child(3) {
+      font-weight: normal;
+    }
+    &:last-child {
+      width: 90px !important;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .language-info {
+      color: $grey4;
+    }
+  }
+}
+
+.teacher-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
+.teacher-profile-badge {
+  padding: 6px 10px !important;
+  &.badge-manager {
+    background: rgb(191, 240, 252);
+  }
+}
+
+.lessons-followers-info {
+  background: #F0F0F3;
+  border-radius: 10px;
+  color: $black1;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  padding: 12px 27px;
+}
+
+.teach-info {
+  h2 {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 36px;
+    color: $black1 !important;
+  }
+}
+
+.teach-languages {
+  width: 90%;
+}
+
+.teacher-info-container .lessons-filter {
+  padding: 16px 0;
+  border-bottom: 1px solid $border-color;
+}

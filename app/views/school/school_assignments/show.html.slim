@@ -1,0 +1,23 @@
+- set_page_title assignment.name
+
+.school-assignment-container.school-info-container
+  .school-assignment-details
+    = link_to school_assignments_path, class: 'd-inline-flex align-items-center' do
+      = image_tag('icons/arrow_left.svg')
+      span
+        = t('school.assignments.school_assignments')
+    .d-flex.justify-content-between.align-items-center.mt-4
+      h4.font-weight-bold.mb-0
+        = assignment.name
+      = button_to assign_student_school_assignment_path(assignment), remote: true, method: :get, class: 'btn btn-primary rounded-capsule d-flex', id: 'assign_student_btn', data: { toggle: 'modal', target: '#assignment-modal' }
+        = image_tag('icons/assign_white.svg', class: 'mr-1')
+        span= t('school.school_assignments.assign_to_student')
+    .mt-3
+      = assignment_type_tag(assignment)
+    .mt-3
+      p= assignment.instruction
+    = render 'student_assignment_list', student_assignments: student_assignments
+  .school-assignment-info.d-none.overflow-auto
+.modal.fade id='assignment-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+    .modal-content.p-4

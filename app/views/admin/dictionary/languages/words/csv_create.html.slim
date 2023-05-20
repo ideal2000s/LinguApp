@@ -1,0 +1,12 @@
+p#notice = @message
+
+.main-content
+  .import-phrases-header
+    h1 = "Create CSV with phrases from URL"
+
+.create-csv
+  = form_tag csv_create_language_phrases_path
+    .create-csv-form
+      = text_field_tag :site_url, nil, class: 'form-control', placeholder: 'Enter URL', required: true, type: 'url'
+      = select_tag :site_language, options_for_select({"English" => "english", "Norwegian" => "norwegian"}), class: 'form-control'
+    = submit_tag 'Create CSV', class: 'btn btn-primary'

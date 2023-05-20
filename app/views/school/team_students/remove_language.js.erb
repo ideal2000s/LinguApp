@@ -1,0 +1,5 @@
+$element = $('.student-<%= scope %>-language-item[data-language_id="<%= language_id %>"]')
+if($element.prev().hasClass('student-<%= scope %>-language-remove'))
+  $element.prev().val(true)
+$element.remove()
+$('.student-<%= scope %>-language-input').html("<%= j render 'student_language_input', student: student, scope: scope %>")

@@ -1,0 +1,31 @@
+.user-profile-modal-content{
+  padding: 0 !important;
+  .btn-cancel{
+    background: $grey1;
+    border-radius: 8px;
+    width: 140px;
+  }
+  .modal-header{
+    border: none;
+    .modal-title{
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+  .modal-body{
+    padding-top: 0;
+    .upload-container{
+      background: $grey1;
+      border-radius: 6px;
+      padding: 12px;
+    }
+    .avatar img{
+      border-radius: 50%;
+    }
+    .upload-action-button, .remove-action-button{
+      cursor: pointer;
+      color: $blue1;
+      font-size: 14px;
+    }
+  }
+}

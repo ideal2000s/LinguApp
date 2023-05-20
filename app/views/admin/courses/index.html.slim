@@ -1,0 +1,48 @@
+- set_page_title t('layouts.teach.sidebar.courses')
+
+.card.rounded-bottom-0
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner3.png')});"
+  .card-header
+    h3.mb-0= t('layouts.teach.sidebar.courses')
+  .card-body
+    == paginate courses
+.card.rounded-top-0
+  table.table.thead-light.table-hover.mb-0
+    thead
+      tr.vertical
+        th= t('title')
+        th= t('activerecord.models.team')
+        th.text-right
+          = link_to t('.reset_phrases_count'), reset_phrases_count_admin_courses_path, class: 'btn btn-sm btn-falcon-default'
+    tbody
+      - courses.each do |course|
+        tr
+          td
+            = link_to course.title, admin_course_path(course), class: 'text-primary font-weight-bold'
+            small.d-flex.align-items-center
+              = user_avatar_with_name course.author, 'avatar-s'
+              |,
+              =< l(course.updated_at, format: :short)
+          td.align-middle
+            = course.team&.name
+            br
+            small
+              - if course.published?
+                i.fas.fa-circle.text-success.mr-2
+                = t('published')
+              - else
+                i.fas.fa-circle.text-secondary.mr-2
+                = t('hidden')
+          td.align-middle.text-right
+            .btn-group
+              - if course.published?
+                = link_to public_course_url(course), class: 'btn btn-falcon-default btn-sm' do
+                  i.fas.fa-globe.fa-fw
+              = link_to admin_course_path(course), class: 'btn btn-falcon-default btn-sm' do
+                i.fas.fa-eye.fa-fw
+              = link_to words_admin_course_path(course), class: 'btn btn-falcon-default btn-sm' do
+                i.fas.fa-language.fa-fw
+
+  - unless current_user.language_scope.blank?
+    .card-footer
+      = render 'shared/scoped_records'

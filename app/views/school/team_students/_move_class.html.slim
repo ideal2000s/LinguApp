@@ -1,0 +1,12 @@
+.modal-dialog.modal-move-team-group role="document"
+  .modal-content
+    .modal-header
+      h5.modal-title = t('.title')
+      button.close type="button" data-dismiss="modal" aria-label="Close"
+    .modal-body
+      = form_with scope: :student, url: assign_team_group_school_student_url(student), id: 'move_student_to_class_form' do |f|
+        .team-groups-list
+          = render partial: 'school/team_students/move_class_team_group_item', collection: team_groups, as: :team_group, locals: { current_team_group_id: current_team_group_id }
+        .d-flex.action-group.mt-4
+          = f.submit t('.submit'), class: 'btn btn-primary ml-2 flex-fill'
+          button.btn.btn-light.flex-fill type='button' data-dismiss="modal" = t('shared.cancel')

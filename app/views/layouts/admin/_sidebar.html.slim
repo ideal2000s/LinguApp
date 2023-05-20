@@ -1,0 +1,109 @@
+nav.navbar.navbar-vertical.navbar-expand-xl.navbar-light.navbar-glass.perfect-scrollbar.scrollbar
+  = link_to admin_dashboard_index_path, class: 'navbar-brand text-left' do
+    .d-flex= image_tag('lingu-logo.svg', class: 'mr-2 float-left', width: 100, height: 56)
+
+  #navbarVerticalCollapse.collapse.navbar-collapse.perfect-scrollbar.scrollbar
+    ul.navbar-nav.flex-column
+
+      li.nav-item
+        = link_to admin_dashboard_index_path, class: 'nav-link' do
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-home
+            span.ml-1.font-weight-bold= t('.dashboard')
+
+      - if nav_policy.users?
+        li.nav-item
+          = link_to admin_users_path, class: 'nav-link' do
+            .d-flex.align-items-center
+              span.nav-link-icon
+                span.fas.fa-users
+              span.ml-1.font-weight-bold= t('users')
+
+      li.nav-item
+        = link_to admin_teams_path, class: 'nav-link' do
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-building
+            span.ml-1.font-weight-bold= t('admin.teams.list.teams')
+
+      li.nav-item
+        = link_to admin_lessons_path, class: 'nav-link' do
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-chalkboard-teacher
+            span.ml-1.font-weight-bold= t('lessons')
+
+      li.nav-item
+        = link_to admin_courses_path, class: 'nav-link' do
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-bookmark
+            span.ml-1.font-weight-bold= t('layouts.teach.sidebar.courses')
+
+      li.nav-item
+        = link_to admin_students_path, class: 'nav-link' do
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-graduation-cap
+            span.ml-1.font-weight-bold= t('students')
+
+      - unless current_user.language_scope.blank?
+        li.nav-item
+          = link_to admin_language_words_path(current_user.language_scope), class: 'nav-link' do
+            .d-flex.align-items-center
+              span.nav-link-icon
+                span.fas.fa-spell-check
+              span.ml-1.font-weight-bold= t('.dictionary')
+
+      - if nav_policy.settings?
+        li.nav-item
+          = link_to admin_languages_path, class: 'nav-link' do
+            .d-flex.align-items-center
+              span.nav-link-icon
+                span.fas.fa-language
+              span.ml-1.font-weight-bold= t('.languages')
+
+      - if nav_policy.settings?
+        li.nav-item
+          = link_to admin_plans_path, class: 'nav-link' do
+            .d-flex.align-items-center
+              span.nav-link-icon
+                span.fas.fa-tasks
+              span.ml-1.font-weight-bold= t('.plans')
+
+    hr
+    ul.navbar-nav.flex-column
+      li.nav-item
+        a.nav-link.dropdown-indicator aria-controls="settings" aria-expanded="false" data-toggle="collapse" href="#gamification" role="button"
+          .d-flex.align-items-center
+            span.nav-link-icon
+              span.fas.fa-trophy
+            span.ml-1.font-weight-bold= t('.gamification')
+        ul#gamification.nav.collapse data-parent="#navbarVerticalCollapse"
+          li.nav-item
+            = link_to t('rewards'), admin_rewards_path, class: 'nav-link'
+
+      - if nav_policy.settings?
+        li.nav-item
+          a.nav-link.dropdown-indicator aria-controls="settings" aria-expanded="false" data-toggle="collapse" href="#settings" role="button"
+            .d-flex.align-items-center
+              span.nav-link-icon
+                span.fas.fa-cog
+              span.ml-1.font-weight-bold= t('teach.tasks.list.settings')
+          ul#settings.nav.collapse data-parent="#navbarVerticalCollapse"
+            li.nav-item
+              = link_to t('.crawlers'), admin_crawlers_path, class: 'nav-link'
+            li.nav-item
+              = link_to t('admin.languages.inactive.inactive_languages'), inactive_admin_languages_path, class: 'nav-link'
+            li.nav-item
+              = link_to t('skills'), admin_skills_path, class: 'nav-link'
+
+    hr.border-300.my-3
+
+    .settings.px-3.px-xl-0
+      .navbar-vertical-divider
+      - if current_team.personal?
+        small= t('.personal_team')
+      - else
+        small= current_team.name

@@ -1,0 +1,35 @@
+- user = team_user.user
+tr
+  td
+    .d-flex.align-items-center
+      = custom_profile_tag(user)
+      = link_to user.full_name, school_team_user_path(team_user), class: 'user-full-name ml-3'
+      - if user == current_user
+        .badge.badge-soft-success.ml-2= t('.you')
+  td.user-email= user.email
+  td
+    span.language-badge
+      - user.user_languages.each do |user_language|
+        = image_tag(image_path("flags/#{language_to_flag_code(user_language.language.code)}.svg"), class: 'ml-2', width: 17, height: 13)
+  td= user.lessons.published.count
+  td
+    span.badge class="badge-#{team_user.role}"
+      = t(team_user.role, scope: 'activerecord.attributes.team_user.roles')
+  td
+    .student-actions
+      - if policy(team_user).update?
+        span.separator
+        = button_to edit_school_team_user_path(team_user),
+                method: :get,
+                class: 'btn border-0 shadown-none p-0',
+                data: { toggle: 'tooltip', placement: 'bottom' },
+                title: t('school.teachers.item.edit'),
+                remote: true do
+          = image_tag('icons/edit.svg')
+        = button_to school_team_user_path(team_user),
+                class: 'btn border-0 shadown-none p-0',
+                method: :delete,
+                title: t('school.teachers.item.archive'),
+                data: { confirm: t('school.teachers.list.delete_confirm'), toggle: 'tooltip', placement: 'bottom' },
+                remote: true do
+          = image_tag('icons/trash.svg')

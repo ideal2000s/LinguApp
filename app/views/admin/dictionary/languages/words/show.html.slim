@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong Body:
+  = @phrase.body
+p
+  strong Prefix:
+  = @phrase.prefix
+p
+  strong Word class:
+  = @phrase.word_class
+p
+  strong Description:
+  = @phrase.description
+p
+  strong Frequency:
+  = @phrase.frequency
+p
+  strong Language:
+  = @phrase.language
+
+=> link_to 'Edit', edit_language_phrase_path(@phrase)
+'|
+=< link_to 'Back', language_phrases_path

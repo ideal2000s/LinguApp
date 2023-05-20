@@ -1,0 +1,17 @@
+- if invitations.present?
+  h5= t('.team_invitations')
+  table.table
+    thead
+      th scope='col' width='75%'= t('.team_name')
+      th scope='col' width='25%'= t('.actions')
+    tbody
+      - invitations.each do |invitation|
+        tr
+          td= invitation.team_name
+          td
+            = link_to team_domain_invitation_accept_path(invitation), class: 'btn btn-falcon-primary btn-sm mr-1',
+            remote: true, method: :patch do
+              span= t('.accept')
+            = link_to team_domain_invitation_decline_path(invitation), class: 'btn btn-falcon-primary btn-sm',
+            remote: true, method: :patch do
+              span= t('.decline')

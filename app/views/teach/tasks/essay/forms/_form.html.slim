@@ -1,0 +1,6 @@
+= render 'teach/tasks/shared_task_form', task: task, form: form
+
+#task_items.mt-5
+  h3= t('configure')
+  #task_items_container
+    = render partial: task.items.first_or_create, as: :item, locals: { task: task }

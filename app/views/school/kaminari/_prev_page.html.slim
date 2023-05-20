@@ -1,0 +1,2 @@
+li.page-item
+  = link_to_unless current_page.first?, raw('<span aria-hidden="true">&lsaquo;</span>'), url, rel: 'prev', remote: remote, class: 'page-link page-link-solid'

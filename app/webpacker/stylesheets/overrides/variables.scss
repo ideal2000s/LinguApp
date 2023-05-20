@@ -1,0 +1,31 @@
+/*  THEME COLORs
+========================================================================== */
+/* Looks good on chrome default color profile */
+$color-primary:						#2CA0D8;
+$color-secondary:				    #D5E1E7;
+$color-success:						#8FB932;
+$color-info:						#2CA0D8;
+$color-warning:						#F26F31;
+$color-danger:						#B8292F;
+
+$color-primary-hover:			    #68BBE3;
+$color-secondary-hover:				#FFFFFF;
+$color-success-hover:			    #B0D45F;
+$color-info-hover:					#68BBE3;
+$color-warning-hover:				#F48120;
+$color-danger-hover:			    #D62229;
+
+$border-color-primary-hover:	    $color-primary-hover;
+$border-color-secondary-hover:		#D5E1E7;
+$border-color-success-hover:	    $color-success-hover;
+$border-color-info-hover:			$color-info-hover;
+$border-color-warning-hover:		$color-warning-hover;
+$border-color-danger-hover:			$color-danger-hover;
+
+
+$primary:       $color-primary !default;
+$secondary:     $color-secondary !default;
+$success:       $color-success !default;
+$info:          $color-info !default;
+$warning:       $color-warning !default;
+$danger:        $color-danger !default;

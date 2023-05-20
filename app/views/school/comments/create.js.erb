@@ -1,0 +1,10 @@
+$('.school-response-chat-container').append('<%= j render 'response_message', comment: comment %>')
+$('.document-response-input').show().val('');
+$('.note-editor').hide();
+$('.note-editable').html('');
+$('.school-audio-response').show();
+$('.school-audio-record-container, .school-response-submit').addClass('d-none');
+$('#comment_audio').val('');
+$("#<%= dom_id(document) %>").replaceWith('<%= j render 'school/assignments/assignments_list_row', document: document %>')
+ReactRailsUJS.unmountComponents();
+ReactRailsUJS.mountComponents();

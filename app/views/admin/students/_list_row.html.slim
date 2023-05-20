@@ -1,0 +1,13 @@
+tr
+  td
+    = link_to student.full_name, admin_student_path(student)
+  td
+    = student.email
+    br
+    - if student.last_sign_in_at
+      small= t('.last_seen_at', date: l(student.last_sign_in_at))
+  td= student.native_language&.system_name
+  td= student.active_target_language&.system_name
+  td
+    - if policy(student).update?
+      = link_to t('edit'), edit_admin_student_path(student), class: 'btn btn-falcon-default btn-sm'

@@ -1,0 +1,11 @@
+.d-inline-flex
+  = link_to school_students_path, class: 'align-items-center back-page-link pt-2' do
+    = image_tag('icons/arrow_left.svg')
+  h1.school-page-title.ml-3= student.full_name
+.student-header-sections
+  / a
+  / | Tests
+  = link_to t('lessons'), lessons_school_student_path(student), class: active_tab == 'lessons' ? 'active' : ''
+  = link_to t('courses'), courses_school_student_path(student), class: active_tab == 'courses' ? 'active' : ''
+  = link_to t('school.activities.title'), school_student_activities_path(student), class: active_tab == 'activities' ? 'active' : ''
+.student-header-bottom

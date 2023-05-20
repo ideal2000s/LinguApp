@@ -1,0 +1,16 @@
+//
+//
+// user.scss
+//
+// Place your own theme CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans:300,400,600,700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Encode Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body, p, a, button, label {
+  font-family: "Encode Sans", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 100%;
+}

@@ -1,0 +1,68 @@
+- team_students = team_group.team_students
+.card.team-group-card.bg-light.mb-2 data-controller="invite-students" id="team_group_item_#{team_group.id}"
+  .card-header
+    .row.mb-0.align-items-lg-center
+      .col-3
+        a.collapse-link.collapsed.pl-4 role='button' data-toggle="collapse" href="#team-group-panel-#{team_group.id}" aria-expanded="false" aria-controls="team-group-panel-#{team_group.id}"
+          i.fa.chevron-icon
+          span.pl-1.group-with-flag
+            strong.ml-2= team_group.name
+            =< "(#{team_group.team_students_count})"
+      .col-6.align-items-center.justify-content-between data-target="invite-students.inviteLinkWrapper" class="#{team_group.joinable? ? 'd-flex' : 'd-none'}"
+        .language-info.d-flex.align-items-center.p-2.ml-4
+          = image_tag("flags/#{language_to_flag_code(team_group.language.code)}.svg", class: 'language-flag mx-1')
+          span.font-weight-bold.white-space-nowrap.w-auto
+            = t(team_group.level, scope: 'activerecord.attributes.lesson.short_levels')
+            - if team_group.joinable && team_group.course
+              =< '-'
+              =< team_group.course.title
+        - if team_group.joinable && !team_group.team_students_count.positive?
+          span.ml-2.white-space-nowrap.w-auto
+            = t('school.team_groups.item.invite_students_link')
+          = render partial: 'school/team_groups/team_group_link', locals: { team_group: team_group }
+      .col
+        .float-right.d-flex.team-group-actions
+          - if team_group.team_students.kept.any? && team_group.language.plans.any?
+            = button_to edit_plan_school_team_group_path(id: team_group.id),
+                method: 'get',
+                remote: true,
+                class: 'bg-transparent',
+                data: { toggle: 'tooltip', placement: 'bottom' },
+                title: t('school.team_groups.edit_plan.new_license_for_group') do
+              = image_tag('icons/plan.svg')
+          - if team_group.team_students.kept.any? && team_group.language.courses.any?
+            = button_to assign_course_school_team_group_path(team_group.id),
+                remote: true,
+                method: 'get',
+                class: 'bg-transparent',
+                data: {toggle: 'tooltip', placement: 'bottom'},
+                title: t('school.courses.list.assign_course') do
+              = image_tag('icons/lesson.svg')
+            span.separator
+          -# a data-toggle='tooltip' dat  a-placement='bottom' title=t('school.team_groups.item.assign_test')
+          -#   = image_tag('icons/test.svg')
+          = button_to edit_school_team_group_path(id: team_group.id),
+              method: 'get',
+              remote: true,
+              class: 'bg-transparent',
+              title: t('school.team_groups.item.edit'),
+              data: { toggle: 'tooltip', placement: 'bottom' } do
+            = image_tag('icons/edit.svg')
+          = button_to archive_school_team_group_path(id: team_group.id),
+              method: 'put',
+              title: t('school.team_groups.item.archive'),
+              class: 'bg-transparent',
+              data: { confirm: t('school.team_groups.item.confirm_archive'), toggle: 'tooltip', placement: 'bottom' } do
+            = image_tag('icons/trash.svg')
+  .collapse id="team-group-panel-#{team_group.id}"
+    .card-body.p-3
+      = render partial: 'school/team_students/list', locals: { team_students: team_students }
+      - if team_students.length < 1
+        .text-center = t('school.team_groups.item.no_students')
+      - elsif team_group.joinable
+        .row.mt-4.align-items-lg-center
+          .col-2
+            span.ml-2.white-space-nowrap.w-auto
+              = t('school.team_groups.item.invite_students_link')
+          .col-10.d-flex.align-items-center.justify-content-between
+            = render partial: 'school/team_groups/team_group_link', locals: {team_group: team_group}

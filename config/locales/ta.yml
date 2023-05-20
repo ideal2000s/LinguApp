@@ -1,0 +1,620 @@
+---
+ta:
+  course_mailer:
+    course_assigned_notification:
+      button: பாடத்திட்டத்தைத் தொடங்குங்கள்
+      click_start_lesson: "'பாடத்தைத் தொடங்கு' என்பதைக் கிளிக் செய்க"
+      follow_course_link: நிச்சயமாக திறக்க பொத்தானைக் கிளிக் செய்க
+      footer_text: ஒவ்வொரு நாளும் புதிதாக ஒன்றைக் கற்றுக்கொள்ள மீண்டும் லிங்குக்கு
+        வாருங்கள்!
+      get_started_line: 'நீங்கள் எவ்வாறு தொடங்குவது என்பது இங்கே:'
+      notification_link: அறிவிப்பு அமைப்புகள்
+      open_lesson: முதல் பாடத்தைத் திறக்கவும்
+      or_paste_this_link: அல்லது இந்த இணைப்பை உங்கள் உலாவியில் ஒட்டவும்
+      sign_in_with_email: உங்கள் மின்னஞ்சல் முகவரியுடன் உள்நுழைக (%{email})
+      support_link: ஆதரவு
+      title: "%{course} உடன் தொடங்குதல்"
+    new_document_comment:
+      author_text: "%{author} உங்கள் வேலையை மதிப்பாய்வு செய்தது"
+      button_text: அதைப் பாருங்கள்
+      button_url_helper: 'அல்லது இந்த இணைப்பை உங்கள் உலாவியில் ஒட்டவும்:'
+      footer_text: கற்றுக்கொள்ள இன்னும் நிறைய இருக்கிறது ...
+      notification_link: அறிவிப்பு அமைப்புகள்
+      subject_line: புதிய பணி நியமனம்
+      support_link: ஆதரவு
+    otp:
+      ignore_msg: நீங்கள் இந்த கோரிக்கையை செய்யவில்லை என்றால், மின்னஞ்சலை புறக்கணிக்கவும்.
+      subject_line: லிங்குக்கான உங்கள் தனிப்பட்ட குறியீடு
+      unique_code_for_lingu: லிங்குக்கான உங்கள் தனிப்பட்ட குறியீடு இங்கே
+  frontend:
+    auth:
+      already_have_acc_question: ஏற்கனவே ஒரு கணக்கு உள்ளதா?
+      back: மீண்டும்
+      back_to_sign_in: உள்நுழைய திரும்புக
+      check_your_email_for_a_code: உங்கள் குறியீட்டிற்கான உங்கள் மின்னஞ்சலைச் சரிபார்க்கவும்
+      continue: தொடரவும்
+      continue_with_email: மின்னஞ்சலுடன் தொடரவும்
+      continue_with_provider: "%{provider} உடன் தொடரவும்"
+      did_not_receive_a_code: குறியீட்டைப் பெறவில்லையா?
+      email_address: மின்னஞ்சல் முகவரி
+      first_name: முதல் பெயர்
+      get_unique_code: தனிப்பட்ட உள்நுழைவு குறியீட்டைப் பெறுக
+      join_lingu: லிங்குவில் சேரவும்
+      last_name: கடைசி பெயர்
+      more_login_options: மேலும் உள்நுழைவு விருப்பங்கள்
+      no_account_question: கணக்கு இல்லையா?
+      or: அல்லது
+      resend_code: குறியீட்டை மீண்டும் அனுப்பு
+      sign_in: உள்நுழைக
+      sign_up: பதிவுபெறுக
+      want_to_receive_marketing_messages: நான் லிங்குவிலிருந்து சந்தைப்படுத்தல் செய்திகளைப்
+        பெற விரும்புகிறேன்
+      we_ve_sent_a_code: >-
+        <strong> {{மின்னஞ்சல்}} </ strong> க்கு 6 இலக்க குறியீட்டை அனுப்பியுள்ளோம்.
+        குறியீடு 15 நிமிடங்களில் காலாவதியாகிறது, எனவே விரைவில் அதை உள்ளிடவும்.
+    cookie_agreement:
+      agree: ஒப்புக்கொள்கிறேன்
+      condition: >-
+        தள செயல்திறனை பகுப்பாய்வு செய்ய மற்றும் தனிப்பயனாக்கப்பட்ட உள்ளடக்கத்தை வழங்க
+        நாங்கள் குக்கீகளைப் பயன்படுத்துகிறோம். “ஒப்புக்கொள்” என்பதைக் கிளிக் செய்வதன்
+        மூலம், எங்கள் நிபந்தனைகளுக்கு நீங்கள் ஒப்புக்கொள்கிறீர்கள்.
+    course:
+      accredited_course_provider: அங்கீகாரம் பெற்ற பாடநெறி வழங்குநர்
+      apply: விண்ணப்பிக்கவும்
+      apply_filters: வடிப்பான்களைப் பயன்படுத்துங்கள்
+      by: வழங்கியவர்
+      cancel: ரத்துசெய்
+      categories: "%{count} பிரிவுகள்"
+      category: வகை
+      clear: அழி
+      clear_filters: வடிப்பான்களை அழி
+      contact_us: எங்களை தொடர்பு கொள்ள
+      could_not_find_match_for: மன்னிக்கவும், இதற்கான எந்த பொருத்தத்தையும் எங்களால்
+        கண்டுபிடிக்க முடியவில்லை
+      course_language: பாட மொழி
+      duration: காலம்
+      filter_settings:
+        categories:
+          academic: கல்வி
+          business: வணிக
+          fashion: ஃபேஷன்
+          food_drink: உணவு பானம்
+          for_kids: குழந்தைகளுக்கு
+          general: பொது
+          health: ஆரோக்கியம்
+          legal: சட்ட
+          sport: விளையாட்டு
+          travel: பயணம்
+        durations:
+          t0_600: "<10 நிமிடங்கள்"
+          t1800_3600: 30-60 நிமிடங்கள்
+          t3600_86400: 1+ மணி
+          t600_1800: 10-30 நிமிடங்கள்
+        focus_on:
+          conversation: உரையாடல்
+          grammar: இலக்கணம்
+          listening: கேட்பது
+          pronunciation: உச்சரிப்பு
+          reading: படித்தல்
+          speaking: பேசும்
+          writing: எழுதுதல்
+        levels:
+          long:
+            advanced: மேம்பட்ட நிலை
+            elementary: தொடக்க நிலை
+            intermediate: இடைநிலை மட்டத்தில்
+            no_knowledge: அறிவு இல்லை
+            pre_intermediate: முன் இடைநிலை நிலை
+            upper_intermediate: மேல் இடைநிலை நிலை
+          short:
+            advanced: மேம்படுத்தபட்ட
+            beginner: தொடக்க
+            intermediate: இடைநிலை
+        sort_by:
+          most_rated: மிகவும் மதிப்பிடப்பட்டது
+          newest: புதியது
+          popularity: புகழ்
+      filters: வடிப்பான்கள்
+      focus_on: கவனம் செலுத்து
+      focus_on_title: நான் கவனம் செலுத்த விரும்புகிறேன்
+      hide_lessons: பாடங்களை மறை
+      hours: மணி
+      i_understand: எனக்கு புரிகிறது
+      i_want_to_learn: நான் அறிய விரும்புகிறேன்
+      in_language: "%{language} இல்"
+      language: மொழி
+      learn_more: மேலும் அறிக
+      less_settings: குறைந்த அமைப்புகள்
+      lessons: பாடங்கள்
+      lessons_available: "%{number} பாடங்கள் கிடைக்கின்றன"
+      lessons_catalog_page_subtitle: மொழி ஹீரோவாக.
+      lessons_catalog_page_title: மொழி பாடத்துடன் உங்கள் எல்லைகளை விரிவுபடுத்துங்கள்
+      level: நிலை
+      min: குறைந்தபட்சம்
+      more_settings: மேலும் அமைப்புகள்
+      navbar:
+        close: மெனுவை மூடு
+        menu: பட்டியல்
+        select_language: மொழியை தேர்ந்தெடுங்கள்
+      need_to_buy_course: நீங்கள் முதலில் ஒரு பாடத்தை பதிவு செய்ய வேண்டும்
+      no_description: விளக்கம் எதுவும் வழங்கப்படவில்லை
+      no_results: மன்னிக்கவும், இதற்கான எந்த பொருத்தத்தையும் எங்களால் கண்டுபிடிக்க
+        முடியவில்லை
+      or: அல்லது
+      per_month: மாதத்திற்கு
+      plans: திட்டங்கள்
+      privacy_policy: தனியுரிமைக் கொள்கை
+      rating: மதிப்பீடு
+      remove_all_filters: எல்லா வடிப்பான்களையும் அகற்றவும்
+      reviews: விமர்சனங்கள்
+      save: சேமி
+      search: தேடல்
+      select_dots: தேர்ந்தெடு ...
+      select_languages: மொழிகளைத் தேர்ந்தெடுக்கவும்
+      select_num_languages: "%{number} மொழிகளைத் தேர்ந்தெடுக்கவும்"
+      short_levels:
+        a1: எ 1
+        a2: அ 2
+        b1: பி 1
+        b2: பி 2
+        c1: சி 1
+        c2: சி 2
+        zero_level: அ 0
+      show_all: அனைத்தையும் காட்டு
+      show_all_lessons: எல்லா பாடங்களையும் காட்டுங்கள்
+      show_lessons: "%{number} பாடங்களைக் காட்டு"
+      show_more: மேலும் காட்ட
+      sign_up_with_lingu_for: இதற்காக லிங்கு நோர்வேவுடன் பதிவுபெறுக
+      skills: "%{count} திறன்கள்"
+      sort_by: மூலம் வரிசைப்படுத்து
+      start_typing_here: இங்கே தட்டச்சு செய்யத் தொடங்குங்கள்
+      teach: கற்றுக்கொடுங்கள்
+      terms_and_conditions: விதிமுறைகள் மற்றும் நிபந்தனைகள்
+      time_range: கால வரையறை
+      try_adjusting_your_search: உங்கள் வடிப்பான்களை மாற்றுவதன் மூலம் உங்கள் தேடலை
+        சரிசெய்ய முயற்சிக்கவும்
+      try_this_course: இந்த பாடத்திட்டத்தை முயற்சிக்கவும்
+      website_language: வலைத்தள மொழி
+      words: சொற்கள்
+    games:
+      finished:
+        go_to_next_exercise: நல்லது! அடுத்த பயிற்சிக்குச் செல்லுங்கள்
+      flashcard:
+        buttons:
+          finish: முடி
+          next: அடுத்தது
+          previous: முந்தையது
+        check_out_new_words: இந்த பாடத்தில் நீங்கள் கற்றுக் கொள்ளும் புதிய சொற்களைப்
+          பாருங்கள்
+        frequency_of_word_usage: "%{language} இல் சொல் பயன்பாட்டின் அதிர்வெண்"
+        keep_practice_to_learn_all_words: "%{count} சொற்களை மதிப்பாய்வு செய்து சில
+          விளையாட்டுகளை விளையாடுவோம்!"
+        word_frequency:
+          level1: அரிதாகவே பயன்படுத்தப்படுகிறது
+          level2: அரிதாகவே பயன்படுத்தப்படுகிறது
+          level3: சொல் அதிர்வெண் - நடுத்தர
+          level4: சொல் அதிர்வெண் - நடுத்தர
+          level5: பொதுவானது
+          level6: மிகவும் பொதுவானது
+      match_word:
+        click_and_move_each_word_to_counterpart: ஒவ்வொரு வார்த்தையையும் கிளிக் செய்து
+          அதன் எண்ணுக்கு நகர்த்தவும்
+        start_heading: ஒரு ஜோடியை உருவாக்க சொற்களைப் பொருத்துங்கள்
+        time_is_up: நேரம் முடிந்தது!
+      skip_tutorial: தவிர்
+      time_is_up: நேரம் முடிந்தது!
+      word_nodes:
+        match_letters_to_form_word: ஒரு வார்த்தையை உருவாக்க கடிதங்களை பொருத்துங்கள்
+      word_waterfall:
+        do_not_hesitate: வேகப்படுத்துவோம்!
+        go_to_next_exercise: அடுத்த பயிற்சிக்குச் செல்லுங்கள்
+        select_correct_translation: சரியான பொருத்தத்தைத் தேர்ந்தெடுக்கவும்
+        well_done: நல்லது!
+    home_page:
+      hello: வணக்கம்,
+      popular_lessons: பிரபலமான பாடங்கள்
+      show_more: மேலும் காட்ட
+      time: "%{count} நிமிடம்"
+      today_lesson: இன்றைய உங்கள் பாடம்
+      user_name: "%{name}!"
+      words: "%{count} சொற்கள்"
+    idle_screen:
+      by_author: வழங்கியவர் %{authorName}
+      continue_lesson: பாடத்தைத் தொடரவும்
+      exit: வெளியேறு
+      idle_message: நீங்கள் சில காலமாக சும்மா இருக்கிறீர்கள் ...
+    lesson_page:
+      back_to_course_page: பாடநெறி பக்கத்திற்குத் திரும்பு
+      close: நெருக்கமான
+      continue_lesson: பாடத்தைத் தொடரவும்
+      followed: தொடர்ந்து
+      hamburger_menu_btn: ஹாம்பர்கர் மெனு
+      lesson_given: பாடங்கள்
+      not_started: துவங்கவில்லை
+      or: அல்லது
+      part_complete: "%{percent}% முடிந்தது"
+      restart_lesson: மறுதொடக்கம்
+      section_check: காசோலை
+      section_check_info: "%{count} சோதனைகள்"
+      section_learn: அறிய
+      section_learn_info: பார்க்கவும் படிக்கவும் %{count} நிமிடம்
+      section_play: விளையாடு
+      section_play_info: "%{count} பயிற்சி செய்ய வார்த்தைகள்"
+      start_lesson: பாடத்தைத் தொடங்குங்கள்
+      step_progress: "%{percent}%"
+      subscribe: பின்பற்றுங்கள்
+      subscribed: தொடர்ந்து
+      subscribers: பின்தொடர்பவர்கள்
+      time_min: "%{minutesNumber} நிமிடம்"
+      unsubscribe: பின்தொடரவும்
+      webview_error_title: ஏதோ தவறு நடந்துவிட்டது...
+      words_number: "%{wordsNumber} புதிய சொற்கள்"
+    lesson_task:
+      cancel_button: ரத்துசெய்
+      check:
+        navigation_next: அடுத்தது
+        navigation_previous: முந்தையது
+        navigation_skip: தவிர்
+      controls_panel:
+        font_size_button: எழுத்துரு அளவு
+        high_contrast_button:
+          origin: அதிக வேறுபாடு
+          short: மாறுபாடு
+        hints_button: குறிப்புகள்
+        music_playback_button:
+          origin: இசை பின்னணி
+          short: இசை
+        sound_effects_button:
+          origin: ஒலி விளைவுகள்
+          short: ஒலி
+      exit_button: வெளியேறு
+      finish_button: முடி
+      finished:
+        back_to_learn: கற்றுக்கொள்ள மீண்டும்
+        back_to_lesson_page: பாடம் பக்கத்திற்குத் திரும்பு
+        back_to_results_page: முடிவு பக்கத்தில் திரும்பவும்
+        bad_result_message: ஹ்ம் ... பாடத்தை இன்னும் ஒரு முறை எடுக்க முயற்சிக்கவும்
+        close_lesson: பாடத்தை மூடு
+        correct_answers_list: சரியான பதில்கள் பட்டியல்
+        good_result_message: நீங்கள் ஒரு முயற்சி செய்ததை என்னால் காண முடிகிறது!
+        great_result_message: நல்லது! இவை சிறந்த முடிவுகள்!
+        next_course_lesson: நிச்சயமாக அடுத்த பாடத்திற்குச் செல்லுங்கள்
+        no_results: உங்களிடம் இதுவரை சோதனை முடிவுகள் எதுவும் இல்லை
+        no_results_text: தயவுசெய்து, பாடத்தை முடித்து, முடிவுகளைப் பெற சோதனையில் தேர்ச்சி
+          பெறுங்கள்
+        see_correct_answers_list: சரியான பதில்கள் பட்டியலைக் காண்க
+        train_more: மேலும் பயிற்சி செய்யுங்கள், அடுத்த முறை சிறந்த முடிவுகளை அடைவீர்கள்!
+        you_finished_lesson: நன்று! நீங்கள் பாடம் முடித்தீர்கள்
+      go_back: திரும்பிச் செல்லுங்கள்
+      next_button: அடுத்தது
+      not_available_task: இந்த பணி இன்னும் கிடைக்கவில்லை
+      start_button: தொடங்கு
+      tasks:
+        check:
+          assignment:
+            accept: ஏற்றுக்கொள்
+            author_will_check_your_answer: >-
+              %{author} உங்கள் பதிலை மதிப்பாய்வு செய்து பொதுவாக 1-2 நாட்களுக்குள்
+              கருத்து தெரிவிக்கும்
+            continue_writing: தொடர்ந்து எழுதுங்கள்
+            copy: நகலெடுக்கவும்
+            delete: அழி
+            delete_record: பதிவை நீக்கு
+            edit: தொகு
+            essay_does_not_have_enough_words: >-
+              உங்கள் பதிலில் குறைந்தது %{minWordsNumber} சொற்கள் இருக்க வேண்டும்.
+              உங்கள் பதில் தற்போது %{currentWordsNumber} சொற்கள்.
+            followers_count: "%{followersCount} பின்தொடர்பவர்கள்"
+            lessons_count: "%{lessonsCount} பாடங்கள்"
+            minimal_recording_time: குறைந்தபட்ச பதிவு நேரம் - %{minimalRecordingTime}
+            minimum_characters_amount: குறைந்தபட்ச எழுத்துக்கள் - %{minimumCharactersAmount}
+            minimum_words_amount: குறைந்தபட்ச சொற்கள் - %{minimumAmount}
+            record_again: மீண்டும் பதிவு செய்யுங்கள்
+            record_voice: குரல் பதிவு
+            send_anyway: இருந்தாலும் அனுப்பு
+            send_to_review: மதிப்பாய்வு செய்ய அனுப்பவும்
+            skip: தவிர்
+            too_short_answer: மிகக் குறுகிய பதில்
+            type_your_answer: உங்கள் பதிலைத் தட்டச்சு செய்க
+            unknown_task_type: அறியப்படாத பணி வகை
+            upgrade_licence: உரிமத்தை மேம்படுத்தவும்
+            upgrade_your_plan: ஆசிரியர்களின் மதிப்புரைகளுடன் பணிகளை முயற்சிக்க உங்கள்
+              திட்டத்தை மேம்படுத்தவும்
+            upload_files: கோப்புகளை பதிவேற்றவும்
+            write_essay: கட்டுரை எழுதுங்கள்
+            you_have_used_amount_of_assignments: நீங்கள் %{amountOfAssignments} ஒதுக்கீட்டு
+              வரவுகளைப் பயன்படுத்தியுள்ளீர்கள்
+          fill_in_blanks:
+            sentence_gap: வாக்கிய இடைவெளி
+          fill_in_table:
+            column_answer_placeholder: பதில்
+            column_question_placeholder: கேள்வி
+            example: உதாரணமாக
+          true_false:
+            'false': பொய்
+            'true': உண்மை
+        learn:
+          translatable_text:
+            show_original: அசலைக் காட்டு
+            translate_into: Google உடன் %{languageName} ஆக மொழிபெயர்க்கவும்
+            translate_into_your_lang: Google உடன் உங்கள் மொழியில் மொழிபெயர்க்கவும்
+        play:
+          arrange_words:
+            start_screen:
+              heading: கொடுக்கப்பட்ட சொற்களில் இருந்து ஒரு வாக்கியத்தை உருவாக்கவும்
+          audition:
+            start_screen:
+              heading: ஆடியோவைக் கேட்டு, நீங்கள் இப்போது கேட்ட வார்த்தையைத் தட்டவும்
+          dictation:
+            get_help: உதவி பெறு
+            i_do_not_know: எனக்கு தெரியாது
+            input_placeholder: நீங்கள் கேட்டதை இங்கே உள்ளிடவும்
+            start_screen:
+              heading: நீங்கள் கேட்பதைக் கேளுங்கள், எழுதுங்கள்
+          fill_gap:
+            start_screen:
+              heading: வார்த்தையையும் அதன் பொருளையும் பொருத்துங்கள்
+          finish_screen:
+            go_to_next_exercise: நல்லது! அடுத்த பயிற்சிக்குச் செல்லுங்கள்
+          image_hotspot:
+            start_screen:
+              heading: படத்தில் உள்ள பொருள்களுக்கு சரியாக பெயரிடுங்கள்
+          image_object:
+            start_screen:
+              heading: அடுத்த படத்திலிருந்து சரியான பொருளைத் தேர்ந்தெடுக்கவும்
+          inline_dropdown:
+            start_screen:
+              heading: வாக்கியத்துடன் பொருந்தக்கூடிய சொற்களைத் தேர்ந்தெடுக்கவும்
+          mark_word:
+            start_screen:
+              heading: உரையைப் படித்து படத்துடன் பொருந்தக்கூடிய வார்த்தையைத் தேர்ந்தெடுக்கவும்
+          minimal_pairs:
+            start_screen:
+              heading: வீடியோவைப் பார்த்து சரியான விருப்பத்தைத் தேர்ந்தெடுக்கவும்
+    locale:
+      currency_switcher_title: நாணய மாற்றி
+      lang_switcher_title: மொழி மாற்றி
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: ஆங்கிலம்
+        eo: Esperanto
+        es: எஸ்பாசோல்
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: பிரான்சஸ்
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: இத்தாலியன்
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: லீட்டுவிக் கல்பா
+        lv: லாட்வீயு வலோடா
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: நோர்ஸ்க்
+        ne: Nepali
+        nl: நெடெர்லாண்ட்ஸ்
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: பொல்ஸ்கி
+        ps: Pashto
+        pt: போர்ச்சுகஸ்
+        ro: லிம்பா ரோமனி
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af சூமாலி
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: கிஸ்வாஹிலி
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Tçrkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ஆடியோ ஏற்றுகிறது
+        aria_pause_button: இடைநிறுத்தம்
+        aria_play_button: விளையாடு
+        aria_reload_button: ஏற்றவும்
+        aria_stop_button: நிறுத்து
+        reload_message: ஆடியோவை ஏற்றுவதில் தோல்வி. மீண்டும் ஏற்ற பொத்தானைக் கிளிக்
+          செய்க.
+    mobile_modal:
+      apply: விண்ணப்பிக்கவும்
+      cancel: ரத்துசெய்
+      clear: அழி
+      save: சேமி
+    page404:
+      goToStartLessonPage: தொடக்க பாடம் பக்கத்திற்குச் செல்லவும்
+      ooops: அச்சச்சோ ...
+      sorry_message: மன்னிக்கவும், டோர் இந்த பக்கத்தைக் கண்டுபிடிக்க முடியவில்லை
+    profile:
+      navigation:
+        log_out: வெளியேறு
+        my_profile: என் சுயவிவரம்
+        settings: அமைப்புகள்
+      onboarding:
+        choose_native_language: நீங்கள் புரிந்துகொள்ளும் உங்கள் சொந்த மொழி அல்லது
+          மொழியைத் தேர்வுசெய்க
+        do_you_understand_english: உங்களுக்கு ஆங்கிலம் புரிகிறதா?
+        hello: வணக்கம்
+        language_levels:
+          a1: தொடக்க நிலை
+          a2: முன் இடைநிலை நிலை
+          b1: இடைநிலை மட்டத்தில்
+          b2: மேல் இடைநிலை நிலை
+          c1: மேம்பட்ட நிலை
+          no_knowledge: அறிவு இல்லை
+        language_not_supported:
+          note: மொழி கிடைத்தவுடன் நாங்கள் உங்களுக்கு அறிவிப்போம்
+          title: மன்னிக்கவும், ஆனால் நாங்கள் இன்னும் இந்த மொழியை ஆதரிக்கவில்லை
+          try_another_language: வேறொரு மொழியை முயற்சிக்கவும்
+        'no': இல்லை
+        search_placeholder: தேடு ...
+        show_more_languages: பிற மொழிகள்
+        target_language_question: நீங்கள் எந்த மொழியைக் கற்றுக்கொள்ள விரும்புகிறீர்கள்?
+        what_is_language_level: உங்கள் %{languageName} அளவை எவ்வாறு மதிப்பிடுவீர்கள்?
+        'yes': ஆம்
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: லிங்குவின் தனியுரிமைக் கொள்கை
+        support: ஆதரவு
+      logout: வெளியேறு
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: >-
+                நீங்கள் பின்பற்றும் ஆசிரியர்கள் மற்றும் பள்ளிகளிடமிருந்து புதுப்பிப்புகளைப்
+                பெறுக
+              sections:
+                app_notifications: பயன்பாட்டின் அறிவிப்பு
+                email: மின்னஞ்சல்
+              title: கற்றல் உதவி
+            marketing:
+              description: >-
+                அனைத்து விளம்பரங்கள், புதுப்பிப்புகள் மற்றும் லிங்குவின் உத்வேகம்
+                பற்றித் தெரிந்து கொள்ளுங்கள்
+              sections:
+                browser_notifications: உலாவி அறிவிப்புகள்
+                email: மின்னஞ்சல்
+              title: சந்தைப்படுத்தல்
+          title: தொடர்பு விருப்பத்தேர்வுகள்
+        personal_information:
+          delete_photo: புகைப்படத்தை நீக்கு
+          email: மின்னஞ்சல்
+          first_name: முதல் பெயர்
+          last_name: கடைசி பெயர்
+          social_accounts:
+            connected: இணைக்கப்பட்டுள்ளது
+            facebook: முகநூல்
+            google: கூகிள்
+            microsoft: மைக்ரோசாப்ட்
+            not_connected: இணைக்கப்படவில்லை
+            title: சமூக கணக்குகள்
+          title: தனிப்பட்ட தகவல்
+          update_photo: புகைப்படத்தைப் புதுப்பிக்கவும்
+        school:
+          active_licence: செயலில் உரிமம்
+          active_status: செயலில்
+          delete_profile: எனது சுயவிவரத்தை நீக்கு
+          delete_profile_modal:
+            body: |-
+              உங்கள் எல்லா தரவையும் என்றென்றும் அழிக்கிறீர்கள். செயல்தவிர் பொத்தானைக் கொண்டிருக்கவில்லை, பின்னர் அதை உங்களுக்காக திரும்பப் பெற முடியாது.
+              உங்கள் லிங்கு சுயவிவரத்தையும் உங்கள் எல்லா தரவையும் நிரந்தரமாக நீக்க விரும்புகிறீர்களா?
+            cancel: ரத்துசெய்
+            confirm: ஆம், அதை நீக்கு
+            i_understand_the_consequences: விளைவுகளை நான் புரிந்துகொள்கிறேன்
+            title: உங்கள் சுயவிவரத்தை நீக்கவா?
+          expired: காலாவதியான %{expire_date}
+          expires: "%{expire_date} காலாவதியாகிறது"
+          inactive_status: செயலற்றது
+          revoke_access: வாசிப்பு அணுகலைத் திரும்பப் பெறுக
+          sections:
+            contact_school: பள்ளியைத் தொடர்பு கொள்ளுங்கள்
+            export_my_data: எனது தரவை ஏற்றுமதி செய்க
+            read_school_privacy_policy: பள்ளி தனியுரிமைக் கொள்கையைப் படியுங்கள்
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: இசை பின்னணி
+              sound_effects: ஒலி விளைவுகள்
+              title: ஒலி
+            visual:
+              dark_theme: இருண்ட தீம்
+              font_size:
+                test_text: வேலியின் மறுபுறத்தில் புல் எப்போதும் பசுமையாக இருக்கும்
+                title: எழுத்துரு அளவு
+              high_contrast: அதிக வேறுபாடு
+              hints: குறிப்புகள்
+              title: காட்சி
+          title: ஒலி & காட்சி
+        training_settings:
+          sections:
+            i_understand: எனக்கு புரிகிறது
+            i_want_to_learn: நான் அறிய விரும்புகிறேன்
+            target_language_level: ஆங்கில நிலை
+          title: பயிற்சி அமைப்புகள்
+      settings_title: அமைப்புகள்
+    teacher_card:
+      followers_count:
+        one: 1 பின்தொடர்பவர்
+        other: "%{count} பின்தொடர்பவர்கள்"
+      lessons_count:
+        one: 1 பாடம்
+        other: "%{count} பாடங்கள்"

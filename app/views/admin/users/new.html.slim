@@ -1,0 +1,22 @@
+- set_page_title t('admin.users.index.create_new_user')
+
+.card.mb-3
+  .card-header
+    h5.mb-0= t('admin.users.index.create_new_user')
+  .card-body
+    = form_for [:admin, user], html: { id: 'user_form' } do |f|
+      - if user.errors.any?
+        .alert.alert-warning#error_explanation
+          h5
+            = t('count_error_message_model', count: user.errors.count, model: user.model_name.human)
+          ul
+            - user.errors.full_messages.each do |message|
+              li= message
+      = render 'admin/users/form', user: user, f: f
+        .form-group
+          = f.submit t('save_changes'), class: 'btn btn-primary mr-1'
+          = link_to t('back'), admin_users_path, class: 'btn btn-falcon-default mr-1'
+
+      .col-12.d-flex.mt-3
+        = f.submit t('create'), class: 'btn btn-primary mr-1'
+        = link_to t('back'), admin_users_path, class: 'btn btn-falcon-default mr-1'

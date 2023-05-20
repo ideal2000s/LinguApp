@@ -1,0 +1,20 @@
+= form_for form, html: { id: dom_id(task, :item_form), class: '' }, as: :task_item,
+  remote: true, url: teach_task_items_path(task) do |f|
+  .card.mb-3
+    .card-body
+      .row
+        .col-md-4
+          = f.label :start_string, 'hh:mm:ss'
+        .col-md-8
+          = f.label :word_id, t('teach.task_items.mark_word.mark_word.associate_with')
+      .row
+        .col-md-4
+          = f.text_field :start_string, class: 'form-control question html-duration-picker text-left',
+          data: { duration_max: form.start_string_max }
+        .col-md-6
+          = f.select :word_id, options_for_select([]), { prompt: t('.select_word') },
+            class: 'form-control select2-remote words-search', multiple: false,
+            data: { url: teach_task_item_words_path(task, 1, language_id: task.lesson.language_id) }
+        .col-md-2= f.submit t('save'), class: 'btn btn-success'
+      .row
+        .col-md-12= error_for f.object, :start

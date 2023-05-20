@@ -1,0 +1,613 @@
+---
+bn:
+  course_mailer:
+    course_assigned_notification:
+      button: কোর্স শুরু করুন
+      click_start_lesson: "'পাঠ শুরু করুন' ক্লিক করুন"
+      follow_course_link: কোর্সটি খুলতে বোতামটি ক্লিক করুন
+      footer_text: প্রতিদিন নতুন কিছু শিখতে লিংগুতে ফিরে আসুন!
+      get_started_line: 'আপনি কীভাবে শুরু করবেন তা এখানে:'
+      notification_link: বিজ্ঞপ্তি সেটিংস
+      open_lesson: প্রথম পাঠ খুলুন
+      or_paste_this_link: বা আপনার ব্রাউজারে এই লিঙ্কটি আটকান
+      sign_in_with_email: আপনার ইমেল ঠিকানা (%{email}) দিয়ে লগ ইন করুন
+      support_link: সমর্থন
+      title: "%{course} দিয়ে শুরু করা"
+    new_document_comment:
+      author_text: "%{author} আপনার কার্যভারের একটি পর্যালোচনা রেখে গেছে left"
+      button_text: এটা দেখ
+      button_url_helper: 'বা আপনার ব্রাউজারে এই লিঙ্কটি আটকান:'
+      footer_text: আরও অনেক কিছু শেখার আছে ...
+      notification_link: বিজ্ঞপ্তি সেটিংস
+      subject_line: নতুন নিয়োগ মন্তব্য
+      support_link: সমর্থন
+    otp:
+      ignore_msg: আপনি যদি এই অনুরোধটি না করেন তবে কেবল ইমেলটি উপেক্ষা করুন।
+      subject_line: ভাষাগুলির জন্য আপনার অনন্য কোড
+      unique_code_for_lingu: ভাষার জন্য আপনার অনন্য কোড এখানে
+  frontend:
+    auth:
+      already_have_acc_question: ইতিমধ্যে একটি সদস্যপদ আছে?
+      back: পেছনে
+      back_to_sign_in: সাইন ইন ফিরে যান
+      check_your_email_for_a_code: আপনার কোডের জন্য আপনার ইমেল চেক করুন
+      continue: চালিয়ে যান
+      continue_with_email: ইমেল সহ চালিয়ে যান
+      continue_with_provider: "%{provider} দিয়ে চালিয়ে যান"
+      did_not_receive_a_code: একটি কোড পাননি?
+      email_address: ইমেল ঠিকানা
+      first_name: নামের প্রথম অংশ
+      get_unique_code: একটি অনন্য লগইন কোড পান
+      join_lingu: লিঙ্গুতে যোগ দিন
+      last_name: নামের শেষাংশ
+      more_login_options: আরও লগইন বিকল্প
+      no_account_question: কোন অ্যাকাউন্ট নেই?
+      or: বা
+      resend_code: পুনরায় পাঠানো কোড
+      sign_in: সাইন ইন করুন
+      sign_up: নিবন্ধন করুন
+      want_to_receive_marketing_messages: আমি লিঙ্গু থেকে বিপণনের বার্তা পেতে চাই
+      we_ve_sent_a_code: >-
+        আমরা <strong> {{ইমেল}} </ strong> এ 6-সংখ্যার কোড প্রেরণ করেছি। কোডটি 15 মিনিটের
+        মধ্যে শেষ হয়, তাই দয়া করে শীঘ্রই এটি প্রবেশ করুন।
+    cookie_agreement:
+      agree: একমত
+      condition: >-
+        আমরা সাইটের কর্মক্ষমতা বিশ্লেষণ করতে এবং ব্যক্তিগতকৃত সামগ্রী সরবরাহ করতে
+        কুকি ব্যবহার করি। "সম্মত হন" ক্লিক করে আপনি আমাদের শর্তগুলিতে সম্মতি দেন।
+    course:
+      accredited_course_provider: স্বীকৃত কোর্স সরবরাহকারী
+      apply: প্রয়োগ করুন
+      apply_filters: ফিল্টার প্রয়োগ করুন
+      by: দ্বারা
+      cancel: বাতিল
+      categories: "%{count} বিভাগগুলি"
+      category: বিভাগ
+      clear: পরিষ্কার
+      clear_filters: ফিল্টার সাফ করুন
+      contact_us: যোগাযোগ করুন
+      could_not_find_match_for: দুঃখিত, আমরা এর জন্য কোনও মিল খুঁজে পাইনি
+      course_language: কোর্স ভাষা
+      duration: সময়কাল
+      filter_settings:
+        categories:
+          academic: একাডেমিক
+          business: ব্যবসায়
+          fashion: ফ্যাশন
+          food_drink: খাদ্য পানীয়
+          for_kids: বাচ্চাদের জন্য
+          general: সাধারণ
+          health: স্বাস্থ্য
+          legal: আইনী
+          sport: খেলা
+          travel: ভ্রমণ
+        durations:
+          t0_600: "<10 মিনিট"
+          t1800_3600: 30-60 মিনিট
+          t3600_86400: 1+ ঘন্টা
+          t600_1800: 10-30 মিনিট
+        focus_on:
+          conversation: কথোপকথন
+          grammar: ব্যাকরণ
+          listening: শুনছি
+          pronunciation: উচ্চারণ
+          reading: পড়া
+          speaking: কথা বলছি
+          writing: লেখা
+        levels:
+          long:
+            advanced: উন্নত স্তর
+            elementary: প্রাথমিক স্তর
+            intermediate: উচ্চমাধ্যমিক স্তর
+            no_knowledge: জ্ঞান নাই
+            pre_intermediate: প্রাক মধ্যবর্তী স্তর
+            upper_intermediate: উপরের মধ্যবর্তী স্তর
+          short:
+            advanced: উন্নত
+            beginner: সূচনা
+            intermediate: মধ্যবর্তী
+        sort_by:
+          most_rated: সর্বাধিক রেট
+          newest: নবীনতম
+          popularity: জনপ্রিয়তা
+      filters: ফিল্টার
+      focus_on: লক্ষ্য করা
+      focus_on_title: আমি ফোকাস করতে চান
+      hide_lessons: পাঠ লুকান
+      hours: ঘন্টার
+      i_understand: আমি বুঝেছি
+      i_want_to_learn: আমি শিখতে চাই
+      in_language: "%{language} এ"
+      language: ভাষা
+      learn_more: আরও জানুন
+      less_settings: কম সেটিংস
+      lessons: পাঠ
+      lessons_available: "%{number} পাঠ উপলব্ধ"
+      lessons_catalog_page_subtitle: ভাষা নায়ক হন।
+      lessons_catalog_page_title: ভাষা কোর্সের সাহায্যে আপনার দিগন্তগুলি প্রসারিত
+        করুন
+      level: স্তর
+      min: নূন্যতম
+      more_settings: আরো কৌশল
+      navbar:
+        close: মেনু বন্ধ করুন
+        menu: তালিকা
+        select_language: ভাষা নির্বাচন কর
+      need_to_buy_course: আপনার প্রথমে একটি কোর্স বুক করা দরকার
+      no_description: কোনও বিবরণ সরবরাহ করা হয়নি
+      no_results: দুঃখিত, আমরা এর জন্য কোনও মিল খুঁজে পাইনি
+      or: বা
+      per_month: প্রতি মাসে
+      plans: পরিকল্পনা সমূহ
+      privacy_policy: গোপনীয়তা নীতি
+      rating: রেটিং
+      remove_all_filters: সমস্ত ফিল্টার সরান
+      reviews: পর্যালোচনা
+      save: সংরক্ষণ
+      search: অনুসন্ধান করুন
+      select_dots: নির্বাচন করুন ...
+      select_languages: Langauges নির্বাচন করুন
+      select_num_languages: "%{number} টি ভাষা নির্বাচন করুন"
+      short_levels:
+        a1: এ 1
+        a2: এ 2
+        b1: বি 1
+        b2: বি 2
+        c1: সি 1
+        c2: সি 2
+        zero_level: এ 0
+      show_all: সব দেখাও
+      show_all_lessons: সমস্ত পাঠ প্রদর্শন করুন
+      show_lessons: "%{number} পাঠ দেখান"
+      show_more: আরো দেখুন
+      sign_up_with_lingu_for: লিঙ্গু নরওয়ের জন্য সাইন আপ করুন
+      skills: "%{count} দক্ষতা"
+      sort_by: ক্রমানুসার
+      start_typing_here: এখানে টাইপ করা শুরু করুন
+      teach: পড়ান
+      terms_and_conditions: শর্তাবলী
+      time_range: সময় পরিসীমা
+      try_adjusting_your_search: আপনার ফিল্টারগুলি পরিবর্তন করে আপনার অনুসন্ধানকে
+        সামঞ্জস্য করার চেষ্টা করুন
+      try_this_course: এই কোর্স চেষ্টা করুন
+      website_language: ওয়েবসাইটের ভাষা
+      words: শব্দ
+    games:
+      finished:
+        go_to_next_exercise: সাবাশ! পরের অনুশীলনে যান
+      flashcard:
+        buttons:
+          finish: সমাপ্ত
+          next: পরবর্তী
+          previous: আগে
+        check_out_new_words: আপনি এই পাঠে নতুন শব্দগুলি শিখবেন
+        frequency_of_word_usage: "%{language} এ শব্দ ব্যবহারের ফ্রিকোয়েন্সি"
+        keep_practice_to_learn_all_words: "%{count} শব্দ পর্যালোচনা করুন এবং আসুন
+          কিছু গেম খেলি!"
+        word_frequency:
+          level1: কদাচিৎ ব্যবহৃত
+          level2: কদাচিৎ ব্যবহৃত
+          level3: শব্দ ফ্রিকোয়েন্সি - মাঝারি
+          level4: শব্দ ফ্রিকোয়েন্সি - মাঝারি
+          level5: সাধারণ
+          level6: খুবই প্রচলিত
+      match_word:
+        click_and_move_each_word_to_counterpart: প্রতিটি শব্দটিকে ক্লিক করে তার সমমনাতে
+          সরান
+        start_heading: একটি জোড় বানানোর জন্য শব্দগুলি মিলান
+        time_is_up: সময় শেষ!
+      skip_tutorial: এড়িয়ে যান
+      time_is_up: সময় শেষ!
+      word_nodes:
+        match_letters_to_form_word: একটি শব্দ গঠনের জন্য চিঠিগুলি মিলিত করুন
+      word_waterfall:
+        do_not_hesitate: চলুন গতি বাড়িয়ে দিন!
+        go_to_next_exercise: পরের অনুশীলনে যান
+        select_correct_translation: সঠিক মিল নির্বাচন করুন
+        well_done: সাবাশ!
+    home_page:
+      hello: হ্যালো,
+      popular_lessons: জনপ্রিয় পাঠ
+      show_more: আরো দেখুন
+      time: "%{count} মিনিট"
+      today_lesson: আপনার আজকের পাঠ
+      user_name: "%{name}!"
+      words: "%{count} শব্দ"
+    idle_screen:
+      by_author: "%{authorName} দ্বারা"
+      continue_lesson: পাঠ চালিয়ে যান
+      exit: প্রস্থান
+      idle_message: আপনি কিছু সময়ের জন্য অলস হয়ে গেছেন ...
+    lesson_page:
+      back_to_course_page: কোর্স পৃষ্ঠায় ফিরে
+      close: বন্ধ
+      continue_lesson: পাঠ চালিয়ে যান
+      followed: অনুসরণ করেছে
+      hamburger_menu_btn: হামবুর্গ মেনু
+      lesson_given: পাঠ
+      not_started: শুরু না
+      or: বা
+      part_complete: "%{percent}% সম্পূর্ণ"
+      restart_lesson: আবার শুরু
+      section_check: চেক
+      section_check_info: "%{count} পরীক্ষা"
+      section_learn: শিখুন
+      section_learn_info: "%{count} মিনিট দেখুন এবং পড়তে"
+      section_play: খেলো
+      section_play_info: অনুশীলন করতে %{count} শব্দ
+      start_lesson: পাঠ শুরু করুন
+      step_progress: "%{percent}%"
+      subscribe: অনুসরণ
+      subscribed: অনুসরণ করেছে
+      subscribers: অনুসারী
+      time_min: "%{minutesNumber} মিনিট"
+      unsubscribe: অনুসরণ
+      webview_error_title: কিছু ভুল হয়েছে...
+      words_number: "%{wordsNumber} নতুন শব্দ"
+    lesson_task:
+      cancel_button: বাতিল
+      check:
+        navigation_next: পরবর্তী
+        navigation_previous: আগে
+        navigation_skip: এড়িয়ে যান
+      controls_panel:
+        font_size_button: অক্ষরের আকার
+        high_contrast_button:
+          origin: উচ্চ বৈসাদৃশ্য
+          short: বৈপরীত্য
+        hints_button: ইঙ্গিত
+        music_playback_button:
+          origin: সঙ্গীত প্লেব্যাক
+          short: সংগীত
+        sound_effects_button:
+          origin: শব্দের প্রভাব
+          short: শব্দ
+      exit_button: প্রস্থান
+      finish_button: সমাপ্ত
+      finished:
+        back_to_learn: শিখতে ফিরে
+        back_to_lesson_page: পাঠ পৃষ্ঠায় ফিরে যান
+        back_to_results_page: ফলাফল পৃষ্ঠায় ফিরে
+        bad_result_message: হুঁ ... আরও একবার পাঠ করার চেষ্টা করুন
+        close_lesson: পাঠ বন্ধ করুন
+        correct_answers_list: সঠিক উত্তর তালিকা
+        good_result_message: আমি দেখতে পাচ্ছি আপনি চেষ্টা করেছেন!
+        great_result_message: সাবাশ! এগুলি দুর্দান্ত ফলাফল!
+        next_course_lesson: অবশ্যই পরবর্তী পাঠ্য যান
+        no_results: আপনার এখনও কোনও পরীক্ষার ফলাফল নেই
+        no_results_text: দয়া করে, পাঠটি সম্পূর্ণ করুন এবং ফলাফল পেতে পরীক্ষায় উত্তীর্ণ
+          হোন
+        see_correct_answers_list: সঠিক উত্তর তালিকা দেখুন
+        train_more: আরও অনুশীলন করুন এবং আপনি পরের বার আরও ভাল ফলাফল অর্জন করবেন!
+        you_finished_lesson: দুর্দান্ত! আপনি পাঠ শেষ করেছেন
+      go_back: ফিরে যাও
+      next_button: পরবর্তী
+      not_available_task: এই কাজটি এখনও পাওয়া যায় না
+      start_button: শুরু করুন
+      tasks:
+        check:
+          assignment:
+            accept: গ্রহণ করুন
+            author_will_check_your_answer: >-
+              %{author} আপনার উত্তরটি পর্যালোচনা করবে এবং সাধারণত 1-2 দিনের মধ্যে
+              প্রতিক্রিয়া জানায়
+            continue_writing: লেখা চালিয়ে যান
+            copy: কপি
+            delete: মুছে ফেলা
+            delete_record: রেকর্ড মুছুন
+            edit: সম্পাদনা করুন
+            essay_does_not_have_enough_words: >-
+              আপনার উত্তরে কমপক্ষে %{minWordsNumber} শব্দ থাকা উচিত। আপনার উত্তরটি
+              বর্তমানে %{currentWordsNumber} শব্দ।
+            followers_count: "%{followersCount} জন অনুসরণকারী"
+            lessons_count: "%{lessonsCount} পাঠ"
+            minimal_recording_time: সর্বনিম্ন রেকর্ডিং সময় - %{minimalRecordingTime}
+            minimum_characters_amount: সর্বনিম্ন অক্ষর - %{minimumCharactersAmount}
+            minimum_words_amount: সর্বনিম্ন শব্দ - %{minimumAmount}
+            record_again: আবার রেকর্ড
+            record_voice: ভয়েস রেকর্ড করুন
+            send_anyway: যেকোন ভাবেই পাঠাও
+            send_to_review: পর্যালোচনা পাঠান
+            skip: এড়িয়ে যান
+            too_short_answer: খুব ছোট উত্তর
+            type_your_answer: তোমার উত্তর লিখ
+            unknown_task_type: অজানা কাজের ধরণ
+            upgrade_licence: লাইসেন্স আপগ্রেড করুন
+            upgrade_your_plan: শিক্ষকদের পর্যালোচনাগুলির সাথে অ্যাসাইনমেন্ট চেষ্টা
+              করে দেখুন
+            upload_files: ফাইল আপলোড কর
+            write_essay: রচনা লিখুন
+            you_have_used_amount_of_assignments: আপনি %{amountOfAssignments} অ্যাসাইনমেন্ট
+              ক্রেডিট ব্যবহার করেছেন
+          fill_in_blanks:
+            sentence_gap: বাক্য ফাঁক
+          fill_in_table:
+            column_answer_placeholder: উত্তর
+            column_question_placeholder: প্রশ্ন
+            example: উদাহরণ
+          true_false:
+            'false': মিথ্যা
+            'true': সত্য
+        learn:
+          translatable_text:
+            show_original: আসল টা দেখাও
+            translate_into: গুগলের সাথে %{languageName} এ অনুবাদ করুন
+            translate_into_your_lang: গুগলের সাথে আপনার ভাষায় অনুবাদ করুন
+        play:
+          arrange_words:
+            start_screen:
+              heading: প্রদত্ত শব্দগুলির বাইরে একটি বাক্য তৈরি করুন
+          audition:
+            start_screen:
+              heading: অডিওটি শুনুন এবং আপনি সবেমাত্র শুনেছেন এমন শব্দে আলতো চাপুন
+          dictation:
+            get_help: সহায়তা পান
+            i_do_not_know: আমি জানি না
+            input_placeholder: আপনি এখানে যা শুনেছেন তা লিখুন
+            start_screen:
+              heading: আপনি যা শুনছেন তা শুনুন এবং লিখুন
+          fill_gap:
+            start_screen:
+              heading: শব্দটির অর্থ এবং এর অর্থ মিলান
+          finish_screen:
+            go_to_next_exercise: সাবাশ! পরের অনুশীলনে যান
+          image_hotspot:
+            start_screen:
+              heading: ছবিতে থাকা বস্তুর নাম সঠিকভাবে দিন
+          image_object:
+            start_screen:
+              heading: পরের ছবি থেকে সঠিক অবজেক্টটি চয়ন করুন
+          inline_dropdown:
+            start_screen:
+              heading: বাক্যটির সাথে মেলে এমন শব্দগুলি বেছে নিন
+          mark_word:
+            start_screen:
+              heading: পাঠ্যটি পড়ুন এবং চিত্রটির সাথে মেলে এমন শব্দটি নির্বাচন করুন
+          minimal_pairs:
+            start_screen:
+              heading: ভিডিওটি দেখুন এবং সঠিক বিকল্পটি নির্বাচন করুন
+    locale:
+      currency_switcher_title: মুদ্রা পরিবর্তনকারী
+      lang_switcher_title: ভাষা পরিবর্তনকারী
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ডয়চে
+        el: Greek
+        en: ইংরেজি
+        eo: Esperanto
+        es: এস্পাওল
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ফ্রান্সেস
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ইটালিয়ানো
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: লাইতুভিų কলবা
+        lv: লাটভিউ ভালোদা
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: নর্স্ক
+        ne: Nepali
+        nl: নেদারল্যান্ডস
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: পোলস্কি
+        ps: Pashto
+        pt: পর্তুগিজ
+        ro: লিম্বা রোমানা
+        ru: К язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: আফ সুমালী
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: কিসওয়াহিলি
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: অডিও লোড হচ্ছে
+        aria_pause_button: বিরতি দিন
+        aria_play_button: খেলো
+        aria_reload_button: পুনরায় লোড করুন
+        aria_stop_button: থামো
+        reload_message: অডিও লোড করতে ব্যর্থ। পুনরায় লোড করতে দয়া করে বোতামটি ক্লিক
+          করুন।
+    mobile_modal:
+      apply: প্রয়োগ করুন
+      cancel: বাতিল
+      clear: পরিষ্কার
+      save: সংরক্ষণ
+    page404:
+      goToStartLessonPage: শুরু পাঠ পৃষ্ঠাতে যান
+      ooops: ওহফ্ ...
+      sorry_message: দুঃখিত, টর এই পৃষ্ঠাটি খুঁজে পেল না
+    profile:
+      navigation:
+        log_out: প্রস্থান
+        my_profile: আমার প্রোফাইল
+        settings: সেটিংস
+      onboarding:
+        choose_native_language: আপনার মাতৃভাষা বা আপনি যে ভাষাটি বুঝতে চান তা চয়ন
+          করুন
+        do_you_understand_english: তুমি কি ইংরেজি বুঝ?
+        hello: হ্যালো
+        language_levels:
+          a1: প্রাথমিক স্তর
+          a2: প্রাক-মধ্যবর্তী স্তর
+          b1: উচ্চমাধ্যমিক স্তর
+          b2: উপরের মধ্যবর্তী স্তর
+          c1: উন্নত স্তর
+          no_knowledge: জ্ঞান নাই
+        language_not_supported:
+          note: ভাষাটি উপলব্ধ হওয়ার সাথে সাথে আমরা আপনাকে জানাব
+          title: দুঃখিত, তবে আমরা এই ভাষাটি এখনও সমর্থন করি না
+          try_another_language: অন্য একটি ভাষা চেষ্টা করুন
+        'no': না
+        search_placeholder: অনুসন্ধান করুন ...
+        show_more_languages: অন্যান্য ভাষাসমূহ
+        target_language_question: আপনি কোন ভাষা শিখতে চান?
+        what_is_language_level: আপনি কীভাবে আপনার %{languageName} স্তরকে রেট করবেন?
+        'yes': হ্যাঁ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: ভাষাগুলির গোপনীয়তা নীতি
+        support: সমর্থন
+      logout: প্রস্থান
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: আপনি অনুসরণ করেন এমন শিক্ষক এবং স্কুলগুলির কাছ থেকে আপডেট
+                পান
+              sections:
+                app_notifications: অ্যাপ্লিকেশন বিজ্ঞপ্তি
+                email: ই-মেইল
+              title: সহায়তা শেখা
+            marketing:
+              description: লিঙ্গু থেকে সমস্ত প্রচার, আপডেট এবং অনুপ্রেরণা সম্পর্কে
+                অবহিত থাকুন
+              sections:
+                browser_notifications: ব্রাউজার বিজ্ঞপ্তি
+                email: ই-মেইল
+              title: বিপণন
+          title: যোগাযোগ পছন্দ
+        personal_information:
+          delete_photo: ফটো মুছুন
+          email: ইমেল
+          first_name: নামের প্রথম অংশ
+          last_name: নামের শেষাংশ
+          social_accounts:
+            connected: সংযুক্ত
+            facebook: ফেসবুক
+            google: গুগল
+            microsoft: মাইক্রোসফ্ট
+            not_connected: সংযোগ বিচ্ছিন্ন
+            title: সামাজিক অ্যাকাউন্ট
+          title: ব্যক্তিগত তথ্য
+          update_photo: আপডেট ফটো
+        school:
+          active_licence: সক্রিয় লাইসেন্স
+          active_status: সক্রিয়
+          delete_profile: আমার প্রোফাইল মুছুন
+          delete_profile_modal:
+            body: |-
+              আপনি আপনার সমস্ত ডেটা চিরতরে মুছে ফেলুন। পূর্বাবস্থায় ফিরিয়ে আনার বোতামটি নেই এবং আমরা এটি পরে আপনার পক্ষে পেতে পারি না।
+              আপনি কি নিশ্চিত যে আপনি স্থায়ীভাবে আপনার লিংগ প্রোফাইল এবং আপনার সমস্ত ডেটা মুছতে চান?
+            cancel: বাতিল
+            confirm: হ্যাঁ, এটি মুছুন
+            i_understand_the_consequences: আমি পরিণতি বুঝতে পারি
+            title: আপনার প্রোফাইল মুছবেন?
+          expired: মেয়াদ শেষ হয়ে গেছে %{expire_date}
+          expires: "%{expire_date} এর মেয়াদ শেষ হয়"
+          inactive_status: নিষ্ক্রিয়
+          revoke_access: পড়ার অ্যাক্সেস প্রত্যাহার করুন
+          sections:
+            contact_school: যোগাযোগ স্কুল
+            export_my_data: আমার ডেটা রফতানি করুন
+            read_school_privacy_policy: স্কুল গোপনীয়তা নীতি পড়ুন
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: সঙ্গীত প্লেব্যাক
+              sound_effects: শব্দের প্রভাব
+              title: শব্দ
+            visual:
+              dark_theme: গাark় থিম
+              font_size:
+                test_text: ঘাস সবসময় বেড়ার অপর পারে সবুজ
+                title: অক্ষরের আকার
+              high_contrast: উচ্চ বৈসাদৃশ্য
+              hints: ইঙ্গিত
+              title: ভিজ্যুয়াল
+          title: শব্দ এবং ভিজ্যুয়াল
+        training_settings:
+          sections:
+            i_understand: আমি বুঝেছি
+            i_want_to_learn: আমি শিখতে চাই
+            target_language_level: ইংরেজীর স্তর
+          title: প্রশিক্ষণের সেটিংস
+      settings_title: সেটিংস
+    teacher_card:
+      followers_count:
+        one: 1 জন অনুসরণকারী
+        other: "%{count} জন অনুসরণকারী"
+      lessons_count:
+        one: 1 পাঠ
+        other: "%{count} পাঠ"

@@ -1,0 +1,53 @@
+- set_page_title t('admin.rewards.index.title')
+
+.card.rounded-bottom-0
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner2.png')});"
+  .card-header
+    h3.mb-0= t('admin.rewards.index.all_rewards')
+    p= t('.count_rewards', count: rewards.total_count)
+  .card-body.pb-0.z-index-10
+    = link_to new_admin_reward_path, class: 'card-link' do
+      = t('.create_new_reward')
+      i.fas.fa-chevron-right.fa-fw
+  .card-body
+    == paginate rewards
+.card.rounded-top-0
+  table.table.thead-light.table-hover.mb-0
+    thead
+      tr.vertical
+        th= t('shared.icon')
+        th= t('name')
+        th= t('shared.language')
+        th= t('.value')
+        th= t('.kind')
+        th= t('.dimension')
+        th
+    tbody
+      - rewards.each do |reward|
+        tr
+          td= image_tag(reward.image_url, class: 'preview img-thumbnail') if reward.image
+          td= link_to reward.name, admin_reward_path(reward), remote: true, data: {toggle: 'modal', target: '#reward-modal'}, class: 'font-weight-bold'
+          td= reward.language&.code
+          td= reward.value
+          td= reward.kind
+          td= reward.dimension
+          td.align-middle.text-right
+            .btn-group
+              = link_to edit_admin_reward_path(reward), class: 'btn btn-falcon-default btn-sm' do
+                i.fas.fa-pencil-alt.fa-fw
+              = link_to admin_reward_path(reward), class: 'btn btn-falcon-danger btn-sm', method: :delete, data: {confirm: t('admin.rewards.index.confirm_reward_delete')} do
+                i.fas.fa-times.fa-fw
+  - unless current_user.language_scope.blank?
+    .card-footer
+      = render 'shared/scoped_records'
+.modal id='reward-modal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden="true"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        h5.modal-title
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span.font-weight-light.fas.fa-times aria-hidden="true"
+      .modal-body
+      .modal-footer
+        button.btn.btn-falcon-default.btn-sm type='button' data-dismiss='modal'
+          = t('close')

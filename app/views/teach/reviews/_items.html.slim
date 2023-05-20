@@ -1,0 +1,27 @@
+- reviews.each do |review|
+  .mb-0
+    a.notification.card-body href="#"
+      .notification-avatar
+        .avatar.avatar-xl.mr-4
+          .avatar-circle
+            span.initials= review.author.initials
+      .notification-body style="width: 100%;"
+        - if policy(review).destroy?
+          = button_to teach_lesson_review_path(lesson, review),
+                  method: :delete,
+                  remote: true,
+                  data: { confirm: t('.confirm_delete') },
+                  class: 'btn btn-link float-right' do
+            i.fas.fa-times.text-danger.px-2
+        h6.font-weight-bold= review.author_name
+        p.fs-2== simple_format(review.content)
+        span.notification-time
+          - if review.approved?
+            i.fas.fa-check.text-success.pr-2
+            = t('.approved_at', time: l(review.created_at, format: :short))
+          - else
+            i.fas.fa-minus-circle.text-danger.pr-2
+            = t('.changes_requested_at', time: l(review.created_at, format: :short))
+
+- if reviews.empty?
+  p.pt-3.pl-3= t('.no_reviews')

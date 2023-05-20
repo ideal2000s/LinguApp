@@ -1,0 +1,35 @@
+button.close.position-absolute type='button' data-dismiss='modal' aria-label='Close' style='top: 19px; right: 19px'
+  span.font-weight-light aria-hidden='true' &times;
+= form_for assignment, url: path, method: method, html: { id: 'assignment_form' }, remote: true do |f|
+  h1.mt-2
+    = title
+  - if assignment.new_record?
+    .my-3
+      = f.label :name, t('title')
+      = f.text_field :name, class: 'form-control'
+      = error_for f.object, :name
+    .row.mb-3
+      .col-6.pr-2
+        = f.label :context, t('type')
+        = f.select :context, options_for_select(Assignment.contexts.keys.map { |text| [t(text, scope: 'school.school_assignments.responses'), text] }, f.object.context), {}, class: 'form-control select2'
+        = error_for f.object, :context
+      .col-6.pl-2
+        = f.label :language_id, t('shared.language')
+        = f.select :language_id, options_for_select(Language.active.map { |e| [asset_path("flags/#{language_to_flag_code(e.code)}.svg").to_s + ', ' + e.name, e.id]}, f.object.language_id), {}, class: 'form-control select-country'
+        = error_for f.object, :language_id
+    div
+      = f.label :instruction, t('shared.instructions')
+      = f.text_area :instruction, class: 'form-control border-0', rows: 4
+      = error_for f.object, :instruction
+    hr.mt-4.mb-3
+  .w-50
+    = label_tag :deadline, t('.deadline'), class: 'd-block'
+    = date_field_tag :deadline, '', class: 'form-control', required: !f.object.new_record?
+  .mb-5
+    = f.label :student_ids, t('.assign_to')
+    = f.select :student_ids, options_for_select(students.map { |e| [e.avatar_url.to_s + ', ' + e.initials + ', ' + e.full_name, e.id]}, f.object.new_record? ? f.object.student_ids: nil), {}, { class: 'select-students', multiple: true }
+    = error_for f.object, :student_ids
+  .submit-content.d-flex.justify-content-between
+    button.btn.btn-light.close.float-left.px-7 type='button' data-dismiss='modal' aria-label='Close'
+      span= t('shared.cancel')
+    = f.submit submit_title, class: 'btn btn-primary px-4 ml-3 flex-grow-1'

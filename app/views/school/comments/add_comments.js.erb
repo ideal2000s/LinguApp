@@ -1,0 +1,24 @@
+$('.review-tooltip, .school-comment').removeClass('d-inline-flex').addClass('d-none');
+$('.student-response-detail span[id="<%= word %>"]').removeClass('text-focus').addClass('lingu-school-comment').attr('data-tooltip-comment', '<%= comment %>');
+
+$('.student-response-detail span[id="<%= word %>"]').tooltip({
+  html: true,
+  title: "<div class='comment-tooltip d-flex'>" + '<%= image_tag('icons/school_image.svg', class: 'mr-2') %>' +
+    "<div><%= comment.author&.name %><span>" + '<%= comment %>' + "</span></div></div>",
+  placement: 'bottom',
+  toggle: 'tooltip'
+})
+
+$.ajax({
+  url: '<%= document_content_update_school_comments_path %>',
+  type: 'POST',
+  dataType: 'json',
+  data: {
+    document_id: <%= document_id %>,
+    content: $('#student_response_text').html()
+  },
+  success: function () {
+  },
+  error: function() {
+  }
+})

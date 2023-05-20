@@ -1,0 +1,29 @@
+- set_page_title lesson.title
+
+= render 'navbar', lesson: lesson, new_review: new_review
+
+.pt-5.mb-3
+  =  render 'reviews', reviews: reviews, lesson: lesson
+h3.pt-5= t('teach.lessons.storyline.lesson_content')
+- lesson_color_index = lesson.frontend_color ? Lesson::COLOR_ARRAY.find_index(lesson.frontend_color) : 0
+.card.mb-3.py-5 style="background: linear-gradient(180deg, #{Lesson::PREVIEW_COLOR_ARRAY[lesson_color_index][0]} 0%, #{Lesson::PREVIEW_COLOR_ARRAY[lesson_color_index][1]} 100%)"
+  .lesson-review-content
+    .card-header.bg-transparent
+      h2.font-weight-bold= lesson.title
+    .card-body
+      .row
+        .col-sm-12.col-md-6
+          .d-flex.justify-content-between.mt-4
+            .lesson-objectives
+              h5.font-weight-bold.mb-3= t('.objectives')
+              - if lesson.objectives.blank?
+                h5.text-danger= t('.no_learning_objectives')
+              - else
+                - lesson.objectives.each_with_index do |objective, i|
+                  h5.mb-3= "#{i + 1}. #{objective}"
+        .col-sm-12.col-md-6
+          - if lesson.image
+            = image_tag(lesson.image_url, class: 'img-fluid')
+
+- lesson.tasks.kept.published.each do |task|
+  = render task.to_partial_path(prefix: 'teach/reviews'), task: task

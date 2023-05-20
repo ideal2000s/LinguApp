@@ -1,0 +1,611 @@
+---
+lb:
+  course_mailer:
+    course_assigned_notification:
+      button: Start de Cours
+      click_start_lesson: Klickt op 'Start Lektioun'
+      follow_course_link: Klickt op de Knäppchen fir de Cours opzemaachen
+      footer_text: Kommt zréck op Lingu fir all Dag eppes Neies ze léieren!
+      get_started_line: 'Hei ass wéi Dir ufänkt:'
+      notification_link: Notifikatioun Astellungen
+      open_lesson: Maacht déi éischt Lektioun op
+      or_paste_this_link: oder pecht dëse Link an Ärem Browser
+      sign_in_with_email: Mellt Iech un mat Ärer E-Mail Adress (%{email})
+      support_link: Ënnerstëtzung
+      title: Fir unzefänken mat %{course}
+    new_document_comment:
+      author_text: "%{author} huet eng Iwwerpréiwung vun Ärer Aufgab hannerlooss"
+      button_text: Kuck dir et un
+      button_url_helper: 'oder pecht dëse Link an Äre Browser:'
+      footer_text: Et gëtt vill méi ze léieren ...
+      notification_link: Notifikatioun Astellungen
+      subject_line: Nei Aufgab Kommentar
+      support_link: Ënnerstëtzung
+    otp:
+      ignore_msg: Wann Dir dës Ufro net gemaach hutt, ignoréiert just d'E-Mail.
+      subject_line: Ären eenzegaartege Code fir Lingu
+      unique_code_for_lingu: Hei ass Ären eenzegaartege Code fir Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Hutt Dir schonn e Kont?
+      back: Zréck
+      back_to_sign_in: Zréck op Umellen
+      check_your_email_for_a_code: Préift Är E-Mail fir Äre Code
+      continue: Fuert weider
+      continue_with_email: Weider mat E-Mail
+      continue_with_provider: Weider mat %{provider}
+      did_not_receive_a_code: Hutt Dir kee Code kritt?
+      email_address: E-Mailadress
+      first_name: Virnumm
+      get_unique_code: Kritt en eenzegaartege Logincode
+      join_lingu: Maacht mat beim Lingu
+      last_name: Familljennumm
+      more_login_options: Méi Loginoptiounen
+      no_account_question: Hutt Dir kee Kont?
+      or: oder
+      resend_code: Code verschécken
+      sign_in: Umellen
+      sign_up: Sech umellen
+      want_to_receive_marketing_messages: Ech wëll Marketingmessage vu Lingu kréien
+      we_ve_sent_a_code: >-
+        Mir hunn e 6-stellege Code op <strong> {{email}} </strong> geschéckt. De Code
+        leeft a 15 Minutten aus, da gitt se séier un.
+    cookie_agreement:
+      agree: Averstanen
+      condition: >-
+        Mir benotze Cookië fir d'Performance vum Site z'analyséieren a personaliséiert
+        Inhalt ze liwweren. Wann Dir op "Averstanen" klickt, gitt Dir zou eise Konditiounen
+        zou.
+    course:
+      accredited_course_provider: Akkreditéiert Kursanbieter
+      apply: Mell dech un
+      apply_filters: Filtere uwenden
+      by: Vun
+      cancel: Ofbriechen
+      categories: "%{count} Kategorien"
+      category: Kategorie
+      clear: Kloer
+      clear_filters: Läscht Filteren
+      contact_us: Kontaktéiert eis
+      could_not_find_match_for: Entschëllegt, mir hu kee Match fonnt fir
+      course_language: Cours Sprooch
+      duration: Dauer
+      filter_settings:
+        categories:
+          academic: Akademesch
+          business: Business
+          fashion: Moud
+          food_drink: Iessen & Drénken
+          for_kids: Fir Kanner
+          general: Allgemeng
+          health: Gesondheet
+          legal: Legal
+          sport: Sport
+          travel: Reesen
+        durations:
+          t0_600: "<10 Minutten"
+          t1800_3600: 30-60 Minutten
+          t3600_86400: 1+ Stonn
+          t600_1800: 10-30 Minutten
+        focus_on:
+          conversation: Gespréich
+          grammar: Grammatik
+          listening: Nolauschteren
+          pronunciation: Aussprooch
+          reading: Liesen
+          speaking: Schwätzen
+          writing: Schreiwen
+        levels:
+          long:
+            advanced: Fortgeschrattenem Niveau
+            elementary: Elementar Niveau
+            intermediate: Mëttelstuf Niveau
+            no_knowledge: Kee Wëssen
+            pre_intermediate: Pre Mëttelstuf Niveau
+            upper_intermediate: Ieweschte Mëttelstuf Niveau
+          short:
+            advanced: Fortgeschratt
+            beginner: Ufänger
+            intermediate: Mëttelstuf
+        sort_by:
+          most_rated: Déi meescht bewäert
+          newest: Neisten
+          popularity: Popularitéit
+      filters: Filteren
+      focus_on: Fokus op
+      focus_on_title: Ech wëll op konzentréieren
+      hide_lessons: Lektioune verstoppen
+      hours: Stonnen
+      i_understand: ech verstinn
+      i_want_to_learn: Ech wëll léieren
+      in_language: an %{language}
+      language: Sprooch
+      learn_more: Léier méi
+      less_settings: Manner Astellungen
+      lessons: Lektiounen
+      lessons_available: "%{number} Lektioune verfügbar"
+      lessons_catalog_page_subtitle: Gitt Sproochheld.
+      lessons_catalog_page_title: Erweidert Ären Horizont mat engem Sproochecours
+      level: Niveau
+      min: Min
+      more_settings: Méi Astellungen
+      navbar:
+        close: Menu zoumaachen
+        menu: Menu
+        select_language: Wielt d'Sprooch aus
+      need_to_buy_course: Dir musst als éischt e Cours buchen
+      no_description: Keng Beschreiwung gëtt
+      no_results: Entschëllegt, mir hu kee Match fonnt fir
+      or: oder
+      per_month: pro Mount
+      plans: Pläng
+      privacy_policy: Privatsphär Politik
+      rating: Bewäertung
+      remove_all_filters: Ewechzehuelen all Filtere
+      reviews: Rezensiounen
+      save: Späicheren
+      search: Sichen
+      select_dots: Wielt ...
+      select_languages: Wielt Langauges
+      select_num_languages: Wielt %{number} Sproochen
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: All weisen
+      show_all_lessons: Weist all Lektiounen
+      show_lessons: Show %{number} Lektiounen
+      show_more: Méi weisen
+      sign_up_with_lingu_for: Mellt Iech bei Lingu Norwegen fir
+      skills: "%{count} Kompetenzen"
+      sort_by: Zortéieren no
+      start_typing_here: Fänkt hei un ze tippen
+      teach: Léiert
+      terms_and_conditions: Konditioune
+      time_range: Zäitberäich
+      try_adjusting_your_search: Probéiert Är Sich z'änneren andeems Dir Är Filter
+        ännert
+      try_this_course: Probéiert dëse Cours
+      website_language: Websäit Sprooch
+      words: Wierder
+    games:
+      finished:
+        go_to_next_exercise: Gutt gemaach! Gitt op déi nächst Übung
+      flashcard:
+        buttons:
+          finish: Ofschloss
+          next: Nächst
+          previous: Virdrun
+        check_out_new_words: Kuckt déi nei Wierder déi Dir an dëser Lektioun léiert
+        frequency_of_word_usage: Heefegkeet vum Wuertverbrauch am %{language}
+        keep_practice_to_learn_all_words: Iwwerpréift d'%{count} Wierder a loosst
+          eis e puer Spiller spillen!
+        word_frequency:
+          level1: Selten benotzt
+          level2: Selten benotzt
+          level3: Wuertfrequenz - mëttel
+          level4: Wuertfrequenz - mëttel
+          level5: Gemeinsam
+          level6: Ganz heefeg
+      match_word:
+        click_and_move_each_word_to_counterpart: Klickt a réckelt all Wuert u säi
+          Kolleg
+        start_heading: Match Wierder fir e Paar ze maachen
+        time_is_up: Zäit ass op!
+      skip_tutorial: Skip
+      time_is_up: Zäit ass op!
+      word_nodes:
+        match_letters_to_form_word: Match Bréiwer fir e Wuert ze bilden
+      word_waterfall:
+        do_not_hesitate: Loosst eis beschleunegen!
+        go_to_next_exercise: Gitt op déi nächst Übung
+        select_correct_translation: Wielt de richtege Match
+        well_done: Gutt gemaach!
+    home_page:
+      hello: Hallo,
+      popular_lessons: Populär Lektiounen
+      show_more: Méi weisen
+      time: "%{count} min"
+      today_lesson: Är Lektioun fir haut
+      user_name: "%{name}!"
+      words: "%{count} Wierder"
+    idle_screen:
+      by_author: vun %{authorName}
+      continue_lesson: Lektioun weider
+      exit: Sortie
+      idle_message: Dir waart eng Zäitchen am Leer ...
+    lesson_page:
+      back_to_course_page: Zréck op Courssäit
+      close: Zoumaachen
+      continue_lesson: Lektioun weider
+      followed: Suivéiert
+      hamburger_menu_btn: Hamburger Menu
+      lesson_given: Lektiounen
+      not_started: net ugefangen
+      or: Oder
+      part_complete: "%{percent}% fäerdeg"
+      restart_lesson: Neistart
+      section_check: Kontrolléieren
+      section_check_info: "%{count} Tester"
+      section_learn: Léiert
+      section_learn_info: "%{count} min ze kucken an ze liesen"
+      section_play: Spillt
+      section_play_info: "%{count} Wierder fir ze üben"
+      start_lesson: Start Lektioun
+      step_progress: "%{percent}%"
+      subscribe: Follegt
+      subscribed: Suivéiert
+      subscribers: Matleefer
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Net verfollegen
+      webview_error_title: Eppes ass falsch gelaf ...
+      words_number: "%{wordsNumber} nei Wierder"
+    lesson_task:
+      cancel_button: Ofbriechen
+      check:
+        navigation_next: Nächst
+        navigation_previous: Virdrun
+        navigation_skip: Skip
+      controls_panel:
+        font_size_button: Schrëftgréisst
+        high_contrast_button:
+          origin: Héije Kontrast
+          short: Kontrast
+        hints_button: Hiweiser
+        music_playback_button:
+          origin: Musek playback
+          short: Musek
+        sound_effects_button:
+          origin: Sound Effekter
+          short: Toun
+      exit_button: Sortie
+      finish_button: Ofschloss
+      finished:
+        back_to_learn: Zréck fir ze léieren
+        back_to_lesson_page: Zréck op d'Lektiounssäit
+        back_to_results_page: Zréck op d'Resultatsäit
+        bad_result_message: Hmm ... probéiert d'Lektioun nach eng Kéier ze huelen
+        close_lesson: Lektioun zoumaachen
+        correct_answers_list: Richteg Äntwerten Lëscht
+        good_result_message: Ech gesinn du hues en Effort gemaach!
+        great_result_message: Gutt gemaach! Dëst sinn super Resultater!
+        next_course_lesson: Gitt an d'nächst Lektioun am Cours
+        no_results: Dir hutt nach keng Testresultater
+        no_results_text: W.e.g., fëllt d'Lektioun of a packt den Test fir d'Resultater
+          ze kréien
+        see_correct_answers_list: Gesinn déi richteg Äntwerten Lëscht
+        train_more: Praxis méi an Dir wäert d'nächst Kéier besser Resultater erreechen!
+        you_finished_lesson: Super! Dir hutt d'Lektioun fäerdeg gemaach
+      go_back: Géi zréck
+      next_button: Nächst
+      not_available_task: Dës Aufgab ass nach net verfügbar
+      start_button: Start
+      tasks:
+        check:
+          assignment:
+            accept: Akzeptéieren
+            author_will_check_your_answer: "%{author} wäert Är Äntwert iwwerpréiwen
+              a gëtt typesch Feedback bannent 1-2 Deeg"
+            continue_writing: Weider schreiwen
+            copy: Kopie maachen
+            delete: Läschen
+            delete_record: Läscht Rekord
+            edit: Änneren
+            essay_does_not_have_enough_words: >-
+              Är Äntwert sollt op d'mannst %{minWordsNumber} Wierder enthalen. Är
+              Äntwert ass de Moment %{currentWordsNumber} Wierder.
+            followers_count: "%{followersCount} Matleefer"
+            lessons_count: "%{lessonsCount} Lektiounen"
+            minimal_recording_time: Minimal Opnahmzäit - %{minimalRecordingTime}
+            minimum_characters_amount: Mindestzeechen - %{minimumCharactersAmount}
+            minimum_words_amount: Minimum Wierder - %{minimumAmount}
+            record_again: Rekord nach eng Kéier
+            record_voice: Stëmm ophuelen
+            send_anyway: Schéckt souwisou
+            send_to_review: Schéckt fir z'iwwerpréiwen
+            skip: Skip
+            too_short_answer: Ze kuerz Äntwert
+            type_your_answer: Typ Är Äntwert
+            unknown_task_type: Onbekannten Aufgabstyp
+            upgrade_licence: Upgrade Lizenz
+            upgrade_your_plan: Upgrade Äre Plang fir Astellunge mat Enseignantebewäertungen
+              ze probéieren
+            upload_files: Luet Dateien erop
+            write_essay: Schreift Essay
+            you_have_used_amount_of_assignments: Dir hutt %{amountOfAssignments} Aufgabskreditter
+              benotzt
+          fill_in_blanks:
+            sentence_gap: Saz Spalt
+          fill_in_table:
+            column_answer_placeholder: Äntwert
+            column_question_placeholder: Fro
+            example: Beispill
+          true_false:
+            'false': Falsch
+            'true': Richteg
+        learn:
+          translatable_text:
+            show_original: Original weisen
+            translate_into: Iwwersetzt mat Google op %{languageName}
+            translate_into_your_lang: Iwwersetzt mat Google an Är Sprooch
+        play:
+          arrange_words:
+            start_screen:
+              heading: Maacht e Saz aus de gegebene Wierder
+          audition:
+            start_screen:
+              heading: Lauschtert den Audio a klickt op d'Wuert dat Dir just héieren
+                hutt
+          dictation:
+            get_help: Hëllef kréien
+            i_do_not_know: Ech wees net
+            input_placeholder: Gitt wat Dir hei héieren hutt
+            start_screen:
+              heading: Lauschtert a schreift wat Dir héiert
+          fill_gap:
+            start_screen:
+              heading: Match d'Wuert a seng Bedeitung
+          finish_screen:
+            go_to_next_exercise: Gutt gemaach! Gitt op déi nächst Übung
+          image_hotspot:
+            start_screen:
+              heading: Benennen d'Objeten am Bild korrekt
+          image_object:
+            start_screen:
+              heading: Wielt de richtegen Objet aus der nächster Foto
+          inline_dropdown:
+            start_screen:
+              heading: Wielt d'Wierder déi mam Saz passen
+          mark_word:
+            start_screen:
+              heading: Liest den Text a wielt d'Wuert dat mam Bild passt
+          minimal_pairs:
+            start_screen:
+              heading: Kuckt de Video a wielt déi richteg Optioun
+    locale:
+      currency_switcher_title: Währungsschalter
+      lang_switcher_title: Sproochewiessel
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Englesch
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio gëtt gelueden
+        aria_pause_button: Paus
+        aria_play_button: Spillt
+        aria_reload_button: Nei lueden
+        aria_stop_button: Stop
+        reload_message: Ausgefall beim Luede vum Audio. Klickt w.e.g. op de Knäppchen
+          fir ze lueden.
+    mobile_modal:
+      apply: Mell dech un
+      cancel: Ofbriechen
+      clear: Kloer
+      save: Späicheren
+    page404:
+      goToStartLessonPage: Gitt op d'Säit vun der Startcourse
+      ooops: Oooops ...
+      sorry_message: Entschëllegt, den Tor konnt dës Säit net fannen
+    profile:
+      navigation:
+        log_out: Ausloggen
+        my_profile: Mäi Profil
+        settings: Astellungen
+      onboarding:
+        choose_native_language: Wielt Är Mammesprooch oder Sprooch déi Dir verstitt
+        do_you_understand_english: Verstees du Englesch?
+        hello: Hallo
+        language_levels:
+          a1: Elementar Niveau
+          a2: Pre-Mëttelstuf Niveau
+          b1: Mëttelstuf Niveau
+          b2: Ieweschte Mëttelstuf Niveau
+          c1: Fortgeschrattenem Niveau
+          no_knowledge: Kee Wëssen
+        language_not_supported:
+          note: Mir informéieren Iech soubal d'Sprooch verfügbar ass
+          title: Entschëllegt, awer mir ënnerstëtzen dës Sprooch nach net
+          try_another_language: Probéiert eng aner Sprooch
+        'no': Nee
+        search_placeholder: Sichen ...
+        show_more_languages: Aner Sproochen
+        target_language_question: Wéi eng Sprooch wëllt Dir léieren?
+        what_is_language_level: Wéi géift Dir Ären %{languageName} Niveau bewäerten?
+        'yes': jo
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: D'Privatsphärpolitik vun Lingu
+        support: Ënnerstëtzung
+      logout: Ausloggen
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Kritt Updates vun Enseignanten a Schoulen, déi Dir verfollegt
+              sections:
+                app_notifications: App Notifikatiounen
+                email: E-Mail
+              title: Hëllef beim Léieren
+            marketing:
+              description: Bleift informéiert iwwer all Promotiounen, Updates an Inspiratioun
+                vu Lingu
+              sections:
+                browser_notifications: Browser Notifikatiounen
+                email: E-Mail
+              title: Marketing
+          title: Kontaktpräferenzen
+        personal_information:
+          delete_photo: Foto läschen
+          email: E-Mail
+          first_name: Virnumm
+          last_name: Familljennumm
+          social_accounts:
+            connected: Verbonnen
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Net ugeschloss
+            title: Sozial Konten
+          title: Perséinlech Informatiounen
+          update_photo: Foto aktualiséieren
+        school:
+          active_licence: Aktiv Lizenz
+          active_status: Aktiv
+          delete_profile: Läscht mäi Profil
+          delete_profile_modal:
+            body: |-
+              Dir läscht all Är Donnéeën aus - fir ëmmer. Et gëtt kee Knäppchen réckgängeg gemaach, a mir kréien et duerno net fir Iech zréck.
+              Sidd Dir sécher datt Dir Äre Lingu Profil an all Är Donnéeë permanent läsche wëllt?
+            cancel: Ofbriechen
+            confirm: Jo, läscht et
+            i_understand_the_consequences: Ech verstinn d'Konsequenzen
+            title: Läscht Äre Profil?
+          expired: Ofgelaf %{expire_date}
+          expires: Ofleeft %{expire_date}
+          inactive_status: Inaktiv
+          revoke_access: Lieszougang zréckzéien
+          sections:
+            contact_school: Kontaktéiert Schoul
+            export_my_data: Exportéieren meng Daten
+            read_school_privacy_policy: Liest d'Schoul Privatsphär Politik
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Musek playback
+              sound_effects: Sound Effekter
+              title: Toun
+            visual:
+              dark_theme: Däischtert Thema
+              font_size:
+                test_text: D'Gras ass ëmmer méi gréng op der anerer Säit vum Zonk
+                title: Schrëftgréisst
+              high_contrast: Héije Kontrast
+              hints: Hiweiser
+              title: Visuell
+          title: Sound & Visual
+        training_settings:
+          sections:
+            i_understand: ech verstinn
+            i_want_to_learn: Ech wëll léieren
+            target_language_level: Engleschen Niveau
+          title: Trainingsastellungen
+      settings_title: Astellungen
+    teacher_card:
+      followers_count:
+        one: 1 Matleefer
+        other: "%{count} Matleefer"
+      lessons_count:
+        one: 1 Lektioun
+        other: "%{count} Lektiounen"

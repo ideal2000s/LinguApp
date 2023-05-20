@@ -1,0 +1,12 @@
+- set_page_title t('.user_management')
+
+.card.overflow-hidden.rounded-bottom-0
+  .bg-holder.d-none.d-lg-block.bg-card style="background-image:url(#{image_path('illustrations/corner3.png')});"
+  .card-body
+    h3.mb-0= t('.user_management')
+  .card-body.pb-0.z-index-10
+    = link_to new_admin_user_path, class: 'card-link' do
+      = t('.create_new_user')
+      i.fas.fa-chevron-right.fa-fw
+
+= render partial: 'admin/users/list', locals: { users: users }

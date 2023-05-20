@@ -1,0 +1,8 @@
+﻿phrase_body,prefix,word_class,definition,occurrences,collection_title
+car,a,n,A vehicle with four wheels,4,Transportation
+bicycle,a,n,A bipedal transportation vehicle without engine,3,Transportation
+brown,,adj,The color brown,3,Colors
+blue,,adj,"The color blue, like the ocean and the sky",3,Colors
+yellow,,adj,"The color yellow, like the sun",3,Colors
+open,to,v,"The action of making something available, unlock",5,Using a car
+brake,to,v,The action of reducing the car's speed,4,Using a car

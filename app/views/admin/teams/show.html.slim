@@ -1,0 +1,64 @@
+- set_page_title team.name
+
+.card.mb-3
+  .card-header
+    .row
+      - if team.image_url
+        .col-1= image_tag team.image_url(:tiny), class: 'rounded-soft' rescue nil
+      .col-7
+        h5= team.name
+        - if team.personal?
+          .badge.badge-soft-warning.ml-2= t('activerecord.attributes.team.statuses.personal')
+      div.text-right class=(team.image_url.present? ? 'col-4' : 'col-5')
+        = link_to edit_admin_team_path(team), class: 'btn btn-sm btn-falcon-default' do
+          i.fas.fa-pencil-alt
+          =< t('edit')
+        - if team.school?
+          =< link_to signin_school_admin_team_path(team), method: :post, class: 'btn btn-sm btn-falcon-default' do
+            i.fas.fa-key
+            =< t('.sign_into_school')
+  .card-body.d-flex.justify-content-between
+    span= t('shared.count_students', count: team.team_students.kept.count)
+    span= t('shared.count_users', count: team.team_users.kept.count)
+    span= t('shared.count_lessons', count: team.lessons.kept.count)
+    span= t('shared.count_followers', count: team.followers_count)
+
+.card
+  .card-header
+    h5.mb-0
+      = t('admin.users.list.active_users')
+      = " (#{team.users.count})"
+  #user_list.bg-light
+    table.table.thead-light.table-hover
+      thead
+        tr
+          th= t('name')
+          th= t('email')
+          th= t('role')
+          th
+      tbody
+        - team.team_users.each do |tu|
+          - user = tu.user
+          tr id=dom_id(user)
+            td.strong
+              = link_to edit_admin_user_path(user) do
+                = user_avatar_with_name user
+            td
+              = user.email
+              - if user.last_sign_in_at
+                br
+                small= t('admin.students.list_row.last_seen_at', date: l(user.last_sign_in_at))
+            td
+              .badge.badge-pill class=(tu.owner? ? 'badge-soft-warning' : 'badge-soft-info')
+                = t(tu.role, scope: 'activerecord.attributes.team_user.roles')
+            td
+              - if policy(user).update?
+                = link_to t('edit'), edit_admin_user_path(user), class: 'btn btn-falcon-default btn-sm'
+
+.card.mt-3
+  .card-header
+    h5.mb-0
+      = t('admin.students.list.active_students')
+      = " (#{team.team_students.kept.count})"
+  #student_list.bg-light
+    = render partial: 'admin/students/list', locals: { students: team.students.page(params[:page]) }

@@ -1,0 +1,68 @@
+<%- if item.persisted? %>
+  (function(){
+    var $container = $('#task_items_container');
+    $container.append('<%= j render item, item: item, task: task %>');
+    ReactRailsUJS.unmountComponents();
+    ReactRailsUJS.mountComponents();
+    $container.find('.best_in_place').best_in_place();
+    document.querySelector('#<%= dom_id(task, :item_form) %>').reset();
+    $('#<%= dom_id(task, :item_form) %> .filename').html('');
+    $('tfoot').find('#task_item_audio').val('').end().find('.item-record-btn').show().prev().hide();
+
+    uppyUtils.initUploadInputs($container);
+    $('#task_items_container div[data-upload-preview-container="true"]').find('audio').remove();
+  })();
+<%- else %>
+  $('#<%= dom_id(task, :item_form) %>').replaceWith('<%= j render form, task: task %>');
+<%- end %>
+
+<%- if (task.type == 'Tasks::ImageHotspot' || task.type == 'Tasks::ImageObject') && !item.new_record? %>
+  var image_top = Math.random() * 90;
+  var image_left = Math.random() * 90;
+  var form_data = {
+    'task_item[top]': image_top,
+    'task_item[left]': image_left
+  }
+  <%- if task.type == 'Tasks::ImageHotspot' %>
+    var container = $('div[data-upload-preview-container]');
+    var hotspot_width = 45 / container.width() * 100,
+      hotspot_height = 45 / container.height() * 100;
+    form_data['task_item[width]'] = hotspot_width;
+    form_data['task_item[height]'] = hotspot_height;
+  <%- end %>
+
+  <%- if task.type == 'Tasks::ImageObject' %>
+    form_data['task_item[width]'] = 15;
+    form_data['task_item[height]'] = 15;
+  <%- end %>
+  $.ajax({
+    url: '<%= teach_task_item_path(task, item) %>',
+    type: 'PUT',
+    dataType: 'json',
+    data: form_data,
+    success: function () {
+      $('div[data-upload-preview-container]')
+        .append('<%= j render "teach/task_items/#{task.type == 'Tasks::ImageHotspot' ? 'image_hotspot/draggable_hotspot' : 'image_object/draggable_image_object'}", item: item, task: task, idx: task.items.count - 1 %>')
+      var style_attr = {
+        'top': image_top + '%',
+        'left': image_left + '%'
+      }
+      <%- if task.type == 'Tasks::ImageHotspot' %>
+      style_attr['width'] = hotspot_width + '%';
+      style_attr['height'] = hotspot_height + '%';
+      <%- end %>
+      <%- if task.type == 'Tasks::ImageObject' %>
+        style_attr['width'] = '15%';
+        style_attr['height'] = '15%';
+        setImageObjectResize();
+      <%- end %>
+      $('#<%= dom_id(item, :image) %>').css(style_attr);
+    },
+    error: function () {
+      console.log('failed');
+    }
+  })
+<%- end %>
+
+HtmlDurationPicker.refresh();
+select2Utils.initSearchSelect();

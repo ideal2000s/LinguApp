@@ -1,0 +1,606 @@
+---
+ht:
+  course_mailer:
+    course_assigned_notification:
+      button: Kòmanse kou a
+      click_start_lesson: Klike sou 'Kòmanse leson'
+      follow_course_link: Klike sou bouton pou ouvri kou a
+      footer_text: Tounen nan Lingu pou aprann yon bagay nouvo chak jou!
+      get_started_line: 'Men ki jan ou kòmanse:'
+      notification_link: Anviwònman Notifikasyon
+      open_lesson: Louvri premye leson an
+      or_paste_this_link: oswa kole lyen sa a nan navigatè ou a
+      sign_in_with_email: Log in ak adrès imel ou (%{email})
+      support_link: Sipò
+      title: Pou kòmanse ak %{course}
+    new_document_comment:
+      author_text: "%{author} kite yon revizyon nan plasman ou"
+      button_text: Gade sa
+      button_url_helper: 'oswa kole lyen sa a nan navigatè ou a:'
+      footer_text: Gen yon anpil plis yo aprann ...
+      notification_link: Anviwònman Notifikasyon
+      subject_line: Nouvo kòmantè devwa
+      support_link: Sipò
+    otp:
+      ignore_msg: Si ou pa t 'fè demann sa a, jis inyore imèl la.
+      subject_line: Kòd inik ou pou Lingu
+      unique_code_for_lingu: Isit la se kòd inik ou pou Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Deja genyen yon kont?
+      back: Retounen
+      back_to_sign_in: Retounen nan siyen an
+      check_your_email_for_a_code: Tcheke imèl ou pou kòd ou
+      continue: Kontinye
+      continue_with_email: Kontinye ak imèl
+      continue_with_provider: Kontinye ak %{provider}
+      did_not_receive_a_code: Pa resevwa yon kòd?
+      email_address: Adrès imel
+      first_name: Premye non
+      get_unique_code: Jwenn yon kòd login inik
+      join_lingu: Antre nan Lingu
+      last_name: Siyati
+      more_login_options: Plis opsyon login
+      no_account_question: Ou pa gen yon kont?
+      or: oswa
+      resend_code: Ranvwaye kòd
+      sign_in: Siyen nan
+      sign_up: Enskri
+      want_to_receive_marketing_messages: Mwen vle resevwa mesaj maketing ki soti
+        nan Lingu
+      we_ve_sent_a_code: >-
+        Nou te voye yon kòd 6 chif nan <strong> {{imèl}} </strong>. Kòd la ekspire
+        nan 15 minit, kidonk tanpri antre li byento.
+    cookie_agreement:
+      agree: Dakò
+      condition: >-
+        Nou itilize bonbon pou analize pèfòmans sit la epi delivre kontni pèsonalize.
+        Lè ou klike sou "Dakò", ou dakò ak kondisyon nou yo.
+    course:
+      accredited_course_provider: Founisè kou akredite
+      apply: Aplike
+      apply_filters: Aplike filtè
+      by: Pa
+      cancel: Anile
+      categories: kategori %{count}
+      category: Kategori
+      clear: Klè
+      clear_filters: Klè filtè
+      contact_us: Kontakte nou
+      could_not_find_match_for: Padon, nou pa t 'kapab jwenn okenn matche ak pou
+      course_language: Lang kou
+      duration: Dire
+      filter_settings:
+        categories:
+          academic: Akademik
+          business: Biznis
+          fashion: Fashion
+          food_drink: Manje ak bwè
+          for_kids: Pou timoun yo
+          general: Jeneral
+          health: Sante
+          legal: Legal
+          sport: Espò
+          travel: Vwayaje
+        durations:
+          t0_600: "<10 minit"
+          t1800_3600: 30-60 minit
+          t3600_86400: 1+ èdtan
+          t600_1800: 10-30 minit
+        focus_on:
+          conversation: Konvèsasyon
+          grammar: Gramè
+          listening: Tande
+          pronunciation: Pwononsyasyon
+          reading: Lekti
+          speaking: Pale
+          writing: Ekri
+        levels:
+          long:
+            advanced: Nivo avanse
+            elementary: Nivo elemantè
+            intermediate: Nivo entèmedyè
+            no_knowledge: Pa gen konesans
+            pre_intermediate: Pre entèmedyè nivo
+            upper_intermediate: Upper nivo entèmedyè
+          short:
+            advanced: Avanse
+            beginner: Beginner
+            intermediate: Entèmedyè
+        sort_by:
+          most_rated: Pifò rated
+          newest: Destriktè pi nouvo an
+          popularity: Popilarite
+      filters: Filtè
+      focus_on: Konsantre sou
+      focus_on_title: Mwen vle konsantre sou
+      hide_lessons: Kache leson yo
+      hours: Orè
+      i_understand: Mwen konprann
+      i_want_to_learn: mwen vle aprann
+      in_language: nan %{language}
+      language: Lang
+      learn_more: Aprann plis
+      less_settings: Mwens anviwònman
+      lessons: Leson
+      lessons_available: "%{number} leson ki disponib"
+      lessons_catalog_page_subtitle: Vin ewo langaj.
+      lessons_catalog_page_title: Elaji orizon ou yo ak yon kou lang
+      level: Nivo
+      min: Min
+      more_settings: Plis anviwònman
+      navbar:
+        close: Fèmen meni
+        menu: Meni
+        select_language: Chwazi lang
+      need_to_buy_course: Ou bezwen liv yon kou an premye
+      no_description: Pa gen deskripsyon yo bay la
+      no_results: Padon, nou pa t 'kapab jwenn okenn matche ak pou
+      or: oswa
+      per_month: pamwa
+      plans: Plan yo
+      privacy_policy: Règleman sou enfòmasyon prive
+      rating: Rating
+      remove_all_filters: Retire tout filtè yo
+      reviews: Revi
+      save: Sove
+      search: Rechèch
+      select_dots: Chwazi ...
+      select_languages: Chwazi langauges
+      select_num_languages: Chwazi lang %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Montre tout
+      show_all_lessons: Montre tout leson yo
+      show_lessons: Montre leson %{number}
+      show_more: Montre plis
+      sign_up_with_lingu_for: Enskri ak Lingu Norway pou
+      skills: "%{count} ladrès"
+      sort_by: Triye pa
+      start_typing_here: Kòmanse tape isit la
+      teach: Anseye
+      terms_and_conditions: Tèm ak Kondisyon yo
+      time_range: Tan ranje
+      try_adjusting_your_search: Eseye ajiste rechèch ou an pa chanje filtè ou yo
+      try_this_course: Eseye kou sa a
+      website_language: Lang sit entènèt
+      words: Mo
+    games:
+      finished:
+        go_to_next_exercise: Byen fè! Ale nan pwochen egzèsis la
+      flashcard:
+        buttons:
+          finish: Fini
+          next: Next
+          previous: Previous
+        check_out_new_words: Tcheke nouvo mo ou pral aprann nan leson sa a
+        frequency_of_word_usage: Frekans nan itilizasyon mo nan %{language}
+        keep_practice_to_learn_all_words: Revize mo yo %{count} epi kite a jwe kèk
+          jwèt!
+        word_frequency:
+          level1: Raman itilize
+          level2: Raman itilize
+          level3: Frekans mo - mwayen
+          level4: Frekans mo - mwayen
+          level5: Komen
+          level6: Trè komen
+      match_word:
+        click_and_move_each_word_to_counterpart: Klike sou epi deplase chak mo nan
+          kontrepati li yo
+        start_heading: Matche mo pou fè yon pè
+        time_is_up: Tan an fini!
+      skip_tutorial: Sote
+      time_is_up: Tan an fini!
+      word_nodes:
+        match_letters_to_form_word: Matche lèt pou fòme yon mo
+      word_waterfall:
+        do_not_hesitate: Ann pi vit!
+        go_to_next_exercise: Ale nan pwochen egzèsis la
+        select_correct_translation: Chwazi matche ak kòrèk la
+        well_done: Byen fè!
+    home_page:
+      hello: Bonjou,
+      popular_lessons: Leson popilè
+      show_more: Montre plis
+      time: "%{count} min"
+      today_lesson: Leson ou pou jodi a
+      user_name: "%{name}!"
+      words: "%{count} mo"
+    idle_screen:
+      by_author: pa %{authorName}
+      continue_lesson: Kontinye leson
+      exit: Sòti
+      idle_message: Ou te san fè anyen konsa pou kèk tan ...
+    lesson_page:
+      back_to_course_page: Retounen nan paj kou a
+      close: Fèmen
+      continue_lesson: Kontinye leson
+      followed: Swiv
+      hamburger_menu_btn: Meni anmbègè
+      lesson_given: leson
+      not_started: pa te kòmanse
+      or: Oswa
+      part_complete: "%{percent}% ranpli"
+      restart_lesson: Rekòmanse
+      section_check: Tcheke
+      section_check_info: tès %{count}
+      section_learn: Aprann
+      section_learn_info: "%{count} min yo gade ak li"
+      section_play: Jwe
+      section_play_info: "%{count} mo pou pratike"
+      start_lesson: Kòmanse leson
+      step_progress: "%{percent}%"
+      subscribe: Swiv
+      subscribed: Swiv
+      subscribers: disip yo
+      time_min: "%{minutesNumber} min"
+      unsubscribe: Swiv
+      webview_error_title: Yon bagay ale mal ...
+      words_number: "%{wordsNumber} nouvo mo"
+    lesson_task:
+      cancel_button: Anile
+      check:
+        navigation_next: Next
+        navigation_previous: Previous
+        navigation_skip: Sote
+      controls_panel:
+        font_size_button: Gwosè font
+        high_contrast_button:
+          origin: Segondè kontras
+          short: Kontrèman
+        hints_button: Sijesyon
+        music_playback_button:
+          origin: Lèktur Klas Mizik
+          short: Mizik
+        sound_effects_button:
+          origin: Efè son
+          short: Son
+      exit_button: Sòti
+      finish_button: Fini
+      finished:
+        back_to_learn: Retounen nan aprann
+        back_to_lesson_page: Retounen nan paj leson an
+        back_to_results_page: Retounen nan paj rezilta a
+        bad_result_message: Hmm ... eseye pran leson an yon lòt fwa ankò
+        close_lesson: Fèmen leson
+        correct_answers_list: Lis repons kòrèk
+        good_result_message: Mwen ka wè ou te fè yon efò!
+        great_result_message: Byen fè! Sa yo se rezilta gwo!
+        next_course_lesson: Ale nan pwochen leson nan kou
+        no_results: Ou pa gen okenn rezilta tès ankò
+        no_results_text: Tanpri, ranpli leson an epi pase tès la pou jwenn rezilta
+          yo
+        see_correct_answers_list: Gade lis repons kòrèk la
+        train_more: Pratike plis epi ou pral reyalize pi bon rezilta pwochen fwa!
+        you_finished_lesson: Gran! Ou fini leson an
+      go_back: Retounen
+      next_button: Next
+      not_available_task: Travay sa a poko disponib
+      start_button: Kòmanse
+      tasks:
+        check:
+          assignment:
+            accept: Aksepte
+            author_will_check_your_answer: "%{author} pral revize repons ou an epi
+              anjeneral bay fidbak nan 1-2 jou"
+            continue_writing: Kontinye ekri
+            copy: Kopi
+            delete: Efase
+            delete_record: Efase dosye
+            edit: Edite
+            essay_does_not_have_enough_words: >-
+              Repons ou ta dwe gen ladan omwen mo %{minWordsNumber}. Repons ou se
+              kounye a %{currentWordsNumber} mo.
+            followers_count: "%{followersCount} disip"
+            lessons_count: "%{lessonsCount} leson"
+            minimal_recording_time: Tan anrejistreman minimòm - %{minimalRecordingTime}
+            minimum_characters_amount: Karaktè minimòm - %{minimumCharactersAmount}
+            minimum_words_amount: Mo minimòm - %{minimumAmount}
+            record_again: Dosye ankò
+            record_voice: Anrejistre vwa
+            send_anyway: Voye kanmenm
+            send_to_review: Voye revize
+            skip: Sote
+            too_short_answer: Twò kout repons
+            type_your_answer: Tape repons ou an
+            unknown_task_type: Kalite travay enkoni
+            upgrade_licence: Lisans ajou
+            upgrade_your_plan: Mete ajou plan ou a eseye devwa ak revize pwofesè yo
+            upload_files: Voye dosye
+            write_essay: Ekri redaksyon
+            you_have_used_amount_of_assignments: Ou te itilize kredi devwa %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Fraz fraz
+          fill_in_table:
+            column_answer_placeholder: Reponn
+            column_question_placeholder: Kesyon
+            example: Egzanp
+          true_false:
+            'false': Fo
+            'true': Se vre
+        learn:
+          translatable_text:
+            show_original: Montre orijinal la
+            translate_into: Tradwi ak Google an %{languageName}
+            translate_into_your_lang: Tradwi ak Google nan lang ou
+        play:
+          arrange_words:
+            start_screen:
+              heading: Fè yon fraz nan mo yo bay yo
+          audition:
+            start_screen:
+              heading: Koute odyo a epi tape sou mo ou fèk tande a
+          dictation:
+            get_help: Jwenn èd
+            i_do_not_know: M pa konnen
+            input_placeholder: Antre nan sa ou tande isit la
+            start_screen:
+              heading: Koute epi ekri sa ou tande a
+          fill_gap:
+            start_screen:
+              heading: Match mo a ak siyifikasyon li
+          finish_screen:
+            go_to_next_exercise: Byen fè! Ale nan pwochen egzèsis la
+          image_hotspot:
+            start_screen:
+              heading: Nonmen objè yo nan foto a kòrèkteman
+          image_object:
+            start_screen:
+              heading: Chwazi objè a dwa soti nan foto kap vini an
+          inline_dropdown:
+            start_screen:
+              heading: Chwazi mo ki koresponn ak fraz la
+          mark_word:
+            start_screen:
+              heading: Li tèks la epi chwazi mo ki matche ak imaj la
+          minimal_pairs:
+            start_screen:
+              heading: Gade videyo a epi chwazi opsyon kòrèk
+    locale:
+      currency_switcher_title: Lajan komutateur
+      lang_switcher_title: Komutatè lang
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Angle
+        eo: Esperanto
+        es: Espanyòl
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Français
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italiano
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Latviešu valoda
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Pòtigè
+        ro: Limba română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Odyo ap chaje
+        aria_pause_button: Pòz
+        aria_play_button: Jwe
+        aria_reload_button: Reload
+        aria_stop_button: Sispann
+        reload_message: Echwe pou pou chaje odyo. Tanpri klike sou bouton an pou rechaje.
+    mobile_modal:
+      apply: Aplike
+      cancel: Anile
+      clear: Klè
+      save: Sove
+    page404:
+      goToStartLessonPage: Ale nan paj leson kòmansman an
+      ooops: Oooops ...
+      sorry_message: Padon, Tor pa t 'kapab jwenn paj sa a
+    profile:
+      navigation:
+        log_out: Dekonekte
+        my_profile: Pwofil mwen
+        settings: Anviwònman
+      onboarding:
+        choose_native_language: Chwazi lang natif natal ou oswa lang ou konprann
+        do_you_understand_english: Èske ou konprann angle?
+        hello: Bonjou
+        language_levels:
+          a1: Nivo elemantè
+          a2: Pre-entèmedyè nivo
+          b1: Nivo entèmedyè
+          b2: Upper entèmedyè nivo
+          c1: Nivo avanse
+          no_knowledge: Pa gen konesans
+        language_not_supported:
+          note: N ap fè ou konnen le pli vit ke lang lan ap disponib
+          title: Padon, men nou poko sipòte lang sa a
+          try_another_language: Eseye yon lòt lang
+        'no': Non
+        search_placeholder: Rechèch ...
+        show_more_languages: Lòt lang
+        target_language_question: Ki lang ou vle aprann?
+        what_is_language_level: Ki jan ou ta evalye nivo %{languageName} ou a?
+        'yes': Wi
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Règleman sou vi prive Lingu
+        support: Sipò
+      logout: Dekonekte
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Resevwa mizajou nan men pwofesè ak lekòl ou swiv yo
+              sections:
+                app_notifications: Notifikasyon App
+                email: Imèl
+              title: Asistans aprantisaj
+            marketing:
+              description: Rete enfòme sou tout pwomosyon, dènye nouvèl, ak enspirasyon
+                soti nan Lingu
+              sections:
+                browser_notifications: Notifikasyon navigatè
+                email: Imèl
+              title: Maketing
+          title: Kontak preferans
+        personal_information:
+          delete_photo: Efase foto
+          email: Imèl
+          first_name: Premye non
+          last_name: Siyati
+          social_accounts:
+            connected: Konekte
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Pa konekte
+            title: Kont sosyal
+          title: Enfomasyon pèsonèl
+          update_photo: Mizajou foto
+        school:
+          active_licence: Lisans aktif
+          active_status: Aktif
+          delete_profile: Efase pwofil mwen an
+          delete_profile_modal:
+            body: |-
+              Ou efase tout done ou yo pou tout tan. Pa gen okenn bouton defèt, epi nou pa ka jwenn li tounen pou ou apre.
+              Èske ou sèten ou vle efase pou tout tan pwofil Lingu ou ak tout done ou a?
+            cancel: Anile
+            confirm: Wi, efase li
+            i_understand_the_consequences: Mwen konprann konsekans yo
+            title: Efase pwofil ou a?
+          expired: Ekspire %{expire_date}
+          expires: Ekspire %{expire_date}
+          inactive_status: Inaktif
+          revoke_access: Revoke aksè li
+          sections:
+            contact_school: Kontakte lekòl la
+            export_my_data: Ekspòte done mwen yo
+            read_school_privacy_policy: Li règleman sou enfòmasyon prive lekòl la
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Lèktur Klas Mizik
+              sound_effects: Efè son
+              title: Son
+            visual:
+              dark_theme: Tèm nwa
+              font_size:
+                test_text: Zèb la se toujou vèrt sou lòt bò a nan kloti a
+                title: Gwosè font
+              high_contrast: Segondè kontras
+              hints: Sijesyon
+              title: Vizyèl
+          title: Son & vizyèl
+        training_settings:
+          sections:
+            i_understand: Mwen konprann
+            i_want_to_learn: mwen vle aprann
+            target_language_level: Nivo angle
+          title: Anviwònman fòmasyon
+      settings_title: Anviwònman
+    teacher_card:
+      followers_count:
+        one: 1 disip
+        other: "%{count} disip"
+      lessons_count:
+        one: 1 leson
+        other: "%{count} leson"

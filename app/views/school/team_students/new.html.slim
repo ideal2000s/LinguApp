@@ -1,0 +1,7 @@
+- set_page_title t('school.team_students.form.add_new_student')
+.students-container.school-info-container
+  .mb-4
+    .students-header.d-flex.justify-content-between.align-items-center
+      .d-flex.align-items-center
+        h1.mb-0.pb-3= t('students')
+    = render 'form', path: school_create_students_path, student: student, method: :post, action_name: 'new'

@@ -1,0 +1,4 @@
+.d-flex.team-group-select-wrapper
+  input.team-group-item-radio id="item-selector-#{course.id}" type='radio' name='course_id' value="#{course.id}" checked=(course.id == current_course_id)
+  label.flex-fill.mb-0.pt-2 for="item-selector-#{course.id}"
+    = course.title

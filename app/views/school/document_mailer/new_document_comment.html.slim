@@ -1,0 +1,12 @@
+img src=@team&.image_url(:thumbnail)
+h3= t('course_mailer.new_document_comment.subject_line')
+img src=@author.avatar_url(:thumbnail)
+p= t('course_mailer.new_document_comment.author_text', author: @author.full_name)
+p= @essay.name
+p= @comment.content
+a href="#{@comment_url}"= t('course_mailer.new_document_comment.button_text')
+p= t('course_mailer.new_document_comment.button_url_helper')
+p= @comment_url
+p= t('course_mailer.new_document_comment.footer_text')
+p= t('course_mailer.new_document_comment.notification_link')
+p= t('course_mailer.new_document_comment.support_link')

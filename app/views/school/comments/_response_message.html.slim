@@ -1,0 +1,14 @@
+- author = comment.author
+.school-response-chat.d-flex
+  = custom_profile_tag(author)
+  div.ml-2
+    .lingu-school
+      = author.full_name
+    .response-time
+      = l(comment.updated_at, format: :short)
+    p
+      - if comment.content.present?
+        = raw comment.content
+      - elsif comment.audio
+        - audio_size = JSON.parse(comment.audio_data)['metadata']['size'] /1048576.to_f
+        = react_component('components/WaveAudioPlayer', {url: comment.audio_url, size: audio_size.round(2), isDownloadable: true, id: "comment_#{comment.id}"})

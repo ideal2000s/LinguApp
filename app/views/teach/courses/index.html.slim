@@ -1,0 +1,15 @@
+- set_page_title t('layouts.teach.sidebar.courses')
+
+.card
+  .card-header.pb-2
+    h3.ml-0= current_team_user.member? ? t('.my_courses') : t('.all_courses')
+  .card-body.z-index-10.my-3.py-0
+    = link_to new_teach_course_path, class: 'card-link' do
+      i.fas.fa-plus.fa-fw.mr-1
+      span= t('teach.courses.new.title')
+.mt-4
+  - if courses.count > 0
+    .row= render 'list', courses: courses
+  - else
+    .card
+      .card-body= t('.no_courses')

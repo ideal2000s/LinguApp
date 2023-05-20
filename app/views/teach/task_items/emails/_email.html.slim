@@ -1,0 +1,22 @@
+= form_for item, as: :task_item, remote: true, url: teach_task_item_path(:task_id => item.task_id, :id => item.id) do |f|
+  .card.mb-3
+    .card-body
+      .row
+        .col-lg-4.form-group
+          = f.label :from_name, t('teach.task_items.email.email.from_name'), class: 'label-control'
+          = f.text_field :from_name, class: 'form-control'
+        .col-lg-8.form-group
+          = f.label :from_email, t('teach.task_items.email.email.from_email'), class: 'label-control'
+          = f.text_field :from_email, class: 'form-control'
+      .form-group
+        = f.label :subject, t('frontend.subject'), class: 'label-control'
+        = f.text_field :subject, class: 'form-control'
+      .form-group
+        = f.label :body, t('teach.task_items.email.email.email_body'), class: 'label-control'
+        = f.rich_text_area :body, class: 'form-control'
+      .form-group
+        = f.label :minimum_words, t('teach.tasks.essay.essay.minimum_words'), class: 'w-100 sentence required'
+        = f.text_field :minimum_words, placeholder: t('teach.tasks.essay.essay.input_minimum_words'), class: 'form-control question'
+        = error_for f.object, :minimum_words
+      .form-group
+        = f.submit t('save_changes'), class: 'btn btn-success'

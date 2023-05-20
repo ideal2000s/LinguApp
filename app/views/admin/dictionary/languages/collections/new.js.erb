@@ -1,0 +1,4 @@
+
+$("#new-phrase-modal").find(".modal-content").html("<%= j render('form', collection: collection, language: @language, header_title: 'Create new collection', btn_title: 'Create', path: admin_language_collections_path ,sub_title: 'selected') %>");
+$("#new-phrase-modal").find('.select2').select2({ theme: 'bootstrap4', dropdownParent: $('#new-phrase-modal .modal-content') });
+$("#new-phrase-modal").modal('show');

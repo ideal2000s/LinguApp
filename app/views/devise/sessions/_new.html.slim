@@ -1,0 +1,17 @@
+= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  .form-group
+    = f.label :email, class: 'control-label'
+    = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control'
+  .form-group
+    .d-flex.justify-content-between
+      = f.label :password, class: 'control-label'
+      - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'
+        = link_to "Forgot password?", new_password_path(resource_name), class: 'fs--1'
+    = f.password_field :password, autocomplete: "current-password", class: 'form-control'
+  - if devise_mapping.rememberable?
+    .form-group
+      .custom-control.custom-checkbox
+        = f.check_box :remember_me, class: 'custom-control-input'
+        = f.label :remember_me, class: 'custom-control-label'
+  .form-group.actions
+    = f.submit t('devise.account_login'), class: 'btn btn-block btn-primary'

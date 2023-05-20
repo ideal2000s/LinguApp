@@ -1,0 +1,619 @@
+---
+ml:
+  course_mailer:
+    course_assigned_notification:
+      button: കോഴ്‌സ് ആരംഭിക്കുക
+      click_start_lesson: "'പാഠം ആരംഭിക്കുക' ക്ലിക്കുചെയ്യുക"
+      follow_course_link: കോഴ്‌സ് തുറക്കാൻ ബട്ടൺ ക്ലിക്കുചെയ്യുക
+      footer_text: എല്ലാ ദിവസവും പുതിയ എന്തെങ്കിലും പഠിക്കാൻ ഭാഷയിലേക്ക് മടങ്ങുക!
+      get_started_line: 'നിങ്ങൾ എങ്ങനെ ആരംഭിക്കാമെന്നത് ഇതാ:'
+      notification_link: അറിയിപ്പ് ക്രമീകരണങ്ങൾ
+      open_lesson: ആദ്യ പാഠം തുറക്കുക
+      or_paste_this_link: അല്ലെങ്കിൽ ഈ ലിങ്ക് നിങ്ങളുടെ ബ്ര .സറിൽ ഒട്ടിക്കുക
+      sign_in_with_email: നിങ്ങളുടെ ഇമെയിൽ വിലാസം (%{email}) ഉപയോഗിച്ച് പ്രവേശിക്കുക
+      support_link: പിന്തുണ
+      title: "%{course} ഉപയോഗിച്ച് ആരംഭിക്കുന്നു"
+    new_document_comment:
+      author_text: "%{author} നിങ്ങളുടെ അസൈൻമെന്റിന്റെ ഒരു അവലോകനം നൽകി"
+      button_text: ഇത് പരിശോധിക്കുക
+      button_url_helper: 'അല്ലെങ്കിൽ ഈ ലിങ്ക് നിങ്ങളുടെ ബ്ര browser സറിൽ ഒട്ടിക്കുക:'
+      footer_text: ഇനിയും വളരെയധികം കാര്യങ്ങൾ പഠിക്കാനുണ്ട് ...
+      notification_link: അറിയിപ്പ് ക്രമീകരണങ്ങൾ
+      subject_line: പുതിയ അസൈൻമെന്റ് അഭിപ്രായം
+      support_link: പിന്തുണ
+    otp:
+      ignore_msg: നിങ്ങൾ ഈ അഭ്യർത്ഥന നടത്തിയില്ലെങ്കിൽ, ഇമെയിൽ അവഗണിക്കുക.
+      subject_line: ലിംഗുവിനായുള്ള നിങ്ങളുടെ അദ്വിതീയ കോഡ്
+      unique_code_for_lingu: ലിംഗുവിനായുള്ള നിങ്ങളുടെ അദ്വിതീയ കോഡ് ഇതാ
+  frontend:
+    auth:
+      already_have_acc_question: ഇതിനകം ഒരു അക്കൗണ്ട് ഉണ്ടോ?
+      back: തിരികെ
+      back_to_sign_in: സൈൻ ഇൻ ചെയ്യാൻ മടങ്ങുക
+      check_your_email_for_a_code: നിങ്ങളുടെ കോഡിനായി നിങ്ങളുടെ ഇമെയിൽ പരിശോധിക്കുക
+      continue: തുടരുക
+      continue_with_email: ഇമെയിൽ ഉപയോഗിച്ച് തുടരുക
+      continue_with_provider: "%{provider} ഉപയോഗിച്ച് തുടരുക"
+      did_not_receive_a_code: ഒരു കോഡ് ലഭിച്ചില്ലേ?
+      email_address: ഈ - മെയില് വിലാസം
+      first_name: പേരിന്റെ ആദ്യഭാഗം
+      get_unique_code: ഒരു അദ്വിതീയ ലോഗിൻ കോഡ് നേടുക
+      join_lingu: ലിംഗുവിൽ ചേരുക
+      last_name: പേരിന്റെ അവസാന ഭാഗം
+      more_login_options: കൂടുതൽ ലോഗിൻ ഓപ്ഷനുകൾ
+      no_account_question: ഒരു അക്കൗണ്ട് ഇല്ലേ?
+      or: അഥവാ
+      resend_code: കോഡ് വീണ്ടും അയക്കുക
+      sign_in: സൈൻ ഇൻ
+      sign_up: സൈൻ അപ്പ് ചെയ്യുക
+      want_to_receive_marketing_messages: എനിക്ക് ലിംഗുവിൽ നിന്ന് മാർക്കറ്റിംഗ് സന്ദേശങ്ങൾ
+        ലഭിക്കാൻ ആഗ്രഹമുണ്ട്
+      we_ve_sent_a_code: >-
+        <strong> {{ഇമെയിൽ}} </ strong> ലേക്ക് ഞങ്ങൾ 6 അക്ക കോഡ് അയച്ചു. കോഡ് 15 മിനിറ്റിനുള്ളിൽ
+        കാലഹരണപ്പെടും, അതിനാൽ ഉടൻ തന്നെ അത് നൽകുക.
+    cookie_agreement:
+      agree: സമ്മതിക്കുന്നു
+      condition: >-
+        സൈറ്റ് പ്രകടനം വിശകലനം ചെയ്യുന്നതിനും വ്യക്തിഗതമാക്കിയ ഉള്ളടക്കം നൽകുന്നതിനും
+        ഞങ്ങൾ കുക്കികൾ ഉപയോഗിക്കുന്നു. “സമ്മതിക്കുക” ക്ലിക്കുചെയ്യുന്നതിലൂടെ, നിങ്ങൾ
+        ഞങ്ങളുടെ നിബന്ധനകൾ അംഗീകരിക്കുന്നു.
+    course:
+      accredited_course_provider: അംഗീകൃത കോഴ്‌സ് ദാതാവ്
+      apply: പ്രയോഗിക്കുക
+      apply_filters: ഫിൽട്ടറുകൾ പ്രയോഗിക്കുക
+      by: എഴുതിയത്
+      cancel: റദ്ദാക്കുക
+      categories: "%{count} വിഭാഗങ്ങൾ"
+      category: വിഭാഗം
+      clear: മായ്‌ക്കുക
+      clear_filters: ഫിൽട്ടറുകൾ മായ്‌ക്കുക
+      contact_us: ഞങ്ങളെ സമീപിക്കുക
+      could_not_find_match_for: ക്ഷമിക്കണം, ഞങ്ങൾക്ക് ഒരു പൊരുത്തവും കണ്ടെത്താൻ കഴിഞ്ഞില്ല
+      course_language: കോഴ്‌സ് ഭാഷ
+      duration: കാലാവധി
+      filter_settings:
+        categories:
+          academic: അക്കാദമിക്
+          business: ബിസിനസ്സ്
+          fashion: ഫാഷൻ
+          food_drink: ഭക്ഷണവും പാനീയവും
+          for_kids: കുട്ടികൾക്ക് വേണ്ടി
+          general: ജനറൽ
+          health: ആരോഗ്യം
+          legal: നിയമപരമായ
+          sport: കായിക
+          travel: യാത്ര
+        durations:
+          t0_600: "<10 മിനിറ്റ്"
+          t1800_3600: 30-60 മിനിറ്റ്
+          t3600_86400: 1+ മണിക്കൂർ
+          t600_1800: 10-30 മിനിറ്റ്
+        focus_on:
+          conversation: സംഭാഷണം
+          grammar: വ്യാകരണം
+          listening: ശ്രദ്ധിക്കുന്നു
+          pronunciation: ഉച്ചാരണം
+          reading: വായന
+          speaking: സംസാരിക്കുന്നു
+          writing: എഴുത്തു
+        levels:
+          long:
+            advanced: വിപുലമായ നില
+            elementary: പ്രാഥമിക നില
+            intermediate: ഇന്റർമീഡിയറ്റ് ലെവൽ
+            no_knowledge: അറിവില്ല
+            pre_intermediate: പ്രീ ഇന്റർമീഡിയറ്റ് ലെവൽ
+            upper_intermediate: അപ്പർ ഇന്റർമീഡിയറ്റ് ലെവൽ
+          short:
+            advanced: വിപുലമായത്
+            beginner: തുടക്കക്കാരൻ
+            intermediate: ഇന്റർമീഡിയറ്റ്
+        sort_by:
+          most_rated: ഏറ്റവും കൂടുതൽ റേറ്റുചെയ്തത്
+          newest: ഏറ്റവും പുതിയത്
+          popularity: ജനപ്രീതി
+      filters: ഫിൽട്ടറുകൾ
+      focus_on: ശ്രദ്ധകേന്ദ്രീകരിക്കുക
+      focus_on_title: എനിക്ക് ശ്രദ്ധ കേന്ദ്രീകരിക്കണം
+      hide_lessons: പാഠങ്ങൾ മറയ്‌ക്കുക
+      hours: മണിക്കൂറുകൾ
+      i_understand: എനിക്ക് മനസിലായി
+      i_want_to_learn: എനിക്ക് പഠിക്കണം
+      in_language: "%{language}- ൽ"
+      language: ഭാഷ
+      learn_more: കൂടുതലറിവ് നേടുക
+      less_settings: കുറഞ്ഞ ക്രമീകരണങ്ങൾ
+      lessons: പാഠങ്ങൾ
+      lessons_available: "%{number} പാഠങ്ങൾ ലഭ്യമാണ്"
+      lessons_catalog_page_subtitle: ഭാഷാ നായകനാകുക.
+      lessons_catalog_page_title: ഒരു ഭാഷാ കോഴ്‌സ് ഉപയോഗിച്ച് നിങ്ങളുടെ ചക്രവാളങ്ങൾ
+        വികസിപ്പിക്കുക
+      level: ലെവൽ
+      min: മി
+      more_settings: കൂടുതൽ ക്രമീകരണങ്ങൾ
+      navbar:
+        close: മെനു അടയ്‌ക്കുക
+        menu: മെനു
+        select_language: ഭാഷ തിരഞ്ഞെടുക്കുക
+      need_to_buy_course: നിങ്ങൾ ആദ്യം ഒരു കോഴ്സ് ബുക്ക് ചെയ്യേണ്ടതുണ്ട്
+      no_description: വിവരണമൊന്നും നൽകിയിട്ടില്ല
+      no_results: ക്ഷമിക്കണം, ഞങ്ങൾക്ക് ഒരു പൊരുത്തവും കണ്ടെത്താൻ കഴിഞ്ഞില്ല
+      or: അഥവാ
+      per_month: മാസം തോറും
+      plans: പദ്ധതികൾ
+      privacy_policy: സ്വകാര്യതാനയം
+      rating: റേറ്റിംഗ്
+      remove_all_filters: എല്ലാ ഫിൽട്ടറുകളും നീക്കംചെയ്യുക
+      reviews: അവലോകനങ്ങൾ
+      save: രക്ഷിക്കും
+      search: തിരയുക
+      select_dots: തിരഞ്ഞെടുക്കുക ...
+      select_languages: ഭാഷകൾ തിരഞ്ഞെടുക്കുക
+      select_num_languages: "%{number} ഭാഷകൾ തിരഞ്ഞെടുക്കുക"
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: ബി 1
+        b2: ബി 2
+        c1: സി 1
+        c2: സി 2
+        zero_level: A0
+      show_all: എല്ലാം കാണിക്കൂ
+      show_all_lessons: എല്ലാ പാഠങ്ങളും കാണിക്കുക
+      show_lessons: "%{number} പാഠങ്ങൾ കാണിക്കുക"
+      show_more: കൂടുതൽ കാണിക്കുക
+      sign_up_with_lingu_for: ഇതിനായി ലിംഗു നോർ‌വേയിൽ സൈൻ അപ്പ് ചെയ്യുക
+      skills: "%{count} കഴിവുകൾ"
+      sort_by: ഇങ്ങനെ അടുക്കുക
+      start_typing_here: ഇവിടെ ടൈപ്പുചെയ്യാൻ ആരംഭിക്കുക
+      teach: പഠിപ്പിക്കുക
+      terms_and_conditions: ഉപാധികളും നിബന്ധനകളും
+      time_range: സമയ ശ്രേണി
+      try_adjusting_your_search: നിങ്ങളുടെ ഫിൽട്ടറുകൾ മാറ്റിക്കൊണ്ട് നിങ്ങളുടെ തിരയൽ
+        ക്രമീകരിക്കാൻ ശ്രമിക്കുക
+      try_this_course: ഈ കോഴ്‌സ് പരീക്ഷിക്കുക
+      website_language: വെബ്‌സൈറ്റ് ഭാഷ
+      words: വാക്കുകൾ
+    games:
+      finished:
+        go_to_next_exercise: നന്നായി! അടുത്ത വ്യായാമത്തിലേക്ക് പോകുക
+      flashcard:
+        buttons:
+          finish: പൂർത്തിയാക്കുക
+          next: അടുത്തത്
+          previous: മുമ്പത്തെ
+        check_out_new_words: ഈ പാഠത്തിൽ നിങ്ങൾ പഠിക്കുന്ന പുതിയ വാക്കുകൾ പരിശോധിക്കുക
+        frequency_of_word_usage: "%{language}- ൽ പദ ഉപയോഗത്തിന്റെ ആവൃത്തി"
+        keep_practice_to_learn_all_words: "%{count} വാക്കുകൾ അവലോകനം ചെയ്‌ത് നമുക്ക്
+          ചില ഗെയിമുകൾ കളിക്കാം!"
+        word_frequency:
+          level1: അപൂർവ്വമായി ഉപയോഗിക്കുന്നു
+          level2: അപൂർവ്വമായി ഉപയോഗിക്കുന്നു
+          level3: പദ ആവൃത്തി - ഇടത്തരം
+          level4: പദ ആവൃത്തി - ഇടത്തരം
+          level5: സാധാരണമാണ്
+          level6: വളരെ സാധാരണമാണ്
+      match_word:
+        click_and_move_each_word_to_counterpart: ഓരോ വാക്കും ക്ലിക്കുചെയ്‌ത് അതിന്റെ
+          എതിർ‌ഭാഗത്തേക്ക് നീക്കുക
+        start_heading: ഒരു ജോഡി നിർമ്മിക്കാൻ വാക്കുകൾ പൊരുത്തപ്പെടുത്തുക
+        time_is_up: സമയം കഴിഞ്ഞു!
+      skip_tutorial: ഒഴിവാക്കുക
+      time_is_up: സമയം കഴിഞ്ഞു!
+      word_nodes:
+        match_letters_to_form_word: ഒരു വാക്ക് രൂപപ്പെടുത്തുന്നതിന് അക്ഷരങ്ങളുമായി
+          പൊരുത്തപ്പെടുത്തുക
+      word_waterfall:
+        do_not_hesitate: നമുക്ക് വേഗത്തിലാക്കാം!
+        go_to_next_exercise: അടുത്ത വ്യായാമത്തിലേക്ക് പോകുക
+        select_correct_translation: ശരിയായ പൊരുത്തം തിരഞ്ഞെടുക്കുക
+        well_done: നന്നായി!
+    home_page:
+      hello: ഹലോ,
+      popular_lessons: ജനപ്രിയ പാഠങ്ങൾ
+      show_more: കൂടുതൽ കാണിക്കുക
+      time: "%{count} മിനിറ്റ്"
+      today_lesson: ഇന്നത്തെ നിങ്ങളുടെ പാഠം
+      user_name: "%{name}!"
+      words: "%{count} വാക്കുകൾ"
+    idle_screen:
+      by_author: "%{authorName} പ്രകാരം"
+      continue_lesson: പാഠം തുടരുക
+      exit: പുറത്ത്
+      idle_message: നിങ്ങൾ കുറച്ച് കാലമായി നിഷ്‌ക്രിയനാണ് ...
+    lesson_page:
+      back_to_course_page: കോഴ്‌സ് പേജിലേക്ക് മടങ്ങുക
+      close: അടയ്‌ക്കുക
+      continue_lesson: പാഠം തുടരുക
+      followed: അനുഗമിച്ചു
+      hamburger_menu_btn: ഹാംബർഗർ മെനു
+      lesson_given: പാഠങ്ങൾ
+      not_started: ആരംഭിച്ചിട്ടില്ല
+      or: അഥവാ
+      part_complete: "%{percent}% പൂർത്തിയായി"
+      restart_lesson: പുനരാരംഭിക്കുക
+      section_check: ചെക്ക്
+      section_check_info: "%{count} ടെസ്റ്റുകൾ"
+      section_learn: പഠിക്കുക
+      section_learn_info: കാണാനും വായിക്കാനും %{count} മിനിറ്റ്
+      section_play: പ്ലേ ചെയ്യുക
+      section_play_info: പരിശീലിക്കാനുള്ള %{count} വാക്കുകൾ
+      start_lesson: പാഠം ആരംഭിക്കുക
+      step_progress: "%{percent}%"
+      subscribe: പിന്തുടരുക
+      subscribed: അനുഗമിച്ചു
+      subscribers: പിന്തുടരുന്നവർ
+      time_min: "%{minutesNumber} മിനിറ്റ്"
+      unsubscribe: പിന്തുടരരുത്
+      webview_error_title: എന്തോ കുഴപ്പം സംഭവിച്ചു ...
+      words_number: "%{wordsNumber} പുതിയ വാക്കുകൾ"
+    lesson_task:
+      cancel_button: റദ്ദാക്കുക
+      check:
+        navigation_next: അടുത്തത്
+        navigation_previous: മുമ്പത്തെ
+        navigation_skip: ഒഴിവാക്കുക
+      controls_panel:
+        font_size_button: അക്ഷര വലിപ്പം
+        high_contrast_button:
+          origin: ഉയർന്ന ദൃശ്യതീവ്രത
+          short: ദൃശ്യതീവ്രത
+        hints_button: സൂചനകൾ
+        music_playback_button:
+          origin: സംഗീത പ്ലേബാക്ക്
+          short: സംഗീതം
+        sound_effects_button:
+          origin: ശബ്‌ദ ഇഫക്റ്റുകൾ
+          short: ശബ്ദം
+      exit_button: പുറത്ത്
+      finish_button: പൂർത്തിയാക്കുക
+      finished:
+        back_to_learn: പഠിക്കാൻ മടങ്ങുക
+        back_to_lesson_page: പാഠ പേജിലേക്ക് മടങ്ങുക
+        back_to_results_page: ഫല പേജിലേക്ക് മടങ്ങുക
+        bad_result_message: ഉം ... പാഠം ഒരിക്കൽ കൂടി എടുക്കാൻ ശ്രമിക്കുക
+        close_lesson: പാഠം അടയ്‌ക്കുക
+        correct_answers_list: ശരിയായ ഉത്തരങ്ങളുടെ പട്ടിക
+        good_result_message: നിങ്ങൾ ഒരു ശ്രമം നടത്തിയതായി എനിക്ക് കാണാം!
+        great_result_message: നന്നായി! ഇവ മികച്ച ഫലങ്ങളാണ്!
+        next_course_lesson: തീർച്ചയായും അടുത്ത പാഠത്തിലേക്ക് പോകുക
+        no_results: നിങ്ങൾക്ക് ഇതുവരെ പരിശോധനാ ഫലങ്ങളൊന്നുമില്ല
+        no_results_text: ദയവായി, പാഠം പൂർത്തിയാക്കി ഫലങ്ങൾ നേടുന്നതിന് പരിശോധനയിൽ
+          വിജയിക്കുക
+        see_correct_answers_list: ശരിയായ ഉത്തരങ്ങളുടെ പട്ടിക കാണുക
+        train_more: കൂടുതൽ പരിശീലിക്കുക, അടുത്ത തവണ നിങ്ങൾ മികച്ച ഫലങ്ങൾ കൈവരിക്കും!
+        you_finished_lesson: കൊള്ളാം! നിങ്ങൾ പാഠം പൂർത്തിയാക്കി
+      go_back: മടങ്ങിപ്പോവുക
+      next_button: അടുത്തത്
+      not_available_task: ഈ ടാസ്‌ക് ഇതുവരെ ലഭ്യമല്ല
+      start_button: ആരംഭിക്കുക
+      tasks:
+        check:
+          assignment:
+            accept: അംഗീകരിക്കുക
+            author_will_check_your_answer: >-
+              %{author} നിങ്ങളുടെ ഉത്തരം അവലോകനം ചെയ്യുകയും സാധാരണ 1-2 ദിവസത്തിനുള്ളിൽ
+              ഫീഡ്‌ബാക്ക് നൽകുകയും ചെയ്യും
+            continue_writing: എഴുത്ത് തുടരുക
+            copy: പകർത്തുക
+            delete: ഇല്ലാതാക്കുക
+            delete_record: റെക്കോർഡ് ഇല്ലാതാക്കുക
+            edit: എഡിറ്റുചെയ്യുക
+            essay_does_not_have_enough_words: >-
+              നിങ്ങളുടെ ഉത്തരത്തിൽ കുറഞ്ഞത് %{minWordsNumber} പദങ്ങളെങ്കിലും അടങ്ങിയിരിക്കണം.
+              നിങ്ങളുടെ ഉത്തരം നിലവിൽ %{currentWordsNumber} വാക്കുകളാണ്.
+            followers_count: "%{followersCount} ഫോളോവേഴ്‌സ്"
+            lessons_count: "%{lessonsCount} പാഠങ്ങൾ"
+            minimal_recording_time: കുറഞ്ഞ റെക്കോർഡിംഗ് സമയം - %{minimalRecordingTime}
+            minimum_characters_amount: കുറഞ്ഞ പ്രതീകങ്ങൾ - %{minimumCharactersAmount}
+            minimum_words_amount: കുറഞ്ഞ വാക്കുകൾ - %{minimumAmount}
+            record_again: വീണ്ടും റെക്കോർഡുചെയ്യുക
+            record_voice: ശബ്‌ദം റെക്കോർഡുചെയ്യുക
+            send_anyway: ഏതുവിധേനയും അയയ്ക്കുക
+            send_to_review: അവലോകനത്തിന് അയയ്‌ക്കുക
+            skip: ഒഴിവാക്കുക
+            too_short_answer: വളരെ ഹ്രസ്വമായ ഉത്തരം
+            type_your_answer: നിങ്ങളുടെ ഉത്തരം ടൈപ്പുചെയ്യുക
+            unknown_task_type: അജ്ഞാത ടാസ്‌ക് തരം
+            upgrade_licence: ലൈസൻസ് നവീകരിക്കുക
+            upgrade_your_plan: >-
+              അധ്യാപകരുടെ അവലോകനങ്ങൾ ഉപയോഗിച്ച് അസൈൻമെന്റുകൾ പരീക്ഷിക്കാൻ നിങ്ങളുടെ
+              പ്ലാൻ അപ്‌ഗ്രേഡുചെയ്യുക
+            upload_files: ഫയലുകൾ അപ്‌ലോഡുചെയ്യുക
+            write_essay: ഉപന്യാസം എഴുതുക
+            you_have_used_amount_of_assignments: നിങ്ങൾ %{amountOfAssignments} അസൈൻമെന്റ്
+              ക്രെഡിറ്റുകൾ ഉപയോഗിച്ചു
+          fill_in_blanks:
+            sentence_gap: വാക്യ വിടവ്
+          fill_in_table:
+            column_answer_placeholder: ഉത്തരം
+            column_question_placeholder: ചോദ്യം
+            example: ഉദാഹരണം
+          true_false:
+            'false': തെറ്റായ
+            'true': ശരിയാണ്
+        learn:
+          translatable_text:
+            show_original: യഥാർത്ഥമായത് കാണിക്കുക
+            translate_into: Google ഉപയോഗിച്ച് %{languageName} ലേക്ക് വിവർത്തനം ചെയ്യുക
+            translate_into_your_lang: Google ഉപയോഗിച്ച് നിങ്ങളുടെ ഭാഷയിലേക്ക് വിവർത്തനം
+              ചെയ്യുക
+        play:
+          arrange_words:
+            start_screen:
+              heading: തന്നിരിക്കുന്ന വാക്കുകളിൽ നിന്ന് ഒരു വാചകം നിർമ്മിക്കുക
+          audition:
+            start_screen:
+              heading: ഓഡിയോ ശ്രവിച്ച് നിങ്ങൾ കേട്ട വാക്കിൽ ടാപ്പുചെയ്യുക
+          dictation:
+            get_help: സഹായം തേടു
+            i_do_not_know: എനിക്കറിയില്ല
+            input_placeholder: നിങ്ങൾ കേട്ടത് ഇവിടെ നൽകുക
+            start_screen:
+              heading: നിങ്ങൾ കേൾക്കുന്നത് കേൾക്കുകയും എഴുതുകയും ചെയ്യുക
+          fill_gap:
+            start_screen:
+              heading: വാക്കും അതിന്റെ അർത്ഥവും പൊരുത്തപ്പെടുത്തുക
+          finish_screen:
+            go_to_next_exercise: നന്നായി! അടുത്ത വ്യായാമത്തിലേക്ക് പോകുക
+          image_hotspot:
+            start_screen:
+              heading: ചിത്രത്തിലെ ഒബ്‌ജക്റ്റുകൾക്ക് ശരിയായി പേര് നൽകുക
+          image_object:
+            start_screen:
+              heading: അടുത്ത ചിത്രത്തിൽ നിന്ന് ശരിയായ ഒബ്‌ജക്റ്റ് തിരഞ്ഞെടുക്കുക
+          inline_dropdown:
+            start_screen:
+              heading: വാക്യവുമായി പൊരുത്തപ്പെടുന്ന വാക്കുകൾ തിരഞ്ഞെടുക്കുക
+          mark_word:
+            start_screen:
+              heading: വാചകം വായിച്ച് ചിത്രവുമായി പൊരുത്തപ്പെടുന്ന പദം തിരഞ്ഞെടുക്കുക
+          minimal_pairs:
+            start_screen:
+              heading: വീഡിയോ കണ്ട് ശരിയായ ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക
+    locale:
+      currency_switcher_title: കറൻസി സ്വിച്ചർ
+      lang_switcher_title: ഭാഷാ സ്വിച്ചർ
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: ഡച്ച്
+        el: Greek
+        en: ഇംഗ്ലീഷ്
+        eo: Esperanto
+        es: എസ്പാനോൾ
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: ഫ്രാങ്കൈസ്
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: ഇറ്റാലിയാനോ
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: ലാറ്റ്വിയു വലോഡ
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: നോർസ്ക്
+        ne: Nepali
+        nl: നെഡെർലാന്റ്സ്
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: പോൾസ്കി
+        ps: Pashto
+        pt: പോർച്ചുഗീസ്
+        ro: ലിംബ română
+        ru: Русский язык
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af സൂമാലി
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: കിസ്വാഹിലി
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: ടർക്കെ
+        tt: Tatar
+        ug: Uyghur
+        uk: Українська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: ഓഡിയോ ലോഡുചെയ്യുന്നു
+        aria_pause_button: താൽക്കാലികമായി നിർത്തുക
+        aria_play_button: പ്ലേ ചെയ്യുക
+        aria_reload_button: വീണ്ടും ലോഡുചെയ്യുക
+        aria_stop_button: നിർത്തുക
+        reload_message: ഓഡിയോ ലോഡുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു. വീണ്ടും ലോഡുചെയ്യാൻ
+          ബട്ടൺ ക്ലിക്കുചെയ്യുക.
+    mobile_modal:
+      apply: പ്രയോഗിക്കുക
+      cancel: റദ്ദാക്കുക
+      clear: മായ്‌ക്കുക
+      save: രക്ഷിക്കും
+    page404:
+      goToStartLessonPage: ആരംഭ പാഠ പേജിലേക്ക് പോകുക
+      ooops: ക്ഷമിക്കണം ...
+      sorry_message: ക്ഷമിക്കണം, ടോറിന് ഈ പേജ് കണ്ടെത്താൻ കഴിഞ്ഞില്ല
+    profile:
+      navigation:
+        log_out: ലോഗ് .ട്ട് ചെയ്യുക
+        my_profile: എന്റെ പ്രൊഫൈൽ
+        settings: ക്രമീകരണങ്ങൾ
+      onboarding:
+        choose_native_language: നിങ്ങളുടെ മാതൃഭാഷയോ നിങ്ങൾ ആഗ്രഹിക്കുന്ന ഭാഷയോ തിരഞ്ഞെടുക്കുക
+        do_you_understand_english: നിങ്ങൾക്ക് ഇംഗ്ലീഷ് മനസ്സിലായോ?
+        hello: ഹലോ
+        language_levels:
+          a1: പ്രാഥമിക നില
+          a2: പ്രീ-ഇന്റർമീഡിയറ്റ് ലെവൽ
+          b1: ഇന്റർമീഡിയറ്റ് ലെവൽ
+          b2: അപ്പർ ഇന്റർമീഡിയറ്റ് ലെവൽ
+          c1: വിപുലമായ നില
+          no_knowledge: അറിവില്ല
+        language_not_supported:
+          note: ഭാഷ ലഭ്യമാകുന്ന മുറയ്ക്ക് ഞങ്ങൾ നിങ്ങളെ അറിയിക്കും
+          title: ക്ഷമിക്കണം, ഞങ്ങൾ ഇതുവരെ ഈ ഭാഷയെ പിന്തുണയ്ക്കുന്നില്ല
+          try_another_language: മറ്റൊരു ഭാഷ പരീക്ഷിക്കുക
+        'no': ഇല്ല
+        search_placeholder: തിരയുക ...
+        show_more_languages: മറ്റ് ഭാഷകൾ
+        target_language_question: ഏത് ഭാഷയാണ് നിങ്ങൾ പഠിക്കാൻ ആഗ്രഹിക്കുന്നത്?
+        what_is_language_level: നിങ്ങളുടെ %{languageName} ലെവൽ എങ്ങനെ റേറ്റുചെയ്യും?
+        'yes': അതെ
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: ലിംഗുവിന്റെ സ്വകാര്യതാ നയം
+        support: പിന്തുണ
+      logout: ലോഗൗട്ട്
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: >-
+                നിങ്ങൾ പിന്തുടരുന്ന അധ്യാപകരിൽ നിന്നും സ്കൂളുകളിൽ നിന്നും അപ്‌ഡേറ്റുകൾ
+                സ്വീകരിക്കുക
+              sections:
+                app_notifications: അപ്ലിക്കേഷൻ അറിയിപ്പുകൾ
+                email: ഇ-മെയിൽ
+              title: പഠന സഹായം
+            marketing:
+              description: >-
+                എല്ലാ പ്രമോഷനുകൾ, അപ്‌ഡേറ്റുകൾ, ലിംഗുവിൽ നിന്നുള്ള പ്രചോദനം എന്നിവയെക്കുറിച്ച്
+                അറിഞ്ഞിരിക്കുക
+              sections:
+                browser_notifications: ബ്ര rowser സർ അറിയിപ്പുകൾ
+                email: ഇ-മെയിൽ
+              title: മാർക്കറ്റിംഗ്
+          title: കോൺ‌ടാക്റ്റ് മുൻ‌ഗണനകൾ
+        personal_information:
+          delete_photo: ഫോട്ടോ ഇല്ലാതാക്കുക
+          email: ഇമെയിൽ
+          first_name: പേരിന്റെ ആദ്യഭാഗം
+          last_name: പേരിന്റെ അവസാന ഭാഗം
+          social_accounts:
+            connected: ബന്ധിപ്പിച്ചു
+            facebook: ഫേസ്ബുക്ക്
+            google: Google
+            microsoft: മൈക്രോസോഫ്റ്റ്
+            not_connected: ബന്ധിപ്പിച്ചിട്ടില്ല
+            title: സോഷ്യൽ അക്കൗണ്ടുകൾ
+          title: സ്വകാര്യ വിവരം
+          update_photo: ഫോട്ടോ അപ്‌ഡേറ്റുചെയ്യുക
+        school:
+          active_licence: സജീവ ലൈസൻസ്
+          active_status: സജീവമാണ്
+          delete_profile: എന്റെ പ്രൊഫൈൽ ഇല്ലാതാക്കുക
+          delete_profile_modal:
+            body: |-
+              നിങ്ങളുടെ എല്ലാ ഡാറ്റയും എന്നെന്നേക്കുമായി ഇല്ലാതാക്കുന്നു. പഴയപടിയാക്കൽ ബട്ടണൊന്നുമില്ല, അതിനുശേഷം നിങ്ങൾക്ക് ഇത് തിരികെ നേടാനാവില്ല.
+              നിങ്ങളുടെ ഭാഷാ പ്രൊഫൈലും നിങ്ങളുടെ എല്ലാ ഡാറ്റയും ശാശ്വതമായി ഇല്ലാതാക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ?
+            cancel: റദ്ദാക്കുക
+            confirm: അതെ, അത് ഇല്ലാതാക്കുക
+            i_understand_the_consequences: പരിണതഫലങ്ങൾ ഞാൻ മനസ്സിലാക്കുന്നു
+            title: നിങ്ങളുടെ പ്രൊഫൈൽ ഇല്ലാതാക്കണോ?
+          expired: കാലഹരണപ്പെട്ട %{expire_date}
+          expires: "%{expire_date} കാലഹരണപ്പെടുന്നു"
+          inactive_status: നിഷ്‌ക്രിയം
+          revoke_access: വായന ആക്‌സസ്സ് അസാധുവാക്കുക
+          sections:
+            contact_school: സ്കൂളുമായി ബന്ധപ്പെടുക
+            export_my_data: എന്റെ ഡാറ്റ എക്‌സ്‌പോർട്ടുചെയ്യുക
+            read_school_privacy_policy: സ്കൂൾ സ്വകാര്യതാ നയം വായിക്കുക
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: സംഗീത പ്ലേബാക്ക്
+              sound_effects: ശബ്‌ദ ഇഫക്റ്റുകൾ
+              title: ശബ്ദം
+            visual:
+              dark_theme: ഇരുണ്ട തീം
+              font_size:
+                test_text: വേലിൻറെ മറുവശത്ത് പുല്ല് എല്ലായ്പ്പോഴും പച്ചയാണ്
+                title: അക്ഷര വലിപ്പം
+              high_contrast: ഉയർന്ന ദൃശ്യതീവ്രത
+              hints: സൂചനകൾ
+              title: വിഷ്വൽ
+          title: ശബ്ദവും ദൃശ്യവും
+        training_settings:
+          sections:
+            i_understand: എനിക്ക് മനസിലായി
+            i_want_to_learn: എനിക്ക് പഠിക്കണം
+            target_language_level: ഇംഗ്ലീഷ് നില
+          title: പരിശീലന ക്രമീകരണങ്ങൾ
+      settings_title: ക്രമീകരണങ്ങൾ
+    teacher_card:
+      followers_count:
+        one: 1 അനുയായി
+        other: "%{count} ഫോളോവേഴ്‌സ്"
+      lessons_count:
+        one: 1 പാഠം
+        other: "%{count} പാഠങ്ങൾ"

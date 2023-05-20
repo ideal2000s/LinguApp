@@ -1,0 +1,10 @@
+= form_tag add_to_collection_admin_language_words_path, method: :post
+  .modal-header
+    h3= t('.add_words_to_collection', count: word_ids.length)
+  .modal-body
+    .form-group
+      = select_tag :collection_id, options_for_select(collections.pluck(:name, :id)), class: 'form-control'
+    - word_ids.each do |word_id|
+      = hidden_field_tag 'word_ids[]', word_id
+  .modal-footer
+    = submit_tag t('.confirm'), class: 'btn btn-primary'

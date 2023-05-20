@@ -1,0 +1,23 @@
+= form_with(model: [language, collection], url: path) do |f|
+  .modal-header style='display:block'
+    h3#myModalLabel= header_title
+    h5= t('admin.dictionary.languages.words.index.count_phrases', count: collection.word_ids.length)
+  .modal-body
+    - if collection.errors.any?
+      #error_explanation
+        h2= "#{pluralize(collection.errors.count, "error")} prohibited this collection from being saved:"
+        ul
+          - collection.errors.full_messages.each do |message|
+            li= message
+    .form-group
+      = f.text_field :name, class: 'form-control', style: 'margin-bottom: 10px', placeholder: 'Collection name'
+    .form-group
+      = f.select :level, Dictionary::Collection.levels_for_select, {}, {class: 'form-control'}
+    .form-group
+      = f.label :tags, t('teach.lessons.form.select_tag')
+      = f.select :tags, options_for_select(Dictionary::Collection::TAG_ARRAY.map { |e| [t(e, scope: 'activerecord.attributes.lesson.tags'), e] }, f.object.tags), {}, {class: 'form-control select2', multiple: true}
+    = f.hidden_field :language_id
+    - collection.word_ids.each do |phrase_id|
+      = f.hidden_field :word_ids, :multiple => true, :value => phrase_id
+  .modal-footer
+    .actions = f.submit value: btn_title, class: 'btn btn-primary'

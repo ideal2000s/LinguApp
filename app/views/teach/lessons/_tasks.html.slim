@@ -1,0 +1,15 @@
+table.table.thead-light.table-hover.mb-0 data-target='tasks.table'
+  thead
+    tr.vertical
+      th
+      th= t('title')
+      th= t('teach.tasks.list.last_updated')
+      th
+
+  tbody data-target='tasks.root'
+    - if tasks.any?
+      - tasks.each_with_index do |task, index|
+        = render 'task_row', task: task, position: index + 1
+
+.card-body data-target='tasks.placeholder'
+  = t('.no_tasks')

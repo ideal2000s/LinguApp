@@ -1,0 +1,12 @@
+.courses_list
+  table.table.table-borderless
+    thead
+      tr
+        th= t('name')
+        th= t('created_by')
+        th.text-center= t('lessons')
+        th= t('shared.language')
+        th
+    tbody
+      = render partial: 'school/courses/list_row', collection: courses, as: :course, cached: true
+= paginate courses, views_prefix: 'school'

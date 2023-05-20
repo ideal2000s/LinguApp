@@ -1,0 +1,129 @@
+doctype html
+html
+  head
+    meta[http-equiv="Content-Type" content="text/html; charset=utf-8"]
+    css:
+      body {
+          background-color: white;
+          border-radius: 20px;
+          color: #2D2D3A;
+          font-family: Arial, Helvetica, sans-serif;
+          padding: 50px 100px;
+          text-align: center;
+      }
+      .header-logo {
+          height: auto;
+          max-width: 285px;
+      }
+      .header-title {
+          font-weight: bold;
+          font-size: 36px;
+          margin: 40px 0;
+      }
+      .introduce-panel {
+          background: #F0F0F3;
+          border-radius: 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          max-width: 480px;
+          min-height: 100px;
+      }
+      .introduce-logo {
+          display: grid;
+          align-items: center;
+          justify-items: center;
+          margin-right: 13px;
+      }
+      .school-title {
+          font-size: 20px;
+          font-weight: bold;
+      }
+      .mail-text {
+          font-size: 20px;
+          line-height: 30px;
+          margin: 30px auto;
+          margin-bottom: 50px;
+          width: 480px;
+      }
+      .btn-create-account {
+          background-color: #00A5D7;
+          border-radius: 10px;
+          color: white;
+          cursor: pointer;
+          font-size: 22px;
+          font-weight: bold;
+          padding: 20px;
+          text-decoration: none;
+      }
+      .divider {
+          margin: 40px auto;
+          margin-top: 60px;
+          opacity: 0.1;
+          width: 200px;
+      }
+      .invitation-link {
+          color: #00A5D7;
+          cursor: pointer;
+          font-size: 18px;
+          margin-top: 10px;
+          text-decoration: none;
+      }
+      .mail-footer {
+          background-color: #ECECEF;
+          border-radius: 20px;
+          color: #5E5D71;
+          margin: auto;
+          margin-top: 60px;
+          padding: 20px 40px;
+          width: 600px;
+      }
+      .mail-footer-text {
+          font-size: 14px;
+          line-height: 22px;
+          margin-bottom: 20px;
+      }
+      .footer-logo {
+          align-items: center;
+          display: flex;
+          font-size: 14px;
+          justify-content: space-between;
+      }
+      .footer-link {
+          color: #5E5D71;
+          cursor: pointer;
+          text-decoration: none;
+      }
+  body
+    .mail-header
+      = image_tag "#{asset_path('school/invite-student-logo.svg')}", class: 'header-logo'
+      p.header-title = t('school.team_students.invite_students.invitation_request')
+    .mail-content
+      .introduce-panel
+        .introduce-logo style="background-image: url(#{asset_path('icons/ellipse.svg')}); width: 36px; height: 36px;"
+          = image_tag "#{asset_path('icons/xs-lingu-logo.svg')}", style: 'width: 16; height: 20'
+      p.mail-text
+        = t('school.team_students.invite_students.invited_to_join_team')
+        br
+        = t('school.team_students.invite_students.follow_link_to_join_team')
+      - invitation_url = [school_student_invitations_url(@team_global_id), '?email=', @email].join('')
+      - if @team_group_id.present?
+        - invitation_url += ['&team_group_id=', @team_group_id].join('')
+      - if @plan_id.present?
+        - invitation_url += ['&plan_id=', @plan_id].join('')
+      = link_to t('school.team_students.invite_students.create_account'), invitation_url, class: 'btn-create-account'
+      hr.divider
+      p style="color: #5E5D71; font-size: 16px;" = t('school.team_students.invite_students.paste_invite_link')
+      = link_to invitation_url, invitation_url, class: 'invitation-link'
+    .mail-footer
+      p.mail-footer-text
+        = t('school.team_students.invite_students.lots_more_to_learn')
+        br
+        = t('school.team_students.invite_students.get_back_into')
+      hr style="opacity: 0.2;"
+      .footer-logo
+        p
+          a.footer-link href="#" style="margin-right: 30px;" = t('school.team_students.invite_students.notification_settings')
+          a.footer-link href="#" = t('school.team_students.invite_students.support')
+        = image_tag "#{asset_path('lingu-logo-grey.svg')}", class: '', style: 'max-width: 76px; height: auto;'

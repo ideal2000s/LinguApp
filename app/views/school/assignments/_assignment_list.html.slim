@@ -1,0 +1,9 @@
+.assignments-list.thead-block-list
+  table.table
+    thead
+      tr
+        th= t('shared.student')
+        th= t('shared.assignment')
+        th= t('status')
+    tbody
+      = render partial: 'assignments_list_row', collection: documents, as: :document, cached: true

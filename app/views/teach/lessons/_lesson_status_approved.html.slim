@@ -1,0 +1,7 @@
+.float-right.custom-control.custom-switch.ml-3.mt-1
+  - action = lesson.published? ? unpublish_teach_lesson_path(lesson) : publish_teach_lesson_path(lesson)
+  = form_tag action do
+    = check_box_tag 'lesson[published]', '1', lesson.published?,
+            class: 'custom-control-input js-submit-on-change'
+    label.custom-control-label for='lesson_published'
+      = t('teach.lessons.review.actions.publish')

@@ -1,0 +1,37 @@
+.card.mb-3 id=dom_id(item) class="#{item.functional? && 'corner-success' || 'corner-warning'}"
+  .card-body
+    .row
+      .col-10
+        h4= best_in_place item, :question, url: teach_task_item_path(task, item), param: :task_item, inner_class: 'form-control'
+      .col-2
+        .btn-group.float-right
+          - unless item.last?
+            = link_to move_down_teach_task_item_path(task, item), method: :patch, remote: true,
+            class: 'btn btn-sm move_down', aria: { label: t('move_down') } do
+              span.fas.fa-chevron-down
+          - unless item.first?
+            = link_to move_up_teach_task_item_path(task, item), method: :patch, remote: true,
+            class: 'btn btn-sm move_up', aria: { label: t('move_up') } do
+              span.fas.fa-chevron-up
+          = link_to teach_task_item_path(task, item), method: :delete, remote: true,
+          class: 'btn btn-sm text-danger', data: { confirm: t('delete_this_item') } do
+            span.fas.fa-times
+      .col-10
+        - unless item.video
+          = form_for item, as: :task_item, url: teach_task_item_path(task, item), method: :patch do |f|
+            = f.hidden_field :video_data, class: 'js-submit-on-change'
+            = piperecorder item
+        - else
+          = video_tag(item.video_url, controls: true, poster: item.video_poster, class: 'mw-100')
+          = form_for item, as: :task_item, url: teach_task_item_path(task, item), method: :patch do |f|
+            = f.hidden_field :remove_video, value: 'true'
+            button.item-video-remove
+              span.fa.fa-trash
+
+  .task_item_options
+    = render partial: 'teach/task_item_options/select_video/select_video', collection: item.options, as: :option, locals: { item: item }
+
+  .card-footer
+    #option_form
+      - option = item.options.new
+      = render option.to_partial_path(prefix: :teach, partial: :option_form), item: item, option: option

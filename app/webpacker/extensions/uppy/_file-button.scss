@@ -1,0 +1,27 @@
+.uppy-FileInput-container {
+  margin-bottom: 0;
+}
+
+.uppy-FileInput-btn {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+input[type=file][data-upload] {
+  position: absolute;
+  //top: 0; left: 0;
+  width: 0!important;
+  height: 0!important;
+  overflow: hidden;
+  opacity: 0;
+}
+*[data-upload-container]{}
+*[data-upload-preview-container]{}
+
+button[data-upload-trigger]{
+  @extend .btn;
+  @extend .btn-primary;
+  &.btn-sm {
+    @extend .btn-sm;
+  }
+}

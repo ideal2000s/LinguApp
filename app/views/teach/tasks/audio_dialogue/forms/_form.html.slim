@@ -1,0 +1,8 @@
+= render 'teach/tasks/shared_task_form', task: task, form: form
+
+#task_items.mt-5
+  h2= t('.input_answers_select')
+  #task_items_container
+    = render partial: task.items, as: :item, locals: { task: task }
+  .links
+    = render task.items.form.new, task: task

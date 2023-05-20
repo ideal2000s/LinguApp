@@ -1,0 +1,5 @@
+- content_for :html_lang
+  = lesson.language&.code
+
+- content_for :meta
+  = render 'layouts/shared/open_graph_meta_tags', source: lesson, description: lesson.objectives.join(','), url: students_lesson_url(lesson)

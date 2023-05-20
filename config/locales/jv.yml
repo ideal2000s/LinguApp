@@ -1,0 +1,610 @@
+---
+jv:
+  course_mailer:
+    course_assigned_notification:
+      button: Miwiti kursus
+      click_start_lesson: Klik 'Wulang wiwitan'
+      follow_course_link: Klik tombol kanggo mbukak kursus
+      footer_text: Bali menyang Lingu kanggo sinau babagan sing anyar saben dina!
+      get_started_line: 'Mangkene carane miwiti:'
+      notification_link: Setelan kabar
+      open_lesson: Bukak pelajaran pertama
+      or_paste_this_link: utawa tempel link iki ing browser
+      sign_in_with_email: Mlebu karo alamat email (%{email})
+      support_link: Dhukungan
+      title: Miwiti %{course}
+    new_document_comment:
+      author_text: "%{author} ninggali review tugas sampeyan"
+      button_text: Priksa metu
+      button_url_helper: 'utawa tempel link iki menyang browser:'
+      footer_text: Ana akeh liyane sing kudu dingerteni ...
+      notification_link: Setelan kabar
+      subject_line: Komentar tugas anyar
+      support_link: Dhukungan
+    otp:
+      ignore_msg: Yen sampeyan ora njaluk panjaluk iki, aja nggatekake email.
+      subject_line: Kode unik sampeyan kanggo Lingu
+      unique_code_for_lingu: Iki kode unik kanggo Lingu
+  frontend:
+    auth:
+      already_have_acc_question: Wis duwe akun?
+      back: Bali
+      back_to_sign_in: Bali menyang Mlebu
+      check_your_email_for_a_code: Priksa email sampeyan kanggo kode
+      continue: Terusake
+      continue_with_email: Terus nganggo email
+      continue_with_provider: Terusake karo %{provider}
+      did_not_receive_a_code: Ora nampa kode?
+      email_address: Alamat email
+      first_name: Jeneng ngarep
+      get_unique_code: Entuk kode mlebu unik
+      join_lingu: Gabung karo Lingu
+      last_name: Jeneng mburi
+      more_login_options: Opsi mlebu liyane
+      no_account_question: Ora duwe akun?
+      or: utawa
+      resend_code: Kirim ulang kode
+      sign_in: Mlebu
+      sign_up: Ndhaptar
+      want_to_receive_marketing_messages: Aku pengin nampa pesen pemasaran saka Lingu
+      we_ve_sent_a_code: >-
+        Kita wis ngirim kode 6 digit menyang <strong> {{email}} </strong>. Kode kasebut
+        kadaluwarsa ing 15 menit, mula mangga enggal ketik.
+    cookie_agreement:
+      agree: Setuju
+      condition: >-
+        Kita nggunakake cookie kanggo nganalisa kinerja situs lan ngirim konten sing
+        dipersonalisasi. Kanthi ngeklik "Setuju", sampeyan setuju karo kahanan kita.
+    course:
+      accredited_course_provider: Panyedhiya kursus terakreditasi
+      apply: Nglamar
+      apply_filters: Aplikasi saringan
+      by: Dening
+      cancel: Batal
+      categories: kategori %{count}
+      category: Kategori
+      clear: Bening
+      clear_filters: Filter saring
+      contact_us: Hubungi kita
+      could_not_find_match_for: Nuwun sewu, kita ora bisa nemokake pertandingan sing
+        cocog
+      course_language: Basa kursus
+      duration: Duration
+      filter_settings:
+        categories:
+          academic: Akademik
+          business: Bisnis
+          fashion: Pantun
+          food_drink: Panganan & ngombe
+          for_kids: Kanggo bocah
+          general: Umume
+          health: Kesehatan
+          legal: Legal
+          sport: Olahraga
+          travel: Plancongan
+        durations:
+          t0_600: "<10 menit"
+          t1800_3600: 30-60 menit
+          t3600_86400: 1+ jam
+          t600_1800: 10-30 menit
+        focus_on:
+          conversation: Pacelathon
+          grammar: Tatabasa
+          listening: Ngrungokake
+          pronunciation: Pangucapan
+          reading: Maca
+          speaking: Ngomong
+          writing: Nulis
+        levels:
+          long:
+            advanced: Tingkat lanjut
+            elementary: Tingkat SD
+            intermediate: Tingkat menengah
+            no_knowledge: Ora duwe ilmu
+            pre_intermediate: Tingkat pra penengah
+            upper_intermediate: Tingkat menengah ndhuwur
+          short:
+            advanced: Lanjut
+            beginner: Wiwitan
+            intermediate: Penengah
+        sort_by:
+          most_rated: Paling dirating
+          newest: Paling Anyar
+          popularity: Popularitas
+      filters: Filter-filter
+      focus_on: Fokus ing
+      focus_on_title: Aku pengin fokus
+      hide_lessons: Ndhelikake piwulang
+      hours: Jam
+      i_understand: Aku ngerti
+      i_want_to_learn: Aku pengin sinau
+      in_language: ing %{language}
+      language: Basa
+      learn_more: Sinau luwih lengkap
+      less_settings: Setelan sithik
+      lessons: Piwulang
+      lessons_available: kasedhiya pelajaran %{number}
+      lessons_catalog_page_subtitle: Dadi pahlawan basa.
+      lessons_catalog_page_title: Ngembangake cakrawala kanthi kursus basa
+      level: Tingkat
+      min: Min
+      more_settings: Setelan liyane
+      navbar:
+        close: Menu nutup
+        menu: Menu
+        select_language: Pilih basa
+      need_to_buy_course: Sampeyan kudu ndhaptar kursus luwih dhisik
+      no_description: Ora kasedhiya katrangan
+      no_results: Nuwun sewu, kita ora bisa nemokake pertandingan sing cocog
+      or: utawa
+      per_month: saben wulan
+      plans: Rencana
+      privacy_policy: Kebijakan privasi
+      rating: Rating
+      remove_all_filters: Mbusak kabeh saringan
+      reviews: Ulasan
+      save: Ngirit
+      search: Nggoleki
+      select_dots: Pilih ...
+      select_languages: Pilih langauges
+      select_num_languages: Pilih basa %{number}
+      short_levels:
+        a1: A1
+        a2: A2
+        b1: B1
+        b2: B2
+        c1: C1
+        c2: C2
+        zero_level: A0
+      show_all: Tampilake kabeh
+      show_all_lessons: Tampilake kabeh pelajaran
+      show_lessons: Tampilake pelajaran %{number}
+      show_more: Tampilake liyane
+      sign_up_with_lingu_for: Mlebu karo Lingu Norwegia kanggo
+      skills: "%{count} skills"
+      sort_by: Urut miturut
+      start_typing_here: Mulai ngetik ing kene
+      teach: Ajar
+      terms_and_conditions: Syarat lan Ketentuan
+      time_range: Jangka wektu
+      try_adjusting_your_search: Coba atur telusuran kanthi ngganti saringan
+      try_this_course: Coba kursus iki
+      website_language: Basa situs web
+      words: Tembung-tembung
+    games:
+      finished:
+        go_to_next_exercise: Wis apik! Bukak latihan sabanjure
+      flashcard:
+        buttons:
+          finish: Rampung
+          next: Sabanjure
+          previous: Sadurunge
+        check_out_new_words: Priksa tembung anyar sing bakal sampeyan lakoni ing pelajaran
+          iki
+        frequency_of_word_usage: Frekuensi panggunaan tembung ing %{language}
+        keep_practice_to_learn_all_words: Tinjau tembung %{count} lan ayo main game!
+        word_frequency:
+          level1: Arang digunakake
+          level2: Arang digunakake
+          level3: Frekuensi tembung - medium
+          level4: Frekuensi tembung - medium
+          level5: Umume
+          level6: Umum banget
+      match_word:
+        click_and_move_each_word_to_counterpart: Klik banjur pindhah saben tembung
+          menyang mitra
+        start_heading: Cocokake tembung kanggo nggawe pasangan
+        time_is_up: Wektu rampung!
+      skip_tutorial: Liwati
+      time_is_up: Wektu rampung!
+      word_nodes:
+        match_letters_to_form_word: Cocokake huruf kanggo mbentuk tembung
+      word_waterfall:
+        do_not_hesitate: Ayo luwih cepet!
+        go_to_next_exercise: Bukak latihan sabanjure
+        select_correct_translation: Pilih match sing bener
+        well_done: Wis apik!
+    home_page:
+      hello: Halo,
+      popular_lessons: Pelajaran populer
+      show_more: Tampilake liyane
+      time: "%{count} mnt"
+      today_lesson: Pelajaran sampeyan kanggo dina iki
+      user_name: "%{name}!"
+      words: tembung %{count}
+    idle_screen:
+      by_author: dening %{authorName}
+      continue_lesson: Terusake pelajaran
+      exit: Metu
+      idle_message: Sampeyan wis sawetara meneng ...
+    lesson_page:
+      back_to_course_page: Bali menyang kaca kursus
+      close: Tutup
+      continue_lesson: Terusake pelajaran
+      followed: Diikuti
+      hamburger_menu_btn: Menu Hamburger
+      lesson_given: piwulang
+      not_started: durung diwiwiti
+      or: Utawa
+      part_complete: "%{percent}% lengkap"
+      restart_lesson: Wiwiti maneh
+      section_check: Mriksa
+      section_check_info: tes %{count}
+      section_learn: Sinau
+      section_learn_info: "%{count} min kanggo nonton lan maca"
+      section_play: Dolanan
+      section_play_info: "%{count} tembung kanggo laku"
+      start_lesson: Miwiti piwulang
+      step_progress: "%{percent}%"
+      subscribe: Turutake
+      subscribed: Diikuti
+      subscribers: pandherekipun
+      time_min: "%{minutesNumber} mnt"
+      unsubscribe: Mbatalake
+      webview_error_title: Ana sing salah ...
+      words_number: "%{wordsNumber} tembung anyar"
+    lesson_task:
+      cancel_button: Batal
+      check:
+        navigation_next: Sabanjure
+        navigation_previous: Sadurunge
+        navigation_skip: Liwati
+      controls_panel:
+        font_size_button: Ukuran font
+        high_contrast_button:
+          origin: Kontras dhuwur
+          short: Kontras
+        hints_button: Petunjuk
+        music_playback_button:
+          origin: Muter maneh musik
+          short: Musik
+        sound_effects_button:
+          origin: Efek swara
+          short: Swara
+      exit_button: Metu
+      finish_button: Rampung
+      finished:
+        back_to_learn: Bali sinau
+        back_to_lesson_page: Bali menyang kaca pelajaran
+        back_to_results_page: Bali ing kaca asil
+        bad_result_message: Hmm ... coba wulang maneh
+        close_lesson: Piwulang nutup
+        correct_answers_list: Dhaptar wangsulan sing bener
+        good_result_message: Aku bisa ndeleng manawa sampeyan wis ngupayakake!
+        great_result_message: Wis apik! Iki minangka asil sing apik!
+        next_course_lesson: Bukak kursus ing pelajaran sabanjure
+        no_results: Sampeyan durung duwe asil tes
+        no_results_text: Mangga, tuntas pelajaran lan lulus tes kanggo entuk asil
+        see_correct_answers_list: Deleng dhaptar wangsulan sing bener
+        train_more: Praktik luwih akeh lan sampeyan bakal entuk asil sing luwih apik
+          mbesuk!
+        you_finished_lesson: Apik tenan! Sampeyan rampung pelajaran
+      go_back: Bali maneh
+      next_button: Sabanjure
+      not_available_task: Tugas iki durung kasedhiya
+      start_button: Miwiti
+      tasks:
+        check:
+          assignment:
+            accept: Nampa
+            author_will_check_your_answer: >-
+              %{author} bakal mriksa wangsulan sampeyan lan biasane menehi tanggapan
+              sajrone 1-2 dina
+            continue_writing: Terusake nulis
+            copy: Salin
+            delete: Mbusak
+            delete_record: Mbusak rekaman
+            edit: Sunting
+            essay_does_not_have_enough_words: >-
+              Wangsulan sampeyan kudu ngemot paling ora %{minWordsNumber} tembung.
+              Wangsulan sampeyan saiki %{currentWordsNumber} tembung.
+            followers_count: "%{followersCount} pandherekipun"
+            lessons_count: pelajaran %{lessonsCount}
+            minimal_recording_time: Wektu ngrekam minimal - %{minimalRecordingTime}
+            minimum_characters_amount: Karakter minimal - %{minimumCharactersAmount}
+            minimum_words_amount: Tembung minimal - %{minimumAmount}
+            record_again: Cathet maneh
+            record_voice: Ngrekam swara
+            send_anyway: Ngirim wae
+            send_to_review: Kirim kanggo ditinjau
+            skip: Liwati
+            too_short_answer: Jawaban cekak banget
+            type_your_answer: Ketik wangsulan sampeyan
+            unknown_task_type: Jinis tugas sing ora dingerteni
+            upgrade_licence: Lisensi upgrade
+            upgrade_your_plan: Upgrade rencana sampeyan kanggo nyoba tugas nganggo
+              tinjauan guru
+            upload_files: Upload file
+            write_essay: Tulis karangan
+            you_have_used_amount_of_assignments: Sampeyan wis nggunakake kridit tugas
+              %{amountOfAssignments}
+          fill_in_blanks:
+            sentence_gap: Ukara ukara
+          fill_in_table:
+            column_answer_placeholder: Wangsulan
+            column_question_placeholder: Pitakon
+            example: Tuladhane
+          true_false:
+            'false': Salah
+            'true': Bener
+        learn:
+          translatable_text:
+            show_original: Tampilake asli
+            translate_into: Tarjamahake karo Google menyang %{languageName}
+            translate_into_your_lang: Tarjamahake nganggo Google menyang basa sampeyan
+        play:
+          arrange_words:
+            start_screen:
+              heading: Gawe ukara saka tembung sing diwenehake
+          audition:
+            start_screen:
+              heading: Rungokake audio banjur tutul tembung sing lagi wae sampeyan
+                rungokake
+          dictation:
+            get_help: Njaluk tulung
+            i_do_not_know: Aku ora ngerti
+            input_placeholder: Ketik apa sing sampeyan rungokake ing kene
+            start_screen:
+              heading: Rungokake lan tulisen apa sing sampeyan rungokake
+          fill_gap:
+            start_screen:
+              heading: Cocokake tembung lan maknane
+          finish_screen:
+            go_to_next_exercise: Wis apik! Bukak latihan sabanjure
+          image_hotspot:
+            start_screen:
+              heading: Jeneng obyek ing gambar kanthi bener
+          image_object:
+            start_screen:
+              heading: Pilih obyek sing bener saka gambar sabanjure
+          inline_dropdown:
+            start_screen:
+              heading: Pilih tembung sing cocog karo ukara kasebut
+          mark_word:
+            start_screen:
+              heading: Waca teks banjur pilih tembung sing cocog karo gambar kasebut
+          minimal_pairs:
+            start_screen:
+              heading: Tonton video banjur pilih opsi sing bener
+    locale:
+      currency_switcher_title: Nguripake mata uang
+      lang_switcher_title: Ngalih basa
+      locales:
+        af: Afrikaans
+        am: Amharic
+        ar: Arabic
+        az: Azerbaijani
+        be: Belarusian
+        bg: Български
+        bn: Bengali
+        bs: Bosnian
+        ca: Catalan
+        ceb: Cebuano
+        co: Corsican
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: Deutsch
+        el: Greek
+        en: Basa inggris
+        eo: Esperanto
+        es: Español
+        et: Estonian
+        eu: Basque
+        fa: Persian
+        'false': Norwegian
+        fi: Finnish
+        fr: Prancis
+        fy: Frisian
+        ga: Irish
+        gd: Scots Gaelic
+        gl: Galician
+        gu: Gujarati
+        ha: Hausa
+        haw: Hawaiian
+        he: Hebrew
+        hi: Hindi
+        hmn: Hmong
+        hr: Croatian
+        ht: Haitian Creole
+        hu: Hungarian
+        hy: Armenian
+        id: Indonesian
+        ig: Igbo
+        is: Icelandic
+        it: Italia
+        ja: Japanese
+        jv: Javanese
+        ka: Georgian
+        kk: Kazakh
+        km: Khmer
+        kn: Kannada
+        ko: Korean
+        ku: Kurdish
+        ky: Kyrgyz
+        la: Latin
+        lb: Luxembourgish
+        lo: Lao
+        lt: Lietuvių kalba
+        lv: Jeneng Latvia
+        mg: Malagasy
+        mi: Maori
+        mk: Macedonian
+        ml: Malayalam
+        mn: Mongolian
+        mr: Marathi
+        ms: Malay
+        mt: Maltese
+        my: Myanmar (Burmese)
+        nb: Norsk
+        ne: Nepali
+        nl: Nederlands
+        ny: Nyanja (Chichewa)
+        or: Odia (Oriya)
+        pa: Punjabi
+        pl: Polski
+        ps: Pashto
+        pt: Português
+        ro: Limba română
+        ru: Ру
+        rw: Kinyarwanda
+        sd: Sindhi
+        si: Sinhala (Sinhalese)
+        sk: Slovak
+        sl: Slovenian
+        sm: Samoan
+        sn: Shona
+        so: af Soomaali
+        sq: Albanian
+        sr: Сербский
+        st: Sesotho
+        su: Sundanese
+        sv: Swedish
+        sw: kiSwahili
+        ta: Tamil
+        te: Telugu
+        tg: Tajik
+        th: Thai
+        tk: Turkmen
+        tl: Tagalog (Filipino)
+        tr: Türkçe
+        tt: Tatar
+        ug: Uyghur
+        uk: Країнська
+        ur: Urdu
+        uz: Uzbek
+        vi: Vietnamese
+        xh: Xhosa
+        yi: Yiddish
+        yo: Yoruba
+        zh: Chinese
+        zu: Zulu
+    media_player:
+      audio_player:
+        aria_loading_button: Audio lagi dimuat
+        aria_pause_button: Ngaso
+        aria_play_button: Dolanan
+        aria_reload_button: Muat maneh
+        aria_stop_button: Mandheg
+        reload_message: Gagal mbukak audio. Klik tombol kanggo mbukak maneh.
+    mobile_modal:
+      apply: Nglamar
+      cancel: Batal
+      clear: Bening
+      save: Ngirit
+    page404:
+      goToStartLessonPage: Bukak ing kaca pelajaran wiwitan
+      ooops: Oooops ...
+      sorry_message: Nuwun sewu, Tor ora bisa nemokake kaca iki
+    profile:
+      navigation:
+        log_out: Metu
+        my_profile: Profilku
+        settings: Setelan
+      onboarding:
+        choose_native_language: Pilih basa asli utawa basa sing sampeyan pahami
+        do_you_understand_english: Apa sampeyan ngerti basa Inggris?
+        hello: Halo
+        language_levels:
+          a1: Tingkat SD
+          a2: Tingkat pra-menengah
+          b1: Tingkat menengah
+          b2: Tingkat Menengah Atas
+          c1: Tingkat lanjut
+          no_knowledge: Ora duwe ilmu
+        language_not_supported:
+          note: Kita bakal ngabari yen basa wis kasedhiya
+          title: Nuwun sewu, nanging kita durung ndhukung basa iki
+          try_another_language: Coba basa liyane
+        'no': Ora
+        search_placeholder: Telusuri ...
+        show_more_languages: Basa liyane
+        target_language_question: Apa sampeyan pengin sinau basa apa?
+        what_is_language_level: Kepiye carane menehi rating level %{languageName}?
+        'yes': Nggih
+    settings_page:
+      footer:
+        buttons_separator: "·"
+        privacy_policy: Kebijakan privasi Lingu
+        support: Dhukungan
+      logout: Metu
+      sections:
+        contact_preferences:
+          sections:
+            learning_assistance:
+              description: Nampa nganyari saka guru lan sekolah sing sampeyan tindakake
+              sections:
+                app_notifications: Kabar aplikasi
+                email: E-mail
+              title: Bantuan sinau
+            marketing:
+              description: Terus informasi babagan kabeh promosi, nganyari, lan inspirasi
+                saka Lingu
+              sections:
+                browser_notifications: Kabar browser
+                email: E-mail
+              title: Pemasaran
+          title: Preferensi kontak
+        personal_information:
+          delete_photo: Mbusak foto
+          email: Email
+          first_name: Jeneng ngarep
+          last_name: Jeneng mburi
+          social_accounts:
+            connected: Nyambung
+            facebook: Facebook
+            google: Google
+            microsoft: Microsoft
+            not_connected: Ora nyambung
+            title: Akun sosial
+          title: Informasi pribadi
+          update_photo: Nganyari foto
+        school:
+          active_licence: Lisensi aktif
+          active_status: Aktif
+          delete_profile: Mbusak profilku
+          delete_profile_modal:
+            body: |-
+              Sampeyan ngilangi kabeh data - selawase. Ora ana tombol batalake, lan mengko ora bisa bali.
+              Sampeyan yakin pengin mbusak profil Lingu permanen lan kabeh data?
+            cancel: Batal
+            confirm: Ya, busak
+            i_understand_the_consequences: Aku ngerti akibate
+            title: Mbusak profil sampeyan?
+          expired: "%{expire_date} kadaluwarsa"
+          expires: Kadaluwarsa %{expire_date}
+          inactive_status: Ora aktif
+          revoke_access: Mbatalake akses maca
+          sections:
+            contact_school: Sekolah kontak
+            export_my_data: Ekspor data ku
+            read_school_privacy_policy: Waca kabijakan Privasi Sekolah
+        sound_and_visual:
+          sections:
+            sound:
+              music_playback: Muter maneh musik
+              sound_effects: Efek swara
+              title: Swara
+            visual:
+              dark_theme: Tema peteng
+              font_size:
+                test_text: Suket mesthi luwih ijo ing sisih pager liyane
+                title: Ukuran font
+              high_contrast: Kontras dhuwur
+              hints: Petunjuk
+              title: Visual
+          title: Swara & Visual
+        training_settings:
+          sections:
+            i_understand: Aku ngerti
+            i_want_to_learn: Aku pengin sinau
+            target_language_level: Tingkat Inggris
+          title: Setelan latihan
+      settings_title: Setelan
+    teacher_card:
+      followers_count:
+        one: 1 pandherekipun
+        other: "%{count} pandherekipun"
+      lessons_count:
+        one: 1 piwulang
+        other: pelajaran %{count}

@@ -1,0 +1,6 @@
+= render 'teach/tasks/shared_task_form', task: task, form: form
+
+#task_items.mt-5
+  h2= t('teach.lessons.tet.games')
+  #task_items_container
+    = render partial: task.items, as: :item, locals: { task: task }

@@ -1,0 +1,19 @@
+nav.navbar.navbar-glass-shadow.sticky-top.navbar-glass
+  ul.navbar-nav
+    li.navbar-item.pt-2
+      h1.font-weight-bold= lesson.title
+
+    li.navbar-item
+      .badge.badge-light.d-inline-flex.align-items-center
+        - if lesson.support_language
+          = image_tag("flags/#{language_to_flag_code(lesson.support_language&.code)}.svg", height: 20)
+          i.fa.fa-caret-right.fa-fw.mx-2
+        = image_tag("flags/#{language_to_flag_code(lesson.language&.code)}.svg", height: 20)
+        span.ml-1= t(lesson.level, scope: 'activerecord.attributes.lesson.short_levels')
+        strong.ml-3= t('frontend.idle_screen.by_author', authorName: lesson.author.name)
+
+      - if policy(new_review).create?
+        a.btn.btn-falcon-default.float-right aria-controls="settings" aria-expanded="false" data-toggle="collapse" href="#meta" role="button"
+          = t('teach.reviews.navbar.post_review')
+  #meta.collapse= render 'form', lesson: lesson, new_review: new_review
+

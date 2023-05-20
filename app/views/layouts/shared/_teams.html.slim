@@ -1,0 +1,5 @@
+- current_user_teams.each do |team|
+  = link_to teach_current_team_path(id: team.id), method: :post, class: 'dropdown-item' do
+    = team.name
+    - if team == current_team
+      i.fas.fa-long-arrow-alt-left.fa-sm.ml-2

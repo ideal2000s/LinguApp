@@ -1,0 +1,34 @@
+- set_page_title student.full_name
+
+.content
+  .card.mb-3
+    .card-header.d-flex.justify-content-between
+      h5.mb-0= student.full_name
+      = link_to t('admin.teams.edit.action'), edit_admin_student_path(student), class: 'btn btn-sm btn-falcon-default'
+    .card-body
+      strong= t('email') + ':'
+      =< student.email
+      - if student.school_teams.any?
+        br
+        strong= t('shared.school') + ':'
+        =< student.school_teams.map(&:name).to_sentence
+      br
+      strong= t('.learning_time') + ':'
+      =< student.lesson_time_human
+    table.table.table-dashboard.table-light
+      thead
+        tr
+          th= t('activerecord.models.lesson')
+          th= t('status')
+          th= t('shared.time_spent')
+          th= t('activerecord.attributes.user.created_at')
+      tbody
+        - sessions.each do |session|
+          tr
+            td= session.lesson.title
+            td= status_badge(session.status)
+            td= session.duration_human
+            td= l(session.created_at, format: :short)
+
+
+

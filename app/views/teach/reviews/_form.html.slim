@@ -1,0 +1,18 @@
+
+= form_for new_review, as: :review, url: teach_lesson_reviews_path(lesson), remote: true, html: { id: 'review__form' } do |f|
+  -#= f.text_area :content, class: 'form-control border-0 rounded-0 resize-none', rows: 4
+  = f.text_area :content, data: {editor: 'summernote'}
+  = error_for f.object, :content
+  .row.no-gutters.justify-content-between.mt-3.px-3.pb-3
+    .col
+      .custom-control.custom-control-inline.custom-radio
+        input.custom-control-input type='radio' id='approved' name='review[status]' value='approved'
+        label.custom-control-label for='approved'
+          = t('.approve')
+
+      .custom-control.custom-control-inline.custom-radio
+        input.custom-control-input type='radio' id='rejected' name='review[status]' value='rejected'
+        label.custom-control-label for='rejected'
+          = t('.changes_requested')
+    .col-auto
+      button.btn.btn-primary.btn-sm.px-4.px-sm-5= t('teach.reviews.form.submit_review')

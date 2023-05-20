@@ -1,0 +1,7 @@
+(function(){
+  var elem = document.querySelector('#<%= dom_id(item) %>');
+  elem.parentNode.removeChild(elem);
+  if ($('#<%= dom_id(item, :image) %>').length)
+    document.querySelector('#<%= dom_id(item, :image) %>').remove();
+})();
+

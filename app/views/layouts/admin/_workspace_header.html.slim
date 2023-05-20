@@ -1,0 +1,33 @@
+nav.navbar.navbar-light.navbar-glass.fs--1.font-weight-semi-bold.row.navbar-top.sticky-kit.navbar-expand
+  button.navbar-toggler.collapsed aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarVerticalCollapse" data-toggle="collapse" type="button"
+    span.navbar-toggler-icon
+  a.navbar-brand.text-left.ml-3 href="#"
+    .d-flex.align-items-center
+      img.mr-2 alt="" src="#{image_path('lingu-logo.svg')}" width="146" height="82"
+  #navbarNavDropdown1.collapse.navbar-collapse
+    ul.navbar-nav.align-items-center.ml-auto
+      li.nav-item.dropdown= render partial: 'layouts/shared/locale_selector'
+
+      li.nav-item.dropdown
+        a.nav-link.pr-0.pt-0 aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+          button.btn.btn-falcon-default.btn-sm.mt-1 Menu
+          .dropdown-menu.dropdown-menu-right.py-0
+            .card.card-notification.shadow-none style=("max-width: 20rem")
+
+              .card-body.pt-0
+                = link_to t('users'), users_path, class: 'dropdown-item mt-1'
+                = link_to t('students'), students_path, class: 'dropdown-item mt-1'
+                = link_to t('licenses'), licenses_path, class: 'dropdown-item mt-1'
+                .dropdown-divider
+                = link_to dashboard_path, class: 'dropdown-item text-info' do
+                  i.fas.fa-home.fa-fw
+                  span.pl-1.font-weight-bold= t('.overview')
+                = link_to settings_path, class: 'dropdown-item text-info' do
+                  i.fas.fa-cog.fa-fw
+                  span.pl-1.font-weight-bold= t('admin.tasks.list.settings')
+
+      li.nav-item
+        - if current_user
+          li.nav-item.dropdown= render 'layouts/admin/profile_menu'
+        - else
+          li.nav-item= link_to 'Sign in with Google', '/users/auth/google_oauth2', class: 'btn btn-primary'
